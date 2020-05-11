@@ -1,0 +1,12 @@
+{
+  "name": "rxc-www",
+  "version": "1.0.0",
+  "description": "RadicalxChange's www website",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
