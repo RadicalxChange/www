@@ -12,4 +12,4 @@ Run `npm run build` to build the site. The built site is written to _dist/_.
 
 ## Architecture
 
-The RadicalxChange www Site is built using [11ty](https://www.11ty.dev/). It's styled using [TailWind CSS](https://tailwindcss.com/).
+The RadicalxChange www site is built by [11ty](https://www.11ty.dev/). It's styled using [TailWind CSS](https://tailwindcss.com/).
