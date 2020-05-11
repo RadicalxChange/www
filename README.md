@@ -8,7 +8,7 @@ Run `npm run serve` to watch files in the repository, rebuild the site when file
 
 ### Build
 
-Run `npm run build` to build the site. The built site is written to _\_site/_.
+Run `npm run build` to build the site. The built site is written to _dist/_.
 
 ## Architecture
 
