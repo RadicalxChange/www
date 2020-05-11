@@ -14,9 +14,9 @@ module.exports = class {
 
   async render({ rawCss, rawFilepath }) {
     return await postcss([
+      require("postcss-import"),
       require("tailwindcss"),
       require("autoprefixer"),
-      require("postcss-import"),
     ])
       .process(rawCss, { from: rawFilepath })
       .then((result) => result.css);
