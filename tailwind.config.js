@@ -9,6 +9,10 @@ module.exports = {
         "1/5": "20%",
       },
     },
+    fontFamily: {
+      display: ["Messer", "san-serif"],
+      body: ["SuisseIntl", "sans-serif"],
+    },
   },
   variants: {},
   plugins: [],

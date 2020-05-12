@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Messer";
+  src: url("/fonts/MesserV2.0-Condensed.otf") format("otf"),
+    url("/fonts/MesserV2.0-Condensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("fonts/SuisseIntl-Book.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}

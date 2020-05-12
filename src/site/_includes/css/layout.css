@@ -1,0 +1,20 @@
+.py-page {
+  @apply pt-6;
+  @apply pb-10;
+}
+
+.px-page {
+  @apply px-12;
+}
+
+/* Horizontal padding for the right panel */
+.px-header {
+  @apply pl-3;
+  @apply pr-12;
+}
+
+/* Horizontal padding for the left panels */
+.px-section {
+  @apply pl-12;
+  @apply pr-3;
+}

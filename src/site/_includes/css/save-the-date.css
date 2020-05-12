@@ -1,0 +1,19 @@
+.save-the-date {
+  position: absolute;
+  left: 20%;
+  top: -149%;
+  padding: 1em 0.33em;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  transform: rotate(-10.56deg);
+  @apply uppercase;
+  @apply font-display;
+  @apply text-5xl;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.save-the-date:hover {
+  -webkit-text-fill-color: black;
+}

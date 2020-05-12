@@ -1,5 +1,11 @@
 @import "tailwindcss/base";
+
+/* Custom fonts */
+@import "./fonts.css";
+
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/* Custom components */
 @import "./layout.css";
 @import "./save-the-date.css";
