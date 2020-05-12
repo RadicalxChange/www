@@ -1,19 +1,35 @@
 .save-the-date {
-  position: absolute;
+  @apply absolute;
   left: 20%;
   top: -149%;
-  padding: 1em 0.33em;
-  border: 1px solid #000000;
-  border-radius: 50%;
   transform: rotate(-10.56deg);
+  @apply py-12;
+  @apply px-4;
+  @apply border;
+  @apply border-solid;
+  @apply border-black;
+  @apply rounded-50;
   @apply uppercase;
   @apply font-display;
   @apply text-5xl;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
-.save-the-date:hover {
-  -webkit-text-fill-color: black;
+.save-the-date .save-the-date-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.save-the-date .save-the-date-pseudo {
+  @apply absolute;
+  @apply top-0;
+  @apply left-0;
+  @apply opacity-0;
+  @apply transition;
+  @apply duration-200;
+}
+
+.save-the-date:hover .save-the-date-pseudo {
+  @apply opacity-100;
+  @apply transition;
+  @apply duration-500;
 }

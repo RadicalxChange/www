@@ -8,6 +8,9 @@ module.exports = {
       margin: {
         "1/5": "20%",
       },
+      borderRadius: {
+        "50": "50%",
+      },
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
