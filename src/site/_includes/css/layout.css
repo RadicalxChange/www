@@ -1,12 +1,3 @@
-.py-page {
-  @apply pt-6;
-  @apply pb-10;
-}
-
-.px-page {
-  @apply px-12;
-}
-
 /* Horizontal padding for the right panel */
 .px-header {
   @apply pl-3;
@@ -19,10 +10,18 @@
   @apply pr-3;
 }
 
+/* Vertical padding per page */
+.py-page {
+  @apply pt-6;
+  @apply pb-10;
+}
+
+/* Trick to get the stick header panel not to scroll over the footer */
 .mb-screen {
   margin-bottom: 100vh;
 }
 
+/* Trade off colors, start with second child since first child is sticky header */
 .color-every-other-child:nth-child(even) {
   @apply bg-golden-fizz-100;
 }

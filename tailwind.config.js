@@ -5,9 +5,6 @@ module.exports = {
       colors: {
         "golden-fizz": { 100: "#EEFD4E" },
       },
-      margin: {
-        "1/5": "20%",
-      },
       borderRadius: {
         "50": "50%",
       },
@@ -22,6 +19,7 @@ module.exports = {
       lg: "1.2vw",
       xl: "1.4vw",
       "4point5xl": "5vw",
+      "5xl": "6vw",
       "6xl": "8vw",
       "7xl": "10vw",
     },

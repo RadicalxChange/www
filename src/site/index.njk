@@ -9,90 +9,86 @@
   <body class="font-body text-xl">
     <main class="relative">
       <header
-        class="sticky top-0 float-right w-2/5 h-screen py-page px-header mb-screen"
+        class="sticky top-0 float-right flex flex-col justify-between w-2/5 h-screen py-page px-header mb-screen"
       >
-        <div class="relative h-full">
-          <nav>
-            <ul class="flex justify-between text-lg uppercase">
-              <li class="mr-2"><a href="#">Forum</a></li>
-              <li class="mr-2"><a href="#">About</a></li>
-              <li class="mr-2"><a href="#">Community</a></li>
-              <li class="mr-2"><a href="#">Blog</a></li>
-              <li class="mr-2"><a href="#">Subscribe</a></li>
-              <li class="mr-2"><a href="#">Donate</a></li>
-            </ul>
-          </nav>
-          <div class="absolute bottom-0 left-0 w-full">
-            <div class="save-the-date">
-              <div class="relative">
-                <span class="save-the-date-pseudo" aria-hidden="true">
-                  Save the date!
-                </span>
-                <span class="save-the-date-text">
-                  Save the date!
-                </span>
-              </div>
+        <nav>
+          <ul class="flex justify-between text-lg uppercase">
+            <li class="mr-2"><a href="#">Forum</a></li>
+            <li class="mr-2"><a href="#">About</a></li>
+            <li class="mr-2"><a href="#">Community</a></li>
+            <li class="mr-2"><a href="#">Blog</a></li>
+            <li class="mr-2"><a href="#">Subscribe</a></li>
+            <li class="mr-2"><a href="#">Donate</a></li>
+          </ul>
+        </nav>
+        <div class="relative">
+          <div class="save-the-date">
+            <div class="relative">
+              <span class="save-the-date-pseudo" aria-hidden="true">
+                Save the date!
+              </span>
+              <span class="save-the-date-text">
+                Save the date!
+              </span>
             </div>
-            <div class="ml-1/5">
-              <p>Annual Conference</p>
-              <p>June 19-21, 2020</p>
-              <p>Hosted online</p>
-              <p>Register</p>
-            </div>
+          </div>
+          <div class="ml-4">
+            <p>Annual Conference<br />June 19-21, 2020<br />Hosted online</p>
+            <p>Register</p>
           </div>
         </div>
       </header>
       <section class="color-every-other-child">
-        <div class="w-3/5 h-screen py-page px-section">
-          <div class="relative h-full">
-            <h1 class="font-display text-6xl uppercase leading-clamped">
-              <span class="align-text-top">Radical</span
-              ><!--
-              --><span class="align-text-top text-4point5xl">x</span
-              ><!--
-              --><span class="align-text-top">Change</span>
-            </h1>
-            <div class="absolute bottom-0 left-0">
-              <p>
-                RadicalxChange Foundation is an Institutional Affiliate on the
-                Roadmap to Pandemic Resistance, the latest report by the Edmond
-                J. Safra Center on ending COVID-19 quarantine via Testing,
-                Tracing, & Supported Isolation (#TTSI).
-              </p>
-              <p><a href="#">Read more</a></p>
-            </div>
+        <div
+          class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
+        >
+          <h1 class="font-display text-6xl uppercase leading-clamped">
+            <span class="align-text-top">Radical</span
+            ><span class="align-text-top text-4point5xl">x</span
+            ><span class="align-text-top">Change</span>
+          </h1>
+          <div>
+            <p>
+              RadicalxChange Foundation is an Institutional Affiliate on the
+              Roadmap to Pandemic Resistance, the latest report by the Edmond J.
+              Safra Center on ending COVID-19 quarantine via Testing, Tracing, &
+              Supported Isolation (#TTSI).
+            </p>
+            <p><a href="#">Read more</a></p>
           </div>
         </div>
       </section>
       <section class="color-every-other-child">
-        <div class="w-3/5 h-screen py-page px-section">
-          <div class="relative h-full">
-            <h1>What is RadicalxChange?</h1>
-            <div class="absolute bottom-0 left-0">
-              <p>
-                RadicalxChange is a global movement dedicated to reimagining the
-                building blocks of democracy and markets in order to uphold
-                fairness, plurality, and meaningful participation in a rapidly
-                changing world.
-              </p>
-              <p>
-                The RadicalxChange Foundation is a non-profit organization
-                dedicated to advancing that cause, founded by E. Glen Weyl
-                following the publication the book Radical Markets in 2018. The
-                ideas in Radical Markets provided a starting place for
-                envisioning institutions that preserve democratic values in a
-                rapidly-changing technological landscape, as the project and
-                vision continue to evolve.
-              </p>
-              <p><a href="#">Read more</a></p>
-            </div>
+        <div
+          class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
+        >
+          <h1>What is RadicalxChange?</h1>
+          <div>
+            <p>
+              RadicalxChange is a global movement dedicated to reimagining the
+              building blocks of democracy and markets in order to uphold
+              fairness, plurality, and meaningful participation in a rapidly
+              changing world.
+            </p>
+            <p>
+              The RadicalxChange Foundation is a non-profit organization
+              dedicated to advancing that cause, founded by E. Glen Weyl
+              following the publication the book Radical Markets in 2018. The
+              ideas in Radical Markets provided a starting place for envisioning
+              institutions that preserve democratic values in a rapidly-changing
+              technological landscape, as the project and vision continue to
+              evolve.
+            </p>
+            <p><a href="#">Read more</a></p>
           </div>
         </div>
       </section>
-      <footer class="color-every-other-child flex h-screen py-page px-page">
-        <div class="relative w-3/5 h-full">
+      <footer class="color-every-other-child flex">
+        <div
+          class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
+        >
           <h1>RadicalxChange</h1>
-          <div class="absolute bottom-0 left-0">
+          <div>
             <p>
               Find us on social networks:
             </p>
@@ -104,7 +100,9 @@
             </ul>
           </div>
         </div>
-        <div class="relative w-2/5 h-full pl-4">
+        <div
+          class="flex flex-col justify-between w-2/5 h-screen py-page px-header"
+        >
           <nav>
             <ul style="columns: 3;">
               <li class="mb-2 mr-2"><a href="#">About</a></li>
@@ -123,7 +121,7 @@
               <li class="mb-2 mr-2"><a href="#">Privacy Policy</a></li>
             </ul>
           </nav>
-          <div class="absolute bottom-0 left-0 mr-1/5">
+          <div>
             <p>
               © 2020 RadicalxChange Foundation Ltd. RadicalxChange Foundation
               Ltd., a 501(c)(3) nonprofit organization, does not support or

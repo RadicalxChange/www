@@ -1,19 +1,15 @@
 .save-the-date {
   @apply absolute;
-  left: 20%;
-  top: -149%;
+  top: -217%;
   transform: rotate(-10.56deg);
-  /* @apply py-12; */
-  /* @apply px-4; */
-  padding: 4vw 1vw;
+  padding: 6vw 1vw;
   @apply border;
   @apply border-solid;
   @apply border-black;
   @apply rounded-50;
   @apply uppercase;
   @apply font-display;
-  /* @apply text-7xl; */
-  font-size: 5.5vw;
+  @apply text-5xl;
 }
 
 .save-the-date .save-the-date-text {
@@ -21,6 +17,7 @@
   -webkit-text-stroke-width: 1px;
 }
 
+/* Use psuedo-element to implement transition because text-fill-color cannot be animated */
 .save-the-date .save-the-date-pseudo {
   @apply absolute;
   @apply top-0;
