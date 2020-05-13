@@ -11,6 +11,12 @@ module.exports = {
       borderRadius: {
         "50": "50%",
       },
+      lineHeight: {
+        clamped: "0.825",
+      },
+      fontSize: {
+        "4point5xl": "2.5rem",
+      },
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
