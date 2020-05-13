@@ -3,15 +3,17 @@
   left: 20%;
   top: -149%;
   transform: rotate(-10.56deg);
-  @apply py-12;
-  @apply px-4;
+  /* @apply py-12; */
+  /* @apply px-4; */
+  padding: 4vw 1vw;
   @apply border;
   @apply border-solid;
   @apply border-black;
   @apply rounded-50;
   @apply uppercase;
   @apply font-display;
-  @apply text-5xl;
+  /* @apply text-7xl; */
+  font-size: 5.5vw;
 }
 
 .save-the-date .save-the-date-text {

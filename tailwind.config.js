@@ -14,9 +14,16 @@ module.exports = {
       lineHeight: {
         clamped: "0.825",
       },
-      fontSize: {
-        "4point5xl": "2.5rem",
-      },
+    },
+    fontSize: {
+      xs: "0.6vw",
+      sm: "0.8vw",
+      default: "1vw",
+      lg: "1.2vw",
+      xl: "1.4vw",
+      "4point5xl": "5vw",
+      "6xl": "8vw",
+      "7xl": "10vw",
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
