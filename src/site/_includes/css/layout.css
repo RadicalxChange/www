@@ -18,3 +18,15 @@
   @apply pl-12;
   @apply pr-3;
 }
+
+.mb-screen {
+  margin-bottom: 100vh;
+}
+
+.color-every-other-child:nth-child(even) {
+  @apply bg-golden-fizz-100;
+}
+
+.color-every-other-child:nth-child(odd) {
+  @apply bg-white;
+}
