@@ -1,3 +1,77 @@
+---
+sections:
+  - header: "What is Radical xChange?"
+    content: |
+      RadicalxChange is a global movement dedicated to reimagining the building blocks of democracy and markets in order to uphold fairness, plurality, and meaningful participation in a rapidly changing world.
+
+      The RadicalxChange Foundation is a non-profit organization dedicated to advancing that cause, founded by E. Glen Weyl following the publication the book Radical Markets in 2018. The ideas in Radical Markets provided a starting place for envisioning institutions that preserve democratic values in a rapidly-changing technological landscape, as the project and vision continue to evolve.
+    links:
+      - text: "Read more"
+        href: "#"
+  - header: "The Radical xChange Community"
+    content: |
+      As a global community, we stand at a unique crossroads with signs that social and economic systems are failing everywhere: rising inequality, stagnating economies and increasing threats to democracy. To address this, we believe that positive and comprehensive change is only possible through the inclusion of diverse voices. We need art to help us imagine new possibilities, scholarship to help us use the lessons of the past to design better societies, entrepreneurship to build new institutions, and activism to bridge ideological lines to fight hate and division. The RadicalxChange community has given rise to dozens of start-ups and local chapters around the world, major shifts in antitrust and data regulation, a substantial body of research and scholarship, and a wide range of artistic projects. We want you to be a part of it!
+    links:
+      - text: "Meet the team"
+        href: "#"
+      - text: "Find a chapter"
+        href: "#"
+  - header: "The Radical xChange Commitment"
+    content: |
+      RadicalxChange is committed to building a society that advances plurality, community and equality by developing positive alternatives, grounded in rigorous social science, while also embracing technology and well-functioning markets. By moving beyond traditional institutions like private property and one-person-one-vote, it seeks to transcend old dichotomies between economy and politics, market and the state, or right and left. However, RadicalxChange rejects utopian claims to “neutrality.” The project is animated by definite values–for example, that a better society would be one in which everyone participates more meaningfully in key institutions including democracy and markets.
+    links:
+      - text: "Events"
+        href: "#"
+levels:
+  - name: Public Good Provider
+    sponsors:
+      - name: Omidyar Network
+        href: "#"
+      - name: Wireline
+        href: "#"
+  - name: Cost Patron
+    sponsors:
+      - name: Hewlett Foundation
+        href: "#"
+      - name: Kauffman Foundation
+        href: "#"
+      - name: Merit
+        href: "#"
+  - name: Change Maker
+    sponsors:
+      - name: The Charter Cities Institute
+        href: "#"
+      - name: Institute for New Economic Thinking
+        href: "#"
+      - name: The Osa Foundation
+        href: "#"
+      - name: Alfred P. Sloan Foundation
+        href: "#"
+  - name: Grassroots Supporter
+    sponsors:
+      - name: Democracy Earth
+        href: "#"
+      - name: Evil Twin Booking
+        href: "#"
+  - name: Community Builder
+    sponsors:
+      - name: Bunz
+        href: "#"
+      - name: College for Creative Studies
+        href: "#"
+      - name: Microsoft
+        href: "#"
+      - name: Totle
+        href: "#"
+---
+
+{% macro logo() %}
+<h1 class="font-display text-6xl uppercase leading-clamped">
+  <span class="align-text-top">Radical</span
+  ><span class="align-text-top text-4point5xl">x</span
+  ><span class="align-text-top">Change</span>
+</h1>
+{% endmacro %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +80,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <title>RadicalxChange</title>
   </head>
-  <body class="font-body font-normal text-xl">
+  <body class="font-body font-normal text-xl leading-snug">
     <main class="relative">
       <header
         class="sticky top-0 float-right flex flex-col justify-between w-2/5 h-screen py-page px-header mb-screen"
@@ -21,7 +95,7 @@
             <li class="mr-2"><a href="#">Donate</a></li>
           </ul>
         </nav>
-        <div class="relative ml-1/12">
+        <div class="relative ml-span1">
           <div class="save-the-date">
             <div class="relative">
               <span class="save-the-date-pseudo" aria-hidden="true">
@@ -44,13 +118,9 @@
         <div
           class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
         >
-          <h1 class="font-display text-6xl uppercase leading-clamped">
-            <span class="align-text-top">Radical</span
-            ><span class="align-text-top text-4point5xl">x</span
-            ><span class="align-text-top">Change</span>
-          </h1>
-          <div>
-            <p class="mb-5">
+          {{ logo() }}
+          <div class="section-content">
+            <p>
               RadicalxChange Foundation is an Institutional Affiliate on the
               Roadmap to Pandemic Resistance, the latest report by the Edmond J.
               Safra Center on ending COVID-19 quarantine via Testing, Tracing, &
@@ -60,30 +130,57 @@
           </div>
         </div>
       </section>
+      {% for section in sections %}
       <section class="color-every-other-child">
         <div
           class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
         >
           <h1 class="font-display text-6xl uppercase leading-none">
-            What is RadicalxChange?
+            {{ section.header }}
           </h1>
-          <div>
-            <p class="mb-5">
-              RadicalxChange is a global movement dedicated to reimagining the
-              building blocks of democracy and markets in order to uphold
-              fairness, plurality, and meaningful participation in a rapidly
-              changing world.
+          <div class="section-content">
+            {{ section.content | markdown | safe }}
+            <p>
+              {% for link in section.links %}
+              <div class="inline-block w-span2">
+                <a
+                  class="animated-link"
+                  href="{{ link.href }}"
+                  >{{ link.text }}</a
+                >
+              </div>
+              {% endfor %}
             </p>
-            <p class="mb-5">
-              The RadicalxChange Foundation is a non-profit organization
-              dedicated to advancing that cause, founded by E. Glen Weyl
-              following the publication the book Radical Markets in 2018. The
-              ideas in Radical Markets provided a starting place for envisioning
-              institutions that preserve democratic values in a rapidly-changing
-              technological landscape, as the project and vision continue to
-              evolve.
-            </p>
-            <p><a class="animated-link" href="#">Read more</a></p>
+          </div>
+        </div>
+      </section>
+      {% endfor %}
+      <section class="color-every-other-child">
+        <div
+          class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
+        >
+          <h1 class="font-display text-6xl uppercase leading-none">
+            Sponsors
+          </h1>
+          <div style="max-height: 75%;" class="flex flex-col flex-wrap">
+            {% for level in levels %}
+            <div class="mb-16">
+              <h2 class="uppercase mb-5 text-lg">
+                {{ level.name }}
+              </h2>
+              <ul>
+                {% for sponsor in level.sponsors %}
+                <li>
+                  <a 
+                    class="animated-link text-lg"
+                    href="{{ sponsor.href }}"
+                    >{{ sponsor.name }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
           </div>
         </div>
       </section>
@@ -91,16 +188,16 @@
         <div
           class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
         >
-          <h1>RadicalxChange</h1>
+          {{ logo() }}
           <div>
-            <p>
+            <p class="mb-5">
               Find us on social networks:
             </p>
             <ul class="flex">
-              <li class="mr-2"><a href="#">Instagram</a></li>
-              <li class="mr-2"><a href="#">Facebook</a></li>
-              <li class="mr-2"><a href="#">Twitter</a></li>
-              <li class="mr-2"><a href="#">LinkedIn</a></li>
+              <li class="mr-4"><a class="animated-link" href="#">Instagram</a></li>
+              <li class="mr-4"><a class="animated-link" href="#">Facebook</a></li>
+              <li class="mr-4"><a class="animated-link" href="#">Twitter</a></li>
+              <li class="mr-4"><a class="animated-link" href="#">LinkedIn</a></li>
             </ul>
           </div>
         </div>
@@ -127,7 +224,7 @@
           </nav>
           <div>
             <p>
-              © 2020 RadicalxChange Foundation Ltd. RadicalxChange Foundation
+              © 2020 RadicalxChange Foundation Ltd.<br/>RadicalxChange Foundation
               Ltd., a 501(c)(3) nonprofit organization, does not support or
               oppose candidates for public office or political parties
             </p>

@@ -29,3 +29,7 @@
 .color-every-other-child:nth-child(odd) {
   @apply bg-white;
 }
+
+.section-content p:not(:last-child) {
+  @apply mb-5;
+}
