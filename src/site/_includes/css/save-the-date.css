@@ -1,6 +1,6 @@
 .save-the-date {
   @apply absolute;
-  top: -172%;
+  top: -186%;
   transform: rotate(-10.56deg);
   @apply px-default;
   @apply py-4xl;

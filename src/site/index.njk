@@ -23,12 +23,6 @@ sections:
       - text: "Events"
         href: "#"
 levels:
-  - name: Public Good Provider
-    sponsors:
-      - name: Omidyar Network
-        href: "#"
-      - name: Wireline
-        href: "#"
   - name: Cost Patron
     sponsors:
       - name: Hewlett Foundation
@@ -36,6 +30,12 @@ levels:
       - name: Kauffman Foundation
         href: "#"
       - name: Merit
+        href: "#"
+  - name: Public Good Provider
+    sponsors:
+      - name: Omidyar Network
+        href: "#"
+      - name: Wireline
         href: "#"
   - name: Change Maker
     sponsors:
@@ -47,12 +47,6 @@ levels:
         href: "#"
       - name: Alfred P. Sloan Foundation
         href: "#"
-  - name: Grassroots Supporter
-    sponsors:
-      - name: Democracy Earth
-        href: "#"
-      - name: Evil Twin Booking
-        href: "#"
   - name: Community Builder
     sponsors:
       - name: Bunz
@@ -62,6 +56,12 @@ levels:
       - name: Microsoft
         href: "#"
       - name: Totle
+        href: "#"
+  - name: Grassroots Supporter
+    sponsors:
+      - name: Democracy Earth
+        href: "#"
+      - name: Evil Twin Booking
         href: "#"
 ---
 
@@ -162,9 +162,9 @@ levels:
           <h1 class="font-display text-6xl uppercase leading-none">
             Sponsors
           </h1>
-          <div class="flex flex-col flex-wrap max-h-3/4">
+          <div class="grid grid-cols-2 gap-8 col-gap-12 max-h-3/4">
             {% for level in levels %}
-            <div class="mb-3xl">
+            <div>
               <h2 class="uppercase mb-default text-lg">
                 {{ level.name }}
               </h2>
