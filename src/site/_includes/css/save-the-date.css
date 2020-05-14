@@ -2,7 +2,8 @@
   @apply absolute;
   top: -172%;
   transform: rotate(-10.56deg);
-  padding: 6vw 1vw;
+  @apply px-default;
+  @apply py-4xl;
   @apply border;
   @apply border-solid;
   @apply border-black;

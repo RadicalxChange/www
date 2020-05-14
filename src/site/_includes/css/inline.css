@@ -16,7 +16,6 @@
   @apply transition-right;
   @apply duration-300;
   @apply ease-in;
-  /* transition: right 0.4s cubic-bezier(0, 0.5, 0, 1); */
 }
 
 .animated-link:hover:after {

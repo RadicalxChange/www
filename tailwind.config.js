@@ -2,7 +2,7 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
-      screens: { tall: { raw: "(min-height: 720px)" } },
+      screens: { tall: { raw: "(min-height: 50vw)" } },
       colors: {
         "golden-fizz": { 100: "#EEFD4E" },
       },
@@ -12,10 +12,20 @@ module.exports = {
       lineHeight: {
         clamped: "0.825",
       },
-      spacing: { span1: "8.333vw", span2: "16.666vw" },
+      spacing: {
+        xs: "0.25vw",
+        sm: "0.5vw",
+        default: "1vw",
+        lg: "2vw",
+        xl: "3vw",
+        "3xl": "5vw",
+        "4xl": "6vw",
+        span1: "8.333vw",
+        span2: "16.666vw",
+      },
       transitionProperty: { right: "right" },
       inset: { full: "100%" },
-      minHeight: { tall: "720px" },
+      minHeight: { tall: "50vw" },
       maxHeight: { "3/4": "75%" },
     },
     fontSize: {
