@@ -30,6 +30,7 @@
   @apply bg-white;
 }
 
-.section-content p:not(:last-child) {
-  @apply mb-5;
+/* Column layout */
+.columns-3 {
+  columns: 3;
 }

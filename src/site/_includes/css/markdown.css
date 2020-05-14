@@ -1,0 +1,5 @@
+/* Apply styles to rendered markdown */
+
+.md-container p:not(:last-child) {
+  @apply mb-5;
+}

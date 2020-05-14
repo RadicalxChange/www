@@ -72,27 +72,27 @@ levels:
   ><span class="align-text-top">Change</span>
 </h1>
 {% endmacro %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>RadicalxChange</title>
   </head>
   <body class="font-body font-normal text-xl leading-snug">
     <main class="relative">
       <header
-        class="sticky top-0 float-right flex flex-col justify-between w-2/5 h-screen py-page px-header mb-screen"
+        class="absolute top-0 right-0 tall:sticky tall:right-auto tall:float-right flex flex-col justify-between w-2/5 h-screen min-h-tall py-page px-header mb-screen"
       >
         <nav>
           <ul class="flex justify-between text-lg uppercase">
-            <li class="mr-2"><a href="#">Forum</a></li>
-            <li class="mr-2"><a href="#">About</a></li>
-            <li class="mr-2"><a href="#">Community</a></li>
-            <li class="mr-2"><a href="#">Blog</a></li>
-            <li class="mr-2"><a href="#">Subscribe</a></li>
-            <li class="mr-2"><a href="#">Donate</a></li>
+            <li class="mr-2"><a class="animated-link" href="#">Forum</a></li>
+            <li class="mr-2"><a class="animated-link" href="#">About</a></li>
+            <li class="mr-2"><a class="animated-link" href="#">Community</a></li>
+            <li class="mr-2"><a class="animated-link" href="#">Blog</a></li>
+            <li class="mr-2"><a class="animated-link" href="#">Subscribe</a></li>
+            <li class="mr-2"><a class="animated-link" href="#">Donate</a></li>
           </ul>
         </nav>
         <div class="relative ml-span1">
@@ -116,10 +116,10 @@ levels:
       </header>
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
+          class="flex flex-col justify-between w-3/5 h-screen min-h-tall py-page px-section"
         >
           {{ logo() }}
-          <div class="section-content">
+          <div class="md-container">
             <p>
               RadicalxChange Foundation is an Institutional Affiliate on the
               Roadmap to Pandemic Resistance, the latest report by the Edmond J.
@@ -133,12 +133,12 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-3/5 h-screen py-page px-section"
+          class="flex flex-col justify-between w-3/5 h-screen min-h-tall py-page px-section"
         >
           <h1 class="font-display text-6xl uppercase leading-none">
             {{ section.header }}
           </h1>
-          <div class="section-content">
+          <div class="md-container">
             {{ section.content | markdown | safe }}
             <p>
               {% for link in section.links %}
@@ -157,12 +157,12 @@ levels:
       {% endfor %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-1/2 h-screen py-page px-section"
+          class="flex flex-col justify-between w-3/5 h-screen min-h-tall py-page px-section"
         >
           <h1 class="font-display text-6xl uppercase leading-none">
             Sponsors
           </h1>
-          <div style="max-height: 75%;" class="flex flex-col flex-wrap">
+          <div class="flex flex-col flex-wrap max-h-3/4">
             {% for level in levels %}
             <div class="mb-16">
               <h2 class="uppercase mb-5 text-lg">
@@ -186,7 +186,7 @@ levels:
       </section>
       <footer class="color-every-other-child flex">
         <div
-          class="flex flex-col justify-between w-1/2 h-screen py-page px-section"
+          class="flex flex-col justify-between w-1/2 h-screen min-h-tall py-page px-section"
         >
           {{ logo() }}
           <div>
@@ -202,31 +202,31 @@ levels:
           </div>
         </div>
         <div
-          class="flex flex-col justify-between w-1/2 h-screen py-page px-header"
+          class="flex flex-col justify-between w-1/2 h-screen min-h-tall py-page px-header"
         >
           <nav>
-            <ul style="columns: 3;">
-              <li class="uppercase mb-6"><a href="#">About</a></li>
-              <li class="uppercase mb-6"><a href="#">Blog</a></li>
-              <li class="uppercase mb-6"><a href="#">Materials</a></li>
-              <li class="uppercase mb-6"><a href="#">News & Press</a></li>
-              <li class="uppercase mb-6"><a href="#">Community</a></li>
-              <li class="uppercase mb-6"><a href="#">Forum</a></li>
-              <li class="uppercase mb-6"><a href="#">Team</a></li>
-              <li class="uppercase mb-6"><a href="#">Events</a></li>
-              <li class="uppercase mb-6"><a href="#">2020 Conference</a></li>
-              <li class="uppercase mb-6"><a href="#">Concepts</a></li>
-              <li class="uppercase mb-6"><a href="#">Chapters</a></li>
-              <li class="uppercase mb-6"><a href="#">Subscribe</a></li>
-              <li class="uppercase mb-6"><a href="#">Contact</a></li>
-              <li class="uppercase mb-6"><a href="#">Privacy Policy</a></li>
+            <ul class="columns-3">
+              <li class="uppercase mb-6"><a class="animated-link" href="#">About</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Materials</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">News & Press</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Community</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Blog</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Forum</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Team</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Events</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">2020 Conference</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Concepts</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Chapters</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Subscribe</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Contact</a></li>
+              <li class="uppercase mb-6"><a class="animated-link" href="#">Privacy Policy</a></li>
             </ul>
           </nav>
           <div>
             <p>
               © 2020 RadicalxChange Foundation Ltd.<br/>RadicalxChange Foundation
               Ltd., a 501(c)(3) nonprofit organization, does not support or
-              oppose candidates for public office or political parties
+              oppose candidates for public office or political parties.
             </p>
           </div>
         </div>

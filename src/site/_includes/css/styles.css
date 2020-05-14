@@ -9,4 +9,5 @@
 /* Custom components */
 @import "./layout.css";
 @import "./inline.css";
+@import "./markdown.css";
 @import "./save-the-date.css";
