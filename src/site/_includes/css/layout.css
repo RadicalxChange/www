@@ -12,8 +12,8 @@
 
 /* Vertical padding per page */
 .py-page {
-  @apply pt-6;
-  @apply pb-10;
+  @apply pt-8;
+  @apply pb-12;
 }
 
 /* Trick to get the stick header panel not to scroll over the footer */

@@ -11,6 +11,8 @@ module.exports = {
       lineHeight: {
         clamped: "0.825",
       },
+      transitionProperty: { right: "right" },
+      inset: { full: "100%" },
     },
     fontSize: {
       xs: "0.6vw",
