@@ -11,6 +11,7 @@ module.exports = {
       lineHeight: {
         clamped: "0.825",
       },
+      margin: { span1: "8.333vw" },
       transitionProperty: { right: "right" },
       inset: { full: "100%" },
     },

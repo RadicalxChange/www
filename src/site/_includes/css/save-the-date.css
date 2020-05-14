@@ -1,6 +1,6 @@
 .save-the-date {
   @apply absolute;
-  top: -217%;
+  top: -183%;
   transform: rotate(-10.56deg);
   padding: 6vw 1vw;
   @apply border;
