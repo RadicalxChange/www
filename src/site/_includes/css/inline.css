@@ -1,3 +1,5 @@
+@import "./mixins/_animated-link.css";
+
 .animated-link {
   position: relative;
   @apply font-medium;
@@ -19,5 +21,5 @@
 }
 
 .animated-link:hover:after {
-  @apply right-0;
+  @mixin animated-link-hover;
 }

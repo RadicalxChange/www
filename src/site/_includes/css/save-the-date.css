@@ -1,3 +1,5 @@
+@import "./mixins/_animated-link.css";
+
 .save-the-date-container {
   @apply relative;
   @apply block;
@@ -47,5 +49,5 @@
 }
 
 .save-the-date-container:hover .animated-link:after {
-  @apply right-0;
+  @mixin animated-link-hover;
 }

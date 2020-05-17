@@ -1,0 +1,3 @@
+@define-mixin animated-link-hover {
+  @apply right-0;
+}
