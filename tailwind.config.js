@@ -29,6 +29,9 @@ module.exports = {
       inset: { full: "100%" },
       minHeight: { tall: "50vw" },
       maxHeight: { "3/4": "75%" },
+      borderWidth: {
+        "3": "3px",
+      },
     },
     fontSize: {
       xs: "0.6vw",
