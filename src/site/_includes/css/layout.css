@@ -1,3 +1,8 @@
+/* Logo in header */
+.logo {
+  width: 39.3vw;
+}
+
 /* Horizontal padding for the right panel */
 .px-header {
   @apply pl-sm;
