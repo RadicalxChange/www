@@ -1,25 +1,37 @@
-.save-the-date {
+.save-the-date-container {
+  @apply relative;
+  @apply block;
+  @apply ml-span1;
+}
+
+.save-the-date-oval {
   @apply absolute;
-  top: -186%;
+  top: -202%;
+  width: 28vw;
+  height: 21.5vw;
   transform: rotate(-10.56deg);
-  @apply px-default;
-  @apply py-4xl;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
   @apply border;
   @apply border-solid;
   @apply border-black;
   @apply rounded-50;
-  @apply uppercase;
-  @apply font-display;
-  @apply text-4point5xl;
 }
 
-.save-the-date .save-the-date-text {
+.save-the-date-text {
+  @apply uppercase;
+  @apply font-display;
+  font-size: 5.8vw;
+}
+
+.save-the-date-main {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
 }
 
 /* Use psuedo-element to implement transition because text-fill-color cannot be animated */
-.save-the-date .save-the-date-pseudo {
+.save-the-date-pseudo {
   @apply absolute;
   @apply top-0;
   @apply left-0;
@@ -28,8 +40,12 @@
   @apply duration-200;
 }
 
-.save-the-date:hover .save-the-date-pseudo {
+.save-the-date-container:hover .save-the-date-pseudo {
   @apply opacity-100;
   @apply transition;
   @apply duration-500;
+}
+
+.save-the-date-container:hover .animated-link:after {
+  @apply right-0;
 }
