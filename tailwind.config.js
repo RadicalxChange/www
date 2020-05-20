@@ -2,7 +2,10 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
-      screens: { tall: { raw: "(min-height: 50vw)" } },
+      screens: {
+        tall: { raw: "(min-height: 50vw)" },
+        touch: { raw: "(hover: none)" },
+      },
       colors: {
         "golden-fizz": { 100: "#EEFD4E" },
       },
@@ -20,6 +23,7 @@ module.exports = {
         xl: "3vw",
         "3xl": "5vw",
         "4xl": "6vw",
+        zdefault: "4.5vw",
         span1: "8.333vw",
         span2: "16.666vw",
         span3: "25vw",
@@ -42,6 +46,8 @@ module.exports = {
       "5xl": "6vw",
       "6xl": "8vw",
       "7xl": "10vw",
+      zxl: "4.5vmin",
+      z2xl: "9vmin",
     },
     fontFamily: {
       display: ["Messer", "san-serif"],

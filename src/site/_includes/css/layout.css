@@ -1,6 +1,12 @@
 /* Logo in header */
 .logo {
-  width: 39.3vw;
+  @apply w-full;
+}
+
+@screen md {
+  .logo {
+    width: 39.3vw;
+  }
 }
 
 /* Horizontal padding for the right panel */
@@ -11,14 +17,28 @@
 
 /* Horizontal padding for the left panels */
 .px-section {
-  @apply pl-lg;
-  @apply pr-sm;
+  @apply pl-zdefault;
+  @apply pr-zdefault;
+}
+
+@screen md {
+  .px-section {
+    @apply pl-lg;
+    @apply pr-sm;
+  }
 }
 
 /* Vertical padding per page */
 .py-page {
-  @apply pt-lg;
-  @apply pb-xl;
+  @apply pt-zdefault;
+  @apply pb-zdefault;
+}
+
+@screen md {
+  .py-page {
+    @apply pt-lg;
+    @apply pb-xl;
+  }
 }
 
 /* Trick to get the stick header panel not to scroll over the footer */

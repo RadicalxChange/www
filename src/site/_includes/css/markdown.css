@@ -1,5 +1,11 @@
 /* Apply styles to rendered markdown */
 
 .md-container p:not(:last-child) {
-  @apply mb-default;
+  @apply mb-zdefault;
+}
+
+@screen md {
+  .md-container p:not(:last-child) {
+    @apply mb-default;
+  }
 }

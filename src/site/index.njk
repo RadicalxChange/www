@@ -73,13 +73,14 @@ levels:
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>RadicalxChange</title>
   </head>
-  <body class="font-body font-normal text-xl leading-snug">
+  <body class="font-body font-normal text-zxl md:text-xl leading-snug">
     <main class="relative">
       <header
-        class="absolute top-0 right-0 tall:sticky tall:right-auto tall:float-right flex flex-col justify-between w-2/5 h-screen min-h-tall py-page px-header mb-screen"
+        class="absolute top-0 right-0 tall:sticky tall:right-auto tall:float-right hidden md:flex flex-col justify-between w-2/5 h-screen min-h-tall py-page px-header mb-screen"
       >
         <nav>
           <ul class="flex justify-between text-lg uppercase">
@@ -112,7 +113,7 @@ levels:
       </header>
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-3/5 h-screen min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
         >
           {{ logo() }}
           <div class="md-container">
@@ -129,23 +130,23 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-3/5 h-screen min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
         >
-          <h1 class="font-display text-6xl uppercase leading-none">
+          <h1 class="font-display text-z2xl md:text-6xl uppercase leading-none">
             {{ section.header }}
           </h1>
           <div class="md-container">
             {{ section.content | markdown | safe }}
             <p>
+              <div class="flex justify-between md:block">
               {% for link in section.links %}
-              <div class="inline-block w-span2">
-                <a
-                  class="animated-link"
-                  href="{{ link.href }}"
-                  >{{ link.text }}</a
-                >
-              </div>
+                  <a
+                    class="animated-link md:padding-lg"
+                    href="{{ link.href }}"
+                    >{{ link.text }}</a
+                  >
               {% endfor %}
+              </div>
             </p>
           </div>
         </div>
@@ -153,7 +154,7 @@ levels:
       {% endfor %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-3/5 h-screen min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
         >
           <h1 class="font-display text-6xl uppercase leading-none">
             Sponsors

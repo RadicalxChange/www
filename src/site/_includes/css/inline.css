@@ -23,3 +23,10 @@
 .animated-link:hover:after {
   @mixin animated-link-hover;
 }
+
+@screen touch {
+  .animated-link:after {
+    @apply border-t-2;
+    @mixin animated-link-hover;
+  }
+}
