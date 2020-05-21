@@ -82,15 +82,13 @@ levels:
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>RadicalxChange</title>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/body-scroll-lock@3.0.2/lib/bodyScrollLock.min.js" integrity="sha384-TPD9y0kmdvgK9D4a+br/KYlqMn9cLVXHDVxxN93FvPj+13bPJeMJZaXAB7+p/e7X" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-zxl md:text-xl leading-snug">
     <div
-      id="menu-modal"
-      role="dialog"
-      aria-modal="true"
       class="z-20 fixed top-0 left-0"
-      data-modal-declare
+      data-modal-declare="menu"
     >
       <nav class="relative flex justify-center items-center w-screen h-screen bg-golden-fizz-100">
         <ul class="text-zxl uppercase">
@@ -103,7 +101,6 @@ levels:
         </ul>
         <button
           class="absolute top-0 right-0 p-zdefault"
-          aria-label="Close menu"
           data-modal-close
         >
           <img src="/images/close-button.svg">
@@ -166,7 +163,7 @@ levels:
               >
               <button
                 class="md:hidden animated-link uppercase md:mr-lg"
-                data-modal-trigger="menu-modal"
+                data-modal-trigger="menu"
                 >Menu</button
               >
             </p>
@@ -272,13 +269,20 @@ levels:
     <script>
       $("[data-modal-declare]").each(function() {
         const thisModal = $(this);
+        const thisModalName = thisModal.data("modal-declare");
+        const thisModalRef = thisModal.get();
+
+        thisModal.find("[data-modal-close]").click(function() {
+          bodyScrollLock.enableBodyScroll(thisModalRef);
+          thisModal.hide();
+        });
+
+        $(`[data-modal-trigger='${thisModalName}']`).click(function() {
+          bodyScrollLock.disableBodyScroll(thisModalRef);
+          thisModal.show();
+        });
+
         thisModal.hide();
-        $(this).find("[data-modal-close]").click(function() { thisModal.hide(); });
-      });
-      $("[data-modal-trigger]").each(function() {
-        const modalId = `#${$(this).data("modal-trigger")}`;
-        const thatModal = $(modalId);
-        $(this).click(function() { thatModal.show(); });
       });
     </script>
   </body>
