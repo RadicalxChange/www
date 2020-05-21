@@ -80,10 +80,36 @@ levels:
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/styles.css" />
     <title>RadicalxChange</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-zxl md:text-xl leading-snug">
+    <div
+      id="menu-modal"
+      role="dialog"
+      aria-modal="true"
+      class="z-20 fixed top-0 left-0"
+      data-modal-declare
+    >
+      <nav class="relative flex justify-center items-center w-screen h-screen bg-golden-fizz-100">
+        <ul class="text-zxl uppercase">
+          <li class="mb-zdefault"><a class="animated-link" href="#">Forum</a></li>
+          <li class="mb-zdefault"><a class="animated-link" href="#">About</a></li>
+          <li class="mb-zdefault"><a class="animated-link" href="#">Community</a></li>
+          <li class="mb-zdefault"><a class="animated-link" href="#">Blog</a></li>
+          <li class="mb-zdefault"><a class="animated-link" href="#">Subscribe</a></li>
+          <li class="mb-zdefault"><a class="animated-link" href="#">Donate</a></li>
+        </ul>
+        <button
+          class="absolute top-0 right-0 p-zdefault"
+          aria-label="Close menu"
+          data-modal-close
+        >
+          <img src="/images/close-button.svg">
+        </button>
+      </nav>
+    </div>
     <main class="relative">
       <header
         class="absolute top-0 right-0 tall:sticky tall:right-auto tall:float-right hidden md:flex flex-col justify-between w-2/5 h-screen min-h-tall py-page px-header mb-screen"
@@ -132,7 +158,18 @@ levels:
               Safra Center on ending COVID-19 quarantine via Testing, Tracing, &
               Supported Isolation (#TTSI).
             </p>
-            <p><a class="animated-link" href="#">Read more</a></p>
+            <p class="flex justify-between md:block">
+              <a
+                class="animated-link md:mr-lg"
+                href="#"
+                >Read more</a
+              >
+              <button
+                class="md:hidden animated-link uppercase md:mr-lg"
+                data-modal-trigger="menu-modal"
+                >Menu</button
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -144,8 +181,7 @@ levels:
           {{ sectionHeader(section.header) }}
           <div class="md-container">
             {{ section.content | markdown | safe }}
-            <p>
-              <div class="flex justify-between md:block">
+            <p class="flex justify-between md:block">
               {% for link in section.links %}
                   <a
                     class="animated-link md:mr-lg"
@@ -153,7 +189,6 @@ levels:
                     >{{ link.text }}</a
                   >
               {% endfor %}
-              </div>
             </p>
           </div>
         </div>
@@ -234,5 +269,17 @@ levels:
         </div>
       </footer>
     </main>
+    <script>
+      $("[data-modal-declare]").each(function() {
+        const thisModal = $(this);
+        thisModal.hide();
+        $(this).find("[data-modal-close]").click(function() { thisModal.hide(); });
+      });
+      $("[data-modal-trigger]").each(function() {
+        const modalId = `#${$(this).data("modal-trigger")}`;
+        const thatModal = $(modalId);
+        $(this).click(function() { thatModal.show(); });
+      });
+    </script>
   </body>
 </html>

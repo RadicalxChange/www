@@ -9,6 +9,7 @@
 /* Custom components */
 @import "./columns.css";
 @import "./markdown.css";
+@import "./modal.css";
 @import "./layout.css";
 @import "./inline.css";
 @import "./save-the-date.css";
