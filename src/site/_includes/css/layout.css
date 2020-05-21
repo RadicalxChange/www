@@ -1,18 +1,27 @@
 /* Logo in header */
 .logo {
   @apply w-full;
+  @apply mb-zxl;
 }
 
 @screen md {
   .logo {
     width: 39.3vw;
+    @apply mb-auto;
   }
 }
 
 /* Horizontal padding for the right panel */
 .px-header {
-  @apply pl-sm;
-  @apply pr-lg;
+  @apply pl-zdefault;
+  @apply pr-zdefault;
+}
+
+@screen md {
+  .px-header {
+    @apply pl-sm;
+    @apply pr-lg;
+  }
 }
 
 /* Horizontal padding for the left panels */
@@ -28,10 +37,23 @@
   }
 }
 
+/* Horizonatal padding per page */
+.px-page {
+  @apply pl-zdefault;
+  @apply pr-zdefault;
+}
+
+@screen md {
+  .px-page {
+    @apply pl-lg;
+    @apply pr-lg;
+  }
+}
+
 /* Vertical padding per page */
 .py-page {
-  @apply pt-zdefault;
-  @apply pb-zdefault;
+  @apply pt-zlg;
+  @apply pb-zlg;
 }
 
 @screen md {
@@ -59,9 +81,4 @@
 
 .color-every-other-child:nth-child(odd) {
   @apply bg-white;
-}
-
-/* Column layout */
-.columns-3 {
-  columns: 3;
 }

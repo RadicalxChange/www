@@ -69,6 +69,12 @@ levels:
 <img src="/images/logo.svg" class="logo"/>
 {% endmacro %}
 
+{% macro sectionHeader(text) %}
+<h1 class="mb-zdefault md:mb-default font-display text-z3xl md:text-6xl uppercase leading-none">
+  {{ text }}
+</h1>
+{% endmacro %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -132,16 +138,14 @@ levels:
         <div
           class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
         >
-          <h1 class="mb-zdefault md:mb-default font-display text-z2xl md:text-6xl uppercase leading-none">
-            {{ section.header }}
-          </h1>
+          {{ sectionHeader(section.header) }}
           <div class="md-container">
             {{ section.content | markdown | safe }}
             <p>
               <div class="flex justify-between md:block">
               {% for link in section.links %}
                   <a
-                    class="animated-link md:padding-lg"
+                    class="animated-link md:mr-lg"
                     href="{{ link.href }}"
                     >{{ link.text }}</a
                   >
@@ -156,9 +160,7 @@ levels:
         <div
           class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
         >
-          <h1 class="mb-zdefault md:mb-default font-display text-z3xl md:text-6xl uppercase leading-none">
-            Sponsors
-          </h1>
+          {{ sectionHeader("Sponsors") }}
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 col-gap-12 md:max-h-3/4">
             {% for level in levels %}
             <div>
@@ -181,46 +183,46 @@ levels:
           </div>
         </div>
       </section>
-      <footer class="color-every-other-child flex">
+      <footer class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-1/2 h-screen min-h-tall py-page px-section"
+          class="flex flex-col justify-between min-h-screen md:h-screen md:min-h-tall py-page px-page"
         >
-          {{ logo() }}
-          <div>
-            <p class="mb-default">
-              Find us on social networks:
-            </p>
-            <ul class="flex">
-              <li class="mr-sm"><a class="animated-link" href="#">Instagram</a></li>
-              <li class="mr-sm"><a class="animated-link" href="#">Facebook</a></li>
-              <li class="mr-sm"><a class="animated-link" href="#">Twitter</a></li>
-              <li class="mr-sm"><a class="animated-link" href="#">LinkedIn</a></li>
-            </ul>
+          <div class="flex flex-col md:flex-row mb-zxl md:mb-lg">
+            <div class="md:w-1/2">
+              {{ logo() }}
+            </div>
+            <nav class="md:w-1/2 ">
+              <ul class="columns-2 md:columns-3">
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">About</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Materials</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">News & Press</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Community</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Blog</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Forum</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Team</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Events</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">2020 Conference</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Concepts</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Chapters</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Subscribe</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Contact</a></li>
+                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Privacy Policy</a></li>
+              </ul>
+            </nav>
           </div>
-        </div>
-        <div
-          class="flex flex-col justify-between w-1/2 h-screen min-h-tall py-page px-header"
-        >
-          <nav>
-            <ul class="columns-3">
-              <li class="uppercase mb-default"><a class="animated-link" href="#">About</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Materials</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">News & Press</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Community</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Blog</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Forum</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Team</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Events</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">2020 Conference</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Concepts</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Chapters</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Subscribe</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Contact</a></li>
-              <li class="uppercase mb-default"><a class="animated-link" href="#">Privacy Policy</a></li>
-            </ul>
-          </nav>
-          <div>
-            <p class="text-right">
+          <div class="flex flex-col md:flex-row md:items-end">
+            <div class="md:w-1/2 mb-zxl md:mb-0">
+              <p class="mb-zdefault md:mb-default">
+                Find us on social networks:
+              </p>
+              <ul class="flex flex-wrap">
+                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">Instagram</a></li>
+                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">Facebook</a></li>
+                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">Twitter</a></li>
+                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+            <p class="md:w-1/2 text-left md:text-right">
               © 2020 RadicalxChange Foundation Ltd.<br/>RadicalxChange Foundation
               Ltd., a 501(c)(3) nonprofit organization, does not support or
               oppose candidates for public office or political parties.

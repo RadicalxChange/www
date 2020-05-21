@@ -7,7 +7,8 @@
 @import "tailwindcss/utilities";
 
 /* Custom components */
+@import "./columns.css";
+@import "./markdown.css";
 @import "./layout.css";
 @import "./inline.css";
-@import "./markdown.css";
 @import "./save-the-date.css";

@@ -24,6 +24,8 @@ module.exports = {
         "3xl": "5vw",
         "4xl": "6vw",
         zdefault: "4.5vmin",
+        zlg: "6.75vmin",
+        zxl: "9vmin",
         span1: "8.333vw",
         span2: "16.666vw",
         span3: "25vw",
