@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       screens: {
         tall: { raw: "(min-height: 50vw)" },
+        landscape: { raw: "(min-height: 100vw)" },
         touch: { raw: "(hover: none)" },
       },
       colors: {
