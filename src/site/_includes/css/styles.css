@@ -12,3 +12,13 @@
 @import "./layout.css";
 @import "./inline.css";
 @import "./save-the-date.css";
+
+.mobile-modal-closed {
+  @apply hidden;
+}
+
+@screen md {
+  .mobile-modal-closed {
+    @apply flex;
+  }
+}

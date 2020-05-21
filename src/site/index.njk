@@ -86,42 +86,29 @@ levels:
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-zxl md:text-xl leading-snug">
-    <div
-      class="z-20 fixed top-0 left-0"
-      data-modal-declare="menu"
-    >
-      <nav class="relative flex justify-center items-center w-screen h-screen p-zlg bg-golden-fizz-100">
-        <ul class="columns-2 landscape:columns-auto text-center text-z2xl uppercase">
-          <li class="mb-zdefault mr-zdefault"><a class="animated-link" href="#">Forum</a></li>
-          <li class="mb-zdefault mr-zdefault"><a class="animated-link" href="#">About</a></li>
-          <li class="mb-zdefault mr-zdefault"><a class="animated-link" href="#">Community</a></li>
-          <li class="mb-zdefault mr-zdefault"><a class="animated-link" href="#">Blog</a></li>
-          <li class="mb-zdefault mr-zdefault"><a class="animated-link" href="#">Subscribe</a></li>
-          <li class="mb-zdefault mr-zdefault"><a class="animated-link" href="#">Donate</a></li>
-        </ul>
+    
+    <main class="relative">
+      <header
+        class="home-header mb-screen"
+        data-modal-declare="menu"
+      >
+        <nav>
+          <ul class="block md:flex justify-between columns-2 landscape:columns-auto md:columns-auto text-center text-zxl md:text-lg uppercase">
+            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Forum</a></li>
+            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">About</a></li>
+            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Community</a></li>
+            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Blog</a></li>
+            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Subscribe</a></li>
+            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Donate</a></li>
+          </ul>
+        </nav>
         <button
-          class="absolute top-0 right-0 p-zdefault"
+          class="absolute top-0 right-0 p-zdefault md:hidden"
           data-modal-close
         >
           <img src="/images/close-button.svg" class="close-button">
         </button>
-      </nav>
-    </div>
-    <main class="relative">
-      <header
-        class="absolute top-0 right-0 tall:sticky tall:right-auto tall:float-right hidden md:flex flex-col justify-between w-2/5 h-screen min-h-tall py-page px-header mb-screen"
-      >
-        <nav>
-          <ul class="flex justify-between text-lg uppercase">
-            <li class="mr-xs"><a class="animated-link" href="#">Forum</a></li>
-            <li class="mr-xs"><a class="animated-link" href="#">About</a></li>
-            <li class="mr-xs"><a class="animated-link" href="#">Community</a></li>
-            <li class="mr-xs"><a class="animated-link" href="#">Blog</a></li>
-            <li class="mr-xs"><a class="animated-link" href="#">Subscribe</a></li>
-            <li class="mr-xs"><a class="animated-link" href="#">Donate</a></li>
-          </ul>
-        </nav>
-        <a class="block save-the-date-container" href="#">
+        <a class="hidden md:block save-the-date-container" href="#">
           <div class="save-the-date-oval">
             <div class="relative">
               <span class="save-the-date-text save-the-date-pseudo" aria-hidden="true">
@@ -274,15 +261,15 @@ levels:
 
         thisModal.find("[data-modal-close]").click(function() {
           bodyScrollLock.enableBodyScroll(thisModalRef);
-          thisModal.hide();
+          thisModal.addClass("mobile-modal-closed");
         });
 
         $(`[data-modal-trigger='${thisModalName}']`).click(function() {
           bodyScrollLock.disableBodyScroll(thisModalRef);
-          thisModal.show();
+          thisModal.removeClass("mobile-modal-closed");
         });
 
-        thisModal.hide();
+        thisModal.addClass("mobile-modal-closed");
       });
     </script>
   </body>

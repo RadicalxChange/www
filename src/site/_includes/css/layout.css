@@ -97,3 +97,44 @@
 .color-every-other-child:nth-child(even) {
   @apply bg-white;
 }
+
+.home-header {
+  @apply z-20;
+  @apply fixed;
+  @apply top-0;
+  @apply left-0;
+  @apply right-auto;
+  @apply block;
+  @apply w-screen;
+  @apply h-screen;
+  @apply p-zlg;
+  @apply bg-golden-fizz-100;
+}
+
+@screen md {
+  .home-header {
+    @apply z-auto;
+    @apply absolute;
+    @apply top-0;
+    @apply left-auto;
+    @apply right-0;
+    @apply flex;
+    @apply flex-col;
+    @apply justify-between;
+    @apply w-2/5;
+    @apply h-screen;
+    @apply pt-4;
+    @apply pr-4;
+    @apply pb-4;
+    @apply pl-4;
+    @apply bg-transparent;
+  }
+}
+
+@screen tall {
+  .home-header {
+    @apply sticky;
+    @apply right-auto;
+    @apply float-right;
+  }
+}

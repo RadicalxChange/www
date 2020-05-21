@@ -2,7 +2,6 @@
 
 .save-the-date-container {
   @apply relative;
-  @apply block;
   @apply ml-span1;
 }
 
