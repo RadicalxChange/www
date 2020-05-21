@@ -117,9 +117,12 @@ levels:
           </div>
         </a>
       </header>
+      <a style="height: 21vmin" class="z-10 fixed bottom-0 flex md:hidden justify-center items-center w-screen bg-black text-white text-center" href="#">
+        Sign up for our annual conference<br/>June 19-21, 2020
+      </a>
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page-w-button px-section"
         >
           {{ logo() }}
           <div class="md-container">
@@ -136,7 +139,7 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-screen md:w-3/5 md:h-screen md:min-h-tall py-page px-section"
         >
           {{ sectionHeader(section.header) }}
           <div class="md-container">
@@ -185,7 +188,7 @@ levels:
       </section>
       <footer class="color-every-other-child">
         <div
-          class="flex flex-col justify-between min-h-screen md:h-screen md:min-h-tall py-page px-page"
+          class="flex flex-col justify-between min-h-screen md:h-screen md:min-h-tall py-page-w-button px-page"
         >
           <div class="flex flex-col md:flex-row mb-zxl md:mb-lg">
             <div class="md:w-1/2">

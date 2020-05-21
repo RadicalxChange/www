@@ -56,8 +56,18 @@
   @apply pb-zlg;
 }
 
+.py-page-w-button {
+  @apply pt-zlg;
+  padding-bottom: 27.75vmin;
+}
+
 @screen md {
   .py-page {
+    @apply pt-lg;
+    @apply pb-xl;
+  }
+
+  .py-page-w-button {
     @apply pt-lg;
     @apply pb-xl;
   }
@@ -75,10 +85,10 @@
 }
 
 /* Trade off colors, start with second child since first child is sticky header */
-.color-every-other-child:nth-child(even) {
+.color-every-other-child:nth-child(odd) {
   @apply bg-golden-fizz-100;
 }
 
-.color-every-other-child:nth-child(odd) {
+.color-every-other-child:nth-child(even) {
   @apply bg-white;
 }
