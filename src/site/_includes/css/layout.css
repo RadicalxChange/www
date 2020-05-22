@@ -1,76 +1,9 @@
 /* Logo in header */
 .logo-width {
   width: 100%;
-}
 
-@screen lg {
-  .logo-width {
+  @screen lg {
     width: 39.3vw;
-  }
-}
-
-/* Home header and nav */
-.home-header {
-  @apply z-20;
-  @apply fixed top-0 left-0;
-  @apply flex justify-center items-center;
-  @apply w-100vw h-100vh;
-  @apply p-lg;
-  @apply bg-golden-fizz-100;
-}
-
-@screen lg {
-  .home-header {
-    @apply z-auto;
-    @apply absolute left-auto right-0;
-    @apply flex-col justify-between items-start;
-    @apply w-span5 min-h-tall;
-    @apply pt-lg/lg pr-lg/lg pb-lg/xl pl-lg/sm;
-    @apply mb-0;
-    @apply bg-transparent;
-  }
-}
-
-@screen lg-tall {
-  .home-header {
-    @apply sticky right-auto;
-    @apply float-right;
-    @apply mb-100vh;
-  }
-}
-
-.close-button-width {
-  width: 6vmin;
-}
-
-.home-nav-list {
-  @apply block;
-  @apply text-center;
-  @apply text-base;
-  @apply uppercase;
-}
-
-@screen base-landscape {
-  .home-nav-list {
-    @apply columns-2;
-  }
-}
-
-@screen lg {
-  .home-nav-list {
-    @apply flex justify-between;
-    @apply text-lg/sm;
-  }
-}
-
-.home-nav-list-item {
-  @apply mb-base;
-}
-
-@screen lg {
-  .home-nav-list-item {
-    @apply mb-0;
-    @apply mr-lg/xs;
   }
 }
 

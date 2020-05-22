@@ -66,7 +66,7 @@ levels:
 ---
 
 {% macro logo() %}
-<img src="/images/logo.svg mb-xl lg:mb-0" class="logo-width"/>
+<img src="/images/logo.svg" class="logo-width mb-xl lg:mb-0"/>
 {% endmacro %}
 
 {% macro sectionHeader(text) %}
@@ -88,32 +88,35 @@ levels:
   <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
     <main class="relative">
       <header
-        class="home-header"
+        class="home-header_container"
         data-modal-declare="menu"
       >
         <button
-          class="absolute top-0 right-0 p-base lg:hidden"
+          class="home-header_close-button"
           data-modal-close
         >
-          <img src="/images/close-button.svg" class="close-button-width">
+          <img
+            src="/images/close-button.svg"
+            class="home-header_close-button-img"
+          />
         </button>
         <nav>
-          <ul class="home-nav-list">
-            <li class="home-nav-list-item"><a class="animated-link" href="#">Forum</a></li>
-            <li class="home-nav-list-item"><a class="animated-link" href="#">About</a></li>
-            <li class="home-nav-list-item"><a class="animated-link" href="#">Community</a></li>
-            <li class="home-nav-list-item"><a class="animated-link" href="#">Blog</a></li>
-            <li class="home-nav-list-item"><a class="animated-link" href="#">Subscribe</a></li>
-            <li class="home-nav-list-item"><a class="animated-link" href="#">Donate</a></li>
+          <ul class="home-header_nav">
+            <li class="home-header_nav-item"><a class="animated-link" href="#">Forum</a></li>
+            <li class="home-header_nav-item"><a class="animated-link" href="#">About</a></li>
+            <li class="home-header_nav-item"><a class="animated-link" href="#">Community</a></li>
+            <li class="home-header_nav-item"><a class="animated-link" href="#">Blog</a></li>
+            <li class="home-header_nav-item"><a class="animated-link" href="#">Subscribe</a></li>
+            <li class="home-header_nav-item"><a class="animated-link" href="#">Donate</a></li>
           </ul>
         </nav>
-        <a class="hidden lg:block save-the-date-container" href="#">
-          <div class="save-the-date-oval">
+        <a class="save-the-date_container" href="#">
+          <div class="save-the-date_oval">
             <div class="relative">
-              <span class="save-the-date-text save-the-date-pseudo" aria-hidden="true">
+              <span class="save-the-date_text save-the-date_filled" aria-hidden="true">
                 Save the date!
               </span>
-              <span class="save-the-date-text save-the-date-main">
+              <span class="save-the-date_text save-the-date_stroked">
                 Save the date!
               </span>
             </div>
@@ -131,7 +134,7 @@ levels:
       </a>
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page-w-button px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-100vw lg:w-span7  py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ logo() }}
           <div class="md-container">
@@ -159,7 +162,7 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-page px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader(section.header) }}
           <div class="md-container">
@@ -179,7 +182,7 @@ levels:
       {% endfor %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader("Sponsors") }}
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 col-gap-12">
@@ -206,7 +209,7 @@ levels:
       </section>
       <footer class="color-every-other-child">
         <div
-          class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall py-page-w-button px-page"
+          class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:px-lg/lg"
         >
           <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
             <div class="lg:w-span6">
@@ -259,16 +262,14 @@ levels:
         const thisModalRef = thisModal.get();
 
         thisModal.find("[data-modal-close]").click(function() {
-          bodyScrollLock.enableBodyScroll(thisModalRef);
-          thisModal.addClass("mobile-modal-closed");
+          thisModal.addClass("modal-closed");
         });
 
         $(`[data-modal-trigger='${thisModalName}']`).click(function() {
-          bodyScrollLock.disableBodyScroll(thisModalRef);
-          thisModal.removeClass("mobile-modal-closed");
+          thisModal.removeClass("modal-closed");
         });
 
-        thisModal.addClass("mobile-modal-closed");
+        thisModal.addClass("modal-closed");
       });
     </script>
   </body>

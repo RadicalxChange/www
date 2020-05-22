@@ -17,7 +17,9 @@ module.exports = class {
       require("postcss-import"),
       require("postcss-mixins"),
       require("tailwindcss"),
+      require("postcss-nested"),
       require("autoprefixer"),
+      require("postcss-prettify"),
     ])
       .process(rawCss, { from: rawFilepath })
       .then((result) => result.css);

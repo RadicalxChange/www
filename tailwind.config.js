@@ -4,9 +4,9 @@ module.exports = {
     screens: {
       lg: { raw: "(min-width: 768px)" },
       "base-landscape": {
-        raw: "(max-width: 767px and orientation: landscape)",
+        raw: "(max-width: 767px) and (orientation: landscape)",
       },
-      "lg-tall": { raw: "(min-width: 768px and min-aspect-ratio: 2/1)" },
+      "lg-tall": { raw: "(min-width: 768px) and (max-aspect-ratio: 2/1)" },
       touch: { raw: "(hover: none)" },
     },
     fontSize: {
@@ -24,7 +24,7 @@ module.exports = {
     colors: {
       "golden-fizz": { 100: "#EEFD4E" },
       black: "#000000",
-      white: "#ffffff",
+      white: "#FFFFFF",
       transparent: "transparent",
     },
     spacing: {

@@ -4,21 +4,15 @@
 @import "./fonts.css";
 
 @import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
 /* Custom components */
-@import "./columns.css";
-@import "./markdown.css";
 @import "./layout.css";
 @import "./inline.css";
+@import "./home-header.css";
 @import "./save-the-date.css";
 
-.mobile-modal-closed {
-  @apply hidden;
-}
+@import "tailwindcss/utilities";
 
-@screen lg {
-  .mobile-modal-closed {
-    @apply flex;
-  }
-}
+/* Custom utilities */
+@import "./columns.css";
+@import "./markdown.css";
