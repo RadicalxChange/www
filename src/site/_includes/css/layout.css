@@ -12,6 +12,14 @@
   height: 21vmin;
 }
 
+.conference-button-padding {
+  padding-bottom: calc(21vmin + theme("spacing.lg")) !important;
+
+  @screen lg {
+    padding-bottom: theme("spacing.lg/xl") !important;
+  }
+}
+
 /* Trade off colors, start with second child since first child is sticky header */
 .color-every-other-child:nth-child(even) {
   @apply bg-golden-fizz-100;
