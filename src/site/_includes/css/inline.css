@@ -14,7 +14,6 @@
   @apply border-solid;
   @apply border-t-3;
   @apply border-black;
-  @apply rounded;
   @apply transition-right;
   @apply duration-300;
   @apply ease-in;

@@ -17,7 +17,7 @@
   @apply hidden;
 }
 
-@screen md {
+@screen lg {
   .mobile-modal-closed {
     @apply flex;
   }

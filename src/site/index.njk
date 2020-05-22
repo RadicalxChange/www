@@ -70,7 +70,7 @@ levels:
 {% endmacro %}
 
 {% macro sectionHeader(text) %}
-<h1 class="mb-zdefault md:mb-default font-display text-z3xl md:text-6xl uppercase leading-none">
+<h1 class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none">
   {{ text }}
 </h1>
 {% endmacro %}
@@ -85,14 +85,14 @@ levels:
     <script src="https://unpkg.com/body-scroll-lock@3.0.2/lib/bodyScrollLock.min.js" integrity="sha384-TPD9y0kmdvgK9D4a+br/KYlqMn9cLVXHDVxxN93FvPj+13bPJeMJZaXAB7+p/e7X" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body class="font-body font-normal text-zxl md:text-xl leading-snug">
+  <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
     <main class="relative">
       <header
         class="home-header"
         data-modal-declare="menu"
       >
         <button
-          class="absolute top-0 right-0 p-zdefault md:hidden"
+          class="absolute top-0 right-0 p-base lg:hidden"
           data-modal-close
         >
           <img src="/images/close-button.svg" class="close-button">
@@ -107,7 +107,7 @@ levels:
             <li class="home-nav-list-item"><a class="animated-link" href="#">Donate</a></li>
           </ul>
         </nav>
-        <a class="hidden md:block save-the-date-container" href="#">
+        <a class="hidden lg:block save-the-date-container" href="#">
           <div class="save-the-date-oval">
             <div class="relative">
               <span class="save-the-date-text save-the-date-pseudo" aria-hidden="true">
@@ -119,19 +119,19 @@ levels:
             </div>
           </div>
           <div>
-            <p class="mb-default">
+            <p class="mb-lg/base">
               Annual Conference<br />June 19-21, 2020<br />Hosted online
             </p>
             <p><span class="animated-link" href="#">Register</span></p>
           </div>
         </a>
       </header>
-      <a style="height: 21vmin" class="z-10 fixed bottom-0 flex md:hidden justify-center items-center w-screen bg-black text-white text-center" href="#">
+      <a style="height: 21vmin" class="z-10 fixed bottom-0 flex lg:hidden justify-center items-center w-100vw bg-black text-white text-center" href="#">
         Sign up for our annual conference<br/>June 19-21, 2020
       </a>
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page-w-button px-section"
+          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page-w-button px-section"
         >
           {{ logo() }}
           <div class="md-container">
@@ -141,14 +141,14 @@ levels:
               Safra Center on ending COVID-19 quarantine via Testing, Tracing, &
               Supported Isolation (#TTSI).
             </p>
-            <p class="flex justify-between md:block">
+            <p class="flex justify-between lg:block">
               <a
-                class="animated-link md:mr-lg"
+                class="animated-link lg:mr-lg/lg"
                 href="#"
                 >Read more</a
               >
               <button
-                class="md:hidden animated-link uppercase md:mr-lg"
+                class="lg:hidden animated-link uppercase lg:mr-lg/lg"
                 data-modal-trigger="menu"
                 >Menu</button
               >
@@ -159,15 +159,15 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-screen md:w-3/5 md:h-screen md:min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-page px-section"
         >
           {{ sectionHeader(section.header) }}
           <div class="md-container">
             {{ section.content | markdown | safe }}
-            <p class="flex justify-between md:block">
+            <p class="flex justify-between lg:block">
               {% for link in section.links %}
                   <a
-                    class="animated-link md:mr-lg"
+                    class="animated-link lg:mr-lg/lg"
                     href="{{ link.href }}"
                     >{{ link.text }}</a
                   >
@@ -179,20 +179,20 @@ levels:
       {% endfor %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-screen md:w-3/5 min-h-screen md:h-screen md:min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page px-section"
         >
           {{ sectionHeader("Sponsors") }}
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 col-gap-12 md:max-h-3/4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 col-gap-12">
             {% for level in levels %}
             <div>
-              <h2 class="uppercase mb-zdefault md:mb-default text-zlg md:text-lg">
+              <h2 class="uppercase mb-base lg:mb-lg/base text-sm lg:text-lg/sm">
                 {{ level.name }}
               </h2>
               <ul>
                 {% for sponsor in level.sponsors %}
                 <li>
                   <a 
-                    class="animated-link text-zlg md:text-lg"
+                    class="animated-link text-sm lg:text-lg/sm"
                     href="{{ sponsor.href }}"
                     >{{ sponsor.name }}</a
                   >
@@ -206,44 +206,44 @@ levels:
       </section>
       <footer class="color-every-other-child">
         <div
-          class="flex flex-col justify-between min-h-screen md:h-screen md:min-h-tall py-page-w-button px-page"
+          class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall py-page-w-button px-page"
         >
-          <div class="flex flex-col md:flex-row mb-zxl md:mb-lg">
-            <div class="md:w-1/2">
+          <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
+            <div class="lg:w-span6">
               {{ logo() }}
             </div>
-            <nav class="md:w-1/2 ">
-              <ul class="columns-2 md:columns-3">
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">About</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Materials</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">News & Press</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Community</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Blog</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Forum</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Team</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Events</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">2020 Conference</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Concepts</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Chapters</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Subscribe</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Contact</a></li>
-                <li class="uppercase mb-zdefault md:mb-lg"><a class="animated-link" href="#">Privacy Policy</a></li>
+            <nav class="lg:w-span6 ">
+              <ul class="columns-2 lg:columns-3">
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">About</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Materials</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">News & Press</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Community</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Blog</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Forum</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Team</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Events</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">2020 Conference</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Concepts</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Chapters</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Subscribe</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Contact</a></li>
+                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Privacy Policy</a></li>
               </ul>
             </nav>
           </div>
-          <div class="flex flex-col md:flex-row md:items-end">
-            <div class="md:w-1/2 mb-zxl md:mb-0">
-              <p class="mb-zdefault md:mb-default">
+          <div class="flex flex-col lg:flex-row lg:items-end">
+            <div class="lg:w-span6 mb-xl lg:mb-0">
+              <p class="mb-base lg:mb-default">
                 Find us on social networks:
               </p>
               <ul class="flex flex-wrap">
-                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">Instagram</a></li>
-                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">Facebook</a></li>
-                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">Twitter</a></li>
-                <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-default"><a class="animated-link" href="#">LinkedIn</a></li>
+                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Instagram</a></li>
+                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Facebook</a></li>
+                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Twitter</a></li>
+                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">LinkedIn</a></li>
               </ul>
             </div>
-            <p class="md:w-1/2 text-left md:text-right">
+            <p class="lg:w-span6 text-left lg:text-right">
               © 2020 RadicalxChange Foundation Ltd.<br/>RadicalxChange Foundation
               Ltd., a 501(c)(3) nonprofit organization, does not support or
               oppose candidates for public office or political parties.

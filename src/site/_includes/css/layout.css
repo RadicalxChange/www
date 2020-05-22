@@ -1,10 +1,10 @@
 /* Logo in header */
 .logo {
   @apply w-full;
-  @apply mb-zxl;
+  @apply mb-xl;
 }
 
-@screen md {
+@screen lg {
   .logo {
     width: 39.3vw;
     @apply mb-auto;
@@ -18,63 +18,63 @@
 
 /* Horizontal padding for the right panel */
 .px-header {
-  @apply pl-zdefault;
-  @apply pr-zdefault;
+  @apply pl-base;
+  @apply pr-base;
 }
 
-@screen md {
+@screen lg {
   .px-header {
-    @apply pl-sm;
-    @apply pr-lg;
+    @apply pl-lg/sm;
+    @apply pr-lg/lg;
   }
 }
 
 /* Horizontal padding for the left panels */
 .px-section {
-  @apply pl-zdefault;
-  @apply pr-zdefault;
+  @apply pl-base;
+  @apply pr-base;
 }
 
-@screen md {
+@screen lg {
   .px-section {
-    @apply pl-lg;
-    @apply pr-sm;
+    @apply pl-lg/lg;
+    @apply pr-lg/sm;
   }
 }
 
 /* Horizonatal padding per page */
 .px-page {
-  @apply pl-zdefault;
-  @apply pr-zdefault;
+  @apply pl-base;
+  @apply pr-base;
 }
 
-@screen md {
+@screen lg {
   .px-page {
-    @apply pl-lg;
-    @apply pr-lg;
+    @apply pl-lg/lg;
+    @apply pr-lg/lg;
   }
 }
 
 /* Vertical padding per page */
 .py-page {
-  @apply pt-zlg;
-  @apply pb-zlg;
+  @apply pt-lg;
+  @apply pb-lg;
 }
 
 .py-page-w-button {
-  @apply pt-zlg;
+  @apply pt-lg;
   padding-bottom: 27.75vmin;
 }
 
-@screen md {
+@screen lg {
   .py-page {
-    @apply pt-lg;
-    @apply pb-xl;
+    @apply pt-lg/lg;
+    @apply pb-lg/xl;
   }
 
   .py-page-w-button {
-    @apply pt-lg;
-    @apply pb-xl;
+    @apply pt-lg/lg;
+    @apply pb-lg/xl;
   }
 }
 
@@ -96,13 +96,13 @@
   @apply flex;
   @apply justify-center;
   @apply items-center;
-  @apply w-screen;
-  @apply h-screen;
-  @apply p-zlg;
+  @apply w-100vw;
+  @apply h-100vh;
+  @apply p-lg;
   @apply bg-golden-fizz-100;
 }
 
-@screen md {
+@screen lg {
   .home-header {
     @apply z-auto;
     @apply absolute;
@@ -111,18 +111,18 @@
     @apply flex-col;
     @apply justify-between;
     @apply items-start;
-    @apply w-2/5;
+    @apply w-span5;
     @apply min-h-tall;
-    @apply pt-lg;
-    @apply pr-lg;
-    @apply pb-xl;
-    @apply pl-sm;
+    @apply pt-lg/lg;
+    @apply pr-lg/lg;
+    @apply pb-lg/xl;
+    @apply pl-lg/sm;
     @apply mb-0;
     @apply bg-transparent;
   }
 }
 
-@screen tall {
+@screen lg-tall {
   .home-header {
     @apply sticky;
     @apply right-auto;
@@ -135,32 +135,32 @@
   @apply block;
   @apply columns-2;
   @apply text-center;
-  @apply text-zxl;
+  @apply text-base;
   @apply uppercase;
 }
 
-@screen md {
+@screen lg {
   .home-nav-list {
     @apply flex;
     @apply justify-between;
     @apply columns-auto;
-    @apply text-lg;
+    @apply text-lg/sm;
   }
 }
 
-@screen landscape {
+@screen base-landscape {
   .home-nav-list {
     @apply columns-auto;
   }
 }
 
 .home-nav-list-item {
-  @apply mb-zdefault;
+  @apply mb-base;
 }
 
-@screen md {
+@screen lg {
   .home-nav-list-item {
     @apply mb-0;
-    @apply mr-xs;
+    @apply mr-lg/xs;
   }
 }
