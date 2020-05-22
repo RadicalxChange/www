@@ -78,17 +78,6 @@
   }
 }
 
-/* Trick to get the stick header panel not to scroll over the footer */
-.mb-screen {
-  margin-bottom: 0;
-}
-
-@screen tall {
-  .mb-screen {
-    margin-bottom: 100vh;
-  }
-}
-
 /* Trade off colors, start with second child since first child is sticky header */
 .color-every-other-child:nth-child(odd) {
   @apply bg-golden-fizz-100;
@@ -104,7 +93,9 @@
   @apply top-0;
   @apply left-0;
   @apply right-auto;
-  @apply block;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
   @apply w-screen;
   @apply h-screen;
   @apply p-zlg;
@@ -115,18 +106,18 @@
   .home-header {
     @apply z-auto;
     @apply absolute;
-    @apply top-0;
     @apply left-auto;
     @apply right-0;
-    @apply flex;
     @apply flex-col;
     @apply justify-between;
+    @apply items-start;
     @apply w-2/5;
-    @apply h-screen;
-    @apply pt-4;
-    @apply pr-4;
-    @apply pb-4;
-    @apply pl-4;
+    @apply min-h-tall;
+    @apply pt-lg;
+    @apply pr-lg;
+    @apply pb-xl;
+    @apply pl-sm;
+    @apply mb-0;
     @apply bg-transparent;
   }
 }
@@ -136,5 +127,40 @@
     @apply sticky;
     @apply right-auto;
     @apply float-right;
+    @apply mb-100vh;
+  }
+}
+
+.home-nav-list {
+  @apply block;
+  @apply columns-2;
+  @apply text-center;
+  @apply text-zxl;
+  @apply uppercase;
+}
+
+@screen md {
+  .home-nav-list {
+    @apply flex;
+    @apply justify-between;
+    @apply columns-auto;
+    @apply text-lg;
+  }
+}
+
+@screen landscape {
+  .home-nav-list {
+    @apply columns-auto;
+  }
+}
+
+.home-nav-list-item {
+  @apply mb-zdefault;
+}
+
+@screen md {
+  .home-nav-list-item {
+    @apply mb-0;
+    @apply mr-xs;
   }
 }

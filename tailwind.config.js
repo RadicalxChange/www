@@ -39,6 +39,10 @@ module.exports = {
       borderWidth: {
         "3": "3px",
       },
+      margin: {
+        "100vw": "100vw",
+        "100vh": "100vh",
+      },
     },
     fontSize: {
       xs: "0.6vw",

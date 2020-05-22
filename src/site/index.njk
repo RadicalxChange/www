@@ -86,28 +86,27 @@ levels:
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-zxl md:text-xl leading-snug">
-    
     <main class="relative">
       <header
-        class="home-header mb-screen"
+        class="home-header"
         data-modal-declare="menu"
       >
-        <nav>
-          <ul class="block md:flex justify-between columns-2 landscape:columns-auto md:columns-auto text-center text-zxl md:text-lg uppercase">
-            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Forum</a></li>
-            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">About</a></li>
-            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Community</a></li>
-            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Blog</a></li>
-            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Subscribe</a></li>
-            <li class="mb-zdefault mr-zdefault md:mb-0 md:mr-xs"><a class="animated-link" href="#">Donate</a></li>
-          </ul>
-        </nav>
         <button
           class="absolute top-0 right-0 p-zdefault md:hidden"
           data-modal-close
         >
           <img src="/images/close-button.svg" class="close-button">
         </button>
+        <nav>
+          <ul class="home-nav-list">
+            <li class="home-nav-list-item"><a class="animated-link" href="#">Forum</a></li>
+            <li class="home-nav-list-item"><a class="animated-link" href="#">About</a></li>
+            <li class="home-nav-list-item"><a class="animated-link" href="#">Community</a></li>
+            <li class="home-nav-list-item"><a class="animated-link" href="#">Blog</a></li>
+            <li class="home-nav-list-item"><a class="animated-link" href="#">Subscribe</a></li>
+            <li class="home-nav-list-item"><a class="animated-link" href="#">Donate</a></li>
+          </ul>
+        </nav>
         <a class="hidden md:block save-the-date-container" href="#">
           <div class="save-the-date-oval">
             <div class="relative">
