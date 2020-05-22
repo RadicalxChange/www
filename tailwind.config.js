@@ -46,6 +46,11 @@ module.exports = {
       span5: "41.666667%",
       span6: "50%",
       span7: "58.333333%",
+      span8: "66.666667%",
+      span9: "75%",
+      span10: "83.333333%",
+      span11: "91.666667%",
+      full: "100%",
     },
     extend: {
       borderRadius: { "50": "50%" },

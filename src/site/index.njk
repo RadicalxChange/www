@@ -86,6 +86,9 @@ levels:
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
+    <a class="z-10 fixed bottom-0 flex lg:hidden justify-center items-center w-100vw conference-button-height bg-black text-white text-center" href="#">
+      Sign up for our annual conference<br/>June 19-21, 2020
+    </a>
     <main class="relative">
       <header
         class="home-header_container"
@@ -129,12 +132,9 @@ levels:
           </div>
         </a>
       </header>
-      <a style="height: 21vmin" class="z-10 fixed bottom-0 flex lg:hidden justify-center items-center w-100vw bg-black text-white text-center" href="#">
-        Sign up for our annual conference<br/>June 19-21, 2020
-      </a>
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 h-100vh lg:h-100vh lg:min-h-tall py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-100vw lg:w-span7 h-100vh lg:min-h-tall py-lg lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ logo() }}
           <div class="md-container">
@@ -162,7 +162,7 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-lg lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader(section.header) }}
           <div class="md-container">
@@ -182,13 +182,13 @@ levels:
       {% endfor %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader("Sponsors") }}
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 col-gap-12">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-lg lg:gap-lg/xl col-gap-lg lg:col-gap-lg/xl">
             {% for level in levels %}
             <div>
-              <h2 class="uppercase mb-base lg:mb-lg/base text-sm lg:text-lg/sm">
+              <h2 class="uppercase mb-sm lg:mb-lg/sm text-sm lg:text-lg/sm">
                 {{ level.name }}
               </h2>
               <ul>
@@ -209,7 +209,7 @@ levels:
       </section>
       <footer class="color-every-other-child">
         <div
-          class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:pt-lg/lg lg:pb-lg/xl px-base lg:px-lg/lg"
+          class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:py-lg/xl px-base lg:px-lg/lg"
         >
           <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
             <div class="lg:w-span6">
@@ -236,7 +236,7 @@ levels:
           </div>
           <div class="flex flex-col lg:flex-row lg:items-end">
             <div class="lg:w-span6 mb-xl lg:mb-0">
-              <p class="mb-base lg:mb-default">
+              <p class="mb-base lg:mb-lg/base">
                 Find us on social networks:
               </p>
               <ul class="flex flex-wrap">

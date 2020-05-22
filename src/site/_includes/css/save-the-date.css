@@ -7,7 +7,7 @@
     @screen lg {
       @apply relative;
       @apply block;
-      @apply ml-span1;
+      margin-left: 8.333333vw;
     }
 
     &:hover .save-the-date_filled {

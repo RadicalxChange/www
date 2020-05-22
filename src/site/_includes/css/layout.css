@@ -7,11 +7,16 @@
   }
 }
 
+/* Conference button on mobile */
+.conference-button-height {
+  height: 21vmin;
+}
+
 /* Trade off colors, start with second child since first child is sticky header */
-.color-every-other-child:nth-child(odd) {
+.color-every-other-child:nth-child(even) {
   @apply bg-golden-fizz-100;
 }
 
-.color-every-other-child:nth-child(even) {
+.color-every-other-child:nth-child(odd) {
   @apply bg-white;
 }
