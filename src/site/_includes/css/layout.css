@@ -1,103 +1,20 @@
 /* Logo in header */
-.logo {
-  @apply w-full;
-  @apply mb-xl;
+.logo-width {
+  width: 100%;
 }
 
 @screen lg {
-  .logo {
+  .logo-width {
     width: 39.3vw;
-    @apply mb-auto;
   }
 }
 
-/* Close button in menu */
-.close-button {
-  width: 6vmin;
-}
-
-/* Horizontal padding for the right panel */
-.px-header {
-  @apply pl-base;
-  @apply pr-base;
-}
-
-@screen lg {
-  .px-header {
-    @apply pl-lg/sm;
-    @apply pr-lg/lg;
-  }
-}
-
-/* Horizontal padding for the left panels */
-.px-section {
-  @apply pl-base;
-  @apply pr-base;
-}
-
-@screen lg {
-  .px-section {
-    @apply pl-lg/lg;
-    @apply pr-lg/sm;
-  }
-}
-
-/* Horizonatal padding per page */
-.px-page {
-  @apply pl-base;
-  @apply pr-base;
-}
-
-@screen lg {
-  .px-page {
-    @apply pl-lg/lg;
-    @apply pr-lg/lg;
-  }
-}
-
-/* Vertical padding per page */
-.py-page {
-  @apply pt-lg;
-  @apply pb-lg;
-}
-
-.py-page-w-button {
-  @apply pt-lg;
-  padding-bottom: 27.75vmin;
-}
-
-@screen lg {
-  .py-page {
-    @apply pt-lg/lg;
-    @apply pb-lg/xl;
-  }
-
-  .py-page-w-button {
-    @apply pt-lg/lg;
-    @apply pb-lg/xl;
-  }
-}
-
-/* Trade off colors, start with second child since first child is sticky header */
-.color-every-other-child:nth-child(odd) {
-  @apply bg-golden-fizz-100;
-}
-
-.color-every-other-child:nth-child(even) {
-  @apply bg-white;
-}
-
+/* Home header and nav */
 .home-header {
   @apply z-20;
-  @apply fixed;
-  @apply top-0;
-  @apply left-0;
-  @apply right-auto;
-  @apply flex;
-  @apply justify-center;
-  @apply items-center;
-  @apply w-100vw;
-  @apply h-100vh;
+  @apply fixed top-0 left-0;
+  @apply flex justify-center items-center;
+  @apply w-100vw h-100vh;
   @apply p-lg;
   @apply bg-golden-fizz-100;
 }
@@ -105,18 +22,10 @@
 @screen lg {
   .home-header {
     @apply z-auto;
-    @apply absolute;
-    @apply left-auto;
-    @apply right-0;
-    @apply flex-col;
-    @apply justify-between;
-    @apply items-start;
-    @apply w-span5;
-    @apply min-h-tall;
-    @apply pt-lg/lg;
-    @apply pr-lg/lg;
-    @apply pb-lg/xl;
-    @apply pl-lg/sm;
+    @apply absolute left-auto right-0;
+    @apply flex-col justify-between items-start;
+    @apply w-span5 min-h-tall;
+    @apply pt-lg/lg pr-lg/lg pb-lg/xl pl-lg/sm;
     @apply mb-0;
     @apply bg-transparent;
   }
@@ -124,33 +33,33 @@
 
 @screen lg-tall {
   .home-header {
-    @apply sticky;
-    @apply right-auto;
+    @apply sticky right-auto;
     @apply float-right;
     @apply mb-100vh;
   }
 }
 
+.close-button-width {
+  width: 6vmin;
+}
+
 .home-nav-list {
   @apply block;
-  @apply columns-2;
   @apply text-center;
   @apply text-base;
   @apply uppercase;
 }
 
-@screen lg {
+@screen base-landscape {
   .home-nav-list {
-    @apply flex;
-    @apply justify-between;
-    @apply columns-auto;
-    @apply text-lg/sm;
+    @apply columns-2;
   }
 }
 
-@screen base-landscape {
+@screen lg {
   .home-nav-list {
-    @apply columns-auto;
+    @apply flex justify-between;
+    @apply text-lg/sm;
   }
 }
 
@@ -163,4 +72,13 @@
     @apply mb-0;
     @apply mr-lg/xs;
   }
+}
+
+/* Trade off colors, start with second child since first child is sticky header */
+.color-every-other-child:nth-child(odd) {
+  @apply bg-golden-fizz-100;
+}
+
+.color-every-other-child:nth-child(even) {
+  @apply bg-white;
 }

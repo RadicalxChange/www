@@ -66,7 +66,7 @@ levels:
 ---
 
 {% macro logo() %}
-<img src="/images/logo.svg" class="logo"/>
+<img src="/images/logo.svg mb-xl lg:mb-0" class="logo-width"/>
 {% endmacro %}
 
 {% macro sectionHeader(text) %}
@@ -95,7 +95,7 @@ levels:
           class="absolute top-0 right-0 p-base lg:hidden"
           data-modal-close
         >
-          <img src="/images/close-button.svg" class="close-button">
+          <img src="/images/close-button.svg" class="close-button-width">
         </button>
         <nav>
           <ul class="home-nav-list">
@@ -131,7 +131,7 @@ levels:
       </a>
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page-w-button px-section"
+          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page-w-button px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ logo() }}
           <div class="md-container">
@@ -159,7 +159,7 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-page px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader(section.header) }}
           <div class="md-container">
@@ -179,7 +179,7 @@ levels:
       {% endfor %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page px-section"
+          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-page px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader("Sponsors") }}
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 col-gap-12">
