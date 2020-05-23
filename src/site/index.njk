@@ -86,7 +86,7 @@ levels:
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
-    <a class="z-20 fixed bottom-0 flex lg:hidden justify-center items-center w-100vw conference-button-height bg-black text-white text-center" href="#">
+    <a class="z-20 fixed bottom-0 flex lg:hidden justify-center items-center w-full conference-button-height bg-black text-white text-center" href="#">
       Sign up for our annual conference<br/>June 19-21, 2020
     </a>
     <aside
@@ -133,7 +133,7 @@ levels:
     </aside>
     <header id="first-page" class="bg-golden-fizz-100">
       <div
-        class="flex flex-col justify-between w-100vw lg:w-span7 conference-button-section-height lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+        class="flex flex-col justify-between w-full lg:w-span7 conference-button-section-height lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
       >
         {{ logo() }}
         <div class="md-container">
@@ -166,7 +166,7 @@ levels:
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 lg:h-100vh lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-full lg:w-span7 lg:h-100vh lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader(section.header) }}
           <div class="md-container">
@@ -186,7 +186,7 @@ levels:
       {% endfor %}
       <section class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+          class="flex flex-col justify-between w-full lg:w-span7 min-h-100vh lg:h-100vh lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ sectionHeader("Sponsors") }}
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-lg lg:gap-lg/xl col-gap-lg lg:col-gap-lg/xl">
