@@ -89,6 +89,13 @@ levels:
     <a class="z-10 fixed bottom-0 flex lg:hidden justify-center items-center w-100vw conference-button-height bg-black text-white text-center" href="#">
       Sign up for our annual conference<br/>June 19-21, 2020
     </a>
+    <div id="float-menu-button" class="z-10 fixed top-0 right-0 px-base py-sm bg-golden-fizz-100">
+      <button
+        class="animated-link uppercase"
+        data-modal-trigger="menu"
+        >Menu</button
+      >
+    </div>
     <header
       class="home-header_container"
       data-modal-declare="menu"
@@ -132,9 +139,10 @@ levels:
       </a>
     </header>
     <main>
-      <section class="color-every-other-child">
+      <section id="first-page" class="color-every-other-child">
         <div
-          class="flex flex-col justify-between w-100vw lg:w-span7 h-100vh lg:min-h-tall py-lg lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg conference-button-padding"
+        style="height: calc(100vh - 21vmin);"
+          class="flex flex-col justify-between w-100vw lg:w-span7 lg:min-h-tall py-lg lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
         >
           {{ logo() }}
           <div class="md-container">
@@ -207,7 +215,7 @@ levels:
           </div>
         </div>
       </section>
-      <footer class="color-every-other-child">
+      <footer id="last-page" class="color-every-other-child">
         <div
           class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:py-lg/xl px-base lg:px-lg/lg conference-button-padding"
         >
@@ -271,6 +279,22 @@ levels:
 
         thisModal.addClass("modal-closed");
       });
+
+      const menuButton = $("#float-menu-button");
+
+      const firstPage = document.getElementById("first-page");
+      const lastPage = document.getElementById("last-page");
+      const observer = new IntersectionObserver((entries, observer) => { 
+        entries.forEach(entry => {
+            if (entry.intersectionRatio == 0){
+              menuButton.show();
+            } else {
+              menuButton.hide();
+            }
+        });
+      }, {threshold: [0, 1]});
+      observer.observe(firstPage);
+      observer.observe(lastPage);
     </script>
   </body>
 </html>

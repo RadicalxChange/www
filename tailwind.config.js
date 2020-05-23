@@ -36,6 +36,7 @@ module.exports = {
       "lg/base": "1vw",
       "lg/lg": "2vw",
       "lg/xl": "3vw",
+      sm: "2.25vmin",
       base: "4.5vmin",
       lg: "6.75vmin",
       xl: "9vmin",
