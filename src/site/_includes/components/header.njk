@@ -1,0 +1,10 @@
+{% macro render(height) %}
+<header id="first-page" class="bg-golden-fizz-100">
+  <div
+    class="flex flex-col justify-between w-full lg:w-span7 {{height}} lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+  >
+    <img src="/images/logo.svg" class="logo-width mb-xl lg:mb-0" />
+    {{ caller() }}
+  </div>
+</header>
+{% endmacro %}

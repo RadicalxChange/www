@@ -76,49 +76,17 @@ levels:
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
 
-<a
-  class="z-20 fixed bottom-0 flex lg:hidden justify-center items-center w-full conference-button-height bg-black text-white text-center"
-  href="#"
->
-  Sign up for our annual conference<br />June 19-21, 2020
-</a>
+<!-- prettier-ignore -->
 {% call nav.render() %}
-<a class="save-the-date_container" href="#">
-  <div class="save-the-date_oval">
-    <div class="relative">
-      <span class="save-the-date_text save-the-date_filled" aria-hidden="true">
-        Save the date!
-      </span>
-      <span class="save-the-date_text save-the-date_stroked">
-        Save the date!
-      </span>
-    </div>
-  </div>
-  <div>
-    <p class="mb-lg/base">
-      Annual Conference<br />June 19-21, 2020<br />Hosted online
-    </p>
-    <p><span class="animated-link" href="#">Register</span></p>
-  </div>
-</a>
+<!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->
-{% call header.render("conference-button-section-height") %}
-<div class="md-container">
-  <p>
-    RadicalxChange Foundation is an Institutional Affiliate on the Roadmap to
-    Pandemic Resistance, the latest report by the Edmond J. Safra Center on
-    ending COVID-19 quarantine via Testing, Tracing, & Supported Isolation
-    (#TTSI).
-  </p>
-  <p class="flex justify-between lg:block">
-    <a class="animated-link lg:mr-lg/lg" href="#">Read more</a>
-  </p>
-</div>
+{% call header.render("h-100vh") %}
+<!-- prettier-ignore -->
 {% endcall %}
 <main>
   <!-- prettier-ignore -->
-  {{ nav.menuButton() }}
+  {{nav.menuButton()}}
   <!-- prettier-ignore -->
   {% for s in sections %}
   <!-- prettier-ignore -->
@@ -135,36 +103,11 @@ levels:
   {% endcall %}
   <!-- prettier-ignore -->
   {% endfor %}
-  <!-- prettier-ignore -->
-  {% call section.render("Sponsors") %}
-  <div
-    class="grid grid-cols-1 lg:grid-cols-2 gap-lg lg:gap-lg/xl col-gap-lg lg:col-gap-lg/xl"
-  >
-    {% for l in levels %}
-    <div>
-      <h2 class="uppercase mb-sm lg:mb-lg/sm text-sm lg:text-lg/sm">
-        {{ l.name }}
-      </h2>
-      <ul>
-        {% for s in l.sponsors %}
-        <li>
-          <a class="animated-link text-sm lg:text-lg/sm" href="{{ s.href }}"
-            >{{ s.name }}</a
-          >
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
-  </div>
-  <!-- prettier-ignore -->
-  {% endcall %}
 </main>
 <!-- prettier-ignore -->
-{% call footer.render('bg-golden-fizz-100' if sections.length % 2 == 0 else 'bg-white', "conference-button-pb") %}
+{% call footer.render('bg-golden-fizz-100' if sections.length % 2 == 1 else 'bg-white') %}
 <!-- prettier-ignore -->
 {% endcall %}
 <script>
-  // prettier-ignore
   {% include "components/nav.js" %}
 </script>

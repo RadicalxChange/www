@@ -1,0 +1,36 @@
+{% macro render(announcment) %}
+<nav class="home-header_container" data-modal-declare="menu">
+  <ul class="home-header_nav">
+    <li class="home-header_nav-item">
+      <a class="animated-link" href="#">Forum</a>
+    </li>
+    <li class="home-header_nav-item">
+      <a class="animated-link" href="#">About</a>
+    </li>
+    <li class="home-header_nav-item">
+      <a class="animated-link" href="#">Community</a>
+    </li>
+    <li class="home-header_nav-item">
+      <a class="animated-link" href="#">Blog</a>
+    </li>
+    <li class="home-header_nav-item">
+      <a class="animated-link" href="#">Subscribe</a>
+    </li>
+    <li class="home-header_nav-item">
+      <a class="animated-link" href="#">Donate</a>
+    </li>
+  </ul>
+  <button class="home-header_close-button" data-modal-close>
+    <img src="/images/close-button.svg" class="home-header_close-button-img" />
+  </button>
+  {{ caller() }}
+</nav>
+{% endmacro %} {% macro menuButton() %}
+<div class="z-10 sticky top-0 h-0 float-right lg:hidden">
+  <div id="float-menu-button" class="bg-golden-fizz-100 menu-hidden">
+    <button class="animated-link uppercase" data-modal-trigger="menu">
+      Menu
+    </button>
+  </div>
+</div>
+{% endmacro %}

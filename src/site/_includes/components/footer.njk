@@ -1,0 +1,85 @@
+{% macro render(bgColor, paddingBottom="pb-base lg:pb-lg/xl") %}
+<footer class="{{ bgColor }}">
+  <div
+    class="flex flex-col justify-between min-h-screen lg:h-100vh lg:min-h-tall pt-base lg:pt-lg/xl {{ paddingBottom }} px-base lg:px-lg/lg"
+  >
+    <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
+      <div class="lg:w-span6">
+        <img src="/images/logo.svg" class="logo-width mb-xl lg:mb-0" />
+      </div>
+      <nav class="lg:w-span6">
+        <ul class="columns-2 lg:columns-3">
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">About</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Materials</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">News & Press</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Community</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Blog</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Forum</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Team</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Events</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">2020 Conference</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Concepts</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Chapters</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Subscribe</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Contact</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex flex-col lg:flex-row lg:items-end">
+      <div class="lg:w-span6 mb-xl lg:mb-0">
+        <p class="mb-base lg:mb-lg/base">
+          Find us on social networks:
+        </p>
+        <ul class="flex flex-wrap">
+          <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
+            <a class="animated-link" href="#">Instagram</a>
+          </li>
+          <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
+            <a class="animated-link" href="#">Facebook</a>
+          </li>
+          <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
+            <a class="animated-link" href="#">Twitter</a>
+          </li>
+          <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
+            <a class="animated-link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <p class="lg:w-span6 text-left lg:text-right">
+        © 2020 RadicalxChange Foundation Ltd.<br />RadicalxChange Foundation
+        Ltd., a 501(c)(3) nonprofit organization, does not support or oppose
+        candidates for public office or political parties.
+      </p>
+    </div>
+  </div>
+</footer>
+{% endmacro %}
