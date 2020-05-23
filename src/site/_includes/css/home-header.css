@@ -1,6 +1,6 @@
 .home-header {
   &_container {
-    @apply z-20;
+    @apply z-30;
     @apply fixed top-0 left-0;
     @apply flex justify-center items-center;
     @apply w-100vw h-100vh;

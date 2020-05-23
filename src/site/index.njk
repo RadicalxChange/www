@@ -86,17 +86,37 @@ levels:
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
-    <a class="z-10 fixed bottom-0 flex lg:hidden justify-center items-center w-100vw conference-button-height bg-black text-white text-center" href="#">
+    <a class="z-20 fixed bottom-0 flex lg:hidden justify-center items-center w-100vw conference-button-height bg-black text-white text-center" href="#">
       Sign up for our annual conference<br/>June 19-21, 2020
     </a>
-    <div id="float-menu-button" class="z-10 fixed top-0 right-0 px-base py-sm bg-golden-fizz-100">
-      <button
-        class="animated-link uppercase"
-        data-modal-trigger="menu"
-        >Menu</button
+    <header id="first-page" class="bg-golden-fizz-100">
+      <div
+        class="flex flex-col justify-between w-100vw lg:w-span7 conference-button-section-height lg:min-h-tall py-lg lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
       >
-    </div>
-    <header
+        {{ logo() }}
+        <div class="md-container">
+          <p>
+            RadicalxChange Foundation is an Institutional Affiliate on the
+            Roadmap to Pandemic Resistance, the latest report by the Edmond J.
+            Safra Center on ending COVID-19 quarantine via Testing, Tracing, &
+            Supported Isolation (#TTSI).
+          </p>
+          <p class="flex justify-between lg:block">
+            <a
+              class="animated-link lg:mr-lg/lg"
+              href="#"
+              >Read more</a
+            >
+            <button
+              class="lg:hidden animated-link uppercase lg:mr-lg/lg"
+              data-modal-trigger="menu"
+              >Menu</button
+            >
+          </p>
+        </div>
+      </div>
+    </header>
+    <aside
       class="home-header_container"
       data-modal-declare="menu"
     >
@@ -137,36 +157,15 @@ levels:
           <p><span class="animated-link" href="#">Register</span></p>
         </div>
       </a>
-    </header>
+    </aside>
     <main>
-      <section class="color-every-other-child">
-        <div
-        style="height: calc(100vh - 21vmin);"
-          class="flex flex-col justify-between w-100vw lg:w-span7 lg:min-h-tall py-lg lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+      <div id="float-menu-button" class="z-10 sticky top-0 float-right px-base py-sm bg-golden-fizz-100">
+        <button
+          class="animated-link uppercase"
+          data-modal-trigger="menu"
+          >Menu</button
         >
-          {{ logo() }}
-          <div class="md-container">
-            <p>
-              RadicalxChange Foundation is an Institutional Affiliate on the
-              Roadmap to Pandemic Resistance, the latest report by the Edmond J.
-              Safra Center on ending COVID-19 quarantine via Testing, Tracing, &
-              Supported Isolation (#TTSI).
-            </p>
-            <p class="flex justify-between lg:block">
-              <a
-                class="animated-link lg:mr-lg/lg"
-                href="#"
-                >Read more</a
-              >
-              <button
-                class="lg:hidden animated-link uppercase lg:mr-lg/lg"
-                data-modal-trigger="menu"
-                >Menu</button
-              >
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
       {% for section in sections %}
       <section class="color-every-other-child">
         <div
@@ -215,54 +214,54 @@ levels:
           </div>
         </div>
       </section>
-      <section class="color-every-other-child">
-        <div
-          class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall py-lg lg:py-lg/xl px-base lg:px-lg/lg conference-button-padding"
-        >
-          <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
-            <div class="lg:w-span6">
-              {{ logo() }}
-            </div>
-            <nav class="lg:w-span6 ">
-              <ul class="columns-2 lg:columns-3">
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">About</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Materials</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">News & Press</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Community</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Blog</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Forum</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Team</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Events</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">2020 Conference</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Concepts</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Chapters</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Subscribe</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Contact</a></li>
-                <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Privacy Policy</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="flex flex-col lg:flex-row lg:items-end">
-            <div class="lg:w-span6 mb-xl lg:mb-0">
-              <p class="mb-base lg:mb-lg/base">
-                Find us on social networks:
-              </p>
-              <ul class="flex flex-wrap">
-                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Instagram</a></li>
-                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Facebook</a></li>
-                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Twitter</a></li>
-                <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">LinkedIn</a></li>
-              </ul>
-            </div>
-            <p class="lg:w-span6 text-left lg:text-right">
-              © 2020 RadicalxChange Foundation Ltd.<br/>RadicalxChange Foundation
-              Ltd., a 501(c)(3) nonprofit organization, does not support or
-              oppose candidates for public office or political parties.
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
+    <footer class="{{ 'bg-golden-fizz-100' if sections.length % 2 == 0 else 'bg-white' }}">
+      <div
+        class="flex flex-col justify-between min-h-100vh lg:h-100vh lg:min-h-tall pt-lg lg:pt-lg/xl conference-button-pb px-base lg:px-lg/lg"
+      >
+        <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
+          <div class="lg:w-span6">
+            {{ logo() }}
+          </div>
+          <nav class="lg:w-span6 ">
+            <ul class="columns-2 lg:columns-3">
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">About</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Materials</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">News & Press</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Community</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Blog</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Forum</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Team</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Events</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">2020 Conference</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Concepts</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Chapters</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Subscribe</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Contact</a></li>
+              <li class="uppercase mb-base lg:mb-lg/lg"><a class="animated-link" href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex flex-col lg:flex-row lg:items-end">
+          <div class="lg:w-span6 mb-xl lg:mb-0">
+            <p class="mb-base lg:mb-lg/base">
+              Find us on social networks:
+            </p>
+            <ul class="flex flex-wrap">
+              <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Instagram</a></li>
+              <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Facebook</a></li>
+              <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">Twitter</a></li>
+              <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base"><a class="animated-link" href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <p class="lg:w-span6 text-left lg:text-right">
+            © 2020 RadicalxChange Foundation Ltd.<br/>RadicalxChange Foundation
+            Ltd., a 501(c)(3) nonprofit organization, does not support or
+            oppose candidates for public office or political parties.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script>
       $("[data-modal-declare]").each(function() {
         const thisModal = $(this);
@@ -282,26 +281,17 @@ levels:
 
       const menuButton = $("#float-menu-button");
       menuButton.hide();
-
-      const firstPage = document.querySelector("section:first-child");
+      const firstPage = document.querySelector("#first-page");
       const disappearObserver = new IntersectionObserver((entries, observer) => { 
         entries.forEach(entry => {
           if (entry.intersectionRatio == 0){
-            if (entry.target === firstPage) {
-              menuButton.show();
-            }
+            menuButton.show();
           } else {
-            if (entry.target === firstPage) {
-              menuButton.hide();
-            }
+            menuButton.hide();
           }
         });
       }, {threshold: 0});
       disappearObserver.observe(firstPage);
-
-      const lastPage = document.querySelector("footer:last-child");
-
-
     </script>
   </body>
 </html>

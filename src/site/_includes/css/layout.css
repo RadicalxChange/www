@@ -12,19 +12,27 @@
   height: 21vmin;
 }
 
-.conference-button-padding {
-  padding-bottom: calc(21vmin + theme("spacing.lg")) !important;
+.conference-button-section-height {
+  height: calc(100vh - 21vmin);
 
   @screen lg {
-    padding-bottom: theme("spacing.lg/xl") !important;
+    height: auto;
+  }
+}
+
+.conference-button-pb {
+  padding-bottom: calc(21vmin + theme("spacing.lg"));
+
+  @screen lg {
+    padding-bottom: theme("spacing.lg/xl");
   }
 }
 
 /* Alternate background colors */
-.color-every-other-child:nth-of-type(odd) {
+.color-every-other-child:nth-of-type(even) {
   @apply bg-golden-fizz-100;
 }
 
-.color-every-other-child:nth-of-type(even) {
+.color-every-other-child:nth-of-type(odd) {
   @apply bg-white;
 }
