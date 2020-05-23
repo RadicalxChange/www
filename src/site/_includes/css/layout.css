@@ -21,7 +21,7 @@
 }
 
 .conference-button-pb {
-  padding-bottom: calc(21vmin + theme("spacing.lg"));
+  padding-bottom: calc(21vmin + theme("spacing.base"));
 
   @screen lg {
     padding-bottom: theme("spacing.lg/xl");
@@ -50,7 +50,7 @@
 
 .menu-hidden {
   @apply px-base py-0;
-  transform: translateY(calc(-100% - theme("spacing.lg")));
+  transform: translateY(calc(-100% - theme("spacing.base")));
   transition: transform 1s ease-in-out;
 
   @screen lg {
