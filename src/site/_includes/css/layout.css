@@ -42,18 +42,10 @@
   @apply px-base py-sm;
   transform: translateY(0);
   transition: transform 1s ease-in-out;
-
-  @screen lg {
-    @apply hidden;
-  }
 }
 
 .menu-hidden {
   @apply px-base py-0;
   transform: translateY(calc(-100% - theme("spacing.base")));
   transition: transform 1s ease-in-out;
-
-  @screen lg {
-    @apply hidden;
-  }
 }
