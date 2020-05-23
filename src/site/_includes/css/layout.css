@@ -16,7 +16,7 @@
   height: calc(100vh - 21vmin);
 
   @screen lg {
-    height: auto;
+    height: 100vh;
   }
 }
 
@@ -35,4 +35,25 @@
 
 .color-every-other-child:nth-of-type(odd) {
   @apply bg-white;
+}
+
+/* Floating menu visibilty */
+.menu-visible {
+  @apply px-base py-sm;
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+
+  @screen lg {
+    @apply hidden;
+  }
+}
+
+.menu-hidden {
+  @apply px-base py-0;
+  transform: translateY(calc(-100% - theme("spacing.lg")));
+  transition: transform 1s ease-in-out;
+
+  @screen lg {
+    @apply hidden;
+  }
 }
