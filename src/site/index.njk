@@ -154,8 +154,8 @@ levels:
       </div>
     </header>
     <main>
-      <div class="z-10 sticky top-0 float-right lg:hidden">
-        <div id="float-menu-button" class="bg-golden-fizz-100">
+      <div class="z-10 sticky top-0 h-0 float-right lg:hidden">
+        <div id="float-menu-button" class="bg-golden-fizz-100 menu-hidden">
           <button
             class="animated-link uppercase"
             data-modal-trigger="menu"
@@ -277,8 +277,6 @@ levels:
       });
 
       const menuButton = $("#float-menu-button");
-      menuButton.removeClass("menu-visible");
-      menuButton.addClass("menu-hidden");
       const firstPage = document.querySelector("#first-page");
       const disappearObserver = new IntersectionObserver((entries, observer) => { 
         entries.forEach(entry => {
