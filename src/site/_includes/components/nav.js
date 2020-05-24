@@ -19,7 +19,7 @@ const firstPage = document.querySelector("#first-page");
 const disappearObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.intersectionRatio == 0) {
+      if (!entry.isIntersecting) {
         menuButton.removeClass("menu-hidden");
         menuButton.addClass("menu-visible");
       } else {

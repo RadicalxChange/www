@@ -1,70 +1,6 @@
 ---
 layout: layouts/base.njk
-title: RadicalxChange
-sections:
-  - header: "What is Radical x Change?"
-    content: |
-      RadicalxChange is a global movement dedicated to reimagining the building blocks of democracy and markets in order to uphold fairness, plurality, and meaningful participation in a rapidly changing world.
-
-      The RadicalxChange Foundation is a non-profit organization dedicated to advancing that cause, founded by E. Glen Weyl following the publication the book Radical Markets in 2018. The ideas in Radical Markets provided a starting place for envisioning institutions that preserve democratic values in a rapidly-changing technological landscape, as the project and vision continue to evolve.
-    links:
-      - text: "Read more"
-        href: "#"
-  - header: "The Radical x Change Community"
-    content: |
-      As a global community, we stand at a unique crossroads with signs that social and economic systems are failing everywhere: rising inequality, stagnating economies and increasing threats to democracy. To address this, we believe that positive and comprehensive change is only possible through the inclusion of diverse voices. We need art to help us imagine new possibilities, scholarship to help us use the lessons of the past to design better societies, entrepreneurship to build new institutions, and activism to bridge ideological lines to fight hate and division. The RadicalxChange community has given rise to dozens of start-ups and local chapters around the world, major shifts in antitrust and data regulation, a substantial body of research and scholarship, and a wide range of artistic projects. We want you to be a part of it!
-    links:
-      - text: "Meet the team"
-        href: "#"
-      - text: "Find a chapter"
-        href: "#"
-  - header: "The Radical x Change Commitment"
-    content: |
-      RadicalxChange is committed to building a society that advances plurality, community and equality by developing positive alternatives, grounded in rigorous social science, while also embracing technology and well-functioning markets. By moving beyond traditional institutions like private property and one-person-one-vote, it seeks to transcend old dichotomies between economy and politics, market and the state, or right and left. However, RadicalxChange rejects utopian claims to “neutrality.” The project is animated by definite values–for example, that a better society would be one in which everyone participates more meaningfully in key institutions including democracy and markets.
-    links:
-      - text: "Events"
-        href: "#"
-levels:
-  - name: Cost Patron
-    sponsors:
-      - name: Hewlett Foundation
-        href: "#"
-      - name: Kauffman Foundation
-        href: "#"
-      - name: Merit
-        href: "#"
-  - name: Public Good Provider
-    sponsors:
-      - name: Omidyar Network
-        href: "#"
-      - name: Wireline
-        href: "#"
-  - name: Change Maker
-    sponsors:
-      - name: The Charter Cities Institute
-        href: "#"
-      - name: Institute for New Economic Thinking
-        href: "#"
-      - name: The Osa Foundation
-        href: "#"
-      - name: Alfred P. Sloan Foundation
-        href: "#"
-  - name: Community Builder
-    sponsors:
-      - name: Bunz
-        href: "#"
-      - name: College for Creative Studies
-        href: "#"
-      - name: Microsoft
-        href: "#"
-      - name: Totle
-        href: "#"
-  - name: Grassroots Supporter
-    sponsors:
-      - name: Democracy Earth
-        href: "#"
-      - name: Evil Twin Booking
-        href: "#"
+title: 2020 Conference - RadicalxChange
 ---
 
 <!-- prettier-ignore -->
@@ -81,28 +17,54 @@ levels:
 <!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->
-{% call header.render("h-100vh") %}
+{% call header.render("Conference") %}
+<div class="flex-grow flex flex-col justify-between">
+  <div class="mb-lg lg:mb-lg/lg">
+    <p class="uppercase text-lg lg:text-lg/lg mb-lg lg:mb-lg/lg">
+      June 19-21, 2020<br />
+      Hosted Online
+    </p>
+    <p class="md-container">
+      Join us as we convene a community of innovators, activists, artists, and
+      scholars from around the world for RadicalxChange’s second annual
+      conference from June 19th to 21st. The conference will consist of
+      presentations, panels, and workshops based around RxC topics such as Data
+      Dignity, Quadratic Voting, Quadratic Finance, SALSA (self-assessed
+      property), and Decentralized Identity. We invite local and global leaders
+      and change-makers to learn how technologists, creatives, and academics are
+      using RxC ideas to solve our most divisive social problems while building
+      a future where power is distributed across diverse democratic
+      organizations.
+    </p>
+  </div>
+  <div>
+    <ul class="flex flex-col lg:flex-row justify-between">
+      <li><a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Register for the conference</a></li>
+      <li><a class="animated-link text-sm lg:text-lg/sm" href="#">Speak at the conference</a></li>
+      <li><a class="animated-link text-sm lg:text-lg/sm" href="#">Sponsor the conference</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
 <!-- prettier-ignore -->
 {% endcall %}
 <main>
   <!-- prettier-ignore -->
   {{nav.menuButton()}}
   <!-- prettier-ignore -->
-  {% for s in sections %}
-  <!-- prettier-ignore -->
-  {% call section.render(s.header) %}
+  {% call section.render("Speakers") %}
   <div class="md-container">
-    {{ s.content | markdown | safe }}
-    <p class="flex justify-between lg:block">
-      {% for l in s.links %}
-      <a class="animated-link lg:mr-lg/lg" href="{{ l.href }}">{{ l.text }}</a>
-      {% endfor %}
-    </p>
+    TODO sponsors section
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% endfor %}
+  {% call section.render("Sponsors") %}
+  <div class="md-container">
+    TODO sponsors section
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
 </main>
 <!-- prettier-ignore -->
 {% call footer.render('bg-golden-fizz-100' if sections.length % 2 == 1 else 'bg-white') %}

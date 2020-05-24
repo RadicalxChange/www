@@ -1,9 +1,21 @@
-{% macro render(height) %}
+<!-- prettier-ignore -->
+{% macro render(title="", height="min-h-screen lg:min-h-tall lg-tall:min-h-screen") %}
 <header id="first-page" class="bg-golden-fizz-100">
   <div
-    class="flex flex-col justify-between w-full lg:w-span7 {{height}} lg:min-h-tall py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+    class="flex flex-col justify-between w-full lg:w-span7 {{height}} py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
   >
-    <img src="/images/logo.svg" class="logo-width mb-xl lg:mb-0" />
+    {% if title == "" %}
+    <a href="/"
+      ><img src="/images/logo.svg" class="logo-width mb-xl lg:mb-0"
+    /></a>
+    {% else %}
+    <h1
+      class="mb-lg lg:mb-lg/lg font-display text-header lg:text-lg/header uppercase leading-none"
+    >
+      {{ title }}
+    </h1>
+    {% endif %}
+    <!-- prettier-ignore -->
     {{ caller() }}
   </div>
 </header>
