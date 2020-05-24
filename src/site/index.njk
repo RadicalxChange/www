@@ -82,41 +82,44 @@ levels:
 >
   Sign up for our annual conference<br />June 19-21, 2020
 </a>
-{% call nav.render() %}
-<a class="save-the-date_container" href="#">
-  <div class="save-the-date_oval">
-    <div class="relative">
-      <span class="save-the-date_text save-the-date_filled" aria-hidden="true">
-        Save the date!
-      </span>
-      <span class="save-the-date_text save-the-date_stroked">
-        Save the date!
-      </span>
-    </div>
-  </div>
-  <div>
-    <p class="mb-lg/base">
-      Annual Conference<br />June 19-21, 2020<br />Hosted online
-    </p>
-    <p><span class="animated-link" href="#">Register</span></p>
-  </div>
-</a>
-{% endcall %}
-<!-- prettier-ignore -->
-{% call header.render("", "conference-button-section-height") %}
-<div class="md-container">
-  <p>
-    RadicalxChange Foundation is an Institutional Affiliate on the Roadmap to
-    Pandemic Resistance, the latest report by the Edmond J. Safra Center on
-    ending COVID-19 quarantine via Testing, Tracing, & Supported Isolation
-    (#TTSI).
-  </p>
-  <p class="flex justify-between lg:block">
-    <a class="animated-link lg:mr-lg/lg" href="#">Read more</a>
-  </p>
-</div>
-{% endcall %}
 <main>
+  {% call nav.render() %}
+  <a class="save-the-date_container" href="#">
+    <div class="save-the-date_oval">
+      <div class="relative">
+        <span
+          class="save-the-date_text save-the-date_filled"
+          aria-hidden="true"
+        >
+          Save the date!
+        </span>
+        <span class="save-the-date_text save-the-date_stroked">
+          Save the date!
+        </span>
+      </div>
+    </div>
+    <div>
+      <p class="mb-lg/base">
+        Annual Conference<br />June 19-21, 2020<br />Hosted online
+      </p>
+      <p><span class="animated-link" href="#">Register</span></p>
+    </div>
+  </a>
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call header.render("", "conference-button-section-height") %}
+  <div class="md-container">
+    <p>
+      RadicalxChange Foundation is an Institutional Affiliate on the Roadmap to
+      Pandemic Resistance, the latest report by the Edmond J. Safra Center on
+      ending COVID-19 quarantine via Testing, Tracing, & Supported Isolation
+      (#TTSI).
+    </p>
+    <p class="flex justify-between lg:block">
+      <a class="animated-link lg:mr-lg/lg" href="#">Read more</a>
+    </p>
+  </div>
+  {% endcall %}
   <!-- prettier-ignore -->
   {{ nav.menuButton() }}
   <!-- prettier-ignore -->
@@ -148,9 +151,9 @@ levels:
       <ul>
         {% for s in l.sponsors %}
         <li>
-          <a class="animated-link text-sm lg:text-lg/sm" href="{{ s.href }}"
-            >{{ s.name }}</a
-          >
+          <a class="animated-link text-sm lg:text-lg/sm" href="{{ s.href }}">{{
+            s.name
+          }}</a>
         </li>
         {% endfor %}
       </ul>

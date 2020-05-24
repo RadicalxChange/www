@@ -27,7 +27,6 @@
     @screen lg-tall {
       @apply sticky right-auto;
       @apply float-right;
-      @apply mb-100vh;
     }
   }
 
