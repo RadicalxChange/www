@@ -12,7 +12,6 @@ title: 2020 Conference - RadicalxChange
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
 
-
 <main>
   <!-- prettier-ignore -->
   {% call nav.render() %}
@@ -52,9 +51,9 @@ title: 2020 Conference - RadicalxChange
   {% endcall %}
   <!-- prettier-ignore -->
   {{nav.menuButton()}}
-  <section class="color-every-other-child">
+  <section class="color-every-other-child lg:flex">
     <div
-      class="flex flex-col w-full lg:min-h-tall lg-tall:min-h-screen"
+      class="flex flex-col w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
     >
       <h1
         class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
@@ -63,16 +62,18 @@ title: 2020 Conference - RadicalxChange
       </h1>
       <div>
         <p>#RxCon</p>
+        <p>Experience the past, present, and future of cooperative plurality</p>
+        <p>48 hours of interactive and live streaming</p>
       </div>
     </div>
-  </section>
-  <!-- prettier-ignore -->
-  {% call section.render("Speakers") %}
-  <div class="md-container">
-    TODO sponsors section
+    <div
+      class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+    >
+    {% for s in speakers2020 %}
+    <p>{{ s.bio }}</p>
+    {% endfor %}
   </div>
-  <!-- prettier-ignore -->
-  {% endcall %}
+  </section>
   <!-- prettier-ignore -->
   {% call section.render("Sponsors") %}
   <div class="md-container">
