@@ -34,10 +34,10 @@ sponsors:
 <main>
   <!-- prettier-ignore -->
   {% call nav.render(false) %}
-  <div>
-    <p>#RxCon</p>
-    <p class="uppercase">Experience the past, present, and future of cooperative plurality</p>
-    <p class="uppercase">48 hours of interactive and live streaming</p>
+  <div style="margin-left: 8.333333vw;">
+    <p style="    -webkit-text-fill-color: transparent; -webkit-text-stroke-width: 1px" class="text-right font-display text-header lg:text-lg/header">#RxCon</p>
+    <p class="text-right uppercase">Experience the past, present, and future of cooperative plurality</p>
+    <p class="text-right uppercase">48 hours of interactive and live streaming</p>
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
@@ -66,7 +66,7 @@ sponsors:
       <ul class="flex flex-col lg:flex-row justify-between">
         <li><a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Register for the conference</a></li>
         <li><a class="animated-link text-sm lg:text-lg/sm" href="#">Speak at the conference</a></li>
-        <li><a class="animated-link text-sm lg:text-lg/sm" href="#">Sponsor the conference</a></li>
+        <li><a class="animated-link text-sm lg:text-lg/sm" href="#">Support the conference</a></li>
       </ul>
     </div>
     </div>
@@ -75,7 +75,7 @@ sponsors:
   {% endcall %}
   <!-- prettier-ignore -->
   {{nav.menuButton()}}
-  <section class="color-every-other-child lg:flex">
+  <section class="color-every-other-child lg:flex lg:items-start">
     <div
       class="lg:sticky lg:top-0 flex flex-col justify-between w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:px-lg/lg"
     >
@@ -89,7 +89,7 @@ sponsors:
       </div>
     </div>
     <div
-      class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+      class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen px-base"
     >
       <div id="brella-widget">
         <script type="text/props">
@@ -170,7 +170,7 @@ sponsors:
       {% endfor %}
     </ul>
     <div>
-      <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Sponsor the conference</a>
+      <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Support the conference</a>
     </div>
   </div>
   <!-- prettier-ignore -->
