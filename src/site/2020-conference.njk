@@ -159,17 +159,19 @@ sponsors:
     <div
       class="flex-grow flex flex-col w-full lg:w-span8 py-base lg:py-lg/xl px-base lg:pl-lg/sm lg:pr-lg/lg"
     >
-      <a
-        class="twitter-timeline"
-        data-height="512"
-        href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
-      >
-        Tweets by RadxChange
-      </a>
+      <div class="border-2 rounded">
+        <a
+          class="twitter-timeline"
+          data-height="512"
+          href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
+        >
+          Loading tweets...
+        </a>
+      </div>
     </div>
   </section>
 
-  <section class="color-every-other-child flex flex-col lg:flex-row h-screen lg:min-h-tall lg-tall:min-h-screen">
+  <section class="color-every-other-child flex flex-col lg:flex-row lg:min-h-tall lg-tall:min-h-screen">
     <div
       class="flex flex-col justify-between w-full lg:w-span4 py-base lg:py-lg/xl px-base lg:pl-lg/lg lg:pr-lg/sm"
     >
@@ -182,18 +184,17 @@ sponsors:
         <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Support the conference</a>
       </div>
     </div>
-
-      <ul class="grid grid-cols-2 lg:grid-cols-3 col-gap-xl lg:col-gap-lg/xl gap-xl lg:gap-lg/xl w-full lg:w-span8 py-base lg:py-lg/xl px-base lg:pl-lg/sm lg:pr-lg/lg">
-        {% for s in sponsors%}
-        <li class="flex justify-center items-center">
-          <img
-            class="grayscale overflow-visible"
-            src="{{ s.image }}"
-            alt="{{ s.name }}"
-          />
-        </li>
-        {% endfor %}
-      </ul>
+    <ul class="grid grid-cols-2 lg:grid-cols-3 col-gap-xl lg:col-gap-lg/xl gap-xl lg:gap-lg/xl w-full lg:w-span8 py-base lg:py-lg/xl px-base lg:pl-lg/sm lg:pr-lg/lg">
+      {% for s in sponsors%}
+      <li class="flex justify-center items-center">
+        <img
+          class="grayscale overflow-visible"
+          src="{{ s.image }}"
+          alt="{{ s.name }}"
+        />
+      </li>
+      {% endfor %}
+    </ul>
   </section>
 </main>
 <!-- prettier-ignore -->
