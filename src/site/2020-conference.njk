@@ -5,6 +5,21 @@ gitxchange: |
   Ahead of the conference, we are hosting a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon includes a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. Winning projects will present their creations on the virtual conference stage.
   
   The sponsoring teams include [Democracy Earth](https://democracy.earth/), [Idena](https://idena.io/), [Gitcoin](http://www.gitcoin.co/), [Ocean Protocol](https://oceanprotocol.com/), [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/), [Wildcards](https://wildcards.world/), and [RadicalxChange Foundation](https://www.radicalxchange.org/).
+sponsors:
+  - name: Dada.art
+    image: /images/sponsors-2020/dada-logo.png
+  - name: Democracy Earth
+    image: /images/sponsors-2020/democracy-earth-logo.png
+  - name: Gitcoin
+    image: /images/sponsors-2020/gitcoin-logo.svg
+  - name: Idena
+    image: /images/sponsors-2020/idena-logo.jpeg
+  - name: Insper
+    image: /images/sponsors-2020/insper-logo.png
+  - name: Wildcards
+    image: /images/sponsors-2020/wildcards-logo.png
+  - name: Ocean Protocol
+    image: /images/sponsors-2020/ocean-protocol-logo.svg
 ---
 
 <!-- prettier-ignore -->
@@ -62,7 +77,7 @@ gitxchange: |
   {{nav.menuButton()}}
   <section class="color-every-other-child lg:flex">
     <div
-      class="sticky top-0 flex flex-col justify-between w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:px-lg/lg"
+      class="lg:sticky lg:top-0 flex flex-col justify-between w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:px-lg/lg"
     >
       <h1
         class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
@@ -74,13 +89,13 @@ gitxchange: |
       </div>
     </div>
     <div
-      class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen"
+      class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
     >
-    <div id="brella-widget">
-      <script type="text/props">
-        { "joinCode": "RadicalX2020" }
-      </script>
-    </div>
+      <div id="brella-widget">
+        <script type="text/props">
+          { "joinCode": "RadicalX2020" }
+        </script>
+      </div>
     </div>
   </section>
    <!-- prettier-ignore -->
@@ -109,7 +124,7 @@ gitxchange: |
     <div
       class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen"
     >
-      <div class="flex flex-wrap justify-center overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden">
       {% for s in speakers2020 %}
         <a
           class="conference-image"
@@ -137,15 +152,32 @@ gitxchange: |
     </div>
   </section>
   <!-- prettier-ignore -->
+  {% call section.render("#RxCon on Twitter") %}
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
   {% call section.render("With the support of ") %}
-  <div class="md-container">
-    TODO sponsors section
+  <div class="flex-grow flex flex-col justify-between">
+    <ul class="grid grid-cols-2 lg:grid-cols-3 col-gap-xl lg:col-gap-lg/xl gap-xl lg:gap-lg/xl my-xl lg:my-lg/xl">
+      {% for s in sponsors%}
+      <li class="flex justify-center items-center">
+        <img
+          class="grayscale overflow-visible"
+          src="{{ s.image }}"
+          alt="{{ s.name }}"
+        />
+      </li>
+      {% endfor %}
+    </ul>
+    <div>
+      <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Sponsor the conference</a>
+    </div>
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
 </main>
 <!-- prettier-ignore -->
-{% call footer.render('bg-golden-fizz-100' if sections.length % 2 == 1 else 'bg-white') %}
+{% call footer.render('bg-golden-fizz-100') %}
 <!-- prettier-ignore -->
 {% endcall %}
 <script async src="https://widget.brella.io"></script>  

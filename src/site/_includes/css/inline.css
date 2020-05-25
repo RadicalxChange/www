@@ -29,3 +29,8 @@
     @mixin animated-link-hover;
   }
 }
+
+/* Make images grayscale */
+.grayscale {
+  filter: grayscale(100%);
+}

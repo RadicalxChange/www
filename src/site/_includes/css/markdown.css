@@ -9,7 +9,7 @@
     }
   }
 
-  a {
+  a:not(.animated-link) {
     text-decoration: underline;
   }
 }
