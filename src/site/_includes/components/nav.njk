@@ -1,5 +1,8 @@
-{% macro render(announcment) %}
-<nav class="home-header_container" data-modal-declare="menu">
+{% macro render(sticky=true) %}
+<nav
+  class="home-header_container {{ 'sticky' if sticky }}"
+  data-modal-declare="menu"
+>
   <ul class="home-header_nav">
     <li class="home-header_nav-item">
       <a class="animated-link" href="#">Forum</a>

@@ -1,11 +1,15 @@
 /* Apply styles to rendered markdown */
 
-.md-container p:not(:last-child) {
-  @apply mb-base;
-}
+.md-container {
+  p:not(:last-child) {
+    @apply mb-base;
 
-@screen lg {
-  .md-container p:not(:last-child) {
-    @apply mb-lg/base;
+    @screen lg {
+      @apply mb-lg/base;
+    }
+  }
+
+  a {
+    text-decoration: underline;
   }
 }

@@ -24,9 +24,11 @@
       }
     }
 
-    @screen lg-tall {
-      @apply sticky right-auto;
-      @apply float-right;
+    &.sticky {
+      @screen lg-tall {
+        @apply sticky right-auto;
+        @apply float-right;
+      }
     }
   }
 

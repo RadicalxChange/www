@@ -54,7 +54,7 @@
 
 .conference-image {
   @apply relative;
-  @apply mb-base;
+  /* @apply mb-base; */
   @apply overflow-hidden;
   flex: 0 0 100%;
   /* background image in element style */
@@ -66,7 +66,7 @@
   }
 
   @screen lg {
-    @apply mb-0;
+    /* @apply mb-0; */
     flex: 0 0 33.333333%;
   }
 }
