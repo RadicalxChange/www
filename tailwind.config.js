@@ -2,6 +2,7 @@ module.exports = {
   purge: [],
   theme: {
     screens: {
+      md: { raw: "(min-width: 640px)" },
       lg: { raw: "(min-width: 768px)" },
       "base-landscape": {
         raw: "(max-width: 767px) and (orientation: landscape)",
@@ -10,9 +11,11 @@ module.exports = {
       touch: { raw: "(hover: none)" },
     },
     fontSize: {
+      xs: "2.5vmin",
       sm: "4vmin",
       base: "4.5vmin",
       header: "13.5vmin",
+      "lg/xs": ".75vw",
       "lg/sm": "1.2vw",
       "lg/base": "1.4vw",
       "lg/header": "8vw",
@@ -51,6 +54,7 @@ module.exports = {
       span9: "75%",
       span10: "83.333333%",
       span11: "91.666667%",
+      "1/2": "50%",
       full: "100%",
     },
     extend: {

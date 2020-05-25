@@ -15,6 +15,11 @@ title: 2020 Conference - RadicalxChange
 <main>
   <!-- prettier-ignore -->
   {% call nav.render() %}
+  <div>
+    <p>#RxCon</p>
+    <p class="uppercase">Experience the past, present, and future of cooperative plurality</p>
+    <p class="uppercase">48 hours of interactive and live streaming</p>
+  </div>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
@@ -53,26 +58,43 @@ title: 2020 Conference - RadicalxChange
   {{nav.menuButton()}}
   <section class="color-every-other-child lg:flex">
     <div
-      class="flex flex-col w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+      class="flex flex-col w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:px-lg/lg"
     >
       <h1
         class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
       >
         Speakers
       </h1>
-      <div>
-        <p>#RxCon</p>
-        <p>Experience the past, present, and future of cooperative plurality</p>
-        <p>48 hours of interactive and live streaming</p>
-      </div>
     </div>
     <div
-      class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+      class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen"
     >
-    {% for s in speakers2020 %}
-    <p>{{ s.bio }}</p>
-    {% endfor %}
-  </div>
+      <div class="flex flex-wrap justify-center overflow-hidden">
+      {% for s in speakers2020 %}
+        <a
+          class="conference-image"
+          style="background-image: linear-gradient(black, black), url('{{ s.picture }}');"
+          href="#"
+        >
+          <div class="absolute top-0 right-0 w-1/2 p-sm lg:p-lg/sm bg-white">
+            <h4 class="text-sm lg:text-lg/sm font-semibold">{{ s.name }}</h4>
+            <p class="text-xs lg:text-lg/xs">{{ s.title }}</p>
+          </div>
+          <div class="hidden">
+            {{ s.bio }}
+          </div>
+        </a>
+      {% endfor %}
+        <a
+          class="conference-image"
+          href="#"
+        >
+        <div class="flex justify-center items-center h-full">
+         <span class="animated-link text-lg lg:text-lg/lg uppercase">See all speakers</span>
+        </div>
+        </a>
+      </div>
+    </div>
   </section>
   <!-- prettier-ignore -->
   {% call section.render("Sponsors") %}
