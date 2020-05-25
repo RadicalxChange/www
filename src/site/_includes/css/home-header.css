@@ -24,8 +24,8 @@
       }
     }
 
-    &.sticky {
-      @screen lg-tall {
+    @screen lg-tall {
+      &.make-it-stick {
         @apply sticky right-auto;
         @apply float-right;
       }
