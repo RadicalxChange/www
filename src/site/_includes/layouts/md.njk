@@ -1,3 +1,16 @@
+<!-- prettier-ignore -->
+{% import "components/nav.njk" as nav %}
+<!-- prettier-ignore -->
+{% import "components/header.njk" as header %}
+<!-- prettier-ignore -->
+{% import "components/section.njk" as section %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+<!-- prettier-ignore -->
+{% import "components/modal.njk" as modal %}
+<!-- prettier-ignore -->
+{% import "components/subscribe-modal.njk" as subscribeModal %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,6 +30,37 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
-    {{ content | markdown | safe }}
+    <main>
+      <!-- prettier-ignore -->
+      {% call nav.render() %}
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call header.render(headerText) %}
+      <div class="md-container font-light">
+        {{ content | markdown | safe }}
+      </div>
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {{ nav.menuButton() }}
+    </main>
+    <!-- prettier-ignore -->
+    {% call footer.render("bg-white") %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% call modal.render('subscribe') %}
+    <!-- prettier-ignore -->
+    {% call subscribeModal.render() %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <script>
+      // prettier-ignore
+      {% include "components/nav.js" %}
+      // prettier-ignore
+      {% include "components/modal.js" %}
+    </script>
   </body>
 </html>

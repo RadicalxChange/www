@@ -1,12 +1,97 @@
 /* Apply styles to rendered markdown */
 
 .md-container {
-  p:not(:last-child) {
-    @apply mb-base;
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  ol,
+  p {
+    &:not(:last-child) {
+      @apply mb-sm;
+
+      @screen lg {
+        @apply mb-lg/base;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-normal;
+  }
+
+  h1,
+  h2 {
+    &:not(:first-child) {
+      @apply mt-lg;
+    }
 
     @screen lg {
-      @apply mb-lg/base;
+      &:not(:first-child) {
+        @apply mt-lg/lg;
+      }
     }
+  }
+
+  h1 {
+    @apply text-3xl;
+
+    @screen lg {
+      @apply text-lg/3xl;
+    }
+  }
+
+  h2 {
+    @apply text-2xl;
+
+    @screen lg {
+      @apply text-lg/2xl;
+    }
+  }
+
+  h3 {
+    @apply text-xl;
+
+    @screen lg {
+      @apply text-lg/xl;
+    }
+  }
+
+  h4 {
+    @apply text-lg;
+
+    @screen lg {
+      @apply text-lg/lg;
+    }
+  }
+
+  ul {
+    @apply list-disc list-outside;
+    @apply ml-lg;
+
+    @screen lg {
+      @apply ml-lg/lg;
+    }
+  }
+
+  ol {
+    @apply list-decimal list-outside;
+  }
+
+  li {
+    @apply mb-sm;
+
+    @screen lg {
+      @apply mb-lg/sm;
+    }
+  }
+
+  strong {
+    @apply font-medium;
   }
 
   a:not(.animated-link) {

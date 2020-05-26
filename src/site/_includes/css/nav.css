@@ -15,7 +15,7 @@
       @apply absolute left-auto right-0;
       @apply flex-col justify-between items-stretch;
       @apply w-span5 min-h-tall;
-      @apply pt-lg/lg pr-lg/lg pb-lg/xl pl-lg/sm;
+      @apply pt-lg/xl pr-lg/lg pb-lg/xl pl-lg/sm;
       @apply mb-0;
       @apply bg-transparent;
 
