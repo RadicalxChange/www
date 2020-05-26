@@ -10,6 +10,7 @@
 @import "./inline.css";
 @import "./modal.css";
 @import "./nav.css";
+@import "./subscribe-modal.css";
 @import "./save-the-date.css";
 
 @import "tailwindcss/utilities";

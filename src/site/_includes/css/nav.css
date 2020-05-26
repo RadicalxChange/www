@@ -1,4 +1,4 @@
-.home-header {
+.nav {
   &_container {
     @apply z-30;
     @apply fixed top-0 left-0;
@@ -7,7 +7,7 @@
     @apply p-lg;
     @apply bg-golden-fizz-100;
 
-    &.nav-closed {
+    &.nav_closed {
       @apply hidden;
     }
 
@@ -19,13 +19,13 @@
       @apply mb-0;
       @apply bg-transparent;
 
-      &.nav-closed {
+      &.nav_closed {
         @apply flex;
       }
     }
 
     @screen lg-tall {
-      &.make-it-stick {
+      &.nav_sticky {
         @apply sticky right-auto;
         @apply float-right;
       }
@@ -45,7 +45,7 @@
     width: 6vmin;
   }
 
-  &_nav {
+  &_menu {
     @apply block;
     @apply text-center;
     @apply text-base;
@@ -61,7 +61,7 @@
     }
   }
 
-  &_nav-item {
+  &_menu-item {
     @apply mb-base;
 
     @screen lg {

@@ -76,6 +76,8 @@ levels:
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
 <!-- prettier-ignore -->
+{% import "components/modal.njk" as modal %}
+<!-- prettier-ignore -->
 {% import "components/subscribe-modal.njk" as subscribeModal %}
 
 <a
@@ -119,7 +121,6 @@ levels:
     </p>
     <p class="flex justify-between lg:block">
       <a class="animated-link lg:mr-lg/lg" href="#">Read more</a>
-      <button data-modal-trigger="subscribe">test</button>
     </p>
   </div>
   {% endcall %}
@@ -170,22 +171,14 @@ levels:
 {% call footer.render('bg-golden-fizz-100' if sections.length % 2 == 0 else 'bg-white', "conference-button-pb") %}
 <!-- prettier-ignore -->
 {% endcall %}
-<div
-  class="z-40 fixed top-0 left-0 flex justify-center items-center w-screen h-screen bg-black bg-opacity-50"
-  data-modal-declare="subscribe"
->
-  <div
-    class="relative w-screen lg:w-auto lg:max-w-75vw h-screen lg:h-auto lg:max-h-75vh pt-xl lg:pt-lg/xl pb-lg lg:pb-lg/lg px-lg lg:px-lg/lg rounded bg-white overflow-y-auto"
-  >
-    <button class="absolute top-0 right-0 p-base lg:p-lg/base" data-modal-close>
-      <img src="/images/close-button.svg" class="modal-close-button" />
-    </button>
-    <!-- prettier-ignore -->
-    {% call subscribeModal.render() %}
-    <!-- prettier-ignore -->
-    {% endcall %}
-  </div>
-</div>
+<!-- prettier-ignore -->
+{% call modal.render('subscribe') %}
+<!-- prettier-ignore -->
+{% call subscribeModal.render() %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% endcall %}
 <script>
   // prettier-ignore
   {% include "components/nav.js" %}

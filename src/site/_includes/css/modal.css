@@ -1,5 +1,5 @@
 .modal-close-button {
-  width: 1.5vmin;
+  width: 5vmin;
   @screen lg {
     width: 1.5vw;
   }
