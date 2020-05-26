@@ -32,6 +32,9 @@ module.exports = {
     },
     spacing: {
       "0": "0",
+      auto: "auto",
+      "75vw": "75vw",
+      "75vh": "75vh",
       "100vw": "100vw",
       "100vh": "100vh",
       "lg/xs": "0.25vw",
@@ -63,6 +66,8 @@ module.exports = {
       transitionProperty: { right: "right" },
       inset: { full: "100%" },
       minHeight: { tall: "50vw" },
+      maxHeight: { tall: "50vw", "75vh": "75vh" },
+      maxWidth: { "75vw": "75vw" },
     },
   },
   variants: {},
