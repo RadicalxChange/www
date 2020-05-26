@@ -85,14 +85,3 @@
     width: 20vw;
   }
 }
-
-.modal-close-button {
-  width: 1.5vmin;
-  @screen lg {
-    width: 1.5vw;
-  }
-}
-
-.modal-closed {
-  display: none !important;
-}

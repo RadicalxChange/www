@@ -8,7 +8,8 @@
 /* Custom components */
 @import "./layout.css";
 @import "./inline.css";
-@import "./home-header.css";
+@import "./modal.css";
+@import "./nav.css";
 @import "./save-the-date.css";
 
 @import "tailwindcss/utilities";

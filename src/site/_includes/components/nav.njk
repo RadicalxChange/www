@@ -1,7 +1,7 @@
 {% macro render(sticky=true) %}
 <nav
   class="home-header_container {{ 'make-it-stick' if sticky }}"
-  data-modal-declare="menu"
+  data-nav-declare
 >
   <ul class="home-header_nav">
     <li class="home-header_nav-item">
@@ -23,7 +23,7 @@
       <a class="animated-link" href="#">Donate</a>
     </li>
   </ul>
-  <button class="home-header_close-button" data-modal-close>
+  <button class="home-header_close-button" data-nav-close>
     <img src="/images/close-button.svg" class="home-header_close-button-img" />
   </button>
   {{ caller() }}
@@ -31,7 +31,7 @@
 {% endmacro %} {% macro menuButton() %}
 <div class="z-10 sticky top-0 h-0 float-right lg:hidden">
   <div id="float-menu-button" class="bg-golden-fizz-100 menu-hidden">
-    <button class="animated-link uppercase" data-modal-trigger="menu">
+    <button class="animated-link uppercase" data-nav-trigger>
       Menu
     </button>
   </div>

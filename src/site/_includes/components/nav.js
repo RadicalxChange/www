@@ -1,17 +1,15 @@
-$("[data-modal-declare]").each(function () {
-  const thisModal = $(this);
-  const thisModalName = thisModal.data("modal-declare");
-  const thisModalRef = thisModal.get();
+$("[data-nav-declare]").each(function () {
+  const thisNav = $(this);
 
-  thisModal.find("[data-modal-close]").click(function () {
-    thisModal.addClass("modal-closed");
+  thisNav.find("[data-nav-close]").click(function () {
+    thisNav.addClass("nav-closed");
   });
 
-  $(`[data-modal-trigger='${thisModalName}']`).click(function () {
-    thisModal.removeClass("modal-closed");
+  $(`[data-nav-trigger]`).click(function () {
+    thisNav.removeClass("nav-closed");
   });
 
-  thisModal.addClass("modal-closed");
+  thisNav.addClass("nav-closed");
 });
 
 const menuButton = $("#float-menu-button");

@@ -7,7 +7,7 @@
     @apply p-lg;
     @apply bg-golden-fizz-100;
 
-    &.modal-closed {
+    &.nav-closed {
       @apply hidden;
     }
 
@@ -19,7 +19,7 @@
       @apply mb-0;
       @apply bg-transparent;
 
-      &.modal-closed {
+      &.nav-closed {
         @apply flex;
       }
     }
