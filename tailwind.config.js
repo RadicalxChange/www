@@ -15,10 +15,12 @@ module.exports = {
       sm: "4vmin",
       base: "4.5vmin",
       header: "13.5vmin",
+      "header-sm": "6.5vmin",
       "lg/xs": ".75vw",
       "lg/sm": "1.2vw",
       "lg/base": "1.4vw",
       "lg/header": "8vw",
+      "lg/header-sm": "4vw",
     },
     fontFamily: {
       display: ["Messer", "san-serif"],

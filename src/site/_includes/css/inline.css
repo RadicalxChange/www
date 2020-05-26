@@ -30,6 +30,10 @@
   }
 }
 
+.inline-link {
+  text-decoration: underline;
+}
+
 /* Make images grayscale */
 .grayscale {
   filter: grayscale(100%);
