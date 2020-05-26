@@ -1,52 +1,59 @@
 {% macro render(bgColor, paddingBottom="pb-base lg:pb-lg/xl") %}
 <footer class="{{ bgColor }}">
   <div
-    class="flex flex-col justify-between min-h-screen lg:h-100vh lg:min-h-tall pt-base lg:pt-lg/xl {{ paddingBottom }} px-base lg:px-lg/lg"
+    class="flex flex-col justify-between min-h-screen lg:h-100vh lg:min-h-tall pt-base lg:pt-lg/xl {{
+      paddingBottom
+    }} px-base lg:px-lg/lg"
   >
     <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
-      <div class="lg:w-span6">
+      <a href="/" class="block lg:w-span6">
         <img src="/images/logo.svg" class="logo-width mb-xl lg:mb-0" />
-      </div>
+      </a>
       <nav class="lg:w-span6">
         <ul class="columns-2 lg:columns-3">
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">About</a>
+            <a class="animated-link" href="#">Concepts</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Materials</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">News & Press</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Community</a>
+            <a class="animated-link" href="#">Literature</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
             <a class="animated-link" href="#">Blog</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Forum</a>
+            <a class="animated-link" href="#">Community</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Team</a>
+            <a class="animated-link" href="#">Foundation</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Events</a>
+            <a class="animated-link" href="#">News</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">2020 Conference</a>
+            <a class="animated-link" href="/2020-conference">2020 Conference</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Concepts</a>
+            <a
+              class="animated-link"
+              href="https://gitcoin.co/hackathon/GitxChange/onboard"
+              >GitxChange</a
+            >
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Chapters</a>
+            <a class="animated-link" href="#">All Events</a>
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Subscribe</a>
+            <a class="animated-link" href="#" data-modal-trigger="subscribe"
+              >Subscribe</a
+            >
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#">Contact</a>
+            <a class="animated-link" href="#">Find a RxC Chapter</a>
+          </li>
+          <li class="uppercase mb-base lg:mb-lg/lg">
+            <a class="animated-link" href="mailto:info@radicalxchange.org"
+              >Contact Us</a
+            >
           </li>
           <li class="uppercase mb-base lg:mb-lg/lg">
             <a class="animated-link" href="#">Privacy Policy</a>
@@ -61,16 +68,21 @@
         </p>
         <ul class="flex flex-wrap">
           <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
-            <a class="animated-link" href="#">Instagram</a>
+            <a class="animated-link" href="https://twitter.com/radxchange"
+              >Twitter</a
+            >
           </li>
           <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
-            <a class="animated-link" href="#">Facebook</a>
+            <a class="animated-link" href="https://youtube.com/c/RadicalxChange"
+              >Instagram</a
+            >
           </li>
           <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
-            <a class="animated-link" href="#">Twitter</a>
-          </li>
-          <li class="mb-base mr-base lg:mb-0 lg:mr-lg/base">
-            <a class="animated-link" href="#">LinkedIn</a>
+            <a
+              class="animated-link"
+              href="https://www.linkedin.com/company/radicalxchange/"
+              >LinkedIn</a
+            >
           </li>
         </ul>
       </div>
