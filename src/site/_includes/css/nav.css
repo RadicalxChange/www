@@ -2,9 +2,8 @@
   &_container {
     @apply z-30;
     @apply fixed top-0 left-0;
-    @apply flex justify-center items-center;
+    @apply flex items-center;
     @apply w-100vw h-100vh;
-    @apply p-xl;
     @apply bg-golden-fizz-100;
     @apply overflow-y-auto;
 
@@ -17,7 +16,6 @@
       @apply flex-col justify-between items-stretch;
       @apply w-span5 min-h-tall;
       @apply pt-lg/xl pr-lg/lg pb-lg/xl pl-lg/sm;
-      @apply mb-0;
       @apply bg-transparent;
       @apply overflow-y-hidden;
 
@@ -48,21 +46,24 @@
   }
 
   &_menu {
+    @apply p-xl;
+    @apply m-auto;
     @apply text-base;
     @apply uppercase;
 
     @screen lg {
       @apply flex justify-between;
+      @apply p-0;
+      @apply m-0;
       @apply text-lg/base;
     }
   }
 
   &_menu-item {
-    @apply relative;
     @apply mt-base;
 
     @screen lg {
-      @apply mb-0;
+      @apply mt-0;
       @apply mr-lg/xs;
 
       &:hover {

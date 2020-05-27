@@ -16,7 +16,11 @@
   height: calc(100vh - 21vmin);
 
   @screen lg {
-    height: 100vh;
+    @apply min-h-tall;
+  }
+
+  @screen lg-tall {
+    @apply min-h-screen;
   }
 }
 
