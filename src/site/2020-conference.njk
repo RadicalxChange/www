@@ -78,11 +78,7 @@ sponsors:
     <div
       class="flex flex-col justify-between w-full lg:w-span4 py-base lg:py-lg/xl px-base lg:pl-lg/lg lg:pr-lg/sm"
     >
-      <h1
-        class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
-      >
-        Schedule
-      </h1>
+      {{ section.header("Schedule")}}
       <div>
         <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Register for the conference</a>
       </div>
@@ -107,11 +103,7 @@ sponsors:
     <div
       class="flex flex-col justify-between w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:px-lg/lg"
     >
-      <h1
-        class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
-      >
-        Speakers
-      </h1>
+      {{ section.header("Speakers")}}
       <div>
         <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Register for the conference</a>
       </div>
@@ -150,11 +142,7 @@ sponsors:
     <div
       class="flex flex-col justify-start w-full lg:w-span4 py-base lg:py-lg/xl px-base lg:pl-lg/lg lg:pr-lg/sm"
     >
-      <h1
-        class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
-      >
-        #RxCon on Twitter
-      </h1>
+    {{ section.header("#RxCon on Twitter")}}
     </div>
     <div
       class="flex-grow flex flex-col w-full lg:w-span8 py-base lg:py-lg/xl px-base lg:pl-lg/sm lg:pr-lg/lg"
@@ -175,11 +163,7 @@ sponsors:
     <div
       class="flex flex-col justify-between w-full lg:w-span4 py-base lg:py-lg/xl px-base lg:pl-lg/lg lg:pr-lg/sm"
     >
-      <h1
-        class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
-      >
-      With the support of 
-      </h1>
+      {{ section.header("With the support of")}}
       <div>
         <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#">Support the conference</a>
       </div>
@@ -203,5 +187,8 @@ sponsors:
 {% endcall %}
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
+  // prettier-ignore
   {% include "components/nav.js" %}
+  // prettier-ignore
+  {% include "components/modal.js" %}
 </script>

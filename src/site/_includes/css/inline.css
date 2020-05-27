@@ -10,7 +10,7 @@
   @apply absolute;
   @apply right-full;
   @apply left-0;
-  @apply bottom-0;
+  bottom: -1px;
   @apply border-solid;
   @apply border-t-3;
   @apply border-black;
@@ -25,7 +25,6 @@
 
 @screen touch {
   .animated-link:after {
-    @apply border-t-2;
     @mixin animated-link-hover;
   }
 }

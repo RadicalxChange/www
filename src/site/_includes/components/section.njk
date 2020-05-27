@@ -1,14 +1,25 @@
 <!-- prettier-ignore -->
-{% macro render(header) %}
+{% macro header(headerText) %}
+<h1
+  class="mb-lg lg:mb-lg/lg font-display text-header lg:text-lg/header uppercase leading-none"
+>
+  <!-- prettier-ignore -->
+  {{ headerText }}
+</h1>
+<!-- prettier-ignore -->
+{% endmacro %}
+
+<!-- prettier-ignore -->
+{% macro render(headerText) %}
 <section class="color-every-other-child">
   <div
     class="flex flex-col justify-between w-full lg:w-span7 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
   >
     <h1
-      class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header uppercase leading-none"
+      class="mb-lg lg:mb-lg/lg font-display text-header lg:text-lg/header uppercase leading-none"
     >
       <!-- prettier-ignore -->
-      {{ header }}
+      {{ header(headerText) }}
     </h1>
     <!-- prettier-ignore -->
     {{ caller() }}

@@ -12,8 +12,6 @@
 
     &:hover .save-the-date_filled {
       @apply opacity-100;
-      @apply transition;
-      @apply duration-500;
     }
 
     &:hover .animated-link:after {
