@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
+    <!-- prettier-ignore -->
+    {% block opengraph %}
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:site_name" content="RadicalxChange" />
-    <meta
-      property="og:url"
-      content="https://www.radicalxchange.org/privacy-policy/"
-    />
+    <meta property="og:url" content="https://www.radicalxchange.org/" />
     <meta
       property="og:image"
       content="https://www.radicalxchange.org/images/logos/open-graph-logo.png"
@@ -29,8 +29,10 @@
       content="https://www.radicalxchange.org/images/logos/open-graph-logo.png"
     />
     <meta name="twitter:creator" content="@radxchange" />
-    <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
-    <title>{{ title }}</title>
+    <!-- prettier-ignore -->
+    {% endblock %}
+    <!-- prettier-ignore -->
+    {% block scripts %}
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
@@ -41,9 +43,20 @@
       integrity="sha384-TPD9y0kmdvgK9D4a+br/KYlqMn9cLVXHDVxxN93FvPj+13bPJeMJZaXAB7+p/e7X"
       crossorigin="anonymous"
     ></script>
+    <!-- prettier-ignore -->
+    {% endblock %}
+    <!-- prettier-ignore -->
+    {% block styles %}
     <link rel="stylesheet" href="/css/styles.css" />
+    <!-- prettier-ignore -->
+    {% endblock %}
+    <title>{{ title }}</title>
   </head>
   <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
+    <!-- prettier-ignore -->
+    {% block body %}
     {{ content | safe }}
+    <!-- prettier-ignore -->
+    {% endblock %}
   </body>
 </html>
