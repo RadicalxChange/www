@@ -4,8 +4,9 @@
     @apply fixed top-0 left-0;
     @apply flex justify-center items-center;
     @apply w-100vw h-100vh;
-    @apply p-lg;
+    @apply p-xl;
     @apply bg-golden-fizz-100;
+    @apply overflow-y-auto;
 
     &.nav_closed {
       @apply hidden;
@@ -18,6 +19,7 @@
       @apply pt-lg/xl pr-lg/lg pb-lg/xl pl-lg/sm;
       @apply mb-0;
       @apply bg-transparent;
+      @apply overflow-y-hidden;
 
       &.nav_closed {
         @apply flex;
@@ -46,27 +48,47 @@
   }
 
   &_menu {
-    @apply block;
-    @apply text-center;
     @apply text-base;
     @apply uppercase;
 
-    @screen base-landscape {
-      @apply columns-2;
-    }
-
     @screen lg {
       @apply flex justify-between;
-      @apply text-lg/sm;
+      @apply text-lg/base;
     }
   }
 
   &_menu-item {
-    @apply mb-base;
+    @apply relative;
+    @apply mt-base;
 
     @screen lg {
       @apply mb-0;
       @apply mr-lg/xs;
+
+      &:hover {
+        .nav_submenu {
+          @apply block;
+        }
+      }
+    }
+  }
+
+  &_submenu {
+    @screen lg {
+      @apply hidden;
+    }
+  }
+
+  &_submenu-item {
+    @apply ml-sm;
+    @apply mb-0;
+    @apply text-sm;
+    @apply text-left;
+
+    @screen lg {
+      @apply ml-lg/sm;
+      @apply mb-0;
+      @apply text-lg/sm;
     }
   }
 }
