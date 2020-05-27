@@ -77,6 +77,7 @@ module.exports = {
       minHeight: { tall: "50vw" },
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
+      lineHeight: { display: "0.9" },
     },
   },
   variants: {},
