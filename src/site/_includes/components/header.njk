@@ -2,11 +2,13 @@
 {% macro render(title="", height="min-h-screen lg:min-h-tall lg-tall:min-h-screen") %}
 <header id="first-page" class="bg-golden-fizz-100">
   <div
-    class="flex flex-col justify-between w-full lg:w-span7 {{height}} py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
+    class="flex flex-col justify-between w-full lg:w-span7 {{
+      height
+    }} py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
   >
     {% if title == "" %}
     <a href="/"
-      ><img src="/images/logo.svg" class="logo-width mb-xl lg:mb-0"
+      ><img src="/images/logos/logo.svg" class="logo-width mb-xl lg:mb-0"
     /></a>
     {% else %}
     <h1
