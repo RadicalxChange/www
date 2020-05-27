@@ -125,7 +125,7 @@ levels:
   </div>
   {% endcall %}
   <!-- prettier-ignore -->
-  {{ nav.menuButton() }}
+  {{ nav.movingMenuButton() }}
   <!-- prettier-ignore -->
   {% for s in sections %}
   <!-- prettier-ignore -->
@@ -182,6 +182,8 @@ levels:
 <script>
   // prettier-ignore
   {% include "components/nav.js" %}
+  // prettier-ignore
+  {% include "components/nav_moving-button.js" %}
   // prettier-ignore
   {% include "components/modal.js" %}
 </script>

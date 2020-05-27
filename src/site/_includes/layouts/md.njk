@@ -18,6 +18,8 @@
 {% block body %}
 <main>
   <!-- prettier-ignore -->
+  {{ nav.stickyMenuButton() }}
+  <!-- prettier-ignore -->
   {% call nav.render() %}
   <!-- prettier-ignore -->
   {% endcall %}
@@ -27,8 +29,6 @@
     {{ content | markdown | safe }}
   </div>
   {% endcall %}
-  <!-- prettier-ignore -->
-  {{ nav.menuButton() }}
 </main>
 <!-- prettier-ignore -->
 {% call footer.render("bg-white") %}

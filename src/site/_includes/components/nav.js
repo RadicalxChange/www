@@ -11,21 +11,3 @@ $("[data-nav-declare]").each(function () {
 
   thisNav.addClass("nav_closed");
 });
-
-const menuButton = $("#float-menu-button");
-const firstPage = document.querySelector("#first-page");
-const disappearObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        menuButton.removeClass("menu-hidden");
-        menuButton.addClass("menu-visible");
-      } else {
-        menuButton.removeClass("menu-visible");
-        menuButton.addClass("menu-hidden");
-      }
-    });
-  },
-  { threshold: 0 }
-);
-disappearObserver.observe(firstPage);

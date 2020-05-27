@@ -42,7 +42,7 @@
 }
 
 /* Floating menu visibilty */
-.menu-visible {
+/* .menu-visible {
   @apply px-base py-sm;
   transform: translateY(0);
   transition: transform 1s ease-in-out;
@@ -52,7 +52,7 @@
   @apply px-base py-0;
   transform: translateY(calc(-100% - theme("spacing.base")));
   transition: transform 1s ease-in-out;
-}
+} */
 
 /* Conference page */
 

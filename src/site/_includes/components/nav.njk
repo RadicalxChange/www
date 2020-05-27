@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 {% macro render(sticky=true) %}
 <nav class="nav_container {{ 'nav_sticky' if sticky }}" data-nav-declare>
   <ul class="nav_menu">
@@ -71,12 +72,25 @@
   </button>
   {{ caller() }}
 </nav>
-{% endmacro %} {% macro menuButton() %}
+<!-- prettier-ignore -->
+{% endmacro %}
+<!-- prettier-ignore -->
+{% macro stickyMenuButton() %}
 <div class="z-10 sticky top-0 h-0 float-right lg:hidden">
-  <div id="float-menu-button" class="bg-golden-fizz-100 menu-hidden">
+  <button class="animated-link mx-base my-sm uppercase" data-nav-trigger>
+    Menu
+  </button>
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}
+<!-- prettier-ignore -->
+{% macro movingMenuButton() %}
+<div class="z-10 sticky top-0 h-0 float-right lg:hidden">
+  <div id="moving-menu-button" class="nav_moving-button-hidden">
     <button class="animated-link uppercase" data-nav-trigger>
       Menu
     </button>
   </div>
 </div>
+<!-- prettier-ignore -->
 {% endmacro %}

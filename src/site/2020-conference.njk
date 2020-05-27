@@ -33,6 +33,8 @@ sponsors:
 
 <main>
   <!-- prettier-ignore -->
+  {{ nav.stickyMenuButton() }}
+  <!-- prettier-ignore -->
   {% call nav.render(false) %}
   <div style="margin-left: 8.333333vw;">
     <p style="-webkit-text-fill-color: transparent; -webkit-text-stroke-width: 1px" class="text-right font-display text-header lg:text-lg/header">#RxCon</p>
@@ -72,8 +74,6 @@ sponsors:
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
-  <!-- prettier-ignore -->
-  {{nav.menuButton()}}
   <section class="color-every-other-child flex flex-col lg:flex-row h-screen lg:min-h-tall lg-tall:min-h-screen">
     <div
       class="flex flex-col justify-between w-full lg:w-span4 py-base lg:py-lg/xl px-base lg:pl-lg/lg lg:pr-lg/sm"
