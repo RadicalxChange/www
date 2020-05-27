@@ -1,6 +1,9 @@
 <!-- prettier-ignore -->
-{% macro render(sticky=true) %}
-<nav class="nav_container {{ 'nav_sticky' if sticky }}" data-nav-declare>
+{% macro render(sticky=true, hasCaller=false) %}
+<nav
+  class="nav_container {{ 'nav_sticky' if sticky }} {{ 'nav_hasCaller' if hasCaller }} "
+  data-nav-declare
+>
   <ul class="nav_menu">
     <li class="nav_menu-item">
       <a class="animated-link" href="/">Home</a>

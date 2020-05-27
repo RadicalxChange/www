@@ -7,6 +7,7 @@
   h4,
   ul,
   ol,
+  blockquote,
   p {
     &:not(:last-child) {
       @apply mb-sm;
@@ -80,6 +81,19 @@
 
   ol {
     @apply list-decimal list-outside;
+  }
+
+  img {
+    @apply border rounded;
+  }
+
+  blockquote {
+    @apply italic;
+    @apply text-sm;
+
+    @screen lg {
+      @apply text-lg/sm;
+    }
   }
 
   li {

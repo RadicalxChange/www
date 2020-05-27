@@ -13,13 +13,17 @@
   @screen lg {
     @apply absolute left-auto right-0;
     @apply flex-col justify-between items-stretch;
-    @apply w-span5 min-h-tall;
+    @apply w-span5;
     @apply pt-lg/xl pr-lg/lg pb-lg/xl pl-lg/sm;
     @apply bg-transparent;
     @apply overflow-y-hidden;
 
     &.nav_closed {
       @apply flex;
+    }
+
+    &.nav_hasCaller {
+      @apply min-h-tall;
     }
   }
 
