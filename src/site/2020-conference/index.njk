@@ -36,6 +36,8 @@ sponsors:
 {% import "components/modal.njk" as modal %}
 <!-- prettier-ignore -->
 {% import "components/subscribe-modal.njk" as subscribeModal %}
+<!-- prettier-ignore -->
+{% import "components/sponsor-modal.njk" as sponsorModal %}
 
 <main>
   <!-- prettier-ignore -->
@@ -47,7 +49,9 @@ sponsors:
       Experience the past, present, and future of cooperative plurality
     </p>
     <p class="text-right">
-      <a class="animated-link" href="#">See the schedule</a>
+      <a class="animated-link" href="/2020-conference/schedule"
+        >See the schedule</a
+      >
     </p>
   </div>
   <!-- prettier-ignore -->
@@ -90,7 +94,9 @@ sponsors:
           >
         </li>
         <li class="lg:mr-lg/lg">
-          <a class="animated-link" href="#">Support the conference</a>
+          <a class="animated-link" href="#" data-modal-trigger="sponsor"
+            >Support the conference</a
+          >
         </li>
       </ul>
     </div>
@@ -122,7 +128,9 @@ sponsors:
       {% endfor %}
     </a>
     <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
-      <a class="animated-link uppercase" href="#">See all speakers</a>
+      <a class="animated-link uppercase" href="/2020-conference/speakers"
+        >See all speakers</a
+      >
     </div>
   </div>
   <!-- prettier-ignore -->
@@ -173,7 +181,9 @@ sponsors:
       {% endfor %}
     </ul>
     <div class="lg:self-end">
-      <a class="animated-link uppercase" href="#">Support the conference</a>
+      <a class="animated-link uppercase" href="#" data-modal-trigger="sponsor"
+        >Support the conference</a
+      >
     </div>
   </div>
   <!-- prettier-ignore -->
@@ -181,6 +191,14 @@ sponsors:
 </main>
 <!-- prettier-ignore -->
 {% call footer.render('bg-white') %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% call modal.render('sponsor') %}
+<!-- prettier-ignore -->
+{% call sponsorModal.render() %}
+<!-- prettier-ignore -->
+{% endcall %}
 <!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->
@@ -197,6 +215,8 @@ sponsors:
   charset="utf-8"
 ></script>
 <script>
+  // prettier-ignore
+  {% include "components/sponsor-modal.js" %}
   // prettier-ignore
   {% include "components/nav.js" %}
   // prettier-ignore
