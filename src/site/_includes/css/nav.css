@@ -78,20 +78,21 @@
 }
 
 .nav_submenu {
+  @apply mt-xs;
+  @apply ml-base;
+
   @screen lg {
+    @apply mt-0;
+    @apply ml-lg/sm;
     @apply hidden;
   }
 }
 
 .nav_submenu-item {
-  @apply ml-sm;
-  @apply mb-0;
   @apply text-sm;
   @apply text-left;
 
   @screen lg {
-    @apply ml-lg/sm;
-    @apply mb-0;
     @apply text-lg/sm;
   }
 }
