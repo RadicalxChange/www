@@ -13,7 +13,7 @@
   @screen lg {
     @apply absolute left-auto right-0;
     @apply flex-col justify-between items-stretch;
-    @apply w-span5;
+    @apply w-span5 h-auto;
     @apply pt-lg/xl pr-lg/lg pb-lg/xl pl-lg/sm;
     @apply bg-transparent;
     @apply overflow-y-hidden;
@@ -23,7 +23,7 @@
     }
 
     &.nav_hasCaller {
-      @apply min-h-tall;
+      @apply h-100vh min-h-tall;
     }
   }
 
