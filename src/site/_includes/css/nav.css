@@ -82,7 +82,7 @@
   @apply ml-base;
 
   @screen lg {
-    @apply mt-0;
+    @apply mt-lg/xs;
     @apply ml-lg/sm;
     @apply hidden;
   }
