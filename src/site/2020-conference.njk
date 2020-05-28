@@ -32,6 +32,10 @@ sponsors:
 {% import "components/page.njk" as page %}
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
+<!-- prettier-ignore -->
+{% import "components/modal.njk" as modal %}
+<!-- prettier-ignore -->
+{% import "components/subscribe-modal.njk" as subscribeModal %}
 
 <main>
   <!-- prettier-ignore -->
@@ -84,46 +88,44 @@ sponsors:
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call page.render("Speakers") %}
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden">
-    {% for s in speakers2020 %}
-    <a
-      class="conference-image"
-      style="background-image: linear-gradient(black, black), url('{{
-        s.picture
-      }}');"
-      href="#"
+  {% call page.render("Speakers", false) %}
+  <div class="flex flex-col justify-between h-full">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
     >
-      <div class="absolute top-0 right-0 w-1/2 p-sm lg:p-lg/sm bg-white">
-        <h4 class="text-sm lg:text-lg/sm font-semibold">{{ s.name }}</h4>
-        <p class="text-xs lg:text-lg/xs">{{ s.title }}</p>
-      </div>
-      <div class="hidden">
-        {{ s.bio }}
-      </div>
-    </a>
-    {% endfor %}
-    <a class="conference-image" href="#">
-      <div class="flex justify-center items-center h-full">
-        <span class="animated-link text-lg lg:text-lg/lg uppercase"
-          >See all speakers</span
-        >
-      </div>
-    </a>
+      {% for s in speakers2020 %}
+      <a
+        class="conference-image"
+        style="background-image: linear-gradient(black, black), url('{{
+          s.picture
+        }}');"
+        href="#"
+      >
+        <div class="absolute top-0 right-0 w-1/2 p-sm lg:p-lg/sm bg-white">
+          <h4 class="text-sm lg:text-lg/sm font-semibold">{{ s.name }}</h4>
+          <p class="text-xs lg:text-lg/xs">{{ s.title }}</p>
+        </div>
+        <div class="hidden">
+          {{ s.bio }}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="lg:self-end pb-base lg:pb-lg/xl px-base lg:pr-lg/lg">
+      <a class="animated-link uppercase" href="#">See all speakers</a>
+    </div>
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call page.render("Git X Change Hackathon") %}
-  <div class="md-container">
-    {{ gitxchange | markdown | safe }}
-    <p class="flex justify-between lg:block">
-      <a
-        class="animated-link"
-        href="https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25"
-        >Join the hackathon</a
-      >
-    </p>
+  {% call page.render("Hackathon", true) %}
+  <div class="flex flex-col justify-between h-full">
+    <div class="md-container">
+      {{ gitxchange | markdown | safe }}
+    </div>
+    <div class="lg:self-end">
+      <a class="animated-link uppercase" href="#">Join the hackathon</a>
+    </div>
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
@@ -132,7 +134,7 @@ sponsors:
   <div class="border-2 rounded">
     <a
       class="twitter-timeline"
-      data-height="512"
+      data-height="768"
       href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
     >
       Loading tweets...
@@ -142,9 +144,9 @@ sponsors:
   {% endcall %}
   <!-- prettier-ignore -->
   {% call page.render("With the support of") %}
-  <div>
+  <div class="flex flex-col justify-between h-full">
     <ul
-      class="grid grid-cols-2 lg:grid-cols-3 col-gap-xl lg:col-gap-lg/xl gap-xl lg:gap-lg/xl w-full lg:w-span8 py-base lg:py-lg/xl px-base lg:pl-lg/sm lg:pr-lg/lg"
+      class="grid grid-cols-2 lg:grid-cols-3 col-gap-xl lg:col-gap-lg/xl gap-xl lg:gap-lg/xl mb-lg lg:mb-lg/lg"
     >
       {% for s in sponsors%}
       <li class="flex justify-center items-center">
@@ -156,10 +158,8 @@ sponsors:
       </li>
       {% endfor %}
     </ul>
-    <div>
-      <a class="animated-link text-lg lg:text-lg/lg uppercase" href="#"
-        >Support the conference</a
-      >
+    <div class="lg:self-end">
+      <a class="animated-link uppercase" href="#">Support the conference</a>
     </div>
   </div>
   <!-- prettier-ignore -->
@@ -167,6 +167,14 @@ sponsors:
 </main>
 <!-- prettier-ignore -->
 {% call footer.render('bg-white') %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% call modal.render('subscribe') %}
+<!-- prettier-ignore -->
+{% call subscribeModal.render() %}
+<!-- prettier-ignore -->
+{% endcall %}
 <!-- prettier-ignore -->
 {% endcall %}
 <script
