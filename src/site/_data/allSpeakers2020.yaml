@@ -58,3 +58,35 @@
   picture: "/images/speakers-2020/ulises_ali_mejias.jpg"
   bio: |
     Ulises Ali Mejias is associate professor of Communication Studies and director of the Institute for Global Engagement at the State University of New York, College at Oswego. He is a media scholar whose work encompasses critical internet studies, network theory and science, philosophy and sociology of technology, and political economy of digital media. He is the author of _Off the Network: Disrupting the Digital World_ (University of Minnesota Press, 2013) and various articles including ‘Disinformation and the Media: The case of Russia and Ukraine’ in _Media, Culture and Society_ (2017, with N. Vokuev), and ‘Liberation Technology and the Arab Spring: From Utopia to Atopia and Beyond’ in _Fibreculture_ (2012). [ulisesmejias.com](https://ulisesmejias.org)
+- name: "Nicole Immorlica"
+  title: "State University Of New York at Oswego"
+  picture: "/images/speakers-2020/nicole_immorlica.jpg"
+  bio: |
+    Nicole's research lies broadly within the field of algorithmic game theory. Using tools and modeling concepts from both theoretical computer science and economics, Nicole hopes to explain, predict, and shape behavioral patterns in various online and offline systems, markets, and games. Her areas of specialty include social networks and mechanism design. Nicole received her Ph.D. from MIT in Cambridge, MA in 2005 and then completed three years of postdocs at both Microsoft Research in Redmond, WA and CWI in Amsterdam, Netherlands before accepting a job as an assistant professor at Northwestern University in Chicago, IL in 2008. She joined the Microsoft Research Northeast Labs in 2012.
+- name: "Charlotte Cavaille"
+  title: "Assistant Professor of Public Policy at the University of Michigan"
+  picture: "/images/speakers-2020/charlotte_cavaille.jpg"
+  bio: |
+    Charlotte Cavaillé is an Assistant Professor at The Gerald R. Ford School of Public Policy at the University of Michigan. In her research, Charlotte seeks to further our understanding of democratic politics’ effect on mitigating or enhancing market-driven economic inequality. More specifically, she focuses on the demand side of redistributive politics in post-industrial democracies, examining the dynamics of popular attitudes toward redistributive social polices at a time of rising inequality, fiscal stress and high immigration levels. In one of her more recent projects, she examines the relationship between immigration, the welfare state and the rise of populism. Through her work on policy preferences, she has become keenly aware of the ubiquity of "cheap talk" in surveys. In a set of working papers titled “Who Cares? Measuring Attitude Strength in a Polarized Environment," she and her co-authors test a new survey tool that not only measures the level of support for a given policy package, but also seeks to capture the proportion of people who care intensely enough to translate their policy position into political action.
+
+    During her time at the CSDP, Charlotte plans to finish a book manuscript titled _Asking for More: Support for Redistribution in the Age of Inequality_. In _Asking for More_, she explores why, in countries where inequality has increased the most, such as Great Britain and the United States, voters are not asking for more income redistribution. The book starts by documenting the limits of workhorse economic models that focus on material self-interest. Charlotte then develops an alternative framework which advances the study of mass redistributive preferences in two ways. First, it incorporate fairness judgments into the dominant material self-interest tradition. Second, this framework highlight the key role of political elites’ competitive struggle for power. The main insight, succinctly put, is that the public’s response to inequality cannot be understood independently of changes in the supply side of politics: within the boundaries set by norms of fairness, what political elites have to say about inequality and redistribution matters as much as the public’s personal experiences with material hardship and inequality. If time allows, Charlotte will also work on a new project exploring the determinants of voters' perceptions of fairness in the realm of redistributive politics.
+- name: "Suji Yan"
+  title: "Founder of Dimension.im"
+  picture: "/images/speakers-2020/suji_yan.jpg"
+  bio: |
+    Suji Yan is founder of Dimension.im. Dimension created Maskbook and other free software for empowering Cyberian to use Internet freely on top of today’s giants. Suji is also an independent journalist at Caixin Media & Qdaily, FOSS advocator and help created Anti-996 License.
+- name: "Kobbi Nissim"
+  title: "Professor of Computer Science at Georgetown University"
+  picture: "/images/speakers-2020/kobbi_nissim.jpeg"
+  bio: |
+    Prof. Kobbi Nissim is McDevitt Chair in Computer Science, Georgetown University. Nissim’s work is focused on the mathematical formulation and understanding of privacy. His work from 2003 and 2004 with Dinur and Dwork initiated rigorous foundational research of privacy and in 2006 he introduced differential privacy with Dwork, McSherry and Smith. Nissim was awarded the Caspar Bowden Award for Outstanding Research in Privacy Enhancing Technologies in 2019, the Gödel Prize In 2017, the IACR TCC Test of Time Award in 2016 and in 2018, and the ACM PODS Alberto O. Mendelzon Test-of-Time Award in 2013.
+- name: "Katrina Ligett"
+  title: "Associate Professor of Computer Science at the Hebrew University of Jerusalem"
+  picture: "/images/speakers-2020/katrina_ligett.jpg"
+  bio: |
+    Katrina Ligett is an Associate Professor of Computer Science and Head of the Program on Internet & Society at the Hebrew University of Jerusalem. Her research interests include data privacy, algorithmic economics, and algorithmic fairness. She is currently serving on the executive committee of the ACM Special Interest Group on Economics and Computation. Her work has been recognized with an NSF Career Award and a Microsoft Faculty Fellowship.
+- name: "Mei-chun Lee"
+  title: "Anthropologist of digital activism"
+  picture: "/images/speakers-2020/mei-chun_lee.jpg"
+  bio: |
+    Mei-chun is an anthropologist who studies digital activism and network politics. She is an active participant of g0v, a Taiwan-based civic tech community, and has served in the program committee of the g0v summit 2018. She holds an MPhil in Social Anthropology from the University of Cambridge and is finishing up her PhD degree at UC Davis. She is also the co-authored of Taiwan Open Government Report 2014-2016, and a former writer of g0v.news.

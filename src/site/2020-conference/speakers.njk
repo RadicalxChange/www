@@ -35,9 +35,8 @@ title: Speakers - RadicalxChange
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
     >
       {% for s in allSpeakers2020 %}
-      <a
-        href="#"
-        class="conference-image"
+      <div
+        class="conference-image cursor-pointer"
         style="background-image: linear-gradient(black, black), url('{{s.picture}}');"
         data-speaker-declare
         data-modal-trigger="bio"
@@ -49,7 +48,7 @@ title: Speakers - RadicalxChange
         <div class="hidden" data-speaker-bio>
           {{ s.bio | markdown | safe }}
         </div>
-      </a>
+      </div>
       {% endfor %}
     </div>
     <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
@@ -108,6 +107,8 @@ title: Speakers - RadicalxChange
     const name = clicked.find("[data-speaker-name]").text();
     const title = clicked.find("[data-speaker-title]").text();
     const bio = clicked.find("[data-speaker-bio]").contents().clone();
+
+    console.log(bio);
 
     $("[data-bio-picture]").attr("src", picture);
     $("[data-bio-name]").text(name);
