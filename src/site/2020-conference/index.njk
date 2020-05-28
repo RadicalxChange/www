@@ -8,18 +8,25 @@ gitxchange: |
 sponsors:
   - name: Dada.art
     image: /images/sponsors-2020/dada-logo.png
+    href: "https://dada.nyc/"
   - name: Democracy Earth
     image: /images/sponsors-2020/democracy-earth-logo.png
+    href: "https://democracy.earth/"
   - name: Gitcoin
     image: /images/sponsors-2020/gitcoin-logo.svg
+    href: "https://gitcoin.co/"
   - name: Idena
     image: /images/sponsors-2020/idena-logo.jpeg
+    href: "https://idena.io/"
   - name: Insper
     image: /images/sponsors-2020/insper-logo.png
+    href: "https://www.insper.edu.br/"
   - name: Wildcards
     image: /images/sponsors-2020/wildcards-logo.png
+    href: "https://wildcards.world/"
   - name: Ocean Protocol
     image: /images/sponsors-2020/ocean-protocol-logo.svg
+    href: "https://oceanprotocol.com/"
 ---
 
 <!-- prettier-ignore -->
@@ -107,7 +114,7 @@ sponsors:
   {% call page.render("Speakers", false) %}
   <div class="flex flex-col justify-between h-full">
     <a
-      href="#"
+      href="/2020-conference/speakers"
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
     >
       {% for s in keynoteSpeakers2020 %}
@@ -172,11 +179,13 @@ sponsors:
     >
       {% for s in sponsors%}
       <li class="flex justify-center items-center">
-        <img
-          class="grayscale overflow-visible"
-          src="{{ s.image }}"
-          alt="{{ s.name }}"
-        />
+        <a href="{{ s.href }}" class="block">
+          <img
+            class="grayscale overflow-visible"
+            src="{{ s.image }}"
+            alt="{{ s.name }}"
+          />
+        </a>
       </li>
       {% endfor %}
     </ul>
