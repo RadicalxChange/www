@@ -10,7 +10,7 @@
 {% endmacro %}
 
 <!-- prettier-ignore -->
-{% macro render(headerText, padding=true, end=false) %}
+{% macro render(headerText, padding=true) %}
 <section class="color-every-other-child lg:flex">
   <div
     class="flex flex-col w-full lg:w-span4 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
@@ -19,7 +19,7 @@
     {{ header(headerText) }}
   </div>
   <div
-    class="flex flex-col {{ 'justify-end' if end }} w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen
+    class="flex flex-col w-full lg:w-span8 lg:min-h-tall lg-tall:min-h-screen
     {{ 'pb-base lg:py-lg/xl px-base lg:pr-lg/lg lg:pl-lg/sm' if padding else 'lg:pl-lg/sm' }}"
   >
     <!-- prettier-ignore -->

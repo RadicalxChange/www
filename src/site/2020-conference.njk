@@ -42,7 +42,7 @@ sponsors:
   {{ nav.stickyMenuButton() }}
   <!-- prettier-ignore -->
   {% call nav.render(false, true) %}
-  <div style="margin-left: 8.333333vw;">
+  <div style="margin-left: 8.333333vw;" class="hidden lg:block">
     <p class="text-right mb-lg/base uppercase">
       Experience the past, present, and future of cooperative plurality
     </p>
@@ -74,14 +74,24 @@ sponsors:
       </p>
     </div>
     <div>
-      <ul class="flex flex-col lg:flex-row justify-between">
-        <li>
-          <a class="animated-link uppercase" href="#"
-            >Register for the conference</a
+      <ul class="flex flex-col lg:flex-row">
+        <li class="lg:mr-lg/lg">
+          <a
+            class="animated-link uppercase"
+            href="https://www.eventbrite.com/e/radicalxchange-annual-conference-2020-tickets-102439533402"
+            >Register</a
           >
         </li>
-        <li><a class="animated-link" href="#">Speak at the conference</a></li>
-        <li><a class="animated-link" href="#">Support the conference</a></li>
+        <li class="lg:mr-lg/lg">
+          <a
+            class="animated-link"
+            href="mailto:info@radicalxchange.org?subject=Speaker%20Suggestion%20for%202020%20RxC%20Annual%20Conference"
+            >Speak at the conference</a
+          >
+        </li>
+        <li class="lg:mr-lg/lg">
+          <a class="animated-link" href="#">Support the conference</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -90,16 +100,16 @@ sponsors:
   <!-- prettier-ignore -->
   {% call page.render("Speakers", false) %}
   <div class="flex flex-col justify-between h-full">
-    <div
+    <a
+      href="#"
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
     >
       {% for s in speakers2020 %}
-      <a
+      <div
         class="conference-image"
         style="background-image: linear-gradient(black, black), url('{{
           s.picture
         }}');"
-        href="#"
       >
         <div class="absolute top-0 right-0 w-1/2 p-sm lg:p-lg/sm bg-white">
           <h4 class="text-sm lg:text-lg/sm font-semibold">{{ s.name }}</h4>
@@ -108,10 +118,10 @@ sponsors:
         <div class="hidden">
           {{ s.bio }}
         </div>
-      </a>
+      </div>
       {% endfor %}
-    </div>
-    <div class="lg:self-end pb-base lg:pb-lg/xl px-base lg:pr-lg/lg">
+    </a>
+    <div class="lg:self-end mb-lg mx-base lg:pb-lg/xl lg:pr-lg/lg">
       <a class="animated-link uppercase" href="#">See all speakers</a>
     </div>
   </div>
@@ -120,11 +130,15 @@ sponsors:
   <!-- prettier-ignore -->
   {% call page.render("Hackathon", true) %}
   <div class="flex flex-col justify-between h-full">
-    <div class="md-container">
+    <div class="md-container mb-lg lg:mb-lg/lg">
       {{ gitxchange | markdown | safe }}
     </div>
     <div class="lg:self-end">
-      <a class="animated-link uppercase" href="#">Join the hackathon</a>
+      <a
+        class="animated-link uppercase"
+        href="https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25"
+        >Join the hackathon</a
+      >
     </div>
   </div>
   <!-- prettier-ignore -->
