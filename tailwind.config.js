@@ -56,6 +56,7 @@ module.exports = {
       base: "4.5vmin",
       lg: "6.75vmin",
       xl: "9vmin",
+      "2xl": "11vmin",
       span1: "8.333333%",
       span2: "16.666667%",
       span3: "25%",

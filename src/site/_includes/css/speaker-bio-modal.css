@@ -1,0 +1,14 @@
+.speaker-bio-modal_container {
+  @apply flex flex-col;
+  @apply w-full;
+
+  @screen lg {
+    @apply flex-row;
+    width: 66.666667vw;
+  }
+}
+
+/* .speaker-bio-modal_picture {
+  
+
+} */

@@ -26,39 +26,36 @@ title: Speakers - RadicalxChange
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call header.render("Conference") %}
+  {% call header.render("Speakers", "") %}
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call page.render("Speakers", false) %}
-  <div class="flex flex-col justify-between h-full">
-    <a
-      href="#"
+  <div class="flex flex-col justify-between h-full bg-golden-fizz-100">
+    <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
     >
       {% for s in allSpeakers2020 %}
-      <div
+      <a
+        href="#"
         class="conference-image"
-        style="background-image: linear-gradient(black, black), url('{{
-          s.picture
-        }}');"
+        style="background-image: linear-gradient(black, black), url('{{s.picture}}');"
+        data-speaker-declare
+        data-modal-trigger="bio"
       >
         <div class="absolute top-0 right-0 w-1/2 p-sm lg:p-lg/sm bg-white">
-          <h4 class="text-sm lg:text-lg/sm font-semibold">{{ s.name }}</h4>
-          <p class="text-xs lg:text-lg/xs">{{ s.title }}</p>
+          <h4 class="text-sm lg:text-lg/sm font-semibold" data-speaker-name>{{ s.name }}</h4>
+          <p class="text-xs lg:text-lg/xs" data-speaker-title>{{ s.title }}</p>
         </div>
-        <div class="hidden">
-          {{ s.bio }}
+        <div class="hidden" data-speaker-bio>
+          {{ s.bio | markdown | safe }}
         </div>
-      </div>
+      </a>
       {% endfor %}
-    </a>
+    </div>
     <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
-      <a class="animated-link uppercase" href="#">See all speakers</a>
+      <a class="animated-link uppercase" href="/2020-conference">Back to conference</a>
     </div>
   </div>
-  <!-- prettier-ignore -->
-  {% endcall %}
 </main>
 <!-- prettier-ignore -->
 {% call footer.render('bg-white') %}
@@ -72,12 +69,54 @@ title: Speakers - RadicalxChange
 {% endcall %}
 <!-- prettier-ignore -->
 {% endcall %}
-<script
-  async
-  src="https://platform.twitter.com/widgets.js"
-  charset="utf-8"
-></script>
+<!-- prettier-ignore -->
+{% call modal.render('bio') %}
+<div class="speaker-bio-modal_container">
+  <div
+    style="flex: 0 1 41.666667%;"
+    class="flex flex-col mb-base lg:mb-0 lg:mr-lg/lg"
+  >
+    <img class="mb-base lg:mb-lg/base" data-bio-picture />
+    <div>
+      <p class="text-center" data-bio-name></p>
+      <p class="text-center italic" data-bio-title></p>
+    </div>
+  </div>
+  <div
+    style="flex: 0 1 58.333333%;"
+    class="md-container overflow-y-auto"
+    data-bio-content
+  ></div>
+</div>
+<!-- prettier-ignore -->
+{% endcall %}
 <script>
+  // Extract url from text like:
+  // background-image: linear-gradient(black, black),
+  //     url('https://www.radicalxchange.org/wp-content/uploads/2020/02/DOMINGUES_JULIANA.jpg');
+  function extractUrl(str) {
+    const matches = /url\((['"]?)(.*)\1\)$/.exec(str);
+    return matches[2];
+  }
+
+  $("[data-speaker-declare]").click(function (event) {
+    event.preventDefault();
+
+    const clicked = $(this);
+
+    const picture = extractUrl(clicked.css("background-image"));
+    const name = clicked.find("[data-speaker-name]").text();
+    const title = clicked.find("[data-speaker-title]").text();
+    const bio = clicked.find("[data-speaker-bio]").contents().clone();
+
+    $("[data-bio-picture]").attr("src", picture);
+    $("[data-bio-name]").text(name);
+    $("[data-bio-title]").text(title);
+    const contentElement = $("[data-bio-content]");
+    contentElement.empty();
+    contentElement.append(bio);
+  });
+
   // prettier-ignore
   {% include "components/nav.js" %}
   // prettier-ignore
