@@ -23,10 +23,10 @@ Here is a growing body of materials and tools to learn from and work with.
 
 <h2 id="materials">Materials</h2>
 
-- [Roadmap to Pandemic Resilience](https://www.radicalxchange.org/wp-content/uploads/2020/04/RoadmapToPandemicResilience.pdf)
-- [Rethinking Public Purchasing](https://www.radicalxchange.org/rxc-radically-rethinking-public-purchasing/)
-- [Data Freedom Act](https://www.radicalxchange.org/dfa/)
-- [Handbook for Local Democracy](https://www.radicalxchange.org/wp-content/uploads/2020/02/The_Handbook_for_Radical_Local_Democracy.pdf)
+- [Roadmap to Pandemic Resilience](/files/RoadmapToPandemicResilience.pdf)
+- [Rethinking Public Purchasing](/files/RxC-Radically-Rethinking-Public-Purchasing.pdf)
+- [Data Freedom Act](/files/DFA.pdf)
+- [Handbook for Local Democracy](/files/The_Handbook_for_Radical_Local_Democracy.pdf)
 
 <h2 id="ideas-research">Ideas + Research</h2>
 

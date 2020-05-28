@@ -15,7 +15,7 @@ Democracy, whether in a country, community or local club, is about giving each i
 To get up to speed on quadratic voting, we recommend the following:
 
 - [Chapter 2 of Radical Markets](http://radicalmarkets.com/chapters/radical-democracy/)
-- [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/wp-content/uploads/2020/02/The_Handbook_for_Radical_Local_Democracy.pdf)
+- [The Handbook for Radical Local Democracy](/files/The_Handbook_for_Radical_Local_Democracy.pdf)
 - [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html)
 - [Wikipedia](https://en.wikipedia.org/wiki/Quadratic_voting)
 
@@ -25,7 +25,7 @@ Funding public goods, like shared infrastructure or open-source software, is a k
 
 To get up to speed on quadratic finance, some good places to start are:
 
-- [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/wp-content/uploads/2020/02/The_Handbook_for_Radical_Local_Democracy.pdf)
+- [The Handbook for Radical Local Democracy](/files/The_Handbook_for_Radical_Local_Democracy.pdf)
 - [Liberal Radicalism: A Flexible Design For Philanthropic Matching Funds](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656)
 - [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html)
 
@@ -44,7 +44,7 @@ The right to use or operate in a finite public space also requires regulation by
 
 More on SALSA can be found here:
 
-- [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/wp-content/uploads/2020/02/The_Handbook_for_Radical_Local_Democracy.pdf)
+- [The Handbook for Radical Local Democracy](/The_Handbook_for_Radical_Local_Democracy.pdf)
 
 ## Data Dignity
 
@@ -52,7 +52,7 @@ Data has become perhaps the most valuable commodity in the world – yet every d
 
 For more on data dignity, see:
 
-- [Data Freedom Act](https://www.radicalxchange.org/wp-content/uploads/2020/03/DFA.pdf)
+- [Data Freedom Act](/files/DFA.pdf)
 - [Chapter 5 of Radical Markets](http://radicalmarkets.com/chapters/data-as-labor/)
 - [Who Owns the Future?](https://www.simonandschuster.com/books/Who-Owns-the-Future/Jaron-Lanier/9781451654974)
 
