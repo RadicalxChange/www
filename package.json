@@ -8,8 +8,10 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
     "autoprefixer": "^9.7.6",
     "js-yaml": "^3.13.1",
+    "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
     "postcss-import": "^12.0.1",
     "postcss-mixins": "^6.2.3",
