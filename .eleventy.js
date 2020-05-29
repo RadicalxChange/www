@@ -32,6 +32,8 @@ module.exports = function (config) {
   config.addPassthroughCopy("./src/site/fonts");
   config.addPassthroughCopy("./src/site/images");
   config.addPassthroughCopy("./src/site/files");
+  config.addPassthroughCopy("./src/site/_redirects");
+  config.addPassthroughCopy("./src/site/_headers");
 
   // Browsersync to serve 404
   config.setBrowserSyncConfig({
