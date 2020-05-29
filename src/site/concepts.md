@@ -36,7 +36,7 @@ Private property is at the heart of the capitalist system and has many advantage
 For more on COST, we recommend:
 
 - [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)
-- [Cost as a Cure for Car Dependency](https://www.radicalxchange.org/blog/posts/2019-06-07-z6cxo7/)
+- [Cost as a Cure for Car Dependency](https://blog.radicalxchange.org/blog/posts/2019-06-07-z6cxo7/)
 
 ## Self Assessed Licenses Sold via Auction (SALSA)
 
@@ -62,10 +62,10 @@ In a highly digital world, data has a value not only in terms of information but
 
 For more on ISD, good places to start include:
 
-- [Intersectional Social Data](https://www.radicalxchange.org/blog/posts/2019-10-24-uh78r5/)
-- [Motivating The Case for Decentralized Social Identity: Part One](https://www.radicalxchange.org/blog/posts/2019-06-06-d4utdx/)
+- [Intersectional Social Data](https://blog.radicalxchange.org/blog/posts/2019-10-24-uh78r5/)
+- [Motivating The Case for Decentralized Social Identity: Part One](https://blog.radicalxchange.org/blog/posts/2019-06-06-d4utdx/)
 - [Motivating The Case for Decentralized Social Identity. Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42)
-- [Motivating The Case For Decentralized Social Identity: Part Three](https://www.radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
+- [Motivating The Case For Decentralized Social Identity: Part Three](https://blog.radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
 
 ## Radical Antitrust
 
