@@ -10,14 +10,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:site_name" content="RadicalxChange" />
-    <meta property="og:url" content="https://www.radicalxchange.org/" />
+    <meta property="og:url" content="{{ metadata.url }}" />
     <meta
       property="og:image"
-      content="https://www.radicalxchange.org/images/logos/open-graph-logo.png"
+      content="{{ metadata.url }}/images/logos/open-graph-logo.png"
     />
     <meta
       property="og:image:secure_url"
-      content="https://www.radicalxchange.org/images/logos/open-graph-logo.png"
+      content="{{ metadata.url }}/images/logos/open-graph-logo.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
@@ -26,7 +26,7 @@
     <meta name="twitter:site" content="@radxchange" />
     <meta
       name="twitter:image"
-      content="https://www.radicalxchange.org/images/logos/open-graph-logo.png"
+      content="{{ metadata.url }}/images/logos/open-graph-logo.png"
     />
     <meta name="twitter:creator" content="@radxchange" />
     <!-- prettier-ignore -->
@@ -52,7 +52,8 @@
     {% endblock %}
     <title>{{ title }}</title>
   </head>
-  <body class="font-body font-normal text-base lg:text-lg/base leading-snug">
+  <!-- prettier-ignore -->
+  <body class="font-body font-normal text-base lg:text-lg/base leading-snug {{ bodyBg }}">
     <!-- prettier-ignore -->
     {% block body %}
     {{ content | safe }}

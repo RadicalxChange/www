@@ -19,6 +19,7 @@ module.exports = {
       "2xl": "6vmin",
       "3xl": "6.5vmin",
       header: "13.5vmin",
+      fullscreen: "20vmin",
       "lg/xs": ".75vw",
       "lg/sm": "1.2vw",
       "lg/base": "1.4vw",
@@ -28,6 +29,7 @@ module.exports = {
       "lg/3xl": "3vw",
       "lg/header": "8vw",
       "lg/header-sm": "4vw",
+      "lg/fullscreen": "15vw",
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
