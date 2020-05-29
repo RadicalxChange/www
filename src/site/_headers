@@ -1,5 +1,5 @@
 /*
-  X-XSS-Protection "1; mode=block"
-  X-Content-Type-Options nosniff
-  X-Frame-Options SAMEORIGIN
-  Referrer-Policy no-referrer-when-downgrade
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer-when-downgrade
