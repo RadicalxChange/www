@@ -29,26 +29,4 @@ submitBtn.click(function (event) {
       }
     },
   });
-
-  // console.log(form.attr("action"));
-
-  // fetch(form.attr("action"), {
-  //   method: form.attr("method"),
-  //   headers: {
-  //     contentType: "application/json; charset=utf-8",
-  //   },
-  // }).then(
-  //   function (data) {
-  //     if (data.result != "success") {
-  //       console.log(data);
-  //       failText.show();
-  //     } else {
-  //       successText.show();
-  //     }
-  //   },
-  //   function (err) {
-  //     console.log(err);
-  //     failText.show();
-  //   }
-  // );
 });

@@ -108,8 +108,6 @@ title: Speakers - RadicalxChange
     const title = clicked.find("[data-speaker-title]").text();
     const bio = clicked.find("[data-speaker-bio]").contents().clone();
 
-    console.log(bio);
-
     $("[data-bio-picture]").attr("src", picture);
     $("[data-bio-name]").text(name);
     $("[data-bio-title]").text(title);
