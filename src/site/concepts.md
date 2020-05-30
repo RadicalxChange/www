@@ -36,7 +36,6 @@ Private property is at the heart of the capitalist system and has many advantage
 For more on COST, we recommend:
 
 - [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)
-- [Cost as a Cure for Car Dependency](https://blog.radicalxchange.org/blog/posts/2019-06-07-z6cxo7/)
 
 ## Self Assessed Licenses Sold via Auction (SALSA)
 
