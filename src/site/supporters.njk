@@ -74,11 +74,7 @@ supporters:
     >
       {% for s in supporters %}
       <li>
-        <a
-          class="flex items-center h-full leading-tight text-lg lg:text-lg/lg"
-          href="{{ s.href }}"
-          >{{ s.name }}</a
-        >
+        <a class="flex items-center h-full" href="{{ s.href }}">{{ s.name }}</a>
       </li>
       {% endfor %}
     </ul>
