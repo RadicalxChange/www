@@ -2,6 +2,7 @@
 
 .animated-link {
   position: relative;
+  @apply font-button;
   @apply font-medium;
 }
 
