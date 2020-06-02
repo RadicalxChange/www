@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "RadicalxChange's www website",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "RXC_DEV=true npx @11ty/eleventy --serve"
+    "build:images": "node ./src/site/images.js",
+    "build:site": "npx @11ty/eleventy",
+    "build": "npm run build:images; npm run build:site",
+    "serve": "npx @11ty/eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-img": "^0.2.5",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "autoprefixer": "^9.8.0",
     "js-yaml": "^3.14.0",
     "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
+    "ncp": "^2.0.0",
     "nunjucks": "^3.2.1",
     "postcss-import": "^12.0.1",
     "postcss-mixins": "^6.2.3",

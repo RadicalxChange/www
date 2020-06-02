@@ -124,17 +124,18 @@ sponsors:
     >
       {% for s in keynoteSpeakers2020 %}
       <!-- prettier-ignore -->
-      {% speakertile s.picture %}
-      <div
-        class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white"
-      >
-        <h4 class="text-sm lg:text-lg/sm font-semibold">{{ s.name }}</h4>
-        <p class="text-xs lg:text-lg/xs">{{ s.title }}</p>
+      <div class="conference-image" style="background-image: linear-gradient(black, black), url('/images/speakers-2020/{{ s.picture }}');">
+        <div
+          class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white"
+        >
+          <h4 class="text-sm lg:text-lg/sm font-semibold">{{ s.name }}</h4>
+          <p class="text-xs lg:text-lg/xs">{{ s.title }}</p>
+        </div>
+        <div class="hidden">
+          {{ s.bio }}
+        </div>
       </div>
-      <div class="hidden">
-        {{ s.bio }}
-      </div>
-      {% endspeakertile %} {% endfor %}
+      {% endfor %}
     </a>
     <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
       <a class="animated-link uppercase" href="/2020-conference/speakers"
