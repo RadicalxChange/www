@@ -1,0 +1,17 @@
+<!-- prettier-ignore -->
+{% macro item(lg=true) %}
+<!-- prettier-ignore -->
+<li class="mb-xs {{ 'lg:mb-0 lg:mr-lg/lg' if lg else 'lg:hidden' }}">
+  <!-- prettier-ignore -->
+  {{ caller() }}
+</li>
+<!-- prettier-ignore -->
+{% endmacro %}
+<!-- prettier-ignore -->
+{% macro render() %}
+<ul class="flex flex-col lg:flex-row">
+  <!-- prettier-ignore -->
+  {{ caller() }}
+</ul>
+<!-- prettier-ignore -->
+{% endmacro %}

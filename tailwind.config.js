@@ -18,6 +18,7 @@ module.exports = {
       xl: "5.5vmin",
       "2xl": "6vmin",
       "3xl": "6.5vmin",
+      "header-sm": "9vmin",
       header: "13.5vmin",
       fullscreen: "20vmin",
       "lg/xs": ".75vw",
@@ -27,8 +28,8 @@ module.exports = {
       "lg/xl": "2vw",
       "lg/2xl": "2.4vw",
       "lg/3xl": "3vw",
-      "lg/header": "8vw",
       "lg/header-sm": "4vw",
+      "lg/header": "8vw",
       "lg/fullscreen": "15vw",
     },
     fontFamily: {
