@@ -157,7 +157,8 @@
   bio: |
     Prof. Kobbi Nissim is McDevitt Chair in Computer Science, Georgetown University. Nissim’s work is focused on the mathematical formulation and understanding of privacy. His work from 2003 and 2004 with Dinur and Dwork initiated rigorous foundational research of privacy and in 2006 he introduced differential privacy with Dwork, McSherry and Smith. Nissim was awarded the Caspar Bowden Award for Outstanding Research in Privacy Enhancing Technologies in 2019, the Gödel Prize In 2017, the IACR TCC Test of Time Award in 2016 and in 2018, and the ACM PODS Alberto O. Mendelzon Test-of-Time Award in 2013.
 - name: "Katrina Ligett"
-  title: "Associate Professor of Computer Science at the Hebrew University of
+  title:
+    "Associate Professor of Computer Science at the Hebrew University of
     Jerusalem"
   picture: "katrina_ligett.png"
   bio: |
@@ -345,14 +346,6 @@
     enquiry into “the Future of the Corporation” and his most recent book
     Prosperity: Better Business Makes the Greater Good is published by Oxford
     University Press.
-- name: Djamila Ribeiro
-  title: "Brazilian Black feminist, journalist, and philosopher"
-  picture: djamila_ribeiro.png
-  bio: >-
-    Djamila Ribeiro is a Brazilian Black feminist, journalist, and philosopher.
-    She works as an editor for the weekly magazine Carta Capital and previously
-    was the Vice-Secretary for Human Rights and Citizenship Affairs in the city
-    of São Paulo.
 - name: Fanny Lakoubay
   title: Head of Communications at RadicalxChange
   picture: fanny_lakoubay.png
@@ -444,7 +437,8 @@
     between New York, the US-Mexico Borderlands, and the Middle East profoundly
     changed each region.
 - name: Katherine Guinness
-  title: "Assistant Professor of Arts at the University of Colorado Colorado Springs "
+  title:
+    "Assistant Professor of Arts at the University of Colorado Colorado Springs "
   picture: katherine_guinness.png
   bio: >
     Katherine Guinness is a theorist and historian of contemporary art. She is
@@ -526,7 +520,8 @@
     Killing Us: How Big Business is Harming Our Society and Planet - and What To
     Do About It, will be published by Penguin Business in September 2020.
 - name: Nathan Schneider
-  title: Assistant Professor of Media Studies at the University of Colorado Boulder
+  title:
+    Assistant Professor of Media Studies at the University of Colorado Boulder
   picture: nathan_schneider.png
   bio: >-
     Nathan Schneider is an assistant professor of media studies at the
@@ -703,13 +698,15 @@
   bio: |
     Cassie Thornton is an artist and activist from the US, currently living in Canada. Since before the 2008 financial collapse, Thornton has focused on researching and revealing the complex nature of debt through socially engaged art. She is the Artist-in-Pandemic at Furtherfield in London, working on a social cure for a cooperative species: The Hologram. She is currently the co-director of the Re-Imagining Value Action Lab in Thunder Bay, an art and social center at Lakehead University in Ontario, Canada.
 - name: Max Haiven
-  title: "Canada Research Chair in Culture, Media and Social Justice at Lakehead
+  title:
+    "Canada Research Chair in Culture, Media and Social Justice at Lakehead
     University"
   picture: max_haiven.png
   bio: |
     Max Haiven is Canada Research Chair in Culture, Media and Social Justice at Lakehead University in Northwest Ontario and director of the ReImagining Value Action Lab (RiVAL). He writes articles for both academic and general audiences and is the author of the books Crises of Imagination, Crises of Power: Capitalism, Creativity and the Commons (2014), The Radical Imagination: Social Movement Research in the Age of Austerity (with Alex Khasnabish, 2014) and Cultures of Financialization: Fictitious Capital in Popular Culture and Everyday Life (2014). His latest book, Art after Money, Money after Art: Creative Strategies Against Financialization, was published by Pluto in Fall 2018. His book Revenge Capitalism: The Ghosts of Empire, the Demons of Capital, and the Settling of Unpayable Debts will appear in May 2020.
 - name: Tomislav Medak
-  title: "PhD researcher at Coventry University’s Centre for Postdigital Cultures"
+  title:
+    "PhD researcher at Coventry University’s Centre for Postdigital Cultures"
   picture: tomislav_medak.png
   bio: |
     Tomislav Medak is a PhD researcher at Coventry University’s Centre for Postdigital Cultures. He's also a part of the theory and publishing team of Multimedia Institute/MAMA, an amateur librarian for the Memory of the World & Pirate Care initiatives, and a member of the performing arts collective BADco. His research interests are in technology, capitalist development and post-capitalist transition, with a particular focus on planetary ecological crisis, techno-science and intellectual property.
@@ -759,7 +756,8 @@
   bio: |
     Colin Megill is an entrepreneur who builds tools which empower people to explore high dimensional spaces — from the life sciences to democracies. He worked with scientists at Fred Hutchinson Cancer Research Center to design and build nextstrain.org, which won the 2017 Open Science Prize, and is used by public health officials around the world to study virus evolution collaboratively in real time. He is CEO of pol.is, the digital democracy and public participation efforts of which were the subject of documentary programming by the BBC, and have been featured in The New York Times, Wired, MIT Technology Review, The Economist, Le Monde, Monocle, and The Guardian, as well as in recent books published by Penguin and Harper Business. He is a father and homeschool educator to three daring little boys.
 - name: Vinícius Carrasco
-  title: "Economics Professor at Pontifícia Universidade Católica do Rio de Janeiro"
+  title:
+    "Economics Professor at Pontifícia Universidade Católica do Rio de Janeiro"
   picture: vinícius_carrasco.png
   bio: |
     Vinícius Carrasco is an Economics Professor at Pontifícia Universidade Católica do Rio de Janeiro and also holds the position of Chief Regulatory Affairs Executive Officer at StoneCo. Previously, he was a member of the Brazilian Academy of Sciences and the Planning and Research Executive Officer at the BNDES (Brazilian Development Bank). He received a doctorate from Stanford University, a graduate degree from Pontifícia Universidade Católica do Rio de Janeiro and an undergraduate degree from Universidade Federal do Rio Grande do Sul.
@@ -779,7 +777,8 @@
   bio: |
     Mathew Dryhurst is an artist and researcher based in Berlin Germany. His research focuses on technical and ethical protocols. He makes music and creates art with Holly Herndon, and their albums PROTO and Platform (4AD) have provoked international critical acclaim. He teaches at NYU’s Clive Davis Institute of Recorded Music, Strelka Institute and European Graduate School. He previously served as Director of Programming at Gray Area in San Francisco. Most recently, Dryhurst co-founded the podcast series Interdependence alongside Holly Herndon.
 - name: Tony Lai
-  title: "Founder of the Blockchain Group at Stanford's Center for Legal Informatics"
+  title:
+    "Founder of the Blockchain Group at Stanford's Center for Legal Informatics"
   picture: tony_lai.png
   bio: |
     Tony unleashes collective potential at a human and a systems level. He is a lawyer, researcher, and technology entrepreneur, advising and working with companies, government agencies, law firms, and nonprofits to build the future of trust, transactions, and dispute resolution. He is an Entrepreneurial Fellow and Founder of the Blockchain Group at CodeX, Stanford's Center for Legal Informatics. Tony founded the company, Legal.io, to deploy technology to scale legal access worldwide, and serves on the boards of various companies and non-profit organizations working on improving data governance and legal inter-operability. He consults on collaboration design with DSIL Global and learnt design thinking at Stanford’s d.school. He helped design and research the first legal technology course at Stanford Law School, and was on the founding team of StartX, the Stanford-affiliated startup accelerator. He advises government agencies, startups, enterprises, and legal service organizations at the intersection of computational law, smart legal contracts, digital identity, and service technologies and protocols. Prior to his work at Stanford, Tony clocked 10,000 hours’ experience as a lawyer advising companies, public sector bodies and charities on regulatory, transactional and IP issues in Europe, Asia and Africa. He holds bachelor’s and master’s degrees from Oxford University, and a Master of Laws degree in Law, Science and Technology from Stanford. Specialties: Legal informatics; blockchain governance; smart contracts; entrepreneurship and social innovation; design thinking; intellectual property, privacy, data protection, internet, technology, licensing, outsourcing, general corporate, commercial, emerging companies, and M&A law.
