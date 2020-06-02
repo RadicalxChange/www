@@ -190,17 +190,11 @@ sponsors:
   {% call page.render("With the support of") %}
   <div class="flex flex-col justify-between h-full">
     <ul
-      class="grid grid-cols-2 lg:grid-cols-3 col-gap-xl lg:col-gap-lg/xl gap-xl lg:gap-lg/xl mb-lg lg:mb-lg/lg"
+      class="grid grid-cols-2 lg:grid-cols-3 gap-base lg:gap-lg/base col-gap-lg lg:col-gap-lg/lg mb-lg lg:mb-lg/lg"
     >
       {% for s in sponsors%}
-      <li class="flex justify-center items-center">
-        <a href="{{ s.href }}" class="block">
-          <img
-            class="grayscale overflow-visible"
-            src="{{ s.image }}"
-            alt="{{ s.name }}"
-          />
-        </a>
+      <li>
+        <a class="flex items-center h-full" href="{{ s.href }}">{{ s.name }}</a>
       </li>
       {% endfor %}
     </ul>
