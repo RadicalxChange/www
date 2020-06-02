@@ -3,21 +3,27 @@
   "version": "1.0.0",
   "description": "RadicalxChange's www website",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "build:images": "node ./src/site/images.js",
+    "build:site": "npx @11ty/eleventy",
+    "build": "npm run build:images; npm run build:site",
     "serve": "npx @11ty/eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "autoprefixer": "^9.7.6",
-    "js-yaml": "^3.13.1",
+    "autoprefixer": "^9.8.0",
+    "js-yaml": "^3.14.0",
     "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
+    "ncp": "^2.0.0",
+    "nunjucks": "^3.2.1",
     "postcss-import": "^12.0.1",
     "postcss-mixins": "^6.2.3",
     "postcss-nesting": "^7.0.1",
     "postcss-prettify": "^0.3.4",
     "prettier": "2.0.5",
+    "sharp": "^0.25.3",
     "tailwindcss": "^1.4.6"
-  }
+  },
+  "dependencies": {}
 }

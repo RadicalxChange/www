@@ -5,6 +5,11 @@ const fs = require("fs");
 const { DateTime } = require("luxon");
 
 module.exports = function (config) {
+  const isDev = process.env.RXC_DEV === "true";
+  if (isDev) {
+    console.log("Running with RXC_DEV set to true");
+  }
+
   // Adding this just for the absoluteUrl filter used in 11ty examples
   config.addPlugin(pluginRss);
 
@@ -29,8 +34,8 @@ module.exports = function (config) {
   });
 
   // Pass through static assets
+  // src/site/images is copied through its own pipeline (see package.json)
   config.addPassthroughCopy("./src/site/fonts");
-  config.addPassthroughCopy("./src/site/images");
   config.addPassthroughCopy("./src/site/files");
   config.addPassthroughCopy("./src/site/_redirects");
   config.addPassthroughCopy("./src/site/_headers");
