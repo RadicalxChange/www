@@ -1,0 +1,118 @@
+---
+layout: layouts/html.njk
+title: Supporters - RadicalxChange
+headerText: Supporters
+supporters:
+  - name: Hewlett Foundation
+    href: "https://hewlett.org/"
+  - name: Kauffman Foundation
+    href: "https://www.kauffman.org/"
+  - name: Merit
+    href: "https://www.merits.com/"
+  - name: Omidyar Network
+    href: "https://www.omidyar.com/"
+  - name: Wireline
+    href: "https://www.wireline.io/"
+  - name: The Charter Cities Institute
+    href: "https://www.chartercitiesinstitute.org/"
+  - name: Institute for New Economic Thinking
+    href: "https://www.ineteconomics.org/"
+  - name: The Osa Foundation
+    href: "https://www.theosafoundation.org/"
+  - name: Alfred P. Sloan Foundation
+    href: "https://sloan.org/"
+  - name: Bunz
+    href: "https://bunz.com/"
+  - name: College for Creative Studies
+    href: "https://www.collegeforcreativestudies.edu/"
+  - name: Dada.art
+    image: /images/sponsors-2020/dada-logo.png
+    href: "https://dada.nyc/"
+  - name: Democracy Earth
+    image: /images/sponsors-2020/democracy-earth-logo.png
+    href: "https://democracy.earth/"
+  - name: Evil Twin Booking
+    href: "https://eviltwinbooking.org/"
+  - name: Gitcoin
+    image: /images/sponsors-2020/gitcoin-logo.svg
+    href: "https://gitcoin.co/"
+  - name: Insper
+    image: /images/sponsors-2020/insper-logo.png
+    href: "https://www.insper.edu.br/"
+  - name: Idena
+    image: /images/sponsors-2020/idena-logo.jpeg
+    href: "https://idena.io/"
+  - name: Microsoft
+    href: "https://www.microsoft.com/"
+  - name: Nesta
+    href: "https://www.nesta.org.uk/"
+  - name: Ocean Protocol
+    image: /images/sponsors-2020/ocean-protocol-logo.svg
+    href: "https://oceanprotocol.com/"
+  - name: Polco
+    href: "https://polco.us/"
+  - name: Totle
+    href: "https://www.totle.com/"
+  - name: Wildcards
+    image: /images/sponsors-2020/wildcards-logo.png
+    href: "https://wildcards.world/"
+---
+
+<!-- prettier-ignore -->
+{% import "components/call-to-action.njk" as callToAction %}
+
+<div class="flex-grow flex flex-col justify-between">
+  <div class="mb-lg lg:mb-lg/lg">
+    <p>
+      We appreciate our partners whose support helps to make our progress and
+      events possible.
+    </p>
+  </div>
+  <div>
+    <ul
+      class="grid grid-cols-2 gap-base lg:gap-lg/base col-gap-lg lg:col-gap-lg/lg mb-lg lg:mb-lg/lg"
+    >
+      {% for s in supporters %}
+      <li>
+        <a
+          class="flex items-center h-full leading-tight text-lg lg:text-lg/lg"
+          href="{{ s.href }}"
+          >{{ s.name }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+    <!-- prettier-ignore -->
+    {% call callToAction.render() %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a
+      class="animated-link uppercase"
+      href="mailto:paul@radicalxchange.org?subject=Becoming%20a%20supporter&body=I'd%20like%20to%20become%20a%20RadicalxChange%20supporter."
+    >
+      Become a supporter
+    </a>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a
+      class="animated-link"
+      href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
+      >Donate w/ PayPal
+    </a>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a
+      class="animated-link"
+      href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
+      >Donate w/ Crypto
+    </a>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+  </div>
+</div>
