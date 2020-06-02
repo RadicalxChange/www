@@ -100,10 +100,8 @@ sponsors:
       {% endcall %}
       <!-- prettier-ignore -->
       {% call callToAction.item() %}
-      <a
-        class="animated-link"
-        href="mailto:info@radicalxchange.org?subject=Speaker%20Suggestion%20for%202020%20RxC%20Annual%20Conference"
-        >Speak at the conference</a
+      <a class="animated-link" href="mailto:ticketing@radicalxchange.org"
+        >Contact the organizers</a
       >
       <!-- prettier-ignore -->
       {% endcall %}
@@ -158,6 +156,21 @@ sponsors:
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
+  {% call page.render("Schedule") %}
+  <div class="conference-schedule">
+    <iframe
+      class="flex-grow mb-lg lg:mb-lg/lg border-2 rounded bg-white"
+      src="/2020-conference/schedule"
+    ></iframe>
+    <div class="lg:self-end">
+      <a class="animated-link uppercase" href="/2020-conference/schedule"
+        >See the schedule</a
+      >
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
   {% call page.render("Hackathon", true) %}
   <div class="flex flex-col justify-between h-full">
     <div class="md-container mb-lg lg:mb-lg/lg">
@@ -190,17 +203,11 @@ sponsors:
   {% call page.render("With the support of") %}
   <div class="flex flex-col justify-between h-full">
     <ul
-      class="grid grid-cols-2 lg:grid-cols-3 col-gap-xl lg:col-gap-lg/xl gap-xl lg:gap-lg/xl mb-lg lg:mb-lg/lg"
+      class="grid grid-cols-2 lg:grid-cols-3 gap-base lg:gap-lg/base col-gap-lg lg:col-gap-lg/lg mb-lg lg:mb-lg/lg"
     >
       {% for s in sponsors%}
-      <li class="flex justify-center items-center">
-        <a href="{{ s.href }}" class="block">
-          <img
-            class="grayscale overflow-visible"
-            src="{{ s.image }}"
-            alt="{{ s.name }}"
-          />
-        </a>
+      <li>
+        <a class="flex items-center h-full" href="{{ s.href }}">{{ s.name }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -214,7 +221,7 @@ sponsors:
   {% endcall %}
 </main>
 <!-- prettier-ignore -->
-{% call footer.render('bg-white') %}
+{% call footer.render('bg-golden-fizz-100') %}
 <!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->

@@ -76,3 +76,12 @@
     width: 20vw;
   }
 }
+
+.conference-schedule {
+  @apply flex flex-col justify-between;
+  height: 85vh;
+
+  @screen lg {
+    @apply h-full;
+  }
+}
