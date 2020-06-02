@@ -87,30 +87,41 @@ sponsors:
       </p>
     </div>
     <div>
+      <!-- prettier-ignore -->
       {% call callToAction.render() %}
-      <ul class="flex flex-col lg:flex-row">
-        {% call callToAction.item() %}
-        <a
-          class="animated-link uppercase"
-          href="https://www.eventbrite.com/e/radicalxchange-annual-conference-2020-tickets-102439533402"
-          >Register</a
-        >
-        {% endcall %} {% call callToAction.item() %}
-        <a
-          class="animated-link"
-          href="mailto:info@radicalxchange.org?subject=Speaker%20Suggestion%20for%202020%20RxC%20Annual%20Conference"
-          >Speak at the conference</a
-        >
-        {% endcall %} {% call callToAction.item() %}
-        <a class="animated-link" href="#" data-modal-trigger="sponsor"
-          >Support the conference</a
-        >
-        {% endcall %} {% call callToAction.item(false) %}
-        <a class="animated-link" href="/2020-conference/schedule"
-          >See the schedule</a
-        >
-        {% endcall %}
-      </ul>
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a
+        class="animated-link uppercase"
+        href="https://www.eventbrite.com/e/radicalxchange-annual-conference-2020-tickets-102439533402"
+        >Register</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a
+        class="animated-link"
+        href="mailto:info@radicalxchange.org?subject=Speaker%20Suggestion%20for%202020%20RxC%20Annual%20Conference"
+        >Speak at the conference</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a class="animated-link" href="#" data-modal-trigger="sponsor"
+        >Support the conference</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item(false) %}
+      <a class="animated-link" href="/2020-conference/schedule"
+        >See the schedule</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
       {% endcall %}
     </div>
   </div>
