@@ -11,8 +11,7 @@ module.exports = {
       touch: { raw: "(hover: none)" },
     },
     fontSize: {
-      xs2: "2.5vmin",
-      xs: "3.5vmin",
+      xs: "2.5vmin",
       sm: "4vmin",
       base: "4.5vmin",
       lg: "5vmin",
@@ -22,8 +21,7 @@ module.exports = {
       "header-sm": "9vmin",
       header: "13.5vmin",
       fullscreen: "20vmin",
-      "lg/xs2": ".75vw",
-      "lg/xs": "1vw",
+      "lg/xs": ".75vw",
       "lg/sm": "1.2vw",
       "lg/base": "1.4vw",
       "lg/lg": "1.6vw",
@@ -36,8 +34,7 @@ module.exports = {
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
-      button: ["SuisseIntl-Book", "sans-serif"],
-      body: ["SuisseIntl-Regular", "sans-serif"],
+      body: ["SuisseIntl", "sans-serif"],
     },
     colors: {
       "golden-fizz": { 100: "#EEFD4E" },

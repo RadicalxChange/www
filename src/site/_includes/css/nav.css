@@ -51,14 +51,14 @@
 .nav_menu {
   @apply p-xl;
   @apply m-auto;
-  @apply text-sm;
+  @apply text-base;
   @apply uppercase;
 
   @screen lg {
     @apply flex justify-between;
     @apply p-0;
     @apply m-0;
-    @apply text-lg/sm;
+    @apply text-lg/base;
   }
 }
 
@@ -82,20 +82,18 @@
   @apply ml-base;
 
   @screen lg {
-    @apply mt-lg/sm;
+    @apply mt-lg/xs;
     @apply ml-lg/sm;
     @apply hidden;
   }
 }
 
 .nav_submenu-item {
-  @apply mt-xs;
-  @apply text-xs;
+  @apply text-sm;
   @apply text-left;
 
   @screen lg {
-    @apply mt-lg/xs;
-    @apply text-lg/xs;
+    @apply text-lg/sm;
   }
 }
 
