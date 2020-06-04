@@ -7,8 +7,15 @@
 }
 
 @font-face {
-  font-family: "SuisseIntl";
+  font-family: "SuisseIntl-Book";
   src: url("/fonts/SuisseIntl-Book.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SuisseIntl-Regular";
+  src: url("/fonts/SuisseIntl-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
