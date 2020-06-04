@@ -1,122 +1,78 @@
 ---
-layout: layouts/_base.njk
+layout: layouts/html.njk
 title: Team - RadicalxChange
+headerText: Team
 ---
 
-<!-- prettier-ignore -->
-{% import "components/nav.njk" as nav %}
-<!-- prettier-ignore -->
-{% import "components/header.njk" as header %}
-<!-- prettier-ignore -->
-{% import "components/section.njk" as section %}
-<!-- prettier-ignore -->
-{% import "components/page.njk" as page %}
-<!-- prettier-ignore -->
-{% import "components/footer.njk" as footer %}
-<!-- prettier-ignore -->
-{% import "components/modal.njk" as modal %}
-<!-- prettier-ignore -->
-{% import "components/subscribe-modal.njk" as subscribeModal %}
-
-<main>
+<div class="flex flex-col justify-between h-full bg-golden-fizz-100">
   <!-- prettier-ignore -->
-  {{ nav.stickyMenuButton() }}
-  <!-- prettier-ignore -->
-  {% call nav.render(false) %}
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  {% call header.render("Team", "") %}
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  <div class="flex flex-col justify-between h-full bg-golden-fizz-100">
+  {% for category in team %}
+  <h1 class="my-base lg:my-lg/base text-3xl lg:text-lg/3xl">
+    {{ category.name }}
+  </h1>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-base lg:gap-lg/lg col-gap-base lg:col-gap-lg/lg mb-base lg:mb-lg/lg overflow-hidden"
+  >
     <!-- prettier-ignore -->
-    {% for category in team %}
-    <div>{{ category.name }} </div>
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-lg lg:mb-lg/lg overflow-hidden"
-    >
-      <!-- prettier-ignore -->
-      {% for person in category.items %}
+    {% for person in category.items %}
+    <div>
       <div
-        class="conference-image cursor-pointer"
-        style="background-image: linear-gradient(black, black), url('/images/team/{{ person.image }}');"
-      >
-        <div class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white">
-          <h4 class="text-sm lg:text-lg/sm font-semibold">{{ person.name }}</h4>
-          <p class="text-xs2 lg:text-lg/xs2">{{ person.title }}</p>
-        </div>
-      </div>
+        class="team_image cursor-pointer"
+        style="background-image: linear-gradient(black, black), url('/images/team/{{
+          person.image
+        }}');"
+      ></div>
+      <div class="px-sm lg:px-lg/base py-sm lg:py-lg/base bg-white">
+        <h4 class="text-sm lg:text-lg/sm font-semibold leading-tight">
+          {{ person.name }}
+        </h4>
         <!-- prettier-ignore -->
-      {% endfor %}
+        {% if person.website or person.twitter or person.linkedin or person.facebook %}
+        <ul class="flex mt-xs lg:mt-lg/sm">
+          <!-- prettier-ignore -->
+          {% if person.website %}
+          <li class="mr-sm lg:mr-lg/sm">
+            <a href="{{ person.website }}"
+              ><img class="team_social-icon" src="/images/ui/icon-link.svg" />
+            </a>
+          </li>
+          <!-- prettier-ignore -->
+          {% endif %}
+          <!-- prettier-ignore -->
+          {% if person.twitter %}
+          <li class="mr-sm lg:mr-lg/sm">
+            <a href="{{ person.twitter }}"
+              ><img class="team_social-icon" src="/images/ui/icon-twitter.svg"
+            /></a>
+          </li>
+          <!-- prettier-ignore -->
+          {% endif %}
+          <!-- prettier-ignore -->
+          {% if person.linkedin %}
+          <li class="mr-sm lg:mr-lg/sm">
+            <a href="{{ person.linkedin }}"
+              ><img class="team_social-icon" src="/images/ui/icon-linkedin.svg"
+            /></a>
+          </li>
+          <!-- prettier-ignore -->
+          {% endif %}
+          <!-- prettier-ignore -->
+          {% if person.facebook %}
+          <li class="mr-sm lg:mr-lg/sm">
+            <a href="{{ person.facebook }}"
+              ><img class="team_social-icon" src="/images/ui/icon-facebook.svg"
+            /></a>
+          </li>
+          <!-- prettier-ignore -->
+          {% endif %}
+        </ul>
+        <!-- prettier-ignore -->
+        {% endif %}
+      </div>
     </div>
     <!-- prettier-ignore -->
     {% endfor %}
   </div>
-</main>
-<!-- prettier-ignore -->
-{% call footer.render('bg-white') %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% call modal.render('subscribe') %}
-<!-- prettier-ignore -->
-{% call subscribeModal.render() %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% call modal.render('bio') %}
-<div class="speaker-bio-modal_container">
-  <div
-    style="flex: 0 1 41.666667%;"
-    class="flex flex-col mb-base lg:mb-0 lg:mr-lg/lg"
-  >
-    <img class="self-center mb-base lg:mb-lg/base" data-bio-picture />
-    <div>
-      <p class="text-center" data-bio-name></p>
-      <p class="text-center italic" data-bio-title></p>
-    </div>
-  </div>
-  <div
-    style="flex: 0 1 58.333333%;"
-    class="md-container overflow-y-auto"
-    data-bio-content
-  ></div>
+  <!-- prettier-ignore -->
+  {% endfor %}
 </div>
-<!-- prettier-ignore -->
-{% endcall %}
-<script>
-  // Extract url from text like:
-  // background-image: linear-gradient(black, black),
-  //     url('https://www.radicalxchange.org/wp-content/uploads/2020/02/DOMINGUES_JULIANA.jpg');
-  function extractUrl(str) {
-    const matches = /url\((['"]?)(.*)\1\)$/.exec(str);
-    return matches[2];
-  }
-
-  $("[data-speaker-declare]").click(function (event) {
-    event.preventDefault();
-
-    const clicked = $(this);
-
-    const picture = extractUrl(clicked.css("background-image"));
-    const name = clicked.find("[data-speaker-name]").text();
-    const title = clicked.find("[data-speaker-title]").text();
-    const bio = clicked.find("[data-speaker-bio]").contents().clone();
-
-    $("[data-bio-picture]").attr("src", picture);
-    $("[data-bio-name]").text(name);
-    $("[data-bio-title]").text(title);
-    const contentElement = $("[data-bio-content]");
-    contentElement.empty();
-    contentElement.append(bio);
-  });
-
-  // prettier-ignore
-  {% include "components/nav.js" %}
-  // prettier-ignore
-  {% include "components/modal.js" %}
-</script>
