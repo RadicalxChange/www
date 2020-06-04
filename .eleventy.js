@@ -24,9 +24,9 @@ module.exports = function (config) {
   config.addDataExtension("yaml", (contents) => yaml.safeLoad(contents));
 
   // Formatting for dates
-  config.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+  config.addFilter("readableDate", (dateStr) => {
+    return DateTime.fromISO(dateStr, { zone: "utc" }).toLocaleString(
+      DateTime.DATE_FULL
     );
   });
   config.addFilter("htmlDateString", (dateObj) => {
