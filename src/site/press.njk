@@ -1,0 +1,49 @@
+---
+layout: layouts/html.njk
+title: Press - RadicalxChange
+headerText: Press
+pagination:
+  data: press
+  size: 10
+---
+
+<div class="flex-grow flex flex-col justify-between">
+  <div class="mb-lg lg:mb-lg/lg">
+    <p>
+      Read more about our concepts in the news.
+    </p>
+  </div>
+  <div>
+    <ol class="mb-lg lg:mb-lg/lg">
+      {%- for item in pagination.items %}
+      <li class="mb-base lg:mb-lg/base">
+        <a class="block" href="{{ item.href }}">
+          <p><span class="inline-link">{{ item.title }} </span></a
+        ></p>
+        <p class="text-sm lg:text-lg/sm"><span>{{ item.date | readableDate }}</span><span>&nbsp;- {{ item.publication }}</span></p>
+        <p></p>
+      </li>
+      {% endfor -%}
+    </ol>
+    <ul class="flex">
+    <!-- prettier-ignore -->
+    {% if pagination.href.next %}
+    <li class="mr-base lg:mr-lg/lg">
+      <a class="animated-link" href="{{ pagination.href.next }}">
+        Older
+      </a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endif %}
+    <!-- prettier-ignore -->
+    {% if pagination.href.previous %}
+    <li class="mr-lg lg:mr-lg/lg">
+      <a class="animated-link" href="{{ pagination.href.previous }}">
+        Newer
+      </a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endif %}
+    </ul>
+  </div>
+</div>
