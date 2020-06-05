@@ -37,8 +37,9 @@ title: Speakers - RadicalxChange
       {% for s in allSpeakers2020 %}
       <div
         class="conference-image cursor-pointer"
-        style="background-image: linear-gradient(black, black), url('/images/speakers-2020/{{ s.picture }}');"
+        style="background-image: linear-gradient(black, black);"
         data-speaker-declare
+        data-speaker-image="/images/speakers-2020/{{ s.picture }}"
         data-modal-trigger="bio"
       >
         <div class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white">
@@ -90,34 +91,50 @@ title: Speakers - RadicalxChange
 <!-- prettier-ignore -->
 {% endcall %}
 <script>
-  // Extract url from text like:
-  // background-image: linear-gradient(black, black),
-  //     url('https://www.radicalxchange.org/wp-content/uploads/2020/02/DOMINGUES_JULIANA.jpg');
-  function extractUrl(str) {
-    const matches = /url\((['"]?)(.*)\1\)$/.exec(str);
-    return matches[2];
-  }
+    document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("[data-speaker-image]"));
 
-  $("[data-speaker-declare]").click(function (event) {
-    event.preventDefault();
+    if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+            console.log(lazyImage.dataset);
+            lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`
 
-    const clicked = $(this);
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
 
-    const picture = extractUrl(clicked.css("background-image"));
-    const name = clicked.find("[data-speaker-name]").text();
-    const title = clicked.find("[data-speaker-title]").text();
-    const bio = clicked.find("[data-speaker-bio]").contents().clone();
-
-    $("[data-bio-picture]").attr("src", picture);
-    $("[data-bio-name]").text(name);
-    $("[data-bio-title]").text(title);
-    const contentElement = $("[data-bio-content]");
-    contentElement.empty();
-    contentElement.append(bio);
+      lazyImages.forEach(function(lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    } else {
+      // Possibly fall back to a more compatible method here
+    }
   });
 
-  // prettier-ignore
-  {% include "components/nav.js" %}
-  // prettier-ignore
-  {% include "components/modal.js" %}
+    $("[data-speaker-declare]").click(function (event) {
+      event.preventDefault();
+
+      const clicked = $(this);
+
+      const picture = clicked.data("speaker-image");
+      const name = clicked.find("[data-speaker-name]").text();
+      const title = clicked.find("[data-speaker-title]").text();
+      const bio = clicked.find("[data-speaker-bio]").contents().clone();
+
+      $("[data-bio-picture]").attr("src", picture);
+      $("[data-bio-name]").text(name);
+      $("[data-bio-title]").text(title);
+      const contentElement = $("[data-bio-content]");
+      contentElement.empty();
+      contentElement.append(bio);
+    });
+
+    // prettier-ignore
+    {% include "components/nav.js" %}
+    // prettier-ignore
+    {% include "components/modal.js" %}
 </script>
