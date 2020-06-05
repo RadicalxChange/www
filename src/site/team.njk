@@ -18,15 +18,33 @@ headerText: Team
   >
     <!-- prettier-ignore -->
     {% for person in category.items %}
-    <div>
+    <!-- prettier-ignore -->
+    <div {{ "data-team-member-declare" if person.bio }}>
       <!-- prettier-ignore -->
-      <div class="team_image {{ 'cursor-pointer' if person.bio }}" style="background-image: linear-gradient(black, black), url('/images/team/{{ person.image }}');" {{ 'data-team-member-declare' if person.bio }}
+      <div
+        class="team_image {{ 'cursor-pointer' if person.bio }}"
+        style="background-image: linear-gradient(black, black), url('/images/team/{{ person.image }}');"
+        {{ 'data-team-member-image' if person.bio }}
+        {{ 'data-modal-trigger=bio' if person.bio }}
       ></div>
-      <div class="px-sm lg:px-lg/base py-sm lg:py-lg/base bg-white">
-        <h4 class="text-sm lg:text-lg/sm font-semibold leading-tight" data-team-member-name>
+      <div
+        class="px-sm lg:px-lg/base py-sm lg:py-lg/base bg-white"
+      >
+        <h4
+          class="text-sm lg:text-lg/sm font-semibold leading-tight"
+          {{ 'data-team-member-name' if person.bio }}
+        >
           {{ person.name }}
         </h4>
-        <div class="hidden" data-team-member-bio>{{ person.bio | markdown | safe }}</div>
+        <!-- prettier-ignore -->
+        {% if person.title %}
+        <p
+        class="mt-xs lg:mt-lg/xs text-xs lg:text-lg/xs leading-tight"
+          {{ 'data-team-member-title' if person.bio }}
+        >{{ person.title }}</p
+        >
+        <!-- prettier-ignore -->
+        {% endif %}
         <!-- prettier-ignore -->
         {% if person.website or person.twitter or person.linkedin or person.facebook %}
         <ul class="flex mt-xs lg:mt-lg/sm">
@@ -70,6 +88,11 @@ headerText: Team
         <!-- prettier-ignore -->
         {% endif %}
       </div>
+      <!-- prettier-ignore -->
+      {% if person.bio %}
+      <div class="hidden" data-team-member-bio>{{ person.bio | markdown | safe }}</div>
+      <!-- prettier-ignore -->
+      {% endif %}
     </div>
     <!-- prettier-ignore -->
     {% endfor %}
@@ -79,20 +102,18 @@ headerText: Team
 </div>
 <!-- prettier-ignore -->
 {% call modal.render('bio') %}
-<div class="speaker-bio-modal_container">
+<div class="team-bio-modal_container">
   <div
-    style="flex: 0 1 41.666667%;"
-    class="flex flex-col mb-base lg:mb-0 lg:mr-lg/lg"
+    class="team-bio-modal_picture"
   >
     <img class="self-center mb-base lg:mb-lg/base" data-bio-picture />
     <div>
       <p class="text-center" data-bio-name></p>
-      <p class="text-center italic" data-bio-title></p>
+      <p class="text-center text-sm text-lg/sm" data-bio-title></p>
     </div>
   </div>
   <div
-    style="flex: 0 1 58.333333%;"
-    class="md-container overflow-y-auto"
+    class="team-bio-modal_content md-container"
     data-bio-content
   ></div>
 </div>
@@ -107,21 +128,28 @@ headerText: Team
     return matches[2];
   }
 
-  $("[data-team-member-declare]").click(function (event) {
-    event.preventDefault();
+  $("[data-team-member-declare]").each(function () {
+    const root = $(this);
+    root.find("[data-team-member-image]").click(function (event) {
+      event.preventDefault();
 
-    const clicked = $(this);
+      const picture = extractUrl(root.find("[data-team-member-image]").css("background-image"));
+      $("[data-bio-picture]").attr("src", picture);
 
-    const picture = extractUrl(clicked.css("background-image"));
-    const name = clicked.find("[data-team-member-name]").text();
-    // const title = clicked.find("[data-team-title]").text();
-    const bio = clicked.find("[data-team-member-bio]").contents().clone();
+      const name = root.find("[data-team-member-name]").text();
+      $("[data-bio-name]").text(name);
 
-    $("[data-bio-picture]").attr("src", picture);
-    $("[data-bio-name]").text(name);
-    // $("[data-bio-title]").text(title);
-    const contentElement = $("[data-bio-content]");
-    contentElement.empty();
-    contentElement.append(bio);
+      let title = "";
+      const maybeTitle = root.find("[data-team-member-title]");
+      if (maybeTitle.length) {
+        title = maybeTitle.text();
+      }
+      $("[data-bio-title]").text(title);
+
+      const bio = root.find("[data-team-member-bio]").contents().clone();
+      const contentElement = $("[data-bio-content]");
+      contentElement.empty();
+      contentElement.append(bio);
+    });
   });
 </script>

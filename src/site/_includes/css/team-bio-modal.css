@@ -1,0 +1,24 @@
+.team-bio-modal_container {
+  @apply flex flex-col;
+  @apply w-full;
+
+  @screen lg {
+    @apply flex-row;
+    width: 66.666667vw;
+  }
+}
+
+.team-bio-modal_picture {
+  flex: 0 1 41.666667%;
+  @apply flex flex-col;
+  @apply mb-base;
+
+  @screen lg {
+    @apply mb-0 mr-lg/lg;
+  }
+}
+
+.team-bio-modal_content {
+  flex: 0 1 58.333333%;
+  @apply overflow-y-auto;
+}
