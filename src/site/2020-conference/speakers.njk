@@ -37,12 +37,13 @@ title: Speakers - RadicalxChange
       {% for s in allSpeakers2020 %}
       <div
         class="conference-image cursor-pointer"
-        style="background-image: linear-gradient(black, black), url('/images/speakers-2020/{{ s.picture }}');"
+        style="background-image: linear-gradient(black, black);"
         data-speaker-declare
+        data-speaker-image="/images/speakers-2020/{{ s.picture }}"
         data-modal-trigger="bio"
       >
         <div class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white">
-          <h4 class="text-sm lg:text-lg/sm font-semibold" data-speaker-name>{{ s.name }}</h4>
+          <h4 class="text-sm lg:text-lg/sm" data-speaker-name>{{ s.name }}</h4>
           <p class="text-xs2 lg:text-lg/xs2" data-speaker-title>{{ s.title }}</p>
         </div>
         <div class="hidden" data-speaker-bio>
@@ -90,20 +91,23 @@ title: Speakers - RadicalxChange
 <!-- prettier-ignore -->
 {% endcall %}
 <script>
-  // Extract url from text like:
-  // background-image: linear-gradient(black, black),
-  //     url('https://www.radicalxchange.org/wp-content/uploads/2020/02/DOMINGUES_JULIANA.jpg');
-  function extractUrl(str) {
-    const matches = /url\((['"]?)(.*)\1\)$/.exec(str);
-    return matches[2];
-  }
+  let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`;
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+  $("[data-speaker-image]").each((index, element) => lazyImageObserver.observe(element));
 
   $("[data-speaker-declare]").click(function (event) {
     event.preventDefault();
 
     const clicked = $(this);
 
-    const picture = extractUrl(clicked.css("background-image"));
+    const picture = clicked.data("speaker-image");
     const name = clicked.find("[data-speaker-name]").text();
     const title = clicked.find("[data-speaker-title]").text();
     const bio = clicked.find("[data-speaker-bio]").contents().clone();
