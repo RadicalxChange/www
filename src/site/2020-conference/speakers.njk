@@ -43,7 +43,7 @@ title: Speakers - RadicalxChange
         data-modal-trigger="bio"
       >
         <div class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white">
-          <h4 class="text-sm lg:text-lg/sm font-semibold" data-speaker-name>{{ s.name }}</h4>
+          <h4 class="text-sm lg:text-lg/sm" data-speaker-name>{{ s.name }}</h4>
           <p class="text-xs2 lg:text-lg/xs2" data-speaker-title>{{ s.title }}</p>
         </div>
         <div class="hidden" data-speaker-bio>
@@ -91,50 +91,37 @@ title: Speakers - RadicalxChange
 <!-- prettier-ignore -->
 {% endcall %}
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var lazyImages = [].slice.call(document.querySelectorAll("[data-speaker-image]"));
-
-    if ("IntersectionObserver" in window) {
-      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            let lazyImage = entry.target;
-            console.log(lazyImage.dataset);
-            lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`
-
-            lazyImageObserver.unobserve(lazyImage);
-          }
-        });
+  let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`
+          lazyImageObserver.unobserve(lazyImage);
+        }
       });
+    });
+  $("[data-speaker-image]").each((index, element) => lazyImageObserver.observe(element));
 
-      lazyImages.forEach(function(lazyImage) {
-        lazyImageObserver.observe(lazyImage);
-      });
-    } else {
-      // Possibly fall back to a more compatible method here
-    }
+  $("[data-speaker-declare]").click(function (event) {
+    event.preventDefault();
+
+    const clicked = $(this);
+
+    const picture = clicked.data("speaker-image");
+    const name = clicked.find("[data-speaker-name]").text();
+    const title = clicked.find("[data-speaker-title]").text();
+    const bio = clicked.find("[data-speaker-bio]").contents().clone();
+
+    $("[data-bio-picture]").attr("src", picture);
+    $("[data-bio-name]").text(name);
+    $("[data-bio-title]").text(title);
+    const contentElement = $("[data-bio-content]");
+    contentElement.empty();
+    contentElement.append(bio);
   });
 
-    $("[data-speaker-declare]").click(function (event) {
-      event.preventDefault();
-
-      const clicked = $(this);
-
-      const picture = clicked.data("speaker-image");
-      const name = clicked.find("[data-speaker-name]").text();
-      const title = clicked.find("[data-speaker-title]").text();
-      const bio = clicked.find("[data-speaker-bio]").contents().clone();
-
-      $("[data-bio-picture]").attr("src", picture);
-      $("[data-bio-name]").text(name);
-      $("[data-bio-title]").text(title);
-      const contentElement = $("[data-bio-content]");
-      contentElement.empty();
-      contentElement.append(bio);
-    });
-
-    // prettier-ignore
-    {% include "components/nav.js" %}
-    // prettier-ignore
-    {% include "components/modal.js" %}
+  // prettier-ignore
+  {% include "components/nav.js" %}
+  // prettier-ignore
+  {% include "components/modal.js" %}
 </script>
