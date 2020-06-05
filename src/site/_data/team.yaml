@@ -1,7 +1,60 @@
 - name: "Board Members"
   items:
-    - name: "Christopher Kulendran Thomas"
-      image: "christopher_kulendran_thomas.png"
+    - name: "E. Glen Weyl"
+      image: "e._glen_weyl.png"
+      website: "http://www.glenweyl.com/"
+      twitter: "https://twitter.com/glenweyl"
+      linkedin: "https://www.linkedin.com/in/e-glen-weyl"
+      facebook: "https://www.facebook.com/glenweyl"
+      bio:
+        "Glen Weyl is a political economist and social technologist whose work
+        focuses on harnessing computers and markets to create a radically equal
+        and cooperative society. He is the Founder and Chairman of the
+        RadicalxChange Foundation, a Principal Researcher at Microsoft Research
+        and a lecturer at Princeton University. Glen was recently honored as a
+        Bloomberg Top 50, one Wired Magazine’s 25 leaders shaping the next 25
+        years of technology, and one of Coindesk’s most influential people in
+        blockchain for 2018. Glen is currently Chairperson of the Board."
+    - name: "Vitalik Buterin"
+      image: "vitalik_buterin.png"
+      website: "https://vitalik.ca/"
+      twitter: "https://twitter.com/VitalikButerin"
+      bio:
+        "Vitalik Buterin is the creator of the Ethereum Foundation. He first
+        discovered blockchain and cryptocurrency technologies through Bitcoin in
+        2011, and was immediately excited by the technology and its potential.
+        He co-founded Bitcoin Magazine in September 2011, and after two and a
+        half years looking at what the existing blockchain technology and
+        applications had to offer, wrote the Ethereum white paper in November
+        2013.  He now leads Ethereum’s research team, working on future versions
+        of the Ethereum protocol."
+    - name: "Danielle Allen"
+      image: "danielle_allen.png"
+      website: "https://ethics.harvard.edu/people/danielle-allen"
+      twitter: "https://twitter.com/dsallentess"
+      bio:
+        "Danielle Allen is an American classicist and political scientist. She
+        is the James Bryant Conant University Professor and the Director of the
+        Edmond J. Safra Center for Ethics at Harvard University. Prior to
+        joining the faculty at Harvard in 2015, Allen was UPS Foundation
+        Professor at the Institute for Advanced Study in Princeton, New Jersey.
+        As of January 1, 2017, she is also James Bryant Conant University
+        Professor, Harvard’s highest faculty honor. She has published broadly in
+        democratic theory, political sociology, and the history of political
+        thought. Widely known for her work on justice and citizenship in both
+        ancient Athens and modern America, Allen is the author of The World of
+        Prometheus: The Politics of Punishing in Democratic Athens (2000),
+        Talking to Strangers: Anxieties of Citizenship since Brown v. Board of
+        Education (2004), Why Plato Wrote (2010), and Our Declaration
+        (Norton/Liveright, 2014). In 2002, she was awarded a MacArthur
+        Fellowship for her ability to combine “the classicist’s careful
+        attention to texts and language with the political theorist’s
+        sophisticated and informed engagement.” She is currently working on
+        books on citizenship in the digital age and political equality. Allen is
+        a frequent public lecturer and regular guest on public radio affiliates
+        to discuss issues of citizenship, as well as an occasional contributor
+        on similar subjects to the Washington Post, Boston Review, Democracy,
+        Cabinet, and The Nation."
     - name: "Audrey Tang"
       image: "audrey_tang.png"
       website: "https://pdis.nat.gov.tw/zh-TW/track/"
@@ -53,47 +106,33 @@
         at University College London, and has published articles for competition
         journals as well as presented papers on the economics of competition law
         at numerous international and academic conferences."
-    - name: "Vitalik Buterin"
-      image: "vitalik_buterin.png"
-      website: "https://vitalik.ca/"
-      twitter: "https://twitter.com/VitalikButerin"
+    - name: "Christopher Kulendran Thomas"
+      image: "christopher_kulendran_thomas.png"
+    - name: "Jennifer Lyn Morone"
+      image: "jennifer_lyn_morone.png"
+      website: "http://jennifermorone.com/"
+      twitter: "https://twitter.com/jlmorone"
+      linkedin: "https://www.linkedin.com/in/jennifermorone"
       bio:
-        "Vitalik Buterin is the creator of the Ethereum Foundation. He first
-        discovered blockchain and cryptocurrency technologies through Bitcoin in
-        2011, and was immediately excited by the technology and its potential. 
-        He co-founded Bitcoin Magazine in September 2011, and after two and a
-        half years looking at what the existing blockchain technology and
-        applications had to offer, wrote the Ethereum white paper in November
-        2013.  He now leads Ethereum’s research team, working on future versions
-        of the Ethereum protocol."
-    - name: "Danielle Allen"
-      title: "Board Member"
-      image: "danielle_allen.png"
-      website: "https://ethics.harvard.edu/people/danielle-allen"
-      twitter: "https://twitter.com/dsallentess"
-      bio:
-        "Danielle Allen is an American classicist and political scientist. She
-        is the James Bryant Conant University Professor and the Director of the
-        Edmond J. Safra Center for Ethics at Harvard University. Prior to
-        joining the faculty at Harvard in 2015, Allen was UPS Foundation
-        Professor at the Institute for Advanced Study in Princeton, New Jersey.
-        As of January 1, 2017, she is also James Bryant Conant University
-        Professor, Harvard’s highest faculty honor. She has published broadly in
-        democratic theory, political sociology, and the history of political
-        thought. Widely known for her work on justice and citizenship in both
-        ancient Athens and modern America, Allen is the author of The World of
-        Prometheus: The Politics of Punishing in Democratic Athens (2000),
-        Talking to Strangers: Anxieties of Citizenship since Brown v. Board of
-        Education (2004), Why Plato Wrote (2010), and Our Declaration
-        (Norton/Liveright, 2014). In 2002, she was awarded a MacArthur
-        Fellowship for her ability to combine “the classicist’s careful
-        attention to texts and language with the political theorist’s
-        sophisticated and informed engagement.” She is currently working on
-        books on citizenship in the digital age and political equality. Allen is
-        a frequent public lecturer and regular guest on public radio affiliates
-        to discuss issues of citizenship, as well as an occasional contributor
-        on similar subjects to the Washington Post, Boston Review, Democracy,
-        Cabinet, and The Nation."
+        "Jennifer Lyn Morone is an artist, activist and design researcher with a
+        special interest in the human experience in relation to economics,
+        identity, technology and the environment. In 2013, to draw attention to
+        and protest the growing information industry, data slavery, corporate
+        power, and the precarious nature of the future of work she designed a
+        business model and established herself as a corporation to protect her
+        data via a legal container and expose the advantages corporations (legal
+        people) have over humans (natural people). Morone previously led the
+        Arts and Communications track lead for RadicalxChange and is currently
+        the CEO of the foundation. She is an alumna of the Royal College of Art
+        where she studied Design Interactions.  She has recently presented at
+        the World Economic Forum in Dalian, at SPRU University of Sussex, Data
+        Natives in Berlin, and FM Joanneum University of Applied Sciences in
+        Graz. Her artistic work has been exhibited internationally. She is
+        co-authoring, directing and producing a film of a fictional post-work
+        and data dignified world for the 2020 EU Capital of Culture program in
+        Rijeka, Croatia"
+- name: "Core Team"
+  items:
     - name: "Jennifer Lyn Morone"
       title: "CEO"
       image: "jennifer_lyn_morone.png"
@@ -117,39 +156,32 @@
         Graz. Her artistic work has been exhibited internationally. She is
         co-authoring, directing and producing a film of a fictional post-work
         and data dignified world for the 2020 EU Capital of Culture program in
-        Rijeka, Croatia"
-    - name: "E. Glen Weyl"
-      title: "Chair"
-      image: "e._glen_weyl.png"
-      website: "http://www.glenweyl.com/"
-      twitter: "https://twitter.com/glenweyl"
-      linkedin: "https://www.linkedin.com/in/e-glen-weyl"
-      facebook: "https://www.facebook.com/glenweyl"
-      bio:
-        "Glen Weyl is a political economist and social technologist whose work
-        focuses on harnessing computers and markets to create a radically equal
-        and cooperative society. He is the Founder and Chairman of the
-        RadicalxChange Foundation, a Principal Researcher at Microsoft Research
-        and a lecturer at Princeton University. Glen was recently honored as a
-        Bloomberg Top 50, one Wired Magazine’s 25 leaders shaping the next 25
-        years of technology, and one of Coindesk’s most influential people in
-        blockchain for 2018. Glen is currently Chairperson of the Board."
-- name: "Core Team"
-  items:
+        Rijeka, Croatia."
+    - name: "Matt Prewitt"
+      title: "President"
+      image: "matt_prewitt.png"
+      twitter: "https://twitter.com/m_t_prewitt"
+    - name: "Fanny Lakoubay"
+      title: "Public Relations"
+      image: "fanny_lakoubay.png"
+      twitter: "https://twitter.com/flakoubay"
+      linkedin: "https://www.linkedin.com/in/fannylakoubay/"
+    - name: "Natalia Olson-Urtecho"
+      title: "Activism and Government Lead"
+      image: "natalia_olson-urtecho.png"
+      website: "http://thedisruptivefactory.com/"
+      twitter: "https://twitter.com/olsonurtecho"
+      linkedin: "https://www.linkedin.com/in/nataliaolsonurtecho"
+    - name: "Emmanuel Midy"
+      title: "Community Lead"
+      image: "emmanuel_midy.png"
+      website: "http://emmanuelmidy.carrd.co/"
+      linkedin: "https://www.linkedin.com/in/emmanuelmidy/"
     - name: "Leon Erichsen"
       title: "Research Associate"
       image: "leon_erichsen.png"
       twitter: "https://twitter.com/leonerichsen"
       linkedin: "https://www.linkedin.com/in/leonerichsen/"
-    - name: "Jordan Place"
-      title: "Tech Lead"
-      image: "jordan_place.png"
-      website: "https://jplace.github.io/"
-      linkedin: "https://www.linkedin.com/in/jordan-place-61491523/"
-      bio:
-        "Jordan is a software engineer based in Berkeley. He's interested in how
-        technology can be leveraged to benefit humanity and improve government.
-        He is the current tech lead for RadicalxChange."
     - name: "Paul Healy"
       title: "Policy Advisor"
       image: "paul_healy.png"
@@ -164,53 +196,20 @@
         include local/state government, antitrust, tax, and corporate finance.
         Paul also holds a master’s degree in development economics from Oxford
         University."
-    - name: "Jennifer Lyn Morone"
-      title: "CEO"
-      image: "jennifer_lyn_morone.png"
-      website: "http://jennifermorone.com/"
-      twitter: "https://twitter.com/jlmorone"
-      linkedin: "https://www.linkedin.com/in/jennifermorone"
+    - name: "Jordan Place"
+      title: "Tech Lead"
+      image: "jordan_place.png"
+      website: "https://jplace.github.io/"
+      linkedin: "https://www.linkedin.com/in/jordan-place-61491523/"
       bio:
-        "Jennifer Lyn Morone is an artist, activist and design researcher with a
-        special interest in the human experience in relation to economics,
-        identity, technology and the environment. In 2013, to draw attention to
-        and protest the growing information industry, data slavery, corporate
-        power, and the precarious nature of the future of work she designed a
-        business model and established herself as a corporation to protect her
-        data via a legal container and expose the advantages corporations (legal
-        people) have over humans (natural people). Morone previously led the
-        Arts and Communications track lead for RadicalxChange and is currently
-        the CEO of the foundation. She is an alumna of the Royal College of Art
-        where she studied Design Interactions.  She has recently presented at
-        the World Economic Forum in Dalian, at SPRU University of Sussex, Data
-        Natives in Berlin, and FM Joanneum University of Applied Sciences in
-        Graz. Her artistic work has been exhibited internationally. She is
-        co-authoring, directing and producing a film of a fictional post-work
-        and data dignified world for the 2020 EU Capital of Culture program in
-        Rijeka, Croatia"
-    - name: "Emmanuel Midy"
-      title: "Community Lead"
-      image: "emmanuel_midy.png"
-      website: "http://emmanuelmidy.carrd.co/"
-      linkedin: "https://www.linkedin.com/in/emmanuelmidy/"
-    - name: "Fanny Lakoubay"
-      title: "Public Relations"
-      image: "fanny_lakoubay.png"
-      twitter: "https://twitter.com/flakoubay"
-      linkedin: "https://www.linkedin.com/in/fannylakoubay/"
-    - name: "Natalia Olson-Urtecho"
-      title: "Activism and Government Lead"
-      image: "natalia_olson-urtecho.png"
-      website: "http://thedisruptivefactory.com/"
-      twitter: "https://twitter.com/olsonurtecho"
-      linkedin: "https://www.linkedin.com/in/nataliaolsonurtecho"
-    - name: "Matt Prewitt"
-      title: "President"
-      image: "matt_prewitt.png"
-      twitter: "https://twitter.com/m_t_prewitt"
+        "Jordan is a software engineer based in Berkeley. He's interested in how
+        technology can be leveraged to benefit humanity and improve government.
+        He is the current tech lead for RadicalxChange."
+
 - name: "Advisors"
   items:
     - name: "Matt Masurka"
+      title: "Tech"
       image: "matt_masurka.png"
       website: "https://matthewmasurka.com/"
       twitter: "https://twitter.com/gigamesh"
