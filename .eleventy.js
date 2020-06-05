@@ -33,6 +33,35 @@ module.exports = function (config) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  // Custom collection for chapters
+  config.addCollection("groupedChapters", (collectionApi) => {
+    function compareHeaderText(a, b) {
+      if (a.data.headerText < b.data.headerText) {
+        return -1;
+      }
+      if (a.data.headerText > b.data.headerText) {
+        return 1;
+      }
+      return 0;
+    }
+
+    const chapters = collectionApi
+      .getFilteredByTag("chapter")
+      .sort(compareHeaderText);
+
+    const groupedChapters = {};
+    for (const chapter of chapters) {
+      const itemKey = chapter.data.headerText;
+      const groupKey = itemKey.charAt(0).toLowerCase();
+      if (groupedChapters[groupKey] === undefined) {
+        groupedChapters[groupKey] = [];
+      }
+      groupedChapters[groupKey].push(chapter);
+    }
+
+    return groupedChapters;
+  });
+
   // Pass through static assets
   // src/site/images is copied through its own pipeline (see package.json)
   config.addPassthroughCopy("./src/site/fonts");
