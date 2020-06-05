@@ -95,7 +95,7 @@ title: Speakers - RadicalxChange
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           let lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`
+          lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`;
           lazyImageObserver.unobserve(lazyImage);
         }
       });
