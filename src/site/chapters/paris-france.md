@@ -5,6 +5,9 @@ title: "Paris, France - RadicalxChange"
 headerText: "Paris, France"
 city: "Paris"
 country: "France"
+coordinates:
+  lat: 48.8566969
+  lng: 2.3514616
 meetupUrl: "https://twitter.com/RadxChangeParis"
 contactOrganizer: "https://twitter.com/RadxChangeParis"
 twitter: "RadxChangeParis"

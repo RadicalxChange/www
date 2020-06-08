@@ -5,6 +5,9 @@ title: "La Paz, Bolivia - RadicalxChange"
 headerText: "La Paz, Bolivia"
 city: "La Paz"
 country: "Bolivia"
+coordinates:
+  lat: -16.4955455
+  lng: -68.1336229
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "Seoul, South Korea - RadicalxChange"
 headerText: "Seoul, South Korea"
 city: "Seoul"
 country: "South Korea"
+coordinates:
+  lat: 37.5666791
+  lng: 126.9782914
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

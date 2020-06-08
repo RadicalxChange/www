@@ -5,6 +5,9 @@ title: "Cambridge, England - RadicalxChange"
 headerText: "Cambridge, England"
 city: "Cambridge"
 country: "England"
+coordinates:
+  lat: 52.2034823
+  lng: 0.1235817
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

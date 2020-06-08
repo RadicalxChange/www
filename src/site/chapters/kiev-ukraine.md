@@ -5,6 +5,9 @@ title: "Kiev, Ukraine - RadicalxChange"
 headerText: "Kiev, Ukraine"
 city: "Kiev"
 country: "Ukraine"
+coordinates:
+  lat: 50.4500336
+  lng: 30.5241361
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

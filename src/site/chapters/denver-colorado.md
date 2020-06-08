@@ -5,6 +5,9 @@ title: "Denver, Colorado - RadicalxChange"
 headerText: "Denver, Colorado"
 city: "Denver"
 country: "United States"
+coordinates:
+  lat: 39.7392364
+  lng: -104.9848623
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

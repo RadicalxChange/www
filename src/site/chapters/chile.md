@@ -5,6 +5,9 @@ title: "Chile - RadicalxChange"
 headerText: "Chile"
 city: "Chile"
 country: "Chile"
+coordinates:
+  lat: -31.7613365
+  lng: -71.3187697
 meetupUrl: "https://twitter.com/RadxChangeChile"
 contactOrganizer: "mailto:radicalxchangechile@gmail.com"
 twitter: "RadxChangeChile"

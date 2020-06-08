@@ -5,6 +5,9 @@ title: "Brussels, Belgium - RadicalxChange"
 headerText: "Brussels, Belgium"
 city: "Brussels"
 country: "Belgium"
+coordinates:
+  lat: 50.8436709
+  lng: 4.3674367
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "MIT - RadicalxChange"
 headerText: "MIT"
 city: "MIT"
 country: "United States"
+coordinates:
+  lat: 42.3583961
+  lng: -71.0956779
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

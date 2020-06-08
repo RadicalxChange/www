@@ -5,6 +5,9 @@ title: "Stanford - RadicalxChange"
 headerText: "Stanford"
 city: "Stanford"
 country: "United States"
+coordinates:
+  lat: 37.4265407
+  lng: -122.1702926
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

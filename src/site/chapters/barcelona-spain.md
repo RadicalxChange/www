@@ -5,6 +5,9 @@ title: "Barcelona, Spain - RadicalxChange"
 headerText: "Barcelona, Spain"
 city: "Barcelona"
 country: "Spain"
+coordinates:
+  lat: 41.3828939
+  lng: 2.1774322
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

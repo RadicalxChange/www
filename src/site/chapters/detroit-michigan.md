@@ -5,6 +5,9 @@ title: "Detroit, Michigan - RadicalxChange"
 headerText: "Detroit, Michigan"
 city: "Detroit"
 country: "United States"
+coordinates:
+  lat: 42.3315509
+  lng: -83.0466403
 meetupUrl: "https://twitter.com/RadxDet"
 contactOrganizer: "https://twitter.com/RadxDet"
 twitter: "RadxDet"

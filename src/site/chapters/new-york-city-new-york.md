@@ -5,6 +5,9 @@ title: "New York City, New York - RadicalxChange"
 headerText: "New York City, New York"
 city: "New York City"
 country: "United States"
+coordinates:
+  lat: 40.71
+  lon: -74.02
 meetupUrl: "https://www.meetup.com/RadicalXChange-NYC/"
 contactOrganizer: "https://www.meetup.com/RadicalXChange-NYC/"
 twitter: "radxchange"

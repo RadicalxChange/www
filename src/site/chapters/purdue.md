@@ -5,6 +5,9 @@ title: "Purdue - RadicalxChange"
 headerText: "Purdue"
 city: "Purdue"
 country: "United States"
+coordinates:
+  lat: 40.4319581
+  lng: -86.9239109
 meetupUrl: "https://twitter.com/RxCPurdue"
 contactOrganizer: "https://twitter.com/RxCPurdue"
 twitter: "RxCPurdue"

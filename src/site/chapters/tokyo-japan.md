@@ -5,6 +5,9 @@ title: "Tokyo, Japan - RadicalxChange"
 headerText: "Tokyo, Japan"
 city: "Tokyo"
 country: "Japan"
+coordinates:
+  lat: 35.6828387
+  lng: 139.7594549
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

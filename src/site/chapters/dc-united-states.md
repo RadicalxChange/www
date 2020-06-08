@@ -5,6 +5,9 @@ title: "DC, United States - RadicalxChange"
 headerText: "DC, United States"
 city: "DC"
 country: "United States"
+coordinates:
+  lat: 38.8949855
+  lng: -77.0365708
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

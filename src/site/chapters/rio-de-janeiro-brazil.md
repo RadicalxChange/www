@@ -5,6 +5,9 @@ title: "Rio de Janeiro, Brazil - RadicalxChange"
 headerText: "Rio de Janeiro, Brazil"
 city: "Rio de Janeiro"
 country: "Brazil"
+coordinates:
+  lat: -22.9110137
+  lng: -43.2093727
 meetupUrl: "https://twitter.com/RxCLatinamerica"
 contactOrganizer: "https://twitter.com/RxCLatinamerica"
 twitter: "RxCLatinamerica"

@@ -5,6 +5,9 @@ title: "Frankfurt, Germany - RadicalxChange"
 headerText: "Frankfurt, Germany"
 city: "Frankfurt"
 country: "Germany"
+coordinates:
+  lat: 50.1106444
+  lng: 8.6820917
 meetupUrl: "https://twitter.com/rxcfrankfurt"
 contactOrganizer: "https://twitter.com/rxcfrankfurt"
 twitter: "rxcfrankfurt"

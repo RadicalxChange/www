@@ -5,6 +5,9 @@ title: "West Virgina, United States - RadicalxChange"
 headerText: "West Virgina, United States"
 city: "West Virgina"
 country: "United States"
+coordinates:
+  lat: 37.293008
+  lng: -88.977571
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

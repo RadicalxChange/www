@@ -5,6 +5,9 @@ title: "Philadelphia, Pennsylvania - RadicalxChange"
 headerText: "Philadelphia, Pennsylvania"
 city: "Philadelphia"
 country: "United States"
+coordinates:
+  lat: 39.94
+  lon: -75.19
 meetupUrl: "https://www.meetup.com/RadicalxChange-Philadelphia/"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Philadelphia/"
 twitter: "radxchange"

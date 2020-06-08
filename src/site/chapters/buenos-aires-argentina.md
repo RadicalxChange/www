@@ -5,6 +5,9 @@ title: "Buenos Aires, Argentina - RadicalxChange"
 headerText: "Buenos Aires, Argentina"
 city: "Buenos Aires"
 country: "Argentina"
+coordinates:
+  lat: -34.6075682
+  lng: -58.4370894
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

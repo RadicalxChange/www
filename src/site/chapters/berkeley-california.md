@@ -5,6 +5,9 @@ title: "Berkeley, California - RadicalxChange"
 headerText: "Berkeley, California"
 city: "Berkeley"
 country: "United States"
+coordinates:
+  lat: 37.8708393
+  lng: -122.2728639
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

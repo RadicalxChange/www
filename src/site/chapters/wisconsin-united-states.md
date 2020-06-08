@@ -5,6 +5,9 @@ title: "Wisconsin, United States - RadicalxChange"
 headerText: "Wisconsin, United States"
 city: "Wisconsin"
 country: "United States"
+coordinates:
+  lat: 44.4308975
+  lng: -89.6884637
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

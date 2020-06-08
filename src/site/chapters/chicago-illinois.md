@@ -5,6 +5,9 @@ title: "Chicago, Illinois - RadicalxChange"
 headerText: "Chicago, Illinois"
 city: "Chicago"
 country: "United States"
+coordinates:
+  lat: 41.87
+  lon: -87.62
 meetupUrl: "https://www.meetup.com/radicalxchange/"
 contactOrganizer: "https://www.meetup.com/radicalxchange/"
 twitter: "ChicagoRxc"

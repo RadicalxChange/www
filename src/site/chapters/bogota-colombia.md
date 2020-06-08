@@ -5,6 +5,9 @@ title: "Bogotá, Colombia - RadicalxChange"
 headerText: "Bogotá, Colombia"
 city: "Bogotá"
 country: "Colombia"
+coordinates:
+  lat: 4.59808
+  lng: -74.0760439
 meetupUrl: "https://www.meetup.com/RadicalxChange-Capitulo-Bogota/"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Capitulo-Bogota/"
 twitter: "radxchange"

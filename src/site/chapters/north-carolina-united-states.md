@@ -5,6 +5,9 @@ title: "North Carolina, United States - RadicalxChange"
 headerText: "North Carolina, United States"
 city: "North Carolina"
 country: "United States"
+coordinates:
+  lat: 35.6729639
+  lng: -79.0392919
 meetupUrl: "https://www.meetup.com/rxctrianlge/"
 contactOrganizer: "https://www.meetup.com/rxctrianlge/"
 twitter: "radxchange"

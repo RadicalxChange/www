@@ -5,6 +5,9 @@ title: "Shanghai, China - RadicalxChange"
 headerText: "Shanghai, China"
 city: "Shanghai"
 country: "China"
+coordinates:
+  lat: 31.2252985
+  lng: 121.4890497
 meetupUrl: "https://twitter.com/rxcshanghai"
 contactOrganizer: "https://twitter.com/rxcshanghai"
 twitter: "rxcshanghai"

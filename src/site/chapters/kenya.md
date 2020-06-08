@@ -5,6 +5,9 @@ title: "Kenya - RadicalxChange"
 headerText: "Kenya"
 city: "Kenya "
 country: "Kenya "
+coordinates:
+  lat: 1.4419683
+  lng: 38.4313975
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

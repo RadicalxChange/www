@@ -5,6 +5,9 @@ title: "London, England - RadicalxChange"
 headerText: "London, England"
 city: "London"
 country: "England"
+coordinates:
+  lat: 51.5073219
+  lng: -0.1276474
 meetupUrl: "https://www.meetup.com/radxchangeldn/"
 contactOrganizer: "https://www.meetup.com/radxchangeldn/"
 twitter: "radxchange"

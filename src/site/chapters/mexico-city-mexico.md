@@ -5,6 +5,9 @@ title: "Mexico City, Mexico - RadicalxChange"
 headerText: "Mexico City, Mexico"
 city: "Mexico City"
 country: "Mexico"
+coordinates:
+  lat: 19.4326296
+  lng: -99.1331785
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

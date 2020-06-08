@@ -5,6 +5,9 @@ title: "San Francisco, California - RadicalxChange"
 headerText: "San Francisco, California"
 city: "San Francisco"
 country: "United States"
+coordinates:
+  lat: 37.7790262
+  lng: -122.4199061
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

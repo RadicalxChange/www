@@ -5,6 +5,9 @@ title: "UVA - RadicalxChange"
 headerText: "UVA"
 city: "UVA"
 country: "United States"
+coordinates:
+  lat: 38.0410576
+  lng: -78.5054996
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

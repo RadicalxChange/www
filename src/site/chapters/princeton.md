@@ -5,6 +5,9 @@ title: "Princeton - RadicalxChange"
 headerText: "Princeton"
 city: "Princeton"
 country: "United States"
+coordinates:
+  lat: 40.3492744
+  lng: -74.6592958
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

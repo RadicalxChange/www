@@ -5,6 +5,9 @@ title: "Lisbon, Portugal - RadicalxChange"
 headerText: "Lisbon, Portugal"
 city: "Lisbon"
 country: "Portugal"
+coordinates:
+  lat: 38.7077507
+  lng: -9.1365919
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

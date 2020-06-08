@@ -5,6 +5,9 @@ title: "Los Angeles, California - RadicalxChange"
 headerText: "Los Angeles, California"
 city: "Los Angeles"
 country: "United States"
+coordinates:
+  lat: 34.0536909
+  lng: -118.2427666
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

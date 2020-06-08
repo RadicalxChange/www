@@ -5,6 +5,9 @@ title: "Boston University - RadicalxChange"
 headerText: "Boston University"
 city: "Boston University"
 country: "United States"
+coordinates:
+  lat: 42.3520969
+  lng: -71.1200753
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

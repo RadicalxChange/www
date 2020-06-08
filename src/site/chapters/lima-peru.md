@@ -5,6 +5,9 @@ title: "Lima, Peru - RadicalxChange"
 headerText: "Lima, Peru"
 city: "Lima"
 country: "Peru "
+coordinates:
+  lat: -12.0621065
+  lng: -77.0365256
 meetupUrl: "https://twitter.com/RxC_Peru"
 contactOrganizer: "https://twitter.com/RxC_Peru"
 twitter: "RxC_Peru"

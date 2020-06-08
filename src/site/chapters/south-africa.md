@@ -5,6 +5,9 @@ title: "South Africa - RadicalxChange"
 headerText: "South Africa"
 city: "South Africa"
 country: "South Africa"
+coordinates:
+  lat: -28.8166236
+  lng: 24.991639
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

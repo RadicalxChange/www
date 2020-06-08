@@ -5,6 +5,9 @@ title: "Toronto, Canada - RadicalxChange"
 headerText: "Toronto, Canada"
 city: "Toronto"
 country: "Canada"
+coordinates:
+  lat: 43.6534817
+  lng: -79.3839347
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "Milan, Italy - RadicalxChange"
 headerText: "Milan, Italy"
 city: "Milan"
 country: "Italy"
+coordinates:
+  lat: 45.4668
+  lng: 9.1905
 meetupUrl: "https://twitter.com/ItalyRxc"
 contactOrganizer: "https://twitter.com/ItalyRxc"
 twitter: "ItalyRxc"

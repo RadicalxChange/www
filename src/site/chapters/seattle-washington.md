@@ -5,6 +5,9 @@ title: "Seattle, Washington - RadicalxChange"
 headerText: "Seattle, Washington"
 city: "Seattle"
 country: "United States"
+coordinates:
+  lat: 47.6038321
+  lng: -122.3300624
 meetupUrl: "https://twitter.com/RxcSeattle"
 contactOrganizer: "https://twitter.com/RxcSeattle"
 twitter: "RxcSeattle"

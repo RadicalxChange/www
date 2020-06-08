@@ -5,6 +5,9 @@ title: "Quito, Ecuador - RadicalxChange"
 headerText: "Quito, Ecuador"
 city: "Quito"
 country: "Ecuador"
+coordinates:
+  lat: -0.2201641
+  lng: -78.5123274
 meetupUrl: "https://twitter.com/RxCLatinamerica"
 contactOrganizer: "https://twitter.com/RxCLatinamerica"
 twitter: "RxCLatinamerica"

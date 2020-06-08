@@ -5,6 +5,9 @@ title: "Montreal, Canada - RadicalxChange"
 headerText: "Montreal, Canada"
 city: "Montreal"
 country: "Canada"
+coordinates:
+  lat: 45.5
+  lon: -73.59
 meetupUrl: "https://www.meetup.com/RadicalxChange-Montreal/"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Montreal/"
 twitter: "RxCMontreal"

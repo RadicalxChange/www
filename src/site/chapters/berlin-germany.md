@@ -5,6 +5,9 @@ title: "Berlin, Germany - RadicalxChange"
 headerText: "Berlin, Germany"
 city: "Berlin"
 country: "Germany"
+coordinates:
+  lat: 52.51
+  lon: 13.4
 meetupUrl: "https://www.meetup.com/RadicalxChange-Berlin/"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Berlin/"
 twitter: "rxcberlin"

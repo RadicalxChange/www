@@ -5,6 +5,9 @@ title: "Singapore - RadicalxChange"
 headerText: "Singapore"
 city: "Singapore"
 country: "Singapore"
+coordinates:
+  lat: 1.34
+  lon: 103.86
 meetupUrl: "https://www.meetup.com/RadicalxChange-Singapore"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Singapore"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "Boston, Massachusetts - RadicalxChange"
 headerText: "Boston, Massachusetts"
 city: "Boston"
 country: "United States"
+coordinates:
+  lat: 42.36
+  lon: -71.05
 meetupUrl: "https://www.meetup.com/RadicalxChange-Boston/"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Boston/"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "Austin, Texas - RadicalxChange"
 headerText: "Austin, Texas"
 city: "Austin"
 country: "United States"
+coordinates:
+  lat: 30.26
+  lon: -97.75
 meetupUrl: "https://www.meetup.com/RadicalxChange-Austin/"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Austin/"
 twitter: "radxchange"

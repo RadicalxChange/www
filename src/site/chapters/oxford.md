@@ -5,6 +5,9 @@ title: "Oxford - RadicalxChange"
 headerText: "Oxford"
 city: "Oxford"
 country: "England"
+coordinates:
+  lat: 51.7520131
+  lng: -1.2578499
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

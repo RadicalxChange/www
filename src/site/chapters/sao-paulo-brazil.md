@@ -5,6 +5,9 @@ title: "Sao Paulo, Brazil - RadicalxChange"
 headerText: "Sao Paulo, Brazil"
 city: "Sao Paulo"
 country: "Brazil"
+coordinates:
+  lat: -23.5506507
+  lng: -46.6333824
 meetupUrl: "https://twitter.com/rxcBrasil"
 contactOrganizer: "https://twitter.com/rxcBrasil"
 twitter: "rxcBrasil"

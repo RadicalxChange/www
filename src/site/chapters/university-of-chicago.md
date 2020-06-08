@@ -5,6 +5,9 @@ title: "University of Chicago - RadicalxChange"
 headerText: "University of Chicago"
 city: "University of Chicago"
 country: "United States"
+coordinates:
+  lat: 41.784977
+  lng: -87.5905237
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

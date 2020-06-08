@@ -5,6 +5,9 @@ title: "Caracas, Venezuela - RadicalxChange"
 headerText: "Caracas, Venezuela"
 city: "Caracas"
 country: "Venezuela"
+coordinates:
+  lat: 10.506098
+  lng: -66.9146017
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

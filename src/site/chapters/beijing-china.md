@@ -5,6 +5,9 @@ title: "Beijing, China - RadicalxChange"
 headerText: "Beijing, China"
 city: "Beijing"
 country: "China"
+coordinates:
+  lat: 39.906217
+  lng: 116.3912757
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

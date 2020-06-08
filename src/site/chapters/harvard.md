@@ -5,6 +5,9 @@ title: "Harvard - RadicalxChange"
 headerText: "Harvard"
 city: "Harvard"
 country: "United States"
+coordinates:
+  lat: 42.3679086
+  lng: -71.1267824
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "Cornell - RadicalxChange"
 headerText: "Cornell"
 city: "Cornell"
 country: "United States"
+coordinates:
+  lat: 42.4505507
+  lng: -76.4783513
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "Taipei, Taiwan - RadicalxChange"
 headerText: "Taipei, Taiwan"
 city: "Taipei"
 country: "Taiwan"
+coordinates:
+  lat: 25.03
+  lon: 121.54
 meetupUrl: "https://www.meetup.com/RadicalxChange-Taipei/"
 contactOrganizer: "https://www.meetup.com/RadicalxChange-Taipei/"
 twitter: "rxctaipei"

@@ -5,6 +5,9 @@ title: "Oslo, Norway - RadicalxChange"
 headerText: "Oslo, Norway"
 city: "Oslo"
 country: "Norway"
+coordinates:
+  lat: 59.9133301
+  lng: 10.7389701
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

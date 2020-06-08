@@ -5,6 +5,9 @@ title: "Shenzen, China - RadicalxChange"
 headerText: "Shenzen, China"
 city: "Shenzen"
 country: "China"
+coordinates:
+  lat: 35
+  lng: 105
 meetupUrl: "https://twitter.com/RxCShenzhen"
 contactOrganizer: "https://twitter.com/RxCShenzhen"
 twitter: "RxCShenzhen"

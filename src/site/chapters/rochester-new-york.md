@@ -5,6 +5,9 @@ title: "Rochester, New York - RadicalxChange"
 headerText: "Rochester, New York"
 city: "Rochester"
 country: "United States"
+coordinates:
+  lat: 43.157285
+  lng: -77.615214
 meetupUrl: "https://twitter.com/rxcrochester"
 contactOrganizer: "https://twitter.com/rxcrochester"
 twitter: "rxcrochester"

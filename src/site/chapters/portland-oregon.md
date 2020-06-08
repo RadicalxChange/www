@@ -5,6 +5,9 @@ title: "Portland, Oregon - RadicalxChange"
 headerText: "Portland, Oregon"
 city: "Portland"
 country: "United States"
+coordinates:
+  lat: 45.5202471
+  lng: -122.6741949
 meetupUrl: "https://www.meetup.com/RadicalXChange-Portland/"
 contactOrganizer: "https://www.meetup.com/RadicalXChange-Portland/"
 twitter: "radxchange"

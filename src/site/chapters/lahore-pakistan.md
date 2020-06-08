@@ -5,6 +5,9 @@ title: "Lahore, Pakistan - RadicalxChange"
 headerText: "Lahore, Pakistan"
 city: "Lahore"
 country: "Pakistan"
+coordinates:
+  lat: 31.5656079
+  lng: 74.3141775
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

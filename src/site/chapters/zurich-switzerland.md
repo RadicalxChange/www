@@ -5,6 +5,9 @@ title: "Zurich, Switzerland - RadicalxChange"
 headerText: "Zurich, Switzerland"
 city: "Zurich"
 country: "Switzerland"
+coordinates:
+  lat: 47.3723941
+  lng: 8.5423328
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"

@@ -5,6 +5,9 @@ title: "New Jersey, United States - RadicalxChange"
 headerText: "New Jersey, United States"
 city: "New Jersey"
 country: "United States"
+coordinates:
+  lat: 40.0757384
+  lng: -74.4041622
 meetupUrl: "#"
 contactOrganizer: "#"
 twitter: "radxchange"
