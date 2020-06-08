@@ -121,3 +121,14 @@
     height: 1.125vw;
   }
 }
+
+/* Chapters page */
+#mapid {
+  height: 512px;
+  border: 1px solid #000000;
+  margin: 16px 0;
+
+  @screen touch {
+    display: none;
+  }
+}

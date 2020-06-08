@@ -1,0 +1,89 @@
+---
+title: Chapters - RadicalxChange
+headerText: Chapters
+---
+
+<!-- prettier-ignore -->
+{% extends "layouts/_page.njk" %}
+
+<!-- prettier-ignore -->
+{% block styles %}
+{{ super() }}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""
+/>
+<!-- prettier-ignore -->
+{% endblock %}
+<!-- prettier-ignore -->
+{% block content %}
+<div class="flex-grow flex flex-col">
+  <div class="mb-sm lg:mb-lg/sm">
+    <span>Find a local chapter near you.</span>
+  </div>
+  <div class="mb-sm lg:mb-lg/sm">
+    <div id="mapid"></div>
+  </div>
+  <ol class="mb-base lg:mb-lg/base">
+    {% for key, chapters in collections.groupedChapters %}
+    <li class="mb-base lg:mb-lg/base">
+      <h4 class="uppercase">{{ key }}</h4>
+      <ul>
+        {% for chapter in chapters %}
+        <a class="block" href="{{ chapter.url }}">
+          <span class="inline-link">{{ chapter.data.headerText }} </span></a
+        >
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ol>
+  <div>
+    <a class="animated-link" href="https://forms.gle/UQ6FtuC7rEf42cqE9"
+      >Can’t find your city? Start a new chapter.</a
+    >
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endblock %}
+<!-- prettier-ignore -->
+{% block bodyScripts %}
+<script
+  src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""
+></script>
+<script>
+  const places = [
+    // prettier-ignore
+    {% for chapter in collections.chapter %}
+    // prettier-ignore
+    {% if chapter.data.coordinates %}
+    {
+      label: "{{ chapter.data.headerText }}",
+      coordinates: {{ chapter.data.coordinates | dump | safe }},
+      href: "{{ chapter.url }}",
+    },
+    // prettier-ignore
+    {% endif %}
+    // prettier-ignore
+    {% endfor %}
+  ];
+  const map = L.map("mapid", { scrollWheelZoom: false }).setView([0, 0], 2);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution:
+      '© <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+  }).addTo(map);
+  for (place of places) {
+    const { label, coordinates, href } = place;
+    L.marker(coordinates)
+      .on("click", () => (window.location.href = href))
+      .bindTooltip(label)
+      .addTo(map);
+  }
+</script>
+<!-- prettier-ignore -->
+{% endblock %}

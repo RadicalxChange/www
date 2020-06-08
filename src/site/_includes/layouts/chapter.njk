@@ -1,0 +1,36 @@
+<!-- prettier-ignore -->
+{% extends "layouts/_page.njk" %}
+
+<!-- prettier-ignore -->
+{% import "components/call-to-action.njk" as callToAction %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<div>
+  <div class="md-container mb-lg lg:mb-lg/lg">
+    {{ content | markdown | safe }}
+  </div>
+  <!-- prettier-ignore -->
+  {% call callToAction.render() %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link uppercase" href="{{ meetupUrl }}">Join the chapter</a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link" href="{{ contactOrganizer }}">Contact organizers</a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link" href="https://twitter.com/{{ twitter }}"
+    >Follow on Twitter</a
+  >
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% endcall %}
+</div>
+<!-- prettier-ignore -->
+{% endblock %}
