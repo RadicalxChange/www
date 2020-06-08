@@ -51,8 +51,7 @@ module.exports = function (config) {
 
     const groupedChapters = {};
     for (const chapter of chapters) {
-      const itemKey = chapter.data.headerText;
-      const groupKey = itemKey.charAt(0).toLowerCase();
+      const groupKey = chapter.data.headerText.charAt(0).toLowerCase();
       if (groupedChapters[groupKey] === undefined) {
         groupedChapters[groupKey] = [];
       }
