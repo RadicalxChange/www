@@ -6,13 +6,14 @@ headerText: "Singapore"
 city: "Singapore"
 country: "Singapore"
 coordinates:
-  lat: 1.34
-  lon: 103.86
-meetupUrl: "https://www.meetup.com/RadicalxChange-Singapore"
-contactOrganizer: "https://www.meetup.com/RadicalxChange-Singapore"
-twitter: "radxchange"
+  lat: 1.340863
+  lng: 103.8303918
+meetupUrl: "https://twitter.com/RadxChangeSG"
+contactOrganizer: "https://twitter.com/RadxChangeSG"
+twitter: "RadxChangeSG"
 foundingYear: "2019"
 ---
+
 This RadicalxChange chapter aims to grow a community with a shared vocabulary to interrogate and build upon economic proposals for a collective yet decentralized society. Not shy of challenging long-established social institutions, this chapter seeks to chart a speculative trajectory of what may take their place.
 
 We host monthly discussions and presentations on topics of members’ choosing, gravitating toward working groups to build and experiment with operational tools to test our hypotheses.

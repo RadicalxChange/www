@@ -4,11 +4,14 @@ title: Chapters - RadicalxChange
 headerText: Chapters
 ---
 
-<div class="flex-grow flex flex-col justify-between">
-  <div class="mb-lg lg:mb-lg/lg">
+<div class="flex-grow flex flex-col">
+  <div class="mb-sm lg:mb-lg/sm">
+    <span>Find a local chapter near you.</span>
+  </div>
+  <div class="mb-sm lg:mb-lg/sm">
     <div id="mapid"></div>
   </div>
-  <ol class="mb-lg lg:mb-lg/lg">
+  <ol class="mb-base lg:mb-lg/base">
     {% for key, chapters in collections.groupedChapters %}
     <li class="mb-base lg:mb-lg/base">
       <h4 class="uppercase">{{ key }}</h4>
@@ -22,6 +25,11 @@ headerText: Chapters
     </li>
     {% endfor %}
   </ol>
+  <div>
+    <a class="animated-link" href="https://forms.gle/UQ6FtuC7rEf42cqE9"
+      >Can’t find your city? Start a new chapter.</a
+    >
+  </div>
 </div>
 <script
   src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
@@ -44,17 +52,12 @@ headerText: Chapters
     // prettier-ignore
     {% endfor %}
   ];
-  // -----------------------
-
-  // Initialize map to use OpenStreetMap data
   const map = L.map("mapid", { scrollWheelZoom: false }).setView([0, 0], 2);
-
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution:
       '© <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
   }).addTo(map);
-
   for (place of places) {
     const { label, coordinates, href } = place;
     L.marker(coordinates)

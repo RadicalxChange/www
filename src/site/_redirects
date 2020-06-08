@@ -4,10 +4,6 @@
 
 # Redirect requests for content under construction
 /rxc-events /under-construction
-/press /under-construction
-/team /under-construction
-/chapters /under-construction
-/chapters/* /under-construction
 /pt /under-construction
 /pt/* /under-construction
 
