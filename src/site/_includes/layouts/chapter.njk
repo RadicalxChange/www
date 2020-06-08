@@ -1,81 +1,33 @@
 <!-- prettier-ignore -->
-{% import "components/nav.njk" as nav %}
-<!-- prettier-ignore -->
-{% import "components/header.njk" as header %}
-<!-- prettier-ignore -->
-{% import "components/section.njk" as section %}
-<!-- prettier-ignore -->
-{% import "components/footer.njk" as footer %}
-<!-- prettier-ignore -->
-{% import "components/call-to-action.njk" as callToAction %}
-<!-- prettier-ignore -->
-{% import "components/modal.njk" as modal %}
-<!-- prettier-ignore -->
-{% import "components/subscribe-modal.njk" as subscribeModal %}
+{% extends "layouts/_page.njk" %}
 
 <!-- prettier-ignore -->
-{% extends "layouts/_base.njk" %}
-
-<!-- prettier-ignore -->
-{% block body %}
-<main>
-  <!-- prettier-ignore -->
-  {{ nav.stickyMenuButton() }}
-  <!-- prettier-ignore -->
-  {% call nav.render() %}
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  {% call header.render(headerText) %}
-  <div>
-    <div class="md-container mb-lg lg:mb-lg/lg">
-      {{ content | markdown | safe }}
-    </div>
-    <!-- prettier-ignore -->
-    {% call callToAction.render() %}
-    <!-- prettier-ignore -->
-    {% call callToAction.item() %}
-    <a class="animated-link uppercase" href="{{ meetupUrl }}"
-      >Join the chapter</a
-    >
-    <!-- prettier-ignore -->
-    {% endcall %}
-    <!-- prettier-ignore -->
-    {% call callToAction.item() %}
-    <a class="animated-link" href="{{ contactOrganizer }}"
-      >Contact organizers</a
-    >
-    <!-- prettier-ignore -->
-    {% endcall %}
-    <!-- prettier-ignore -->
-    {% call callToAction.item() %}
-    <a class="animated-link" href="https://twitter.com/{{ twitter }}"
-      >Follow on Twitter</a
-    >
-    <!-- prettier-ignore -->
-    {% endcall %}
-    <!-- prettier-ignore -->
-    {% endcall %}
+{% block content %}
+<div>
+  <div class="md-container mb-lg lg:mb-lg/lg">
+    {{ content | markdown | safe }}
   </div>
+  <!-- prettier-ignore -->
+  {% call callToAction.render() %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link uppercase" href="{{ meetupUrl }}">Join the chapter</a>
+  <!-- prettier-ignore -->
   {% endcall %}
-</main>
-<!-- prettier-ignore -->
-{% call footer.render("bg-white") %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% call modal.render('subscribe') %}
-<!-- prettier-ignore -->
-{% call subscribeModal.render() %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% endcall %}
-<script>
-  // prettier-ignore
-  {% include "components/nav.js" %}
-  // prettier-ignore
-  {% include "components/modal.js" %}
-</script>
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link" href="{{ contactOrganizer }}">Contact organizers</a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link" href="https://twitter.com/{{ twitter }}"
+    >Follow on Twitter</a
+  >
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% endcall %}
+</div>
 <!-- prettier-ignore -->
 {% endblock %}

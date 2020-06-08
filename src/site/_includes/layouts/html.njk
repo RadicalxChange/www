@@ -1,50 +1,8 @@
 <!-- prettier-ignore -->
-{% import "components/nav.njk" as nav %}
-<!-- prettier-ignore -->
-{% import "components/header.njk" as header %}
-<!-- prettier-ignore -->
-{% import "components/section.njk" as section %}
-<!-- prettier-ignore -->
-{% import "components/footer.njk" as footer %}
-<!-- prettier-ignore -->
-{% import "components/modal.njk" as modal %}
-<!-- prettier-ignore -->
-{% import "components/subscribe-modal.njk" as subscribeModal %}
+{% extends "layouts/_page.njk" %}
 
 <!-- prettier-ignore -->
-{% extends "layouts/_base.njk" %}
-
-<!-- prettier-ignore -->
-{% block body %}
-<main>
-  <!-- prettier-ignore -->
-  {{ nav.stickyMenuButton() }}
-  <!-- prettier-ignore -->
-  {% call nav.render() %}
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  {% call header.render(headerText) %}
-  {{ content | safe }}
-  {% endcall %}
-</main>
-<!-- prettier-ignore -->
-{% call footer.render("bg-white") %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% call modal.render('subscribe') %}
-<!-- prettier-ignore -->
-{% call subscribeModal.render() %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% endcall %}
-<script>
-  // prettier-ignore
-  {% include "components/nav.js" %}
-  // prettier-ignore
-  {% include "components/modal.js" %}
-</script>
+{% block content %}
+{{ content | safe }}
 <!-- prettier-ignore -->
 {% endblock %}
