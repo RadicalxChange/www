@@ -125,8 +125,13 @@
 /* Chapters page */
 #mapid {
   height: 512px;
-  border: 1px solid #000000;
-  margin: 16px 0;
+  @apply my-base;
+  @apply border;
+  @apply font-body !important;
+
+  a {
+    @apply text-black !important;
+  }
 
   .leaflet-tile-pane,
   .leaflet-marker-icon {
@@ -134,11 +139,8 @@
     filter: grayscale(100%);
   }
 
-  .leaflet-container {
-    @apply font-body !important;
-    a {
-      @apply text-black !important;
-    }
+  @screen lg {
+    @apply my-lg/base;
   }
 
   @screen touch {
