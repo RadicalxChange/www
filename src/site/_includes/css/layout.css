@@ -128,6 +128,19 @@
   border: 1px solid #000000;
   margin: 16px 0;
 
+  .leaflet-tile-pane,
+  .leaflet-marker-icon {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .leaflet-container {
+    @apply font-body !important;
+    a {
+      @apply text-black !important;
+    }
+  }
+
   @screen touch {
     display: none;
   }
