@@ -33,6 +33,15 @@ module.exports = function (config) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  // Default href filter
+  config.addFilter("defaultHref", function (value, defaultHref) {
+    if (value === "#") {
+      return defaultHref;
+    } else {
+      return value;
+    }
+  });
+
   // Custom collections
   config.addCollection("groupedChapters", (collectionApi) => {
     function compareHeaderText(a, b) {
