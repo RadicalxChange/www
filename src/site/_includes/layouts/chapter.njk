@@ -4,6 +4,15 @@
 <!-- prettier-ignore -->
 {% import "components/call-to-action.njk" as callToAction %}
 
+
+{% set mailtoChapter %}
+mailto:chapters@radicalxchange.org?subject=Interested%20in%20the%20{{
+  headerText | urlencode
+}}%20Chapter&body=Hello!%20I'm%20interested%20in%20joining%20the%20RadicalxChange%20{{
+  headerText | urlencode
+}}%20chapter.%20Can%20you%20put%20me%20in%20contact%20with%20their%20organizers%3F%0D%0A%0D%0AThank%20you!
+{% endset %}
+
 <!-- prettier-ignore -->
 {% block content %}
 <div>
@@ -14,12 +23,20 @@
   {% call callToAction.render() %}
   <!-- prettier-ignore -->
   {% call callToAction.item() %}
-  <a class="animated-link uppercase" href="{{ meetupUrl }}">Join the chapter</a>
+  <a
+    class="animated-link uppercase"
+    href="{{ meetupUrl | defaultHref(mailtoChapter) }}"
+    >Join the chapter</a
+  >
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {% call callToAction.item() %}
-  <a class="animated-link" href="{{ contactOrganizer }}">Contact organizers</a>
+  <a
+    class="animated-link"
+    href="{{ contactOrganizer | defaultHref(mailtoChapter) }}"
+    >Contact organizers</a
+  >
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
