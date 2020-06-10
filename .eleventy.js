@@ -33,7 +33,7 @@ module.exports = function (config) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
-  // Custom collection for chapters
+  // Custom collections
   config.addCollection("groupedChapters", (collectionApi) => {
     function compareHeaderText(a, b) {
       if (a.data.headerText < b.data.headerText) {
