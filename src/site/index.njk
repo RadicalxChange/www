@@ -1,10 +1,10 @@
 ---
 layout: layouts/_base.njk
-title: 2020 Conference - RadicalxChange
+title: RadicalxChange
 gitxchange: |
-  Ahead of the conference, we are hosting a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon includes a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. Winning projects will present their creations on the virtual conference stage.
+  Ahead of the conference, we hosted a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon included a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. [Read more on the hackathon portal.](https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25)
 
-  The sponsoring teams include [Democracy Earth](https://democracy.earth/), [Idena](https://idena.io/), [Gitcoin](http://www.gitcoin.co/), [Ocean Protocol](https://oceanprotocol.com/), [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/), [Wildcards](https://wildcards.world/), and [RadicalxChange Foundation](https://www.radicalxchange.org/).
+  The sponsoring teams included [Democracy Earth](https://democracy.earth/), [Idena](https://idena.io/), [Gitcoin](http://www.gitcoin.co/), [Ocean Protocol](https://oceanprotocol.com/), [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/), [Wildcards](https://wildcards.world/), and [RadicalxChange Foundation](https://www.radicalxchange.org/).
 sponsors:
   - name: Dada.art
     image: /images/sponsors-2020/dada-logo.png
@@ -55,10 +55,11 @@ sponsors:
   {% call nav.render(false, true) %}
   <div class="hidden lg:block">
     <p class="mb-base lg:mb-lg/base">
-      RadicalxChange supports Testing, Tracing & Supported Isolation (#TTSI).
+      We stand with #BlackLivesMatter.
     </p>
-    <p>
-      <a class="animated-link" href="/covid-19">Read more</a>
+    <p class="mb-base lg:mb-lg/base">
+      We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
+      <a class="inline-link" href="/covid-19">Read more</a>
     </p>
   </div>
   <!-- prettier-ignore -->
@@ -75,15 +76,42 @@ sponsors:
       ></iframe>
     </div>
     <div class="flex justify-between">
+      <p>RadicalxChange Annual Conference<br />June 19-21, 2020</p>
       <p>
-        RadicalxChange Annual Conference<br />June 19-21, 2020 Hosted Online
-      </p>
-      <p>
-        <span class="mr-base lg:mr-lg/base">Stages:</span
-        ><a class="mr-base lg:mr-lg/base uppercase" href="#">Pathos</a
-        ><a class="uppercase" href="#">Logos</a>
+        <span>Stages:</span
+        ><a class="ml-base lg:ml-lg/base animated-link uppercase" href="#"
+          >Pathos</a
+        ><a class="ml-base lg:ml-lg/base animated-link uppercase" href="#"
+          >Logos</a
+        >
       </p>
     </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("Schedule") %}
+  <div class="conference-schedule">
+    <iframe
+      class="flex-grow mb-lg lg:mb-lg/lg border-2 rounded bg-white"
+      src="/2020-conference/schedule"
+    ></iframe>
+    <!-- prettier-ignore -->
+    {% call callToAction.render('lg:self-end') %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a class="animated-link uppercase" href="#">Log into Brella</a>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a class="animated-link" href="/2020-conference/schedule"
+      >See the schedule</a
+    >
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% endcall %}
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
@@ -117,34 +145,11 @@ sponsors:
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
+
   <!-- prettier-ignore -->
-  {% call page.render("Schedule") %}
-  <div class="conference-schedule">
-    <iframe
-      class="flex-grow mb-lg lg:mb-lg/lg border-2 rounded bg-white"
-      src="/2020-conference/schedule"
-    ></iframe>
-    <div class="lg:self-end">
-      <a class="animated-link uppercase" href="/2020-conference/schedule"
-        >See the schedule</a
-      >
-    </div>
-  </div>
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  {% call page.render("Hackathon", true) %}
-  <div class="flex flex-col justify-between h-full">
-    <div class="md-container mb-lg lg:mb-lg/lg">
-      {{ gitxchange | markdown | safe }}
-    </div>
-    <div class="lg:self-end">
-      <a
-        class="animated-link uppercase"
-        href="https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25"
-        >Join the hackathon</a
-      >
-    </div>
+  {% call page.render("Ahead of conference", true) %}
+  <div class="md-container mb-lg lg:mb-lg/lg">
+    {{ gitxchange | markdown | safe }}
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
@@ -173,11 +178,6 @@ sponsors:
       </li>
       {% endfor %}
     </ul>
-    <div class="lg:self-end">
-      <a class="animated-link uppercase" href="#" data-modal-trigger="sponsor"
-        >Support the conference</a
-      >
-    </div>
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
