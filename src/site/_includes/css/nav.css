@@ -14,7 +14,7 @@
     @apply absolute left-auto right-0;
     @apply flex-col justify-between items-stretch;
     @apply w-span5 h-auto;
-    @apply pt-lg/xl pr-lg/lg pb-lg/xl pl-lg/sm;
+    @apply pt-lg/xl pr-lg/lg pb-lg/xl pl-lg/base;
     @apply bg-transparent;
     @apply overflow-y-hidden;
 
