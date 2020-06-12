@@ -726,15 +726,12 @@
   bio: |
     Maïmonatou Mar, phD, is the cofounder of Gribouilli, the French social venture empowering domestic workers. Gribouilli launched the first community for nannies in Paris. They are key workers but invisible: mainly middle-age women with migration backgrounds who suffered from isolation and the digital divide. Nearly a thousand nannies benefit from information, P2P learning, basic learning and soft skills class for their economic inclusion and access to decent work. Gribouilli offers leadership programs through an Ambassador program for nannies. Ambassadors of Gribouilli therefore collaborate with public-private partners to improve the public policies. They also develop a coop with more inclusive and accessible commercial services to the benefit of the families. Gribouilli is a 3yr multi-award winning organization (Prizes from Paris City, the Foundations JL Lagardère and Deloitte...). Maïmonatou is an A. de Rothschild Fellow, CXC/Ashoka Fellow and a 2020 Paris Talent.
 - name: Marco Bonomo
-  title: "Professor of Economics at Insper"
+  title:
+    "Amartya Sen Professor of Inequality Studies at the London School of
+    Economics"
   picture: marco_bonomo.png
   bio: |
     Marco Bonomo is professor of economics at Insper. His main research interests are in macroeconomics, finance and the Brazilian economy. In addition to his academic work, he has also done research for government and multilateral organizations, as the Ministry of Finance of Brazil, IDB, IMF, and the World Bank. He is currently a member of the Economic Cycle Dating Committee of Brazil (CODACE, IBRE-FGV), and of the CVM (Brazilian Securities Exchange Commission) Behavioral Studies Nucleus. He served as president of the Brazilian Econometric Society and of the Brazilian Finance Society. Previously, he has been a faculty member of EPGE-FGV and PUC-Rio. He was born and raised in Rio de Janeiro, Brazil, and holds a Ph.D. in Economics from the Princeton University.
-- name: Elena Landau
-  title: "Economist and Lawyer"
-  picture: elena_landau.png
-  bio: |
-    Elena Landau is an economist and lawyer. Landau is the President of Livres, a movement that advocates the liberalization of trade and the economy in Brazil. She served as Privatization Director at BNDES during President Fernando Henrique Cardoso's first term. She also chaired the Board of Directors of Eletrobrás.
 - name: Paul Healy
   title: "Policy Advisor at the RadicalxChange"
   picture: paul_healy.png
@@ -1007,11 +1004,6 @@
   picture: nina-luisa_siedler.png
   bio: |
     Nina-Luisa Siedler is partner at DWF, a technology-oriented global law firm, and head of the international Blockchain Competence Group. She focusses on the legal implication of blockchain/distributed ledger technology projects and assists her clients with the structuring of business cases with view to legal and regulatory compliance. Nina-Luisa Siedler is active member of several associations and initiatives (Blockchain Bundesverband, ITSA, EU Blockchain Observatory & Forum) and member of the board of directors of thinkBLOCKtank, IPDB and INATBA.
-- name: Juan Ortiz Freuler
-  title: "Affiliate at the Berkman Klein Center for Internet and Society"
-  picture: juan_ortiz_freuler.png
-  bio: |
-    Juan Ortiz Freuler is an Affiliate at the Berkman Klein Center for Internet and Society, and a Policy Fellow at the Web Foundation where he works close to Sir Tim Berners-Lee on the social impacts of the web. He was previously a Google Policy Fellow and has worked with several NGOs in Mexico and Argentina on the intersection between rights and ICTs. At Berkman he is following the debates on net neutrality and the re-decentralization of the web. He is also researching how algorithms can be made accountable to the people they affect and how to ensure this is assessed based on a locally constructed conception of justice.
 - name: Mario Brandenburg
   title: "Member of the German Bundestag"
   picture: mario_brandenburg.png
@@ -1067,3 +1059,130 @@
     Working between government and business he regularly says “it’s necessary to have the mind of a CEO and the heart of a Social Worker to solve real people's problems”. His career transitioned after founding an LGBT Chamber of Commerce and the "Pride Nights" at the four Big Box American sports franchises: NBA, NHL, MLB, & NFL. James has been appointed to the cabinet of Elected Officials, taken over for and advised CEOs, Academics, Governments, and Non-profiteers.
 
     He currently advises boards at Rutgers University, the $DATA crypto network, Black & Latino LGBTQ Coalition, Copenhagen 2021 World Pride, the Democratic National Committee, and is an elected member of the New York County Democratic Committee. JFK advises multiple governments and is a frequent keynote at global venues like the United Nations, Future Tech Congress, Data Protection World Forum, Money 20/20, and Hope Global Forums to name a few. He has been honored as one of the UN's International Young Leaders Assembly members, the United Kingdom’s Technology & Investment Financial Technology Delegation, an IBM Global Entrepreneur, the US Department of Homeland Security, and multiple 40 under 40 notices.
+- name: Jaron Lanier
+  title:
+    "Microsoft Office of the Chief Technology Officer Prime Unifying Scientist"
+  picture: jaron_lanier.png
+  bio: |
+    Jaron Lanier coined the terms Virtual Reality and Mixed Reality – and had the first VR startup, manufacturing VR headsets and gloves for the first time, and creating the first surgical simulators, vehicle prototyping, and other apps – all in his youth back in the 1980s.  In the 1990s he was chief scientist for Internet2 (the academic consortium charged with making sure the internet would scale) and then of the first company to do AI processing of faces, such as changing identities or adding ornaments; that company went to Google, alas.  He’s also known as a constructive critic of technology.  He was concerned about how the internet was turning out from way back before it was popular to do that; has written a number of bestselling books on the topic.  Plenty of awards and accolades, including an IEEE Lifetime Achievement Award, the German Peace Prize for Books, one of the highest literary honors, and multiple honorary PhDs.  In 2018, Wired named Jaron one of the 25 most influential figures in tech from the previous 25 years.  Jaron’s also a musician specializing in unusual and obscure instruments; in the last year, he played with Sara Bareilles and T Bone Burnett on a #1 single, appeared on Colbert playing with Jon Batiste, and collaborated with Philip Glass. Officially, Jaron is Microsoft’s “Octopus”, which stands for Office of the Chief Technology Officer Prime Unifying Scientist.
+- name: Tom Rossman
+  title: "Economist"
+  picture: tom_rossman.png
+  bio: |
+    Tom Rossman is a consultant, international speaker and author that has spent his career analyzing the economic, political, social, and cultural factors that determine the growth and prosperity within society. As a part of the newly formed Junto Group his focus is exploring and developing a new model for society and the construction of an advanced urban ecosystem to help maximize human potential and a thriving urban environment for a new city in development. Mr. Rossman began his professional career in finance becoming a financial consultant and emerging markets specialist. He played a key role as a Country Manager at the largest Turkish investment bank, bringing American capital and investment to the developing markets of the Former Soviet Union, Eastern Europe, Turkey, Middle East, and North Africa. Tom is also the author of The Synthesis Revolution, a guide to more effective social and political decision making. He completed his master’s work in international relations at the Fletcher School of Law and Diplomacy in Medford, Massachusetts.
+- name: Jonathan Herzog
+  title: "Democratic congressional candidate in New York's 10th District"
+  picture: jonathan_herzog.png
+  bio: |
+    Jonathan Herzog is a civil rights organizer, legal advocate, and Democratic congressional candidate in New York's 10th District. He has worked hand in hand with the Senior Adviser & Counselor to the Attorney General on New York's first-of-its-kind anti-corruption joint task force. He graduated first in his class at Harvard University, completed his MBA at NYU Stern, and served as co-President of Harvard Law School's student government, where he is a teaching fellow for legal and political philosophy.
+- name: Jake Interrante
+  title: "MPP candidate at  University of Chicago"
+  picture: jake_interrante.png
+  bio: |
+    Jake Interrante is an MPP candidate at the University of Chicago Harris School of Public Policy. He is a founding member of UChicago RadicalxChange and is Editor in Chief of the Chicago Policy Review. Previously, Jake worked in the community development sector. As a program associate with Massachusetts Housing Partnership’s ONE Mortgage Program, he helped working class households buy homes in otherwise unaffordable parts of the State. Prior to that, he helped finance amenities in economically disadvantaged communities as Development Coordinator for Partners for the Common Good, a DC-based CDFI Loan Fund. His published work on comparative borrower outcomes in the ONE Mortgage program and FHA Mortgage Program has appeared in the March 2020 edition of Cityscape.
+- name: Russell Cui
+  title: "PhD Student in Political Science at University of Rochester"
+  picture: russell_cui.png
+  bio: |
+    Russell Cui is a PhD student in political science at University of Rochester. His research interests include cooperation theory, international political economy (especially China and globalization) and the epistemic aspects of quadratic voting. He is interested in applying RxC concepts in the field of international organization and decentralized media platforms. Russell started and is currently running the RadicalxChange Rochester Chapter (Twitter: [@rxcrochester](https://twitter.com/rxcrochester)). He is also a Frédéric Bastiat Fellow at Mercatus Center.
+- name: Divya Siddarth
+  title: "Fellow at Microsoft Research India"
+  picture: divya_siddarth.png
+  bio: |
+    Divya Siddarth works on building, testing, and studying impactful technology. Her work covers a broad range of applications in the intersection of technology and society, including digital work, political communication, digital security and privacy, and tech-augmented cooperation and collectivization. She is currently a Fellow at Microsoft Research India, and has done extensive fieldwork in urban and rural contexts, studying and implementing large-scale technology interventions for societal good. Her work has been published in the ACM Conference on Human Factors in Computing Systems, the ACM Conference on Computing and Sustainable Societies, and the ACM Conference on Information and Communication Technologies for Development, and is forthcoming in Information, Communication, and Society. She has previously taught classes at Stanford University in both the computer science and political science departments, in collaboration with the Digital Civil Society Lab.
+- name: Shoukei Matsumoto
+  title: "Buddhist Monk in Komyoji Temple"
+  picture: shoukei_matsumoto.png
+  bio: |
+    Shoukei Matsumoto is Buddhist Monk in Komyoji Temple. Born in 1979 in Japan, he graduated with B.A. degree in Literature from the University of Tokyo. Right after graduation, he joined Komyoji temple and initiated new projects such as Temple Café Project. In 2008, the association was awarded "Shoriki Matsutaro Prize" from a foundation for education. He completed MBA from Indian School of Business as an Ambassadorial Scholar of Rotary Foundation in 2011. After MBA, he started a project of “Mirai no Jushoku-Juku” or temple management school for Buddhist priests and monks. In 2013, he was nominated as a member of Young Global Leaders from World Economic Forum. In 2019, he was also appointed as a member of the Global Future Councils from World Economic Forum. He has published five titles and "A Monk's Guide to a Clean House and Mind” was translated into more than fifteen languages.
+- name: Amichai Lau-Lavie
+  title:
+    "Founding Spiritual Leader of Lab/Shul NYC, Creator of Storahtelling, Inc."
+  picture: amichai_lau-lavie.png
+  bio: |
+    Rabbi Amichai Lau-Lavie is the Founding Spiritual Leader of Lab/Shul NYC and the creator of Storahtelling, Inc. An Israeli-born Jewish educator, writer, and performance artist, he received his rabbinical ordination from the Jewish Theological Seminary of America in 2016. Rabbi Amichai is a member of the Global Justice Fellowship of the American Jewish World Service, a founding member of the Jewish Emergent Network, and serves on the faculty of the Reboot Network. Since 2018 he serves on the Advisory Council of the International School for Peace – a Refugee Support Project in Greece. Rabbi Amichai has been hailed as “an iconoclastic mystic” by Time Out New York, a “rock star” by the New York Times, a “Judaic Pied Piper” by the Denver Westword, a “maverick spiritual leader” by The Times of Israel and “one of the most interesting thinkers in the Jewish world” by the Jewish Week. In 2016 The Forward named him one of the thirty-two “Most Inspiring Rabbis” in America, and in 2017 he was top five on “The Forward 50,” their annual list of the most influential and accomplished Jews in America. In June 2017 Rabbi Amichai published the JOY Proposal, offering a new response to the reality of Intermarriage and taking on a personal position on this issue, including his resignation from the Rabbinical Assembly of the Conservative Movement. Amichai is Abba to Alice, Ezra and Charlotte.
+- name: Lourenço Bustani
+  title: "Entrepreneur"
+  picture: lourenço_bustani.png
+  bio: |
+    Lourenço Bustani is Brazilian, though he was born and raised abroad. He studied at the University of Pennsylvania and upon returning to Brazil in 2006, founded Mandalah, a Conscious Innovation consultancy which today has a presence in São Paulo, New York, San Francisco, Mexico City, Berlin and Tokyo, servicing different types of clients including Nike, Telefonica, GM, Samsung, Anheuser-Busch Inbev, Kimberly Clark, Unilever, Itaú, Danone, UNHCR, Russell Brand, Kobe Bryant, Bill & Melinda Gates Foundation, as well as dozens of Brazilian startups. In 2015, he launched Human Experience Design (HED), an Experience Design agency, which has been responsible for the production of over 40 philanthropic morning parties in Brazil and Mexico. In 2016, he launched Diálogos, which provides mentoring for young professionals, directors and C-level executives. In 2018, Mandalah invested in a Brazilian health tech startup called Cuidas (together with VC funds Kaszek Ventures & Canary) and in the following year, opened a superfood-based vegan smoothie bar, together with a yoga studio and spa in São Paulo called Smuv (sold in 2020). In mid 2018, Lourenço took a leave and on a volunteer basis, managed the campaign for the Brazilian Presidency of Marina Silva, a leading global environmentalist. His most recent ventures include: a company dedicated to branded projects with large-scale social impact, in partnership with a leading design agency in Brazil and the producers of the largest rock festival in the world (Rock 'n Rio); a company comprised of academic researchers and practitioners from around the world dedicated to developing a Consciousness Index; as well as investing in an AgTech startup focused on the early detection of forest fires. His connecting thread: all that reveals who we are and what we came for.
+- name: Christian Liensberger
+  title: "Technical Leader at Microsoft"
+  picture: christian_liensberger.png
+  bio: |
+    Christian is a seasoned technical leader at Microsoft. He manages a multidisciplinary team of program managers, designers and developers to incubate disruptive ML/AI products that are directly sponsored by Microsoft's senior leadership team. This includes a set of key cross-company initiatives & projects to evolve the approach to ML/AI & data at Microsoft and throughout the industry.
+
+    Before his current role, Christian led part of the Microsoft mobility experiences charter. He assembled a team that focused on cross-device experiences for Windows 10 PCs and Android/iOS phones.
+
+    Christian drove the Cortana at Work program. He built and led a global team of product managers to deliver industry leading productivity skills for Cortana, including calendar, email, task extraction skills for Gmail, O365 and Outlook.com. He connected Outlook and Cortana and built native assistive experiences into Outlook including Cortana augmenting the calendar with frequently visited locations, suggestions when it’s time to leave for the next appointment and the ability to read out & triage recent emails while driving in the car. Before that he ran the international program for Cortana including bringing the assistant to 10+ countries.
+
+    During his tenure at Microsoft he worked on many products in the cloud, big data, and ML/AI space, including SQL Azure, Azure Marketplace, Power BI and Azure Data Lake.
+
+    Before joining Microsoft, he had his own startup where he built successful data management & abstraction SDKs for developers. He has experience working in various startups as product manager and developer.
+
+    He enjoys building teams, growing people, taking on challenging & diverse problems, and shipping products - from building the vision to seeing them go to market and becoming a habit.
+- name: Sonal Shah
+  title:
+    "Executive Director of the Beeck Center for Social Impact & Innovation at
+    Georgetown University"
+  picture: sonal_shah.png
+  bio: |
+    Sonal Shah is Professor and Executive Director of the Beeck Center for Social Impact & Innovation at Georgetown University. An economist and entrepreneur, Sonal has spent her career focused on actionable innovation in the public and private sectors. Most recently, she was the Deputy Assistant to the President and founding Director of the White House Office of Social Innovation and Civic Participation.
+
+    She spent seven years at the U.S. Department of Treasury where she was an international economist working on timely issues, including post-conflict development in Bosnia, Asian financial crisis, and poverty reduction in Africa. She then went to Goldman Sachs and Google while simultaneously co-founded Indicorps, a nonprofit building a new generation of socially conscious global leaders. She is a senior fellow at the Case Foundation and the Center for American Progress. Sonal serves on the Board of Social Finance, Inc., Oxfam America, The Century Foundation, Case Foundation and the Urban Alliance.
+
+    She has served as Senior Fellow at the Case Foundation working on Impact Investing focusing increasing the flow of capital to impact investments and the Center for American Progress working on Social Impact Bonds. In the fall of 2012 she served as a Fellow of the Institute of Politics at Harvard University.
+- name: Natalia Olson-Urtecho
+  title: "COO of RadicalxChange"
+  picture: natalia_olson-urtecho.png
+  bio: |
+    About Natalia:
+    - She's an entrepreneur with more than 18 years of experience working with international, regional and local entities in Latin America, Europe and Asia. She has professional experience in operations, digital transformation, blockchain, smart cities, finance, government contracting, international diplomacy, commercialization of technologies, environmental planning, sustainable building, zoning, land use, mobility, public engagement and infrastructure development.
+    - She was the Regional Administrator for the U.S. Small Business Administration, serving as Obama’s Presidential Appointee from 2011-2017, responsible for delivery and management of small business programs, development initiatives and financial assistance & lending, throughout the Mid-Atlantic region. Olson-Urtecho oversaw 180 SBA offices; Business Development Centers and other resources while managing a field staff of finance, business, and community outreach specialists.
+    - She worked with local lenders and successful firms across the region, overseeing more than $34 billion yearly in federal government contracts. Managed the region’s loan program supporting $8 billion in small business loans and $2 billion in grants.
+    - She was appointed to the U.S. Innovation Advisory Board to advise Congress & the White House on competitiveness and innovation.
+    - She served on the Philadelphia City Planning Commission and Zoning Code Commission boards.
+    - Recognized as a “Latina Powerhouse” in Maryland, one of Delaware Valley's (NJ, PA, DE) Most Influential Latinos, Business Journal’s Minority Business Leader Awardee and receiving the Women of Distinction Award for her work in growing the green economy and sustainable infrastructure.
+    - A triathlete who has climbed Kilimanjaro, Everest, Machu Picchu, loves scuba diving & hiking with her Australian Shepherd. “Success is not final, failure is not fatal: it is the courage to continue that counts."
+- name: Jessica Lynch
+  title: "Founding partner at Generation Titan"
+  picture: jessica_lynch.png
+  bio: |
+    Jessica Lynch is a founding partner at Generation Titans, a social impact firm with a race and equity lens. At Generation Titans, Jessica has worked with organizations like American Eagle, Girls Who Code, Ben & Jerry’s, and Google on community engagement strategies and DEI efforts.
+- name: Ahmed H. Ahmed
+  title: "Director, Partnership & Professional Learning at Overcoming Racism"
+  picture: ahmed_h_ahmed.png
+  bio: |
+    Ahmed is the Director, Partnership & Professional Learning at Overcoming Racism where he facilitates race and equity professional development and provides coaching and support for partner organizations while working to expand the scope and impact of the organization. A Boston University alumnus, Ahmed taught middle school mathematics, science, and reading in Atlanta, GA prior to beginning his career in teacher coaching and development. Ahmed received his certification from the Center for Transformative Teacher Training (CT3) as a Real-Time Teacher Coach (RTTC), implementing specialized intervention strategies to support teachers in developing strong skills and mindsets around classroom management and culture through a lens of cultural competency while coaching school leaders in the development and implementation of school-wide visions for culture.
+- name: Jermaine Johnson
+  title: "Manager and Producer at 3 Arts Entertainment"
+  picture: jermaine_johnson.png
+  bio: |
+    Jermaine Johnson is a manager and producer at the Beverly Hills-based 3 Arts Entertainment. Jermaine represents a wide variety of writers, directors, journalists, and comedians from many different backgrounds. Amongst these clients are Attica Locke (award-winning author of BLUEBIRD, BLUEBIRD), Azie Dungey (UNBREAKABLE KIMMY SCHMIDT, SWEETBITTER, TWENTIES), Cord Jefferson (WATCHMEN, SUCCESSION, THE GOOD PLACE), Fatimah Asghar (BROWN GIRLS, IF THEY COME FOR US), Eve Ewing (IRONHEART, ELECTRIC ARCHES), JUSTIN HILLIAN (THE CHI), JIA TOLENTINO (TRICK MIRROR) and more. He prides himself on finding fresh voices in places where others don’t often look, and giving them a platform to share their unique points of view and opinions.
+- name: Jasmin Baier
+  title: "International and Development Economist"
+  picture: jasmin_baier.png
+  bio: |
+    Jasmin Baier has a BSc. in Socioeconomics from Vienna University of Economics and Business and an M.A. in International and Development Economics from Yale University. She is passionate about innovative organizations and creative ideas in international development and has spent a significant amount of time working on her Social Entrepreneurship Project in Togo. Before her Master's, she supported the formulation of a new real-time, forward-looking narrative on global poverty, hunger, and the middle class at the World Data Lab. It is her mission to create impact by finding new ways to use emerging technologies and new economic thinking for the Sustainable Development Goals and to promote a more human-centered approach to development issues.
+- name: Antonio Dominguez Palomar
+  title: "Curious Student and RadicalxChange Purdue Leader"
+  picture: antonio_dominguez_palomar.png
+  bio: |
+    Antonio is currently trying to understand how the world works to be able to contribute to improve it. Has a passion for history, programming, and cooking (pa amb tomaca).
+- name: Connor O'Day
+  title: "Business Development at Gitcoin"
+  picture: connor_oday.png
+  bio: |
+    Connor O'Day joined ConsenSys in 2015 while studying Economics and Computer Science. He's a long time cryptocurrency researcher, miner, and investor, who currently works at Gitcoin on Business Development and as a Senior Account Manager.
+- name: Juan Ortiz Freuler
+  title:
+    "PhD candidate in Communication at the University of Southern California"
+  picture: juan_ortiz_freuler.png
+  bio: |
+    Juan Ortiz Freuler is a PhD candidate in Communication at the University of Southern California (USC), where he explores how political systems can be affected by the internet. Juan is also an Associate at JustLabs, and has held positions as a Fellow (2017-2018) and an Affiliate (2018-2020) at the Berkman Klein Center for Internet and Society, and as a Senior Policy Fellow at the Web Foundation. Before moving to the US, Juan developed and executed research projects at several non-profit organizations in Argentina and Mexico. A graduate from the Di Tella Law School in Buenos Aires, Juan has also obtained Masters degrees in both Public Policy and Social Science of the Internet at the University of Oxford.
+- name: Osama Rizvi
+  title:
+    "PhD candidate in Communication at the University of Southern California"
+  picture: osama_rizvi.png
+  bio: |
+    I am an economic and geopolitical analyst based in Pakistan. I have written for several English newspapers here in Pakistan as a columnist and have also contributed to international digital media sites such as Oilprice, SeekingAlpha, Business Insider and Thrive Global. I want to play my role in creating pluralistic policies that focus on intergenerational justice and equality of opportunity subsequently improving living standards.
