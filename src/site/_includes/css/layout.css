@@ -166,11 +166,3 @@
     /* @apply mb-lg/base; */
   }
 }
-
-#pathos:target {
-  @apply z-10;
-}
-
-#logos:target {
-  @apply z-10;
-}
