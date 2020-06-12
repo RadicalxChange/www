@@ -1,5 +1,13 @@
 const press = [
   {
+    title:
+      "This Political Conversation With Vitalik Buterin Shows How Ethereum Could Change the World",
+    href:
+      "https://www.coindesk.com/this-political-conversation-with-vitalik-buterin-shows-how-ethereum-could-change-the-world",
+    publication: "Coindesk",
+    date: "2020-06-10T00:00:00.000Z",
+  },
+  {
     title: "A Dialectic: E. Glen Weyl & Vitalik Buterin",
     href: "https://www.youtube.com/watch?v=rZ98-7GM55Q",
     publication: "Podcast",
