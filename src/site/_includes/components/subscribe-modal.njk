@@ -1,4 +1,4 @@
-{% macro render() %}
+{% macro render(backToHome=false) %}
 <div class="subscribe-modal">
   <form
     action="https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&amp;id=2e47820582"
@@ -9,10 +9,14 @@
   >
     <div class="relative">
       <h2
-        class="mb-lg lg:mb-lg/lg font-display text-header lg:text-lg/header-sm uppercase leading-display"
+        class="mb-base lg:mb-lg/base font-display text-header lg:text-lg/header-sm uppercase leading-display"
       >
         Newsletter
       </h2>
+      <p class="text-sm lg:text-lg/sm mb-base lg:mb-lg/base">
+        Subscribe to our newsletter to hear about upcoming RadicalxChange
+        events.
+      </p>
       <div class="mb-sm lg:mb-lg/sm">
         <label class="text-sm lg:text-lg/sm" for="mce-EMAIL">
           Email Address
@@ -47,15 +51,20 @@
           >Learn more about Mailchimp's privacy practices here.</a
         >
       </p>
-      <div>
+      <div class="flex">
         <button
           type="submit"
           name="subscribe"
           id="mc-embedded-subscribe"
-          class="animated-link text-sm lg:text-lg/sm uppercase"
+          class="animated-link mr-base lg:mr-lg/base text-sm lg:text-lg/sm uppercase"
         >
           Subscribe
         </button>
+        {% if backToHome %}
+        <a href="/" class="animated-link text-sm lg:text-lg/sm">
+          Back to home
+        </a>
+        {% endif %}
       </div>
     </div>
   </form>

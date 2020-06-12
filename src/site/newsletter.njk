@@ -1,0 +1,25 @@
+---
+title: Newsletter - RadicalxChange
+headerText: Newsletter
+---
+
+<!-- prettier-ignore -->
+{% import "components/subscribe-modal.njk" as subscribeModal %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% set bodyBg = 'bg-golden-fizz-100' %}
+<!-- prettier-ignore -->
+{% block body %}
+<div class="flex items-center justify-center h-100vh">
+  <div class="h-full lg:h-auto p-lg lg:p-lg/lg rounded bg-white">
+    <!-- prettier-ignore -->
+    {% call subscribeModal.render(true) %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endblock %}
