@@ -57,7 +57,7 @@ sponsors:
     <p class="mb-base lg:mb-lg/base">
       We stand with #BlackLivesMatter.
     </p>
-    <p class="mb-base lg:mb-lg/base">
+    <p>
       We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
       <a class="inline-link" href="/covid-19">Read more</a>
     </p>
@@ -66,25 +66,46 @@ sponsors:
   {% endcall %}
   <!-- prettier-ignore -->
   {% call header.render() %}
-  <div class="flex-grow flex flex-col justify-end">
-    <div class="twitch-container">
-      <iframe
-        src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=www.example.com"
-        frameborder="0"
-        allowfullscreen="true"
-        scrolling="no"
-      ></iframe>
-    </div>
-    <div class="flex justify-between">
-      <p>RadicalxChange Annual Conference<br />June 19-21, 2020</p>
-      <p>
-        <span>Stages:</span
-        ><a class="ml-base lg:ml-lg/base animated-link uppercase" href="#"
-          >Pathos</a
-        ><a class="ml-base lg:ml-lg/base animated-link uppercase" href="#"
-          >Logos</a
-        >
+  <div class="flex-grow flex flex-col justify-end mt-lg lg:mt-lg/lg">
+    <div>
+      <div class="mb-base lg:mb-lg/base bg-golden-fizz-100">
+        <div class="flex justify-end mb-base lg:mb-lg/base">
+          <p class="text-sm lg:text-lg/sm">
+            <span>Stages:</span
+            ><a
+              class="ml-base lg:ml-lg/base animated-link uppercase"
+              href="#pathos-stage"
+              data-pathos-link
+              >Pathos</a
+            ><a
+              class="ml-base lg:ml-lg/base animated-link uppercase"
+              href="#logos-stage"
+              data-logos-link
+              >Logos</a
+            >
+          </p>
+        </div>
+        <div class="twitch-container" data-twitch-container></div>
+      </div>
+      <p class="mb-base lg:mb-lg/base">
+        Stream the RadicalxChange Annual Conference from June 19 - 20, 2020. The
+        stream is active 24 hours a day to accommodate a global audience. See
+        the schedule and read more about the speakers below.
       </p>
+      <div class="flex">
+        <ul>
+          <li class="mb-xs lg:mb-lg/xs">
+            <a class="animated-link" href="#">Subscribe to our newsletter</a>
+          </li>
+          <li><a class="animated-link" href="#">Join a local chapter</a></li>
+        </ul>
+        <ul class="ml-base lg:ml-lg/base">
+          <li class="mb-xs lg:mb-lg/xs">
+            <a class="animated-link" href="#">Donate w/ PayPal</a>
+          </li>
+          <li><a class="animated-link" href="#">Donate w/ Crypto</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- prettier-ignore -->
@@ -100,7 +121,7 @@ sponsors:
     {% call callToAction.render('lg:self-end') %}
     <!-- prettier-ignore -->
     {% call callToAction.item() %}
-    <a class="animated-link uppercase" href="#">Log into Brella</a>
+    <a class="animated-link uppercase" href="#">Log in to Brella</a>
     <!-- prettier-ignore -->
     {% endcall %}
     <!-- prettier-ignore -->
@@ -187,14 +208,6 @@ sponsors:
 <!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->
-{% call modal.render('sponsor') %}
-<!-- prettier-ignore -->
-{% call sponsorModal.render() %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
 {% call modal.render('subscribe') %}
 <!-- prettier-ignore -->
 {% call subscribeModal.render() %}
@@ -208,8 +221,40 @@ sponsors:
   charset="utf-8"
 ></script>
 <script>
-  // prettier-ignore
-  {% include "components/sponsor-modal.js" %}
+  const twitchContainer = $("[data-twitch-container]");
+  const logosLink = $("[data-logos-link]");
+  const logosIframe = $('<iframe src="https://player.twitch.tv/?channel=radicalxchangelogos&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>');
+  const pathosLink = $("[data-pathos-link]");
+  const pathosIframe = $('<iframe src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>');
+
+  function showLogos() {
+    twitchContainer.empty();
+    twitchContainer.append(logosIframe);
+    logosLink.addClass("font-bold");
+    pathosLink.removeClass("font-bold");
+  }
+
+  function showPathos() {
+    twitchContainer.empty();
+    twitchContainer.append(pathosIframe);
+    logosLink.removeClass("font-bold");
+    pathosLink.addClass("font-bold");
+  }
+
+  $(window).on("hashchange", function (e) {
+    if (window.location.hash === "#logos-stage") {
+      showLogos();
+    } else if (window.location.hash === "#pathos-stage") {
+      showPathos();
+    }
+  });
+
+  if (window.location.hash === "#logos-stage") {
+    showLogos();
+  } else {
+    showPathos();
+  }
+
   // prettier-ignore
   {% include "components/nav.js" %}
   // prettier-ignore

@@ -154,7 +154,7 @@
   @apply relative;
   @apply h-0;
   padding-bottom: 60.967742%;
-  @apply mb-lg;
+  /* @apply mb-base; */
 
   iframe {
     @apply absolute;
@@ -163,6 +163,14 @@
   }
 
   @screen lg {
-    @apply mb-lg/lg;
+    /* @apply mb-lg/base; */
   }
+}
+
+#pathos:target {
+  @apply z-10;
+}
+
+#logos:target {
+  @apply z-10;
 }
