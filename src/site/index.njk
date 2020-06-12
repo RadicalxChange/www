@@ -50,66 +50,70 @@ sponsors:
 
 <main>
   <!-- prettier-ignore -->
-  {{ nav.stickyMenuButton() }}
-  <!-- prettier-ignore -->
-  {% call nav.render(false, true) %}
-  <div class="hidden lg:block">
-    <p class="mb-base lg:mb-lg/base">
-      We stand with #BlackLivesMatter.
-    </p>
-    <p>
-      We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
-      <a class="inline-link" href="/covid-19">Read more</a>
-    </p>
-  </div>
+  {% call nav.render(false, false) %}
   <!-- prettier-ignore -->
   {% endcall %}
-  <!-- prettier-ignore -->
-  {% call header.render() %}
-  <div class="flex-grow flex flex-col justify-end mt-lg lg:mt-lg/lg">
-    <div>
-      <div class="mb-base lg:mb-lg/base bg-golden-fizz-100">
-        <div class="flex justify-end mb-base lg:mb-lg/base">
-          <p class="text-sm lg:text-lg/sm">
-            <span>Stages:</span
-            ><a
-              class="ml-base lg:ml-lg/base animated-link uppercase"
-              href="#pathos-stage"
-              data-pathos-link
-              >Pathos</a
-            ><a
-              class="ml-base lg:ml-lg/base animated-link uppercase"
-              href="#logos-stage"
-              data-logos-link
-              >Logos</a
-            >
-          </p>
+  <div class="relative flex lg:min-h-tall lg-tall:min-h-screen">
+    <!-- prettier-ignore -->
+    {% call header.render("", "h-full") %}
+    <div class="flex-grow flex flex-col justify-end mt-0 lg:mt-lg/lg">
+      <div>
+        <div class="mb-base lg:mb-lg/base bg-golden-fizz-100">
+          <div class="flex mb-sm lg:mb-lg/base">
+            <p>
+              <span>Stages:</span
+              ><a
+                class="ml-base lg:ml-lg/base animated-link uppercase"
+                href="#pathos-stage"
+                data-pathos-link
+                >Pathos</a
+              ><a
+                class="ml-base lg:ml-lg/base animated-link uppercase"
+                href="#logos-stage"
+                data-logos-link
+                >Logos</a
+              >
+            </p>
+          </div>
+          <div class="twitch-container" data-twitch-container></div>
         </div>
-        <div class="twitch-container" data-twitch-container></div>
+        <p class="mb-base lg:mb-lg/base">
+          Stream the RadicalxChange Annual Conference from June 19 - 20, 2020.
+          The stream is active 24 hours a day to accommodate a global audience.
+          See the schedule and read more about the speakers below.
+        </p>
+        <div class="flex flex-col lg:flex-row">
+          <ul>
+            <li class="mb-xs lg:mb-lg/xs">
+              <a class="animated-link" href="#">Subscribe to our newsletter</a>
+            </li>
+            <li><a class="animated-link" href="#">Join a local chapter</a></li>
+          </ul>
+          <ul class="mt-xs lg:mt-0 lg:ml-lg/base">
+            <li class="mb-xs lg:mb-lg/xs">
+              <a class="animated-link" href="#">Donate w/ PayPal</a>
+            </li>
+            <li><a class="animated-link" href="#">Donate w/ Crypto</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <div
+      class="hidden lg:block absolute bottom-0 right-0 w-span5 pr-lg/lg pb-lg/xl pl-lg/base"
+    >
       <p class="mb-base lg:mb-lg/base">
-        Stream the RadicalxChange Annual Conference from June 19 - 20, 2020. The
-        stream is active 24 hours a day to accommodate a global audience. See
-        the schedule and read more about the speakers below.
+        We stand with #BlackLivesMatter.
       </p>
-      <div class="flex">
-        <ul>
-          <li class="mb-xs lg:mb-lg/xs">
-            <a class="animated-link" href="#">Subscribe to our newsletter</a>
-          </li>
-          <li><a class="animated-link" href="#">Join a local chapter</a></li>
-        </ul>
-        <ul class="ml-base lg:ml-lg/base">
-          <li class="mb-xs lg:mb-lg/xs">
-            <a class="animated-link" href="#">Donate w/ PayPal</a>
-          </li>
-          <li><a class="animated-link" href="#">Donate w/ Crypto</a></li>
-        </ul>
-      </div>
+      <p>
+        We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
+        <a class="inline-link" href="/covid-19">Read more</a>
+      </p>
     </div>
   </div>
   <!-- prettier-ignore -->
-  {% endcall %}
+  {{ nav.movingMenuButton() }}
   <!-- prettier-ignore -->
   {% call page.render("Schedule") %}
   <div class="conference-schedule">
@@ -223,9 +227,9 @@ sponsors:
 <script>
   const twitchContainer = $("[data-twitch-container]");
   const logosLink = $("[data-logos-link]");
-  const logosIframe = $('<iframe src="https://player.twitch.tv/?channel=radicalxchangelogos&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>');
+  const logosIframe = $(`<iframe src="https://player.twitch.tv/?channel=radicalxchangelogos&parent=${window.location.hostname}" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>`);
   const pathosLink = $("[data-pathos-link]");
-  const pathosIframe = $('<iframe src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>');
+  const pathosIframe = $(`<iframe src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=${window.location.hostname}" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>`);
 
   function showLogos() {
     twitchContainer.empty();
@@ -257,6 +261,8 @@ sponsors:
 
   // prettier-ignore
   {% include "components/nav.js" %}
+  // prettier-ignore
+  {% include "components/nav_moving-button.js" %}
   // prettier-ignore
   {% include "components/modal.js" %}
 </script>
