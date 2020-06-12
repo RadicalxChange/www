@@ -147,3 +147,22 @@
     display: none;
   }
 }
+
+/* Twitch */
+
+.twitch-container {
+  @apply relative;
+  @apply h-0;
+  padding-bottom: 60.967742%;
+  @apply mb-lg;
+
+  iframe {
+    @apply absolute;
+    @apply w-full h-full;
+    @apply top-0 left-0;
+  }
+
+  @screen lg {
+    @apply mb-lg/lg;
+  }
+}
