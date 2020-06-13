@@ -726,9 +726,7 @@
   bio: |
     Maïmonatou Mar, phD, is the cofounder of Gribouilli, the French social venture empowering domestic workers. Gribouilli launched the first community for nannies in Paris. They are key workers but invisible: mainly middle-age women with migration backgrounds who suffered from isolation and the digital divide. Nearly a thousand nannies benefit from information, P2P learning, basic learning and soft skills class for their economic inclusion and access to decent work. Gribouilli offers leadership programs through an Ambassador program for nannies. Ambassadors of Gribouilli therefore collaborate with public-private partners to improve the public policies. They also develop a coop with more inclusive and accessible commercial services to the benefit of the families. Gribouilli is a 3yr multi-award winning organization (Prizes from Paris City, the Foundations JL Lagardère and Deloitte...). Maïmonatou is an A. de Rothschild Fellow, CXC/Ashoka Fellow and a 2020 Paris Talent.
 - name: Marco Bonomo
-  title:
-    "Amartya Sen Professor of Inequality Studies at the London School of
-    Economics"
+  title: "Professor of Economics at Insper"
   picture: marco_bonomo.png
   bio: |
     Marco Bonomo is professor of economics at Insper. His main research interests are in macroeconomics, finance and the Brazilian economy. In addition to his academic work, he has also done research for government and multilateral organizations, as the Ministry of Finance of Brazil, IDB, IMF, and the World Bank. He is currently a member of the Economic Cycle Dating Committee of Brazil (CODACE, IBRE-FGV), and of the CVM (Brazilian Securities Exchange Commission) Behavioral Studies Nucleus. He served as president of the Brazilian Econometric Society and of the Brazilian Finance Society. Previously, he has been a faculty member of EPGE-FGV and PUC-Rio. He was born and raised in Rio de Janeiro, Brazil, and holds a Ph.D. in Economics from the Princeton University.
@@ -873,7 +871,9 @@
   bio: |
     Kevin Owocki is the founder of Gitcoin.co -- An blockchain-based network for growing open source software with incentivization mechanics. He has a BS in Computer Science, 10 years of engineering leadership experience in startups and Open Source Software, and is a community organizer in the Boulder Colorado Tech Scene. Kevin believes strongly that Open Source Software Development should be sustainably funded. Gitcoin a one-stop shop that gives Software Developers the skills & connections to survive and thrive in this new blockchain ecosystem. You can find out more about Gitcoin at https://gitcoin.co and Kevin at https://owocki.com
 - name: Francisco H. G. Ferreira
-  title: "Senior Adviser in the World Bank’s Development Research Group"
+  title:
+    "Amartya Sen Professor of Inequality Studies at the London School of
+    Economics"
   picture: francisco_ferreira.png
   bio: |
     Francisco H. G. Ferreira is a Senior Adviser in the World Bank’s Development Research Group, where he oversees the Bank’s research programs on poverty and inequality. He was formerly the Bank’s Chief Economist for the Africa Region. Francisco has published widely in the fields of poverty and inequality in developing countries, including in journals such as the Journal of Public Economics, Journal of Development Economics, Journal of Applied Econometrics, Review of Income and Wealth, Journal of Agricultural Economics, and many others. He is a co- editor of the World Bank Economic Review and has served as Editor in Chief of the Journal of Economic Inequality. Francisco has previously taught at the Catholic University of Rio de Janeiro and at the Paris School of Economics. From July 1 st , 2020 he will hold the inaugural Amartya Sen Chair in Inequality Studies at the London School of Economics, where he will also direct the International Inequalities Institute. He was born and raised in São Paulo, Brazil, and holds a Ph.D. in Economics from the London School of Economics.
@@ -987,7 +987,7 @@
   bio: |
     Bill is the co-founder of Peeps Democracy. Peeps created Peeps DAO, a cause-based, decentralized organization platform for nonprofits, political organizations, and social movements. Currently, Peeps is working on PeepsVest, which will be a way for friends, neighbors, and strangers to save together for a shared goal or purchase, all while earning interest. Prior to Peeps Democracy Bill spent a few years both in corporate law and working for political campaigns.
 - name: Supriyo Roy
-  title: "UX team at Amazon Alexa Smart Home"
+  title: "UX Leader at Amazon Alexa"
   picture: supriyo_roy.png
   bio: |
     Supriyo Roy is a veteran designer with product design experience spanning multiple contexts, geographies, mediums, and industries. Currently he leads the foundational UX team at Amazon Alexa Smart Home. He is a strong proponent of inclusive design, and exploring ideas that will disrupt and bring more connectivity and empowerment to the developing countries.
@@ -1185,3 +1185,77 @@
   picture: elena_landau.png
   bio: |
     Elena Landau is an economist and lawyer. Landau is the President of Livres, a movement that advocates the liberalization of trade and the economy in Brazil. She served as Privatization Director at BNDES during President Fernando Henrique Cardoso's first term. She also chaired the Board of Directors of Eletrobrás.
+- name: Ben Henderson
+  title: "Director of Operations and Cabinet Affairs for Governor Polis"
+  picture: ben_henderson.png
+  bio: |
+    Ben Henderson is the Director of Operations and Cabinet Affairs for Governor Polis. Graduating with his Masters in Public Administration from Arizona State University, Ben has spent his career focusing on improving social outcomes using math and science. He began his career as a Fiscal Analyst for the Arizona Legislature, worked in community and economic development for downtown Phoenix, and subsequently served as the Deputy COO for Governor Doug Ducey where he helped design and implement the Arizona Management System. Most recently Ben served as the Deputy Director for Budget in the Colorado Office of State Planning and Budgeting before taking on his current role. He currently lives in Denver with his dog and girlfriend and enjoys hiking and marching band.
+- name: Micah Sifry
+  title: "Founder of Civic Hall"
+  picture: micah_sifry.png
+  bio: |
+    Micah L. Sifry is Founder and President of Civic Hall, curator of the annual Personal Democracy Forum, and editor of Civicist, Civic Hall’s news site. From 2006-16 he was a senior adviser to the Sunlight Foundation, which he helped found, and currently serves on the boards of Consumer Reports and the Public Laboratory for Open Technology and Science. He is the author or editor of nine books, most recently Civic Tech in the Global South (co-edited with Tiago Peixoto) (World Bank, 2017); A Lever and a Place to Stand: How Civic Tech Can Move the World (PDM Books, 2015), with Jessica McKenzie; The Big Disconnect: Why the Internet Hasn’t Transformed Politics (Yet) (OR Books, 2014); and Wikileaks and the Age of the Transparency (OR Books, 2011). In 2012 he taught “The Politics of the Internet” as a visiting lecturer at Harvard’s Kennedy School. From 1997-2006, he worked closely with Public Campaign, a non-profit, non-partisan organization focused on comprehensive campaign finance reform, as its senior analyst. Prior to that, Micah was an editor and writer with The Nation magazine for thirteen years. He is the author of Spoiling for a Fight: Third-Party Politics in America (Routledge, 2002), co-author with Nancy Watzman of Is That a Politician in Your Pocket? Washington on $2 Million a Day (John Wiley & Sons, 2004), co-editor of Rebooting America, and co-editor of The Iraq War Reader (Touchstone, 2003) and The Gulf War Reader (Times Books, 1991).
+- name: Michelle Kobayashi
+  title:
+    "Senior Vice President for Innovation for Polco/National Research Center"
+  picture: michelle_kobayashi.png
+  bio: |
+    Michelle Kobayashi M.S.P.H is the Senior Vice President for Innovation for Polco/National Research Center. She began her career as a research analyst for the City of Boulder in 1989 and then helped to found National Research Center (NRC) in 1995. Michelle has 30 years of experience conducting research, surveys and policy studies for local, state and federal government. She has authored numerous journal articles, book chapters and books on research techniques and trained hundreds of government and non-profit workers on the methods of evaluation, survey research and uses of data for community decisionmaking and performance measurement. Last year, NRC and Polco,a tech company providing a digital engagement platform, merged creating new opportunities for Michelle to modernize her survey work and the methods she uses to bring the voice of residents and stakeholders into local governing.
+- name: Anton Korinek
+  title: "Professor of Economics at Univeristy of Virgina"
+  picture: anton_korinek.png
+  bio: |
+    Anton Korinek is an associate professor of economics at UVA's Department of Economics and Darden School of Business and focuses his current research and teaching on the implications of artificial intelligence for business, for the economy and for the future of work.
+
+    He studied economics, math and law at the University of Vienna and worked for several years at the intersection of IT and finance. After earning his Ph.D. in economics from Columbia University in 2007, he worked on designing policy measures to prevent financial crises and developed an influential framework for capital flow regulation in emerging economies. He also analyzed when countries should coordinate their policy actions. His research has been published in top journals including the American Economic Review, the Review of Economic Studies, the Journal of Econometrics, the Journal of Monetary Economics, the Journal of International Economics and the Journal of Public Economics. It has also been cited on Bloomberg, in The Economist and in The Wall Street Journal. He has won several fellowships and awards for this work, including from the Institute for New Economic Thinking.
+
+    Prior to joining the University of Virginia, Professor Korinek held positions at the University of Maryland and Johns Hopkins University and was a visiting scholar at Harvard University, the Bank for International Settlements, the International Monetary Fund, the World Bank, as well as a frequent visitor to numerous central banks, where he has given lectures and courses. He is also a Faculty Research Fellow at the National Bureau of Economic Research.
+- name: Olúfẹ́mi Táíwò
+  title: "Assistant Professor of Philosophy at Georgetown University"
+  picture: olúfẹ́mi_táíwò.png
+  bio: |
+    Olúfẹ́mi O. Táíwò is an Assistant Professor of Philosophy at Georgetown University. He completed his PhD at University of California, Los Angeles. Before that, he completed BAs in Philosophy and Political Science at Indiana University.
+- name: Emmanuel Midy
+  title: "Community Lead of RadicalxChange"
+  picture: emmanuel_midy.png
+  bio: |
+    Emmanuel Midy is the Community Lead of RadicalxChange Foundation. He is a writer and consultant on the intersection of media and technology.
+- name: Geanluca Lorenzon
+  title: "Secretary for Economic Monitoring of Brazil"
+  picture: geanluca_lorenzon.png
+  bio: |
+    Geanluca Lorenzon is Secretary for Economic Monitoring of Brazil. Lorenzon is a lawyer, former consultant from McKinsey and he’s an author and researcher on economics and human rights.
+- name: Lenara Verle
+  title: "Artist and Researcher"
+  picture: lenara_verle.png
+  bio: |
+    Artist and researcher. Her current research focuses on conceptual art in connection with alternative economies and currency design. Has taught several graduate and undergraduate classes, as well as independent workshops, on the topic of art, technology and collaboration. She consults for blockchain art platforms and is a founder of Coinspiration.org. 
+
+    http://www.lenara.com/
+- name: Brianna Agyemang
+  title: "Co-founder of #TheShowMustBePaused & The Brownie Agency"
+  picture: brianna_agyemang.png
+  bio: |
+    Brianna Agyemang is the renowned co-founder of #TheShowMustBePaused & The Brownie Agency. Agyemang is also Sr. Artist Campaign Manager at Apple’s artist-services division, Platoon.
+- name: Raymond Yeh
+  title: "Software Engineer at Government Technology Agency (Singapore)"
+  picture: raymond_yeh.png
+  bio: |
+    Raymond Yeh is a software engineer at Government Technology Agency (Singapore). His work is on building decentralized digital credentials. In 2019, his team launched OpenCerts, a verifiable credential framework for education credentials, to power all education credentials in Singapore. He is currently building OpenAttestation, an open source framework for verifiable documents and transferable records. 
+
+    Raymond is an author at https://geek.sg/ where he writes about technology. He has also recently released an open source Quadratic Voting (QV) application at https://qv.geek.sg/.
+- name: Leon Erichsen
+  title: "Entrepreneurship and Technology Associate at RadicalxChange"
+  picture: leon_erichsen.png
+  bio: |
+    Leon Erichsen is Entrepreneurship and Technology Associate at RadicalxChange Foundation. His work focuses on design and implementation of institutions for decentralized human cooperation and coordination. He turned cryptopunk early on in his studies of Management, Philosophy & Economics (B.Sc.) at Frankfurt School of Finance & Management and that way discovered his fascination for radical political economic updates of society.
+- name: Mohammad Najmuzzaman
+  title: "Senior Product Manager at Wadhwani Foundation"
+  picture: mohammad_najmuzzaman.png
+  bio: |
+    Mohammad Najmuzzaman (Nazz) is the Senior Product Manager at Wadhwani Foundation building products to help Startups & SMEs build viable businesses. He is on the Board of Trustees of AFS that provides intercultural learning opportunities like exchange programs to create global citizens that can create a just & peaceful world. Nazz is a part of the RxC Bangalore community and involved in bringing organizations together for lake conservation, equal access to water and better local governance.
+- name: Yuqing Hu
+  title: "PhD Candidate in Psychology at the Chinese Academy of Sciences"
+  picture: yuqing_hu.png
+  bio: |
+    Yuqing Hu is a PhD candidate in psychology at the Chinese Academy of Sciences, a team member at the CAS Key Laboratory of Behavioral Science. She is also an ACI certified international psychological consultant, the cofounder of StartupNow, and the cofounder of RadicalxChange China. She has helped (re)designed or proposed designs for several markets in China, including the national college admission system, the job-matching system of Boss Zhipin, and China’s kidney exchange system. Website: https://sites.google.com/site/hyq533/
