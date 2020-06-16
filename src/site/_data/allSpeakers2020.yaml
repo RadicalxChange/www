@@ -143,9 +143,7 @@
   title: "Assistant Professor of Public Policy at the University of Michigan"
   picture: "charlotte_cavaille.png"
   bio: |
-    Charlotte Cavaillé is an Assistant Professor at The Gerald R. Ford School of Public Policy at the University of Michigan. In her research, Charlotte seeks to further our understanding of democratic politics’ effect on mitigating or enhancing market-driven economic inequality. More specifically, she focuses on the demand side of redistributive politics in post-industrial democracies, examining the dynamics of popular attitudes toward redistributive social polices at a time of rising inequality, fiscal stress and high immigration levels. In one of her more recent projects, she examines the relationship between immigration, the welfare state and the rise of populism. Through her work on policy preferences, she has become keenly aware of the ubiquity of "cheap talk" in surveys. In a set of working papers titled “Who Cares? Measuring Attitude Strength in a Polarized Environment," she and her co-authors test a new survey tool that not only measures the level of support for a given policy package, but also seeks to capture the proportion of people who care intensely enough to translate their policy position into political action.
-
-    During her time at the CSDP, Charlotte plans to finish a book manuscript titled _Asking for More: Support for Redistribution in the Age of Inequality_. In _Asking for More_, she explores why, in countries where inequality has increased the most, such as Great Britain and the United States, voters are not asking for more income redistribution. The book starts by documenting the limits of workhorse economic models that focus on material self-interest. Charlotte then develops an alternative framework which advances the study of mass redistributive preferences in two ways. First, it incorporate fairness judgments into the dominant material self-interest tradition. Second, this framework highlight the key role of political elites’ competitive struggle for power. The main insight, succinctly put, is that the public’s response to inequality cannot be understood independently of changes in the supply side of politics: within the boundaries set by norms of fairness, what political elites have to say about inequality and redistribution matters as much as the public’s personal experiences with material hardship and inequality. If time allows, Charlotte will also work on a new project exploring the determinants of voters' perceptions of fairness in the realm of redistributive politics.
+    Charlotte Cavaillé is an Assistant Professor at The Gerald R. Ford School of Public Policy at the University of Michigan. In her research, Charlotte seeks to further our understanding of democratic politics’ effect on mitigating or enhancing market-driven economic inequality. More specifically, she focuses on the demand side of redistributive politics in post-industrial democracies, examining the dynamics of popular attitudes toward redistributive social polices at a time of rising inequality, fiscal stress and high immigration levels. In one of her more recent projects, she examines the relationship between immigration, the welfare state and the rise of populism. Through her work on policy preferences, she has become keenly aware of the ubiquity of "cheap talk" in surveys. In the context of a project titled “Who Cares? Measuring Attitude Strength in a Polarized Environment," she and her co-authors test a new survey tool, quadratic voting for survey research, that not only measures the level of support for a given policy package, but also seeks to capture the proportion of people who care intensely enough to translate their policy position into political action.
 - name: "Suji Yan"
   title: "Founder of Dimension.im"
   picture: "suji_yan.png"
@@ -1173,7 +1171,7 @@
     "PhD candidate in Communication at the University of Southern California"
   picture: juan_ortiz_freuler.png
   bio: |
-    Juan Ortiz Freuler is a PhD candidate in Communication at the University of Southern California (USC), where he explores how political systems can be affected by the internet. Juan is also an Associate at JustLabs, and has held positions as a Fellow (2017-2018) and an Affiliate (2018-2020) at the Berkman Klein Center for Internet and Society, and as a Senior Policy Fellow at the Web Foundation. Before moving to the US, Juan developed and executed research projects at several non-profit organizations in Argentina and Mexico. A graduate from the Di Tella Law School in Buenos Aires, Juan has also obtained Masters degrees in both Public Policy and Social Science of the Internet at the University of Oxford.
+    Juan Ortiz Freuler is a PhD candidate in Communication at the University of Southern California (USC), where he explores how political systems can be affected by the internet. Juan is also an Associate at JustLabs, and has held positions as a Fellow (2017-2018) and an Affiliate (2018-2020) at the Berkman Klein Center for Internet and Society. Before moving to the US, Juan developed and executed research projects at several non-profit organizations in Argentina and Mexico. A graduate from the Di Tella Law School in Buenos Aires, Juan has also obtained Masters degrees in both Public Policy and Social Science of the Internet at the University of Oxford.
 - name: Osama Rizvi
   title: "Economic /Geopolitical Analyst & Founder of U&I Global"
   picture: osama_rizvi.png
@@ -1339,3 +1337,39 @@
   picture: duan_li.png
   bio: |
     Li Duan is the head of the Blockchain Economic Research Center of Sichuan Quality Development Institute. He is committed to promoting and applying blockchain technology in industrial solutions. The research center provides business application implementation, compliance, and risk avoidance; Cutting-edge technology research, enterprise blockchain strategy consulting. He is also a member of RxC Chengdu Community, bringing together industry expert consultants to promote industrial development and improve local governance.
+- name: Rhys Lindmark
+  title: "Writer and Podcaster"
+  picture: rhys_lindmark.png
+  bio: |
+    Rhys is helping ambitious frontier people understand and build post-capitalist structures through The Bento Society and the Center for Paradigm Change. Before that, he was the Head of Long-Term Societal Impact at MIT DCI. His podcast "The Rhys Show" has 150,000+ plays and he self-taxes 10% of his income.
+- name: Jason Smythe
+  title: "Co-Founder of Wildcards"
+  picture: jason_smythe.png
+  bio: |
+    Jason is a proponent of the Blockchain technology and Software Engineer from South Africa. He started his blockchain journey ConsenSys as a blockchain engineer then he went on as a founding member of Adhara, where he helped build Project Khokha, a RTGS (real time gross settlement) system for the South African Reserve Bank (SARB). Prior to this he worked on a number of other early stage Ethereum projects, including building the withdraw DAPP, monitoring system and oracle for the Crypto20 project, which was the first tokenised index fund to go into production on the main Ethereum network.
+
+    Now he is focussing his attention on Wildcards.world a fun and engaging platform that connects users to wildlife organisations via novel economic mechanisms. Jason is fascinated by radical economics, governance mechanisms and community currencies; and strives to engineer and build systems with new technology that solve problems of coordination, openness and transparency.
+- name: Vinicius Dias
+  title: "Lawyer and Researcher"
+  picture: vinicius_dias.png
+  bio: |
+    About Vinicius Dias:
+    - He holds an LL.M. in Civil Law Studies at the University of São Paulo - FDRP / USP. 
+    - Selected during Undergraduate Law Studies by the Canadian Department of Foreign Affairs, Trade and Development (DFATD) for the Emerging Leaders in the Americas Program (ELAP) to support the development of human capital and the next generation of leaders in Latin America. 
+    - He is member of the Radical Market research Group from FDRP/USP led by Professor Juliana Domingues.
+    - Member of the Commission of Civil Law-OAB/RP/SP (Ribeirão Preto Bar Association) and member of RadicalxChange Brazil Chapter.
+- name: Vivian Chen
+  title: "Community Advocate at Bitmark"
+  picture: vivian_chen.png
+  bio: |
+    Vivian Chen currently serves as the community advocate at Bitmark, a startup focuses on restoring trust in data. She is the program director of Girls in Tech Taiwan, aiming at accelerating the growth of innovative women who are entering into the high-tech industry and building successful startups. Vivian also served as the Chinese Taipei delegation of Asia Pacific Economic Cooperation, she worked on promoting women's participation in higher-wage high-growth industries.
+- name: Hai-Ching Chang
+  title: "Marketing at Bitmark"
+  picture: hai-ching_chang.png
+  bio: |
+    Hai-Ching Chang is the team lead of CMX Taiwan (the community to help professional community builders thrive), and a volunteer at COSCUP (Conference for Open Source Coders, Users and Promoters). She’s worked at Academia Sinica, Backer-Founder, and currently at Bitmark to help restore the trust in data.
+- name: Yahsin Huang
+  title: "Marketing Manager at Diode"
+  picture: yahsin_huang.png
+  bio: |
+    Yahsin is the marketing manager at Diode. She covers impacts of emerging technologies, especially blockchain, for various media outlets, such as Make magazine, TechLife magazine, Business Next, Meet Startup, Thinking Taiwan, Blockcast.it, BlockTempo, and Hacker Noon. Notable works are her tech reports of DevCon in Prague, Czech Republic, and EDCON in Sydney, Australia. In 2016, Yahsin helped start the Taipei Ethereum Meetup community. In 2019, Yahsin founded the RadicalxChange Taipei chapter. She has a bachelor’s degree in English literature from National Dong Hwa University.
