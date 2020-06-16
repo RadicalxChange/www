@@ -2,9 +2,11 @@
 layout: layouts/_base.njk
 title: RadicalxChange
 gitxchange: |
-  Ahead of the conference, we hosted a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon included a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. [Read more on the hackathon portal.](https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25)
+  ## Hackathon
+  Ahead of the conference, we hosted a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon included a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. [Read more on the hackathon portal](https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25)
 
-  The sponsoring teams included [Democracy Earth](https://democracy.earth/), [Idena](https://idena.io/), [Gitcoin](http://www.gitcoin.co/), [Ocean Protocol](https://oceanprotocol.com/), [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/), [Wildcards](https://wildcards.world/), and [RadicalxChange Foundation](https://www.radicalxchange.org/).
+  ## Call for Scenarios: Earth 2030 @ RadicalxChange
+  We invite anybody working on a project or research that could have widespread affect on the world in ten years’ time -- specialists, practitioners, researchers, and experts who can bring a diversity of perspectives to our world-building, including activists, intellectuals, social scientists, lawyers, engineers, philosophers, and advocates of decentralised technologies. [Read more and submit your scenarios here](https://docs.google.com/forms/d/e/1FAIpQLSeXuwwZZVmvcliWzVdGR6gT2Qea4iLN4Bi8SK_eRXLLVCfEcA/viewform)
 sponsors:
   - name: Dada.art
     image: /images/sponsors-2020/dada-logo.png
@@ -85,15 +87,29 @@ sponsors:
         <div class="flex flex-col lg:flex-row">
           <ul>
             <li class="mb-xs lg:mb-lg/xs">
-              <a class="animated-link" href="#">Subscribe to our newsletter</a>
+              <a class="animated-link" href="#" data-modal-trigger="subscribe"
+                >Subscribe to our newsletter</a
+              >
             </li>
-            <li><a class="animated-link" href="#">Join a local chapter</a></li>
+            <li>
+              <a class="animated-link" href="/chapters">Join a local chapter</a>
+            </li>
           </ul>
           <ul class="mt-xs lg:mt-0 lg:ml-lg/base">
             <li class="mb-xs lg:mb-lg/xs">
-              <a class="animated-link" href="#">Donate w/ PayPal</a>
+              <a
+                class="animated-link"
+                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
+                >Donate w/ PayPal</a
+              >
             </li>
-            <li><a class="animated-link" href="#">Donate w/ Crypto</a></li>
+            <li>
+              <a
+                class="animated-link"
+                href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
+                >Donate w/ Crypto</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -118,18 +134,29 @@ sponsors:
   {% call page.render("Schedule") %}
   <div class="conference-schedule">
     <iframe
-      class="flex-grow mb-lg lg:mb-lg/lg border-2 rounded bg-white"
+      class="flex-grow border-2 rounded bg-white mb-xs lg:mb-0"
       src="/2020-conference/schedule"
     ></iframe>
+    <p class="mb-lg lg:mb-lg/lg text-left lg:text-right text-xs lg:text-lg/xs">
+      * Times in EDT
+    </p>
     <!-- prettier-ignore -->
     {% call callToAction.render('lg:self-end') %}
     <!-- prettier-ignore -->
     {% call callToAction.item() %}
-    <a class="animated-link uppercase" href="#">Log in to Brella</a>
+    <a
+      class="animated-link uppercase"
+      href="https://next.brella.io/events/rxcon2020/"
+      >Log in to Brella</a
+    >
     <!-- prettier-ignore -->
     {% endcall %}
     {% call callToAction.item() %}
-    <a class="animated-link" href="#">Request conference access</a>
+    <a
+      class="animated-link"
+      href="mailto:ticketing@radicalxchange.org?subject=Request%20conference%20access&body=Hello!%20I%20am%20interested%20in%20attending%20the%20conference.%20Can%20you%20send%20me%20a%20code%20to%20log%20in%20to%20Brella%3F%0D%0A%0D%0AThank%20you!"
+      >Request conference access</a
+    >
     <!-- prettier-ignore -->
     {% endcall %}
     <!-- prettier-ignore -->
@@ -174,9 +201,8 @@ sponsors:
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
-
   <!-- prettier-ignore -->
-  {% call page.render("Ahead of conference", true) %}
+  {% call page.render("Before the conference", true) %}
   <div class="md-container mb-lg lg:mb-lg/lg">
     {{ gitxchange | markdown | safe }}
   </div>
