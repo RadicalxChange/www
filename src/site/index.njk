@@ -113,15 +113,25 @@ supporters:
   {% for s in sections %}
   <!-- prettier-ignore -->
   {% call section.render(s.header) %}
-  <div class="md-container">
-    {{ s.content | markdown | safe }}
-    <p class="flex justify-between lg:block">
-      {% for l in s.links %}
-      <a class="animated-link lg:mr-lg/lg" href="{{ l.href }}" {{ l.attrs }}>
-        {{ l.text }}
-      </a>
-      {% endfor %}
-    </p>
+  <div>
+    <div class="md-container mb-base lg:mb-lg/base">
+      {{ s.content | markdown | safe }}
+    </div>
+    <!-- prettier-ignore -->
+    {% call callToAction.render() %}
+    <!-- prettier-ignore -->
+    {% for l in s.links %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a class="animated-link" href="{{ l.href }}" {{ l.attrs }}>
+      {{ l.text }}
+    </a>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% endfor %}
+    <!-- prettier-ignore -->
+    {% endcall %}
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
