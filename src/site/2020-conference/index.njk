@@ -1,0 +1,258 @@
+---
+layout: layouts/_base.njk
+title: 2020 Conference - RadicalxChange
+gitxchange: |
+  Ahead of the conference, we are hosting a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon includes a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. Winning projects will present their creations on the virtual conference stage.
+
+  The sponsoring teams include [Democracy Earth](https://democracy.earth/), [Idena](https://idena.io/), [Gitcoin](http://www.gitcoin.co/), [Ocean Protocol](https://oceanprotocol.com/), [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/), [Wildcards](https://wildcards.world/), and [RadicalxChange Foundation](https://www.radicalxchange.org/).
+sponsors:
+  - name: Dada.art
+    image: /images/sponsors-2020/dada-logo.png
+    href: "https://dada.nyc/"
+  - name: Democracy Earth
+    image: /images/sponsors-2020/democracy-earth-logo.png
+    href: "https://democracy.earth/"
+  - name: Gitcoin
+    image: /images/sponsors-2020/gitcoin-logo.svg
+    href: "https://gitcoin.co/"
+  - name: Idena
+    image: /images/sponsors-2020/idena-logo.jpeg
+    href: "https://idena.io/"
+  - name: Insper
+    image: /images/sponsors-2020/insper-logo.png
+    href: "https://www.insper.edu.br/"
+  - name: Wildcards
+    image: /images/sponsors-2020/wildcards-logo.png
+    href: "https://wildcards.world/"
+  - name: Ocean Protocol
+    image: /images/sponsors-2020/ocean-protocol-logo.svg
+    href: "https://oceanprotocol.com/"
+---
+
+<!-- prettier-ignore -->
+{% import "components/nav.njk" as nav %}
+<!-- prettier-ignore -->
+{% import "components/header.njk" as header %}
+<!-- prettier-ignore -->
+{% import "components/section.njk" as section %}
+<!-- prettier-ignore -->
+{% import "components/page.njk" as page %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+<!-- prettier-ignore -->
+{% import "components/call-to-action.njk" as callToAction %}
+<!-- prettier-ignore -->
+{% import "components/modal.njk" as modal %}
+<!-- prettier-ignore -->
+{% import "components/subscribe-modal.njk" as subscribeModal %}
+<!-- prettier-ignore -->
+{% import "components/sponsor-modal.njk" as sponsorModal %}
+
+<main>
+  <!-- prettier-ignore -->
+  {{ nav.stickyMenuButton() }}
+  <!-- prettier-ignore -->
+  {% call nav.render(false, true) %}
+  <div style="margin-left: 8.333333vw;" class="hidden lg:block">
+    <p class="text-right mb-lg/base uppercase">
+      Experience the past, present, and future of cooperative plurality
+    </p>
+    <p class="text-right">
+      <a class="animated-link" href="/2020-conference/schedule"
+        >See the schedule</a
+      >
+    </p>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call header.render("Conference") %}
+  <div class="flex-grow flex flex-col justify-between">
+    <div class="mb-lg lg:mb-lg/lg">
+      <p class="uppercase mb-lg lg:mb-lg/lg">
+        June 19-21, 2020<br />
+        Hosted Online
+      </p>
+      <p class="md-container">
+        Join us as we convene a community of innovators, activists, artists, and
+        scholars from around the world for RadicalxChange’s second annual
+        conference from June 19th to 21st. The conference will consist of
+        presentations, panels, and workshops based around RxC topics such as
+        Data Dignity, Quadratic Voting, Quadratic Finance, SALSA (self-assessed
+        property), and Decentralized Identity. We invite local and global
+        leaders and change-makers to learn how technologists, creatives, and
+        academics are using RxC ideas to solve our most divisive social problems
+        while building a future where power is distributed across diverse
+        democratic organizations.
+      </p>
+    </div>
+    <div>
+      <!-- prettier-ignore -->
+      {% call callToAction.render() %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a
+        class="animated-link uppercase"
+        href="https://www.eventbrite.com/e/radicalxchange-annual-conference-2020-tickets-102439533402"
+        >Register</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a class="animated-link" href="mailto:ticketing@radicalxchange.org"
+        >Contact the organizers</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a class="animated-link" href="#" data-modal-trigger="sponsor"
+        >Support the conference</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item(false) %}
+      <a class="animated-link" href="/2020-conference/schedule"
+        >See the schedule</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% endcall %}
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("Speakers", false) %}
+  <div class="flex flex-col justify-between h-full">
+    <a
+      href="/2020-conference/speakers"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
+    >
+      {% for s in keynoteSpeakers2020 %}
+      <!-- prettier-ignore -->
+      <div class="conference-image" style="background-image: linear-gradient(black, black), url('/images/speakers-2020/{{ s.picture }}');">
+        <div
+          class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white"
+        >
+          <h4 class="text-sm lg:text-lg/sm">{{ s.name }}</h4>
+          <p class="text-xs2 lg:text-lg/xs2">{{ s.title }}</p>
+        </div>
+        <div class="hidden">
+          {{ s.bio }}
+        </div>
+      </div>
+      {% endfor %}
+    </a>
+    <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
+      <a class="animated-link uppercase" href="/2020-conference/speakers"
+        >See all speakers</a
+      >
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("Schedule") %}
+  <div class="conference-schedule">
+    <iframe
+      class="flex-grow border-2 rounded bg-white mb-xs lg:mb-0"
+      src="/2020-conference/schedule"
+    ></iframe>
+    <p class="mb-lg lg:mb-lg/lg text-left lg:text-right text-xs lg:text-lg/xs">
+      * Times in EDT
+    </p>
+    <div class="lg:self-end">
+      <a class="animated-link uppercase" href="/2020-conference/schedule"
+        >See the schedule</a
+      >
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("Hackathon", true) %}
+  <div class="flex flex-col justify-between h-full">
+    <div class="md-container mb-lg lg:mb-lg/lg">
+      {{ gitxchange | markdown | safe }}
+    </div>
+    <div class="lg:self-end">
+      <a
+        class="animated-link uppercase"
+        href="https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25"
+        >Join the hackathon</a
+      >
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("#RxC on Twitter") %}
+  <div class="border-2 rounded">
+    <a
+      class="twitter-timeline"
+      data-height="768"
+      href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
+    >
+      Loading tweets...
+    </a>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("With the support of") %}
+  <div class="flex flex-col justify-between h-full">
+    <ul
+      class="grid grid-cols-2 lg:grid-cols-3 gap-base lg:gap-lg/base col-gap-lg lg:col-gap-lg/lg mb-lg lg:mb-lg/lg"
+    >
+      {% for s in sponsors%}
+      <li>
+        <a class="flex items-center h-full" href="{{ s.href }}">{{ s.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="lg:self-end">
+      <a class="animated-link uppercase" href="#" data-modal-trigger="sponsor"
+        >Support the conference</a
+      >
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+</main>
+<!-- prettier-ignore -->
+{% call footer.render('bg-golden-fizz-100') %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% call modal.render('sponsor') %}
+<!-- prettier-ignore -->
+{% call sponsorModal.render() %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% call modal.render('subscribe') %}
+<!-- prettier-ignore -->
+{% call subscribeModal.render() %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% endcall %}
+<script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  charset="utf-8"
+></script>
+<script>
+  // prettier-ignore
+  {% include "components/sponsor-modal.js" %}
+  // prettier-ignore
+  {% include "components/nav.js" %}
+  // prettier-ignore
+  {% include "components/modal.js" %}
+</script>
