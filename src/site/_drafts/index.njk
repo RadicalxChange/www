@@ -2,9 +2,15 @@
 layout: layouts/_base.njk
 title: 2020 Conference - RadicalxChange
 gitxchange: |
-  Ahead of the conference, we are hosting a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon includes a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. Winning projects will present their creations on the virtual conference stage.
+  ## Hackathon
+  Ahead of the conference, we are hosting a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon includes a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. Winning projects will present their creations on the virtual conference stage. [Read more on the hackathon portal](https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25)
 
   The sponsoring teams include [Democracy Earth](https://democracy.earth/), [Idena](https://idena.io/), [Gitcoin](http://www.gitcoin.co/), [Ocean Protocol](https://oceanprotocol.com/), [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/), [Wildcards](https://wildcards.world/), and [RadicalxChange Foundation](https://www.radicalxchange.org/).
+
+  ## Call for Scenarios: Earth 2030 @ RadicalxChange
+  We invite anybody working on a project or research that could have widespread affect on the world in ten years’ time -- specialists, practitioners, researchers, and experts who can bring a diversity of perspectives to our world-building, including activists, intellectuals, social scientists, lawyers, engineers, philosophers, and advocates of decentralised technologies.
+  [Read more and submit your scenarios here](https://docs.google.com/forms/d/e/1FAIpQLSeXuwwZZVmvcliWzVdGR6gT2Qea4iLN4Bi8SK_eRXLLVCfEcA/viewform)
+
 sponsors:
   - name: Dada.art
     image: /images/sponsors-2020/dada-logo.png
@@ -174,17 +180,10 @@ sponsors:
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call page.render("Hackathon", true) %}
+  {% call page.render("Before the conference", true) %}
   <div class="flex flex-col justify-between h-full">
-    <div class="md-container mb-lg lg:mb-lg/lg">
+    <div class="md-container">
       {{ gitxchange | markdown | safe }}
-    </div>
-    <div class="lg:self-end">
-      <a
-        class="animated-link uppercase"
-        href="https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25"
-        >Join the hackathon</a
-      >
     </div>
   </div>
   <!-- prettier-ignore -->
