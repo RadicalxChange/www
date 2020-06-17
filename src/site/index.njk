@@ -1,51 +1,31 @@
 ---
 layout: layouts/_base.njk
 title: RadicalxChange
-sections:
-  - header: "About"
-    content: |
-      RadicalxChange is a global movement dedicated to reimagining the building blocks of democracy and markets in order to uphold fairness, plurality, and meaningful participation in a rapidly changing world.
-
-      The RadicalxChange Foundation is a non-profit organization dedicated to advancing that cause, founded by E. Glen Weyl following the publication the book Radical Markets in 2018. The ideas in Radical Markets provided a starting place for envisioning institutions that preserve democratic values in a rapidly-changing technological landscape, as the project and vision continue to evolve.
-    links:
-      - text: "Read more"
-        href: "/about"
-  - header: "Community"
-    content: |
-      As a global community, we stand at a unique crossroads with signs that social and economic systems are failing everywhere: rising inequality, stagnating economies and increasing threats to democracy. To address this, we believe that positive and comprehensive change is only possible through the inclusion of diverse voices. We need art to help us imagine new possibilities, scholarship to help us use the lessons of the past to design better societies, entrepreneurship to build new institutions, and activism to bridge ideological lines to fight hate and division. The RadicalxChange community has given rise to dozens of start-ups and local chapters around the world, major shifts in antitrust and data regulation, a substantial body of research and scholarship, and a wide range of artistic projects. We want you to be a part of it!
-    links:
-      - text: "Meet the team"
-        href: "/team"
-      - text: "Find a chapter"
-        href: "/chapters"
-  - header: "Commitment"
-    content: |
-      RadicalxChange is committed to building a society that advances plurality, community and equality by developing positive alternatives, grounded in rigorous social science, while also embracing technology and well-functioning markets. By moving beyond traditional institutions like private property and one-person-one-vote, it seeks to transcend old dichotomies between economy and politics, market and the state, or right and left. However, RadicalxChange rejects utopian claims to “neutrality.” The project is animated by definite values–for example, that a better society would be one in which everyone participates more meaningfully in key institutions including democracy and markets.
-    links:
-      - text: "Attend our conference"
-        href: "/2020-conference"
-      - text: "Subscribe to our newsletter"
-        href: "#"
-        attrs: data-modal-trigger=subscribe
-supporters:
-  - name: Hewlett Foundation
-    href: "https://hewlett.org/"
-  - name: Kauffman Foundation
-    href: "https://www.kauffman.org/"
-  - name: Merit
-    href: "https://www.merits.com/"
-  - name: Omidyar Network
-    href: "https://www.omidyar.com/"
-  - name: Wireline
-    href: "https://www.wireline.io/"
-  - name: The Charter Cities Institute
-    href: "https://www.chartercitiesinstitute.org/"
-  - name: Institute for New Economic Thinking
-    href: "https://www.ineteconomics.org/"
-  - name: The Osa Foundation
-    href: "https://www.theosafoundation.org/"
-  - name: Alfred P. Sloan Foundation
-    href: "https://sloan.org/"
+gitxchange: |
+  ## Hackathon
+  Ahead of the conference, we hosted a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon included a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. [Read more on the hackathon portal](https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25)
+sponsors:
+  - name: Dada.art
+    image: /images/sponsors-2020/dada-logo.png
+    href: "https://dada.nyc/"
+  - name: Democracy Earth
+    image: /images/sponsors-2020/democracy-earth-logo.png
+    href: "https://democracy.earth/"
+  - name: Gitcoin
+    image: /images/sponsors-2020/gitcoin-logo.svg
+    href: "https://gitcoin.co/"
+  - name: Idena
+    image: /images/sponsors-2020/idena-logo.jpeg
+    href: "https://idena.io/"
+  - name: Insper
+    image: /images/sponsors-2020/insper-logo.png
+    href: "https://www.insper.edu.br/"
+  - name: Wildcards
+    image: /images/sponsors-2020/wildcards-logo.png
+    href: "https://wildcards.world/"
+  - name: Ocean Protocol
+    image: /images/sponsors-2020/ocean-protocol-logo.svg
+    href: "https://oceanprotocol.com/"
 ---
 
 <!-- prettier-ignore -->
@@ -55,6 +35,8 @@ supporters:
 <!-- prettier-ignore -->
 {% import "components/section.njk" as section %}
 <!-- prettier-ignore -->
+{% import "components/page.njk" as page %}
+<!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
 <!-- prettier-ignore -->
 {% import "components/call-to-action.njk" as callToAction %}
@@ -62,112 +44,215 @@ supporters:
 {% import "components/modal.njk" as modal %}
 <!-- prettier-ignore -->
 {% import "components/subscribe-modal.njk" as subscribeModal %}
+<!-- prettier-ignore -->
+{% import "components/sponsor-modal.njk" as sponsorModal %}
 
-<a
-  class="z-20 fixed bottom-0 flex lg:hidden justify-center items-center w-full conference-button-height bg-black text-white text-center"
-  href="/2020-conference"
->
-  Sign up for our annual conference<br />June 19-21, 2020
-</a>
 <main>
-  {% call nav.render(true, true) %}
-  <a
-    class="save-the-date_container"
-    href="/2020-conference"
-    onclick="fathom.trackGoal('NVCMQT8Z', 0);"
-  >
-    <div class="save-the-date_oval">
-      <div class="relative">
-        <span
-          class="save-the-date_text save-the-date_filled"
-          aria-hidden="true"
-        >
-          Save the date!
-        </span>
-        <span class="save-the-date_text save-the-date_stroked">
-          Save the date!
-        </span>
+  <!-- prettier-ignore -->
+  {% call nav.render(false, false) %}
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <div class="relative flex lg:min-h-tall lg-tall:min-h-screen">
+    <!-- prettier-ignore -->
+    {% call header.render("", "h-full") %}
+    <div class="flex-grow flex flex-col justify-end mt-0 lg:mt-lg/lg">
+      <div>
+        <div class="mb-base lg:mb-lg/base bg-golden-fizz-100">
+          <div class="flex mb-sm lg:mb-lg/base">
+            <p>
+              <span>Stages:</span
+              ><a
+                class="ml-base lg:ml-lg/base animated-link uppercase"
+                href="#pathos-stage"
+                data-pathos-link
+                >Pathos</a
+              ><a
+                class="ml-base lg:ml-lg/base animated-link uppercase"
+                href="#logos-stage"
+                data-logos-link
+                >Logos</a
+              >
+            </p>
+          </div>
+          <div class="twitch-container" data-twitch-container></div>
+        </div>
+        <p class="mb-base lg:mb-lg/base">
+          Stream the 2020 RadicalxChange Annual Conference starting at 10 AM EDT
+          on Juneteenth, to June 21 (6/19-6/21). The stream is active
+          twenty-four hours per day to accommodate a global audience.
+        </p>
+        <p class="mb-base lg:mb-lg/base">
+          Be part of the change: get involved or make a small gift. We need you!
+        </p>
+        <div class="flex flex-col lg:flex-row">
+          <ul>
+            <li class="mb-xs lg:mb-lg/xs">
+              <a
+                class="animated-link"
+                href="/chapters"
+                onclick="fathom.trackGoal('LWD6ES0J', 0);"
+                >Join a local chapter</a
+              >
+            </li>
+            <li>
+              <a
+                class="animated-link"
+                href="#"
+                onclick="fathom.trackGoal('KB8V0MZ8', 0);"
+                data-modal-trigger="subscribe"
+                >Subscribe to our newsletter</a
+              >
+            </li>
+          </ul>
+          <ul class="mt-xs lg:mt-0 lg:ml-lg/base">
+            <li class="mb-xs lg:mb-lg/xs">
+              <a
+                class="animated-link"
+                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
+                onclick="fathom.trackGoal('VOPKBH4N', 0);"
+                >Donate w/ PayPal</a
+              >
+            </li>
+            <li>
+              <a
+                class="animated-link"
+                href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
+                onclick="fathom.trackGoal('JEBSM3Y8', 0);"
+                >Donate w/ Crypto</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div>
-      <p class="mb-lg/base">
-        Annual Conference<br />June 19-21, 2020<br />Hosted online
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <div
+      class="hidden lg:block absolute bottom-0 right-0 w-span5 pr-lg/lg pb-lg/xl pl-lg/base"
+    >
+      <p class="mb-base lg:mb-lg/base">
+        We stand with #BlackLivesMatter.
       </p>
-      <p><span class="animated-link">Register</span></p>
+      <p class="mb-base lg:mb-lg/base">
+        We celebrate #GlobalPride2020.
+      </p>
+      <p>
+        We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
+        <a class="inline-link" href="/covid-19">Read more</a>
+      </p>
     </div>
-  </a>
-  {% endcall %}
-  <!-- prettier-ignore -->
-  {% call header.render("", "conference-button-section-height") %}
-  <div class="md-container">
-    <p>
-      RadicalxChange Foundation is an Institutional Affiliate on the Roadmap to
-      Pandemic Resistance, the latest report by the Edmond J. Safra Center on
-      ending COVID-19 quarantine via Testing, Tracing, & Supported Isolation
-      (#TTSI).
-    </p>
-    <p class="flex justify-between lg:block">
-      <a class="animated-link lg:mr-lg/lg" href="/covid-19">Read more</a>
-    </p>
   </div>
-  {% endcall %}
   <!-- prettier-ignore -->
   {{ nav.movingMenuButton() }}
   <!-- prettier-ignore -->
-  {% for s in sections %}
-  <!-- prettier-ignore -->
-  {% call section.render(s.header) %}
-  <div>
-    <div class="md-container mb-base lg:mb-lg/base">
-      {{ s.content | markdown | safe }}
-    </div>
+  {% call page.render("Schedule") %}
+  <div class="conference-schedule">
+    <iframe
+      class="flex-grow border-2 rounded bg-white mb-xs lg:mb-0"
+      src="/2020-conference/schedule"
+    ></iframe>
+    <p class="mb-lg lg:mb-lg/lg text-left lg:text-right text-xs lg:text-lg/xs">
+      * Times in EDT
+    </p>
     <!-- prettier-ignore -->
-    {% call callToAction.render() %}
-    <!-- prettier-ignore -->
-    {% for l in s.links %}
+    {% call callToAction.render('lg:self-end') %}
     <!-- prettier-ignore -->
     {% call callToAction.item() %}
-    <a class="animated-link" href="{{ l.href }}" {{ l.attrs }}>
-      {{ l.text }}
-    </a>
+    <a
+      class="animated-link uppercase"
+      href="https://next.brella.io/events/rxcon2020/"
+      >Log in to Brella</a
+    >
+    <!-- prettier-ignore -->
+    {% endcall %}
+    {% call callToAction.item() %}
+    <a
+      class="animated-link"
+      href="mailto:ticketing@radicalxchange.org?subject=Request%20conference%20access&body=Hello!%20I%20am%20interested%20in%20attending%20the%20conference.%20Can%20you%20send%20me%20a%20code%20to%20log%20in%20to%20Brella%3F%0D%0A%0D%0AThank%20you!"
+      >Request conference access</a
+    >
     <!-- prettier-ignore -->
     {% endcall %}
     <!-- prettier-ignore -->
-    {% endfor %}
+    {% call callToAction.item() %}
+    <a class="animated-link" href="/2020-conference/schedule"
+      >See the schedule</a
+    >
+    <!-- prettier-ignore -->
+    {% endcall %}
     <!-- prettier-ignore -->
     {% endcall %}
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% endfor %}
-  <!-- prettier-ignore -->
-  {% call section.render("Supporters") %}
-  <div>
-    <ul
-      class="grid grid-cols-2 gap-base lg:gap-lg/base col-gap-lg lg:col-gap-lg/lg mb-lg lg:mb-lg/lg"
+  {% call page.render("Speakers", false) %}
+  <div class="flex flex-col justify-between h-full">
+    <a
+      href="/2020-conference/speakers"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
     >
-      {% for s in supporters %}
+      {% for s in keynoteSpeakers2020 %}
+      <!-- prettier-ignore -->
+      <div class="conference-image" style="background-image: linear-gradient(black, black), url('/images/speakers-2020/{{ s.picture }}');">
+        <div
+          class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white"
+        >
+          <h4 class="text-sm lg:text-lg/sm">{{ s.name }}</h4>
+          <p class="text-xs2 lg:text-lg/xs2">{{ s.title }}</p>
+        </div>
+        <div class="hidden">
+          {{ s.bio }}
+        </div>
+      </div>
+      {% endfor %}
+    </a>
+    <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
+      <a class="animated-link uppercase" href="/2020-conference/speakers"
+        >See all speakers</a
+      >
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("Before the conference", true) %}
+  <div class="md-container">
+    {{ gitxchange | markdown | safe }}
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("#RxC on Twitter") %}
+  <div class="border-2 rounded">
+    <a
+      class="twitter-timeline"
+      data-height="768"
+      href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
+    >
+      Loading tweets...
+    </a>
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call page.render("With the support of") %}
+  <div class="flex flex-col justify-between h-full">
+    <ul
+      class="grid grid-cols-2 lg:grid-cols-3 gap-base lg:gap-lg/base col-gap-lg lg:col-gap-lg/lg mb-lg lg:mb-lg/lg"
+    >
+      {% for s in sponsors%}
       <li>
         <a class="flex items-center h-full" href="{{ s.href }}">{{ s.name }}</a>
       </li>
       {% endfor %}
     </ul>
-    <!-- prettier-ignore -->
-    {% call callToAction.render() %}
-    <!-- prettier-ignore -->
-    {% call callToAction.item() %}
-    <a class="animated-link uppercase" href="/supporters">See all supporters</a>
-    <!-- prettier-ignore -->
-    {% endcall %}
-    <!-- prettier-ignore -->
-    {% endcall %}
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
 </main>
 <!-- prettier-ignore -->
-{% call footer.render('bg-golden-fizz-100' if sections.length % 2 == 0 else 'bg-white', "conference-button-pb") %}
+{% call footer.render('bg-golden-fizz-100') %}
 <!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->
@@ -178,7 +263,46 @@ supporters:
 {% endcall %}
 <!-- prettier-ignore -->
 {% endcall %}
+<script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  charset="utf-8"
+></script>
 <script>
+  const twitchContainer = $("[data-twitch-container]");
+  const logosLink = $("[data-logos-link]");
+  const logosIframe = $(`<iframe src="https://player.twitch.tv/?channel=radicalxchangelogos&parent=${window.location.hostname}" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>`);
+  const pathosLink = $("[data-pathos-link]");
+  const pathosIframe = $(`<iframe src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=${window.location.hostname}" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>`);
+
+  function showLogos() {
+    twitchContainer.empty();
+    twitchContainer.append(logosIframe);
+    logosLink.addClass("font-bold");
+    pathosLink.removeClass("font-bold");
+  }
+
+  function showPathos() {
+    twitchContainer.empty();
+    twitchContainer.append(pathosIframe);
+    logosLink.removeClass("font-bold");
+    pathosLink.addClass("font-bold");
+  }
+
+  $(window).on("hashchange", function (e) {
+    if (window.location.hash === "#logos-stage") {
+      showLogos();
+    } else if (window.location.hash === "#pathos-stage") {
+      showPathos();
+    }
+  });
+
+  if (window.location.hash === "#logos-stage") {
+    showLogos();
+  } else {
+    showPathos();
+  }
+
   // prettier-ignore
   {% include "components/nav.js" %}
   // prettier-ignore

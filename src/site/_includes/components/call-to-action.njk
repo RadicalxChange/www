@@ -8,8 +8,8 @@
 <!-- prettier-ignore -->
 {% endmacro %}
 <!-- prettier-ignore -->
-{% macro render() %}
-<ul class="flex flex-col lg:flex-row">
+{% macro render(styles="") %}
+<ul class="flex flex-col lg:flex-row {{ styles }}">
   <!-- prettier-ignore -->
   {{ caller() }}
 </ul>
