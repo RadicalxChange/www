@@ -154,15 +154,10 @@
   @apply relative;
   @apply h-0;
   padding-bottom: 60.967742%;
-  /* @apply mb-base; */
 
   iframe {
     @apply absolute;
     @apply w-full h-full;
     @apply top-0 left-0;
-  }
-
-  @screen lg {
-    /* @apply mb-lg/base; */
   }
 }
