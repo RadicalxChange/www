@@ -52,13 +52,20 @@ sponsors:
   {% call nav.render(false, false) %}
   <!-- prettier-ignore -->
   {% endcall %}
-  <div class="relative flex lg:min-h-tall lg-tall:min-h-screen">
+  <div
+    class="relative flex lg:min-h-tall lg-tall:min-h-screen bg-golden-fizz-100"
+  >
     <!-- prettier-ignore -->
     {% call header.render("", "h-full") %}
     <div class="flex-grow flex flex-col justify-end mt-0 lg:mt-lg/lg">
       <div>
         <div class="mb-base lg:mb-lg/base bg-golden-fizz-100">
-          <div class="flex mb-sm lg:mb-lg/base">
+          <div class="twitch-container" data-twitch-container></div>
+          <div class="flex flex-col lg:flex-row lg:justify-between">
+            <p class="mb-base lg:mb-0">
+              RadicalxChange Annual Conference <br />Starting at 10AM EDT June
+              19-21, 2020
+            </p>
             <p>
               <span>Stages:</span
               ><a
@@ -74,54 +81,6 @@ sponsors:
               >
             </p>
           </div>
-          <div class="twitch-container" data-twitch-container></div>
-        </div>
-        <p class="mb-base lg:mb-lg/base">
-          Stream the 2020 RadicalxChange Annual Conference starting at 10 AM EDT
-          on Juneteenth, to June 21 (6/19-6/21). The stream is active
-          twenty-four hours per day to accommodate a global audience.
-        </p>
-        <p class="mb-base lg:mb-lg/base">
-          Be part of the change: get involved or make a small gift. We need you!
-        </p>
-        <div class="flex flex-col lg:flex-row">
-          <ul>
-            <li class="mb-xs lg:mb-lg/xs">
-              <a
-                class="animated-link"
-                href="/chapters"
-                onclick="fathom.trackGoal('LWD6ES0J', 0);"
-                >Join a local chapter</a
-              >
-            </li>
-            <li>
-              <a
-                class="animated-link"
-                href="#"
-                onclick="fathom.trackGoal('KB8V0MZ8', 0);"
-                data-modal-trigger="subscribe"
-                >Subscribe to our newsletter</a
-              >
-            </li>
-          </ul>
-          <ul class="mt-xs lg:mt-0 lg:ml-lg/base">
-            <li class="mb-xs lg:mb-lg/xs">
-              <a
-                class="animated-link"
-                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
-                onclick="fathom.trackGoal('VOPKBH4N', 0);"
-                >Donate w/ PayPal</a
-              >
-            </li>
-            <li>
-              <a
-                class="animated-link"
-                href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
-                onclick="fathom.trackGoal('JEBSM3Y8', 0);"
-                >Donate w/ Crypto</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -131,15 +90,58 @@ sponsors:
       class="hidden lg:block absolute bottom-0 right-0 w-span5 pr-lg/lg pb-lg/xl pl-lg/base"
     >
       <p class="mb-base lg:mb-lg/base">
+        Be part of the change: get involved or make a small gift.<br />We need
+        you!
+      </p>
+      <div class="flex flex-col lg:flex-row mb-base lg:mb-lg/base">
+        <ul>
+          <li class="mb-xs lg:mb-lg/xs">
+            <a
+              class="animated-link uppercase"
+              href="/chapters"
+              onclick="fathom.trackGoal('LWD6ES0J', 0);"
+              >Join a local chapter</a
+            >
+          </li>
+          <li>
+            <a
+              class="animated-link uppercase"
+              href="#"
+              onclick="fathom.trackGoal('KB8V0MZ8', 0);"
+              data-modal-trigger="subscribe"
+              >Subscribe to our newsletter</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="mb-base lg:mb-lg/base">
         We stand with #BlackLivesMatter.
       </p>
       <p class="mb-base lg:mb-lg/base">
         We celebrate #GlobalPride2020.
       </p>
-      <p>
+      <p class="mb-base lg:mb-lg/base">
         We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
         <a class="inline-link" href="/covid-19">Read more</a>
       </p>
+      <ul class="flex flex-col lg:flex-row">
+        <li class="mb-xs lg:mb-0 lg:mr-lg/base">
+          <a
+            class="animated-link"
+            href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
+            onclick="fathom.trackGoal('VOPKBH4N', 0);"
+            >Donate via PayPal</a
+          >
+        </li>
+        <li>
+          <a
+            class="animated-link"
+            href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
+            onclick="fathom.trackGoal('JEBSM3Y8', 0);"
+            >Donate via Crypto</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
   <!-- prettier-ignore -->
