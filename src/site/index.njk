@@ -2,6 +2,10 @@
 layout: layouts/_base.njk
 title: RadicalxChange
 gitxchange: |
+  ## Call for Scenarios: Earth 2030 @ RadicalxChange
+  We invite anybody working on a project or research that could have widespread affect on the world in ten years’ time -- specialists, practitioners, researchers, and experts who can bring a diversity of perspectives to our world-building, including activists, intellectuals, social scientists, lawyers, engineers, philosophers, and advocates of decentralised technologies.
+  [Read more and submit your scenarios here](https://docs.google.com/forms/d/e/1FAIpQLSeXuwwZZVmvcliWzVdGR6gT2Qea4iLN4Bi8SK_eRXLLVCfEcA/viewform)
+
   ## Hackathon
   Ahead of the conference, we hosted a two-week virtual hackathon together with Gitcoin to further develop tools for bottom-up experimentation with radical political economies. The hackathon included a variety of challenges ranging from coding and designing to conceptualizing ideas about cooperative plurality. [Read more on the hackathon portal](https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:25)
 sponsors:
@@ -26,12 +30,16 @@ sponsors:
   - name: Ocean Protocol
     image: /images/sponsors-2020/ocean-protocol-logo.svg
     href: "https://oceanprotocol.com/"
+  - name: Hewlett Foundation
+    image: #
+    href: "https://hewlett.org/"
+  - name: Microsoft
+    image: #
+    href: "https://www.microsoft.com/"
 ---
 
 <!-- prettier-ignore -->
 {% import "components/nav.njk" as nav %}
-<!-- prettier-ignore -->
-{% import "components/header.njk" as header %}
 <!-- prettier-ignore -->
 {% import "components/section.njk" as section %}
 <!-- prettier-ignore -->
@@ -52,14 +60,19 @@ sponsors:
   {% call nav.render(false, false) %}
   <!-- prettier-ignore -->
   {% endcall %}
-  <div class="relative flex lg:min-h-tall lg-tall:min-h-screen">
-    <!-- prettier-ignore -->
-    {% call header.render("", "h-full") %}
-    <div class="flex-grow flex flex-col justify-end mt-0 lg:mt-lg/lg">
-      <div>
-        <div class="mb-base lg:mb-lg/base bg-golden-fizz-100">
-          <div class="flex mb-sm lg:mb-lg/base">
-            <p>
+  <div
+    class="relative flex flex-col justify-between lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:px-lg/lg bg-golden-fizz-100"
+    data-header
+  >
+    <header class="mb-lg lg:mb-lg/lg">
+      <a href="/"><img src="/images/logos/logo.svg" class="logo-width" /></a>
+    </header>
+    <div>
+      <div class="flex flex-col lg:flex-row lg:mb-lg/base">
+        <div class="w-full lg:w-span7 lg:pr-lg/base">
+          <div class="twitch-container" data-twitch-container></div>
+          <div class="block lg:hidden my-base lg:my-0">
+            <p class="mb-base lg:mb-lg/base">
               <span>Stages:</span
               ><a
                 class="ml-base lg:ml-lg/base animated-link uppercase"
@@ -73,44 +86,64 @@ sponsors:
                 >Logos</a
               >
             </p>
+            <p>
+              RadicalxChange Annual Conference <br />Starting at 10AM EDT June
+              19-21, 2020
+            </p>
           </div>
-          <div class="twitch-container" data-twitch-container></div>
         </div>
-        <p class="mb-base lg:mb-lg/base">
-          Stream the 2020 RadicalxChange Annual Conference starting at 10 AM EDT
-          on Juneteenth, to June 21 (6/19-6/21). The stream is active
-          twenty-four hours per day to accommodate a global audience.
-        </p>
-        <p class="mb-base lg:mb-lg/base">
-          Be part of the change: get involved or make a small gift. We need you!
-        </p>
-        <div class="flex flex-col lg:flex-row">
-          <ul>
-            <li class="mb-xs lg:mb-lg/xs">
-              <a
-                class="animated-link"
-                href="/chapters"
-                onclick="fathom.trackGoal('LWD6ES0J', 0);"
-                >Join a local chapter</a
-              >
-            </li>
-            <li>
-              <a
-                class="animated-link"
-                href="#"
-                onclick="fathom.trackGoal('KB8V0MZ8', 0);"
-                data-modal-trigger="subscribe"
-                >Subscribe to our newsletter</a
-              >
-            </li>
-          </ul>
-          <ul class="mt-xs lg:mt-0 lg:ml-lg/base">
-            <li class="mb-xs lg:mb-lg/xs">
+        <div
+          class="flex flex-col justify-between w-full lg:w-span5 lg:pl-lg/base"
+        >
+          <div>
+            <p class="hidden lg:block mb-base lg:mb-lg/base" aria-hidden="true">
+              Be part of the change: get involved or make a small gift.<br />We
+              need you!
+            </p>
+            <p class="block lg:hidden mb-base lg:mb-lg/base">
+              Be part of the change: get involved or make a small gift. We need
+              you!
+            </p>
+            <ul class="mb-xs lg:mb-0">
+              <li class="mb-xs lg:mb-lg/xs">
+                <a
+                  class="animated-link uppercase"
+                  href="/chapters"
+                  onclick="fathom.trackGoal('LWD6ES0J', 0);"
+                  >Join a local chapter</a
+                >
+              </li>
+              <li>
+                <a
+                  class="animated-link uppercase"
+                  href="#"
+                  onclick="fathom.trackGoal('KB8V0MZ8', 0);"
+                  data-modal-trigger="subscribe"
+                  >Subscribe to our newsletter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <p class="mb-base lg:mb-lg/base">
+              We stand with #BlackLivesMatter.
+            </p>
+            <p class="mb-base lg:mb-lg/base">
+              We celebrate #GlobalPride2020.
+            </p>
+            <p class="mb-lg lg:mb-lg/lg">
+              We support Testing, Tracing & Supported Isolation (#TTSI) for
+              COVID-19.
+              <a class="inline-link" href="/covid-19">Read more</a>
+            </p>
+          </div>
+          <ul class="flex flex-col lg:flex-row">
+            <li class="mb-xs lg:mb-0 lg:mr-lg/base">
               <a
                 class="animated-link"
                 href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
                 onclick="fathom.trackGoal('VOPKBH4N', 0);"
-                >Donate w/ PayPal</a
+                >Donate via PayPal</a
               >
             </li>
             <li>
@@ -118,28 +151,35 @@ sponsors:
                 class="animated-link"
                 href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
                 onclick="fathom.trackGoal('JEBSM3Y8', 0);"
-                >Donate w/ Crypto</a
+                >Donate via Crypto</a
               >
             </li>
           </ul>
         </div>
       </div>
-    </div>
-    <!-- prettier-ignore -->
-    {% endcall %}
-    <div
-      class="hidden lg:block absolute bottom-0 right-0 w-span5 pr-lg/lg pb-lg/xl pl-lg/base"
-    >
-      <p class="mb-base lg:mb-lg/base">
-        We stand with #BlackLivesMatter.
-      </p>
-      <p class="mb-base lg:mb-lg/base">
-        We celebrate #GlobalPride2020.
-      </p>
-      <p>
-        We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
-        <a class="inline-link" href="/covid-19">Read more</a>
-      </p>
+      <div
+        class="hidden lg:flex flex-row justify-between w-span7 pr-lg/base"
+        aria-hidden="true"
+      >
+        <p class="mb-base lg:mb-0">
+          RadicalxChange Annual Conference <br />Starting at 10AM EDT June
+          19-21, 2020
+        </p>
+        <p>
+          <span>Stages:</span
+          ><a
+            class="ml-base lg:ml-lg/base animated-link uppercase"
+            href="#pathos-stage"
+            data-pathos-link
+            >Pathos</a
+          ><a
+            class="ml-base lg:ml-lg/base animated-link uppercase"
+            href="#logos-stage"
+            data-logos-link
+            >Logos</a
+          >
+        </p>
+      </div>
     </div>
   </div>
   <!-- prettier-ignore -->

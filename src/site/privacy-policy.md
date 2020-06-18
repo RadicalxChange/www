@@ -71,9 +71,9 @@ If you would like to get involved as a volunteer, we ask for your information so
 
 If you would like to receive our newsletter, your information goes through MailChimp, which is the Data Processor for that activity.
 
-#### Cookies
+#### Analytics
 
-Google Analytics may store cookies to perform its services. Google is the Data Processor for that activity.
+We use [Fathom Analytics](https://usefathom.com/) to anonymously track site usage. We cannot track the activity of any single user. We only use collected data to prioritize improvements to our site.
 
 #### Embedded content from other websites
 

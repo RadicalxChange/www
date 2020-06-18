@@ -1,5 +1,5 @@
 const menuButton = $("#moving-menu-button");
-const header = document.querySelector("header");
+const header = document.querySelector("[data-header]");
 const disappearObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
