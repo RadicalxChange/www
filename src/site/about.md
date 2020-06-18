@@ -24,10 +24,10 @@ Our work is guided by a commitment to more egalitarian and democratic societies,
 
 RadicalxChange develops ideas, communities, and organizations that practice fairer and more efficient forms of organization.
 
-We challenge basic inherited institutions by building better ones
-We seek to increase public knowledge about the emancipatory potential of new ideas in mechanism design
-We seek to evolve our vision from the bottom up, nurturing a community of RadicalxChange-affiliated activists, artists, technologists, and academics
-We strike a balance between working alongside and within existing communities and institutions, while also challenging them by building better institutions and new public goods providers
+- We challenge basic inherited institutions by building better ones.
+- We seek to increase public knowledge about the emancipatory potential of new ideas in mechanism design.
+- We seek to evolve our vision from the bottom up, nurturing a community of RadicalxChange-affiliated activists, artists, technologists, and academics.
+- We strike a balance between working alongside and within existing communities and institutions, while also challenging them by building better institutions and new public goods providers.
 
 ## Core Values
 
