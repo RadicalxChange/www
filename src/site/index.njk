@@ -31,8 +31,6 @@ sponsors:
 <!-- prettier-ignore -->
 {% import "components/nav.njk" as nav %}
 <!-- prettier-ignore -->
-{% import "components/header.njk" as header %}
-<!-- prettier-ignore -->
 {% import "components/section.njk" as section %}
 <!-- prettier-ignore -->
 {% import "components/page.njk" as page %}
@@ -53,20 +51,17 @@ sponsors:
   <!-- prettier-ignore -->
   {% endcall %}
   <div
-    class="relative flex lg:min-h-tall lg-tall:min-h-screen bg-golden-fizz-100"
+    class="relative flex flex-col justify-between lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:px-lg/lg bg-golden-fizz-100"
   >
-    <!-- prettier-ignore -->
-    {% call header.render("", "h-full") %}
-    <div class="flex-grow flex flex-col justify-end mt-0 lg:mt-lg/lg">
-      <div>
-        <div class="mb-base lg:mb-lg/base bg-golden-fizz-100">
+    <header class="mb-lg lg:mb-lg/lg">
+      <a href="/"><img src="/images/logos/logo.svg" class="logo-width" /></a>
+    </header>
+    <div>
+      <div class="flex flex-col lg:flex-row lg:mb-lg/base">
+        <div class="w-full lg:w-span7 lg:pr-lg/base">
           <div class="twitch-container" data-twitch-container></div>
-          <div class="flex flex-col lg:flex-row lg:justify-between">
-            <p class="mb-base lg:mb-0">
-              RadicalxChange Annual Conference <br />Starting at 10AM EDT June
-              19-21, 2020
-            </p>
-            <p>
+          <div class="block lg:hidden mt-base mb-base lg:my-0">
+            <p class="mb-base">
               <span>Stages:</span
               ><a
                 class="ml-base lg:ml-lg/base animated-link uppercase"
@@ -80,68 +75,99 @@ sponsors:
                 >Logos</a
               >
             </p>
+            <p>
+              RadicalxChange Annual Conference <br />Starting at 10AM EDT June
+              19-21, 2020
+            </p>
           </div>
         </div>
+        <div
+          class="flex flex-col justify-between w-full lg:w-span5 lg:pl-lg/base"
+        >
+          <div>
+            <p class="hidden lg:block lg:mb-lg/base">
+              Be part of the change: get involved or make a small gift.<br />We
+              need you!
+            </p>
+            <p class="block lg:hidden mb-base">
+              Be part of the change: get involved or make a small gift. We need
+              you!
+            </p>
+            <ul class="mb-xs mb-0">
+              <li class="mb-xs lg:mb-lg/xs">
+                <a
+                  class="animated-link uppercase"
+                  href="/chapters"
+                  onclick="fathom.trackGoal('LWD6ES0J', 0);"
+                  >Join a local chapter</a
+                >
+              </li>
+              <li>
+                <a
+                  class="animated-link uppercase"
+                  href="#"
+                  onclick="fathom.trackGoal('KB8V0MZ8', 0);"
+                  data-modal-trigger="subscribe"
+                  >Subscribe to our newsletter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hidden">
+            <p class="mb-base lg:mb-lg/base">
+              We stand with #BlackLivesMatter.
+            </p>
+            <p class="mb-base lg:mb-lg/base">
+              We celebrate #GlobalPride2020.
+            </p>
+            <p class="mb-lg lg:mb-lg/lg">
+              We support Testing, Tracing & Supported Isolation (#TTSI) for
+              COVID-19.
+              <a class="inline-link" href="/covid-19">Read more</a>
+            </p>
+          </div>
+          <ul class="flex flex-col lg:flex-row">
+            <li class="mb-xs lg:mb-0 lg:mr-lg/base">
+              <a
+                class="animated-link"
+                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
+                onclick="fathom.trackGoal('VOPKBH4N', 0);"
+                >Donate via PayPal</a
+              >
+            </li>
+            <li>
+              <a
+                class="animated-link"
+                href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
+                onclick="fathom.trackGoal('JEBSM3Y8', 0);"
+                >Donate via Crypto</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <!-- prettier-ignore -->
-    {% endcall %}
-    <div
-      class="hidden lg:block absolute bottom-0 right-0 w-span5 pr-lg/lg pb-lg/xl pl-lg/base"
-    >
-      <p class="mb-base lg:mb-lg/base">
-        Be part of the change: get involved or make a small gift.<br />We need
-        you!
-      </p>
-      <div class="flex flex-col lg:flex-row mb-base lg:mb-lg/base">
-        <ul>
-          <li class="mb-xs lg:mb-lg/xs">
-            <a
-              class="animated-link uppercase"
-              href="/chapters"
-              onclick="fathom.trackGoal('LWD6ES0J', 0);"
-              >Join a local chapter</a
-            >
-          </li>
-          <li>
-            <a
-              class="animated-link uppercase"
-              href="#"
-              onclick="fathom.trackGoal('KB8V0MZ8', 0);"
-              data-modal-trigger="subscribe"
-              >Subscribe to our newsletter</a
-            >
-          </li>
-        </ul>
+      <div
+        class="hidden lg:flex flex-col lg:flex-row lg:justify-between w-full lg:w-span7 lg:pr-lg/base"
+      >
+        <p class="mb-base lg:mb-0">
+          RadicalxChange Annual Conference <br />Starting at 10AM EDT June
+          19-21, 2020
+        </p>
+        <p>
+          <span>Stages:</span
+          ><a
+            class="ml-base lg:ml-lg/base animated-link uppercase"
+            href="#pathos-stage"
+            data-pathos-link
+            >Pathos</a
+          ><a
+            class="ml-base lg:ml-lg/base animated-link uppercase"
+            href="#logos-stage"
+            data-logos-link
+            >Logos</a
+          >
+        </p>
       </div>
-      <p class="mb-base lg:mb-lg/base">
-        We stand with #BlackLivesMatter.
-      </p>
-      <p class="mb-base lg:mb-lg/base">
-        We celebrate #GlobalPride2020.
-      </p>
-      <p class="mb-base lg:mb-lg/base">
-        We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
-        <a class="inline-link" href="/covid-19">Read more</a>
-      </p>
-      <ul class="flex flex-col lg:flex-row">
-        <li class="mb-xs lg:mb-0 lg:mr-lg/base">
-          <a
-            class="animated-link"
-            href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
-            onclick="fathom.trackGoal('VOPKBH4N', 0);"
-            >Donate via PayPal</a
-          >
-        </li>
-        <li>
-          <a
-            class="animated-link"
-            href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
-            onclick="fathom.trackGoal('JEBSM3Y8', 0);"
-            >Donate via Crypto</a
-          >
-        </li>
-      </ul>
     </div>
   </div>
   <!-- prettier-ignore -->
