@@ -1,6 +1,3 @@
-# During conference, redirect conference page to home page
-/2020-conference /
-
 # Redirect requests for the blog to the new blog domain
 /blog   https://blog.radicalxchange.org/
 /blog/* https://blog.radicalxchange.org/blog/:splat
