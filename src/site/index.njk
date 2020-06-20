@@ -65,34 +65,52 @@ supporters:
 
 <main>
   <!-- prettier-ignore -->
-  {% call nav.render(true, false) %}
+  {% call nav.render(true, true) %}
+  <a class="save-the-date_container" href="/2020-conference">
+    <div class="save-the-date_oval">
+      <div class="relative">
+        <span
+          class="save-the-date_text save-the-date_filled"
+          aria-hidden="true"
+        >
+          Thank you!
+        </span>
+        <span class="save-the-date_text save-the-date_stroked">
+          Thank you!
+        </span>
+      </div>
+    </div>
+    <div>
+      <p class="mb-lg/base">
+        Thank you for a great RadicalxChange Annual Conference. See you next
+        year!
+      </p>
+      <p><span class="animated-link">Watch the replay</span></p>
+    </div>
+  </a>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {% call header.render("") %}
-  <div class="flex-grow lg:flex-none flex flex-col-reverse lg:block">
-    <a class="bubble" href="/2020-conference">
-      <div class="md-container">
-        <h1>Thank you!</h1>
-        <p>
-          Thank you for a great RadicalxChange Annual Conference. See you next
-          year!
-        </p>
-        <p>
-          <span class="animated-link">Browse the archive</span>
-        </p>
-      </div>
-    </a>
-    <div class="mb-base lg:mb-0">
-      <p class="mb-0 lg:mb-lg/base">
-        We stand with #BlackLivesMatter.
-      </p>
-      <p class="mb-0 lg:mb-lg/base">
-        We celebrate #GlobalPride2020.
+  <div>
+    <p class="mb-0 lg:mb-lg/base">
+      We stand with #BlackLivesMatter.
+    </p>
+    <p class="mb-0 lg:mb-lg/base">
+      We celebrate #GlobalPride2020.
+    </p>
+    <p class="mb-base lg:mb-0">
+      We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
+      <a class="inline-link" href="/covid-19">Read more</a>
+    </p>
+    <div class="block lg:hidden md-container">
+      <h1>Thank you</h1>
+      <p>
+        Thank you for a great RadicalxChange Annual Conference. See you next
+        year!
       </p>
       <p>
-        We support Testing, Tracing & Supported Isolation (#TTSI) for COVID-19.
-        <a class="inline-link" href="/covid-19">Read more</a>
+        <a href="/2020-conference" class="animated-link">Watch the replay</a>
       </p>
     </div>
   </div>

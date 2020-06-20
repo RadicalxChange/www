@@ -1,27 +1,5 @@
 @import "./mixins/_animated-link.css";
 
-.bubble {
-  @apply block;
-
-  @screen lg {
-    width: 75%;
-    @apply border border-solid border-black rounded-50;
-    transform: rotate(-10.56deg);
-    padding: 3vw 4vw 3vw 4vw;
-    @apply mb-lg;
-    @apply text-center;
-    @apply mb-lg/lg;
-
-    &:hover .animated-link:after {
-      @mixin animated-link-hover;
-    }
-
-    .md-container {
-      transform: rotate(10.56deg);
-    }
-  }
-}
-
 .save-the-date {
   &_container {
     @apply hidden;
@@ -43,9 +21,9 @@
 
   &_oval {
     @apply absolute;
-    top: -202%;
+    top: -233%;
     width: 28vw;
-    height: 21.5vw;
+    height: 18.5vw;
     @apply flex justify-center items-center;
     @apply border border-solid border-black rounded-50;
     transform: rotate(-10.56deg);
