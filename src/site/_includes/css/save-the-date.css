@@ -21,9 +21,9 @@
 
   &_oval {
     @apply absolute;
-    top: -202%;
+    top: -233%;
     width: 28vw;
-    height: 21.5vw;
+    height: 18.5vw;
     @apply flex justify-center items-center;
     @apply border border-solid border-black rounded-50;
     transform: rotate(-10.56deg);
