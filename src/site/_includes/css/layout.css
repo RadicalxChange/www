@@ -181,7 +181,8 @@
 
   @screen lg {
     @apply block;
-    width: 1.95vw;
+    width: 1.5vw;
     @apply mr-lg/base;
+    margin-top: 0.2vw;
   }
 }
