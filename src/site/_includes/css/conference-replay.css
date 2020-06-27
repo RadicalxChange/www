@@ -1,0 +1,19 @@
+@import "./mixins/_animated-link.css";
+
+.conference-replay {
+  &:hover .animated-link:after {
+    @mixin animated-link-hover;
+  }
+}
+
+.conference-replay-icon {
+  @apply hidden;
+  width: 10vmin;
+  @apply mb-sm;
+
+  @screen lg {
+    @apply block;
+    width: 6.5vw;
+    @apply mb-0 mr-lg/lg;
+  }
+}

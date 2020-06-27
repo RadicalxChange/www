@@ -86,18 +86,6 @@
   }
 }
 
-.conference-replay-icon {
-  @apply hidden;
-  width: 10vmin;
-  @apply mb-sm;
-
-  @screen lg {
-    @apply block;
-    width: 6.5vw;
-    @apply mb-0 mr-lg/lg;
-  }
-}
-
 /* Team page */
 
 .team_image {
@@ -174,9 +162,9 @@
   }
 }
 
-/* 2020 conference archive */
+/* 2020 conference replay */
 
-.conference-archive-video_icon {
+.conference-replay-video_icon {
   @apply hidden;
 
   @screen lg {
