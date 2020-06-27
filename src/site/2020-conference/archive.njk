@@ -1,0 +1,75 @@
+---
+layout: layouts/html.njk
+title: 2020 Conference Archive - RadicalxChange
+headerText: 2020 Conference Archive
+---
+
+<div class="flex-grow flex flex-col justify-between">
+  <div class="mb-lg lg:mb-lg/lg">
+    <p class="mb-base lg:mb-lg/base">
+      Thank you for a great RadicalxChange Annual Conference 2020. If you like
+      the archive, join the movement. Get involved or make a small gift. We need
+      you!
+    </p>
+    <div class="flex flex-col lg:flex-row">
+      <ul class="lg:mr-lg/lg">
+        <li class="mb-xs lg:mb-lg/xs">
+          <a
+            class="animated-link"
+            href="/chapters"
+            onclick="fathom.trackGoal('LWD6ES0J', 0);"
+            >Join a local chapter</a
+          >
+        </li>
+        <li class="mb-xs lg:mb-lg/xs">
+          <a
+            class="animated-link"
+            href="#"
+            onclick="fathom.trackGoal('KB8V0MZ8', 0);"
+            data-modal-trigger="subscribe"
+            >Subscribe to our newsletter</a
+          >
+        </li>
+      </ul>
+      <ul>
+        <li class="mb-xs lg:mb-lg/xs">
+          <a
+            class="animated-link"
+            href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
+            onclick="fathom.trackGoal('VOPKBH4N', 0);"
+            >Donate via PayPal</a
+          >
+        </li>
+        <li class="mb-xs lg:mb-lg/xs">
+          <a
+            class="animated-link"
+            href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
+            onclick="fathom.trackGoal('JEBSM3Y8', 0);"
+            >Donate via Crypto</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ul>
+    {% for v in youtube2020 %}
+    <li class="mb-base lg:mb-lg/base">
+      <a
+        class="flex items-start"
+        href="https://www.youtube.com/watch?v={{
+          v.videoId
+        }}&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU"
+      >
+        <img
+          src="/images/ui/icon-youtube.svg"
+          class="conference-archive-video_icon"
+        />
+        <div>
+          <h4>{{ v.title }}</h4>
+          <p class="text-xs lg:text-lg/xs">{{ v.speakers }}</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
