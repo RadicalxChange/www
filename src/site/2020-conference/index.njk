@@ -62,13 +62,19 @@ sponsors:
   {% endcall %}
   <!-- prettier-ignore -->
   {% call header.render("2020 Annual Conference") %}
-  <div class="md-container">
-    <h1>Thank you!</h1>
-    <p>
-      Thank you for a great RadicalxChange Annual Conference! The video archive
-      will be ready in a couple days. Scroll down to learn more about the
-      speakers and sponsors.
-    </p>
+  <div>
+    <a
+      href="/2020-conference/replay"
+      class="conference-replay flex flex-col lg:flex-row lg:items-center"
+    >
+      <img src="/images/ui/icon-youtube.svg" class="conference-replay-icon" />
+      <div>
+        <p class="mb-lg/base">
+          The videos from the 2020 Annual Conference have been posted.
+        </p>
+        <p><span class="animated-link">Watch the replay</span></p>
+      </div>
+    </a>
   </div>
   <!-- prettier-ignore -->
   {% endcall %}
