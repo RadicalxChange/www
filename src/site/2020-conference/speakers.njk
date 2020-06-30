@@ -1,74 +1,46 @@
----
-layout: layouts/_base.njk
-title: Speakers - RadicalxChange
----
-
-<!-- prettier-ignore -->
-{% import "components/nav.njk" as nav %}
-<!-- prettier-ignore -->
-{% import "components/header.njk" as header %}
-<!-- prettier-ignore -->
-{% import "components/section.njk" as section %}
-<!-- prettier-ignore -->
-{% import "components/page.njk" as page %}
-<!-- prettier-ignore -->
-{% import "components/footer.njk" as footer %}
 <!-- prettier-ignore -->
 {% import "components/modal.njk" as modal %}
-<!-- prettier-ignore -->
-{% import "components/subscribe-modal.njk" as subscribeModal %}
 
-<main>
-  <!-- prettier-ignore -->
-  {{ nav.stickyMenuButton() }}
-  <!-- prettier-ignore -->
-  {% call nav.render(false) %}
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  {% call header.render("Speakers", "") %}
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  <div class="flex flex-col justify-between h-full bg-golden-fizz-100">
+<!-- prettier-ignore -->
+{% extends "layouts/_full-page.njk" %}
+
+<!-- prettier-ignore -->
+{% set title = "Speakers - RadicalxChange" %}
+<!-- prettier-ignore -->
+{% set headerText = "Speakers" %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<div class="flex flex-col justify-between h-full bg-golden-fizz-100">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-lg lg:mb-lg/lg overflow-hidden"
+  >
+    {% for s in allSpeakers2020 %}
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-lg lg:mb-lg/lg overflow-hidden"
+      class="conference-image cursor-pointer"
+      style="background-image: linear-gradient(black, black);"
+      data-speaker-declare
+      data-speaker-image="/images/speakers-2020/{{ s.picture }}"
+      data-modal-trigger="bio"
     >
-      {% for s in allSpeakers2020 %}
       <div
-        class="conference-image cursor-pointer"
-        style="background-image: linear-gradient(black, black);"
-        data-speaker-declare
-        data-speaker-image="/images/speakers-2020/{{ s.picture }}"
-        data-modal-trigger="bio"
+        class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white"
       >
-        <div class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white">
-          <h4 class="text-sm lg:text-lg/sm" data-speaker-name>{{ s.name }}</h4>
-          <p class="text-xs2 lg:text-lg/xs2" data-speaker-title>{{ s.title }}</p>
-        </div>
-        <div class="hidden" data-speaker-bio>
-          {{ s.bio | markdown | safe }}
-        </div>
+        <h4 class="text-sm lg:text-lg/sm" data-speaker-name>{{ s.name }}</h4>
+        <p class="text-xs2 lg:text-lg/xs2" data-speaker-title>{{ s.title }}</p>
       </div>
-      {% endfor %}
+      <div class="hidden" data-speaker-bio>
+        {{ s.bio | markdown | safe }}
+      </div>
     </div>
-    <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
-      <a class="animated-link uppercase" href="/2020-conference">Back to conference</a>
-    </div>
+    {% endfor %}
   </div>
-</main>
-<!-- prettier-ignore -->
-{% call footer.render('bg-white') %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% call modal.render('subscribe') %}
-<!-- prettier-ignore -->
-{% call subscribeModal.render() %}
-<!-- prettier-ignore -->
-{% endcall %}
-<!-- prettier-ignore -->
-{% endcall %}
+  <div class="lg:self-end mb-lg mx-base lg:mb-lg/xl lg:mr-lg/lg lg:ml-0">
+    <a class="animated-link uppercase" href="/2020-conference"
+      >Back to conference</a
+    >
+  </div>
+</div>
 <!-- prettier-ignore -->
 {% call modal.render('bio') %}
 <div class="speaker-bio-modal_container">
@@ -90,17 +62,26 @@ title: Speakers - RadicalxChange
 </div>
 <!-- prettier-ignore -->
 {% endcall %}
+<!-- prettier-ignore -->
+{% endblock %}
+<!-- prettier-ignore -->
+{% block bodyScripts %}
 <script>
-  let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target;
-          lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`;
-          lazyImageObserver.unobserve(lazyImage);
-        }
-      });
+  let lazyImageObserver = new IntersectionObserver(function (
+    entries,
+    observer
+  ) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        let lazyImage = entry.target;
+        lazyImage.style.backgroundImage = `linear-gradient(black, black), url('${lazyImage.dataset.speakerImage}')`;
+        lazyImageObserver.unobserve(lazyImage);
+      }
     });
-  $("[data-speaker-image]").each((index, element) => lazyImageObserver.observe(element));
+  });
+  $("[data-speaker-image]").each((index, element) =>
+    lazyImageObserver.observe(element)
+  );
 
   $("[data-speaker-declare]").click(function (event) {
     event.preventDefault();
@@ -119,9 +100,6 @@ title: Speakers - RadicalxChange
     contentElement.empty();
     contentElement.append(bio);
   });
-
-  // prettier-ignore
-  {% include "components/nav.js" %}
-  // prettier-ignore
-  {% include "components/modal.js" %}
 </script>
+<!-- prettier-ignore -->
+{% endblock %}

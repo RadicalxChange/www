@@ -5,19 +5,46 @@
     class="flex flex-col justify-between w-full lg:w-span7
     {{ height }} py-base lg:py-lg/xl px-base lg:pr-lg/base lg:pl-lg/lg"
   >
+    <!-- prettier-ignore -->
     {% if title == "" %}
     <a href="/"
       ><img src="/images/logos/logo.svg" class="logo-width mb-xl lg:mb-0"
     /></a>
+    <!-- prettier-ignore -->
     {% else %}
     <h1
       class="mb-lg lg:mb-lg/lg font-display text-header lg:text-lg/header uppercase leading-display"
     >
       {{ title }}
     </h1>
+    <!-- prettier-ignore -->
     {% endif %}
     <!-- prettier-ignore -->
     {{ caller() }}
   </div>
 </header>
+<!-- prettier-ignore -->
+{% endmacro %}
+
+<!-- prettier-ignore -->
+{% macro banner(title="") %}
+<header class="bg-golden-fizz-100" data-header>
+  <div
+    class="w-full lg:w-span7 pt-base lg:pt-lg/xl pb-lg lg:pb-lg/lg px-base lg:pr-lg/base lg:pl-lg/lg"
+  >
+    <!-- prettier-ignore -->
+    {% if title == "" %}
+    <a href="/"><img src="/images/logos/logo.svg" class="logo-width" /></a>
+    <!-- prettier-ignore -->
+    {% else %}
+    <h1
+      class="font-display text-header lg:text-lg/header uppercase leading-display"
+    >
+      {{ title }}
+    </h1>
+    <!-- prettier-ignore -->
+    {% endif %}
+  </div>
+</header>
+<!-- prettier-ignore -->
 {% endmacro %}
