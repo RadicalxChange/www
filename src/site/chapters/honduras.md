@@ -1,16 +1,16 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Kenya - RadicalxChange"
-headerText: "Nairobi, Kenya"
-city: "Nairobi"
-country: "Kenya"
+title: "Honduras - RadicalxChange"
+headerText: "Honduras"
+city: "Honduras"
+country: "Honduras"
 coordinates:
-  lat: -1.2832533
-  lng: 36.8172449
+  lat: 15.2572432
+  lng: -86.0755145
 meetupUrl: "#"
-contactOrganizer: "https://twitter.com/RadxChangeKE"
-twitter: "RadxChangeKE"
+contactOrganizer: "https://twitter.com/RxCHonduras"
+twitter: "RxCHonduras"
 foundingYear: "2020"
 ---
 
