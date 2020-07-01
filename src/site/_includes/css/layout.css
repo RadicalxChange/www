@@ -150,10 +150,10 @@
 
 /* Twitch */
 
-.twitch-container {
+.youtube-container {
   @apply relative;
   @apply h-0;
-  padding-bottom: 60.967742%;
+  padding-bottom: 56.25%;
 
   iframe {
     @apply absolute;
