@@ -253,6 +253,16 @@ const youtube = [
     videoId: "beDxi1UsQ5c",
   },
 ];
+
+youtube.push({
+  title:
+    "To Be or not to Be Hacked? The Future of Democracy, Work, and Identity",
+  speakers: "Harari, Tang, and Ohlhaver",
+  description:
+    "SPEAKERS\nAudrey Tang is Taiwan's digital minister in charge of social innovation and board member of RadicalxChange Foundation.\n\nYuval Noah Harari is a historian, philosopher, and the bestselling author of Sapiens: A Brief History of Humankind, Homo Deus: A Brief History of Tomorrow, and 21 Lessons for the 21st Century.\n\nMODERATOR\nPuja Ohlhaver is inventor and founder of ClearPath Surgical. She holds a law degree from Stanford Law School and previously worked as an investment management attorney.",
+  videoId: "tRVEY95cI0o",
+});
+
 // Sort by title
 function compareVideos(a, b) {
   if (a.title < b.title) {
