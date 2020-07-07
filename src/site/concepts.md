@@ -29,21 +29,17 @@ To get up to speed on quadratic finance, some good places to start are:
 - [Liberal Radicalism: A Flexible Design For Philanthropic Matching Funds](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656)
 - [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html)
 
-## Common Ownership Self-Assessed Tax (COST)
-
-Private property is at the heart of the capitalist system and has many advantages, not the least in incentivizing investment. But private ownership often puts profit before the community. Socialists believe all property is a common good, and so should always be put to the most productive common purpose. But socialists can struggle to identify what the most productive purpose is and to motivate people to pursue it. At RadicalxChange we think it’s possible to get the best of both approaches to property. One way is via the COST. Under the COST, everyone pays a tax on their property based on what they think it is worth – but must also be prepared to sell it to anyone willing to offer their price. While it sounds radical at first, COST is a very good way to take a fresh look at what it means to possess something and to evaluate what a thing is really worth. We suggest taking a look.
-
-For more on COST, we recommend:
-
-- [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)
-
 ## Self Assessed Licenses Sold via Auction (SALSA)
 
-The right to use or operate in a finite public space also requires regulation by the community. Here too, traditional means of granting rights–like taxi medallions or street vending licenses–are in need of an update. Under SALSA, licenses are auctioned using the same system as COST; license holders pay a tax based on what they think that license is worth. The catch: they must be prepared to sell the license to anyone willing to pay their self-assessed price. The result is a much more honest expression of the value of things, the elimination of black markets in licenses, and a stop to holdouts.
+Private property is at the core of the capitalist system and has many advantages, not the least in incentivizing investment. But private ownership often puts owning before exchanging as well as profit before community. On the other hand, some socialists believe all property should be put to the most productive common purpose. But they struggle to identify what the most productive purpose is and to motivate people to pursue it. At RadicalxChange we think it’s possible to get the best of both approaches to property using a system called SALSA (Self-Assessed Licenses Sold via Auction). Under SALSA, everyone pays a tax on their property based on what they think it is worth – but must also agree to sell it to anyone willing to offer their self-assessed price. While it sounds radical at first, SALSA is a more coherent and sustainable way to govern the rights to possess finite resources. Its implications include a much more efficient use of resources, a better way of sharing common property, a fair wealth tax, and deeper economic equality.
 
-More on SALSA can be found here:
+For more on SALSA, we recommend:
 
-- [The Handbook for Radical Local Democracy](/The_Handbook_for_Radical_Local_Democracy.pdf)
+- [Between Abundance and Scarcity](https://blog.radicalxchange.org/blog/posts/between-scarcity-and-abundance/)
+- [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)
+- [The Handbook for Local Radical Democracy](/files/The_Handbook_for_Radical_Local_Democracy.pdf)
+- [Millennials, Zoomers, and SALSA: Just Radical Enough](https://blog.radicalxchange.org/blog/posts/millennials-zoomers-and-salsa-just-radical-enough/)
+- [Reimagining Property](https://medium.com/blockchannel/reimagining-property-fbce9d3832a4)
 
 ## Data Dignity
 
