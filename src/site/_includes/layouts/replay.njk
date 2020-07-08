@@ -1,14 +1,8 @@
 <!-- prettier-ignore -->
-{% extends "layouts/replay.njk" %}
+{% import "components/modal.njk" as modal %}
 
 <!-- prettier-ignore -->
-{% set title = "2019 RxC Replay - RadicalxChange" %}
-<!-- prettier-ignore -->
-{% set headerText = "2019 RxC Replay" %}
-<!-- prettier-ignore -->
-{% set headerHref = "/2019-conference" %}
-<!-- prettier-ignore -->
-{% set youtubeDatum = youtube2020 %}
+{% extends "layouts/_full-page.njk" %}
 
 <!-- prettier-ignore -->
 {% block content %}
@@ -36,7 +30,7 @@
   <div class="lg:w-span5 pb-base lg:pb-lg/xl px-base lg:pl-lg/base lg:pr-lg/lg">
     <h3 class="text-xl mb-base lg:hidden">More videos</h3>
     <ul class="-mb-base lg:-mb-lg/base">
-      {% for v in youtube2020 %}
+      {% for v in youtubeDatum %}
       <li class="mb-base lg:mb-lg/base">
         <a class="flex items-start" href="#v{{ v.videoId }}">
           <img
@@ -59,7 +53,7 @@
 <!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->
-{% for v in youtube2020 %}
+{% for v in youtubeDatum %}
 <!-- prettier-ignore -->
 <script type="text/plain" id="title-{{ v.videoId }}">{{ v.title | safe }}</script>
 <!-- prettier-ignore -->
@@ -75,7 +69,7 @@
   const youtubeTitle = $("[data-youtube-title]");
   const youtubeDescription = $("[data-youtube-description]");
 
-  function showVideo(videoId = "{{youtube2020[0].videoId}}") {
+  function showVideo(videoId = "{{youtubeDatum[0].videoId}}") {
     youtubeContainer.empty();
     youtubeContainer.append(
       $(
