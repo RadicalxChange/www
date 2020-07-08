@@ -1,4 +1,4 @@
-const youtube = [
+const youtube2020 = [
   {
     title: "Quadratic Funding in Ethereum",
     speakers: "Vitalik Buterin, Pia Mancini",
@@ -303,7 +303,7 @@ const youtube = [
   },
 ];
 
-youtube.push({
+youtube2020.push({
   title:
     "To Be or not to Be Hacked? The Future of Democracy, Work, and Identity",
   speakers: "Harari, Tang, and Ohlhaver",
@@ -322,6 +322,6 @@ function compareVideos(a, b) {
   }
   return 0;
 }
-youtube.sort(compareVideos);
+youtube2020.sort(compareVideos);
 
-module.exports = youtube;
+module.exports = youtube2020;
