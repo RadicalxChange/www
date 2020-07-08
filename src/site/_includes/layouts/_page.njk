@@ -3,8 +3,6 @@
 <!-- prettier-ignore -->
 {% import "components/header.njk" as header %}
 <!-- prettier-ignore -->
-{% import "components/section.njk" as section %}
-<!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
 <!-- prettier-ignore -->
 {% import "components/modal.njk" as modal %}
@@ -15,12 +13,17 @@
 {% extends "layouts/_base.njk" %}
 
 <!-- prettier-ignore -->
+{% set footerBgColor = footerBgColor | default("bg-white") %}
+<!-- prettier-ignore -->
+{% set stickyNav = stickyNav | default(true) %}
+
+<!-- prettier-ignore -->
 {% block body %}
 <main>
   <!-- prettier-ignore -->
   {{ nav.stickyMenuButton() }}
   <!-- prettier-ignore -->
-  {% call nav.render() %}
+  {% call nav.render(stickyNav) %}
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
@@ -31,9 +34,13 @@
   {% endblock %}
   <!-- prettier-ignore -->
   {% endcall %}
+  <!-- prettier-ignore -->
+  {% block restOfContent %}
+  <!-- prettier-ignore -->
+  {% endblock %}
 </main>
 <!-- prettier-ignore -->
-{% call footer.render("bg-white") %}
+{% call footer.render(footerBgColor) %}
 <!-- prettier-ignore -->
 {% endcall %}
 <!-- prettier-ignore -->
