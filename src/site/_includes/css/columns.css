@@ -10,4 +10,12 @@
   .columns-3 {
     columns: 3;
   }
+
+  .columns-base-gap {
+    column-gap: theme("spacing.base");
+  }
+
+  .columns-lg\/base-gap {
+    column-gap: theme("spacing.lg/base");
+  }
 }
