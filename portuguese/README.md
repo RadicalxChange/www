@@ -1,0 +1,1 @@
+In early 2020, we translated the site in to Portuguese in anticipation of a conference in Sao Paolo. This conference was cancelled due to coronavirus. We redid the site in mid-2020, but never bothered to re-implement the translation. We've archived translated text here as a starting point in case we ever need to translate again.
