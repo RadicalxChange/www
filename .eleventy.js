@@ -82,8 +82,11 @@ module.exports = function (config) {
   // Optimize HTML
   config.addTransform("posthtml", async function (content, outputPath) {
     if (outputPath.endsWith(".html")) {
-      const posthtmlPipeline = [require("htmlnano")()];
-      const { html } = await posthtml(posthtmlPipeline).process(content);
+      const { html } = await posthtml([
+        require("posthtml-alt-always")(),
+        require("posthtml-link-noreferrer")(),
+        require("htmlnano")(),
+      ]).process(content);
 
       if (isDev) {
         return beautifyHtml(html, { indent_size: 2 });
