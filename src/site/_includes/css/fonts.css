@@ -4,6 +4,7 @@
     url("/fonts/MesserV2.0-Condensed.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
   src: url("/fonts/SuisseIntl-Book.otf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -18,4 +20,5 @@
   src: url("/fonts/SuisseIntl-Regular.otf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

@@ -26,6 +26,8 @@
     "postcss-nesting": "^7.0.1",
     "postcss-prettify": "^0.3.4",
     "posthtml": "^0.13.1",
+    "posthtml-alt-always": "^1.0.1",
+    "posthtml-link-noreferrer": "^1.0.7",
     "prettier": "2.0.5",
     "sharp": "^0.25.3",
     "tailwindcss": "^1.4.6"
