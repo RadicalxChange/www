@@ -13,7 +13,6 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "autoprefixer": "^9.8.0",
-    "cssnano": "^4.1.10",
     "htmlnano": "^0.2.6",
     "js-beautify": "^1.11.0",
     "js-yaml": "^3.14.0",
@@ -27,8 +26,6 @@
     "postcss-nesting": "^7.0.1",
     "postcss-prettify": "^0.3.4",
     "posthtml": "^0.13.1",
-    "posthtml-beautify": "^0.7.0",
-    "posthtml-tidy": "^0.8.0",
     "prettier": "2.0.5",
     "sharp": "^0.25.3",
     "tailwindcss": "^1.4.6"
