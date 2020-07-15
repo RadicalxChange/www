@@ -3,6 +3,8 @@ const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
 const fs = require("fs");
 const { DateTime } = require("luxon");
+const posthtml = require("posthtml");
+const beautifyHtml = require("js-beautify").html;
 
 module.exports = function (config) {
   const isDev = process.env.RXC_DEV === "true";
@@ -76,6 +78,21 @@ module.exports = function (config) {
   config.addPassthroughCopy("./src/site/files");
   config.addPassthroughCopy("./src/site/_redirects");
   config.addPassthroughCopy("./src/site/_headers");
+
+  // Optimize HTML
+  config.addTransform("posthtml", async function (content, outputPath) {
+    if (outputPath.endsWith(".html")) {
+      const posthtmlPipeline = [require("htmlnano")()];
+      const { html } = await posthtml(posthtmlPipeline).process(content);
+
+      if (isDev) {
+        return beautifyHtml(html, { indent_size: 2 });
+      } else {
+        return html;
+      }
+    }
+    return content;
+  });
 
   // Browsersync to serve 404
   config.setBrowserSyncConfig({
