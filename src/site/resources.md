@@ -92,8 +92,6 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - David Quarfoot et al., “[Quadratic Voting in the Wild](http://www.sci.sdsu.edu/crmse/msed/papers/Quarfoot2.pdf)”
 
-- Jennifer Lyn Morone, [Jennifer Lyn Morone, Inc](https://vimeo.com/98300179), “[Data Workers of the World, Unite](https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite)“
-
 - Simon de la Rouviere, “[This Artwork Is Always On Sale](https://medium.com/@simondlr/this-artwork-is-always-on-sale-92a7d0c67f43)“
 
 <h2 id="general-works">General Works</h2>
@@ -250,6 +248,8 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Michael Haupt, “[Introducing Personal Data Exchanges and the Personal Data Economy](https://medium.com/project-2030/what-is-a-personal-data-exchange-256bcd5bf447)”
 
+- Jennifer Lyn Morone, [Jennifer Lyn Morone, Inc](https://vimeo.com/98300179), “[Data Workers of the World, Unite](https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite)“
+
 <h2 id="entrepreneurship-technology">Entrepreneurship + Technology</h2>
 
 - Eric Ries, **The Lean Startup**, Introduction
@@ -283,6 +283,8 @@ _The following blog posts, white papers and artworks are indicative of some of t
 - Robert Skidelsky, **John Maynard Keynes: 1883-1946**, Chapter 28 and Epilogue
 
 - Jennifer Burns, **Goddess of the Market**, Introduction, Chapter 9 and Epilogue
+
+- Jennifer Lyn Morone, [Jennifer Lyn Morone, Inc](https://vimeo.com/98300179), “[Data Workers of the World, Unite](https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite)“
 
 <h2 id="activism-government">Activism + Government</h2>
 
