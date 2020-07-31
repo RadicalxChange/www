@@ -3,6 +3,7 @@ tags: blog
 layout: layouts/blog-post.njk
 date: "2020-07-15"
 title: "The Themes of the 2020 RadicalxChange Conference"
+slug: "the-themes-of-the-2020-radicalxchange-conference-a-curated-playlists-of-conference-content"
 description: "With almost 100 talks and panels, over 200 speakers, and 48 hours of material, it can be hard to know where to start watching the RadicalxChange conference. That’s why we’ve divided the talks into the major themes of the conference below, so that you can watch them as collections."
 postHeader: "The Themes of the 2020 RadicalxChange Conference: A Curated Playlists of Conference Content"
 postAuthor: "Avital Balwit"
