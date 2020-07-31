@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Kenya - RadicalxChange"
+title: "Kenya"
 headerText: "Nairobi, Kenya"
 city: "Nairobi"
 country: "Kenya"

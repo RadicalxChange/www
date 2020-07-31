@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Amsterdam, Netherlands - RadicalxChange"
+title: "Amsterdam, Netherlands"
 headerText: "Amsterdam, Netherlands"
 city: "Amsterdam"
 country: "Netherlands"

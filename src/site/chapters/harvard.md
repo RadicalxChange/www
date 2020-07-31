@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Harvard - RadicalxChange"
+title: "Harvard"
 headerText: "Harvard University"
 city: "Harvard University"
 country: "United States"
