@@ -20,7 +20,7 @@ pagination:
         <a class="block" href="{{ item.href }}">
           <p><span class="inline-link">{{ item.title }} </span></a
         ></p>
-        <p class="text-sm lg:text-lg/sm"><span>{{ item.date | readableDate }}</span><span>&nbsp;- {{ item.publication }}</span></p>
+        <p class="text-sm lg:text-lg/sm"><span>{{ item.date | readableDate }}</span><span>&nbsp;/ {{ item.publication }}</span></p>
         <p></p>
       </li>
       {% endfor -%}
