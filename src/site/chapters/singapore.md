@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Singapore - RadicalxChange"
+title: "Singapore"
 headerText: "Singapore"
 city: "Singapore"
 country: "Singapore"

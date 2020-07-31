@@ -1,6 +1,6 @@
 ---
 layout: layouts/md.njk
-title: About - RadicalxChange
+title: About
 headerText: About
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: layouts/md.njk
-title: Resources - RadicalxChange
+title: Resources
 headerText: Resources
 ---
 

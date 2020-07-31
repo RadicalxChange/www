@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "MIT - RadicalxChange"
+title: "MIT"
 headerText: "MIT"
 city: "MIT"
 country: "United States"

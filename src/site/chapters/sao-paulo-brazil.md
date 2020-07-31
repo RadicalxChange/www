@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Sao Paulo, Brazil - RadicalxChange"
+title: "Sao Paulo, Brazil"
 headerText: "Sao Paulo, Brazil"
 city: "Sao Paulo"
 country: "Brazil"
@@ -13,6 +13,7 @@ contactOrganizer: "https://twitter.com/rxcBrasil"
 twitter: "rxcBrasil"
 foundingYear: "2019"
 ---
+
 This RadicalxChange chapter aims to grow a community with a shared vocabulary to interrogate and build upon economic proposals for a collective yet decentralized society. Not shy of challenging long-established social institutions, this chapter seeks to chart a speculative trajectory of what may take their place.
 
 We host monthly discussions and presentations on topics of members’ choosing, gravitating toward working groups to build and experiment with operational tools to test our hypotheses.

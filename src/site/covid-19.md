@@ -1,6 +1,6 @@
 ---
 layout: layouts/md.njk
-title: COVID-19 - RadicalxChange
+title: COVID-19
 headerText: Roadmap to Pandemic Resilience
 ---
 

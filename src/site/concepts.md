@@ -1,6 +1,6 @@
 ---
 layout: layouts/md.njk
-title: Concepts - RadicalxChange
+title: Concepts
 headerText: Concepts
 ---
 

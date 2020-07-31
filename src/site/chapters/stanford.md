@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Stanford - RadicalxChange"
+title: "Stanford"
 headerText: "Stanford University"
 city: "Stanford University"
 country: "United States"

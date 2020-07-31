@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Bangalore, India - RadicalxChange"
+title: "Bangalore, India"
 headerText: "Bangalore, India"
 city: "Bangalore"
 country: "India"

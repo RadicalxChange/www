@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "University of Oxford - RadicalxChange"
+title: "University of Oxford"
 headerText: "University of Oxford"
 city: "University of Oxford"
 country: "England"

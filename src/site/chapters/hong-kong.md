@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Hong Kong - RadicalxChange"
+title: "Hong Kong"
 headerText: "Hong Kong"
 city: "Hong Kong"
 coordinates:

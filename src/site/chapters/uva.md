@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "University of Virginia - RadicalxChange"
+title: "University of Virginia"
 headerText: "University of Virginia"
 city: "University of Virginia"
 country: "United States"
