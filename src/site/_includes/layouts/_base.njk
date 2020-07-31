@@ -61,7 +61,9 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <!-- prettier-ignore -->
     {% endblock %}
-    <title>{{ title }}</title>
+    <title>
+      {{ title + " - RadicalxChange" if title else "RadicalxChange"}}
+    </title>
   </head>
   <!-- prettier-ignore -->
   <body class="font-body font-normal text-base lg:text-lg/base leading-snug {{ bodyBg }}">

@@ -1,6 +1,6 @@
 ---
 layout: layouts/md.njk
-title: Conferences - RadicalxChange
+title: Conferences
 headerText: Conferences
 ---
 

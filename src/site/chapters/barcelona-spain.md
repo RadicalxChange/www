@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Barcelona, Spain - RadicalxChange"
+title: "Barcelona, Spain"
 headerText: "Barcelona, Spain"
 city: "Barcelona"
 country: "Spain"

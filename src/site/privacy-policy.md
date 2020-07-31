@@ -1,6 +1,6 @@
 ---
 layout: layouts/md.njk
-title: Privacy Policy - RadicalxChange
+title: Privacy Policy
 headerText: Privacy Policy
 ---
 

@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Honduras - RadicalxChange"
+title: "Honduras"
 headerText: "Honduras"
 city: "Honduras"
 country: "Honduras"

@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Princeton University - RadicalxChange"
+title: "Princeton University"
 headerText: "Princeton University"
 city: "Princeton University"
 country: "United States"

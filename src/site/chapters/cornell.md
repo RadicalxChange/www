@@ -1,7 +1,7 @@
 ---
 tags: chapter
 layout: "layouts/chapter.njk"
-title: "Cornell - RadicalxChange"
+title: "Cornell"
 headerText: "Cornell University"
 city: "Cornell University"
 country: "United States"
