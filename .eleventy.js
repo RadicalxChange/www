@@ -19,13 +19,14 @@ module.exports = function (config) {
   // Support rendering data to markdown
   let markdown = markdownIt({
     html: true,
-    typographer: true,
     linkify: true,
+    typographer: true,
   })
     .use(require("markdown-it-anchor"), {
       slugify: uslug,
     })
-    .use(require("markdown-it-toc-done-right"), { slugify: uslug });
+    .use(require("markdown-it-toc-done-right"), { slugify: uslug })
+    .use(require("markdown-it-footnote"));
   config.setLibrary("md", markdown);
   config.addFilter("markdown", (value) => markdown.render(value));
 
