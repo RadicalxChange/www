@@ -5,6 +5,7 @@ const fs = require("fs");
 const { DateTime } = require("luxon");
 const posthtml = require("posthtml");
 const beautifyHtml = require("js-beautify").html;
+const uslug = require("uslug");
 
 module.exports = function (config) {
   const isDev = process.env.RXC_DEV === "true";
@@ -18,8 +19,14 @@ module.exports = function (config) {
   // Support rendering data to markdown
   let markdown = markdownIt({
     html: true,
+    typographer: true,
     linkify: true,
-  });
+  })
+    .use(require("markdown-it-anchor"), {
+      slugify: uslug,
+    })
+    .use(require("markdown-it-toc-done-right"), { slugify: uslug });
+  config.setLibrary("md", markdown);
   config.addFilter("markdown", (value) => markdown.render(value));
 
   // Support YAML for data

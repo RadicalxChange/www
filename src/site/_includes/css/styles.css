@@ -2,6 +2,7 @@
 
 /* Custom fonts */
 @import "./fonts.css";
+@import "./global.css";
 
 @import "tailwindcss/components";
 

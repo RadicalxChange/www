@@ -71,11 +71,11 @@
   }
 
   ul {
-    @apply list-inside list-disc;
+    @apply list-outside list-disc;
+    padding-left: 1em;
   }
 
   ul ul {
-    @apply list-disc;
     @apply ml-lg;
 
     @screen lg {
@@ -83,12 +83,17 @@
     }
   }
 
-  ul ul ul {
-    @apply list-disc;
+  ol {
+    counter-reset: ol-item;
   }
 
-  ol {
-    @apply list-inside list-decimal;
+  ol li {
+    display: block;
+    counter-increment: ol-item;
+  }
+
+  ol li:before {
+    content: counter(ol-item) ". ";
   }
 
   ol ol {
