@@ -32,7 +32,7 @@ Keep the `tags` and `layout` fields as shown above. Edit the following fields fo
 
 ## Draft the blog post
 
-Under the metadata, blog post content is written in [Markdown](https://www.markdownguide.org/cheat-sheet/).
+Blog post content is written in [Markdown](https://www.markdownguide.org/cheat-sheet/).
 
 We support:
 
@@ -98,14 +98,14 @@ Our Markdown is very customizable. Ask the tech lead if there's a Markdown langu
 
 To include an image in your blog post:
 
-1. Put your image at _src/site/\_images/blog/<descriptive-name-for-image>_. Use a descriptive name for your image to improve the SEO of your blog post! Something like `blockchain-mechanism-diagram.png` is much better than `image1.png`.
-2. Reference your image at the relative URL _/images/blog/<descriptive-name-for-image>_.
+1. Put your image at _src/site/\_images/blog/\<descriptive-name-for-image\>_. Use a descriptive name for your image to improve the SEO of your blog post. Something like `blockchain-mechanism-diagram.png` is much better than `image1.png`.
+2. Reference your image at the relative URL _/images/blog/\<descriptive-name-for-image\>_.
 
 ```
-![](/images/blog/<descriptive-name-for-image>)
+![](/images/blog/\<descriptive-name-for-image\>)
 ```
 
-3. If you are developing locally, you need to run `npm run build:images` before new images will be served.
+If you are developing locally, you need to run `npm run build:images` before new images will be served.
 
 ## Post the blog post
 
@@ -115,4 +115,4 @@ To post a blog post, merge your blog post onto `master` on GitHub. Netlify will 
 
 To edit a blog post, change any content you want and merge the changes back to `master` on GitHub. Netlify will notice new commits and deploy them.
 
-Do not change the title of a blog post! The title of a blog post is used to generate its permalink. If you change the title a blog post has been sitting online, you are probably breaking a link to that content from somewhere else (a tweet, another blog post, etc.). If you really must change the title of a post, you can add a `slug` key to the post metadata to override the permalink generation mechanism. This `slug` value should be the `slug` generated from the old title.
+Do not change the title of a blog post! The title of a blog post is used to generate its permalink. If you change the title a blog post has been online, you are probably breaking a link to that content from somewhere else (a tweet, another blog post, etc.). If you really must change the title of a post, you can add a `slug` key to the post metadata to override the generated permalink. The `slug` value should be the slug generated from the old title.
