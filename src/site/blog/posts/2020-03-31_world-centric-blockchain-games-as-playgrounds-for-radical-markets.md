@@ -14,7 +14,12 @@ In this article, I propose a new perspective for building blockchain games based
 
 To briefly summarize: world-centric design emphasizes game mechanics that create a dynamic and interesting world rather than game mechanics that serve the player experience. For example, the table below illustrates world-centric versions of common place game mechanics:
 
-<table><thead><tr><th>player-centric mechanics</th><th>world-centric mechanics</th></tr></thead><tbody><tr><td>replenishing resources</td><td>finite resources</td></tr><tr><td>revival</td><td>permanent death</td></tr><tr><td>fast travel</td><td>cartesian topology (no fast travel)</td></tr><tr><td>NPC marketplaces</td><td>player run marketplaces</td></tr></tbody></table>
+| player-centric mechanics | world-centric mechanics             |
+| ------------------------ | ----------------------------------- |
+| replenishing resources   | finite resources                    |
+| revival                  | permanent death                     |
+| fast travel              | cartesian topology (no fast travel) |
+| NPC marketplaces         | player run marketplaces             |
 
 Blockchain is an ideal environment for building world-centric games. Decentralization, self-sovereignty and code-as-law are foundational principles of the platform. Thus, the blockchain game experience is ultimately driven by the emergent reality of its code rather than the intentions of its developers.
 
