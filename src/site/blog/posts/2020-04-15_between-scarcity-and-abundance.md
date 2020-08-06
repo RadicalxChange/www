@@ -12,11 +12,11 @@ postAuthor: "Matt Prewitt"
 
 In a democracy, every citizen possesses an equal share of the state’s coercive power. They are thus entitled to equal control over the state’s coercive apparatus through voting:
 
-![](https://cdn-images-1.medium.com/max/1600/0*yJwnsgQo-Gg2WoV5)
+<img src="https://cdn-images-1.medium.com/max/1600/0*yJwnsgQo-Gg2WoV5" class="border-none" />
 
 However, the same citizens possess unequal shares of the society’s total wealth:
 
-![](https://cdn-images-1.medium.com/max/1600/0*C3InL0LA5RJANn6Z)
+<img src="https://cdn-images-1.medium.com/max/1600/0*C3InL0LA5RJANn6Z" class="border-none" />
 
 Democracies with a capitalist ethos see nothing to worry about in this mismatch. This follows from two widely-accepted premises.
 
@@ -35,11 +35,11 @@ To illustrate, suppose you were an absolute dictator. On paper, you would have 1
 
 Thus, in spite of your absolute formal authority — and even if your intentions and your management skills were excellent — large amounts of ill-informed, uncontrolled, or otherwise [akratic](https://en.wikipedia.org/wiki/Akrasia) government action would happen on your watch:
 
-![](https://cdn-images-1.medium.com/max/1600/0*-dIh9sW_rdcL69p0)
+<img src="https://cdn-images-1.medium.com/max/1600/0*-dIh9sW_rdcL69p0" class="border-none" />
 
 \[3\] Indeed, history is littered with examples of chaotic dictatorships running more or less out of anyone’s control:
 
-![](https://cdn-images-1.medium.com/max/1600/0*N7VlglqNjshFgcuH)
+<img src="https://cdn-images-1.medium.com/max/1600/0*N7VlglqNjshFgcuH" class="border-none" />
 
 The margin of akratic action thus represents room for growth in the “pie” of civil authority. This is true in either a dictatorship or a democracy. Thus, the control over the state apparatus that we exercise through voting does not draw upon a fixed-sum good.\[4\]
 
@@ -59,11 +59,11 @@ The second incorrect premise in capitalist democracies is that one person’s in
 
 In capitalist democracies, the equal distribution of civil power sits in mutual tension with the unequal distribution of financial power. Like two sides of a battery storing opposite charges, they want to equalize. Namely, rich people want to use their outsize wealth to buy outsize power over the government, and poor people want to exercise their equal civil powers to push their wealth closer to the average level.
 
-![](https://cdn-images-1.medium.com/max/1600/0*xNidEaKxLFC5WvH9)
+<img src="https://cdn-images-1.medium.com/max/1600/0*xNidEaKxLFC5WvH9" class="border-none" />
 
 However, again like a battery, there is a partition between these two distributions. We call this partition “legal rights”. Legal rights limit the extent to which each distribution can influence the other:
 
-![](https://cdn-images-1.medium.com/max/1600/0*i4CPRQImL9flu_d8)
+<img src="https://cdn-images-1.medium.com/max/1600/0*i4CPRQImL9flu_d8" class="border-none" />
 
 Loosely, we can speak of two different categories of legal rights: civil rights and property rights. Civil rights preserve our equal civil power. And property rights preserve our unequal financial power. There is another difference. Civil rights are unsellable, or “inalienable,” while property rights can be sold.
 
@@ -99,21 +99,21 @@ In sum, although one person’s wealth can grow without harming anyone else �
 
 When states change over time from being less controlled to more controlled, there is actually room for everyone to simultaneously increase their control over the state:
 
-![](https://cdn-images-1.medium.com/max/1600/0*uwa4reXneSxhPeiR)
+<img src="https://cdn-images-1.medium.com/max/1600/0*uwa4reXneSxhPeiR" class="border-none" />
 
 This shows that civil powers are not a zero sum game. Still, obviously, this does not mean we can arbitrarily increase one person’s power and expect it not to cannibalize the power of others:
 
-![](https://cdn-images-1.medium.com/max/1600/0*8GaDbW58oa-7NH6d)
+<img src="https://cdn-images-1.medium.com/max/1600/0*8GaDbW58oa-7NH6d" class="border-none" />
 
 For the sum total of everyone’s civil power is constrained by the limits of our information and social technology. In other words, the pie only grows when our governance gets smarter. Unless that happens, we cannot give power to Peter without taking it from Paul.
 
 Moreover, there are good reasons to think we get closer to the limits of what’s possible when we involve as many people as possible in power’s exercise, instead of concentrating it in a person, a party, or a handful of oligarchs.
 
-![](https://cdn-images-1.medium.com/max/1600/0*BikdtmuJY49HvPYj)
+<img src="https://cdn-images-1.medium.com/max/1600/0*BikdtmuJY49HvPYj" class="border-none" />
 
 Total wealth can also grow. But it, too, is practically constrained by limits to our labor, technology, and resources.
 
-![](https://cdn-images-1.medium.com/max/1600/0*J31Z0S_lmzEUR64m)
+<img src="https://cdn-images-1.medium.com/max/1600/0*J31Z0S_lmzEUR64m" class="border-none" />
 
 Because wealth is not a zero sum game, the unusual wealth of some may reflect their unusually valuable contributions to society — such as exceptionally hard work, or exceptional personal contributions to technologies that expanded the pie of total possible wealth. But given that most wealth creation processes are deeply social, there are probable limits to individual wealth concentration in a world of sound property rights. The extraordinary wealth concentrations we see in the world around us are, instead, mostly consequences of “unsound” private property claims — to things like land, natural resources, and data — which derive most of their value not from their owner’s contributions, but from rents on massively distributed network effects. These wealth concentrations stifle human potential by directly excluding people from the power and prosperity they are creating — just like authoritarian governance.
 
@@ -123,7 +123,7 @@ To solve these problems, we must set aside old assumptions about the privateness
 
 Earlier, I said that civil and financial power are prevented (at least in theory) from influencing each other by legal rights. To recapitulate: civil power may not be used to get other peoples’ wealth because of property rights. And because civil powers are granted at birth and unsellable, wealth may not be used to buy other peoples’ civil power.
 
-![](https://cdn-images-1.medium.com/max/1600/0*WTv9VW5-f5dprjZy)
+<img src="https://cdn-images-1.medium.com/max/1600/0*WTv9VW5-f5dprjZy" class="border-none" />
 
 But of course in real life, this partition is constantly crossed. Progressive taxes, for example, represent civil power interfering with financial power. Lobbying, campaign donations, and corruption represent the reverse.
 
@@ -135,7 +135,7 @@ And private demand from individuals aggregates into a “demand curve” for tha
 
 This, in a sense, is what quadratic voting deals with:
 
-![](https://cdn-images-1.medium.com/max/1600/0*nhKB3odotF7tHF6s)
+<img src="https://cdn-images-1.medium.com/max/1600/0*nhKB3odotF7tHF6s" class="border-none" />
 
 Notice, however, that the desirability of this presumes that all individuals are entitled to the exertions of civil and financial power that generate these supply and demand curves.
 
@@ -143,7 +143,7 @@ Let us now break that assumption. Suppose something changes based on a unilatera
 
 By casting civil power in terms of financial power, or vice versa, we can see clearly that the structure of that cost is not linear. It is quadratic, because the “deadweight” loss to society is given by the area of triangle, which increases as the square of the individual’s unilateral action:
 
-![](https://cdn-images-1.medium.com/max/1600/0*6zN5iFmL3mVUtpEY)
+<img src="https://cdn-images-1.medium.com/max/1600/0*6zN5iFmL3mVUtpEY" class="border-none" />
 
 If the blue voter is willing to pay society for that quadratic externality, however — either in money or in other votes — then why shouldn’t we allow it? Such payment transforms the second vote from an arrogation of power into a fair expression of it.
 

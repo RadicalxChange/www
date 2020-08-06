@@ -1,11 +1,6 @@
 # Redirect requests for the blog to the new blog domain
-/blog   https://blog.radicalxchange.org/
-/blog/* https://blog.radicalxchange.org/blog/:splat
-
-# Redirect requests for content under construction
-/rxc-events /under-construction
-/pt /under-construction
-/pt/* /under-construction
+# /blog   https://blog.radicalxchange.org/
+# /blog/* https://blog.radicalxchange.org/blog/:splat
 
 # Legacy redirects to help keep content alive
 /2020-annual-conference /2020-conference
