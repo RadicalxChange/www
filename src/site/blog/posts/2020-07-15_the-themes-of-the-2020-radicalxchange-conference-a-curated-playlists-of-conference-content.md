@@ -7,18 +7,19 @@ slug: "the-themes-of-the-2020-radicalxchange-conference-a-curated-playlists-of-c
 postHeader: "The Themes of the 2020 RadicalxChange Conference: A Curated Playlists of Conference Content"
 postAuthor: "Avital Balwit"
 ---
+
 With almost 100 talks and panels, over 200 speakers, and 48 hours of material, it can be hard to know where to start watching the RadicalxChange conference. That’s why we’ve divided the talks into the major themes of the conference below, so that you can watch them as collections.
 
 After such a wide ranging conference — covering everything from digital governance in Taiwan, to the art and philosophy of the absurd, to quadratic funding for the blockchain to racial justice in the US — many people, especially newcomers, are left with the question: what is RadicalxChange really about? Fortunately for our ideas, but unfortunately for our marketing, “transcending dichotomies,” “unleashing plurality,” and “imagining positive alternatives” do not lend themselves to simple summaries. But just because RadicalxChange is difficult to describe simply, does not mean we lack clear values, rigorous methods, or a rich vision for the future.
 
 In a slide from our first conference, before the RadicalxChange foundation even existed, we listed several bullet points that summarize our values and beliefs:
 
-*   Institutions can be redesigned for the better
-*   Rigorous methodology is useful
-*   Moral/social principles are important
-    *   You cannot successfully and legitimately design anything, from law, to new technology, to an incentive scheme, while ignoring the moral and political character of your community
-*   Diversity is essential
-    *   RadicalxChange includes a diversity of backgrounds (not just for justice, but also because it helps you cover your blind spots about the world), disciplines (you’ll notice RxC is made up of artists, technologists, activists, policy workers and more and has been from the beginning), political views, and more.
+- Institutions can be redesigned for the better
+- Rigorous methodology is useful
+- Moral/social principles are important
+  - You cannot successfully and legitimately design anything, from law, to new technology, to an incentive scheme, while ignoring the moral and political character of your community
+- Diversity is essential
+  - RadicalxChange includes a diversity of backgrounds (not just for justice, but also because it helps you cover your blind spots about the world), disciplines (you’ll notice RxC is made up of artists, technologists, activists, policy workers and more and has been from the beginning), political views, and more.
 
 To understand our vision and values, we recommend several resources: our president, Matt Prewitt, (as concisely as possible) summarizes our movement and values in this [blog post](https://blog.radicalxchange.org/blog/posts/2019-09-24-se9s34/), while founder Glen Weyl offers a longer introduction to our political philosophy [here](https://blog.radicalxchange.org/blog/posts/2019-12-30-gqx4th/). Of course, for longer resources we recommend our [Handbook](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf) which applies our key concepts to city/local policymaking, and [Radical Markets](http://radicalmarkets.com/), the book that began the movement.
 
@@ -26,22 +27,9 @@ Now, fourteen themed playlists. The ranking does not reflect importance, and mor
 
 Themes:
 
-1.  [Radical Democracy Reform](#radical-democracy-reform)
-2.  [Data Dignity](#data-dignity)
-3.  [Racial Justice](#racial-justice)
-4.  [Culture](#culture)
-5.  [Radical Art](#radical-art)
-6.  [Blockchain](#blockchain)
-7.  [Quadratic Finance](#quadratic-finance)
-8.  [Quadratic Voting](#quadratic-voting)
-9.  [SALSA/COST](#salsa)
-10.  [COVID19](#covid19)
-11.  [AI](#ai)
-12.  [Antitrust](#antitrust)
-13.  [Intersectional Social Data/Identity](#identity)
-14.  [Immigration](#immigration)
+[toc]
 
-### Radical Democracy Reform
+## Radical Democracy Reform
 
 From our [about page](https://www.radicalxchange.org/about/) “Democracy, too, could use an update. The principle of self-governance is one to which we are absolutely committed. But the voting protocols that we now use–largely inherited from the 18th century–lend themselves to serious problems. More modern voting methods can mitigate old challenges such as the oppression of minority groups and the outsize influence of zealous factions. Such reforms have the potential to enhance the legitimacy of democracy itself, restoring public faith in democracy as a system of governance, and revitalizing many institutions.” Our interests, and those of our speakers and community, goes beyond voting methods to encompass a host of creative and bold ways to improve democracy.
 
@@ -81,7 +69,7 @@ From our [about page](https://www.radicalxchange.org/about/) “Democracy, too, 
 
 [Embracing informality to revive bargaining and empower workers; Chen, Gauthier, Kari, Mar; RxC 2020](https://www.youtube.com/watch?v=7AJzaX5A0sc&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=69)
 
-### Data Dignity
+## Data Dignity
 
 “Data has become perhaps the most valuable commodity in the world – yet every day we give it away for free to large corporations and others who reap most of the rewards. We believe it’s time for a rethink. For us, generating data as we go through our daily lives is a kind of labor. Not only should it be compensated, but we should be able to collectively bargain for a fair data wage. That’s why we advocate for radically new data policies that both reflect this new environment and try to strike a better balance between the needs of a data economy and the interests of data producers,” from [Concepts](https://www.radicalxchange.org/concepts/). While paying data producers (us) for data is a key concept from _Radical Markets_, RadicalxChange is also interested in other methods of creating data dignity whether it be through legislative means or privacy preserving tech.
 
@@ -103,7 +91,7 @@ From our [about page](https://www.radicalxchange.org/about/) “Democracy, too, 
 
 [Data Driven Economy for All – Yakov Feygin, Brent Hecht, Hanlin Li, Nick Vincent – RxC 2020](https://www.youtube.com/watch?v=77SD6r2jVhw&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=50)
 
-### Racial Justice
+## Racial Justice
 
 One of RadicalxChange’s main aims is strengthening democracy, which requires a just society where humans are treated as possessing equal value. For too long, this has not been the reality for racial minorities in RxC’s home country, the United States. Among our [key values](https://www.radicalxchange.org/about/) are dignity, egalitarianism, and respect, and in that vein, we used our conference platform to discuss racial justice. While the talks below explicitly discuss racial justice, economic inequality and creating more fair voting systems that protect rights of minorities came up in the majority of our talks, panels, and workshops.
 
@@ -115,7 +103,7 @@ One of RadicalxChange’s main aims is strengthening democracy, which requires a
 
 [Race and Our Political Moment; Briana Agyemang, Ahmed Ahmed, Jermaine Johnson, Jessica Lynch; RxC 20](https://www.youtube.com/watch?v=GilhGBm9oKQ&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=59)
 
-### Culture
+## Culture
 
 RadicalxChange stretches past a set of mechanism designs, it is an approach towards life: a curiosity, interdisciplinarity, a belief that the world can be improved, concern for public goods, respect for empirical (not just theoretical) projects, collaboration, a practice of subsidiarity. These talks examine RadicalxChange ideas in this broader sense.
 
@@ -149,7 +137,7 @@ RadicalxChange stretches past a set of mechanism designs, it is an approach towa
 
 [Embracing informality to revive bargaining and empower workers; Chen, Gauthier, Kari, Mar; RxC 2020](https://www.youtube.com/watch?v=7AJzaX5A0sc&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=69)
 
-### Radical Art
+## Radical Art
 
 Art is central to the RadicalxChange movement: art makes a better world tangible. It fosters the creativity necessary to reach one, it creates the beauty and pleasure that makes living worthwhile. Art can also help actualize technical and abstract concepts like quadratic voting, SALSA, and quadratic finance.
 
@@ -165,7 +153,7 @@ Art is central to the RadicalxChange movement: art makes a better world tangible
 
 [Ways of Worldmaking: ReCognizing Possibilities – Kent, Knudston, Lai, Morone, Roth, Young – RxC 2020](https://www.youtube.com/watch?v=6aUz4atyg3s&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=62)
 
-### Blockchain
+## Blockchain
 
 From the beginning, there has been a large crossover between the RadicalxChange community and the Blockchain community. This is, in part, because some RxC ideas can be implemented with smart contracts and blockchain technology. More broadly, however, it is because the blockchain community is intensely cognizant of the importance of institutional design and well-structured incentives. Here, we highlight a few talks we believe will be of interest to that community, or those who want to learn about it.
 
@@ -179,7 +167,7 @@ From the beginning, there has been a large crossover between the RadicalxChange 
 
 [Democracy in the U.S. in the Age of Cryptography – Santiago Siri, Steven McKie – RxC 2020](https://www.youtube.com/watch?v=9d8zmkmfb68&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=33)
 
-### Quadratic Finance
+## Quadratic Finance
 
 “Funding public goods, like shared infrastructure or open-source software, is a key challenge for democratic communities – among other things because of the natural incentive for individuals to “free ride” on the funding others provide. Matching funds, where individual donations are matched by those from government or a philanthropic institution, are a great way to address the problem. But traditional matching approaches based on centralized actors often don’t reflect the real needs of a community. Quadratic Finance solves this by prioritizing projects based on the number of individual donations, not their size. Like quadratic voting, the aim is to better capture true sentiment and turn it into action,” from [Concepts](https://www.radicalxchange.org/concepts/).
 
@@ -187,7 +175,7 @@ From the beginning, there has been a large crossover between the RadicalxChange 
 
 [Quadratic Funding: Past, Present & Future – Kevin Owocki – RxC 2020](https://www.youtube.com/watch?v=6drlCDDT71c&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=13)
 
-### Quadratic Voting
+## Quadratic Voting
 
 “Democracy, whether in a country, community or local club, is about giving each individual a say. But current voting methods miss a lot of what people really think. Quadratic Voting is a new twist on voting that allows individuals to express not just their choice, but also how strongly they feel about it. It can be applied to almost any situation where a group needs to make a decision or prioritize options,” learn more on our [Concepts](https://www.radicalxchange.org/concepts/) page.
 
@@ -197,7 +185,7 @@ From the beginning, there has been a large crossover between the RadicalxChange 
 
 [Quadratic Voting at EthTurin – Giovanni di Lauro, Fanny Lakoubay, Matteo Tambussi, Victor Zscharnt](https://www.youtube.com/watch?v=-ZqIS_PCphI&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=66)
 
-### SALSA/COST and Radical Economic Reform
+## SALSA/COST and Radical Economic Reform
 
 One of RadicalxChange’s main aims is to “build a coherent and sustainable alternative to capitalism” which means we need to consider bold economic reforms. A key mechanism that could bring about this alternative is SALSA (previously called COST). From our [concepts page](https://www.radicalxchange.org/concepts/) where you can learn more about SALSA: “Private property is at the core of the capitalist system and has many advantages, not the least in incentivizing investment. But private ownership often puts owning before exchanging as well as profit before community. On the other hand, some socialists believe all property should be put to the most productive common purpose. But they struggle to identify what the most productive purpose is and to motivate people to pursue it. At RadicalxChange we think it’s possible to get the best of both approaches to property using a system called SALSA (Self-Assessed Licenses Sold via Auction). Under SALSA, everyone pays a tax on their property based on what they think it is worth – but must also agree to sell it to anyone willing to offer their self-assessed price. While it sounds radical at first, SALSA is a more coherent and sustainable way to govern the rights to possess finite resources. Its implications include a much more efficient use of resources, a better way of sharing common property, a fair wealth tax, and deeper economic equality.”
 
@@ -211,7 +199,7 @@ One of RadicalxChange’s main aims is to “build a coherent and sustainable al
 
 [The Role of Referrals in Inequality in Labor Markets – Nicole Immorlica, Emmanuel Midy – RxC 2020](https://www.youtube.com/watch?v=JP6pBGNnzLc&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=61)
 
-### COVID19
+## COVID19
 
 The ongoing pandemic has touched all of our lives — in minor ways, like disrupting conferences, and more major ones like losing loved ones and livelihoods. Covid19 was a reality that our conference had to adjust to in format (switching online) and in content. Unfortunately, the pandemic has revealed the weaknesses of many major institutions, whether social, political, or economic. RadicalxChange aims to redesign and reimagine institutions for the better, and the pandemic proved a tragic argument for our work.
 
@@ -227,7 +215,7 @@ The ongoing pandemic has touched all of our lives — in minor ways, like disrup
 
 [Restoring Data Dignity in COVID-19 – Vivian Chen, Hai-Ching Chang, Yahsin Huang – RxC 2020](https://www.youtube.com/watch?v=cWBpngNSWrc&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=71)
 
-### AI
+## AI
 
 RadicalxChange must reckon with artificial intelligence in the same way that the rest of the world must: as a set of technologies that are deeply affecting our political and economic life. When we discuss data dignity, we must recognize that much of our data is being used to train AI programs. When we discuss inequality, we must recognize that automation caused by AI may worsen it. AI can also be a tool to help us achieve our aims, and can perhaps support a more efficient, egalitarian, and just society.
 
@@ -237,13 +225,13 @@ RadicalxChange must reckon with artificial intelligence in the same way that the
 
 [Better Metrics, Shared Prosperity – B Cavello, Katya Klinova, Jonathan Stray – RxC 2020](https://www.youtube.com/watch?v=QuI8xocurf0&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=60)
 
-### Antitrust
+## Antitrust
 
 RadicalxChange focuses on creating more fair and efficient markets — and monopolies are anathema to that project. From our [Concepts page](https://www.radicalxchange.org/concepts/), “modern monopolies are often hidden, even from the monopolists themselves. Research has shown how large institutional investors in the US, who are the largest shareholders and hence owners of US corporations, often engage in harmful monopoly practices without realizing what they are doing. We think now is a good time for some radical new antitrust ideas: not to put a corset on markets, but rather to use market forces as a natural buffer against monopolistic distortions.” Outside of institutional investors, other private concentrations of power also pose serious problems from tech giants to labor monopsonies.
 
 [Big Tech Market Power and Democracy – Eben, Marinescu, Oliveira Dominguez, Schrepel – RxC 2020](https://www.youtube.com/watch?v=ZVdea7TUKXo&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=27)
 
-### Intersectional Social Data/Identity
+## Intersectional Social Data/Identity
 
 From our [Concepts page](https://www.radicalxchange.org/concepts/), “In a highly digital world, data has a value not only in terms of information but also in terms of identity. Yet identity on the Internet is today largely in the hands of tech companies and others. This problem is well known and has spurred a lot of research in decentralized, or user-controlled, digital identity. At RadicalxChange we welcome this work, but also want to take it further. We believe the identity of individuals, whether in the real or virtual world, is made up of the intersection of a person’s social, business and other relationships. Such Intersectional Social Data could be the key to developing new knowledge and trust networks that don’t rely on governments or tech companies, but rather grow and evolve organically as we go through our lives.” RadicalxChange focuses on transcending dichotomies, whether left/right, private/public, and allowing for a richer and more realistic understanding of the world. This means acknowledging the complex identities of our fellow beings.
 
@@ -253,7 +241,7 @@ From our [Concepts page](https://www.radicalxchange.org/concepts/), “In a high
 
 [Identity Politics as Elite Capture – Emmanuel Midy, Olúfẹ́mi O. Táíwò – RxC 2020](https://www.youtube.com/watch?v=iKCkzn0h-A8&list=PLV_W9wE6WVDjwfcaFTAB7UXoJLesgBdVU&index=31)
 
-### Immigration
+## Immigration
 
 RadicalxChange believes that immigration is just and efficient. The right to immigrate should be protected, and further avenues for immigration should be opened. The talks below explore this topic.
 

@@ -8,7 +8,8 @@
   ul,
   ol,
   blockquote,
-  p {
+  p,
+  hr {
     &:not(:last-child) {
       @apply mb-sm;
 
@@ -71,72 +72,34 @@
   }
 
   ul {
-    @apply list-inside list-disc;
-  }
-
-  ul ul {
-    @apply list-disc;
-    @apply ml-lg;
-
-    @screen lg {
-      @apply ml-lg/lg;
-    }
-  }
-
-  ul ul ul {
-    @apply list-disc;
+    @apply list-outside list-disc;
+    padding-left: 1.2em;
   }
 
   ol {
-    @apply list-inside list-decimal;
+    @apply list-outside list-decimal;
+    padding-left: 1em;
   }
 
-  ol ol {
-    list-style-type: upper-alpha;
-    @apply ml-lg;
-
-    @screen lg {
-      @apply ml-lg/lg;
-    }
-  }
-
-  ol ol ol {
-    list-style-type: upper-roman;
-  }
-
-  ol ol ol ol {
-    list-style-type: lower-alpha;
-  }
-
-  ol ol ol ol ol {
-    list-style-type: lower-roman;
-  }
-
-  ol ol ol ol ol ol {
-    list-style-type: lower-greek;
+  .list-aligned {
+    @apply list-inside;
+    padding-left: 0;
   }
 
   li {
     @apply mb-sm;
 
+    ul,
+    ol {
+      @apply mt-sm;
+
+      @screen lg {
+        @apply mt-lg/sm;
+      }
+    }
+
     @screen lg {
       @apply mb-lg/sm;
-    }
-  }
-
-  li ol {
-    @apply mt-sm;
-
-    @screen lg {
-      @apply mt-lg/sm;
-    }
-  }
-
-  li ul {
-    @apply mt-sm;
-
-    @screen lg {
-      @apply mt-lg/sm;
     }
   }
 
@@ -146,15 +109,10 @@
 
   blockquote {
     @apply italic;
-    @apply text-sm;
-
-    @screen lg {
-      @apply text-lg/sm;
-    }
   }
 
-  strong {
-    @apply font-medium;
+  p {
+    @apply break-words;
   }
 
   a:not(.animated-link) {

@@ -1,0 +1,1 @@
+This directory contains the typefaces used on our site. Use the [FontSquirrel Webfont Generator](http://www.fontsquirrel.com/tools/webfont-generator) to convert these into assets served to the browser. Make sure to use expert settings and to disable changes to vertical spacing.

@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Messer";
-  src: url("/fonts/MesserV2.0-Condensed.otf"),
-    url("/fonts/MesserV2.0-Condensed.woff") format("woff");
+  src: url("/fonts/messerv2.0-condensed-webfont.woff2") format("woff2"),
+    url("/fonts/messerv2.0-condensed-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,8 @@
 
 @font-face {
   font-family: "SuisseIntl-Book";
-  src: url("/fonts/SuisseIntl-Book.otf");
+  src: url("/fonts/suisseintl-book-webfont.woff2") format("woff2"),
+    url("/fonts/suisseintl-book-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -17,7 +18,8 @@
 
 @font-face {
   font-family: "SuisseIntl-Regular";
-  src: url("/fonts/SuisseIntl-Regular.otf");
+  src: url("/fonts/suisseintl-regular-webfont.woff2") format("woff2"),
+    url("/fonts/suisseintl-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
