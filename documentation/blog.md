@@ -102,7 +102,7 @@ To include an image in your blog post:
 2. Reference your image at the relative URL _/images/blog/\<descriptive-name-for-image\>_.
 
 ```
-![](/images/blog/\<descriptive-name-for-image\>)
+![](/images/blog/<descriptive-name-for-image>)
 ```
 
 If you are developing locally, you need to run `npm run build:images` before new images will be served.
