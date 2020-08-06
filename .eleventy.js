@@ -27,6 +27,7 @@ module.exports = function (config) {
     })
     .use(require("markdown-it-toc-done-right"), {
       slugify: uslug,
+      listClass: "list-aligned",
     })
     .use(require("markdown-it-footnote"));
   markdown.renderer.rules.footnote_block_open = () => `<hr/>\n<ol>\n`;
