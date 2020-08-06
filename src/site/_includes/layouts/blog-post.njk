@@ -1,5 +1,5 @@
 ---
-permalink: "blog/posts/{{ slug }}/index.html"
+permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
 ---
 
 <!-- prettier-ignore -->

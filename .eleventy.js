@@ -57,6 +57,16 @@ module.exports = function (config) {
     }
   });
 
+  // Default slugs
+  config.addFilter("defaultSlug", function (customSlug, title) {
+    console.log(`custom slug: ${customSlug} | title: ${title}`);
+    if (!customSlug) {
+      return uslug(title);
+    } else {
+      return customSlug;
+    }
+  });
+
   // Custom collections
   config.addCollection("groupedChapters", (collectionApi) => {
     function compareHeaderText(a, b) {
