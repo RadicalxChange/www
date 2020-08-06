@@ -71,77 +71,65 @@
   }
 
   ul {
-    @apply list-outside list-disc;
     padding-left: 1em;
-  }
 
-  ul ul {
-    @apply ml-lg;
+    li {
+      @apply relative block;
 
-    @screen lg {
-      @apply ml-lg/lg;
+      &:before {
+        @apply absolute top-0 left-0;
+        margin-left: -1em;
+        content: "•";
+      }
+    }
+
+    ul {
+      @apply ml-lg;
+
+      @screen lg {
+        @apply ml-lg/lg;
+      }
     }
   }
 
   ol {
     counter-reset: ol-item;
-  }
+    padding-left: 1.5em;
 
-  ol li {
-    display: block;
-    counter-increment: ol-item;
-  }
+    li {
+      @apply relative block;
+      counter-increment: ol-item;
 
-  ol li:before {
-    content: counter(ol-item) ". ";
-  }
-
-  ol ol {
-    list-style-type: upper-alpha;
-    @apply ml-lg;
-
-    @screen lg {
-      @apply ml-lg/lg;
+      &:before {
+        @apply absolute top-0 left-0;
+        margin-left: -1.5em;
+        content: counter(ol-item) ".";
+      }
     }
-  }
 
-  ol ol ol {
-    list-style-type: upper-roman;
-  }
+    ol {
+      @apply ml-lg;
 
-  ol ol ol ol {
-    list-style-type: lower-alpha;
-  }
-
-  ol ol ol ol ol {
-    list-style-type: lower-roman;
-  }
-
-  ol ol ol ol ol ol {
-    list-style-type: lower-greek;
+      @screen lg {
+        @apply ml-lg/lg;
+      }
+    }
   }
 
   li {
     @apply mb-sm;
 
+    ul,
+    ol {
+      @apply mt-sm;
+
+      @screen lg {
+        @apply mt-lg/sm;
+      }
+    }
+
     @screen lg {
       @apply mb-lg/sm;
-    }
-  }
-
-  li ol {
-    @apply mt-sm;
-
-    @screen lg {
-      @apply mt-lg/sm;
-    }
-  }
-
-  li ul {
-    @apply mt-sm;
-
-    @screen lg {
-      @apply mt-lg/sm;
     }
   }
 
@@ -152,6 +140,7 @@
   blockquote {
     @apply italic;
     @apply text-sm;
+    @apply break-words;
 
     @screen lg {
       @apply text-lg/sm;
@@ -159,10 +148,18 @@
   }
 
   strong {
-    @apply font-medium;
+    @apply font-semibold;
   }
 
   a:not(.animated-link) {
     text-decoration: underline;
+  }
+
+  hr {
+    @apply my-sm;
+
+    @screen lg {
+      @apply my-lg/sm;
+    }
   }
 }
