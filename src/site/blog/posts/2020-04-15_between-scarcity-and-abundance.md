@@ -93,7 +93,7 @@ As a shorthand, I call these “unsound” property rights. Wealth accruing from
 
 To further illustrate, imagine that a democratic state simply auctioned off its coercive (police and taxation) powers, so that the highest bidder could use them for private profit. Citizens could live under their new investor overlords, or emigrate. Whatever you think of this,\[7\] such a state is obviously no longer a democracy. And all unsound property rights are shades of that.
 
-In sum, although one person’s wealth can grow without harming anyone else — such as when labor is exchanged for money — this is not always how wealth accrues. Wealth from unsound property rights is a form of coercion — a leakage of public power into private hands. With fewer unsound property rights — for example, if more property rights were based on a system like [COST or SALSA](https://www.radicalxchange.org/concepts/) — the distribution of wealth would be vastly less unequal.
+In sum, although one person’s wealth can grow without harming anyone else — such as when labor is exchanged for money — this is not always how wealth accrues. Wealth from unsound property rights is a form of coercion — a leakage of public power into private hands. With fewer unsound property rights — for example, if more property rights were based on a system like [COST or SALSA](/concepts/) — the distribution of wealth would be vastly less unequal.
 
 ## Putting it all together
 

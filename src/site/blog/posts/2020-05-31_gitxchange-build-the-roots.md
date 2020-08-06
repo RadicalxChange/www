@@ -38,7 +38,7 @@ The other three challenges have a different, more creative format. Here, we want
 
 If you know any talented coders, project managers, or video producers, we would be delighted if you brought them in to these challenges!
 
-Further, we are looking forward to [RxCon](https://www.radicalxchange.org/2020-conference/) – our virtual annual conference from June 19th to 21st – where sponsors will have an opportunity to present their results of GitxChange and to give credit to the related hackers.
+Further, we are looking forward to [RxCon](/2020-conference/) – our virtual annual conference from June 19th to 21st – where sponsors will have an opportunity to present their results of GitxChange and to give credit to the related hackers.
 
 Let’s all come together at GitxChange and build the roots for cooperative plurality!
 
