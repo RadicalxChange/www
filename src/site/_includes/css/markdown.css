@@ -8,7 +8,8 @@
   ul,
   ol,
   blockquote,
-  p {
+  p,
+  hr {
     &:not(:last-child) {
       @apply mb-sm;
 
@@ -71,14 +72,14 @@
   }
 
   ul {
-    padding-left: 1.25em;
+    padding-left: 1.375em;
 
     li {
       @apply relative block;
 
       &:before {
         @apply absolute top-0 left-0;
-        margin-left: -1.25em;
+        margin-left: -1.375em;
         content: "•";
       }
     }
@@ -94,7 +95,7 @@
 
   ol {
     counter-reset: ol-item;
-    padding-left: 1.25em;
+    padding-left: 1.375em;
 
     li {
       @apply relative block;
@@ -102,7 +103,7 @@
 
       &:before {
         @apply absolute top-0 left-0;
-        margin-left: -1.25em;
+        margin-left: -1.375em;
         content: counter(ol-item) ".";
       }
     }
@@ -140,26 +141,13 @@
   blockquote {
     @apply italic;
     @apply text-sm;
-    @apply break-words;
 
     @screen lg {
       @apply text-lg/sm;
     }
   }
 
-  strong {
-    @apply font-semibold;
-  }
-
   a:not(.animated-link) {
     text-decoration: underline;
-  }
-
-  hr {
-    @apply my-sm;
-
-    @screen lg {
-      @apply my-lg/sm;
-    }
   }
 }

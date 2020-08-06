@@ -29,7 +29,7 @@ module.exports = function (config) {
       slugify: uslug,
     })
     .use(require("markdown-it-footnote"));
-  markdown.renderer.rules.footnote_block_open = () => `<ol>\n`;
+  markdown.renderer.rules.footnote_block_open = () => `<hr/>\n<ol>\n`;
   markdown.renderer.rules.footnote_block_close = () => `</ol>\n`;
   config.setLibrary("md", markdown);
   config.addFilter("markdown", (value) => markdown.render(value));
