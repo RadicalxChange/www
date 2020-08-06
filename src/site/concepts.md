@@ -35,10 +35,10 @@ Private property is at the core of the capitalist system and has many advantages
 
 For more on SALSA, we recommend:
 
-- [Between Abundance and Scarcity](https://blog.radicalxchange.org/blog/posts/between-scarcity-and-abundance/)
+- [Between Abundance and Scarcity](/blog/posts/between-scarcity-and-abundance/)
 - [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)
 - [The Handbook for Local Radical Democracy](/files/The_Handbook_for_Radical_Local_Democracy.pdf)
-- [Millennials, Zoomers, and SALSA: Just Radical Enough](https://blog.radicalxchange.org/blog/posts/millennials-zoomers-and-salsa-just-radical-enough/)
+- [Millennials, Zoomers, and SALSA: Just Radical Enough](/blog/posts/millennials-zoomers-and-salsa-just-radical-enough/)
 - [Reimagining Property](https://medium.com/blockchannel/reimagining-property-fbce9d3832a4)
 
 ## Data Dignity
@@ -57,10 +57,10 @@ In a highly digital world, data has a value not only in terms of information but
 
 For more on ISD, good places to start include:
 
-- [Intersectional Social Data](https://blog.radicalxchange.org/blog/posts/2019-10-24-uh78r5/)
-- [Motivating The Case for Decentralized Social Identity: Part One](https://blog.radicalxchange.org/blog/posts/2019-06-06-d4utdx/)
+- [Intersectional Social Data](/blog/posts/2019-10-24-uh78r5/)
+- [Motivating The Case for Decentralized Social Identity: Part One](/blog/posts/2019-06-06-d4utdx/)
 - [Motivating The Case for Decentralized Social Identity. Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42)
-- [Motivating The Case For Decentralized Social Identity: Part Three](https://blog.radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
+- [Motivating The Case For Decentralized Social Identity: Part Three](/blog/posts/2019-06-08-51kyu5/)
 
 ## Radical Antitrust
 

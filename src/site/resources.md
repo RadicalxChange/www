@@ -51,7 +51,7 @@ _As part of the evolving intellectual agenda of RadicalxChange, we see three eme
 
 - Nicole Immorlica et al., “[Verifying Identity as a Social Intersection](https://ssrn.com/abstract=3375436)“; Zoë Hitzig and E. Glen Weyl, “[A Crossroads, not an Island: A Response to Hanoch Dagan](https://ssrn.com/abstract=3306738)”
 
-- Lucas Geiger et al., “Motivating The Case For Decentralized Social Identity” [Part One](https://radicalxchange.org/blog/posts/2019-06-06-d4utdx/); [Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42); [Part Three](https://radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
+- Lucas Geiger et al., “Motivating The Case For Decentralized Social Identity” [Part One](/blog/posts/2019-06-06-d4utdx/); [Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42); [Part Three](/blog/posts/2019-06-08-51kyu5/)
 
 - Jennifer Lyn Morone, [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/) [Interview at time of workshop](https://vimeo.com/343629561) on The Scheme of Things; see also attached project description)
 
@@ -59,15 +59,15 @@ _As part of the evolving intellectual agenda of RadicalxChange, we see three eme
 
 _The following blog posts, white papers and artworks are indicative of some of the ways RadicalxChange ideas have been “translated” for different intellectual and social communities, and into blueprints for concrete action._
 
-- Matthew Prewitt, “[“A Basic Introduction to RadicalxChange](https://blog.radicalxchange.org/blog/posts/2019-09-24-se9s34/)” “[What Are Institutions?](https://radicalxchange.org/blog/posts/2019-08-02-lzi9ch/)“, “[Radical Markets And The Question Of Rational Design](https://radicalxchange.org/blog/posts/2018-12-20-bhi7zy/)“
+- Matthew Prewitt, “[“A Basic Introduction to RadicalxChange](/blog/posts/2019-09-24-se9s34/)” “[What Are Institutions?](/blog/posts/2019-08-02-lzi9ch/)“, “[Radical Markets And The Question Of Rational Design](/blog/posts/2018-12-20-bhi7zy/)“
 
-- Marina Finley et al., “[RadicalxChange Students: Fighting For Our Future](https://radicalxchange.org/blog/posts/2019-01-25-l76ehw/)“
+- Marina Finley et al., “[RadicalxChange Students: Fighting For Our Future](/blog/posts/2019-01-25-l76ehw/)“
 
-- E. Glen Weyl, “[What is RadicalxChange?](https://radicalxchange.org/blog/posts/2019-02-25-xjekue/)“, “[Why I Am Not A Technocrat](https://radicalxchange.org/blog/posts/2019-08-19-bv61r6/)“, “[Why I Am Not A Capitalist](https://radicalxchange.org/blog/posts/2019-01-14-j73qnz/)“, “[Why I Am Not A Nationalist](https://radicalxchange.org/blog/posts/2019-02-18-9qwoyc/)“, “[Why I Am Not A Statist](https://radicalxchange.org/blog/posts/2019-01-28-5ixa34/)“, “[Hope Is Not Enough To Redeem Statism](https://radicalxchange.org/blog/posts/2019-02-06-oha41s/)“, “[“The Political Philosophy of RadicalxChange”](https://blog.radicalxchange.org/blog/posts/2019-12-30-gqx4th/)”
+- E. Glen Weyl, “[What is RadicalxChange?](/blog/posts/2019-02-25-xjekue/)“, “[Why I Am Not A Technocrat](/blog/posts/2019-08-19-bv61r6/)“, “[Why I Am Not A Capitalist](/blog/posts/2019-01-14-j73qnz/)“, “[Why I Am Not A Nationalist](/blog/posts/2019-02-18-9qwoyc/)“, “[Why I Am Not A Statist](/blog/posts/2019-01-28-5ixa34/)“, “[Hope Is Not Enough To Redeem Statism](/blog/posts/2019-02-06-oha41s/)“, “[“The Political Philosophy of RadicalxChange”](/blog/posts/2019-12-30-gqx4th/)”
 
 - Erik Olin Wright, “[How to Be an Anticapitalist Today](https://www.jacobinmag.com/2015/12/erik-olin-wright-real-utopias-anticapitalism-democracy/)“
 
-- Audrey Tang and Sheau-Tyng Peng, “[“Quadratic Voting and Common Ownership Self-Assessed Tax”](https://blog.radicalxchange.org/blog/posts/2019-06-27-9ph1dk/)”
+- Audrey Tang and Sheau-Tyng Peng, “[“Quadratic Voting and Common Ownership Self-Assessed Tax”](/blog/posts/2019-06-27-9ph1dk/)”
 
 - Eric A. Posner and E. Glen Weyl, “[Democracy Squared](https://www.vanderbiltlawreview.org/2015/03/voting-squared-quadratic-voting-in-democratic-politics/)”
 

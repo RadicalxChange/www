@@ -7,7 +7,9 @@
   h4,
   ul,
   ol,
+  img,
   blockquote,
+  table,
   p,
   hr {
     &:not(:last-child) {
@@ -109,6 +111,28 @@
 
   blockquote {
     @apply italic;
+  }
+
+  table {
+    @apply table-auto;
+
+    th {
+      @apply px-sm pb-sm;
+      @screen lg {
+        @apply px-lg/sm pb-lg/sm;
+      }
+    }
+
+    td {
+      @apply px-sm py-sm;
+      @screen lg {
+        @apply px-lg/sm py-lg/sm;
+      }
+    }
+
+    td {
+      @apply border;
+    }
   }
 
   p {
