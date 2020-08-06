@@ -7,6 +7,7 @@ slug: "between-scarcity-and-abundance"
 postHeader: "Between Abundance and Scarcity"
 postAuthor: "Matt Prewitt"
 ---
+
 > This dense piece is not an easy read. But it will be of interest to those looking to explore the deeper connections between voting reform and property reform, and the tension at the heart of capitalist democracies.
 
 In a democracy, every citizen possesses an equal share of the state’s coercive power. They are thus entitled to equal control over the state’s coercive apparatus through voting:
@@ -19,12 +20,12 @@ However, the same citizens possess unequal shares of the society’s total wealt
 
 Democracies with a capitalist ethos see nothing to worry about in this mismatch. This follows from two widely-accepted premises.
 
-*   On the premise that no person’s control over the state can increase without decreasing another person’s → capitalist democracies “lock in” peoples’ civil equality
-*   On the premise that no person’s increasing wealth makes another person poorer → capitalist democracies let people diverge financially
+- On the premise that no person’s control over the state can increase without decreasing another person’s → capitalist democracies “lock in” peoples’ civil equality
+- On the premise that no person’s increasing wealth makes another person poorer → capitalist democracies let people diverge financially
 
 Unfortunately, both premises are wrong.
 
-### Civil power is not a zero sum game
+## Civil power is not a zero sum game
 
 Let’s start with the first premise.
 
@@ -42,7 +43,7 @@ Thus, in spite of your absolute formal authority — and even if your intent
 
 The margin of akratic action thus represents room for growth in the “pie” of civil authority. This is true in either a dictatorship or a democracy. Thus, the control over the state apparatus that we exercise through voting does not draw upon a fixed-sum good.\[4\]
 
-### Full control is impossible
+## Full control is impossible
 
 It bears emphasizing that “full control” over the state is always chimerical. Dictators, bureaucrats, and democratic citizens alike can approach it, but never finally seize it. This is a natural consequence of the fact that all humans — dictators, presidents, judges, police officers, and voters — operate with imperfect information.
 
@@ -52,7 +53,7 @@ Obviously democracy can be terribly dysfunctional and it is imperfect under the 
 
 But I digress. The main takeaway here is that all states have a problem with akratic action. That means, perhaps surprisingly, that the entire “pie” of civil powers can actually grow, not unlike the economy.\[6\]
 
-### Wealth is not an infinite sum game
+## Wealth is not an infinite sum game
 
 The second incorrect premise in capitalist democracies is that one person’s increasing wealth never makes another poorer. I do not want to spill much ink on this well-trodden ground, but I will sketch my argument briefly to show how it mirrors the previous point.
 
@@ -80,7 +81,7 @@ What if this is still true? Many on the political left see something dehumanizin
 
 The notion of property rights as “nobody’s business but their owner’s” is a romantic fiction. Wealth always depends on society’s willingness to protect it, yet in many cases it licenses extraordinary coercion within the same society. To be sure, property rights sometimes have positive externalities that outweigh their harms — but not always. A true democracy therefore cannot underwrite private property unquestioningly.
 
-### Property sound and unsound
+## Property sound and unsound
 
 In questioning the structure of property, we glimpse the ways that wealth building is not an infinite sum game. In fact, much of what people on the political left find distasteful about “markets” is much more clearly construed as objections to certain kinds of property rights. In other words, the problem is more in the “having” than the “exchanging”.
 
@@ -94,7 +95,7 @@ To further illustrate, imagine that a democratic state simply auctioned off its 
 
 In sum, although one person’s wealth can grow without harming anyone else — such as when labor is exchanged for money — this is not always how wealth accrues. Wealth from unsound property rights is a form of coercion — a leakage of public power into private hands. With fewer unsound property rights — for example, if more property rights were based on a system like [COST or SALSA](https://www.radicalxchange.org/concepts/) — the distribution of wealth would be vastly less unequal.
 
-### Putting it all together
+## Putting it all together
 
 When states change over time from being less controlled to more controlled, there is actually room for everyone to simultaneously increase their control over the state:
 
@@ -118,7 +119,7 @@ Because wealth is not a zero sum game, the unusual wealth of some may reflect th
 
 To solve these problems, we must set aside old assumptions about the privateness of wealth, and the finiteness of civil power. We need to think about the sources of “private” wealth as everyone’s business, and we need to think of participatory civil power as something that can grow like the economy.
 
-### Civil and financial power in terms of each other
+## Civil and financial power in terms of each other
 
 Earlier, I said that civil and financial power are prevented (at least in theory) from influencing each other by legal rights. To recapitulate: civil power may not be used to get other peoples’ wealth because of property rights. And because civil powers are granted at birth and unsellable, wealth may not be used to buy other peoples’ civil power.
 
@@ -150,12 +151,12 @@ Quadratic externalities likewise arise when people use their wealth to influence
 
 This is all far less shocking when we set aside the antiquated belief that financial power is a matter of exclusively private concern. It isn’t, and never really was. Both ballots and dollars represent claims on the state’s coercive power. It is no coincidence that they are both printed on government paper.
 
-### Conclusion
+## Conclusion
 
 I said that capitalist democracies rest on two premises:
 
-*   that no person’s control over the state can increase without decreasing another person’s
-*   that no person’s increasing wealth makes another person poorer
+- that no person’s control over the state can increase without decreasing another person’s
+- that no person’s increasing wealth makes another person poorer
 
 The first premise is wrong because individual increases in control over the state can flow from a diminution of uncontrolled or akratic state action, rather than a diminution of other peoples’ authority.
 
