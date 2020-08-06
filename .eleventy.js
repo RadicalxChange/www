@@ -26,12 +26,10 @@ module.exports = function (config) {
       slugify: uslug,
     })
     .use(require("markdown-it-toc-done-right"), {
-      listClass: "list-aligned",
       slugify: uslug,
     })
     .use(require("markdown-it-footnote"));
-  markdown.renderer.rules.footnote_block_open = () =>
-    `<ol class="list-aligned">\n`;
+  markdown.renderer.rules.footnote_block_open = () => `<ol>\n`;
   markdown.renderer.rules.footnote_block_close = () => `</ol>\n`;
   config.setLibrary("md", markdown);
   config.addFilter("markdown", (value) => markdown.render(value));

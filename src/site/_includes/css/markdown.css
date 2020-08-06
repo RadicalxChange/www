@@ -71,14 +71,14 @@
   }
 
   ul {
-    padding-left: 1em;
+    padding-left: 1.25em;
 
     li {
       @apply relative block;
 
       &:before {
         @apply absolute top-0 left-0;
-        margin-left: -1em;
+        margin-left: -1.25em;
         content: "•";
       }
     }
@@ -94,7 +94,7 @@
 
   ol {
     counter-reset: ol-item;
-    padding-left: 1.5em;
+    padding-left: 1.25em;
 
     li {
       @apply relative block;
@@ -102,7 +102,7 @@
 
       &:before {
         @apply absolute top-0 left-0;
-        margin-left: -1.5em;
+        margin-left: -1.25em;
         content: counter(ol-item) ".";
       }
     }
