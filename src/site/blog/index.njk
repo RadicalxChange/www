@@ -14,15 +14,17 @@ pagination:
 <!-- prettier-ignore -->
 {% block content %}
 <div>
-  <ol class="mb-base lg:mb-lg/base">
+  <ol
+    class="columns-3 column-base-gap lg:column-lg/base-gap mb-base lg:mb-lg/base"
+  >
     {% for post in blog %}
-    <li class="mb-base lg:mb-lg/base">
+    <li class="inline-block border p-base lg:p-lg/base mb-base lg:mb-lg/base">
       <a class="block" href="{{ post.url }}">
-        <p>
+        <p class="mb-sm lg:mb-lg/sm">
           <span class="inline-link">{{ post.data.postHeader }}</span>
         </p>
-        <p class="text-sm lg:text-lg/sm mb-sm lg:mb-lg/sm">
-          {{ post.data.date | readableDate }} / {{ post.data.postAuthor }}
+        <p class="text-xs lg:text-lg/xs">
+          {{ post.data.description | default("") }}
         </p>
       </a>
     </li>

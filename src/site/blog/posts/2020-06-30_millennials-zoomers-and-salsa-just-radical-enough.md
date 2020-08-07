@@ -6,6 +6,7 @@ title: "Millennials, Zoomers, and SALSA: Just Radical Enough"
 slug: "millennials-zoomers-and-salsa-just-radical-enough"
 postHeader: "Millennials, Zoomers, and SALSA: Just Radical Enough"
 postAuthor: "Avital Balwit"
+description: "There are few proposals where an undergraduate Marxist and the CEO of a high speed train company would see eye-to-eye, but Self Assessed Licenses Sold via Auction, or SALSA, (previously known as Common Ownership Self Assessed Tax, or COST) might be one of them. SALSA is an idea proposed in the first chapter of Glen Weyl and Eric Posner’s _Radical Markets_, and it was my, and many others, favorite chapter — but it was also the chapter most likely to be called impossible and “too radical” by readers."
 ---
 
 ### What is SALSA

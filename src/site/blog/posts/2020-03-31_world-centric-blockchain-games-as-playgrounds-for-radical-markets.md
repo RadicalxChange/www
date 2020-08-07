@@ -6,6 +6,7 @@ title: "World-Centric Blockchain Games as Playgrounds for Radical Markets"
 slug: "world-centric-blockchain-games-as-playgrounds-for-radical-markets"
 postHeader: "World-Centric Blockchain Games as Playgrounds for Radical Markets"
 postAuthor: "Peter Lu"
+description: "In this article, I propose a new perspective for building blockchain games based on world-centric game design. These games may serve as safe playgrounds for radical markets and inform real world policies."
 ---
 
 _The following post is adapted from [this repository](https://github.com/pdlla/WCBG) which tracks on-going development of the ideas presented here_

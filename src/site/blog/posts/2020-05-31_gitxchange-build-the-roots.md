@@ -6,6 +6,7 @@ title: "GitxChange: Build the Roots of Cooperative Plurality"
 slug: "gitxchange-build-the-roots"
 postHeader: "GitxChange: Build the Roots of Cooperative Plurality"
 postAuthor: "Leon Erichsen"
+description: "In its own, unconventional way, RadicalxChange is a hacker community. Convinced that the rules of omnipresent institutions like markets and democracy are outdated, we are on a mission to debunk the “rules” of human cooperation to unfold the true richness of our diversely shared lives."
 ---
 
 > _“To hack a system requires getting to know its rules better than the people who created it or are running it, and exploiting all the vulnerable distance between how those people had intended the system to work and how it actually works, or could be made to work. In capitalizing on these unintentional uses, hackers aren’t breaking the rules as much as debunking them.”_

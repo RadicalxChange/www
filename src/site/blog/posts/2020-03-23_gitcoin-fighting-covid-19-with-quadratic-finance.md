@@ -6,6 +6,7 @@ title: "Gitcoin Fighting COVID-19 With Quadratic Finance"
 slug: "gitcoin-fighting-covid-19-with-quadratic-finance"
 postHeader: "Gitcoin Fighting COVID-19 With Quadratic Finance"
 postAuthor: "Leon Erichsen"
+description: "On 11 March, the World Health Organization classified COVID-19 as a pandemic. The full social and economic repercussions of the spreading virus cannot yet be predicted, but it is clearly an unprecedented crisis that calls for a radical, open exchange of social as well as biomedical ideas."
 ---
 
 > _“The purpose of human life is to serve and to show compassion and the will to help others.”_

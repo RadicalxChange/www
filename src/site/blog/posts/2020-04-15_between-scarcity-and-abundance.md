@@ -6,6 +6,7 @@ title: "Between Abundance and Scarcity"
 slug: "between-scarcity-and-abundance"
 postHeader: "Between Abundance and Scarcity"
 postAuthor: "Matt Prewitt"
+description: "In a democracy, every citizen possesses an equal share of the state’s coercive power. They are thus entitled to equal control over the state’s coercive apparatus through voting. However, the same citizens possess unequal shares of the society’s total wealth. Democracies with a capitalist ethos see nothing to worry about in this mismatch."
 ---
 
 > This dense piece is not an easy read. But it will be of interest to those looking to explore the deeper connections between voting reform and property reform, and the tension at the heart of capitalist democracies.

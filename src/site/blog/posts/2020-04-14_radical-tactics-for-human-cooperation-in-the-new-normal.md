@@ -6,6 +6,7 @@ title: "Radical Tactics for Human Cooperation in the New Normal"
 slug: "radical-tactics-for-human-cooperation-in-the-new-normal"
 postHeader: "Radical Tactics for Human Cooperation in the New Normal"
 postAuthor: "Leon Erichsen, Ryan Khurana"
+description: "The COVID-19 pandemic currently sweeping the planet has revealed significant weaknesses in the institutional capacity of governments and private actors to respond to threats in a globalized context. The causal mechanisms by which zoonotic viruses spread make humanity highly susceptible to these outbreaks in the future. From the vast increase in meat consumption fuelled by expansive and interconnected animal supply chains, to daily global travel and high urban density, we have brought about a new normal in which a viral leap from animal to human affects all of humanity."
 ---
 
 The COVID-19 pandemic currently sweeping the planet has revealed significant weaknesses in the institutional capacity of governments and private actors to respond to threats in a globalized context. The causal mechanisms by which zoonotic viruses spread make humanity [highly susceptible](http://nautil.us/issue/83/intelligence/the-man-who-saw-the-pandemic-coming) to these outbreaks in the future. From the vast increase in meat consumption fuelled by expansive and interconnected animal supply chains, to daily global travel and high urban density, we have brought about a new normal in which a viral leap from animal to human affects all of humanity.

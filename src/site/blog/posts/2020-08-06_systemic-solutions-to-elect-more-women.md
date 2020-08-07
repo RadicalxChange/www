@@ -5,6 +5,7 @@ date: "2020-08-06"
 title: "Systemic Solutions To Elect More Women"
 postHeader: "Systemic Solutions To Elect More Women"
 postAuthor: "Angela Nguyen, Paul Healy"
+description: "Our country’s failure to create gender equality in politics is on stark display as American voters consider which septuagenarian white man to elect in November. The failed candidacies of several high-profile women in the Democratic primary reminds us that the U.S. lags behind peer countries in female representation in politics."
 ---
 
 ## The Problem

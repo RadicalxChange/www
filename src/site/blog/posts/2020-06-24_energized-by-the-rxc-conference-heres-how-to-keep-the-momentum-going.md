@@ -6,6 +6,7 @@ title: "Energized by the RxC Conference? Here’s How to Keep the Momentum Going
 slug: "energized-by-the-rxc-conference-heres-how-to-keep-the-momentum-going"
 postHeader: "Energized by the RxC Conference? Here’s How to Keep the Momentum Going"
 postAuthor: "Avital Balwit"
+description: "The RadicalxChange 2020 conference concluded this past Sunday after a rich and full 48 hours of talks, panels, and workshops. After a conference it’s common to be filled with excitement and inspiration, but have no clear avenue for them. We are pleased to say that you don’t simply have to wait for next year’s RxC conference to stay engaged."
 ---
 
 The RadicalxChange 2020 conference concluded this past Sunday after a rich and full 48 hours of talks, panels, and workshops. After a conference it’s common to be filled with excitement and inspiration, but have no clear avenue for them. We are pleased to say that you don’t simply have to wait for next year’s RxC conference to stay engaged.
