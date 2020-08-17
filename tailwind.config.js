@@ -37,7 +37,7 @@ module.exports = {
     fontFamily: {
       display: ["Messer", "san-serif"],
       button: ["SuisseIntl-Book", "sans-serif"],
-      body: ["SuisseIntl-Regular", "sans-serif"],
+      body: ["SuisseIntl", "sans-serif"],
     },
     colors: {
       "golden-fizz": { 100: "#EEFD4E" },
