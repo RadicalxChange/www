@@ -27,6 +27,7 @@ Here is a growing body of materials and tools to learn from and work with.
 - [Rethinking Public Purchasing](/files/RxC-Radically-Rethinking-Public-Purchasing.pdf)
 - [Data Freedom Act](/files/DFA.pdf)
 - [Handbook for Local Democracy](/files/The_Handbook_for_Radical_Local_Democracy.pdf)
+- [Data Dividends Working Paper](https://static1.squarespace.com/static/5eb30048c98c762441262901/t/5f30ceccc4e1bc5531496bbd/1597034189825/report.pdf)
 
 <h2 id="ideas-research">Ideas + Research</h2>
 
