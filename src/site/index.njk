@@ -45,6 +45,24 @@ supporters:
     href: "https://www.theosafoundation.org/"
   - name: Alfred P. Sloan Foundation
     href: "https://sloan.org/"
+eventDescription: |
+  ## RxC in the Wild: Social Upgrades in Colorado and Taiwan
+
+  August 26, 2020, 12 - 1PM EDT
+
+  What are recent achievements of the RadicalxChange movement? A glance at the communities in Colorado and Taiwan demonstrates that people there are already living the social change that we hope for. Join the conversation with the key people behind this momentum and learn from their experiences - ranging from Quadratic Funding and Voting applications for local causes in Colorado to Taiwan's deliberative, civic hacker culture.
+eventDetails: |
+  ### Speakers
+
+  Ben Henderson is the Director of Operations and Cabinet Affairs for Governor Polis. Graduating with his Masters in Public Administration from Arizona State University, Ben has spent his career focusing on improving social outcomes using math and science. He began his career as a Fiscal Analyst for the Arizona Legislature, worked in community and economic development for downtown Phoenix, and subsequently served as the Deputy COO for Governor Doug Ducey where he helped design and implement the Arizona Management System. Most recently Ben served as the Deputy Director for Budget in the Colorado Office of State Planning and Budgeting before taking on his current role. He currently lives in Denver with his dog and girlfriend and enjoys hiking and marching band.
+
+  Yahsin Huang is the marketing manager at Diode. She covers impacts of emerging technologies, especially blockchain, for various media outlets, such as Make magazine, TechLife magazine, Business Next, Meet Startup, Thinking Taiwan, Blockcast.it, BlockTempo, and Hacker Noon. Notable works are her tech reports of DevCon in Prague, Czech Republic, and EDCON in Sydney, Australia. In 2016, Yahsin helped start the Taipei Ethereum Meetup community. In 2019, Yahsin founded the RadicalxChange Taipei chapter. She has a bachelor’s degree in English literature from National Dong Hwa University.
+
+  Kevin Owocki is the founder of Gitcoin.co -- a blockchain-based network for growing open source software with incentivization mechanics. He has a BS in Computer Science, 10 years of engineering leadership experience in startups and Open Source Software, and is a community organizer in the Boulder Colorado Tech Scene. Kevin believes strongly that Open Source Software Development should be sustainably funded. Gitcoin is a one-stop shop that gives Software Developers the skills & connections to survive and thrive in this new blockchain ecosystem. You can find out more about Gitcoin at https://gitcoin.co and Kevin at [https://owocki.com](https://owocki.com)
+
+  ### Moderator
+
+  Marko-Luka Zubčić is a research associate of Center for Advanced Studies - South East Europe of University of Rijeka. His research focus is institutional epistemology, an interdisciplinary study of epistemic properties of institutional systems He also works in policy research and development, with particular focus on food policy (having collaborated extensively on the design and development of the “food network” in Croatia) and creative and cultural industries policy, and recently focusing in particular on research and development of collective intelligence systems for purposes of better institutional problem-solving. He has worked on project management and program development for public institutions and non-governmental agencies. He works as a communications consultant and copywriter for non-governmental and the private sector. He is currently collaborating with RadicalxChange.
 ---
 
 <!-- prettier-ignore -->
@@ -69,7 +87,26 @@ supporters:
   {% endcall %}
   <!-- prettier-ignore -->
   {% call header.render(width="w-full") %}
-  <div>dope</div>
+  <div class="flex flex-col lg:flex-row lg:mt-lg/lg">
+    <div class="relative lg:w-span7 pb-base lg:pb-0 lg:pr-lg/base">
+      <div class="lg:sticky lg:top-0 twitch-container">
+        <iframe
+          src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=localhost"
+          frameborder="0"
+          allowfullscreen="true"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </div>
+    <div class="lg:w-span5 lg:pl-lg/base">
+      <div class="md-container mb-base lg:mb-lg/base">
+        {{ eventDescription | markdown | safe }}
+      </div>
+      <div class="md-container mb-lg lg:mb-0" data-read-more>
+        {{ eventDetails | markdown | safe }}
+      </div>
+    </div>
+  </div>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
@@ -139,6 +176,21 @@ supporters:
 {% endcall %}
 <!-- prettier-ignore -->
 {% endcall %}
+<script>
+  $("[data-read-more]").each(function () {
+    const thisReadMore = $(this);
+
+    const clone = thisReadMore.clone();
+    const button = $(`<a href="#" class="animated-link">Read more</a>`).click(
+      function (event) {
+        event.preventDefault();
+        $(this).replaceWith(clone);
+      }
+    );
+
+    thisReadMore.replaceWith(button);
+  });
+</script>
 <script>
   // prettier-ignore
   {% include "components/nav.js" %}
