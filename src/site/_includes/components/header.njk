@@ -1,8 +1,8 @@
 <!-- prettier-ignore -->
-{% macro render(title="", height="min-h-screen lg:min-h-tall lg-tall:min-h-screen") %}
+{% macro render(title="", width="w-full lg:w-span7", height="min-h-screen lg:min-h-tall lg-tall:min-h-screen") %}
 <header class="bg-golden-fizz-100" data-header>
   <div
-    class="flex flex-col justify-between w-full lg:w-span7
+    class="flex flex-col justify-between {{ width }}
     {{ height }} py-base lg:py-lg/xl px-base lg:pr-lg/base lg:pl-lg/lg"
   >
     <!-- prettier-ignore -->
@@ -55,6 +55,8 @@
     <!-- prettier-ignore -->
     {% endif %}
   </div>
+  <!-- prettier-ignore -->
+  {{ caller() }}
 </header>
 <!-- prettier-ignore -->
 {% endmacro %}

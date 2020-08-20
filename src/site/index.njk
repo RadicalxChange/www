@@ -64,63 +64,13 @@ supporters:
 
 <main>
   <!-- prettier-ignore -->
-  {% call nav.render(true, true) %}
-  <a class="save-the-date_container" href="/2020-conference/replay">
-    <div class="save-the-date_oval">
-      <div class="relative">
-        <span
-          class="save-the-date_text save-the-date_filled"
-          aria-hidden="true"
-        >
-          Thank you!
-        </span>
-        <span class="save-the-date_text save-the-date_stroked">
-          Thank you!
-        </span>
-      </div>
-    </div>
-    <div>
-      <p class="mb-lg/base">
-        Thank you for a great RadicalxChange Annual Conference. See you next
-        year!
-      </p>
-      <p><span class="animated-link">Watch the replay</span></p>
-    </div>
-  </a>
+  {% call nav.render(false) %}
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call header.render("") %}
-  <div>
-    <div class="block lg:hidden md-container mb-base lg:mb-0">
-      <h1>Thank you</h1>
-      <p>
-        Thank you for a great RadicalxChange Annual Conference. See you next
-        year!
-      </p>
-      <p>
-        <a href="/2020-conference/replay" class="animated-link"
-          >Watch the replay</a
-        >
-      </p>
-    </div>
-    <div class="md-container">
-      <h1 class="lg:hidden">Recent updates</h1>
-      <p>
-        We stand with #BlackLivesMatter.&nbsp;<br class="lg:hidden" />We
-        celebrate #GlobalPride2020.<br class="lg:hidden" />
-      </p>
-      <p>
-        RadicalxChange Foundation is an Institutional Affiliate on the Roadmap
-        to Pandemic Resistance, the latest report by the Edmond J. Safra Center
-        on ending COVID-19 quarantine via Testing, Tracing, & Supported
-        Isolation (#TTSI).
-      </p>
-      <p>
-        <a class="animated-link" href="/covid-19">Read more</a>
-      </p>
-    </div>
-  </div>
+  {% call header.render(width="w-full") %}
+  <div>dope</div>
+  <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {{ nav.movingMenuButton() }}
