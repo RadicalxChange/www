@@ -50,7 +50,8 @@ eventDescription: |
 
   August 26, 2020, 12 - 1PM EDT
 
-  What are recent achievements of the RadicalxChange movement? A glance at the communities in Colorado and Taiwan demonstrates that people there are already living the social change that we hope for. Join the conversation with the key people behind this momentum and learn from their experiences - ranging from Quadratic Funding and Voting applications for local causes in Colorado to Taiwan's deliberative, civic hacker culture.
+  What are recent achievements of the RadicalxChange movement? A glance at the communities in Colorado and Taiwan demonstrates that people there are already living the social change that we hope for. Join the conversation with the key people behind this momentum and learn from their experiences - ranging from Quadratic Funding and Voting applications for local causes in Colorado to Taiwan's deliberative, civic hacker culture. <a href="#" data-read-more-trigger="biographies">Read more</a>
+
 eventDetails: |
   ### Speakers
 
@@ -87,23 +88,38 @@ eventDetails: |
   {% endcall %}
   <!-- prettier-ignore -->
   {% call header.render(width="w-full") %}
-  <div class="flex flex-col lg:flex-row lg:mt-lg/lg">
-    <div class="relative lg:w-span7 pb-base lg:pb-0 lg:pr-lg/base">
-      <div class="lg:sticky lg:top-0 twitch-container">
-        <iframe
-          src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=deploy-preview-53--flamboyant-shirley-5a9922.netlify.app"
-          frameborder="0"
-          allowfullscreen="true"
-          scrolling="no"
-        ></iframe>
+  <div class="flex-grow">
+    <div class="flex flex-col lg:flex-row mb-base lg:mb-lg/base lg:mt-lg/lg">
+      <div class="relative lg:w-span7 lg:pr-lg/base mb-base lg:mb-0">
+        <div class="twitch-container mb-base lg:mb-lg/base">
+          <iframe
+            src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=deploy-preview-53--flamboyant-shirley-5a9922.netlify.app"
+            frameborder="0"
+            allowfullscreen="true"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <div
+          style="padding: 2px;"
+          class="border rounded"
+          data-read-more="ask-the-speaker"
+          data-read-more-label="Ask the speaker"
+        >
+          <iframe
+            src="https://app.sli.do/event/8bkrtocy"
+            height="100%"
+            width="100%"
+            style="min-height: 560px;"
+          ></iframe>
+        </div>
       </div>
-    </div>
-    <div class="lg:w-span5 lg:pl-lg/base">
-      <div class="md-container mb-base lg:mb-lg/base">
-        {{ eventDescription | markdown | safe }}
-      </div>
-      <div class="md-container mb-lg lg:mb-0" data-read-more>
-        {{ eventDetails | markdown | safe }}
+      <div class="lg:w-span5 lg:pl-lg/base">
+        <div class="md-container mb-base lg:mb-lg/base">
+          {{ eventDescription | markdown | safe }}
+        </div>
+        <div class="md-container" data-read-more="biographies">
+          {{ eventDetails | markdown | safe }}
+        </div>
       </div>
     </div>
   </div>
@@ -179,16 +195,26 @@ eventDetails: |
 <script>
   $("[data-read-more]").each(function () {
     const thisReadMore = $(this);
+    const myName = thisReadMore.data("read-more");
+    const maybeMyLabel = thisReadMore.data("read-more-label");
 
-    const clone = thisReadMore.clone();
-    const button = $(`<a href="#" class="animated-link">Read more</a>`).click(
-      function (event) {
+    if (maybeMyLabel) {
+      const clone = thisReadMore.clone();
+      const button = $(
+        `<a href="#" class="animated-link">${maybeMyLabel}</a>`
+      ).click(function (event) {
         event.preventDefault();
         $(this).replaceWith(clone);
-      }
-    );
-
-    thisReadMore.replaceWith(button);
+      });
+      thisReadMore.replaceWith(button);
+    } else {
+      $(`[data-read-more-trigger='${myName}']`).click(function (event) {
+        event.preventDefault();
+        thisReadMore.show();
+        $(this).remove();
+      });
+      thisReadMore.hide();
+    }
   });
 </script>
 <script>
