@@ -7,8 +7,11 @@
   h4,
   ul,
   ol,
+  img,
   blockquote,
-  p {
+  table,
+  p,
+  hr {
     &:not(:last-child) {
       @apply mb-sm;
 
@@ -71,16 +74,35 @@
   }
 
   ul {
-    @apply list-disc list-outside;
-    @apply ml-lg;
-
-    @screen lg {
-      @apply ml-lg/lg;
-    }
+    @apply list-outside list-disc;
+    padding-left: 1.2em;
   }
 
   ol {
-    @apply list-decimal list-outside;
+    @apply list-outside list-decimal;
+    padding-left: 1em;
+  }
+
+  .list-aligned {
+    @apply list-inside;
+    padding-left: 0;
+  }
+
+  li {
+    @apply mb-sm;
+
+    ul,
+    ol {
+      @apply mt-sm;
+
+      @screen lg {
+        @apply mt-lg/sm;
+      }
+    }
+
+    @screen lg {
+      @apply mb-lg/sm;
+    }
   }
 
   img {
@@ -89,23 +111,32 @@
 
   blockquote {
     @apply italic;
-    @apply text-sm;
+  }
 
-    @screen lg {
-      @apply text-lg/sm;
+  table {
+    @apply table-auto;
+
+    th {
+      @apply px-sm pb-sm;
+      @screen lg {
+        @apply px-lg/sm pb-lg/sm;
+      }
+    }
+
+    td {
+      @apply px-sm py-sm;
+      @screen lg {
+        @apply px-lg/sm py-lg/sm;
+      }
+    }
+
+    td {
+      @apply border;
     }
   }
 
-  li {
-    @apply mb-sm;
-
-    @screen lg {
-      @apply mb-lg/sm;
-    }
-  }
-
-  strong {
-    @apply font-medium;
+  p {
+    @apply break-words;
   }
 
   a:not(.animated-link) {

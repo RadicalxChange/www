@@ -1,5 +1,5 @@
 <!-- prettier-ignore -->
-{% macro render(title="", width="w-full lg:w-span7", height="min-h-screen lg:min-h-tall lg-tall:min-h-screen") %}
+{% macro render(title="", width="w-full lg:w-span7", height="min-h-screen lg:min-h-tall lg-tall:min-h-screen", href=null) %}
 <header class="bg-golden-fizz-100" data-header>
   <div
     class="flex flex-col justify-between {{ width }}
@@ -12,11 +12,21 @@
     /></a>
     <!-- prettier-ignore -->
     {% else %}
-    <h1
-      class="mb-lg lg:mb-lg/lg font-display text-header lg:text-lg/header uppercase leading-display"
-    >
-      {{ title }}
-    </h1>
+    <!-- prettier-ignore -->
+    {% if href %}
+    <a href="{{ href }}" class="block">
+      <!-- prettier-ignore -->
+      {% endif %}
+      <h1
+        class="mb-lg lg:mb-lg/lg font-display text-header lg:text-lg/header uppercase leading-display"
+      >
+        {{ title }}
+      </h1>
+      <!-- prettier-ignore -->
+      {% if href %}
+    </a>
+    <!-- prettier-ignore -->
+    {% endif %}
     <!-- prettier-ignore -->
     {% endif %}
     <!-- prettier-ignore -->

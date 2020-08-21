@@ -1,0 +1,38 @@
+---
+permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
+---
+
+<!-- prettier-ignore -->
+{% extends "layouts/_page.njk" %}
+
+<!-- prettier-ignore -->
+{% set ogType="article" %}
+<!-- prettier-ignore -->
+{% set headerText="Blog" %}
+<!-- prettier-ignore -->
+{% set headerHref="/blog" %}
+
+<!-- prettier-ignore -->
+{% block metaTags %}
+<!-- prettier-ignore -->
+{{ super() }}
+<meta property="og:article:published_time" content="{{ date }}" />
+<meta property="og:article:author" content="{{ postAuthor }}" />
+<!-- prettier-ignore -->
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<div>
+  <h1 class="text-3xl lg:text-lg/3xl mb-sm lg:mb-lg/sm">
+    {{ postHeader }}
+  </h1>
+  <p class="text-base lg:text-lg/base mb-lg lg:mb-lg/lg">
+    {{ postAuthor }} / {{ date | readableDate }}
+  </p>
+  <div class="md-container">
+    {{ content | markdown | safe }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endblock %}

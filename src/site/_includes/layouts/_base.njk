@@ -4,12 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
-    <meta name="description" content="{{ metadata.defaultDescription }}" />
+    <!-- prettier-ignore -->
+    {% block metaTags %}
+    <meta
+      name="description"
+      content="{{ description | default(metadata.defaultDescription) }}"
+    />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="{{ ogType | default('website') }}" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:site_name" content="RadicalxChange" />
-    <meta property="og:url" content="{{ metadata.url }}" />
+    <meta property="og:url" content="{{ metadata.url + page.url }}" />
     <meta
       property="og:image"
       content="{{ metadata.url }}/images/logos/open-graph-logo.png"
@@ -22,7 +27,7 @@
     <meta property="og:image:height" content="1200" />
     <meta
       property="og:description"
-      content="{{ metadata.defaultDescription }}"
+      content="{{ description | default(metadata.defaultDescription) }}"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{{ title }}" />
@@ -34,8 +39,10 @@
     <meta name="twitter:creator" content="@radxchange" />
     <meta
       name="twitter:description"
-      content="{{ metadata.defaultDescription }}"
+      content="{{ description | default(metadata.defaultDescription) }}"
     />
+    <!-- prettier-ignore -->
+    {% endblock %}
     <!-- prettier-ignore -->
     {% block headScripts %}
     <script
