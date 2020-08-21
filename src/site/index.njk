@@ -50,7 +50,7 @@ eventDescription: |
 
   August 26, 2020 / 12 - 1PM EDT
 
-  As RadicalxChange movements sweep across the globe, the upgrades to democracy are becoming social and institutional reality. In Colorado and Taiwan, the people are already living the social change. In Colorado, Quadratic Funding and Voting applications are laying the foundations of the next generation of local decision-making. In Taiwan, the deliberative civic hacking culture and open-source policy development is transforming governance. Join the conversation with the key people behind this momentum and learn from their experience. <a href="#" data-read-more-trigger="biographies">Read more</a>
+  As RadicalxChange movements sweep across the globe, the upgrades to democracy are becoming social and institutional reality. In Colorado and Taiwan, the people are already living the social change. In Colorado, Quadratic Funding and Voting applications are laying the foundations of the next generation of local decision-making. In Taiwan, the deliberative civic hacking culture and open-source policy development is transforming governance. Join the conversation with the key people behind this momentum and learn from their experience.
 
 eventDetails: |
   ### Speakers
@@ -89,9 +89,9 @@ eventDetails: |
   <!-- prettier-ignore -->
   {% call header.render(width="w-full") %}
 
-  <div class="flex flex-col lg:flex-row mb-lg lg:mb-0 lg:mt-lg/lg">
+  <div class="flex flex-col lg:flex-row lg:mt-lg/lg">
     <div class="relative lg:w-span7 lg:pr-lg/base mb-base lg:mb-0">
-      <div class="twitch-container mb-base lg:mb-lg/base">
+      <div class="twitch-container">
         <iframe
           src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=deploy-preview-53--flamboyant-shirley-5a9922.netlify.app"
           frameborder="0"
@@ -99,7 +99,7 @@ eventDetails: |
           scrolling="no"
         ></iframe>
       </div>
-      <div
+      <!-- <div
         style="padding: 1px;"
         class="border rounded"
         data-read-more="ask-the-speaker"
@@ -111,15 +111,16 @@ eventDetails: |
           width="100%"
           style="min-height: 560px;"
         ></iframe>
-      </div>
+      </div> -->
     </div>
-    <div class="self-end lg:w-span5 lg:pl-lg/base">
+    <div class="flex flex-col justify-between lg:w-span5 lg:pl-lg/base">
       <div class="md-container mb-base lg:mb-lg/base">
         {{ eventDescription | markdown | safe }}
       </div>
-      <div class="md-container" data-read-more="biographies">
+      <div><a href="/rxc-in-the-wild" class="animated-link">Watch live</a></div>
+      <!-- <div class="md-container" data-read-more="biographies">
         {{ eventDetails | markdown | safe }}
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- prettier-ignore -->
