@@ -30,7 +30,7 @@ eventDescription: |
 <!-- prettier-ignore -->
 {% block content %}
 <div class="bg-golden-fizz-100">
-  <div class="flex flex-col lg:flex-row mb-base lg:mb-lg/base">
+  <div class="flex flex-col lg:flex-row mb-base lg:mb-lg/lg">
     <div
       class="lg:self-end lg:w-span8 px-base lg:pl-lg/lg lg:pr-lg/base mb-base lg:mb-0"
     >
@@ -43,15 +43,14 @@ eventDescription: |
         ></iframe>
       </div>
     </div>
-    <div class="lg:w-span4 px-base lg:pl-lg/base lg:pr-lg/lg">
-      <div style="padding: 1px;" class="border rounded">
-        <iframe
-          src="https://app.sli.do/event/8bkrtocy"
-          height="100%"
-          width="100%"
-          style="min-height: 560px;"
-        ></iframe>
-      </div>
+    <div class="flex-grow lg:w-span4 px-base lg:pl-lg/base lg:pr-lg/lg">
+      <iframe
+        src="https://app.sli.do/event/8bkrtocy"
+        height="100%"
+        width="100%"
+        style="padding: 1px;"
+        class="slido-iframe border rounded"
+      ></iframe>
     </div>
   </div>
   <div
