@@ -2,11 +2,6 @@
 /blog   https://blog.radicalxchange.org/
 /blog/* https://blog.radicalxchange.org/blog/:splat
 
-# Redirect requests for content under construction
-/rxc-events /under-construction
-/pt /under-construction
-/pt/* /under-construction
-
 # Legacy redirects to help keep content alive
 /2020-annual-conference /2020-conference
 /wp-content/uploads/2020/04/RoadmapToPandemicResilience.pdf /files/RoadmapToPandemicResilience.pdf

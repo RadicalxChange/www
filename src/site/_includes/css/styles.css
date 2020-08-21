@@ -1,7 +1,8 @@
 @import "tailwindcss/base";
 
-/* Custom fonts */
+/* Global changes */
 @import "./fonts.css";
+@import "./global.css";
 
 @import "tailwindcss/components";
 

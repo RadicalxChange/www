@@ -6,22 +6,9 @@ headerText: Resources
 
 Here is a growing body of materials and tools to learn from and work with.
 
-- [Materials](#materials)
-- [Ideas + Research](#ideas-research)
-- [Building the Movement](#building-the-movement)
-- [General Works](#general-works)
-- [Self Assessed Licenses](#self-assessed-licenses)
-- [Radical Democracy](#radical-democracy)
-- [Humane Immigration and Worker Mobility](#humane-immigration-and-worker-mobility)
-- [Antitrust](#antitrust)
-- [Data Dignity](#data-dignity)
-- [Entrepreneurship + Technology](#entrepreneurship-technology)
-- [Arts + Communication](#arts-communication)
-- [Activism + Government](#activism-government)
-- [Emotional Studies](#emotional-studies)
-- [Knowledge and Plurality](#knowledge-and-plurality)
+[toc]
 
-<h2 id="materials">Materials</h2>
+## Materials
 
 - [Roadmap to Pandemic Resilience](/files/RoadmapToPandemicResilience.pdf)
 - [Rethinking Public Purchasing](/files/RxC-Radically-Rethinking-Public-Purchasing.pdf)
@@ -29,7 +16,7 @@ Here is a growing body of materials and tools to learn from and work with.
 - [Handbook for Local Democracy](/files/The_Handbook_for_Radical_Local_Democracy.pdf)
 - [Data Dividends Working Paper](https://static1.squarespace.com/static/5eb30048c98c762441262901/t/5f30ceccc4e1bc5531496bbd/1597034189825/report.pdf)
 
-<h2 id="ideas-research">Ideas + Research</h2>
+## Ideas + Research
 
 _The following are a small selection of papers inspired by or responding to_ Radical Markets _from a variety of disciplinary perspectives._
 
@@ -65,23 +52,23 @@ _As part of the evolving intellectual agenda of RadicalxChange, we see three eme
 
 - Nicole Immorlica et al., “[Verifying Identity as a Social Intersection](https://ssrn.com/abstract=3375436)“; Zoë Hitzig and E. Glen Weyl, “[A Crossroads, not an Island: A Response to Hanoch Dagan](https://ssrn.com/abstract=3306738)”
 
-- Lucas Geiger et al., “Motivating The Case For Decentralized Social Identity” [Part One](https://radicalxchange.org/blog/posts/2019-06-06-d4utdx/); [Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42); [Part Three](https://radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
+- Lucas Geiger et al., “Motivating The Case For Decentralized Social Identity” [Part One](/blog/posts/2019-06-06-d4utdx/); [Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42); [Part Three](/blog/posts/2019-06-08-51kyu5/)
 
 - Jennifer Lyn Morone, [The Scheme of Things](https://rijeka2020.eu/en/dogadjanja/the-scheme-of-things-jennifer-lyn-morone-us/) [Interview at time of workshop](https://vimeo.com/343629561) on The Scheme of Things; see also attached project description)
 
-<h2 id="building-the-movement">Building the Movement</h2>
+## Building the Movement
 
 _The following blog posts, white papers and artworks are indicative of some of the ways RadicalxChange ideas have been “translated” for different intellectual and social communities, and into blueprints for concrete action._
 
-- Matthew Prewitt, “[“A Basic Introduction to RadicalxChange](https://blog.radicalxchange.org/blog/posts/2019-09-24-se9s34/)” “[What Are Institutions?](https://radicalxchange.org/blog/posts/2019-08-02-lzi9ch/)“, “[Radical Markets And The Question Of Rational Design](https://radicalxchange.org/blog/posts/2018-12-20-bhi7zy/)“
+- Matthew Prewitt, “[“A Basic Introduction to RadicalxChange](/blog/posts/2019-09-24-se9s34/)” “[What Are Institutions?](/blog/posts/2019-08-02-lzi9ch/)“, “[Radical Markets And The Question Of Rational Design](/blog/posts/2018-12-20-bhi7zy/)“
 
-- Marina Finley et al., “[RadicalxChange Students: Fighting For Our Future](https://radicalxchange.org/blog/posts/2019-01-25-l76ehw/)“
+- Marina Finley et al., “[RadicalxChange Students: Fighting For Our Future](/blog/posts/2019-01-25-l76ehw/)“
 
-- E. Glen Weyl, “[What is RadicalxChange?](https://radicalxchange.org/blog/posts/2019-02-25-xjekue/)“, “[Why I Am Not A Technocrat](https://radicalxchange.org/blog/posts/2019-08-19-bv61r6/)“, “[Why I Am Not A Capitalist](https://radicalxchange.org/blog/posts/2019-01-14-j73qnz/)“, “[Why I Am Not A Nationalist](https://radicalxchange.org/blog/posts/2019-02-18-9qwoyc/)“, “[Why I Am Not A Statist](https://radicalxchange.org/blog/posts/2019-01-28-5ixa34/)“, “[Hope Is Not Enough To Redeem Statism](https://radicalxchange.org/blog/posts/2019-02-06-oha41s/)“, “[“The Political Philosophy of RadicalxChange”](https://blog.radicalxchange.org/blog/posts/2019-12-30-gqx4th/)”
+- E. Glen Weyl, “[What is RadicalxChange?](/blog/posts/2019-02-25-xjekue/)“, “[Why I Am Not A Technocrat](/blog/posts/2019-08-19-bv61r6/)“, “[Why I Am Not A Capitalist](/blog/posts/2019-01-14-j73qnz/)“, “[Why I Am Not A Nationalist](/blog/posts/2019-02-18-9qwoyc/)“, “[Why I Am Not A Statist](/blog/posts/2019-01-28-5ixa34/)“, “[Hope Is Not Enough To Redeem Statism](/blog/posts/2019-02-06-oha41s/)“, “[“The Political Philosophy of RadicalxChange”](/blog/posts/2019-12-30-gqx4th/)”
 
 - Erik Olin Wright, “[How to Be an Anticapitalist Today](https://www.jacobinmag.com/2015/12/erik-olin-wright-real-utopias-anticapitalism-democracy/)“
 
-- Audrey Tang and Sheau-Tyng Peng, “[“Quadratic Voting and Common Ownership Self-Assessed Tax”](https://blog.radicalxchange.org/blog/posts/2019-06-27-9ph1dk/)”
+- Audrey Tang and Sheau-Tyng Peng, “[“Quadratic Voting and Common Ownership Self-Assessed Tax”](/blog/posts/2019-06-27-9ph1dk/)”
 
 - Eric A. Posner and E. Glen Weyl, “[Democracy Squared](https://www.vanderbiltlawreview.org/2015/03/voting-squared-quadratic-voting-in-democratic-politics/)”
 
@@ -95,7 +82,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Simon de la Rouviere, “[This Artwork Is Always On Sale](https://medium.com/@simondlr/this-artwork-is-always-on-sale-92a7d0c67f43)“
 
-<h2 id="general-works">General Works</h2>
+## General Works
 
 - Georg Simmel, **Soziologie**
 
@@ -155,7 +142,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - The Economist, “[Establishing identity is a vital, risky and changing business](https://www.economist.com/christmas-specials/2018/12/18/establishing-identity-is-a-vital-risky-and-changing-business)” (Dec 18, 2018)
 
-<h2 id="self-assessed-licenses">Self Assessed Licenses</h2>
+## Self Assessed Licenses
 
 - Henry George, **Progress and Poverty**, Introduction and Chapters 11, 19, 23, 25-26, 31
 
@@ -173,7 +160,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Mary Pillon, **The Monopolists**, Chapter 1
 
-<h2 id="radical-democracy">Radical Democracy</h2>
+## Radical Democracy
 
 - Thucydides, **History of the Peloponnesian War**, Book 8; Alexis de Tocqueville, **Democracy in America**, Volume 2, Part 4, Chapter 7a; and Hannah Arendt, **The Origins of Totalitarianism**
 
@@ -191,7 +178,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Sherman Lee, “[Quadratic Voting: A New Way to Govern Blockchains for Enterprises](https://www.forbes.com/sites/shermanlee/2018/05/30/quadratic-voting-a-new-way-to-govern-blockchains-for-enterprises/#1760146b6ef8)” and Rachel Rose O’Leary, “[Experimental Voting Effort Aims to Break Ethereum Governance Gridlock](https://www.coindesk.com/experimental-voting-effort-aims-break-ethereum-governance-gridlock)”
 
-<h2 id="humane-immigration-and-worker-mobility">Humane Immigration and Worker Mobility</h2>
+## Humane Immigration and Worker Mobility
 
 - William J. Bernstein, **A Splendid Exchange**, Introduction
 
@@ -207,7 +194,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Adam Ozimek et al., “[Could a Heartland Visa Help Struggling Regions?](https://eig.org/heartland-visa)“
 
-<h2 id="antitrust">Antitrust</h2>
+## Antitrust
 
 - José Azar et al., “[Anti-Competitive Effects of Common Ownership](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2427345)”
 
@@ -227,7 +214,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Wall Street Journal, “[Bogle Sounds a Warning on Index Funds](https://www.wsj.com/articles/bogle-sounds-a-warning-on-index-funds-1543504551)” (November 29, 2018), The Economist, “[Taming the Tech Titans](https://www.economist.com/leaders/2018/01/18/how-to-tame-the-tech-titans)” (January 18, 2018) and “[Into the Danger Zone](https://www.economist.com/business/2018/06/02/american-tech-giants-are-making-life-tough-for-startups)” (June 2, 2018), Financial Times, “[Common ownership of shares faces regulatory scrutiny](https://amp.ft.com/content/59325462-fe57-11e8-aebf-99e208d3e521?)” (January 22, 2019)
 
-<h2 id="data-dignity">Data Dignity</h2>
+## Data Dignity
 
 - Jaron Lanier, **Who Owns the Future?**, Introduction to the paperback edition
 
@@ -251,7 +238,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Jennifer Lyn Morone, [Jennifer Lyn Morone, Inc](https://vimeo.com/98300179), “[Data Workers of the World, Unite](https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite)“
 
-<h2 id="entrepreneurship-technology">Entrepreneurship + Technology</h2>
+## Entrepreneurship + Technology
 
 - Eric Ries, **The Lean Startup**, Introduction
 
@@ -265,7 +252,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - S.A. Hissam et al., “[Trust and vulnerability in open source software](https://ieeexplore.ieee.org/document/999090)”
 
-<h2 id="arts-communication">Arts + Communication</h2>
+## Arts + Communication
 
 - Boots Riley, **Sorry to Bother You**
 
@@ -287,7 +274,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Jennifer Lyn Morone, [Jennifer Lyn Morone, Inc](https://vimeo.com/98300179), “[Data Workers of the World, Unite](https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite)“
 
-<h2 id="activism-government">Activism + Government</h2>
+## Activism + Government
 
 - David Dayen, “[The Radicalization of Fiona Scott Morton](https://newrepublic.com/article/153785/radicalization-fiona-scott-morton)” (May 23, 2019); Matthew Yglesias, “[Democrats push for a new era of antitrust enforcement, explained](https://www.vox.com/policy-and-politics/2017/7/31/16021844/antitrust-better-deal)” (July 31, 2017)
 
@@ -309,7 +296,7 @@ _The following blog posts, white papers and artworks are indicative of some of t
 
 - Angus Burgin, **The Great Persuasion**, especially Introduction and Conclusion
 
-<h2 id="emotional-studies">Emotions Studies</h2>
+## Emotions Studies
 
 _The following is meant to be a sample of the scholarship from a wide range of disciplines we might begin to draw upon as we consider how to bring this area of research into conversation with mechanism design for RadicalxChange. The foundational work of Norbert Elias’ relational sociology, especially his concept of homines aperti, his pioneering interest in emotions and in utopian thinking may be especially productive as a starting point for approaching emotions studies as social scientists interested in radical social change and humane mechanism design. A complete list of his works can be found [here](http://www.ucdpress.ie/results.asp?sf1=eh_cat_class&st1=F100&sort=sort_date/d&ds=Elias+Collected+Works) but for our purposes, Vols. 4, 6, 8, 10, 13, 14 (especially essays 2, 10-12), 15 (essays 6, 9); 16 (essays 1-7, 12, 14-17). Thinking about emotions also allows us to consider cultural difference in politico-economic decision-making, which is important given our global reach._
 
@@ -387,7 +374,7 @@ _The following is meant to be a sample of the scholarship from a wide range of d
 
 - Mette Hjort and Sue Laver, eds., _Emotions and the Arts_ (New York: Oxford Univ. Press, 1997)
 
-<h2 id="knowledge-and-plurality">Knowledge and Plurality</h2>
+## Knowledge and Plurality
 
 _Plurality is beneficial in the search for knowledge. Institutional epistemology is a field of research into the properties of institutional arrangements and social system in terms of their conduciveness to learning, problem-solving and knowledge-attainment in general. One of the founding insights of institutional epistemology is that groups of diverse investigators outperform groups of best investigators in resolving complex problems, and one of its central research focuses are the conditions under which plurality exhibits high epistemic value. The following texts include the classical epistemological accounts of the value of plurality and the relevant contemporary pluralist developments in political philosophy after the “epistemic turn”._
 
