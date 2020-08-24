@@ -1,3 +1,11 @@
+@import "./mixins/_animated-link.css";
+
+.block-with-animated-link {
+  &:hover .animated-link:after {
+    @mixin animated-link-hover;
+  }
+}
+
 /* Logo in header */
 .logo-width {
   width: 100%;
@@ -172,5 +180,17 @@
     width: 1.5vw;
     @apply mr-lg/base;
     margin-top: 0.2vw;
+  }
+}
+
+/* TV icon  */
+
+.tv-icon {
+  @apply hidden;
+
+  @screen lg {
+    @apply inline-block;
+    width: 2.3vw;
+    margin: 0 0.8vw 0 0;
   }
 }
