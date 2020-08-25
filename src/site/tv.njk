@@ -1,0 +1,65 @@
+---
+eventDescription: |
+  ## RxC in the Wild: Social Upgrades in Colorado and Taiwan
+
+  August 26, 2020 / 12 - 1PM EDT
+
+  As RadicalxChange movements sweep across the globe, the upgrades to democracy are becoming social and institutional reality. In Colorado and Taiwan, the people are already living the social change. In Colorado, Quadratic Funding and Voting applications are laying the foundations of the next generation of local decision-making. In Taiwan, the deliberative civic hacking culture and open-source policy development is transforming governance. Join the conversation with the key people behind this momentum and learn from their experience.
+
+  ### Speakers
+
+  Ben Henderson is the Director of Operations and Cabinet Affairs for Governor Polis. Graduating with his Masters in Public Administration from Arizona State University, Ben has spent his career focusing on improving social outcomes using math and science. He began his career as a Fiscal Analyst for the Arizona Legislature, worked in community and economic development for downtown Phoenix, and subsequently served as the Deputy COO for Governor Doug Ducey where he helped design and implement the Arizona Management System. Most recently Ben served as the Deputy Director for Budget in the Colorado Office of State Planning and Budgeting before taking on his current role. He currently lives in Denver with his dog and girlfriend and enjoys hiking and marching band.
+
+  Yahsin Huang is the marketing manager at Diode. She covers impacts of emerging technologies, especially blockchain, for various media outlets, such as Make magazine, TechLife magazine, Business Next, Meet Startup, Thinking Taiwan, Blockcast.it, BlockTempo, and Hacker Noon. Notable works are her tech reports of DevCon in Prague, Czech Republic, and EDCON in Sydney, Australia. In 2016, Yahsin helped start the Taipei Ethereum Meetup community. In 2019, Yahsin founded the RadicalxChange Taipei chapter. She has a bachelor’s degree in English literature from National Dong Hwa University.
+
+  Kevin Owocki is the founder of Gitcoin.co -- a blockchain-based network for growing open source software with incentivization mechanics. He has a BS in Computer Science, 10 years of engineering leadership experience in startups and Open Source Software, and is a community organizer in the Boulder Colorado Tech Scene. Kevin believes strongly that Open Source Software Development should be sustainably funded. Gitcoin is a one-stop shop that gives Software Developers the skills & connections to survive and thrive in this new blockchain ecosystem. You can find out more about Gitcoin at https://gitcoin.co and Kevin at [https://owocki.com](https://owocki.com)
+
+  ### Moderator
+
+  Marko-Luka Zubčić is a research associate of Center for Advanced Studies - South East Europe of University of Rijeka. His research focus is institutional epistemology, an interdisciplinary study of epistemic properties of institutional systems He also works in policy research and development, with particular focus on food policy (having collaborated extensively on the design and development of the “food network” in Croatia) and creative and cultural industries policy, and recently focusing in particular on research and development of collective intelligence systems for purposes of better institutional problem-solving. He has worked on project management and program development for public institutions and non-governmental agencies. He works as a communications consultant and copywriter for non-governmental and the private sector. He is currently collaborating with RadicalxChange.
+---
+
+<!-- prettier-ignore -->
+{% extends "layouts/_full-page.njk" %}
+
+<!-- prettier-ignore -->
+{% set title = "RxC TV" %}
+<!-- prettier-ignore -->
+{% set headerText = "RxC TV" %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<div class="bg-golden-fizz-100">
+  <div class="flex flex-col lg:flex-row mb-base lg:mb-lg/lg">
+    <div
+      class="lg:self-end lg:w-span8 px-base lg:pl-lg/lg lg:pr-lg/base mb-base lg:mb-0"
+    >
+      <div class="twitch-container">
+        <iframe
+          src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=radicalxchange.org"
+          frameborder="0"
+          allowfullscreen="true"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </div>
+    <div class="flex-grow lg:w-span4 px-base lg:pl-lg/base lg:pr-lg/lg">
+      <iframe
+        src="https://app.sli.do/event/8bkrtocy"
+        height="100%"
+        width="100%"
+        style="padding: 1px;"
+        class="slido-iframe border rounded"
+      ></iframe>
+    </div>
+  </div>
+  <div
+    class="w-full lg:w-span8 px-base lg:px-lg/lg lg:pr-lg/base pb-lg lg:pb-lg/xl"
+  >
+    <div class="md-container">
+      {{ eventDescription | markdown | safe }}
+    </div>
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endblock %}

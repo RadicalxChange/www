@@ -1,3 +1,11 @@
+@import "./mixins/_animated-link.css";
+
+.block-with-animated-link {
+  &:hover .animated-link:after {
+    @mixin animated-link-hover;
+  }
+}
+
 /* Logo in header */
 .logo-width {
   width: 100%;
@@ -148,7 +156,19 @@
   }
 }
 
-/* Twitch */
+/* Streaming */
+
+.twitch-container {
+  @apply relative;
+  @apply h-0;
+  padding-bottom: 60.967742%;
+
+  iframe {
+    @apply absolute;
+    @apply w-full h-full;
+    @apply top-0 left-0;
+  }
+}
 
 .youtube-container {
   @apply relative;
@@ -162,6 +182,14 @@
   }
 }
 
+.slido-iframe {
+  min-height: 560px;
+
+  @screen lg {
+    min-height: auto;
+  }
+}
+
 /* 2020 conference replay */
 
 .conference-replay-video_icon {
@@ -172,5 +200,17 @@
     width: 1.5vw;
     @apply mr-lg/base;
     margin-top: 0.2vw;
+  }
+}
+
+/* TV icon  */
+
+.tv-icon {
+  @apply hidden;
+
+  @screen lg {
+    @apply inline-block;
+    width: 2.3vw;
+    margin: 0 0.8vw 0 0;
   }
 }
