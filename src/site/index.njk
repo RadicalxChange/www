@@ -45,6 +45,12 @@ supporters:
     href: "https://www.theosafoundation.org/"
   - name: Alfred P. Sloan Foundation
     href: "https://sloan.org/"
+eventDescription: |
+  ## RxC in the Wild: Social Upgrades in Colorado and Taiwan
+
+  August 26, 2020 / 12 - 1PM EDT
+
+  As RadicalxChange movements sweep across the globe, the upgrades to democracy are becoming social and institutional reality. In Colorado and Taiwan, the people are already living the social change. In Colorado, Quadratic Funding and Voting applications are laying the foundations of the next generation of local decision-making. In Taiwan, the deliberative civic hacking culture and open-source policy development is transforming governance. Join the conversation with the key people behind this momentum and learn from their experience.
 ---
 
 <!-- prettier-ignore -->
@@ -64,48 +70,31 @@ supporters:
 
 <main>
   <!-- prettier-ignore -->
-  {% call nav.render(true, true) %}
-  <a class="block-with-animated-link block text-right" href="/tv">
-    <h1 class="text-lg/xl mb-lg/xs">
-      RxC in the Wild: Social Upgrades in Colorado and Taiwan
-    </h1>
-    <p class="text-lg/sm mb-lg/base">August 26, 2020 / 12 - 1PM EDT</p>
-    <p>
-      <img src="/images/ui/icon-youtube.svg" class="tv-icon" /><span
-        class="animated-link"
-        >Join our next live event</span
-      >
-    </p>
-  </a>
+  {% call nav.render(false) %}
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call header.render("") %}
-  <div>
-    <div class="lg:hidden md-container mb-base">
-      <h1>
-        RxC in the Wild: Social Upgrades in Colorado and Taiwan
-      </h1>
-      <p>August 26, 2020 / 12 - 1PM EDT</p>
-      <p><a href="/tv" class="animated-link">Join our live event</a></p>
+  {% call header.render(width="w-full") %}
+
+  <div class="flex flex-col lg:flex-row lg:mt-lg/lg">
+    <div class="relative lg:w-span7 lg:pr-lg/base mb-base lg:mb-0">
+      <div class="twitch-container">
+        <iframe
+          src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=radicalxchange.org"
+          frameborder="0"
+          allowfullscreen="true"
+          scrolling="no"
+        ></iframe>
+      </div>
     </div>
-    <div class="md-container">
-      <h1 class="lg:hidden">Recent updates</h1>
-      <p>
-        We stand with #BlackLivesMatter.&nbsp;<br class="lg:hidden" />We
-        celebrate #GlobalPride2020.<br class="lg:hidden" />
-      </p>
-      <p>
-        RadicalxChange Foundation is an Institutional Affiliate on the Roadmap
-        to Pandemic Resistance, the latest report by the Edmond J. Safra Center
-        on ending COVID-19 quarantine via Testing, Tracing, & Supported
-        Isolation (#TTSI).
-      </p>
-      <p>
-        <a class="animated-link" href="/covid-19">Read more</a>
-      </p>
+    <div class="flex flex-col justify-between lg:w-span5 lg:pl-lg/base">
+      <div class="md-container mb-base lg:mb-lg/base">
+        {{ eventDescription | markdown | safe }}
+      </div>
+      <div><a href="/tv" class="animated-link">Join the Q&A</a></div>
     </div>
   </div>
+  <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {{ nav.movingMenuButton() }}
