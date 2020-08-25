@@ -74,9 +74,11 @@ eventDescription: |
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call header.render(width="w-full") %}
+  {% call header.banner(headerClasses="bg-golden-fizz-100 flex flex-col justify-between min-h-screen lg:min-h-tall lg-tall:min-h-screen") %}
   <div class="flex flex-col lg:flex-row lg:mt-lg/lg">
-    <div class="lg:w-span7 lg:pr-lg/base mb-base lg:mb-0">
+    <div
+      class="lg:w-span7 pb-base px-base lg:pb-lg/xl lg:pl-lg/lg lg:pr-lg/base"
+    >
       <div class="twitch-container">
         <iframe
           src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=www.radicalxchange.org"
@@ -86,7 +88,9 @@ eventDescription: |
         ></iframe>
       </div>
     </div>
-    <div class="lg:w-span5 lg:pl-lg/base flex flex-col justify-between">
+    <div
+      class="lg:w-span5 pb-base px-base lg:pb-lg/xl lg:pl-lg/base lg:pr-lg/lg flex flex-col justify-between"
+    >
       <div class="md-container mb-base lg:mb-lg/base">
         {{ eventDescription | markdown | safe }}
       </div>

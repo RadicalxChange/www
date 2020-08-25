@@ -37,8 +37,8 @@
 {% endmacro %}
 
 <!-- prettier-ignore -->
-{% macro banner(title="", href=null) %}
-<header class="bg-golden-fizz-100" data-header>
+{% macro banner(title="", headerClasses="bg-golden-fizz-100", href=null) %}
+<header class="{{ headerClasses }}" data-header>
   <div
     class="w-full lg:w-span7 pt-base lg:pt-lg/xl pb-lg lg:pb-lg/lg px-base lg:pr-lg/base lg:pl-lg/lg"
   >
