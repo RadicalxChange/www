@@ -45,12 +45,6 @@ supporters:
     href: "https://www.theosafoundation.org/"
   - name: Alfred P. Sloan Foundation
     href: "https://sloan.org/"
-eventDescription: |
-  ## RxC in the Wild: Social Upgrades in Colorado and Taiwan
-
-  August 26, 2020 / 12 - 1PM EDT
-
-  As RadicalxChange movements sweep across the globe, the upgrades to democracy are becoming social and institutional reality. In Colorado and Taiwan, the people are already living the social change. In Colorado, Quadratic Funding and Voting applications are laying the foundations of the next generation of local decision-making. In Taiwan, the deliberative civic hacking culture and open-source policy development is transforming governance. Join the conversation with the key people behind this momentum and learn from their experience.
 ---
 
 <!-- prettier-ignore -->
@@ -70,34 +64,55 @@ eventDescription: |
 
 <main>
   <!-- prettier-ignore -->
-  {% call nav.render(false) %}
+  {% call nav.render(true, true) %}
+  <a
+    class="block-with-animated-link block text-right"
+    href="/files/GitxChange2-Quadratic-Funding-Hackathon.pdf"
+  >
+    <h1 class="text-lg/lg mb-lg/xs">
+      Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
+    </h1>
+    <p class="text-lg/sm mb-lg/base">October 5 - November 1, 2020</p>
+    <p>
+      <span>√&nbsp;&nbsp;</span
+      ><span class="animated-link">Design and sponsor a challenge</span>
+    </p>
+  </a>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call header.banner(headerClasses="bg-golden-fizz-100 flex flex-col justify-between min-h-screen lg:min-h-tall lg-tall:min-h-screen") %}
-  <div class="flex flex-col lg:flex-row lg:mt-lg/lg">
-    <div
-      class="lg:w-span7 pb-base px-base lg:pb-lg/xl lg:pl-lg/lg lg:pr-lg/base"
-    >
-      <div class="twitch-container">
-        <iframe
-          src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=www.radicalxchange.org"
-          frameborder="0"
-          allowfullscreen="true"
-          scrolling="no"
-        ></iframe>
-      </div>
+  {% call header.render("") %}
+  <div>
+    <div class="lg:hidden md-container mb-base">
+      <h1>
+        Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
+      </h1>
+      <p>October 5 - November 1, 2020</p>
+      <p>
+        <a
+          href="/files/GitxChange2-Quadratic-Funding-Hackathon.pdf"
+          class="animated-link"
+          >Design and sponsor a challenge</a
+        >
+      </p>
     </div>
-    <div
-      class="lg:w-span5 pb-base px-base lg:pb-lg/xl lg:pl-lg/base lg:pr-lg/lg flex flex-col justify-between"
-    >
-      <div class="md-container mb-base lg:mb-lg/base">
-        {{ eventDescription | markdown | safe }}
-      </div>
-      <div><a href="/tv" class="animated-link">Join the Q&A</a></div>
+    <div class="md-container">
+      <h1 class="lg:hidden">Recent updates</h1>
+      <p>
+        We stand with #BlackLivesMatter.&nbsp;<br class="lg:hidden" />We
+        celebrate #GlobalPride2020.<br class="lg:hidden" />
+      </p>
+      <p>
+        RadicalxChange Foundation is an Institutional Affiliate on the Roadmap
+        to Pandemic Resistance, the latest report by the Edmond J. Safra Center
+        on ending COVID-19 quarantine via Testing, Tracing, & Supported
+        Isolation (#TTSI).
+      </p>
+      <p>
+        <a class="animated-link" href="/covid-19">Read more</a>
+      </p>
     </div>
   </div>
-  <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {{ nav.movingMenuButton() }}
