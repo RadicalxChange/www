@@ -26,6 +26,10 @@ Images are not automatically re-processed when they are changed. Run `npm run bu
 
 Run `npm run build` to build the site and its images. The built site is written to _dist/_.
 
+### Deploy
+
+Merge your change to _master_ and push to GitHub to deploy a new version of our site. Netlify watches for changes to _master_ and rebuilds when the branch changes.
+
 ## Architecture
 
 The RadicalxChange www site is built on [11ty](https://www.11ty.dev/). It's styled using [TailWind CSS](https://tailwindcss.com/). We host the site on [Netlify](https://www.netlify.com/). For legacy reasons, we use [Digital Ocean](https://www.digitalocean.com/) for DNS. We use [Fathom Analytics](https://usefathom.com/) to track user activity without invading their privacy.
