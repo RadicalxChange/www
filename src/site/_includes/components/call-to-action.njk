@@ -9,7 +9,7 @@
 {% endmacro %}
 <!-- prettier-ignore -->
 {% macro render(styles="") %}
-<ul class="flex flex-col lg:flex-row {{ styles }}">
+<ul class="flex flex-col lg:flex-row -mb-xs lg:mb-0 {{ styles }}">
   <!-- prettier-ignore -->
   {{ caller() }}
 </ul>

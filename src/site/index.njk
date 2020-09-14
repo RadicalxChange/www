@@ -83,11 +83,11 @@ supporters:
   <!-- prettier-ignore -->
   {% call header.render("") %}
   <div>
-    <div class="lg:hidden md-container mb-base">
-      <h1>
+    <div class="lg:hidden mb-lg">
+      <h1 class="text-3xl mb-sm">
         Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
       </h1>
-      <p>October 5 - November 1, 2020</p>
+      <p class="mb-sm">October 5 - November 1, 2020</p>
       <p>
         <a
           href="/files/GitxChange2-Quadratic-Funding-Hackathon.pdf"
@@ -96,21 +96,30 @@ supporters:
         >
       </p>
     </div>
-    <div class="md-container">
-      <h1 class="lg:hidden">Recent updates</h1>
-      <p>
-        We stand with #BlackLivesMatter.&nbsp;<br class="lg:hidden" />We
-        celebrate #GlobalPride2020.<br class="lg:hidden" />
-      </p>
-      <p>
-        RadicalxChange Foundation is an Institutional Affiliate on the Roadmap
-        to Pandemic Resistance, the latest report by the Edmond J. Safra Center
-        on ending COVID-19 quarantine via Testing, Tracing, & Supported
-        Isolation (#TTSI).
-      </p>
-      <p>
-        <a class="animated-link" href="/covid-19">Read more</a>
-      </p>
+    <div>
+      <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
+        Missed the last conference?
+      </h1>
+      <!-- prettier-ignore -->
+      {% call callToAction.render() %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a class="animated-link" href="/2020-conference/replay"
+        >Watch the replay</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a
+        class="animated-link"
+        href="https://blog.radicalxchange.org/blog/posts/radicalxchange-replayed-to-be-or-not-to-be-hacked/"
+        >Listen via our podcast</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% endcall %}
     </div>
   </div>
   {% endcall %}
