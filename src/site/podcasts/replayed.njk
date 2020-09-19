@@ -1,0 +1,57 @@
+---
+layout: layouts/html.njk
+title: RxC Replayed
+headerText: RxC Replayed
+---
+
+<!-- prettier-ignore -->
+{% import "components/call-to-action.njk" as callToAction %}
+
+<div class="flex-grow flex flex-col justify-end">
+  <div class="mb-lg lg:mb-lg/lg">
+    <p>
+      Every week, RadicalxChange Replayed brings you replays of the talks from
+      RadicalxChange hosted conferences and events in audio format. Join host
+      Matt Prewitt (President of RadicalxChange Foundation) for radical
+      thought-provoking ideas by innovators, activists, artists, and scholars
+      from around the world about how they are using RxC ideas — from Data
+      Dignity, Quadratic Funding and Voting, and Common Partial Ownership — to
+      solve our most divisive social problems, improve democracy, and build
+      markets, technology, and institutions that are truer to the richness of
+      our diversely shared lives. Every episode will make your life a little
+      more radical.
+    </p>
+  </div>
+  <div>
+    <p class="mb-base lg:mb-lg/base">Subscribe and listen</p>
+    <!-- prettier-ignore -->
+    {% call callToAction.render() %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a
+      class="animated-link"
+      href="https://podcasts.apple.com/de/podcast/radicalxchange-replayed/id1528842651"
+      >Apple Podcasts</a
+    >
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a
+      class="animated-link"
+      href="https://open.spotify.com/show/1mGxPVe7CwVcpNHaR2MUcV"
+      >Spotify</a
+    >
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a class="animated-link" href="https://feeds.simplecast.com/VrNLe50Y"
+      >RSS</a
+    >
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+  </div>
+</div>
