@@ -11,7 +11,7 @@ postAuthor: "Fanny Lakoubay"
 **Date:** Wednesday, October 7, 2020<br/>
 **Time:** 12pm EST<br/>
 **Participants:** 31 people<br/>
-**Location:** Zoom meeting ([recording available here](https://us02web.zoom.us/rec/play/MK-xFCPqDKGMnYTSWRCVbzm86At1UI9ADpo_W8BEZxpFX5BdTRWDzEQBaDq9pxEJorMEt_lXohQH5nd6.K8oz5nLOd6VG1wMj?continueMode=true&_x_zm_rtaid=J0lQkzu_Rry5UfTSMDiSfg.1602691909314.1b3e8107fee809a8943f4543db8a264c&_x_zm_rhtaid=442))
+**Location:** Zoom meeting ([recording available here](https://youtu.be/2P8QhuDZqOE))
 
 Minutes below with action items.
 
