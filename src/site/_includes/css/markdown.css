@@ -1,6 +1,8 @@
 /* Apply styles to rendered markdown */
 
 .md-container {
+  font-size: var(--step-type-0);
+
   h1,
   h2,
   h3,
@@ -13,11 +15,7 @@
   p,
   hr {
     &:not(:last-child) {
-      @apply mb-sm;
-
-      @screen lg {
-        @apply mb-lg/base;
-      }
+      margin-bottom: var(--step-space-0);
     }
   }
 
@@ -31,46 +29,24 @@
   h1,
   h2 {
     &:not(:first-child) {
-      @apply mt-lg;
-    }
-
-    @screen lg {
-      &:not(:first-child) {
-        @apply mt-lg/lg;
-      }
+      margin-top: var(--step-space-4);
     }
   }
 
   h1 {
-    @apply text-3xl;
-
-    @screen lg {
-      @apply text-lg/3xl;
-    }
+    font-size: var(--step-type-4);
   }
 
   h2 {
-    @apply text-2xl;
-
-    @screen lg {
-      @apply text-lg/2xl;
-    }
+    font-size: var(--step-type-3);
   }
 
   h3 {
-    @apply text-xl;
-
-    @screen lg {
-      @apply text-lg/xl;
-    }
+    font-size: var(--step-type-2);
   }
 
   h4 {
-    @apply text-lg;
-
-    @screen lg {
-      @apply text-lg/lg;
-    }
+    font-size: var(--step-type-1);
   }
 
   ul {
@@ -89,19 +65,11 @@
   }
 
   li {
-    @apply mb-sm;
+    margin-bottom: var(--step-space-0);
 
     ul,
     ol {
-      @apply mt-sm;
-
-      @screen lg {
-        @apply mt-lg/sm;
-      }
-    }
-
-    @screen lg {
-      @apply mb-lg/sm;
+      margin-top: var(--step-space-0);
     }
   }
 
@@ -117,17 +85,11 @@
     @apply table-auto;
 
     th {
-      @apply px-sm pb-sm;
-      @screen lg {
-        @apply px-lg/sm pb-lg/sm;
-      }
+      padding: 0 var(--step-space-0) var(--step-space-0);
     }
 
     td {
-      @apply px-sm py-sm;
-      @screen lg {
-        @apply px-lg/sm py-lg/sm;
-      }
+      padding: var(--step-space-0);
     }
 
     td {

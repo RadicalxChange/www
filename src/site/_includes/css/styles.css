@@ -3,6 +3,8 @@
 /* Global changes */
 @import "./fonts.css";
 @import "./global.css";
+@import "./type-scale.css";
+@import "./space-scale.css";
 
 @import "tailwindcss/components";
 

@@ -1,0 +1,117 @@
+/* @link https://utopia.fyi/generator?c=320,14,1.2,1140,28,1.25,5,2, */
+
+:root {
+  --space-min-width: 320;
+  --space-max-width: 1140;
+  --space-min-size: 4;
+  --space-max-size: 24;
+  --space-min-ratio: 1.125;
+  --space-max-ratio: 1.25;
+
+  --space-screen: 100vw;
+  --space-bp: calc(
+    (var(--space-screen) - ((var(--space-min-width) / 16) * 1rem)) /
+      ((var(--space-max-width) / 16) - (var(--space-min-width) / 16))
+  );
+}
+
+@media screen and (min-width: 1140px) {
+  :root {
+    --space-screen: calc(var(--space-max-width) * 1px);
+  }
+}
+
+:root {
+  --space-max-negative: (1 / var(--space-max-ratio) / var(--space-max-ratio));
+  --space-min-negative: (1 / var(--space-min-ratio) / var(--space-min-ratio));
+
+  --space-min-scale--2: var(--space-min-scale--1) * var(--space-min-ratio) *
+    var(--space-min-negative);
+  --space-max-scale--2: var(--space-max-scale--1) * var(--space-max-ratio) *
+    var(--space-max-negative);
+  --space-min-size--2: (var(--space-min-size) * var(--space-min-scale--2)) / 16;
+  --space-max-size--2: (var(--space-max-size) * var(--space-max-scale--2)) / 16;
+  --step-space--2: calc(
+    (
+      (var(--space-min-size--2) * 1rem) +
+        (var(--space-max-size--2) - var(--space-min-size--2)) * var(--space-bp)
+    )
+  );
+
+  --space-min-scale--1: var(--space-min-ratio) * var(--space-min-negative);
+  --space-max-scale--1: var(--space-max-ratio) * var(--space-max-negative);
+  --space-min-size--1: (var(--space-min-size) * var(--space-min-scale--1)) / 16;
+  --space-max-size--1: (var(--space-max-size) * var(--space-max-scale--1)) / 16;
+  --step-space--1: calc(
+    (
+      (var(--space-min-size--1) * 1rem) +
+        (var(--space-max-size--1) - var(--space-min-size--1)) * var(--space-bp)
+    )
+  );
+
+  --space-min-scale-0: var(--space-min-ratio);
+  --space-max-scale-0: var(--space-max-ratio);
+  --space-min-size-0: (var(--space-min-size)) / 16;
+  --space-max-size-0: (var(--space-max-size)) / 16;
+  --step-space-0: calc(
+    (
+      (var(--space-min-size-0) * 1rem) +
+        (var(--space-max-size-0) - var(--space-min-size-0)) * var(--space-bp)
+    )
+  );
+
+  --space-min-scale-1: var(--space-min-scale-0) * var(--space-min-ratio);
+  --space-max-scale-1: var(--space-max-scale-0) * var(--space-max-ratio);
+  --space-min-size-1: (var(--space-min-size) * var(--space-min-scale-0)) / 16;
+  --space-max-size-1: (var(--space-max-size) * var(--space-max-scale-0)) / 16;
+  --step-space-1: calc(
+    (
+      (var(--space-min-size-1) * 1rem) +
+        (var(--space-max-size-1) - var(--space-min-size-1)) * var(--space-bp)
+    )
+  );
+
+  --space-min-scale-2: var(--space-min-scale-1) * var(--space-min-ratio);
+  --space-max-scale-2: var(--space-max-scale-1) * var(--space-max-ratio);
+  --space-min-size-2: (var(--space-min-size) * var(--space-min-scale-1)) / 16;
+  --space-max-size-2: (var(--space-max-size) * var(--space-max-scale-1)) / 16;
+  --step-space-2: calc(
+    (
+      (var(--space-min-size-2) * 1rem) +
+        (var(--space-max-size-2) - var(--space-min-size-2)) * var(--space-bp)
+    )
+  );
+
+  --space-min-scale-3: var(--space-min-scale-2) * var(--space-min-ratio);
+  --space-max-scale-3: var(--space-max-scale-2) * var(--space-max-ratio);
+  --space-min-size-3: (var(--space-min-size) * var(--space-min-scale-2)) / 16;
+  --space-max-size-3: (var(--space-max-size) * var(--space-max-scale-2)) / 16;
+  --step-space-3: calc(
+    (
+      (var(--space-min-size-3) * 1rem) +
+        (var(--space-max-size-3) - var(--space-min-size-3)) * var(--space-bp)
+    )
+  );
+
+  --space-min-scale-4: var(--space-min-scale-3) * var(--space-min-ratio);
+  --space-max-scale-4: var(--space-max-scale-3) * var(--space-max-ratio);
+  --space-min-size-4: (var(--space-min-size) * var(--space-min-scale-3)) / 16;
+  --space-max-size-4: (var(--space-max-size) * var(--space-max-scale-3)) / 16;
+  --step-space-4: calc(
+    (
+      (var(--space-min-size-4) * 1rem) +
+        (var(--space-max-size-4) - var(--space-min-size-4)) * var(--space-bp)
+    )
+  );
+
+  --space-min-scale-5: var(--space-min-scale-4) * var(--space-min-ratio);
+  --space-max-scale-5: var(--space-max-scale-4) * var(--space-max-ratio);
+  --space-min-size-5: (var(--space-min-size) * var(--space-min-scale-4)) / 16;
+  --space-max-size-5: (var(--space-max-size) * var(--space-max-scale-4)) / 16;
+  --step-space-5: calc(
+    (
+      (var(--space-min-size-5) * 1rem) +
+        (var(--space-max-size-5) - var(--space-min-size-5)) * var(--space-bp)
+    )
+  );
+}

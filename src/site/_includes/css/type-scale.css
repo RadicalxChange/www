@@ -1,0 +1,117 @@
+/* @link https://utopia.fyi/generator?c=320,21,1.2,1140,24,1.25,5,2, */
+
+:root {
+  --type-min-width: 320;
+  --type-max-width: 1140;
+  --type-min-size: 21;
+  --type-max-size: 24;
+  --type-min-ratio: 1.2;
+  --type-max-ratio: 1.25;
+
+  --type-screen: 100vw;
+  --type-bp: calc(
+    (var(--type-screen) - ((var(--type-min-width) / 16) * 1rem)) /
+      ((var(--type-max-width) / 16) - (var(--type-min-width) / 16))
+  );
+}
+
+@media screen and (min-width: 1140px) {
+  :root {
+    --type-screen: calc(var(--type-max-width) * 1px);
+  }
+}
+
+:root {
+  --type-max-negative: (1 / var(--type-max-ratio) / var(--type-max-ratio));
+  --type-min-negative: (1 / var(--type-min-ratio) / var(--type-min-ratio));
+
+  --type-min-scale--2: var(--type-min-scale--1) * var(--type-min-ratio) *
+    var(--type-min-negative);
+  --type-max-scale--2: var(--type-max-scale--1) * var(--type-max-ratio) *
+    var(--type-max-negative);
+  --type-min-size--2: (var(--type-min-size) * var(--type-min-scale--2)) / 16;
+  --type-max-size--2: (var(--type-max-size) * var(--type-max-scale--2)) / 16;
+  --step-type--2: calc(
+    (
+      (var(--type-min-size--2) * 1rem) +
+        (var(--type-max-size--2) - var(--type-min-size--2)) * var(--type-bp)
+    )
+  );
+
+  --type-min-scale--1: var(--type-min-ratio) * var(--type-min-negative);
+  --type-max-scale--1: var(--type-max-ratio) * var(--type-max-negative);
+  --type-min-size--1: (var(--type-min-size) * var(--type-min-scale--1)) / 16;
+  --type-max-size--1: (var(--type-max-size) * var(--type-max-scale--1)) / 16;
+  --step-type--1: calc(
+    (
+      (var(--type-min-size--1) * 1rem) +
+        (var(--type-max-size--1) - var(--type-min-size--1)) * var(--type-bp)
+    )
+  );
+
+  --type-min-scale-0: var(--type-min-ratio);
+  --type-max-scale-0: var(--type-max-ratio);
+  --type-min-size-0: (var(--type-min-size)) / 16;
+  --type-max-size-0: (var(--type-max-size)) / 16;
+  --step-type-0: calc(
+    (
+      (var(--type-min-size-0) * 1rem) +
+        (var(--type-max-size-0) - var(--type-min-size-0)) * var(--type-bp)
+    )
+  );
+
+  --type-min-scale-1: var(--type-min-scale-0) * var(--type-min-ratio);
+  --type-max-scale-1: var(--type-max-scale-0) * var(--type-max-ratio);
+  --type-min-size-1: (var(--type-min-size) * var(--type-min-scale-0)) / 16;
+  --type-max-size-1: (var(--type-max-size) * var(--type-max-scale-0)) / 16;
+  --step-type-1: calc(
+    (
+      (var(--type-min-size-1) * 1rem) +
+        (var(--type-max-size-1) - var(--type-min-size-1)) * var(--type-bp)
+    )
+  );
+
+  --type-min-scale-2: var(--type-min-scale-1) * var(--type-min-ratio);
+  --type-max-scale-2: var(--type-max-scale-1) * var(--type-max-ratio);
+  --type-min-size-2: (var(--type-min-size) * var(--type-min-scale-1)) / 16;
+  --type-max-size-2: (var(--type-max-size) * var(--type-max-scale-1)) / 16;
+  --step-type-2: calc(
+    (
+      (var(--type-min-size-2) * 1rem) +
+        (var(--type-max-size-2) - var(--type-min-size-2)) * var(--type-bp)
+    )
+  );
+
+  --type-min-scale-3: var(--type-min-scale-2) * var(--type-min-ratio);
+  --type-max-scale-3: var(--type-max-scale-2) * var(--type-max-ratio);
+  --type-min-size-3: (var(--type-min-size) * var(--type-min-scale-2)) / 16;
+  --type-max-size-3: (var(--type-max-size) * var(--type-max-scale-2)) / 16;
+  --step-type-3: calc(
+    (
+      (var(--type-min-size-3) * 1rem) +
+        (var(--type-max-size-3) - var(--type-min-size-3)) * var(--type-bp)
+    )
+  );
+
+  --type-min-scale-4: var(--type-min-scale-3) * var(--type-min-ratio);
+  --type-max-scale-4: var(--type-max-scale-3) * var(--type-max-ratio);
+  --type-min-size-4: (var(--type-min-size) * var(--type-min-scale-3)) / 16;
+  --type-max-size-4: (var(--type-max-size) * var(--type-max-scale-3)) / 16;
+  --step-type-4: calc(
+    (
+      (var(--type-min-size-4) * 1rem) +
+        (var(--type-max-size-4) - var(--type-min-size-4)) * var(--type-bp)
+    )
+  );
+
+  --type-min-scale-5: var(--type-min-scale-4) * var(--type-min-ratio);
+  --type-max-scale-5: var(--type-max-scale-4) * var(--type-max-ratio);
+  --type-min-size-5: (var(--type-min-size) * var(--type-min-scale-4)) / 16;
+  --type-max-size-5: (var(--type-max-size) * var(--type-max-scale-4)) / 16;
+  --step-type-5: calc(
+    (
+      (var(--type-min-size-5) * 1rem) +
+        (var(--type-max-size-5) - var(--type-min-size-5)) * var(--type-bp)
+    )
+  );
+}
