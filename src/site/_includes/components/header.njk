@@ -1,6 +1,6 @@
 <!-- prettier-ignore -->
 {% macro render(title="", width="w-full lg:w-span7", height="min-h-screen lg:min-h-tall lg-tall:min-h-screen", href=null) %}
-<header class="bg-golden-fizz-100" data-header>
+<header class="bg-golden-fizz" data-header>
   <div
     class="flex flex-col justify-between {{ width }}
     {{ height }} py-base lg:py-lg/xl px-base lg:pr-lg/base lg:pl-lg/lg"
@@ -37,7 +37,7 @@
 {% endmacro %}
 
 <!-- prettier-ignore -->
-{% macro banner(title="", href=null, headerClasses="bg-golden-fizz-100") %}
+{% macro banner(title="", href=null, headerClasses="bg-golden-fizz") %}
 <header class="{{ headerClasses }}" data-header>
   <div
     class="w-full lg:w-span7 pt-base lg:pt-lg/xl pb-lg lg:pb-lg/lg px-base lg:pr-lg/base lg:pl-lg/lg"

@@ -42,7 +42,7 @@
 
 /* Alternate background colors */
 .color-every-other-child:nth-of-type(even) {
-  @apply bg-golden-fizz-100;
+  @apply bg-golden-fizz;
 }
 
 .color-every-other-child:nth-of-type(odd) {

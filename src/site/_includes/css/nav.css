@@ -3,7 +3,7 @@
   @apply fixed top-0 left-0;
   @apply flex items-center;
   @apply w-100vw h-100vh;
-  @apply bg-golden-fizz-100;
+  @apply bg-golden-fizz;
   @apply overflow-y-auto;
 
   &.nav_closed {
