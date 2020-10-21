@@ -1,4 +1,4 @@
-/* @link https://utopia.fyi/generator-mk-ii?c=320,12,1.333,1140,16,1.5,5,2, */
+/* @link https://utopia.fyi/generator-mk-ii?c=320,10,1.25,1140,16,1.5,5,2, */
 
 :root {
   --space-min-width: 320;
@@ -18,56 +18,56 @@
 }
 
 :root {
-  --fs--2-min: 6.75;
+  --fs--2-min: 6.4;
   --fs--2-max: 7.11;
   --step-space--2: calc(
     ((var(--fs--2-min) / 16) * 1rem) + (var(--fs--2-max) - var(--fs--2-min)) *
       var(--space-bp)
   );
 
-  --fs--1-min: 9;
+  --fs--1-min: 8;
   --fs--1-max: 10.67;
   --step-space--1: calc(
     ((var(--fs--1-min) / 16) * 1rem) + (var(--fs--1-max) - var(--fs--1-min)) *
       var(--space-bp)
   );
 
-  --fs-0-min: 12;
+  --fs-0-min: 10;
   --fs-0-max: 16;
   --step-space-0: calc(
     ((var(--fs-0-min) / 16) * 1rem) + (var(--fs-0-max) - var(--fs-0-min)) *
       var(--space-bp)
   );
 
-  --fs-1-min: 16;
+  --fs-1-min: 12.5;
   --fs-1-max: 24;
   --step-space-1: calc(
     ((var(--fs-1-min) / 16) * 1rem) + (var(--fs-1-max) - var(--fs-1-min)) *
       var(--space-bp)
   );
 
-  --fs-2-min: 21.32;
+  --fs-2-min: 15.63;
   --fs-2-max: 36;
   --step-space-2: calc(
     ((var(--fs-2-min) / 16) * 1rem) + (var(--fs-2-max) - var(--fs-2-min)) *
       var(--space-bp)
   );
 
-  --fs-3-min: 28.42;
+  --fs-3-min: 19.53;
   --fs-3-max: 54;
   --step-space-3: calc(
     ((var(--fs-3-min) / 16) * 1rem) + (var(--fs-3-max) - var(--fs-3-min)) *
       var(--space-bp)
   );
 
-  --fs-4-min: 37.89;
+  --fs-4-min: 24.41;
   --fs-4-max: 81;
   --step-space-4: calc(
     ((var(--fs-4-min) / 16) * 1rem) + (var(--fs-4-max) - var(--fs-4-min)) *
       var(--space-bp)
   );
 
-  --fs-5-min: 50.5;
+  --fs-5-min: 30.52;
   --fs-5-max: 121.5;
   --step-space-5: calc(
     ((var(--fs-5-min) / 16) * 1rem) + (var(--fs-5-max) - var(--fs-5-min)) *
