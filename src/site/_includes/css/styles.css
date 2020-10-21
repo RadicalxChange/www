@@ -9,7 +9,7 @@
 @import "tailwindcss/components";
 
 /* Custom components */
-@import "./layout.css";
+/* @import "./layout.css";
 @import "./inline.css";
 @import "./modal.css";
 @import "./nav.css";
@@ -18,10 +18,10 @@
 @import "./team-bio-modal.css";
 @import "./sponsor-modal.css";
 @import "./save-the-date.css";
-@import "./conference-replay.css";
+@import "./conference-replay.css"; */
 
 @import "tailwindcss/utilities";
 
 /* Custom utilities */
-@import "./columns.css";
+/* @import "./columns.css"; */
 @import "./markdown.css";

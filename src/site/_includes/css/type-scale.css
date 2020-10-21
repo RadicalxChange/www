@@ -1,76 +1,76 @@
-/* @link https://utopia.fyi/generator-mk-ii?c=320,21,1.2,1140,24,1.25,5,2, */
+/* @link https://utopia.fyi/generator-mk-ii?c=320,12,1.2,1140,16,1.25,5,2, */
 
 :root {
-  --type-min-width: 320;
-  --type-max-width: 1140;
+  --fluid-min-width: 320;
+  --fluid-max-width: 1140;
 
-  --type-screen: 100vw;
-  --type-bp: calc(
-    (var(--type-screen) - var(--type-min-width) / 16 * 1rem) /
-      (var(--type-max-width) - var(--type-min-width))
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
   );
 }
 
 @media screen and (min-width: 1140px) {
   :root {
-    --type-screen: calc(var(--type-max-width) * 1px);
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
   }
 }
 
 :root {
-  --ft--2-min: 14.58;
-  --ft--2-max: 15.36;
+  --f--2-min: 8.33;
+  --f--2-max: 10.24;
   --step-type--2: calc(
-    ((var(--ft--2-min) / 16) * 1rem) + (var(--ft--2-max) - var(--ft--2-min)) *
-      var(--type-bp)
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
   );
 
-  --ft--1-min: 17.5;
-  --ft--1-max: 19.2;
+  --f--1-min: 10;
+  --f--1-max: 12.8;
   --step-type--1: calc(
-    ((var(--ft--1-min) / 16) * 1rem) + (var(--ft--1-max) - var(--ft--1-min)) *
-      var(--type-bp)
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
   );
 
-  --ft-0-min: 21;
-  --ft-0-max: 24;
+  --f-0-min: 12;
+  --f-0-max: 16;
   --step-type-0: calc(
-    ((var(--ft-0-min) / 16) * 1rem) + (var(--ft-0-max) - var(--ft-0-min)) *
-      var(--type-bp)
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
   );
 
-  --ft-1-min: 25.2;
-  --ft-1-max: 30;
+  --f-1-min: 14.4;
+  --f-1-max: 20;
   --step-type-1: calc(
-    ((var(--ft-1-min) / 16) * 1rem) + (var(--ft-1-max) - var(--ft-1-min)) *
-      var(--type-bp)
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
   );
 
-  --ft-2-min: 30.24;
-  --ft-2-max: 37.5;
+  --f-2-min: 17.28;
+  --f-2-max: 25;
   --step-type-2: calc(
-    ((var(--ft-2-min) / 16) * 1rem) + (var(--ft-2-max) - var(--ft-2-min)) *
-      var(--type-bp)
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
   );
 
-  --ft-3-min: 36.29;
-  --ft-3-max: 46.88;
+  --f-3-min: 20.74;
+  --f-3-max: 31.25;
   --step-type-3: calc(
-    ((var(--ft-3-min) / 16) * 1rem) + (var(--ft-3-max) - var(--ft-3-min)) *
-      var(--type-bp)
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
   );
 
-  --ft-4-min: 43.55;
-  --ft-4-max: 58.59;
+  --f-4-min: 24.88;
+  --f-4-max: 39.06;
   --step-type-4: calc(
-    ((var(--ft-4-min) / 16) * 1rem) + (var(--ft-4-max) - var(--ft-4-min)) *
-      var(--type-bp)
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
   );
 
-  --ft-5-min: 52.25;
-  --ft-5-max: 73.24;
+  --f-5-min: 29.86;
+  --f-5-max: 48.83;
   --step-type-5: calc(
-    ((var(--ft-5-min) / 16) * 1rem) + (var(--ft-5-max) - var(--ft-5-min)) *
-      var(--type-bp)
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
   );
 }
