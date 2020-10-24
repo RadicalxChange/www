@@ -1,0 +1,200 @@
+---
+layout: layouts/_base.njk
+sections:
+  - header: "About"
+    content: |
+      RadicalxChange is a global movement dedicated to reimagining the building blocks of democracy and markets in order to uphold fairness, plurality, and meaningful participation in a rapidly changing world.
+
+      The RadicalxChange Foundation is a non-profit organization dedicated to advancing that cause, founded by E. Glen Weyl following the publication of the book Radical Markets in 2018. The ideas in Radical Markets provided a starting place for envisioning institutions that preserve democratic values in a rapidly-changing technological landscape, as the project and vision continue to evolve.
+    links:
+      - text: "Read more"
+        href: "/about"
+  - header: "Community"
+    content: |
+      As a global community, we stand at a unique crossroads with signs that social and economic systems are failing everywhere: rising inequality, stagnating economies and increasing threats to democracy. To address this, we believe that positive and comprehensive change is only possible through the inclusion of diverse voices. We need art to help us imagine new possibilities, scholarship to help us use the lessons of the past to design better societies, entrepreneurship to build new institutions, and activism to bridge ideological lines to fight hate and division. The RadicalxChange community has given rise to dozens of start-ups and local chapters around the world, major shifts in antitrust and data regulation, a substantial body of research and scholarship, and a wide range of artistic projects. We want you to be a part of it!
+    links:
+      - text: "Meet the team"
+        href: "/team"
+      - text: "Find a chapter"
+        href: "/chapters"
+  - header: "Commitment"
+    content: |
+      RadicalxChange is committed to building a society that advances plurality, community and equality by developing positive alternatives, grounded in rigorous social science, while also embracing technology and well-functioning markets. By moving beyond traditional institutions like private property and one-person-one-vote, it seeks to transcend old dichotomies between economy and politics, market and the state, or right and left. However, RadicalxChange rejects utopian claims to “neutrality.” The project is animated by definite values–for example, that a better society would be one in which everyone participates more meaningfully in key institutions including democracy and markets.
+    links:
+      - text: "Attend our conference"
+        href: "/2020-conference"
+      - text: "Subscribe to our newsletter"
+        href: "#"
+        attrs: data-modal-trigger=subscribe
+supporters:
+  - name: Hewlett Foundation
+    href: "https://hewlett.org/"
+  - name: Kauffman Foundation
+    href: "https://www.kauffman.org/"
+  - name: Merit
+    href: "https://www.merits.com/"
+  - name: Omidyar Network
+    href: "https://www.omidyar.com/"
+  - name: Wireline
+    href: "https://www.wireline.io/"
+  - name: The Charter Cities Institute
+    href: "https://www.chartercitiesinstitute.org/"
+  - name: Institute for New Economic Thinking
+    href: "https://www.ineteconomics.org/"
+  - name: The Osa Foundation
+    href: "https://www.theosafoundation.org/"
+  - name: Alfred P. Sloan Foundation
+    href: "https://sloan.org/"
+---
+
+<!-- prettier-ignore -->
+{% import "components/nav.njk" as nav %}
+<!-- prettier-ignore -->
+{% import "components/header.njk" as header %}
+<!-- prettier-ignore -->
+{% import "components/section.njk" as section %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+<!-- prettier-ignore -->
+{% import "components/call-to-action.njk" as callToAction %}
+<!-- prettier-ignore -->
+{% import "components/modal.njk" as modal %}
+<!-- prettier-ignore -->
+{% import "components/subscribe-modal.njk" as subscribeModal %}
+
+<main>
+  <!-- prettier-ignore -->
+  {% call nav.render(true, true) %}
+  <a
+    class="block-with-animated-link block text-right"
+    href="/files/GitxChange2-Quadratic-Funding-Hackathon.pdf"
+  >
+    <h1 class="text-lg/lg mb-lg/xs">
+      Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
+    </h1>
+    <p class="text-lg/sm mb-lg/base">October 5 - November 1, 2020</p>
+    <p>
+      <span>√&nbsp;&nbsp;</span
+      ><span class="animated-link">Design and sponsor a challenge</span>
+    </p>
+  </a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call header.render("") %}
+  <div>
+    <div class="lg:hidden mb-lg">
+      <h1 class="text-3xl mb-sm">
+        Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
+      </h1>
+      <p class="mb-sm">October 5 - November 1, 2020</p>
+      <p>
+        <a
+          href="/files/GitxChange2-Quadratic-Funding-Hackathon.pdf"
+          class="animated-link"
+          >Design and sponsor a challenge</a
+        >
+      </p>
+    </div>
+    <div>
+      <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
+        Missed the last conference?
+      </h1>
+      <!-- prettier-ignore -->
+      {% call callToAction.render() %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a class="animated-link" href="/2020-conference/replay"
+        >Watch the replay</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a
+        class="animated-link"
+        href="https://blog.radicalxchange.org/blog/posts/radicalxchange-replayed-to-be-or-not-to-be-hacked/"
+        >Listen via our podcast</a
+      >
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% endcall %}
+    </div>
+  </div>
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {{ nav.movingMenuButton() }}
+  <!-- prettier-ignore -->
+  {% for s in sections %}
+  <!-- prettier-ignore -->
+  {% call section.render(s.header) %}
+  <div>
+    <div class="md-container mb-base lg:mb-lg/base">
+      {{ s.content | markdown | safe }}
+    </div>
+    <!-- prettier-ignore -->
+    {% call callToAction.render() %}
+    <!-- prettier-ignore -->
+    {% for l in s.links %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a class="animated-link" href="{{ l.href }}" {{ l.attrs }}>
+      {{ l.text }}
+    </a>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% endfor %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% endfor %}
+  <!-- prettier-ignore -->
+  {% call section.render("Supporters") %}
+  <div>
+    <ul
+      class="grid grid-cols-2 gap-base lg:gap-lg/base col-gap-lg lg:col-gap-lg/lg mb-lg lg:mb-lg/lg"
+    >
+      {% for s in supporters %}
+      <li>
+        <a class="flex items-center h-full" href="{{ s.href }}">{{ s.name }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <!-- prettier-ignore -->
+    {% call callToAction.render() %}
+    <!-- prettier-ignore -->
+    {% call callToAction.item() %}
+    <a class="animated-link uppercase" href="/supporters">See all supporters</a>
+    <!-- prettier-ignore -->
+    {% endcall %}
+    <!-- prettier-ignore -->
+    {% endcall %}
+  </div>
+  <!-- prettier-ignore -->
+  {% endcall %}
+</main>
+<!-- prettier-ignore -->
+{% call footer.render('bg-golden-fizz-100' if sections.length % 2 == 0 else 'bg-white') %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% call modal.render('subscribe') %}
+<!-- prettier-ignore -->
+{% call subscribeModal.render() %}
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% endcall %}
+<script>
+  // prettier-ignore
+  {% include "components/nav.js" %}
+  // prettier-ignore
+  {% include "components/nav_moving-button.js" %}
+  // prettier-ignore
+  {% include "components/modal.js" %}
+</script>
