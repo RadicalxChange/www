@@ -9,8 +9,8 @@
 @import "tailwindcss/components";
 
 /* Custom components */
-/* @import "./layout.css";
-@import "./inline.css";
+@import "./layout2.css";
+/* @import "./inline.css";
 @import "./modal.css";
 @import "./nav.css";
 @import "./subscribe-modal.css";

@@ -6,17 +6,20 @@ layout: layouts/_base.njk
   <div class="fixed" style="top: 33%;">nav</div>
   <div
     class="grid min-h-screen"
-    style="grid-template-columns: 9fr 3fr; grid-template-rows: auto 1fr auto;"
+    style="
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto 1fr auto;
+    "
   >
-    <a class="col-start-1 row-start-1 mt-4 mx-6 mb-16" href="/"
+    <a class="col-start-1 col-span-9 row-start-1 mt-4 mr-8 mb-8 ml-6" href="/"
       ><img
         style="width: calc(566 * var(--fluid-bp));"
         src="/images/logos/logo.svg"
     /></a>
     <main
-      class="col-start-1 row-start-2 flex flex-col justify-around mx-6 mb-8"
+      class="col-start-1 col-span-9 row-start-2 flex flex-col justify-around mr-8 mb-8 ml-6"
     >
-      <div class="grid grid-cols-3 grid-rows-2 gap-8">
+      <div class="grid grid-cols-3 grid-rows-2 gap-8 items-start">
         <!-- prettier-ignore-line -->
         {% set concepts = ["Data as Labour / Data Dignity (DaL/DD)", "Quadratic
         Voting (QV)", "Radical Antitrust", "Intersectional Social Data (ISD)",
@@ -37,13 +40,13 @@ layout: layouts/_base.njk
     </main>
     <div
       id="socialMovementMarquee"
-      class="col-start-1 row-start-3 pt-2 leading-none bg-white overflow-hidden"
+      class="col-start-1 col-span-9 row-start-3 pt-2 leading-none bg-white overflow-hidden"
     >
       <span class="font-display text-size-5 uppercase mx-6 whitespace-no-wrap"
         >A Social Movement for Next-Generation Political Economies</span
       >
     </div>
-    <aside class="col-start-2 row-span-3 text-white bg-black">
+    <aside class="col-start-10 col-span-3 row-span-3 text-white bg-black">
       <a class="block m-4" href="#">
         <h2 class="font-bold text-size-1">
           Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
@@ -67,99 +70,130 @@ layout: layouts/_base.njk
     </aside>
   </div>
 </div>
-<footer class="min-h-screen bg-white">
-  <img src="/images/logos/logo.svg" />
-  <div>
-    <p>© 2020 RadicalxChange Foundation Ltd.</p>
-    <p>
-      RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
-      not support or oppose candidates for public office or political parties.
-    </p>
-  </div>
-  <nav>
-    <ul class="grid grid-cols-3">
-      <li class="uppercase">
-        <a href="/about">About</a>
-      </li>
-      <li class="uppercase">
-        <a href="/team">Team</a>
-      </li>
-      <li class="uppercase">
-        <a href="/press">Press</a>
-      </li>
-      <li class="uppercase">
-        <a href="/concepts">Concepts</a>
-      </li>
-      <li class="uppercase">
-        <a href="/resources">Literature</a>
-      </li>
-      <li class="uppercase">
-        <a href="/conferences">Conferences</a>
-      </li>
-      <li class="uppercase">
-        <a href="#">Newsletter</a>
-      </li>
-      <li class="uppercase">
-        <a href="/chapters">Chapters</a>
-      </li>
-      <li class="uppercase">
-        <a href="https://forum.radicalxchange.org/">Forum</a>
-      </li>
-      <li class="uppercase">
-        <a href="https://t.me/rxcfoundation">Telegram</a>
-      </li>
-      <li class="uppercase">
-        <a href="https://blog.radicalxchange.org/">Blog</a>
-      </li>
-      <li class="uppercase">
-        <a href="https://gitcoin.co/hackathon/GitxChange/onboard">GitxChange</a>
-      </li>
-      <li class="uppercase">
-        <a href="mailto:info@radicalxchange.org">Contact Us</a>
-      </li>
-      <li class="uppercase">
-        <a href="/privacy-policy">Privacy Policy</a>
-      </li>
-    </ul>
-  </nav>
-  <form
-    onsubmit="window.fathom.trackGoal('BZOTPUXU', 0);"
-    action="https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&amp;id=2e47820582"
-    method="post"
-    name="mc-embedded-subscribe-form"
-    target="_blank"
-    novalidate
+<footer class="bg-white">
+  <div
+    class="grid min-h-screen"
+    style="grid-template-columns: repeat(12, 1f); grid-template-rows: 1fr auto;"
   >
-    <h2>
-      Subscribe to our newsletter to hear about upcoming RadicalxChange events.
-    </h2>
-    <div>
-      <button
-        type="submit"
-        name="subscribe"
-        id="mc-embedded-subscribe"
-        class="animated-link mr-base lg:mr-lg/base text-sm lg:text-lg/sm uppercase"
-      >
-        Subscribe
-      </button>
-      <div>
-        <label for="mce-EMAIL">
-          Email Address
-        </label>
-        <input type="email" value="" name="EMAIL" id="mce-EMAIL" />
-      </div>
+    <a class="col-start-1 col-span-5 row-start-1 mt-4 ml-6 mr-16" href="/"
+      ><img
+        style="width: calc(566 * var(--fluid-bp));"
+        src="/images/logos/logo.svg"
+    /></a>
+    <div class="col-start-1 col-span-5 row-start-2 self-end mb-4 ml-6 mr-16">
+      <p>© 2020 RadicalxChange Foundation Ltd.</p>
+      <p>
+        RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
+        not support or oppose candidates for public office or political parties.
+      </p>
     </div>
-    <p>
-      You can unsubscribe at any time by clicking the link in the footer of our
-      emails. For information about our privacy practices, please visit our
-      website. We use Mailchimp as our marketing platform. By clicking below to
-      subscribe, you acknowledge that your information will be transferred to
-      Mailchimp for processing.
-      <a href="https://mailchimp.com/legal/" target="_blank"
-        >Learn more about Mailchimp's privacy practices here.</a
-      >
-    </p>
-  </form>
+    <nav
+      class="col-start-6 col-span-7 row-start-1 grid mt-4 mr-6 text-size-1"
+      style="grid-template-columns: repeat(7, 1fr);"
+    >
+      <div class="col-start-1 col-span-2">
+        <ul>
+          <li class="mb-4 uppercase">
+            <a href="/">Home</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="/about">About</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="/concepts">Concepts</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="/community">Community</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="/kiosk">Kiosk</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="/events">Events</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="/privacy-policy">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-start-3 col-span-2">
+        <h3 class="mb-4">Find us:</h3>
+        <ul>
+          <li class="mb-4 uppercase">
+            <a href="https://forum.radicalxchange.org/">Forum</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="https://twitter.com/RadxChange">Twitter</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="https://www.instagram.com/radxchange/">Instagram</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw"
+              >YouTube</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-start-5 col-span-2">
+        <h3 class="mb-4">Contact:</h3>
+        <ul>
+          <li class="mb-4 uppercase">
+            <a href="mailto:info@radicalxchange.org">E-mail</a>
+          </li>
+          <li class="mb-4 uppercase">
+            <a href="https://t.me/rxcfoundation">Telegram</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <form
+      onsubmit="window.fathom.trackGoal('BZOTPUXU', 0);"
+      action="https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&amp;id=2e47820582"
+      method="post"
+      name="mc-embedded-subscribe-form"
+      target="_blank"
+      novalidate
+      class="col-start-6 col-span-7 row-start-2 self-end mb-4 mr-6"
+    >
+      <h2 class="text-size-2 mb-2">
+        Join to our newsletter to hear about upcoming RadicalxChange events.
+      </h2>
+      <div class="flex border-b mb-4">
+        <button
+          type="submit"
+          name="subscribe"
+          id="mc-embedded-subscribe"
+          class="self-center inline-block py-2 mr-12 uppercase"
+        >
+          Subscribe
+        </button>
+        <div class="inline-block flex-grow">
+          <label for="mce-EMAIL" class="hidden">
+            Email Address
+          </label>
+          <input
+            type="email"
+            value=""
+            name="EMAIL"
+            id="mce-EMAIL"
+            placeholder="Type your email..."
+            class="subscribe-widget_input w-full p-4"
+          />
+        </div>
+      </div>
+      <p>
+        You can unsubscribe at any time by clicking the link in the footer of
+        our emails. For information about our privacy practices, please visit
+        our website. We use Mailchimp as our marketing platform. By clicking
+        below to subscribe, you acknowledge that your information will be
+        transferred to Mailchimp for processing.
+        <a class="underline" href="https://mailchimp.com/legal/" target="_blank"
+          >Learn more about Mailchimp's privacy practices here.</a
+        >
+      </p>
+    </form>
+  </div>
 </footer>
 <script
   type="text/javascript"
