@@ -8,47 +8,50 @@ layout: layouts/_base.njk
     class="relative grid min-h-screen"
     style="
       grid-template-columns: repeat(12, [gutter] 2rem [column] 1fr) [gutter] 2rem;
-      grid-template-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto auto 1fr auto;
     "
   >
     <a
       class="block mt-4 mb-8"
-      style="grid-column: column 1 / span column 9; grid-row: 1 / span 1;"
+      style="grid-column: column 1 / gutter 10; grid-row: 1 / span 1;"
       href="/"
       ><img
         style="width: calc(566 * var(--fluid-bp));"
         src="/images/logos/logo.svg"
     /></a>
-    <div
-      class="flex-grow grid grid-cols-3 grid-rows-2 gap-8 content-center mb-8"
+    <!-- prettier-ignore-line -->
+    {% set concepts = ["Data as Labour / Data Dignity (DaL/DD)", "Quadratic
+    Voting (QV)", "Radical Antitrust", "Intersectional Social Data (ISD)",
+    "Quadratic, Financing (QF)", "COST / SALSA"] %}
+    <!-- prettier-ignore-line -->
+    {% set columnRow = [[1, 3],[4, 3],[7, 3],[1, 4],[4, 4],[7, 4]] %}
+    <!-- prettier-ignore-line -->
+    {% for concept in concepts%}
+    <!-- prettier-ignore-line -->
+    {% set column = columnRow[loop.index0][0] %}
+    <!-- prettier-ignore-line -->
+    {% set row = columnRow[loop.index0][1] %}
+    <a
+      class="flex flex-col items-center mb-8"
       style="
-        grid-column: column 1 / span column 9;
-        grid-row: 2 / span 1;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-column: column {{ column }} / gutter {{ column + 3 }} ;
+        grid-row: {{ row }} / span 1;
       "
+      href="#"
     >
-      <!-- prettier-ignore-line -->
-      {% set concepts = ["Data as Labour / Data Dignity (DaL/DD)", "Quadratic
-      Voting (QV)", "Radical Antitrust", "Intersectional Social Data (ISD)",
-      "Quadratic, Financing (QF)", "COST / SALSA"] %}
-      <!-- prettier-ignore-line -->
-      {% for concept in concepts%}
-      <a class="flex flex-col items-center" href="#">
-        <img
-          class="w-full mb-4"
-          style="max-width: 256px;"
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQgMTloLTRjLS4yNzYgMC0uNS4yMjQtLjUuNXMuMjI0LjUuNS41aDRjLjI3NiAwIC41LS4yMjQuNS0uNXMtLjIyNC0uNS0uNS0uNXptMCAyaC00Yy0uMjc2IDAtLjUuMjI0LS41LjVzLjIyNC41LjUuNWg0Yy4yNzYgMCAuNS0uMjI0LjUtLjVzLS4yMjQtLjUtLjUtLjV6bS4yNSAyaC00LjVsMS4xODguNzgyYy4xNTQuMTM4LjM4LjIxOC42MTUuMjE4aC44OTVjLjIzNCAwIC40NjEtLjA4LjYxNS0uMjE4bDEuMTg3LS43ODJ6bTMuNzUtMTMuNzk5YzAgMy41NjktMy4yMTQgNS45ODMtMy4yMTQgOC43OTloLTEuOTg5Yy0uMDAzLTEuODU4Ljg3LTMuMzg5IDEuNzIxLTQuODY3Ljc2MS0xLjMyNSAxLjQ4Mi0yLjU3NyAxLjQ4Mi0zLjkzMiAwLTIuNTkyLTIuMDc1LTMuNzcyLTQuMDAzLTMuNzcyLTEuOTI1IDAtMy45OTcgMS4xOC0zLjk5NyAzLjc3MiAwIDEuMzU1LjcyMSAyLjYwNyAxLjQ4MiAzLjkzMi44NTEgMS40NzggMS43MjUgMy4wMDkgMS43MiA0Ljg2N2gtMS45ODhjMC0yLjgxNi0zLjIxNC01LjIzLTMuMjE0LTguNzk5IDAtMy43MjMgMi45OTgtNS43NzIgNS45OTctNS43NzIgMy4wMDEgMCA2LjAwMyAyLjA1MSA2LjAwMyA1Ljc3MnptNC0uNjkxdjEuMzcyaC0yLjUzOGMuMDItLjIyMy4wMzgtLjQ0OC4wMzgtLjY4MSAwLS4yMzctLjAxNy0uNDY0LS4wMzUtLjY5aDIuNTM1em0tMTAuNjQ4LTYuNTUzdi0xLjk1N2gxLjM3MXYxLjk2NGMtLjI0Mi0uMDIyLS40ODQtLjAzNS0uNzI2LS4wMzUtLjIxNSAwLS40My4wMS0uNjQ1LjAyOHptLTMuNzQzIDEuMjk0bC0xLjA0LTEuOTQgMS4yMDgtLjY0OCAxLjAzNyAxLjkzM2MtLjQxOC4xODEtLjgyMi40MDEtMS4yMDUuNjU1em0xMC41ODYgMS43MzVsMS45NDItMS4zOTQuNzk5IDEuMTE1LTIuMDU0IDEuNDczYy0uMTkxLS40My0uNDIzLS44MjctLjY4Ny0xLjE5NHptLTMuMDEtMi4zODlsMS4wMzgtMS45MzQgMS4yMDguNjQ4LTEuMDQxIDEuOTQxYy0uMzgyLS4yNTQtLjc4Ni0uNDczLTEuMjA1LS42NTV6bS0xMC4wNjggMy41ODNsLTIuMDU0LTEuNDcyLjc5OS0xLjExNSAxLjk0MiAxLjM5M2MtLjI2NC4zNjYtLjQ5NS43NjMtLjY4NyAxLjE5NHptMTMuNzA3IDYuMjIzbDIuMzU0Ljk1NC0uNTE0IDEuMjcxLTIuNDI1LS45ODJjLjIxLS4zOTcuNDA4LS44MTIuNTg1LTEuMjQzem0tMTMuMTA4IDEuMTU1bC0yLjM1NiAxLjA2LS41NjItMS4yNTEgMi4zNC0xLjA1MmMuMTczLjQzMy4zNzEuODQ1LjU3OCAxLjI0M3ptLTEuMTc4LTMuNjc2aC0yLjUzOHYtMS4zNzJoMi41MzVjLS4wMTguMjI2LS4wMzUuNDU0LS4wMzUuNjkxIDAgLjIzMy4wMTguNDU4LjAzOC42ODF6Ii8+PC9zdmc+"
-        />
-        <h2 class="text-size-1 text-center">{{ concept }}</h2>
-      </a>
-      <!-- prettier-ignore-line -->
-      {% endfor %}
-    </div>
+      <img
+        class="w-full mb-4"
+        style="max-width: 256px;"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQgMTloLTRjLS4yNzYgMC0uNS4yMjQtLjUuNXMuMjI0LjUuNS41aDRjLjI3NiAwIC41LS4yMjQuNS0uNXMtLjIyNC0uNS0uNS0uNXptMCAyaC00Yy0uMjc2IDAtLjUuMjI0LS41LjVzLjIyNC41LjUuNWg0Yy4yNzYgMCAuNS0uMjI0LjUtLjVzLS4yMjQtLjUtLjUtLjV6bS4yNSAyaC00LjVsMS4xODguNzgyYy4xNTQuMTM4LjM4LjIxOC42MTUuMjE4aC44OTVjLjIzNCAwIC40NjEtLjA4LjYxNS0uMjE4bDEuMTg3LS43ODJ6bTMuNzUtMTMuNzk5YzAgMy41NjktMy4yMTQgNS45ODMtMy4yMTQgOC43OTloLTEuOTg5Yy0uMDAzLTEuODU4Ljg3LTMuMzg5IDEuNzIxLTQuODY3Ljc2MS0xLjMyNSAxLjQ4Mi0yLjU3NyAxLjQ4Mi0zLjkzMiAwLTIuNTkyLTIuMDc1LTMuNzcyLTQuMDAzLTMuNzcyLTEuOTI1IDAtMy45OTcgMS4xOC0zLjk5NyAzLjc3MiAwIDEuMzU1LjcyMSAyLjYwNyAxLjQ4MiAzLjkzMi44NTEgMS40NzggMS43MjUgMy4wMDkgMS43MiA0Ljg2N2gtMS45ODhjMC0yLjgxNi0zLjIxNC01LjIzLTMuMjE0LTguNzk5IDAtMy43MjMgMi45OTgtNS43NzIgNS45OTctNS43NzIgMy4wMDEgMCA2LjAwMyAyLjA1MSA2LjAwMyA1Ljc3MnptNC0uNjkxdjEuMzcyaC0yLjUzOGMuMDItLjIyMy4wMzgtLjQ0OC4wMzgtLjY4MSAwLS4yMzctLjAxNy0uNDY0LS4wMzUtLjY5aDIuNTM1em0tMTAuNjQ4LTYuNTUzdi0xLjk1N2gxLjM3MXYxLjk2NGMtLjI0Mi0uMDIyLS40ODQtLjAzNS0uNzI2LS4wMzUtLjIxNSAwLS40My4wMS0uNjQ1LjAyOHptLTMuNzQzIDEuMjk0bC0xLjA0LTEuOTQgMS4yMDgtLjY0OCAxLjAzNyAxLjkzM2MtLjQxOC4xODEtLjgyMi40MDEtMS4yMDUuNjU1em0xMC41ODYgMS43MzVsMS45NDItMS4zOTQuNzk5IDEuMTE1LTIuMDU0IDEuNDczYy0uMTkxLS40My0uNDIzLS44MjctLjY4Ny0xLjE5NHptLTMuMDEtMi4zODlsMS4wMzgtMS45MzQgMS4yMDguNjQ4LTEuMDQxIDEuOTQxYy0uMzgyLS4yNTQtLjc4Ni0uNDczLTEuMjA1LS42NTV6bS0xMC4wNjggMy41ODNsLTIuMDU0LTEuNDcyLjc5OS0xLjExNSAxLjk0MiAxLjM5M2MtLjI2NC4zNjYtLjQ5NS43NjMtLjY4NyAxLjE5NHptMTMuNzA3IDYuMjIzbDIuMzU0Ljk1NC0uNTE0IDEuMjcxLTIuNDI1LS45ODJjLjIxLS4zOTcuNDA4LS44MTIuNTg1LTEuMjQzem0tMTMuMTA4IDEuMTU1bC0yLjM1NiAxLjA2LS41NjItMS4yNTEgMi4zNC0xLjA1MmMuMTczLjQzMy4zNzEuODQ1LjU3OCAxLjI0M3ptLTEuMTc4LTMuNjc2aC0yLjUzOHYtMS4zNzJoMi41MzVjLS4wMTguMjI2LS4wMzUuNDU0LS4wMzUuNjkxIDAgLjIzMy4wMTguNDU4LjAzOC42ODF6Ii8+PC9zdmc+"
+      />
+      <h2 class="text-size-1 text-center">{{ concept }}</h2>
+    </a>
+    <!-- prettier-ignore-line -->
+    {% endfor %}
     <div
       id="socialMovementMarquee"
       class="sticky bottom-0 pt-2 leading-none bg-white overflow-hidden"
-      style="grid-column: gutter 1 / span column 10; grid-row: 3 / span 1;"
+      style="grid-column: gutter 1 / column 10; grid-row: 6 / span 1;"
     >
       <span class="font-display text-size-5 uppercase mx-6 whitespace-no-wrap"
         >A Social Movement for Next-Generation Political Economies</span
@@ -56,7 +59,7 @@ layout: layouts/_base.njk
     </div>
     <aside
       class="text-white bg-black"
-      style="grid-column: column 10 / span gutter 13; grid-row: 1 / span 3;"
+      style="grid-column: column 10 / -1; grid-row: 1 / -1;"
     >
       <a class="block m-4" href="#">
         <h2 class="font-bold text-size-1">
@@ -97,7 +100,10 @@ layout: layouts/_base.njk
         style="width: calc(566 * var(--fluid-bp));"
         src="/images/logos/logo.svg"
     /></a>
-    <div style="grid-column: column 1 / gutter 6; grid-row: 2 / span 1;">
+    <div
+      class="mb-4 self-end"
+      style="grid-column: column 1 / gutter 6; grid-row: 2 / span 1;"
+    >
       <p>© 2020 RadicalxChange Foundation Ltd.</p>
       <p>
         RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
