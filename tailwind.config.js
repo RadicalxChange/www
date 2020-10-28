@@ -37,7 +37,7 @@ module.exports = {
       borderRadius: { "50": "50%" },
       borderWidth: { "3": "3px" },
       transitionProperty: { right: "right" },
-      inset: { full: "100%" },
+      inset: { full: "100%", "1/2": "50%" },
       minHeight: { tall: "50vw" },
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
