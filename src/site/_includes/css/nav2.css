@@ -1,0 +1,11 @@
+.nav {
+  @apply z-50;
+  @apply fixed top-0 left-0;
+  @apply h-screen;
+  transform: translate(-100%, 0);
+  @apply transition-transform duration-500;
+
+  &_open {
+    transform: translate(0, 0);
+  }
+}
