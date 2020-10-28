@@ -1,12 +1,3 @@
-.nav-tab {
-  transform: translate(-10px, 0);
-  @apply transition-transform duration-500;
-
-  &:hover {
-    transform: translate(0, 0);
-  }
-}
-
 .subscribe-widget {
   &_input {
     &::placeholder {

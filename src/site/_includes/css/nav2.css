@@ -1,11 +1,42 @@
-.nav {
+.menu {
   @apply z-50;
   @apply fixed top-0 left-0;
+  @apply flex;
   @apply h-screen;
-  transform: translate(-100%, 0);
+  transform: translate(calc(-100% + 24px), 0);
   @apply transition-transform duration-500;
+
+  &:hover {
+    transform: translate(calc(-100% + 34px), 0);
+  }
+
+  &_open {
+    transform: translate(0, 0);
+
+    &:hover {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.nav {
+  @apply bg-black;
+  @apply text-white;
+  @apply overflow-y-auto;
+}
+
+/* .nav-button {
+  @apply z-50;
+  @apply absolute bottom-0 left-0;
+  @apply block;
+  transform: translate(-10px, 0);
+  @apply transition-transform duration-500;
+
+  &:hover {
+    transform: translate(0, 0);
+  }
 
   &_open {
     transform: translate(0, 0);
   }
-}
+} */

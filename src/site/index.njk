@@ -81,11 +81,6 @@ layout: layouts/_base.njk
         </div>
       </div>
     </aside>
-    <div class="z-50 sticky top-1/2 left-0 h-0">
-      <a id="navButton" class="absolute bottom-0 left-0 block" href="#">
-        <img class="nav-tab" src="/images/ui/menu-slider.svg" />
-      </a>
-    </div>
   </div>
 </div>
 <footer class="bg-white">
@@ -227,8 +222,8 @@ layout: layouts/_base.njk
     </form>
   </div>
 </footer>
-<div id="nav" class="nav">
-  <nav class="absolute bottom-0 left-0 min-h-screen bg-black text-white">
+<div id="menu" class="menu">
+  <nav class="nav">
     <h1 class="my-4 mx-8">
       <a href="/"
         ><img
@@ -275,23 +270,48 @@ layout: layouts/_base.njk
       </li>
     </ul>
   </nav>
+  <a id="menuButton" class="block self-center" href="#">
+    <img class="nav-tab" src="/images/ui/menu-slider.svg" />
+  </a>
 </div>
+
 <script type="text/javascript">
-  const $nav = document.getElementById("nav");
+  const $nav = document.getElementById("menu");
+  const $navButton = document.getElementById("menuButton");
+
+  function outsideClickListener(event) {
+    if (!$nav.contains(event.target)) {
+      closeNav(event);
+    }
+  }
+
+  function keyListener(event) {
+    if (event.key === "Escape") {
+      closeNav(event);
+    }
+  }
 
   function openNav() {
-    $nav.classList.add("nav_open");
+    $nav.classList.add("menu_open");
+    document.addEventListener("click", outsideClickListener);
+    document.addEventListener("keydown", keyListener);
   }
 
   function closeNav() {
-    $nav.classList.remove("nav_open");
+    $nav.classList.remove("menu_open");
+    document.removeEventListener("click", outsideClickListener);
+    document.removeEventListener("keydown", keyListener);
   }
 
-  const $navButton = document.getElementById("navButton");
-
+  let isOpen = false;
   $navButton.addEventListener("click", function (event) {
     event.preventDefault();
-    openNav();
+    if (isOpen) {
+      closeNav();
+    } else {
+      openNav();
+    }
+    isOpen = !isOpen;
   });
 </script>
 <script
