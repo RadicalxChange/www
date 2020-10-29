@@ -2,9 +2,9 @@
   @apply grid;
   @apply grid-cols-mobile;
   grid-template-rows: repeat(5, auto);
-  @apply min-h-screen;
 
   @screen lg {
+    @apply min-h-screen;
     @apply grid-cols-desktop;
     grid-template-rows: 1fr auto;
   }
