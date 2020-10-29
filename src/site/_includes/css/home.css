@@ -33,18 +33,27 @@
   &_carousel {
     grid-column: 1 / -1;
     grid-row: 3 / span 1;
-    @apply grid;
-    grid-template-columns: repeat(6, 1fr);
-    @apply col-gap-8 row-gap-8;
-    @apply px-8;
+    display: flex;
     @apply overflow-x-auto;
+    @apply cursor-move;
 
     @screen lg {
       grid-column: gutter 1 / column 10;
       grid-row: 3 / span 1;
+      @apply mx-8;
+      @apply cursor-auto;
+    }
+  }
+
+  &_carousel-inner {
+    @apply grid;
+    grid-template-columns: repeat(6, calc(100vw - 4rem));
+    @apply col-gap-8 row-gap-8;
+    @apply px-8;
+
+    @screen lg {
       grid-template-columns: repeat(3, 1fr);
       @apply px-0;
-      @apply mx-8;
     }
   }
 
