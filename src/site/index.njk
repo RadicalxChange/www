@@ -7,7 +7,6 @@ layout: layouts/_base.njk
     <h1 class="my-4 mx-8">
       <a href="/"
         ><img
-          class="fill-current"
           style="width: calc(566 * var(--fluid-bp));"
           src="/images/logos/logo-white.svg"
       /></a>
@@ -55,17 +54,8 @@ layout: layouts/_base.njk
   </a>
 </div>
 <div class="bg-golden-fizz">
-  <div
-    class="relative grid min-h-screen"
-    style="
-      grid-template-columns: repeat(12, [gutter] 2rem [column] 1fr) [gutter] 2rem;
-      grid-template-rows: auto 1fr auto auto 1fr auto;
-    "
-  >
-    <a
-      class="block mt-4 mb-8"
-      style="grid-column: column 1 / gutter 10; grid-row: 1 / span 1;"
-      href="/"
+  <main class="home-main">
+    <a class="home-main_logo" href="/"
       ><img
         style="width: calc(566 * var(--fluid-bp));"
         src="/images/logos/logo.svg"
@@ -133,15 +123,12 @@ layout: layouts/_base.njk
         </div>
       </div>
     </aside>
-  </div>
+  </main>
 </div>
-<footer class="bg-white">
-  <div
-    class="grid min-h-screen"
-    style="
-      grid-template-columns: repeat(12, [gutter] 2rem [column] 1fr) [gutter] 2rem;
-      grid-template-rows: 1fr auto;
-    "
+<div class="bg-white">
+  <footer
+    class="grid grid-cols-desktop min-h-screen"
+    style="grid-template-rows: 1fr auto;"
   >
     <a
       class="block mt-4 mb-8"
@@ -272,8 +259,8 @@ layout: layouts/_base.njk
         >
       </p>
     </form>
-  </div>
-</footer>
+  </footer>
+</div>
 <script type="text/javascript">
   const $menu = document.getElementById("menu");
   const $menuButton = document.getElementById("menuButton");

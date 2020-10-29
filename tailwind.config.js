@@ -10,6 +10,10 @@ module.exports = {
       "lg-tall": { raw: "(min-width: 768px) and (max-aspect-ratio: 2/1)" },
       touch: { raw: "(hover: none)" },
     },
+    gridTemplateColumns: {
+      desktop: "repeat(12, [gutter] 2rem [column] 1fr) [gutter] 2rem",
+      mobile: "repeat(4, [gutter] 2rem [column] 1fr) [gutter] 2rem",
+    },
     fontSize: {
       "size--2": "var(--step-type--2)",
       "size--1": "var(--step-type--1)",
