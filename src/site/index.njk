@@ -117,32 +117,18 @@ layout: layouts/_base.njk
   </main>
 </div>
 <div class="bg-white">
-  <footer
-    class="grid grid-cols-desktop min-h-screen"
-    style="grid-template-rows: 1fr auto;"
-  >
-    <a
-      class="block mt-4 mb-8"
-      style="grid-column: column 1 / gutter 6; grid-row: 1 / span 1;"
-      href="/"
-      ><img
-        style="width: calc(566 * var(--fluid-bp));"
-        src="/images/logos/logo.svg"
+  <footer class="footer">
+    <a class="footer_logo" href="/"
+      ><img class="logo" src="/images/logos/logo.svg"
     /></a>
-    <div
-      class="mb-4 self-end"
-      style="grid-column: column 1 / gutter 6; grid-row: 2 / span 1;"
-    >
+    <div class="footer_copyright">
       <p>© 2020 RadicalxChange Foundation Ltd.</p>
       <p>
         RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
         not support or oppose candidates for public office or political parties.
       </p>
     </div>
-    <div
-      class="mt-4 mb-8"
-      style="grid-column: column 6 / gutter 9; grid-row: 1 / span 1;"
-    >
+    <div class="footer_menu">
       <ul>
         <li class="mb-4 uppercase">
           <a href="/">Home</a>
@@ -167,10 +153,7 @@ layout: layouts/_base.njk
         </li>
       </ul>
     </div>
-    <div
-      class="mt-4 mb-8"
-      style="grid-column: column 8 / gutter 11; grid-row: 1 / span 1;"
-    >
+    <div class="footer_find-us">
       <h3 class="mb-4">Find us:</h3>
       <ul>
         <li class="mb-4 uppercase">
@@ -189,10 +172,7 @@ layout: layouts/_base.njk
         </li>
       </ul>
     </div>
-    <div
-      class="mt-4 mb-8"
-      style="grid-column: column 10 / gutter 13; grid-row: 1 / span 1;"
-    >
+    <div class="footer_contact">
       <h3 class="mb-4">Contact:</h3>
       <ul>
         <li class="mb-4 uppercase">
@@ -210,8 +190,7 @@ layout: layouts/_base.njk
       name="mc-embedded-subscribe-form"
       target="_blank"
       novalidate
-      class="mb-4"
-      style="grid-column: column 6 / gutter 13; grid-row: 2 / span 1;"
+      class="footer_subscribe"
     >
       <h2 class="text-size-2 mb-2">
         Join to our newsletter to hear about upcoming RadicalxChange events.
