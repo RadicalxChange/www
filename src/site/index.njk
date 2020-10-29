@@ -7,7 +7,7 @@ layout: layouts/_base.njk
     <h1 class="my-4 mx-8">
       <a href="/"><img class="logo" src="/images/logos/logo-white.svg" /></a>
     </h1>
-    <ul>
+    <ul class="flex-grow">
       <li class="leading-none my-4 mx-8">
         <a
           class="font-display text-size-5 uppercase hover:underline"
@@ -44,8 +44,11 @@ layout: layouts/_base.njk
         >
       </li>
     </ul>
+    <button class="menu-button self-center mb-4">
+      <img src="/images/ui/close-button-white.svg" />
+    </button>
   </nav>
-  <a id="menuButton" class="hidden lg:block self-center" href="#">
+  <a class="menu-button hidden lg:block self-center" href="#">
     <img class="nav-tab" src="/images/ui/menu-slider.svg" />
   </a>
 </div>
@@ -108,9 +111,14 @@ layout: layouts/_base.njk
       </div>
     </aside>
     <div class="home-main_banner">
-      <h2 class="text-center font-display text-size-5 leading-none uppercase">
+      <h2
+        class="mb-4 text-center font-display text-size-5 leading-none uppercase"
+      >
         Upgrade the source code
       </h2>
+      <a class="menu-button" href="#"
+        ><img src="/images/ui/menu-button.svg"
+      /></a>
     </div>
   </main>
 </div>
@@ -232,12 +240,19 @@ layout: layouts/_base.njk
 </div>
 <script type="text/javascript">
   const $menu = document.getElementById("menu");
-  const $menuButton = document.getElementById("menuButton");
+  const menuButtons = document.getElementsByClassName("menu-button");
 
   function outsideClickListener(event) {
-    if (!$menu.contains(event.target)) {
-      closeMenu();
+    for (const $button of menuButtons) {
+      if (event.target === $button || $button.contains(event.target)) {
+        return;
+      }
     }
+    if ($menu.contains(event.target)) {
+      return;
+    }
+    console.log("outside");
+    closeMenu();
   }
 
   function keyListener(event) {
@@ -259,7 +274,8 @@ layout: layouts/_base.njk
   }
 
   let isOpen = false;
-  $menuButton.addEventListener("click", function (event) {
+  function onMenuButtonClick(event) {
+    console.log("heyyy");
     event.preventDefault();
     if (isOpen) {
       closeMenu();
@@ -267,7 +283,10 @@ layout: layouts/_base.njk
       openMenu();
     }
     isOpen = !isOpen;
-  });
+  }
+  for (const $button of menuButtons) {
+    $button.addEventListener("click", onMenuButtonClick);
+  }
 </script>
 <script
   type="text/javascript"

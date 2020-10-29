@@ -38,6 +38,7 @@
 }
 
 .nav {
+  @apply flex flex-col items-start;
   @apply bg-black;
   @apply text-white;
   @apply overflow-y-auto;
