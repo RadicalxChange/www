@@ -39,9 +39,14 @@
 
 .nav {
   @apply flex flex-col items-start;
+  @apply w-full;
   @apply bg-black;
   @apply text-white;
   @apply overflow-y-auto;
+
+  @screen lg {
+    @apply w-auto;
+  }
 }
 
 /* .nav-button {

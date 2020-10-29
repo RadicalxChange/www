@@ -3,7 +3,7 @@ layout: layouts/_base.njk
 ---
 
 <div id="menu" class="menu">
-  <nav class="nav">
+  <nav id="nav" class="nav hidden">
     <h1 class="my-4 mx-8">
       <a href="/"><img class="logo" src="/images/logos/logo-white.svg" /></a>
     </h1>
@@ -44,7 +44,7 @@ layout: layouts/_base.njk
         >
       </li>
     </ul>
-    <button class="menu-button self-center mb-4">
+    <button class="menu-button self-center mb-4 lg:hidden">
       <img src="/images/ui/close-button-white.svg" />
     </button>
   </nav>
@@ -240,6 +240,7 @@ layout: layouts/_base.njk
 </div>
 <script type="text/javascript">
   const $menu = document.getElementById("menu");
+  const $nav = $menu.querySelector("#nav");
   const menuButtons = document.getElementsByClassName("menu-button");
 
   function outsideClickListener(event) {
@@ -251,7 +252,6 @@ layout: layouts/_base.njk
     if ($menu.contains(event.target)) {
       return;
     }
-    console.log("outside");
     closeMenu();
   }
 
@@ -262,6 +262,7 @@ layout: layouts/_base.njk
   }
 
   function openMenu() {
+    $nav.classList.remove("hidden");
     $menu.classList.add("menu_open");
     document.addEventListener("click", outsideClickListener);
     document.addEventListener("keydown", keyListener);
@@ -269,13 +270,13 @@ layout: layouts/_base.njk
 
   function closeMenu() {
     $menu.classList.remove("menu_open");
+    setTimeout(() => $nav.classList.add("hidden"), 500);
     document.removeEventListener("click", outsideClickListener);
     document.removeEventListener("keydown", keyListener);
   }
 
   let isOpen = false;
   function onMenuButtonClick(event) {
-    console.log("heyyy");
     event.preventDefault();
     if (isOpen) {
       closeMenu();
