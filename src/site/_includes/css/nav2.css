@@ -10,10 +10,18 @@
     transform: translate(calc(-100% + 34px), 0);
   }
 
+  &:focus {
+    transform: translate(calc(-100% + 34px), 0);
+  }
+
   &_open {
     transform: translate(0, 0);
 
     &:hover {
+      transform: translate(0, 0);
+    }
+
+    &:focus {
       transform: translate(0, 0);
     }
   }
