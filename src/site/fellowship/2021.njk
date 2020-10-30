@@ -1,0 +1,146 @@
+---
+applyLink:
+  text: "Apply to RxC Fellowship"
+  href: "mailto:fellowship@radicalxchange.org?subject=Application%20to%20RxC%20Fellowship%20Program&body=Name%3A%20%3Ctodo%3E%0D%0ACity%2C%20Country%3A%20%3Ctodo%3E%0D%0APhone%20number%3A%20%3Ctodo%3E%0D%0AOccupation%3A%20%3Ctodo%3E%0D%0A%0D%0APlease%20attach%20the%20following...%0D%0A1000-word%20essay%3A%20%3Ctodo%3E%0D%0APersonal%20statement%3A%20%3Ctodo%3E%0D%0APrevious%20work%2Fresearch%3A%20%3Coptional%3E%0D%0AOther%20(resume%2C%20etc.)%3A%20%3Coptional%3E"
+sections:
+  - header: "About"
+    id: "about"
+    content: |
+      ## What
+
+      Starting January 2021, the RadicalxChange fellowship program will host its first 10-week cohort, bringing together mission-driven individuals and teams to work collectively on projects to strengthen civic society and rethink public goods. We believe that positive and comprehensive change is only possible through the inclusion of diverse voices and backgrounds. Selected fellows will come from multiple areas of endeavor, such as activism, art, design, entrepreneurship, investing, policymaking, research and technology. 
+
+      The program will explore four key topic areas with fellows: governance, property rights, data rights, and competition through interactive talks, networking, and mentorship. Our aim is to provide fellows with a platform and contacts to supercharge their projects to deliver meaningful economic and societal change. 
+
+      ## Who
+
+      We want to encourage everyone working in the civic society and public goods space to apply. 
+
+      We hope to see applicants from a wide variety of backgrounds including but not limited to: activists, artists, designers, entrepreneurs, investors, policymakers, researchers, and technologists. Broadly, apply if:
+
+      *   You want to strengthen civic society and contribute to the creation of new public goods,
+      *   You think in terms of public goods increasing returns (or increasing returns to scale) and not individualistic decreasing returns,
+      *   You want to rethink incentives and ownership structures, such as “exit to community” and other alternative corporate or cooperative forms, to create more equitable economies.
+
+      ## Why
+
+      1. **Get Access**: You will have direct access to high calibre mentors and peers working on projects that have a meaningful positive impact on the world. 
+      2. **Learn**: You will collaborate and learn from a diverse mix of people across disciplines to broaden your horizons and solve your problems creatively. 
+      3. **Bring Impact**: We will help maximise your chances of impact by providing access to relevant customers, investors, partners, and policymakers, who understand impact-driven results. 
+
+      <h2 id="about-how">How</h2>
+
+      1. E. Glen Weyl’s book, _Radical Markets_, provided a starting place for envisioning institutions that preserve democratic values in a rapidly-changing technological landscape. Send us a **1000-word essay** explaining how your project contributes to the RadicalxChange movement and pushes the vision forward.
+      2. Share a **brief personal statement** describing what you care about and what drives you. 
+      3. Optionally, share a **selection of your previous work or research**.
+  - header: "FAQs"
+    id: "faqs"
+    content: |
+      **Can my essay be longer or shorter than 1000 words?**
+
+      Yes, your essay can be 10% greater or less than the 1000 word count in order to qualify. So no fewer than 900 words and no more than 1100 words.
+
+      **How many fellows will be on the program?**
+
+      The final number of fellows depends on the number of submissions. We are aiming for somewhere between 10 and 20 fellows to ensure a high-quality experience with enough diversity while still being an exclusive program.
+
+      **How much time will I need to dedicate to the program?**
+
+      We anticipate that individuals will really get maximum value if they can dedicate 8 hours a week to the program. This amounts to 80 hours over the course of the 10-week program.
+
+      **Will I receive funding?**
+
+      No direct funding is offered at this time. But the RadicalxChange team is offering you as much time and resources as possible during the 10-week program for you to make the most out of the fellowship. After the program is over, fellows will still have access to these resources, and we hope you value the network we offer.
+
+      **How much of the program will be asynchronous?**
+
+      We know how busy fellows can be and so we are aiming to deliver the program asynchronously when possible. We think that there will need to be some element of synchronous networking and learning to ensure all fellows get to learn from each other and build strong relationships. We are building the program in a flexible manner to accommodate most schedules and time zones.
+
+      **Can I fail the fellowship?**
+
+      The program is designed not to pass an exam but rather to create a collaborative environment in which individuals and teams can thrive. Fellows who are not committed and are not present at a minimum number of meetings won’t however be able to benefit from the “Fellow” title or network.  
+
+      **What would a successful fellow do?**
+
+      Success will be to meaningfully engage with other fellows and the broader network to deliver something tangible after 10 weeks. Fellows will have their own goals and motivations and we don’t want to get in the way. We aim to facilitate and guide individuals and teams to reach their own goals by providing access to an ecosystem of RxC resources.
+---
+
+<!-- prettier-ignore -->
+{% import "components/section.njk" as section %}
+<!-- prettier-ignore -->
+{% import "components/call-to-action.njk" as callToAction %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_page.njk" %}
+
+<!-- prettier-ignore -->
+{% set title = "RxC Fellowship Program - Become a 2021 RxC Fellow" %}
+<!-- prettier-ignore -->
+{% set description = "Starting January 2021, the RadicalxChange fellowship program will host its first 10-week cohort, bringing together mission-driven individuals and teams to work collectively on projects to strengthen civic society and rethink public goods." %}
+<!-- prettier-ignore -->
+{% set headerText = "RxC Fellowship Program" %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<div>
+  <div class="md-container mb-base lg:mb-lg/base">
+    <h2>First Cohort, January 25th - April 2nd</h2>
+    <p>
+      Starting January 2021, the first cohort will work together to strengthen
+      civic society and rethink public goods.
+    </p>
+  </div>
+  <!-- prettier-ignore -->
+  {% call callToAction.render() %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link uppercase" href="{{ applyLink.href }}">
+    {{ applyLink.text }}
+  </a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link" href="#about">
+    Learn more
+  </a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% endcall %}
+</div>
+<!-- prettier-ignore -->
+{% endblock %}
+<!-- prettier-ignore -->
+{% block restOfContent %}
+<!-- prettier-ignore -->
+{% for s in sections %}
+<!-- prettier-ignore -->
+{% call section.render(s.header,id=s.id) %}
+<div>
+  <div class="md-container mb-base lg:mb-lg/base">
+    {{ s.content | markdown | safe }}
+    <h2>Apply now</h2>
+    <p>
+      To apply, send us an email with
+      <a href="#about-how">the materials described above</a>.
+    </p>
+  </div>
+  <!-- prettier-ignore -->
+  {% call callToAction.render() %}
+  <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link uppercase" href="{{ applyLink.href }}">
+    {{ applyLink.text }}
+  </a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% endcall %}
+</div>
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{% endfor %}
+<!-- prettier-ignore -->
+{% endblock %}
