@@ -9,7 +9,7 @@
       @apply block;
     }
 
-    &:hover .save-the-date_filled {
+    &:hover .oval_filled {
       @apply opacity-100;
     }
 
