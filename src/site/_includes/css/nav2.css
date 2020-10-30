@@ -2,7 +2,7 @@
   @apply z-50;
   @apply fixed top-0 left-0;
   @apply flex;
-  @apply w-full;
+  @apply w-screen;
   @apply h-screen;
   transform: translate(0, 100%);
   @apply transition-transform duration-500;
@@ -38,8 +38,9 @@
 }
 
 .nav {
-  @apply flex flex-col items-start;
+  @apply flex flex-col;
   @apply w-full;
+  @apply h-full;
   @apply bg-black;
   @apply text-white;
   @apply overflow-y-auto;

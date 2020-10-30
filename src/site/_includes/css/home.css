@@ -59,9 +59,10 @@
 
   &_concept {
     @apply flex flex-col items-center;
-    @apply mb-8;
+    @apply mb-4;
 
     @screen lg {
+      @apply mb-8;
     }
   }
 
