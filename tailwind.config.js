@@ -23,6 +23,9 @@ module.exports = {
       "size-3": "var(--step-type-3)",
       "size-4": "var(--step-type-4)",
       "size-5": "var(--step-type-5)",
+      "size-6": "var(--step-type-6)",
+      "size-7": "var(--step-type-7)",
+      "size-8": "var(--step-type-8)",
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
