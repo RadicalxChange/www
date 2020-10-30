@@ -64,13 +64,56 @@ supporters:
 
 <main>
   <!-- prettier-ignore -->
-  {% call nav.render(true) %}
+  {% call nav.render(true, true) %}
+  <a class="save-the-date_container" href="/fellowship/2021">
+    <div class="save-the-date_oval">
+      <div class="relative">
+        <span
+          class="save-the-date_text save-the-date_filled"
+          aria-hidden="true"
+        >
+          RxC Fellowship
+        </span>
+        <span class="save-the-date_text save-the-date_stroked">
+          RxC Fellowship
+        </span>
+      </div>
+    </div>
+    <div>
+      <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
+        Introducing RxC Fellowship Program
+      </h1>
+      <p class="mb-base lg:mb-lg/base">
+        Starting January 2021, the first cohort will work together to strengthen
+        civic society and rethink public goods.
+      </p>
+      <p><span class="animated-link">Become an RxC Fellow</span></p>
+    </div>
+  </a>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {% call header.render("") %}
   <div>
-    <div>
+    <div class="lg:hidden">
+      <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
+        Introducing RxC Fellowship Program
+      </h1>
+      <p class="mb-base lg:mb-lg/base">
+        Starting January 2021, the first cohort will work together to strengthen
+        civic society and rethink public goods.
+      </p>
+      <!-- prettier-ignore -->
+      {% call callToAction.render() %}
+      <!-- prettier-ignore -->
+      {% call callToAction.item() %}
+      <a class="animated-link" href="/fellowship/2021">Become an RxC Fellow</a>
+      <!-- prettier-ignore -->
+      {% endcall %}
+      <!-- prettier-ignore -->
+      {% endcall %}
+    </div>
+    <div class="hidden lg:block">
       <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
         Missed the last conference?
       </h1>
