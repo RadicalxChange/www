@@ -50,6 +50,8 @@ supporters:
 <!-- prettier-ignore -->
 {% import "components/nav.njk" as nav %}
 <!-- prettier-ignore -->
+{% import "components/oval.njk" as oval %}
+<!-- prettier-ignore -->
 {% import "components/header.njk" as header %}
 <!-- prettier-ignore -->
 {% import "components/section.njk" as section %}
@@ -65,31 +67,14 @@ supporters:
 <main>
   <!-- prettier-ignore -->
   {% call nav.render(true, true) %}
-  <a class="save-the-date_container" href="/fellowship/2021">
-    <div class="save-the-date_oval">
-      <div class="relative">
-        <span
-          class="save-the-date_text save-the-date_filled"
-          aria-hidden="true"
-        >
-          RxC Fellowship
-        </span>
-        <span class="save-the-date_text save-the-date_stroked">
-          RxC Fellowship
-        </span>
-      </div>
-    </div>
-    <div>
-      <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
-        Introducing RxC Fellowship Program
-      </h1>
-      <p class="mb-base lg:mb-lg/base">
-        Starting January 2021, the first cohort will work together to strengthen
-        civic society and rethink public goods.
-      </p>
-      <p><span class="animated-link">Become an RxC Fellow</span></p>
-    </div>
-  </a>
+  <!-- prettier-ignore -->
+  {% call oval.render(href="/fellowship/2021", ovalText="RxC Fellowship") %}
+  <!-- prettier-ignore -->
+  {% call oval.content(title="Introducing RxC Fellowship Program", description="Starting January 2021, the first cohort will work together to strengthen civic society and rethink public goods.", callToAction="Become an RxC Fellow") %}
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
+  {% endcall %}
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->

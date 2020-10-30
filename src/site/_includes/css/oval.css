@@ -1,6 +1,6 @@
 @import "./mixins/_animated-link.css";
 
-.save-the-date {
+.oval {
   &_container {
     @apply hidden;
 
@@ -18,7 +18,7 @@
     }
   }
 
-  &_oval {
+  &_shape {
     @apply absolute;
     top: -140%;
     width: 37vw;
