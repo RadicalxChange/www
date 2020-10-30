@@ -2,7 +2,7 @@
 layout: layouts/_base.njk
 ---
 
-<div id="menu" class="menu">
+<div id="menu" class="menu" tabindex="-1">
   <nav id="nav" class="nav hidden">
     <h1 class="border-b lg:border-none py-8 lg:py-4 mx-8">
       <a class="block" href="/"
@@ -268,6 +268,7 @@ layout: layouts/_base.njk
     $menu.classList.add("menu_open");
     document.addEventListener("click", outsideClickListener);
     document.addEventListener("keydown", keyListener);
+    $menu.focus();
   }
 
   function closeMenu() {
