@@ -41,12 +41,14 @@
   @apply flex flex-col;
   @apply w-full;
   @apply h-full;
+  @apply pb-16;
   @apply bg-black;
   @apply text-white;
   @apply overflow-y-auto;
 
   @screen lg {
     @apply w-auto;
+    @apply pb-0;
   }
 }
 
