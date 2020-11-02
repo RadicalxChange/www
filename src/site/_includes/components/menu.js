@@ -68,6 +68,7 @@ Menu.prototype.handleClickOutside = function (event) {
   if (this.$menu.contains(event.target)) {
     return;
   }
+  console.log("close");
   this.close();
 };
 
@@ -75,14 +76,16 @@ Menu.prototype.open = function () {
   this.$nav.classList.remove("hidden");
   this.$menu.classList.add("menu_open");
   this.isOpen = true;
-  // document.addEventListener("click", this.onClick);
+  document.addEventListener("click", this.onClick);
+  bodyScrollLock.disableBodyScroll(this.$nav);
 };
 
 Menu.prototype.close = function () {
   this.$menu.classList.remove("menu_open");
   setTimeout(() => this.$nav.classList.add("hidden"), 500);
   this.isOpen = false;
-  // document.removeEventListener("click", this.onClick);
+  document.removeEventListener("click", this.onClick);
+  bodyScrollLock.enableBodyScroll(this.$nav);
 };
 
 /* MenuButton */
@@ -145,6 +148,8 @@ MenuButton.prototype.handleClick = function (event) {
     this.menu.open();
     this.menu.setFocusToFirstItem();
   }
+  event.stopPropagation();
+  event.preventDefault();
 };
 
 /* MenuItem */
