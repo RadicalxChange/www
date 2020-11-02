@@ -31,11 +31,12 @@
   }
 
   &_carousel {
-    grid-column: 1 / -1;
+    grid-column: column 1 / gutter 5;
     grid-row: 3 / span 1;
     display: flex;
     @apply overflow-x-auto;
     @apply cursor-move;
+    scroll-snap-type: x mandatory;
 
     @screen lg {
       grid-column: gutter 1 / column 10;
@@ -60,6 +61,7 @@
   &_concept {
     @apply flex flex-col items-center;
     @apply mb-4;
+    scroll-snap-align: center;
 
     @screen lg {
       @apply mb-8;
