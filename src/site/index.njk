@@ -264,13 +264,36 @@ layout: layouts/_base.njk
   src="https://cdn.jsdelivr.net/npm/dynamic-marquee@1"
 ></script>
 <script type="text/javascript">
-  // const $marquee = document.getElementById("socialMovementMarquee");
-  // const $message = $marquee.children[0];
-  // $marquee.removeChild($message);
+  const $marquee = document.getElementById("socialMovementMarquee");
+  const $message = $marquee.children[0];
+  $marquee.removeChild($message);
 
-  // const Marquee = dynamicMarquee.Marquee;
-  // const marquee = new Marquee($marquee, { rate: -40 });
-  // const control = dynamicMarquee.loop(marquee, [
-  //   () => $message.cloneNode(true),
-  // ]);
+  const marquee = new dynamicMarquee.Marquee($marquee, { rate: -40 });
+  const control = dynamicMarquee.loop(marquee, []);
+
+  function startMarquee() {
+    control.update([() => $message.cloneNode(true)]);
+  }
+
+  function stopMarquee() {
+    control.update([]);
+  }
+
+  function isLarge() {
+    return window.innerWidth >= 768;
+  }
+
+  let wasLarge = isLarge();
+  if (wasLarge) {
+    startMarquee();
+  }
+  window.addEventListener("resize", function () {
+    if (wasLarge && !isLarge()) {
+      wasLarge = false;
+      stopMarquee();
+    } else if (!wasLarge && isLarge()) {
+      wasLarge = true;
+      startMarquee();
+    }
+  });
 </script>
