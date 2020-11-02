@@ -1,0 +1,34 @@
+<!-- prettier-ignore -->
+{% macro render(href, ovalText) %}
+<a class="oval_container" href="{{ href }}">
+  <div class="oval_shape">
+    <div class="relative">
+      <span class="oval_text oval_filled" aria-hidden="true">
+        {{ ovalText }}
+      </span>
+      <span class="oval_text oval_stroked">
+        {{ ovalText }}
+      </span>
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {{ caller() }}
+</a>
+<!-- prettier-ignore -->
+{% endmacro %}
+
+<!-- prettier-ignore -->
+{% macro content(title, description, callToAction) %}
+<div>
+  <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
+    {{ title }}
+  </h1>
+  <p class="mb-base lg:mb-lg/base">
+    {{ description }}
+  </p>
+  <p>
+    <span class="animated-link"> {{ callToAction }}</span>
+  </p>
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}

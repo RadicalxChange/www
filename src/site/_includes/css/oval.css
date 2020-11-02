@@ -1,16 +1,15 @@
 @import "./mixins/_animated-link.css";
 
-.save-the-date {
+.oval {
   &_container {
     @apply hidden;
 
     @screen lg {
       @apply relative;
       @apply block;
-      margin-left: 8.333333vw;
     }
 
-    &:hover .save-the-date_filled {
+    &:hover .oval_filled {
       @apply opacity-100;
     }
 
@@ -19,10 +18,10 @@
     }
   }
 
-  &_oval {
+  &_shape {
     @apply absolute;
-    top: -233%;
-    width: 28vw;
+    top: -140%;
+    width: 37vw;
     height: 18.5vw;
     @apply flex justify-center items-center;
     @apply border border-solid border-black rounded-50;
