@@ -94,7 +94,11 @@ sections:
   {% call callToAction.render() %}
   <!-- prettier-ignore -->
   {% call callToAction.item() %}
-  <a class="animated-link uppercase" href="{{ applyLink.href }}">
+  <a
+    class="animated-link uppercase"
+    href="{{ applyLink.href }}"
+    target="_blank"
+  >
     {{ applyLink.text }}
   </a>
   <!-- prettier-ignore -->
@@ -130,7 +134,11 @@ sections:
   {% call callToAction.render() %}
   <!-- prettier-ignore -->
   {% call callToAction.item() %}
-  <a class="animated-link uppercase" href="{{ applyLink.href }}">
+  <a
+    class="animated-link uppercase"
+    href="{{ applyLink.href }}"
+    target="_blank"
+  >
     {{ applyLink.text }}
   </a>
   <!-- prettier-ignore -->
