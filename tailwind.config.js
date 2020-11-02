@@ -49,8 +49,13 @@ module.exports = {
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
       lineHeight: { display: "0.9" },
+      boxShadow: {
+        "focus-white": "0 0 0 3px rgba(256, 256, 256, 1)",
+      },
     },
   },
-  variants: {},
+  variants: {
+    borderWidth: ["responsive", "hover", "focus"],
+  },
   plugins: [],
 };

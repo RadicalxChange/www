@@ -18,10 +18,10 @@
     &:hover {
       transform: translate(calc(-100% + 34px), 0);
     }
-
-    &:focus {
+    /* 
+    &:focus-within {
       transform: translate(calc(-100% + 34px), 0);
-    }
+    } */
 
     &_open {
       transform: translate(0, 0);
@@ -30,9 +30,9 @@
         transform: translate(0, 0);
       }
 
-      &:focus {
+      /* &:focus-within {
         transform: translate(0, 0);
-      }
+      } */
     }
   }
 }

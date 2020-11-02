@@ -1,8 +1,96 @@
+/* Menu */
+
+const Menu = function ($menu) {
+  this.$menu = $menu;
+  this.$nav = $menu.querySelector("#nav");
+
+  this.menuItems = [];
+  this.firstItem = null;
+  this.lastItem = null;
+
+  this.isOpen = false;
+  this.onClick = this.handleClickOutside.bind(this);
+};
+
+Menu.prototype.init = function () {
+  let menuElements = this.$menu.querySelectorAll(".menu-item");
+  for (let menuElement of menuElements) {
+    let menuItem = new MenuItem(menuElement, this);
+    menuItem.init();
+    this.menuItems.push(menuItem);
+  }
+
+  let numItems = this.menuItems.length;
+  if (numItems > 0) {
+    this.firstItem = this.menuItems[0];
+    this.lastItem = this.menuItems[numItems - 1];
+  }
+};
+
+Menu.prototype.setFocusToItem = function (newItem) {
+  for (let menuItem of this.menuItems) {
+    menuItem.blur();
+  }
+  newItem.focus();
+};
+
+Menu.prototype.setFocusToFirstItem = function () {
+  this.setFocusToItem(this.firstItem);
+};
+
+Menu.prototype.setFocusToLastItem = function () {
+  this.setFocusToItem(this.lastItem);
+};
+
+Menu.prototype.setFocusToPreviousItem = function (currentItem) {
+  let newItem;
+  if (currentItem === this.firstItem) {
+    newItem = this.lastItem;
+  } else {
+    let index = this.menuItems.indexOf(currentItem);
+    newItem = this.menuItems[index - 1];
+  }
+  this.setFocusToItem(newItem);
+};
+
+Menu.prototype.setFocusToNextItem = function (currentItem) {
+  let newItem;
+  if (currentItem === this.lastItem) {
+    newItem = this.firstItem;
+  } else {
+    let index = this.menuItems.indexOf(currentItem);
+    newItem = this.menuItems[index + 1];
+  }
+  this.setFocusToItem(newItem);
+};
+
+Menu.prototype.handleClickOutside = function (event) {
+  if (this.$menu.contains(event.target)) {
+    return;
+  }
+  this.close();
+};
+
+Menu.prototype.open = function () {
+  this.$nav.classList.remove("hidden");
+  this.$menu.classList.add("menu_open");
+  this.isOpen = true;
+  // document.addEventListener("click", this.onClick);
+};
+
+Menu.prototype.close = function () {
+  this.$menu.classList.remove("menu_open");
+  setTimeout(() => this.$nav.classList.add("hidden"), 500);
+  this.isOpen = false;
+  // document.removeEventListener("click", this.onClick);
+};
+
+/* MenuButton */
+
 const MenuButton = function ($button, menu) {
   this.$button = $button;
   this.menu = menu;
-  this.isOpen = false;
-  this.hasFocus = false;
+
   this.keyCode = Object.freeze({
     TAB: 9,
     RETURN: 13,
@@ -22,34 +110,24 @@ const MenuButton = function ($button, menu) {
 MenuButton.prototype.init = function () {
   this.$button.addEventListener("keydown", this.handleKeyDown.bind(this));
   this.$button.addEventListener("click", this.handleClick.bind(this));
-  this.$button.addEventListener("focus", this.handleFocus.bind(this));
-  this.$button.addEventListener("blur", this.handleBlur.bind(this));
 };
 
 MenuButton.prototype.handleKeyDown = function (event) {
-  console.log("keyDown");
-
   let flag = false;
 
   switch (event.keyCode) {
     case this.keyCode.SPACE:
     case this.keyCode.RETURN:
     case this.keyCode.DOWN:
-      if (this.menu) {
-        this.menu.open();
-        this.menu.setFocusToFirstItem();
-      }
+      this.menu.open();
+      this.menu.setFocusToFirstItem();
       flag = true;
       break;
-
     case this.keyCode.UP:
-      if (this.menu) {
-        this.menu.open();
-        this.menu.setFocusToLastItem();
-        flag = true;
-      }
+      this.menu.open();
+      this.menu.setFocusToLastItem();
+      flag = true;
       break;
-
     default:
       break;
   }
@@ -61,87 +139,15 @@ MenuButton.prototype.handleKeyDown = function (event) {
 };
 
 MenuButton.prototype.handleClick = function (event) {
-  if (this.isOpen === true) {
+  if (this.menu.isOpen === true) {
     this.menu.close();
   } else {
     this.menu.open();
     this.menu.setFocusToFirstItem();
   }
-  this.isOpen = !this.isOpen;
 };
 
-MenuButton.prototype.handleFocus = function (event) {
-  console.log("focus");
-  this.menu.hasFocus = true;
-};
-
-MenuButton.prototype.handleBlur = function (event) {
-  console.log("focus");
-  this.menu.hasFocus = false;
-  // this.menu.close();
-};
-
-const Menu = function ($menu) {
-  this.$menu = $menu;
-  this.$nav = $menu.querySelector("#nav");
-
-  this.menuItems = [];
-  this.firstItem = null;
-  this.lastItem = null;
-};
-
-Menu.prototype.init = function () {
-  let menuElements = this.$menu.getElementsByTagName("a");
-  for (let menuElement of menuElements) {
-    let menuItem = new MenuItem(menuElement, this);
-    menuItem.init();
-    this.menuItems.push(menuItem);
-  }
-
-  let numItems = this.menuItems.length;
-  if (numItems > 0) {
-    this.firstItem = this.menuItems[0];
-    this.lastItem = this.menuItems[numItems - 1];
-  }
-};
-
-Menu.prototype.setFocusToFirstItem = function () {
-  this.firstItem.$item.focus();
-};
-
-Menu.prototype.setFocusToLastItem = function () {
-  this.lastItem.$item.focus();
-};
-
-Menu.prototype.setFocusToPreviousItem = function (currentItem) {
-  if (currentItem === this.firstItem) {
-    this.lastItem.$item.focus();
-  } else {
-    let index = this.menuItems.indexOf(currentItem);
-    this.menuItems[index - 1].$item.focus();
-  }
-};
-
-Menu.prototype.setFocusToNextItem = function (currentItem) {
-  if (currentItem === this.lastItem) {
-    this.firstItem.$item.focus();
-  } else {
-    let index = this.menuItems.indexOf(currentItem);
-    this.menuItems[index + 1].$item.focus();
-  }
-};
-
-Menu.prototype.open = function () {
-  console.trace("open");
-  this.$nav.classList.remove("hidden");
-  this.$menu.classList.add("menu_open");
-};
-
-Menu.prototype.close = function () {
-  console.trace("close");
-  this.$menu.classList.remove("menu_open");
-  setTimeout(() => this.$nav.classList.add("hidden"), 500);
-};
+/* MenuItem */
 
 const MenuItem = function ($item, menu) {
   this.$item = $item;
@@ -165,30 +171,16 @@ const MenuItem = function ($item, menu) {
 
 MenuItem.prototype.init = function () {
   this.$item.tabIndex = -1;
-  // this.$item.addEventListener("keydown", this.handleKeydown.bind(this));
-  // // this.$item.addEventListener("click", this.handleClick.bind(this));
-  // this.$item.addEventListener("focus", this.handleFocus.bind(this));
-  // this.$item.addEventListener("blur", this.handleBlur.bind(this));
+  this.$item.addEventListener("keydown", this.handleKeydown.bind(this));
 };
 
 MenuItem.prototype.handleKeydown = function (event) {
-  if (event.ctrlKey || event.altKey || event.metaKey || event.shiftKey) {
+  if (event.ctrlKey || event.altKey || event.metaKey) {
     return;
   }
 
   let flag = false;
   switch (event.keyCode) {
-    // case this.keyCode.SPACE:
-    //   flag = true;
-    //   break;
-    // case this.keyCode.RETURN:
-    //   flag = true;
-    //   break;
-    case this.keyCode.ESC:
-      // this.menu.setFocusToController();
-      this.menu.close();
-      flag = true;
-      break;
     case this.keyCode.UP:
       this.menu.setFocusToPreviousItem(this);
       flag = true;
@@ -207,8 +199,11 @@ MenuItem.prototype.handleKeydown = function (event) {
       this.menu.setFocusToLastItem();
       flag = true;
       break;
+    case this.keyCode.ESC:
+      this.menu.close();
+      flag = true;
+      break;
     case this.keyCode.TAB:
-      // this.menu.setFocusToController();
       this.menu.close();
       break;
     default:
@@ -221,11 +216,11 @@ MenuItem.prototype.handleKeydown = function (event) {
   }
 };
 
-MenuItem.prototype.handleFocus = function (event) {
-  this.menu.hasFocus = true;
+MenuItem.prototype.blur = function () {
+  this.$item.tabIndex = -1;
 };
 
-MenuItem.prototype.handleBlur = function (event) {
-  this.menu.hasFocus = false;
-  // this.menu.close();
+MenuItem.prototype.focus = function () {
+  this.$item.tabIndex = 0;
+  this.$item.focus();
 };
