@@ -33,7 +33,7 @@ module.exports = {
       body: ["SuisseIntl", "sans-serif"],
     },
     colors: {
-      "golden-fizz": "#EEFD4E",
+      "golden-fizz": "#EDFF38",
       red: "#C53030",
       black: "#000000",
       white: "#FFFFFF",
