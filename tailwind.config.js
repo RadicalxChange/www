@@ -40,7 +40,7 @@ module.exports = {
       body: ["SuisseIntl", "sans-serif"],
     },
     colors: {
-      "golden-fizz": { 100: "#EEFD4E" },
+      "golden-fizz": { 100: "#EDFF38" },
       red: { "700": "#C53030" },
       black: "#000000",
       white: "#FFFFFF",
