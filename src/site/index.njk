@@ -50,9 +50,9 @@ layout: layouts/_base.njk
       <img src="/images/ui/close-button-white.svg" />
     </button>
   </nav>
-  <a class="menu-button hidden lg:block self-center" href="#">
-    <img class="nav-tab" src="/images/ui/menu-slider.svg" />
-  </a>
+  <button id="thebutton" class="menu-button hidden lg:block self-center">
+    <img src="/images/ui/menu-slider.svg" />
+  </button>
 </div>
 <div class="bg-golden-fizz">
   <main class="home-main">
@@ -118,9 +118,9 @@ layout: layouts/_base.njk
       >
         Upgrade the source code
       </h2>
-      <a class="menu-button" href="#"
-        ><img src="/images/ui/menu-button.svg"
-      /></a>
+      <button class="menu-button">
+        <img src="/images/ui/menu-button.svg" />
+      </button>
     </div>
   </main>
 </div>
@@ -349,8 +349,11 @@ layout: layouts/_base.njk
   {% include "components/menu.js" %}
 </script>
 <script>
-  const menu = new Menu(document.getElementById("nav"));
+  const menu = new Menu(document.querySelector("#menu"));
   menu.init();
+
+  const menuButton = new MenuButton(document.querySelector("#thebutton"), menu);
+  menuButton.init();
 </script>
 <script
   type="text/javascript"

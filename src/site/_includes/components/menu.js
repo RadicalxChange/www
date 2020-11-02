@@ -1,83 +1,89 @@
-// const MenuButton = function ($root, popupMenu) {
-//   this.$root = $root;
-//   this.popupMenu = popupMenu;
-//   this.hasFocus = false;
-//   this.keyCodes = Object.freeze({
-//     TAB: 9,
-//     RETURN: 13,
-//     ESC: 27,
-//     SPACE: 32,
-//     PAGEUP: 33,
-//     PAGEDOWN: 34,
-//     END: 35,
-//     HOME: 36,
-//     LEFT: 37,
-//     UP: 38,
-//     RIGHT: 39,
-//     DOWN: 40,
-//   });
-// };
+const MenuButton = function ($button, menu) {
+  this.$button = $button;
+  this.menu = menu;
+  this.isOpen = false;
+  this.hasFocus = false;
+  this.keyCode = Object.freeze({
+    TAB: 9,
+    RETURN: 13,
+    ESC: 27,
+    SPACE: 32,
+    PAGEUP: 33,
+    PAGEDOWN: 34,
+    END: 35,
+    HOME: 36,
+    LEFT: 37,
+    UP: 38,
+    RIGHT: 39,
+    DOWN: 40,
+  });
+};
 
-// MenuButton.prototype.init = function () {
-//   this.$root.addEventListener("keydown", this.handleKeyDown.bind(this));
-//   this.$root.addEventListener("click", this.handleClick.bind(this));
-//   this.$root.addEventListener("focus", this.handleFocus.bind(this));
-//   this.$root.addEventListener("blur", this.handleBlur.bind(this));
-// };
+MenuButton.prototype.init = function () {
+  this.$button.addEventListener("keydown", this.handleKeyDown.bind(this));
+  this.$button.addEventListener("click", this.handleClick.bind(this));
+  this.$button.addEventListener("focus", this.handleFocus.bind(this));
+  this.$button.addEventListener("blur", this.handleBlur.bind(this));
+};
 
-// MenuButton.prototype.handleKeyDown = function (event) {
-//   let flag = false;
+MenuButton.prototype.handleKeyDown = function (event) {
+  console.log("keyDown");
 
-//   switch (event.keyCode) {
-//     case this.keyCode.SPACE:
-//     case this.keyCode.RETURN:
-//     case this.keyCode.DOWN:
-//       if (this.popupMenu) {
-//         this.popupMenu.open();
-//         this.popupMenu.setFocusToFirstItem();
-//       }
-//       flag = true;
-//       break;
+  let flag = false;
 
-//     case this.keyCode.UP:
-//       if (this.popupMenu) {
-//         this.popupMenu.open();
-//         this.popupMenu.setFocusToLastItem();
-//         flag = true;
-//       }
-//       break;
+  switch (event.keyCode) {
+    case this.keyCode.SPACE:
+    case this.keyCode.RETURN:
+    case this.keyCode.DOWN:
+      if (this.menu) {
+        this.menu.open();
+        this.menu.setFocusToFirstItem();
+      }
+      flag = true;
+      break;
 
-//     default:
-//       break;
-//   }
+    case this.keyCode.UP:
+      if (this.menu) {
+        this.menu.open();
+        this.menu.setFocusToLastItem();
+        flag = true;
+      }
+      break;
 
-//   if (flag) {
-//     event.stopPropagation();
-//     event.preventDefault();
-//   }
-// };
+    default:
+      break;
+  }
 
-// MenuButton.prototype.handleClick = function (event) {
-//   if (this.domNode.getAttribute("aria-expanded") == "true") {
-//     this.popupMenu.close(true);
-//   } else {
-//     this.popupMenu.open();
-//     this.popupMenu.setFocusToFirstItem();
-//   }
-// };
+  if (flag) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+};
 
-// MenuButton.prototype.handleFocus = function (event) {
-//   this.popupMenu.hasFocus = true;
-// };
+MenuButton.prototype.handleClick = function (event) {
+  if (this.isOpen === true) {
+    this.menu.close();
+  } else {
+    this.menu.open();
+    this.menu.setFocusToFirstItem();
+  }
+  this.isOpen = !this.isOpen;
+};
 
-// MenuButton.prototype.handleBlur = function (event) {
-//   this.popupMenu.hasFocus = false;
-//   this.popupMenu.close();
-// };
+MenuButton.prototype.handleFocus = function (event) {
+  console.log("focus");
+  this.menu.hasFocus = true;
+};
+
+MenuButton.prototype.handleBlur = function (event) {
+  console.log("focus");
+  this.menu.hasFocus = false;
+  // this.menu.close();
+};
 
 const Menu = function ($menu) {
   this.$menu = $menu;
-  this.$nav = $menu.getElementById("nav");
+  this.$nav = $menu.querySelector("#nav");
 
   this.menuItems = [];
   this.firstItem = null;
@@ -126,13 +132,15 @@ Menu.prototype.setFocusToNextItem = function (currentItem) {
 };
 
 Menu.prototype.open = function () {
-  $nav.classList.remove("hidden");
-  $menu.classList.add("menu_open");
+  console.trace("open");
+  this.$nav.classList.remove("hidden");
+  this.$menu.classList.add("menu_open");
 };
 
 Menu.prototype.close = function () {
-  $menu.classList.remove("menu_open");
-  setTimeout(() => $nav.classList.add("hidden"), 500);
+  console.trace("close");
+  this.$menu.classList.remove("menu_open");
+  setTimeout(() => this.$nav.classList.add("hidden"), 500);
 };
 
 const MenuItem = function ($item, menu) {
@@ -157,10 +165,10 @@ const MenuItem = function ($item, menu) {
 
 MenuItem.prototype.init = function () {
   this.$item.tabIndex = -1;
-  this.$item.addEventListener("keydown", this.handleKeydown.bind(this));
-  // this.$item.addEventListener("click", this.handleClick.bind(this));
-  this.$item.addEventListener("focus", this.handleFocus.bind(this));
-  this.$item.addEventListener("blur", this.handleBlur.bind(this));
+  // this.$item.addEventListener("keydown", this.handleKeydown.bind(this));
+  // // this.$item.addEventListener("click", this.handleClick.bind(this));
+  // this.$item.addEventListener("focus", this.handleFocus.bind(this));
+  // this.$item.addEventListener("blur", this.handleBlur.bind(this));
 };
 
 MenuItem.prototype.handleKeydown = function (event) {
@@ -178,7 +186,7 @@ MenuItem.prototype.handleKeydown = function (event) {
     //   break;
     case this.keyCode.ESC:
       // this.menu.setFocusToController();
-      this.menu.close(true);
+      this.menu.close();
       flag = true;
       break;
     case this.keyCode.UP:
@@ -201,7 +209,7 @@ MenuItem.prototype.handleKeydown = function (event) {
       break;
     case this.keyCode.TAB:
       // this.menu.setFocusToController();
-      this.menu.close(true);
+      this.menu.close();
       break;
     default:
       break;
@@ -219,5 +227,5 @@ MenuItem.prototype.handleFocus = function (event) {
 
 MenuItem.prototype.handleBlur = function (event) {
   this.menu.hasFocus = false;
-  this.menu.close();
+  // this.menu.close();
 };
