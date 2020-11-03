@@ -146,7 +146,6 @@ MenuButton.prototype.handleClick = function (event) {
     this.menu.close();
   } else {
     this.menu.open();
-    this.menu.setFocusToFirstItem();
   }
   event.stopPropagation();
   event.preventDefault();
