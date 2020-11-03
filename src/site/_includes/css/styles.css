@@ -9,11 +9,12 @@
 @import "tailwindcss/components";
 
 /* Custom components */
-@import "./layout2.css";
-@import "./nav2.css";
-@import "./home.css";
+@import "./menu.css";
 @import "./footer.css";
+@import "./introduction.css";
+@import "./home.css";
 @import "./blog-post.css";
+@import "./layout2.css";
 /* @import "./inline.css";
 @import "./modal.css";
 @import "./nav.css";

@@ -1,105 +1,118 @@
-{% macro render(bgColor, paddingBottom="pb-base lg:pb-lg/xl") %}
-<footer class="{{ bgColor }}">
-  <div
-    class="flex flex-col justify-between min-h-screen lg:h-100vh lg:min-h-tall pt-base lg:pt-lg/xl
-    {{ paddingBottom }} px-base lg:px-lg/lg"
-  >
-    <div class="flex flex-col lg:flex-row mb-xl lg:mb-lg/lg">
-      <a href="/" class="block lg:w-span6">
-        <img src="/images/logos/logo.svg" class="logo-width mb-xl lg:mb-0" />
-      </a>
-      <nav class="lg:w-span6">
-        <ul class="grid grid-cols-2 lg:grid-cols-3">
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/about">About</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/team">Team</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/press">Press</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/concepts">Concepts</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/resources">Literature</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/conferences">Conferences</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="#" data-modal-trigger="subscribe"
-              >Newsletter</a
-            >
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/chapters">Chapters</a>
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="https://forum.radicalxchange.org/"
-              >Forum</a
-            >
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="https://t.me/rxcfoundation"
-              >Telegram</a
-            >
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="https://blog.radicalxchange.org/"
-              >Blog</a
-            >
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a
-              class="animated-link"
-              href="https://gitcoin.co/hackathon/GitxChange/onboard"
-              >GitxChange</a
-            >
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="mailto:info@radicalxchange.org"
-              >Contact Us</a
-            >
-          </li>
-          <li class="uppercase mb-base lg:mb-lg/lg">
-            <a class="animated-link" href="/privacy-policy">Privacy Policy</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="flex flex-col lg:flex-row lg:items-end">
-      <div class="lg:w-span6 mb-xl lg:mb-0">
-        <p class="mb-base lg:mb-lg/base">
-          Find us on social networks:
-        </p>
-        <ul class="flex flex-wrap">
-          <li class="mb-base mr-lg lg:mb-0 lg:mr-lg/lg">
-            <a class="animated-link" href="https://twitter.com/radxchange"
-              >Twitter</a
-            >
-          </li>
-          <li class="mb-base mr-lg lg:mb-0 lg:mr-lg/lg">
-            <a class="animated-link" href="https://youtube.com/c/RadicalxChange"
-              >YouTube</a
-            >
-          </li>
-          <li class="mb-base mr-lg lg:mb-0 lg:mr-lg/lg">
-            <a
-              class="animated-link"
-              href="https://www.linkedin.com/company/radicalxchange/"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-      <p class="lg:w-span6 text-left lg:text-right">
-        © 2020 RadicalxChange Foundation Ltd.<br />RadicalxChange Foundation
-        Ltd., a 501(c)(3) nonprofit organization, does not support or oppose
-        candidates for public office or political parties.
-      </p>
-    </div>
+{% macro render() %}
+<footer class="footer">
+  <hr class="footer_hr" />
+  <div class="footer_logo">
+    <a class="inline-block" href="/"
+      ><img class="logo" src="/images/logos/logo.svg"
+    /></a>
   </div>
+  <div class="footer_copyright">
+    <p class="text-size--2">© 2020 RadicalxChange Foundation Ltd.</p>
+    <p class="text-size--2">
+      RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
+      not support or oppose candidates for public office or political parties.
+    </p>
+  </div>
+  <div class="footer_menu">
+    <ul>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="/">Home</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="/about">About</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="/concepts">Concepts</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="/community">Community</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="/kiosk">Kiosk</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="/events">Events</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="/privacy-policy">Privacy Policy</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer_find-us">
+    <h3 class="mb-4 text-size--1">Find us:</h3>
+    <ul>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="https://forum.radicalxchange.org/">Forum</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="https://twitter.com/RadxChange">Twitter</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="https://www.instagram.com/radxchange/">Instagram</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw"
+          >YouTube</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="footer_contact">
+    <h3 class="mb-4 text-size--1">Contact:</h3>
+    <ul>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="mailto:info@radicalxchange.org">E-mail</a>
+      </li>
+      <li class="mb-4 text-size--1 uppercase">
+        <a href="https://t.me/rxcfoundation">Telegram</a>
+      </li>
+    </ul>
+  </div>
+  <form
+    onsubmit="window.fathom.trackGoal('BZOTPUXU', 0);"
+    action="https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&amp;id=2e47820582"
+    method="post"
+    name="mc-embedded-subscribe-form"
+    target="_blank"
+    novalidate
+    class="footer_subscribe"
+  >
+    <div class="lg:order-2 flex border-b mb-4">
+      <button
+        type="submit"
+        name="subscribe"
+        id="mc-embedded-subscribe"
+        class="self-center inline-block py-2 mr-12 text-size--1 uppercase"
+      >
+        Subscribe
+      </button>
+      <div class="inline-block flex-grow">
+        <label for="mce-EMAIL" class="hidden">
+          Email Address
+        </label>
+        <input
+          type="email"
+          value=""
+          name="EMAIL"
+          id="mce-EMAIL"
+          placeholder="Type your email..."
+          class="subscribe-widget_input w-full p-2 lg:p-4 text-size--1"
+        />
+      </div>
+    </div>
+    <h2 class="lg:order-1 text-size-2 mb-2">
+      Join to our newsletter to hear about upcoming RadicalxChange events.
+    </h2>
+    <p class="lg:order-3 text-size--2">
+      You can unsubscribe at any time by clicking the link in the footer of our
+      emails. For information about our privacy practices, please visit our
+      website. We use Mailchimp as our marketing platform. By clicking below to
+      subscribe, you acknowledge that your information will be transferred to
+      Mailchimp for processing.
+      <a class="underline" href="https://mailchimp.com/legal/" target="_blank"
+        >Learn more about Mailchimp's privacy practices here.</a
+      >
+    </p>
+  </form>
 </footer>
 {% endmacro %}

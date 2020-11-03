@@ -228,3 +228,12 @@ MenuItem.prototype.focus = function () {
   this.$item.tabIndex = 0;
   this.$item.focus();
 };
+
+/* Attachment code */
+const menu = new Menu(document.querySelector("#menu"));
+menu.init();
+
+for (const $menuButton of document.querySelectorAll(".menu-button")) {
+  const menuButton = new MenuButton($menuButton, menu);
+  menuButton.init();
+}

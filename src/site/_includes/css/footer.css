@@ -2,6 +2,7 @@
   @apply grid;
   @apply grid-cols-4;
   grid-template-rows: repeat(5, auto);
+  @apply bg-white;
 
   @screen lg {
     @apply min-h-screen;
