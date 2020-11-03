@@ -1,12 +1,8 @@
 /* Apply styles to rendered markdown */
 
 .md-container {
-  font-size: var(--step-type-0);
+  @apply text-size-0;
 
-  h1,
-  h2,
-  h3,
-  h4,
   ul,
   ol,
   img,
@@ -14,8 +10,10 @@
   table,
   p,
   hr {
-    &:not(:last-child) {
-      margin-bottom: 0.5rem;
+    @apply mb-8;
+
+    &:last-child {
+      @apply mb-0;
     }
   }
 
@@ -24,29 +22,27 @@
   h3,
   h4 {
     @apply font-normal;
-  }
+    @apply mt-2 mb-2;
 
-  h1,
-  h2 {
-    &:not(:first-child) {
-      margin-top: 1rem;
+    &:last-child {
+      @apply mb-0;
     }
   }
 
   h1 {
-    font-size: var(--step-type-4);
+    @apply text-size-4;
   }
 
   h2 {
-    font-size: var(--step-type-3);
+    @apply text-size-3;
   }
 
   h3 {
-    font-size: var(--step-type-2);
+    @apply text-size-2;
   }
 
   h4 {
-    font-size: var(--step-type-1);
+    @apply text-size-1;
   }
 
   ul {
@@ -65,11 +61,11 @@
   }
 
   li {
-    margin-bottom: 0.5rem;
+    @apply mb-4;
 
     ul,
     ol {
-      margin-top: 0.5rem;
+      @apply mt-4;
     }
   }
 
@@ -85,11 +81,11 @@
     @apply table-auto;
 
     th {
-      padding: 0 0.5rem 0.5rem;
+      @apply px-2 pb-2;
     }
 
     td {
-      padding: 0.5rem;
+      @apply p-2;
     }
 
     td {
