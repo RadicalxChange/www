@@ -11,8 +11,9 @@ module.exports = {
       touch: { raw: "(hover: none)" },
     },
     gridTemplateColumns: {
-      desktop: "repeat(12, [gutter] 2rem [column] 1fr) [gutter] 2rem",
-      mobile: "repeat(4, [gutter] 2rem [column] 1fr) [gutter] 2rem",
+      "4": "repeat(4, [gutter] 2rem [column] 1fr) [gutter] 2rem",
+      "12": "repeat(12, [gutter] 2rem [column] 1fr) [gutter] 2rem",
+      "16": "repeat(16, [gutter] 2rem [column] 1fr) [gutter] 2rem",
     },
     fontSize: {
       "size--2": "var(--step-type--2)",

@@ -9,12 +9,12 @@
 .home-main {
   @apply relative;
   @apply grid;
-  @apply grid-cols-mobile;
+  @apply grid-cols-4;
   grid-template-rows: auto 1fr auto 1fr auto;
   @apply min-h-screen;
 
   @screen lg {
-    @apply grid-cols-desktop;
+    @apply grid-cols-12;
     grid-template-rows: auto 1fr auto 1fr auto;
   }
 

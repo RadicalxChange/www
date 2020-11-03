@@ -3,7 +3,7 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
 ---
 
 <!-- prettier-ignore -->
-{% extends "layouts/_page.njk" %}
+{% extends "layouts/_base.njk" %}
 
 <!-- prettier-ignore -->
 {% set ogType="article" %}
@@ -23,16 +23,14 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
 
 <!-- prettier-ignore -->
 {% block content %}
-<div>
-  <h1 class="text-3xl lg:text-lg/3xl mb-sm lg:mb-lg/sm">
+<main>
+  <h1 class="text-size-8">
     {{ postHeader }}
   </h1>
-  <p class="text-base lg:text-lg/base mb-lg lg:mb-lg/lg">
-    {{ postAuthor }} / {{ date | readableDate }}
-  </p>
+  <p class="text-size--1">{{ postAuthor }} / {{ date | readableDate }}</p>
   <div class="md-container">
     {{ content | markdown | safe }}
   </div>
-</div>
+</main>
 <!-- prettier-ignore -->
 {% endblock %}

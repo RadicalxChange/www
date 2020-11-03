@@ -1,11 +1,11 @@
 .footer {
   @apply grid;
-  @apply grid-cols-mobile;
+  @apply grid-cols-4;
   grid-template-rows: repeat(5, auto);
 
   @screen lg {
     @apply min-h-screen;
-    @apply grid-cols-desktop;
+    @apply grid-cols-12;
     grid-template-rows: 1fr auto;
   }
 
