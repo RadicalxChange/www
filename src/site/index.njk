@@ -81,34 +81,33 @@ layout: layouts/_base.njk
         {% set row = columnRow[loop.index0][1] %}
         <a class="home-main_concept" href="#">
           <img
-            class="w-full mb-4"
-            style="max-width: 256px;"
+            class="w-full max-w-sm mb-4"
             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQgMTloLTRjLS4yNzYgMC0uNS4yMjQtLjUuNXMuMjI0LjUuNS41aDRjLjI3NiAwIC41LS4yMjQuNS0uNXMtLjIyNC0uNS0uNS0uNXptMCAyaC00Yy0uMjc2IDAtLjUuMjI0LS41LjVzLjIyNC41LjUuNWg0Yy4yNzYgMCAuNS0uMjI0LjUtLjVzLS4yMjQtLjUtLjUtLjV6bS4yNSAyaC00LjVsMS4xODguNzgyYy4xNTQuMTM4LjM4LjIxOC42MTUuMjE4aC44OTVjLjIzNCAwIC40NjEtLjA4LjYxNS0uMjE4bDEuMTg3LS43ODJ6bTMuNzUtMTMuNzk5YzAgMy41NjktMy4yMTQgNS45ODMtMy4yMTQgOC43OTloLTEuOTg5Yy0uMDAzLTEuODU4Ljg3LTMuMzg5IDEuNzIxLTQuODY3Ljc2MS0xLjMyNSAxLjQ4Mi0yLjU3NyAxLjQ4Mi0zLjkzMiAwLTIuNTkyLTIuMDc1LTMuNzcyLTQuMDAzLTMuNzcyLTEuOTI1IDAtMy45OTcgMS4xOC0zLjk5NyAzLjc3MiAwIDEuMzU1LjcyMSAyLjYwNyAxLjQ4MiAzLjkzMi44NTEgMS40NzggMS43MjUgMy4wMDkgMS43MiA0Ljg2N2gtMS45ODhjMC0yLjgxNi0zLjIxNC01LjIzLTMuMjE0LTguNzk5IDAtMy43MjMgMi45OTgtNS43NzIgNS45OTctNS43NzIgMy4wMDEgMCA2LjAwMyAyLjA1MSA2LjAwMyA1Ljc3MnptNC0uNjkxdjEuMzcyaC0yLjUzOGMuMDItLjIyMy4wMzgtLjQ0OC4wMzgtLjY4MSAwLS4yMzctLjAxNy0uNDY0LS4wMzUtLjY5aDIuNTM1em0tMTAuNjQ4LTYuNTUzdi0xLjk1N2gxLjM3MXYxLjk2NGMtLjI0Mi0uMDIyLS40ODQtLjAzNS0uNzI2LS4wMzUtLjIxNSAwLS40My4wMS0uNjQ1LjAyOHptLTMuNzQzIDEuMjk0bC0xLjA0LTEuOTQgMS4yMDgtLjY0OCAxLjAzNyAxLjkzM2MtLjQxOC4xODEtLjgyMi40MDEtMS4yMDUuNjU1em0xMC41ODYgMS43MzVsMS45NDItMS4zOTQuNzk5IDEuMTE1LTIuMDU0IDEuNDczYy0uMTkxLS40My0uNDIzLS44MjctLjY4Ny0xLjE5NHptLTMuMDEtMi4zODlsMS4wMzgtMS45MzQgMS4yMDguNjQ4LTEuMDQxIDEuOTQxYy0uMzgyLS4yNTQtLjc4Ni0uNDczLTEuMjA1LS42NTV6bS0xMC4wNjggMy41ODNsLTIuMDU0LTEuNDcyLjc5OS0xLjExNSAxLjk0MiAxLjM5M2MtLjI2NC4zNjYtLjQ5NS43NjMtLjY4NyAxLjE5NHptMTMuNzA3IDYuMjIzbDIuMzU0Ljk1NC0uNTE0IDEuMjcxLTIuNDI1LS45ODJjLjIxLS4zOTcuNDA4LS44MTIuNTg1LTEuMjQzem0tMTMuMTA4IDEuMTU1bC0yLjM1NiAxLjA2LS41NjItMS4yNTEgMi4zNC0xLjA1MmMuMTczLjQzMy4zNzEuODQ1LjU3OCAxLjI0M3ptLTEuMTc4LTMuNjc2aC0yLjUzOHYtMS4zNzJoMi41MzVjLS4wMTguMjI2LS4wMzUuNDU0LS4wMzUuNjkxIDAgLjIzMy4wMTguNDU4LjAzOC42ODF6Ii8+PC9zdmc+"
           />
-          <h2 class="text-size-1 text-center">{{ concept }}</h2>
+          <h2 class="text-center">{{ concept }}</h2>
         </a>
         <!-- prettier-ignore-line -->
         {% endfor %}
       </div>
     </div>
     <div id="socialMovementMarquee" class="home-main_marquee">
-      <span class="font-display text-size-5 uppercase mx-6 whitespace-no-wrap"
+      <span class="font-display text-size-6 uppercase mx-6 whitespace-no-wrap"
         >A Social Movement for Next-Generation Political Economies</span
       >
     </div>
     <aside class="home-main_aside">
       <a class="block m-4" href="#">
-        <h2 class="font-bold text-size-1">
+        <h2 class="font-bold">
           Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
         </h2>
-        <p class="text-size-1">October 5 - November 1, 2020</p>
+        <p>October 5 - November 1, 2020</p>
       </a>
       <hr class="m-4" />
       <div class="mt-4 mx-4 overflow-y-hidden">
         <div>
-          <p class="font-bold">E. Glen Weyl</p>
-          <p>(twitter) Aug 2, 2020</p>
-          <p>
+          <p class="font-bold text-size--2">E. Glen Weyl</p>
+          <p class="text-size--2">(twitter) Aug 2, 2020</p>
+          <p class="text-size--2">
             I gave it a cold? I gave it a virus. A computer virus. God creates
             dinosaurs. God destroys dinosaurs. God creates Man. Man destroys
             God. Man creates Dinosaurs. Forget the fat lady! You're obsessed
@@ -120,7 +119,7 @@ layout: layouts/_base.njk
     </aside>
     <div class="home-main_banner">
       <h2
-        class="mb-4 text-center font-display text-size-8 leading-none uppercase"
+        class="mb-4 text-center font-display text-size-6 leading-none uppercase"
       >
         Upgrade the source code
       </h2>
@@ -137,50 +136,50 @@ layout: layouts/_base.njk
       <a href="/"><img class="logo" src="/images/logos/logo.svg" /></a>
     </div>
     <div class="footer_copyright">
-      <p>© 2020 RadicalxChange Foundation Ltd.</p>
-      <p>
+      <p class="text-size--2">© 2020 RadicalxChange Foundation Ltd.</p>
+      <p class="text-size--2">
         RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
         not support or oppose candidates for public office or political parties.
       </p>
     </div>
     <div class="footer_menu">
       <ul>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="/">Home</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="/about">About</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="/concepts">Concepts</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="/community">Community</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="/kiosk">Kiosk</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="/events">Events</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="/privacy-policy">Privacy Policy</a>
         </li>
       </ul>
     </div>
     <div class="footer_find-us">
-      <h3 class="mb-4">Find us:</h3>
+      <h3 class="mb-4 text-size--1">Find us:</h3>
       <ul>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="https://forum.radicalxchange.org/">Forum</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="https://twitter.com/RadxChange">Twitter</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="https://www.instagram.com/radxchange/">Instagram</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw"
             >YouTube</a
           >
@@ -188,12 +187,12 @@ layout: layouts/_base.njk
       </ul>
     </div>
     <div class="footer_contact">
-      <h3 class="mb-4">Contact:</h3>
+      <h3 class="mb-4 text-size--1">Contact:</h3>
       <ul>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="mailto:info@radicalxchange.org">E-mail</a>
         </li>
-        <li class="mb-4 uppercase">
+        <li class="mb-4 text-size--1 uppercase">
           <a href="https://t.me/rxcfoundation">Telegram</a>
         </li>
       </ul>
@@ -212,7 +211,7 @@ layout: layouts/_base.njk
           type="submit"
           name="subscribe"
           id="mc-embedded-subscribe"
-          class="self-center inline-block py-2 mr-12 uppercase"
+          class="self-center inline-block py-2 mr-12 text-size--1 uppercase"
         >
           Subscribe
         </button>
@@ -226,14 +225,14 @@ layout: layouts/_base.njk
             name="EMAIL"
             id="mce-EMAIL"
             placeholder="Type your email..."
-            class="subscribe-widget_input w-full p-2 lg:p-4"
+            class="subscribe-widget_input w-full p-2 lg:p-4 text-size--1"
           />
         </div>
       </div>
       <h2 class="lg:order-1 text-size-2 mb-2">
         Join to our newsletter to hear about upcoming RadicalxChange events.
       </h2>
-      <p class="lg:order-3">
+      <p class="lg:order-3 text-size--2">
         You can unsubscribe at any time by clicking the link in the footer of
         our emails. For information about our privacy practices, please visit
         our website. We use Mailchimp as our marketing platform. By clicking

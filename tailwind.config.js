@@ -16,6 +16,7 @@ module.exports = {
       "16": "repeat(16, [gutter] 2rem [column] 1fr) [gutter] 2rem",
     },
     fontSize: {
+      "size--3": "var(--step-type--3)",
       "size--2": "var(--step-type--2)",
       "size--1": "var(--step-type--1)",
       "size-0": "var(--step-type-0)",

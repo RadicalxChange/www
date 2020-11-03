@@ -35,8 +35,8 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
     <h1 class="mt-4 mb-10 font-display text-size-8 leading-none">
       {{ postHeader }}
     </h1>
-    <p class="text-size-0">{{ postAuthor }}</p>
-    <p class="text-size-0">{{ date | readableDate }}</p>
+    <p class="text-size--1">{{ postAuthor }}</p>
+    <p class="text-size--1">{{ date | readableDate }}</p>
     <div class="md-container mt-8 mb-8 lg:mb-32">
       {{ content | markdown | safe }}
     </div>
