@@ -22,15 +22,37 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
 {% endblock %}
 
 <!-- prettier-ignore -->
-{% block content %}
-<main>
-  <h1 class="text-size-8">
-    {{ postHeader }}
-  </h1>
-  <p class="text-size--1">{{ postAuthor }} / {{ date | readableDate }}</p>
-  <div class="md-container">
-    {{ content | markdown | safe }}
-  </div>
-</main>
+{% block body %}
+<div
+  id="scrollIndicator"
+  class="fixed z-10 top-0 left-0 h-1 bg-black w-0"
+></div>
+<div class="fixed z-10 top-0 right-0 pt-4 pr-8">
+  <a class="uppercase" href="/">Close</a>
+</div>
+<div class="grid grid-cols-4 lg:grid-cols-16">
+  <main class="blog-post-main">
+    <h1 class="mt-4 mb-10 font-display text-size-8 leading-none">
+      {{ postHeader }}
+    </h1>
+    <p class="text-size-0">{{ postAuthor }}</p>
+    <p class="text-size-0">{{ date | readableDate }}</p>
+    <div class="md-container mt-8 mb-8 lg:mb-32">
+      {{ content | markdown | safe }}
+    </div>
+  </main>
+</div>
+<script>
+  const $scrollIndicator = document.getElementById("scrollIndicator");
+
+  function updateScrollIndicator() {
+    const percentage =
+      (window.scrollY /
+        (window.document.body.scrollHeight - window.innerHeight)) *
+      100;
+    $scrollIndicator.style.width = percentage + "%";
+  }
+  window.addEventListener("scroll", updateScrollIndicator);
+</script>
 <!-- prettier-ignore -->
 {% endblock %}

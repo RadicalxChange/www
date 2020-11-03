@@ -50,11 +50,9 @@
     @apply grid;
     grid-template-columns: repeat(6, calc(100vw - 4rem));
     @apply col-gap-8 row-gap-8;
-    @apply px-8;
 
     @screen lg {
       grid-template-columns: repeat(3, 1fr);
-      @apply px-0;
     }
   }
 
