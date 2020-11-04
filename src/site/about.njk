@@ -34,11 +34,11 @@ aboutBlurb: |
 <section class="about_chapters">
   <div class="about_chapters_join-button">
     <a
-      class="inline-flex items-center justify-between w-full py-2 px-3 border rounded-oval"
+      class="action-button inline-flex items-center justify-between py-2 px-3 border rounded-oval"
       href="#"
     >
       <span class="text-size--1 uppercase">Join your local chapter</span
-      ><img src="/images/ui/next-arrow.svg" />
+      ><img class="action-button_arrow" src="/images/ui/next-arrow.svg" />
     </a>
   </div>
   <div class="about_chapters_description md-container">
@@ -53,11 +53,15 @@ aboutBlurb: |
         <!-- prettier-ignore -->
         {% for member in team %}
         <tr class="h-8 lg:h-12 border-b">
-          <td class="text-size--1 uppercase">
-            <a href="/team/{{ member.name | slug }}">{{ member.name }}</a>
+          <td>
+            <a
+              class="see-more-button text-size--1 uppercase"
+              href="/team/{{ member.name | slug }}"
+              >{{ member.name }}</a
+            >
           </td>
-          <td class="text-size--1">
-            <span>{{ member.title }}</span>
+          <td>
+            <span class="text-size--1">{{ member.title }}</span>
           </td>
         </tr>
         <!-- prettier-ignore -->
@@ -70,8 +74,10 @@ aboutBlurb: |
     <ul class="lg:h-36 py-2 border-b">
       <!-- prettier-ignore -->
       {% for member in board %}
-      <li class="inline comma-separated">
-        <a href="/board/{{ member.name | slug }}">{{ member.name }}</a>
+      <li class="comma-separated">
+        <a class="see-more-button" href="/board/{{ member.name | slug }}">{{
+          member.name
+        }}</a>
       </li>
       <!-- prettier-ignore -->
       {% endfor %}

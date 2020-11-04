@@ -1,6 +1,23 @@
 @import "./mixins/_animated-link.css";
 
-.animated-link {
+.action-button .action-button_arrow {
+  @apply ml-4;
+  @apply transition-margin-left duration-300 ease-out;
+}
+
+.action-button:hover .action-button_arrow {
+  @apply ml-6;
+}
+
+.see-more-button {
+  @apply text-gray;
+
+  &:hover {
+    @apply text-black;
+  }
+}
+
+/* .animated-link {
   position: relative;
   @apply font-button;
 }
@@ -33,4 +50,4 @@
 
 .inline-link {
   text-decoration: underline;
-}
+} */
