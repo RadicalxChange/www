@@ -27,27 +27,12 @@
   &_carousel {
     grid-column: column 1 / margin 2;
     grid-row: 3 / span 1;
-    display: flex;
+    @apply grid;
+    grid-template-columns: repeat(6, calc(100vw - 2rem));
+    @apply col-gap-8;
     @apply overflow-x-auto;
     @apply cursor-move;
     scroll-snap-type: x mandatory;
-
-    @screen lg {
-      grid-column: margin 1 / column 10;
-      grid-row: 3 / span 1;
-      @apply mx-8;
-      @apply cursor-auto;
-    }
-  }
-
-  &_carousel-inner {
-    @apply grid;
-    grid-template-columns: repeat(6, calc(100vw - 4rem));
-    @apply col-gap-8 row-gap-8;
-
-    @screen lg {
-      grid-template-columns: repeat(3, 1fr);
-    }
   }
 
   &_concept {
