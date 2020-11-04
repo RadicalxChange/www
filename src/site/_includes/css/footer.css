@@ -93,3 +93,15 @@
     }
   }
 }
+
+.subscribe-widget {
+  &_input {
+    &::placeholder {
+      @apply text-gray;
+    }
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+}

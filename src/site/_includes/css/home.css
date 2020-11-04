@@ -1,4 +1,4 @@
-.home-main {
+.home {
   @apply relative;
   @apply grid;
   @apply grid-cols-4;

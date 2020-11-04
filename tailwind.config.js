@@ -48,7 +48,7 @@ module.exports = {
       transparent: "transparent",
     },
     extend: {
-      borderRadius: { "50": "50%" },
+      borderRadius: { "50": "50%", oval: "70px" },
       borderWidth: { "3": "3px" },
       transitionProperty: { right: "right" },
       inset: { full: "100%", "1/2": "50%" },
@@ -59,6 +59,7 @@ module.exports = {
       boxShadow: {
         "focus-white": "0 0 0 3px rgba(256, 256, 256, 1)",
       },
+      height: { "36": "9rem" },
     },
   },
   variants: {

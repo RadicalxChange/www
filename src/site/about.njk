@@ -6,6 +6,12 @@ introduction: |
   We believe in designing and discovering social organizations beyond capitalism, statism and technocracy, which can nurture the emergence of increasing returns from our complex cooperative diversity.
 
   RxC connects social scientists, technologists, artists, activists and entrepreneurs - and we are always open to new people and ways to help us upgrade the source code of our social world to make it radically more intelligent, diverse, equal and free.
+chaptersDescription: |
+  RadicalxChange Chapters are the key organizations of RxC community - they develop local networks for discussions, investigations, experiments and implementations of the next generation of social technology, and they spread the RxC vision across the globe. Chapters warmly welcome people of all backgrounds and levels of experience with the topics.
+aboutBlurb: |
+  The RadicalxChange Foundation is a non-profit organization dedicated to advancing the RxC cause, founded by E. Glen Weyl following the publication of the book Radical Markets in 2018.
+
+  You can contact (info@rxc.com) the Foundation for all matters concerning RxC, including consultancy work related to policy development and institutional design.
 ---
 
 <!-- prettier-ignore -->
@@ -25,10 +31,46 @@ introduction: |
     {{ introduction | markdown | safe }}
   </div>
 </main>
-<section class="chapters"></section>
-<section class="team"></section>
-<section class="press"></section>
-<section class="support"></section>
+<section class="about_chapters">
+  <div class="about_chapters_join-button">
+    <a
+      class="inline-flex items-center justify-between w-full py-2 px-3 border rounded-oval"
+      href="#"
+    >
+      <span class="text-size--1 uppercase">Join your local chapter</span
+      ><img src="/images/ui/next-arrow.svg" />
+    </a>
+  </div>
+  <div class="about_chapters_description md-container">
+    {{ chaptersDescription | markdown | safe }}
+  </div>
+</section>
+<section class="about_team">
+  <div class="about_team_the-team">
+    <h2 class="h-12 border-b">Team members</h2>
+    <table class="w-full">
+      <tbody>
+        {% for i in [1,2,3,4,5,6,7,8] %}
+        <tr class="h-12 border-b">
+          <td class="text-size--1 uppercase">Jennifer Lyn Morone</td>
+          <td class="text-size--1">CEO</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="about_team_the-board">
+    <h2 class="h-12 border-b">Board members</h2>
+    <ul class="h-36 pt-2 border-b">
+      <li>E. Glen Weyl</li>
+    </ul>
+    <div class="md-container md-text-sm pt-2">
+      {{ aboutBlurb | markdown | safe }}
+    </div>
+  </div>
+</section>
+<section class="about_press"></section>
+<section class="about_support"></section>
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>

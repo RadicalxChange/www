@@ -3,6 +3,10 @@
 .md-container {
   @apply text-size-0;
 
+  &.md-text-sm {
+    @apply text-size--1;
+  }
+
   ul,
   ol,
   img,
