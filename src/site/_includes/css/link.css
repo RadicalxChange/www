@@ -1,0 +1,36 @@
+@import "./mixins/_animated-link.css";
+
+.animated-link {
+  position: relative;
+  @apply font-button;
+}
+
+.animated-link:after {
+  content: "";
+  @apply absolute;
+  @apply right-full;
+  @apply left-0;
+  bottom: -1px;
+  @apply border-solid border-t-3 border-black;
+  @apply transition-right duration-300 ease-in;
+}
+
+@screen touch {
+  .animated-link:after {
+    @mixin animated-link-hover;
+  }
+}
+
+.animated-link:hover:after {
+  @mixin animated-link-hover;
+}
+
+.block-with-animated-link {
+  &:hover .animated-link:after {
+    @mixin animated-link-hover;
+  }
+}
+
+.inline-link {
+  text-decoration: underline;
+}

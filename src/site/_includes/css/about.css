@@ -4,13 +4,12 @@
     @apply grid;
     @apply grid-cols-4;
     grid-template-rows: auto auto;
-    @apply mt-4 mb-4;
+    @apply mt-4 mb-8;
 
     @screen lg {
       @apply grid;
       @apply grid-cols-12;
       grid-template-rows: auto;
-      @apply mb-8;
     }
 
     &_join-button {
@@ -40,6 +39,7 @@
     @apply grid;
     @apply grid-cols-4;
     grid-template-rows: auto auto;
+    @apply mb-8;
 
     @screen lg {
       @apply grid;
@@ -50,10 +50,12 @@
     &_the-team {
       grid-column: column 1 / margin 2;
       @apply order-last;
+      @apply mb-8;
 
       @screen lg {
         @apply order-none;
         grid-column: column 1 / gutter 5;
+        @apply mb-0;
       }
     }
 

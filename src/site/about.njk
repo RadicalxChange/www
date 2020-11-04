@@ -47,24 +47,36 @@ aboutBlurb: |
 </section>
 <section class="about_team">
   <div class="about_team_the-team">
-    <h2 class="h-12 border-b">Team members</h2>
+    <h2 class="h-8 lg:h-12 border-b">Team members</h2>
     <table class="w-full">
       <tbody>
-        {% for i in [1,2,3,4,5,6,7,8] %}
-        <tr class="h-12 border-b">
-          <td class="text-size--1 uppercase">Jennifer Lyn Morone</td>
-          <td class="text-size--1">CEO</td>
+        <!-- prettier-ignore -->
+        {% for member in team %}
+        <tr class="h-8 lg:h-12 border-b">
+          <td class="text-size--1 uppercase">
+            <a href="/team/{{ member.name | slug }}">{{ member.name }}</a>
+          </td>
+          <td class="text-size--1">
+            <span>{{ member.title }}</span>
+          </td>
         </tr>
+        <!-- prettier-ignore -->
         {% endfor %}
       </tbody>
     </table>
   </div>
   <div class="about_team_the-board">
-    <h2 class="h-12 border-b">Board members</h2>
-    <ul class="h-36 pt-2 border-b">
-      <li>E. Glen Weyl</li>
+    <h2 class="h-8 lg:h-12 border-b">Board members</h2>
+    <ul class="lg:h-36 py-2 border-b">
+      <!-- prettier-ignore -->
+      {% for member in board %}
+      <li class="inline comma-separated">
+        <a href="/board/{{ member.name | slug }}">{{ member.name }}</a>
+      </li>
+      <!-- prettier-ignore -->
+      {% endfor %}
     </ul>
-    <div class="md-container md-text-sm pt-2">
+    <div class="md-sm pt-2">
       {{ aboutBlurb | markdown | safe }}
     </div>
   </div>

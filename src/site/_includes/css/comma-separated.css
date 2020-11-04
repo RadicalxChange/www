@@ -1,0 +1,7 @@
+.comma-separated {
+  @apply inline;
+
+  &:not(:last-child):after {
+    content: ", ";
+  }
+}
