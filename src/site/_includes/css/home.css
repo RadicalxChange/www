@@ -33,6 +33,11 @@
     @apply overflow-x-auto;
     @apply cursor-move;
     scroll-snap-type: x mandatory;
+
+    @screen lg {
+      grid-column: column 1 / gutter 9;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &_concept {
