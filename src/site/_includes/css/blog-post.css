@@ -1,7 +1,7 @@
 .blog-post-main {
-  grid-column: column 1 / gutter 5;
+  grid-column: column 1 / margin 2;
 
   @screen lg {
-    grid-column: column 4 / gutter 14;
+    grid-column: column 4 / gutter 13;
   }
 }

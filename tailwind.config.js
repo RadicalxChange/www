@@ -11,9 +11,12 @@ module.exports = {
       touch: { raw: "(hover: none)" },
     },
     gridTemplateColumns: {
-      "4": "repeat(4, [gutter] 2rem [column] 1fr) [gutter] 2rem",
-      "12": "repeat(12, [gutter] 2rem [column] 1fr) [gutter] 2rem",
-      "16": "repeat(16, [gutter] 2rem [column] 1fr) [gutter] 2rem",
+      "4":
+        "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
+      "12":
+        " [margin] 2rem [column] 1fr repeat(11, [gutter] 2rem [column] 1fr) [margin] 2rem",
+      "16":
+        "[margin] 2rem [column] 1fr repeat(15, [gutter] 2rem [column] 1fr) [margin] 2rem",
     },
     fontSize: {
       "size--3": "var(--step-type--3)",
@@ -28,6 +31,8 @@ module.exports = {
       "size-6": "var(--step-type-6)",
       "size-7": "var(--step-type-7)",
       "size-8": "var(--step-type-8)",
+      "size-display": "16.88vw",
+      "size-lg/display": "6.38vw",
     },
     fontFamily: {
       display: ["Messer", "san-serif"],

@@ -1,0 +1,7 @@
+.logo {
+  width: 91.67vw;
+
+  @screen lg {
+    width: 39.31vw;
+  }
+}

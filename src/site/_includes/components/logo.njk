@@ -1,0 +1,14 @@
+<!-- prettier-ignore -->
+{% macro render(color="black") %}
+<!-- prettier-ignore -->
+{% if color == "black" %}
+<img class="logo" src="/images/logos/logo.svg" />
+<!-- prettier-ignore -->
+{% endif %}
+<!-- prettier-ignore -->
+{% if color == "white" %}
+<img class="logo" src="/images/logos/logo-white.svg" />
+<!-- prettier-ignore -->
+{% endif %}
+<!-- prettier-ignore -->
+{% endmacro %}

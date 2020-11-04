@@ -9,6 +9,7 @@
 @import "tailwindcss/components";
 
 /* Custom components */
+@import "./logo.css";
 @import "./menu.css";
 @import "./footer.css";
 @import "./introduction.css";

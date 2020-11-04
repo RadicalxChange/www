@@ -1,10 +1,12 @@
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+
+<!-- prettier-ignore -->
 {% macro render() %}
 <footer class="footer">
   <hr class="footer_hr" />
   <div class="footer_logo">
-    <a class="inline-block" href="/"
-      ><img class="logo" src="/images/logos/logo.svg"
-    /></a>
+    <a class="inline-block" href="/">{{ logo.render() }}</a>
   </div>
   <div class="footer_copyright">
     <p class="text-size--2">© 2020 RadicalxChange Foundation Ltd.</p>
@@ -115,4 +117,5 @@
     </p>
   </form>
 </footer>
+<!-- prettier-ignore -->
 {% endmacro %}

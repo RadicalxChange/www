@@ -9,6 +9,8 @@ introduction: |
 ---
 
 <!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
@@ -17,7 +19,7 @@ introduction: |
 {{ menu.render() }}
 <main class="introduction">
   <div class="introduction_logo">
-    <a class="inline-block" href="/"><img src="/images/logos/logo.svg" /></a>
+    <a class="inline-block" href="/">{{ logo.render() }}</a>
   </div>
   <div class="introduction_content md-container">
     {{ introduction | markdown | safe }}

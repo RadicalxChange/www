@@ -3,6 +3,8 @@ layout: layouts/_base.njk
 ---
 
 <!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
@@ -12,9 +14,7 @@ layout: layouts/_base.njk
 <div class="bg-golden-fizz">
   <main class="home-main">
     <div class="home-main_logo">
-      <a class="inline-block" href="/"
-        ><img class="logo" src="/images/logos/logo.svg"
-      /></a>
+      <a class="inline-block" href="/">{{ logo.render() }}</a>
     </div>
     <div class="home-main_carousel">
       <div class="home-main_carousel-inner">
@@ -42,7 +42,8 @@ layout: layouts/_base.njk
       </div>
     </div>
     <div id="socialMovementMarquee" class="home-main_marquee">
-      <span class="font-display text-size-6 uppercase mx-6 whitespace-no-wrap"
+      <span
+        class="font-display text-size-lg/display uppercase mx-6 whitespace-no-wrap"
         >A Social Movement for Next-Generation Political Economies</span
       >
     </div>
@@ -70,7 +71,7 @@ layout: layouts/_base.njk
     </aside>
     <div class="home-main_banner">
       <h2
-        class="mb-4 text-center font-display text-size-6 leading-none uppercase"
+        class="mb-4 text-center font-display text-size-display leading-none uppercase"
       >
         Upgrade the source code
       </h2>
