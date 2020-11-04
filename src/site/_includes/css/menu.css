@@ -7,10 +7,6 @@
   transform: translate(0, 100%);
   @apply transition-transform duration-500;
 
-  &_open {
-    transform: translate(0, 0);
-  }
-
   @screen lg {
     @apply w-auto;
     transform: translate(calc(-100% + 24px), 0);
@@ -18,37 +14,33 @@
     &:hover {
       transform: translate(calc(-100% + 34px), 0);
     }
-    /* 
-    &:focus-within {
-      transform: translate(calc(-100% + 34px), 0);
-    } */
+  }
 
-    &_open {
+  &_open {
+    transform: translate(0, 0);
+
+    @screen lg {
       transform: translate(0, 0);
 
       &:hover {
         transform: translate(0, 0);
       }
-
-      /* &:focus-within {
-        transform: translate(0, 0);
-      } */
     }
   }
-}
 
-.nav {
-  @apply flex flex-col;
-  @apply w-full;
-  @apply h-full;
-  @apply pb-16;
-  @apply bg-black;
-  @apply text-white;
-  @apply overflow-y-auto;
+  &_nav {
+    @apply flex flex-col;
+    @apply w-full;
+    @apply h-full;
+    @apply pb-16;
+    @apply bg-black;
+    @apply text-white;
+    @apply overflow-y-auto;
 
-  @screen lg {
-    @apply w-auto;
-    @apply pb-0;
+    @screen lg {
+      @apply w-auto;
+      @apply pb-0;
+    }
   }
 }
 
