@@ -48,19 +48,19 @@ aboutBlurb: |
 <section class="about_team">
   <div class="about_team_the-team">
     <h2 class="h-8 lg:h-12 border-b">Team members</h2>
-    <table class="w-full">
-      <tbody>
+    <table class="block">
+      <tbody class="block">
         <!-- prettier-ignore -->
         {% for member in team %}
-        <tr class="h-8 lg:h-12 border-b">
-          <td>
+        <tr class="flex items-center h-8 lg:h-12 border-b">
+          <td style="width: calc(50% + 1rem);">
             <a
               class="see-more-button text-size--1 uppercase"
               href="/team/{{ member.name | slug }}"
               >{{ member.name }}</a
             >
           </td>
-          <td>
+          <td style="width: calc(50% - 1rem);">
             <span class="text-size--1">{{ member.title }}</span>
           </td>
         </tr>
@@ -93,17 +93,22 @@ aboutBlurb: |
   </div>
   <div class="about_press_hr"></div>
   <div class="about_press_nav">
-    <button>Older</button><button>Newer</button>
+    <button class="mr-4 text-size--1 uppercase">Older</button
+    ><button class="text-size--1 uppercase">Newer</button>
   </div>
   <ul class="about_press_links">
+    <!-- prettier-ignore -->
+    {% for article in press %}
     <li>
       <a href="#"
-        ><p>Coindesk</p>
-        <p>May 7, 2020</p></a
+        ><p class="text-size--2">{{ article.publication }}</p>
+        <p class="text-size--2">{{ article.date | readableDate }}</p></a
       >
     </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
   </ul>
-  <div class="about_press_page"><span>1/23</span></div>
+  <div class="about_press_page"><span class="text-size--2">1/23</span></div>
 </section>
 <section class="about_support"></section>
 <!-- prettier-ignore -->

@@ -18,7 +18,7 @@
 
       @screen lg {
         @apply order-none;
-        grid-column: column 1 / gutter 5;
+        grid-column: column 1 / gutter 4;
       }
     }
 
@@ -29,7 +29,7 @@
 
       @screen lg {
         @apply order-none;
-        grid-column: column 6 / margin 2;
+        grid-column: column 5 / margin 2;
       }
     }
   }
@@ -54,7 +54,7 @@
 
       @screen lg {
         @apply order-none;
-        grid-column: column 1 / gutter 5;
+        grid-column: column 1 / gutter 6;
         @apply mb-0;
       }
     }
@@ -65,7 +65,7 @@
 
       @screen lg {
         @apply order-none;
-        grid-column: column 6 / margin 2;
+        grid-column: column 7 / margin 2;
       }
     }
   }
@@ -84,7 +84,7 @@
     }
 
     &_title {
-      grid-column: column 3 / gutter 5;
+      grid-column: column 4 / gutter 5;
     }
 
     &_hr {
@@ -98,11 +98,16 @@
     }
 
     &_links {
-      grid-column: column 3 / gutter 11;
+      grid-column: column 4 / gutter 11;
+      @apply grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 2rem;
+      row-gap: 2rem;
     }
 
     &_page {
       grid-column: column 12 / margin 2;
+      @apply justify-self-end;
     }
   }
 }
