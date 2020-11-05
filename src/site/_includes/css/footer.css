@@ -13,6 +13,7 @@
   &_hr {
     grid-column: column 1 / margin 2;
     grid-row: 1 / span 1;
+    @apply border-b;
     @apply mt-4;
 
     @screen lg {

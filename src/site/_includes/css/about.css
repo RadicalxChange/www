@@ -69,4 +69,40 @@
       }
     }
   }
+
+  &_press {
+    @apply bg-white;
+    @apply grid;
+    @apply grid-cols-4;
+    grid-template-rows: auto auto;
+    @apply mb-8;
+
+    @screen lg {
+      @apply grid;
+      @apply grid-cols-12;
+      grid-template-rows: auto;
+    }
+
+    &_title {
+      grid-column: column 3 / gutter 5;
+    }
+
+    &_hr {
+      grid-column: column 1 / margin 2;
+      @apply border-b;
+      @apply mb-4;
+    }
+
+    &_nav {
+      grid-column: column 1 / gutter 2;
+    }
+
+    &_links {
+      grid-column: column 3 / gutter 11;
+    }
+
+    &_page {
+      grid-column: column 12 / margin 2;
+    }
+  }
 }
