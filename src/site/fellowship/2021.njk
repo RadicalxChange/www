@@ -30,6 +30,7 @@ sections:
 
       <h2 id="about-how">How</h2>
 
+      To apply, please send us the following before **Sunday, December 13, 2020, 11:59pm EST**:
       1. E. Glen Weyl’s book, _Radical Markets_, provided a starting place for envisioning institutions that preserve democratic values in a rapidly-changing technological landscape. Send us a **1000-word essay** explaining how your project contributes to the RadicalxChange movement and pushes the vision forward.
       2. Share a **brief personal statement** describing what you care about and what drives you. 
       3. Optionally, share a **selection of your previous work or research**.
@@ -84,10 +85,10 @@ sections:
 {% block content %}
 <div>
   <div class="md-container mb-base lg:mb-lg/base">
-    <h2>First Cohort, January 25th - April 2nd</h2>
+    <h2>Apply to be part of the first cohort before December 13, 2020</h2>
     <p>
-      Starting January 2021, the first cohort will work together to strengthen
-      civic society and rethink public goods.
+      From January 25 to April 2, 2021, the first cohort will work together to
+      strengthen civic society and rethink public goods.
     </p>
   </div>
   <!-- prettier-ignore -->
@@ -120,13 +121,14 @@ sections:
 <!-- prettier-ignore -->
 {% for s in sections %}
 <!-- prettier-ignore -->
-{% call section.render(s.header,id=s.id) %}
+{% call section.render(headerText=s.header, id=s.id) %}
 <div>
   <div class="md-container mb-base lg:mb-lg/base">
     {{ s.content | markdown | safe }}
     <h2>Apply now</h2>
     <p>
-      To apply, send us an email with
+      To apply, send us an email before Sunday, December 13, 2020, 11:59pm EST
+      with
       <a href="#about-how">the materials described above</a>.
     </p>
   </div>
