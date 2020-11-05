@@ -99,11 +99,16 @@ aboutBlurb: |
   <ul class="about_press_links">
     <!-- prettier-ignore -->
     {% for article in press %}
-    <li>
-      <a href="#"
-        ><p class="text-size--2">{{ article.publication }}</p>
+    <li class="press_link">
+      <a class="block" href="{{ article.href }}"
+        ><p class="text-size--2">
+          <span class="hover-link">{{ article.publication }}</span>
+        </p>
         <p class="text-size--2">{{ article.date | readableDate }}</p></a
       >
+      <div class="press_link-details">
+        <p class="text-white text-size--3">{{ article.title }}</p>
+      </div>
     </li>
     <!-- prettier-ignore -->
     {% endfor %}

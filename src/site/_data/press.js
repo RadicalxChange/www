@@ -551,4 +551,4 @@ function comparePress(a, b) {
 }
 press.sort(comparePress);
 
-module.exports = press.slice(0, 20);
+module.exports = press.slice(0, 44);

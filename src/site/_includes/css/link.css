@@ -17,6 +17,16 @@
   }
 }
 
+.hover-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* .inline-link {
+  text-decoration: underline;
+} */
+
 /* .animated-link {
   position: relative;
   @apply font-button;
@@ -46,8 +56,4 @@
   &:hover .animated-link:after {
     @mixin animated-link-hover;
   }
-}
-
-.inline-link {
-  text-decoration: underline;
-} */
+}*/
