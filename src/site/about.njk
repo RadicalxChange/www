@@ -12,6 +12,60 @@ aboutBlurb: |
   The RadicalxChange Foundation is a non-profit organization dedicated to advancing the RxC cause, founded by E. Glen Weyl following the publication of the book Radical Markets in 2018.
 
   You can contact (info@rxc.com) the Foundation for all matters concerning RxC, including consultancy work related to policy development and institutional design.
+supporters:
+  - name: Hewlett Foundation
+    href: "https://hewlett.org/"
+  - name: Kauffman Foundation
+    href: "https://www.kauffman.org/"
+  - name: Merit
+    href: "https://www.merits.com/"
+  - name: Omidyar Network
+    href: "https://www.omidyar.com/"
+  - name: Wireline
+    href: "https://www.wireline.io/"
+  - name: The Charter Cities Institute
+    href: "https://www.chartercitiesinstitute.org/"
+  - name: Institute for New Economic Thinking
+    href: "https://www.ineteconomics.org/"
+  - name: The Osa Foundation
+    href: "https://www.theosafoundation.org/"
+  - name: Alfred P. Sloan Foundation
+    href: "https://sloan.org/"
+  - name: Bunz
+    href: "https://bunz.com/"
+  - name: College for Creative Studies
+    href: "https://www.collegeforcreativestudies.edu/"
+  - name: Dada.art
+    image: /images/sponsors-2020/dada-logo.png
+    href: "https://dada.nyc/"
+  - name: Democracy Earth
+    image: /images/sponsors-2020/democracy-earth-logo.png
+    href: "https://democracy.earth/"
+  - name: Evil Twin Booking
+    href: "https://eviltwinbooking.org/"
+  - name: Gitcoin
+    image: /images/sponsors-2020/gitcoin-logo.svg
+    href: "https://gitcoin.co/"
+  - name: Insper
+    image: /images/sponsors-2020/insper-logo.png
+    href: "https://www.insper.edu.br/"
+  - name: Idena
+    image: /images/sponsors-2020/idena-logo.jpeg
+    href: "https://idena.io/"
+  - name: Microsoft
+    href: "https://www.microsoft.com/"
+  - name: Nesta
+    href: "https://www.nesta.org.uk/"
+  - name: Ocean Protocol
+    image: /images/sponsors-2020/ocean-protocol-logo.svg
+    href: "https://oceanprotocol.com/"
+  - name: Polco
+    href: "https://polco.us/"
+  - name: Totle
+    href: "https://www.totle.com/"
+  - name: Wildcards
+    image: /images/sponsors-2020/wildcards-logo.png
+    href: "https://wildcards.world/"
 ---
 
 <!-- prettier-ignore -->
@@ -115,7 +169,23 @@ aboutBlurb: |
   </ul>
   <div class="about_press_page"><span class="text-size--2">1/23</span></div>
 </section>
-<section class="about_support"></section>
+<section class="about_support">
+  <div class="about_support_hr"></div>
+  <div class="about_support_title">
+    <h2>Supported by</h2>
+  </div>
+  <ul class="about_support_supporters">
+    <!-- prettier-ignore -->
+    {% for supporter in supporters %}
+    <li class="comma-separated">
+      <a class="see-more-button" href="{{ supporter.href }}">{{
+        supporter.name
+      }}</a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ul>
+</section>
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>
