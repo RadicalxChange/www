@@ -75,41 +75,72 @@
     @apply grid;
     @apply grid-cols-4;
     grid-template-rows: auto auto;
-    @apply mb-8;
+    @apply mb-4;
 
     @screen lg {
       @apply grid;
       @apply grid-cols-12;
       grid-template-rows: auto;
+      @apply mb-8;
     }
 
     &_title {
-      grid-column: column 4 / gutter 5;
+      @apply hidden;
+
+      @screen lg {
+        grid-column: column 4 / gutter 5;
+        @apply block;
+      }
     }
 
     &_hr {
       grid-column: column 1 / margin 2;
       @apply border-b;
-      @apply mb-4;
+      @apply mt-4 mb-4;
+      @apply order-3;
+
+      @screen lg {
+        @apply mt-0;
+        @apply order-none;
+      }
     }
 
     &_nav {
       grid-column: column 1 / gutter 2;
+      @apply order-1;
+
+      @screen lg {
+        @apply order-none;
+      }
     }
 
     &_links {
-      grid-column: column 4 / gutter 11;
+      grid-column: column 1 / margin 2;
       @apply grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(11, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(10, 1fr);
       @apply auto-rows-fr;
       @apply col-gap-8 row-gap-8;
       @apply grid-flow-col;
+      @apply order-4;
+
+      @screen lg {
+        grid-column: column 4 / gutter 11;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        @apply order-none;
+      }
     }
 
     &_page {
-      grid-column: column 12 / margin 2;
+      grid-column: column 4 / margin 2;
       @apply justify-self-end;
+      @apply order-2;
+
+      @screen lg {
+        grid-column: column 12 / margin 2;
+        @apply order-none;
+      }
     }
   }
 
@@ -133,11 +164,20 @@
     }
 
     &_title {
-      grid-column: column 1 / gutter 3;
+      grid-column: column 1 / gutter 2;
+      @apply mb-8;
+
+      @screen lg {
+        grid-column: column 1 / gutter 3;
+      }
     }
 
     &_supporters {
-      grid-column: column 4 / margin 2;
+      grid-column: column 1 / margin 2;
+
+      @screen lg {
+        grid-column: column 4 / margin 2;
+      }
     }
   }
 }
@@ -158,4 +198,12 @@
 
 .press_link:hover .press_link-details {
   @apply opacity-100;
+}
+
+.press_link:nth-child(n + 21) {
+  @apply hidden;
+
+  @screen lg {
+    @apply block;
+  }
 }
