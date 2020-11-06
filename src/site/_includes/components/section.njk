@@ -10,8 +10,8 @@
 {% endmacro %}
 
 <!-- prettier-ignore -->
-{% macro render(headerText) %}
-<section class="color-every-other-child">
+{% macro render(headerText, id) %}
+<section id="{{ id }}" class="color-every-other-child">
   <div
     class="flex flex-col justify-between w-full lg:w-span7 lg:min-h-tall lg-tall:min-h-screen py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg"
   >
