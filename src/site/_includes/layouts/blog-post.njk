@@ -3,6 +3,9 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
 ---
 
 <!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
 {% extends "layouts/_base.njk" %}
 
 <!-- prettier-ignore -->
@@ -27,9 +30,8 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
   id="scrollIndicator"
   class="fixed z-10 top-0 left-0 h-1 bg-black w-0"
 ></div>
-<div class="fixed z-10 top-0 right-0 pt-4 pr-8">
-  <a class="uppercase" href="/">Close</a>
-</div>
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/") }}
 <div class="grid grid-cols-4 lg:grid-cols-16">
   <main class="blog-post-main">
     <h1 class="mt-4 mb-10 font-display text-size-8 leading-none">

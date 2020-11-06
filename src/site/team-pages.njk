@@ -9,12 +9,19 @@ defaultBio: |
   _No biography available at this time._
 ---
 
-<div class="w-full h-full grid-cols-4 lg:grid-cols-12">
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/about#team") }}
+<div class="w-full h-full grid grid-cols-4 lg:grid-cols-12">
   <div
     class="team_image"
     style="background-image: url('/images/team/{{ member.image }}');"
   ></div>
+  <!-- <img class="team_image2" src="/images/team/{{ member.image }}" /> -->
   <div class="team_bio">
+    <h1 class="mt-4 mb-8">{{ member.name }} ({{ member.title }})</h1>
     <div class="md-container">
       <!-- prettier-ignore -->
       {% if member.bio %}
