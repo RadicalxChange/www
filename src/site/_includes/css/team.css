@@ -1,0 +1,38 @@
+.team_image {
+  @apply relative;
+  @apply overflow-hidden;
+  /* flex: 0 0 100%; */
+  /* background image in element style */
+  background-size: cover;
+  background-blend-mode: saturation;
+  grid-column: column 1 / gutter 7;
+
+  /* @screen md {
+    flex: 0 0 50%;
+  }
+
+  @screen lg {
+    flex: 0 0 33.333333%;
+  } */
+}
+
+/* https://stackoverflow.com/questions/29307971/css-grid-of-squares-with-flexbox */
+.team_image:before {
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+
+/* .team_social-icon {
+  width: 3.25vmin;
+  height: 3.25vmin;
+
+  @screen lg {
+    width: 1.125vw;
+    height: 1.125vw;
+  }
+} */
+
+.team_bio {
+  grid-column: column 8 / margin 2;
+}
