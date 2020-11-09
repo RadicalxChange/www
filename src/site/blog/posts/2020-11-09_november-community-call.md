@@ -34,7 +34,7 @@ Please send us your ideas to [community@radicalxchange.org](mailto:community@rad
 ## RxC Foundation Updates
 
 - **New RxC Fellowship Program:** We are thrilled to announce the first cohort of a new RxC fellowship program that will run for 10 weeks, from January 25 to April 2, 2021.
-  - Find all details on [RxC website](https://radicalxchange.org/fellowships/2021) on the program and how to apply as a fellow (before December 13, 2020)
+  - Find all details on [RxC website](/fellowship/2021) on the program and how to apply as a fellow (before December 13, 2020)
   - More details and a live Q&A will be shared in the coming days
   - Email us your questions at [fellowship@radicalxchange.org](mailto:fellowship@radicalxchange.org)
 - **Gitxchange2 hackathon**: The hackathon ended on November 1, and the voting period is now in progress for the projects submitted.
