@@ -1,89 +1,55 @@
 ---
+layout: layouts/_base.njk
 title: Chapters
-headerText: Chapters
 ---
 
 <!-- prettier-ignore -->
-{% extends "layouts/_page.njk" %}
+{% import "components/close-button.njk" as closeButton %}
 
 <!-- prettier-ignore -->
-{% block styles %}
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin=""
-/>
-{{ super() }}
-<!-- prettier-ignore -->
-{% endblock %}
-<!-- prettier-ignore -->
-{% block content %}
-<div class="flex-grow flex flex-col">
-  <div class="mb-sm lg:mb-lg/sm">
-    <span>Find a local chapter near you.</span>
+{{ closeButton.render(href="/about#chapters") }}
+<div class="grid grid-cols-4 lg:grid-cols-12">
+  <div class="chapters_introduction">
+    <p class="text-size--2">
+      <span>Find a local chapter or </span
+      ><a
+        href="https://forms.gle/UQ6FtuC7rEf42cqE9"
+        class="inline-link uppercase"
+      >
+        start a new chapter</a
+      >
+    </p>
   </div>
-  <div class="mb-sm lg:mb-lg/sm">
-    <div id="mapid" class="z-0"></div>
-  </div>
-  <ol class="mb-base lg:mb-lg/base">
+  <div class="chapters_list">
+    <!-- prettier-ignore -->
     {% for key, chapters in collections.groupedChapters %}
-    <li class="mb-base lg:mb-lg/base">
-      <h4 class="uppercase">{{ key }}</h4>
+    <div class="chapter-block">
+      <h4 class="border-b text-size--2 uppercase">{{ key }}</h4>
       <ul>
+        <!-- prettier-ignore -->
         {% for chapter in chapters %}
-        <a class="block" href="{{ chapter.url }}">
-          <span class="inline-link">{{ chapter.data.headerText }} </span></a
-        >
+        <!-- prettier-ignore -->
+        {% set mailtoChapter %}mailto:chapters@radicalxchange.org?subject=Interested%20in%20the%20{{
+          chapter.data.headerText | urlencode
+        }}%20Chapter&body=Hello!%20I'm%20interested%20in%20joining%20the%20RadicalxChange%20{{
+          chapter.data.headerText | urlencode
+        }}%20chapter.%20Can%20you%20put%20me%20in%20contact%20with%20their%20organizers%3F%0D%0A%0D%0AThank%20you!{%
+        endset %}
+        <!-- prettier-ignore -->
+        <li class="my-1 text-size--2">
+          <a
+            href="{{ chapter.data.meetupUrl | defaultHref(mailtoChapter) }}"
+            target="{{ '_self' if chapter.data.meetupUrl !== '#' else '_blank' }}"
+            class="text-size--2"
+          >
+            {{ chapter.data.headerText }}</a
+          >
+        </li>
+        <!-- prettier-ignore -->
         {% endfor %}
       </ul>
-    </li>
+    </div>
+    <!-- prettier-ignore -->
     {% endfor %}
-  </ol>
-  <div>
-    <a class="animated-link" href="https://forms.gle/UQ6FtuC7rEf42cqE9"
-      >Can’t find your city? Start a new chapter.</a
-    >
   </div>
 </div>
-<!-- prettier-ignore -->
-{% endblock %}
-<!-- prettier-ignore -->
-{% block bodyScripts %}
-<script
-  src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-  crossorigin=""
-></script>
-<script>
-  const places = [
-    // prettier-ignore
-    {% for chapter in collections.chapter %}
-    // prettier-ignore
-    {% if chapter.data.coordinates %}
-    {
-      label: "{{ chapter.data.headerText }}",
-      coordinates: {{ chapter.data.coordinates | dump | safe }},
-      href: "{{ chapter.url }}",
-    },
-    // prettier-ignore
-    {% endif %}
-    // prettier-ignore
-    {% endfor %}
-  ];
-  const map = L.map("mapid", { scrollWheelZoom: false }).setView([0, 0], 2);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution:
-      '© <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
-  }).addTo(map);
-  for (place of places) {
-    const { label, coordinates, href } = place;
-    L.marker(coordinates)
-      .on("click", () => (window.location.href = href))
-      .bindTooltip(label)
-      .addTo(map);
-  }
-</script>
-<!-- prettier-ignore -->
-{% endblock %}

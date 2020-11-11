@@ -1,0 +1,18 @@
+.chapters {
+  &_introduction {
+    grid-column: column 1 / gutter 2;
+    @apply mt-4 mb-8;
+  }
+
+  &_list {
+    grid-column: column 3 / column 11;
+    @apply flex flex-col flex-wrap justify-start content-start;
+    height: 960px;
+    @apply mt-4;
+  }
+}
+
+.chapter-block {
+  @apply w-1/4;
+  @apply pr-8 pb-8;
+}
