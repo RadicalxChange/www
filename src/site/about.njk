@@ -152,7 +152,7 @@ supporters:
   </div> -->
   <ul class="about_press_links">
     <!-- prettier-ignore -->
-    {% for article in press %}
+    {% for article in press | slice(0, 43) %}
     <li class="press_link">
       <a class="block" href="{{ article.href }}"
         ><p class="text-size--2">
