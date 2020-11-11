@@ -88,10 +88,10 @@ supporters:
 <section id="chapters" class="about_chapters">
   <div class="about_chapters_join-button">
     <a
-      class="action-button inline-flex items-center justify-between py-2 px-3 border rounded-oval"
+      class="action-button inline-flex items-center justify-between py-2 px-3 border rounded-oval text-size--1"
       href="/chapters"
     >
-      <span class="text-size--1 uppercase">Join your local chapter</span
+      <span class="uppercase">Join your local chapter</span
       ><img class="action-button_arrow" src="/images/ui/next-arrow.svg" />
     </a>
   </div>
@@ -146,10 +146,10 @@ supporters:
     <h2 class="h-8 lg:h-12">Press</h2>
   </div>
   <div class="about_press_hr"></div>
-  <div class="about_press_nav">
+  <!-- <div class="about_press_nav">
     <button class="mr-4 text-size--1 uppercase">Older</button
     ><button class="text-size--1 uppercase">Newer</button>
-  </div>
+  </div> -->
   <ul class="about_press_links">
     <!-- prettier-ignore -->
     {% for article in press %}
@@ -166,8 +166,9 @@ supporters:
     </li>
     <!-- prettier-ignore -->
     {% endfor %}
+    <li class="text-size--2"><a href="#">See all press...</a></li>
   </ul>
-  <div class="about_press_page"><span class="text-size--2">1/23</span></div>
+  <!-- <div class="about_press_page"><span class="text-size--2">See more</span></div> -->
 </section>
 <section id="supporters" class="about_support">
   <div class="about_support_hr"></div>
