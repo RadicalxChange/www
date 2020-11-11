@@ -1,18 +1,32 @@
 .chapters {
   &_introduction {
-    grid-column: column 1 / gutter 2;
+    grid-column: column 1 / margin 2;
     @apply mt-4 mb-8;
+
+    @screen lg {
+      grid-column: column 1 / gutter 2;
+    }
   }
 
   &_list {
-    grid-column: column 3 / column 11;
-    @apply flex flex-col flex-wrap justify-start content-start;
-    height: 960px;
-    @apply mt-4;
+    grid-column: column 1 / margin 2;
+    @apply flex flex-col;
+    @apply mt-0 mb-24;
+
+    @screen lg {
+      grid-column: column 3 / column 11;
+      @apply flex-wrap justify-start content-start;
+      height: 960px;
+      @apply mt-4 mb-0;
+    }
   }
 }
 
 .chapter-block {
-  @apply w-1/4;
-  @apply pr-8 pb-8;
+  @apply pb-4;
+
+  @screen lg {
+    @apply w-1/4;
+    @apply pr-8;
+  }
 }

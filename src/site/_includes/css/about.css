@@ -88,7 +88,7 @@
       @apply hidden;
 
       @screen lg {
-        grid-column: column 4 / gutter 5;
+        grid-column: column 1 / gutter 2;
         @apply block;
       }
     }

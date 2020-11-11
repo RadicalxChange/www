@@ -10,7 +10,7 @@ title: Chapters
 {{ closeButton.render(href="/about#chapters") }}
 <div class="grid grid-cols-4 lg:grid-cols-12">
   <div class="chapters_introduction">
-    <p class="text-size--2">
+    <p class="text-size-0 lg:text-size--2">
       <span>Find a local chapter or </span
       ><a
         href="https://forms.gle/UQ6FtuC7rEf42cqE9"
@@ -24,7 +24,7 @@ title: Chapters
     <!-- prettier-ignore -->
     {% for key, chapters in collections.groupedChapters %}
     <div class="chapter-block">
-      <h4 class="border-b text-size--2 uppercase">{{ key }}</h4>
+      <h4 class="border-b text-size-0 lg:text-size--2 uppercase">{{ key }}</h4>
       <ul>
         <!-- prettier-ignore -->
         {% for chapter in chapters %}
@@ -36,11 +36,10 @@ title: Chapters
         }}%20chapter.%20Can%20you%20put%20me%20in%20contact%20with%20their%20organizers%3F%0D%0A%0D%0AThank%20you!{%
         endset %}
         <!-- prettier-ignore -->
-        <li class="my-1 text-size--2">
+        <li class="my-1 text-size-0 lg:text-size--2">
           <a
             href="{{ chapter.data.meetupUrl | defaultHref(mailtoChapter) }}"
             target="{{ '_self' if chapter.data.meetupUrl !== '#' else '_blank' }}"
-            class="text-size--2"
           >
             {{ chapter.data.headerText }}</a
           >
