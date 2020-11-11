@@ -1,49 +1,64 @@
 ---
-layout: layouts/html.njk
+layout: layouts/_base.njk
 title: Press
 headerText: Press
 pagination:
   data: press
-  size: 10
+  size: 20
 ---
 
-<div class="flex-grow flex flex-col justify-between">
-  <div class="mb-lg lg:mb-lg/lg">
-    <p>
-      Read more about our concepts in the news.
-    </p>
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/about#press") }}
+<div
+  class="grid grid-cols-4 lg:grid-cols-12 lg:grid-rows-auto/1fr mt-4 lg:mt-8 mb-32 lg:mb-8"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-2 mb-8 lg:mb-4"
+  >
+    <span>Read more about our concepts in the news.</span>
   </div>
-  <div>
-    <ol class="mb-lg lg:mb-lg/lg">
-      {%- for item in pagination.items %}
-      <li class="mb-base lg:mb-lg/base">
+  <div
+    class="col-span-columns lg:col-start-column-3 lg:col-end-gutter-10 lg:row-span-2 mb-8 lg:mb-0"
+  >
+    <ol class="-mb-4">
+      {% for item in pagination.items %}
+      <li class="mb-4 text-size--2">
         <a class="block" href="{{ item.href }}">
-          <p><span class="inline-link">{{ item.title }} </span></a
-        ></p>
-        <p class="text-sm lg:text-lg/sm"><span>{{ item.date | readableDate }}</span><span>&nbsp;/ {{ item.publication }}</span></p>
-        <p></p>
+          <span class="inline-link">{{ item.title }} </span></a
+        >
+        <p>
+          <span>{{ item.date | readableDate }}</span
+          ><span>&nbsp;/ {{ item.publication }}</span>
+        </p>
       </li>
-      {% endfor -%}
+      {% endfor %}
     </ol>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-2 lg:row-start-2"
+  >
     <ul class="flex">
-    <!-- prettier-ignore -->
-    {% if pagination.href.next %}
-    <li class="mr-base lg:mr-lg/lg">
-      <a class="animated-link" href="{{ pagination.href.next }}">
-        Older
-      </a>
-    </li>
-    <!-- prettier-ignore -->
-    {% endif %}
-    <!-- prettier-ignore -->
-    {% if pagination.href.previous %}
-    <li class="mr-lg lg:mr-lg/lg">
-      <a class="animated-link" href="{{ pagination.href.previous }}">
-        Newer
-      </a>
-    </li>
-    <!-- prettier-ignore -->
-    {% endif %}
+      <!-- prettier-ignore -->
+      {% if pagination.href.next %}
+      <li class="mr-4 text-size--1">
+        <a class="animated-link" href="{{ pagination.href.next }}">
+          Older
+        </a>
+      </li>
+      <!-- prettier-ignore -->
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% if pagination.href.previous %}
+      <li class="mr-4 text-size--1">
+        <a class="animated-link" href="{{ pagination.href.previous }}">
+          Newer
+        </a>
+      </li>
+      <!-- prettier-ignore -->
+      {% endif %}
     </ul>
   </div>
 </div>
