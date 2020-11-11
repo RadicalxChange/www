@@ -1,7 +1,13 @@
 <!-- prettier-ignore -->
 {% macro render(href) %}
-<div class="fixed z-10 top-0 right-0 pt-4 pr-8">
-  <a class="uppercase" href="{{ href }}">Close</a>
+<div
+  class="z-10 fixed flex justify-center lg:top-0 lg:right-0 bottom-0 lg:bottom-auto w-full lg:w-auto lg:mt-4 lg:mr-8 mb-8 lg:mb-0"
+>
+  <a
+    class="inline-block py-3 px-8 bg-black rounded-oval leading-none text-white text-size--1 uppercase"
+    href="{{ href }}"
+    >Close</a
+  >
 </div>
 <!-- prettier-ignore -->
 {% endmacro %}

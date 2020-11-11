@@ -1,22 +1,21 @@
 .team {
   &_image {
-    @apply sticky top-0;
-    @apply w-full;
-    @apply overflow-hidden;
-    /* background image in element style */
-    background-size: cover;
-    background-blend-mode: saturation;
-    grid-column: margin 1 / gutter 7;
+    grid-column: 1 / -1;
 
-    /* https://stackoverflow.com/questions/29307971/css-grid-of-squares-with-flexbox */
-    /* &:before {
-    content: "";
-    float: left;
-    padding-top: 100%;
-  } */
+    @screen lg {
+      grid-column: margin 1 / gutter 7;
+      @apply sticky top-0;
+      @apply w-full;
+    }
   }
 
   &_bio {
-    grid-column: column 8 / margin 2;
+    grid-column: column 1 / margin 2;
+    @apply mt-4 mb-24;
+
+    @screen lg {
+      grid-column: column 8 / margin 2;
+      @apply mt-4 mb-8;
+    }
   }
 }

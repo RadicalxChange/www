@@ -14,14 +14,14 @@ defaultBio: |
 
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/about#team") }}
-<div class="w-full h-full grid grid-cols-4 lg:grid-cols-12">
-  <div
-    class="team_image"
-    style="background-image: url('/images/team/{{ member.image }}');"
-  ></div>
-  <!-- <img class="team_image2" src="/images/team/{{ member.image }}" /> -->
+<div class="grid grid-cols-4 lg:grid-cols-12">
+  <div class="team_image">
+    <img class="w-full" src="/images/team/{{ member.image }}" />
+  </div>
   <div class="team_bio">
-    <h1 class="mt-4 mb-8">{{ member.name }} ({{ member.title }})</h1>
+    <h1 class="lg:pr-32 mb-4 lg:mb-8">
+      {{ member.name }} ({{ member.title }})
+    </h1>
     <div class="md-container">
       <!-- prettier-ignore -->
       {% if member.bio %}
