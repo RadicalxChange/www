@@ -57,31 +57,6 @@ pagination:
     {% endfor %}
   </ol>
 </div>
-<main>
-  <div>
-    <a class="inline-block" href="/">{{ logo.render() }}</a>
-  </div>
-  <ul class="flex -mr-4">
-    <!-- prettier-ignore -->
-    {% if pagination.href.next %}
-    <li class="mr-4">
-      <a class="uppercase" href="{{ pagination.href.next }}">
-        Older
-      </a>
-    </li>
-    <!-- prettier-ignore -->
-    {% endif %}
-    <!-- prettier-ignore -->
-    {% if pagination.href.previous %}
-    <li class="mr-4">
-      <a class="uppercase" href="{{ pagination.href.previous }}">
-        Newer
-      </a>
-    </li>
-    <!-- prettier-ignore -->
-    {% endif %}
-  </ul>
-</main>
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>
