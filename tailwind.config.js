@@ -11,12 +11,17 @@ module.exports = {
       touch: { raw: "(hover: none)" },
     },
     gridTemplateColumns: {
+      "4traditional": "repeat(4, minmax(0, 1fr))",
       "4":
         "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
       "12":
         "[margin] 2rem [column] 1fr repeat(11, [gutter] 2rem [column] 1fr) [margin] 2rem",
       "16":
         "[margin] 2rem [column] 1fr repeat(15, [gutter] 2rem [column] 1fr) [margin] 2rem",
+    },
+    gridTemplateRows: {
+      "auto/1fr": "auto minmax(0, 1fr)",
+      "4": "repeat(4, minmax(0, 1fr))",
     },
     fontSize: {
       "size--3": "var(--step-type--3)",
@@ -135,10 +140,6 @@ module.exports = {
         "column-16": "column 16",
         "margin-2": "margin 2",
       },
-    },
-    gridTemplateRows: {
-      "auto/1fr": "auto minmax(0, 1fr)",
-      "4": "repeat(4, minmax(0, 1fr))",
     },
   },
   variants: {
