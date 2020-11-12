@@ -1,0 +1,68 @@
+---
+layout: layouts/_base.njk
+pagination:
+  data: collections.blog
+  size: 24
+  reverse: true
+  alias: blog
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div class="grid grid-cols-4 lg:grid-cols-16 py-8">
+  <header class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6">
+    <!-- prettier-ignore -->
+    {{ logo.render() }}
+  </header>
+  <div class="col-span-columns"></div>
+  <ol class="grid grid-cols-4 lg:grid-cols-16 col-span-margins">
+    {% for post in blog %}
+    <li class="mb-8">
+      <a class="block" href="{{ post.url }}">
+        <p>
+          <span class="inline-link">{{ post.data.postHeader }}</span>
+        </p>
+        <p>{{ post.data.date | readableDate }} / {{ post.data.postAuthor }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+<main>
+  <div>
+    <a class="inline-block" href="/">{{ logo.render() }}</a>
+  </div>
+  <ul class="flex -mr-4">
+    <!-- prettier-ignore -->
+    {% if pagination.href.next %}
+    <li class="mr-4">
+      <a class="uppercase" href="{{ pagination.href.next }}">
+        Older
+      </a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endif %}
+    <!-- prettier-ignore -->
+    {% if pagination.href.previous %}
+    <li class="mr-4">
+      <a class="uppercase" href="{{ pagination.href.previous }}">
+        Newer
+      </a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endif %}
+  </ul>
+</main>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
