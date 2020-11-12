@@ -22,7 +22,7 @@ pagination:
     {{ logo.render() }}
   </header>
   <div class="col-span-columns"></div>
-  <ol class="grid grid-cols-4 lg:grid-cols-16 col-span-margins">
+  <ol class="col-span-margins grid grid-cols-4 lg:grid-cols-16 lg:grid-rows-4">
     {% for post in blog %}
     <li class="mb-8">
       <a class="block" href="{{ post.url }}">

@@ -138,6 +138,7 @@ module.exports = {
     },
     gridTemplateRows: {
       "auto/1fr": "auto minmax(0, 1fr)",
+      "4": "repeat(4, minmax(0, 1fr))",
     },
   },
   variants: {
