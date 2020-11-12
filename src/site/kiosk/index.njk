@@ -18,28 +18,35 @@ pagination:
 {{ menu.render() }}
 <div class="grid grid-cols-4 lg:grid-cols-16 py-8">
   <header
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-8"
   >
     <!-- prettier-ignore -->
     {{ logo.render() }}
   </header>
   <form class="col-span-columns -mr-4 mb-8">
-    <input type="radio" name="kioks-filter" value="RxC Community Calls" /><label
-      class="ml-2 mr-4 text-size--1"
-      for="RxC Community Calls"
+    <input
+      type="checkbox"
+      name="kiosk-filter"
+      value="RxC Community Calls"
+    /><label class="ml-2 mr-4 text-size--1" for="RxC Community Calls"
       >RxC Community Calls</label
     >
-    <input type="radio" name="kioks-filter" value="RxC Fundamentals" /><label
+    <input type="checkbox" name="kiosk-filter" value="RxC Fundamentals" /><label
       class="ml-2 mr-4 text-size--1"
       for="RxC Fundamentals"
       >RxC Fundamentals</label
     >
   </form>
   <ol
+    id="kiosk-list"
     class="col-span-columns grid grid-cols-4traditional lg:grid-rows-4 col-gap-8 row-gap-16"
   >
+    <!-- prettier-ignore -->
     {% for post in blog %}
-    <li>
+    <li
+      data-kiosk
+      data-kiosk-series="{{ post.data.series | default([]) | dump }}"
+    >
       <a
         class="flex flex-col justify-between h-full kiosk_border-b"
         href="{{ post.url }}"
@@ -54,6 +61,7 @@ pagination:
         </div>
       </a>
     </li>
+    <!-- prettier-ignore -->
     {% endfor %}
   </ol>
 </div>
@@ -62,4 +70,49 @@ pagination:
 <script>
   // prettier-ignore
   {% include "components/menu.js" %}
+</script>
+<script>
+  const $kioskList = document.getElementById("kiosk-list");
+  const allItems = $kioskList.querySelectorAll("[data-kiosk]");
+  const filterButtons = document.querySelectorAll(
+    'input[type=checkbox][name="kiosk-filter"]'
+  );
+
+  function filter() {
+    const checkedSeries = [];
+    for (const filterButton of filterButtons) {
+      if (filterButton.checked) {
+        checkedSeries.push(filterButton.value);
+      }
+    }
+    console.log(checkedSeries);
+
+    if (checkedSeries.length === 0) {
+      for (const item of allItems) {
+        item.style.display = "block";
+      }
+    } else {
+      for (const item of allItems) {
+        const itemSeries = JSON.parse(item.dataset["kioskSeries"]);
+
+        let found = false;
+        for (const series of itemSeries) {
+          if (checkedSeries.includes(series)) {
+            found = true;
+            break;
+          }
+        }
+
+        if (found) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      }
+    }
+  }
+
+  for (const filterButton of filterButtons) {
+    filterButton.addEventListener("change", filter);
+  }
 </script>
