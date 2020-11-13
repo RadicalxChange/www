@@ -70,6 +70,10 @@ pagination:
   </ol>
 </div>
 <script>
+  // prettier-ignore
+  {% include "components/infinite-scroll.js" %}
+</script>
+<script>
   const $kioskList = document.getElementById("kiosk-list");
   const allItems = $kioskList.children;
   const filterButtons = document.querySelectorAll(
@@ -130,26 +134,60 @@ pagination:
     return $item;
   }
 
-  function onScrollToBottom() {
-    for (let i = 0; i < 16; i++) {
-      const $newItem = makeKioskItem({
-        url: "/blog/posts/rxc-november-community-call-recording-notes/",
-        data: {
-          date: "November 9, 2020",
-          title: "RxC November Community Call Recording & Notes",
-          postHeader: "RxC November Community Call Recording & Notes",
-          postAuthor: "Fanny Lakoubay",
-          series: ["RxC Community Calls"],
-        },
-      });
-      $kioskList.appendChild($newItem);
-    }
-  }
+  const KioskFetcher = function () {
+    this.next = "/api/kiosk/page-2.json";
+  };
 
-  window.addEventListener("scroll", () => {
-    const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
-    if (scrollTop + clientHeight > scrollHeight - 5) {
-      onScrollToBottom();
+  KioskFetcher.prototype.fetchMore = function () {
+    if (!this.next) {
+      return Promise.resolve();
     }
-  });
+
+    return fetch(this.next)
+      .then((r) => r.json())
+      .then((data) => {
+        for (const item of data.items) {
+          const $newItem = makeKioskItem(item);
+          $kioskList.appendChild($newItem);
+        }
+        this.next = data.next;
+      });
+  };
+
+  const kioskFetcher = new KioskFetcher();
+  const infiniteScroller = new InfiniteScroll(() => kioskFetcher.fetchMore());
+  infiniteScroller.init();
+
+  // let isFetching = false;
+  // let nextPage = "/api/kiosk/page-2.json";
+  // function onScrollToBottom() {
+  //   if (isFetching) {
+  //     return;
+  //   }
+  //   if (!nextPage) {
+  //     return;
+  //   }
+
+  //   isFetching = true;
+  //   for (let i = 0; i < 16; i++) {
+  //     const $newItem = makeKioskItem({
+  //       url: "/blog/posts/rxc-november-community-call-recording-notes/",
+  //       data: {
+  //         date: "November 9, 2020",
+  //         title: "RxC November Community Call Recording & Notes",
+  //         postHeader: "RxC November Community Call Recording & Notes",
+  //         postAuthor: "Fanny Lakoubay",
+  //         series: ["RxC Community Calls"],
+  //       },
+  //     });
+  //     $kioskList.appendChild($newItem);
+  //   }
+  // }
+
+  // window.addEventListener("scroll", () => {
+  //   const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
+  //   if (scrollTop + clientHeight > scrollHeight - 5) {
+  //     onScrollToBottom();
+  //   }
+  // });
 </script>
