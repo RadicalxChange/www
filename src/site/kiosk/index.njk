@@ -11,8 +11,6 @@ pagination:
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
-<!-- prettier-ignore -->
-{% import "components/footer.njk" as footer %}
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
@@ -53,11 +51,17 @@ pagination:
       >
         <div>
           <p class="text-size--1">Blog Post</p>
-          <h2 class="text-size-2">{{ post.data.postHeader }}</h2>
+          <h2 data-kiosk-item-prop="postHeader" class="text-size-2">
+            {{ post.data.postHeader }}
+          </h2>
         </div>
         <div>
-          <p class="text-size--3">{{ post.data.postAuthor }}</p>
-          <p class="text-size--3">{{ post.data.date | readableDate }}</p>
+          <p data-kiosk-item-prop="postAuthor" class="text-size--3">
+            {{ post.data.postAuthor }}
+          </p>
+          <p data-kiosk-item-prop="date" class="text-size--3">
+            {{ post.data.date | readableDate }}
+          </p>
         </div>
       </a>
     </li>
@@ -65,20 +69,14 @@ pagination:
     {% endfor %}
   </ol>
 </div>
-<!-- prettier-ignore -->
-{{ footer.render() }}
-<script>
-  // prettier-ignore
-  {% include "components/menu.js" %}
-</script>
 <script>
   const $kioskList = document.getElementById("kiosk-list");
-  const allItems = $kioskList.querySelectorAll("[data-kiosk]");
+  const allItems = $kioskList.children;
   const filterButtons = document.querySelectorAll(
     'input[type=checkbox][name="kiosk-filter"]'
   );
 
-  function filter() {
+  function onChangeFilterButton() {
     const checkedSeries = [];
     for (const filterButton of filterButtons) {
       if (filterButton.checked) {
@@ -112,6 +110,46 @@ pagination:
   }
 
   for (const filterButton of filterButtons) {
-    filterButton.addEventListener("change", filter);
+    filterButton.addEventListener("change", onChangeFilterButton);
   }
+
+  const $itemTemplate = $kioskList.children[0].cloneNode(true);
+  function makeKioskItem(item) {
+    const $item = $itemTemplate.cloneNode(true);
+    $item.dataset["kioskSeries"] = JSON.stringify(item.data.series);
+
+    const $anchor = $item.children[0];
+    $anchor.href = item.url;
+    $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
+      item.data.postHeader;
+    $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
+      item.data.postAuthor;
+    $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
+      item.data.date;
+
+    return $item;
+  }
+
+  function onScrollToBottom() {
+    for (let i = 0; i < 16; i++) {
+      const $newItem = makeKioskItem({
+        url: "/blog/posts/rxc-november-community-call-recording-notes/",
+        data: {
+          date: "November 9, 2020",
+          title: "RxC November Community Call Recording & Notes",
+          postHeader: "RxC November Community Call Recording & Notes",
+          postAuthor: "Fanny Lakoubay",
+          series: ["RxC Community Calls"],
+        },
+      });
+      $kioskList.appendChild($newItem);
+    }
+  }
+
+  window.addEventListener("scroll", () => {
+    const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
+    if (scrollTop + clientHeight > scrollHeight - 5) {
+      onScrollToBottom();
+    }
+  });
 </script>
