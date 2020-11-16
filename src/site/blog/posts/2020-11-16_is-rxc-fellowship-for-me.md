@@ -7,7 +7,7 @@ postHeader: "Is RadicalxChange Fellowship For Me?"
 postAuthor: "Lawrence Lundy-Bryan"
 ---
 
-> Projects that strengthen civic society and create public goods are welcome to apply. We thrive to give more details and examples here.
+> We encourage projects that are strengthening civic society and creating public goods to apply.
 
 ## What are we doing?
 
