@@ -141,6 +141,9 @@ module.exports = {
         "margin-2": "margin 2",
       },
     },
+    gridTemplateRows: {
+      "auto/1fr": "auto minmax(0, 1fr)",
+    },
   },
   variants: {
     borderWidth: ["responsive", "hover", "focus"],
