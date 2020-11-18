@@ -66,6 +66,11 @@ module.exports = function (config) {
     }
   });
 
+  // Array.slice()
+  config.addFilter("slice", function (array, ...args) {
+    return array.slice(...args);
+  });
+
   // Custom collections
   config.addCollection("groupedChapters", (collectionApi) => {
     function compareHeaderText(a, b) {
