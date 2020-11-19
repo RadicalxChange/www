@@ -12,7 +12,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.0.2",
     "htmlnano": "^0.2.7",
     "js-beautify": "^1.13.0",
     "js-yaml": "^3.14.0",
@@ -23,6 +23,7 @@
     "markdown-it-toc-done-right": "^4.1.0",
     "ncp": "^2.0.0",
     "nunjucks": "^3.2.2",
+    "postcss": "^8.1.8",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
     "postcss-mixins": "^6.2.3",
@@ -33,7 +34,7 @@
     "posthtml-link-noreferrer": "^1.0.8",
     "prettier": "2.0.5",
     "sharp": "^0.25.4",
-    "tailwindcss": "^1.9.6",
+    "tailwindcss": "^2.0.1",
     "uslug": "^1.0.4"
   },
   "dependencies": {}
