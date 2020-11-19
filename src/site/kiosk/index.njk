@@ -74,82 +74,6 @@ pagination:
   {% include "components/infinite-scroll.js" %}
 </script>
 <script>
-  // const $kioskList = document.getElementById("kiosk-list");
-  // const allItems = $kioskList.children;
-  // const filterButtons = document.querySelectorAll(
-  //   'input[type=checkbox][name="kiosk-filter"]'
-  // );
-
-  // function onChangeFilterButton() {
-  //   if (checkedSeries.length === 0) {
-  //     for (const item of allItems) {
-  //       item.style.display = "block";
-  //     }
-  //   } else {
-  //     for (const item of allItems) {
-  //       const itemSeries = JSON.parse(item.dataset["kioskSeries"]);
-
-  //       let found = false;
-  //       for (const series of itemSeries) {
-  //         if (checkedSeries.includes(series)) {
-  //           found = true;
-  //           break;
-  //         }
-  //       }
-
-  //       if (found) {
-  //         item.style.display = "block";
-  //       } else {
-  //         item.style.display = "none";
-  //       }
-  //     }
-  //   }
-  // }
-
-  // for (const filterButton of filterButtons) {
-  //   filterButton.addEventListener("change", onChangeFilterButton);
-  // }
-
-  // const $itemTemplate = $kioskList.children[0].cloneNode(true);
-  // function makeKioskItem(item) {
-  //   const $item = $itemTemplate.cloneNode(true);
-  //   $item.dataset["kioskSeries"] = JSON.stringify(item.data.series);
-
-  //   const $anchor = $item.children[0];
-  //   $anchor.href = item.url;
-  //   $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
-  //     item.data.postHeader;
-  //   $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
-  //     item.data.postAuthor;
-  //   $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
-  //     item.data.date;
-
-  //   return $item;
-  // }
-
-  function filterItem($item, checkedSeries) {
-    if (checkedSeries.length === 0) {
-      $item.style.display = "block";
-      return;
-    }
-
-    const itemSeries = JSON.parse($item.dataset["kioskSeries"]);
-
-    let found = false;
-    for (const series of itemSeries) {
-      if (checkedSeries.includes(series)) {
-        found = true;
-        break;
-      }
-    }
-
-    if (found) {
-      $item.style.display = "block";
-    } else {
-      $item.style.display = "none";
-    }
-  }
-
   const Kiosk = function () {
     this.$kioskList = document.getElementById("kiosk-list");
     this.$items = this.$kioskList.children;
@@ -171,6 +95,29 @@ pagination:
     }
   };
 
+  Kiosk.prototype.filterItem = function ($item) {
+    if (this.checkedSeries.length === 0) {
+      $item.style.display = "block";
+      return;
+    }
+
+    const itemSeries = JSON.parse($item.dataset["kioskSeries"]);
+
+    let found = false;
+    for (const series of itemSeries) {
+      if (this.checkedSeries.includes(series)) {
+        found = true;
+        break;
+      }
+    }
+
+    if (found) {
+      $item.style.display = "block";
+    } else {
+      $item.style.display = "none";
+    }
+  };
+
   Kiosk.prototype.onSeriesChange = function (event) {
     this.checkedSeries = [];
     for (const $series of this.$allSeries) {
@@ -179,7 +126,7 @@ pagination:
       }
     }
     for (const $item of this.$items) {
-      filterItem($item, this.checkedSeries);
+      this.filterItem($item);
     }
   };
 
@@ -196,7 +143,7 @@ pagination:
     $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
       item.data.date;
 
-    filterItem($item, this.checkedSeries);
+    this.filterItem($item);
 
     this.$kioskList.appendChild($item);
   };
@@ -221,37 +168,4 @@ pagination:
 
   const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
   infiniteScroller.init();
-
-  // let isFetching = false;
-  // let nextPage = "/api/kiosk/page-2.json";
-  // function onScrollToBottom() {
-  //   if (isFetching) {
-  //     return;
-  //   }
-  //   if (!nextPage) {
-  //     return;
-  //   }
-
-  //   isFetching = true;
-  //   for (let i = 0; i < 16; i++) {
-  //     const $newItem = makeKioskItem({
-  //       url: "/blog/posts/rxc-november-community-call-recording-notes/",
-  //       data: {
-  //         date: "November 9, 2020",
-  //         title: "RxC November Community Call Recording & Notes",
-  //         postHeader: "RxC November Community Call Recording & Notes",
-  //         postAuthor: "Fanny Lakoubay",
-  //         series: ["RxC Community Calls"],
-  //       },
-  //     });
-  //     $kioskList.appendChild($newItem);
-  //   }
-  // }
-
-  // window.addEventListener("scroll", () => {
-  //   const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
-  //   if (scrollTop + clientHeight > scrollHeight - 5) {
-  //     onScrollToBottom();
-  //   }
-  // });
 </script>
