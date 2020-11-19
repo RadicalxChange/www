@@ -53,15 +53,21 @@ pagination:
       >
         <div class="mb-8">
           <p class="text-size--1">Blog Post</p>
-          <h2 data-kiosk-item-prop="postHeader" class="text-size-2">
+          <h2
+            data-kiosk-item-prop="postHeader"
+            class="leading-snug text-size-2"
+          >
             {{ post.data.postHeader }}
           </h2>
         </div>
         <div>
-          <p data-kiosk-item-prop="postAuthor" class="text-size--3">
+          <p
+            data-kiosk-item-prop="postAuthor"
+            class="text-size--2 lg:text-size--3"
+          >
             {{ post.data.postAuthor }}
           </p>
-          <p data-kiosk-item-prop="date" class="text-size--3">
+          <p data-kiosk-item-prop="date" class="text-size--2 lg:text-size--3">
             {{ post.data.date | readableDate }}
           </p>
         </div>
@@ -81,19 +87,22 @@ pagination:
 <script>
   const Kiosk = function () {
     this.$kioskList = document.getElementById("kiosk-list");
-    this.$items = this.$kioskList.children;
-    this.$itemTemplate = this.$items[0].cloneNode(true);
+    this.$itemTemplate = this.$kioskList.children[0].cloneNode(true);
+
     this.$allSeries = document.querySelectorAll(
       'input[type=checkbox][name="kiosk-filter"]'
     );
     this.checkedSeries = "All";
+
     this.$loadButton = document.getElementById("kiosk-load-button");
-    this.seriesLookup = {
-      All: "/api/kiosk/all-1.json",
-      "RxC Community Calls": "/api/kiosk/community-1.json",
-      "RxC Fundamentals": "/api/kiosk/fundamentals-1.json",
-    };
-    this.next = "/api/kiosk/all-2.json";
+    this.isLoading = false;
+    this.nextPage = "/api/kiosk/all-2.json";
+  };
+
+  Kiosk.prototype.SERIES_API = {
+    All: "/api/kiosk/all-1.json",
+    "RxC Community Calls": "/api/kiosk/community-1.json",
+    "RxC Fundamentals": "/api/kiosk/fundamentals-1.json",
   };
 
   Kiosk.prototype.init = function () {
@@ -107,6 +116,7 @@ pagination:
   };
 
   Kiosk.prototype.onSeriesChange = function (event) {
+    // Manage checkbox state
     if (event.target.checked) {
       this.checkedSeries = event.target.value;
       for (const $series of this.$allSeries) {
@@ -119,7 +129,7 @@ pagination:
     }
 
     // Load new data
-    this.next = this.seriesLookup[this.checkedSeries];
+    this.nextPage = this.SERIES_API[this.checkedSeries];
     this.fetchMore();
 
     // Remove all children in anticipation of new children
@@ -145,29 +155,32 @@ pagination:
   };
 
   Kiosk.prototype.fetchMore = function () {
-    if (!this.next) {
-      return Promise.resolve();
+    if (this.isLoading || !this.nextPage) {
+      return;
     }
 
     this.$loadButton.innerText = "Loading...";
     this.$loadButton.disabled = true;
+    this.isLoading = true;
 
-    return fetch(this.next)
+    fetch(this.nextPage)
       .then((r) => r.json())
       .then((data) => {
         for (const item of data.items) {
           this.addItem(item);
         }
-        this.next = data.next;
-        if (this.next) {
+        this.isLoading = false;
+        this.nextPage = data.next;
+        if (this.nextPage) {
           this.$loadButton.innerText = "Load more";
           this.$loadButton.disabled = false;
         } else {
-          this.$loadButton.innerText = "The End";
+          this.$loadButton.innerText = "The end";
           this.$loadButton.disabled = true;
         }
       })
       .catch(() => {
+        this.isLoading = false;
         this.$loadButton.innerText = "Error: Reload the page.";
         this.$loadButton.disabled = false;
       });
@@ -175,7 +188,6 @@ pagination:
 
   const kiosk = new Kiosk();
   kiosk.init();
-
-  // const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
-  // infiniteScroller.init();
+  const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
+  infiniteScroller.init();
 </script>
