@@ -1,13 +1,20 @@
 class Pages {
+  getCollectionName() {
+    throw new Error("NYI");
+  }
+
+  makePermalink(pageNumber) {
+    throw new Error("NYI");
+  }
+
   data() {
     return {
       pagination: {
-        data: "collections.blog",
+        data: this.getCollectionName(),
         size: 16,
         reverse: true,
       },
-      permalink: (data) =>
-        `api/kiosk/page-${data.pagination.pageNumber + 1}.json`,
+      permalink: (data) => this.makePermalink(data.pagination.pageNumber),
     };
   }
 
