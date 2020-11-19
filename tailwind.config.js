@@ -4,6 +4,7 @@ module.exports = {
     screens: {
       md: { raw: "(min-width: 640px)" },
       lg: { raw: "(min-width: 768px)" },
+      xl: { raw: "(min-width: 1024px)" },
       "base-landscape": {
         raw: "(max-width: 767px) and (orientation: landscape)",
       },
@@ -11,6 +12,8 @@ module.exports = {
       touch: { raw: "(hover: none)" },
     },
     gridTemplateColumns: {
+      "1traditional": "repeat(1, minmax(0, 1fr))",
+      "2traditional": "repeat(2, minmax(0, 1fr))",
       "4traditional": "repeat(4, minmax(0, 1fr))",
       "4":
         "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
