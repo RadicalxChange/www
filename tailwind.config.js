@@ -146,6 +146,8 @@ module.exports = {
     },
     gridTemplateRows: {
       "auto/1fr": "auto minmax(0, 1fr)",
+      "auto/auto/1fr/auto": "auto auto minmax(0, 1fr) auto",
+      kiosk: "repeat(4, min-content)",
     },
   },
   variants: {

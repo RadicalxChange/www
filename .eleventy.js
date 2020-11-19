@@ -107,6 +107,7 @@ module.exports = function (config) {
           item.data.series && item.data.series.includes("RxC Community Calls")
       );
   });
+
   config.addCollection("kioskFundamentals", (collectionApi) => {
     return collectionApi
       .getFilteredByTag("blog")

@@ -14,14 +14,16 @@ pagination:
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<div class="grid grid-cols-4 lg:grid-cols-16 py-8">
+<div
+  class="grid grid-cols-4 lg:grid-cols-16 grid-rows-auto/auto/1fr/auto min-h-screen py-8"
+>
   <header
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-8"
   >
     <!-- prettier-ignore -->
     {{ logo.render() }}
   </header>
-  <form class="col-span-columns -mr-4 mb-8">
+  <form class="col-span-columns -mr-4 mb-8" autocomplete="off">
     <input
       type="checkbox"
       name="kiosk-filter"
@@ -37,7 +39,7 @@ pagination:
   </form>
   <ol
     id="kiosk-list"
-    class="col-span-columns grid grid-cols-1traditional lg:grid-cols-2traditional xl:grid-cols-4traditional lg:grid-rows-4 col-gap-8 row-gap-16 mb-8"
+    class="col-span-columns grid grid-cols-1traditional lg:grid-cols-2traditional xl:grid-cols-4traditional grid-rows-kiosk col-gap-8 row-gap-16 mb-8"
   >
     <!-- prettier-ignore -->
     {% for post in blog %}
@@ -84,17 +86,18 @@ pagination:
     this.$allSeries = document.querySelectorAll(
       'input[type=checkbox][name="kiosk-filter"]'
     );
-    this.checkedSeries = [];
+    this.checkedSeries = "All";
     this.$loadButton = document.getElementById("kiosk-load-button");
-    this.next = "/api/kiosk/page-2.json";
+    this.seriesLookup = {
+      All: "/api/kiosk/all-1.json",
+      "RxC Community Calls": "/api/kiosk/community-1.json",
+      "RxC Fundamentals": "/api/kiosk/fundamentals-1.json",
+    };
+    this.next = "/api/kiosk/all-2.json";
   };
 
   Kiosk.prototype.init = function () {
-    this.checkedSeries = [];
     for (const $series of this.$allSeries) {
-      if ($series.checked) {
-        this.checkedSeries.push($series.value);
-      }
       $series.addEventListener("change", (event) => this.onSeriesChange(event));
     }
 
@@ -103,38 +106,25 @@ pagination:
     });
   };
 
-  Kiosk.prototype.filterItem = function ($item) {
-    if (this.checkedSeries.length === 0) {
-      $item.style.display = "block";
-      return;
-    }
-
-    const itemSeries = JSON.parse($item.dataset["kioskSeries"]);
-
-    let found = false;
-    for (const series of itemSeries) {
-      if (this.checkedSeries.includes(series)) {
-        found = true;
-        break;
-      }
-    }
-
-    if (found) {
-      $item.style.display = "block";
-    } else {
-      $item.style.display = "none";
-    }
-  };
-
   Kiosk.prototype.onSeriesChange = function (event) {
-    this.checkedSeries = [];
-    for (const $series of this.$allSeries) {
-      if ($series.checked) {
-        this.checkedSeries.push($series.value);
+    if (event.target.checked) {
+      this.checkedSeries = event.target.value;
+      for (const $series of this.$allSeries) {
+        if ($series.value !== this.checkedSeries) {
+          $series.checked = false;
+        }
       }
+    } else {
+      this.checkedSeries = "All";
     }
-    for (const $item of this.$items) {
-      this.filterItem($item);
+
+    // Load new data
+    this.next = this.seriesLookup[this.checkedSeries];
+    this.fetchMore();
+
+    // Remove all children in anticipation of new children
+    while (this.$kioskList.firstChild) {
+      this.$kioskList.removeChild(this.$kioskList.firstChild);
     }
   };
 
@@ -151,8 +141,6 @@ pagination:
     $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
       item.data.date;
 
-    this.filterItem($item);
-
     this.$kioskList.appendChild($item);
   };
 
@@ -160,8 +148,10 @@ pagination:
     if (!this.next) {
       return Promise.resolve();
     }
+
     this.$loadButton.innerText = "Loading...";
     this.$loadButton.disabled = true;
+
     return fetch(this.next)
       .then((r) => r.json())
       .then((data) => {
@@ -178,7 +168,7 @@ pagination:
         }
       })
       .catch(() => {
-        this.$loadButton.innerText = "Error: reload the page";
+        this.$loadButton.innerText = "Error: Reload the page.";
         this.$loadButton.disabled = false;
       });
   };

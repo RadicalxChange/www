@@ -1,6 +1,6 @@
 const Pages = require("./Pages");
 
-class AllPages extends Pages {
+class CommunityPages extends Pages {
   getCollectionName() {
     return "collections.kioskCommunity";
   }
@@ -10,4 +10,4 @@ class AllPages extends Pages {
   }
 }
 
-module.exports = AllPages;
+module.exports = CommunityPages;
