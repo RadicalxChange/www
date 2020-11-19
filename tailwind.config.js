@@ -145,6 +145,9 @@ module.exports = {
   },
   variants: {
     borderWidth: ["responsive", "hover", "focus"],
+    extend: {
+      visibility: ["group-hover"],
+    },
   },
   plugins: [],
 };
