@@ -37,7 +37,7 @@ pagination:
   </form>
   <ol
     id="kiosk-list"
-    class="col-span-columns grid grid-cols-4traditional lg:grid-rows-4 col-gap-8 row-gap-16"
+    class="col-span-columns grid grid-cols-4traditional lg:grid-rows-4 col-gap-8 row-gap-16 mb-8"
   >
     <!-- prettier-ignore -->
     {% for post in blog %}
@@ -49,7 +49,7 @@ pagination:
         class="flex flex-col justify-between h-full kiosk_border-b"
         href="{{ post.url }}"
       >
-        <div>
+        <div class="mb-8">
           <p class="text-size--1">Blog Post</p>
           <h2 data-kiosk-item-prop="postHeader" class="text-size-2">
             {{ post.data.postHeader }}
@@ -68,6 +68,9 @@ pagination:
     <!-- prettier-ignore -->
     {% endfor %}
   </ol>
+  <div class="col-span-columns pb-4 border-b text-size--1">
+    <button id="kiosk-load-button" class="uppercase">Load more</button>
+  </div>
 </div>
 <script>
   // prettier-ignore
@@ -82,6 +85,7 @@ pagination:
       'input[type=checkbox][name="kiosk-filter"]'
     );
     this.checkedSeries = [];
+    this.$loadButton = document.getElementById("kiosk-load-button");
     this.next = "/api/kiosk/page-2.json";
   };
 
@@ -93,6 +97,10 @@ pagination:
       }
       $series.addEventListener("change", (event) => this.onSeriesChange(event));
     }
+
+    this.$loadButton.addEventListener("click", (event) => {
+      this.fetchMore();
+    });
   };
 
   Kiosk.prototype.filterItem = function ($item) {
@@ -152,7 +160,8 @@ pagination:
     if (!this.next) {
       return Promise.resolve();
     }
-
+    this.$loadButton.innerText = "Loading...";
+    this.$loadButton.disabled = true;
     return fetch(this.next)
       .then((r) => r.json())
       .then((data) => {
@@ -160,12 +169,23 @@ pagination:
           this.addItem(item);
         }
         this.next = data.next;
+        if (this.next) {
+          this.$loadButton.innerText = "Load more";
+          this.$loadButton.disabled = false;
+        } else {
+          this.$loadButton.innerText = "The End";
+          this.$loadButton.disabled = true;
+        }
+      })
+      .catch(() => {
+        this.$loadButton.innerText = "Error: reload the page";
+        this.$loadButton.disabled = false;
       });
   };
 
   const kiosk = new Kiosk();
   kiosk.init();
 
-  const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
-  infiniteScroller.init();
+  // const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
+  // infiniteScroller.init();
 </script>
