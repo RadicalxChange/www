@@ -128,19 +128,19 @@ module.exports = {
         "column-16": "column 16",
         "margin-2": "margin 2",
       },
-    },
-    gridTemplateColumns: {
-      "layout-4":
-        "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
-      "layout-12":
-        "[margin] 2rem [column] 1fr repeat(11, [gutter] 2rem [column] 1fr) [margin] 2rem",
-      "layout-16":
-        "[margin] 2rem [column] 1fr repeat(15, [gutter] 2rem [column] 1fr) [margin] 2rem",
-    },
-    gridTemplateRows: {
-      "auto/1fr": "auto minmax(0, 1fr)",
-      "auto/auto/1fr/auto": "auto auto minmax(0, 1fr) auto",
-      kiosk: "repeat(4, min-content)",
+      gridTemplateColumns: {
+        "layout-4":
+          "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
+        "layout-12":
+          "[margin] 2rem [column] 1fr repeat(11, [gutter] 2rem [column] 1fr) [margin] 2rem",
+        "layout-16":
+          "[margin] 2rem [column] 1fr repeat(15, [gutter] 2rem [column] 1fr) [margin] 2rem",
+      },
+      gridTemplateRows: {
+        "auto/1fr": "auto minmax(0, 1fr)",
+        "auto/auto/1fr/auto": "auto auto minmax(0, 1fr) auto",
+        kiosk: "repeat(4, min-content)",
+      },
     },
   },
   variants: {
