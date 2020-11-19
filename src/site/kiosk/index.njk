@@ -15,7 +15,7 @@ pagination:
 <!-- prettier-ignore -->
 {{ menu.render() }}
 <div
-  class="grid grid-cols-4 lg:grid-cols-16 grid-rows-auto/auto/1fr/auto min-h-screen py-8"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 grid-rows-auto/auto/1fr/auto min-h-screen py-8"
 >
   <header
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-8"
@@ -39,7 +39,7 @@ pagination:
   </form>
   <ol
     id="kiosk-list"
-    class="col-span-columns grid grid-cols-1traditional lg:grid-cols-2traditional xl:grid-cols-4traditional grid-rows-kiosk col-gap-8 row-gap-16 mb-8"
+    class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk col-gap-8 row-gap-16 mb-8"
   >
     <!-- prettier-ignore -->
     {% for post in blog %}

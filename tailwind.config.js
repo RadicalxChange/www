@@ -11,21 +11,6 @@ module.exports = {
       "lg-tall": { raw: "(min-width: 768px) and (max-aspect-ratio: 2/1)" },
       touch: { raw: "(hover: none)" },
     },
-    gridTemplateColumns: {
-      "1traditional": "repeat(1, minmax(0, 1fr))",
-      "2traditional": "repeat(2, minmax(0, 1fr))",
-      "4traditional": "repeat(4, minmax(0, 1fr))",
-      "4":
-        "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
-      "12":
-        "[margin] 2rem [column] 1fr repeat(11, [gutter] 2rem [column] 1fr) [margin] 2rem",
-      "16":
-        "[margin] 2rem [column] 1fr repeat(15, [gutter] 2rem [column] 1fr) [margin] 2rem",
-    },
-    gridTemplateRows: {
-      "auto/1fr": "auto minmax(0, 1fr)",
-      "4": "repeat(4, minmax(0, 1fr))",
-    },
     fontSize: {
       "size--3": "var(--step-type--3)",
       "size--2": "var(--step-type--2)",
@@ -143,6 +128,14 @@ module.exports = {
         "column-16": "column 16",
         "margin-2": "margin 2",
       },
+    },
+    gridTemplateColumns: {
+      "layout-4":
+        "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
+      "layout-12":
+        "[margin] 2rem [column] 1fr repeat(11, [gutter] 2rem [column] 1fr) [margin] 2rem",
+      "layout-16":
+        "[margin] 2rem [column] 1fr repeat(15, [gutter] 2rem [column] 1fr) [margin] 2rem",
     },
     gridTemplateRows: {
       "auto/1fr": "auto minmax(0, 1fr)",

@@ -1,13 +1,13 @@
 .introduction {
   @apply relative;
   @apply grid;
-  @apply grid-cols-4;
+  @apply grid-cols-layout-4;
   grid-template-rows: auto 1fr;
   @apply min-h-screen;
   @apply bg-golden-fizz;
 
   @screen lg {
-    @apply grid-cols-12;
+    @apply grid-cols-layout-12;
   }
 
   &_logo {
