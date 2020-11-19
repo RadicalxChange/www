@@ -13,7 +13,6 @@ InfiniteScroll.prototype.init = function () {
 };
 
 InfiniteScroll.prototype.hitBottom = function () {
-  console.log("yo");
   if (this.isBusy) {
     return;
   }
