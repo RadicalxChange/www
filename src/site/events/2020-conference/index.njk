@@ -34,13 +34,17 @@ sponsors:
 {% extends "layouts/conference.njk" %}
 
 <!-- prettier-ignore -->
+{% set headerText = "2020 Annual Conference" %}
+<!-- prettier-ignore -->
 {% set youtubeDatum = youtube2020 %}
 
 <!-- prettier-ignore -->
 {% block sections %}
-<section class="col-span-columns grid grid-cols-16 gap-x-8 pt-4 border-t mb-8">
-  <h2 class="col-start-1 col-span-4">Keynote Speakers:</h2>
-  <ul class="col-start-5 col-span-12">
+<section
+  class="col-span-columns grid grid-cols-4 lg:grid-cols-16 gap-x-8 pt-4 border-t mb-8"
+>
+  <h2 class="col-start-1 col-span-4 mb-8 lg:mb-0">Keynote Speakers</h2>
+  <ul class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-12">
     <!-- prettier-ignore -->
     {% for s in keynoteSpeakers2020 %}
     <li class="comma-separated">
@@ -50,9 +54,11 @@ sponsors:
     {% endfor %}
   </ul>
 </section>
-<section class="col-span-columns grid grid-cols-16 gap-x-8 pt-4 border-t mb-8">
-  <h2 class="col-start-1 col-span-4">Supporters:</h2>
-  <ul class="col-start-5 col-span-12">
+<section
+  class="col-span-columns grid grid-cols-4 lg:grid-cols-16 gap-x-8 pt-4 border-t mb-8"
+>
+  <h2 class="col-start-1 col-span-4 mb-8 lg:mb-0">Supporters</h2>
+  <ul class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-12">
     <!-- prettier-ignore -->
     {% for s in sponsors %}
     <li class="comma-separated">

@@ -20,7 +20,7 @@
   {% block sections %}
   <!-- prettier-ignore -->
   {% endblock %}
-  <section class="col-span-columns mt-64 mb-8">
+  <section class="col-span-columns mt-16 lg:mt-64 mb-8">
     <h2 class="pb-4 border-b text-size--1 uppercase">Watch the replays</h2>
     <ul id="videos">
       <!-- prettier-ignore -->
@@ -28,21 +28,27 @@
       <li id="v{{ v.videoId }}">
         <a
           href="#v{{ v.videoId }}"
-          class="grid grid-cols-16 items-baseline gap-x-8 py-8 border-b"
+          class="grid grid-cols-4 lg:grid-cols-16 items-baseline gap-x-8 py-8 border-b"
         >
-          <div class="hidden open:block col-span-16 mb-4">
+          <div
+            class="hidden open:block col-start-1 col-span-4 lg:col-span-16 mb-4"
+          >
             <div data-youtube-container class="events_youtube-container"></div>
           </div>
-          <h3 class="col-start-1 col-span-8 text-size--1 uppercase">
+          <h3
+            class="col-start-1 col-span-4 lg:col-span-8 text-size--1 uppercase"
+          >
             {{ v.title }}
           </h3>
-          <p class="block open:hidden col-start-9 col-span-8">
+          <p
+            class="block open:hidden col-start-1 lg:col-start-9 col-span-4 lg:col-span-8"
+          >
             {{ v.speakers }}
           </p>
           <!-- prettier-ignore -->
           {% if v.description %}}
           <p
-            class="hidden open:block col-start-1 col-span-12 mt-4 text-size--1"
+            class="hidden open:block col-start-1 col-span-4 lg:col-span-12 mt-4 text-size--1"
           >
             {{ v.description | escape | nl2br }}
           </p>
