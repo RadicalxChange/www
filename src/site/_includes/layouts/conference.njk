@@ -13,7 +13,7 @@
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-14 justify-self-center lg:justify-self-start mb-4"
   >
     <h1 class="font-display text-size-display lg:text-size-lg/display">
-      2020 Annual Conference
+      {{ headerText }}
     </h1>
   </header>
   <!-- prettier-ignore -->
@@ -97,7 +97,7 @@
     }
   }
 
-  const hashRegex = /^#v([a-zA-Z0-9\-]*)$/;
+  const hashRegex = /^#v([a-zA-Z0-9\-_]*)$/;
   window.addEventListener("hashchange", function (e) {
     const match = hashRegex.exec(window.location.hash);
     if (match) {
