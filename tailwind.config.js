@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   purge: [],
   theme: {
@@ -148,8 +150,17 @@ module.exports = {
   variants: {
     borderWidth: ["responsive", "hover", "focus"],
     extend: {
+      display: ["open"],
       visibility: ["group-hover"],
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant, e }) {
+      addVariant("open", ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.open .${e(`open${separator}${className}`)}`;
+        });
+      });
+    }),
+  ],
 };
