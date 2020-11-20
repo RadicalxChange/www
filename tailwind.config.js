@@ -152,6 +152,7 @@ module.exports = {
     extend: {
       display: ["open"],
       visibility: ["group-hover"],
+      margin: ["open"],
     },
   },
   plugins: [
