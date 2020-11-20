@@ -1,0 +1,117 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/events") }}
+<main class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-8">
+  <header
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-14 justify-self-center lg:justify-self-start mb-4"
+  >
+    <h1 class="font-display text-size-display lg:text-size-lg/display">
+      2020 Annual Conference
+    </h1>
+  </header>
+  <!-- prettier-ignore -->
+  {% block sections %}
+  <!-- prettier-ignore -->
+  {% endblock %}
+  <section class="col-span-columns mt-64 mb-8">
+    <h2 class="pb-4 border-b text-size--1 uppercase">Watch the replays</h2>
+    <ul id="videos">
+      <!-- prettier-ignore -->
+      {% for v in youtubeDatum %}
+      <li id="v{{ v.videoId }}">
+        <a
+          href="#v{{ v.videoId }}"
+          class="grid grid-cols-16 items-baseline gap-x-8 py-8 border-b"
+        >
+          <div class="hidden open:block col-span-16 mb-4">
+            <div data-youtube-container class="events_youtube-container"></div>
+          </div>
+          <h3 class="col-start-1 col-span-8 text-size--1 uppercase">
+            {{ v.title }}
+          </h3>
+          <p class="block open:hidden col-start-9 col-span-8">
+            {{ v.speakers }}
+          </p>
+          <!-- prettier-ignore -->
+          {% if v.description %}}
+          <p
+            class="hidden open:block col-start-1 col-span-12 mt-4 text-size--1"
+          >
+            {{ v.description | escape | nl2br }}
+          </p>
+          <!-- prettier-ignore -->
+          {% endif %}
+        </a>
+      </li>
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </ul>
+  </section>
+</main>
+<template id="youtube-template">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/${videoId}"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</template>
+<script>
+  const $youtubeTemplate = document.getElementById("youtube-template");
+  function makeYoutubeIframe(videoId) {
+    const $youtubeIframe = $youtubeTemplate.content.firstElementChild.cloneNode(
+      true
+    );
+    $youtubeIframe.src = `https://www.youtube-nocookie.com/embed/${videoId}`;
+    return $youtubeIframe;
+  }
+
+  const $videos = document.getElementById("videos");
+  function showVideo(videoId) {
+    // Close a video if it's open
+    const $maybeOpenVideo = $videos.querySelector(".open");
+    if ($maybeOpenVideo) {
+      $maybeOpenVideo.classList.remove("open");
+      const $youtubeContainer = $maybeOpenVideo.querySelector(
+        "[data-youtube-container]"
+      );
+      $youtubeContainer.removeChild($youtubeContainer.firstChild);
+    }
+
+    // Open a video if it exists
+    const $toOpenVideo = $videos.querySelector(`#v${videoId}`);
+    if ($toOpenVideo) {
+      $toOpenVideo.classList.add("open");
+      const $youtubeContainer = $toOpenVideo.querySelector(
+        "[data-youtube-container]"
+      );
+      $youtubeContainer.appendChild(makeYoutubeIframe(videoId));
+      $toOpenVideo.scrollIntoView();
+    }
+  }
+
+  const hashRegex = /^#v([a-zA-Z0-9\-]*)$/;
+  window.addEventListener("hashchange", function (e) {
+    const match = hashRegex.exec(window.location.hash);
+    if (match) {
+      showVideo(match[1]);
+    }
+  });
+  const match = hashRegex.exec(window.location.hash);
+  if (match) {
+    showVideo(match[1]);
+  }
+</script>
+<!-- prettier-ignore -->
+{% block moreScripts %}
+<!-- prettier-ignore -->
+{% endblock %}
+<!-- prettier-ignore -->
+{% endblock %}
