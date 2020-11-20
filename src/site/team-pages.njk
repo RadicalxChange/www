@@ -1,36 +1,17 @@
 ---
-layout: layouts/_base.njk
+layout: "layouts/_base.njk"
 pagination:
   data: team
   size: 1
   alias: member
 permalink: "team/{{ member.name | slug }}/"
+title: Team
 defaultBio: |
   _No biography available at this time._
 ---
 
 <!-- prettier-ignore -->
-{% import "components/close-button.njk" as closeButton %}
+{% import "components/team-member-page.njk" as teamMemberPage %}
 
 <!-- prettier-ignore -->
-{{ closeButton.render(href="/about#team") }}
-<div class="w-full h-full grid grid-cols-4 lg:grid-cols-12">
-  <div
-    class="team_image"
-    style="background-image: url('/images/team/{{ member.image }}');"
-  ></div>
-  <!-- <img class="team_image2" src="/images/team/{{ member.image }}" /> -->
-  <div class="team_bio">
-    <h1 class="mt-4 mb-8">{{ member.name }} ({{ member.title }})</h1>
-    <div class="md-container">
-      <!-- prettier-ignore -->
-      {% if member.bio %}
-      {{ member.bio | markdown | safe }}
-      <!-- prettier-ignore -->
-      {% else %}
-      {{ defaultBio | markdown | safe }}
-      <!-- prettier-ignore -->
-      {% endif %}
-    </div>
-  </div>
-</div>
+{{ teamMemberPage.render(member, defaultBio) }}

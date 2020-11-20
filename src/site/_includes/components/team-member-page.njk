@@ -1,0 +1,39 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% macro render(member, defaultBio) %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/about#team") }}
+<div class="grid grid-cols-4 lg:grid-cols-12 h-screen">
+  <div
+    class="relative col-span-margins lg:col-start-margin-1 lg:col-end-gutter-7 lg:w-full"
+    style="background-image: url(/images/team/{{-
+      member.image
+    -}}); background-size: contain; background-repeat: repeat-y;"
+  >
+    <img
+      class="lg:sticky lg:top-0 w-full"
+      src="/images/team/{{ member.image }}"
+    />
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-8 lg:col-end-margin-2 mt-8 mb-32 lg:mb-8"
+  >
+    <h1 class="lg:pr-32 mb-4 lg:mb-8">
+      {{ member.name }} {{ ("(" + member.title + ")") if member.title }}
+    </h1>
+    <div class="md-container">
+      <!-- prettier-ignore -->
+      {% if member.bio %}
+      {{ member.bio | markdown | safe }}
+      <!-- prettier-ignore -->
+      {% else %}
+      {{ defaultBio | markdown | safe }}
+      <!-- prettier-ignore -->
+      {% endif %}
+    </div>
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}
