@@ -120,7 +120,7 @@
       @apply grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(10, auto);
-      @apply col-gap-8 row-gap-4;
+      @apply gap-x-8 gap-y-4;
       @apply grid-flow-col;
       @apply order-4;
 
@@ -128,7 +128,7 @@
         grid-column: column 4 / gutter 11;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(11, 1fr);
-        @apply col-gap-8 row-gap-8;
+        @apply gap-x-8 gap-y-8;
         @apply order-none;
       }
     }
