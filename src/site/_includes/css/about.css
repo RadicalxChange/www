@@ -119,7 +119,7 @@
       @apply grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(10, 1fr);
-      @apply auto-rows-fr;
+      /* @apply auto-rows-fr; */
       @apply col-gap-8 row-gap-8;
       @apply grid-flow-col;
       @apply order-4;
@@ -134,7 +134,7 @@
 
     &_page {
       grid-column: column 4 / margin 2;
-      @apply justify-self-end;
+      /* @apply justify-self-end; */
       @apply order-2;
 
       @screen lg {

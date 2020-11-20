@@ -1,0 +1,45 @@
+.concepts {
+  @apply relative;
+  @apply grid;
+  @apply grid-cols-4;
+  grid-template-rows: auto 1fr;
+  @apply min-h-screen;
+  @apply bg-golden-fizz;
+
+  @screen lg {
+    @apply grid-cols-12;
+  }
+
+  &_list {
+    grid-column: column 1 / margin 2;
+    @apply order-last;
+    @apply mb-8;
+
+    @screen lg {
+      @apply order-none;
+      grid-column: column 1 / gutter 6;
+      @apply mb-0;
+    }
+  }
+
+  &_image {
+    @apply sticky top-0;
+    @apply w-full;
+    @apply overflow-hidden;
+    /* background image in element style */
+    background-size: cover;
+    background-blend-mode: saturation;
+    grid-column: margin 1 / gutter 7;
+
+    /* https://stackoverflow.com/questions/29307971/css-grid-of-squares-with-flexbox */
+    /* &:before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+  } */
+  }
+
+  &_bio {
+    grid-column: column 8 / margin 2;
+  }
+}
