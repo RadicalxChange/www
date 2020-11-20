@@ -6,3 +6,4 @@
 
 /fonts/*
   Cache-Control: public, max-age=86400, must-revalidate
+  Access-Control-Allow-Origin: *
