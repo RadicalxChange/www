@@ -61,3 +61,5 @@ RadicalxChange Foundation aims to further the Data Freedom Act’s thinking and 
 Encourage your family, friends, and coworkers to watch The Social Dilemma. Engage in follow-up discussions and point them towards the Data Freedom Act and the RadicalxChange community.
 
 Tell your friends why fixing the data economy is so important, and get involved!
+
+Starting in January 2021, the [RadicalxChange fellowship program](/fellowship/2021) will host its first 10-week cohort, bringing together mission-driven individuals and teams to work collectively on projects to strengthen civil society and rethink public goods. Selected fellows will come from all sorts of endeavors, such as activism, art, design, entrepreneurship, investing, policymaking, research, and technology. If you are working on data dignity, the fellowship is an excellent opportunity to get public exposure and meet outstanding mentors and peers working on similar projects.
