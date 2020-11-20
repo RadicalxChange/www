@@ -1,0 +1,197 @@
+---
+layout: layouts/_base.njk
+pagination:
+  data: collections.blog
+  size: 16
+  reverse: true
+  alias: blog
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 grid-rows-auto/auto/1fr/auto min-h-screen py-8"
+>
+  <header
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-8"
+  >
+    <!-- prettier-ignore -->
+    {{ logo.render() }}
+  </header>
+  <form class="col-span-columns -mr-4 mb-8" autocomplete="off">
+    <input
+      type="checkbox"
+      name="kiosk-filter"
+      value="RxC Community Calls"
+    /><label class="ml-2 mr-4 text-size--1" for="RxC Community Calls"
+      >RxC Community Calls</label
+    >
+    <input type="checkbox" name="kiosk-filter" value="RxC Fundamentals" /><label
+      class="ml-2 mr-4 text-size--1"
+      for="RxC Fundamentals"
+      >RxC Fundamentals</label
+    >
+  </form>
+  <ol
+    id="kiosk-list"
+    class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk col-gap-8 row-gap-16 mb-8"
+  >
+    <!-- prettier-ignore -->
+    {% for post in blog %}
+    <li
+      data-kiosk
+      data-kiosk-series="{{ post.data.series | default([]) | dump }}"
+    >
+      <a
+        class="flex flex-col justify-between h-full kiosk_border-b"
+        href="{{ post.url }}"
+      >
+        <div class="mb-8">
+          <p class="text-size--1">Blog Post</p>
+          <h2
+            data-kiosk-item-prop="postHeader"
+            class="leading-snug text-size-2"
+          >
+            {{ post.data.postHeader }}
+          </h2>
+        </div>
+        <div>
+          <p
+            data-kiosk-item-prop="postAuthor"
+            class="text-size--2 lg:text-size--3"
+          >
+            {{ post.data.postAuthor }}
+          </p>
+          <p data-kiosk-item-prop="date" class="text-size--2 lg:text-size--3">
+            {{ post.data.date | readableDate }}
+          </p>
+        </div>
+      </a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ol>
+  <div class="col-span-columns pb-4 border-b text-size--1">
+    <button id="kiosk-load-button" class="uppercase">Load more</button>
+  </div>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/infinite-scroll.js" %}
+</script>
+<script>
+  const Kiosk = function () {
+    this.$kioskList = document.getElementById("kiosk-list");
+    this.$itemTemplate = this.$kioskList.children[0].cloneNode(true);
+
+    this.$allSeries = document.querySelectorAll(
+      'input[type=checkbox][name="kiosk-filter"]'
+    );
+    this.checkedSeries = "All";
+
+    this.$loadButton = document.getElementById("kiosk-load-button");
+    this.isLoading = false;
+    this.nextPage = "/api/kiosk/all-2.json";
+  };
+
+  Kiosk.prototype.SERIES_API = {
+    All: "/api/kiosk/all-1.json",
+    "RxC Community Calls": "/api/kiosk/community-1.json",
+    "RxC Fundamentals": "/api/kiosk/fundamentals-1.json",
+  };
+
+  Kiosk.prototype.init = function () {
+    for (const $series of this.$allSeries) {
+      $series.addEventListener("change", (event) => this.onSeriesChange(event));
+    }
+
+    this.$loadButton.addEventListener("click", (event) => {
+      this.fetchMore();
+    });
+  };
+
+  Kiosk.prototype.onSeriesChange = function (event) {
+    // Manage checkbox state
+    if (event.target.checked) {
+      this.checkedSeries = event.target.value;
+      for (const $series of this.$allSeries) {
+        if ($series.value !== this.checkedSeries) {
+          $series.checked = false;
+        }
+      }
+    } else {
+      this.checkedSeries = "All";
+    }
+
+    // Load new data
+    this.nextPage = this.SERIES_API[this.checkedSeries];
+    this.fetchMore();
+
+    // Remove all children in anticipation of new children
+    while (this.$kioskList.firstChild) {
+      this.$kioskList.removeChild(this.$kioskList.firstChild);
+    }
+  };
+
+  Kiosk.prototype.addItem = function (item) {
+    const $item = this.$itemTemplate.cloneNode(true);
+    $item.dataset["kioskSeries"] = JSON.stringify(item.data.series);
+
+    const $anchor = $item.children[0];
+    $anchor.href = item.url;
+    $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
+      item.data.postHeader;
+    $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
+      item.data.postAuthor;
+    $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
+      item.data.date;
+
+    this.$kioskList.appendChild($item);
+  };
+
+  Kiosk.prototype.fetchMore = function () {
+    if (this.isLoading || !this.nextPage) {
+      return;
+    }
+
+    this.$loadButton.innerText = "Loading...";
+    this.$loadButton.disabled = true;
+    this.isLoading = true;
+
+    fetch(this.nextPage)
+      .then((r) => r.json())
+      .then((data) => {
+        for (const item of data.items) {
+          this.addItem(item);
+        }
+        this.isLoading = false;
+        this.nextPage = data.next;
+        if (this.nextPage) {
+          this.$loadButton.innerText = "Load more";
+          this.$loadButton.disabled = false;
+        } else {
+          this.$loadButton.innerText = "The end";
+          this.$loadButton.disabled = true;
+        }
+      })
+      .catch(() => {
+        this.isLoading = false;
+        this.$loadButton.innerText = "Error: Reload the page.";
+        this.$loadButton.disabled = false;
+      });
+  };
+
+  const kiosk = new Kiosk();
+  kiosk.init();
+  const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
+  infiniteScroller.init();
+</script>

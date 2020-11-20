@@ -1,12 +1,12 @@
 .footer {
   @apply grid;
-  @apply grid-cols-4;
+  @apply grid-cols-layout-4;
   grid-template-rows: repeat(5, auto);
   @apply bg-white;
 
   @screen lg {
     @apply min-h-screen;
-    @apply grid-cols-12;
+    @apply grid-cols-layout-12;
     grid-template-rows: 1fr auto;
   }
 

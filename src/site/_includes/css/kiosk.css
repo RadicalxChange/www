@@ -1,0 +1,12 @@
+.kiosk {
+  &_border-b {
+    padding-bottom: calc(theme("spacing.1") - 1px);
+    border-bottom: solid 1px theme("colors.black");
+    @apply pt-1 pr-1 pl-1;
+
+    &:hover {
+      padding-bottom: calc(theme("spacing.1") - 2px);
+      border-bottom: solid 2px theme("colors.black");
+    }
+  }
+}

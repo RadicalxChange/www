@@ -5,6 +5,8 @@ date: "2020-11-09"
 title: "RxC November Community Call Recording & Notes"
 postHeader: "RxC November Community Call Recording & Notes"
 postAuthor: "Fanny Lakoubay"
+series:
+  - RxC Community Calls
 ---
 
 **Subject:** November Community Call<br/>

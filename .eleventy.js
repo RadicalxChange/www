@@ -99,6 +99,24 @@ module.exports = function (config) {
     return groupedChapters;
   });
 
+  config.addCollection("kioskCommunity", (collectionApi) => {
+    return collectionApi
+      .getFilteredByTag("blog")
+      .filter(
+        (item) =>
+          item.data.series && item.data.series.includes("RxC Community Calls")
+      );
+  });
+
+  config.addCollection("kioskFundamentals", (collectionApi) => {
+    return collectionApi
+      .getFilteredByTag("blog")
+      .filter(
+        (item) =>
+          item.data.series && item.data.series.includes("RxC Fundamentals")
+      );
+  });
+
   // Pass through static assets
   // src/site/images is copied through its own pipeline (see package.json)
   config.addPassthroughCopy("./src/site/fonts");
