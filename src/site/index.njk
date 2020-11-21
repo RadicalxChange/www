@@ -39,7 +39,7 @@ layout: layouts/_base.njk
       <!-- prettier-ignore-line -->
       {% endfor %}
     </div>
-    <div id="socialMovementMarquee" class="home_marquee marquee">
+    <div class="message-marquee home_marquee">
       <div class="marquee__inner">
         <span
           class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
@@ -67,8 +67,8 @@ layout: layouts/_base.njk
         <p>October 5 - November 1, 2020</p>
       </a>
       <div class="flex-initial border-b mx-4"></div>
-      <div id="twitterMarquee" class="flex-grow mx-4 overflow-hidden marquee2">
-        <div class="marquee2__inner">
+      <div id="twitter-marquee" class="flex-grow mx-4 overflow-hidden">
+        <div class="marquee__inner">
           <a
             class="twitter-timeline py-4 text-size--2"
             href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
@@ -94,115 +94,35 @@ layout: layouts/_base.njk
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
-<!-- <script
-  async
-  src="https://platform.twitter.com/widgets.js"
-  charset="utf-8"
-></script> -->
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/dynamic-marquee@1"
-></script>
-<script type="text/javascript">
-  const RxcMarquee = function ($marquee, options) {
-    this.$marquee = $marquee;
-    this.$message = this.$marquee.children[0];
+<script>
+  // https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/javascript-api
+  window.twttr = (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
 
-    this.$marquee.removeChild(this.$message);
+    t._e = [];
+    t.ready = function (f) {
+      t._e.push(f);
+    };
 
-    this.marquee = new dynamicMarquee.Marquee(this.$marquee, options);
-    this.control = dynamicMarquee.loop(this.marquee, []);
-  };
+    return t;
+  })(document, "script", "twitter-wjs");
 
-  RxcMarquee.prototype.start = function () {
-    const message = this.$message;
-    this.control.update([() => message.cloneNode(true)]);
-  };
-
-  RxcMarquee.prototype.stop = function () {
-    this.control.update([]);
-  };
-
-  const ResizeDetector = function (onLarge, onSmall) {
-    this.onLarge = onLarge;
-    this.onSmall = onSmall;
-    this.wasLarge = false;
-  };
-
-  ResizeDetector.prototype.init = function () {
-    const isLarge = this.isLarge();
-    if (isLarge) {
-      this.onLarge();
-    }
-    this.wasLarge = this.isLarge();
-
-    window.addEventListener("resize", () => this.onResize());
-  };
-
-  ResizeDetector.prototype.onResize = function () {
-    const isLarge = this.isLarge();
-    if (this.wasLarge && !isLarge) {
-      this.onSmall();
-      this.wasLarge = false;
-    } else if (!this.wasLarge && isLarge) {
-      this.onLarge();
-      this.wasLarge = true;
-    }
-  };
-
-  ResizeDetector.prototype.isLarge = function () {
-    return window.innerWidth >= 768;
-  };
-
-  // const $marquee = document.getElementById("socialMovementMarquee");
-  // const $message = $marquee.children[0];
-  // $marquee.removeChild($message);
-
-  // const marquee = new dynamicMarquee.Marquee($marquee, { rate: -40 });
-  // const control = dynamicMarquee.loop(marquee, []);
-
-  // function startMarquee() {
-  //   control.update([() => $message.cloneNode(true)]);
-  // }
-
-  // function stopMarquee() {
-  //   control.update([]);
-  // }
-
-  // const socialMovementMarquee = new RxcMarquee(
-  //   document.getElementById("socialMovementMarquee"),
-  //   { rate: -40 }
-  // );
-  // const twitterMarquee = new RxcMarquee(
-  //   document.getElementById("twitterMarquee"),
-  //   { rate: -10, upDown: true }
-  // );
-
-  // const resizeDetector = new ResizeDetector(
-  //   () => {
-  //     socialMovementMarquee.start();
-  //     twitterMarquee.start();
-  //   },
-  //   () => {
-  //     socialMovementMarquee.stop();
-  //     twitterMarquee.stop();
-  //   }
-  // );
-  // resizeDetector.init();
-
-  // let wasLarge = isLarge();
-  // if (wasLarge) {
-  //   socialMovementMarquee.start();
-  // }
-  // window.addEventListener("resize", function () {
-  //   if (wasLarge && !isLarge()) {
-  //     wasLarge = false;
-  //     socialMovementMarquee.stop();
-  //   } else if (!wasLarge && isLarge()) {
-  //     wasLarge = true;
-  //     socialMovementMarquee.start();
-  //   }
-  // });
+  twttr.ready(function (twttr) {
+    twttr.events.bind("rendered", function (event) {
+      setTimeout(() => {
+        document
+          .getElementById("twitter-marquee")
+          .classList.add("twitter-marquee");
+      }, 500);
+    });
+  });
 </script>
 <script>
   // prettier-ignore
