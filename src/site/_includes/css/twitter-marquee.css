@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
   --move-initial: 0;
-  --move-final: -100%;
+  --move-final: -75%;
 }
 
 .twitter-marquee .marquee__inner {

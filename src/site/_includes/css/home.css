@@ -3,7 +3,7 @@
   @apply grid;
   @apply grid-cols-layout-4;
   grid-template-rows: auto 1fr auto 1fr auto;
-  @apply h-screen;
+  @apply min-h-screen;
 
   @screen lg {
     @apply grid-cols-layout-12;
@@ -71,9 +71,8 @@
     @screen lg {
       grid-column: column 10 / -1;
       grid-row: 1 / -1;
-      @apply flex flex-col;
-      @apply bg-black;
-      @apply text-white;
+      @apply relative;
+      @apply block;
     }
   }
 
