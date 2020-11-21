@@ -1,0 +1,27 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% macro render(concept) %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/concepts") }}
+<div class="grid grid-cols-4 lg:grid-cols-12 h-screen">
+  <div class="concept-page_title focus:outline-none">{{ concept.title }}</div>
+  <div
+    class="lg:col-start-column-1 lg:col-end-gutter-7 mt-8 mb-32 lg:mb-8"
+  >
+    <div class="md-container">
+      {{ concept.description | markdown | safe }}
+    </div>
+  </div>
+  <div
+    class="relative col-span-margins lg:col-start-column-8 lg:col-end-margin-2 lg:w-full lg:border-l"
+  >
+    <img
+      class="lg:sticky lg:top-0 w-full"
+      src="/images/team/{{ concept.image }}"
+    />
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}

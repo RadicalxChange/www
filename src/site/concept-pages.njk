@@ -1,0 +1,15 @@
+---
+layout: "layouts/_base.njk"
+pagination:
+  data: concepts
+  size: 1
+  alias: concept
+permalink: "concepts/{{ concept.title | slug }}/"
+title: Concept
+---
+
+<!-- prettier-ignore -->
+{% import "components/concept-page.njk" as conceptPage %}
+
+<!-- prettier-ignore -->
+{{ conceptPage.render(concept) }}
