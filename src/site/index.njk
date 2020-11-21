@@ -70,12 +70,13 @@ layout: layouts/_base.njk
       <div id="twitterMarquee" class="flex-grow mx-4 overflow-hidden marquee2">
         <div class="marquee2__inner">
           <a
-            class="twitter-timeline"
+            class="twitter-timeline py-4 text-size--2"
             href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
             data-theme="dark"
             data-chrome="noheader nofooter noborders noscrollbar transparent"
-            >Tweets by RadxChange</a
           >
+            Loading tweets by @RadxChange...
+          </a>
         </div>
       </div>
     </aside>
@@ -93,11 +94,11 @@ layout: layouts/_base.njk
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
-<script
+<!-- <script
   async
   src="https://platform.twitter.com/widgets.js"
   charset="utf-8"
-></script>
+></script> -->
 <script
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/dynamic-marquee@1"
