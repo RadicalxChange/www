@@ -5,6 +5,8 @@ date: "2020-08-10"
 title: "The Animating Values of RxC"
 postHeader: "The Animating Values of RxC"
 postAuthor: "Avital Balwit"
+series:
+  - RxC Fundamentals
 ---
 
 I’ve been with RadicalxChange from before it existed, at least under that name. I met Glen at a book talk for _Radical Markets_ in the summer of 2018\. I had just finished my first year at university. I asked if he needed any help with his work, and he mentioned that he was interested in planning a conference. I’ve been working with RadicalxChange ever since. These past few years have allowed me to see the growth and elaboration that this movement has undergone, and in this blog post, I wanted to explain what I see as the animating values of RxC.
