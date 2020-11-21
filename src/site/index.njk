@@ -39,31 +39,43 @@ layout: layouts/_base.njk
       <!-- prettier-ignore-line -->
       {% endfor %}
     </div>
-    <div id="socialMovementMarquee" class="home_marquee">
-      <span
-        class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
-        >A Social Movement for Next-Generation Political Economies</span
-      >
+    <div id="socialMovementMarquee" class="home_marquee marquee">
+      <div class="marquee__inner">
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+      </div>
     </div>
     <aside class="home_aside">
-      <a class="block m-4" href="#">
+      <a class="flex-initial block m-4" href="#">
         <h2 class="font-bold">
           Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
         </h2>
         <p>October 5 - November 1, 2020</p>
       </a>
-      <div class="border-b m-4"></div>
-      <div class="mt-4 mx-4 overflow-y-hidden">
-        <div>
-          <p class="font-bold text-size--2">E. Glen Weyl</p>
-          <p class="text-size--2">(twitter) Aug 2, 2020</p>
-          <p class="text-size--2">
-            I gave it a cold? I gave it a virus. A computer virus. God creates
-            dinosaurs. God destroys dinosaurs. God creates Man. Man destroys
-            God. Man creates Dinosaurs. Forget the fat lady! You're obsessed
-            with the fat lady! Drive us out of here! Do you have any idea how
-            long it takes those cups to decompose.
-          </p>
+      <div class="flex-initial border-b mx-4"></div>
+      <div id="twitterMarquee" class="flex-grow mx-4 overflow-hidden marquee2">
+        <div class="marquee2__inner">
+          <a
+            class="twitter-timeline"
+            href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
+            data-theme="dark"
+            data-chrome="noheader nofooter noborders noscrollbar transparent"
+            >Tweets by RadxChange</a
+          >
         </div>
       </div>
     </aside>
@@ -82,42 +94,114 @@ layout: layouts/_base.njk
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  charset="utf-8"
+></script>
+<script
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/dynamic-marquee@1"
 ></script>
 <script type="text/javascript">
-  const $marquee = document.getElementById("socialMovementMarquee");
-  const $message = $marquee.children[0];
-  $marquee.removeChild($message);
+  const RxcMarquee = function ($marquee, options) {
+    this.$marquee = $marquee;
+    this.$message = this.$marquee.children[0];
 
-  const marquee = new dynamicMarquee.Marquee($marquee, { rate: -40 });
-  const control = dynamicMarquee.loop(marquee, []);
+    this.$marquee.removeChild(this.$message);
 
-  function startMarquee() {
-    control.update([() => $message.cloneNode(true)]);
-  }
+    this.marquee = new dynamicMarquee.Marquee(this.$marquee, options);
+    this.control = dynamicMarquee.loop(this.marquee, []);
+  };
 
-  function stopMarquee() {
-    control.update([]);
-  }
+  RxcMarquee.prototype.start = function () {
+    const message = this.$message;
+    this.control.update([() => message.cloneNode(true)]);
+  };
 
-  function isLarge() {
-    return window.innerWidth >= 768;
-  }
+  RxcMarquee.prototype.stop = function () {
+    this.control.update([]);
+  };
 
-  let wasLarge = isLarge();
-  if (wasLarge) {
-    startMarquee();
-  }
-  window.addEventListener("resize", function () {
-    if (wasLarge && !isLarge()) {
-      wasLarge = false;
-      stopMarquee();
-    } else if (!wasLarge && isLarge()) {
-      wasLarge = true;
-      startMarquee();
+  const ResizeDetector = function (onLarge, onSmall) {
+    this.onLarge = onLarge;
+    this.onSmall = onSmall;
+    this.wasLarge = false;
+  };
+
+  ResizeDetector.prototype.init = function () {
+    const isLarge = this.isLarge();
+    if (isLarge) {
+      this.onLarge();
     }
-  });
+    this.wasLarge = this.isLarge();
+
+    window.addEventListener("resize", () => this.onResize());
+  };
+
+  ResizeDetector.prototype.onResize = function () {
+    const isLarge = this.isLarge();
+    if (this.wasLarge && !isLarge) {
+      this.onSmall();
+      this.wasLarge = false;
+    } else if (!this.wasLarge && isLarge) {
+      this.onLarge();
+      this.wasLarge = true;
+    }
+  };
+
+  ResizeDetector.prototype.isLarge = function () {
+    return window.innerWidth >= 768;
+  };
+
+  // const $marquee = document.getElementById("socialMovementMarquee");
+  // const $message = $marquee.children[0];
+  // $marquee.removeChild($message);
+
+  // const marquee = new dynamicMarquee.Marquee($marquee, { rate: -40 });
+  // const control = dynamicMarquee.loop(marquee, []);
+
+  // function startMarquee() {
+  //   control.update([() => $message.cloneNode(true)]);
+  // }
+
+  // function stopMarquee() {
+  //   control.update([]);
+  // }
+
+  // const socialMovementMarquee = new RxcMarquee(
+  //   document.getElementById("socialMovementMarquee"),
+  //   { rate: -40 }
+  // );
+  // const twitterMarquee = new RxcMarquee(
+  //   document.getElementById("twitterMarquee"),
+  //   { rate: -10, upDown: true }
+  // );
+
+  // const resizeDetector = new ResizeDetector(
+  //   () => {
+  //     socialMovementMarquee.start();
+  //     twitterMarquee.start();
+  //   },
+  //   () => {
+  //     socialMovementMarquee.stop();
+  //     twitterMarquee.stop();
+  //   }
+  // );
+  // resizeDetector.init();
+
+  // let wasLarge = isLarge();
+  // if (wasLarge) {
+  //   socialMovementMarquee.start();
+  // }
+  // window.addEventListener("resize", function () {
+  //   if (wasLarge && !isLarge()) {
+  //     wasLarge = false;
+  //     socialMovementMarquee.stop();
+  //   } else if (!wasLarge && isLarge()) {
+  //     wasLarge = true;
+  //     socialMovementMarquee.start();
+  //   }
+  // });
 </script>
 <script>
   // prettier-ignore

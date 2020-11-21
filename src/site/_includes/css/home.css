@@ -3,7 +3,7 @@
   @apply grid;
   @apply grid-cols-layout-4;
   grid-template-rows: auto 1fr auto 1fr auto;
-  @apply min-h-screen;
+  @apply h-screen;
 
   @screen lg {
     @apply grid-cols-layout-12;
@@ -71,7 +71,7 @@
     @screen lg {
       grid-column: column 10 / -1;
       grid-row: 1 / -1;
-      @apply block;
+      @apply flex flex-col;
       @apply bg-black;
       @apply text-white;
     }
@@ -86,5 +86,80 @@
     @screen lg {
       @apply hidden;
     }
+  }
+}
+
+/* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  --offset: 0;
+  --move-initial: -25%;
+  --move-final: -50%;
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 40s linear infinite;
+  /* animation-play-state: paused; */
+}
+
+/* .marquee span {
+  font-size: 10vw;
+  padding: 0 2vw;
+} */
+
+.marquee:hover .marquee__inner {
+  /* animation-play-state: running; */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+/* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
+.marquee2 {
+  position: relative;
+  overflow: hidden;
+  --offset: 0;
+  --move-initial: -25%;
+  --move-final: -50%;
+}
+
+.marquee2__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translate3d(0, var(--move-initial), 0);
+  animation: marquee2 60s linear infinite;
+  animation-play-state: running;
+}
+
+/* .marquee span {
+  font-size: 10vw;
+  padding: 0 2vw;
+} */
+
+.marquee2:hover .marquee2__inner {
+  animation-play-state: paused;
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translate3d(0, var(--move-initial), 0);
+  }
+
+  100% {
+    transform: translate3d(0, var(--move-final), 0);
   }
 }
