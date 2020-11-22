@@ -95,6 +95,8 @@ sections:
 <!-- prettier-ignore -->
 {% import "components/section.njk" as section %}
 <!-- prettier-ignore -->
+{% import "components/page.njk" as page %}
+<!-- prettier-ignore -->
 {% import "components/call-to-action.njk" as callToAction %}
 
 <!-- prettier-ignore -->
@@ -176,27 +178,25 @@ sections:
 {% endcall %}
 <!-- prettier-ignore -->
 {% endfor %}
-<!-- prettier-ignore -->
-{% call section.render(headerText="Mentors", id="mentors") %}
-<div
-  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
->
-  {% for s in keynoteSpeakers2020 %}
-  <!-- prettier-ignore -->
-  <div class="conference-image" style="background-image: linear-gradient(black, black), url('/images/speakers-2020/{{ s.picture }}');">
+<div>
+  <div class="py-base lg:py-lg/xl px-base lg:pr-lg/sm lg:pl-lg/lg">
+    {{ section.header("Mentors") }}
+  </div>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-lg lg:mb-lg/lg overflow-hidden"
+  >
+    {% for s in fellowshipMentors2021 %}
+    <!-- prettier-ignore -->
+    <div class="conference-image" style="background-image: linear-gradient(black, black), url('/images/fellowship-mentors-2021/{{ s.image }}');">
         <div
           class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-sm lg:p-lg/sm bg-white"
         >
           <h4 class="text-sm lg:text-lg/sm">{{ s.name }}</h4>
-          <p class="text-xs2 lg:text-lg/xs2">{{ s.title }}</p>
-        </div>
-        <div class="hidden">
-          {{ s.bio }}
+          <p class="text-xs2 lg:text-lg/xs2">{{ s.project }}</p>
         </div>
       </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
-<!-- prettier-ignore -->
-{% endcall %}
 <!-- prettier-ignore -->
 {% endblock %}
