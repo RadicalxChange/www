@@ -135,7 +135,7 @@
 
     &_page {
       grid-column: column 4 / margin 2;
-      /* @apply justify-self-end; */
+      @apply justify-self-end;
       @apply order-2;
       @apply text-size--2;
 
