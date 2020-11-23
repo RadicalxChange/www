@@ -68,7 +68,6 @@ Menu.prototype.handleClickOutside = function (event) {
   if (this.$menu.contains(event.target)) {
     return;
   }
-  console.log("close");
   this.close();
 };
 
@@ -146,6 +145,7 @@ MenuButton.prototype.handleClick = function (event) {
     this.menu.close();
   } else {
     this.menu.open();
+    this.menu.setFocusToFirstItem();
   }
   event.stopPropagation();
   event.preventDefault();
