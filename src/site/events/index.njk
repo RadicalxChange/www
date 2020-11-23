@@ -1,0 +1,89 @@
+---
+layout: layouts/_base.njk
+title: Events
+introduction: |
+  RadicalxChange hosts an annual conference and supports events organized by chapters
+  and our community.
+
+  Our events gather social scientists, technologists, artists, activists and entrepreneurs,
+  fostering discussions and actions which connect our growing plurality to our shared mission — the deep upgrade of our social and institutional worlds.
+
+  Dig into our archives and join our next event.
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<main
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 grid-rows-auto/1fr min-h-screen py-8 bg-golden-fizz"
+>
+  <header
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 justify-self-center lg:justify-self-start mb-8"
+  >
+    <!-- prettier-ignore -->
+    {{ logo.render() }}
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-10 self-end md-container"
+  >
+    {{ introduction | markdown | safe }}
+  </div>
+</main>
+<section class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-8">
+  <ol class="col-span-columns">
+    <li class="group">
+      <a
+        class="flex items-center justify-between pb-4 border-b mb-4"
+        href="/events/2020-conference"
+        ><h2
+          class="font-display text-size-display lg:text-size-lg/display text-center lg:text-left"
+        >
+          2020 Annual Conference
+        </h2>
+        <img
+          class="hidden lg:block invisible group-hover:visible"
+          src="/images/ui/in-arrow.svg"
+      /></a>
+    </li>
+    <li class="group">
+      <a
+        class="flex items-center justify-between pb-4 border-b mb-4"
+        href="/events/2019-berlin"
+        ><h2
+          class="font-display text-size-display lg:text-size-lg/display text-center lg:text-left"
+        >
+          2019 Berlin Conference
+        </h2>
+        <img
+          class="hidden lg:block invisible group-hover:visible"
+          src="/images/ui/in-arrow.svg"
+      /></a>
+    </li>
+    <li class="group">
+      <a
+        class="flex items-center justify-between pb-4 border-b mb-4"
+        href="/events/2019-conference"
+        ><h2
+          class="font-display text-size-display lg:text-size-lg/display text-center lg:text-left"
+        >
+          2019 Annual Conference
+        </h2>
+        <img
+          class="hidden lg:block invisible group-hover:visible"
+          src="/images/ui/in-arrow.svg"
+      /></a>
+    </li>
+  </ol>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

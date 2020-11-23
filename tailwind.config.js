@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   purge: [],
   theme: {
@@ -42,8 +44,8 @@ module.exports = {
       transparent: "transparent",
     },
     extend: {
-      borderRadius: { "50": "50%", oval: "70px" },
-      borderWidth: { "3": "3px" },
+      borderRadius: { 50: "50%", oval: "70px" },
+      borderWidth: { 3: "3px" },
       transitionProperty: { right: "right", "margin-left": "margin-left" },
       inset: { full: "100%", "1/4": "25%", "1/2": "50%" },
       minHeight: { tall: "50vw" },
@@ -53,10 +55,11 @@ module.exports = {
       boxShadow: {
         "focus-white": "0 0 0 3px rgba(256, 256, 256, 1)",
       },
-      height: { "36": "9rem" },
+      height: { 36: "9rem" },
       gridColumn: {
         "span-margins": "1 / -1",
         "span-columns": "column 1 / margin 2",
+        "span-16": "span 16 / span 16",
       },
       gridColumnStart: {
         "margin-1": "margin 1",
@@ -129,6 +132,7 @@ module.exports = {
         "margin-2": "margin 2",
       },
       gridTemplateColumns: {
+        16: "repeat(16, minmax(0, 1fr))",
         "layout-4":
           "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
         "layout-12":
@@ -145,6 +149,19 @@ module.exports = {
   },
   variants: {
     borderWidth: ["responsive", "hover", "focus"],
+    extend: {
+      display: ["open"],
+      visibility: ["group-hover"],
+      margin: ["open"],
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant, e }) {
+      addVariant("open", ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.open .${e(`open${separator}${className}`)}`;
+        });
+      });
+    }),
+  ],
 };

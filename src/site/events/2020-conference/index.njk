@@ -1,0 +1,63 @@
+---
+title: 2020 Annual Conference
+sponsors:
+  - name: Dada.art
+    href: "https://dada.nyc/"
+  - name: Democracy Earth
+    href: "https://democracy.earth/"
+  - name: Gitcoin
+    href: "https://gitcoin.co/"
+  - name: Idena
+    href: "https://idena.io/"
+  - name: Insper
+    href: "https://www.insper.edu.br/"
+  - name: Wildcards
+    href: "https://wildcards.world/"
+  - name: Ocean Protocol
+    href: "https://oceanprotocol.com/"
+  - name: Hewlett Foundation
+    href: "https://hewlett.org/"
+  - name: Microsoft
+    href: "https://www.microsoft.com/"
+---
+
+<!-- prettier-ignore -->
+{% extends "layouts/conference.njk" %}
+
+<!-- prettier-ignore -->
+{% set headerText = "2020 Annual Conference" %}
+<!-- prettier-ignore -->
+{% set youtubeDatum = youtube2020 %}
+
+<!-- prettier-ignore -->
+{% block sections %}
+<section
+  class="col-span-columns grid grid-cols-4 lg:grid-cols-16 gap-x-8 pt-4 border-t mb-8"
+>
+  <h2 class="col-start-1 col-span-4 mb-4 lg:mb-0">Keynote Speakers</h2>
+  <ul class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-12">
+    <!-- prettier-ignore -->
+    {% for s in keynoteSpeakers2020 %}
+    <li class="comma-separated">
+      <span>{{ s.name }} ({{ s.title }})</span>
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ul>
+</section>
+<section
+  class="col-span-columns grid grid-cols-4 lg:grid-cols-16 gap-x-8 pt-4 border-t mb-8"
+>
+  <h2 class="col-start-1 col-span-4 mb-4 lg:mb-0">Supporters</h2>
+  <ul class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-12">
+    <!-- prettier-ignore -->
+    {% for s in sponsors %}
+    <li class="comma-separated">
+      <a class="see-more-button" href="{{ s.href }}">{{ s.name }}</a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ul>
+</section>
+<!-- prettier-ignore -->
+{% endblock %}
