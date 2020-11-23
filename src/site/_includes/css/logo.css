@@ -1,7 +1,15 @@
 .logo {
-  width: 91.67vw;
+  width: 91.67vw; /* calculated from Figma <logo-width> / <screen-width> */
 
   @screen lg {
-    width: 39.31vw;
+    width: 39.31vw; /* calculated from Figma <logo-width> / <screen-width> */
+  }
+}
+
+.logo-short {
+  width: 25.5vw; /* calculated from Figma <logo-width> / <screen-width> */
+
+  @screen lg {
+    width: 6.5vw; /* calculated from Figma <logo-width> / <screen-width> */
   }
 }

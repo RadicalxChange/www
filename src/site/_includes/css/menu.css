@@ -27,19 +27,19 @@
       }
     }
   }
+}
 
-  &_nav {
-    @apply flex flex-col;
-    @apply w-full;
-    @apply h-full;
-    @apply pb-16;
-    @apply bg-black;
-    @apply text-white;
-    @apply overflow-y-auto;
+.menu_bottom {
+  @apply pb-4;
+  @apply border-b;
 
-    @screen lg {
-      @apply w-auto;
-      @apply pb-0;
-    }
+  &:hover {
+    padding-bottom: calc(theme("spacing.4") - 3px);
+    @apply border-b-4;
+  }
+
+  &:focus {
+    padding-bottom: calc(theme("spacing.4") - 3px);
+    @apply border-b-4;
   }
 }
