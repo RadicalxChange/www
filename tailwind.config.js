@@ -26,7 +26,7 @@ module.exports = {
       "size-6": ["var(--step-type-6)", "1.5"],
       "size-7": ["var(--step-type-7)", "1.5"],
       "size-8": ["var(--step-type-8)", "1.5"],
-      "size-display": ["16.88vw", "0.9"],
+      "size-display": ["25.2vw", "0.9"],
       "size-lg/display": ["6.38vw", "0.9"],
     },
     fontFamily: {

@@ -39,31 +39,48 @@ layout: layouts/_base.njk
       <!-- prettier-ignore-line -->
       {% endfor %}
     </div>
-    <div id="socialMovementMarquee" class="home_marquee">
-      <span
-        class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
-        >A Social Movement for Next-Generation Political Economies</span
-      >
+    <div class="message-marquee home_marquee">
+      <div class="marquee__inner">
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+        <span
+          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+          >A Social Movement for Next-Generation Political Economies</span
+        >
+      </div>
     </div>
     <aside class="home_aside">
-      <a class="block m-4" href="#">
-        <h2 class="font-bold">
-          Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
-        </h2>
-        <p>October 5 - November 1, 2020</p>
-      </a>
-      <div class="border-b m-4"></div>
-      <div class="mt-4 mx-4 overflow-y-hidden">
-        <div>
-          <p class="font-bold text-size--2">E. Glen Weyl</p>
-          <p class="text-size--2">(twitter) Aug 2, 2020</p>
-          <p class="text-size--2">
-            I gave it a cold? I gave it a virus. A computer virus. God creates
-            dinosaurs. God destroys dinosaurs. God creates Man. Man destroys
-            God. Man creates Dinosaurs. Forget the fat lady! You're obsessed
-            with the fat lady! Drive us out of here! Do you have any idea how
-            long it takes those cups to decompose.
-          </p>
+      <div
+        class="absolute top-0 left-0 flex flex-col w-full h-full bg-black text-white"
+      >
+        <a class="flex-initial block m-4" href="#">
+          <h2 class="font-bold">
+            Distribute Emergence<br />GitxChange2: Quadratic Funding Hackathon
+          </h2>
+          <p>October 5 - November 1, 2020</p>
+        </a>
+        <div class="flex-initial border-b mx-4"></div>
+        <div id="twitter-marquee" class="flex-grow mx-4 overflow-hidden">
+          <div class="marquee__inner">
+            <a
+              class="twitter-timeline py-4 text-size--2"
+              href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
+              data-theme="dark"
+              data-chrome="noheader nofooter noborders noscrollbar transparent"
+            >
+              Loading tweets by @RadxChange...
+            </a>
+          </div>
         </div>
       </div>
     </aside>
@@ -73,50 +90,39 @@ layout: layouts/_base.njk
       >
         Upgrade the source code
       </h2>
-      <button class="menu-button">
-        <img src="/images/ui/menu-button.svg" />
-      </button>
     </div>
   </main>
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/dynamic-marquee@1"
-></script>
-<script type="text/javascript">
-  const $marquee = document.getElementById("socialMovementMarquee");
-  const $message = $marquee.children[0];
-  $marquee.removeChild($message);
+<script>
+  // https://developer.twitter.com/en/docs/twitter-for-websites/javascript-api/guides/javascript-api
+  window.twttr = (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
 
-  const marquee = new dynamicMarquee.Marquee($marquee, { rate: -40 });
-  const control = dynamicMarquee.loop(marquee, []);
+    t._e = [];
+    t.ready = function (f) {
+      t._e.push(f);
+    };
 
-  function startMarquee() {
-    control.update([() => $message.cloneNode(true)]);
-  }
+    return t;
+  })(document, "script", "twitter-wjs");
 
-  function stopMarquee() {
-    control.update([]);
-  }
-
-  function isLarge() {
-    return window.innerWidth >= 768;
-  }
-
-  let wasLarge = isLarge();
-  if (wasLarge) {
-    startMarquee();
-  }
-  window.addEventListener("resize", function () {
-    if (wasLarge && !isLarge()) {
-      wasLarge = false;
-      stopMarquee();
-    } else if (!wasLarge && isLarge()) {
-      wasLarge = true;
-      startMarquee();
-    }
+  twttr.ready(function (twttr) {
+    twttr.events.bind("rendered", function (event) {
+      setTimeout(() => {
+        document
+          .getElementById("twitter-marquee")
+          .classList.add("twitter-marquee");
+      }, 500);
+    });
   });
 </script>
 <script>

@@ -4,62 +4,94 @@
 <!-- prettier-ignore -->
 {% macro render() %}
 <div id="menu" class="menu">
-  <nav id="nav" class="menu_nav hidden">
-    <h1 class="leading-none pt-2 border-b lg:border-none mx-8">
-      <a
-        class="menu-item inline-block p-2 -mx-2 focus:shadow-focus-white focus:outline-none"
-        href="/"
-        >{{ logo.render(color="white") }}</a
-      >
-    </h1>
-    <ul class="flex-grow lg:mb-4">
-      <li class="leading-none border-b lg:border-none py-2 mx-8">
+  <nav
+    id="nav"
+    class="hidden flex flex-col w-full lg:w-auto h-full pt-6 pb-16 lg:pb-6 px-6 bg-black text-white overflow-y-auto"
+  >
+    <a data-menu-item class="block menu-item_bottom mb-4 outline-none" href="/"
+      ><h1 class="hidden lg:block">
+        {{ logo.render(color="white") }}
+      </h1>
+      <h1 class="flex justify-center lg:hidden">
+        {{ logo.short() }}
+      </h1></a
+    >
+    <ul class="flex-grow">
+      <li>
         <a
-          class="menu-item font-display text-size-display lg:text-size-lg/display uppercase hover:underline focus:underline focus:outline-none"
+          data-menu-item
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/about"
-          >About</a
+          ><span
+            class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
+            >About</span
+          ></a
         >
       </li>
-      <li class="leading-none border-b lg:border-none py-2 mx-8">
+      <li>
         <a
-          class="menu-item font-display text-size-display lg:text-size-lg/display uppercase hover:underline focus:underline focus:outline-none"
+          data-menu-item
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/concepts"
-          >Concepts</a
+          ><span
+            class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
+            >Concepts</span
+          ></a
         >
       </li>
-      <li class="leading-none border-b lg:border-none py-2 mx-8">
+      <li>
         <a
-          class="menu-item font-display text-size-display lg:text-size-lg/display uppercase hover:underline focus:underline focus:outline-none"
+          data-menu-item
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/community"
-          >Community</a
+          ><span
+            class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
+            >Community</span
+          ></a
         >
       </li>
-      <li class="leading-none border-b lg:border-none py-2 mx-8">
+      <li>
         <a
-          class="menu-item font-display text-size-display lg:text-size-lg/display uppercase hover:underline focus:underline focus:outline-none"
+          data-menu-item
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/kiosk"
-          >Kiosk</a
+          ><span
+            class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
+            >Kiosk</span
+          ></a
         >
       </li>
-      <li class="leading-none border-b lg:border-none py-2 mx-8">
+      <li>
         <a
-          class="menu-item font-display text-size-display lg:text-size-lg/display uppercase hover:underline focus:underline focus:outline-none"
+          data-menu-item
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/events"
-          >Events</a
+          ><span
+            class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
+            >Events</span
+          ></a
         >
       </li>
     </ul>
+    <p class="self-center hidden lg:block text-size--3">
+      © 2020 RadicalxChange Foundation Ltd.
+    </p>
     <div class="self-center m-8 lg:hidden">
-      <button class="menu-button">
+      <button data-menu-button>
         <img src="/images/ui/close-button-white.svg" />
       </button>
     </div>
   </nav>
   <div class="hidden lg:block self-center">
-    <button class="menu-button">
+    <button data-menu-button>
       <img src="/images/ui/menu-slider.svg" />
     </button>
   </div>
+</div>
+<div class="lg:hidden z-10 fixed flex justify-center bottom-0 w-full mb-8">
+  <button data-menu-button>
+    <img src="/images/ui/menu-button.svg" alt="Menu" />
+  </button>
 </div>
 <!-- prettier-ignore -->
 {% endmacro %}

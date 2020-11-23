@@ -13,7 +13,7 @@ const Menu = function ($menu) {
 };
 
 Menu.prototype.init = function () {
-  let menuElements = this.$menu.querySelectorAll(".menu-item");
+  let menuElements = this.$menu.querySelectorAll("[data-menu-item]");
   for (let menuElement of menuElements) {
     let menuItem = new MenuItem(menuElement, this);
     menuItem.init();
@@ -68,7 +68,6 @@ Menu.prototype.handleClickOutside = function (event) {
   if (this.$menu.contains(event.target)) {
     return;
   }
-  console.log("close");
   this.close();
 };
 
@@ -146,6 +145,7 @@ MenuButton.prototype.handleClick = function (event) {
     this.menu.close();
   } else {
     this.menu.open();
+    this.menu.setFocusToFirstItem();
   }
   event.stopPropagation();
   event.preventDefault();
@@ -233,7 +233,7 @@ MenuItem.prototype.focus = function () {
 const menu = new Menu(document.querySelector("#menu"));
 menu.init();
 
-for (const $menuButton of document.querySelectorAll(".menu-button")) {
+for (const $menuButton of document.querySelectorAll("[data-menu-button]")) {
   const menuButton = new MenuButton($menuButton, menu);
   menuButton.init();
 }

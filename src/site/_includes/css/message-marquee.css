@@ -1,0 +1,25 @@
+/* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
+.message-marquee {
+  position: relative;
+  overflow: hidden;
+  --move-initial: -25%;
+  --move-final: -50%;
+}
+
+.message-marquee .marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: message-marquee 40s linear infinite;
+}
+
+@keyframes message-marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}

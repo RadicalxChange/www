@@ -71,9 +71,8 @@
     @screen lg {
       grid-column: column 10 / -1;
       grid-row: 1 / -1;
+      @apply relative;
       @apply block;
-      @apply bg-black;
-      @apply text-white;
     }
   }
 

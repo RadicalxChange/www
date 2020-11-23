@@ -11,7 +11,6 @@
 /* Custom components */
 @import "./logo.css";
 @import "./menu.css";
-@import "./footer.css";
 @import "./introduction.css";
 @import "./home.css";
 @import "./about.css";
@@ -19,6 +18,8 @@
 @import "./chapters.css";
 @import "./kiosk.css";
 @import "./events.css";
+@import "./message-marquee.css";
+@import "./twitter-marquee.css";
 /* @import "./inline.css";
 @import "./modal.css";
 @import "./nav.css";

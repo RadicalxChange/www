@@ -1,0 +1,29 @@
+/* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
+.twitter-marquee {
+  position: relative;
+  overflow: hidden;
+  --move-initial: 0;
+  --move-final: -75%;
+}
+
+.twitter-marquee .marquee__inner {
+  display: flex;
+  position: relative;
+  transform: translate3d(0, var(--move-initial), 0);
+  animation: twitter-marquee 210s linear infinite;
+  animation-play-state: running;
+}
+
+.twitter-marquee:hover .marquee__inner {
+  animation-play-state: paused;
+}
+
+@keyframes twitter-marquee {
+  0% {
+    transform: translate3d(0, var(--move-initial), 0);
+  }
+
+  100% {
+    transform: translate3d(0, var(--move-final), 0);
+  }
+}
