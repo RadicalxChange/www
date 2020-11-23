@@ -17,6 +17,8 @@
 @import "./blog-post.css";
 @import "./chapters.css";
 @import "./kiosk.css";
+@import "./message-marquee.css";
+@import "./twitter-marquee.css";
 /* @import "./inline.css";
 @import "./modal.css";
 @import "./nav.css";
