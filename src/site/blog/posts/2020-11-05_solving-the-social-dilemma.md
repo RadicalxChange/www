@@ -5,6 +5,8 @@ date: "2020-11-05"
 title: "Solving the Social Dilemma"
 postHeader: "Solving the Social Dilemma: The Data Freedom Act"
 postAuthor: "Leon Erichsen, Matt Prewitt"
+series:
+  - RxC Fundamentals
 ---
 
 The Netflix documentary, [The Social Dilemma](https://www.netflix.com/title/81254224), has triggered a new public debate about the internet's impact on society. It casts a good spotlight on how privately-owned social networks manipulate peoples' behavior and weaken democracy by boosting attention-grabbing, polarizing content.

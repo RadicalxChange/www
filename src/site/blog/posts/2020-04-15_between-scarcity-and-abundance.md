@@ -6,6 +6,8 @@ title: "Between Abundance and Scarcity"
 slug: "between-scarcity-and-abundance"
 postHeader: "Between Abundance and Scarcity"
 postAuthor: "Matt Prewitt"
+series:
+  - RxC Fundamentals
 ---
 
 > This dense piece is not an easy read. But it will be of interest to those looking to explore the deeper connections between voting reform and property reform, and the tension at the heart of capitalist democracies.

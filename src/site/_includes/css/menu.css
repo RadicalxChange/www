@@ -15,31 +15,31 @@
       transform: translate(calc(-100% + 34px), 0);
     }
   }
+}
 
-  &_open {
+.menu_open {
+  transform: translate(0, 0);
+
+  @screen lg {
     transform: translate(0, 0);
 
-    @screen lg {
+    &:hover {
       transform: translate(0, 0);
-
-      &:hover {
-        transform: translate(0, 0);
-      }
     }
   }
+}
 
-  &_nav {
-    @apply flex flex-col;
-    @apply w-full;
-    @apply h-full;
-    @apply pb-16;
-    @apply bg-black;
-    @apply text-white;
-    @apply overflow-y-auto;
+.menu-item_bottom {
+  @apply pb-4;
+  @apply border-b;
 
-    @screen lg {
-      @apply w-auto;
-      @apply pb-0;
-    }
+  &:hover {
+    padding-bottom: calc(theme("spacing.4") - 3px);
+    @apply border-b-4;
+  }
+
+  &:focus {
+    padding-bottom: calc(theme("spacing.4") - 3px);
+    @apply border-b-4;
   }
 }
