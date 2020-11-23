@@ -39,7 +39,7 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
     </h1>
     <p class="text-size--1">{{ postAuthor }}</p>
     <p class="text-size--1">{{ date | readableDate }}</p>
-    <div class="prose mt-8 mb-8 lg:mb-32">
+    <div class="prose prose-sm lg:prose-lg mt-8 mb-8 lg:mb-32">
       {{ content | markdown | safe }}
     </div>
   </main>
