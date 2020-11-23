@@ -23,15 +23,29 @@
     3. Each participant stores a degree of credit which they are willing to
     offer every other participant as “social collateral” to give credence to
     identity statements.
-  tools-and-readings:
+  toolsAndReadings:
     - title: Quadratic Moloch DAO
       description: |
         Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
         standard that incorporates theoptional use of Quadratic Voting. Moloch
         DAOs let collectives manage different kinds of rights and assets
         through democratic processes on Ethereum.
-      twitter: "https://twitter.com/jlmorone"
-      github: "https://jplace.github.io/"
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
+    - title: Quadratic Moloch DAO
+      description: |
+        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
+        standard that incorporates theoptional use of Quadratic Voting. Moloch
+        DAOs let collectives manage different kinds of rights and assets
+        through democratic processes on Ethereum.
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
 
 - title: Quadratic Voting (QV)
   image: "jennifer_lyn_morone.png"
@@ -45,15 +59,40 @@
     [Colorado]
     (https://www.wired.com/story/colorado-quadratic-voting-experiment/),
     it already is.
-  tools-and-readings:
+  toolsAndReadings:
     - title: EXAMPLE
       description: |
         Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
         standard that incorporates theoptional use of Quadratic Voting. Moloch
         DAOs let collectives manage different kinds of rights and assets
         through democratic processes on Ethereum.
-      twitter: "https://twitter.com/jlmorone"
-      github: "https://jplace.github.io/"
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
+    - title: Quadratic Moloch DAO
+      description: |
+        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
+        standard that incorporates theoptional use of Quadratic Voting. Moloch
+        DAOs let collectives manage different kinds of rights and assets
+        through democratic processes on Ethereum.
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
+    - title: Quadratic Moloch DAO
+      description: |
+        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
+        standard that incorporates theoptional use of Quadratic Voting. Moloch
+        DAOs let collectives manage different kinds of rights and assets
+        through democratic processes on Ethereum.
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
 
 - title: Quadratic Financing (QF)
   image: "jennifer_lyn_morone.png"
@@ -71,15 +110,18 @@
     Check out the Reviews of Gitcoin Grants Round
     [3](https://vitalik.ca/general/2019/10/24/gitcoin.html) and
     [4](https://vitalik.ca/general/2020/01/28/round4.html).
-  tools-and-readings:
+  toolsAndReadings:
     - title: EXAMPLE
       description: |
         Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
         standard that incorporates theoptional use of Quadratic Voting. Moloch
         DAOs let collectives manage different kinds of rights and assets
         through democratic processes on Ethereum.
-      twitter: "https://twitter.com/jlmorone"
-      github: "https://jplace.github.io/"
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
 
 - title: COST / SALSA
   image: "jennifer_lyn_morone.png"
@@ -98,15 +140,18 @@
     sustainable way to govern the rights to possess finite resources. Its
     implications include a much more efficient use of resources, a better way of
     sharing common property, a fair wealth tax, and deeper economic equality.
-  tools-and-readings:
+  toolsAndReadings:
     - title: EXAMPLE
       description: |
         Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
         standard that incorporates theoptional use of Quadratic Voting. Moloch
         DAOs let collectives manage different kinds of rights and assets
         through democratic processes on Ethereum.
-      twitter: "https://twitter.com/jlmorone"
-      github: "https://jplace.github.io/"
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
 
 - title: Radical Antitrust
   image: "jennifer_lyn_morone.png"
@@ -119,15 +164,18 @@
     realizing what they are doing. We think now is a good time for some radical
     new antitrust ideas: not to put a corset on markets, but rather to use
     market forces as a natural buffer against monopolistic distortions.
-  tools-and-readings:
+  toolsAndReadings:
     - title: EXAMPLE
       description: |
         Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
         standard that incorporates theoptional use of Quadratic Voting. Moloch
         DAOs let collectives manage different kinds of rights and assets
         through democratic processes on Ethereum.
-      twitter: "https://twitter.com/jlmorone"
-      github: "https://jplace.github.io/"
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
 
 - title: Intersectional Social Data (ISD)
   image: "jennifer_lyn_morone.png"
@@ -143,12 +191,15 @@
     Social Data could be the key to developing new knowledge and trust networks
     that don’t rely on governments or tech companies, but rather grow and
     evolve organically as we go through our lives.
-  tools-and-readings:
+  toolsAndReadings:
     - title: EXAMPLE
       description: |
         Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
         standard that incorporates theoptional use of Quadratic Voting. Moloch
         DAOs let collectives manage different kinds of rights and assets
         through democratic processes on Ethereum.
-      twitter: "https://twitter.com/jlmorone"
-      github: "https://jplace.github.io/"
+      links:
+        - platform: twitter
+          href: "https://twitter.com/jlmorone"
+        - platform: github
+          href: "https://jplace.github.io/"
