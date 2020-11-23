@@ -8,7 +8,7 @@
     id="nav"
     class="hidden flex flex-col w-full lg:w-auto h-full pt-6 pb-16 lg:pb-6 px-6 bg-black text-white overflow-y-auto"
   >
-    <a data-menu-item class="block menu_bottom mb-4 outline-none" href="/"
+    <a data-menu-item class="block menu-item_bottom mb-4 outline-none" href="/"
       ><h1 class="hidden lg:block">
         {{ logo.render(color="white") }}
       </h1>
@@ -20,7 +20,7 @@
       <li>
         <a
           data-menu-item
-          class="block menu_bottom mb-4 text-center outline-none"
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/about"
           ><span
             class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
@@ -31,7 +31,7 @@
       <li>
         <a
           data-menu-item
-          class="block menu_bottom mb-4 text-center outline-none"
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/concepts"
           ><span
             class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
@@ -42,7 +42,7 @@
       <li>
         <a
           data-menu-item
-          class="block menu_bottom mb-4 text-center outline-none"
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/community"
           ><span
             class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
@@ -53,7 +53,7 @@
       <li>
         <a
           data-menu-item
-          class="block menu_bottom mb-4 text-center outline-none"
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/kiosk"
           ><span
             class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
@@ -64,7 +64,7 @@
       <li>
         <a
           data-menu-item
-          class="block menu_bottom mb-4 text-center outline-none"
+          class="block menu-item_bottom mb-4 text-center outline-none"
           href="/events"
           ><span
             class="font-display text-size-display lg:text-size-lg/display uppercase align-middle"
@@ -87,6 +87,11 @@
       <img src="/images/ui/menu-slider.svg" />
     </button>
   </div>
+</div>
+<div class="lg:hidden z-10 fixed flex justify-center bottom-0 w-full mb-8">
+  <button data-menu-button>
+    <img src="/images/ui/menu-button.svg" alt="Menu" />
+  </button>
 </div>
 <!-- prettier-ignore -->
 {% endmacro %}
