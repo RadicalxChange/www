@@ -8,6 +8,7 @@ const outputDir = path.join(__dirname, "..", "..", "dist", "images");
 
 // Add special pipelines to certain directories
 const dirToPipeline = {
+  "fellowship-mentors-2021": gridifyImages,
   "speakers-2020": gridifyImages,
   team: gridifyImages,
 };
