@@ -46,68 +46,67 @@ module.exports = {
     extend: {
       typography: (theme) => ({
         DEFAULT: {
-          css: [
-            {
+          css: {
+            color: theme('colors.black'),
+            maxWidth: 'none',
+            '[class~="lead"]': {
               color: theme('colors.black'),
-              maxWidth: 'none',
-              '[class~="lead"]': {
-                color: theme('colors.black'),
-              },
-              a: {
-                color: theme('colors.black'),
-              },
-              strong: {
-                color: theme('colors.black'),
-              },
-              'ol > li::before': {
-                color: theme('colors.black'),
-              },
-              'ul > li::before': {
-                backgroundColor: theme('colors.black'),
-              },
-              hr: {
-                borderColor: theme('colors.black'),
-              },
-              blockquote: {
-                color: theme('colors.black'),
-                borderLeftColor: theme('colors.black'),
-              },
-              h1: {
-                color: theme('colors.black'),
-              },
-              h2: {
-                color: theme('colors.black'),
-              },
-              h3: {
-                color: theme('colors.black'),
-              },
-              h4: {
-                color: theme('colors.black'),
-              },
-              'figure figcaption': {
-                color: theme('colors.black'),
-              },
-              code: {
-                color: theme('colors.black'),
-              },
-             
-              'a code': {
-                color: theme('colors.black'),
-              },
-              pre: {
-                color: theme('colors.black'),
-                backgroundColor: theme('colors.white')
-              },
-              thead: {
-                color: theme('colors.black'),
-                borderBottomColor: theme('colors.black'),
-              },
-              'tbody tr': {
-                borderBottomColor: theme('colors.black'),
-              },
-            }
-          ],
-        },
+            },
+            a: {
+              color: theme('colors.black'),
+            },
+            strong: {
+              color: theme('colors.black'),
+            },
+            'ol > li::before': {
+              color: theme('colors.black'),
+            },
+            'ul > li::before': {
+              backgroundColor: theme('colors.black'),
+            },
+            hr: {
+              borderColor: theme('colors.black'),
+            },
+            blockquote: {
+              color: theme('colors.black'),
+              borderLeftColor: theme('colors.black'),
+            },
+            h1: {
+              color: theme('colors.black'),
+            },
+            h2: {
+              color: theme('colors.black'),
+            },
+            h3: {
+              color: theme('colors.black'),
+            },
+            h4: {
+              color: theme('colors.black'),
+            },
+            'figure figcaption': {
+              color: theme('colors.black'),
+            },
+            code: {
+              color: theme('colors.black'),
+            },
+            'a code': {
+              color: theme('colors.black'),
+            },
+            pre: {
+              color: theme('colors.black'),
+              backgroundColor: theme('colors.white')
+            },
+            thead: {
+              color: theme('colors.black'),
+              borderBottomColor: theme('colors.black'),
+            },
+            'tbody tr': {
+              borderBottomColor: theme('colors.black'),
+            },             
+            "blockquote p:first-of-type::before": false,
+            "blockquote p:last-of-type::after": false,
+          }
+        }
       }),
       borderRadius: { 50: "50%", oval: "70px" },
       borderWidth: { 3: "3px" },
