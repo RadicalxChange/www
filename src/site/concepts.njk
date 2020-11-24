@@ -1,0 +1,37 @@
+---
+layout: layouts/_base.njk
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<main class="concepts">
+  <div class="concepts_logo">
+    <a class="inline-block" href="/">{{ logo.render() }}</a>
+  </div>
+  <ul class="concepts_list">
+    <!-- prettier-ignore -->
+    {% for concept in concepts %}
+    <li class="concepts_list_item">
+      <a
+        class="font-display text-size-display lg:text-size-lg/display uppercase"
+        href="/concepts/{{ concept.slug }}"
+        >{{ concept.title }}</a
+      >
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ul>
+</main>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

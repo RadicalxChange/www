@@ -1,0 +1,50 @@
+.concept-page {
+  @apply grid;
+  @apply grid-cols-4;
+  grid-template-rows: auto 1fr;
+
+  @screen lg {
+    @apply grid-cols-12;
+  }
+
+  &_title {
+    grid-column: column 1 / margin 2;
+    grid-row: 1 / span 1;
+    text-align: center;
+    @apply w-full;
+    @apply block;
+    @apply mt-4;
+    @apply font-display;
+    @apply text-size-display;
+    @apply uppercase;
+    @apply leading-none;
+    @apply py-2;
+
+    @screen lg {
+      text-align: start;
+      @apply text-size-lg/display;
+      @apply border-b;
+    }
+  }
+
+  &_list {
+    @apply bg-white;
+    @apply grid;
+    @apply grid-cols-4;
+    grid-template-rows: auto auto;
+    @apply grid-flow-row;
+
+    @screen lg {
+      @apply mx-8;
+      @apply grid-cols-2;
+      @apply col-gap-8;
+      grid-template-rows: auto auto;
+      @apply mb-16;
+    }
+
+    &_item {
+      @apply border-b;
+      @apply py-8;
+    }
+  }
+}
