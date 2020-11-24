@@ -16,6 +16,7 @@
     @apply w-full;
     @apply block;
     @apply mt-4;
+    @apply border-b;
     justify-self: center;
 
     @screen lg {
@@ -33,11 +34,21 @@
     &_item {
       text-align: center;
       @apply leading-none;
-      @apply border-t;
+      @apply border-b;
       @apply py-2;
 
       @screen lg {
         text-align: start;
+      }
+
+      &:hover {
+        padding-bottom: calc(theme("spacing.4") - 3px);
+        @apply border-b-4;
+      }
+
+      &:focus {
+        padding-bottom: calc(theme("spacing.4") - 3px);
+        @apply border-b-4;
       }
     }
   }

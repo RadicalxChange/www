@@ -1,12 +1,5 @@
 ---
 layout: layouts/_base.njk
-concept_titles:
-  - name: Data As Labour / Data Dignity (DAL/DD)
-  - name: Quadratic Voting (QV)
-  - name: Quadratic Financing (QF)
-  - name: COST / SALSA
-  - name: Radical Antitrust
-  - name: Intersectional Social Data (ISD)
 ---
 
 <!-- prettier-ignore -->
@@ -27,7 +20,7 @@ concept_titles:
     {% for concept in concepts %}
     <li class="concepts_list_item">
       <a
-        class="font-display text-size-display lg:text-size-lg/display uppercase hover:underline focus:underline focus:outline-none"
+        class="font-display text-size-display lg:text-size-lg/display uppercase"
         href="/concepts/{{ concept.slug }}"
         >{{ concept.title }}</a
       >
