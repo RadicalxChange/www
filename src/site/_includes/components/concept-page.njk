@@ -6,7 +6,7 @@
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/concepts") }}
 <main class="concept-page">
-  <div class="concept-page_title focus:outline-none">{{ concept.title }}</div>
+  <div class="concept-page_title focus:outline-none mb-8 lg:mb-0">{{ concept.title }}</div>
   <div
     class="col-span-columns relative lg:col-end-gutter-7 my-8"
   >
@@ -23,21 +23,24 @@
       src="/images/team/{{ concept.image }}"
     />
   </div>
+  <div class="col-start-column-1 col-end-margin-2 lg:border-b"></div>
 </main>
-<section id="tools-and-readings">
+<section id="tools-and-readings" class="mb-32">
   <ul class="concept-page_list">
     <!-- prettier-ignore -->
     {% for item in concept.toolsAndReadings %}
     <li class="concept-page_list_item col-span-columns lg:col-span-1">
       <div class="text-size-0">{{ item.title }}</div>
       <div class="text-size-0 py-8">{{ item.description }}</div>
-      <!-- prettier-ignore -->
-      {% for link in item.links %}
-      <a class="inline-block" href="{{ link.href }}">
-        <span class="hover-link uppercase">{{ link.platform }}</span>
-      </a>
-      <!-- prettier-ignore -->
-      {% endfor %}
+      <ul class="flex space-x-4">
+        <!-- prettier-ignore -->
+        {% for link in item.links %}
+        <a class="inline-block" href="{{ link.href }}">
+          <span class="hover-link uppercase">{{ link.platform }}</span>
+        </a>
+        <!-- prettier-ignore -->
+        {% endfor %}
+      </ul>
     </li>
     <!-- prettier-ignore -->
     {% endfor %}

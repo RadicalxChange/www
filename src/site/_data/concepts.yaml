@@ -1,4 +1,5 @@
 - title: Data As Labour / Data Dignity (DAL/DD)
+  slug: data-dignity
   image: "jennifer_lyn_morone.png"
   description: |
     An identity system and a general purpose data structure for the
@@ -48,6 +49,7 @@
           href: "https://jplace.github.io/"
 
 - title: Quadratic Voting (QV)
+  slug: quadratic-voting
   image: "jennifer_lyn_morone.png"
   description: |
     Democracy, whether in a country, community or local club, is about giving
@@ -95,6 +97,7 @@
           href: "https://jplace.github.io/"
 
 - title: Quadratic Financing (QF)
+  slug: quadratic-financing
   image: "jennifer_lyn_morone.png"
   description: |
     Funding public goods, like shared infrastructure or open-source software, is
@@ -124,6 +127,7 @@
           href: "https://jplace.github.io/"
 
 - title: COST / SALSA
+  slug: cost-salsa
   image: "jennifer_lyn_morone.png"
   description: |
     Private property is at the core of the capitalist system and has many
@@ -154,6 +158,7 @@
           href: "https://jplace.github.io/"
 
 - title: Radical Antitrust
+  slug: radical-antitrust
   image: "jennifer_lyn_morone.png"
   description: |
     Most of us can agree that monopolies are not healthy for society. That’s
@@ -178,6 +183,7 @@
           href: "https://jplace.github.io/"
 
 - title: Intersectional Social Data (ISD)
+  slug: intersectional-social-data
   image: "jennifer_lyn_morone.png"
   description: |
     In a highly digital world, data has a value not only in terms of

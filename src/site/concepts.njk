@@ -24,12 +24,12 @@ concept_titles:
   </div>
   <ul class="concepts_list">
     <!-- prettier-ignore -->
-    {% for title in concept_titles %}
+    {% for concept in concepts %}
     <li class="concepts_list_item">
       <a
         class="font-display text-size-display lg:text-size-lg/display uppercase hover:underline focus:underline focus:outline-none"
-        href="/concepts/{{ title.name | slug }}"
-        >{{ title.name }}</a
+        href="/concepts/{{ concept.slug }}"
+        >{{ concept.title }}</a
       >
     </li>
     <!-- prettier-ignore -->

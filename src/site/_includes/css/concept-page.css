@@ -2,7 +2,6 @@
   @apply grid;
   @apply grid-cols-4;
   grid-template-rows: auto 1fr;
-  @apply border-b;
 
   @screen lg {
     @apply grid-cols-12;
@@ -37,7 +36,7 @@
 
     @screen lg {
       @apply mx-8;
-      grid-template-columns: repeat(2, 1fr);
+      @apply grid-cols-2;
       @apply col-gap-8;
       grid-template-rows: auto auto;
       @apply mb-16;
