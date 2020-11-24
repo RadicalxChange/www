@@ -1,0 +1,14 @@
+<!-- prettier-ignore -->
+{% macro render(href, label) %}
+<a
+  class="group inline-flex items-center justify-between py-2 px-3 border rounded-oval text-size--1"
+  href="{{ href }}"
+>
+  <span class="uppercase">{{ label }}</span
+  ><img
+    class="ml-4 group-hover:ml-6 transition-margin-left duration-300 ease-out"
+    src="/images/ui/next-arrow.svg"
+  />
+</a>
+<!-- prettier-ignore -->
+{% endmacro %}

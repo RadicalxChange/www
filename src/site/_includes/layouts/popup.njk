@@ -1,0 +1,26 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ closeButton.render() }}
+<div class="grid grid-cols-layout-4 lg:grid-cols-layout-16">
+  <div
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13 mt-8 mb-32 lg:mb-8"
+  >
+    <h1
+      class="mt-4 mb-10 font-display text-size-display lg:text-size-lg/display"
+    >
+      {{ headerText }}
+    </h1>
+    <div class="md-container">
+      {{ content | markdown | safe }}
+    </div>
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endblock %}

@@ -69,6 +69,8 @@ supporters:
 ---
 
 <!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
@@ -87,13 +89,8 @@ supporters:
 </main>
 <section id="chapters" class="about_chapters">
   <div class="about_chapters_join-button">
-    <a
-      class="action-button inline-flex items-center justify-between py-2 px-3 border rounded-oval text-size--1"
-      href="/chapters"
-    >
-      <span class="uppercase">Join your local chapter</span
-      ><img class="action-button_arrow" src="/images/ui/next-arrow.svg" />
-    </a>
+    <!-- prettier-ignore -->
+    {{ actionButton.render(href="/chapters", label="Join your local chapter")}}
   </div>
   <div class="about_chapters_description md-container">
     {{ chaptersDescription | markdown | safe }}
@@ -107,14 +104,14 @@ supporters:
         <!-- prettier-ignore -->
         {% for member in team %}
         <tr class="flex items-center h-8 lg:h-12 border-b">
-          <td style="width: calc(50% + 1rem);">
+          <td style="width: calc(50% + 1rem)">
             <a
-              class="see-more-button text-size--1 uppercase"
+              class="see-more-link text-size--1 uppercase"
               href="/team/{{ member.name | slug }}"
               >{{ member.name }}</a
             >
           </td>
-          <td style="width: calc(50% - 1rem);">
+          <td style="width: calc(50% - 1rem)">
             <span class="text-size--1">{{ member.title }}</span>
           </td>
         </tr>
@@ -129,7 +126,7 @@ supporters:
       <!-- prettier-ignore -->
       {% for member in board %}
       <li class="comma-separated">
-        <a class="see-more-button" href="/board/{{ member.name | slug }}">{{
+        <a class="see-more-link" href="/board/{{ member.name | slug }}">{{
           member.name
         }}</a>
       </li>
@@ -152,7 +149,7 @@ supporters:
     <li class="press_link">
       <a class="block" href="{{ article.href }}"
         ><p class="text-size--2">
-          <span class="hover-link">{{ article.publication }}</span>
+          <span class="inline-link">{{ article.publication }}</span>
         </p>
         <p class="text-size--2">{{ article.date | readableDate }}</p></a
       >
@@ -162,7 +159,9 @@ supporters:
     </li>
     <!-- prettier-ignore -->
     {% endfor %}
-    <li class="text-size--2"><a href="/press">See all press...</a></li>
+    <li class="text-size--2">
+      <a href="/press" class="inline-link">See all press...</a>
+    </li>
   </ul>
 </section>
 <section id="supporters" class="about_support">
@@ -174,7 +173,7 @@ supporters:
     <!-- prettier-ignore -->
     {% for supporter in supporters %}
     <li class="comma-separated">
-      <a class="see-more-button" href="{{ supporter.href }}">{{
+      <a class="see-more-link" href="{{ supporter.href }}">{{
         supporter.name
       }}</a>
     </li>

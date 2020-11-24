@@ -1,7 +1,7 @@
 ---
-layout: layouts/md.njk
+layout: layouts/popup.njk
 title: Privacy Policy
-headerText: Privacy Policy
+headerText: RxC Privacy Policy
 ---
 
 ## Definitions
