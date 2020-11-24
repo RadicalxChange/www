@@ -5,7 +5,7 @@
 {% macro render() %}
 <footer class="flex flex-col min-h-screen">
   <div
-    class="flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-2 lg:pt-6 pb-4 lg:pb-8 bg-black text-white"
+    class="flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-2 lg:pt-6 pb-margin lg:pb-lg/margin bg-black text-white"
   >
     <form
       onsubmit="window.fathom.trackGoal('BZOTPUXU', 0);"
@@ -48,7 +48,10 @@
         our website. We use Mailchimp as our marketing platform. By clicking
         below to subscribe, you acknowledge that your information will be
         transferred to Mailchimp for processing.
-        <a class="underline" href="https://mailchimp.com/legal/" target="_blank"
+        <a
+          class="inline-link"
+          href="https://mailchimp.com/legal/"
+          target="_blank"
           >Learn more about Mailchimp's privacy practices here.</a
         >
       </p>
@@ -60,10 +63,14 @@
         <h3 class="mb-2 lg:mb-4 text-size--1">Contact us at:</h3>
         <ul class="flex space-x-4">
           <li class="text-size--1 uppercase">
-            <a href="mailto:info@radicalxchange.org">E-mail</a>
+            <a href="mailto:info@radicalxchange.org" class="animated-link"
+              >E-mail</a
+            >
           </li>
           <li class="text-size--1 uppercase">
-            <a href="https://t.me/rxcfoundation">Telegram</a>
+            <a href="https://t.me/rxcfoundation" class="animated-link"
+              >Telegram</a
+            >
           </li>
         </ul>
       </div>
@@ -71,13 +78,21 @@
         <h3 class="mb-2 lg:mb-4 text-size--1">Find us on:</h3>
         <ul class="flex space-x-4">
           <li class="text-size--1 uppercase">
-            <a href="https://twitter.com/RadxChange">Twitter</a>
+            <a href="https://twitter.com/RadxChange" class="animated-link"
+              >Twitter</a
+            >
           </li>
           <li class="text-size--1 uppercase">
-            <a href="https://www.instagram.com/radxchange/">Instagram</a>
+            <a
+              href="https://www.instagram.com/radxchange/"
+              class="animated-link"
+              >Instagram</a
+            >
           </li>
           <li class="text-size--1 uppercase">
-            <a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw"
+            <a
+              href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw"
+              class="animated-link"
               >YouTube</a
             >
           </li>
@@ -86,7 +101,7 @@
     </div>
   </div>
   <div
-    class="flex-grow grid grid-cols-layout-4 lg:grid-cols-layout-12 content-between py-4 lg:py-8"
+    class="flex-grow grid grid-cols-layout-4 lg:grid-cols-layout-12 content-between pt-margin lg:pt-lg/margin pb-2"
   >
     <div
       class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8 lg:mb-0"
@@ -99,25 +114,25 @@
       class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 mx-auto lg:mx-0 text-center lg:text-left space-y-4"
     >
       <li class="text-size--1 uppercase">
-        <a href="/">Home</a>
+        <a href="/" class="animated-link">Home</a>
       </li>
       <li class="text-size--1 uppercase">
-        <a href="/about">About</a>
+        <a href="/about" class="animated-link">About</a>
       </li>
       <li class="text-size--1 uppercase">
-        <a href="/concepts">Concepts</a>
+        <a href="/concepts" class="animated-link">Concepts</a>
       </li>
       <li class="text-size--1 uppercase">
-        <a href="/community">Community</a>
+        <a href="/community" class="animated-link">Community</a>
       </li>
       <li class="text-size--1 uppercase">
-        <a href="/kiosk">Kiosk</a>
+        <a href="/kiosk" class="animated-link">Kiosk</a>
       </li>
       <li class="text-size--1 uppercase">
-        <a href="/events">Events</a>
+        <a href="/events" class="animated-link">Events</a>
       </li>
       <li class="text-size--1 uppercase">
-        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/privacy-policy" class="animated-link">Privacy Policy</a>
       </li>
     </ul>
     <div class="col-span-columns mt-8">

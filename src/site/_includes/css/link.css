@@ -1,15 +1,6 @@
 @import "./mixins/_animated-link.css";
 
-.action-button .action-button_arrow {
-  @apply ml-4;
-  @apply transition-margin-left duration-300 ease-out;
-}
-
-.action-button:hover .action-button_arrow {
-  @apply ml-6;
-}
-
-.see-more-button {
+.see-more-link {
   @apply text-gray;
 
   &:hover {
@@ -17,18 +8,12 @@
   }
 }
 
-.hover-link {
-  &:hover {
-    text-decoration: underline;
-  }
+.inline-link {
+  text-decoration: underline;
 }
 
-/* .inline-link {
-  text-decoration: underline;
-} */
-
-/* .animated-link {
-  position: relative;
+.animated-link {
+  @apply relative;
   @apply font-button;
 }
 
@@ -38,7 +23,7 @@
   @apply right-full;
   @apply left-0;
   bottom: -1px;
-  @apply border-solid border-t-3 border-black;
+  @apply border-solid border-t-3 border-current;
   @apply transition-right duration-300 ease-in;
 }
 
@@ -52,8 +37,8 @@
   @mixin animated-link-hover;
 }
 
-.block-with-animated-link {
+.group-animated-link {
   &:hover .animated-link:after {
     @mixin animated-link-hover;
   }
-}*/
+}

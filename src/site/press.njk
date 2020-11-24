@@ -10,7 +10,7 @@ title: Press
 {% import "components/close-button.njk" as closeButton %}
 
 <!-- prettier-ignore -->
-{{ closeButton.render(href="/about#press") }}
+{{ closeButton.render("/about#press") }}
 <div
   class="grid grid-cols-layout-4 lg:grid-cols-layout-12 lg:grid-rows-auto/1fr mt-4 lg:mt-8 mb-32 lg:mb-8"
 >
@@ -43,9 +43,7 @@ title: Press
       <!-- prettier-ignore -->
       {% if pagination.href.next %}
       <li class="mr-4 text-size--1">
-        <a class="animated-link" href="{{ pagination.href.next }}">
-          Older
-        </a>
+        <a class="animated-link" href="{{ pagination.href.next }}"> Older </a>
       </li>
       <!-- prettier-ignore -->
       {% endif %}

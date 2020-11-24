@@ -42,6 +42,7 @@ module.exports = {
       white: "#FFFFFF",
       gray: "#6C6C6C",
       transparent: "transparent",
+      current: "currentColor",
     },
     extend: {
       borderRadius: { 50: "50%", oval: "70px" },
@@ -56,6 +57,7 @@ module.exports = {
         "focus-white": "0 0 0 3px rgba(256, 256, 256, 1)",
       },
       height: { 36: "9rem" },
+      spacing: { margin: "1rem", "lg/margin": "2rem" },
       gridColumn: {
         "span-margins": "1 / -1",
         "span-columns": "column 1 / margin 2",
@@ -152,7 +154,7 @@ module.exports = {
     extend: {
       display: ["open"],
       visibility: ["group-hover"],
-      margin: ["open"],
+      margin: ["open", "group-hover"],
     },
   },
   plugins: [
