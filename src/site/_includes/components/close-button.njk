@@ -3,6 +3,20 @@
 <div
   class="z-10 fixed flex justify-center lg:top-0 lg:right-0 bottom-0 lg:bottom-auto w-full lg:w-auto lg:mt-8 lg:mr-8 mb-8 lg:mb-0"
 >
+  <button
+    class="inline-block py-3 px-8 bg-black rounded-oval leading-none text-white text-size--1 uppercase"
+    onclick="javascript:history.back()"
+    >Close</a
+  >
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}
+
+<!-- prettier-ignore -->
+{% macro render2(href) %}
+<div
+  class="z-10 fixed flex justify-center lg:top-0 lg:right-0 bottom-0 lg:bottom-auto w-full lg:w-auto lg:mt-8 lg:mr-8 mb-8 lg:mb-0"
+>
   <a
     class="inline-block py-3 px-8 bg-black rounded-oval leading-none text-white text-size--1 uppercase"
     href="{{ href }}"
