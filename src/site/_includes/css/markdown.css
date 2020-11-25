@@ -35,10 +35,24 @@
   }
 
   ul,
-  ol,
-  li {
+  ol {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+  }
+
+  li > ul,
+  li > ol {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  li > p:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  li {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   ul {
