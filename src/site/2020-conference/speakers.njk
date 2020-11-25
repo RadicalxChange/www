@@ -20,7 +20,7 @@
     {% for s in allSpeakers2020 %}
     <div
       class="conference-image cursor-pointer"
-      style="background-image: linear-gradient(black, black);"
+      style="background-image: linear-gradient(black, black)"
       data-speaker-declare
       data-speaker-image="/images/speakers-2020/{{ s.picture }}"
       data-modal-trigger="bio"
@@ -47,7 +47,7 @@
 {% call modal.render('bio') %}
 <div class="speaker-bio-modal_container">
   <div
-    style="flex: 0 1 41.666667%;"
+    style="flex: 0 1 41.666667%"
     class="flex flex-col mb-base lg:mb-0 lg:mr-lg/lg"
   >
     <img class="self-center mb-base lg:mb-lg/base" data-bio-picture />
@@ -57,8 +57,8 @@
     </div>
   </div>
   <div
-    style="flex: 0 1 58.333333%;"
-    class="md-container overflow-y-auto"
+    style="flex: 0 1 58.333333%"
+    class="markdown overflow-y-auto"
     data-bio-content
   ></div>
 </div>

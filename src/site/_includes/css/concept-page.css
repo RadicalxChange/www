@@ -37,7 +37,7 @@
     @screen lg {
       @apply mx-8;
       @apply grid-cols-2;
-      @apply col-gap-8;
+      @apply gap-x-8;
       grid-template-rows: auto auto;
       @apply mb-16;
     }

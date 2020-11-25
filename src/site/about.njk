@@ -83,7 +83,7 @@ supporters:
   <div class="introduction_logo">
     <a class="inline-block" href="/">{{ logo.render() }}</a>
   </div>
-  <div class="introduction_content md-container">
+  <div class="introduction_content markdown">
     {{ introduction | markdown | safe }}
   </div>
 </main>
@@ -92,7 +92,7 @@ supporters:
     <!-- prettier-ignore -->
     {{ actionButton.render(href="/chapters", label="Join your local chapter")}}
   </div>
-  <div class="about_chapters_description md-container">
+  <div class="about_chapters_description markdown">
     {{ chaptersDescription | markdown | safe }}
   </div>
 </section>
