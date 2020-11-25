@@ -1,52 +1,44 @@
 /* Apply styles to rendered markdown */
 
-.md-container {
-  @apply text-size--1;
+.markdown {
+  @apply text-size-0;
 
-  ul,
-  ol,
-  img,
-  blockquote,
-  table,
-  p,
-  hr {
-    @apply mb-8;
-
-    &:last-child {
-      @apply mb-0;
-    }
+  > :first-child {
+    @apply mt-0;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    @apply font-normal;
-    @apply mt-2 mb-2;
+  > :last-child {
+    @apply mb-0;
+  }
 
-    &:last-child {
-      @apply mb-0;
-    }
+  img,
+  table,
+  p {
+    margin-bottom: 1.5em;
   }
 
   h1 {
-    /* @apply text-size-4; */
-    @apply uppercase;
+    @apply mb-6;
   }
 
-  h2 {
-    /* @apply text-size-3; */
-    @apply uppercase;
-  }
-
-  h3 {
-    /* @apply text-size-2; */
-    @apply uppercase;
-  }
-
+  h2,
+  h3,
   h4 {
-    /* @apply text-size-1; */
-    @apply uppercase;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+  }
+
+  h1 + h2,
+  h2 + h3,
+  h3 + h4 {
+    margin-top: 1.5em;
+  }
+
+  ul,
+  ol,
+  li {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
   }
 
   ul {
@@ -64,24 +56,22 @@
     padding-left: 0;
   }
 
-  li {
-    /* @apply mb-4; */
-    margin-bottom: 1em;
-
-    ul,
-    ol {
-      margin-top: 1em;
-
-      /* @apply mt-4; */
-    }
+  ul > li {
+    padding-left: 0.5em;
   }
 
-  img {
-    @apply border rounded;
+  ol > li {
+    padding-left: 0.5em;
   }
 
   blockquote {
-    @apply italic;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 
   table {
@@ -100,117 +90,39 @@
     }
   }
 
-  p {
+  h1 {
+    @apply font-display text-size-display;
+
+    @screen lg {
+      @apply text-size-lg/display;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply uppercase;
     @apply break-words;
   }
 
-  a:not(.animated-link) {
-    text-decoration: underline;
+  img {
+    @apply border rounded;
+  }
+
+  p {
+    @apply break-words;
   }
 
   strong {
     @apply font-medium;
   }
-}
-
-.md-sm {
-  @apply text-size--1;
-
-  ul,
-  ol,
-  img,
-  blockquote,
-  table,
-  p,
-  hr {
-    @apply mb-4;
-
-    &:last-child {
-      @apply mb-0;
-    }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    @apply font-normal;
-    @apply mt-2 mb-2;
-
-    &:last-child {
-      @apply mb-0;
-    }
-  }
-
-  h1 {
-    @apply text-size-3;
-  }
-
-  h2 {
-    @apply text-size-2;
-  }
-
-  h3 {
-    @apply text-size-1;
-  }
-
-  h4 {
-    @apply text-size-0;
-  }
-
-  ul {
-    @apply list-outside list-disc;
-    padding-left: 1.2em;
-  }
-
-  ol {
-    @apply list-outside list-decimal;
-    padding-left: 1em;
-  }
-
-  .list-aligned {
-    @apply list-inside;
-    padding-left: 0;
-  }
-
-  li {
-    @apply mb-2;
-
-    ul,
-    ol {
-      @apply mt-2;
-    }
-  }
-
-  img {
-    @apply border rounded;
-  }
-
-  blockquote {
-    @apply italic;
-  }
-
-  table {
-    @apply table-auto;
-
-    th {
-      @apply px-2 pb-2;
-    }
-
-    td {
-      @apply p-2;
-    }
-
-    td {
-      @apply border;
-    }
-  }
-
-  p {
-    @apply break-words;
-  }
 
   a:not(.animated-link) {
     text-decoration: underline;
+  }
+
+  &.markdown-sm {
+    @apply text-size--1;
   }
 }
