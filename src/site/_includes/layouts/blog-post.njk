@@ -32,17 +32,25 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
 ></div>
 <!-- prettier-ignore -->
 {{ closeButton.render() }}
-<div class="grid grid-cols-layout-4 lg:grid-cols-layout-16">
-  <main class="blog-post-main">
-    <h1 class="mt-4 mb-10 font-display text-size-8 leading-none">
-      {{ postHeader }}
-    </h1>
-    <p class="text-size--1">{{ postAuthor }}</p>
-    <p class="text-size--1">{{ date | readableDate }}</p>
-    <div class="md-container mt-8 mb-8 lg:mb-32">
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 pt-margin pb-32 lg:py-lg/margin"
+>
+  <div class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13">
+    <header>
+      <h1
+        class="font-display text-size-display lg:text-size-lg/display uppercase break-words"
+      >
+        {{ postHeader }}
+      </h1>
+      <p style="margin-top: 3em" class="text-size--1">{{ postAuthor }}</p>
+      <p style="margin-bottom: 3em" class="text-size--1">
+        {{ date | readableDate }}
+      </p>
+    </header>
+    <article class="markdown markdown-sm">
       {{ content | markdown | safe }}
-    </div>
-  </main>
+    </article>
+  </div>
 </div>
 <script>
   const $scrollIndicator = document.getElementById("scrollIndicator");

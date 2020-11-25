@@ -6,14 +6,16 @@
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/concepts") }}
 <main class="concept-page">
-  <div class="concept-page_title focus:outline-none mb-8 lg:mb-0">{{ concept.title }}</div>
-  <div
-    class="col-span-columns relative lg:col-end-gutter-7 my-8"
-  >
-    <div class="md-container mb-8 lg:mb-16">
+  <div class="concept-page_title focus:outline-none mb-8 lg:mb-0">
+    {{ concept.title }}
+  </div>
+  <div class="col-span-columns relative lg:col-end-gutter-7 my-8">
+    <div class="markdown mb-8 lg:mb-16">
       {{ concept.description | markdown | safe }}
     </div>
-    <div class="text-size-0 lg:absolute lg:pt-8 lg:bottom-0">TOOLS READINGS</div>
+    <div class="text-size-0 lg:absolute lg:pt-8 lg:bottom-0">
+      TOOLS READINGS
+    </div>
   </div>
   <div
     class="col-span-margins row-start-2 lg:col-start-column-8 lg:col-end-margin-2 lg:w-full lg:border-l"

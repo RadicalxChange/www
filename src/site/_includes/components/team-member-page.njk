@@ -23,7 +23,7 @@
     <h1 class="lg:pr-32 mb-4 lg:mb-8">
       {{ member.name }} {{ ("(" + member.title + ")") if member.title }}
     </h1>
-    <div class="md-container">
+    <div class="markdown">
       <!-- prettier-ignore -->
       {% if member.bio %}
       {{ member.bio | markdown | safe }}
