@@ -1,7 +1,7 @@
 /* Apply styles to rendered markdown */
 
 .md-container {
-  @apply text-size-0;
+  @apply text-size--1;
 
   ul,
   ol,
@@ -30,19 +30,23 @@
   }
 
   h1 {
-    @apply text-size-4;
+    /* @apply text-size-4; */
+    @apply uppercase;
   }
 
   h2 {
-    @apply text-size-3;
+    /* @apply text-size-3; */
+    @apply uppercase;
   }
 
   h3 {
-    @apply text-size-2;
+    /* @apply text-size-2; */
+    @apply uppercase;
   }
 
   h4 {
-    @apply text-size-1;
+    /* @apply text-size-1; */
+    @apply uppercase;
   }
 
   ul {
@@ -61,11 +65,14 @@
   }
 
   li {
-    @apply mb-4;
+    /* @apply mb-4; */
+    margin-bottom: 1em;
 
     ul,
     ol {
-      @apply mt-4;
+      margin-top: 1em;
+
+      /* @apply mt-4; */
     }
   }
 
@@ -99,6 +106,10 @@
 
   a:not(.animated-link) {
     text-decoration: underline;
+  }
+
+  strong {
+    @apply font-medium;
   }
 }
 
