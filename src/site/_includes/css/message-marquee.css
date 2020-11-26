@@ -1,6 +1,5 @@
 /* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
 .message-marquee {
-  position: relative;
   overflow: hidden;
   --move-initial: -25%;
   --move-final: -50%;

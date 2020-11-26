@@ -1,6 +1,8 @@
 ---
 layout: layouts/_base.njk
-introduction: |
+title: About
+headerText: About
+introductionBlurb: |
   RadicalxChange (RxC) is a global movement committed to advancing plurality, equality, community, and decentralization, through the development of upgrades to democracy, markets, property regimes, data economy, commons and collective intelligence governance.
 
   We believe in designing and discovering social organizations beyond capitalism, statism and technocracy, which can nurture the emergence of increasing returns from our complex cooperative diversity.
@@ -69,6 +71,8 @@ supporters:
 ---
 
 <!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
 {% import "components/action-button.njk" as actionButton %}
 <!-- prettier-ignore -->
 {% import "components/logo.njk" as logo %}
@@ -79,14 +83,8 @@ supporters:
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<main class="introduction">
-  <div class="introduction_logo">
-    <a class="inline-block" href="/">{{ logo.render() }}</a>
-  </div>
-  <div class="introduction_content markdown">
-    {{ introduction | markdown | safe }}
-  </div>
-</main>
+<!-- prettier-ignore -->
+{{ introduction.render(headerText, introductionBlurb) }}
 <section id="chapters" class="about_chapters">
   <div class="about_chapters_join-button">
     <!-- prettier-ignore -->
