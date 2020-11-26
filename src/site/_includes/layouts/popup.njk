@@ -7,20 +7,18 @@
 <!-- prettier-ignore -->
 {% block body %}
 <!-- prettier-ignore -->
-{{ closeButton.render() }}
-<div class="grid grid-cols-layout-4 lg:grid-cols-layout-16">
-  <div
-    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13 mt-8 mb-32 lg:mb-8"
+{{ closeButton.render(closeHref) }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 pt-margin pb-32 lg:py-lg/margin"
+>
+  <article
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13 markdown markdown-sm"
   >
-    <h1
-      class="mt-4 mb-10 font-display text-size-display lg:text-size-lg/display"
-    >
-      {{ headerText }}
-    </h1>
-    <div class="markdown">
-      {{ content | markdown | safe }}
-    </div>
-  </div>
+    <header>
+      <h1>{{ headerText }}</h1>
+    </header>
+    {{ content | markdown | safe }}
+  </article>
 </div>
 <!-- prettier-ignore -->
 {% endblock %}

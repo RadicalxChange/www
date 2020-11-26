@@ -1,7 +1,8 @@
 ---
 layout: layouts/_base.njk
 title: Events
-introduction: |
+headerText: Events
+introductionBlurb: |
   RadicalxChange hosts an annual conference and supports events organized by chapters
   and our community.
 
@@ -12,6 +13,8 @@ introduction: |
 ---
 
 <!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
@@ -20,21 +23,8 @@ introduction: |
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<main
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 grid-rows-auto/1fr min-h-screen py-8 bg-golden-fizz"
->
-  <header
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 justify-self-center lg:justify-self-start mb-8"
-  >
-    <!-- prettier-ignore -->
-    {{ logo.render() }}
-  </header>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-10 self-end markdown"
-  >
-    {{ introduction | markdown | safe }}
-  </div>
-</main>
+<!-- prettier-ignore -->
+{{ introduction.render(headerText, introductionBlurb) }}
 <section class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-8">
   <ol class="col-span-columns">
     <li class="group">

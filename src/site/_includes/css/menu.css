@@ -34,12 +34,12 @@
   @apply border-b;
 
   &:hover {
-    padding-bottom: calc(theme("spacing.4") - 3px);
-    @apply border-b-4;
+    padding-bottom: calc(theme("spacing.4") - 1px);
+    @apply border-b-2;
   }
 
   &:focus {
-    padding-bottom: calc(theme("spacing.4") - 3px);
-    @apply border-b-4;
+    padding-bottom: calc(theme("spacing.4") - 1px);
+    @apply border-b-2;
   }
 }

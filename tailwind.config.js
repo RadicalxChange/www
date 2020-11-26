@@ -13,12 +13,16 @@ module.exports = {
       "lg-tall": { raw: "(min-width: 768px) and (max-aspect-ratio: 2/1)" },
       touch: { raw: "(hover: none)" },
     },
+    lineHeight: {
+      none: "1",
+      tight: "1.25",
+    },
     fontSize: {
       "size--3": ["var(--step-type--3)", "1.34"],
-      "size--2": ["var(--step-type--2)", "1.16"],
-      "size--1": ["var(--step-type--1)", "1.16"],
-      "size-0": ["var(--step-type-0)", "1.32"],
-      "size-2": ["var(--step-type-2)", "1"],
+      "size--2": ["var(--step-type--2)", "1.34"],
+      "size--1": ["var(--step-type--1)", "1.34"],
+      "size-0": ["var(--step-type-0)", "1.34"],
+      "size-2": ["var(--step-type-2)", "1.34"],
       "size-display": ["25.28vw", "0.959"],
       "size-lg/display": ["6.81vw", "0.98"],
     },
@@ -45,12 +49,17 @@ module.exports = {
       minHeight: { tall: "50vw" },
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
-      lineHeight: { display: "0.9" },
       boxShadow: {
         "focus-white": "0 0 0 3px rgba(256, 256, 256, 1)",
       },
       height: { 36: "9rem" },
-      spacing: { margin: "1rem", "lg/margin": "2rem" },
+      spacing: {
+        margin: "1rem",
+        "lg/margin": "2rem",
+        sm: "1em",
+        md: "1.5em",
+        lg: "3em",
+      },
       gridColumn: {
         "span-margins": "1 / -1",
         "span-columns": "column 1 / margin 2",
@@ -136,6 +145,7 @@ module.exports = {
           "[margin] 2rem [column] 1fr repeat(15, [gutter] 2rem [column] 1fr) [margin] 2rem",
       },
       gridTemplateRows: {
+        "auto/auto": "auto auto",
         "auto/1fr": "auto minmax(0, 1fr)",
         "auto/auto/1fr/auto": "auto auto minmax(0, 1fr) auto",
         kiosk: "repeat(4, min-content)",

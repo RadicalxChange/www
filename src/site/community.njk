@@ -1,10 +1,13 @@
 ---
 layout: layouts/_base.njk
 title: Community
-introduction: |
+headerText: Community
+introductionBlurb: |
   RxC community is growing across the globe. Join the Chapters investigating and developing local solutions for next-gen political economies. Collaborate with researchers, activists, artists and entrepreneurs building projects that explore and implement RxC concepts. Connect with an expanding diversity of organizations upgrading our social worlds.
 ---
 
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
 <!-- prettier-ignore -->
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
@@ -14,28 +17,15 @@ introduction: |
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<main
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 grid-rows-auto/1fr min-h-screen py-8 bg-golden-fizz"
->
-  <header
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 justify-self-center lg:justify-self-start mb-8"
+<!-- prettier-ignore -->
+{% call introduction.render(headerText, introductionBlurb) %}
+<div>
+  <a href="/chapters" class="animated-link uppercase"
+    >Get involved with your local chapter</a
   >
-    <!-- prettier-ignore -->
-    {{ logo.render() }}
-  </header>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-10 self-end"
-  >
-    <div class="markdown mb-8">
-      {{ introduction | markdown | safe }}
-    </div>
-    <div>
-      <a href="/chapters" class="animated-link uppercase"
-        >Get involved with your local chapter</a
-      >
-    </div>
-  </div>
-</main>
+</div>
+<!-- prettier-ignore -->
+{% endcall %}
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>

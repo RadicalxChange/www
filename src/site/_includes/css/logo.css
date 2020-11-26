@@ -2,7 +2,7 @@
   width: 91.67vw; /* calculated from Figma <logo-width> / <screen-width> */
 
   @screen lg {
-    width: 39.31vw; /* calculated from Figma <logo-width> / <screen-width> */
+    width: 33.19vw; /* calculated from Figma <logo-width> / <screen-width> */
   }
 }
 

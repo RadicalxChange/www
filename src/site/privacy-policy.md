@@ -2,6 +2,7 @@
 layout: layouts/popup.njk
 title: Privacy Policy
 headerText: RxC Privacy Policy
+closeHref: "/"
 ---
 
 ## Definitions
@@ -65,17 +66,17 @@ In certain circumstances, you have the following data protection rights:
 
 ## What personal data we collect and why
 
-#### Contact forms
+### Contact forms
 
 If you would like to get involved as a volunteer, we ask for your information so we can work with you to find an appropriate way or you to contribute to our growing movement.
 
 If you would like to receive our newsletter, your information goes through MailChimp, which is the Data Processor for that activity.
 
-#### Analytics
+### Analytics
 
 We use [Fathom Analytics](https://usefathom.com/) to anonymously track site usage. We cannot track the activity of any single user. We only use collected data to prioritize improvements to our site.
 
-#### Embedded content from other websites
+### Embedded content from other websites
 
 Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.
 
