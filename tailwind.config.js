@@ -46,7 +46,7 @@ module.exports = {
       borderWidth: { 3: "3px" },
       transitionProperty: { right: "right", "margin-left": "margin-left" },
       inset: { full: "100%", "1/4": "25%", "1/2": "50%" },
-      minHeight: { tall: "50vw" },
+      minHeight: { tall: "50vw", "line-2": "2.68em" },
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
       boxShadow: {
@@ -56,9 +56,10 @@ module.exports = {
       spacing: {
         margin: "1rem",
         "lg/margin": "2rem",
-        sm: "1em",
-        md: "1.5em",
-        lg: "3em",
+        "line-1": "1.34em",
+        "line-3/2": "2.01em",
+        "line-2": "2.68em",
+        "line-3": "4.02em",
       },
       gridColumn: {
         "span-margins": "1 / -1",

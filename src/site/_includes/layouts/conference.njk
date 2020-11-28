@@ -8,11 +8,15 @@
 {% block body %}
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/events") }}
-<main class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-8">
+<main
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin"
+>
   <header
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-14 justify-self-center lg:justify-self-start mb-4"
   >
-    <h1 class="font-display text-size-display lg:text-size-lg/display">
+    <h1
+      class="font-display text-size-display lg:text-size-lg/display text-center lg:text-left uppercase"
+    >
       {{ headerText }}
     </h1>
   </header>
@@ -28,27 +32,27 @@
       <li id="v{{ v.videoId }}">
         <a
           href="#v{{ v.videoId }}"
-          class="grid grid-cols-4 lg:grid-cols-16 items-baseline gap-x-8 py-8 border-b"
+          class="group grid grid-cols-4 lg:grid-cols-16 items-baseline gap-x-8 py-8 border-b"
         >
-          <div
-            class="hidden open:block col-start-1 col-span-4 lg:col-span-16 mb-4"
-          >
-            <div data-youtube-container class="events_youtube-container"></div>
-          </div>
           <h3
-            class="col-start-1 col-span-4 lg:col-span-8 text-size--1 uppercase mb-2 open:mb-0"
+            class="col-start-1 col-span-4 lg:col-span-8 text-size--1 uppercase group-hover:underline mb-2 lg:mb-0"
           >
             {{ v.title }}
           </h3>
           <p
-            class="block open:hidden col-start-1 lg:col-start-9 col-span-4 lg:col-span-8"
+            class="col-start-1 lg:col-start-9 col-span-4 lg:col-span-8 min-h-line-2"
           >
             {{ v.speakers }}
           </p>
+          <div
+            class="hidden open:block col-start-1 col-span-4 lg:col-span-16 mt-4 mb-8"
+          >
+            <div data-youtube-container class="events_youtube-container"></div>
+          </div>
           <!-- prettier-ignore -->
           {% if v.description %}}
           <p
-            class="hidden open:block col-start-1 col-span-4 lg:col-span-12 mt-4 text-size--1"
+            class="hidden open:block col-start-1 col-span-4 lg:col-span-12 text-size--1"
           >
             {{ v.description | escape | nl2br }}
           </p>
