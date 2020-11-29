@@ -85,13 +85,18 @@ supporters:
 {{ menu.render() }}
 <!-- prettier-ignore -->
 {{ introduction.render(headerText, introductionBlurb) }}
-<section id="chapters" class="about_chapters">
-  <div class="about_chapters_join-button">
+<section
+  id="chapters"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mt-16 lg:mt-lg/margin mb-12"
+>
+  <div
+    class="markdown col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-4 lg:mb-0"
+  >
+    {{ chaptersDescription | markdown | safe }}
+  </div>
+  <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
     <!-- prettier-ignore -->
     {{ actionButton.render(href="/chapters", label="Join your local chapter")}}
-  </div>
-  <div class="about_chapters_description markdown">
-    {{ chaptersDescription | markdown | safe }}
   </div>
 </section>
 <section id="team" class="about_team">
@@ -131,7 +136,7 @@ supporters:
       <!-- prettier-ignore -->
       {% endfor %}
     </ul>
-    <div class="md-sm pt-2">
+    <div class="markdown markdown-sm pt-2">
       {{ aboutBlurb | markdown | safe }}
     </div>
   </div>
