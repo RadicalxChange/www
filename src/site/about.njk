@@ -145,10 +145,7 @@ supporters:
     </div>
   </div>
 </section>
-<section
-  id="press"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-12"
->
+<section id="press" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4">
   <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-2">
     <h2 class="h-8 lg:h-12">Press</h2>
   </div>
@@ -158,7 +155,7 @@ supporters:
   >
     <!-- prettier-ignore -->
     {% for article in press | slice(0, 43) %}
-    <li class="group relative">
+    <li class="about_press-link group relative">
       <a class="block text-size--2" href="{{ article.href }}"
         ><p>
           <span class="hover:underline">{{ article.publication }}</span>
@@ -179,21 +176,19 @@ supporters:
   </ul>
   <div class="col-span-columns border-b"></div>
 </section>
-<section id="supporters" class="about_support">
-  <div class="about_support_hr"></div>
-  <div class="about_support_title">
+<section
+  id="supporters"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-16 lg:mb-lg/margin"
+>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3">
     <h2>Supported by</h2>
   </div>
-  <ul class="about_support_supporters">
-    <!-- prettier-ignore -->
-    {% for supporter in supporters %}
+  <ul class="col-span-columns lg:col-start-column-4 lg:col-end-margin-2">
+    {%- for supporter in supporters -%}
     <li class="comma-separated">
-      <a class="see-more-link" href="{{ supporter.href }}">{{
-        supporter.name
-      }}</a>
+      <a href="{{ supporter.href }}">{{ supporter.name }}</a>
     </li>
-    <!-- prettier-ignore -->
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </section>
 <!-- prettier-ignore -->
