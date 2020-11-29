@@ -156,7 +156,7 @@ module.exports = {
   variants: {
     borderWidth: ["responsive", "hover", "focus"],
     extend: {
-      display: ["open"],
+      display: ["open", "group-hover"],
       visibility: ["group-hover"],
       margin: ["open", "group-hover"],
     },

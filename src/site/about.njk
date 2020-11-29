@@ -99,8 +99,10 @@ supporters:
     {{ actionButton.render(href="/chapters", label="Join your local chapter")}}
   </div>
 </section>
-<section id="team" class="about_team">
-  <div class="about_team_the-team">
+<section id="team" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-12">
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8 lg:mb-0 order-last lg:order-none"
+  >
     <h2 class="h-8 lg:h-12 border-b">Team members</h2>
     <table class="block">
       <tbody class="block">
@@ -123,7 +125,9 @@ supporters:
       </tbody>
     </table>
   </div>
-  <div class="about_team_the-board">
+  <div
+    class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 order-last lg:order-none"
+  >
     <h2 class="h-8 lg:h-12 border-b">Board members</h2>
     <ul class="lg:h-36 py-2 border-b">
       <!-- prettier-ignore -->
@@ -141,23 +145,30 @@ supporters:
     </div>
   </div>
 </section>
-<section id="press" class="about_press">
-  <div class="about_press_title">
+<section
+  id="press"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-12"
+>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-2">
     <h2 class="h-8 lg:h-12">Press</h2>
   </div>
-  <div class="about_press_hr"></div>
-  <ul class="about_press_links">
+  <div class="col-span-columns border-b"></div>
+  <ul
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-11 grid grid-cols-2 lg:grid-cols-4 grid-rows-10 lg:grid-rows-11 gap-x-4 gap-y-4 lg:gap-y-8 justify-items-start my-4"
+  >
     <!-- prettier-ignore -->
     {% for article in press | slice(0, 43) %}
-    <li class="press_link">
-      <a class="block" href="{{ article.href }}"
-        ><p class="text-size--2">
-          <span class="inline-link">{{ article.publication }}</span>
+    <li class="group relative">
+      <a class="block text-size--2" href="{{ article.href }}"
+        ><p>
+          <span class="hover:underline">{{ article.publication }}</span>
         </p>
-        <p class="text-size--2">{{ article.date | readableDate }}</p></a
+        <p>{{ article.date | readableDate }}</p></a
       >
-      <div class="press_link-details">
-        <p class="text-white text-size--3">{{ article.title }}</p>
+      <div
+        class="z-10 absolute top-1/2 left-1/4 hidden group-hover:block w-max max-w-xs p-2 bg-light-black text-white text-size--3"
+      >
+        <span>{{ article.title }}</span>
       </div>
     </li>
     <!-- prettier-ignore -->
@@ -166,6 +177,7 @@ supporters:
       <a href="/press" class="inline-link">See all press...</a>
     </li>
   </ul>
+  <div class="col-span-columns border-b"></div>
 </section>
 <section id="supporters" class="about_support">
   <div class="about_support_hr"></div>

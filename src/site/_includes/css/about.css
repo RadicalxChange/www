@@ -184,7 +184,7 @@
   }
 }
 
-.press_link {
+/* .press_link {
   @apply relative;
 }
 
@@ -202,9 +202,9 @@
 .press_link:hover .press_link-details {
   @apply block;
   @apply opacity-100;
-}
+} */
 
-.press_link:nth-child(n + 20) {
+.about_press-link:nth-child(n + 20) {
   @apply hidden;
 
   @screen lg {
@@ -212,6 +212,6 @@
   }
 }
 
-.press_link:last-child {
+/* .press_link:last-child {
   @apply block;
-}
+} */
