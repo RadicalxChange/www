@@ -1,7 +1,10 @@
 .comma-separated {
   @apply inline;
 
-  &:not(:last-child):after {
-    content: ", ";
+  &:not(:last-child) {
+    span:after,
+    a:after {
+      content: ", ";
+    }
   }
 }
