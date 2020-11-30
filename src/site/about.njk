@@ -85,18 +85,25 @@ supporters:
 {{ menu.render() }}
 <!-- prettier-ignore -->
 {{ introduction.render(headerText, introductionBlurb) }}
-<section id="chapters" class="about_chapters">
-  <div class="about_chapters_join-button">
+<section
+  id="chapters"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mt-16 lg:mt-lg/margin mb-12"
+>
+  <div
+    class="markdown col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-4 lg:mb-0"
+  >
+    {{ chaptersDescription | markdown | safe }}
+  </div>
+  <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
     <!-- prettier-ignore -->
     {{ actionButton.render(href="/chapters", label="Join your local chapter")}}
   </div>
-  <div class="about_chapters_description markdown">
-    {{ chaptersDescription | markdown | safe }}
-  </div>
 </section>
-<section id="team" class="about_team">
-  <div class="about_team_the-team">
-    <h2 class="h-8 lg:h-12 border-b">Team members</h2>
+<section id="team" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-12">
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8 lg:mb-0 order-last lg:order-none"
+  >
+    <h2 class="pb-4 border-b">Team members</h2>
     <table class="block">
       <tbody class="block">
         <!-- prettier-ignore -->
@@ -118,8 +125,10 @@ supporters:
       </tbody>
     </table>
   </div>
-  <div class="about_team_the-board">
-    <h2 class="h-8 lg:h-12 border-b">Board members</h2>
+  <div
+    class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 order-last lg:order-none"
+  >
+    <h2 class="pb-4 border-b">Board members</h2>
     <ul class="lg:h-36 py-2 border-b">
       <!-- prettier-ignore -->
       {% for member in board %}
@@ -131,28 +140,31 @@ supporters:
       <!-- prettier-ignore -->
       {% endfor %}
     </ul>
-    <div class="md-sm pt-2">
+    <div class="markdown markdown-sm pt-2">
       {{ aboutBlurb | markdown | safe }}
     </div>
   </div>
 </section>
-<section id="press" class="about_press">
-  <div class="about_press_title">
-    <h2 class="h-8 lg:h-12">Press</h2>
+<section id="press" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4">
+  <div class="col-span-columns">
+    <h2 class="pb-4 border-b">Press</h2>
   </div>
-  <div class="about_press_hr"></div>
-  <ul class="about_press_links">
+  <ul
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-11 grid grid-cols-2 lg:grid-cols-4 grid-rows-10 lg:grid-rows-11 gap-x-4 gap-y-4 lg:gap-y-8 justify-items-start my-4"
+  >
     <!-- prettier-ignore -->
     {% for article in press | slice(0, 43) %}
-    <li class="press_link">
-      <a class="block" href="{{ article.href }}"
-        ><p class="text-size--2">
-          <span class="inline-link">{{ article.publication }}</span>
+    <li class="about_press-link group relative">
+      <a class="block text-size--2" href="{{ article.href }}"
+        ><p>
+          <span class="hover:underline">{{ article.publication }}</span>
         </p>
-        <p class="text-size--2">{{ article.date | readableDate }}</p></a
+        <p>{{ article.date | readableDate }}</p></a
       >
-      <div class="press_link-details">
-        <p class="text-white text-size--3">{{ article.title }}</p>
+      <div
+        class="z-10 absolute top-1/2 left-1/4 hidden group-hover:block w-max max-w-xs p-2 bg-light-black text-white text-size--3"
+      >
+        <span>{{ article.title }}</span>
       </div>
     </li>
     <!-- prettier-ignore -->
@@ -161,22 +173,23 @@ supporters:
       <a href="/press" class="inline-link">See all press...</a>
     </li>
   </ul>
+  <div class="col-span-columns border-b"></div>
 </section>
-<section id="supporters" class="about_support">
-  <div class="about_support_hr"></div>
-  <div class="about_support_title">
+<section
+  id="supporters"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-16 lg:mb-32"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3 mb-4 lg:mb-0"
+  >
     <h2>Supported by</h2>
   </div>
-  <ul class="about_support_supporters">
-    <!-- prettier-ignore -->
-    {% for supporter in supporters %}
+  <ul class="col-span-columns lg:col-start-column-4 lg:col-end-margin-2">
+    {%- for supporter in supporters -%}
     <li class="comma-separated">
-      <a class="see-more-link" href="{{ supporter.href }}">{{
-        supporter.name
-      }}</a>
+      <a href="{{ supporter.href }}">{{ supporter.name }}</a>
     </li>
-    <!-- prettier-ignore -->
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </section>
 <!-- prettier-ignore -->
