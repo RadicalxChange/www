@@ -1,55 +1,14 @@
-.concepts {
-  @apply relative;
-  @apply grid;
-  @apply grid-cols-4;
-  grid-template-rows: auto 1fr;
-  @apply min-h-screen;
-  @apply bg-golden-fizz;
+.concepts_item-bottom {
+  @apply pb-4;
+  @apply border-b;
 
-  @screen lg {
-    @apply grid-cols-12;
+  &:hover {
+    padding-bottom: calc(theme("spacing.4") - 1px);
+    @apply border-b-2;
   }
 
-  &_logo {
-    grid-column: column 1 / margin 2;
-    grid-row: 1 / span 1;
-    @apply w-full;
-    @apply block;
-    @apply mt-4;
-    @apply border-b;
-    justify-self: center;
-
-    @screen lg {
-      justify-self: start;
-    }
-  }
-
-  &_list {
-    grid-column: column 1 / margin 2;
-    grid-row: 2 / span 1;
-
-    @screen lg {
-    }
-
-    &_item {
-      text-align: center;
-      @apply leading-none;
-      @apply border-b;
-      @apply py-2;
-
-      @screen lg {
-        text-align: start;
-      }
-
-      &:hover {
-        padding-bottom: calc(theme("spacing.4") - 3px);
-        @apply border-b-4;
-      }
-
-      &:focus {
-        padding-bottom: calc(theme("spacing.4") - 3px);
-        @apply border-b-4;
-      }
-    }
+  &:focus {
+    padding-bottom: calc(theme("spacing.4") - 1px);
+    @apply border-b-2;
   }
 }

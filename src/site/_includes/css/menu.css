@@ -29,7 +29,7 @@
   }
 }
 
-.menu-item_bottom {
+.menu_item-bottom {
   @apply pb-4;
   @apply border-b;
 

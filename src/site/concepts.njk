@@ -1,5 +1,6 @@
 ---
 layout: layouts/_base.njk
+title: Concepts
 ---
 
 <!-- prettier-ignore -->
@@ -11,16 +12,24 @@ layout: layouts/_base.njk
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<main class="concepts">
-  <div class="concepts_logo">
-    <a class="inline-block" href="/">{{ logo.render() }}</a>
-  </div>
-  <ul class="concepts_list">
+<section
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start min-h-screen bg-golden-fizz pt-margin lg:pt-lg/margin"
+>
+  <header
+    class="col-span-columns flex justify-center lg:justify-start pb-4 border-b"
+  >
+    <h1
+      class="font-display text-size-display lg:text-size-lg/display uppercase"
+    >
+      Concepts
+    </h1>
+  </header>
+  <ul class="col-span-columns">
     <!-- prettier-ignore -->
     {% for concept in concepts %}
-    <li class="concepts_list_item">
+    <li>
       <a
-        class="font-display text-size-display lg:text-size-lg/display uppercase"
+        class="block pt-4 concepts_item-bottom font-display text-size-display lg:text-size-lg/display uppercase break-words text-center lg:text-left"
         href="/concepts/{{ concept.slug }}"
         >{{ concept.title }}</a
       >
@@ -28,7 +37,7 @@ layout: layouts/_base.njk
     <!-- prettier-ignore -->
     {% endfor %}
   </ul>
-</main>
+</section>
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>
