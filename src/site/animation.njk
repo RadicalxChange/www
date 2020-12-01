@@ -1,0 +1,81 @@
+---
+layout: layouts/_base.njk
+---
+
+<div
+  style="width: 50vw; height: 50vw; margin: 256px auto; background-color: black"
+>
+  <canvas id="flag" style="width: 100%"></canvas>
+</div>
+
+<script>
+  // Inspired by https://codepad.co/snippet/html-canvas-flag-wave
+  const Flag = function ($canvas) {
+    this.$canvas = $canvas;
+  };
+
+  Flag.prototype.draw = function () {
+    const width = this.$canvas.width;
+    const height = width / 1.9 + 160;
+    this.$canvas.height = height;
+
+    // const c = (7 * height) / 13;
+    // const d = 0.76 * height;
+    // const e = 0.054 * height;
+    // const g = 0.063 * height;
+    // const k = 0.0616 * height;
+    // const l = height / 13;
+
+    const ctx = this.$canvas.getContext("2d");
+
+    // Stripes
+    ctx.fillStyle = "#118806";
+    ctx.fillRect(5, 25, 300, 50);
+    ctx.fillStyle = "#118806";
+    ctx.fillRect(5, 75, 300, 50);
+    ctx.fillStyle = "#118806";
+    ctx.fillRect(5, 125, 300, 50);
+  };
+
+  Flag.prototype.wave = function (
+    wavelength = this.$canvas.width / 10,
+    amplitude = 10,
+    period = 200,
+    shading = 100,
+    squeeze = 0
+  ) {
+    const fps = 30;
+    const ctx = this.$canvas.getContext("2d");
+    const w = this.$canvas.width;
+    const h = this.$canvas.height;
+    const od = ctx.getImageData(0, 0, w, h).data;
+    return setInterval(function () {
+      const id = ctx.getImageData(0, 0, w, h);
+      const d = id.data;
+      const now = new Date() / period;
+      for (let y = 0; y < h; ++y) {
+        let lastO = 0;
+        let shade = 0;
+        const sq = (y - h / 2) * squeeze;
+        for (let x = 0; x < w; ++x) {
+          const px = (y * w + x) * 4;
+          const pct = x / w;
+          const o = Math.sin(x / wavelength - now) * amplitude * pct;
+          const y2 = (y + (o + sq * pct)) << 0;
+          const opx = (y2 * w + x) * 4;
+          shade = (o - lastO) * shading;
+          d[px] = od[opx] + shade;
+          d[px + 1] = od[opx + 1] + shade;
+          d[px + 2] = od[opx + 2] + shade;
+          d[px + 3] = od[opx + 3];
+          lastO = o;
+        }
+      }
+      ctx.putImageData(id, 0, 0);
+    }, 1000 / fps);
+  };
+
+  const flag = new Flag(document.getElementById("flag"));
+  flag.draw(320, 0, 80);
+  flag.wave(20, 10, 150, 200, -0.1);
+</script>
