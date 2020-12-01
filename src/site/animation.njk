@@ -2,10 +2,152 @@
 layout: layouts/_base.njk
 ---
 
+<!-- prettier-ignore -->
+{% macro circle(id) %}
+<div id="{{ id }}" style="flex: auto; margin-right: 1rem">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+    <circle
+      cx="50"
+      cy="50"
+      r="48"
+      stroke-width="2"
+      stroke="black"
+      fill="none"
+    />
+  </svg>
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}
+
 <div
-  style="width: 50vw; height: 50vw; margin: 256px auto; background-color: black"
+  style="
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    margin: 128px auto;
+    border: 1px solid black;
+  "
 >
-  <canvas id="flag" style="width: 100%"></canvas>
+  <div
+    style="
+      position: absolute;
+      bottom: 43%;
+      left: 7%;
+      width: 25%;
+      height: 25%;
+      border-left: 5px solid black;
+      transform: rotate(-8deg);
+    "
+  >
+    <canvas
+      id="flag1"
+      style="width: 100%; margin-top: -8%; margin-left: -2%"
+    ></canvas>
+    <div
+      id="vote1"
+      style="position: absolute; width: 160%; top: -29%; left: -33%"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        viewBox="0 0 100 100"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="48"
+          stroke-width="2"
+          stroke="black"
+          fill="none"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    style="
+      position: absolute;
+      bottom: 60%;
+      left: 41%;
+      width: 25%;
+      height: 25%;
+      border-left: 5px solid black;
+      transform: rotate(-8deg);
+    "
+  >
+    <canvas
+      id="flag2"
+      style="width: 100%; margin-top: -8%; margin-left: -2%"
+    ></canvas>
+    <div
+      id="vote2"
+      style="position: absolute; width: 160%; top: -29%; left: -33%"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        viewBox="0 0 100 100"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="48"
+          stroke-width="2"
+          stroke="black"
+          fill="none"
+        />
+      </svg>
+    </div>
+    <div
+      id="vote3"
+      style="position: absolute; width: 180%; top: -39%; left: -43%"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        viewBox="0 0 100 100"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="48"
+          stroke-width="2"
+          stroke="black"
+          fill="none"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    style="
+      position: absolute;
+      bottom: 43%;
+      left: 73%;
+      width: 25%;
+      height: 25%;
+      border-left: 5px solid black;
+      transform: rotate(-8deg);
+    "
+  >
+    <canvas
+      id="flag3"
+      style="width: 100%; margin-top: -8%; margin-left: -2%"
+    ></canvas>
+  </div>
+  <div
+    style="
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      padding-left: 1rem;
+    "
+  >
+    <!-- prettier-ignore -->
+    {% for i in range(0, 10) %}
+    {{ circle("circle" + i) }}
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </div>
 </div>
 
 <script>
@@ -16,7 +158,7 @@ layout: layouts/_base.njk
 
   Flag.prototype.draw = function () {
     const width = this.$canvas.width;
-    const height = width / 1.9 + 160;
+    const height = width / 1.5;
     this.$canvas.height = height;
 
     // const c = (7 * height) / 13;
@@ -75,7 +217,15 @@ layout: layouts/_base.njk
     }, 1000 / fps);
   };
 
-  const flag = new Flag(document.getElementById("flag"));
-  flag.draw(320, 0, 80);
-  flag.wave(20, 10, 150, 200, -0.1);
+  const flag1 = new Flag(document.getElementById("flag1"));
+  flag1.draw();
+  flag1.wave(20, 10, 150, 200, -0.1);
+
+  const flag2 = new Flag(document.getElementById("flag2"));
+  flag2.draw();
+  flag2.wave(20, 10, 150, 200, -0.1);
+
+  const flag3 = new Flag(document.getElementById("flag3"));
+  flag3.draw();
+  flag3.wave(20, 10, 150, 200, -0.1);
 </script>
