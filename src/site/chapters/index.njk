@@ -26,7 +26,7 @@ title: Chapters
     class="chapters_list col-span-columns lg:col-start-column-3 lg:col-end-gutter-10 flex flex-col lg:flex-wrap lg:justify-start lg:content-start"
   >
     <!-- prettier-ignore -->
-    {% for key, chapters in collections.groupedChapters %}
+    {% for key, chapters in chapters %}
     <div class="lg:w-1/4 pb-4 lg:pr-8">
       <h4 class="border-b text-size--2 uppercase">{{ key }}</h4>
       <ul>
@@ -34,18 +34,18 @@ title: Chapters
         {% for chapter in chapters %}
         <!-- prettier-ignore -->
         {% set mailtoChapter %}mailto:chapters@radicalxchange.org?subject=Interested%20in%20the%20{{
-          chapter.data.headerText | urlencode
+          chapter.headerText | urlencode
         }}%20Chapter&body=Hello!%20I'm%20interested%20in%20joining%20the%20RadicalxChange%20{{
-          chapter.data.headerText | urlencode
+          chapter.headerText | urlencode
         }}%20chapter.%20Can%20you%20put%20me%20in%20contact%20with%20their%20organizers%3F%0D%0A%0D%0AThank%20you!{%
         endset %}
         <!-- prettier-ignore -->
         <li class="my-1 text-size--2">
           <a
-            href="{{ chapter.data.meetupUrl | defaultHref(mailtoChapter) }}"
-            target="{{ '_self' if chapter.data.meetupUrl !== '#' else '_blank' }}"
+            href="{{ chapter.meetupUrl | defaultHref(mailtoChapter) }}"
+            target="{{ '_self' if chapter.meetupUrl !== '#' else '_blank' }}"
           >
-            {{ chapter.data.headerText }}</a
+            {{ chapter.headerText }}</a
           >
         </li>
         <!-- prettier-ignore -->
