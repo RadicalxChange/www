@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-05-31T19:04:50"
 title: "GitxChange: Build the Roots of Cooperative Plurality"

@@ -73,7 +73,7 @@ module.exports = function (config) {
 
   config.addCollection("kioskCommunity", (collectionApi) => {
     return collectionApi
-      .getFilteredByTag("blog")
+      .getFilteredByTag("kiosk")
       .filter(
         (item) =>
           item.data.series && item.data.series.includes("RxC Community Calls")
@@ -82,7 +82,7 @@ module.exports = function (config) {
 
   config.addCollection("kioskFundamentals", (collectionApi) => {
     return collectionApi
-      .getFilteredByTag("blog")
+      .getFilteredByTag("kiosk")
       .filter(
         (item) =>
           item.data.series && item.data.series.includes("RxC Fundamentals")

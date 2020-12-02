@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-04-15T04:01:30"
 title: "Between Abundance and Scarcity"

@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-11-05"
 title: "Solving the Social Dilemma"

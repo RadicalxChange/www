@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-03-31T00:21:33"
 title: "World-Centric Blockchain Games as Playgrounds for Radical Markets"

@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-06-24T21:19:56"
 title: "Energized by the RxC Conference? Here’s How to Keep the Momentum Going"

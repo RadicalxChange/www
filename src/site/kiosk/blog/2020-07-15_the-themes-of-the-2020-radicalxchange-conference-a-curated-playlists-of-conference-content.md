@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-07-15T15:44:57"
 title: "The Themes of the 2020 RadicalxChange Conference: A Curated Playlists of Conference Content"
