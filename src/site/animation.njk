@@ -3,17 +3,40 @@ layout: layouts/_base.njk
 ---
 
 <!-- prettier-ignore -->
+{% macro vote(id) %}
+<svg
+  id="{{ id }}"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  viewBox="0 0 100 100"
+>
+  <path
+    stroke-width="2"
+    stroke="black"
+    fill="none"
+    d="M2,50A48,48 0,1,1 98,50A48,48 0,1,1 2,50"
+  ></path>
+</svg>
+<!-- prettier-ignore -->
+{% endmacro %}
+
+<!-- prettier-ignore -->
 {% macro circle(id) %}
-<div style="flex: auto; margin-right: 1rem">
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+<div style="flex: auto; margin-right: 2%">
+  <svg
+    id="{{ id }}"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    viewBox="0 0 100 100"
+    class="circle-thing"
+  >
     <circle
-      id="{{ id }}"
       cx="50"
       cy="50"
       r="48"
       stroke-width="2"
       stroke="black"
-      fill="none"
+      fill="black"
     />
   </svg>
 </div>
@@ -44,30 +67,8 @@ layout: layouts/_base.njk
       id="flag1"
       style="width: 100%; margin-top: -8%; margin-left: -2%"
     ></canvas>
-    <div
-      id="vote1"
-      style="
-        position: absolute;
-        display: none;
-        width: 160%;
-        top: -29%;
-        left: -33%;
-      "
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        viewBox="0 0 100 100"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="48"
-          stroke-width="2"
-          stroke="black"
-          fill="none"
-        />
-      </svg>
+    <div style="position: absolute; width: 160%; top: -29%; left: -33%">
+      {{ vote("vote1") }}
     </div>
   </div>
   <div
@@ -85,80 +86,14 @@ layout: layouts/_base.njk
       id="flag2"
       style="width: 100%; margin-top: -8%; margin-left: -2%"
     ></canvas>
-    <div
-      id="vote2"
-      style="
-        position: absolute;
-        display: none;
-        width: 160%;
-        top: -29%;
-        left: -33%;
-      "
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        viewBox="0 0 100 100"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="48"
-          stroke-width="2"
-          stroke="black"
-          fill="none"
-        />
-      </svg>
+    <div style="position: absolute; width: 160%; top: -29%; left: -33%">
+      {{ vote("vote2") }}
     </div>
-    <div
-      id="vote3"
-      style="
-        position: absolute;
-        display: none;
-        width: 180%;
-        top: -39%;
-        left: -43%;
-      "
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        viewBox="0 0 100 100"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="48"
-          stroke-width="2"
-          stroke="black"
-          fill="none"
-        />
-      </svg>
+    <div style="position: absolute; width: 180%; top: -39%; left: -43%">
+      {{ vote("vote3") }}
     </div>
-    <div
-      id="vote4"
-      style="
-        position: absolute;
-        display: none;
-        width: 200%;
-        top: -49%;
-        left: -53%;
-      "
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        viewBox="0 0 100 100"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="48"
-          stroke-width="2"
-          stroke="black"
-          fill="none"
-        />
-      </svg>
+    <div style="position: absolute; width: 200%; top: -49%; left: -53%">
+      {{ vote("vote4") }}
     </div>
   </div>
   <div
@@ -184,7 +119,7 @@ layout: layouts/_base.njk
       bottom: 25%;
       display: flex;
       width: 100%;
-      padding-left: 1rem;
+      padding-left: 2%;
     "
   >
     <!-- prettier-ignore -->
@@ -195,10 +130,12 @@ layout: layouts/_base.njk
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 <script>
   // Inspired by https://codepad.co/snippet/html-canvas-flag-wave
-  const Flag = function ($canvas) {
+  const Flag = function ($canvas, decorateFlagFn) {
     this.$canvas = $canvas;
+    this.decorateFlagFn = decorateFlagFn;
   };
 
   Flag.prototype.draw = function () {
@@ -214,14 +151,7 @@ layout: layouts/_base.njk
     // const l = height / 13;
 
     const ctx = this.$canvas.getContext("2d");
-
-    // Stripes
-    ctx.fillStyle = "#118806";
-    ctx.fillRect(5, 25, 300, 50);
-    ctx.fillStyle = "#118806";
-    ctx.fillRect(5, 75, 300, 50);
-    ctx.fillStyle = "#118806";
-    ctx.fillRect(5, 125, 300, 50);
+    this.decorateFlagFn(ctx);
   };
 
   Flag.prototype.wave = function (
@@ -262,22 +192,39 @@ layout: layouts/_base.njk
     }, 1000 / fps);
   };
 
-  const flag1 = new Flag(document.getElementById("flag1"));
+  const flag1 = new Flag(document.getElementById("flag1"), (ctx) => {
+    ctx.fillStyle = "#868686";
+    ctx.fillRect(5, 25, 150, 150);
+    ctx.fillStyle = "#414141";
+    ctx.fillRect(155, 25, 150, 150);
+  });
   flag1.draw();
   flag1.wave(20, 10, 150, 200, -0.1);
 
-  const flag2 = new Flag(document.getElementById("flag2"));
+  const flag2 = new Flag(document.getElementById("flag2"), (ctx) => {
+    ctx.fillStyle = "#010101";
+    ctx.fillRect(5, 25, 300, 50);
+    ctx.fillStyle = "#F0F0F0";
+    ctx.fillRect(5, 75, 300, 50);
+    ctx.fillStyle = "#010101";
+    ctx.fillRect(5, 125, 300, 50);
+  });
   flag2.draw();
   flag2.wave(20, 10, 150, 200, -0.1);
 
-  const flag3 = new Flag(document.getElementById("flag3"));
+  const flag3 = new Flag(document.getElementById("flag3"), (ctx) => {
+    ctx.fillStyle = "#919191";
+    ctx.fillRect(5, 25, 300, 150);
+    ctx.fillStyle = "#010101";
+    ctx.fillRect(125, 85, 60, 30);
+  });
   flag3.draw();
   flag3.wave(20, 10, 150, 200, -0.1);
 
-  const $vote1 = document.getElementById("vote1");
-  const $vote2 = document.getElementById("vote2");
-  const $vote3 = document.getElementById("vote3");
-  const $vote4 = document.getElementById("vote4");
+  const vote1 = new Vivus("vote1", { start: "manual", duration: 25 });
+  const vote2 = new Vivus("vote2", { start: "manual", duration: 25 });
+  const vote3 = new Vivus("vote3", { start: "manual", duration: 25 });
+  const vote4 = new Vivus("vote4", { start: "manual", duration: 25 });
   const $circle0 = document.getElementById("circle0");
   const $circle1 = document.getElementById("circle1");
   const $circle2 = document.getElementById("circle2");
@@ -298,49 +245,49 @@ layout: layouts/_base.njk
         break;
       case 1:
         {
-          $vote1.style.display = "block";
-          $circle0.setAttribute("fill", "black");
+          vote1.play();
+          $circle0.classList.add("circle-thing-filled");
         }
         break;
       case 2:
         {
-          $vote2.style.display = "block";
-          $vote3.style.display = "block";
-          $circle1.setAttribute("fill", "black");
-          $circle2.setAttribute("fill", "black");
-          $circle3.setAttribute("fill", "black");
-          $circle4.setAttribute("fill", "black");
+          vote2.play();
+          vote3.play();
+          $circle1.classList.add("circle-thing-filled");
+          $circle2.classList.add("circle-thing-filled");
+          $circle3.classList.add("circle-thing-filled");
+          $circle4.classList.add("circle-thing-filled");
         }
         break;
       case 3:
         {
-          $vote4.style.display = "block";
-          $circle5.setAttribute("fill", "black");
-          $circle6.setAttribute("fill", "black");
-          $circle7.setAttribute("fill", "black");
-          $circle8.setAttribute("fill", "black");
-          $circle9.setAttribute("fill", "black");
+          vote4.play();
+          $circle5.classList.add("circle-thing-filled");
+          $circle6.classList.add("circle-thing-filled");
+          $circle7.classList.add("circle-thing-filled");
+          $circle8.classList.add("circle-thing-filled");
+          $circle9.classList.add("circle-thing-filled");
         }
         break;
       case 4:
         {
-          $vote1.style.display = "none";
-          $vote2.style.display = "none";
-          $vote3.style.display = "none";
-          $vote4.style.display = "none";
-          $circle0.setAttribute("fill", "none");
-          $circle1.setAttribute("fill", "none");
-          $circle2.setAttribute("fill", "none");
-          $circle3.setAttribute("fill", "none");
-          $circle4.setAttribute("fill", "none");
-          $circle5.setAttribute("fill", "none");
-          $circle6.setAttribute("fill", "none");
-          $circle7.setAttribute("fill", "none");
-          $circle8.setAttribute("fill", "none");
-          $circle9.setAttribute("fill", "none");
+          vote1.reset();
+          vote2.reset();
+          vote3.reset();
+          vote4.reset();
+          $circle0.classList.remove("circle-thing-filled");
+          $circle1.classList.remove("circle-thing-filled");
+          $circle2.classList.remove("circle-thing-filled");
+          $circle3.classList.remove("circle-thing-filled");
+          $circle4.classList.remove("circle-thing-filled");
+          $circle5.classList.remove("circle-thing-filled");
+          $circle6.classList.remove("circle-thing-filled");
+          $circle7.classList.remove("circle-thing-filled");
+          $circle8.classList.remove("circle-thing-filled");
+          $circle9.classList.remove("circle-thing-filled");
         }
         break;
     }
     tickCounter = (tickCounter + 1) % 5;
-  }, 3000);
+  }, 1000);
 </script>

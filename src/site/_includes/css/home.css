@@ -88,3 +88,12 @@
     }
   }
 }
+
+.circle-thing {
+  fill-opacity: 0;
+}
+
+.circle-thing.circle-thing-filled {
+  fill-opacity: 1;
+  transition: fill-opacity 1s;
+}
