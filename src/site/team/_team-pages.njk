@@ -1,0 +1,17 @@
+---
+layout: "layouts/_base.njk"
+pagination:
+  data: team
+  size: 1
+  alias: member
+permalink: "team/{{ member.name | slug }}/"
+title: Team
+defaultBio: |
+  _No biography available at this time._
+---
+
+<!-- prettier-ignore -->
+{% import "components/team-member-page.njk" as teamMemberPage %}
+
+<!-- prettier-ignore -->
+{{ teamMemberPage.render(member, defaultBio) }}

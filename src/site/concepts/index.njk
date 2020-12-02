@@ -1,0 +1,46 @@
+---
+layout: layouts/_base.njk
+title: Concepts
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<section
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start min-h-screen bg-golden-fizz py-margin lg:py-lg/margin"
+>
+  <header
+    class="col-span-columns flex justify-center lg:justify-start pb-4 border-b mb-4"
+  >
+    <h1
+      class="font-display text-size-display lg:text-size-lg/display uppercase"
+    >
+      Concepts
+    </h1>
+  </header>
+  <ul class="col-span-columns">
+    <!-- prettier-ignore -->
+    {% for concept in concepts %}
+    <li class="concepts_item-bottom">
+      <a
+        class="block font-display text-size-display lg:text-size-lg/display uppercase break-words text-center lg:text-left"
+        href="/concepts/{{ concept.slug }}"
+        >{{ concept.title }}</a
+      >
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ul>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
