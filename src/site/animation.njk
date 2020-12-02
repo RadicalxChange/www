@@ -4,9 +4,10 @@ layout: layouts/_base.njk
 
 <!-- prettier-ignore -->
 {% macro circle(id) %}
-<div id="{{ id }}" style="flex: auto; margin-right: 1rem">
+<div style="flex: auto; margin-right: 1rem">
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
     <circle
+      id="{{ id }}"
       cx="50"
       cy="50"
       r="48"
@@ -45,7 +46,13 @@ layout: layouts/_base.njk
     ></canvas>
     <div
       id="vote1"
-      style="position: absolute; width: 160%; top: -29%; left: -33%"
+      style="
+        position: absolute;
+        display: none;
+        width: 160%;
+        top: -29%;
+        left: -33%;
+      "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +87,13 @@ layout: layouts/_base.njk
     ></canvas>
     <div
       id="vote2"
-      style="position: absolute; width: 160%; top: -29%; left: -33%"
+      style="
+        position: absolute;
+        display: none;
+        width: 160%;
+        top: -29%;
+        left: -33%;
+      "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +112,38 @@ layout: layouts/_base.njk
     </div>
     <div
       id="vote3"
-      style="position: absolute; width: 180%; top: -39%; left: -43%"
+      style="
+        position: absolute;
+        display: none;
+        width: 180%;
+        top: -39%;
+        left: -43%;
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        viewBox="0 0 100 100"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="48"
+          stroke-width="2"
+          stroke="black"
+          fill="none"
+        />
+      </svg>
+    </div>
+    <div
+      id="vote4"
+      style="
+        position: absolute;
+        display: none;
+        width: 200%;
+        top: -49%;
+        left: -53%;
+      "
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -134,9 +178,10 @@ layout: layouts/_base.njk
     ></canvas>
   </div>
   <div
+    id="circles"
     style="
       position: absolute;
-      bottom: 0;
+      bottom: 25%;
       display: flex;
       width: 100%;
       padding-left: 1rem;
@@ -228,4 +273,74 @@ layout: layouts/_base.njk
   const flag3 = new Flag(document.getElementById("flag3"));
   flag3.draw();
   flag3.wave(20, 10, 150, 200, -0.1);
+
+  const $vote1 = document.getElementById("vote1");
+  const $vote2 = document.getElementById("vote2");
+  const $vote3 = document.getElementById("vote3");
+  const $vote4 = document.getElementById("vote4");
+  const $circle0 = document.getElementById("circle0");
+  const $circle1 = document.getElementById("circle1");
+  const $circle2 = document.getElementById("circle2");
+  const $circle3 = document.getElementById("circle3");
+  const $circle4 = document.getElementById("circle4");
+  const $circle5 = document.getElementById("circle5");
+  const $circle6 = document.getElementById("circle6");
+  const $circle7 = document.getElementById("circle7");
+  const $circle8 = document.getElementById("circle8");
+  const $circle9 = document.getElementById("circle9");
+
+  let tickCounter = 0;
+  setInterval(function () {
+    switch (tickCounter) {
+      case 0:
+        {
+        }
+        break;
+      case 1:
+        {
+          $vote1.style.display = "block";
+          $circle0.setAttribute("fill", "black");
+        }
+        break;
+      case 2:
+        {
+          $vote2.style.display = "block";
+          $vote3.style.display = "block";
+          $circle1.setAttribute("fill", "black");
+          $circle2.setAttribute("fill", "black");
+          $circle3.setAttribute("fill", "black");
+          $circle4.setAttribute("fill", "black");
+        }
+        break;
+      case 3:
+        {
+          $vote4.style.display = "block";
+          $circle5.setAttribute("fill", "black");
+          $circle6.setAttribute("fill", "black");
+          $circle7.setAttribute("fill", "black");
+          $circle8.setAttribute("fill", "black");
+          $circle9.setAttribute("fill", "black");
+        }
+        break;
+      case 4:
+        {
+          $vote1.style.display = "none";
+          $vote2.style.display = "none";
+          $vote3.style.display = "none";
+          $vote4.style.display = "none";
+          $circle0.setAttribute("fill", "none");
+          $circle1.setAttribute("fill", "none");
+          $circle2.setAttribute("fill", "none");
+          $circle3.setAttribute("fill", "none");
+          $circle4.setAttribute("fill", "none");
+          $circle5.setAttribute("fill", "none");
+          $circle6.setAttribute("fill", "none");
+          $circle7.setAttribute("fill", "none");
+          $circle8.setAttribute("fill", "none");
+          $circle9.setAttribute("fill", "none");
+        }
+        break;
+    }
+    tickCounter = (tickCounter + 1) % 5;
+  }, 3000);
 </script>
