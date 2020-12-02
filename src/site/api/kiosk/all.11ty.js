@@ -2,7 +2,7 @@ const Pages = require("./Pages");
 
 class AllPages extends Pages {
   getCollectionName() {
-    return "collections.blog";
+    return "collections.kiosk";
   }
 
   makePermalink(pageNumber) {

@@ -71,37 +71,9 @@ module.exports = function (config) {
     return array.slice(...args);
   });
 
-  // Custom collections
-  config.addCollection("groupedChapters", (collectionApi) => {
-    function compareHeaderText(a, b) {
-      if (a.data.headerText < b.data.headerText) {
-        return -1;
-      }
-      if (a.data.headerText > b.data.headerText) {
-        return 1;
-      }
-      return 0;
-    }
-
-    const chapters = collectionApi
-      .getFilteredByTag("chapter")
-      .sort(compareHeaderText);
-
-    const groupedChapters = {};
-    for (const chapter of chapters) {
-      const groupKey = chapter.data.headerText.charAt(0).toLowerCase();
-      if (groupedChapters[groupKey] === undefined) {
-        groupedChapters[groupKey] = [];
-      }
-      groupedChapters[groupKey].push(chapter);
-    }
-
-    return groupedChapters;
-  });
-
   config.addCollection("kioskCommunity", (collectionApi) => {
     return collectionApi
-      .getFilteredByTag("blog")
+      .getFilteredByTag("kiosk")
       .filter(
         (item) =>
           item.data.series && item.data.series.includes("RxC Community Calls")
@@ -110,7 +82,7 @@ module.exports = function (config) {
 
   config.addCollection("kioskFundamentals", (collectionApi) => {
     return collectionApi
-      .getFilteredByTag("blog")
+      .getFilteredByTag("kiosk")
       .filter(
         (item) =>
           item.data.series && item.data.series.includes("RxC Fundamentals")
