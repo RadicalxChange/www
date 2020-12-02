@@ -4,14 +4,12 @@
 @import "./fonts.css";
 @import "./global.css";
 @import "./type-scale.css";
-@import "./space-scale.css";
 
 @import "tailwindcss/components";
 
 /* Custom components */
 @import "./logo.css";
 @import "./menu.css";
-@import "./introduction.css";
 @import "./home.css";
 @import "./about.css";
 @import "./concepts.css";
@@ -21,20 +19,10 @@
 @import "./events.css";
 @import "./message-marquee.css";
 @import "./twitter-marquee.css";
-/* @import "./inline.css";
-@import "./modal.css";
-@import "./nav.css";
-@import "./subscribe-modal.css";
-@import "./speaker-bio-modal.css";
-@import "./team-bio-modal.css";
-@import "./sponsor-modal.css";
-@import "./save-the-date.css";
-@import "./conference-replay.css"; */
 
 @import "tailwindcss/utilities";
 
 /* Custom utilities */
-/* @import "./columns.css"; */
 @import "./markdown.css";
 @import "./comma-separated.css";
 @import "./link.css";
