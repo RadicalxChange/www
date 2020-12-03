@@ -32,8 +32,6 @@ aboutSection: |
   2. Share a **brief personal statement** describing what you care about and what drives you. 
   3. Optionally, share a **selection of your previous work or research**.
 faqsSection: |
-  [Watch the replay of the Webinar + live Q&A (Nov 12, 2020)](https://www.youtube.com/watch?v=MCk5HA4bV0M)
-
   **How long is the fellowship and will there be a weekly calendar?**
 
   The program will take 10 weeks structured around 8 hours of material per week, so 80 hours in total to become a fellow. Each week will have a theme: Week 1 is an introduction, Weeks 2 and 3 are focused on democracy and governance. Weeks 4 and 5 on property rights. Weeks 6 and 7 on data rights. Weeks 8 and 9 on competition and antitrust. And Week 10 will be preparation and demo day. 
@@ -133,6 +131,11 @@ faqsSection: |
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
+  {% call callToAction.item() %}
+  <a class="animated-link" href="#faqs"> Watch the Q&A </a>
+  <!-- prettier-ignore -->
+  {% endcall %}
+  <!-- prettier-ignore -->
   {% endcall %}
 </div>
 <!-- prettier-ignore -->
@@ -192,6 +195,15 @@ faqsSection: |
 <!-- prettier-ignore -->
 {% call section.render(headerText="FAQs", id="faqs") %}
 <div>
+  <p class="mb-base lg:mb-lg/base"><strong>Watch the Q&A</strong></p>
+  <div class="youtube-container mb-base lg:mb-lg/base">
+    <iframe
+      src="https://www.youtube.com/embed/MCk5HA4bV0M"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
   <div class="md-container mb-base lg:mb-lg/base">
     {{ faqsSection | markdown | safe }}
     <h2>Apply now</h2>
