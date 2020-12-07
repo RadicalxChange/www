@@ -75,4 +75,4 @@ We think there are 8 types of profiles that will benefit from the program. The l
 
 **[Read more about the fellowship here](https://www.radicalxchange.org/fellowship/2021/)**
 
-**[Apply here](fellowship@radicalxchange.org)**
+**[Apply here](mailto:fellowship@radicalxchange.org)**
