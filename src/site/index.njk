@@ -45,6 +45,12 @@ supporters:
     href: "https://www.theosafoundation.org/"
   - name: Alfred P. Sloan Foundation
     href: "https://sloan.org/"
+eventDescription: |
+  ## Land Value: Past, Present, and Future
+
+  December 10th / 2 - 3:30 PM EST
+
+  Land has been central to economic inequality for centuries. Today, we sometimes see homeownership as a path to the middle class, but it is important to see how this particular asset [still drives inequality](https://eh.net/eha/wp-content/uploads/2015/05/Knoll.pdf). This panel discusses the past and present of ideas like Henry George's land value tax, hoping to draw lessons for the real economy.
 ---
 
 <!-- prettier-ignore -->
@@ -66,46 +72,30 @@ supporters:
 
 <main>
   <!-- prettier-ignore -->
-  {% call nav.render(true, true) %}
-  <a class="block-with-animated-link hidden lg:block text-right" href="/tv">
-    <h2 class="text-lg/xl mb-lg/xs">
-      Land Value: Past, Present, and Future
-    </h2>
-    <p class="text-lg/sm mb-lg/base">December 10th / 2 - 3:30 PM EST</p>
-    <p>
-      <img src="/images/ui/icon-youtube.svg" class="tv-icon" /><span
-        class="animated-link"
-        >Join our next live event</span
-      >
-    </p>
-  </a>
+  {% call nav.render(false) %}
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
-  {% call header.render("") %}
-  <div>
-    <div class="lg:hidden md-container">
-      <h2>
-        Land Value: Past, Present, and Future
-      </h2>
-      <p>December 10th / 2 - 3:30 PM EST</p>
-      <p><a href="/tv" class="animated-link">Join our live event</a></p>
+  {% call header.render(width="w-full") %}
+  <div class="flex flex-col lg:flex-row lg:mt-lg/lg">
+    <div class="relative lg:w-span7 lg:pr-lg/base mb-base lg:mb-0">
+      <div class="twitch-container">
+        <iframe
+          src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=www.radicalxchange.org"
+          frameborder="0"
+          allowfullscreen="true"
+          scrolling="no"
+        ></iframe>
+      </div>
     </div>
-    <div class="hidden lg:block">
-      <h2 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
-        Looking for the RxC Fellowship Program?
-      </h2>
-      <!-- prettier-ignore -->
-      {% call callToAction.render() %}
-      <!-- prettier-ignore -->
-      {% call callToAction.item() %}
-      <a class="animated-link" href="/fellowship/2021">Become an RxC Fellow</a>
-      <!-- prettier-ignore -->
-      {% endcall %}
-      <!-- prettier-ignore -->
-      {% endcall %}
+    <div class="flex flex-col justify-between lg:w-span5 lg:pl-lg/base">
+      <div class="md-container mb-base lg:mb-lg/base">
+        {{ eventDescription | markdown | safe }}
+      </div>
+      <div><a href="/tv" class="animated-link">Join the Q&A</a></div>
     </div>
   </div>
+  <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {{ nav.movingMenuButton() }}
