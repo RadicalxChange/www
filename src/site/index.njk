@@ -67,57 +67,39 @@ supporters:
 <main>
   <!-- prettier-ignore -->
   {% call nav.render(true, true) %}
-  <!-- prettier-ignore -->
-  {% call oval.render(href="/fellowship/2021", ovalText="RxC Fellowship") %}
-  <!-- prettier-ignore -->
-  {% call oval.content(title="Introducing RxC Fellowship Program", description="Starting January 2021, the first cohort will work together to strengthen civil society and rethink public goods.", callToAction="Become an RxC Fellow") %}
-  <!-- prettier-ignore -->
-  {% endcall %}
-  <!-- prettier-ignore -->
-  {% endcall %}
+  <a class="block-with-animated-link hidden lg:block text-right" href="/tv">
+    <h2 class="text-lg/xl mb-lg/xs">
+      Land Value: Past, Present, and Future
+    </h2>
+    <p class="text-lg/sm mb-lg/base">December 10th / 2 - 3:30 PM EST</p>
+    <p>
+      <img src="/images/ui/icon-youtube.svg" class="tv-icon" /><span
+        class="animated-link"
+        >Join our next live event</span
+      >
+    </p>
+  </a>
   <!-- prettier-ignore -->
   {% endcall %}
   <!-- prettier-ignore -->
   {% call header.render("") %}
   <div>
-    <div class="lg:hidden">
-      <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
-        Introducing RxC Fellowship Program
-      </h1>
-      <p class="mb-base lg:mb-lg/base">
-        Starting January 2021, the first cohort will work together to strengthen
-        civil society and rethink public goods.
-      </p>
+    <div class="lg:hidden md-container">
+      <h2>
+        Land Value: Past, Present, and Future
+      </h2>
+      <p>December 10th / 2 - 3:30 PM EST</p>
+      <p><a href="/tv" class="animated-link">Join our live event</a></p>
+    </div>
+    <div class="hidden lg:block">
+      <h2 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
+        Looking for the RxC Fellowship Program?
+      </h2>
       <!-- prettier-ignore -->
       {% call callToAction.render() %}
       <!-- prettier-ignore -->
       {% call callToAction.item() %}
       <a class="animated-link" href="/fellowship/2021">Become an RxC Fellow</a>
-      <!-- prettier-ignore -->
-      {% endcall %}
-      <!-- prettier-ignore -->
-      {% endcall %}
-    </div>
-    <div class="hidden lg:block">
-      <h1 class="text-3xl lg:text-lg/xl mb-sm lg:mb-lg/base">
-        Missed the last conference?
-      </h1>
-      <!-- prettier-ignore -->
-      {% call callToAction.render() %}
-      <!-- prettier-ignore -->
-      {% call callToAction.item() %}
-      <a class="animated-link" href="/2020-conference/replay"
-        >Watch the replay</a
-      >
-      <!-- prettier-ignore -->
-      {% endcall %}
-      <!-- prettier-ignore -->
-      {% call callToAction.item() %}
-      <a
-        class="animated-link"
-        href="https://blog.radicalxchange.org/blog/posts/radicalxchange-replayed-to-be-or-not-to-be-hacked/"
-        >Listen via our podcast</a
-      >
       <!-- prettier-ignore -->
       {% endcall %}
       <!-- prettier-ignore -->
