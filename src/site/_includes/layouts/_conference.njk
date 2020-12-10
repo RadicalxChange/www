@@ -31,6 +31,7 @@
       {% for v in youtubeDatum %}
       <li id="v{{ v.videoId }}">
         <a
+          data-video-link="{{ v.videoId }}"
           href="#v{{ v.videoId }}"
           class="group grid grid-cols-4 lg:grid-cols-16 items-baseline gap-x-8 py-8 border-b"
         >
@@ -85,7 +86,6 @@
 
   const $videos = document.getElementById("videos");
   function showVideo(videoId) {
-    // Close a video if it's open
     const $maybeOpenVideo = $videos.querySelector(".open");
     if ($maybeOpenVideo) {
       $maybeOpenVideo.classList.remove("open");
@@ -95,7 +95,6 @@
       $youtubeContainer.removeChild($youtubeContainer.firstChild);
     }
 
-    // Open a video if it exists
     const $toOpenVideo = $videos.querySelector(`#v${videoId}`);
     if ($toOpenVideo) {
       $toOpenVideo.classList.add("open");
@@ -107,13 +106,15 @@
     }
   }
 
+  const $videoLinks = document.querySelectorAll("[data-video-link]");
+  for (const $videoLink of $videoLinks) {
+    $videoLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      history.replaceState(undefined, undefined, $videoLink.href);
+      showVideo($videoLink.dataset.videoLink);
+    });
+  }
   const hashRegex = /^#v([a-zA-Z0-9\-_]*)$/;
-  window.addEventListener("hashchange", function (e) {
-    const match = hashRegex.exec(window.location.hash);
-    if (match) {
-      showVideo(match[1]);
-    }
-  });
   const match = hashRegex.exec(window.location.hash);
   if (match) {
     showVideo(match[1]);

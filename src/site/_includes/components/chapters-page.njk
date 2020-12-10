@@ -1,13 +1,10 @@
----
-layout: layouts/_base.njk
-title: Chapters
----
-
 <!-- prettier-ignore -->
 {% import "components/close-button.njk" as closeButton %}
 
 <!-- prettier-ignore -->
-{{ closeButton.render("/about#chapters") }}
+{% macro render(chapters, closeHref) %}
+<!-- prettier-ignore -->
+{{ closeButton.render(closeHref) }}
 <div
   class="grid grid-cols-layout-4 lg:grid-cols-layout-12 lg:grid-rows-auto/1fr mt-4 lg:mt-8 mb-32 lg:mb-8"
 >
@@ -56,3 +53,5 @@ title: Chapters
     {% endfor %}
   </div>
 </div>
+<!-- prettier-ignore -->
+{% endmacro %}

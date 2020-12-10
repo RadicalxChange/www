@@ -1,0 +1,14 @@
+---
+layout: "layouts/_base.njk"
+title: "Chapters"
+---
+
+<!-- prettier-ignore -->
+{% import "components/chapters-page.njk" as chaptersPage %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ chaptersPage.render(chapters, "/community") }}
+<!-- prettier-ignore -->
+{% endblock %}

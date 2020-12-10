@@ -96,7 +96,7 @@ supporters:
   </div>
   <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
     <!-- prettier-ignore -->
-    {{ actionButton.render(href="/chapters", label="Join your local chapter")}}
+    {{ actionButton.render(href="/about/chapters", label="Join your local chapter")}}
   </div>
 </section>
 <section id="team" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-12">
@@ -109,14 +109,14 @@ supporters:
         <!-- prettier-ignore -->
         {% for member in team %}
         <tr class="flex items-center h-8 lg:h-12 border-b">
-          <td style="width: calc(50% + 1rem)">
+          <td style="width: calc(50% + 1rem);">
             <a
               class="see-more-link text-size--1 uppercase"
               href="/team/{{ member.name | slug }}"
               >{{ member.name }}</a
             >
           </td>
-          <td style="width: calc(50% - 1rem)">
+          <td style="width: calc(50% - 1rem);">
             <span class="text-size--1">{{ member.title }}</span>
           </td>
         </tr>
