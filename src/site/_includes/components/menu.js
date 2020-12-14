@@ -2,14 +2,17 @@
 
 const Menu = function ($menu) {
   this.$menu = $menu;
-  this.$nav = $menu.querySelector("#nav");
+  this.$menuInner = $menu.querySelector("#menu_inner");
 
   this.menuItems = [];
   this.firstItem = null;
   this.lastItem = null;
-
   this.isOpen = false;
-  this.onClick = this.handleClickOutside.bind(this);
+
+  this.openAnimationTimer = null;
+  this.closeAnimationTimer = null;
+  this.handleMouseLeave = this._handleMouseLeave.bind(this);
+  this.handleTouchOutside = this._handleTouchOutside.bind(this);
 };
 
 Menu.prototype.init = function () {
@@ -64,27 +67,50 @@ Menu.prototype.setFocusToNextItem = function (currentItem) {
   this.setFocusToItem(newItem);
 };
 
-Menu.prototype.handleClickOutside = function (event) {
-  if (this.$menu.contains(event.target)) {
+Menu.prototype._handleTouchOutside = function (event) {
+  if (this.$menuInner.contains(event.target)) {
+    return;
+  }
+  this.close();
+};
+
+Menu.prototype._handleMouseLeave = function (event) {
+  if (event.relatedTarget === null) {
     return;
   }
   this.close();
 };
 
 Menu.prototype.open = function () {
-  this.$nav.classList.remove("hidden");
+  if (this.isOpen) {
+    return;
+  }
+
+  this.$menuInner.classList.remove("hidden");
   this.$menu.classList.add("menu_open");
-  this.isOpen = true;
-  document.addEventListener("click", this.onClick);
-  bodyScrollLock.disableBodyScroll(this.$nav);
+  this.openAnimationTimer = setTimeout(() => {
+    this.openAnimationTimer = null;
+    document.addEventListener("touchstart", this.handleTouchOutside);
+    this.$menuInner.addEventListener("mouseleave", this.handleMouseLeave);
+    bodyScrollLock.disableBodyScroll(this.$menuInner);
+    this.isOpen = true;
+  }, 550);
 };
 
 Menu.prototype.close = function () {
+  if (!this.isOpen) {
+    return;
+  }
+
+  this.$menuInner.removeEventListener("mouseleave", this.handleMouseLeave);
+  document.removeEventListener("touchstart", this.handleTouchOutside);
   this.$menu.classList.remove("menu_open");
-  setTimeout(() => this.$nav.classList.add("hidden"), 500);
-  this.isOpen = false;
-  document.removeEventListener("click", this.onClick);
-  bodyScrollLock.enableBodyScroll(this.$nav);
+  this.closeAnimationTimer = setTimeout(() => {
+    this.closeAnimationTimer = null;
+    this.$menuInner.classList.add("hidden");
+    bodyScrollLock.enableBodyScroll(this.$menuInner);
+    this.isOpen = false;
+  }, 550);
 };
 
 /* MenuButton */
@@ -111,7 +137,14 @@ const MenuButton = function ($button, menu) {
 
 MenuButton.prototype.init = function () {
   this.$button.addEventListener("keydown", this.handleKeyDown.bind(this));
-  this.$button.addEventListener("click", this.handleClick.bind(this));
+  if (this.$button.dataset.menuButton === "hover") {
+    this.$button.addEventListener(
+      "mouseenter",
+      this.handleMouseEnter.bind(this)
+    );
+  } else {
+    this.$button.addEventListener("click", this.handleClick.bind(this));
+  }
 };
 
 MenuButton.prototype.handleKeyDown = function (event) {
@@ -140,8 +173,17 @@ MenuButton.prototype.handleKeyDown = function (event) {
   }
 };
 
+MenuButton.prototype.handleMouseEnter = function (event) {
+  if (!this.menu.isOpen) {
+    this.menu.open();
+    this.menu.setFocusToFirstItem();
+  }
+  event.stopPropagation();
+  event.preventDefault();
+};
+
 MenuButton.prototype.handleClick = function (event) {
-  if (this.menu.isOpen === true) {
+  if (this.menu.isOpen) {
     this.menu.close();
   } else {
     this.menu.open();
@@ -237,3 +279,26 @@ for (const $menuButton of document.querySelectorAll("[data-menu-button]")) {
   const menuButton = new MenuButton($menuButton, menu);
   menuButton.init();
 }
+
+/* Hide buttons when you scroll to footer */
+const $footer = document.getElementById("footer");
+const $theMenuSlider = document.getElementById("menu_slider");
+const $theMenuButton = document.getElementById("menu_button");
+const disappearObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio >= 0.1) {
+        $theMenuButton.classList.add("menu_button-closed");
+      } else {
+        $theMenuButton.classList.remove("menu_button-closed");
+      }
+      if (entry.intersectionRatio >= 0.5) {
+        $theMenuSlider.classList.add("menu_slider-closed");
+      } else {
+        $theMenuSlider.classList.remove("menu_slider-closed");
+      }
+    });
+  },
+  { threshold: [0.1, 0.5] }
+);
+disappearObserver.observe($footer);

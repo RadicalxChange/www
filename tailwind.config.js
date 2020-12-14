@@ -44,7 +44,11 @@ module.exports = {
     extend: {
       borderRadius: { 50: "50%", oval: "70px" },
       borderWidth: { 3: "3px" },
-      transitionProperty: { right: "right", "margin-left": "margin-left" },
+      transitionProperty: {
+        right: "right",
+        "margin-left": "margin-left",
+        "clip-path": "clip-path",
+      },
       inset: { full: "100%", "1/4": "25%", "1/2": "50%" },
       minHeight: { tall: "50vw", "line-2": "2.68em" },
       maxHeight: { tall: "50vw", "75vh": "75vh" },

@@ -1,19 +1,15 @@
 .menu {
   @apply z-50;
   @apply fixed top-0 left-0;
-  @apply flex;
-  @apply w-screen;
-  @apply h-screen;
+  @apply flex items-center;
+  @apply w-full;
+  @apply h-full;
   transform: translate(0, 100%);
   @apply transition-transform duration-500;
 
   @screen lg {
     @apply w-auto;
-    transform: translate(calc(-100% + 24px), 0);
-
-    &:hover {
-      transform: translate(calc(-100% + 34px), 0);
-    }
+    transform: translate(calc(-100% + 32px), 0);
   }
 }
 
@@ -22,24 +18,38 @@
 
   @screen lg {
     transform: translate(0, 0);
-
-    &:hover {
-      transform: translate(0, 0);
-    }
   }
 }
 
 .menu_item-bottom {
-  @apply pb-4;
+  padding-bottom: 1px;
   @apply border-b;
 
   &:hover {
-    padding-bottom: calc(theme("spacing.4") - 1px);
+    padding-bottom: 0;
     @apply border-b-2;
   }
 
   &:focus {
-    padding-bottom: calc(theme("spacing.4") - 1px);
+    padding-bottom: 0;
     @apply border-b-2;
   }
+}
+
+.menu_slider {
+  @apply transition-transform duration-200;
+  transform: none;
+}
+
+.menu_slider-closed {
+  transform: translate(-32px, 0);
+}
+
+.menu_button {
+  clip-path: inset(0);
+  @apply transition-clip-path duration-300;
+}
+
+.menu_button-closed {
+  clip-path: inset(100% 0 0 0);
 }

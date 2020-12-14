@@ -1,22 +1,30 @@
 <!-- prettier-ignore -->
-{% macro render(color="black") %}
+{% macro render(color="black", classes="") %}
 <!-- prettier-ignore -->
 {% if color == "black" %}
-<img class="logo" src="/images/logos/logo.svg" alt="RadicalxChange" />
+<img
+  class="logo {{ classes }}"
+  src="/images/logos/logo.svg"
+  alt="RadicalxChange"
+/>
 <!-- prettier-ignore -->
 {% endif %}
 <!-- prettier-ignore -->
 {% if color == "white" %}
-<img class="logo" src="/images/logos/logo-white.svg" alt="RadicalxChange" />
+<img
+  class="logo {{ classes }}"
+  src="/images/logos/logo-white.svg"
+  alt="RadicalxChange"
+/>
 <!-- prettier-ignore -->
 {% endif %}
 <!-- prettier-ignore -->
 {% endmacro %}
 
 <!-- prettier-ignore -->
-{% macro short() %}
+{% macro short(classes="") %}
 <img
-  class="logo-short"
+  class="logo-short {{ classes }}"
   src="/images/logos/logo-short-white.svg"
   alt="RadicalxChange"
 />
