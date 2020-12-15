@@ -1,0 +1,51 @@
+.footer_card {
+  @apply relative;
+  min-width: 12rem;
+  width: 21vw;
+  max-width: 18rem;
+  padding-top: 66.667%;
+  perspective: 1000px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    .footer_card-inner {
+      transform: rotate3d(-0.983, 0.183, 0, 180deg);
+    }
+  }
+}
+
+.footer_card-inner {
+  @apply absolute top-0 left-0;
+  @apply w-full h-full;
+  transition: transform 0.25s ease-in-out;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+}
+
+.footer_card-front,
+.footer_card-back {
+  @apply absolute top-0 left-0;
+  @apply w-full h-full;
+  @apply flex justify-center items-center;
+  @apply border border-solid border-white rounded-50;
+  backface-visibility: hidden;
+}
+
+.footer_card-front {
+  transform: rotate(-10.56deg);
+}
+
+.footer_card-back {
+  transform: rotate(10.56deg) rotate3d(-0.983, 0.183, 0, 180deg);
+}
+
+.footer_donate-header {
+  @apply font-display text-size-donate uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.footer_donate-options {
+  transform: rotate(10.56deg);
+}

@@ -11,6 +11,8 @@ pagination:
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
@@ -80,13 +82,11 @@ pagination:
     <button id="kiosk-load-button" class="uppercase">Load more</button>
   </div>
 </div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
 <script>
   // prettier-ignore
   {% include "components/menu.js" %}
-</script>
-<script>
-  // prettier-ignore
-  {% include "components/infinite-scroll.js" %}
 </script>
 <script>
   const Kiosk = function () {
@@ -192,6 +192,6 @@ pagination:
 
   const kiosk = new Kiosk();
   kiosk.init();
-  const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
-  infiniteScroller.init();
+  // const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
+  // infiniteScroller.init();
 </script>
