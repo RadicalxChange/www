@@ -1,5 +1,7 @@
 ---
 layout: layouts/_base.njk
+title: Kiosk
+headerText: RxC Kiosk
 pagination:
   data: collections.kiosk
   size: 16
@@ -22,8 +24,11 @@ pagination:
   <header
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-8"
   >
-    <!-- prettier-ignore -->
-    {{ logo.render() }}
+    <h1
+      class="font-display text-size-display lg:text-size-lg/display uppercase"
+    >
+      <a href="/">{{ headerText }}</a>
+    </h1>
   </header>
   <form class="col-span-columns -mr-4 mb-8" autocomplete="off">
     <input

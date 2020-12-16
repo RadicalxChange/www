@@ -1,7 +1,7 @@
 ---
 layout: layouts/_base.njk
 title: About
-headerText: About
+headerText: About RxC
 introductionBlurb: |
   RadicalxChange (RxC) is a global movement committed to advancing plurality, equality, community, and decentralization, through the development of upgrades to democracy, markets, property regimes, data economy, commons and collective intelligence governance.
 
@@ -38,36 +38,33 @@ supporters:
   - name: College for Creative Studies
     href: "https://www.collegeforcreativestudies.edu/"
   - name: Dada.art
-    image: /images/sponsors-2020/dada-logo.png
     href: "https://dada.nyc/"
   - name: Democracy Earth
-    image: /images/sponsors-2020/democracy-earth-logo.png
     href: "https://democracy.earth/"
   - name: Evil Twin Booking
     href: "https://eviltwinbooking.org/"
   - name: Gitcoin
-    image: /images/sponsors-2020/gitcoin-logo.svg
     href: "https://gitcoin.co/"
   - name: Insper
-    image: /images/sponsors-2020/insper-logo.png
     href: "https://www.insper.edu.br/"
   - name: Idena
-    image: /images/sponsors-2020/idena-logo.jpeg
     href: "https://idena.io/"
   - name: Microsoft
     href: "https://www.microsoft.com/"
   - name: Nesta
     href: "https://www.nesta.org.uk/"
   - name: Ocean Protocol
-    image: /images/sponsors-2020/ocean-protocol-logo.svg
     href: "https://oceanprotocol.com/"
   - name: Polco
     href: "https://polco.us/"
   - name: Totle
     href: "https://www.totle.com/"
   - name: Wildcards
-    image: /images/sponsors-2020/wildcards-logo.png
     href: "https://wildcards.world/"
+  - name: Rockefeller Foundation
+    href: "https://www.rockefellerfoundation.org/"
+  - name: Streamr
+    href: "https://streamr.network/"
 ---
 
 <!-- prettier-ignore -->
@@ -109,14 +106,14 @@ supporters:
         <!-- prettier-ignore -->
         {% for member in team %}
         <tr class="flex items-center h-8 lg:h-12 border-b">
-          <td style="width: calc(50% + 1rem);">
+          <td style="width: calc(50% + 1rem)">
             <a
               class="see-more-link text-size--1 uppercase"
               href="/team/{{ member.name | slug }}"
               >{{ member.name }}</a
             >
           </td>
-          <td style="width: calc(50% - 1rem);">
+          <td style="width: calc(50% - 1rem)">
             <span class="text-size--1">{{ member.title }}</span>
           </td>
         </tr>

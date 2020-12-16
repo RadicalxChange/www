@@ -1,15 +1,17 @@
 .logo {
-  width: 91.67vw; /* calculated from Figma <logo-width> / <screen-width> */
+  min-width: 291px;
+  width: 89.72vw;
+  max-width: 323px;
 
   @screen lg {
-    width: 33.19vw; /* calculated from Figma <logo-width> / <screen-width> */
+    min-width: 391px; /* <mock-width> * (<font-smallest> / <font-largest>) */
+    width: 33.19vw; /* <mock-width> / <mock-viewport-width> */
+    max-width: 479px; /* <mock-width> */
   }
 }
 
 .logo-short {
-  width: 25.5vw; /* calculated from Figma <logo-width> / <screen-width> */
-
-  @screen lg {
-    width: 6.5vw; /* calculated from Figma <logo-width> / <screen-width> */
-  }
+  min-width: 77px;
+  width: 23.89vw;
+  max-width: 86px;
 }

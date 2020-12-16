@@ -8,73 +8,75 @@
     id="menu_inner"
     class="relative w-full lg:w-auto h-full pt-margin lg:pt-lg/margin px-margin lg:px-lg/margin bg-black text-white overflow-y-auto hidden"
   >
-    <nav class="flex flex-col min-h-full">
-      <h1>
-        <a
-          data-menu-item
-          href="/"
-          class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
+    <nav class="flex flex-col justify-between h-full">
+      <div>
+        <h1>
+          <a
+            data-menu-item
+            href="/"
+            class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
+          >
+            {{ logo.render(color="white", classes="hidden lg:inline-block align-baseline") }}
+            {{ logo.short(classes="inline-block lg:hidden align-baseline") }}
+          </a>
+        </h1>
+        <ul>
+          <li>
+            <a
+              data-menu-item
+              class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
+              href="/about"
+              ><span class="align-middle uppercase">About</span></a
+            >
+          </li>
+          <li>
+            <a
+              data-menu-item
+              class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
+              href="/concepts"
+              ><span class="align-middle uppercase">Concepts</span></a
+            >
+          </li>
+          <li>
+            <a
+              data-menu-item
+              class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
+              href="/community"
+              ><span class="align-middle uppercase">Community</span></a
+            >
+          </li>
+          <li>
+            <a
+              data-menu-item
+              class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
+              href="/kiosk"
+              ><span class="align-middle uppercase">Kiosk</span></a
+            >
+          </li>
+          <li>
+            <a
+              data-menu-item
+              class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
+              href="/events"
+              ><span class="align-middle uppercase">Events</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="sticky bottom-0 flex justify-center lg:hidden w-full py-margin bg-black"
+      >
+        <button
+          data-menu-button
+          class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
         >
-          {{ logo.render(color="white", classes="hidden lg:inline-block align-baseline") }}
-          {{ logo.short(classes="inline-block lg:hidden align-baseline") }}
-        </a>
-      </h1>
-      <ul class="flex-grow">
-        <li>
-          <a
-            data-menu-item
-            class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
-            href="/about"
-            ><span class="align-middle uppercase">About</span></a
-          >
-        </li>
-        <li>
-          <a
-            data-menu-item
-            class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
-            href="/concepts"
-            ><span class="align-middle uppercase">Concepts</span></a
-          >
-        </li>
-        <li>
-          <a
-            data-menu-item
-            class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
-            href="/community"
-            ><span class="align-middle uppercase">Community</span></a
-          >
-        </li>
-        <li>
-          <a
-            data-menu-item
-            class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
-            href="/kiosk"
-            ><span class="align-middle uppercase">Kiosk</span></a
-          >
-        </li>
-        <li>
-          <a
-            data-menu-item
-            class="block menu_item-bottom font-display text-size-display lg:text-size-lg/display text-center outline-none"
-            href="/events"
-            ><span class="align-middle uppercase">Events</span></a
-          >
-        </li>
-      </ul>
+          Close
+        </button>
+      </div>
       <p class="hidden lg:block py-2 text-size--3 text-center">
         © 2020 RadicalxChange Foundation Ltd.
       </p>
     </nav>
-    <div
-      class="sticky bottom-0 flex justify-center lg:hidden w-full py-margin bg-black"
-    >
-      <button
-        data-menu-button
-        class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
-      >
-        Close
-      </button>
-    </div>
   </div>
   <div id="menu_slider" class="hidden lg:block menu_slider">
     <button data-menu-button="hover">

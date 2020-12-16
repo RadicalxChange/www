@@ -24,8 +24,8 @@ module.exports = {
       "size-0": ["var(--step-type-0)", "1.34"],
       "size-1": ["var(--step-type-1)", "1.34"],
       "size-2": ["var(--step-type-2)", "1.34"],
-      "size-display": ["clamp(0, 22.22vw, 80px)", "0.959"],
-      "size-lg/display": ["clamp(0, 6.81vw, 98px)", "0.98"],
+      "size-display": ["clamp(72px, 22.22vw, 80px)", "0.959"],
+      "size-lg/display": ["clamp(80px, 6.81vw, 98px)", "0.98"],
       "size-donate": ["clamp(56px, 3.89vw, 72px)", "0.98"],
     },
     fontFamily: {
@@ -108,6 +108,7 @@ module.exports = {
         "margin-2": "margin 2",
       },
       gridColumnEnd: {
+        last: "-1",
         "margin-1": "margin 1",
         "column-1": "column 1",
         "gutter-1": "gutter 1",
@@ -154,6 +155,7 @@ module.exports = {
       gridTemplateRows: {
         "auto/auto": "auto auto",
         "auto/1fr": "auto minmax(0, 1fr)",
+        "auto/1fr/auto": "auto minmax(0, 1fr) auto",
         "auto/auto/1fr/auto": "auto auto minmax(0, 1fr) auto",
         kiosk: "repeat(4, min-content)",
         footer: "auto minmax(0, 24rem) auto",

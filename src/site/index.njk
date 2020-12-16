@@ -11,88 +11,96 @@ layout: layouts/_base.njk
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<div class="bg-golden-fizz">
-  <main class="home">
-    <div class="home_logo">
-      <a class="inline-block" href="/">{{ logo.render() }}</a>
-    </div>
-    <div class="home_carousel">
-      <!-- prettier-ignore-line -->
-      {% set concepts = ["Data as Labour / Data Dignity (DaL/DD)", "Quadratic
-      Voting (QV)", "Radical Antitrust", "Intersectional Social Data (ISD)",
-      "Quadratic, Financing (QF)", "COST / SALSA"] %}
-      <!-- prettier-ignore-line -->
-      {% set columnRow = [[1, 3],[4, 3],[7, 3],[1, 4],[4, 4],[7, 4]] %}
-      <!-- prettier-ignore-line -->
-      {% for concept in concepts%}
-      <!-- prettier-ignore-line -->
-      {% set column = columnRow[loop.index0][0] %}
-      <!-- prettier-ignore-line -->
-      {% set row = columnRow[loop.index0][1] %}
-      <a class="home_concept" href="#">
-        <img
-          class="w-full max-w-sm mb-4"
-          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQgMTloLTRjLS4yNzYgMC0uNS4yMjQtLjUuNXMuMjI0LjUuNS41aDRjLjI3NiAwIC41LS4yMjQuNS0uNXMtLjIyNC0uNS0uNS0uNXptMCAyaC00Yy0uMjc2IDAtLjUuMjI0LS41LjVzLjIyNC41LjUuNWg0Yy4yNzYgMCAuNS0uMjI0LjUtLjVzLS4yMjQtLjUtLjUtLjV6bS4yNSAyaC00LjVsMS4xODguNzgyYy4xNTQuMTM4LjM4LjIxOC42MTUuMjE4aC44OTVjLjIzNCAwIC40NjEtLjA4LjYxNS0uMjE4bDEuMTg3LS43ODJ6bTMuNzUtMTMuNzk5YzAgMy41NjktMy4yMTQgNS45ODMtMy4yMTQgOC43OTloLTEuOTg5Yy0uMDAzLTEuODU4Ljg3LTMuMzg5IDEuNzIxLTQuODY3Ljc2MS0xLjMyNSAxLjQ4Mi0yLjU3NyAxLjQ4Mi0zLjkzMiAwLTIuNTkyLTIuMDc1LTMuNzcyLTQuMDAzLTMuNzcyLTEuOTI1IDAtMy45OTcgMS4xOC0zLjk5NyAzLjc3MiAwIDEuMzU1LjcyMSAyLjYwNyAxLjQ4MiAzLjkzMi44NTEgMS40NzggMS43MjUgMy4wMDkgMS43MiA0Ljg2N2gtMS45ODhjMC0yLjgxNi0zLjIxNC01LjIzLTMuMjE0LTguNzk5IDAtMy43MjMgMi45OTgtNS43NzIgNS45OTctNS43NzIgMy4wMDEgMCA2LjAwMyAyLjA1MSA2LjAwMyA1Ljc3MnptNC0uNjkxdjEuMzcyaC0yLjUzOGMuMDItLjIyMy4wMzgtLjQ0OC4wMzgtLjY4MSAwLS4yMzctLjAxNy0uNDY0LS4wMzUtLjY5aDIuNTM1em0tMTAuNjQ4LTYuNTUzdi0xLjk1N2gxLjM3MXYxLjk2NGMtLjI0Mi0uMDIyLS40ODQtLjAzNS0uNzI2LS4wMzUtLjIxNSAwLS40My4wMS0uNjQ1LjAyOHptLTMuNzQzIDEuMjk0bC0xLjA0LTEuOTQgMS4yMDgtLjY0OCAxLjAzNyAxLjkzM2MtLjQxOC4xODEtLjgyMi40MDEtMS4yMDUuNjU1em0xMC41ODYgMS43MzVsMS45NDItMS4zOTQuNzk5IDEuMTE1LTIuMDU0IDEuNDczYy0uMTkxLS40My0uNDIzLS44MjctLjY4Ny0xLjE5NHptLTMuMDEtMi4zODlsMS4wMzgtMS45MzQgMS4yMDguNjQ4LTEuMDQxIDEuOTQxYy0uMzgyLS4yNTQtLjc4Ni0uNDczLTEuMjA1LS42NTV6bS0xMC4wNjggMy41ODNsLTIuMDU0LTEuNDcyLjc5OS0xLjExNSAxLjk0MiAxLjM5M2MtLjI2NC4zNjYtLjQ5NS43NjMtLjY4NyAxLjE5NHptMTMuNzA3IDYuMjIzbDIuMzU0Ljk1NC0uNTE0IDEuMjcxLTIuNDI1LS45ODJjLjIxLS4zOTcuNDA4LS44MTIuNTg1LTEuMjQzem0tMTMuMTA4IDEuMTU1bC0yLjM1NiAxLjA2LS41NjItMS4yNTEgMi4zNC0xLjA1MmMuMTczLjQzMy4zNzEuODQ1LjU3OCAxLjI0M3ptLTEuMTc4LTMuNjc2aC0yLjUzOHYtMS4zNzJoMi41MzVjLS4wMTguMjI2LS4wMzUuNDU0LS4wMzUuNjkxIDAgLjIzMy4wMTguNDU4LjAzOC42ODF6Ii8+PC9zdmc+"
-        />
-        <h2 class="text-center">{{ concept }}</h2>
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/1fr/auto content-between min-h-screen bg-golden-fizz"
+>
+  <header
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 flex justify-center lg:justify-start text-center lg:text-left mt-margin lg:mt-lg/margin mb-16 lg:mb-8"
+  >
+    <h1
+      class="font-display text-size-display lg:text-size-lg/display uppercase"
+    >
+      <a href="/">
+        <span class="inline lg:hidden"
+          >RXC is a social movement for next generation political
+          economies</span
+        >
+        {{ logo.render(classes="hidden lg:inline-block") }}
       </a>
-      <!-- prettier-ignore-line -->
-      {% endfor %}
-    </div>
-    <div class="message-marquee home_marquee">
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 self-center grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 lg:gap-y-12 mb-16 lg:mb-8"
+  >
+    <!-- prettier-ignore-line -->
+    {% set concepts = ["Data as Labour / Data Dignity (DaL/DD)", "Quadratic
+    Voting (QV)", "Radical Antitrust", "Intersectional Social Data (ISD)",
+    "Quadratic, Financing (QF)", "COST / SALSA"] %}
+    <!-- prettier-ignore-line -->
+    {% set columnRow = [[1, 3],[4, 3],[7, 3],[1, 4],[4, 4],[7, 4]] %}
+    <!-- prettier-ignore-line -->
+    {% for concept in concepts%}
+    <!-- prettier-ignore-line -->
+    {% set column = columnRow[loop.index0][0] %}
+    <!-- prettier-ignore-line -->
+    {% set row = columnRow[loop.index0][1] %}
+    <a class="flex flex-col items-center" href="#">
+      <div class="w-full max-w-sm border mb-4">
+        <div style="padding-top: 128%"></div>
+      </div>
+      <h2 class="text-center">{{ concept }}</h2>
+    </a>
+    <!-- prettier-ignore-line -->
+    {% endfor %}
+  </div>
+  <div
+    class="sticky bottom-0 hidden lg:block col-start-margin-1 col-end-column-10 pt-2 bg-white font-display text-size-lg/display"
+  >
+    <div class="message-marquee">
       <div class="marquee__inner">
-        <span
-          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+        <span class="uppercase mx-6 whitespace-nowrap"
           >A Social Movement for Next-Generation Political Economies</span
         >
-        <span
-          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+        <span class="uppercase mx-6 whitespace-nowrap"
           >A Social Movement for Next-Generation Political Economies</span
         >
-        <span
-          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+        <span class="uppercase mx-6 whitespace-nowrap"
           >A Social Movement for Next-Generation Political Economies</span
         >
-        <span
-          class="font-display text-size-lg/display uppercase mx-6 whitespace-nowrap"
+        <span class="uppercase mx-6 whitespace-nowrap"
           >A Social Movement for Next-Generation Political Economies</span
         >
       </div>
     </div>
-    <aside class="home_aside">
-      <div
-        class="absolute top-0 left-0 flex flex-col w-full h-full bg-black text-white"
+  </div>
+  <aside
+    class="relative hidden lg:block col-start-column-10 col-end-last row-span-full"
+  >
+    <div
+      class="absolute top-0 left-0 flex flex-col w-full h-full bg-black text-white"
+    >
+      <a
+        class="flex-initial block mt-lg/margin mb-4 mx-4"
+        href="/fellowship/2021"
       >
-        <a
-          class="flex-initial block mt-lg/margin mb-4 mx-4"
-          href="/fellowship/2021"
-        >
-          <h2 class="font-bold">RxC Fellowship Program</h2>
-          <p>Applications through December 13th</p>
-        </a>
-        <div class="flex-initial border-b mx-4"></div>
-        <div id="twitter-marquee" class="flex-grow mx-4 overflow-hidden">
-          <div class="marquee__inner">
-            <a
-              class="twitter-timeline py-4 text-size--2"
-              href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
-              data-theme="dark"
-              data-chrome="noheader nofooter noborders noscrollbar transparent"
-            >
-              Loading tweets by @RadxChange...
-            </a>
-          </div>
+        <h2 class="font-bold">RxC Fellowship Program</h2>
+        <p>Applications through December 13th</p>
+      </a>
+      <div class="flex-initial border-b mx-4"></div>
+      <div id="twitter-marquee" class="flex-grow mx-4 overflow-hidden">
+        <div class="marquee__inner">
+          <a
+            class="twitter-timeline py-4 text-size--2"
+            href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
+            data-theme="dark"
+            data-chrome="noheader nofooter noborders noscrollbar transparent"
+          >
+            Loading tweets by @RadxChange...
+          </a>
         </div>
       </div>
-    </aside>
-    <div class="home_banner">
-      <h2
-        class="mb-4 text-center font-display text-size-display leading-none uppercase"
-      >
-        Upgrade the source code
-      </h2>
     </div>
-  </main>
+  </aside>
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
