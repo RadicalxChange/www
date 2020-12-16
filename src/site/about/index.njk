@@ -11,9 +11,7 @@ introductionBlurb: |
 chaptersDescription: |
   RadicalxChange Chapters are the key organizations of RxC community - they develop local networks for discussions, investigations, experiments and implementations of the next generation of social technology, and they spread the RxC vision across the globe. Chapters warmly welcome people of all backgrounds and levels of experience with the topics.
 aboutBlurb: |
-  The RadicalxChange Foundation is a non-profit organization dedicated to advancing the RxC cause, founded by E. Glen Weyl following the publication of the book Radical Markets in 2018.
-
-  You can contact (info@rxc.com) the Foundation for all matters concerning RxC, including consultancy work related to policy development and institutional design.
+  RadicalxChange Foundation strives to empower people and organizations in the global RxC movement to grow their ideas and initiatives. Feel free to contact us (info@rxc.com) for any RxC related matters, including consultancy work related to democratic innovation or institutional design.
 supporters:
   - name: Hewlett Foundation
     href: "https://hewlett.org/"
@@ -84,37 +82,75 @@ supporters:
 {{ introduction.render(headerText, introductionBlurb) }}
 <section
   id="chapters"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mt-16 lg:mt-lg/margin mb-12"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 my-margin"
+>
+  <div class="hidden lg:block col-start-column-1 col-end-gutter-4">
+    <h2>Chapters</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 space-y-8"
+  >
+    <div class="markdown">
+      {{ chaptersDescription | markdown | safe }}
+    </div>
+    <div>
+      {{ actionButton.render(href="/about/chapters", label="Join your local chapter")}}
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="foundation"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
 >
   <div
-    class="markdown col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-4 lg:mb-0"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-2 lg:mb-0"
   >
-    {{ chaptersDescription | markdown | safe }}
+    <h2 class="pb-2 lg:pb-0 border-b lg:border-b-0">Foundation</h2>
   </div>
-  <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
-    <!-- prettier-ignore -->
-    {{ actionButton.render(href="/about/chapters", label="Join your local chapter")}}
-  </div>
-</section>
-<section id="team" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-12">
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8 lg:mb-0 order-last lg:order-none"
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-8 lg:mb-16"
   >
-    <h2 class="pb-4 border-b">Team members</h2>
+    <div class="markdown">
+      {{ aboutBlurb | markdown | safe }}
+    </div>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8 lg:mb-0"
+  >
+    <h3 class="pb-2 border-b">Board members</h3>
+    <table class="block">
+      <tbody class="block">
+        {% for member in board %}
+        <tr class="flex items-center h-8 lg:h-12 border-b">
+          <td class="text-size--1">
+            <a
+              class="see-more-link uppercase"
+              href="/board/{{ member.name | slug }}"
+              >{{ member.name }}</a
+            >
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
+    <h3 class="pb-2 border-b">Team members</h3>
     <table class="block">
       <tbody class="block">
         <!-- prettier-ignore -->
         {% for member in team %}
         <tr class="flex items-center h-8 lg:h-12 border-b">
-          <td style="width: calc(50% + 1rem)">
+          <td style="width: calc(50% + 1rem)" class="text-size--1">
             <a
-              class="see-more-link text-size--1 uppercase"
+              class="see-more-link uppercase"
               href="/team/{{ member.name | slug }}"
               >{{ member.name }}</a
             >
           </td>
-          <td style="width: calc(50% - 1rem)">
-            <span class="text-size--1">{{ member.title }}</span>
+          <td style="width: calc(50% - 1rem)" class="text-size--1">
+            {{ member.title }}
           </td>
         </tr>
         <!-- prettier-ignore -->
@@ -122,46 +158,33 @@ supporters:
       </tbody>
     </table>
   </div>
-  <div
-    class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 order-last lg:order-none"
-  >
-    <h2 class="pb-4 border-b">Board members</h2>
-    <ul class="lg:h-36 py-2 border-b">
-      <!-- prettier-ignore -->
-      {% for member in board %}
-      <li class="comma-separated">
-        <a class="see-more-link" href="/board/{{ member.name | slug }}">{{
-          member.name
-        }}</a>
-      </li>
-      <!-- prettier-ignore -->
-      {% endfor %}
-    </ul>
-    <div class="markdown markdown-sm pt-2">
-      {{ aboutBlurb | markdown | safe }}
-    </div>
-  </div>
+  <div class="col-span-columns pb-12 lg:pb-32 lg:border-b"></div>
 </section>
-<section id="press" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4">
-  <div class="col-span-columns">
-    <h2 class="pb-4 border-b">Press</h2>
+<section
+  id="press"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-2 lg:mb-0"
+  >
+    <h2 class="pb-2 lg:pb-0 border-b lg:border-b-0">Press</h2>
   </div>
   <ul
-    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-11 grid grid-cols-2 lg:grid-cols-4 grid-rows-10 lg:grid-rows-11 gap-x-4 gap-y-4 lg:gap-y-8 justify-items-start my-4"
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-4 lg:gap-y-8 justify-items-start"
   >
     <!-- prettier-ignore -->
     {% for article in press | slice(0, 43) %}
     <li class="about_press-link group relative">
       <a class="block text-size--2" href="{{ article.href }}"
         ><p>
-          <span class="hover:underline">{{ article.publication }}</span>
+          <span class="group-hover:underline">{{ article.publication }}</span>
         </p>
         <p>{{ article.date | readableDate }}</p></a
       >
       <div
-        class="z-10 absolute top-1/2 left-1/4 hidden group-hover:block w-max max-w-xs p-2 bg-light-black text-white text-size--3"
+        class="about_press-description z-10 absolute top-1/2 left-1/4 w-max p-2 bg-light-black text-white text-size--3"
       >
-        <span>{{ article.title }}</span>
+        {{ article.title }}
       </div>
     </li>
     <!-- prettier-ignore -->
@@ -170,24 +193,36 @@ supporters:
       <a href="/press" class="inline-link">See all press...</a>
     </li>
   </ul>
-  <div class="col-span-columns border-b"></div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
 </section>
 <section
   id="supporters"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-16 lg:mb-32"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-4 lg:pb-8 my-margin"
 >
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3 mb-4 lg:mb-0"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-2 lg:mb-0"
   >
-    <h2>Supported by</h2>
+    <h2 class="pb-2 lg:pb-0 border-b lg:border-b-0">Supported by</h2>
   </div>
-  <ul class="col-span-columns lg:col-start-column-4 lg:col-end-margin-2">
-    {%- for supporter in supporters -%}
-    <li class="comma-separated">
-      <a href="{{ supporter.href }}">{{ supporter.name }}</a>
-    </li>
-    {%- endfor -%}
-  </ul>
+  <div
+    class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 space-y-8"
+  >
+    <ul class="text-size--1">
+      {%- for supporter in supporters -%}
+      <li class="comma-separated">
+        <a href="{{ supporter.href }}">{{ supporter.name }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+    <div class="text-size--1">
+      <a
+        href="mailto:paul@radicalxchange.org?subject=Becoming%20a%20supporter&body=I'd%20like%20to%20become%20a%20RadicalxChange%20supporter."
+        target="_blank"
+        class="animated-link uppercase"
+        >Become a supporter</a
+      >
+    </div>
+  </div>
 </section>
 <!-- prettier-ignore -->
 {{ footer.render() }}

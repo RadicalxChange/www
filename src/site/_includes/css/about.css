@@ -1,9 +1,25 @@
-.about {
-  &_press-link:nth-child(n + 20) {
-    @apply hidden;
+.about_press-link:nth-child(n + 20) {
+  @apply hidden;
 
-    @screen lg {
-      @apply block;
-    }
+  @screen lg {
+    @apply block;
   }
+}
+
+.about_press-description {
+  clip-path: inset(0 100% 0 0);
+  @apply transition-clip-path duration-300;
+  max-width: 19ch;
+
+  @screen lg {
+    max-width: 19ch;
+  }
+
+  @screen xl {
+    max-width: 18ch;
+  }
+}
+
+.group:hover .about_press-description {
+  clip-path: inset(0);
 }
