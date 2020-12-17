@@ -6,25 +6,31 @@
 <!-- prettier-ignore -->
 {{ closeButton.render(closeHref) }}
 <div
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 lg:grid-rows-auto/1fr mt-4 lg:mt-8 mb-32 lg:mb-8"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 py-margin lg:py-lg/margin"
 >
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-2 mb-8 lg:mb-4"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3 xl:col-end-gutter-2 mb-8 lg:mb-4 space-y-4"
   >
-    <span>Find a local chapter or </span
-    ><a
-      href="https://forms.gle/UQ6FtuC7rEf42cqE9"
-      class="inline-link uppercase"
-    >
-      start a new chapter</a
-    >
+    <p>Find a local chapter.</p>
+    <ul class="text-size--2 space-y-1">
+      <li>
+        <a href="https://forms.gle/UQ6FtuC7rEf42cqE9" class="inline-link">
+          Start a new chapter</a
+        >
+      </li>
+      <li>
+        <a href="/community/code-of-conduct" class="inline-link"
+          >Review our code of conduct</a
+        >
+      </li>
+    </ul>
   </div>
   <div
-    class="chapters_list col-span-columns lg:col-start-column-3 lg:col-end-gutter-10 flex flex-col lg:flex-wrap lg:justify-start lg:content-start"
+    class="chapters_list col-span-columns lg:col-start-column-4 xl:col-start-column-3 lg:col-end-gutter-10 flex flex-col lg:flex-wrap"
   >
     <!-- prettier-ignore -->
     {% for key, chapters in chapters %}
-    <div class="lg:w-1/4 pb-4 lg:pr-8">
+    <div class="lg:w-1/3 xl:w-1/4 pb-4 lg:pr-8">
       <h4 class="border-b text-size--2 uppercase">{{ key }}</h4>
       <ul>
         <!-- prettier-ignore -->
