@@ -62,6 +62,7 @@ module.exports = {
       spacing: {
         margin: "1rem",
         "lg/margin": "1.5rem",
+        "line-1/2": "0.67em",
         "line-1": "1.34em",
         "line-3/2": "2.01em",
         "line-2": "2.68em",

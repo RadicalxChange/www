@@ -1,0 +1,43 @@
+/* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
+.concept-marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  --move-initial: -75%;
+  --move-final: 0%;
+}
+
+.concept-marquee .marquee__inner {
+  position: relative;
+  display: flex;
+  width: max-content;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: concept-noop;
+  animation-play-state: paused;
+}
+
+.concept-marquee:hover .marquee__inner {
+  animation: concept-marquee 30s linear infinite;
+  animation-play-state: running;
+}
+
+/* This does nothing, but is necessary to compensate for Safari suckage. */
+.concept-marquee .marquee__inner span {
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes concept-marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+@keyframes concept-noop {
+  to {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+}

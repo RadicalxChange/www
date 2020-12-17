@@ -5,62 +5,48 @@
 {% macro render(concept) %}
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/concepts") }}
-<section
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 py-margin lg:py-lg/margin"
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 lg:content-between min-h-screen pt-margin lg:pt-lg/margin pb-2"
 >
-  <header
-    class="col-span-columns order-1 justify-self-center lg:justify-self-stretch lg:pr-6 mb-8 lg:mb-4"
-  >
-    <h1
-      class="font-display text-size-display lg:text-size-lg/display text-center lg:text-left uppercase"
-    >
-      {{ concept.title }}
-    </h1>
-  </header>
   <div
-    class="col-span-margins lg:col-start-column-8 lg:col-end-margin-2 order-2 lg:order-3 flex items-start justify-center lg:pl-lg/margin lg:border-b lg:border-t lg:border-l mb-8 lg:mb-0"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-line-2 lg:mb-0"
   >
-    <img
-      class="lg:sticky lg:top-0 w-full lg:py-8"
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTQgMTloLTRjLS4yNzYgMC0uNS4yMjQtLjUuNXMuMjI0LjUuNS41aDRjLjI3NiAwIC41LS4yMjQuNS0uNXMtLjIyNC0uNS0uNS0uNXptMCAyaC00Yy0uMjc2IDAtLjUuMjI0LS41LjVzLjIyNC41LjUuNWg0Yy4yNzYgMCAuNS0uMjI0LjUtLjVzLS4yMjQtLjUtLjUtLjV6bS4yNSAyaC00LjVsMS4xODguNzgyYy4xNTQuMTM4LjM4LjIxOC42MTUuMjE4aC44OTVjLjIzNCAwIC40NjEtLjA4LjYxNS0uMjE4bDEuMTg3LS43ODJ6bTMuNzUtMTMuNzk5YzAgMy41NjktMy4yMTQgNS45ODMtMy4yMTQgOC43OTloLTEuOTg5Yy0uMDAzLTEuODU4Ljg3LTMuMzg5IDEuNzIxLTQuODY3Ljc2MS0xLjMyNSAxLjQ4Mi0yLjU3NyAxLjQ4Mi0zLjkzMiAwLTIuNTkyLTIuMDc1LTMuNzcyLTQuMDAzLTMuNzcyLTEuOTI1IDAtMy45OTcgMS4xOC0zLjk5NyAzLjc3MiAwIDEuMzU1LjcyMSAyLjYwNyAxLjQ4MiAzLjkzMi44NTEgMS40NzggMS43MjUgMy4wMDkgMS43MiA0Ljg2N2gtMS45ODhjMC0yLjgxNi0zLjIxNC01LjIzLTMuMjE0LTguNzk5IDAtMy43MjMgMi45OTgtNS43NzIgNS45OTctNS43NzIgMy4wMDEgMCA2LjAwMyAyLjA1MSA2LjAwMyA1Ljc3MnptNC0uNjkxdjEuMzcyaC0yLjUzOGMuMDItLjIyMy4wMzgtLjQ0OC4wMzgtLjY4MSAwLS4yMzctLjAxNy0uNDY0LS4wMzUtLjY5aDIuNTM1em0tMTAuNjQ4LTYuNTUzdi0xLjk1N2gxLjM3MXYxLjk2NGMtLjI0Mi0uMDIyLS40ODQtLjAzNS0uNzI2LS4wMzUtLjIxNSAwLS40My4wMS0uNjQ1LjAyOHptLTMuNzQzIDEuMjk0bC0xLjA0LTEuOTQgMS4yMDgtLjY0OCAxLjAzNyAxLjkzM2MtLjQxOC4xODEtLjgyMi40MDEtMS4yMDUuNjU1em0xMC41ODYgMS43MzVsMS45NDItMS4zOTQuNzk5IDEuMTE1LTIuMDU0IDEuNDczYy0uMTkxLS40My0uNDIzLS44MjctLjY4Ny0xLjE5NHptLTMuMDEtMi4zODlsMS4wMzgtMS45MzQgMS4yMDguNjQ4LTEuMDQxIDEuOTQxYy0uMzgyLS4yNTQtLjc4Ni0uNDczLTEuMjA1LS42NTV6bS0xMC4wNjggMy41ODNsLTIuMDU0LTEuNDcyLjc5OS0xLjExNSAxLjk0MiAxLjM5M2MtLjI2NC4zNjYtLjQ5NS43NjMtLjY4NyAxLjE5NHptMTMuNzA3IDYuMjIzbDIuMzU0Ljk1NC0uNTE0IDEuMjcxLTIuNDI1LS45ODJjLjIxLS4zOTcuNDA4LS44MTIuNTg1LTEuMjQzem0tMTMuMTA4IDEuMTU1bC0yLjM1NiAxLjA2LS41NjItMS4yNTEgMi4zNC0xLjA1MmMuMTczLjQzMy4zNzEuODQ1LjU3OCAxLjI0M3ptLTEuMTc4LTMuNjc2aC0yLjUzOHYtMS4zNzJoMi41MzVjLS4wMTguMjI2LS4wMzUuNDU0LS4wMzUuNjkxIDAgLjIzMy4wMTguNDU4LjAzOC42ODF6Ii8+PC9zdmc+"
-    />
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 order-3 lg:order-2 lg:flex lg:flex-col lg:justify-between lg:py-8 lg:pr-lg/margin lg:border-b lg:border-t mb-12 lg:mb-0"
-  >
-    <div class="markdown mb-8 lg:mb-16">
+    <header class="mb-line-1">
+      <h1>{{ concept.title }}</h1>
+    </header>
+    <div class="markdown markdown-sm">
       {{ concept.description | markdown | safe }}
     </div>
-    <div>
-      <a class="animated-link uppercase" href="#tools-and-readings"
-        >Tools & Readings</a
-      >
-    </div>
   </div>
-  <ul
-    id="tools-and-readings"
-    class="col-span-columns order-4 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8 lg:mt-8"
-  >
-    <!-- prettier-ignore -->
-    {% for item in concept.toolsAndReadings %}
-    <li class="concepts-page_item-bottom space-y-8">
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
-      <ul class="flex space-x-4">
-        <!-- prettier-ignore -->
-        {% for link in item.links %}
-        <li>
-          <a class="animated-link uppercase" href="{{ link.href }}"
-            >{{ link.platform }}
-          </a>
-        </li>
-        <!-- prettier-ignore -->
-        {% endfor %}
-      </ul>
-    </li>
-    <!-- prettier-ignore -->
-    {% endfor %}
-  </ul>
-</section>
-<!-- prettier-ignore -->
-{% endmacro %}
+  <aside class="col-span-columns lg:col-start-column-8 lg:col-end-margin-2">
+    <h2 class="mb-line-1">Tools</h2>
+    <ul class="text-size--1 space-y-line-1/2">
+      {% for tool in concept.tools %}
+      <li class="space-y-line-1 pb-line-3/2 border-b">
+        <h3>{{ tool.title }}</h3>
+        <p>{{ tool.description }}</p>
+        <ul class="flex space-x-4">
+          {% for link in tool.links %}
+          <li>
+            <a class="animated-link uppercase" href="{{ link.href }}">
+              {{ link.text }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  <div class="col-span-columns mt-8">
+    <p class="text-center text-size--3">
+      © 2020 RadicalxChange Foundation Ltd.
+    </p>
+    <p class="text-center text-size--3">
+      RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
+      not support or oppose candidates for public office or political parties.
+    </p>
+  </div>
+  <!-- prettier-ignore -->
+  {% endmacro %}
+</div>

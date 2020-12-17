@@ -1,210 +1,205 @@
-- title: Data As Labour / Data Dignity (DAL/DD)
+- title: Data Dignity
   slug: data-dignity
-  image: "jennifer_lyn_morone.png"
   description: |
-    An identity system and a general purpose data structure for the
-    decentralization of Internet. ISD protects from “surveillance capitalism”
-    by diffusing the data in a range of communities.
+    Technology companies wield highly concentrated power over the way peoples’ data is used, and make enormous profits from it. They can do this because we “bargain” for Big Tech services as if we were all isolated individuals, with “personal” datasets. In fact, the data we produce is always deeply social.  Sharing it affects our friends, families, and communities as much as it affects us.
 
-    ISD aims to provide inalienable identity, verification of an attribute of a
-    participant and partial identification, verification of a unique humanity
-    of a participant, and authentication - while taking identity out of the
-    hands of a few large multinational corporate platforms that have now become
-    “identity providers” for billions of people.
+    People should be able to exert democratic collective bargaining power over their data, in order to make joint decisions controlling its use, and negotiate appropriate compensation.
 
-    ISD provides inalienable identity by making use of three central primitives:
-
-    1. Each participant has a digital journal listing all their identifying
-    information. (Only that individual has access to the complete set of
-    information in that store.)
-
-    2. Each participant also stores, for each input X in their digital journal,
-    the set of other participants who also store copies of X.
-
-    3. Each participant stores a degree of credit which they are willing to
-    offer every other participant as “social collateral” to give credence to
-    identity statements.
-  toolsAndReadings:
-    - title: Quadratic Moloch DAO
+    [Data Freedom Act](https://www.radicalxchange.org/files/DFA.pdf)<br/>
+    [Chapter 5 of Radical Markets](http://radicalmarkets.com/chapters/data-as-labor/)<br/>
+    [Who Owns the Future?](https://www.simonandschuster.com/books/Who-Owns-the-Future/Jaron-Lanier/9781451654974)
+  tools:
+    - title: Ocean Protocol
       description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
+        Ocean Protocol is a digital infrastructure to power the web3 data economy. It is the root for applications such as data marketplaces, crypto-secure data custody and data management, as well as easier to implement data unions, trusts, and cooperatives.
       links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
-    - title: Quadratic Moloch DAO
+        - text: Website
+          href: https://oceanprotocol.com/
+        - text: Twitter
+          href: https://twitter.com/oceanprotocol
+        - text: GitHub
+          href: https://github.com/oceanprotocol
+    - title: Maskbook
       description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
+        Maskbook is a browser extension that enables you, all people of the Internet, to create encrypted posts on your favorite social network sites, including Facebook and Twitter. Your can choose who is able to see them and who is not.
       links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
-
-- title: Quadratic Voting (QV)
+        - text: Chrome Extension
+          href: https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap
+        - text: Twitter
+          href: https://twitter.com/realmaskbook
+        - text: GitHub
+          href: https://github.com/DimensionDev/Maskbook
+- title: Quadratic Voting
   slug: quadratic-voting
-  image: "jennifer_lyn_morone.png"
   description: |
-    Democracy, whether in a country, community or local club, is about giving
-    each individual a say. But current voting methods miss a lot of what people
-    really think. Quadratic Voting is a new twist on voting that allows
-    individuals to express not just their choice, but also how strongly they
-    feel about it. It can be applied to almost any situation where a group
-    needs to make a decision or prioritize options. And in fact, in places like
-    [Colorado](https://www.wired.com/story/colorado-quadratic-voting-experiment/),
-    it already is.
-  toolsAndReadings:
-    - title: EXAMPLE
-      description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
-      links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
-    - title: Quadratic Moloch DAO
-      description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
-      links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
-    - title: Quadratic Moloch DAO
-      description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
-      links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
+    Quadratic Voting (QV)  is a redesigned voting method reflecting the intensity of people's preferences in collective decisions. It greatly mitigates tyranny-of-the-majority and factional control problems.
 
-- title: Quadratic Financing (QF)
-  slug: quadratic-financing
-  image: "jennifer_lyn_morone.png"
+    Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on. 
+
+    [Chapter 2 of Radical Markets](http://radicalmarkets.com/chapters/radical-democracy/)<br/>
+    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)
+  tools:
+    - title: Government Technology Agency (Singapore)
+      description: |
+        If you want to do a casual Quadratic Vote with your peers, this web app is a great choice. It is all straightforward from election creation, email / link invites, and quadratic voting to result analysis. You can even build your own interface on top of it using the associated APIs.
+      links:
+        - text: Website
+          href: https://qv.geek.sg/
+        - text: Twitter
+          href: https://github.com/yehjxraymond/qv-app
+        - text: GitHub
+          href: https://twitter.com/GovTechSG
+    - title: Sheets Template for Quadratic Voting
+      description: |
+        Have small scale Quadratic Votes in mind? These sheets might be just right for you. It's a buch of interconnected columns and rows that let you easily perform and analyze Quadratic Votes in line with your needs. Dive into the folder, make a copy of the files, and off you go!
+      links:
+        - text: Google Sheets
+          href: https://drive.google.com/drive/folders/1trnAJ1XOLyZk-0mgedZ3G98MQH3xrL0m?usp=sharing
+    - title: Quadratic Moloch DAO / Democracy Earth
+      description: |
+        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract standard that incorporates the optional use of Quadratic Voting. Moloch DAOs let collectives manage different kinds of rights and assets through democratic processes on Ethereum.
+      links:
+        - text: Website
+          href: https://democracy.earth/
+        - text: Twitter
+          href: https://twitter.com/DemocracyEarth
+        - text: GitHub
+          href: https://github.com/DemocracyEarth/DemocracyDAO
+    - title: CultureStake / Furtherfield
+      description: |
+        ‪CultureStake’s playful Quadratic Voting app allows you to vote on the types of cultural activity you would like to see in your locality. It democratizes arts commissioning by providing communities and artists with a radical tool to make cultural decisions together.
+      links:
+        - text: Website
+          href: https://www.furtherfield.org/culturestake-2/
+        - text: Twitter
+          href: https://twitter.com/furtherfield
+        - text: GitHub
+          href: https://github.com/lazaruslabs/culturestake
+- title: Quadratic Funding
+  slug: quadratic-funding
   description: |
-    Funding public goods, like shared infrastructure or open-source software, is
-    a key challenge for democratic communities – among other things because of
-    the natural incentive for individuals to “free ride” on the funding others
-    provide. Matching funds, where individual donations are matched by those from
-    government or a philanthropic institution, are a great way to address the
-    problem. But traditional matching approaches based on centralized actors
-    often don’t reflect the real needs of a community. Quadratic Finance solves
-    this by prioritizing projects based on the number of individual donations,
-    not their size. Like quadratic voting, the aim is to better capture true
-    sentiment and turn it into action. Here too, experience is showing just how.
-    Check out the Reviews of Gitcoin Grants Round
-    [3](https://vitalik.ca/general/2019/10/24/gitcoin.html) and
-    [4](https://vitalik.ca/general/2020/01/28/round4.html).
-  toolsAndReadings:
-    - title: EXAMPLE
-      description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
-      links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
+    Quadratic Funding (QF) is a more democratic and scalable form of matching funding for public goods, i.e. any projects valuable to large groups of people and accessible to the general public.
 
-- title: COST / SALSA
-  slug: cost-salsa
-  image: "jennifer_lyn_morone.png"
+    “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. QF optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In QF, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] QF strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public. 
+
+    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)<br/>
+    [Liberal Radicalism: A Flexible Design For Philanthropic Matching Funds](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656)<br/>
+    [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html)
+  tools:
+    - title: Clr.fund
+      description: |
+        ‪Clr.fund is a protocol for Quadratic Funding of public goods projects in the Ethereum ecosystem. Using a combination of exclusive cryptography and mechanism design it aims to prevent Sybil-attacks, bribery, and collusion in the Quadratic Funding process.
+      links:
+        - text: Website
+          href: https://clr.fund/
+        - text: Twitter
+          href: https://twitter.com/clrfund
+        - text: GitHub
+          href: https://github.com/clrfund
+    - title: Gitcoin Grants
+      description: |
+        ‪Gitcoin Grants is a Quadratic Funding platform for public goods projects, primarily, in the Ethereum ecosystem. Beyond that, it featured matching funds for public Covid-19 and Black Lives Matter causes. Its enchanting interface is the go-to-place for radical public goods pilots.
+      links:
+        - text: Website
+          href: https://gitcoin.co/grants/
+        - text: Twitter
+          href: https://twitter.com/gitcoin
+        - text: GitHub
+          href: https://github.com/gitcoinco/web/tree/master/app/grants
+    - title: Downtown Stimulus
+      description: |
+        ‪Downtown Stimulus is a Quadratic Funding based aid program for small businesses in Boulder, Colorado, that suffered as a consequence of Covid-19. Get in touch and bring the magic of Quadratic Funding to small businesses in your locality, too.
+      links:
+        - text: Website
+          href: https://downtownstimulus.com/
+        - text: Twitter
+          href: https://twitter.com/gitcoin
+        - text: GitHub
+          href: https://github.com/gitcoinco/downtownstimulus
+- title: Partial Common Ownership
+  slug: partial-common-ownership
   description: |
-    Private property is at the core of the capitalist system and has many
-    advantages, not the least in incentivizing investment. But private ownership
-    often puts owning before exchanging as well as profit before community. On
-    the other hand, some socialists believe all property should be put to the
-    most productive common purpose. But they struggle to identify what the most
-    productive purpose is and to motivate people to pursue it. At RadicalxChange
-    we think it’s possible to get the best of both approaches to property using a
-    system called SALSA (Self-Assessed Licenses Sold via Auction). Under SALSA,
-    everyone pays a tax on their property based on what they think it is worth –
-    but must also agree to sell it to anyone willing to offer their self-assessed
-    price. While it sounds radical at first, SALSA is a more coherent and
-    sustainable way to govern the rights to possess finite resources. Its
-    implications include a much more efficient use of resources, a better way of
-    sharing common property, a fair wealth tax, and deeper economic equality.
-  toolsAndReadings:
-    - title: EXAMPLE
-      description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
-      links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
+    Partial common ownership is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
 
+    In RxC’s partial common ownership systems, assets belong to no one and everyone. An asset’s current possessor, must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
+
+    [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)<br/>
+    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)<br/>
+    [Reimagining Property](https://medium.com/blockchannel/reimagining-property-fbce9d3832a4)<br/>
+    [Depreciating Licenses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810)
+  tools:
+    - title: Harberger Ads
+      description: |
+        ‪Harberger Ads is an advertising marketplace governed by the rules of SALSA. Bootstrapped in a hackathon, the application allows you to sell ad space on your site or to possess other people's ad spaces. In its current version, Harberger Ads runs on Ethereum's test network.
+      links:
+        - text: Website
+          href: https://hads.xyz/
+        - text: GitHub
+          href: https://github.com/theoephraim/harberger-ads
+    - title: Nonomos
+      description: |
+        ‪Nonomos is a pilot application on Ethereum’s Rinkeby test network that by means of SALSA, governs the rights to cast YouTube videos on the associated site nonomos.com. Beyond that, it lets you mint and interact with additional unique tokens that work like SALSA.
+      links:
+        - text: Website
+          href: https://nonomos.com/
+        - text: GitHub
+          href: https://github.com/anoanoano/NonomosHL
+    - title: Wildcards
+      description: |
+        Wildcards applies gamification of market powers to fundraising for animal conservation. The "Wildcards" are tokens à la SALSA, which income goes to conservation foundations. The possessors of the tokens, or guardians of the animals, compare their contributions on a leaderboard.
+      links:
+        - text: Website
+          href: https://wildcards.world/
+        - text: Twitter
+          href: https://twitter.com/wildcards_world
+        - text: GitHub
+          href: https://github.com/wildcards-world
+    - title: This Artwork Is Always On Sale
+      description: |
+        TAIAOS is a unique, rare digital artwork that is always on sale along the economic lines of SALSA. The scarcity of the digital artwork, its always-on auction & management of patronage towards the artist is all enabled through blockchain smart contracts on Ethereum.
+      links:
+        - text: Website
+          href: https://thisartworkisalwaysonsale.com/
+        - text: GitHub
+          href: https://github.com/simondlr/thisartworkisalwaysonsale
 - title: Radical Antitrust
   slug: radical-antitrust
-  image: "jennifer_lyn_morone.png"
   description: |
-    Most of us can agree that monopolies are not healthy for society. That’s
-    why we have antitrust laws. But modern monopolies are often hidden, even
-    from the monopolists themselves. Research has shown how large institutional
-    investors in the US, who are the largest shareholders and hence owners of
-    US corporations, often engage in harmful monopoly practices without
-    realizing what they are doing. We think now is a good time for some radical
-    new antitrust ideas: not to put a corset on markets, but rather to use
-    market forces as a natural buffer against monopolistic distortions.
-  toolsAndReadings:
-    - title: EXAMPLE
-      description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
-      links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
+    Radical Antitrust is about looking for cartels in unexpected places, and recognizing that consumers and workers can be harmed through more than simply price. For example, markets could be made fairer if there were more stakeholder representation on boards; more thoughtful limits on mergers and acquisitions; and fewer investors exerting control over multiple companies within an industry. 
 
-- title: Intersectional Social Data (ISD)
-  slug: intersectional-social-data
-  image: "jennifer_lyn_morone.png"
+    [Chapter 4 of Radical Markets](http://radicalmarkets.com/chapters/dismembering-the-octopus/)
+  tools: []
+- title: Intersectional Social Identity
+  slug: intersectional-social-identity
   description: |
-    In a highly digital world, data has a value not only in terms of
-    information but also in terms of identity. Yet identity on the Internet is
-    today largely in the hands of tech companies and others. This problem is
-    well known and has spurred a lot of research in decentralized, or user-
-    controlled, digital identity. At RadicalxChange we welcome this work, but
-    also want to take it further. We believe the identity of individuals,
-    whether in the real or virtual world, is made up of the intersection of a
-    person’s social, business and other relationships. Such Intersectional
-    Social Data could be the key to developing new knowledge and trust networks
-    that don’t rely on governments or tech companies, but rather grow and
-    evolve organically as we go through our lives.
-  toolsAndReadings:
-    - title: EXAMPLE
+    Whereas most existing identity concepts are either centralized or individualistic, Intersectional Social Identity (XID) solutions embody human identities' social, and multi-dimensional characteristics. XID makes use of three central primitives:
+
+    1. Each participant has a digital journal listing all their identifying information. (Only that individual has access to the complete set of data in that store.)
+    2. For each input X in their digital journal, each participant also stores the set of other participants who also keep copies of X.
+    3. Each participant stores a degree of credit. They are willing to offer other participants credit as “social collateral” to give their identity statements credibility.
+
+    [Intersectional Social Data](https://blog.radicalxchange.org/blog/posts/2019-10-24-uh78r5/)<br/>
+    [Motivating The Case For Decentralized Social Identity: Part One](https://blog.radicalxchange.org/blog/posts/2019-06-06-d4utdx/)<br/>
+    [Motivating The Case For Decentralized Social Identity: Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42)<br/>
+    [Motivating The Case For Decentralized Social Identity: Part Three](https://blog.radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
+  tools:
+    - title: Equality Protocol / Democracy Earth
       description: |
-        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract
-        standard that incorporates theoptional use of Quadratic Voting. Moloch
-        DAOs let collectives manage different kinds of rights and assets
-        through democratic processes on Ethereum.
+        ‪Equality Protocol is a probabilistic score for human identity on Ethereum. The score results from a subjective (deliberative process) and an objective (Gini coefficients) input. Certain scores give you the right to participate in e.g. universal basic incomes or elections.
       links:
-        - platform: twitter
-          href: "https://twitter.com/jlmorone"
-        - platform: github
-          href: "https://jplace.github.io/"
+        - text: Website
+          href: https://democracy.earth/
+        - text: Twitter
+          href: https://twitter.com/DemocracyEarth
+        - text: GitHub
+          href: https://github.com/DemocracyEarth/paper
+    - title: Idena
+      description: |
+        ‪Idena is a proof-of-person blockchain that proves the humanness and uniqueness of its participants by running AI-hard Turing tests around the globe at the same time. Every node in the network is linked to one cryptoidentity, one single person, and has equal voting power.
+      links:
+        - text: Website
+          href: https://idena.io/
+        - text: Twitter
+          href: https://twitter.com/IdenaNetwork
+        - text: GitHub
+          href: https://github.com/idena-network

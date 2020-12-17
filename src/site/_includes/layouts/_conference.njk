@@ -105,13 +105,27 @@
       $toOpenVideo.scrollIntoView();
     }
   }
+  function hideVideo(videoId) {
+    const $toCloseVideo = $videos.querySelector(`#v${videoId}`);
+    if ($toCloseVideo) {
+      $toCloseVideo.classList.remove("open");
+      const $youtubeContainer = $toCloseVideo.querySelector(
+        "[data-youtube-container]"
+      );
+      $youtubeContainer.removeChild($youtubeContainer.firstChild);
+    }
+  }
 
   const $videoLinks = document.querySelectorAll("[data-video-link]");
   for (const $videoLink of $videoLinks) {
     $videoLink.addEventListener("click", function (e) {
       e.preventDefault();
       history.replaceState(undefined, undefined, $videoLink.href);
-      showVideo($videoLink.dataset.videoLink);
+      if ($videoLink.parentNode.classList.contains("open")) {
+        hideVideo($videoLink.dataset.videoLink);
+      } else {
+        showVideo($videoLink.dataset.videoLink);
+      }
     });
   }
   const hashRegex = /^#v([a-zA-Z0-9\-_]*)$/;
