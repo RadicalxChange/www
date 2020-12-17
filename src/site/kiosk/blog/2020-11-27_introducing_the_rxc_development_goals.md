@@ -7,7 +7,7 @@ postHeader: "Introducing the RxC Development Goals: A blueprint to achieve a fai
 postAuthor: "Lawrence Lundy-Bryan"
 ---
 
-_We’re launching a fellowship program to bring together mission-driven people working on projects to strengthen civic society and rethink public goods. This is part 2 of 3 giving more details on the upcoming Radicalxchange fellowship program. [Read part one](/blog/posts/is-radicalxchange-fellowship-for-me/) to find out about the projects we are looking for._
+_We’re launching a fellowship program to bring together mission-driven people working on projects to strengthen civil society and rethink public goods. This is part 2 of 3 giving more details on the upcoming Radicalxchange fellowship program. [Read part one](/blog/posts/is-radicalxchange-fellowship-for-me/) to find out about the projects we are looking for._
 
 ---
 
