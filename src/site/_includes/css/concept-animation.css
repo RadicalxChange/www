@@ -1,0 +1,31 @@
+.ball {
+  width: 10%;
+  padding-top: 100%;
+  @apply border rounded-50;
+  @apply bg-light-gold;
+}
+
+.quadratic-voting {
+  background: linear-gradient(
+    to bottom,
+    theme("colors.light-gold"),
+    transparent,
+    theme("colors.light-gold")
+  );
+  background-size: auto 300%;
+  animation: ease-in infinite gradient-rotation 2s;
+  animation-play-state: paused;
+
+  &:hover {
+    animation-play-state: running;
+  }
+}
+
+@keyframes gradient-rotation {
+  from {
+    background-position-y: 0%;
+  }
+  to {
+    background-position-y: 150%;
+  }
+}

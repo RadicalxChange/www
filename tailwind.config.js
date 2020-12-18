@@ -35,6 +35,7 @@ module.exports = {
     },
     colors: {
       "golden-fizz": "#EDFF38",
+      "light-gold": "#FAFFC3",
       red: "#C53030",
       black: "#000000",
       "light-black": "#010101",
