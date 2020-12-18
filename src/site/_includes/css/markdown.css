@@ -16,7 +16,7 @@
   }
 
   p {
-    margin-top: 1.5em;
+    @apply mt-markdown-md;
   }
 
   h2,
@@ -28,43 +28,39 @@
   h1 + h2,
   h2 + h3,
   h3 + h4 {
-    margin-top: 1.5em;
+    @apply mt-markdown-md;
   }
 
   ul,
   ol {
-    margin-top: 1.5em;
+    @apply mt-markdown-md;
   }
 
   li {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    @apply my-markdown-sm;
   }
 
   li > ul,
   li > ol {
-    margin-top: 1em;
-    margin-bottom: 1.5em;
+    @apply mt-markdown-sm mb-markdown-md;
   }
 
   li > p {
-    margin-top: 1em;
+    @apply mt-markdown-sm;
   }
 
   li > p:last-child {
-    margin-bottom: 1.5em;
+    @apply mb-markdown-md;
   }
 
   img,
   table,
   blockquote {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    @apply my-markdown-md;
   }
 
   hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    @apply my-markdown-lg;
   }
 
   > header + *,
@@ -149,5 +145,19 @@
 
   &.markdown-sm {
     @apply text-size--1;
+  }
+
+  .html {
+    @apply mt-markdown-md;
+
+    p {
+      @apply mt-0;
+    }
+
+    h2,
+    h3,
+    h4 {
+      @apply mt-0;
+    }
   }
 }

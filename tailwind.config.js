@@ -67,6 +67,9 @@ module.exports = {
         "line-3/2": "2.01em",
         "line-2": "2.68em",
         "line-3": "4.02em",
+        "markdown-sm": "1em",
+        "markdown-md": "1.5em",
+        "markdown-lg": "3em",
       },
       gridColumn: {
         "span-margins": "1 / -1",

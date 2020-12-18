@@ -12,7 +12,10 @@
     />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="{{ ogType | default('website') }}" />
-    <meta property="og:title" content="{{ title }}" />
+    <meta
+      property="og:title"
+      content="{{ title | default('RadicalxChange') }}"
+    />
     <meta property="og:site_name" content="RadicalxChange" />
     <meta property="og:url" content="{{ metadata.url + page.url }}" />
     <meta
@@ -30,7 +33,10 @@
       content="{{ description | default(metadata.defaultDescription) }}"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ title }}" />
+    <meta
+      name="twitter:title"
+      content="{{ title | default('RadicalxChange') }}"
+    />
     <meta name="twitter:site" content="@radxchange" />
     <meta
       name="twitter:image"

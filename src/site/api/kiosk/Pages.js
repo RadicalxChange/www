@@ -1,3 +1,13 @@
+function getType(item) {
+  if (item.inputPath.includes("/blog/")) {
+    return "Blog Post";
+  } else if (item.inputPath.includes("/announcements/")) {
+    return "Announcement";
+  } else if (item.inputPath.includes("/papers/")) {
+    return "Paper";
+  }
+}
+
 class Pages {
   getCollectionName() {
     throw new Error("NYI");
@@ -25,6 +35,7 @@ class Pages {
         data: {
           date: this.readableDate(item.data.date),
           title: item.data.title,
+          postType: getType(item),
           postHeader: item.data.postHeader,
           postAuthor: item.data.postAuthor,
           series: item.data.series || [],

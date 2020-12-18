@@ -133,6 +133,6 @@ module.exports = function (config) {
       input: "src/site",
       output: "dist",
     },
-    templateFormats: ["njk", "11ty.js", "md"],
+    templateFormats: ["njk", "11ty.js", "md", "pdf"],
   };
 };

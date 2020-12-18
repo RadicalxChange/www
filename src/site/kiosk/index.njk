@@ -2,11 +2,6 @@
 layout: layouts/_base.njk
 title: Kiosk
 headerText: RxC Kiosk
-pagination:
-  data: collections.kiosk
-  size: 16
-  reverse: true
-  alias: blog
 ---
 
 <!-- prettier-ignore -->
@@ -49,17 +44,29 @@ pagination:
     class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk gap-x-8 gap-y-16 mb-8"
   >
     <!-- prettier-ignore -->
-    {% for post in blog %}
+    {% for post in collections.kiosk | reverse | slice (0, 16) %}
+
+    <!-- prettier-ignore -->
+    {% set postUrl = post.data.redirectHref | default(post.url) %}
+
+    <!-- There is a bug in nunjucks or 11ty somewhere and this is need to read post.inputPath multiple times -->
+    <!-- prettier-ignore -->
+    {% set postInputPath = post.inputPath.toString() %}
+
     <li
       data-kiosk
       data-kiosk-series="{{ post.data.series | default([]) | dump }}"
     >
       <a
         class="flex flex-col justify-between h-full kiosk_border-b"
-        href="{{ post.url }}"
+        href="{{ postUrl }}"
       >
         <div class="mb-8">
-          <p class="text-size--1">Blog Post</p>
+          <p data-kiosk-item-prop="postType" class="text-size--1">
+            {{ "Blog Post" if postInputPath.includes("/blog/") }}
+            {{ "Announcement" if postInputPath.includes("/announcements/") }}
+            {{ "Paper" if postInputPath.includes("/papers/") }}
+          </p>
           <h2
             data-kiosk-item-prop="postHeader"
             class="leading-snug text-size-2"
@@ -72,7 +79,7 @@ pagination:
             data-kiosk-item-prop="postAuthor"
             class="text-size--2 lg:text-size--3"
           >
-            {{ post.data.postAuthor }}
+            {{ post.data.postAuthor | default("RxC Team") }}
           </p>
           <p data-kiosk-item-prop="date" class="text-size--2 lg:text-size--3">
             {{ post.data.date | readableDate }}
@@ -153,10 +160,12 @@ pagination:
 
     const $anchor = $item.children[0];
     $anchor.href = item.url;
+    $anchor.querySelector('[data-kiosk-item-prop="postType"').innerText =
+      item.data.postType;
     $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
       item.data.postHeader;
     $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
-      item.data.postAuthor;
+      item.data.postAuthor || "RxC Team";
     $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
       item.data.date;
 
