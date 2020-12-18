@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-12-15"
 title: "Why I am not a Market Radical"
