@@ -4,6 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
+    <link
+      rel="preload"
+      href="/fonts/MesserV20-Condensed.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/suisseintl-regular-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <!-- prettier-ignore -->
     {% block metaTags %}
     <meta
@@ -52,14 +66,10 @@
     <!-- prettier-ignore -->
     {% block headScripts %}
     <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://unpkg.com/body-scroll-lock@3.0.2/lib/bodyScrollLock.min.js"
       integrity="sha384-TPD9y0kmdvgK9D4a+br/KYlqMn9cLVXHDVxxN93FvPj+13bPJeMJZaXAB7+p/e7X"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://rabbit.radicalxchange.org/script.js"
