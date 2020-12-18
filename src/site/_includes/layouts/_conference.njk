@@ -8,8 +8,8 @@
 {% block body %}
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/events") }}
-<main
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin"
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
 >
   <header
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-14 justify-self-center lg:justify-self-start mb-4"
@@ -24,7 +24,7 @@
   {% block sections %}
   <!-- prettier-ignore -->
   {% endblock %}
-  <section class="col-span-columns mt-16 lg:mt-64">
+  <div class="col-span-columns mt-16 lg:mt-64">
     <h2 class="pb-4 border-b text-size--1 uppercase">Watch the replays</h2>
     <ul id="videos">
       <!-- prettier-ignore -->
@@ -64,8 +64,8 @@
       <!-- prettier-ignore -->
       {% endfor %}
     </ul>
-  </section>
-</main>
+  </div>
+</div>
 <template id="youtube-template">
   <iframe
     src="https://www.youtube-nocookie.com/embed/${videoId}"
