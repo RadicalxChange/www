@@ -66,6 +66,7 @@ headerText: RxC Kiosk
             {{ "Blog Post" if postInputPath.includes("/blog/") }}
             {{ "Announcement" if postInputPath.includes("/announcements/") }}
             {{ "Paper" if postInputPath.includes("/papers/") }}
+            {{ "Library" if postInputPath.includes("/library/") }}
           </p>
           <h2
             data-kiosk-item-prop="postHeader"
@@ -165,7 +166,7 @@ headerText: RxC Kiosk
     $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
       item.data.postHeader;
     $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
-      item.data.postAuthor || "RxC Team";
+      item.data.postAuthor;
     $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
       item.data.date;
 

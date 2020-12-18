@@ -5,6 +5,8 @@ function getType(item) {
     return "Announcement";
   } else if (item.inputPath.includes("/papers/")) {
     return "Paper";
+  } else if (item.inputPath.includes("/library/")) {
+    return "Library";
   }
 }
 
@@ -37,7 +39,7 @@ class Pages {
           title: item.data.title,
           postType: getType(item),
           postHeader: item.data.postHeader,
-          postAuthor: item.data.postAuthor,
+          postAuthor: item.data.postAuthor || "RxC Team",
           series: item.data.series || [],
         },
       })),
