@@ -8,7 +8,7 @@
     id="menu_inner"
     class="relative w-full lg:w-auto h-full pt-margin lg:pt-lg/margin px-margin lg:px-lg/margin bg-black text-white overflow-y-auto hidden"
   >
-    <nav class="flex flex-col justify-between h-full">
+    <nav class="flex flex-col justify-between min-h-full pb-24 lg:pb-0">
       <div>
         <h1>
           <a
@@ -63,20 +63,20 @@
           </li>
         </ul>
       </div>
-      <div
-        class="sticky bottom-0 flex justify-center lg:hidden w-full py-margin bg-black"
-      >
-        <button
-          data-menu-button
-          class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
-        >
-          Close
-        </button>
-      </div>
       <p class="hidden lg:block py-2 text-size--3 text-center">
         © 2020 RadicalxChange Foundation Ltd.
       </p>
     </nav>
+    <div
+      class="fixed bottom-0 left-0 flex justify-center lg:hidden w-full py-margin bg-black"
+    >
+      <button
+        data-menu-button
+        class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
+      >
+        Close
+      </button>
+    </div>
   </div>
   <div id="menu_slider" class="hidden lg:block menu_slider">
     <button data-menu-button="hover">
@@ -91,7 +91,7 @@
 </div>
 <div
   id="menu_button"
-  class="z-10 fixed bottom-0 flex justify-center lg:hidden w-full mb-margin menu_button"
+  class="z-10 fixed bottom-0 left-0 flex justify-center lg:hidden w-full mb-margin menu_button"
 >
   <button
     data-menu-button

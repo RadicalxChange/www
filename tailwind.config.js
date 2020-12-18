@@ -47,6 +47,7 @@ module.exports = {
       borderRadius: { 50: "50%", oval: "70px" },
       borderWidth: { 3: "3px" },
       transitionProperty: {
+        width: "width",
         right: "right",
         "margin-left": "margin-left",
         "clip-path": "clip-path",
@@ -172,6 +173,7 @@ module.exports = {
       display: ["open", "group-hover"],
       visibility: ["group-hover"],
       margin: ["open", "group-hover"],
+      width: ["group-hover"],
     },
   },
   plugins: [

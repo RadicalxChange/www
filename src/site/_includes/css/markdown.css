@@ -143,6 +143,18 @@
     text-decoration: underline;
   }
 
+  /* https://css-tricks.com/hash-tag-links-padding/ */
+  h2::before,
+  h3::before,
+  h4::before {
+    display: block;
+    content: " ";
+    margin-top: 1rem;
+    height: 1rem;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
   &.markdown-sm {
     @apply text-size--1;
   }
