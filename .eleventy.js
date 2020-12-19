@@ -102,7 +102,11 @@ module.exports = function (config) {
       const { html } = await posthtml([
         require("posthtml-alt-always")(),
         require("posthtml-link-noreferrer")(),
-        require("htmlnano")(),
+        require("htmlnano")({
+          minifySvg: {
+            plugins: [{ cleanupIDs: false }],
+          },
+        }),
       ]).process(content);
 
       if (isDev) {

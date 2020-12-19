@@ -13,13 +13,13 @@ class Thing {
 
     return `
     <div style="width: 512px" class="border mx-auto bg-golden-fizz">
-    <svg width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
-    <g transform="translate(50, 50)">
+    <svg id="data-dignity" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
+    <g id="data-dignity-rotate">
     ${[0, 1, 2, 3, 4, 5, 6, 7]
       .map(
         (_, index) => `<circle
-  cx="${Math.sin(index * radianInterval) * scale}"
-  cy="${Math.cos(index * radianInterval) * scale}"
+  cx="${Math.sin(index * radianInterval) * scale + 50}"
+  cy="${Math.cos(index * radianInterval) * scale * -1 + 50}"
   r="${radius}"
   fill="#FAFFC3"
   stroke="black"

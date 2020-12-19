@@ -1,13 +1,11 @@
-.ball {
-  width: 10%;
-  padding-top: 100%;
-  @apply border rounded-50;
-  @apply bg-light-gold;
+#data-dignity #data-dignity-rotate {
+  transform-origin: 50% 50%;
+  transform: rotateZ(0);
+  transition: transform 2s ease-in;
 }
 
-.ball1 {
-  @apply absolute;
-  top: 0;
+#data-dignity:hover #data-dignity-rotate {
+  transform: rotateZ(51.43deg);
 }
 
 .quadratic-voting {
