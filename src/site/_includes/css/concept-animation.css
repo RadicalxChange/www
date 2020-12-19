@@ -1,20 +1,11 @@
 #data-dignity #data-dignity-rotate {
-  transform-origin: 50% 50%;
+  transform-origin: center center;
   transform: rotateZ(0);
-  transition: transform 2s ease-in;
+  transition: transform 1s ease-in;
 }
 
 #data-dignity:hover #data-dignity-rotate {
   transform: rotateZ(51.43deg);
-}
-
-#data-dignity #data-dignity-rotate circle {
-  transform: translate(0, 0);
-  transition: transform 2s ease-in;
-}
-
-#data-dignity:hover #data-dignity-rotate circle {
-  transform: translate(-10%, -10%);
 }
 
 .quadratic-voting {
