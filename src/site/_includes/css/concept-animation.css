@@ -5,6 +5,11 @@
   @apply bg-light-gold;
 }
 
+.ball1 {
+  @apply absolute;
+  top: 0;
+}
+
 .quadratic-voting {
   background: linear-gradient(
     to bottom,
