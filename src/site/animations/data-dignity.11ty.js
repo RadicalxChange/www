@@ -19,7 +19,7 @@ class Thing {
       .map(
         (_, index) => `<circle
   cx="${Math.sin(index * radianInterval) * scale + 50}"
-  cy="${Math.cos(index * radianInterval) * scale * -1 + 50}"
+  cy="${Math.cos(index * radianInterval) * scale * -1 + 64}"
   r="${radius}"
   fill="#FAFFC3"
   stroke="black"
