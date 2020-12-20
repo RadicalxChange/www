@@ -1,7 +1,9 @@
+const { makeWebComponent } = require("./make-wc");
+
 class Thing {
   data() {
     return {
-      layout: "layouts/_base.njk",
+      permalink: "animations/data-dignity.js",
     };
   }
 
@@ -11,8 +13,10 @@ class Thing {
     const numberOfCircles = 7;
     const radianInterval = (Math.PI * 2) / numberOfCircles;
 
-    return `
-    <div style="width: 512px" class="border mx-auto bg-golden-fizz">
+    return makeWebComponent(
+      "DataDignityAnimation",
+      "data-dignity-animation",
+      `
     <svg id="data-dignity" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
     <g id="data-dignity-rotate">
     ${[6, 5, 4, 3, 2, 1, 0]
@@ -55,8 +59,8 @@ class Thing {
       .join("\n")}
     </style>
     </svg>
-  </div>
-    `;
+    `
+    );
   }
 }
 

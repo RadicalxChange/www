@@ -1,7 +1,9 @@
+const { makeWebComponent } = require("./make-wc");
+
 class Thing {
   data() {
     return {
-      layout: "layouts/_base.njk",
+      permalink: "animations/radical-antitrust.js",
     };
   }
 
@@ -30,8 +32,10 @@ class Thing {
       [1, 0, 0, 0, 0, 1, 0, 0, 1],
     ];
 
-    return `
-    <div style="width: 512px" class="border mx-auto bg-golden-fizz">
+    return makeWebComponent(
+      "RadicalAntitrustAnimation",
+      "radical-antitrust-animation",
+      `
     <svg id="radical-antitrust" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
     ${grid
       .map((rowArray, r) =>
@@ -107,8 +111,8 @@ class Thing {
       }
       </style>
     </svg>
-  </div>
-    `;
+    `
+    );
   }
 }
 

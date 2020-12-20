@@ -1,7 +1,9 @@
+const { makeWebComponent } = require("./make-wc");
+
 class Thing {
   data() {
     return {
-      layout: "layouts/_base.njk",
+      permalink: "animations/quadratic-funding.js",
     };
   }
 
@@ -28,8 +30,10 @@ class Thing {
       yOffset += size + innerPadding;
     }
 
-    return `
-    <div style="width: 512px" class="border mx-auto bg-golden-fizz">
+    return makeWebComponent(
+      "QuadraticFundingAnimation",
+      "quadratic-funding-animation",
+      `
     <svg id="quadratic-financing" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
       ${squares.join("\n")}
       <style>
@@ -71,8 +75,8 @@ class Thing {
       }
       </style>
     </svg>
-  </div>
-    `;
+    `
+    );
   }
 }
 

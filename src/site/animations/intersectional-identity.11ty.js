@@ -1,14 +1,17 @@
+const { makeWebComponent } = require("./make-wc");
+
 class Thing {
   data() {
     return {
-      layout: "layouts/_base.njk",
+      permalink: "animations/intersectional-identity.js",
     };
   }
 
   render() {
-    return `
-    <div id="thing" style="width: 512px" class="border mx-auto bg-golden-fizz">
-    <svg-container>
+    return makeWebComponent(
+      "IntersectionalIdentityAnimation",
+      "intersectional-identity-animation",
+      `
     <svg id="intersectional-identity" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
       <path id="shape-1" d="M 20,29 h 20 v 50 h 20 v 20 h -40 v -70" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
       <path id="shape-2" d="M 40,29 h 40 v 25 h -40 v -25" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
@@ -36,19 +39,8 @@ class Thing {
       }
       </style>
     </svg>
-    </svg-container>
-  </div>
-  <script>
-  class SVGContainer extends HTMLElement {
-    constructor() {
-      super();
-      const shadowRoot = this.attachShadow({mode: 'closed'});
-      shadowRoot.append(...this.childNodes);
-    }
-  }
-  customElements.define('svg-container', SVGContainer);
-  </script>
-    `;
+    `
+    );
   }
 }
 
