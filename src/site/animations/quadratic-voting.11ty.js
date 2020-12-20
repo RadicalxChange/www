@@ -9,34 +9,52 @@ class Thing {
     return `
     <div id="thing" style="width: 512px" class="border mx-auto bg-golden-fizz">
     <svg-container>
-    <svg id="quadratic-voting" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
-      <ellipse id="egg" cx="50" cy="64" rx="50" ry="64" fill="transparent" stroke="black" vector-effect="non-scaling-stroke"/>
-      <style>
-      #egg {
-        background: linear-gradient(
-          to bottom,
-          theme("colors.light-gold"),
-          transparent,
-          theme("colors.light-gold")
-        );
-        background-size: auto 300%;
-        animation: ease-in infinite gradient-rotation 2s paused;
-      }
+    <div id="canvas">
+      <div id="canvas__inner">
+        <div id="quadratic-voting"></div>
+      </div>
+    </div>
+    <style>
+    #canvas {
+      position: relative;
+      padding-top: 128%;
+    }
 
-      @keyframes gradient-rotation {
-        0% {
-          background-position-y: 0%;
-        }
-        100% {
-          background-position-y: 150%;
-        }
-      }
+    #canvas__inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-      #quadratic-voting:hover #egg {
-        animation-play-state: running;
+    #quadratic-voting {
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+      border-radius: 50%;
+      background: linear-gradient(
+        to bottom,
+        #FAFFC3,
+        transparent,
+        #FAFFC3
+      );
+      background-size: auto 300%;
+    }
+
+    #quadratic-voting:hover {
+      animation: linear infinite gradient-rotation 4s running;
+    }
+    
+    @keyframes gradient-rotation {
+      0% {
+        background-position-y: 0%;
       }
-      </style>
-    </svg>
+      100% {
+        background-position-y: 150%;
+      }
+    }
+    </style>
     </svg-container>
   </div>
   <script>
