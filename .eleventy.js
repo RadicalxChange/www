@@ -103,9 +103,7 @@ module.exports = function (config) {
         require("posthtml-alt-always")(),
         require("posthtml-link-noreferrer")(),
         require("htmlnano")({
-          minifySvg: {
-            plugins: [{ cleanupIDs: false }],
-          },
+          minifySvg: false,
         }),
       ]).process(content);
 
