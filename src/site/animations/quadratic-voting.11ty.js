@@ -28,22 +28,18 @@ class Thing {
       height: 100%;
     }
 
+    /* https://mycolor.space/gradient?ori=to+bottom&hex=%23EDFF38&hex2=%23FAFFC3&sub=1 */
     #quadratic-voting {
       width: 100%;
       height: 100%;
       border: 1px solid black;
       border-radius: 50%;
-      background: linear-gradient(
-        to bottom,
-        #FAFFC3,
-        transparent,
-        #FAFFC3
-      );
+      background-image: linear-gradient(to bottom, #edff38, #f1ff64, #f4ff86, #f7ffa5, #faffc3, #f7ffa5, #f4ff86, #f1ff64, #edff38);
       background-size: auto 300%;
     }
 
     #quadratic-voting:hover {
-      animation: linear infinite gradient-rotation 4s running;
+      animation: linear infinite gradient-rotation 2.5s running;
     }
     
     @keyframes gradient-rotation {
