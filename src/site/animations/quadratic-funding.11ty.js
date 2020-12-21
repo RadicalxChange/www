@@ -36,8 +36,8 @@ class Thing {
       "QuadraticFundingAnimation",
       "quadratic-funding-animation",
       `
-  <div style="padding: 0 7%">
-    <svg id="quadratic-financing" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <div style="display: flex; align-items: center; padding: 0 7%">
+      <svg id="quadratic-financing" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       ${squares.join("\n")}
       <style>
       #rect-1,

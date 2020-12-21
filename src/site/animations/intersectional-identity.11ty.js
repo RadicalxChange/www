@@ -12,10 +12,11 @@ class Thing {
       "IntersectionalIdentityAnimation",
       "intersectional-identity-animation",
       `
-    <svg id="intersectional-identity" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
-      <path id="shape-1" d="M 20,29 h 20 v 50 h 20 v 20 h -40 v -70" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
-      <path id="shape-2" d="M 40,29 h 40 v 25 h -40 v -25" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
-      <path id="shape-3" d="M 40,54 h 40 v 45 h -20 v -20 h -20 v -25" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
+  <div style="display: flex; align-items: center; padding: 0 7%">
+    <svg id="intersectional-identity" width="100%" viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg">
+      <path id="shape-1" d="M 10,19 h 20 v 50 h 20 v 20 h -40 v -70" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
+      <path id="shape-2" d="M 30,19 h 40 v 25 h -40 v -25" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
+      <path id="shape-3" d="M 30,44 h 40 v 45 h -20 v -20 h -20 v -25" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>
       <style>
       #shape-1 {
         transform: translate(-10%, 10%) rotate(-2deg);
@@ -39,6 +40,7 @@ class Thing {
       }
       </style>
     </svg>
+  </div>
     `
     );
   }

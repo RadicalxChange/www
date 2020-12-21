@@ -41,7 +41,7 @@ class Thing {
       "PartialCommonOwnershipAnimation",
       "partial-common-ownership-animation",
       `
-      <div style="padding: 0 7%">
+      <div style="display: flex; align-items: center; padding: 0 7%">
     <svg id="partial-common-ownership" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       ${circles.join("\n")}
       <style>
