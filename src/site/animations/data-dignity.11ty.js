@@ -10,7 +10,7 @@ class Thing {
   render() {
     const radius = 12;
     // const scale = 50 - radius;
-    const scale = 35;
+    const scale = 38;
     const scaleInner = 18;
     const numberOfCircles = 7;
     const radianInterval = (Math.PI * 2) / numberOfCircles;
@@ -26,7 +26,7 @@ class Thing {
         (index) => `<circle
   id="circle-${index}"
   cx="${Math.sin(index * radianInterval) * scale + 50}"
-  cy="${Math.cos(index * radianInterval) * scale * -1 + 50}"
+  cy="${Math.cos(index * radianInterval) * scale * -1 + 53}"
   r="${radius}"
   fill="#FAFFC3"
   stroke="black"
