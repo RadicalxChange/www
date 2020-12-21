@@ -14,7 +14,7 @@ class Thing {
     const yPercent = (radius * 2) / 1.28;
 
     const steps = 12;
-    const seconds = 10;
+    const seconds = 5;
     const stepInt = 100 / steps;
 
     const circles = [];
