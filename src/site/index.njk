@@ -52,7 +52,10 @@ homeConcepts:
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 self-center grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 lg:gap-y-12 mb-16 lg:mb-8"
   >
     {% for concept in homeConcepts%}
-    <a class="flex flex-col items-center" href="{{ concept.href }}">
+    <a
+      class="flex flex-col items-center justify-between"
+      href="{{ concept.href }}"
+    >
       <div class="w-full max-w-sm mb-4">
         {{ concept.element | safe }}
       </div>
