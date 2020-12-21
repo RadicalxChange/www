@@ -19,14 +19,14 @@ class Thing {
       "DataDignityAnimation",
       "data-dignity-animation",
       `
-    <svg id="data-dignity" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
+    <svg id="data-dignity" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g id="data-dignity-rotate">
     ${[6, 5, 4, 3, 2, 1, 0]
       .map(
         (index) => `<circle
   id="circle-${index}"
   cx="${Math.sin(index * radianInterval) * scale + 50}"
-  cy="${Math.cos(index * radianInterval) * scale * -1 + 64}"
+  cy="${Math.cos(index * radianInterval) * scale * -1 + 50}"
   r="${radius}"
   fill="#FAFFC3"
   stroke="black"
@@ -55,9 +55,7 @@ class Thing {
 #data-dignity:hover #circle-${index} {
   transform: translate(${
     Math.sin(index * radianInterval) * -1 * (scale - scaleInner)
-  }%, ${
-          Math.cos(index * radianInterval) * (scale - scaleInner) * (100 / 128)
-        }%);
+  }%, ${Math.cos(index * radianInterval) * (scale - scaleInner)}%);
 }`
       )
       .join("\n")}

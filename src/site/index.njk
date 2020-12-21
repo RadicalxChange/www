@@ -56,10 +56,13 @@ homeConcepts:
       class="flex flex-col items-center justify-between"
       href="{{ concept.href }}"
     >
+      <div></div>
       <div class="w-full max-w-sm mb-4">
         {{ concept.element | safe }}
       </div>
-      <h2 class="text-center text-size-2 lg:text-size-0">{{ concept.name }}</h2>
+      <h2 class="text-center text-size-2 lg:text-size-0">
+        {{ concept.name }}
+      </h2>
     </a>
     {% endfor %}
   </div>
