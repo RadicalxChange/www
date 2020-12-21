@@ -9,7 +9,9 @@ class Thing {
 
   render() {
     const radius = 10;
-    const scale = 50 - radius;
+    // const scale = 50 - radius;
+    const scale = 30;
+    const scaleInner = 18;
     const numberOfCircles = 7;
     const radianInterval = (Math.PI * 2) / numberOfCircles;
 
@@ -52,8 +54,10 @@ class Thing {
 }
 #data-dignity:hover #circle-${index} {
   transform: translate(${
-    Math.sin(index * radianInterval) * -1 * (scale * 0.7)
-  }%, ${Math.cos(index * radianInterval) * (scale * 0.7) * (100 / 128)}%);
+    Math.sin(index * radianInterval) * -1 * (scale - scaleInner)
+  }%, ${
+          Math.cos(index * radianInterval) * (scale - scaleInner) * (100 / 128)
+        }%);
 }`
       )
       .join("\n")}
