@@ -8,14 +8,8 @@ class Thing {
   }
 
   render() {
-    const radius = 10;
-    const spacing = 10;
-    const scale = 50 - radius;
-    const numberOfCircles = 7;
-    const radianInterval = (Math.PI * 2) / numberOfCircles;
-
-    const xPercent = 100 / 10;
-    const yPercent = 100 / 12.8;
+    const radius = 7.5;
+    const spacing = 7.5;
 
     const grid = [
       [0, 1, 1, 1, 1, 1, 1, 1, 0],
@@ -31,6 +25,14 @@ class Thing {
       [1, 0, 0, 0, 0, 4, 0, 0, 1],
       [1, 0, 0, 0, 0, 1, 0, 0, 1],
     ];
+    const numRows = grid.length;
+    const numCols = grid[0].length;
+
+    const paddingX = (100 - ((numCols - 1) * spacing + 2 * radius)) / 2;
+    const paddingY = (128 - ((numRows - 1) * spacing + 2 * radius)) / 2;
+
+    const xPercent = spacing;
+    const yPercent = spacing / 1.28;
 
     return makeWebComponent(
       "RadicalAntitrustAnimation",
@@ -62,8 +64,8 @@ class Thing {
             } else if (firstDigit == 5) {
               classList = `move move-left${numZeros + 1}`;
             }
-            return `<circle cx="${c * spacing + 10}" cy="${
-              r * spacing + 10
+            return `<circle cx="${c * spacing + paddingX + radius}" cy="${
+              r * spacing + paddingY + radius
             }" r="${radius}" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke" class="${classList}"/>`;
           })
           .join("\n")
