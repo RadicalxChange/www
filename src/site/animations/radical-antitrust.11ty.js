@@ -8,8 +8,8 @@ class Thing {
   }
 
   render() {
-    const radius = 7.5;
-    const spacing = 7.5;
+    const radius = 10;
+    const spacing = 10;
 
     const grid = [
       [0, 1, 1, 1, 1, 1, 1, 1, 0],
@@ -28,17 +28,20 @@ class Thing {
     const numRows = grid.length;
     const numCols = grid[0].length;
 
-    const paddingX = (100 - ((numCols - 1) * spacing + 2 * radius)) / 2;
-    const paddingY = (128 - ((numRows - 1) * spacing + 2 * radius)) / 2;
+    // const paddingX = (100 - ((numCols - 1) * spacing + 2 * radius)) / 2;
+    // const paddingY = (128 - ((numRows - 1) * spacing + 2 * radius)) / 2;
+    const paddingX = 0.1;
+    const paddingY = 0.1;
 
     const xPercent = spacing;
-    const yPercent = spacing / 1.28;
+    const yPercent = spacing / 1.3;
 
     return makeWebComponent(
       "RadicalAntitrustAnimation",
       "radical-antitrust-animation",
       `
-    <svg id="radical-antitrust" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
+  <div style="padding: 0 7%">
+    <svg id="radical-antitrust" width="100%" viewBox="0 0 100.2 130.2" xmlns="http://www.w3.org/2000/svg">
     ${grid
       .map((rowArray, r) =>
         rowArray
@@ -113,6 +116,7 @@ class Thing {
       }
       </style>
     </svg>
+  </div>
     `
     );
   }
