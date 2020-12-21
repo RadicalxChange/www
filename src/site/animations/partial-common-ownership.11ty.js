@@ -44,24 +44,31 @@ class Thing {
     <svg id="partial-common-ownership" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
       ${circles.join("\n")}
       <style>
+      #circle-7,
+      #circle-4,
+      #circle-3,
+      #circle-6 {
+        transform: translate(0, 0);
+      }
+
       #partial-common-ownership:hover #circle-7 {
         animation: linear infinite circle-7 ${seconds}s backwards;
       }
       @keyframes circle-7 {
         0% {
-          transform: translateX(0);
+          transform: translate(0, 0);
         }
         ${stepInt * 1}% {
-          transform: translateX(${xPercent}%);
+          transform: translate(${xPercent}%, 0);
         }
         ${stepInt * 10}% {
-          transform: translateX(${xPercent}%);
+          transform: translate(${xPercent}%, 0);
         }
         ${stepInt * 11}% {
-          transform: translateX(0);
+          transform: translate(0, 0);
         }
         100% {
-          transform: translateX(0);
+          transform: translate(0, 0);
         }
       }
 
@@ -70,13 +77,13 @@ class Thing {
       }
       @keyframes circle-4 {
         ${stepInt * 2}% {
-          transform: translateX(0);
+          transform: translate(0, 0);
         }
         ${stepInt * 3}% {
-          transform: translateY(${yPercent}%);
+          transform: translate(0, ${yPercent}%);
         }
         ${stepInt * 8}% {
-          transform: translateY(${yPercent}%);
+          transform: translate(0, ${yPercent}%);
         }
         ${stepInt * 9}% {
           transform: translate(-${xPercent}%, ${yPercent}%);
@@ -91,13 +98,13 @@ class Thing {
       }
       @keyframes circle-3 {
         ${stepInt * 4}% {
-          transform: translateX(0);
+          transform: translate(0, 0);
         }
         ${stepInt * 5}% {
-          transform: translateX(${xPercent}%);
+          transform: translate(${xPercent}%, 0);
         }
         100% {
-          transform: translateX(${xPercent}%);
+          transform: translate(${xPercent}%, 0);
         }
       }
 
@@ -106,13 +113,13 @@ class Thing {
       }
       @keyframes circle-6 {
         ${stepInt * 6}% {
-          transform: translateX(0);
+          transform: translate(0, 0);
         }
         ${stepInt * 7}% {
-          transform: translateY(-${yPercent}%);
+          transform: translate(0, -${yPercent}%);
         }
         100% {
-          transform: translateY(-${yPercent}%);
+          transform: translate(0, -${yPercent}%);
         }
       }
       </style>
