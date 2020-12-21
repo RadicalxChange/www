@@ -8,16 +8,16 @@ class Thing {
   }
 
   render() {
-    const size = 10;
+    const size = 18;
     const innerPadding = 2;
     const timeStep = 500;
 
     const initialFills = [0, 4, 8, 9, 12, 13, 14, 15];
     const squares = [];
     let index = 0;
-    let yOffset = 41;
+    let yOffset = (128 - innerPadding * 3 - size * 4) / 2;
     for (let r = 0; r < 4; r++) {
-      let xOffset = 27;
+      let xOffset = (100 - innerPadding * 3 - size * 4) / 2;
       for (let c = 0; c < 4; c++) {
         squares.push(
           `<rect id="rect-${index}" x="${xOffset}" y="${yOffset}" width="${size}" height="${size}" fill="${

@@ -8,9 +8,9 @@ class Thing {
   }
 
   render() {
-    const radius = 10;
+    const radius = 12;
     // const scale = 50 - radius;
-    const scale = 30;
+    const scale = 35;
     const scaleInner = 18;
     const numberOfCircles = 7;
     const radianInterval = (Math.PI * 2) / numberOfCircles;
