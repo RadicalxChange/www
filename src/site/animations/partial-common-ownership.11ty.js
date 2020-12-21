@@ -8,10 +8,10 @@ class Thing {
   }
 
   render() {
-    const radius = 13;
+    const radius = 16.6;
 
     const xPercent = radius * 2;
-    const yPercent = (radius * 2) / 1.28;
+    const yPercent = radius * 2;
 
     const steps = 12;
     const seconds = 5;
@@ -27,9 +27,9 @@ class Thing {
 
         circles.push(
           `<circle id="circle-${index}" cx="${
-            radius * 2 * c + (100 - radius * 4) / 2
+            radius * 2 * c + radius + 0.1
           }" cy="${
-            radius * 2 * r + (128 - radius * 4) / 2
+            radius * 2 * r + radius + 0.1
           }" r="${radius}" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>`
         );
 
@@ -41,7 +41,8 @@ class Thing {
       "PartialCommonOwnershipAnimation",
       "partial-common-ownership-animation",
       `
-    <svg id="partial-common-ownership" width="100%" viewBox="0 0 100 128" xmlns="http://www.w3.org/2000/svg">
+      <div style="padding: 0 7%">
+    <svg id="partial-common-ownership" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       ${circles.join("\n")}
       <style>
       #circle-7,
@@ -124,6 +125,7 @@ class Thing {
       }
       </style>
     </svg>
+    </div>
     `
     );
   }
