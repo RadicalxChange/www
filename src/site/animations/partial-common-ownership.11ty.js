@@ -8,10 +8,10 @@ class Thing {
   }
 
   render() {
-    const radius = 10;
+    const radius = 13;
 
-    const xPercent = 20;
-    const yPercent = 15.625;
+    const xPercent = radius * 2;
+    const yPercent = (radius * 2) / 1.28;
 
     const steps = 12;
     const seconds = 10;
@@ -26,8 +26,10 @@ class Thing {
         }
 
         circles.push(
-          `<circle id="circle-${index}" cx="${radius * 2 * c + 30}" cy="${
-            radius * 2 * r + 44
+          `<circle id="circle-${index}" cx="${
+            radius * 2 * c + (100 - radius * 4) / 2
+          }" cy="${
+            radius * 2 * r + (128 - radius * 4) / 2
           }" r="${radius}" fill="#FAFFC3" stroke="black" vector-effect="non-scaling-stroke"/>`
         );
 
