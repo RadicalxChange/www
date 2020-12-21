@@ -20,9 +20,9 @@ class Thing {
       let xOffset = (100 - innerPadding * 3 - size * 4) / 2;
       for (let c = 0; c < 4; c++) {
         squares.push(
-          `<rect id="rect-${index}" x="${xOffset}" y="${yOffset}" width="${size}" height="${size}" fill="${
-            initialFills.includes(index) ? "#FAFFC3" : "transparent"
-          }" stroke="black" vector-effect="non-scaling-stroke"/>`
+          `<rect id="rect-${index}" x="${xOffset}" y="${yOffset}" width="${size}" height="${size}" ${
+            initialFills.includes(index) ? `fill="#FAFFC3"` : ""
+          } stroke="black" vector-effect="non-scaling-stroke"/>`
         );
         index++;
         xOffset += size + innerPadding;
@@ -40,17 +40,20 @@ class Thing {
       #rect-1,
       #rect-2,
       #rect-3 {
+        fill: #EDFF38;
         transition: fill ${timeStep}ms;
       }
 
       #rect-5,
       #rect-6,
       #rect-7 {
+        fill: #EDFF38;
         transition: fill ${timeStep * 2}ms;
       }
 
       #rect-10,
       #rect-11 {
+        fill: #EDFF38;
         transition: fill ${timeStep * 3}ms;
       }
 
@@ -58,20 +61,20 @@ class Thing {
       #quadratic-financing:hover #rect-2,
       #quadratic-financing:hover #rect-3 {
         fill: #FAFFC3;
-        transition: fill ${timeStep * 3}ms;
+        transition-duration: ${timeStep * 3}ms;
       }
 
       #quadratic-financing:hover #rect-5,
       #quadratic-financing:hover #rect-6,
       #quadratic-financing:hover #rect-7 {
         fill: #FAFFC3;
-        transition: fill ${timeStep * 2}ms;
+        transition-duration: ${timeStep * 2}ms;
       }
 
       #quadratic-financing:hover #rect-10,
       #quadratic-financing:hover #rect-11 {
         fill: #FAFFC3;
-        transition: fill ${timeStep}ms;
+        transition-duration: ${timeStep}ms;
       }
       </style>
     </svg>
