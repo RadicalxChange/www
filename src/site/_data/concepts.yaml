@@ -10,21 +10,19 @@
     [Who Owns the Future?](https://www.simonandschuster.com/books/Who-Owns-the-Future/Jaron-Lanier/9781451654974)
   tools:
     - title: Ocean Protocol
+      href: https://oceanprotocol.com/
       description: |
         Ocean Protocol is a digital infrastructure to power the web3 data economy. It is the root for applications such as data marketplaces, crypto-secure data custody and data management, as well as easier to implement data unions, trusts, and cooperatives.
       links:
-        - text: Website
-          href: https://oceanprotocol.com/
         - text: Twitter
           href: https://twitter.com/oceanprotocol
         - text: GitHub
           href: https://github.com/oceanprotocol
     - title: Maskbook
+      href: https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap
       description: |
         Maskbook is a browser extension that enables you, all people of the Internet, to create encrypted posts on your favorite social network sites, including Facebook and Twitter. Your can choose who is able to see them and who is not.
       links:
-        - text: Chrome Extension
-          href: https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap
         - text: Twitter
           href: https://twitter.com/realmaskbook
         - text: GitHub
@@ -40,37 +38,33 @@
     [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)
   tools:
     - title: Government Technology Agency (Singapore)
+      href: https://qv.geek.sg/
       description: |
         If you want to do a casual Quadratic Vote with your peers, this web app is a great choice. It is all straightforward from election creation, email / link invites, and quadratic voting to result analysis. You can even build your own interface on top of it using the associated APIs.
       links:
-        - text: Website
-          href: https://qv.geek.sg/
         - text: Twitter
           href: https://github.com/yehjxraymond/qv-app
         - text: GitHub
           href: https://twitter.com/GovTechSG
     - title: Sheets Template for Quadratic Voting
+      href: https://drive.google.com/drive/folders/1trnAJ1XOLyZk-0mgedZ3G98MQH3xrL0m?usp=sharing
       description: |
         Have small scale Quadratic Votes in mind? These sheets might be just right for you. It's a buch of interconnected columns and rows that let you easily perform and analyze Quadratic Votes in line with your needs. Dive into the folder, make a copy of the files, and off you go!
-      links:
-        - text: Google Sheets
-          href: https://drive.google.com/drive/folders/1trnAJ1XOLyZk-0mgedZ3G98MQH3xrL0m?usp=sharing
+      links: []
     - title: Quadratic Moloch DAO / Democracy Earth
+      href: https://democracy.earth/
       description: |
         Quadratic Moloch DAO is a fork from the Moloch DAO smart contract standard that incorporates the optional use of Quadratic Voting. Moloch DAOs let collectives manage different kinds of rights and assets through democratic processes on Ethereum.
       links:
-        - text: Website
-          href: https://democracy.earth/
         - text: Twitter
           href: https://twitter.com/DemocracyEarth
         - text: GitHub
           href: https://github.com/DemocracyEarth/DemocracyDAO
     - title: CultureStake / Furtherfield
+      href: https://www.furtherfield.org/culturestake-2/
       description: |
         ‪CultureStake’s playful Quadratic Voting app allows you to vote on the types of cultural activity you would like to see in your locality. It democratizes arts commissioning by providing communities and artists with a radical tool to make cultural decisions together.
       links:
-        - text: Website
-          href: https://www.furtherfield.org/culturestake-2/
         - text: Twitter
           href: https://twitter.com/furtherfield
         - text: GitHub
@@ -87,31 +81,28 @@
     [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html)
   tools:
     - title: Clr.fund
+      href: https://clr.fund/
       description: |
         ‪Clr.fund is a protocol for Quadratic Funding of public goods projects in the Ethereum ecosystem. Using a combination of exclusive cryptography and mechanism design it aims to prevent Sybil-attacks, bribery, and collusion in the Quadratic Funding process.
       links:
-        - text: Website
-          href: https://clr.fund/
         - text: Twitter
           href: https://twitter.com/clrfund
         - text: GitHub
           href: https://github.com/clrfund
     - title: Gitcoin Grants
+      href: https://gitcoin.co/grants/
       description: |
         ‪Gitcoin Grants is a Quadratic Funding platform for public goods projects, primarily, in the Ethereum ecosystem. Beyond that, it featured matching funds for public Covid-19 and Black Lives Matter causes. Its enchanting interface is the go-to-place for radical public goods pilots.
       links:
-        - text: Website
-          href: https://gitcoin.co/grants/
         - text: Twitter
           href: https://twitter.com/gitcoin
         - text: GitHub
           href: https://github.com/gitcoinco/web/tree/master/app/grants
     - title: Downtown Stimulus
+      href: https://downtownstimulus.com/
       description: |
         ‪Downtown Stimulus is a Quadratic Funding based aid program for small businesses in Boulder, Colorado, that suffered as a consequence of Covid-19. Get in touch and bring the magic of Quadratic Funding to small businesses in your locality, too.
       links:
-        - text: Website
-          href: https://downtownstimulus.com/
         - text: Twitter
           href: https://twitter.com/gitcoin
         - text: GitHub
@@ -129,37 +120,33 @@
     [Depreciating Licenses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810)
   tools:
     - title: Harberger Ads
+      href: https://hads.xyz/
       description: |
         ‪Harberger Ads is an advertising marketplace governed by the rules of SALSA. Bootstrapped in a hackathon, the application allows you to sell ad space on your site or to possess other people's ad spaces. In its current version, Harberger Ads runs on Ethereum's test network.
       links:
-        - text: Website
-          href: https://hads.xyz/
         - text: GitHub
           href: https://github.com/theoephraim/harberger-ads
     - title: Nonomos
+      href: https://nonomos.com/
       description: |
         ‪Nonomos is a pilot application on Ethereum’s Rinkeby test network that by means of SALSA, governs the rights to cast YouTube videos on the associated site nonomos.com. Beyond that, it lets you mint and interact with additional unique tokens that work like SALSA.
       links:
-        - text: Website
-          href: https://nonomos.com/
         - text: GitHub
           href: https://github.com/anoanoano/NonomosHL
     - title: Wildcards
+      href: https://wildcards.world/
       description: |
         Wildcards applies gamification of market powers to fundraising for animal conservation. The "Wildcards" are tokens à la SALSA, which income goes to conservation foundations. The possessors of the tokens, or guardians of the animals, compare their contributions on a leaderboard.
       links:
-        - text: Website
-          href: https://wildcards.world/
         - text: Twitter
           href: https://twitter.com/wildcards_world
         - text: GitHub
           href: https://github.com/wildcards-world
     - title: This Artwork Is Always On Sale
+      href: https://thisartworkisalwaysonsale.com/
       description: |
         TAIAOS is a unique, rare digital artwork that is always on sale along the economic lines of SALSA. The scarcity of the digital artwork, its always-on auction & management of patronage towards the artist is all enabled through blockchain smart contracts on Ethereum.
       links:
-        - text: Website
-          href: https://thisartworkisalwaysonsale.com/
         - text: GitHub
           href: https://github.com/simondlr/thisartworkisalwaysonsale
 - title: Radical Antitrust
@@ -184,21 +171,19 @@
     [Motivating The Case For Decentralized Social Identity: Part Three](https://blog.radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
   tools:
     - title: Equality Protocol / Democracy Earth
+      href: https://democracy.earth/
       description: |
         ‪Equality Protocol is a probabilistic score for human identity on Ethereum. The score results from a subjective (deliberative process) and an objective (Gini coefficients) input. Certain scores give you the right to participate in e.g. universal basic incomes or elections.
       links:
-        - text: Website
-          href: https://democracy.earth/
         - text: Twitter
           href: https://twitter.com/DemocracyEarth
         - text: GitHub
           href: https://github.com/DemocracyEarth/paper
     - title: Idena
+      href: https://idena.io/
       description: |
         ‪Idena is a proof-of-person blockchain that proves the humanness and uniqueness of its participants by running AI-hard Turing tests around the globe at the same time. Every node in the network is linked to one cryptoidentity, one single person, and has equal voting power.
       links:
-        - text: Website
-          href: https://idena.io/
         - text: Twitter
           href: https://twitter.com/IdenaNetwork
         - text: GitHub

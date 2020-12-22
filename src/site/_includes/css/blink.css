@@ -1,0 +1,21 @@
+.blink {
+  animation: 2s linear infinite alternate blink-ani;
+}
+
+@keyframes blink-ani {
+  0% {
+    color: inherit;
+  }
+
+  75% {
+    color: inherit;
+  }
+
+  75.001% {
+    color: transparent;
+  }
+
+  100% {
+    color: transparent;
+  }
+}

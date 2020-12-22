@@ -9,7 +9,7 @@
 
   @screen lg {
     @apply w-auto;
-    transform: translate3d(calc(-100% + 32px), 0, 0);
+    transform: translate3d(calc(-100% + 30px), 0, 0);
   }
 }
 
@@ -42,7 +42,7 @@
 }
 
 .menu_slider-closed {
-  transform: translate3d(-32px, 0, 0);
+  transform: translate3d(-30px, 0, 0);
 }
 
 .menu_button {

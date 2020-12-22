@@ -23,8 +23,11 @@
     <ul class="text-size--1 space-y-line-1/2">
       {% for tool in concept.tools %}
       <li class="space-y-line-1 pb-line-3/2 border-b">
-        <h3>{{ tool.title }}</h3>
+        <h3>
+          <a class="animated-link" href="{{ tool.href }}">{{ tool.title }}</a>
+        </h3>
         <p>{{ tool.description }}</p>
+        {% if tool.links.length > 0 %}
         <ul class="flex space-x-4">
           {% for link in tool.links %}
           <li>
@@ -34,6 +37,7 @@
           </li>
           {% endfor %}
         </ul>
+        {% endif %}
       </li>
       {% endfor %}
       <!-- prettier-ignore -->

@@ -6,20 +6,23 @@
 <!-- prettier-ignore -->
 {{ closeButton.render(closeHref) }}
 <div
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 py-margin lg:py-lg/margin mb-24 lg:mb-0"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 py-margin lg:py-lg/margin mb-24 lg:mb-0 font-book"
 >
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3 xl:col-end-gutter-2 mb-8 lg:mb-4 space-y-4"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3 xl:col-end-gutter-2 mb-8 lg:mb-4 space-y-line-1"
   >
-    <p>Find a local chapter.</p>
-    <ul class="text-size--2 space-y-1">
+    <p>Find your local chapter</p>
+    <ul class="text-size--1 lg:text-size--2 space-y-line-1">
       <li>
-        <a href="https://forms.gle/UQ6FtuC7rEf42cqE9" class="inline-link">
+        <a
+          href="https://forms.gle/UQ6FtuC7rEf42cqE9"
+          class="uppercase animated-link"
+        >
           Start a new chapter</a
         >
       </li>
       <li>
-        <a href="/community/code-of-conduct" class="inline-link"
+        <a href="/community/code-of-conduct" class="uppercase animated-link"
           >Review our code of conduct</a
         >
       </li>
@@ -31,7 +34,7 @@
     <!-- prettier-ignore -->
     {% for key, chapters in chapters %}
     <div class="lg:w-1/3 xl:w-1/4 pb-4 lg:pr-8">
-      <h4 class="border-b text-size--2 uppercase">{{ key }}</h4>
+      <h4 class="border-b text-size--1 lg:text-size--2 uppercase">{{ key }}</h4>
       <ul>
         <!-- prettier-ignore -->
         {% for chapter in chapters %}
@@ -43,7 +46,7 @@
         }}%20chapter.%20Can%20you%20put%20me%20in%20contact%20with%20their%20organizers%3F%0D%0A%0D%0AThank%20you!{%
         endset %}
         <!-- prettier-ignore -->
-        <li class="my-1 text-size--2">
+        <li class="my-1 text-size--1 lg:text-size--2">
           <a
             href="{{ chapter.meetupUrl | defaultHref(mailtoChapter) }}"
             target="{{ '_self' if chapter.meetupUrl !== '#' else '_blank' }}"

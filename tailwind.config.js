@@ -30,7 +30,7 @@ module.exports = {
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
-      button: ["SuisseIntl-Book", "sans-serif"],
+      book: ["SuisseIntl-Book", "sans-serif"],
       body: ["SuisseIntl", "sans-serif"],
     },
     colors: {
@@ -54,7 +54,7 @@ module.exports = {
         "clip-path": "clip-path",
       },
       inset: { full: "100%", "1/4": "25%", "1/2": "50%" },
-      minHeight: { tall: "50vw", "line-2": "2.68em" },
+      minHeight: { tall: "50vw", "line-2": "2.68em", "line-5": "6.70em" },
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
       boxShadow: {
@@ -69,6 +69,7 @@ module.exports = {
         "line-3/2": "2.01em",
         "line-2": "2.68em",
         "line-3": "4.02em",
+        "line-5": "6.70em",
         "markdown-sm": "1em",
         "markdown-md": "1.5em",
         "markdown-lg": "3em",

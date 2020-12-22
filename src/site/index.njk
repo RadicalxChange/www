@@ -44,7 +44,7 @@ homeConcepts:
           >RXC is a social movement for next generation political
           economies</span
         >
-        {{ logo.render(classes="hidden lg:inline-block") }}
+        {{ logo.render(classes="hidden lg:inline-block align-top") }}
       </a>
     </h1>
   </header>
@@ -69,7 +69,7 @@ homeConcepts:
     {% endfor %}
   </div>
   <div
-    class="sticky bottom-0 hidden lg:block col-start-margin-1 col-end-column-10 pt-2 bg-white font-display text-size-lg/display"
+    class="sticky bottom-0 hidden lg:block col-start-margin-1 col-end-column-10 w-full pt-2 bg-white font-display text-size-lg/display"
   >
     <div class="message-marquee">
       <div class="marquee__inner">
@@ -89,20 +89,23 @@ homeConcepts:
     </div>
   </div>
   <aside
-    class="relative hidden lg:block col-start-column-10 col-end-last row-span-full"
+    class="lg:relative col-span-full lg:col-start-column-10 lg:col-end-last lg:row-span-full order-first lg:order-none"
   >
     <div
-      class="absolute top-0 left-0 flex flex-col w-full h-full bg-black text-white"
+      class="lg:absolute lg:top-0 lg:left-0 lg:flex lg:flex-col lg:w-full lg:h-full bg-black text-white"
     >
       <a
-        class="flex-initial block mt-lg/margin mb-4 mx-4"
+        class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 text-size-1 lg:text-size-0 blink"
         href="/kiosk/announcements/fellowship-program-2021"
       >
         <h2 class="font-bold">RxC Fellowship Program</h2>
         <p>Applications through December 13th</p>
       </a>
-      <div class="flex-initial border-b mx-4"></div>
-      <div id="twitter-marquee" class="flex-grow mx-4 overflow-hidden">
+      <div class="flex-initial hidden lg:block border-b mx-4"></div>
+      <div
+        id="twitter-marquee"
+        class="flex-grow hidden lg:block mx-4 overflow-hidden"
+      >
         <div class="marquee__inner">
           <a
             class="twitter-timeline py-4 text-size--2"
