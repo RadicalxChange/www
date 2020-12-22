@@ -39,8 +39,19 @@ class Thing {
 <style>
   #rect-1,
   #rect-2,
-  #rect-3 {
-    animation: linear infinite top-row 1s backwards alternate paused;
+  #rect-3,
+  #rect-5,
+  #rect-6,
+  #rect-7,
+  #rect-10,
+  #rect-11 {
+    fill: #EDFF38;
+  }
+
+  .animation-on #rect-1,
+  .animation-on #rect-2,
+  .animation-on #rect-3 {
+    animation: linear infinite top-row 1s backwards alternate;
   }
 
   @keyframes top-row {
@@ -50,7 +61,7 @@ class Thing {
     40% {
       fill: #EDFF38;
     }
-    80% {
+    90% {
       fill: #FAFFC3;
     }
     100% {
@@ -58,10 +69,10 @@ class Thing {
     }
   }
 
-  #rect-5,
-  #rect-6,
-  #rect-7 {
-    animation: linear infinite middle-row 1s backwards alternate paused;
+  .animation-on #rect-5,
+  .animation-on #rect-6,
+  .animation-on #rect-7 {
+    animation: linear infinite middle-row 1s backwards alternate;
   }
 
   @keyframes middle-row {
@@ -79,9 +90,9 @@ class Thing {
     }
   }
 
-  #rect-10,
-  #rect-11 {
-    animation: linear infinite bottom-row 1s backwards alternate paused;
+  .animation-on #rect-10,
+  .animation-on #rect-11 {
+    animation: linear infinite bottom-row 1s backwards alternate;
   }
 
   @keyframes bottom-row {
@@ -97,23 +108,6 @@ class Thing {
     100% {
       fill: #FAFFC3;
     }
-  }
-
-  .animation-on #rect-1,
-  .animation-on #rect-2,
-  .animation-on #rect-3 {
-    animation-play-state: running;
-  }
-
-  .animation-on #rect-5,
-  .animation-on #rect-6,
-  .animation-on #rect-7 {
-    animation-play-state: running;
-  }
-
-  .animation-on #rect-10,
-  .animation-on #rect-11 {
-    animation-play-state: running;
   }
 </style>
 <div style="display: flex; align-items: center; padding: 0 7%">
