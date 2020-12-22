@@ -24,14 +24,14 @@
       {% for tool in concept.tools %}
       <li class="space-y-line-1 pb-line-3/2 border-b">
         <h3>
-          <a class="animated-link" href="{{ tool.href }}">{{ tool.title }}</a>
+          <a class="thick-link" href="{{ tool.href }}">{{ tool.title }}</a>
         </h3>
         <p>{{ tool.description }}</p>
         {% if tool.links.length > 0 %}
         <ul class="flex space-x-4">
           {% for link in tool.links %}
           <li>
-            <a class="animated-link uppercase" href="{{ link.href }}">
+            <a class="thick-link uppercase" href="{{ link.href }}">
               {{ link.text }}
             </a>
           </li>

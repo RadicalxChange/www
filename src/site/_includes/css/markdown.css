@@ -144,7 +144,7 @@
     @apply font-medium;
   }
 
-  a:not(.animated-link) {
+  a:not(.thick-link) {
     text-decoration: underline;
   }
 
