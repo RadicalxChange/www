@@ -12,6 +12,8 @@ class Thing {
     const innerPadding = 2;
     const timeStep = 500;
 
+    const numSteps = 5; // hold, bottom, mid, top, hold
+
     const initialFills = [0, 4, 8, 9, 12, 13, 14, 15];
     const squares = [];
     let index = 0;
@@ -38,41 +40,80 @@ class Thing {
   #rect-1,
   #rect-2,
   #rect-3 {
-    fill: #EDFF38;
-    transition: fill ${timeStep}ms;
+    animation: linear infinite top-row 1s backwards alternate paused;
+  }
+
+  @keyframes top-row {
+    0% {
+      fill: #EDFF38;
+    }
+    40% {
+      fill: #EDFF38;
+    }
+    80% {
+      fill: #FAFFC3;
+    }
+    100% {
+      fill: #FAFFC3;
+    }
   }
 
   #rect-5,
   #rect-6,
   #rect-7 {
-    fill: #EDFF38;
-    transition: fill ${timeStep * 2}ms;
+    animation: linear infinite middle-row 1s backwards alternate paused;
+  }
+
+  @keyframes middle-row {
+    0% {
+      fill: #EDFF38;
+    }
+    20% {
+      fill: #EDFF38;
+    }
+    60% {
+      fill: #FAFFC3;
+    }
+    100% {
+      fill: #FAFFC3;
+    }
   }
 
   #rect-10,
   #rect-11 {
-    fill: #EDFF38;
-    transition: fill ${timeStep * 3}ms;
+    animation: linear infinite bottom-row 1s backwards alternate paused;
+  }
+
+  @keyframes bottom-row {
+    0% {
+      fill: #EDFF38;
+    }
+    10% {
+      fill: #EDFF38;
+    }
+    40% {
+      fill: #FAFFC3;
+    }
+    100% {
+      fill: #FAFFC3;
+    }
   }
 
   .animation-on #rect-1,
   .animation-on #rect-2,
   .animation-on #rect-3 {
-    fill: #FAFFC3;
-    transition-duration: ${timeStep * 3}ms;
+    animation-play-state: running;
   }
 
   .animation-on #rect-5,
   .animation-on #rect-6,
   .animation-on #rect-7 {
-    fill: #FAFFC3;
-    transition-duration: ${timeStep * 2}ms;
+    animation-play-state: running;
   }
 
   .animation-on #rect-10,
   .animation-on #rect-11 {
-    fill: #FAFFC3;
-    transition-duration: ${timeStep}ms;
+    animation-play-state: running;
   }
 </style>
 <div style="display: flex; align-items: center; padding: 0 7%">
