@@ -53,14 +53,16 @@ homeConcepts:
   >
     {% for concept in homeConcepts%}
     <a
-      class="flex flex-col items-center justify-between"
+      class="group flex flex-col items-center justify-between"
       href="{{ concept.href }}"
     >
       <div></div>
       <div class="w-full max-w-sm">
         {{ concept.element | safe }}
       </div>
-      <h2 class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0">
+      <h2
+        class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0 group-hover:animated-link"
+      >
         {{ concept.name }}
       </h2>
     </a>
