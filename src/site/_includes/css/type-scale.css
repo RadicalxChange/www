@@ -1,4 +1,4 @@
-/* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.2,1280,22,1.2,8,3, */
+/* @link https://utopia.fyi/generator-mk-ii?c=320,20,1.2,1280,22,1.2,8,3, */
 
 :root {
   --fluid-min-width: 320;
@@ -18,86 +18,86 @@
 }
 
 :root {
-  --f--3-min: 10; /* manually changed to avoid font-sizes that are unreadable */
+  --f--3-min: 11.57;
   --f--3-max: 12.73;
-  --step-type--3: calc(
+  --step--3: calc(
     ((var(--f--3-min) / 16) * 1rem) + (var(--f--3-max) - var(--f--3-min)) *
       var(--fluid-bp)
   );
 
-  --f--2-min: 12; /* manually changed to avoid font-sizes that are unreadable */
+  --f--2-min: 13.89;
   --f--2-max: 15.28;
-  --step-type--2: calc(
+  --step--2: calc(
     ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
       var(--fluid-bp)
   );
 
-  --f--1-min: 13.33;
+  --f--1-min: 16.67;
   --f--1-max: 18.33;
-  --step-type--1: calc(
+  --step--1: calc(
     ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
       var(--fluid-bp)
   );
 
-  --f-0-min: 16;
+  --f-0-min: 20;
   --f-0-max: 22;
-  --step-type-0: calc(
+  --step-0: calc(
     ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
       var(--fluid-bp)
   );
 
-  --f-1-min: 19.2;
+  --f-1-min: 24;
   --f-1-max: 26.4;
-  --step-type-1: calc(
+  --step-1: calc(
     ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
       var(--fluid-bp)
   );
 
-  --f-2-min: 23.04;
+  --f-2-min: 28.8;
   --f-2-max: 31.68;
-  --step-type-2: calc(
+  --step-2: calc(
     ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
       var(--fluid-bp)
   );
 
-  --f-3-min: 27.65;
+  --f-3-min: 34.56;
   --f-3-max: 38.02;
-  --step-type-3: calc(
+  --step-3: calc(
     ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
       var(--fluid-bp)
   );
 
-  --f-4-min: 33.18;
+  --f-4-min: 41.47;
   --f-4-max: 45.62;
-  --step-type-4: calc(
+  --step-4: calc(
     ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
       var(--fluid-bp)
   );
 
-  --f-5-min: 39.81;
+  --f-5-min: 49.77;
   --f-5-max: 54.74;
-  --step-type-5: calc(
+  --step-5: calc(
     ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
       var(--fluid-bp)
   );
 
-  --f-6-min: 47.78;
+  --f-6-min: 59.72;
   --f-6-max: 65.69;
-  --step-type-6: calc(
+  --step-6: calc(
     ((var(--f-6-min) / 16) * 1rem) + (var(--f-6-max) - var(--f-6-min)) *
       var(--fluid-bp)
   );
 
-  --f-7-min: 57.33;
+  --f-7-min: 71.66;
   --f-7-max: 78.83;
-  --step-type-7: calc(
+  --step-7: calc(
     ((var(--f-7-min) / 16) * 1rem) + (var(--f-7-max) - var(--f-7-min)) *
       var(--fluid-bp)
   );
 
-  --f-8-min: 68.8;
+  --f-8-min: 86;
   --f-8-max: 94.6;
-  --step-type-8: calc(
+  --step-8: calc(
     ((var(--f-8-min) / 16) * 1rem) + (var(--f-8-max) - var(--f-8-min)) *
       var(--fluid-bp)
   );
