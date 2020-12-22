@@ -25,11 +25,7 @@ class Thing {
       [1, 0, 0, 0, 0, 4, 0, 0, 1],
       [1, 0, 0, 0, 0, 1, 0, 0, 1],
     ];
-    const numRows = grid.length;
-    const numCols = grid[0].length;
 
-    // const paddingX = (100 - ((numCols - 1) * spacing + 2 * radius)) / 2;
-    // const paddingY = (128 - ((numRows - 1) * spacing + 2 * radius)) / 2;
     const paddingX = 0.1;
     const paddingY = 0.1;
 
@@ -40,8 +36,49 @@ class Thing {
       "RadicalAntitrustAnimation",
       "radical-antitrust-animation",
       `
-      <div style="display: flex; align-items: center; padding: 0 7%">
-    <svg id="radical-antitrust" width="100%" viewBox="0 0 100.2 130.2" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .move {
+    transition: transform 1s;
+  }
+  .animation-on .move-up1 {
+    transform: translate(0, -${yPercent}%);
+  }
+  .animation-on .move-right1 {
+    transform: translate(${xPercent}%, 0);
+  }
+  .animation-on .move-down1 {
+    transform: translate(0, ${yPercent}%);
+  }
+  .animation-on .move-left1 {
+    transform: translate(-${xPercent}%, 0);
+  }
+  .animation-on .move-up2 {
+    transform: translate(0, -${yPercent * 2}%);
+  }
+  .animation-on .move-right2 {
+    transform: translate(${xPercent * 2}%, 0);
+  }
+  .animation-on .move-down2 {
+    transform: translate(0, ${yPercent * 2}%);
+  }
+  .animation-on .move-left2 {
+    transform: translate(-${xPercent * 2}%, 0);
+  }
+  .animation-on .move-up3 {
+    transform: translate(0, -${yPercent * 3}%);
+  }
+  .animation-on .move-right3 {
+    transform: translate(${xPercent * 3}%, 0);
+  }
+  .animation-on .move-down3 {
+    transform: translate(0, ${yPercent * 3}%);
+  }
+  .animation-on .move-left3 {
+    transform: translate(-${xPercent * 3}%, 0);
+  }
+</style>
+<div style="display: flex; align-items: center; padding: 0 7%">
+  <svg id="radical-antitrust" width="100%" viewBox="0 0 100.2 130.2" xmlns="http://www.w3.org/2000/svg">
     ${grid
       .map((rowArray, r) =>
         rowArray
@@ -74,50 +111,8 @@ class Thing {
           .join("\n")
       )
       .join("\n")}
-      <style>
-      .move {
-        transition: transform 1s;
-      }
-      #radical-antitrust:hover .move-up1 {
-        transform: translate(0, -${yPercent}%);
-      }
-      #radical-antitrust:hover .move-right1 {
-        transform: translate(${xPercent}%, 0);
-      }
-      #radical-antitrust:hover .move-down1 {
-        transform: translate(0, ${yPercent}%);
-      }
-      #radical-antitrust:hover .move-left1 {
-        transform: translate(-${xPercent}%, 0);
-      }
-      #radical-antitrust:hover .move-up2 {
-        transform: translate(0, -${yPercent * 2}%);
-      }
-      #radical-antitrust:hover .move-right2 {
-        transform: translate(${xPercent * 2}%, 0);
-      }
-      #radical-antitrust:hover .move-down2 {
-        transform: translate(0, ${yPercent * 2}%);
-      }
-      #radical-antitrust:hover .move-left2 {
-        transform: translate(-${xPercent * 2}%, 0);
-      }
-      #radical-antitrust:hover .move-up3 {
-        transform: translate(0, -${yPercent * 3}%);
-      }
-      #radical-antitrust:hover .move-right3 {
-        transform: translate(${xPercent * 3}%, 0);
-      }
-      #radical-antitrust:hover .move-down3 {
-        transform: translate(0, ${yPercent * 3}%);
-      }
-      #radical-antitrust:hover .move-left3 {
-        transform: translate(-${xPercent * 3}%, 0);
-      }
-      </style>
     </svg>
-  </div>
-    `
+  </div>`
     );
   }
 }

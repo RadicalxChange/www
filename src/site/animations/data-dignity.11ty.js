@@ -62,8 +62,7 @@ class Thing {
       )
       .join("\n")}
   </g>
-</svg>
-    `
+</svg>`
     );
   }
 }

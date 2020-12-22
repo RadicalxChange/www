@@ -41,92 +41,91 @@ class Thing {
       "PartialCommonOwnershipAnimation",
       "partial-common-ownership-animation",
       `
-      <div style="display: flex; align-items: center; padding: 0 7%">
-    <svg id="partial-common-ownership" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      ${circles.join("\n")}
-      <style>
-      #circle-7,
-      #circle-4,
-      #circle-3,
-      #circle-6 {
-        transform: translate(0, 0);
-      }
+<style>
+  #circle-7,
+  #circle-4,
+  #circle-3,
+  #circle-6 {
+    transform: translate(0, 0);
+  }
 
-      #partial-common-ownership:hover #circle-7 {
-        animation: linear infinite circle-7 ${seconds}s backwards;
-      }
-      @keyframes circle-7 {
-        0% {
-          transform: translate(0, 0);
-        }
-        ${stepInt * 1}% {
-          transform: translate(${xPercent}%, 0);
-        }
-        ${stepInt * 10}% {
-          transform: translate(${xPercent}%, 0);
-        }
-        ${stepInt * 11}% {
-          transform: translate(0, 0);
-        }
-        100% {
-          transform: translate(0, 0);
-        }
-      }
+  .animation-on #circle-7 {
+    animation: linear infinite circle-7 ${seconds}s backwards;
+  }
+  @keyframes circle-7 {
+    0% {
+      transform: translate(0, 0);
+    }
+    ${stepInt * 1}% {
+      transform: translate(${xPercent}%, 0);
+    }
+    ${stepInt * 10}% {
+      transform: translate(${xPercent}%, 0);
+    }
+    ${stepInt * 11}% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 
-      #partial-common-ownership:hover #circle-4 {
-        animation: linear infinite circle-4 ${seconds}s backwards;
-      }
-      @keyframes circle-4 {
-        ${stepInt * 2}% {
-          transform: translate(0, 0);
-        }
-        ${stepInt * 3}% {
-          transform: translate(0, ${yPercent}%);
-        }
-        ${stepInt * 8}% {
-          transform: translate(0, ${yPercent}%);
-        }
-        ${stepInt * 9}% {
-          transform: translate(-${xPercent}%, ${yPercent}%);
-        }
-        100% {
-          transform: translate(-${xPercent}%, ${yPercent}%);
-        }
-      }
+  .animation-on #circle-4 {
+    animation: linear infinite circle-4 ${seconds}s backwards;
+  }
+  @keyframes circle-4 {
+    ${stepInt * 2}% {
+      transform: translate(0, 0);
+    }
+    ${stepInt * 3}% {
+      transform: translate(0, ${yPercent}%);
+    }
+    ${stepInt * 8}% {
+      transform: translate(0, ${yPercent}%);
+    }
+    ${stepInt * 9}% {
+      transform: translate(-${xPercent}%, ${yPercent}%);
+    }
+    100% {
+      transform: translate(-${xPercent}%, ${yPercent}%);
+    }
+  }
 
-      #partial-common-ownership:hover #circle-3 {
-        animation: linear infinite circle-3 ${seconds}s backwards;
-      }
-      @keyframes circle-3 {
-        ${stepInt * 4}% {
-          transform: translate(0, 0);
-        }
-        ${stepInt * 5}% {
-          transform: translate(${xPercent}%, 0);
-        }
-        100% {
-          transform: translate(${xPercent}%, 0);
-        }
-      }
+  .animation-on #circle-3 {
+    animation: linear infinite circle-3 ${seconds}s backwards;
+  }
+  @keyframes circle-3 {
+    ${stepInt * 4}% {
+      transform: translate(0, 0);
+    }
+    ${stepInt * 5}% {
+      transform: translate(${xPercent}%, 0);
+    }
+    100% {
+      transform: translate(${xPercent}%, 0);
+    }
+  }
 
-      #partial-common-ownership:hover #circle-6 {
-        animation: linear infinite circle-6 ${seconds}s backwards;
-      }
-      @keyframes circle-6 {
-        ${stepInt * 6}% {
-          transform: translate(0, 0);
-        }
-        ${stepInt * 7}% {
-          transform: translate(0, -${yPercent}%);
-        }
-        100% {
-          transform: translate(0, -${yPercent}%);
-        }
-      }
-      </style>
-    </svg>
-    </div>
-    `
+  .animation-on #circle-6 {
+    animation: linear infinite circle-6 ${seconds}s backwards;
+  }
+  @keyframes circle-6 {
+    ${stepInt * 6}% {
+      transform: translate(0, 0);
+    }
+    ${stepInt * 7}% {
+      transform: translate(0, -${yPercent}%);
+    }
+    100% {
+      transform: translate(0, -${yPercent}%);
+    }
+  }
+</style>
+<div style="display: flex; align-items: center; padding: 0 7%">
+  <svg id="partial-common-ownership" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    ${circles.join("\n")}
+  </svg>
+</div>`
     );
   }
 }

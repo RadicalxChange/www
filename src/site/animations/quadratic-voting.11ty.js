@@ -43,7 +43,7 @@ class Thing {
     background-size: auto 300%;
   }
 
-  #quadratic-voting:hover {
+  .animation-on #quadratic-voting {
     animation: linear infinite gradient-rotation 2.5s running;
   }
 
@@ -62,8 +62,7 @@ class Thing {
       <div id="quadratic-voting"></div>
     </div>
   </div>
-<div>
-`
+<div>`
     );
   }
 }
