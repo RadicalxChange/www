@@ -18,14 +18,14 @@
 }
 
 :root {
-  --f--3-min: 9.26;
+  --f--3-min: 10; /* manually changed to avoid font-sizes that are unreadable */
   --f--3-max: 12.73;
   --step-type--3: calc(
     ((var(--f--3-min) / 16) * 1rem) + (var(--f--3-max) - var(--f--3-min)) *
       var(--fluid-bp)
   );
 
-  --f--2-min: 11.11;
+  --f--2-min: 12; /* manually changed to avoid font-sizes that are unreadable */
   --f--2-max: 15.28;
   --step-type--2: calc(
     ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *

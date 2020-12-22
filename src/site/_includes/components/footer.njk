@@ -26,13 +26,13 @@
           Subscribe
         </button>
         <div class="inline-block flex-grow">
-          <label for="mce-EMAIL" class="hidden"> Email Address </label>
           <input
             type="email"
             value=""
             name="EMAIL"
             id="mce-EMAIL"
             placeholder="Type your email..."
+            aria-label="Email Address"
             class="w-full text-right text-size--2 lg:text-size--1 placeholder-white bg-transparent outline-none"
           />
         </div>
@@ -100,7 +100,7 @@
           </li>
         </ul>
       </div>
-      <div aria-hidden="false" class="lg:hidden">
+      <div class="lg:hidden">
         <h3 class="mb-3 lg:mb-4 lg:text-size--1">Donate via:</h3>
         <ul class="flex lg:text-size--1 space-x-4">
           <li class="uppercase">
@@ -120,14 +120,11 @@
         </ul>
       </div>
     </div>
-    <div
-      aria-hidden="true"
-      class="hidden lg:block absolute top-0 right-0 px-8 py-lg/margin"
-    >
+    <div class="hidden lg:block absolute top-0 right-0 px-8 py-lg/margin">
       <div class="footer_card">
         <div class="footer_card-inner">
           <div class="footer_card-front">
-            <div class="footer_donate-header">Donate</div>
+            <div aria-hidden="true" class="footer_donate-header">Donate</div>
           </div>
           <div class="footer_card-back">
             <div class="footer_donate-options">

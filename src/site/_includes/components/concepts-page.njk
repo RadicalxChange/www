@@ -6,7 +6,7 @@
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/concepts", text="Back to Concepts") }}
 <div
-  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 lg:content-between min-h-screen pt-margin lg:pt-lg/margin pb-2"
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start lg:content-between lg:min-h-screen pt-margin lg:pt-lg/margin pb-margin lg:pb-2 mb-24 lg:mb-0"
 >
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-line-2 lg:mb-0"
@@ -36,9 +36,13 @@
         </ul>
       </li>
       {% endfor %}
+      <!-- prettier-ignore -->
+      {% if (concept.tools | length) === 0 %}
+      <li>No tools at this time</li>
+      {% endif %}
     </ul>
   </aside>
-  <div class="col-span-columns mt-8">
+  <div class="col-span-columns hidden lg:block mt-8">
     <p class="text-center text-size--3">
       © 2020 RadicalxChange Foundation Ltd.
     </p>
@@ -47,6 +51,6 @@
       not support or oppose candidates for public office or political parties.
     </p>
   </div>
-  <!-- prettier-ignore -->
-  {% endmacro %}
 </div>
+<!-- prettier-ignore -->
+{% endmacro %}

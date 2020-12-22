@@ -4,10 +4,15 @@
   class="group inline-flex items-center justify-between py-2 px-3 border rounded-oval text-size--1"
   href="{{ href }}"
 >
-  <span class="text-center uppercase">{{ label }}</span
-  ><img
-    class="hidden xl:inline-block ml-4 group-hover:ml-7 transition-margin-left duration-300 ease-out"
+  <span class="text-center uppercase">{{ label }}</span>
+  <span
+    class="hidden xl:inline w-0 group-hover:w-4 transition-width duration-300 ease-out"
+  ></span>
+  <img
+    class="hidden xl:inline-block ml-4"
     src="/images/ui/next-arrow.svg"
+    width="24"
+    height="18"
   />
 </a>
 <!-- prettier-ignore -->

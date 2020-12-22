@@ -48,6 +48,7 @@ module.exports = {
       borderRadius: { 50: "50%", oval: "70px" },
       borderWidth: { 3: "3px" },
       transitionProperty: {
+        width: "width",
         right: "right",
         "margin-left": "margin-left",
         "clip-path": "clip-path",
@@ -68,6 +69,9 @@ module.exports = {
         "line-3/2": "2.01em",
         "line-2": "2.68em",
         "line-3": "4.02em",
+        "markdown-sm": "1em",
+        "markdown-md": "1.5em",
+        "markdown-lg": "3em",
       },
       gridColumn: {
         "span-margins": "1 / -1",
@@ -170,6 +174,7 @@ module.exports = {
       display: ["open", "group-hover"],
       visibility: ["group-hover"],
       margin: ["open", "group-hover"],
+      width: ["group-hover"],
     },
   },
   plugins: [

@@ -1,5 +1,5 @@
 ---
-permalink: "kiosk/blog/{{ slug | defaultSlug: title }}/index.html"
+permalink: "kiosk/announcements/{{ slug | defaultSlug: title }}/index.html"
 ---
 
 <!-- prettier-ignore -->
@@ -18,7 +18,6 @@ permalink: "kiosk/blog/{{ slug | defaultSlug: title }}/index.html"
 <!-- prettier-ignore -->
 {{ super() }}
 <meta property="og:article:published_time" content="{{ date }}" />
-<meta property="og:article:author" content="{{ postAuthor }}" />
 <!-- prettier-ignore -->
 {% endblock %}
 
@@ -36,7 +35,6 @@ permalink: "kiosk/blog/{{ slug | defaultSlug: title }}/index.html"
   >
     <header>
       <h1>{{ postHeader }}</h1>
-      <p>{{ postAuthor }}</p>
       <p>{{ date | readableDate }}</p>
     </header>
     {{ content | markdown | safe }}

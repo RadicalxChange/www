@@ -7,15 +7,15 @@ postHeader: "Is RadicalxChange Fellowship For Me?"
 postAuthor: "Lawrence Lundy-Bryan"
 ---
 
-> We encourage projects that are strengthening civic society and creating public goods to apply.
+> We encourage projects that are strengthening civil society and creating public goods to apply.
 
 ## What are we doing?
 
 We are launching the RadicalxChange fellowship program.
 
-The 10-week program will bring together mission-driven people working on projects to strengthen civic society and rethink public goods. This program is relevant for anybody who:
+The 10-week program will bring together mission-driven people working on projects to strengthen civil society and rethink public goods. This program is relevant for anybody who:
 
-1. Want to strengthen civic society and contribute to the creation of new public goods
+1. Want to strengthen civil society and contribute to the creation of new public goods
 2. Think in terms of public goods and increasing returns (or increasing returns to scale) -- that is, building infrastructure that facilitates the success and productivity of others -- and not individualistic value capture
 3. Want to rethink incentives and ownership structures, such as “exit to community” and other alternative corporate or cooperative forms, to create more equitable economies
 
@@ -29,7 +29,7 @@ The 10-week program will bring together mission-driven people working on project
 
 We are creating a program that first and foremost fosters interdisciplinary thinking. We believe that positive and comprehensive change is only possible through the inclusion of diverse voices and backgrounds.
 
-We want to encourage people from across disciplines to apply. All you need is to be aligned with the RadicalxChange mission and be working to strengthen civic society across four broad themes: governance and democracy, property rights, data rights, and competition and antitrust.
+We want to encourage people from across disciplines to apply. All you need is to be aligned with the RadicalxChange mission and be working to strengthen civil society across four broad themes: governance and democracy, property rights, data rights, and competition and antitrust.
 
 We think there are 8 types of profiles that will benefit from the program. The list is not exhaustive, and we encourage applicants to get in touch if you don’t fit neatly into any profile.
 
@@ -75,4 +75,4 @@ We think there are 8 types of profiles that will benefit from the program. The l
 
 **[Read more about the fellowship here](https://www.radicalxchange.org/fellowship/2021/)**
 
-**[Apply here](fellowship@radicalxchange.org)**
+**[Apply here](mailto:fellowship@radicalxchange.org)**

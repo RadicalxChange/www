@@ -4,20 +4,20 @@
   @apply flex items-center;
   @apply w-full;
   @apply h-full;
-  transform: translate(0, 100%);
+  transform: translate3d(0, 100%, 0);
   @apply transition-transform duration-500;
 
   @screen lg {
     @apply w-auto;
-    transform: translate(calc(-100% + 32px), 0);
+    transform: translate3d(calc(-100% + 32px), 0, 0);
   }
 }
 
 .menu_open {
-  transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
 
   @screen lg {
-    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -42,7 +42,7 @@
 }
 
 .menu_slider-closed {
-  transform: translate(-32px, 0);
+  transform: translate3d(-32px, 0, 0);
 }
 
 .menu_button {

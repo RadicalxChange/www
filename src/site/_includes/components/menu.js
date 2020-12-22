@@ -138,6 +138,7 @@ const MenuButton = function ($button, menu) {
 MenuButton.prototype.init = function () {
   this.$button.addEventListener("keydown", this.handleKeyDown.bind(this));
   if (this.$button.dataset.menuButton === "hover") {
+    this.$button.addEventListener("touchstart", this.handleClick.bind(this));
     this.$button.addEventListener(
       "mouseenter",
       this.handleMouseEnter.bind(this)
