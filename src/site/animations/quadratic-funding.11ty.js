@@ -45,7 +45,8 @@ class Thing {
   #rect-7,
   #rect-10,
   #rect-11 {
-    fill: #EDFF38;
+    color: #EDFF38;
+    fill: currentColor; /* for some reason, this fixes things on safari... */
   }
 
   .animation-on #rect-1,
