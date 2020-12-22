@@ -1,5 +1,5 @@
 .blink {
-  animation: 2s linear infinite alternate blink-ani;
+  animation: 1s 2s linear infinite alternate blink-ani;
 }
 
 @keyframes blink-ani {
