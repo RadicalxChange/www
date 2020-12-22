@@ -1,5 +1,24 @@
 ---
 layout: layouts/_base.njk
+homeConcepts:
+  - name: Data Dignity
+    href: /concepts/data-dignity/
+    element: <data-dignity-animation/>
+  - name: Quadratic Voting
+    href: /concepts/quadratic-voting/
+    element: <quadratic-voting-animation/>
+  - name: Quadratic Funding
+    href: /concepts/quadratic-funding/
+    element: <quadratic-funding-animation/>
+  - name: Partial Common Ownership
+    href: /concepts/partial-common-ownership/
+    element: <partial-common-ownership-animation/>
+  - name: Radical Antitrust
+    href: /concepts/radical-antitrust/
+    element: <radical-antitrust-animation/>
+  - name: Intersectional Social Identity
+    href: /concepts/intersectional-social-identity/
+    element: <intersectional-identity-animation/>
 ---
 
 <!-- prettier-ignore -->
@@ -32,25 +51,21 @@ layout: layouts/_base.njk
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 self-center grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 lg:gap-y-12 mb-16 lg:mb-8"
   >
-    <!-- prettier-ignore-line -->
-    {% set concepts = ["Data as Labour / Data Dignity (DaL/DD)", "Quadratic
-    Voting (QV)", "Radical Antitrust", "Intersectional Social Data (ISD)",
-    "Quadratic, Financing (QF)", "COST / SALSA"] %}
-    <!-- prettier-ignore-line -->
-    {% set columnRow = [[1, 3],[4, 3],[7, 3],[1, 4],[4, 4],[7, 4]] %}
-    <!-- prettier-ignore-line -->
-    {% for concept in concepts%}
-    <!-- prettier-ignore-line -->
-    {% set column = columnRow[loop.index0][0] %}
-    <!-- prettier-ignore-line -->
-    {% set row = columnRow[loop.index0][1] %}
-    <a class="flex flex-col items-center" href="#">
-      <div class="w-full max-w-sm border mb-4">
-        <div style="padding-top: 128%"></div>
+    {% for concept in homeConcepts%}
+    <a
+      class="group flex flex-col items-center justify-between"
+      href="{{ concept.href }}"
+    >
+      <div></div>
+      <div class="w-full max-w-sm">
+        {{ concept.element | safe }}
       </div>
-      <h2 class="text-center">{{ concept }}</h2>
+      <h2
+        class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0 group-hover:underline"
+      >
+        {{ concept.name }}
+      </h2>
     </a>
-    <!-- prettier-ignore-line -->
     {% endfor %}
   </div>
   <div
@@ -137,3 +152,9 @@ layout: layouts/_base.njk
   // prettier-ignore
   {% include "components/menu.js" %}
 </script>
+<script src="/animations/data-dignity.js"></script>
+<script src="/animations/quadratic-voting.js"></script>
+<script src="/animations/quadratic-funding.js"></script>
+<script src="/animations/partial-common-ownership.js"></script>
+<script src="/animations/radical-antitrust.js"></script>
+<script src="/animations/intersectional-identity.js"></script>
