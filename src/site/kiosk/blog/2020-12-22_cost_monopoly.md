@@ -1,5 +1,5 @@
 ---
-tags: "blog"
+tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-12-22"
 title: "COST Monopoly"
@@ -13,7 +13,7 @@ The Monopoly craze re-started among our community with a tweet from RadicalxChan
 
 _“En 1904 le Monopoly était anticapitaliste ! Avec [@RadxChange](https://twitter.com/RadxChange), il le redevient !”_
 
-_“In 1904 Monopoly was anti-capitalist. With @RadxChange, it reverts to it.”_
+_“In 1904 Monopoly was anti-capitalist. With @RadxChange, it reverts to it!”_
 
 ## The History of Monopoly
 

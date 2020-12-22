@@ -59,6 +59,11 @@
     @apply my-markdown-md;
   }
 
+  .twitter-tweet {
+    margin-top: theme("spacing.markdown-md") !important;
+    margin-bottom: theme("spacing.markdown-md") !important;
+  }
+
   hr {
     @apply my-markdown-lg;
   }
