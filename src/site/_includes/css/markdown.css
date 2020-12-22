@@ -152,7 +152,6 @@
   h3,
   h4 {
     scroll-margin-top: 1em;
-    scroll-snap-margin-top: 1em;
   }
 
   &.markdown-sm {
