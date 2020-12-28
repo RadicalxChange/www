@@ -1,8 +1,8 @@
 const Pages = require("./Pages");
 
 class AllPages extends Pages {
-  getCollectionName() {
-    return "collections.kiosk";
+  extractFilteredCollection(data) {
+    return data.all;
   }
 
   makePermalink(pageNumber) {

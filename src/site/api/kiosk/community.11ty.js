@@ -1,8 +1,8 @@
 const Pages = require("./Pages");
 
 class CommunityPages extends Pages {
-  getCollectionName() {
-    return "collections.kioskCommunity";
+  extractFilteredCollection(data) {
+    return data.community;
   }
 
   makePermalink(pageNumber) {

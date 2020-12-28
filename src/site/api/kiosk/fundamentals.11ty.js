@@ -1,8 +1,8 @@
 const Pages = require("./Pages");
 
 class FundamentalsPages extends Pages {
-  getCollectionName() {
-    return "collections.kioskFundamentals";
+  extractFilteredCollection(data) {
+    return data.fundamentals;
   }
 
   makePermalink(pageNumber) {

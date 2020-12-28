@@ -8,11 +8,13 @@ async function fetchPodcasts() {
   const parser = new Parser();
   const feed = await parser.parseURL(RSS_FEED_URI);
   const items = feed.items.map((item) => ({
+    url: item.link,
     date: item.isoDate,
     title: item.title,
+    postType: "Podcast",
     postHeader: item.title,
     postAuthor: item.itunes.author,
-    redirectHref: item.link,
+    series: [],
   }));
 
   return items;

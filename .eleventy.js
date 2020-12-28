@@ -6,6 +6,7 @@ const { DateTime } = require("luxon");
 const posthtml = require("posthtml");
 const beautifyHtml = require("js-beautify").html;
 const uslug = require("uslug");
+const fetchRxcReplayed = require("./src/util/podcast-rxc-replayed");
 
 module.exports = function (config) {
   const isDev = process.env.RXC_DEV === "true";
@@ -69,6 +70,73 @@ module.exports = function (config) {
   // Array.slice()
   config.addFilter("slice", function (array, ...args) {
     return array.slice(...args);
+  });
+
+  config.addCollection("kiosk2", async (collectionApi) => {
+    const announcements = collectionApi.getFilteredByGlob(
+      "src/site/kiosk/announcements/*"
+    );
+    const blogPosts = collectionApi.getFilteredByGlob("src/site/kiosk/blog/*");
+    const library = collectionApi.getFilteredByGlob("src/site/kiosk/library/*");
+    const papers = collectionApi.getFilteredByGlob("src/site/kiosk/papers/*");
+    const podcasts = [...(await fetchRxcReplayed())];
+
+    const all = []
+      .concat(
+        announcements.map((item) => ({
+          url: item.url,
+          date: item.data.date,
+          title: item.data.title,
+          postType: "Announcement",
+          postHeader: item.data.postHeader,
+          postAuthor: item.data.postAuthor || "RxC Team",
+          series: item.data.series || [],
+        })),
+        blogPosts.map((item) => ({
+          url: item.url,
+          date: item.data.date,
+          title: item.data.title,
+          postType: "Blog Post",
+          postHeader: item.data.postHeader,
+          postAuthor: item.data.postAuthor || "RxC Team",
+          series: item.data.series || [],
+        })),
+        library.map((item) => ({
+          url: item.url,
+          date: item.data.date,
+          title: item.data.title,
+          postType: "Library",
+          postHeader: item.data.postHeader,
+          postAuthor: item.data.postAuthor || "RxC Team",
+          series: item.data.series || [],
+        })),
+        papers.map((item) => ({
+          url: item.url,
+          date: item.data.date,
+          title: item.data.title,
+          postType: "Paper",
+          postHeader: item.data.postHeader,
+          postAuthor: item.data.postAuthor || "RxC Team",
+          series: item.data.series || [],
+        })),
+        podcasts
+      )
+      .sort((a, b) => {
+        if (a.date < b.date) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+
+    const community = all.filter((item) =>
+      item.series.includes("RxC Community Calls")
+    );
+    const fundamentals = all.filter((item) =>
+      item.series.includes("RxC Fundamentals")
+    );
+
+    return { all, community, fundamentals };
   });
 
   config.addCollection("kioskCommunity", (collectionApi) => {
