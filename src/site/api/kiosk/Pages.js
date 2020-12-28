@@ -7,6 +7,10 @@ function getType(item) {
     return "Paper";
   } else if (item.inputPath.includes("/library/")) {
     return "Library";
+  } else if (item.inputPath.includes("/podcasts/")) {
+    return "Podcast";
+  } else if (item.inputPath.includes("/videos/")) {
+    return "Video";
   }
 }
 

@@ -1,0 +1,15 @@
+---
+tags: "kiosk"
+layout: "layouts/redirect.njk"
+pagination:
+  data: podcast-rxc-replayed
+  size: 1
+  alias: podcast
+eleventyComputed:
+  date: "{{ podcast.date }}"
+  title: "{{ podcast.title }}"
+  postHeader: "{{ podcast.postHeader }}"
+  postAuthor: "{{ podcast.postAuthor }}"
+  redirectHref: "{{ podcast.redirectHref }}"
+  permalink: "kiosk/podcasts/{{ podcast.title | slug }}/"
+---
