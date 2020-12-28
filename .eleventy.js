@@ -6,7 +6,10 @@ const { DateTime } = require("luxon");
 const posthtml = require("posthtml");
 const beautifyHtml = require("js-beautify").html;
 const uslug = require("uslug");
-const fetchRxcReplayed = require("./src/util/podcast-rxc-replayed");
+const lodashChunk = require("lodash.chunk");
+const libraryData = require("./src/data/kiosk/library");
+const papersData = require("./src/data/kiosk/papers");
+const fetchPodcasts = require("./src/data/kiosk/podcasts");
 
 module.exports = function (config) {
   const isDev = process.env.RXC_DEV === "true";
@@ -40,11 +43,12 @@ module.exports = function (config) {
   config.addDataExtension("yaml", (contents) => yaml.safeLoad(contents));
 
   // Formatting for dates
-  config.addFilter("readableDate", (dateStr) => {
+  function readableDate(dateStr) {
     return DateTime.fromISO(dateStr, { zone: "utc" }).toLocaleString(
       DateTime.DATE_FULL
     );
-  });
+  }
+  config.addFilter("readableDate", readableDate);
   config.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
@@ -73,53 +77,45 @@ module.exports = function (config) {
   });
 
   config.addCollection("kiosk2", async (collectionApi) => {
-    const announcements = collectionApi.getFilteredByGlob(
-      "src/site/kiosk/announcements/*"
-    );
-    const blogPosts = collectionApi.getFilteredByGlob("src/site/kiosk/blog/*");
-    const library = collectionApi.getFilteredByGlob("src/site/kiosk/library/*");
-    const papers = collectionApi.getFilteredByGlob("src/site/kiosk/papers/*");
-    const podcasts = [...(await fetchRxcReplayed())];
-
+    // Combine disparate source for kiosk and sort them
     const all = []
       .concat(
-        announcements.map((item) => ({
-          url: item.url,
-          date: item.data.date,
-          title: item.data.title,
-          postType: "Announcement",
-          postHeader: item.data.postHeader,
-          postAuthor: item.data.postAuthor || "RxC Team",
-          series: item.data.series || [],
+        collectionApi
+          .getFilteredByGlob("src/site/kiosk/announcements/*")
+          .map((item) => ({
+            url: item.url,
+            date: item.data.date,
+            readableDate: readableDate(item.data.date),
+            title: item.data.title,
+            postType: "Announcement",
+            postHeader: item.data.postHeader,
+            postAuthor: item.data.postAuthor || "RxC Team",
+            series: item.data.series || [],
+          })),
+        collectionApi
+          .getFilteredByGlob("src/site/kiosk/blog/*")
+          .map((item) => ({
+            url: item.url,
+            date: item.data.date,
+            readableDate: readableDate(item.data.date),
+            title: item.data.title,
+            postType: "Blog Post",
+            postHeader: item.data.postHeader,
+            postAuthor: item.data.postAuthor || "RxC Team",
+            series: item.data.series || [],
+          })),
+        libraryData.map((item) => ({
+          ...item,
+          readableDate: readableDate(item.date),
         })),
-        blogPosts.map((item) => ({
-          url: item.url,
-          date: item.data.date,
-          title: item.data.title,
-          postType: "Blog Post",
-          postHeader: item.data.postHeader,
-          postAuthor: item.data.postAuthor || "RxC Team",
-          series: item.data.series || [],
+        papersData.map((item) => ({
+          ...item,
+          readableDate: readableDate(item.date),
         })),
-        library.map((item) => ({
-          url: item.url,
-          date: item.data.date,
-          title: item.data.title,
-          postType: "Library",
-          postHeader: item.data.postHeader,
-          postAuthor: item.data.postAuthor || "RxC Team",
-          series: item.data.series || [],
-        })),
-        papers.map((item) => ({
-          url: item.url,
-          date: item.data.date,
-          title: item.data.title,
-          postType: "Paper",
-          postHeader: item.data.postHeader,
-          postAuthor: item.data.postAuthor || "RxC Team",
-          series: item.data.series || [],
-        })),
-        podcasts
+        (await fetchPodcasts()).map((item) => ({
+          ...item,
+          readableDate: readableDate(item.date),
+        }))
       )
       .sort((a, b) => {
         if (a.date < b.date) {
@@ -129,32 +125,48 @@ module.exports = function (config) {
         }
       });
 
-    const community = all.filter((item) =>
-      item.series.includes("RxC Community Calls")
+    // Create filtered collections
+    const blog = all.filter((item) => item.postType === "Blog Post");
+    const papers = all.filter((item) => item.postType === "Paper");
+    const announcements = all.filter(
+      (item) => item.postType === "Announcement"
     );
-    const fundamentals = all.filter((item) =>
-      item.series.includes("RxC Fundamentals")
+    const podcastsVideos = all.filter(
+      (item) => item.postType === "Podcast" || item.postType === "Video"
     );
 
-    return { all, community, fundamentals };
-  });
+    // Paginate the collections
+    // Thank you to this genius https://github.com/11ty/eleventy/issues/332
+    const PAGE_SIZE = 16;
+    const paginated = [].concat(
+      lodashChunk(all, PAGE_SIZE).map((chunk, index) => ({
+        filter: "all",
+        pageNumber: index,
+        items: chunk,
+      })),
+      lodashChunk(blog, PAGE_SIZE).map((chunk, index) => ({
+        filter: "blog",
+        pageNumber: index,
+        items: chunk,
+      })),
+      lodashChunk(papers, PAGE_SIZE).map((chunk, index) => ({
+        filter: "papers",
+        pageNumber: index,
+        items: chunk,
+      })),
+      lodashChunk(announcements, PAGE_SIZE).map((chunk, index) => ({
+        filter: "announcements",
+        pageNumber: index,
+        items: chunk,
+      })),
+      lodashChunk(podcastsVideos, PAGE_SIZE).map((chunk, index) => ({
+        filter: "podcastsVideos",
+        pageNumber: index,
+        items: chunk,
+      }))
+    );
 
-  config.addCollection("kioskCommunity", (collectionApi) => {
-    return collectionApi
-      .getFilteredByTag("kiosk")
-      .filter(
-        (item) =>
-          item.data.series && item.data.series.includes("RxC Community Calls")
-      );
-  });
-
-  config.addCollection("kioskFundamentals", (collectionApi) => {
-    return collectionApi
-      .getFilteredByTag("kiosk")
-      .filter(
-        (item) =>
-          item.data.series && item.data.series.includes("RxC Fundamentals")
-      );
+    return paginated;
   });
 
   // Pass through static assets

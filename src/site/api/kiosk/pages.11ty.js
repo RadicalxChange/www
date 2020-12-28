@@ -1,0 +1,24 @@
+class Pages {
+  data() {
+    return {
+      pagination: {
+        data: "collections.kiosk2",
+        size: 1,
+        alias: "thePage",
+      },
+      permalink: ({ thePage }) => {
+        return `/api/kiosk/${thePage.filter}-${thePage.pageNumber + 1}.json`;
+      },
+    };
+  }
+
+  render(data) {
+    return JSON.stringify({
+      items: data.thePage.items,
+      previous: data.pagination.href.previous || undefined,
+      next: data.pagination.href.next || undefined,
+    });
+  }
+}
+
+module.exports = Pages;

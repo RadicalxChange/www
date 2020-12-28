@@ -1,12 +1,12 @@
 const { AssetCache } = require("@11ty/eleventy-cache-assets");
 const Parser = require("rss-parser");
 
-const CACHE_KEY = "podcast-rxc-replayed";
-const RSS_FEED_URI = "https://feeds.simplecast.com/VrNLe50Y";
+const CACHE_KEY = "podcasts";
+const REPLAYED_RSS_FEED_URI = "https://feeds.simplecast.com/VrNLe50Y";
 
-async function fetchPodcasts() {
+async function fetchReplayedEpisodes() {
   const parser = new Parser();
-  const feed = await parser.parseURL(RSS_FEED_URI);
+  const feed = await parser.parseURL(REPLAYED_RSS_FEED_URI);
   const items = feed.items.map((item) => ({
     url: item.link,
     date: item.isoDate,
@@ -27,7 +27,7 @@ module.exports = async function () {
     return asset.getCachedValue();
   }
 
-  const items = await fetchPodcasts();
+  const items = await fetchReplayedEpisodes();
   await asset.save(items, "json");
   return items;
 };
