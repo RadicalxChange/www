@@ -1,5 +1,4 @@
 ---
-tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-08-06"
 title: "Systemic Solutions To Elect More Women"

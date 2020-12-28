@@ -1,5 +1,4 @@
 ---
-tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-04-14T23:55:12"
 title: "Radical Tactics for Human Cooperation in the New Normal"

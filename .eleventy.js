@@ -76,7 +76,7 @@ module.exports = function (config) {
     return array.slice(...args);
   });
 
-  config.addCollection("kiosk2", async (collectionApi) => {
+  config.addCollection("kiosk", async (collectionApi) => {
     // Combine disparate source for kiosk and sort them
     const all = []
       .concat(

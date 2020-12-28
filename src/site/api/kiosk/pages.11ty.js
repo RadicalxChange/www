@@ -2,7 +2,7 @@ class Pages {
   data() {
     return {
       pagination: {
-        data: "collections.kiosk2",
+        data: "collections.kiosk",
         size: 1,
         alias: "thePage",
       },

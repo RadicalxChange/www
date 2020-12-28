@@ -64,7 +64,7 @@ headerText: RxC Kiosk
     id="kiosk-list"
     class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk gap-x-8 gap-y-16 mb-8"
   >
-    {% for post in collections.kiosk2[0].items %}
+    {% for post in collections.kiosk[0].items %}
     <li
       data-kiosk
       data-kiosk-series="{{ post.data.series | default([]) | dump }}"
