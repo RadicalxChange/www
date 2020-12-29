@@ -5,11 +5,12 @@ pagination:
   size: 1
   alias: concept
 permalink: "concepts/{{ concept.slug }}/"
-title: Concept
+eleventyComputed:
+  title: "{{ concept.title }}"
 ---
 
 <!-- prettier-ignore -->
 {% import "components/concepts-page.njk" as conceptsPage %}
 
 <!-- prettier-ignore -->
-{{ conceptsPage.render(concept) }}
+{{ conceptsPage.render(concept, pagination) }}

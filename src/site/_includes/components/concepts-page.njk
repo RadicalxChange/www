@@ -2,9 +2,36 @@
 {% import "components/close-button.njk" as closeButton %}
 
 <!-- prettier-ignore -->
-{% macro render(concept) %}
+{% macro render(concept, pagination) %}
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/concepts", text="More Concepts") }}
+<div class="z-10 hidden lg:block fixed left-0 bottom-1/4 ml-lg/margin">
+  <a
+    class="group inline-flex items-center justify-start py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.previous | default(pagination.href.last, true) }}"
+  >
+    <span>←</span>
+    <div
+      class="inline-block w-0 group-hover:w-full text-size--2 overflow-hidden whitespace-nowrap transition-width duration-300 ease-out"
+    >
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      {{ pagination.page.previous.title if pagination.page.previous else pagination.page.last.title }}
+    </div>
+  </a>
+</div>
+<div class="z-10 hidden lg:block fixed right-0 bottom-1/4 mr-lg/margin">
+  <a
+    class="group inline-flex items-center justify-end py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.next | default(pagination.href.first, true) }}"
+    ><div
+      class="inline-block w-0 group-hover:w-full text-size--2 overflow-hidden whitespace-nowrap transition-width duration-300 ease-out"
+    >
+      {{ pagination.page.next.title if pagination.page.next else pagination.page.first.title }}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <span>→</span>
+  </a>
+</div>
 <div
   class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start lg:content-between lg:min-h-screen pt-margin lg:pt-lg/margin pb-margin lg:pb-2 mb-24 lg:mb-0"
 >
