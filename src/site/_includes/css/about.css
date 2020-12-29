@@ -7,9 +7,14 @@
 }
 
 .about_press-description {
-  clip-path: inset(0 100% 0 0);
-  @apply transition-clip-path duration-300;
-  max-width: 17ch;
+  @apply hidden;
+
+  @screen md {
+    @apply block;
+    clip-path: inset(0 100% 0 0);
+    @apply transition-clip-path duration-300;
+    max-width: 17ch;
+  }
 
   @screen lg {
     max-width: 19ch;
