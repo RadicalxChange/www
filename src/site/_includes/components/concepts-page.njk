@@ -9,6 +9,7 @@
   <a
     class="group inline-flex items-center justify-start py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
     href="{{ pagination.href.previous | default(pagination.href.last, true) }}"
+    data-href-replace-state
   >
     <span>←</span>
     <div
@@ -23,6 +24,7 @@
   <a
     class="group inline-flex items-center justify-end py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
     href="{{ pagination.href.next | default(pagination.href.first, true) }}"
+    data-href-replace-state
     ><div
       class="inline-block max-w-0 group-hover:max-w-lg text-size--2 overflow-hidden whitespace-nowrap transition-max-width duration-500 ease-in-out"
     >
