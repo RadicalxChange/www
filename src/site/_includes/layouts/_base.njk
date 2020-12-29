@@ -84,8 +84,10 @@
     />
     <!-- prettier-ignore -->
     {% endblock %}
+
     <!-- prettier-ignore -->
     {% block headScripts %}
+    <script src="https://unpkg.com/@ungap/custom-elements"></script>
     <script
       src="https://unpkg.com/body-scroll-lock@3.0.2/lib/bodyScrollLock.min.js"
       integrity="sha384-TPD9y0kmdvgK9D4a+br/KYlqMn9cLVXHDVxxN93FvPj+13bPJeMJZaXAB7+p/e7X"
@@ -120,6 +122,7 @@
     {{ content | safe }}
     <!-- prettier-ignore -->
     {% endblock %}
+    <script src="/js/a-replace.js"></script>
     <script>
       if (document.referrer !== "" && history.length > 1) {
         const referrer = new URL(document.referrer);
@@ -132,8 +135,7 @@
       for (const $anchor of document.querySelectorAll("[data-href-replace-state]")) {
           $anchor.addEventListener("click", function (event) {
             event.preventDefault();
-            history.replaceState(undefined, undefined, $anchor.href);
-            history.go();
+            location.replace($anchor.href)
           });
       }
     </script>

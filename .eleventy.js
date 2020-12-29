@@ -173,6 +173,7 @@ module.exports = function (config) {
   // src/site/images is copied through its own pipeline (see package.json)
   config.addPassthroughCopy("./src/site/fonts");
   config.addPassthroughCopy("./src/site/files");
+  config.addPassthroughCopy("./src/site/js");
   config.addPassthroughCopy("./src/site/_redirects");
   config.addPassthroughCopy("./src/site/_headers");
 
