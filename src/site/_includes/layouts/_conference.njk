@@ -29,11 +29,11 @@
     <ul id="videos">
       <!-- prettier-ignore -->
       {% for v in youtubeData %}
-      <li id="v{{ v.videoId }}">
+      <li id="v{{ v.videoId }}" class="py-8 border-b">
         <a
           data-video-link="{{ v.videoId }}"
           href="#v{{ v.videoId }}"
-          class="group grid grid-cols-4 lg:grid-cols-16 items-baseline gap-x-8 py-8 border-b"
+          class="group grid grid-cols-4 lg:grid-cols-16 items-baseline gap-x-8"
         >
           <h3
             class="col-start-1 col-span-4 lg:col-span-8 text-size--1 uppercase group-hover:underline mb-2 lg:mb-0"
@@ -41,25 +41,21 @@
             {{ v.title }}
           </h3>
           <p
-            class="col-start-1 lg:col-start-9 col-span-4 lg:col-span-8 min-h-line-2"
+            class="col-start-1 lg:col-start-9 col-span-4 lg:col-span-8 flex items-center min-h-line-2"
           >
             {{ v.speakers }}
           </p>
-          <div
-            class="hidden open:block col-start-1 col-span-4 lg:col-span-16 mt-4 mb-8"
-          >
-            <div data-youtube-container class="events_youtube-container"></div>
-          </div>
-          <!-- prettier-ignore -->
-          {% if v.description %}}
-          <p
-            class="hidden open:block col-start-1 col-span-4 lg:col-span-12 text-size--1"
-          >
-            {{ v.description | escape | nl2br }}
-          </p>
-          <!-- prettier-ignore -->
-          {% endif %}
         </a>
+        <div class="hidden open:block mt-4 mb-8">
+          <div data-youtube-container class="events_youtube-container"></div>
+        </div>
+        <!-- prettier-ignore -->
+        {% if v.description %}}
+        <p class="hidden open:block text-size--1">
+          {{ v.description | escape | nl2br }}
+        </p>
+        <!-- prettier-ignore -->
+        {% endif %}
       </li>
       <!-- prettier-ignore -->
       {% endfor %}
