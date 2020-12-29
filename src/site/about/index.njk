@@ -84,18 +84,16 @@ supporters:
 {{ introduction.render(headerText, introductionBlurb) }}
 <section
   id="chapters"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 my-margin"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
 >
   <div class="hidden lg:block col-start-column-1 col-end-gutter-4">
     <h2>Chapters</h2>
   </div>
-  <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 space-y-8"
-  >
+  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
     <div class="markdown">
       {{ chaptersDescription | markdown | safe }}
     </div>
-    <div>
+    <div class="mt-10 lg:mt-16">
       {{ actionButton.render(href="/about/chapters", label="Join your local chapter")}}
     </div>
   </div>
