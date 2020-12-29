@@ -42,6 +42,12 @@ class Thing {
       "partial-common-ownership-animation",
       `
 <style>
+  #outside {
+    display: flex;
+    align-items: center;
+    padding: 0 11%;
+  }
+
   #circle-7,
   #circle-4,
   #circle-3,
@@ -121,7 +127,7 @@ class Thing {
     }
   }
 </style>
-<div style="display: flex; align-items: center; padding: 0 7%">
+<div id="outside">
   <svg id="partial-common-ownership" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     ${circles.join("\n")}
   </svg>

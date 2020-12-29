@@ -14,7 +14,7 @@ class Thing {
       `
 <style>
   #outside {
-    padding: 0 10%;
+    padding: 0 11%;
   }
 
   #canvas {

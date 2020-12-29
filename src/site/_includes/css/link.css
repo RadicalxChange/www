@@ -12,8 +12,8 @@
 
 @define-mixin thick-link-hover {
   text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 1.5px;
 }
 
 .thick-link {

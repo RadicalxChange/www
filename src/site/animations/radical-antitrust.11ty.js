@@ -37,6 +37,12 @@ class Thing {
       "radical-antitrust-animation",
       `
 <style>
+  #outside {
+    display: flex;
+    align-items: center;
+    padding: 0 11%;
+  }
+
   .move {
     transition: transform 1s;
   }
@@ -77,7 +83,7 @@ class Thing {
     transform: translate(-${xPercent * 3}%, 0);
   }
 </style>
-<div style="display: flex; align-items: center; padding: 0 7%">
+<div id="outside">
   <svg id="radical-antitrust" width="100%" viewBox="0 0 100.2 130.2" xmlns="http://www.w3.org/2000/svg">
     ${grid
       .map((rowArray, r) =>
