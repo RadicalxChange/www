@@ -1,4 +1,4 @@
-const youtube2019berlin = [
+const youtubeData = [
   {
     title: "Radical Digital Social Innovation",
     speakers: "Audrey Tang",
@@ -96,6 +96,6 @@ function compareVideos(a, b) {
   }
   return 0;
 }
-youtube2019berlin.sort(compareVideos);
+youtubeData.sort(compareVideos);
 
-module.exports = youtube2019berlin;
+module.exports = { youtubeData };

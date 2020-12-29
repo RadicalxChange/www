@@ -1,4 +1,4 @@
-const youtube2020 = [
+const youtubeData = [
   {
     title: "Innovation in Community Focused Ownership",
     speakers: "Dryhurst, Surico, Torfs",
@@ -516,7 +516,7 @@ const youtube2020 = [
   },
 ];
 
-youtube2020.push({
+youtubeData.push({
   title:
     "To Be or not to Be Hacked? The Future of Democracy, Work, and Identity",
   speakers: "Harari, Tang, and Ohlhaver",
@@ -535,6 +535,6 @@ function compareVideos(a, b) {
   }
   return 0;
 }
-youtube2020.sort(compareVideos);
+youtubeData.sort(compareVideos);
 
-module.exports = youtube2020;
+module.exports = { youtubeData };

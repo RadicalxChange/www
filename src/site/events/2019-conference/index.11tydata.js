@@ -1,4 +1,4 @@
-const youtube2019 = [
+const youtubeData = [
   {
     title: "Welcome to RadicalxChange",
     speakers: "Jeff Lee-Yaw",
@@ -112,6 +112,6 @@ function compareVideos(a, b) {
   }
   return 0;
 }
-youtube2019.sort(compareVideos);
+youtubeData.sort(compareVideos);
 
-module.exports = youtube2019;
+module.exports = { youtubeData };

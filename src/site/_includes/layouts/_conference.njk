@@ -28,7 +28,7 @@
     <h2 class="pb-4 border-b text-size--1 uppercase">Watch the replays</h2>
     <ul id="videos">
       <!-- prettier-ignore -->
-      {% for v in youtubeDatum %}
+      {% for v in youtubeData %}
       <li id="v{{ v.videoId }}">
         <a
           data-video-link="{{ v.videoId }}"
