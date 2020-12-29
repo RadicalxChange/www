@@ -1,5 +1,4 @@
 ---
-tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-11-27"
 title: "Introducing the RxC Development Goals"

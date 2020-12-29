@@ -1,5 +1,4 @@
 ---
-tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-12-22"
 title: "COST Monopoly"

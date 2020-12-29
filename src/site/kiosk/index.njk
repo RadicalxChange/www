@@ -25,54 +25,63 @@ headerText: RxC Kiosk
       <a href="/">{{ headerText }}</a>
     </h1>
   </header>
-  <form class="col-span-columns -mr-4 mb-8" autocomplete="off">
-    <input
-      type="checkbox"
-      name="kiosk-filter"
-      value="RxC Community Calls"
-    /><label class="ml-2 mr-4 text-size--1" for="RxC Community Calls"
-      >RxC Community Calls</label
-    >
-    <input type="checkbox" name="kiosk-filter" value="RxC Fundamentals" /><label
-      class="ml-2 mr-4 text-size--1"
-      for="RxC Fundamentals"
-      >RxC Fundamentals</label
-    >
+  <form
+    class="col-span-columns grid lg:flex grid-cols-1 md:grid-cols-auto/auto justify-start lg:grid-cols-none -mr-4 mb-8"
+    autocomplete="off"
+  >
+    <div>
+      <input type="checkbox" name="kiosk-filter" value="Blog" /><label
+        class="ml-2 mr-4 text-size--1"
+        for="Blog"
+        >Blog</label
+      >
+    </div>
+    <div>
+      <input type="checkbox" name="kiosk-filter" value="Papers" /><label
+        class="ml-2 mr-4 text-size--1"
+        for="Papers"
+        >Papers</label
+      >
+    </div>
+    <div>
+      <input type="checkbox" name="kiosk-filter" value="Announcements" /><label
+        class="ml-2 mr-4 text-size--1"
+        for="Announcements"
+        >Announcements</label
+      >
+    </div>
+    <div>
+      <input
+        type="checkbox"
+        name="kiosk-filter"
+        value="Podcasts / Videos"
+      /><label class="ml-2 mr-4 text-size--1" for="Podcasts / Videos"
+        >Podcasts / Videos</label
+      >
+    </div>
   </form>
   <ol
     id="kiosk-list"
     class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk gap-x-8 gap-y-16 mb-8"
   >
-    <!-- prettier-ignore -->
-    {% for post in collections.kiosk | reverse | slice (0, 16) %}
-
-    <!-- prettier-ignore -->
-    {% set postUrl = post.data.redirectHref | default(post.url) %}
-
-    <!-- There is a bug in nunjucks or 11ty somewhere and this is need to read post.inputPath multiple times -->
-    <!-- prettier-ignore -->
-    {% set postInputPath = post.inputPath.toString() %}
-
+    {% for post in collections.kiosk[0].items %}
     <li
       data-kiosk
       data-kiosk-series="{{ post.data.series | default([]) | dump }}"
     >
       <a
         class="flex flex-col justify-between h-full kiosk_border-b"
-        href="{{ postUrl }}"
+        href="{{ post.url }}"
       >
         <div class="mb-8">
           <p data-kiosk-item-prop="postType" class="text-size--1">
-            {{ "Blog Post" if postInputPath.includes("/blog/") }}
-            {{ "Announcement" if postInputPath.includes("/announcements/") }}
-            {{ "Paper" if postInputPath.includes("/papers/") }}
-            {{ "Library" if postInputPath.includes("/library/") }}
+            {{ post.postType }}
           </p>
           <h2
             data-kiosk-item-prop="postHeader"
             class="leading-snug text-size-2 lg:min-h-line-5"
           >
-            {{ post.data.postHeader }}
+            {{ post.postHeader }}
           </h2>
         </div>
         <div>
@@ -80,10 +89,13 @@ headerText: RxC Kiosk
             data-kiosk-item-prop="postAuthor"
             class="text-size--2 lg:text-size--3"
           >
-            {{ post.data.postAuthor | default("RxC Team") }}
+            {{ post.postAuthor }}
           </p>
-          <p data-kiosk-item-prop="date" class="text-size--2 lg:text-size--3">
-            {{ post.data.date | readableDate }}
+          <p
+            data-kiosk-item-prop="readableDate"
+            class="text-size--2 lg:text-size--3"
+          >
+            {{ post.readableDate }}
           </p>
         </div>
       </a>
@@ -118,8 +130,10 @@ headerText: RxC Kiosk
 
   Kiosk.prototype.SERIES_API = {
     All: "/api/kiosk/all-1.json",
-    "RxC Community Calls": "/api/kiosk/community-1.json",
-    "RxC Fundamentals": "/api/kiosk/fundamentals-1.json",
+    Blog: "/api/kiosk/blog-1.json",
+    Papers: "/api/kiosk/papers-1.json",
+    Announcements: "/api/kiosk/announcements-1.json",
+    "Podcasts / Videos": "/api/kiosk/podcastsVideos-1.json",
   };
 
   Kiosk.prototype.init = function () {
@@ -157,18 +171,18 @@ headerText: RxC Kiosk
 
   Kiosk.prototype.addItem = function (item) {
     const $item = this.$itemTemplate.cloneNode(true);
-    $item.dataset["kioskSeries"] = JSON.stringify(item.data.series);
+    $item.dataset["kioskSeries"] = JSON.stringify(item.series);
 
     const $anchor = $item.children[0];
     $anchor.href = item.url;
     $anchor.querySelector('[data-kiosk-item-prop="postType"').innerText =
-      item.data.postType;
+      item.postType;
     $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
-      item.data.postHeader;
+      item.postHeader;
     $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
-      item.data.postAuthor;
-    $anchor.querySelector('[data-kiosk-item-prop="date"').innerText =
-      item.data.date;
+      item.postAuthor;
+    $anchor.querySelector('[data-kiosk-item-prop="readableDate"').innerText =
+      item.readableDate;
 
     this.$kioskList.appendChild($item);
   };
@@ -198,7 +212,8 @@ headerText: RxC Kiosk
           this.$loadButton.disabled = true;
         }
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error(err);
         this.isLoading = false;
         this.$loadButton.innerText = "Error: Reload the page.";
         this.$loadButton.disabled = false;

@@ -11,11 +11,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-cache-assets": "^2.0.3",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "autoprefixer": "^10.0.2",
     "htmlnano": "^0.2.7",
     "js-beautify": "^1.13.0",
     "js-yaml": "^3.14.0",
+    "lodash.chunk": "^4.2.0",
     "luxon": "^1.25.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.3.0",
@@ -33,6 +35,7 @@
     "posthtml-alt-always": "^1.0.1",
     "posthtml-link-noreferrer": "^1.0.8",
     "prettier": "^2.1.2",
+    "rss-parser": "^3.10.0",
     "sharp": "^0.25.4",
     "tailwindcss": "^2.0.1",
     "uslug": "^1.0.4"

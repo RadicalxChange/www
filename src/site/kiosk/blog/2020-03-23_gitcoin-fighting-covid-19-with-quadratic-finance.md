@@ -1,5 +1,4 @@
 ---
-tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-03-23T19:57:53"
 title: "Gitcoin Fighting COVID-19 With Quadratic Finance"

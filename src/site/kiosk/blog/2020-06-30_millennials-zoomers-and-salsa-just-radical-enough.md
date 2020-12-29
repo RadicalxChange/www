@@ -1,5 +1,4 @@
 ---
-tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-06-30T21:28:00"
 title: "Millennials, Zoomers, and SALSA: Just Radical Enough"

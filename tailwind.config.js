@@ -152,6 +152,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         16: "repeat(16, minmax(0, 1fr))",
+        "auto/auto": "auto auto",
         "layout-4":
           "[margin] 1rem [column] 1fr repeat(3, [gutter] 2rem [column] 1fr) [margin] 1rem",
         "layout-12":

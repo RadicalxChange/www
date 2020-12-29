@@ -12,7 +12,6 @@ Blog post metadata lives at the top of each blog post between `---` delimeters. 
 
 ```
 ---
-tags: "kiosk"
 layout: "layouts/blog-post.njk"
 date: "2020-04-15"
 title: "Between Abundance and Scarcity"
@@ -21,7 +20,7 @@ postAuthor: "Matt Prewitt"
 ---
 ```
 
-Keep the `tags` and `layout` fields as shown above. Edit the following fields for your blog post.
+Keep the `layout` field as shown above. Edit the following fields for your blog post.
 
 | Field        | Description                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------ |
