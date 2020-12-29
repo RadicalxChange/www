@@ -4,7 +4,7 @@
 <!-- prettier-ignore -->
 {% macro render(concept, pagination) %}
 <!-- prettier-ignore -->
-{{ closeButton.render(href="/concepts", text="More Concepts") }}
+{{ closeButton.render(href="/concepts") }}
 <div class="z-10 hidden lg:block fixed left-0 bottom-1/10 ml-lg/margin">
   <a
     is="a-replace"
@@ -87,5 +87,9 @@
     </p>
   </div>
 </div>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
 <!-- prettier-ignore -->
 {% endmacro %}

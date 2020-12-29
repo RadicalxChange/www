@@ -3,7 +3,6 @@ layout: layouts/popup.njk
 title: Privacy Policy
 headerText: RxC Privacy Policy
 closeHref: "/"
-closeText: "Back to RxC"
 ---
 
 ## Definitions

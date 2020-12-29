@@ -3,7 +3,6 @@ layout: layouts/popup.njk
 title: Community Code of Conduct
 headerText: RxC Community Code of Conduct
 closeHref: "/community"
-closeText: "Back to RxC"
 ---
 
 ## Introduction

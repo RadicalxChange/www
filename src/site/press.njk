@@ -43,11 +43,7 @@ title: Press
       <!-- prettier-ignore -->
       {% if pagination.href.next %}
       <li class="mr-4 text-size--1">
-        <a
-          class="thick-link"
-          href="{{ pagination.href.next }}"
-          data-href-replace-state
-        >
+        <a is="a-replace" class="thick-link" href="{{ pagination.href.next }}">
           Older
         </a>
       </li>
@@ -57,9 +53,9 @@ title: Press
       {% if pagination.href.previous %}
       <li class="mr-4 text-size--1">
         <a
+          is="a-replace"
           class="thick-link"
           href="{{ pagination.href.previous }}"
-          data-href-replace-state
         >
           Newer
         </a>
@@ -69,3 +65,7 @@ title: Press
     </ul>
   </div>
 </div>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
