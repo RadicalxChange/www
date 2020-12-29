@@ -53,7 +53,7 @@ module.exports = {
         "margin-left": "margin-left",
         "clip-path": "clip-path",
       },
-      inset: { full: "100%", "1/4": "25%", "1/2": "50%" },
+      inset: { full: "100%", "1/8": "12.5%", "1/4": "25%", "1/2": "50%" },
       minHeight: { tall: "50vw", "line-2": "2.68em", "line-5": "6.70em" },
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
