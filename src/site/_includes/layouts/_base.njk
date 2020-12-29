@@ -121,7 +121,7 @@
     <!-- prettier-ignore -->
     {% endblock %}
     <script>
-      if (document.referrer !== "") {
+      if (document.referrer !== "" && history.length > 1) {
         const referrer = new URL(document.referrer);
         if (referrer.origin === location.origin) {
           for (const $anchor of document.querySelectorAll("[data-href-or-back]")) {
@@ -132,7 +132,7 @@
       for (const $anchor of document.querySelectorAll("[data-href-replace-state]")) {
           $anchor.addEventListener("click", function (event) {
             event.preventDefault();
-            history.replaceState(undefined, undefined, event.target.href);
+            history.replaceState(undefined, undefined, $anchor.href);
             history.go();
           });
       }
