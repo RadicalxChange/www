@@ -49,6 +49,7 @@ homeConcepts:
     </h1>
   </header>
   <div
+    id="concepts"
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 self-center grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 lg:gap-y-12 mb-16 lg:mb-8"
   >
     {% for concept in homeConcepts%}
@@ -122,6 +123,66 @@ homeConcepts:
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
+<script>
+  const Animation = function ($root) {
+    this.$root = $root;
+
+    this.onMouseEnter = this._onMouseEnter.bind(this);
+    this.onMouseLeave = this._onMouseLeave.bind(this);
+    this.onIntersect = this._onIntersect.bind(this);
+    this.observer = new IntersectionObserver(this.onIntersect, {
+      threshold: [0.5, 1],
+    });
+  };
+
+  Animation.prototype.init = function () {
+    this.$root.addEventListener("mouseenter", this.onMouseEnter);
+    this.$root.addEventListener("mouseleave", this.onMouseLeave);
+    this.observer.observe(this.$root);
+  };
+
+  Animation.prototype._onIntersect = function (entries) {
+    if (window.innerWidth >= 768) {
+      return;
+    }
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio <= 0.5) {
+        this.animate(false);
+      } else if (entry.intersectionRatio === 1) {
+        this.animate(true);
+      }
+    });
+  };
+
+  Animation.prototype._onMouseEnter = function () {
+    if (window.innerWidth < 768) {
+      return;
+    }
+    this.animate(true);
+  };
+
+  Animation.prototype._onMouseLeave = function () {
+    if (window.innerWidth < 768) {
+      return;
+    }
+    this.animate(false);
+  };
+
+  Animation.prototype.animate = function (state) {
+    console.log(state);
+    if (state) {
+      this.$root.children[1].children[0].setAttribute("on", true);
+    } else {
+      this.$root.children[1].children[0].removeAttribute("on");
+    }
+  };
+
+  const $concepts = document.getElementById("concepts").children;
+  for (const $concept of $concepts) {
+    const animation = new Animation($concept);
+    animation.init();
+  }
+</script>
 <script>
   window.twttr = (function (d, s, id) {
     var js,
