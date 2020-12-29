@@ -17,7 +17,7 @@
 }
 
 .concept-marquee:hover .marquee__inner {
-  animation: concept-marquee 30s linear infinite;
+  animation: concept-marquee 21s linear infinite;
   animation-play-state: running;
 }
 

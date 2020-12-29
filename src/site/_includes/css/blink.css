@@ -1,5 +1,19 @@
 .blink {
-  animation: 1s 2s linear infinite alternate blink-ani;
+  animation: 0.7s linear infinite alternate blink-ani;
+}
+
+.blink:hover {
+  animation: blink-noop;
+}
+
+@keyframes blink-noop {
+  0% {
+    color: inherit;
+  }
+
+  100% {
+    color: inherit;
+  }
 }
 
 @keyframes blink-ani {
@@ -7,11 +21,11 @@
     color: inherit;
   }
 
-  75% {
+  50% {
     color: inherit;
   }
 
-  75.001% {
+  50.001% {
     color: transparent;
   }
 
