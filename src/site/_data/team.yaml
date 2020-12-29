@@ -4,86 +4,46 @@
   website: "http://jennifermorone.com/"
   twitter: "https://twitter.com/jlmorone"
   linkedin: "https://www.linkedin.com/in/jennifermorone"
-  bio: "Jennifer Lyn Morone is an artist, activist and design researcher with a
-    special interest in the human experience in relation to economics,
-    identity, technology and the environment. In 2013, to draw attention to
-    and protest the growing information industry, data slavery, corporate
-    power, and the precarious nature of the future of work she designed a
-    business model and established herself as a corporation to protect her
-    data via a legal container and expose the advantages corporations (legal
-    people) have over humans (natural people). Morone previously led the
-    Arts and Communications track lead for RadicalxChange and is currently
-    the CEO of the foundation. She is an alumna of the Royal College of Art
-    where she studied Design Interactions.  She has recently presented at
-    the World Economic Forum in Dalian, at SPRU University of Sussex, Data
-    Natives in Berlin, and FM Joanneum University of Applied Sciences in
-    Graz. Her artistic work has been exhibited internationally. She is
-    co-authoring, directing and producing a film of a fictional post-work
-    and data dignified world for the 2020 EU Capital of Culture program in
-    Rijeka, Croatia."
+  bio: |
+    Jennifer Lyn Morone is RadicalxChange Foundation's CEO and a multidisciplinary visual artist, activist, and filmmaker. Her work focuses on the human experience with technology, economics, politics, and identity, and the moral and ethical issues that arise from such systems. Her interests lie in exploring ways of creating social justice and equal distribution of the future. Morone is a trained sculptor with BFA from SUNY Purchase and earned her MA in Design Interactions at the Royal College of Art in London with Dunne and Raby. Her work has been presented at institutions, festivals, museums, and galleries around the world, including ZKM, Kunsthalle Düsseldorf, Ars Electronica, HEK, the Martin Gropius Bau, the Science Gallery, Transmediale, SMBA, Carroll/Fletcher Gallery, panke.gallery, Aksioma, Drugo more, and featured extensively on international media outlets such as The Economist, WIRED, WMMNA, Vice, the Guardian, BBC World News, Tagesspiegel, Netzpolitik, the Observer.
 - name: "Matt Prewitt"
   title: "President"
   image: "matt_prewitt.png"
   twitter: "https://twitter.com/m_t_prewitt"
-- name: "Fanny Lakoubay"
-  title: "Public Relations"
-  image: "fanny_lakoubay.png"
-  twitter: "https://twitter.com/flakoubay"
-  linkedin: "https://www.linkedin.com/in/fannylakoubay/"
-- name: "Natalia Olson-Urtecho"
-  title: "Activism and Government Lead"
-  image: "natalia_olson-urtecho.png"
-  website: "http://thedisruptivefactory.com/"
-  twitter: "https://twitter.com/olsonurtecho"
-  linkedin: "https://www.linkedin.com/in/nataliaolsonurtecho"
-- name: "Emmanuel Midy"
-  title: "Community Lead"
-  image: "emmanuel_midy.png"
-  website: "http://emmanuelmidy.carrd.co/"
-  linkedin: "https://www.linkedin.com/in/emmanuelmidy/"
+  bio: |
+    Matthew Prewitt is RadicalxChange Foundation’s president, a writer and blockchain industry advisor, and a former plaintiff's side antitrust and consumer class action litigator and federal law clerk.
 - name: "Leon Erichsen"
-  title: "Research Associate"
+  title: "Entrepreneurship and Technology Evangelist"
   image: "leon_erichsen.png"
   twitter: "https://twitter.com/leonerichsen"
   linkedin: "https://www.linkedin.com/in/leonerichsen/"
-- name: "Paul Healy"
-  title: "Policy Advisor"
-  image: "paul_healy.png"
-  website: "https://goo.gl/CpQe8i"
-  twitter: "https://twitter.com/Paul_A_Healy"
-  linkedin: "https://www.linkedin.com/in/paulhealy862/"
-  bio: "Paul Healy is a policy advisor for RadicalxChange. He works with
-    policymakers and non-profit leaders to develop and implement policies
-    grounded in the research and values of the RadicalxChange movement. He
-    is currently a student at Yale Law School where his academic interests
-    include local/state government, antitrust, tax, and corporate finance.
-    Paul also holds a master’s degree in development economics from Oxford
-    University."
-- name: "Jordan Place"
-  title: "Tech Lead"
-  image: "jordan_place.png"
-  website: "https://jplace.github.io/"
-  linkedin: "https://www.linkedin.com/in/jordan-place-61491523/"
-  bio: "Jordan is a software engineer based in Berkeley. He's interested in how
-    technology can be leveraged to benefit humanity and improve government.
-    He is the current tech lead for RadicalxChange."
-- name: "Avital Balwit"
-  title: "Research and Communications"
-  image: "avital_balwit.png"
-  twitter: "https://twitter.com/avitalbalwit"
-  linkedin: "https://www.linkedin.com/in/avital-balwit-2b192063"
-- name: "Ananya Chakravarti"
-  title: "Ideas and Research"
-  image: "ananya_chakravarti.png"
-  twitter: "https://twitter.com/achakrava"
-  linkedin: "https://www.linkedin.com/in/ananya-chakravarti-0b7b76a2"
+  bio: |
+    Leon Erichsen is an entrepreneurship and technology evangelist at RadicalxChange Foundation. He has previously worked as a venture analyst for the Blockchain Labs of Accelerator Frankfurt, a crypto-focused go-to-market program for early-stage startups. He graduated with the Class of 2020 in Management, Philosophy & Economics (B.Sc.) at the Frankfurt School of Finance & Management.
 - name: "Jo Guldi"
   title: "RxC Foundation Fellow"
   image: "jo_guldi.png"
   website: http://joguldi.com/
   twitter: "https://twitter.com/joguldi"
-  bio: "Jo is a scholar of the history of Britain and its empire who is especially involved in questions of state expansion, the contestation of property under capitalism, and how state and property concepts are recorded in the landscape of the built environment. These themes informed her first book, **Roads to Power**, which examined Britain’s interkingdom highway and its users from 1740 to 1848. They also inform her current research into rent disputes and land reform for my next monograph, **The Long Land War**, which profiles three moments in the history of property: the Irish Land Court of 1881 and its invention of rent control, the ideology of “squatting” in post 1940 Britain, and the creation of the “participatory map” for contesting legal boundaries in Britain and India in the 1970s and 80s."
-- name: "Lawrence Lundy-Bryan"
+  bio: |
+    Jo Guldi is a scholar of Britain's history and its empire who is especially involved in questions of state expansion, the contestation of property under capitalism, and how state and property concepts are recorded in the built environment's landscape. These themes informed her first book, Roads to Power, which examined Britain's interkingdom highway and its users from 1740 to 1848. They also inform her current research into rent disputes and land reform for my next monograph, The Long Land War, which profiles three moments in the history of property: the Irish Land Court of 1881 and its invention of rent control, the ideology of "squatting" in post-1940 Britain, and the creation of the "participatory map" for contesting legal boundaries in Britain and India in the 1970s and 80s.
+- name: "Fanny Lakoubay"
+  title: "Communications Lead"
+  image: "fanny_lakoubay.png"
+  twitter: "https://twitter.com/flakoubay"
+  linkedin: "https://www.linkedin.com/in/fannylakoubay/"
+  bio: |
+    Fanny Lakoubay is a New-York-based communication & operations specialist with 12+ years of experience in art+tech, blockchain, and ESG projects. She is the head of communications for the RadicalxChange Foundation. She is involved in CADAF art fairs (New Art Academy) and EthTurin hackathon. She regularly speaks at conferences worldwide and teaches at New York University, Fashion Institute of Technology, and Christie's Education. Fanny has also worked with larger organizations such as Christie's auction house, Collectrium SaaS inventory management system, Artnet e-commerce site, and Societe Generale & Royal Bank of Scotland banks. She holds a master's from HEC Paris business school and a BA in Art History / Art Appraisal and speaks English, French and German.
+- name: "Lawrence Lundy"
   title: "Strategy Lead"
-  image: "lawrence_lundy-bryan.png"
-  bio: "Lawrence is a technology analyst and investor. He advises startups, corporates and the public sector on technology trends and strategy. He works with Radicalxchange, a global community rethinking economic and political institutions; Lunar Ventures, a venture capital firm investing in cutting-edge technology startups; and Outlier Ventures, a startup accelerator investing in decentralised software. He also informs technology policy as an advisor to the OECD Blockchain Advisory Group, a Fellow at the WEF Centre for the Fourth Industrial Revolution, and an Expert Advisor to the UK All Party Parliamentary Group (APPG) on Blockchain. He contributed to the UK Cryptoasset Taskforce led by HM Treasury and the UK National Data Strategy led by the Department for Digital, Culture Media & Sport."
+  image: "fanny_lakoubay.png"
+  twitter: "https://twitter.com/flakoubay"
+  linkedin: "https://www.linkedin.com/in/fannylakoubay/"
+  bio: |
+    Lawrence Lundy-Bryan is a technology analyst and investor. He advises startups, corporates, and the public sector on technology trends and strategy. He works with RadicalxChange, a global community rethinking economic and political institutions; Lunar Ventures, a venture capital firm investing in cutting-edge technology startups; and Outlier Ventures, a startup accelerator investing in decentralized software. He also informs technology policy as an advisor to the OECD Blockchain Advisory Group, a Fellow at the WEF Centre for the Fourth Industrial Revolution, and an Expert Advisor to the UK All-Party Parliamentary Group (APPG) on Blockchain. He contributed to the UK Cryptoasset Taskforce led by HM Treasury and the UK National Data Strategy guided by the Department for Digital, Culture Media & Sport.
+- name: "Jordan Place"
+  title: "Technology Lead"
+  image: "jordan_place.png"
+  website: "https://jplace.github.io/"
+  linkedin: "https://www.linkedin.com/in/jordan-place-61491523/"
+  bio: |
+    Jordan is a software engineer based in Berkeley. He's interested in how technology can be leveraged to improve government. He is the current tech lead for RadicalxChange.

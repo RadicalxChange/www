@@ -68,6 +68,7 @@ module.exports = {
         "line-1": "1.34em",
         "line-3/2": "2.01em",
         "line-2": "2.68em",
+        "line-5/2": "3.35em",
         "line-3": "4.02em",
         "line-5": "6.70em",
         "markdown-sm": "1em",

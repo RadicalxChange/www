@@ -120,12 +120,14 @@ supporters:
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8 lg:mb-0"
   >
-    <h3 class="pb-2 border-b">Board members</h3>
+    <h3 class="pb-4 border-b">Board members</h3>
     <table class="block">
       <tbody class="block">
         {% for member in board %}
-        <tr class="flex items-center h-12 border-b">
-          <td class="text-size--1">
+        <tr
+          class="flex items-center h-line-5/2 lg:h-line-3 xl:h-line-5/2 border-b text-size--1"
+        >
+          <td>
             <a
               class="see-more-link uppercase"
               href="/board/{{ member.name | slug }}"
@@ -138,20 +140,22 @@ supporters:
     </table>
   </div>
   <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
-    <h3 class="pb-2 border-b">Team members</h3>
+    <h3 class="pb-4 border-b">Team members</h3>
     <table class="block">
       <tbody class="block">
         <!-- prettier-ignore -->
         {% for member in team %}
-        <tr class="flex items-center h-12 border-b">
-          <td style="width: calc(50% + 1rem)" class="text-size--1">
+        <tr
+          class="flex items-center h-line-5/2 lg:h-line-3 xl:h-line-5/2 border-b text-size--1"
+        >
+          <td style="width: calc(50% + 1rem)">
             <a
               class="see-more-link uppercase"
               href="/team/{{ member.name | slug }}"
               >{{ member.name }}</a
             >
           </td>
-          <td style="width: calc(50% - 1rem)" class="text-size--1">
+          <td style="width: calc(50% - 1rem)">
             {{ member.title }}
           </td>
         </tr>
