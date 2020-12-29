@@ -22,59 +22,44 @@ introductionBlurb: |
 {% import "components/footer.njk" as footer %}
 
 <!-- prettier-ignore -->
+{% macro event(text, href) %}
+<li class="group">
+  <a class="flex items-center justify-between py-4" href="{{ href }}">
+    <h2 class="font-display text-size-display lg:text-size-lg/display">
+      {{ text }}
+    </h2>
+    {% if href.startsWith("/") %}
+    <img
+      class="hidden lg:block invisible group-hover:visible"
+      src="/images/ui/in-arrow.svg"
+      width="90"
+      height="81"
+    />
+    {% else %}
+    <img
+      class="hidden lg:block invisible group-hover:visible"
+      src="/images/ui/in-arrow.svg"
+      style="transform: rotate(135deg)"
+      width="90"
+      height="81"
+    />
+    {% endif %}
+  </a>
+</li>
+<!-- prettier-ignore -->
+{% endmacro %}
+
+<!-- prettier-ignore -->
 {{ menu.render() }}
 <!-- prettier-ignore -->
 {{ introduction.render(headerText, introductionBlurb) }}
 <section class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-8">
-  <ol class="col-span-columns divide-y">
-    <li class="group">
-      <a
-        class="flex items-center justify-between pb-4"
-        href="/events/2020-conference"
-        ><h2
-          class="font-display text-size-display lg:text-size-lg/display uppercase"
-        >
-          2020 Annual Conference
-        </h2>
-        <img
-          class="hidden lg:block invisible group-hover:visible"
-          src="/images/ui/in-arrow.svg"
-          width="90"
-          height="81"
-      /></a>
-    </li>
-    <li class="group">
-      <a
-        class="flex items-center justify-between py-4"
-        href="/events/2019-berlin"
-        ><h2
-          class="font-display text-size-display lg:text-size-lg/display uppercase"
-        >
-          2019 Berlin Conference
-        </h2>
-        <img
-          class="hidden lg:block invisible group-hover:visible"
-          src="/images/ui/in-arrow.svg"
-          width="90"
-          height="81"
-      /></a>
-    </li>
-    <li class="group">
-      <a
-        class="flex items-center justify-between pt-4"
-        href="/events/2019-conference"
-        ><h2
-          class="font-display text-size-display lg:text-size-lg/display uppercase"
-        >
-          2019 Annual Conference
-        </h2>
-        <img
-          class="hidden lg:block invisible group-hover:visible"
-          src="/images/ui/in-arrow.svg"
-          width="90"
-          height="81"
-      /></a>
-    </li>
+  <ol class="col-span-columns -my-4 divide-y">
+    {{ event(text="2020 ANNUAL CONFERENCE", href="/events/2020-conference")}}
+    {{ event(text="GITxCHANGE2: QUADRATIC FUNDING HACKATHON", href="https://gitcoin.co/hackathon/gitxchange2/prizes/?tab=hackathon:13")}}
+    {{ event(text="GITxCHANGE: RxC + GITCOIN HACKATHON", href="https://gitcoin.co/hackathon/GitxChange/?tab=hackathon:13")}}
+    {{ event(text="2019 BERLIN CONFERENCE", href="/events/2019-berlin")}}
+    {{ event(text="2019 ANNUAL CONFERENCE", href="/events/2019-conference")}}
   </ol>
 </section>
 <!-- prettier-ignore -->
