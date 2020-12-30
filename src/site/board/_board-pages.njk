@@ -1,0 +1,18 @@
+---
+layout: "layouts/_base.njk"
+pagination:
+  data: board
+  size: 1
+  alias: member
+  addAllPagesToCollections: true
+permalink: "board/{{ member.name | slug }}/"
+title: Board
+defaultBio: |
+  _No biography available at this time._
+---
+
+<!-- prettier-ignore -->
+{% import "components/team-member-page.njk" as teamMemberPage %}
+
+<!-- prettier-ignore -->
+{{ teamMemberPage.render(member, defaultBio) }}

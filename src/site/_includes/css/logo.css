@@ -1,0 +1,17 @@
+.logo {
+  min-width: 254px;
+  width: 90.27vw;
+  max-width: 325px;
+
+  @screen lg {
+    min-width: 391px; /* <mock-width> * (<font-smallest> / <font-largest>) */
+    width: 33.19vw; /* <mock-width> / <mock-viewport-width> */
+    max-width: 479px; /* <mock-width> */
+  }
+}
+
+.logo-short {
+  min-width: 73px;
+  width: 25.83vw;
+  max-width: 93px;
+}

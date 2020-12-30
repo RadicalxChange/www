@@ -3,23 +3,29 @@
 /* Global changes */
 @import "./fonts.css";
 @import "./global.css";
+@import "./type-scale.css";
 
 @import "tailwindcss/components";
 
 /* Custom components */
-@import "./layout.css";
-@import "./inline.css";
-@import "./modal.css";
-@import "./nav.css";
-@import "./subscribe-modal.css";
-@import "./speaker-bio-modal.css";
-@import "./team-bio-modal.css";
-@import "./sponsor-modal.css";
-@import "./oval.css";
-@import "./conference-replay.css";
+@import "./logo.css";
+@import "./menu.css";
+@import "./about.css";
+@import "./concept-marquee.css";
+@import "./chapters.css";
+@import "./kiosk.css";
+@import "./events.css";
+@import "./message-marquee.css";
+@import "./twitter-marquee.css";
+@import "./footer.css";
 
 @import "tailwindcss/utilities";
 
 /* Custom utilities */
-@import "./columns.css";
 @import "./markdown.css";
+@import "./comma-separated.css";
+@import "./link.css";
+@import "./videos.css";
+@import "./tiles.css";
+@import "./blink.css";
+@import "./clamp.css";

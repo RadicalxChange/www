@@ -1,16 +1,17 @@
 ---
-permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
+permalink: "kiosk/blog/{{ slug | defaultSlug: title }}/index.html"
 ---
 
 <!-- prettier-ignore -->
-{% extends "layouts/_page.njk" %}
+{% import "components/scroll-indicator.njk" as scrollIndicator %}
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
 
 <!-- prettier-ignore -->
 {% set ogType="article" %}
-<!-- prettier-ignore -->
-{% set headerText="Blog" %}
-<!-- prettier-ignore -->
-{% set headerHref="/blog" %}
 
 <!-- prettier-ignore -->
 {% block metaTags %}
@@ -22,17 +23,36 @@ permalink: "blog/posts/{{ slug | defaultSlug: title }}/index.html"
 {% endblock %}
 
 <!-- prettier-ignore -->
-{% block content %}
-<div>
-  <h1 class="text-3xl lg:text-lg/3xl mb-sm lg:mb-lg/sm">
-    {{ postHeader }}
-  </h1>
-  <p class="text-base lg:text-lg/base mb-lg lg:mb-lg/lg">
-    {{ postAuthor }} / {{ date | readableDate }}
-  </p>
-  <div class="md-container">
+{% block body %}
+<!-- prettier-ignore -->
+{{ scrollIndicator.render() }}
+<!-- prettier-ignore -->
+{{ closeButton.render("/kiosk") }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
+>
+  <article
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13 markdown markdown-sm"
+  >
+    <header>
+      <h1>{{ postHeader }}</h1>
+      <p>{{ postAuthor }}</p>
+      <p>{{ date | readableDate }}</p>
+    </header>
     {{ content | markdown | safe }}
-  </div>
+  </article>
 </div>
+<script>
+  // prettier-ignore
+  {% include "components/hash-as-scroll.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/scroll-indicator.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
 <!-- prettier-ignore -->
 {% endblock %}

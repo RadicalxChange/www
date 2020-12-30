@@ -1,0 +1,31 @@
+.see-more-link {
+  @apply text-gray;
+
+  &:hover {
+    @apply text-black;
+  }
+}
+
+.inline-link {
+  text-decoration: underline;
+}
+
+@define-mixin thick-link-hover {
+  text-decoration: underline;
+  text-underline-offset: 1.5px;
+  text-decoration-thickness: 1.5px;
+}
+
+.thick-link {
+  &:hover {
+    @mixin thick-link-hover;
+  }
+
+  @screen touch {
+    @mixin thick-link-hover;
+  }
+}
+
+.group:hover .group-hover\:thick-link {
+  @mixin thick-link-hover;
+}

@@ -1,0 +1,142 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/events") }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
+>
+  <header
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-14 mb-4"
+  >
+    <h1
+      class="font-display text-size-display lg:text-size-lg/display uppercase"
+    >
+      {{ headerText }}
+    </h1>
+  </header>
+  <!-- prettier-ignore -->
+  {% block sections %}
+  <!-- prettier-ignore -->
+  {% endblock %}
+  <div class="col-span-columns mt-16 lg:mt-64">
+    <h2 class="pb-4 border-b text-size--1 uppercase">Watch the replays</h2>
+    <ul id="videos">
+      <!-- prettier-ignore -->
+      {% for v in youtubeData %}
+      <li id="v{{ v.videoId }}" class="py-8 border-b">
+        <a
+          data-video-link="{{ v.videoId }}"
+          href="#v{{ v.videoId }}"
+          class="group grid grid-cols-4 lg:grid-cols-16 items-baseline gap-x-8"
+        >
+          <h3
+            class="col-start-1 col-span-4 lg:col-span-8 text-size--1 uppercase group-hover:underline mb-2 lg:mb-0"
+          >
+            {{ v.title }}
+          </h3>
+          <p
+            class="col-start-1 lg:col-start-9 col-span-4 lg:col-span-8 flex items-center min-h-line-2"
+          >
+            {{ v.speakers }}
+          </p>
+        </a>
+        <div class="hidden open:block mt-4 mb-8">
+          <div data-youtube-container class="events_youtube-container"></div>
+        </div>
+        <!-- prettier-ignore -->
+        {% if v.description %}}
+        <p class="hidden open:block text-size--1">
+          {{ v.description | escape | nl2br }}
+        </p>
+        <!-- prettier-ignore -->
+        {% endif %}
+      </li>
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<template id="youtube-template">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/${videoId}"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</template>
+<script>
+  const $youtubeTemplate = document.getElementById("youtube-template");
+  function makeYoutubeIframe(videoId) {
+    const $youtubeIframe = $youtubeTemplate.content.firstElementChild.cloneNode(
+      true
+    );
+    $youtubeIframe.src = `https://www.youtube-nocookie.com/embed/${videoId}`;
+    return $youtubeIframe;
+  }
+
+  const $videos = document.getElementById("videos");
+  function showVideo(videoId) {
+    const $maybeOpenVideo = $videos.querySelector(".open");
+    if ($maybeOpenVideo) {
+      $maybeOpenVideo.classList.remove("open");
+      const $youtubeContainer = $maybeOpenVideo.querySelector(
+        "[data-youtube-container]"
+      );
+      $youtubeContainer.removeChild($youtubeContainer.firstChild);
+    }
+
+    const $toOpenVideo = $videos.querySelector(`#v${videoId}`);
+    if ($toOpenVideo) {
+      $toOpenVideo.classList.add("open");
+      const $youtubeContainer = $toOpenVideo.querySelector(
+        "[data-youtube-container]"
+      );
+      $youtubeContainer.appendChild(makeYoutubeIframe(videoId));
+      $toOpenVideo.scrollIntoView();
+    }
+  }
+  function hideVideo(videoId) {
+    const $toCloseVideo = $videos.querySelector(`#v${videoId}`);
+    if ($toCloseVideo) {
+      $toCloseVideo.classList.remove("open");
+      const $youtubeContainer = $toCloseVideo.querySelector(
+        "[data-youtube-container]"
+      );
+      $youtubeContainer.removeChild($youtubeContainer.firstChild);
+    }
+  }
+
+  const $videoLinks = document.querySelectorAll("[data-video-link]");
+  for (const $videoLink of $videoLinks) {
+    $videoLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      history.replaceState(undefined, undefined, $videoLink.href);
+      if ($videoLink.parentNode.classList.contains("open")) {
+        hideVideo($videoLink.dataset.videoLink);
+      } else {
+        showVideo($videoLink.dataset.videoLink);
+      }
+    });
+  }
+  const hashRegex = /^#v([a-zA-Z0-9\-_]*)$/;
+  const match = hashRegex.exec(window.location.hash);
+  if (match) {
+    showVideo(match[1]);
+  }
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
+<!-- prettier-ignore -->
+{% block moreScripts %}
+<!-- prettier-ignore -->
+{% endblock %}
+<!-- prettier-ignore -->
+{% endblock %}

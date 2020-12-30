@@ -36,9 +36,19 @@ The RadicalxChange www site is built on [11ty](https://www.11ty.dev/). It's styl
 
 ## Design
 
-The entire website design scales with viewport dimensions. This includes element widths, padding, margin and font sizes (defined in `vw` and `vmin` units). We use a constrained set of values for consistency. They are configured in _tailwind.config.js_.
+### Grid
 
-Responsive design breakpoints are configured in _tailwind.config.js_. The default screen size is a small screen. Large screens start at 768px width (`lg` in the code). Values for a small screen use the `vmin` unit for sizing. Values for large screens use the `vw` unit for sizing. Small screen styles should be overriden for large screens.
+Pages are laid out on grids. A grid has fixed-width margins, fixed-width gutters and fluid columns. Desktop pages are on a 12-column or 16-column grid. Mobile pages are on a 4-column grid.
+
+### Size and Space
+
+We use TailWind's built-in scale for size and space. These utilities use `rem` units. Size and space include content, padding, border, margin and gaps.
+
+### Typography
+
+We use a [fluid type scale](https://utopia.fyi/blog/designing-with-fluid-type-scales) for almost all text. This scale provides a base text size and "steps" up and down from that. If you assign a step size to text, it will automatically scale relative to the width of the browser.
+
+For text written in Messer font, use font-size in the `vw` unit instead.
 
 ## Code Layout
 

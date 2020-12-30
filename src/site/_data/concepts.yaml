@@ -1,0 +1,190 @@
+- title: Data Dignity
+  slug: data-dignity
+  description: |
+    Technology companies wield highly concentrated power over the way peoples’ data is used, and make enormous profits from it. They can do this because we “bargain” for Big Tech services as if we were all isolated individuals, with “personal” datasets. In fact, the data we produce is always deeply social.  Sharing it affects our friends, families, and communities as much as it affects us.
+
+    People should be able to exert democratic collective bargaining power over their data, in order to make joint decisions controlling its use, and negotiate appropriate compensation.
+
+    [Data Freedom Act](https://www.radicalxchange.org/files/DFA.pdf)<br/>
+    [Chapter 5 of Radical Markets](http://radicalmarkets.com/chapters/data-as-labor/)<br/>
+    [Who Owns the Future?](https://www.simonandschuster.com/books/Who-Owns-the-Future/Jaron-Lanier/9781451654974)
+  tools:
+    - title: Ocean Protocol
+      href: https://oceanprotocol.com/
+      description: |
+        Ocean Protocol is a digital infrastructure to power the web3 data economy. It is the root for applications such as data marketplaces, crypto-secure data custody and data management, as well as easier to implement data unions, trusts, and cooperatives.
+      links:
+        - text: Twitter
+          href: https://twitter.com/oceanprotocol
+        - text: GitHub
+          href: https://github.com/oceanprotocol
+    - title: Maskbook
+      href: https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap
+      description: |
+        Maskbook is a browser extension that enables you, all people of the Internet, to create encrypted posts on your favorite social network sites, including Facebook and Twitter. Your can choose who is able to see them and who is not.
+      links:
+        - text: Twitter
+          href: https://twitter.com/realmaskbook
+        - text: GitHub
+          href: https://github.com/DimensionDev/Maskbook
+- title: Quadratic Voting
+  slug: quadratic-voting
+  description: |
+    Quadratic Voting (QV)  is a redesigned voting method reflecting the intensity of people's preferences in collective decisions. It greatly mitigates tyranny-of-the-majority and factional control problems.
+
+    Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on. 
+
+    [Chapter 2 of Radical Markets](http://radicalmarkets.com/chapters/radical-democracy/)<br/>
+    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)
+  tools:
+    - title: Government Technology Agency (Singapore)
+      href: https://qv.geek.sg/
+      description: |
+        If you want to do a casual Quadratic Vote with your peers, this web app is a great choice. It is all straightforward from election creation, email / link invites, and quadratic voting to result analysis. You can even build your own interface on top of it using the associated APIs.
+      links:
+        - text: Twitter
+          href: https://github.com/yehjxraymond/qv-app
+        - text: GitHub
+          href: https://twitter.com/GovTechSG
+    - title: Sheets Template for Quadratic Voting
+      href: https://drive.google.com/drive/folders/1trnAJ1XOLyZk-0mgedZ3G98MQH3xrL0m?usp=sharing
+      description: |
+        Have small scale Quadratic Votes in mind? These sheets might be just right for you. It's a buch of interconnected columns and rows that let you easily perform and analyze Quadratic Votes in line with your needs. Dive into the folder, make a copy of the files, and off you go!
+      links: []
+    - title: Quadratic Moloch DAO / Democracy Earth
+      href: https://democracy.earth/
+      description: |
+        Quadratic Moloch DAO is a fork from the Moloch DAO smart contract standard that incorporates the optional use of Quadratic Voting. Moloch DAOs let collectives manage different kinds of rights and assets through democratic processes on Ethereum.
+      links:
+        - text: Twitter
+          href: https://twitter.com/DemocracyEarth
+        - text: GitHub
+          href: https://github.com/DemocracyEarth/DemocracyDAO
+    - title: CultureStake / Furtherfield
+      href: https://www.furtherfield.org/culturestake-2/
+      description: |
+        ‪CultureStake’s playful Quadratic Voting app allows you to vote on the types of cultural activity you would like to see in your locality. It democratizes arts commissioning by providing communities and artists with a radical tool to make cultural decisions together.
+      links:
+        - text: Twitter
+          href: https://twitter.com/furtherfield
+        - text: GitHub
+          href: https://github.com/lazaruslabs/culturestake
+- title: Quadratic Funding
+  slug: quadratic-funding
+  description: |
+    Quadratic Funding (QF) is a more democratic and scalable form of matching funding for public goods, i.e. any projects valuable to large groups of people and accessible to the general public.
+
+    “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. QF optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In QF, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] QF strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public. 
+
+    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)<br/>
+    [Liberal Radicalism: A Flexible Design For Philanthropic Matching Funds](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656)<br/>
+    [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html)
+  tools:
+    - title: Clr.fund
+      href: https://clr.fund/
+      description: |
+        ‪Clr.fund is a protocol for Quadratic Funding of public goods projects in the Ethereum ecosystem. Using a combination of exclusive cryptography and mechanism design it aims to prevent Sybil-attacks, bribery, and collusion in the Quadratic Funding process.
+      links:
+        - text: Twitter
+          href: https://twitter.com/clrfund
+        - text: GitHub
+          href: https://github.com/clrfund
+    - title: Gitcoin Grants
+      href: https://gitcoin.co/grants/
+      description: |
+        ‪Gitcoin Grants is a Quadratic Funding platform for public goods projects, primarily, in the Ethereum ecosystem. Beyond that, it featured matching funds for public Covid-19 and Black Lives Matter causes. Its enchanting interface is the go-to-place for radical public goods pilots.
+      links:
+        - text: Twitter
+          href: https://twitter.com/gitcoin
+        - text: GitHub
+          href: https://github.com/gitcoinco/web/tree/master/app/grants
+    - title: Downtown Stimulus
+      href: https://downtownstimulus.com/
+      description: |
+        ‪Downtown Stimulus is a Quadratic Funding based aid program for small businesses in Boulder, Colorado, that suffered as a consequence of Covid-19. Get in touch and bring the magic of Quadratic Funding to small businesses in your locality, too.
+      links:
+        - text: Twitter
+          href: https://twitter.com/gitcoin
+        - text: GitHub
+          href: https://github.com/gitcoinco/downtownstimulus
+- title: Partial Common Ownership
+  slug: partial-common-ownership
+  description: |
+    Partial common ownership is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
+
+    In RxC’s partial common ownership systems, assets belong to no one and everyone. An asset’s current possessor, must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
+
+    [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)<br/>
+    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)<br/>
+    [Reimagining Property](https://medium.com/blockchannel/reimagining-property-fbce9d3832a4)<br/>
+    [Depreciating Licenses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810)
+  tools:
+    - title: Harberger Ads
+      href: https://hads.xyz/
+      description: |
+        ‪Harberger Ads is an advertising marketplace governed by the rules of SALSA. Bootstrapped in a hackathon, the application allows you to sell ad space on your site or to possess other people's ad spaces. In its current version, Harberger Ads runs on Ethereum's test network.
+      links:
+        - text: GitHub
+          href: https://github.com/theoephraim/harberger-ads
+    - title: Nonomos
+      href: https://nonomos.com/
+      description: |
+        ‪Nonomos is a pilot application on Ethereum’s Rinkeby test network that by means of SALSA, governs the rights to cast YouTube videos on the associated site nonomos.com. Beyond that, it lets you mint and interact with additional unique tokens that work like SALSA.
+      links:
+        - text: GitHub
+          href: https://github.com/anoanoano/NonomosHL
+    - title: Wildcards
+      href: https://wildcards.world/
+      description: |
+        Wildcards applies gamification of market powers to fundraising for animal conservation. The "Wildcards" are tokens à la SALSA, which income goes to conservation foundations. The possessors of the tokens, or guardians of the animals, compare their contributions on a leaderboard.
+      links:
+        - text: Twitter
+          href: https://twitter.com/wildcards_world
+        - text: GitHub
+          href: https://github.com/wildcards-world
+    - title: This Artwork Is Always On Sale
+      href: https://thisartworkisalwaysonsale.com/
+      description: |
+        TAIAOS is a unique, rare digital artwork that is always on sale along the economic lines of SALSA. The scarcity of the digital artwork, its always-on auction & management of patronage towards the artist is all enabled through blockchain smart contracts on Ethereum.
+      links:
+        - text: GitHub
+          href: https://github.com/simondlr/thisartworkisalwaysonsale
+- title: Radical Antitrust
+  slug: radical-antitrust
+  description: |
+    Radical Antitrust is about looking for cartels in unexpected places, and recognizing that consumers and workers can be harmed through more than simply price. For example, markets could be made fairer if there were more stakeholder representation on boards; more thoughtful limits on mergers and acquisitions; and fewer investors exerting control over multiple companies within an industry. 
+
+    [Chapter 4 of Radical Markets](http://radicalmarkets.com/chapters/dismembering-the-octopus/)
+  tools: []
+- title: Intersectional Social Identity
+  slug: intersectional-social-identity
+  description: |
+    Whereas most existing identity concepts are either centralized or individualistic, Intersectional Social Identity (XID) solutions embody human identities' social, and multi-dimensional characteristics. XID makes use of three central primitives:
+
+    1. Each participant has a digital journal listing all their identifying information. (Only that individual has access to the complete set of data in that store.)
+    2. For each input X in their digital journal, each participant also stores the set of other participants who also keep copies of X.
+    3. Each participant stores a degree of credit. They are willing to offer other participants credit as “social collateral” to give their identity statements credibility.
+
+    [Intersectional Social Data](https://blog.radicalxchange.org/blog/posts/2019-10-24-uh78r5/)<br/>
+    [Motivating The Case For Decentralized Social Identity: Part One](https://blog.radicalxchange.org/blog/posts/2019-06-06-d4utdx/)<br/>
+    [Motivating The Case For Decentralized Social Identity: Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42)<br/>
+    [Motivating The Case For Decentralized Social Identity: Part Three](https://blog.radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
+  tools:
+    - title: Equality Protocol / Democracy Earth
+      href: https://democracy.earth/
+      description: |
+        ‪Equality Protocol is a probabilistic score for human identity on Ethereum. The score results from a subjective (deliberative process) and an objective (Gini coefficients) input. Certain scores give you the right to participate in e.g. universal basic incomes or elections.
+      links:
+        - text: Twitter
+          href: https://twitter.com/DemocracyEarth
+        - text: GitHub
+          href: https://github.com/DemocracyEarth/paper
+    - title: Idena
+      href: https://idena.io/
+      description: |
+        ‪Idena is a proof-of-person blockchain that proves the humanness and uniqueness of its participants by running AI-hard Turing tests around the globe at the same time. Every node in the network is linked to one cryptoidentity, one single person, and has equal voting power.
+      links:
+        - text: Twitter
+          href: https://twitter.com/IdenaNetwork
+        - text: GitHub
+          href: https://github.com/idena-network

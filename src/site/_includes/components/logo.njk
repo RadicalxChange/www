@@ -1,0 +1,38 @@
+<!-- prettier-ignore -->
+{% macro render(color="black", classes="") %}
+<!-- prettier-ignore -->
+{% if color == "black" %}
+<img
+  class="logo {{ classes }}"
+  src="/images/logos/logo.svg"
+  width="566"
+  height="97"
+  alt="RadicalxChange"
+/>
+<!-- prettier-ignore -->
+{% endif %}
+<!-- prettier-ignore -->
+{% if color == "white" %}
+<img
+  class="logo {{ classes }}"
+  src="/images/logos/logo-white.svg"
+  width="566"
+  height="97"
+  alt="RadicalxChange"
+/>
+<!-- prettier-ignore -->
+{% endif %}
+<!-- prettier-ignore -->
+{% endmacro %}
+
+<!-- prettier-ignore -->
+{% macro short(classes="") %}
+<img
+  class="logo-short {{ classes }}"
+  src="/images/logos/logo-short-white.svg"
+  width="93"
+  height="70"
+  alt="RadicalxChange"
+/>
+<!-- prettier-ignore -->
+{% endmacro %}

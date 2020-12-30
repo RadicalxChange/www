@@ -1,0 +1,30 @@
+/* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
+.message-marquee {
+  position: relative;
+  overflow: hidden;
+  --move-initial: -25%;
+  --move-final: -50%;
+}
+
+.message-marquee .marquee__inner {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: message-marquee 40s linear infinite;
+}
+
+/* This does nothing, but is necessary to compensate for Safari suckage. */
+.message-marquee .marquee__inner span {
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes message-marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}

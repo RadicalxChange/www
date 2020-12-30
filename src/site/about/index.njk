@@ -1,0 +1,236 @@
+---
+layout: layouts/_base.njk
+title: About
+headerText: ABOUT RxC
+introductionBlurb: |
+  RadicalxChange (RxC) is a global movement for next-generation political economies. It advances plurality, equality, community, and decentralization through upgrades of democracy, markets, the data economy, the commons, and identity.
+
+  Founded by Glen Weyl during the wake of public discussion about his book Radical “Markets” in 2018, RadicalxChange Foundation is a 501\(c\)\(3\) nonprofit dedicated to advancing the RxC movement, building community, and educating about democratic innovation. 
+
+  RxC connects people from all walks of life - ranging from social scientists and technologists to artists and activists. The movement is ever-evolving and always welcoming new people and ideas to make our social world more diverse, equal, and free.
+chaptersDescription: |
+  RadicalxChange chapters are the key organizations of the RxC community. They develop local hubs for discussions, investigations, and implementations of the next-generation political economies that RxC envisions.
+
+  Chapters warmly welcome people of all backgrounds and levels of experience with RxC values and concepts. They are committed to [tolerance, respect, and open discussion](/community/code-of-conduct).
+aboutBlurb: |
+  RadicalxChange Foundation strives to empower people and organizations in the global RxC movement to grow their ideas and initiatives. Feel free to contact us for any RxC related matters, including consultancy work related to democratic innovation or institutional design.
+supporters:
+  - name: Hewlett Foundation
+    href: "https://hewlett.org/"
+  - name: Kauffman Foundation
+    href: "https://www.kauffman.org/"
+  - name: Merit
+    href: "https://www.merits.com/"
+  - name: Omidyar Network
+    href: "https://www.omidyar.com/"
+  - name: Wireline
+    href: "https://www.wireline.io/"
+  - name: The Charter Cities Institute
+    href: "https://www.chartercitiesinstitute.org/"
+  - name: Institute for New Economic Thinking
+    href: "https://www.ineteconomics.org/"
+  - name: The Osa Foundation
+    href: "https://www.theosafoundation.org/"
+  - name: Alfred P. Sloan Foundation
+    href: "https://sloan.org/"
+  - name: Bunz
+    href: "https://bunz.com/"
+  - name: College for Creative Studies
+    href: "https://www.collegeforcreativestudies.edu/"
+  - name: Dada.art
+    href: "https://dada.nyc/"
+  - name: Democracy Earth
+    href: "https://democracy.earth/"
+  - name: Evil Twin Booking
+    href: "https://eviltwinbooking.org/"
+  - name: Gitcoin
+    href: "https://gitcoin.co/"
+  - name: Insper
+    href: "https://www.insper.edu.br/"
+  - name: Idena
+    href: "https://idena.io/"
+  - name: Microsoft
+    href: "https://www.microsoft.com/"
+  - name: Nesta
+    href: "https://www.nesta.org.uk/"
+  - name: Ocean Protocol
+    href: "https://oceanprotocol.com/"
+  - name: Polco
+    href: "https://polco.us/"
+  - name: Totle
+    href: "https://www.totle.com/"
+  - name: Wildcards
+    href: "https://wildcards.world/"
+  - name: The Rockefeller Foundation
+    href: "https://www.rockefellerfoundation.org/"
+  - name: Streamr
+    href: "https://streamr.network/"
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{{ introduction.render(headerText, introductionBlurb) }}
+<section
+  id="chapters"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
+>
+  <div class="hidden lg:block col-start-column-1 col-end-gutter-4">
+    <h2>Chapters</h2>
+  </div>
+  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
+    <div class="markdown">
+      {{ chaptersDescription | markdown | safe }}
+    </div>
+    <div class="mt-10 lg:mt-16">
+      {{ actionButton.render(href="/community/chapters", label="Join your local chapter")}}
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="foundation"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Foundation</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+  >
+    <div class="markdown">
+      {{ aboutBlurb | markdown | safe }}
+    </div>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
+  >
+    <h3 class="pb-4 border-b">Board members</h3>
+    <table class="block">
+      <tbody class="block">
+        {% for member in board %}
+        <tr
+          class="flex items-center h-line-5/2 lg:h-line-3 xl:h-line-5/2 border-b text-size--1"
+        >
+          <td>
+            <a
+              class="see-more-link uppercase"
+              href="/board/{{ member.name | slug }}"
+              >{{ member.name }}</a
+            >
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
+    <h3 class="pb-4 border-b">Team members</h3>
+    <table class="block">
+      <tbody class="block">
+        <!-- prettier-ignore -->
+        {% for member in team %}
+        <tr
+          class="flex items-center h-line-5/2 lg:h-line-3 xl:h-line-5/2 border-b text-size--1"
+        >
+          <td style="width: calc(50% + 1rem)">
+            <a
+              class="see-more-link uppercase"
+              href="/team/{{ member.name | slug }}"
+              >{{ member.name }}</a
+            >
+          </td>
+          <td style="width: calc(50% - 1rem)" class="clamp clamp-2">
+            {{ member.title }}
+          </td>
+        </tr>
+        <!-- prettier-ignore -->
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-32 lg:border-b"></div>
+</section>
+<section
+  id="press"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Press</h2>
+  </div>
+  <ul
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-4 lg:gap-y-6 justify-items-start"
+  >
+    <!-- prettier-ignore -->
+    {% for article in press | slice(0, 43) %}
+    <li class="about_press-link group relative">
+      <a class="block text-size--2" href="{{ article.href }}"
+        ><p>
+          <span class="group-hover:underline">{{ article.publication }}</span>
+        </p>
+        <p>{{ article.date | readableDate }}</p></a
+      >
+      <div
+        class="about_press-description z-10 absolute top-1/2 left-1/8 w-max p-2 bg-light-black text-white text-size--3"
+      >
+        {{ article.title }}
+      </div>
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+    <li class="text-size--2">
+      <a href="/about/press" class="inline-link">See all press...</a>
+    </li>
+  </ul>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="supporters"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-4 lg:pb-8 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Supported by</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 space-y-8"
+  >
+    <ul class="text-size--1">
+      {%- for supporter in supporters -%}
+      <li class="comma-separated">
+        <a href="{{ supporter.href }}">{{ supporter.name }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+    <div class="text-size--1">
+      <a
+        href="mailto:paul@radicalxchange.org?subject=Becoming%20a%20supporter&body=I'd%20like%20to%20become%20a%20RadicalxChange%20supporter."
+        target="_blank"
+        class="thick-link uppercase"
+        >Become a supporter</a
+      >
+    </div>
+  </div>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

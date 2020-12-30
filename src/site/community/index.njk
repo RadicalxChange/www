@@ -1,0 +1,36 @@
+---
+layout: layouts/_base.njk
+title: Community
+headerText: RxC COMMUNITY
+introductionBlurb: |
+  RadicalxChange chapters are the key organizations of the RxC community. They develop local hubs for discussions, investigations, and implementations of the next-generation political economies that RxC envisions.
+
+  Chapters warmly welcome people of all backgrounds and levels of experience with RxC values and concepts. They are committed to [tolerance, respect, and open discussion](/community/code-of-conduct).
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{% call introduction.render(headerText, introductionBlurb) %}
+<div>
+  <a href="/community/chapters" class="thick-link uppercase"
+    >Get involved with your local chapter</a
+  >
+</div>
+<!-- prettier-ignore -->
+{% endcall %}
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

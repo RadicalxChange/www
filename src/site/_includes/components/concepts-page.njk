@@ -1,0 +1,95 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% macro render(concept, pagination) %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/concepts") }}
+<div class="z-10 hidden lg:block fixed left-0 bottom-1/10 ml-lg/margin">
+  <a
+    is="a-replace"
+    class="group inline-flex items-center justify-start py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.previous | default(pagination.href.last, true) }}"
+  >
+    <span>←</span>
+    <div
+      class="inline-block max-w-0 group-hover:max-w-lg text-size--2 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+    >
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      {{ pagination.page.previous.title if pagination.page.previous else pagination.page.last.title }}
+    </div>
+  </a>
+</div>
+<div class="z-10 hidden lg:block fixed right-0 bottom-1/10 mr-lg/margin">
+  <a
+    is="a-replace"
+    class="group inline-flex items-center justify-end py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.next | default(pagination.href.first, true) }}"
+    ><div
+      class="inline-block max-w-0 group-hover:max-w-lg text-size--2 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+    >
+      {{ pagination.page.next.title if pagination.page.next else pagination.page.first.title }}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <span>→</span>
+  </a>
+</div>
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start lg:content-between lg:min-h-screen pt-margin lg:pt-lg/margin pb-margin lg:pb-2 mb-24 lg:mb-0"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-line-2 lg:mb-0"
+  >
+    <header class="mb-line-1">
+      <h1>{{ concept.title }}</h1>
+    </header>
+    <div class="markdown markdown-sm">
+      {{ concept.description | markdown | safe }}
+    </div>
+  </div>
+  <aside class="col-span-columns lg:col-start-column-8 lg:col-end-margin-2">
+    <h2 class="mb-line-1">Tools</h2>
+    <ul class="text-size--1 space-y-line-1/2">
+      {% for tool in concept.tools %}
+      <li class="space-y-line-1 pb-line-3/2 border-b">
+        <h3>
+          <a class="thick-link uppercase" href="{{ tool.href }}">{{
+            tool.title
+          }}</a>
+        </h3>
+        <p>{{ tool.description }}</p>
+        {% if tool.links.length > 0 %}
+        <ul class="flex space-x-4">
+          {% for link in tool.links %}
+          <li>
+            <a class="thick-link uppercase" href="{{ link.href }}">
+              {{ link.text }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+      <!-- prettier-ignore -->
+      {% if (concept.tools | length) === 0 %}
+      <li>No tools at this time</li>
+      {% endif %}
+    </ul>
+  </aside>
+  <div class="col-span-columns hidden lg:block mt-8">
+    <p class="text-center text-size--3">
+      © 2020 RadicalxChange Foundation Ltd.
+    </p>
+    <p class="text-center text-size--3">
+      RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
+      not support or oppose candidates for public office or political parties.
+    </p>
+  </div>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endmacro %}

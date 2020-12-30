@@ -1,0 +1,32 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href=closeHref) }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
+>
+  <article
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13 markdown markdown-sm"
+  >
+    <header>
+      <h1>{{ headerText }}</h1>
+    </header>
+    {{ content | markdown | safe }}
+  </article>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/hash-as-scroll.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endblock %}

@@ -1,0 +1,71 @@
+---
+layout: layouts/_base.njk
+pagination:
+  data: press
+  size: 20
+title: Press
+---
+
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{{ closeButton.render("/about#press") }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 lg:grid-rows-auto/1fr py-margin lg:py-lg/margin mb-24 lg:mb-0"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-2 mb-8 lg:mb-4"
+  >
+    <span>Read more about our concepts in the news.</span>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-3 lg:col-end-gutter-10 lg:row-span-2 mb-8 lg:mb-0"
+  >
+    <ol class="-mb-4">
+      {% for item in pagination.items %}
+      <li class="mb-4 text-size--2">
+        <a class="block" href="{{ item.href }}">
+          <span class="inline-link">{{ item.title }} </span></a
+        >
+        <p>
+          <span>{{ item.date | readableDate }}</span
+          ><span>&nbsp;/ {{ item.publication }}</span>
+        </p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-2 lg:row-start-2"
+  >
+    <ul class="flex">
+      <!-- prettier-ignore -->
+      {% if pagination.href.next %}
+      <li class="mr-4 text-size--1">
+        <a is="a-replace" class="thick-link" href="{{ pagination.href.next }}">
+          Older
+        </a>
+      </li>
+      <!-- prettier-ignore -->
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% if pagination.href.previous %}
+      <li class="mr-4 text-size--1">
+        <a
+          is="a-replace"
+          class="thick-link"
+          href="{{ pagination.href.previous }}"
+        >
+          Newer
+        </a>
+      </li>
+      <!-- prettier-ignore -->
+      {% endif %}
+    </ul>
+  </div>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>

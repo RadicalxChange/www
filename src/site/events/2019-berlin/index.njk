@@ -1,0 +1,49 @@
+---
+title: 2019 Berlin Conference
+about: |
+  This event, hosted by RxC Berlin, convened a community of innovators, activists, artists, and scholars from around the world. The conference consisted of presentations, panels, and workshops based around RxC topics, such as Data Dignity, Quadratic Voting, Quadratic Finance, SALSA, and Decentralized Identity. We invited local leaders and change-makers to learn how technologists, creatives and academics are using RxC ideas to solve our most divisive social problems while building a brighter future where power is distributed across diverse democratic organizations.
+sponsors:
+  - name: Ocean Protocol
+    href: "https://oceanprotocol.com/"
+  - name: Charles River Associates
+    href: "http://www.crai.com/"
+  - name: Factory Berlin
+    href: "https://factoryberlin.com/"
+  - name: Accelerator Frankfurt
+    href: "https://www.acceleratorfrankfurt.com/"
+---
+
+<!-- prettier-ignore -->
+{% extends "layouts/_conference.njk" %}
+
+<!-- prettier-ignore -->
+{% set headerText = "2019 Berlin Conference" %}
+<!-- prettier-ignore -->
+{% set youtubeDatum = youtube2019berlin %}
+
+<!-- prettier-ignore -->
+{% block sections %}
+<section
+  class="col-span-columns grid grid-cols-4 lg:grid-cols-16 gap-x-8 pt-4 border-t mb-8"
+>
+  <h2 class="col-start-1 col-span-4 mb-4 lg:mb-0">About</h2>
+  <div class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-12 markdown">
+    {{ about | markdown | safe }}
+  </div>
+</section>
+<section
+  class="col-span-columns grid grid-cols-4 lg:grid-cols-16 gap-x-8 pt-4 border-t mb-8"
+>
+  <h2 class="col-start-1 col-span-4 mb-4 lg:mb-0">Supporters</h2>
+  <ul class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-12">
+    <!-- prettier-ignore -->
+    {% for s in sponsors %}
+    <li class="comma-separated">
+      <a href="{{ s.href }}">{{ s.name }}</a>
+    </li>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ul>
+</section>
+<!-- prettier-ignore -->
+{% endblock %}

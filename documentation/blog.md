@@ -4,7 +4,7 @@ This document explains how to publish a blog post.
 
 ## Create a blog post file
 
-Make a copy of a previous blog post in _src/site/blog/posts_. Rename the copy in the format `YYYY-MM-DD_descriptive-title.md`.
+Make a copy of a previous blog post in _src/site/kiosk/blog_. Rename the copy in the format `YYYY-MM-DD_descriptive-title.md`.
 
 ## Edit the blog post metadata
 
@@ -12,7 +12,6 @@ Blog post metadata lives at the top of each blog post between `---` delimeters. 
 
 ```
 ---
-tags: "blog"
 layout: "layouts/blog-post.njk"
 date: "2020-04-15"
 title: "Between Abundance and Scarcity"
@@ -21,7 +20,7 @@ postAuthor: "Matt Prewitt"
 ---
 ```
 
-Keep the `tags` and `layout` fields as shown above. Edit the following fields for your blog post.
+Keep the `layout` field as shown above. Edit the following fields for your blog post.
 
 | Field        | Description                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------ |

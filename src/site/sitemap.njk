@@ -4,11 +4,31 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{%- for page in collections.all %}
-  {% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {%- for page in collections.all %}
+  {% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url)}}{% endset %}
   <url>
     <loc>{{ absoluteUrl }}</loc>
     <lastmod>{{ page.date | htmlDateString }}</lastmod>
   </url>
-{%- endfor %}
+  {%- endfor %}
+  <url>
+    <loc>{{ metadata.url }}/kiosk/papers/Data-Dividends-Working-Paper.pdf</loc>
+    <lastmod>2020-12-29</lastmod>
+  </url>
+  <url>
+    <loc>{{ metadata.url }}/kiosk/papers/data-freedom-act.pdf</loc>
+    <lastmod>2020-12-29</lastmod>
+  </url>
+  <url>
+    <loc>{{ metadata.url }}/kiosk/papers/RoadmapToPandemicResilience.pdf</loc>
+    <lastmod>2020-12-29</lastmod>
+  </url>
+  <url>
+    <loc>{{ metadata.url }}/kiosk/papers/RxC-Radically-Rethinking-Public-Purchasing.pdf</loc>
+    <lastmod>2020-12-29</lastmod>
+  </url>
+  <url>
+    <loc>{{ metadata.url }}/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf</loc>
+    <lastmod>2020-12-29</lastmod>
+  </url>
 </urlset>

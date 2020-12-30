@@ -1,0 +1,21 @@
+<!-- prettier-ignore -->
+{% macro render(headerText, content) %}
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin"
+>
+  <header class="col-span-columns mb-8">
+    <h1 class="font-display text-size-display lg:text-size-lg/display">
+      <a href="/">{{ headerText }}</a>
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2"
+  >
+    <div class="markdown">
+      {{ content | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}

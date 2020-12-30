@@ -1,13 +1,37 @@
-# Redirect requests for the blog to the new blog domain
-/blog   https://blog.radicalxchange.org/
-/blog/* https://blog.radicalxchange.org/blog/:splat
+# Legacy redirects from Website 1.0 2020
+/2019-berlin /events/2019-berlin/
+/2019-berlin/replay /events/2019-berlin/
+/2019-conference /events/2019-conference/
+/2019-conference/replay /events/2019-conference/
+/2020-conference /events/2020-conference/
+/2020-conference/replay /events/2020-conference/
+/2020-conference/schedule /events/2020-conference/
+/2020-conference/speakers /events/2020-conference/
+/chapters /community/chapters/
+/chapters/* /community/chapters/
+/conferences /events/
+/covid-19 /kiosk/announcements/covid-19/
+/fellowship/2021
+/newsletter /
+/press /about/
+/resources /concepts/
+/supporters /about/
+/team /about/
+/tv /events/
+/files/DFA.pdf /kiosk/papers/data-freedom-act.pdf
+/files/RoadmapToPandemicResilience.pdf /kiosk/papers/RoadmapToPandemicResilience.pdf
+/files/RxC-Radically-Rethinking-Public-Purchasing.pdf /kiosk/papers/RxC-Radically-Rethinking-Public-Purchasing.pdf
+/files/The_Handbook_for_Radical_Local_Democracy.pdf /kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
 
-# Legacy redirects to help keep content alive
-/2020-annual-conference /2020-conference
-/wp-content/uploads/2020/04/RoadmapToPandemicResilience.pdf /files/RoadmapToPandemicResilience.pdf
-/wp-content/uploads/2020/03/RxC-Radically-Rethinking-Public-Purchasing.pdf /files/RxC-Radically-Rethinking-Public-Purchasing.pdf
-/wp-content/uploads/2020/03/DFA.pdf /files/DFA.pdf
+
+# Legacy redirects from WordPress 2020
+/blog   /kiosk/
+/blog/posts/* /kiosk/blog/:splat
+/2020-annual-conference /events/2020-conference
+/wp-content/uploads/2020/04/RoadmapToPandemicResilience.pdf /kiosk/papers/RoadmapToPandemicResilience.pdf
+/wp-content/uploads/2020/03/RxC-Radically-Rethinking-Public-Purchasing.pdf /kiosk/papers/RxC-Radically-Rethinking-Public-Purchasing.pdf
+/wp-content/uploads/2020/03/DFA.pdf /kiosk/papers/data-freedom-act.pdf
 /wp-content/uploads/2020/03/RxC-2020-Sponsorship.pdf /files/RxC-2020-Sponsorship.pdf
-/wp-content/uploads/2020/02/The_Handbook_for_Radical_Local_Democracy.pdf /files/The_Handbook_for_Radical_Local_Democracy.pdf
-/wp-content/uploads/2020/02/RXC-Chapter-Meetup-Guidelines-July-2019.pdf /files/RXC-Chapter-Meetup-Guidelines-July-2019.pdf
-/wp-content/uploads/2020/02/Privacy-Policy.docx /files/Privacy-Policy.docx
+/wp-content/uploads/2020/02/The_Handbook_for_Radical_Local_Democracy.pdf /kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+/wp-content/uploads/2020/02/RXC-Chapter-Meetup-Guidelines-July-2019.pdf /community/code-of-conduct
+/wp-content/uploads/2020/02/Privacy-Policy.docx /privacy-policy

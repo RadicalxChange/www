@@ -1,7 +1,0 @@
-.sponsor-modal {
-  @apply w-full;
-
-  @screen lg {
-    width: 33.333333vw;
-  }
-}

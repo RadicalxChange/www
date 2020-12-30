@@ -1,0 +1,11 @@
+.events_youtube-container {
+  @apply relative;
+  @apply h-0;
+  padding-bottom: 56.25%;
+
+  iframe {
+    @apply absolute;
+    @apply w-full h-full;
+    @apply top-0 left-0;
+  }
+}

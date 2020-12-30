@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Messer";
-  src: url("/fonts/messerv2.0-condensed-webfont.woff2") format("woff2"),
-    url("/fonts/messerv2.0-condensed-webfont.woff") format("woff");
+  src: url("/fonts/MesserV20-Condensed.woff2") format("woff2"),
+    url("/fonts/MesserV20-Condensed.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
