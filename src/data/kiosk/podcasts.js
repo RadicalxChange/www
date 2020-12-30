@@ -23,7 +23,12 @@ async function fetchReplayedEpisodes() {
 }
 
 module.exports = async function () {
-  await fs.mkdir(CACHE_DIR);
+  try {
+    await fs.mkdir(CACHE_DIR);
+  } catch (err) {
+    // Already exists
+  }
+
   const asset = new AssetCache(CACHE_KEY, CACHE_DIR);
 
   if (asset.isCacheValid("1d")) {

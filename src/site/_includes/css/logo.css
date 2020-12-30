@@ -15,3 +15,7 @@
   width: 25.83vw;
   max-width: 93px;
 }
+
+.logo-no-min-width {
+  min-width: 0 !important;
+}
