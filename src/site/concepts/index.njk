@@ -24,7 +24,7 @@ headerText: RxC CONCEPTS
     {% for concept in concepts %}
     <li>
       <a
-        class="group flex items-center lg:block py-2 font-display text-size-display lg:text-size-lg/display break-words lg:break-normal align-middle"
+        class="group flex items-center lg:block py-2 font-display text-size-display lg:text-size-lg/display break-all lg:break-normal align-middle"
         href="/concepts/{{ concept.slug }}"
       >
         <div class="hidden lg:block concept-marquee">
@@ -52,7 +52,9 @@ headerText: RxC CONCEPTS
           <span class="uppercase">{{ concept.title }}</span>
         </div>
       </a>
+      {% if loop.last !== true %}
       <div class="mx-4 lg:mx-8 border-b"></div>
+      {% endif %}
     </li>
     <!-- prettier-ignore -->
     {% endfor %}
