@@ -24,7 +24,7 @@ module.exports = {
       "size-0": ["var(--step-0)", "1.34"],
       "size-1": ["var(--step-1)", "1.34"],
       "size-2": ["var(--step-2)", "1.34"],
-      "size-display": ["clamp(72px, 25.56vw, 92px)", "0.959"],
+      "size-display": ["clamp(80px, 25.56vw, 92px)", "0.959"],
       "size-lg/display": ["clamp(80px, 6.81vw, 98px)", "0.98"],
       "size-donate": ["clamp(56px, 3.89vw, 72px)", "0.98"],
     },
