@@ -13,43 +13,46 @@ headerText: RxC CONCEPTS
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<div
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start lg:min-h-screen bg-golden-fizz pt-margin pb-0 lg:py-lg/margin divide-y"
->
-  <header class="col-span-columns">
+<div class="lg:min-h-screen bg-golden-fizz pt-margin pb-0 lg:py-lg/margin">
+  <header class="mx-4 lg:mx-8 border-b">
     <h1 class="pb-2 font-display text-size-display lg:text-size-lg/display">
       <a href="/">{{ headerText }}</a>
     </h1>
   </header>
-  <ul class="col-span-columns w-full divide-y -mb-2">
+  <ul class="-mb-2">
     <!-- prettier-ignore -->
     {% for concept in concepts %}
     <li>
       <a
-        class="flex items-center justify-center lg:block py-2 font-display text-size-display lg:text-size-lg/display break-words lg:break-normal align-middle"
+        class="group flex items-center lg:block py-2 font-display text-size-display lg:text-size-lg/display break-words lg:break-normal align-middle"
         href="/concepts/{{ concept.slug }}"
       >
         <div class="hidden lg:block concept-marquee">
           <div
             class="marquee__inner"
-            style="animation-duration: {{ concept.title | length }}s"
+            style="animation-duration: {{ concept.title.length / 2 }}s"
           >
-            <span class="uppercase mr-16">{{ concept.title }}</span
-            ><span aria-hidden="true" class="uppercase mr-16">{{
-              concept.title
-            }}</span
-            ><span aria-hidden="true" class="uppercase mr-16">{{
-              concept.title
-            }}</span
-            ><span aria-hidden="true" class="uppercase mr-16">{{
-              concept.title
-            }}</span>
+            <span class="uppercase ml-8 mr-16">{{ concept.title }}</span
+            ><span
+              aria-hidden="true"
+              class="invisible group-hover:visible uppercase ml-8 mr-16"
+              >{{ concept.title }}</span
+            ><span
+              aria-hidden="true"
+              class="invisible group-hover:visible uppercase ml-8 mr-16"
+              >{{ concept.title }}</span
+            ><span
+              aria-hidden="true"
+              class="invisible group-hover:visible uppercase ml-8 mr-16"
+              >{{ concept.title }}</span
+            >
           </div>
         </div>
-        <div class="lg:hidden w-full">
+        <div class="lg:hidden ml-4">
           <span class="uppercase">{{ concept.title }}</span>
         </div>
       </a>
+      <div class="mx-4 lg:mx-8 border-b"></div>
     </li>
     <!-- prettier-ignore -->
     {% endfor %}
