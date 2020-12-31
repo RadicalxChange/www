@@ -81,6 +81,7 @@ module.exports = {
         "markdown-sm": "1em",
         "markdown-md": "1.5em",
         "markdown-lg": "3em",
+        "bottom-button": "2.5rem",
       },
       gridColumn: {
         "span-margins": "1 / -1",
