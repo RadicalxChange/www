@@ -1,10 +1,9 @@
 /* https://tympanus.net/codrops/2020/03/31/css-only-marquee-effect/ */
 .concept-marquee {
   position: relative;
-  width: 100%;
   overflow: hidden;
-  --move-initial: -75%;
-  --move-final: 0%;
+  --move-initial: 0;
+  --move-final: -25%;
 }
 
 .concept-marquee .marquee__inner {
