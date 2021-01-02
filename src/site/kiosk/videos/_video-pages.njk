@@ -1,0 +1,83 @@
+---
+testthing: |
+  Land has been central to economic inequality for centuries. Today, we sometimes see homeownership as a path to the middle class, but it is important to see how this particular asset still drives inequality. This panel discusses the past and present of ideas like Henry George's land value tax, hoping to draw lessons for the real economy. 
+
+  SPEAKERS
+  Jo Guldi is a scholar of the history of Britain and its empire who is especially involved in questions of state expansion, the contestation of property under capitalism, and how state and property concepts are recorded in the landscape of the built environment. These themes informed her first book, Roads to Power, which examined Britain's interkingdom highway and its users from 1740 to 1848. They also inform her current research into rent disputes and land reform for my next monograph, The Long Land War, which profiles three moments in the history of property: the Irish Land Court of 1881 and its invention of rent control, the ideology of "squatting" in post-1940 Britain, and the creation of the "participatory map" for contesting legal boundaries in Britain and India in the 1970s and 80s.
+
+  Alisha C. Holland is an associate professor in the Government Department at Harvard University. She studies the comparative political economy of development with a focus on Latin America. Her first book, Forbearance as Redistribution: The Politics of Informal Welfare in Latin America (Cambridge University Press, 2017), examines the politics of law enforcement against the poor. She is working on a new book on the institutional determinants and challenges of large-scale infrastructure projects.
+
+  MODERATOR
+  Matt Prewitt is RadicalxChange Foundation’s president, a writer and blockchain industry advisor, and a former plaintiff's side antitrust and consumer class action litigator and federal law clerk.
+pagination:
+  data: videos
+  size: 1
+  alias: video
+  addAllPagesToCollections: true
+eleventyComputed:
+  date: "{{ video.date }}"
+  title: "{{ video.title }}"
+  postHeader: "{{ video.postHeader }}"
+  postAuthor: "{{ video.postAuthor }}"
+  permalink: "kiosk/videos/{{ video.title | slug }}/"
+---
+
+<!-- prettier-ignore -->
+{% import "components/scroll-indicator.njk" as scrollIndicator %}
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% set ogType="article" %}
+
+<!-- prettier-ignore -->
+{% block metaTags %}
+<!-- prettier-ignore -->
+{{ super() }}
+<meta property="og:article:published_time" content="{{ video.date }}" />
+<meta property="og:article:author" content="{{ video.postAuthor }}" />
+<!-- prettier-ignore -->
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ scrollIndicator.render() }}
+<!-- prettier-ignore -->
+{{ closeButton.render("/kiosk") }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
+>
+  <article
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13 markdown markdown-sm"
+  >
+    <header>
+      <h1>{{ video.postHeader }}</h1>
+      <p>{{ video.postAuthor }}</p>
+      <p>{{ video.date | readableDate }}</p>
+    </header>
+    <p class="youtube-container">
+      <iframe
+        src="https://www.youtube.com/embed/{{ video.videoId }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="{{ video.title }}"
+      ></iframe>
+    </p>
+    {{ video.description | markdown | safe }}
+  </article>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/scroll-indicator.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endblock %}
