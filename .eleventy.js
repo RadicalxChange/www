@@ -104,6 +104,18 @@ module.exports = function (config) {
             postAuthor: item.data.postAuthor || "RxC Team",
             series: item.data.series || [],
           })),
+        collectionApi
+          .getFilteredByGlob("src/site/kiosk/videos/*")
+          .map((item) => ({
+            url: item.url,
+            date: item.data.date,
+            readableDate: readableDate(item.data.date),
+            title: item.data.title,
+            postType: "Video",
+            postHeader: item.data.postHeader,
+            postAuthor: item.data.postAuthor || "RxC Team",
+            series: item.data.series || [],
+          })),
         libraryData.map((item) => ({
           ...item,
           readableDate: readableDate(item.date),
