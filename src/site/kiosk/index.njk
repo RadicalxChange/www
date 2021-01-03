@@ -61,69 +61,64 @@ headerText: RxC KIOSK
   <ol
     id="kiosk-list"
     class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk gap-x-8 gap-y-16 mb-8"
-  >
-    {% for post in collections.kiosk[0].items %}
-    <li
-      data-kiosk
-      data-kiosk-series="{{ post.data.series | default([]) | dump }}"
-    >
-      <a
-        class="flex flex-col justify-between h-full kiosk_border-b"
-        href="{{ post.url }}"
-      >
-        <div class="mb-8">
-          <p data-kiosk-item-prop="postType" class="text-size--1">
-            {{ post.postType }}
-          </p>
-          <h2
-            data-kiosk-item-prop="postHeader"
-            class="leading-snug text-size-2 lg:min-h-line-5"
-          >
-            {{ post.postHeader }}
-          </h2>
-        </div>
-        <div>
-          <p
-            data-kiosk-item-prop="postAuthor"
-            class="text-size--2 lg:text-size--3"
-          >
-            {{ post.postAuthor }}
-          </p>
-          <p
-            data-kiosk-item-prop="readableDate"
-            class="text-size--2 lg:text-size--3"
-          >
-            {{ post.readableDate }}
-          </p>
-        </div>
-      </a>
-    </li>
-    <!-- prettier-ignore -->
-    {% endfor %}
-  </ol>
+  ></ol>
   <div class="col-span-columns pb-4 border-b text-size--1">
     <button id="kiosk-load-button" class="uppercase">Load more</button>
   </div>
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
-<script>
-  // prettier-ignore
-  {% include "components/menu.js" %}
-</script>
+<template id="kiosk-item-template">
+  <li data-kiosk>
+    <a class="flex flex-col justify-between h-full kiosk_border-b" href="#">
+      <div class="mb-8">
+        <p data-kiosk-item-prop="postType" class="text-size--1"></p>
+        <h2
+          data-kiosk-item-prop="postHeader"
+          class="leading-snug text-size-2 lg:min-h-line-5"
+        ></h2>
+      </div>
+      <div>
+        <p
+          data-kiosk-item-prop="postAuthor"
+          class="text-size--2 lg:text-size--3"
+        ></p>
+        <p
+          data-kiosk-item-prop="readableDate"
+          class="text-size--2 lg:text-size--3"
+        ></p>
+      </div>
+    </a>
+  </li>
+</template>
 <script>
   const Kiosk = function () {
     this.$kioskList = document.getElementById("kiosk-list");
-    this.$itemTemplate = this.$kioskList.children[0].cloneNode(true);
-
+    this.$itemTemplate = document.getElementById(
+      "kiosk-item-template"
+    ).content.firstElementChild;
     this.$allSeries = document.querySelectorAll(
       'input[type=checkbox][name="kiosk-filter"]'
     );
-    this.checkedSeries = "All";
-
     this.$loadButton = document.getElementById("kiosk-load-button");
+
     this.isLoading = false;
-    this.nextPage = "/api/kiosk/all-2.json";
+
+    const maybeKioskData = sessionStorage.getItem("kiosk");
+    if (maybeKioskData) {
+      const kioskData = JSON.parse(maybeKioskData);
+      this.checkedSeries = kioskData.checkedSeries;
+      this.items = kioskData.items;
+      this.nextPage = kioskData.nextPage;
+      for (item of this.items) {
+        this.renderItem(item);
+      }
+    } else {
+      this.checkedSeries = "All";
+      this.items = [];
+      this.nextPage = "/api/kiosk/all-1.json";
+      this.fetchMoreItems();
+    }
   };
 
   Kiosk.prototype.SERIES_API = {
@@ -140,7 +135,18 @@ headerText: RxC KIOSK
     }
 
     this.$loadButton.addEventListener("click", (event) => {
-      this.fetchMore();
+      this.fetchMoreItems();
+    });
+
+    window.addEventListener("beforeunload", (event) => {
+      sessionStorage.setItem(
+        "kiosk",
+        JSON.stringify({
+          checkedSeries: this.checkedSeries,
+          items: this.items,
+          nextPage: this.nextPage,
+        })
+      );
     });
   };
 
@@ -157,48 +163,30 @@ headerText: RxC KIOSK
       this.checkedSeries = "All";
     }
 
+    // Clear item list
+    this.items = [];
+    this.renderReset();
+
     // Load new data
     this.nextPage = this.SERIES_API[this.checkedSeries];
-    this.fetchMore();
-
-    // Remove all children in anticipation of new children
-    while (this.$kioskList.firstChild) {
-      this.$kioskList.removeChild(this.$kioskList.firstChild);
-    }
+    this.fetchMoreItems();
   };
 
-  Kiosk.prototype.addItem = function (item) {
-    const $item = this.$itemTemplate.cloneNode(true);
-    $item.dataset["kioskSeries"] = JSON.stringify(item.series);
-
-    const $anchor = $item.children[0];
-    $anchor.href = item.url;
-    $anchor.querySelector('[data-kiosk-item-prop="postType"').innerText =
-      item.postType;
-    $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
-      item.postHeader;
-    $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
-      item.postAuthor;
-    $anchor.querySelector('[data-kiosk-item-prop="readableDate"').innerText =
-      item.readableDate;
-
-    this.$kioskList.appendChild($item);
-  };
-
-  Kiosk.prototype.fetchMore = function () {
+  Kiosk.prototype.fetchMoreItems = function () {
     if (this.isLoading || !this.nextPage) {
-      return;
+      return Promise.resolve();
     }
 
     this.$loadButton.innerText = "Loading...";
     this.$loadButton.disabled = true;
     this.isLoading = true;
 
-    fetch(this.nextPage)
+    return fetch(this.nextPage)
       .then((r) => r.json())
       .then((data) => {
         for (const item of data.items) {
-          this.addItem(item);
+          this.items.push(item);
+          this.renderItem(item);
         }
         this.isLoading = false;
         this.nextPage = data.next;
@@ -218,8 +206,33 @@ headerText: RxC KIOSK
       });
   };
 
+  Kiosk.prototype.renderItem = function (item) {
+    const $item = this.$itemTemplate.cloneNode(true);
+
+    const $anchor = $item.children[0];
+    $anchor.href = item.url;
+    $anchor.querySelector('[data-kiosk-item-prop="postType"').innerText =
+      item.postType;
+    $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
+      item.postHeader;
+    $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
+      item.postAuthor;
+    $anchor.querySelector('[data-kiosk-item-prop="readableDate"').innerText =
+      item.readableDate;
+
+    this.$kioskList.appendChild($item);
+  };
+
+  Kiosk.prototype.renderReset = function () {
+    while (this.$kioskList.firstChild) {
+      this.$kioskList.removeChild(this.$kioskList.firstChild);
+    }
+  };
+
   const kiosk = new Kiosk();
   kiosk.init();
-  // const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
-  // infiniteScroller.init();
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
 </script>
