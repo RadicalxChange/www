@@ -18,6 +18,7 @@ module.exports = {
       tight: "1.25",
     },
     fontSize: {
+      "size--4": ["var(--step--4)", "1.34"],
       "size--3": ["var(--step--3)", "1.34"],
       "size--2": ["var(--step--2)", "1.34"],
       "size--1": ["var(--step--1)", "1.34"],
@@ -30,8 +31,7 @@ module.exports = {
     },
     fontFamily: {
       display: ["Messer", "san-serif"],
-      book: ["SuisseIntl-Book", "sans-serif"],
-      body: ["SuisseIntl", "sans-serif"],
+      body: ["Suisse Intl", "sans-serif"],
     },
     colors: {
       "golden-fizz": "#EDFF38",
@@ -76,6 +76,10 @@ module.exports = {
       spacing: {
         margin: "1rem",
         "lg/margin": "1.5rem",
+        ymargin: "1rem",
+        "lg/ymargin": "1.5rem",
+        xmargin: "1rem",
+        "lg/xmargin": "2rem",
         "line-1/2": "0.67em",
         "line-1": "1.34em",
         "line-3/2": "2.01em",
