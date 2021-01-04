@@ -5,10 +5,10 @@ pagination:
   alias: video
   addAllPagesToCollections: true
 eleventyComputed:
-  date: "{{ video.date }}"
-  title: "{{ video.title }}"
-  postHeader: "{{ video.postHeader }}"
-  postAuthor: "{{ video.postAuthor }}"
+  date: "{{ video.date | safe  }}"
+  title: "{{ video.title | safe  }}"
+  postHeader: "{{ video.postHeader | safe }}"
+  postAuthor: "{{ video.postAuthor | safe  }}"
 permalink: "kiosk/videos/{{ video.title | slug }}/"
 ---
 

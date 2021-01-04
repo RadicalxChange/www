@@ -25,7 +25,6 @@ headerText: RxC KIOSK
   </header>
   <form
     class="col-span-columns grid lg:flex grid-cols-1 md:grid-cols-auto/auto justify-start lg:grid-cols-none -mr-4 mb-8"
-    autocomplete="off"
   >
     <div>
       <input
@@ -81,7 +80,7 @@ headerText: RxC KIOSK
         <p data-kiosk-item-prop="postType" class="text-size--1"></p>
         <h2
           data-kiosk-item-prop="postHeader"
-          class="leading-snug text-size-2 min-h-line-5"
+          class="leading-snug text-size-2 min-h-line-3 lg:min-h-line-5"
         ></h2>
       </div>
       <div>
@@ -111,7 +110,7 @@ headerText: RxC KIOSK
     this.isLoading = false;
 
     const maybeKioskData = sessionStorage.getItem("kiosk");
-    if (maybeKioskData) {
+    if (history.state && history.state.cached && maybeKioskData) {
       const kioskData = JSON.parse(maybeKioskData);
       this.checkedFilter = kioskData.checkedFilter;
       this.items = kioskData.items;
@@ -147,6 +146,10 @@ headerText: RxC KIOSK
     });
 
     window.addEventListener("beforeunload", (event) => {
+      // Record state so it can be restored if user hits
+      // back button and overwritten if use navigates
+      // back here naturally
+      history.replaceState({ cached: true }, undefined, undefined);
       sessionStorage.setItem(
         "kiosk",
         JSON.stringify({

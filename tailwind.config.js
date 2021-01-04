@@ -61,7 +61,12 @@ module.exports = {
         "1/4": "25%",
         "1/2": "50%",
       },
-      minHeight: { tall: "50vw", "line-2": "2.68em", "line-5": "6.70em" },
+      minHeight: {
+        tall: "50vw",
+        "line-2": "2.68em",
+        "line-3": "4.02em",
+        "line-5": "6.70em",
+      },
       maxHeight: { tall: "50vw", "75vh": "75vh" },
       maxWidth: { "75vw": "75vw" },
       boxShadow: {
