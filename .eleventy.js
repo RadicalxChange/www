@@ -151,30 +151,40 @@ module.exports = function (config) {
     // Thank you to this genius https://github.com/11ty/eleventy/issues/332
     const PAGE_SIZE = 16;
     const paginated = [].concat(
-      lodashChunk(all, PAGE_SIZE).map((chunk, index) => ({
+      lodashChunk(all, PAGE_SIZE).map((chunk, index, arr) => ({
         filter: "all",
         pageNumber: index,
         items: chunk,
+        hasPrevious: index > 0,
+        hasNext: index < arr.length - 1,
       })),
-      lodashChunk(blog, PAGE_SIZE).map((chunk, index) => ({
+      lodashChunk(blog, PAGE_SIZE).map((chunk, index, arr) => ({
         filter: "blog",
         pageNumber: index,
         items: chunk,
+        hasPrevious: index > 0,
+        hasNext: index < arr.length - 1,
       })),
-      lodashChunk(papers, PAGE_SIZE).map((chunk, index) => ({
+      lodashChunk(papers, PAGE_SIZE).map((chunk, index, arr) => ({
         filter: "papers",
         pageNumber: index,
         items: chunk,
+        hasPrevious: index > 0,
+        hasNext: index < arr.length - 1,
       })),
-      lodashChunk(announcements, PAGE_SIZE).map((chunk, index) => ({
+      lodashChunk(announcements, PAGE_SIZE).map((chunk, index, arr) => ({
         filter: "announcements",
         pageNumber: index,
         items: chunk,
+        hasPrevious: index > 0,
+        hasNext: index < arr.length - 1,
       })),
-      lodashChunk(podcastsVideos, PAGE_SIZE).map((chunk, index) => ({
+      lodashChunk(podcastsVideos, PAGE_SIZE).map((chunk, index, arr) => ({
         filter: "podcastsVideos",
         pageNumber: index,
         items: chunk,
+        hasPrevious: index > 0,
+        hasNext: index < arr.length - 1,
       }))
     );
 

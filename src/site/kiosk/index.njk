@@ -28,32 +28,38 @@ headerText: RxC KIOSK
     autocomplete="off"
   >
     <div>
-      <input type="checkbox" name="kiosk-filter" value="Blog" /><label
-        class="ml-2 mr-4 text-size--1"
-        for="Blog"
-        >Blog</label
-      >
+      <input
+        id="filter-blog"
+        type="checkbox"
+        name="kiosk-filter"
+        value="Blog"
+      /><label class="ml-2 mr-4 text-size--1" for="filter-blog">Blog</label>
     </div>
     <div>
-      <input type="checkbox" name="kiosk-filter" value="Papers" /><label
-        class="ml-2 mr-4 text-size--1"
-        for="Papers"
-        >Papers</label
-      >
+      <input
+        id="filter-papers"
+        type="checkbox"
+        name="kiosk-filter"
+        value="Papers"
+      /><label class="ml-2 mr-4 text-size--1" for="filter-papers">Papers</label>
     </div>
     <div>
-      <input type="checkbox" name="kiosk-filter" value="Announcements" /><label
-        class="ml-2 mr-4 text-size--1"
-        for="Announcements"
+      <input
+        id="filter-announcements"
+        type="checkbox"
+        name="kiosk-filter"
+        value="Announcements"
+      /><label class="ml-2 mr-4 text-size--1" for="filter-announcements"
         >Announcements</label
       >
     </div>
     <div>
       <input
+        id="filter-podcastsvideos"
         type="checkbox"
         name="kiosk-filter"
         value="Podcasts / Videos"
-      /><label class="ml-2 mr-4 text-size--1" for="Podcasts / Videos"
+      /><label class="ml-2 mr-4 text-size--1" for="filter-podcastsvideos"
         >Podcasts / Videos</label
       >
     </div>
@@ -97,7 +103,7 @@ headerText: RxC KIOSK
     this.$itemTemplate = document.getElementById(
       "kiosk-item-template"
     ).content.firstElementChild;
-    this.$allSeries = document.querySelectorAll(
+    this.$filters = document.querySelectorAll(
       'input[type=checkbox][name="kiosk-filter"]'
     );
     this.$loadButton = document.getElementById("kiosk-load-button");
@@ -107,21 +113,23 @@ headerText: RxC KIOSK
     const maybeKioskData = sessionStorage.getItem("kiosk");
     if (maybeKioskData) {
       const kioskData = JSON.parse(maybeKioskData);
-      this.checkedSeries = kioskData.checkedSeries;
+      this.checkedFilter = kioskData.checkedFilter;
       this.items = kioskData.items;
       this.nextPage = kioskData.nextPage;
+      this.renderFilter(this.checkedFilter);
       for (item of this.items) {
         this.renderItem(item);
       }
+      this.renderLoadButton();
     } else {
-      this.checkedSeries = "All";
+      this.checkedFilter = "All";
       this.items = [];
       this.nextPage = "/api/kiosk/all-1.json";
       this.fetchMoreItems();
     }
   };
 
-  Kiosk.prototype.SERIES_API = {
+  Kiosk.prototype.FILTER_API = {
     All: "/api/kiosk/all-1.json",
     Blog: "/api/kiosk/blog-1.json",
     Papers: "/api/kiosk/papers-1.json",
@@ -130,8 +138,8 @@ headerText: RxC KIOSK
   };
 
   Kiosk.prototype.init = function () {
-    for (const $series of this.$allSeries) {
-      $series.addEventListener("change", (event) => this.onSeriesChange(event));
+    for (const $filter of this.$filters) {
+      $filter.addEventListener("change", (event) => this.onFilterChange(event));
     }
 
     this.$loadButton.addEventListener("click", (event) => {
@@ -142,7 +150,7 @@ headerText: RxC KIOSK
       sessionStorage.setItem(
         "kiosk",
         JSON.stringify({
-          checkedSeries: this.checkedSeries,
+          checkedFilter: this.checkedFilter,
           items: this.items,
           nextPage: this.nextPage,
         })
@@ -150,25 +158,21 @@ headerText: RxC KIOSK
     });
   };
 
-  Kiosk.prototype.onSeriesChange = function (event) {
+  Kiosk.prototype.onFilterChange = function (event) {
     // Manage checkbox state
     if (event.target.checked) {
-      this.checkedSeries = event.target.value;
-      for (const $series of this.$allSeries) {
-        if ($series.value !== this.checkedSeries) {
-          $series.checked = false;
-        }
-      }
+      this.checkedFilter = event.target.value;
     } else {
-      this.checkedSeries = "All";
+      this.checkedFilter = "All";
     }
+    this.renderFilter();
 
     // Clear item list
     this.items = [];
     this.renderReset();
 
     // Load new data
-    this.nextPage = this.SERIES_API[this.checkedSeries];
+    this.nextPage = this.FILTER_API[this.checkedFilter];
     this.fetchMoreItems();
   };
 
@@ -190,13 +194,7 @@ headerText: RxC KIOSK
         }
         this.isLoading = false;
         this.nextPage = data.next;
-        if (this.nextPage) {
-          this.$loadButton.innerText = "Load more";
-          this.$loadButton.disabled = false;
-        } else {
-          this.$loadButton.innerText = "The end";
-          this.$loadButton.disabled = true;
-        }
+        this.renderLoadButton();
       })
       .catch((err) => {
         console.error(err);
@@ -204,6 +202,16 @@ headerText: RxC KIOSK
         this.$loadButton.innerText = "Error: Reload the page.";
         this.$loadButton.disabled = false;
       });
+  };
+
+  Kiosk.prototype.renderFilter = function () {
+    for (const $filter of this.$filters) {
+      if ($filter.value === this.checkedFilter) {
+        $filter.checked = true;
+      } else {
+        $filter.checked = false;
+      }
+    }
   };
 
   Kiosk.prototype.renderItem = function (item) {
@@ -226,6 +234,16 @@ headerText: RxC KIOSK
   Kiosk.prototype.renderReset = function () {
     while (this.$kioskList.firstChild) {
       this.$kioskList.removeChild(this.$kioskList.firstChild);
+    }
+  };
+
+  Kiosk.prototype.renderLoadButton = function (enabled) {
+    if (this.nextPage) {
+      this.$loadButton.innerText = "Load more";
+      this.$loadButton.disabled = false;
+    } else {
+      this.$loadButton.innerText = "The end";
+      this.$loadButton.disabled = true;
     }
   };
 
