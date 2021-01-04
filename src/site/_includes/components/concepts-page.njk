@@ -5,7 +5,9 @@
 {% macro render(concept, pagination) %}
 <!-- prettier-ignore -->
 {{ closeButton.render(href="/concepts") }}
-<div class="z-10 hidden lg:block fixed left-0 bottom-1/10 ml-lg/margin">
+<div
+  class="z-10 block fixed left-0 bottom-0 mb-bottom-button ml-xmargin lg:ml-lg/xmargin"
+>
   <a
     is="a-replace"
     class="group inline-flex items-center justify-start py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
@@ -13,20 +15,22 @@
   >
     <span>←</span>
     <div
-      class="inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+      class="hidden lg:inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
     >
       &nbsp;&nbsp;&nbsp;&nbsp;
       {{ pagination.page.previous.title if pagination.page.previous else pagination.page.last.title }}
     </div>
   </a>
 </div>
-<div class="z-10 hidden lg:block fixed right-0 bottom-1/10 mr-lg/margin">
+<div
+  class="z-10 block fixed right-0 bottom-0 mb-bottom-button mr-xmargin lg:mr-lg/xmargin"
+>
   <a
     is="a-replace"
     class="group inline-flex items-center justify-end py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
     href="{{ pagination.href.next | default(pagination.href.first, true) }}"
     ><div
-      class="inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+      class="hidden lg:inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
     >
       {{ pagination.page.next.title if pagination.page.next else pagination.page.first.title }}
       &nbsp;&nbsp;&nbsp;&nbsp;
