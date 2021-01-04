@@ -109,9 +109,10 @@ headerText: RxC KIOSK
 
     this.isLoading = false;
 
-    const maybeKioskData = sessionStorage.getItem("kiosk");
-    if (history.state && history.state.cached && maybeKioskData) {
-      const kioskData = JSON.parse(maybeKioskData);
+    const shouldUseCache = history.state && history.state.cached;
+    const maybeKioskCache = sessionStorage.getItem("kiosk");
+    if (shouldUseCache && maybeKioskCache) {
+      const kioskData = JSON.parse(maybeKioskCache);
       this.checkedFilter = kioskData.checkedFilter;
       this.items = kioskData.items;
       this.nextPage = kioskData.nextPage;
@@ -147,7 +148,7 @@ headerText: RxC KIOSK
 
     window.addEventListener("beforeunload", (event) => {
       // Record state so it can be restored if user hits
-      // back button and overwritten if use navigates
+      // back button and overwritten if user navigates
       // back here naturally
       history.replaceState({ cached: true }, undefined, undefined);
       sessionStorage.setItem(
