@@ -1,5 +1,19 @@
 const youtubeData = [
   {
+    title: "When You Gaze Long Into the Machine, The Machine Also Gazes Back",
+    speakers: "Rob Cheung, Andrew Kortina, Nam Patel",
+    description: `Decades of communications technology innovation, marketing science, and optimization of algorithms that operate on vast sets of behavioral data now enable humans to use information to influence behavior with unprecedented scale and accuracy. The best of this knowledge has largely been deployed for political or commercial gain, leaving individual participants feeling like components of a large inscrutable Machine. In this meandering multimedia dialog, we’ll look for glimpses of the source code running on the Machine, and discuss how the specification of the Machine relates to our personal and collective goals.
+
+SPEAKERS
+
+Rob Cheung is interested in ideas across computation, complex systems, cultural studies, and narrative. He’s worked on software at venmo, fin, and (currently) substack.
+
+Andrew Kortina is interested in exploring ideas at the intersection of technology, philosophy, politics, culture, and consciousness. He writes at kortina.nyc. He co-founded fin.com and venmo.com.
+
+Nam Patel is interested in economics and consumer culture. She’s working on product at airbnb and (previously) minted.`,
+    videoId: "s8dsBRf7LH0",
+  },
+  {
     title: "Innovation in Community Focused Ownership",
     speakers: "Dryhurst, Surico, Torfs",
     description:
