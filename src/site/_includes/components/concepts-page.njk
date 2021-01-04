@@ -13,7 +13,7 @@
   >
     <span>←</span>
     <div
-      class="inline-block max-w-0 group-hover:max-w-lg text-size--2 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+      class="inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
     >
       &nbsp;&nbsp;&nbsp;&nbsp;
       {{ pagination.page.previous.title if pagination.page.previous else pagination.page.last.title }}
@@ -26,7 +26,7 @@
     class="group inline-flex items-center justify-end py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
     href="{{ pagination.href.next | default(pagination.href.first, true) }}"
     ><div
-      class="inline-block max-w-0 group-hover:max-w-lg text-size--2 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+      class="inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
     >
       {{ pagination.page.next.title if pagination.page.next else pagination.page.first.title }}
       &nbsp;&nbsp;&nbsp;&nbsp;
@@ -78,10 +78,10 @@
     </ul>
   </aside>
   <div class="col-span-columns hidden lg:block mt-8">
-    <p class="text-center text-size--3">
+    <p class="text-center text-size--4">
       © 2020 RadicalxChange Foundation Ltd.
     </p>
-    <p class="text-center text-size--3">
+    <p class="text-center text-size--4">
       RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
       not support or oppose candidates for public office or political parties.
     </p>

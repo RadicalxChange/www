@@ -18,8 +18,15 @@
 }
 
 :root {
-  --f--3-min: 12; /* changed by hand */
-  --f--3-max: 12; /* changed by hand */
+  --f--4-min: 12; /* changed by hand */
+  --f--4-max: 12; /* changed by hand */
+  --step--4: calc(
+    ((var(--f--4-min) / 16) * 1rem) + (var(--f--4-max) - var(--f--4-min)) *
+      var(--fluid-bp)
+  );
+
+  --f--3-min: 14; /* changed by hand */
+  --f--3-max: 14; /* changed by hand */
   --step--3: calc(
     ((var(--f--3-min) / 16) * 1rem) + (var(--f--3-max) - var(--f--3-min)) *
       var(--fluid-bp)
