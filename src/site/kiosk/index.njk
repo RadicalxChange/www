@@ -25,35 +25,40 @@ headerText: RxC KIOSK
   </header>
   <form
     class="col-span-columns grid lg:flex grid-cols-1 md:grid-cols-auto/auto justify-start lg:grid-cols-none -mr-4 mb-8"
-    autocomplete="off"
   >
     <div>
-      <input type="checkbox" name="kiosk-filter" value="Blog" /><label
-        class="ml-2 mr-4 text-size--1"
-        for="Blog"
-        >Blog</label
-      >
+      <input
+        id="filter-blog"
+        type="checkbox"
+        name="kiosk-filter"
+        value="Blog"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-blog">Blog</label>
     </div>
     <div>
-      <input type="checkbox" name="kiosk-filter" value="Papers" /><label
-        class="ml-2 mr-4 text-size--1"
-        for="Papers"
-        >Papers</label
-      >
+      <input
+        id="filter-papers"
+        type="checkbox"
+        name="kiosk-filter"
+        value="Papers"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-papers">Papers</label>
     </div>
     <div>
-      <input type="checkbox" name="kiosk-filter" value="Announcements" /><label
-        class="ml-2 mr-4 text-size--1"
-        for="Announcements"
+      <input
+        id="filter-announcements"
+        type="checkbox"
+        name="kiosk-filter"
+        value="Announcements"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-announcements"
         >Announcements</label
       >
     </div>
     <div>
       <input
+        id="filter-podcastsvideos"
         type="checkbox"
         name="kiosk-filter"
         value="Podcasts / Videos"
-      /><label class="ml-2 mr-4 text-size--1" for="Podcasts / Videos"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-podcastsvideos"
         >Podcasts / Videos</label
       >
     </div>
@@ -61,72 +66,70 @@ headerText: RxC KIOSK
   <ol
     id="kiosk-list"
     class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk gap-x-8 gap-y-16 mb-8"
-  >
-    {% for post in collections.kiosk[0].items %}
-    <li
-      data-kiosk
-      data-kiosk-series="{{ post.data.series | default([]) | dump }}"
-    >
-      <a
-        class="flex flex-col justify-between h-full kiosk_border-b"
-        href="{{ post.url }}"
-      >
-        <div class="mb-8">
-          <p data-kiosk-item-prop="postType" class="text-size--1">
-            {{ post.postType }}
-          </p>
-          <h2
-            data-kiosk-item-prop="postHeader"
-            class="leading-snug text-size-2 lg:min-h-line-5"
-          >
-            {{ post.postHeader }}
-          </h2>
-        </div>
-        <div>
-          <p
-            data-kiosk-item-prop="postAuthor"
-            class="text-size--2 lg:text-size--3"
-          >
-            {{ post.postAuthor }}
-          </p>
-          <p
-            data-kiosk-item-prop="readableDate"
-            class="text-size--2 lg:text-size--3"
-          >
-            {{ post.readableDate }}
-          </p>
-        </div>
-      </a>
-    </li>
-    <!-- prettier-ignore -->
-    {% endfor %}
-  </ol>
+  ></ol>
   <div class="col-span-columns pb-4 border-b text-size--1">
     <button id="kiosk-load-button" class="uppercase">Load more</button>
   </div>
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
-<script>
-  // prettier-ignore
-  {% include "components/menu.js" %}
-</script>
+<template id="kiosk-item-template">
+  <li data-kiosk>
+    <a class="flex flex-col justify-between h-full kiosk_border-b" href="#">
+      <div class="mb-8">
+        <p data-kiosk-item-prop="postType" class="text-size--1"></p>
+        <h2
+          data-kiosk-item-prop="postHeader"
+          class="leading-snug text-size-2 min-h-line-3 lg:min-h-line-5"
+        ></h2>
+      </div>
+      <div>
+        <p
+          data-kiosk-item-prop="postAuthor"
+          class="text-size--2 lg:text-size--3"
+        ></p>
+        <p
+          data-kiosk-item-prop="readableDate"
+          class="text-size--2 lg:text-size--3"
+        ></p>
+      </div>
+    </a>
+  </li>
+</template>
 <script>
   const Kiosk = function () {
     this.$kioskList = document.getElementById("kiosk-list");
-    this.$itemTemplate = this.$kioskList.children[0].cloneNode(true);
-
-    this.$allSeries = document.querySelectorAll(
+    this.$itemTemplate = document.getElementById(
+      "kiosk-item-template"
+    ).content.firstElementChild;
+    this.$filters = document.querySelectorAll(
       'input[type=checkbox][name="kiosk-filter"]'
     );
-    this.checkedSeries = "All";
-
     this.$loadButton = document.getElementById("kiosk-load-button");
+
     this.isLoading = false;
-    this.nextPage = "/api/kiosk/all-2.json";
+
+    const shouldUseCache = history.state && history.state.cached;
+    const maybeKioskCache = sessionStorage.getItem("kiosk");
+    if (shouldUseCache && maybeKioskCache) {
+      const kioskData = JSON.parse(maybeKioskCache);
+      this.checkedFilter = kioskData.checkedFilter;
+      this.items = kioskData.items;
+      this.nextPage = kioskData.nextPage;
+      this.renderFilter();
+      for (item of this.items) {
+        this.renderItem(item);
+      }
+      this.renderLoadButton();
+    } else {
+      this.checkedFilter = "All";
+      this.items = [];
+      this.nextPage = "/api/kiosk/all-1.json";
+      this.fetchMoreItems();
+    }
   };
 
-  Kiosk.prototype.SERIES_API = {
+  Kiosk.prototype.FILTER_API = {
     All: "/api/kiosk/all-1.json",
     Blog: "/api/kiosk/blog-1.json",
     Papers: "/api/kiosk/papers-1.json",
@@ -135,41 +138,88 @@ headerText: RxC KIOSK
   };
 
   Kiosk.prototype.init = function () {
-    for (const $series of this.$allSeries) {
-      $series.addEventListener("change", (event) => this.onSeriesChange(event));
+    for (const $filter of this.$filters) {
+      $filter.addEventListener("change", (event) => this.onFilterChange(event));
     }
 
     this.$loadButton.addEventListener("click", (event) => {
-      this.fetchMore();
+      this.fetchMoreItems();
+    });
+
+    window.addEventListener("beforeunload", (event) => {
+      // Record state so it can be restored if user hits
+      // back button and overwritten if user navigates
+      // back here naturally
+      history.replaceState({ cached: true }, undefined, undefined);
+      sessionStorage.setItem(
+        "kiosk",
+        JSON.stringify({
+          checkedFilter: this.checkedFilter,
+          items: this.items,
+          nextPage: this.nextPage,
+        })
+      );
     });
   };
 
-  Kiosk.prototype.onSeriesChange = function (event) {
+  Kiosk.prototype.onFilterChange = function (event) {
     // Manage checkbox state
     if (event.target.checked) {
-      this.checkedSeries = event.target.value;
-      for (const $series of this.$allSeries) {
-        if ($series.value !== this.checkedSeries) {
-          $series.checked = false;
-        }
-      }
+      this.checkedFilter = event.target.value;
     } else {
-      this.checkedSeries = "All";
+      this.checkedFilter = "All";
     }
+    this.renderFilter();
+
+    // Clear item list
+    this.items = [];
+    this.renderReset();
 
     // Load new data
-    this.nextPage = this.SERIES_API[this.checkedSeries];
-    this.fetchMore();
+    this.nextPage = this.FILTER_API[this.checkedFilter];
+    this.fetchMoreItems();
+  };
 
-    // Remove all children in anticipation of new children
-    while (this.$kioskList.firstChild) {
-      this.$kioskList.removeChild(this.$kioskList.firstChild);
+  Kiosk.prototype.fetchMoreItems = function () {
+    if (this.isLoading || !this.nextPage) {
+      return Promise.resolve();
+    }
+
+    this.$loadButton.innerText = "Loading...";
+    this.$loadButton.disabled = true;
+    this.isLoading = true;
+
+    return fetch(this.nextPage)
+      .then((r) => r.json())
+      .then((data) => {
+        for (const item of data.items) {
+          this.items.push(item);
+          this.renderItem(item);
+        }
+        this.isLoading = false;
+        this.nextPage = data.next;
+        this.renderLoadButton();
+      })
+      .catch((err) => {
+        console.error(err);
+        this.isLoading = false;
+        this.$loadButton.innerText = "Error: Reload the page.";
+        this.$loadButton.disabled = false;
+      });
+  };
+
+  Kiosk.prototype.renderFilter = function () {
+    for (const $filter of this.$filters) {
+      if ($filter.value === this.checkedFilter) {
+        $filter.checked = true;
+      } else {
+        $filter.checked = false;
+      }
     }
   };
 
-  Kiosk.prototype.addItem = function (item) {
+  Kiosk.prototype.renderItem = function (item) {
     const $item = this.$itemTemplate.cloneNode(true);
-    $item.dataset["kioskSeries"] = JSON.stringify(item.series);
 
     const $anchor = $item.children[0];
     $anchor.href = item.url;
@@ -185,41 +235,26 @@ headerText: RxC KIOSK
     this.$kioskList.appendChild($item);
   };
 
-  Kiosk.prototype.fetchMore = function () {
-    if (this.isLoading || !this.nextPage) {
-      return;
+  Kiosk.prototype.renderReset = function () {
+    while (this.$kioskList.firstChild) {
+      this.$kioskList.removeChild(this.$kioskList.firstChild);
     }
+  };
 
-    this.$loadButton.innerText = "Loading...";
-    this.$loadButton.disabled = true;
-    this.isLoading = true;
-
-    fetch(this.nextPage)
-      .then((r) => r.json())
-      .then((data) => {
-        for (const item of data.items) {
-          this.addItem(item);
-        }
-        this.isLoading = false;
-        this.nextPage = data.next;
-        if (this.nextPage) {
-          this.$loadButton.innerText = "Load more";
-          this.$loadButton.disabled = false;
-        } else {
-          this.$loadButton.innerText = "The end";
-          this.$loadButton.disabled = true;
-        }
-      })
-      .catch((err) => {
-        console.error(err);
-        this.isLoading = false;
-        this.$loadButton.innerText = "Error: Reload the page.";
-        this.$loadButton.disabled = false;
-      });
+  Kiosk.prototype.renderLoadButton = function (enabled) {
+    if (this.nextPage) {
+      this.$loadButton.innerText = "Load more";
+      this.$loadButton.disabled = false;
+    } else {
+      this.$loadButton.innerText = "The end";
+      this.$loadButton.disabled = true;
+    }
   };
 
   const kiosk = new Kiosk();
   kiosk.init();
-  // const infiniteScroller = new InfiniteScroll(() => kiosk.fetchMore());
-  // infiniteScroller.init();
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
 </script>

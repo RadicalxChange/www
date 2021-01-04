@@ -16,8 +16,10 @@ class Pages {
   render(data) {
     return JSON.stringify({
       items: data.thePage.items,
-      previous: data.pagination.href.previous || undefined,
-      next: data.pagination.href.next || undefined,
+      previous: data.thePage.hasPrevious
+        ? data.pagination.href.previous
+        : undefined,
+      next: data.thePage.hasNext ? data.pagination.href.next : undefined,
     });
   }
 }
