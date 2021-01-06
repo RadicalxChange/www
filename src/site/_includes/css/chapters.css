@@ -1,11 +1,11 @@
 .chapters_list {
   @screen lg {
-    height: 150vw;
-    max-height: 1152px;
+    min-height: 1440px;
+    height: calc(1920px - 100vw);
   }
 
   @screen xl {
-    height: 75vw;
-    max-height: 768px;
+    min-height: 960px;
+    height: calc(2048px - 100vw);
   }
 }
