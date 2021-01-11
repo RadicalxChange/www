@@ -1,5 +1,32 @@
 const data = [
   {
+    title: "Welcome to RadicalxChange",
+    speakers: "Jeff Lee-Yaw",
+    description: `Jeff Lee-Yaw kicks off the three day conference by introducing the background and context of the RadicalxChange movement and foundation, followed by an introduction to Richard Rogers of the College for Creative Studies.`,
+    videoId: "7JODKAg4zuc",
+    date: "2019-05-14",
+  },
+  {
+    title: "Radical Digital Social Innovation",
+    speakers: "Audrey Tang",
+    description: `Speaking about Taiwan’s digital democracy, Audrey Tang shows how digital social innovation can drive regulatory innovation, reboot democracy with radical transparency, and grow a civic-tech community engaged in a virtuous cycle of collaboration and consensus based off listening and shared values.`,
+    videoId: "x6hwTdCV3Y4",
+    date: "2019-12-02",
+  },
+  {
+    title: "Metagovernance: A Governance Layer for Online Communities",
+    speakers: "Joshua Tan, Seth Frey",
+    description: `The tools for governance in most online communities are inadequate to support basic processes used in offline groups, such as basic elections, term limits, and grievance processes. The Metagovernance Project (metagov.org) is a research group working to change this by building infrastructure to support online governance. This session will present Modular Politics, an ambitious computational governance framework intended to operate across diverse platforms, from social networks to multiplayer games.
+
+SPEAKERS
+
+Joshua Tan is currently a doctoral student in computer science at Oxford studying under Samson Abramsky and Bob Coecke; previously, he completed my master’s in pure math at the Courant Institute at NYU, where his research involved applications of geometry and topology to artificial intelligence. For his thesis, he’s been exploring different ways of applying category theory and sheaf theory to computational learning theory, from work on the sample compression conjecture to diversity measures in boosting. His interests include category theory, computational learning theory, sheaf theory, robotics, and art history.
+
+Seth Frey is data scientist and behavioral scientist who specializes in institutional approaches to self-governance and collective action online. He is an Assistant Professor of Communication at the University of California, Davis. Before that, he was in the behavioral economics group at Disney Research, a part of Walt Disney Imagineering, where he used engineered social systems like web team sports, theme parks, video games, and economic games to study sociality. He earned his bachelor's at UC Berkeley and his Ph.D., in "Cognitive Science and Informatics," at Indiana University in 2013.`,
+     videoId: "0YIjnM7ADDo",
+     date: "2020-06-23"
+  },
+  {
     title: "RxC in the Wild in Colorado & Taiwan",
     speakers: "Ben Henderson, Yahsin Huang, Kevin Owocki, Marko-Luka Zubcic",
     description: `Yahsin Huang is the marketing manager at Diode. She covers impacts of emerging technologies, especially blockchain, for various media outlets, such as Make magazine, TechLife magazine, Business Next, Meet Startup, Thinking Taiwan, Blockcast.it, BlockTempo, and Hacker Noon. Notable works are her tech reports of DevCon in Prague, Czech Republic, and EDCON in Sydney, Australia. In 2016, Yahsin helped start the Taipei Ethereum Meetup community. In 2019, Yahsin founded the RadicalxChange Taipei chapter. She has a bachelor’s degree in English literature from National Dong Hwa University.
