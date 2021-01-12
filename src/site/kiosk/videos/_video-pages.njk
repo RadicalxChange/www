@@ -9,7 +9,7 @@ eleventyComputed:
   title: "{{ video.title | safe  }}"
   postHeader: "{{ video.postHeader | safe }}"
   postAuthor: "{{ video.postAuthor | safe  }}"
-permalink: "kiosk/videos/{{ video.title | slug }}/"
+permalink: "kiosk/videos/{{ video.title | slug | safe }}/"
 ---
 
 <!-- prettier-ignore -->
