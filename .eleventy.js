@@ -9,7 +9,8 @@ const uslug = require("uslug");
 const lodashChunk = require("lodash.chunk");
 const libraryData = require("./src/data/kiosk/library");
 const papersData = require("./src/data/kiosk/papers");
-const fetchPodcasts = require("./src/data/kiosk/podcasts");
+const fetchPodcastsReplayed = require("./src/data/kiosk/podcasts-replayed");
+const fetchPodcastsRadicalxchanges = require("./src/data/kiosk/podcasts-radicalxchanges");
 
 module.exports = function (config) {
   const isDev = process.env.RXC_DEV === "true";
@@ -124,7 +125,11 @@ module.exports = function (config) {
           ...item,
           readableDate: readableDate(item.date),
         })),
-        (await fetchPodcasts()).map((item) => ({
+        (await fetchPodcastsReplayed()).map((item) => ({
+          ...item,
+          readableDate: readableDate(item.date),
+        })),
+        (await fetchPodcastsRadicalxchanges()).map((item) => ({
           ...item,
           readableDate: readableDate(item.date),
         }))
