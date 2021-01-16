@@ -3,12 +3,12 @@ const { AssetCache } = require("@11ty/eleventy-cache-assets");
 const Parser = require("rss-parser");
 
 const CACHE_DIR = ".cache";
-const CACHE_KEY = "podcasts";
-const REPLAYED_RSS_FEED_URI = "https://feeds.simplecast.com/VrNLe50Y";
+const CACHE_KEY = "podcasts-radicalxchanges";
+const RSS_FEED_URI = "https://feeds.simplecast.com/Tf4D47Lm";
 
-async function fetchReplayedEpisodes() {
+async function fetchEpisodes() {
   const parser = new Parser();
-  const feed = await parser.parseURL(REPLAYED_RSS_FEED_URI);
+  const feed = await parser.parseURL(RSS_FEED_URI);
   const items = feed.items.map((item) => ({
     url: item.link,
     date: item.isoDate,
@@ -35,7 +35,7 @@ module.exports = async function () {
     return asset.getCachedValue();
   }
 
-  const items = await fetchReplayedEpisodes();
+  const items = await fetchEpisodes();
   await asset.save(items, "json");
   return items;
 };
