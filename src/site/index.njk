@@ -48,41 +48,48 @@ stuff: |
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
 
-<section
-  id="rxcTV"
-  style="display: none"
-  class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen bg-black lg:bg-transparent overflow-y-auto"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 pt-margin pb-32 lg:pt-28 lg:pb-lg/ymargin"
+<template id="rxcTV">
+  <section
+    style="display: none"
+    class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen bg-black lg:bg-transparent overflow-y-auto"
   >
-    <div class="hidden lg:flex lg:justify-end mb-3">
-      <a href="#">
-        <img
-          width="35"
-          height="33"
-          src="/images/ui/close-circle.svg"
-          alt="close"
-        />
-      </a>
-    </div>
-    <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
-      <div class="relative lg:w-2/3 lg:text-size--4">
-        <div
-          class="z-10 absolute top-0 left-0 w-full max-h-full flex flex-col lg:rounded-tvinfo bg-black text-white"
-        >
+    <div
+      class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 pt-margin pb-32 lg:pt-28 lg:pb-lg/ymargin"
+    >
+      <div class="hidden lg:flex lg:justify-end mb-3">
+        <a href="#">
+          <img
+            width="35"
+            height="33"
+            src="/images/ui/close-circle.svg"
+            alt="close"
+          />
+        </a>
+      </div>
+      <div
+        class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3"
+      >
+        <div class="relative lg:w-2/3 lg:text-size--4">
           <div
-            class="flex-none flex items-center justify-between h-line-1 lg:h-line-3 lg:px-6"
+            data-rxctv-info
+            class="z-10 absolute top-0 left-0 w-full max-h-full flex flex-col lg:rounded-tvinfo bg-black text-white"
           >
-            <h1>Title here</h1>
-            <button class="hidden lg:block uppercase">Info</button>
+            <div
+              class="flex-none flex items-center justify-between h-line-1 lg:h-line-3 lg:px-6"
+            >
+              <h1>Title here</h1>
+              <button data-rxctv-infobtn class="hidden lg:block uppercase">
+                Info
+              </button>
+            </div>
+            <div
+              class="max-h-0 open:max-h-none flex-grow lg:px-6 open:mb-6 md overflow-y-auto transition-height duration-700"
+            >
+              {{ stuff | markdown | safe }}
+            </div>
           </div>
-          <div class="hidden flex-grow lg:px-6 mb-6 md overflow-y-auto">
-            {{ stuff | markdown | safe }}
-          </div>
-        </div>
-        <div class="pt-line-1 lg:pt-line-3 mt-3">
-          <div class="twitch-container">
+          <div class="pt-line-1 lg:pt-line-3 mt-3">
+            <!--<div class="twitch-container">
             <iframe
               src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=localhost"
               frameborder="0"
@@ -90,34 +97,44 @@ stuff: |
               scrolling="no"
               class="lg:rounded-twitch"
             ></iframe>
+          </div>-->
+            <div class="youtube-container">
+              <iframe
+                src="https://www.youtube.com/embed/pA96m95T3NA"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3">
+          <iframe
+            src="https://app.sli.do/event/nsiukl2x"
+            height="100%"
+            width="100%"
+            class="slido-iframe lg:rounded-slido"
+          ></iframe>
+        </div>
+        <div class="block lg:hidden bg-black text-white text-size--4">
+          <div class="md">
+            {{ stuff | markdown | safe }}
           </div>
         </div>
       </div>
-      <div class="lg:w-1/3">
-        <iframe
-          src="https://app.sli.do/event/nsiukl2x"
-          height="100%"
-          width="100%"
-          class="slido-iframe lg:rounded-slido"
-        ></iframe>
-      </div>
-      <div class="block lg:hidden bg-black text-white text-size--4">
-        <div class="md">
-          {{ stuff | markdown | safe }}
-        </div>
-      </div>
     </div>
-  </div>
-  <div
-    class="fixed bottom-0 left-0 flex justify-center lg:hidden w-full pt-margin pb-bottom-button bg-black"
-  >
-    <button
-      class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
+    <div
+      class="fixed bottom-0 left-0 flex justify-center lg:hidden w-full pt-margin pb-bottom-button bg-black"
     >
-      Close
-    </button>
-  </div>
-</section>
+      <a
+        class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
+        href="#"
+      >
+        Close
+      </a>
+    </div>
+  </section>
+</template>
 <!-- prettier-ignore -->
 {{ menu.render() }}
 <div
@@ -216,11 +233,14 @@ stuff: |
 <script>
   const RxcTV = function ($root) {
     this.$root = $root;
+    this.$info = $root.querySelector("[data-rxctv-info]");
+    this.$infobtn = $root.querySelector("[data-rxctv-infobtn]");
   };
 
   RxcTV.prototype.init = function () {
+    this.$infobtn.addEventListener("click", () => this.toggleInfo());
+
     window.addEventListener("hashchange", (event) => {
-      console.log(event);
       if (new URL(event.newURL).hash === "#tv") {
         this.open();
       } else {
@@ -231,16 +251,13 @@ stuff: |
     if (location.hash === "#tv") {
       this.open();
     } else {
-      const data = this.loadData();
-      console.log(data);
-      if (!data || !data.isClosed) {
-        location = "#tv";
+      if (window.innerWidth >= 768) {
+        const data = this.loadData();
+        if (!data || !data.isClosed) {
+          location = "#tv";
+        }
       }
     }
-
-    // this.$root
-    //   .querySelector("[data-rxctv-close]")
-    //   .addEventListener("click", () => this.close());
   };
 
   RxcTV.prototype.loadData = function () {
@@ -268,9 +285,14 @@ stuff: |
     this.storeData({ isClosed: true });
   };
 
-  RxcTV.prototype.showInfo = function () {};
-
-  RxcTV.prototype.hideInfo = function () {};
+  RxcTV.prototype.toggleInfo = function () {
+    this.$info.classList.toggle("open");
+    if (this.$infobtn.textContent.trim() === "Info") {
+      this.$infobtn.innerText = "Close";
+    } else {
+      this.$infobtn.innerText = "Info";
+    }
+  };
 
   const rxcTV = new RxcTV(document.getElementById("rxcTV"));
   rxcTV.init();

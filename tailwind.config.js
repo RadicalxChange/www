@@ -55,10 +55,12 @@ module.exports = {
       borderWidth: { 3: "3px" },
       transitionProperty: {
         width: "width",
+        height: "height",
         right: "right",
         "margin-left": "margin-left",
         "clip-path": "clip-path",
         "max-width": "max-width",
+        "max-height": "max-height",
       },
       inset: {
         full: "100%",
@@ -73,7 +75,7 @@ module.exports = {
         "line-3": "4.02em",
         "line-5": "6.70em",
       },
-      maxHeight: { tall: "50vw", "75vh": "75vh" },
+      maxHeight: { tall: "50vw", "75vh": "75vh", none: "none" },
       maxWidth: { "75vw": "75vw" },
       boxShadow: {
         "focus-white": "0 0 0 3px rgba(256, 256, 256, 1)",
@@ -202,6 +204,8 @@ module.exports = {
       margin: ["open", "group-hover"],
       width: ["group-hover"],
       maxWidth: ["group-hover"],
+      height: ["open"],
+      maxHeight: ["open"],
     },
   },
   plugins: [
