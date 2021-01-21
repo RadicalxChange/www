@@ -50,7 +50,7 @@ module.exports = {
         oval: "70px",
         twitch: "38px",
         slido: "26px",
-        tvinfo: "42px",
+        tvinfo: "22px",
       },
       borderWidth: { 3: "3px" },
       transitionProperty: {

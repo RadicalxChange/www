@@ -19,6 +19,26 @@ homeConcepts:
   - name: Intersectional Social Identity
     href: /concepts/intersectional-social-identity/
     element: <intersectional-identity-animation/>
+stuff: |
+  I was part of something special. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? What do they got in there? King Kong?
+
+  Hey, you know how I'm, like, always trying to save the planet? Here's my chance. So you two dig up, dig up dinosaurs? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+
+  Did he just throw my cat out of the window? Jaguar shark! So tell me - does it really exist? What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.
+
+  So you two dig up, dig up dinosaurs? You really think you can fly that thing? Life finds a way. Jaguar shark! So tell me - does it really exist? Jaguar shark! So tell me - does it really exist? Eventually, you do plan to have dinosaurs on your dinosaur tour, right?
+
+  Just my luck, no ice. God help us, we're in the hands of engineers. Life finds a way. We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.
+
+  I was part of something special. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? What do they got in there? King Kong?
+
+  Hey, you know how I'm, like, always trying to save the planet? Here's my chance. So you two dig up, dig up dinosaurs? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+
+  Did he just throw my cat out of the window? Jaguar shark! So tell me - does it really exist? What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.
+
+  So you two dig up, dig up dinosaurs? You really think you can fly that thing? Life finds a way. Jaguar shark! So tell me - does it really exist? Jaguar shark! So tell me - does it really exist? Eventually, you do plan to have dinosaurs on your dinosaur tour, right?
+
+  Just my luck, no ice. God help us, we're in the hands of engineers. Life finds a way. We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.
 ---
 
 <!-- prettier-ignore -->
@@ -30,10 +50,10 @@ homeConcepts:
 
 <section
   id="rxcTv"
-  class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen lg:pt-28 pb-ymargin overflow-y-auto"
+  class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen bg-black lg:bg-transparent overflow-y-auto"
 >
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 space-y-3"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 py-margin lg:pt-28 lg:pb-lg/ymargin space-y-3"
   >
     <div class="flex justify-end">
       <button>
@@ -46,24 +66,28 @@ homeConcepts:
       </button>
     </div>
     <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
-      <div class="lg:w-2/3 space-y-3">
-        <div class="p-4 rounded-tvinfo bg-black text-white">
-          <div class="flex items-center justify-between text-size--4">
+      <div class="relative lg:w-2/3 text-size--4">
+        <div
+          class="z-10 absolute top-0 left-0 w-full max-h-full flex flex-col lg:rounded-tvinfo bg-black text-white"
+        >
+          <div
+            class="flex-none flex items-center justify-between h-line-3 lg:px-6"
+          >
             <h1>Title here</h1>
-            <button class="uppercase">Info</button>
+            <button class="hidden lg:block uppercase">Info</button>
           </div>
-          <div class="hidden open:block text-size--4 pt-line-3/2">
-            Description here
+          <div class="hidden flex-grow lg:px-6 mb-6 md overflow-y-auto">
+            {{ stuff | markdown | safe }}
           </div>
         </div>
-        <div class="rounded-full bg-black text-white">
+        <div class="pt-line-3 mt-3">
           <div class="twitch-container">
             <iframe
               src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=localhost"
               frameborder="0"
               allowfullscreen="true"
               scrolling="no"
-              class="rounded-twitch"
+              class="lg:rounded-twitch"
             ></iframe>
           </div>
         </div>
@@ -73,8 +97,11 @@ homeConcepts:
           src="https://app.sli.do/event/nsiukl2x"
           height="100%"
           width="100%"
-          class="slido-iframe rounded-slido"
+          class="slido-iframe lg:rounded-slido"
         ></iframe>
+      </div>
+      <div class="block lg:hidden bg-black text-white text-size--4">
+        Description here
       </div>
     </div>
   </div>
