@@ -53,9 +53,9 @@ stuff: |
   class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen bg-black lg:bg-transparent overflow-y-auto"
 >
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 py-margin lg:pt-28 lg:pb-lg/ymargin space-y-3"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 pt-margin pb-32 lg:pt-28 lg:pb-lg/ymargin"
   >
-    <div class="flex justify-end">
+    <div class="hidden lg:flex lg:justify-end mb-3">
       <button>
         <img
           width="35"
@@ -66,12 +66,12 @@ stuff: |
       </button>
     </div>
     <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
-      <div class="relative lg:w-2/3 text-size--4">
+      <div class="relative lg:w-2/3 lg:text-size--4">
         <div
           class="z-10 absolute top-0 left-0 w-full max-h-full flex flex-col lg:rounded-tvinfo bg-black text-white"
         >
           <div
-            class="flex-none flex items-center justify-between h-line-3 lg:px-6"
+            class="flex-none flex items-center justify-between h-line-1 lg:h-line-3 lg:px-6"
           >
             <h1>Title here</h1>
             <button class="hidden lg:block uppercase">Info</button>
@@ -80,7 +80,7 @@ stuff: |
             {{ stuff | markdown | safe }}
           </div>
         </div>
-        <div class="pt-line-3 mt-3">
+        <div class="pt-line-1 lg:pt-line-3 mt-3">
           <div class="twitch-container">
             <iframe
               src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=localhost"
@@ -101,9 +101,20 @@ stuff: |
         ></iframe>
       </div>
       <div class="block lg:hidden bg-black text-white text-size--4">
-        Description here
+        <div class="md">
+          {{ stuff | markdown | safe }}
+        </div>
       </div>
     </div>
+  </div>
+  <div
+    class="fixed bottom-0 left-0 flex justify-center lg:hidden w-full pt-margin pb-bottom-button bg-black"
+  >
+    <button
+      class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
+    >
+      Close
+    </button>
   </div>
 </section>
 <!-- prettier-ignore -->
