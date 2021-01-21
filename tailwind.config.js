@@ -45,7 +45,13 @@ module.exports = {
       current: "currentColor",
     },
     extend: {
-      borderRadius: { 50: "50%", oval: "70px" },
+      borderRadius: {
+        50: "50%",
+        oval: "70px",
+        twitch: "38px",
+        slido: "26px",
+        tvinfo: "42px",
+      },
       borderWidth: { 3: "3px" },
       transitionProperty: {
         width: "width",

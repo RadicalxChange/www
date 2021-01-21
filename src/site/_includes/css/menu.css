@@ -1,5 +1,5 @@
 .menu {
-  @apply z-50;
+  @apply z-40;
   @apply fixed top-0 left-0;
   @apply flex items-center;
   @apply w-full;
