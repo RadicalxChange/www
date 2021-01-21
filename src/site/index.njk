@@ -49,21 +49,22 @@ stuff: |
 {% import "components/footer.njk" as footer %}
 
 <section
-  id="rxcTv"
+  id="rxcTV"
+  style="display: none"
   class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen bg-black lg:bg-transparent overflow-y-auto"
 >
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 pt-margin pb-32 lg:pt-28 lg:pb-lg/ymargin"
   >
     <div class="hidden lg:flex lg:justify-end mb-3">
-      <button>
+      <a href="#">
         <img
           width="35"
           height="33"
           src="/images/ui/close-circle.svg"
           alt="close"
         />
-      </button>
+      </a>
     </div>
     <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
       <div class="relative lg:w-2/3 lg:text-size--4">
@@ -186,10 +187,10 @@ stuff: |
     >
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0 blink"
-        href="/kiosk/announcements/fellowship-program-2021"
+        href="#tv"
       >
-        <h2 class="font-bold">RxC Fellowship Program</h2>
-        <p>Applications through December 13th</p>
+        <h2 class="font-bold">RxC TV</h2>
+        <p>Streaming now</p>
       </a>
       <div class="flex-initial hidden lg:block border-b mx-6"></div>
       <div
@@ -213,7 +214,66 @@ stuff: |
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>
-  bodyScrollLock.disableBodyScroll(document.getElementById("rxcTv"));
+  const RxcTV = function ($root) {
+    this.$root = $root;
+  };
+
+  RxcTV.prototype.init = function () {
+    window.addEventListener("hashchange", (event) => {
+      console.log(event);
+      if (new URL(event.newURL).hash === "#tv") {
+        this.open();
+      } else {
+        this.close();
+      }
+    });
+
+    if (location.hash === "#tv") {
+      this.open();
+    } else {
+      const data = this.loadData();
+      console.log(data);
+      if (!data || !data.isClosed) {
+        location = "#tv";
+      }
+    }
+
+    // this.$root
+    //   .querySelector("[data-rxctv-close]")
+    //   .addEventListener("click", () => this.close());
+  };
+
+  RxcTV.prototype.loadData = function () {
+    const maybeItem = sessionStorage.getItem("rxcTV");
+    if (maybeItem) {
+      return JSON.parse(maybeItem);
+    } else {
+      return undefined;
+    }
+  };
+
+  RxcTV.prototype.storeData = function (data) {
+    sessionStorage.setItem("rxcTV", JSON.stringify(data));
+  };
+
+  RxcTV.prototype.open = function () {
+    bodyScrollLock.disableBodyScroll(this.$root);
+    this.$root.style.display = null;
+    this.storeData({ isClosed: false });
+  };
+
+  RxcTV.prototype.close = function () {
+    bodyScrollLock.enableBodyScroll(this.$root);
+    this.$root.style.display = "none";
+    this.storeData({ isClosed: true });
+  };
+
+  RxcTV.prototype.showInfo = function () {};
+
+  RxcTV.prototype.hideInfo = function () {};
+
+  const rxcTV = new RxcTV(document.getElementById("rxcTV"));
+  rxcTV.init();
 </script>
 <script>
   const Animation = function ($root) {
