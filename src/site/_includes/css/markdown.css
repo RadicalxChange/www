@@ -77,12 +77,12 @@
     @apply mb-0;
   }
 
-  ul {
+  ul:not(.list-none) {
     @apply list-outside list-disc;
     padding-left: 1.2em;
   }
 
-  ol {
+  ol:not(.list-none) {
     @apply list-outside list-decimal;
     padding-left: 1.2em;
   }
@@ -92,11 +92,11 @@
     padding-left: 0;
   }
 
-  ul > li {
+  ul:not(.list-none) > li {
     padding-left: 0.5em;
   }
 
-  ol > li {
+  ol:not(.list-none) > li {
     padding-left: 0.5em;
   }
 
@@ -144,6 +144,10 @@
     @apply font-medium;
   }
 
+  small {
+    @apply text-size--1;
+  }
+
   a:not(.thick-link) {
     text-decoration: underline;
   }
@@ -156,6 +160,10 @@
 
   &.markdown-sm {
     @apply text-size--1;
+
+    small {
+      @apply text-size--2;
+    }
   }
 
   .html {

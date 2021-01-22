@@ -42,14 +42,26 @@
   class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start lg:content-between lg:min-h-screen pt-margin lg:pt-lg/margin pb-margin lg:pb-2 mb-24 lg:mb-0"
 >
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-line-2 lg:mb-0"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-line-2"
   >
     <header class="mb-line-1">
       <h1>{{ concept.title }}</h1>
     </header>
-    <div class="markdown markdown-sm">
+    <div class="markdown markdown-sm mb-line-1">
       {{ concept.description | markdown | safe }}
+      <p>Read more about this concept below.</p>
     </div>
+    <ul class="list-none text-size--1 space-y-line-1">
+      {% for reading in concept.readings %}
+      <li>
+        <a class="block" href="{{ reading.href }}">
+          <span class="underline">{{ reading.title }}</span>
+          <br />
+          <span class="text-size--2">{{ reading.author }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
   <aside class="col-span-columns lg:col-start-column-8 lg:col-end-margin-2">
     <h2 class="mb-line-1">Tools</h2>
@@ -81,7 +93,7 @@
       {% endif %}
     </ul>
   </aside>
-  <div class="col-span-columns hidden lg:block mt-8">
+  <div class="col-span-columns hidden lg:block mt-12">
     <p class="text-center text-size--4">
       © 2020 RadicalxChange Foundation Ltd.
     </p>
