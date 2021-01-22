@@ -148,7 +148,7 @@ stuff: |
     class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen bg-black lg:bg-transparent overflow-y-auto"
   >
     <div
-      class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 pt-margin pb-32 lg:pt-28 lg:pb-lg/ymargin"
+      class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 pt-margin pb-48 lg:pt-28 lg:pb-lg/ymargin"
     >
       <div class="hidden lg:flex lg:justify-end mb-3">
         <a href="#">
@@ -166,7 +166,7 @@ stuff: |
         <div class="relative lg:w-2/3 lg:text-size--4">
           <div
             data-rxctv-info
-            class="z-10 absolute top-0 left-0 w-full max-h-full flex flex-col lg:rounded-tvinfo bg-black text-white"
+            class="z-10 absolute top-0 left-0 w-full flex flex-col lg:rounded-tvinfo bg-black text-white"
           >
             <div
               class="flex-none flex items-center justify-between h-line-1 lg:h-line-3 lg:px-6"
@@ -177,9 +177,11 @@ stuff: |
               </button>
             </div>
             <div
-              class="max-h-0 open:max-h-none flex-grow lg:px-6 open:mb-6 md overflow-y-auto transition-height duration-700"
+              class="hidden lg:block flex-grow max-h-0 open:max-h-none lg:px-6 open:mb-6 overflow-y-auto transition-height duration-700"
             >
-              {{ stuff | markdown | safe }}
+              <div class="markdown">
+                {{ stuff | markdown | safe }}
+              </div>
             </div>
           </div>
           <div class="pt-line-1 lg:pt-line-3 mt-3">
@@ -189,7 +191,7 @@ stuff: |
               frameborder="0"
               allowfullscreen="true"
               scrolling="no"
-              class="lg:rounded-twitch"
+              class="bg-black lg:rounded-twitch"
             ></iframe>
           </div>-->
             <div class="youtube-container">
@@ -198,6 +200,7 @@ stuff: |
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                class="bg-black lg:rounded-twitch"
               ></iframe>
             </div>
           </div>
@@ -207,11 +210,11 @@ stuff: |
             src="https://app.sli.do/event/nsiukl2x"
             height="100%"
             width="100%"
-            class="slido-iframe lg:rounded-slido"
+            class="slido-iframe bg-black lg:rounded-slido"
           ></iframe>
         </div>
-        <div class="block lg:hidden bg-black text-white text-size--4">
-          <div class="md">
+        <div class="block lg:hidden bg-black text-white">
+          <div class="markdown">
             {{ stuff | markdown | safe }}
           </div>
         </div>
@@ -302,6 +305,7 @@ stuff: |
 
   RxcTv.prototype.toggleInfo = function () {
     this.$info.classList.toggle("open");
+    this.$info.classList.toggle("lg:h-full");
     if (this.$info.classList.contains("open")) {
       this.$infobtn.innerText = "Close";
     } else {
