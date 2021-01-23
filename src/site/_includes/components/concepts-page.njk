@@ -51,7 +51,7 @@
       {{ concept.description | markdown | safe }}
       <p>Read more about this concept below.</p>
     </div>
-    <ul class="list-none text-size--1 space-y-line-1">
+    <ul class="list-none text-size--1 space-y-line-1/2">
       {% for reading in concept.readings %}
       <li>
         <a class="block" href="{{ reading.href }}">
