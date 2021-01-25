@@ -1,7 +1,5 @@
 .logo {
-  min-width: 283px;
   width: 90.27vw;
-  max-width: 325px;
 
   @screen lg {
     min-width: 391px; /* <mock-width> * (<font-smallest> / <font-largest>) */
@@ -11,9 +9,7 @@
 }
 
 .logo-short {
-  min-width: 81px;
   width: 25.83vw;
-  max-width: 93px;
 }
 
 .logo-no-min-width {
