@@ -158,6 +158,10 @@
     @apply text-size--1;
   }
 
+  &.markdown-xs {
+    @apply text-size--4;
+  }
+
   .html {
     @apply mt-markdown-md;
 

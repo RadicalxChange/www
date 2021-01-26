@@ -1,7 +1,7 @@
 .twitch-container {
   @apply relative;
   @apply h-0;
-  padding-bottom: 60.967742%;
+  padding-bottom: 56.25%;
 
   iframe {
     @apply absolute;
@@ -25,7 +25,7 @@
 .slido-iframe {
   min-height: 560px;
 
-  @screen lg {
+  @screen xl {
     min-height: auto;
   }
 }

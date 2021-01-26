@@ -45,7 +45,13 @@ module.exports = {
       current: "currentColor",
     },
     extend: {
-      borderRadius: { 50: "50%", oval: "70px" },
+      borderRadius: {
+        50: "50%",
+        oval: "70px",
+        twitch: "38px",
+        slido: "26px",
+        tvinfo: "22px",
+      },
       borderWidth: { 3: "3px" },
       transitionProperty: {
         width: "width",
@@ -67,7 +73,7 @@ module.exports = {
         "line-3": "4.02em",
         "line-5": "6.70em",
       },
-      maxHeight: { tall: "50vw", "75vh": "75vh" },
+      maxHeight: { tall: "50vw", "75vh": "75vh", none: "none" },
       maxWidth: { "75vw": "75vw" },
       boxShadow: {
         "focus-white": "0 0 0 3px rgba(256, 256, 256, 1)",
@@ -196,6 +202,7 @@ module.exports = {
       margin: ["open", "group-hover"],
       width: ["group-hover"],
       maxWidth: ["group-hover"],
+      maxHeight: ["open"],
     },
   },
   plugins: [

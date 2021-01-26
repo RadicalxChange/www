@@ -22,6 +22,8 @@ homeConcepts:
 ---
 
 <!-- prettier-ignore -->
+{% import "components/rxc-tv.njk" as rxcTvWidget %}
+<!-- prettier-ignore -->
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
@@ -97,10 +99,18 @@ homeConcepts:
     >
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf"
+        href="{{ '/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf' if not rxcTv.isOn else '#tv'}}"
       >
+        <!-- prettier-ignore -->
+        {% if not rxcTv.isOn %}
         <h2 class="font-bold">New Paper Out</h2>
         <p>Taiwan: Grassroots Digital Democracy That Works</p>
+        <!-- prettier-ignore -->
+        {% else %}
+        <h2 class="font-bold">Streaming Now</h2>
+        <p>{{ rxcTv.title }}</p>
+        <!-- prettier-ignore -->
+        {% endif %}
       </a>
       <div class="flex-initial hidden lg:block border-b mx-6"></div>
       <div
@@ -123,6 +133,15 @@ homeConcepts:
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
+<!-- prettier-ignore -->
+{% if rxcTv.isOn %}
+{{ rxcTvWidget.render(rxcTv.title, rxcTv.description, rxcTv.slidoUrl) }}
+<script>
+  // prettier-ignore
+  {% include "components/rxc-tv.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endif %}
 <script>
   const Animation = function ($root) {
     this.$root = $root;
