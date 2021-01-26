@@ -55,12 +55,10 @@ module.exports = {
       borderWidth: { 3: "3px" },
       transitionProperty: {
         width: "width",
-        height: "height",
         right: "right",
         "margin-left": "margin-left",
         "clip-path": "clip-path",
         "max-width": "max-width",
-        "max-height": "max-height",
       },
       inset: {
         full: "100%",
@@ -204,7 +202,6 @@ module.exports = {
       margin: ["open", "group-hover"],
       width: ["group-hover"],
       maxWidth: ["group-hover"],
-      height: ["open"],
       maxHeight: ["open"],
     },
   },
