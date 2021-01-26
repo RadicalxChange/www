@@ -44,4 +44,13 @@ module.exports = [
     postAuthor: "RxC Team",
     series: [],
   },
+  {
+    url: "/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf",
+    date: "2020-01-22",
+    title: "Taiwan: Grassroots Digital Democracy That Works",
+    postType: "Paper",
+    postHeader: "Taiwan: Grassroots Digital Democracy That Works",
+    postAuthor: "Divya Siddarth",
+    series: [],
+  },
 ];
