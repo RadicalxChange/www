@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: true,
+    isOn: false,
     title: "Data Agency: Individual or Shared?",
     description: `January 28th, 5:00 pm to 6:30 pm UTC
 
