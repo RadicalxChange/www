@@ -4,10 +4,47 @@
     Technology companies wield highly concentrated power over the way peoples’ data is used, and make enormous profits from it. They can do this because we “bargain” for Big Tech services as if we were all isolated individuals, with “personal” datasets. In fact, the data we produce is always deeply social.  Sharing it affects our friends, families, and communities as much as it affects us.
 
     People should be able to exert democratic collective bargaining power over their data, in order to make joint decisions controlling its use, and negotiate appropriate compensation.
-
-    [Data Freedom Act](https://www.radicalxchange.org/files/DFA.pdf)<br/>
-    [Chapter 5 of Radical Markets](http://radicalmarkets.com/chapters/data-as-labor/)<br/>
-    [Who Owns the Future?](https://www.simonandschuster.com/books/Who-Owns-the-Future/Jaron-Lanier/9781451654974)
+  readings:
+    - title: Data Dignity at RadicalxChange
+      author: M Eifler, Vi Hart
+      href: https://theartofresearch.org/data-dignity-at-radicalxchange/
+      date: "2019-06-08T04:00:00.000Z"
+    - title:
+        "Bottom-Up Data Trusts: Disturbing the ‘One Size Fits All’ Approach to Data
+        Governance"
+      author: Sylvie Delacroix. Neil Lawrence
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3265315
+      date: "2018-11-09T05:00:00.000Z"
+    - title: Data workers of the world, unite
+      author: The Economist
+      href: https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite
+      date: "2018-07-07T04:00:00.000Z"
+    - title: Who Owns the Future?
+      author: Jaron Lanier
+      href: https://en.wikipedia.org/wiki/Who_Owns_the_Future%3F
+      date: "2013"
+    - title: The Data Freedom Act
+      author: RadicalxChange Foundation Ltd.
+      href: https://www.radicalxchange.org/kiosk/papers/data-freedom-act.pdf
+      date: "2019"
+    - title:
+        "Data Leverage: A Framework for Empowering the Public in its Relationship
+        with Technology Companies"
+      author: Nicholas Vincent, Hanlin Li, Nicole Tilly, Stevie Chancellor, Brent Hecht
+      href: https://arxiv.org/abs/2012.09995
+      date: "2020-12-18T05:00:00.000Z"
+    - title: The Automation Charade
+      author: Astra Taylor
+      href: https://logicmag.io/failure/the-automation-charade/
+      date: "2018-08-01T04:00:00.000Z"
+    - title: "Solving the Social Dilemma: The Data Freedom Act"
+      author: Matt Prewitt, Leon Erichsen
+      href: https://www.radicalxchange.org/kiosk/blog/solving-the-social-dilemma/
+      date: "2020-11-05T05:00:00.000Z"
+    - title: "Chapter 5 of Radical Markets"
+      author: Eric A. Posner, E. Glen Weyl
+      href: http://radicalmarkets.com/chapters/data-as-labor/
+      date: "2018"
   tools:
     - title: Ocean Protocol
       href: https://oceanprotocol.com/
@@ -32,10 +69,72 @@
   description: |
     Quadratic Voting (QV)  is a redesigned voting method reflecting the intensity of people's preferences in collective decisions. It greatly mitigates tyranny-of-the-majority and factional control problems.
 
-    Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on. 
-
-    [Chapter 2 of Radical Markets](http://radicalmarkets.com/chapters/radical-democracy/)<br/>
-    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)
+    Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on.
+  readings:
+    - title: "Quadratic Payments: A Primer"
+      author: Vitalik Buterin
+      href: https://vitalik.ca/general/2019/12/07/quadratic.html
+      date: "2019-12-07T05:00:00.000Z"
+    - title: "Agonistics: Thinking The World Politically"
+      author: Chantal Mouffe
+      href: https://www.barnesandnoble.com/w/agonistics-chantal-mouffe/1113507188
+      date: "2013"
+    - title:
+        "A Decision Theoretic Approach to Understanding Survey Response: Likert vs.
+        Quadratic Voting for Attitudinal Research"
+      author: Charlotte Cavaillé et al.
+      href: https://lawreview.uchicago.edu/sites/lawreview.uchicago.edu/files/3Chen_WEB_FINAL.pdf
+      date: "1905-07-11T05:00:00.000Z"
+    - title: Democracy Squared
+      author: Eric A. Posner, E. Glen Weyl
+      href: https://www.vanderbiltlawreview.org/2015/03/voting-squared-quadratic-voting-in-democratic-politics/
+      date: "2015-03-19T04:00:00.000Z"
+    - title: Experimental Voting Effort Aims to Break Ethereum Governance Gridlock
+      author: Rachel Rose O’Leary
+      href: https://www.coindesk.com/experimental-voting-effort-aims-break-ethereum-governance-gridlock
+      date: "2018-05-23T04:00:00.000Z"
+    - title: On Collusion
+      author: Vitalik Buterin
+      href: https://vitalik.ca/general/2019/04/03/collusion.html
+      date: "2019-04-03T04:00:00.000Z"
+    - title: "Quadratic Voting and the Public Good: Introduction"
+      author: Eric A. Posner, E. Glen Weyl
+      href: https://link.springer.com/article/10.1007%2Fs11127-017-0404-5
+      date: "2017-02-06T05:00:00.000Z"
+    - title: Quadratic Voting in the Wild
+      author: David Quarfoot et al.
+      href: http://www.sci.sdsu.edu/crmse/msed/papers/Quarfoot2.pdf
+      date: "2017-02-14T05:00:00.000Z"
+    - title: "Quadratic Voting: A New Way to Govern Blockchains for Enterprises"
+      author: Sherman Lee
+      href: https://www.forbes.com/sites/shermanlee/2018/05/30/quadratic-voting-a-new-way-to-govern-blockchains-for-enterprises/#1760146b6ef8
+      date: "2018-05-30T04:00:00.000Z"
+    - title:
+        "QV or Not QV? That is the Question: Some Skepticism about Radical Egalitarian
+        Voting Markets"
+      author: Richard L. Hasen
+      href: https://lawreview.uchicago.edu/publication/qv-or-not-qv-question-some-skepticism-about-radical-egalitarian-voting-marketss
+      date: "1905-07-10T05:00:00.000Z"
+    - title: Towards a Connected Society
+      author: Danielle Allen
+      href: https://lsa.umich.edu/social-solutions/diversity-democracy/oci-series/excerpts/volume-i/toward-a-connected-society.html
+      date: "2018-02-28T05:00:00.000Z"
+    - title: "Quadratic Voting in Colorado: 2020"
+      author: Leon Erichsen, Matt Prewitt
+      href: https://www.radicalxchange.org/kiosk/blog/quadratic-voting-in-colorado-2020/
+      date: "2020-01-04T05:00:00.000Z"
+    - title: The Handbook for Radical Local Democracy
+      author: Matt Prewitt, Paul Healy
+      href: https://www.radicalxchange.org/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+      date: "2019"
+    - title: "Chapter 2 of Radical Markets"
+      author: Eric A. Posner, E. Glen Weyl
+      href: http://radicalmarkets.com/chapters/radical-democracy/
+      date: "2018"
+    - title: Between Abundance and Scarcity
+      author: Matt Prewitt
+      href: https://www.radicalxchange.org/kiosk/blog/between-scarcity-and-abundance/
+      date: "2020-04-15T04:00:00.000Z"
   tools:
     - title: Government Technology Agency (Singapore)
       href: https://qv.geek.sg/
@@ -74,11 +173,28 @@
   description: |
     Quadratic Funding (QF) is a more democratic and scalable form of matching funding for public goods, i.e. any projects valuable to large groups of people and accessible to the general public.
 
-    “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. QF optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In QF, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] QF strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public. 
-
-    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)<br/>
-    [Liberal Radicalism: A Flexible Design For Philanthropic Matching Funds](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656)<br/>
-    [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html)
+    “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. QF optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In QF, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] QF strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public.
+  readings:
+    - title: "Pairwise coordination subsidies: a new quadratic funding design"
+      author: Vitalik Buterin
+      href: https://ethresear.ch/t/pairwise-coordination-subsidies-a-new-quadratic-funding-design/5553
+      date: "2019-06-19T04:00:00.000Z"
+    - title: "Liberal Radicalism: A Flexible Design for Philanthropic Matching Funds"
+      author: Vitalik Buterin et al.
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3243656
+      date: "2018-09-18T04:00:00.000Z"
+    - title: Pairwise Coordination Subsidies
+      author: Vitalik Buterin
+      href: https://ethresear.ch/t/pairwise-coordination-subsidies-a-new-quadratic-funding-design/5553
+      date: "2019-06-19T04:00:00.000Z"
+    - title: "Quadratic Payments: A Primer"
+      author: Vitalik Buterin
+      href: https://vitalik.ca/general/2019/12/07/quadratic.html
+      date: "2019-12-07T05:00:00.000Z"
+    - title: The Handbook for Radical Local Democracy
+      author: Matt Prewitt, Paul Healy
+      href: https://www.radicalxchange.org/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+      date: "2019"
   tools:
     - title: Clr.fund
       href: https://clr.fund/
@@ -113,11 +229,59 @@
     Partial common ownership is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
 
     In RxC’s partial common ownership systems, assets belong to no one and everyone. An asset’s current possessor, must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
-
-    [Chapter 1 of Radical Markets](http://radicalmarkets.com/chapters/property-is-monopoly/)<br/>
-    [The Handbook for Radical Local Democracy](https://www.radicalxchange.org/files/The_Handbook_for_Radical_Local_Democracy.pdf)<br/>
-    [Reimagining Property](https://medium.com/blockchannel/reimagining-property-fbce9d3832a4)<br/>
-    [Depreciating Licenses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810)
+  readings:
+    - title: Ownership and Punishment
+      author: Matt Prewitt
+      href: https://lawreview.uchicago.edu/sites/lawreview.uchicago.edu/files/9Prewitt_WEB_FINAL.pdf
+      date: "1905-07-11T05:00:00.000Z"
+    - title: Property Attachments
+      author: Lee Anne Fennell
+      href: https://lawreview.uchicago.edu/publication/property-attachmentss
+      date: "2019-05-28T04:00:00.000Z"
+    - title: Property in Radical Markets
+      author: Katrina Miriam Wyman
+      href: https://lawreview.uchicago.edu/publication/property-radical-marketss
+      date: "1905-07-11T05:00:00.000Z"
+    - title: Progress and Poverty
+      author: Henry George
+      href: https://en.wikipedia.org/wiki/Progress_and_Poverty
+      date: "1879"
+    - title: The 'Socialism' of Léon Walras and His Economic Thinking
+      author: Léon Walras
+      href: https://www.jstor.org/stable/3486110?seq=1#page_scan_tab_contents
+      date: "1980"
+    - title: Reimagining Property
+      author: Matt Prewitt
+      href: https://medium.com/blockchannel/reimagining-property-fbce9d3832a4
+      date: "2018-08-06T04:00:00.000Z"
+    - title: Do not design for speculators
+      author: Tony Sheng
+      href: https://tonysheng.substack.com/p/dont-design-speculators
+      date: "2018-07-16T04:00:00.000Z"
+    - title: Does the Henry George Theorem Provide a Practical Guide to Optimal City Size?
+      author: Richard Arnott
+      href: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1536-7150.2004.00334.x
+      date: "2017-09-17T04:00:00.000Z"
+    - title: Redesigning Spectrum Licenses to Encourage Innovation and Investment
+      author: Paul Milgrom, E. Glen Weyl, Anthony Lee Zhang
+      href: https://www.gsb.stanford.edu/faculty-research/working-papers/redesigning-spectrum-licenses-encourage-innovation-investment
+      date:
+    - title: Between Abundance and Scarcity
+      author: Matt Prewitt
+      href: https://www.radicalxchange.org/kiosk/blog/between-scarcity-and-abundance/
+      date: "2020-04-15T04:00:00.000Z"
+    - title: The Handbook for Radical Local Democracy
+      author: Matt Prewitt, Paul Healy
+      href: https://www.radicalxchange.org/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+      date: "2019"
+    - title: "Chapter 1 of Radical Markets"
+      author: Eric A. Posner, E. Glen Weyl
+      href: http://radicalmarkets.com/chapters/property-is-monopoly/
+      date: "2018"
+    - title: "Depreciating Licenses"
+      author: E. Glen Weyl, Anthony Lee Zhang
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810
+      date: "2018-01-24"
   tools:
     - title: Harberger Ads
       href: https://hads.xyz/
@@ -152,9 +316,38 @@
 - title: Radical Antitrust
   slug: radical-antitrust
   description: |
-    Radical Antitrust is about looking for cartels in unexpected places, and recognizing that consumers and workers can be harmed through more than simply price. For example, markets could be made fairer if there were more stakeholder representation on boards; more thoughtful limits on mergers and acquisitions; and fewer investors exerting control over multiple companies within an industry. 
-
-    [Chapter 4 of Radical Markets](http://radicalmarkets.com/chapters/dismembering-the-octopus/)
+    Radical Antitrust is about looking for cartels in unexpected places, and recognizing that consumers and workers can be harmed through more than simply price. For example, markets could be made fairer if there were more stakeholder representation on boards; more thoughtful limits on mergers and acquisitions; and fewer investors exerting control over multiple companies within an industry.
+  readings:
+    - title:
+        "The Agency Costs of Agency Capitalism: Activist Investors and the Revaluation
+        of Governance Rights"
+      author: Ronald J. Gilson and Jeffrey N. Gordon
+      href: https://www.cbs.dk/files/cbs.dk/agency_cost_ssrn_3-13-13_0.pdf
+      date: "2013-03-11T04:00:00.000Z"
+    - title: A Proposal to Limit the Anti-Competitive Power of Institutional Investors
+      author: Eric A. Posner, Fiona M. Scott Morton, E. Glen Weyl
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2872754
+      date: "2016-11-22T05:00:00.000Z"
+    - title: Antitrust Remedies for Labor Market Power
+      author: Suresh Naidu, Eric A. Posner, E. Glen Weyl
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3129221
+      date: "2018-02-24T05:00:00.000Z"
+    - title: Horizontal Shareholding and Antitrust Policy
+      author: Fiona Scott Morton, Herbert Hovenkamp
+      href: https://www.yalelawjournal.org/feature/horizontal-shareholding-and-antitrust-policy
+      date: "2018-05-01T04:00:00.000Z"
+    - title: Productivity and Misallocation in General Equilibrium
+      author: David Rezza Baqaee, Emmanuel Farhi
+      href: https://www.nber.org/papers/w24007
+      date: "2017-11-01T04:00:00.000Z"
+    - title: Anticompetitive Effects of Common Ownership
+      author: José Azar, Martin C. Schmalz, Isabel Tecu
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2427345
+      date: "2014-04-22T04:00:00.000Z"
+    - title: "Chapter 4 of Radical Markets"
+      author: Eric A. Posner, E. Glen Weyl
+      href: http://radicalmarkets.com/chapters/dismembering-the-octopus/
+      date: "2018"
   tools: []
 - title: Intersectional Social Identity
   slug: intersectional-social-identity
@@ -164,11 +357,33 @@
     1. Each participant has a digital journal listing all their identifying information. (Only that individual has access to the complete set of data in that store.)
     2. For each input X in their digital journal, each participant also stores the set of other participants who also keep copies of X.
     3. Each participant stores a degree of credit. They are willing to offer other participants credit as “social collateral” to give their identity statements credibility.
-
-    [Intersectional Social Data](https://blog.radicalxchange.org/blog/posts/2019-10-24-uh78r5/)<br/>
-    [Motivating The Case For Decentralized Social Identity: Part One](https://blog.radicalxchange.org/blog/posts/2019-06-06-d4utdx/)<br/>
-    [Motivating The Case For Decentralized Social Identity: Part Two](https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42)<br/>
-    [Motivating The Case For Decentralized Social Identity: Part Three](https://blog.radicalxchange.org/blog/posts/2019-06-08-51kyu5/)
+  readings:
+    - title: Verifying Identity as a Social Intersection
+      author: Nicole Immorlica, Matthew O. Jackson, E. Glen Weyl
+      href: https://ssrn.com/abstract=33754366
+      date: "2019-01-04T05:00:00.000Z"
+    - title: "Motivating the Case for Decentralized Social Identity: Part One"
+      author: E. Glen Weyl, Lucas Geiger, Kaliya Young
+      href: https://www.radicalxchange.org/kiosk/blog/2019-06-08-51kyu5/
+      date: "2019-06-08T04:00:00.000Z"
+    - title: "Motivating The Case for Decentralized Social Identity. Part Two"
+      author: E. Glen Weyl, Lucas Geiger, Kaliya Young
+      href: https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42
+      date: "2019-06-07T04:00:00.000Z"
+    - title: "Motivating the Case for Decentralized Social Identity: Part Three"
+      author: E. Glen Weyl, Lucas Geiger, Kaliya Young
+      href: https://www.radicalxchange.org/kiosk/blog/2019-06-08-51kyu5/
+      date: "2019-06-08T04:00:00.000Z"
+    - title:
+        A Review of Subjective Approaches for Sybil-Resistance in Proof of Personhood
+        Protocols
+      author: Divya Siddarth, Sergey Ivliev, Santiago Siri, Paula Berman
+      href: https://arxiv.org/pdf/2008.05300.pdf
+      date: "2020"
+    - title: Intersectional Social Data
+      author: Lucas Geier, Kaliya Young, E. Glen Weyl
+      href: https://www.radicalxchange.org/kiosk/blog/2019-10-24-uh78r5/
+      date: "2019-10-24T04:00:00.000Z"
   tools:
     - title: Equality Protocol / Democracy Earth
       href: https://democracy.earth/
