@@ -42,6 +42,8 @@ stuff: |
 ---
 
 <!-- prettier-ignore -->
+{% import "components/rxc-tv.njk" as rxcTvWidget %}
+<!-- prettier-ignore -->
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
@@ -117,10 +119,18 @@ stuff: |
     >
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf"
+        href="{{ '/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf' if not rxcTv.isOn else '#tv'}}"
       >
+        <!-- prettier-ignore -->
+        {% if not rxcTv.isOn %}
         <h2 class="font-bold">New Paper Out</h2>
         <p>Taiwan: Grassroots Digital Democracy That Works</p>
+        <!-- prettier-ignore -->
+        {% else %}
+        <h2 class="font-bold">Streaming Now</h2>
+        <p>{{ rxcTv.title }}</p>
+        <!-- prettier-ignore -->
+        {% endif %}
       </a>
       <div class="flex-initial hidden lg:block border-b mx-6"></div>
       <div
@@ -143,183 +153,15 @@ stuff: |
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
-<template id="rxcTvTemplate">
-  <section
-    class="z-50 fixed top-0 left-0 grid grid-cols-layout-4 lg:grid-cols-layout-12 w-full h-screen bg-black lg:bg-transparent overflow-y-auto"
-  >
-    <div
-      class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 lg:px-4 pt-margin pb-48 lg:pt-28 lg:pb-lg/ymargin"
-    >
-      <div class="hidden lg:flex lg:justify-end mb-3">
-        <a href="#">
-          <img
-            width="35"
-            height="33"
-            src="/images/ui/close-circle.svg"
-            alt="close"
-          />
-        </a>
-      </div>
-      <div
-        class="flex flex-col xl:flex-row space-y-3 xl:space-y-0 xl:space-x-3"
-      >
-        <div class="relative xl:w-2/3 lg:text-size--4">
-          <div
-            data-rxctv-info
-            class="z-10 absolute top-0 left-0 w-full flex flex-col lg:rounded-tvinfo bg-black text-white transition-height duration-700"
-          >
-            <div
-              class="flex-none flex items-center justify-between h-line-1 lg:h-line-3 lg:px-6"
-            >
-              <h1 class="truncate mr-2">
-                Land Value: Past, Present, and Future, Land Value: Past,
-                Present, and Future, Land Value: Past, Present, and Future, Land
-                Value: Past, Present, and Future
-              </h1>
-              <button data-rxctv-infobtn class="hidden lg:block uppercase">
-                Info
-              </button>
-            </div>
-            <div
-              class="hidden lg:block flex-grow max-h-0 open:max-h-none lg:px-6 open:mb-6 overflow-y-auto"
-            >
-              <div class="markdown markdown-xs">
-                {{ stuff | markdown | safe }}
-              </div>
-            </div>
-          </div>
-          <div class="pt-line-1 lg:pt-line-3 mt-3">
-            <!--<div class="twitch-container">
-            <iframe
-              src="https://player.twitch.tv/?channel=radicalxchangepathos&parent=localhost"
-              frameborder="0"
-              allowfullscreen="true"
-              scrolling="no"
-              class="bg-black lg:rounded-twitch"
-            ></iframe>
-          </div>-->
-            <div class="youtube-container">
-              <iframe
-                src="https://www.youtube.com/embed/pA96m95T3NA"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                class="bg-black lg:rounded-twitch"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="xl:w-1/3">
-          <iframe
-            src="https://app.sli.do/event/nsiukl2x"
-            height="100%"
-            width="100%"
-            class="slido-iframe bg-black lg:rounded-slido"
-          ></iframe>
-        </div>
-        <div class="block lg:hidden bg-black text-white">
-          <div class="markdown markdown-sm">
-            {{ stuff | markdown | safe }}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="fixed bottom-0 left-0 flex justify-center lg:hidden w-full pt-margin pb-bottom-button bg-black"
-    >
-      <a
-        class="py-3 px-8 bg-black rounded-oval text-white text-size--1 uppercase"
-        href="#"
-      >
-        Close
-      </a>
-    </div>
-  </section>
-</template>
+<!-- prettier-ignore -->
+{% if rxcTv.isOn %}
+{{ rxcTvWidget.render(rxcTv.title, rxcTv.description, rxcTv.slidoUrl) }}
 <script>
-  const RxcTv = function () {
-    this.$template = document.getElementById(
-      "rxcTvTemplate"
-    ).content.firstElementChild;
-
-    this.$root = null;
-    this.$info = null;
-    this.$infobtn = null;
-
-    this.toggleInfo = this.toggleInfo.bind(this);
-  };
-
-  RxcTv.prototype.init = function () {
-    window.addEventListener("hashchange", (event) => {
-      if (new URL(event.newURL).hash === "#tv") {
-        this.open();
-      } else {
-        this.close();
-      }
-    });
-
-    if (location.hash === "#tv") {
-      this.open();
-    } else {
-      if (window.innerWidth >= 768) {
-        const data = this.loadData();
-        if (!data || !data.isClosed) {
-          location = "#tv";
-        }
-      }
-    }
-  };
-
-  RxcTv.prototype.loadData = function () {
-    const maybeItem = sessionStorage.getItem("rxcTv");
-    if (maybeItem) {
-      return JSON.parse(maybeItem);
-    } else {
-      return undefined;
-    }
-  };
-
-  RxcTv.prototype.storeData = function (data) {
-    sessionStorage.setItem("rxcTv", JSON.stringify(data));
-  };
-
-  RxcTv.prototype.open = function () {
-    this.$root = this.$template.cloneNode(true);
-    this.$info = this.$root.querySelector("[data-rxctv-info]");
-    this.$infobtn = this.$root.querySelector("[data-rxctv-infobtn]");
-    this.$infobtn.addEventListener("click", this.toggleInfo);
-
-    document.body.insertBefore(this.$root, document.body.firstChild);
-    bodyScrollLock.disableBodyScroll(this.$root);
-
-    this.storeData({ isClosed: false });
-  };
-
-  RxcTv.prototype.close = function () {
-    bodyScrollLock.enableBodyScroll(this.$root);
-    this.$root.remove();
-
-    this.$infobtn.removeEventListener("click", this.toggleInfo);
-    this.$infobtn = null;
-    this.$info = null;
-    this.$root = null;
-
-    this.storeData({ isClosed: true });
-  };
-
-  RxcTv.prototype.toggleInfo = function () {
-    this.$info.classList.toggle("open");
-    this.$info.classList.toggle("lg:h-full");
-    if (this.$info.classList.contains("open")) {
-      this.$infobtn.innerText = "Close";
-    } else {
-      this.$infobtn.innerText = "Info";
-    }
-  };
-
-  const rxcTV = new RxcTv();
-  rxcTV.init();
+  // prettier-ignore
+  {% include "components/rxc-tv.js" %}
 </script>
+<!-- prettier-ignore -->
+{% endif %}
 <script>
   const Animation = function ($root) {
     this.$root = $root;
