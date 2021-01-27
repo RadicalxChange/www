@@ -99,12 +99,12 @@ homeConcepts:
     >
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="{{ '/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf' if not rxcTv.isOn else '#tv'}}"
+        href="{{ 'https://www.eventbrite.com/e/radicalxchange-livestream-data-agency-individual-or-shared-tickets-137720966117?aff=eemailordconf&utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&utm_source=eventbrite&utm_term=viewevent' if not rxcTv.isOn else '#tv'}}"
       >
         <!-- prettier-ignore -->
         {% if not rxcTv.isOn %}
-        <h2 class="font-bold">New Paper Out</h2>
-        <p>Taiwan: Grassroots Digital Democracy That Works</p>
+        <h2 class="font-bold">RxC Livestream</h2>
+        <p>{{ rxcTv.title }}</p>
         <!-- prettier-ignore -->
         {% else %}
         <h2 class="font-bold">Streaming Now</h2>
