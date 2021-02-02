@@ -100,6 +100,7 @@ homeConcepts:
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
         href="{{ '/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf' if not rxcTv.isOn else '#tv'}}"
+        target="{{ '_blank' if not rxcTv.isOn else ''}}"
       >
         <!-- prettier-ignore -->
         {% if not rxcTv.isOn %}
