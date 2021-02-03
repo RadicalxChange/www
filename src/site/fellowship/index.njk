@@ -1,0 +1,220 @@
+---
+layout: layouts/_base.njk
+title: Fellowship
+headerText: RxC FELLOWSHIP
+introductionBlurb: |
+  The RadicalxChange Fellowship is a 10-week program that brings together mission-driven individuals and teams working on projects that aim to strengthen civil society and rethink public goods.
+
+  The 2021 program will explore four key topic areas with fellows: governance, property rights, data rights, and competition through interactive talks, networking, and mentorship. Our aim is to provide fellows with a platform and contacts to supercharge their projects to deliver meaningful economic and societal change.
+sponsorsBlurb: |
+  This program is made possible with the help of our sponsors Ocean Protocol and Streamr.
+fellowsBlurb: |
+  We believe that positive and comprehensive change is only possible through the inclusion of diverse voices and backgrounds. The selected 16 fellows, working on 12 projects, come from multiple areas of endeavor, such as activism, art, design, entrepreneurship, investing, policymaking, research and technology.
+mentorsBlurb: |
+  RadicalxChange Foundation strives to empower people and organizations in the global RxC movement to grow their ideas and initiatives. Feel free to contact us (info@rxc.com) for any RxC related matters, including consultancy work related to democratic innovation or institutional design.
+stayUpdatedBlurb: |
+  Want to stay updated about how to apply for the next Fellowship cohort? Join our mailing list below.
+sponsors:
+  - name: Ocean Protocol
+    href: "https://oceanprotocol.com/"
+    image: "ocean-protocol-logo.svg"
+  - name: Streamr
+    href: "https://streamr.network/"
+    image: "streamr-logo.svg"
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{% call introduction.render(headerText, introductionBlurb) %}
+<div>
+  <a
+    href="https://www.youtube.com/watch?v=MCk5HA4bV0M"
+    target="_blank"
+    class="thick-link uppercase"
+    >Watch the Q&A</a
+  >
+</div>
+<!-- prettier-ignore -->
+{% endcall %}
+<section
+  id="fellows"
+  class="bg-black grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0"
+>
+  <div class="col-span-columns mt-12">
+    <div class="html">
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
+      {% for s in fellows2021 %}
+      <div class="tile" style="background-image: url('/images/fellows-2021/{{ s.image }}');"></div>
+      {% endfor %}
+    </div>
+    </div>
+  </div>
+  <div
+    class="lg:block col-span-columns"
+  >
+    <h2 class="p-9 lg:p-12 text-center text-white">Introducing the 2021 Fellowship Cohort!</h2>
+  </div>
+</section>
+<section
+  id="sponsors"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 mt-margin"
+>
+  <div
+    class="col-start-column-1 col-end-gutter-4"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Sponsors</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 space-y-8"
+  >
+    <div class="markdown">
+      {{ sponsorsBlurb | markdown | safe }}
+    </div>
+    <ul class="text-size--1 inline-block">
+      {%- for sponsor in sponsors -%}
+      <img
+        src="/images/fellowship-sponsors/{{ sponsor.image }}"
+        class="inline-block mr-8 lg:mr-12 w-1/4 lg:w-1/6"
+      >
+      {%- endfor -%}
+    </ul>
+    <div class="text-size--1 inline-block">
+      <a
+        href="mailto:support@radicalxchange.org?subject=Becoming%20an%20RxC%20Fellowship%20sponsor&body=I'd%20like%20to%20become%20a%20RadicalxChange%20Fellowship%20sponsor."
+        target="_blank"
+        class="thick-link uppercase"
+        >Become a sponsor</a
+      >
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="fellows-bios"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 mt-margin"
+>
+  <div class="lg:block col-start-column-1 col-end-gutter-4">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">2021 Fellows</h2>
+  </div>
+  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
+    <div class="markdown">
+      {{ fellowsBlurb | markdown | safe }}
+    </div>
+  </div>
+  <ol class="col-span-full mt-12">
+    <!-- prettier-ignore -->
+    {% for s in fellows2021 %}
+    <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
+      <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4">
+        <div class="col-start-column-1 col-end-gutter-2 lg:col-start-column-1 lg:col-end-gutter-8">
+          <h1 class="uppercase">{{ s.name }}</h1>
+          <h2>{{ s.project }}</h2>
+        </div>
+        <div class="text-right col-start-column-3 col-end-margin-2 lg:col-start-column-9 lg:col-end-margin-2">
+          <p>{{ s.location }}</p>
+        </div>
+      </button>
+      <div class="hidden row-start-2 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4 pb-12 lg:pb-16">
+        <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
+          <div class="markdown markdown-sm">
+            {{ s.bio | markdown | safe }}
+          </div>
+          {% if s.links.length > 0 %}
+          <ul class="flex space-x-4 my-12">
+            {% for link in s.links %}
+            <li>
+              <a class="thick-link uppercase" href="{{ link.href }}">
+                {{ link.text }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+        <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+          <div class="tile" style="background-image: url('/images/fellows-2021/{{ s.image }}');"></div>
+        </div>
+      </div>
+      <div class="col-span-columns lg:border-b"></div>
+    </div>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ol>
+</section>
+<section
+  id="mentors"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 mt-margin"
+>
+  <div class="col-start-column-1 col-end-gutter-4">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Mentors</h2>
+  </div>
+  <div class="markdown col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
+    {{ mentorsBlurb | markdown | safe }}
+  </div>
+  <div class="col-span-columns">
+    <div class="html">
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      {% for s in fellowshipMentors2021 %}
+      <div class="tile" style="background-image: url('/images/fellowship-mentors-2021/{{ s.image }}');">
+        <div
+          class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-2 bg-white "
+        >
+          <h3 class="text-size--2">{{ s.name }}</h3>
+          <p class="text-size--4">{{ s.project }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="stay updated"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-4 lg:pb-8 my-margin"
+>
+  <div class="col-start-column-1 col-end-gutter-4">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Stay Updated</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 space-y-8"
+  >
+    <div class="markdown">
+      {{ stayUpdatedBlurb | markdown | safe }}
+    </div>
+  </div>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  var collapsibles = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "grid") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "grid";
+      }
+    });
+  }
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
