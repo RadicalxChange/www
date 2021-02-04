@@ -1,0 +1,187 @@
+- name: Paula Berman
+  project: Taiwan Civic Tech
+  location: Brazil
+  bio: |
+    Paula Berman is a part of BlockchainGov, an ERC project studying the impact of blockchain technology on local and global governance. Prior to that, she worked implementing participatory technologies and researching decentralized identity protocols with Democracy Earth Foundation.
+  image: paula-berman.jpeg
+  links:
+    - text: Twitter
+      href: https://twitter.com/_paulaberman
+
+- name: Deborah Tien
+  project: Taiwan Civic Tech
+  location: Australia
+  bio: |
+    Deborah Tien works on strategy, operations, community-building, and program/people management experiences at the intersection of sustainable development, participatory design, and technology for impact. She lived in Arusha, Tanzania, for almost five years, building an ecosystem for inclusive innovation in Africa at Twende - a Tanzanian design hub for local-scale innovation - first as Director of Development, then as Executive Director.
+  image: deborah-tien.jpg
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/deborahtien/
+
+- name: Megan Bogia
+  project: Epistemic Infrastructure
+  location: United States
+  bio: |
+    Megan Bogia is a doctoral student studying political philosophy at Harvard University Graduate School of Education. Her research examines the variation in higher education's role in a democracy and an epistemic ecosystem. In her spare time, she likes to try new knitting patterns.
+  image: megan-bogia.jpg
+  links:
+
+- name: Tracey Bowen
+  project: CONTROLR
+  location: Indonesia
+  bio: |
+    Tracey Bowen is the Founder of CONTROLR - an inclusive, decentralized Data Union, a Data Researcher at the South West Creative Technology Network, Mozilla Creative Media Award Recipient, and Post Grad Law student – oh yeah, and Mercury Music Prize Winner (a very, very long time ago)!
+  image: tracey-bowen.png
+  links:
+    - text: Twitter
+      href: https://twitter.com/Onallee
+
+- name: Jesus Cepeda
+  project: OS City
+  location: Mexico
+  bio: |
+    Jesus Cepeda cares about the future of cities and governance models. He holds a Ph.D. in Artificial Intelligence. As a technology entrepreneur, he's exploring technology such as cloud computing, artificial intelligence, and blockchain to build the future of government.
+  image: jesus-cepeda.jpg
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/chuycepeda
+    - text: Twitter
+      href: https://twitter.com/chuycepeda
+    - text: Website
+      href: https://chuycepeda.com/
+
+- name: Jack Henderson
+  project: The Global Centre for Risk and Innovation (GCRI)
+  location: United States
+  bio: |
+    After graduating from Princeton, where Jack Henderson studied economics and co-founded RadicalxChange Students, he is now working to bring about a future for global governance of diverse empowerment and pluralistic cooperation that can deliver flourishing for all. He’s a big believer in Hegelian synthesis and local knowledge, public goods, and people-public-private partnerships.
+  image: jack-henderson.png
+  links:
+    - text: Twitter
+      href: https://twitter.com/jackhendersn
+
+- name: Saeed Valadbaygi
+  project: The Global Centre for Risk and Innovation (GCRI)
+  location: Canada
+  bio: |
+    Saeed Valadbaygi is passionate about justice, human rights, social impact, sustainability, and good governance. With a background in political science and cognitive science disciplines, he researches and specializes in democratic institution-building, political economy, and the role of exponential technologies in responding to state fragility, financial volatility, and population displacement.
+  image: saeed-valadbaygi.jpg
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/saeedbaygi/
+    - text: Twitter
+      href: https://twitter.com/SaeedBaygi
+
+- name: Sidney Li
+  project: Hamilton
+  location: United States
+  bio: |
+    Sidney Li grew up in the San Francisco Bay Area and is currently residing in Baltimore. He graduated from Harvard College in 2019 and is a tech strategy consultant at McKinsey & Co. Sidney has a deep interest in practical ethics. He first met Glen Weyl as a fellow at the Safra Center for Ethics, and is writing an article on free speech on social media.
+  image: sidney-li.jfif
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/sidneycli/
+
+- name: Allison Tam
+  project: Hamilton
+  location: United Kingdom | United States
+  bio: |
+    Allison Tam recently graduated from MIT in 2020 with a BS/MS in computer science. She currently works at DeepMind as a research engineer. Her previous research was in developing machine learning methods for drug discovery. Having grown up in the Bay Area, Allison also loves hiking and spending time in the outdoors.
+  image: allison-tam.jpg
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/allison-tam/
+
+- name: Elena V. Molina
+  project: Arthaus
+  location: Cuba | Spain
+  bio: |
+    Elena V. Molina is an educator, filmmaker, and cyborg currently living between Havana and Barcelona. Personally committed to connecting Cubans artists with the international art scene, she co-founded Arthaus, a Havana-based artist residency and art space.
+  image: elena-molina.jpg
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/elenavmolina/
+    - text: Twitter
+      href: https://twitter.com/elenavmolina
+
+- name: Sato Ozawa
+  project: Unbuilt Ventures
+  location: Australia
+  bio: |
+    Sato Ozawa was born and raised in the Greater Tokyo Area and earned his bachelor’s degrees in Policy Management from Keio SFC. Sato started his career as an entrepreneur who naively attempted to solve Japanese animators’ scarcity by implementing a currency system with reciprocity on a decentralized peer-to-peer network. Followed by a ten-year career as a graphic designer and art director, Sato resumed his serial entrepreneurship. He launched a sports apparel brand, a creative agency, and a fintech start-up. Then Sato co-founded “Unbuilt Ventures” and tapped into an investment career.
+  image: sato-ozawa.jpg
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/satoozawa
+    - text: Twitter
+      href: https://twitter.com/SatoOzawa
+
+- name: Douglas Powell
+  project: S8R Software Cooperative Starter Kit
+  location: United States
+  bio: |
+    Douglas Powell has worked on media software projects for 20 years. He has always been an informal market macroeconomics student. The growth of Ethereum has turned him into an economics hobbyist. He hopes that using cryptocurrency economics hobbyists has a similar impact on economics as personal computer hobbyists had on computing.
+  image: douglas-powell.jpg
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/doug-powell-65b441b5/
+    - text: Twitter
+      href: https://twitter.com/zerodoug1
+    - text: Twitter (ssociety)
+      href: https://twitter.com/ssociety00
+
+- name: Emilio Sempris
+  project: MIO
+  location: Panama
+  bio: |
+    Emilio Sempris is the former Minister of Environment of Panama. Fmr Director-General of the Water Center for the Humid Tropics of Latin America and the Caribbean, under UNESCO. He has 20 years of experience in international development, climate change, and sustainability. He is also the co-founder of the Brundtland School.
+  image: emilio-sempris.jpg
+  links:
+    - text: Academia
+      href: https://independent.academia.edu/EmilioSempris
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/emiliosempris/
+    - text: Twitter
+      href: https://twitter.com/EmilioSempris
+
+- name: Aaron Soskin
+  project: Govrn
+  location: United States
+  bio: |
+    Aaron Soskin is the Founder and CEO of Govrn, a campaign finance platform that uses incentives based solutions to help solve today’s most significant issues.  Before working on Govrn, Aaron worked as a Management Consultant for four years.
+  image: aaron-soskin.jpg
+  links:
+    - text: Github
+      href: https://github.com/amsos
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/aaron-soskin-3b342965/
+    - text: Twitter
+      href: https://twitter.com/AaronSoskin
+
+- name: Christine Vandevoorde
+  project: Govrn
+  location: United States
+  bio: |
+    Christine Vandevoorde is a civic data scientist with an environmental engineering background. She earned her M.S. at NYU’s Center for Urban Science and Progress, where she studied public entrepreneurship, machine learning for civic problems, and collective innovation in the public sector.
+  image: christine-vandevoorde.jpg
+  links:
+    - text: Github
+      href: https://github.com/christinevandev
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/christinevandev/
+    - text: Twitter
+      href: https://twitter.com/TinaVandev
+
+- name: Raymond Yeh
+  project: Infrastructure for Anonymous Goods Distribution
+  location: Singapore
+  bio: |
+    Raymond Yeh is a technologist whose work focuses on data privacy & identity. As a software engineer at GovTech Singapore, his work includes the first nationwide digital education credential, OpenCerts. He's also an author at geek.sg on blockchain and zero-knowledge proofs.
+  image: raymond-yeh.jpg
+  links:
+    - text: Github
+      href: https://github.com/yehjxraymond
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/raymondyeh/
+    - text: Twitter
+      href: https://twitter.com/geek_sg
