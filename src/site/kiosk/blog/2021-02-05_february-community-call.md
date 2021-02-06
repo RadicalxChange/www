@@ -57,11 +57,3 @@ If you’d rather read the minutes, please scroll down.
 
 - The next community call will be Wednesday, March 3, 2021.
 - Submit a topic you’d like to talk about or hear of, please fill out the form on [Typeform](https://community910829.typeform.com/to/OhB3aq5h).
-
-## Past Calls
-
-- **February 2021:** [recording](https://youtu.be/SAYxmV6FGLA)
-- **January 2021**
-- **December 2021:** [recording + minutes](https://www.radicalxchange.org/kiosk/blog/rxc-december-community-call-recording-notes/)
-- **November 2021:** [recording + minutes](https://www.radicalxchange.org/kiosk/blog/rxc-november-community-call-recording-notes/)
-- **October 2021:** [recording + minutes](https://www.radicalxchange.org/kiosk/blog/rxc-october-community-call-recording-notes/)
