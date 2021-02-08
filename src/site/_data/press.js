@@ -1,6 +1,22 @@
 const press = [
   {
     title:
+      "Tendências de tecnologia para 2021",
+    href:
+      "https://www1.folha.uol.com.br/colunas/ronaldolemos/2021/01/tendencias-de-tecnologia-para-2021.shtml",
+    publication: "Fohla De S.Paulo",
+    date: "2021-01-03T00:00:00.000Z",
+  },
+  {
+    title:
+      "Daten-Genossenschaften statt Daten-Eigentum",
+    href:
+      "https://background.tagesspiegel.de/digitalisierung/daten-genossenschaften-statt-daten-eigentum",
+    publication: "Tagesspiel",
+    date: "2021-01-25T00:00:00.000Z",
+  },
+  {
+    title:
       "This Political Conversation With Vitalik Buterin Shows How Ethereum Could Change the World",
     href:
       "https://www.coindesk.com/this-political-conversation-with-vitalik-buterin-shows-how-ethereum-could-change-the-world",
