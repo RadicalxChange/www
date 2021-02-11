@@ -121,7 +121,7 @@ const press = [
     title: "How Civic Technology Can Help Stop a Pandemic",
     href:
       "https://www.foreignaffairs.com/articles/asia/2020-03-20/how-civic-technology-can-help-stop-pandemic",
-    publication: "Foreigh Affairs",
+    publication: "Foreign Affairs",
     date: "2020-03-30T00:00:00.000Z",
   },
   {
