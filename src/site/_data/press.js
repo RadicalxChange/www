@@ -1,6 +1,14 @@
 const press = [
   {
     title:
+      "A View Of The Future Of Our Data",
+    href:
+      "https://www.noemamag.com/a-view-of-the-future-of-our-data/",
+    publication: "Noema",
+    date: "2021-02-23T00:00:00.000Z",
+  },
+  {
+    title:
       "Tendências de tecnologia para 2021",
     href:
       "https://www1.folha.uol.com.br/colunas/ronaldolemos/2021/01/tendencias-de-tecnologia-para-2021.shtml",
