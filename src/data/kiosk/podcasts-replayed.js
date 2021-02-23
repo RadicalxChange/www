@@ -14,7 +14,7 @@ async function fetchEpisodes() {
     date: item.isoDate,
     title: item.title,
     postType: "Podcast",
-    postHeader: item.title,
+    postHeader: item.title.split(" | ")[0],
     postAuthor: item.itunes.author,
     series: [],
   }));
