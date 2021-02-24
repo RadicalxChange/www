@@ -142,9 +142,9 @@
         If you want to do a casual Quadratic Vote with your peers, this web app is a great choice. It is all straightforward from election creation, email / link invites, and quadratic voting to result analysis. You can even build your own interface on top of it using the associated APIs.
       links:
         - text: Twitter
-          href: https://github.com/yehjxraymond/qv-app
-        - text: GitHub
           href: https://twitter.com/GovTechSG
+        - text: GitHub
+          href: https://github.com/yehjxraymond/qv-app
     - title: Sheets Template for Quadratic Voting
       href: https://drive.google.com/drive/folders/1trnAJ1XOLyZk-0mgedZ3G98MQH3xrL0m?usp=sharing
       description: |
@@ -364,7 +364,7 @@
       date: "2019-01-04T05:00:00.000Z"
     - title: "Motivating the Case for Decentralized Social Identity: Part One"
       author: E. Glen Weyl, Lucas Geiger, Kaliya Young
-      href: https://www.radicalxchange.org/kiosk/blog/2019-06-08-51kyu5/
+      href: https://www.radicalxchange.org/kiosk/blog/2019-06-06-d4utdx/
       date: "2019-06-08T04:00:00.000Z"
     - title: "Motivating The Case for Decentralized Social Identity. Part Two"
       author: E. Glen Weyl, Lucas Geiger, Kaliya Young
