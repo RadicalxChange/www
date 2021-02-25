@@ -25,7 +25,7 @@
       date: "2013"
     - title: The Data Freedom Act
       author: RadicalxChange Foundation Ltd.
-      href: https://www.radicalxchange.org/kiosk/papers/data-freedom-act.pdf
+      href: /kiosk/papers/data-freedom-act.pdf
       date: "2019"
     - title:
         "Data Leverage: A Framework for Empowering the Public in its Relationship
@@ -39,7 +39,7 @@
       date: "2018-08-01T04:00:00.000Z"
     - title: "Solving the Social Dilemma: The Data Freedom Act"
       author: Matt Prewitt, Leon Erichsen
-      href: https://www.radicalxchange.org/kiosk/blog/solving-the-social-dilemma/
+      href: /kiosk/blog/solving-the-social-dilemma/
       date: "2020-11-05T05:00:00.000Z"
     - title: "Chapter 5 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
@@ -99,7 +99,7 @@
       date: "2019-04-03T04:00:00.000Z"
     - title: "Quadratic Voting and the Public Good: Introduction"
       author: Eric A. Posner, E. Glen Weyl
-      href: https://www.radicalxchange.org/kiosk/papers/qv-and-the-public-good.pdf
+      href: /kiosk/papers/qv-and-the-public-good.pdf
       date: "2017-02-06T05:00:00.000Z"
     - title: Quadratic Voting in the Wild
       author: David Quarfoot et al.
@@ -121,11 +121,11 @@
       date: "2018-02-28T05:00:00.000Z"
     - title: "Quadratic Voting in Colorado: 2020"
       author: Leon Erichsen, Matt Prewitt
-      href: https://www.radicalxchange.org/kiosk/blog/quadratic-voting-in-colorado-2020/
+      href: /kiosk/blog/quadratic-voting-in-colorado-2020/
       date: "2020-01-04T05:00:00.000Z"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
-      href: https://www.radicalxchange.org/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+      href: /kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
       date: "2019"
     - title: "Chapter 2 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
@@ -133,7 +133,7 @@
       date: "2018"
     - title: Between Abundance and Scarcity
       author: Matt Prewitt
-      href: https://www.radicalxchange.org/kiosk/blog/between-scarcity-and-abundance/
+      href: /kiosk/blog/between-scarcity-and-abundance/
       date: "2020-04-15T04:00:00.000Z"
   tools:
     - title: Government Technology Agency (Singapore)
@@ -181,7 +181,7 @@
       date: "2019-06-19T04:00:00.000Z"
     - title: "Liberal Radicalism: A Flexible Design for Philanthropic Matching Funds"
       author: Vitalik Buterin et al.
-      href: https://www.radicalxchange.org/kiosk/papers/liberal-radicalism.pdf
+      href: /kiosk/papers/liberal-radicalism.pdf
       date: "2018-09-18T04:00:00.000Z"
     - title: Pairwise Coordination Subsidies
       author: Vitalik Buterin
@@ -193,7 +193,7 @@
       date: "2019-12-07T05:00:00.000Z"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
-      href: https://www.radicalxchange.org/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+      href: /kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
       date: "2019"
   tools:
     - title: Clr.fund
@@ -232,7 +232,7 @@
   readings:
     - title: Ownership and Punishment
       author: Matt Prewitt
-      href: https://www.radicalxchange.org/kiosk/papers/ownership-and-punishment.pdf
+      href: /kiosk/papers/ownership-and-punishment.pdf
       date: "1905-07-11T05:00:00.000Z"
     - title: Property Attachments
       author: Lee Anne Fennell
@@ -264,15 +264,15 @@
       date: "2017-09-17T04:00:00.000Z"
     - title: Redesigning Spectrum Licenses to Encourage Innovation and Investment
       author: Paul Milgrom, E. Glen Weyl, Anthony Lee Zhang
-      href: https://www.radicalxchange.org/kiosk/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf
+      href: /kiosk/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf
       date: "2017-09-17T04:00:00.000Z"
     - title: Between Abundance and Scarcity
       author: Matt Prewitt
-      href: https://www.radicalxchange.org/kiosk/blog/between-scarcity-and-abundance/
+      href: /kiosk/blog/between-scarcity-and-abundance/
       date: "2020-04-15T04:00:00.000Z"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
-      href: https://www.radicalxchange.org/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+      href: /kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf
       date: "2019"
     - title: "Chapter 1 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
@@ -326,11 +326,11 @@
       date: "2013-03-11T04:00:00.000Z"
     - title: A Proposal to Limit the Anti-Competitive Power of Institutional Investors
       author: Eric A. Posner, Fiona M. Scott Morton, E. Glen Weyl
-      href: https://www.radicalxchange.org/kiosk/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf
+      href: /kiosk/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf
       date: "2016-11-22T05:00:00.000Z"
     - title: Antitrust Remedies for Labor Market Power
       author: Suresh Naidu, Eric A. Posner, E. Glen Weyl
-      href: https://www.radicalxchange.org/kiosk/papers/antitrust-remedies-for-labor-market-power.pdf
+      href: /kiosk/papers/antitrust-remedies-for-labor-market-power.pdf
       date: "2018-02-24T05:00:00.000Z"
     - title: Horizontal Shareholding and Antitrust Policy
       author: Fiona Scott Morton, Herbert Hovenkamp
@@ -360,28 +360,28 @@
   readings:
     - title: Verifying Identity as a Social Intersection
       author: Nicole Immorlica, Matthew O. Jackson, E. Glen Weyl
-      href: https://www.radicalxchange.org/kiosk/papers/verifying-identity-as-a-social-intersection.pdf
+      href: /kiosk/papers/verifying-identity-as-a-social-intersection.pdf
       date: "2019-01-04T05:00:00.000Z"
     - title: "Motivating the Case for Decentralized Social Identity: Part One"
       author: E. Glen Weyl, Lucas Geiger, Kaliya Young
-      href: https://www.radicalxchange.org/kiosk/blog/2019-06-06-d4utdx/
+      href: /kiosk/blog/2019-06-06-d4utdx/
       date: "2019-06-08T04:00:00.000Z"
     - title: "Motivating The Case for Decentralized Social Identity. Part Two"
       author: E. Glen Weyl, Lucas Geiger, Kaliya Young
-      href: https://medium.com/@lucas.geiger/motivating-the-case-for-decentralized-social-identity-part-two-4ea75f3c7c42
+      href: /kiosk/blog/2019-06-07-motivating-the-case-for-decentralized-social-identity-part-2/
       date: "2019-06-07T04:00:00.000Z"
     - title: "Motivating the Case for Decentralized Social Identity: Part Three"
       author: E. Glen Weyl, Lucas Geiger, Kaliya Young
-      href: https://www.radicalxchange.org/kiosk/blog/2019-06-08-51kyu5/
+      href: /kiosk/blog/2019-06-08-51kyu5/
       date: "2019-06-08T04:00:00.000Z"
     - title:
         Who Watches the Watchmen? A Review of Subjective Approaches for Sybil-Resistance in Proof of Personhood Protocols
       author: Divya Siddarth, Sergey Ivliev, Santiago Siri, Paula Berman
-      href: https://www.radicalxchange.org/kiosk/papers/who-watches-the-watchmen.pdf
+      href: /kiosk/papers/who-watches-the-watchmen.pdf
       date: "2020-11-12T04:00:00.000Z"
     - title: Intersectional Social Data
       author: Lucas Geier, Kaliya Young, E. Glen Weyl
-      href: https://www.radicalxchange.org/kiosk/blog/2019-10-24-uh78r5/
+      href: /kiosk/blog/2019-10-24-uh78r5/
       date: "2019-10-24T04:00:00.000Z"
   tools:
     - title: Equality Protocol / Democracy Earth
