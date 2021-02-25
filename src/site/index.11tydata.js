@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: false,
+    isOn: true,
     title: "Data Coalitions in Development: Let's Unite!",
     description: `February 25th, 3:00 pm to 4:30 pm UTC
 
