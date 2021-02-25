@@ -16,7 +16,7 @@ Tracey Bowen is the Founder of CONTROLR - an inclusive, decentralized Data Union
 
 ## Moderator
 
-Crystal Good is an artist, advocate, and entrepreneur. She is a member of the Affrilachian Poets, a group of writers and artists whose creations and existence combat the erasure of African American identity in the Appalachian region, and Irene McKinney Scholar, and author of Valley Girl. She is the founder and CEO of Mixxed Media, a government relations consulting firm that leverages social & media engagement strategies for mission-driven organizations. Her advocacy bridges the issues that range from the arts, environmental, women's health, Appalachian economic development, and agriculture. She is passionate about digital and political literacy and has created a digital commons for voters to express their concerns through her self-made performance art character, Social Media Senator for the Digital District of West Virginia. She is a former member of the award-winning literary avant-garde jazz band Heroes Are Gang Leaders. She was a presenter for the 2013 TEDx conference in Lewisburg on “West Virginia and Quantum Physics” and the 2019 TEDx Conference in Corbit, Kentucky. She is the recipient of a 2020 Telly Award with the West Virginia Department of Education and 84 Agency.`,
+Crystal Good (she/her/hers) is hard to put in just one box. She prefers Affrilachian artist, digital media entrepreneur, and Social Media Senator For The Digital District Of West Virginia, a completely made-up but totally real Office. She is a West Virginia University Newstart Fellow and the author of “Valley Girl.” Follow her on Twitter, @cgoodwoman.`,
     slidoUrl: "https://app.sli.do/event/qppszbbm",
   },
 };
