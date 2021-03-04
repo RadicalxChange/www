@@ -9,7 +9,7 @@ series:
 ---
 
 **Subject:** February Community Call<br/>
-**Date:** Wednesday, February 3, 2020<br/>
+**Date:** Wednesday, February 3, 2021<br/>
 **Time:** 12pm EST<br/>
 **Participants:** 34 people<br/>
 **Location:** Zoom meeting ([recording available here](https://youtu.be/SAYxmV6FGLA))<br/>
