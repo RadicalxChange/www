@@ -1,3 +1,6 @@
+# renamed Kiosk to Media
+/kiosk /media/
+
 # Legacy redirects from Website 1.0 2020
 /2019-berlin /events/2019-berlin/
 /2019-berlin/replay /events/2019-berlin/
