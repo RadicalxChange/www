@@ -14,7 +14,7 @@ module.exports = [
     title: "Roadmap to Pandemic Resilience",
     postType: "Paper",
     postHeader: "Roadmap to Pandemic Resilience",
-    postAuthor: "RxC Team",
+    postAuthor: "Danielle Allen, E. Glen Weyl, et al",
     series: [],
   },
   {
@@ -41,7 +41,7 @@ module.exports = [
     title: "Data Dividends Working Paper",
     postType: "Paper",
     postHeader: "Data Dividends Working Paper",
-    postAuthor: "RxC Team",
+    postAuthor: "Yakov Feygin, Brent Hecht, Nicholas Vincent, et al",
     series: [],
   },
   {
