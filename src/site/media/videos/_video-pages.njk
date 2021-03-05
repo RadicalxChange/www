@@ -9,7 +9,7 @@ eleventyComputed:
   title: "{{ video.title | safe  }}"
   postHeader: "{{ video.postHeader | safe }}"
   postAuthor: "{{ video.postAuthor | safe  }}"
-permalink: "kiosk/videos/{{ video.title | slug | safe }}/"
+permalink: "media/videos/{{ video.title | slug | safe }}/"
 ---
 
 <!-- prettier-ignore -->
@@ -37,7 +37,7 @@ permalink: "kiosk/videos/{{ video.title | slug | safe }}/"
 <!-- prettier-ignore -->
 {{ scrollIndicator.render() }}
 <!-- prettier-ignore -->
-{{ closeButton.render("/kiosk") }}
+{{ closeButton.render("/media") }}
 <div
   class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
 >

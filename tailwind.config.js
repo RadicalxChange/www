@@ -189,7 +189,7 @@ module.exports = {
         "auto/1fr": "auto minmax(0, 1fr)",
         "auto/1fr/auto": "auto minmax(0, 1fr) auto",
         "auto/auto/1fr/auto": "auto auto minmax(0, 1fr) auto",
-        kiosk: "repeat(4, min-content)",
+        media: "repeat(4, min-content)",
         footer: "auto minmax(0, 24rem) auto",
       },
     },
