@@ -7,10 +7,10 @@ const posthtml = require("posthtml");
 const beautifyHtml = require("js-beautify").html;
 const uslug = require("uslug");
 const lodashChunk = require("lodash.chunk");
-const libraryData = require("./src/data/kiosk/library");
-const papersData = require("./src/data/kiosk/papers");
-const fetchPodcastsReplayed = require("./src/data/kiosk/podcasts-replayed");
-const fetchPodcastsRadicalxchanges = require("./src/data/kiosk/podcasts-radicalxchanges");
+const libraryData = require("./src/data/media/library");
+const papersData = require("./src/data/media/papers");
+const fetchPodcastsReplayed = require("./src/data/media/podcasts-replayed");
+const fetchPodcastsRadicalxchanges = require("./src/data/media/podcasts-radicalxchanges");
 
 module.exports = function (config) {
   const isDev = process.env.RXC_DEV === "true";
@@ -77,12 +77,12 @@ module.exports = function (config) {
     return array.slice(...args);
   });
 
-  config.addCollection("kiosk", async (collectionApi) => {
-    // Combine disparate source for kiosk and sort them
+  config.addCollection("media", async (collectionApi) => {
+    // Combine disparate source for media and sort them
     const all = []
       .concat(
         collectionApi
-          .getFilteredByGlob("src/site/kiosk/announcements/*")
+          .getFilteredByGlob("src/site/media/announcements/*")
           .map((item) => ({
             url: item.url,
             date: item.data.date,
@@ -94,7 +94,7 @@ module.exports = function (config) {
             series: item.data.series || [],
           })),
         collectionApi
-          .getFilteredByGlob("src/site/kiosk/blog/*")
+          .getFilteredByGlob("src/site/media/blog/*")
           .map((item) => ({
             url: item.url,
             date: item.data.date,
@@ -106,7 +106,7 @@ module.exports = function (config) {
             series: item.data.series || [],
           })),
         collectionApi
-          .getFilteredByGlob("src/site/kiosk/videos/*")
+          .getFilteredByGlob("src/site/media/videos/*")
           .map((item) => ({
             url: item.url,
             date: item.data.date,

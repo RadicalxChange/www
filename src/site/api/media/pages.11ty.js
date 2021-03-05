@@ -2,12 +2,12 @@ class Pages {
   data() {
     return {
       pagination: {
-        data: "collections.kiosk",
+        data: "collections.media",
         size: 1,
         alias: "thePage",
       },
       permalink: ({ thePage }) => {
-        return `/api/kiosk/${thePage.filter}-${thePage.pageNumber + 1}.json`;
+        return `/api/media/${thePage.filter}-${thePage.pageNumber + 1}.json`;
       },
       eleventyExcludeFromCollections: true,
     };

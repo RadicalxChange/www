@@ -1,4 +1,4 @@
-.kiosk {
+.media {
   &_border-b {
     padding-bottom: calc(theme("spacing.1") - 1px);
     border-bottom: solid 1px theme("colors.black");
