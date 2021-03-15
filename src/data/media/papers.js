@@ -1,6 +1,6 @@
 module.exports = [
   {
-    url: "/kiosk/papers/The_Handbook_for_Radical_Local_Democracy.pdf",
+    url: "/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf",
     date: "2020-05-27",
     title: "The Handbook for Radical Local Democracy",
     postType: "Paper",
@@ -9,7 +9,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/RoadmapToPandemicResilience.pdf",
+    url: "/media/papers/RoadmapToPandemicResilience.pdf",
     date: "2020-04-20",
     title: "Roadmap to Pandemic Resilience",
     postType: "Paper",
@@ -18,7 +18,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/RxC-Radically-Rethinking-Public-Purchasing.pdf",
+    url: "/media/papers/RxC-Radically-Rethinking-Public-Purchasing.pdf",
     date: "2019-12-30",
     title: "Rethinking Public Purchasing",
     postType: "Paper",
@@ -27,7 +27,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/Data-Freedom-Act.pdf",
+    url: "/media/papers/Data-Freedom-Act.pdf",
     date: "2020-05-27",
     title: "Data Freedom Act",
     postType: "Paper",
@@ -36,7 +36,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/data-dividends-working-paper.pdf",
+    url: "/media/papers/data-dividends-working-paper.pdf",
     date: "2020-08-06",
     title: "Data Dividends Working Paper",
     postType: "Paper",
@@ -45,7 +45,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf",
+    url: "/media/papers/Taiwan_Grassroots_Digital_Democracy_That_Works_V1_DIGITAL_.pdf",
     date: "2020-01-22",
     title: "Taiwan: Grassroots Digital Democracy That Works",
     postType: "Paper",
@@ -54,7 +54,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/a-crossroads-not-an-island.pdf",
+    url: "/media/papers/a-crossroads-not-an-island.pdf",
     date: "2019-04-20",
     title: "A Crossroads, not an Island: A Response to Hanoch Dagan",
     postType: "Paper",
@@ -63,7 +63,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/a-history-for-the-future.pdf",
+    url: "/media/papers/a-history-for-the-future.pdf",
     date: "2019-04-20",
     title: "A History for the Future: Radical Markets and the Work of History",
     postType: "Paper",
@@ -72,7 +72,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf",
+    url: "/media/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf",
     date: "2016-11-22",
     title: "A Proposal to Limit the Anti-Competitive Power of Institutional Investors",
     postType: "Paper",
@@ -81,7 +81,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/antitrust-remedies-for-labor-market-power.pdf",
+    url: "/media/papers/antitrust-remedies-for-labor-market-power.pdf",
     date: "2018-02-24",
     title: "Antitrust Remedies for Labor Market Power",
     postType: "Paper",
@@ -90,7 +90,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/equality-of-power-and-fair-public-decision-making.pdf",
+    url: "/media/papers/equality-of-power-and-fair-public-decision-making.pdf",
     date: "2019-07-17",
     title: "Equality of Power and Fair Public Decision-Making",
     postType: "Paper",
@@ -99,7 +99,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/liberal-radicalism.pdf",
+    url: "/media/papers/liberal-radicalism.pdf",
     date: "2018-09-18",
     title: "Liberal Radicalism: A Flexible Design for Philanthropic Matching Funds",
     postType: "Paper",
@@ -108,7 +108,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/ownership-and-punishment.pdf",
+    url: "/media/papers/ownership-and-punishment.pdf",
     date: "2018-09-18",
     title: "Ownership and Punishment",
     postType: "Paper",
@@ -117,7 +117,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/qv-and-the-public-good.pdf",
+    url: "/media/papers/qv-and-the-public-good.pdf",
     date: "2017-02-06",
     title: "Quadratic Voting and the Public Good: Introduction",
     postType: "Paper",
@@ -126,7 +126,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/radicalxchange-an-academic-agenda.pdf",
+    url: "/media/papers/radicalxchange-an-academic-agenda.pdf",
     date: "2019-01-21",
     title: "RadicalxChange: An Academic Agenda",
     postType: "Paper",
@@ -135,7 +135,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf",
+    url: "/media/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf",
     date: "2017-09-17",
     title: "Redesigning Spectrum Licenses to Encourage Innovation and Investment",
     postType: "Paper",
@@ -144,7 +144,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/verifying-identity-as-a-social-intersection.pdf",
+    url: "/media/papers/verifying-identity-as-a-social-intersection.pdf",
     date: "2019-01-04",
     title: "Verifying Identity as a Social Intersection",
     postType: "Paper",
@@ -153,7 +153,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/kiosk/papers/who-watches-the-watchmen.pdf",
+    url: "/media/papers/who-watches-the-watchmen.pdf",
     date: "2020-11-12",
     title: "Who Watches the Watchmen? A Review of Subjective Approaches for Sybil-Resistance in Proof of Personhood Protocols",
     postType: "Paper",

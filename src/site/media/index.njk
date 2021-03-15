@@ -1,7 +1,7 @@
 ---
 layout: layouts/_base.njk
-title: Kiosk
-headerText: RxC KIOSK
+title: Media
+headerText: RxC MEDIA
 ---
 
 <!-- prettier-ignore -->
@@ -30,7 +30,7 @@ headerText: RxC KIOSK
       <input
         id="filter-blog"
         type="checkbox"
-        name="kiosk-filter"
+        name="media-filter"
         value="Blog"
       /><label class="pl-2 mr-4 text-size--1" for="filter-blog">Blog</label>
     </div>
@@ -38,7 +38,7 @@ headerText: RxC KIOSK
       <input
         id="filter-papers"
         type="checkbox"
-        name="kiosk-filter"
+        name="media-filter"
         value="Papers"
       /><label class="pl-2 mr-4 text-size--1" for="filter-papers">Papers</label>
     </div>
@@ -46,7 +46,7 @@ headerText: RxC KIOSK
       <input
         id="filter-announcements"
         type="checkbox"
-        name="kiosk-filter"
+        name="media-filter"
         value="Announcements"
       /><label class="pl-2 mr-4 text-size--1" for="filter-announcements"
         >Announcements</label
@@ -56,7 +56,7 @@ headerText: RxC KIOSK
       <input
         id="filter-podcastsvideos"
         type="checkbox"
-        name="kiosk-filter"
+        name="media-filter"
         value="Podcasts / Videos"
       /><label class="pl-2 mr-4 text-size--1" for="filter-podcastsvideos"
         >Podcasts / Videos</label
@@ -64,32 +64,32 @@ headerText: RxC KIOSK
     </div>
   </form>
   <ol
-    id="kiosk-list"
-    class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-kiosk gap-x-8 gap-y-16 mb-8"
+    id="media-list"
+    class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-media gap-x-8 gap-y-16 mb-8"
   ></ol>
   <div class="col-span-columns pb-4 border-b text-size--1">
-    <button id="kiosk-load-button" class="uppercase">Load more</button>
+    <button id="media-load-button" class="uppercase">Load more</button>
   </div>
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
-<template id="kiosk-item-template">
-  <li data-kiosk>
-    <a class="flex flex-col justify-between h-full kiosk_border-b" href="#">
+<template id="media-item-template">
+  <li data-media>
+    <a class="flex flex-col justify-between h-full media_border-b" href="#">
       <div class="mb-8">
-        <p data-kiosk-item-prop="postType" class="text-size--1"></p>
+        <p data-media-item-prop="postType" class="text-size--1"></p>
         <h2
-          data-kiosk-item-prop="postHeader"
+          data-media-item-prop="postHeader"
           class="leading-snug text-size-2 min-h-line-3 lg:min-h-line-5"
         ></h2>
       </div>
       <div>
         <p
-          data-kiosk-item-prop="postAuthor"
+          data-media-item-prop="postAuthor"
           class="text-size--2 lg:text-size--4"
         ></p>
         <p
-          data-kiosk-item-prop="readableDate"
+          data-media-item-prop="readableDate"
           class="text-size--2 lg:text-size--4"
         ></p>
       </div>
@@ -97,25 +97,25 @@ headerText: RxC KIOSK
   </li>
 </template>
 <script>
-  const Kiosk = function () {
-    this.$kioskList = document.getElementById("kiosk-list");
+  const Media = function () {
+    this.$mediaList = document.getElementById("media-list");
     this.$itemTemplate = document.getElementById(
-      "kiosk-item-template"
+      "media-item-template"
     ).content.firstElementChild;
     this.$filters = document.querySelectorAll(
-      'input[type=checkbox][name="kiosk-filter"]'
+      'input[type=checkbox][name="media-filter"]'
     );
-    this.$loadButton = document.getElementById("kiosk-load-button");
+    this.$loadButton = document.getElementById("media-load-button");
 
     this.isLoading = false;
 
     const shouldUseCache = history.state && history.state.cached;
-    const maybeKioskCache = sessionStorage.getItem("kiosk");
-    if (shouldUseCache && maybeKioskCache) {
-      const kioskData = JSON.parse(maybeKioskCache);
-      this.checkedFilter = kioskData.checkedFilter;
-      this.items = kioskData.items;
-      this.nextPage = kioskData.nextPage;
+    const maybeMediaCache = sessionStorage.getItem("media");
+    if (shouldUseCache && maybeMediaCache) {
+      const mediaData = JSON.parse(maybeMediaCache);
+      this.checkedFilter = mediaData.checkedFilter;
+      this.items = mediaData.items;
+      this.nextPage = mediaData.nextPage;
       this.renderFilter();
       for (item of this.items) {
         this.renderItem(item);
@@ -124,20 +124,20 @@ headerText: RxC KIOSK
     } else {
       this.checkedFilter = "All";
       this.items = [];
-      this.nextPage = "/api/kiosk/all-1.json";
+      this.nextPage = "/api/media/all-1.json";
       this.fetchMoreItems();
     }
   };
 
-  Kiosk.prototype.FILTER_API = {
-    All: "/api/kiosk/all-1.json",
-    Blog: "/api/kiosk/blog-1.json",
-    Papers: "/api/kiosk/papers-1.json",
-    Announcements: "/api/kiosk/announcements-1.json",
-    "Podcasts / Videos": "/api/kiosk/podcastsVideos-1.json",
+  Media.prototype.FILTER_API = {
+    All: "/api/media/all-1.json",
+    Blog: "/api/media/blog-1.json",
+    Papers: "/api/media/papers-1.json",
+    Announcements: "/api/media/announcements-1.json",
+    "Podcasts / Videos": "/api/media/podcastsVideos-1.json",
   };
 
-  Kiosk.prototype.init = function () {
+  Media.prototype.init = function () {
     for (const $filter of this.$filters) {
       $filter.addEventListener("change", (event) => this.onFilterChange(event));
     }
@@ -152,7 +152,7 @@ headerText: RxC KIOSK
       // back here naturally
       history.replaceState({ cached: true }, undefined, undefined);
       sessionStorage.setItem(
-        "kiosk",
+        "media",
         JSON.stringify({
           checkedFilter: this.checkedFilter,
           items: this.items,
@@ -162,7 +162,7 @@ headerText: RxC KIOSK
     });
   };
 
-  Kiosk.prototype.onFilterChange = function (event) {
+  Media.prototype.onFilterChange = function (event) {
     // Manage checkbox state
     if (event.target.checked) {
       this.checkedFilter = event.target.value;
@@ -180,7 +180,7 @@ headerText: RxC KIOSK
     this.fetchMoreItems();
   };
 
-  Kiosk.prototype.fetchMoreItems = function () {
+  Media.prototype.fetchMoreItems = function () {
     if (this.isLoading || !this.nextPage) {
       return Promise.resolve();
     }
@@ -208,7 +208,7 @@ headerText: RxC KIOSK
       });
   };
 
-  Kiosk.prototype.renderFilter = function () {
+  Media.prototype.renderFilter = function () {
     for (const $filter of this.$filters) {
       if ($filter.value === this.checkedFilter) {
         $filter.checked = true;
@@ -218,30 +218,30 @@ headerText: RxC KIOSK
     }
   };
 
-  Kiosk.prototype.renderItem = function (item) {
+  Media.prototype.renderItem = function (item) {
     const $item = this.$itemTemplate.cloneNode(true);
 
     const $anchor = $item.children[0];
     $anchor.href = item.url;
-    $anchor.querySelector('[data-kiosk-item-prop="postType"').innerText =
+    $anchor.querySelector('[data-media-item-prop="postType"').innerText =
       item.postType;
-    $anchor.querySelector('[data-kiosk-item-prop="postHeader"').innerText =
+    $anchor.querySelector('[data-media-item-prop="postHeader"').innerText =
       item.postHeader;
-    $anchor.querySelector('[data-kiosk-item-prop="postAuthor"').innerText =
+    $anchor.querySelector('[data-media-item-prop="postAuthor"').innerText =
       item.postAuthor;
-    $anchor.querySelector('[data-kiosk-item-prop="readableDate"').innerText =
+    $anchor.querySelector('[data-media-item-prop="readableDate"').innerText =
       item.readableDate;
 
-    this.$kioskList.appendChild($item);
+    this.$mediaList.appendChild($item);
   };
 
-  Kiosk.prototype.renderReset = function () {
-    while (this.$kioskList.firstChild) {
-      this.$kioskList.removeChild(this.$kioskList.firstChild);
+  Media.prototype.renderReset = function () {
+    while (this.$mediaList.firstChild) {
+      this.$mediaList.removeChild(this.$mediaList.firstChild);
     }
   };
 
-  Kiosk.prototype.renderLoadButton = function (enabled) {
+  Media.prototype.renderLoadButton = function (enabled) {
     if (this.nextPage) {
       this.$loadButton.innerText = "Load more";
       this.$loadButton.disabled = false;
@@ -251,8 +251,8 @@ headerText: RxC KIOSK
     }
   };
 
-  const kiosk = new Kiosk();
-  kiosk.init();
+  const media = new Media();
+  media.init();
 </script>
 <script>
   // prettier-ignore
