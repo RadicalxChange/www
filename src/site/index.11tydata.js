@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: true,
+    isOn: false,
     title: "RadicalxChange Voice: An Introduction",
     description: `March 25th, 5:00 pm to 6:30 pm UTC
 
