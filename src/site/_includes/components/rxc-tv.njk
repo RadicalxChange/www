@@ -19,7 +19,7 @@
       <div
         class="flex flex-col xl:flex-row space-y-3 xl:space-y-0 xl:space-x-3"
       >
-        <div class="relative xl:w-2/3 lg:text-size--4">
+        <div class="relative xl:w-2/3 {{ 'xl:mx-auto' if not slidoUrl }} lg:text-size--4">
           <div
             data-rxctv-info
             class="z-10 absolute top-0 left-0 w-full flex flex-col lg:rounded-tvinfo bg-black text-white"
@@ -54,6 +54,8 @@
             </div>
           </div>
         </div>
+        <!-- prettier-ignore -->
+        {% if slidoUrl %}
         <div class="xl:w-1/3">
           <iframe
             src="{{ slidoUrl }}"
@@ -62,6 +64,8 @@
             class="slido-iframe bg-black lg:rounded-slido"
           ></iframe>
         </div>
+        <!-- prettier-ignore -->
+        {% endif %}
         <div class="block lg:hidden pt-line-1/2 bg-black text-white">
           <div class="markdown markdown-sm">
             {{ description | markdown | safe }}
