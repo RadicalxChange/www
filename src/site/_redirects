@@ -1,3 +1,6 @@
+/fellowship/arthaus-artist-residency /fellowship/public-goods-x-cuba
+/fellowship/mio /fellowship/ama
+
 # renamed Kiosk to Media
 /kiosk /media/
 /kiosk/* /media/:splat

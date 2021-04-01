@@ -97,6 +97,8 @@
   links:
     - text: Website
       href: https://www.os.city/
+    - text: Twitter
+      href: https://twitter.com/oscitylatam
     - text: Contact
       href: mailto:j@os.city
   people:
@@ -201,9 +203,9 @@
         - text: Contact
           href: mailto:allisontam2@gmail.com
 
-- title: Arthaus Artist Residency
-  subtitle: Public Goods x Cuba
-  slug: arthaus-artist-residency
+- title: Public Goods x Cuba
+  subtitle: Arthaus Artist Residency
+  slug: public-goods-x-cuba
   logo: arthaus.png
   names: Elena V. Molina
   locations: Cuba | Spain
@@ -296,8 +298,8 @@
         - text: Twitter (ssociety)
           href: https://twitter.com/ssociety00
 
-- title: MIO
-  slug: MIO
+- title: AMA
+  slug: AMA
   names: Emilio Sempris
   locations: Panama
   shortDescription: |
