@@ -120,8 +120,8 @@ sponsors:
     {% for s in fellows2021 %}
     <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
       <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4">
-        <div class="col-start-column-1 col-end-gutter-2 lg:col-start-column-1 lg:col-end-gutter-8">
-          <h1 class="uppercase">{{ s.title }}</h1>
+        <div class="col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8">
+          <h1 class="uppercase break-words">{{ s.title }}</h1>
           <h2>{{ s.names }}</h2>
         </div>
         <div class="text-right col-start-column-3 col-end-margin-2 lg:col-start-column-9 lg:col-end-margin-2">
@@ -147,10 +147,10 @@ sponsors:
               </div>
               <!-- prettier-ignore -->
               {% if p.links.length > 0 %}
-              <ul class="flex space-x-4 my-12">
+              <ul class="flex flex-wrap space-x-4 my-12">
                 <!-- prettier-ignore -->
                 {% for link in p.links %}
-                <li>
+                <li class="mt-4">
                   <a class="thick-link uppercase" href="{{ link.href }}">
                     {{ link.text }}
                   </a>

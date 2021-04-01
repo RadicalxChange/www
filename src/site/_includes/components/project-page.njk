@@ -45,7 +45,7 @@
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-line-2 lg:mb-0"
   >
     <header class="mb-line-2">
-      <h1 class="font-display text-size-display lg:text-size-lg/display uppercase">
+      <h1 class="font-display text-size-display break-words lg:text-size-lg/display uppercase">
         {{ project.title }}
       </h1>
       {% if project.subtitle %}
@@ -56,7 +56,7 @@
       {{ project.abstract | markdown | safe }}
     </div>
   </div>
-  <aside class="mt-32 col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+  <aside class="lg:mt-32 col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
     {% if project.logo %}
     <img
       class="mx-auto"
@@ -85,10 +85,10 @@
       </div>
       <!-- prettier-ignore -->
       {% if p.links.length > 0 %}
-      <ul class="flex space-x-4 my-12">
+      <ul class="flex flex-wrap space-x-4 my-12">
         <!-- prettier-ignore -->
         {% for link in p.links %}
-        <li>
+        <li class="mt-4">
           <a class="thick-link uppercase" href="{{ link.href }}">
             {{ link.text }}
           </a>
