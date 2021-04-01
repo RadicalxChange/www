@@ -96,7 +96,7 @@
     The public sector touches the life of everyone, improvements in its services lead to better lives, arguably more than any other business. Today, a $400B industry called GovTech is emerging to solve the most pressing public problems using the newest technologies. OS City is a World's Govtech Top 100 Company that uses blockchain and artificial intelligence to help authorities provide citizen-centric digital services. Most GovTech competitors offer straight solutions to digitize governments in some way. What we do is to completely change how governments and citizens interact by offering a modular set of digital services that are interconnected by a new digital identity and verifiable credentials based on blockchain technology. For the long-term, our open source platform will allow people to create their own modular services atop of our platform generating a continuous access to more and better government solutions. Our purpose is to create the future of government.
   links:
     - text: Website
-      href: www.os.city
+      href: https://www.os.city/
     - text: Contact
       href: mailto:j@os.city
   people:
@@ -136,7 +136,7 @@
     GCRI is the missing architecture of global governance, reimagining and strengthening civic technology in the name of radical innovation and empowered citizenries.
   links:
     - text: Website
-      href: therisk.global
+      href: https://therisk.global/
     - text: Twitter
       href: https://twitter.com/RiskCentre
     - text: Contact
@@ -268,21 +268,25 @@
   shortDescription: |
     A collective action platform for funding and scaling cooperatives
   abstract: |
-    The platform provides the following for qualifying common and public good cooperatives and DAOs.
-    Co-op membership system honoring data dignity standards
-    Crowdfunding of proof of concepts and prototypes
-    Easily configure three democratic governance options for cooperative communities
-    Community net profit sharing system open to any member
+    The platform provides the following for qualifying common and public good cooperatives and DAOs:
+
+    - Co-op membership system honoring data dignity standards.
+
+    - Crowdfunding of proof of concepts and prototypes.
+
+    - Easily configure three democratic governance options for cooperative communities.
+
+    - Community net profit sharing system open to any member.
   links:
     - text: Website
-      href: beta-opportunity-coop.org
+      href: http://beta-opportunity-coop.org/
     - text: Contact
       href: mailto:doug@ssociety.org
   people:
     - name: Douglas Powell
       location: United States
       bio: |
-        **Douglas Powell** has worked on media software projects for 20 years. He has always been an informal market macroeconomics student. The growth of Ethereum has turned him into an economics hobbyist. He hopes that using cryptocurrency economics hobbyists has a similar impact on economics as personal computer hobbyists had on computing.
+        **Douglas Powell** has worked on media software projects for 20 years. He has always been an informal market macroeconomics student. The growth of Ethereum has turned him into an economics hobbyist. He hopes that, by using crypto systems, economics hobbyists have a similar impact on economics as PC hobbyists had on computing.
       image: douglas-powell.jpg
       links:
         - text: LinkedIn
