@@ -298,12 +298,16 @@
         - text: Twitter (ssociety)
           href: https://twitter.com/ssociety00
 
-- title: AMA
+- title: Amicable Metropolitan Area (AMA)
   slug: AMA
   names: Emilio Sempris
   locations: Panama
   shortDescription: |
+    AMA´s main objective is to enhance informed civic participation in urban planning and development in Panama´s metropolitan area.  Through geographic information systems, quadratic voting, quadratic funding, and polis, citizens will build plausible economic, social, environmental, and governance scenarios for their streets, communities, townships, and municipalities.  The project will launch online on April 15th, 2021.
   abstract: |
+    City planning and development in emerging economies pose a plethora of sustainable development challenges.  To make matters worse, night crime, school dropouts, economic informality, and health inequity have taken center-stage during the pandemics across the developing world.   The metropolitan area of Panama does not escape this reality.  Current structural urban challenges range from uninformed top-down decision-making and widespread informality to intermittency of public service delivery and inadequate resource allocation.
+
+    Amicable Metropolitan Area (AMA) is introduced here as a framework to co-create a series of social experiments intended to identify, design, and deploy innovative economic, social, environmental, and governance solutions to transform the metropolitan area of Panama into a thriving human settlement.  Through geographic information systems, quadratic voting, quadratic funding, and polis, citizens will build plausible development scenarios for their streets, communities, townships, and municipalities.  The AMA project will launch online on April 15th, 2021.
   people:
     - name: Emilio Sempris
       location: Panama
