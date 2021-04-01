@@ -1,0 +1,123 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% macro render(project, pagination) %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/fellowship") }}
+<div
+  class="z-10 block fixed left-0 bottom-0 mb-bottom-button ml-xmargin lg:ml-lg/xmargin"
+>
+  <a
+    is="a-replace"
+    class="group inline-flex items-center justify-start py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.previous | default(pagination.href.last, true) }}"
+  >
+    <span>←</span>
+    <div
+      class="hidden lg:inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+    >
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      {{ pagination.page.previous.title if pagination.page.previous else pagination.page.last.title }}
+    </div>
+  </a>
+</div>
+<div
+  class="z-10 block fixed right-0 bottom-0 mb-bottom-button mr-xmargin lg:mr-lg/xmargin"
+>
+  <a
+    is="a-replace"
+    class="group inline-flex items-center justify-end py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.next | default(pagination.href.first, true) }}"
+    ><div
+      class="hidden lg:inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+    >
+      {{ pagination.page.next.title if pagination.page.next else pagination.page.first.title }}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <span>→</span>
+  </a>
+</div>
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 content-start lg:content-between lg:min-h-screen pt-margin lg:pt-lg/margin pb-margin lg:pb-2 mb-24 lg:mb-0"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-line-2 lg:mb-0"
+  >
+    <header class="mb-line-2">
+      <h1 class="font-display text-size-display lg:text-size-lg/display uppercase">
+        {{ project.title }}
+      </h1>
+      {% if project.subtitle %}
+      <h2>{{ project.subtitle }}</h2>
+      {% endif %}
+    </header>
+    <div class="markdown markdown-sm mb-line-1">
+      {{ project.abstract | markdown | safe }}
+    </div>
+  </div>
+  <aside class="mt-32 col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+    {% if project.logo %}
+    <img
+      class="mx-auto"
+      src="/images/fellowship-projects-2021/{{ project.logo }}"
+    />
+    {# <div class="tile" style="background-image: url('/images/fellowship-projects-2021/{{ project.logo }}');"></div> #}
+    {% endif %}
+    <ul class="text-size--1 mt-12 text-center">
+      {% for link in project.links %}
+      <li class="mt-4">
+        <a class="thick-link uppercase" href="{{ link.href }}">
+          {{ link.text }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  <!-- prettier-ignore -->
+  {% for p in project.people %}
+  <div class="mt-12 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
+      <h1 class="uppercase">{{ p.name }}</h1>
+      <h2 class="text-size--1">{{ p.location }}</h2>
+      <div class="markdown markdown-sm mt-4">
+        {{ p.bio | markdown | safe }}
+      </div>
+      <!-- prettier-ignore -->
+      {% if p.links.length > 0 %}
+      <ul class="flex space-x-4 my-12">
+        <!-- prettier-ignore -->
+        {% for link in p.links %}
+        <li>
+          <a class="thick-link uppercase" href="{{ link.href }}">
+            {{ link.text }}
+          </a>
+        </li>
+        <!-- prettier-ignore -->
+        {% endfor %}
+      </ul>
+      <!-- prettier-ignore -->
+      {% endif %}
+    </div>
+    <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+      <div class="tile" style="background-image: url('/images/fellows-2021/{{ p.image }}');"></div>
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endfor %}
+  <div class="col-span-columns hidden lg:block mt-16">
+    <p class="text-center text-size--4">
+      © 2020 RadicalxChange Foundation Ltd.
+    </p>
+    <p class="text-center text-size--4">
+      RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
+      not support or oppose candidates for public office or political parties.
+    </p>
+  </div>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endmacro %}
