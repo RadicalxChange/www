@@ -59,8 +59,10 @@
   <aside class="lg:mt-32 col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
     {% if project.logo %}
     <img
-      class="mx-auto"
+      class="mx-auto max-h-72"
       src="/images/fellowship-projects-2021/{{ project.logo }}"
+      height="auto"
+      width="auto"
     />
     {# <div class="tile" style="background-image: url('/images/fellowship-projects-2021/{{ project.logo }}');"></div> #}
     {% endif %}
