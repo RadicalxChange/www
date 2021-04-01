@@ -56,7 +56,9 @@ sponsors:
     <div class="html">
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
       {% for s in fellows2021 %}
-      <div class="tile" style="background-image: url('/images/fellows-2021/{{ s.image }}');"></div>
+        {% for p in s.people %}
+        <div class="tile" style="background-image: url('/images/fellows-2021/{{ p.image }}');"></div>
+        {% endfor %}
       {% endfor %}
     </div>
     </div>
@@ -118,34 +120,54 @@ sponsors:
     {% for s in fellows2021 %}
     <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
       <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4">
-        <div class="col-start-column-1 col-end-gutter-2 lg:col-start-column-1 lg:col-end-gutter-8">
-          <h1 class="uppercase">{{ s.name }}</h1>
-          <h2>{{ s.project }}</h2>
+        <div class="col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8">
+          <h1 class="uppercase break-words">{{ s.title }}</h1>
+          <h2>{{ s.names }}</h2>
         </div>
         <div class="text-right col-start-column-3 col-end-margin-2 lg:col-start-column-9 lg:col-end-margin-2">
-          <p>{{ s.location }}</p>
+          <p>{{ s.locations }}</p>
         </div>
       </button>
       <div class="hidden row-start-2 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4 pb-12 lg:pb-16">
         <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
-          <div class="markdown markdown-sm">
-            {{ s.bio | markdown | safe }}
+          <div class="markdown markdown-sm mb-4">
+            {{ s.shortDescription | markdown | safe }}
           </div>
-          {% if s.links.length > 0 %}
-          <ul class="flex space-x-4 my-12">
-            {% for link in s.links %}
-            <li>
-              <a class="thick-link uppercase" href="{{ link.href }}">
-                {{ link.text }}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %}
+          <a class="thick-link text-size--1 uppercase" href="/fellowship/{{ s.slug }}">
+            Find out more about the project
+          </a>
         </div>
-        <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
-          <div class="tile" style="background-image: url('/images/fellows-2021/{{ s.image }}');"></div>
-        </div>
+        <ol class="col-span-full mt-12">
+          <!-- prettier-ignore -->
+          {% for p in s.people %}
+          <div class="mt-12 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12">
+            <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
+              <div class="markdown markdown-sm">
+                {{ p.bio | markdown | safe }}
+              </div>
+              <!-- prettier-ignore -->
+              {% if p.links.length > 0 %}
+              <ul class="flex flex-wrap space-x-4 my-12">
+                <!-- prettier-ignore -->
+                {% for link in p.links %}
+                <li class="mt-4">
+                  <a class="thick-link uppercase" href="{{ link.href }}">
+                    {{ link.text }}
+                  </a>
+                </li>
+                <!-- prettier-ignore -->
+                {% endfor %}
+              </ul>
+              <!-- prettier-ignore -->
+              {% endif %}
+            </div>
+            <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+              <div class="tile" style="background-image: url('/images/fellows-2021/{{ p.image }}');"></div>
+            </div>
+          </div>
+          <!-- prettier-ignore -->
+          {% endfor %}
+        </ol>
       </div>
       <div class="col-span-columns lg:border-b"></div>
     </div>
@@ -172,7 +194,7 @@ sponsors:
           class="absolute bottom-0 right-0 w-1/2 lg:w-2/3 p-2 bg-white "
         >
           <h3 class="text-size--2">{{ s.name }}</h3>
-          <p class="text-size--4">{{ s.project }}</p>
+          <p class="text-size--4">{{ s.title }}</p>
         </div>
       </div>
       {% endfor %}

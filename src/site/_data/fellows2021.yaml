@@ -1,187 +1,389 @@
-- name: Paula Berman
-  project: Taiwan Civic Tech
-  location: Brazil
-  bio: |
-    Paula Berman is a part of BlockchainGov, an ERC project studying the impact of blockchain technology on local and global governance. Prior to that, she worked implementing participatory technologies and researching decentralized identity protocols with Democracy Earth Foundation.
-  image: paula-berman.jpeg
-  links:
-    - text: Twitter
-      href: https://twitter.com/_paulaberman
+- title: Not all CivTech Is Made Equal
+  subtitle: What can we learn from the Taiwanese Civic Technology Ecosystem? (A Research Paper)
+  slug: taiwan-civic-tech
+  names: Paula Berman & Deborah Tien
+  locations: Brazil | Australia
+  shortDescription: |
+    We have been impressed by what is happening in the civic technology ecosystem in Taiwan. By documenting specific initiatives, exploring the history underpinning this work, and comparing and contrasting with parallel initiatives in the USA, we hope to reveal underlying principles and recommendations for other ecosystems.
+  abstract: |
+    Our paper will investigate the principles behind Taiwan's success in the field of civic technology, and whether (and how) they can be transposed to different settings. Because of the United States’ prominence as a global leader in technology, we will use the United States as a comparison tool, to further understand Taiwan.
 
-- name: Deborah Tien
-  project: Taiwan Civic Tech
-  location: Australia
-  bio: |
-    Deborah Tien works on strategy, community, and systems at the intersection of regenerative development, participatory governance, and technology for impact. She lived in Arusha, Tanzania, for almost five years, co-creating an ecosystem for inclusive innovation in Africa at Twende - a Tanzanian design hub for local-scale innovation - first as Director of Development, then as Executive Director.
-  image: deborah-tien.jpg
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/deborahtien/
+    The paper will begin by considering each country’s broad historical background and philosophical influences relevant to the development of their civic technology ecosystems, alongside a broad overview of their similar histories of colonization, identity, and geopolitical rifts. We will then look at fundamental distinctions between both of these countries’ underlying schools of thought and principles, highlighting how the majority of their populations believe in two different conceptions of state: the USA as a service provider and Taiwan as a strengthener of social fabric.
 
-- name: Megan Bogia
-  project: Epistemic Infrastructure
-  location: United States
-  bio: |
-    Megan Bogia is a doctoral student studying political philosophy at Harvard University Graduate School of Education. Her research examines the variation in higher education's role in a democracy and an epistemic ecosystem. In her spare time, she likes to try new knitting patterns.
-  image: megan-bogia.jpg
-  links:
+    Finally, we will explore the manifestations of these beliefs in their respective civic tech ecosystems, centering our analysis on the interplay between civil society organizations in these two countries and the new public institutions they inspired. In the case of the USA, those are Code for America, the US Digital Services, and 18F;  in Taiwan, the g0v hacktivist movement and the Digital Ministry.  To substantiate our analysis, we will consider the conception, adoption, and effectiveness of a sampling of participatory data processes and civic technologies in each country, looking at how the aforementioned conditions fostered emergence, resilience, bottom-up civic engagement, and change in Taiwan, and a strikingly different civic tech ecosystem in mainstream USA.
+  people:
+    - name: Paula Berman
+      location: Brazil
+      bio: |
+        **Paula Berman** is a part of BlockchainGov, an ERC project studying the impact of blockchain technology on local and global governance. Prior to that, she worked implementing participatory technologies and researching decentralized identity protocols with Democracy Earth Foundation.
+      image: paula-berman.jpeg
+      links:
+        - text: Twitter
+          href: https://twitter.com/_paulaberman
+        - text: Contact
+          href: mailto:paulamlberman@gmail.com
+    - name: Deborah Tien
+      location: Australia
+      bio: |
+        **Deborah Tien** works on strategy, community, and systems at the intersection of regenerative development, participatory governance, and technology for impact. She lived in Arusha, Tanzania, for almost five years, co-creating an ecosystem for inclusive innovation in Africa at Twende - a Tanzanian design hub for local-scale innovation - first as Director of Development, then as Executive Director.
+      image: deborah-tien.jpg
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/deborahtien/
+        - text: Contact
+          href: mailto:deborah.j.tien@gmail.com
 
-- name: Tracey Bowen
-  project: CONTROLR
-  location: Indonesia
-  bio: |
-    Tracey Bowen is the Founder of CONTROLR - an inclusive, decentralized Data Union, a Data Researcher at the South West Creative Technology Network, Mozilla Creative Media Award Recipient, and Post Grad Law student – oh yeah, and Mercury Music Prize Winner (a very, very long time ago)!
-  image: tracey-bowen.png
-  links:
-    - text: Twitter
-      href: https://twitter.com/Onallee
+- title: Education & The Epistemic Ecosystem
+  slug: education-and-the-epistemic-ecosystem
+  names: Megan Bogia
+  locations: United States
+  shortDescription: |
+    This project seeks to understand (1) what does a healthy epistemic ecosystem look like, (2) what should universities' role be within that ecosystem, and (3) what policies can we develop to incentivize healthy behavior.
+  abstract: |
+    Universities traditionally are thought to play a unique role in the circulation of knowledge in a democracy. On the local level, they can offer research support to community groups as part of a collective effort to understand and solve civic problems. On a macroscopic level, some argue that universities help create a system of epistemic checks-and-balances, generating knowledge that is not directly responsive to market demand or majority opinion. Unfortunately, in recent decades, shifts in funding mechanisms have pushed universities towards an increasingly privatized logic, limiting community engagement and information sharing. What change would be necessary, then, to incentivize universities to contribute to a healthy epistemic ecosystem?
 
-- name: Jesus Cepeda
-  project: OS City
-  location: Mexico
-  bio: |
-    Jesus Cepeda cares about the future of cities and governance models. He holds a Ph.D. in Artificial Intelligence. As a technology entrepreneur, he's exploring technology such as cloud computing, artificial intelligence, and blockchain to build the future of government.
-  image: jesus-cepeda.jpg
+    Here’s the problem: we’re not entirely sure what that epistemic ecosystem should be anymore. How information is generated, shared, and isolated in a democratic community is far different than it was in the 1980s, when funding structures began to shift. Even before then, universities often fell far short of these professed democratic responsibilities, but it is reasonable to assume that these democratic responsibilities in this new ecosystem might have changed, even expanded, in recent decades. This project then seeks to construct a new framework then for what a democracy’s epistemic ecosystem should look like and, with that, to reimagine and incentivize universities to contribute in a healthy way.
+  people:
+    - name: Megan Bogia
+      location: United States
+      bio: |
+        **Megan Bogia** is a doctoral student studying political philosophy at Harvard University Graduate School of Education. Her research examines the variation in higher education's role in a democracy and an epistemic ecosystem. In her spare time, she likes to try new knitting patterns.
+      image: megan-bogia.jpg
+      links:
+        - text: Contact
+          href: mailto:mbogia@g.harvard.edu
+
+- title: SonR
+  slug: SonR
+  logo: SonR.png
+  names: Tracey Bowen
+  locations: Indonesia
+  shortDescription: |
+    SonR allows users to make money whilst listening to their favourite music. It is a decentralised Data Union app connecting users to the burgeoning data economy, facilitating the collection, aggregation and sale of their generated data using the Streamr network. SonR addresses the unequal power balance between Big Tech and users of streaming platforms offering greater autonomy and value for users.
+  abstract: |
+    Big Tech companies like Spotify are notorious for hoarding profits and having unfair practices when it comes to fair distribution of its income - income that is derived from users and content creators. The data they create from users is often siloed and the people who produce that data have no access to it – can that be fair?
+
+    For decades now – big tech companies have exploited the data we generate online. It's been difficult for ordinary people to access this market. And they do have a right to access that market -  to become true participants in a market they help create and sustain. The results from our focus groups and initial surveys strongly indicate that people are willing to use new products like Data Unions to earn extra income streams. So we are advocating for fair access to create value, autonomy and revenue for ordinary citizens.
+
+    The solution is SonR Data Union. It will give easy frictionless mobile access to users who can simply click a button and allow their data to be aggregated and funnelled to a third party marketplace to be available to data buyers. Once the start up is established it will be a truly decentralised company with an exit to community strategy putting community at its core.
+
+    Monetising your own data should be as second nature as taking out insurance. Making sure your data is covered for maximum monetisation will be a new and exciting cultural and economic change for society.
+
+    The time has come for us to take a proactive stance. SonR embarks on its start up journey with a strong political strategy: forcing Big Tech to take them on or to join them in the fight for equitable solutions for users.
   links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/chuycepeda
-    - text: Twitter
-      href: https://twitter.com/chuycepeda
     - text: Website
-      href: https://chuycepeda.com/
+      href: https://sonr.ck.page/454c4b9db4
+    - text: Contact
+      href: mailto:onallee@icloud.com
+  people:
+    - name: Tracey Bowen
+      location: Indonesia
+      bio: |
+        **Tracey Bowen** is the Founder of CONTROLR - an inclusive, decentralized Data Union, a Data Researcher at the South West Creative Technology Network, Mozilla Creative Media Award Recipient, and Post Grad Law student – oh yeah, and Mercury Music Prize Winner (a very, very long time ago)!
+      image: tracey-bowen.png
+      links:
+        - text: Twitter
+          href: https://twitter.com/Onallee
 
-- name: Jack Henderson
-  project: The Global Centre for Risk and Innovation (GCRI)
-  location: United States
-  bio: |
-    After graduating from Princeton, where Jack Henderson studied economics and co-founded RadicalxChange Students, he is now working to bring about a future for global governance of diverse empowerment and pluralistic cooperation that can deliver flourishing for all. He’s a big believer in Hegelian synthesis and local knowledge, public goods, and people-public-private partnerships.
-  image: jack-henderson.png
+- title: OS City
+  slug: os-city
+  logo: os-city.png
+  names: Jesus Cepeda
+  locations: Mexico
+  shortDescription: |
+    Powered by the newest technologies, OS City helps authorities to provide citizen-centric digital services.
+  abstract: |
+    The public sector touches the life of everyone, improvements in its services lead to better lives, arguably more than any other business. Today, a $400B industry called GovTech is emerging to solve the most pressing public problems using the newest technologies. OS City is a World's Govtech Top 100 Company that uses blockchain and artificial intelligence to help authorities provide citizen-centric digital services. Most GovTech competitors offer straight solutions to digitize governments in some way. What we do is to completely change how governments and citizens interact by offering a modular set of digital services that are interconnected by a new digital identity and verifiable credentials based on blockchain technology. For the long-term, our open source platform will allow people to create their own modular services atop of our platform generating a continuous access to more and better government solutions. Our purpose is to create the future of government.
   links:
+    - text: Website
+      href: www.os.city
+    - text: Contact
+      href: mailto:j@os.city
+  people:
+    - name: Jesus Cepeda
+      location: Mexico
+      bio: |
+        **Jesus Cepeda** cares about the future of cities and governance models. He holds a Ph.D. in Artificial Intelligence. As a technology entrepreneur, he's exploring technology such as cloud computing, artificial intelligence, and blockchain to build the future of government.
+      image: jesus-cepeda.jpg
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/chuycepeda
+        - text: Twitter
+          href: https://twitter.com/chuycepeda
+        - text: Website
+          href: https://chuycepeda.com/
+
+- title: The Global Centre for Risk and Innovation
+  slug: the-global-centre-for-risk-and-innovation
+  logo: gcri.jpeg
+  names: Jack Henderson & Saeed Valadbaygi
+  locations: United States | Canada
+  shortDescription: |
+    GCRI is a distributed resource and decentralized network committed to accelerating public participation in research, policymaking, and development programs. Our goal is to create a unique nexus where civil society meets and engages the academy, industry, and government to make smarter decisions toward more resilient, democratic, and prosperous communities.
+  abstract: |
+    We are a member-run organization established on the premise that non-state actors need better digital public infrastructure. Just like how the g0v movement integrated social activism, civic media, and free software, and built digital public goods for Taiwan’s civil society to fork, share information, and form and signal consensus — GCRI is trying to build on and bring this sort of infrastructure to global civil society.
+
+    The GCRI platform fosters new horizontal structures of collaboration across science, industry, policy, and civil society in what we call a “Quadruple Helix” because we need different kinds of funding institutions, research organizations, career paths, and so much more if groups are to truly innovate.
+
+    GCRI empowers these local and digital communities with bottom-up tools and mechanisms to govern themselves and foster collective action in the governance of innovation resources. They can teach courses, broadcast content, organize events, mobilize collective action, crowdsource teams, and crowdfund projects.
+
+    The circular economy and ecosystem will be governed in RadicalxChange spirit with mechanisms like pol.is, Quadratic Voting, and Quadratic Funding via our tokenized rewards system.
+
+    We are also forming a working group to develop a SALSA-based framework for intellectual property rights, which we are calling the Earth Cooperation Treaty, as an alternative to the dominant Patent Cooperation Treaty.
+
+    If you’re interested to learn more, visit therisk.global, follow us on Twitter @RiskCentre, and reach out directly at contact@therisk.global!
+
+    GCRI is the missing architecture of global governance, reimagining and strengthening civic technology in the name of radical innovation and empowered citizenries.
+  links:
+    - text: Website
+      href: therisk.global
     - text: Twitter
-      href: https://twitter.com/jackhendersn
+      href: https://twitter.com/RiskCentre
+    - text: Contact
+      href: mailto:contact@therisk.global
+  people:
+    - name: Jack Henderson
+      location: United States
+      bio: |
+        After graduating from Princeton, where **Jack Henderson** studied economics and co-founded RadicalxChange Students, he is now working to bring about a future for global governance of diverse empowerment and pluralistic cooperation that can deliver flourishing for all. He’s a big believer in Hegelian synthesis and local knowledge, public goods, and people-public-private partnerships.
+      image: jack-henderson.png
+      links:
+        - text: Twitter
+          href: https://twitter.com/jackhendersn
+        - text: Contact
+          href: mailto:jack@therisk.global
+    - name: Saeed Valadbaygi
+      location: Canada
+      bio: |
+        **Saeed Valadbaygi** is passionate about justice, human rights, social impact, sustainability, and good governance. With a background in political science and cognitive science disciplines, he researches and specializes in democratic institution-building, political economy, and the role of exponential technologies in responding to state fragility, financial volatility, and population displacement.
+      image: saeed-valadbaygi.jpg
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/saeedbaygi/
+        - text: Twitter
+          href: https://twitter.com/SaeedBaygi
+        - text: Contact
+          href: mailto:saeed@therisk.global
 
-- name: Saeed Valadbaygi
-  project: The Global Centre for Risk and Innovation (GCRI)
-  location: Canada
-  bio: |
-    Saeed Valadbaygi is passionate about justice, human rights, social impact, sustainability, and good governance. With a background in political science and cognitive science disciplines, he researches and specializes in democratic institution-building, political economy, and the role of exponential technologies in responding to state fragility, financial volatility, and population displacement.
-  image: saeed-valadbaygi.jpg
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/saeedbaygi/
-    - text: Twitter
-      href: https://twitter.com/SaeedBaygi
+- title: Hamilton
+  slug: hamilton
+  names: Sidney Li & Allison Tam
+  locations: United States | United Kingdom
+  shortDescription: |
+    By aligning technology, market mechanisms, and genuine connections, Hamilton helps large organizations fully celebrate diversity in their workforce and create trusting, productive spaces of community. Our platform leverages data insights to support a non-monetary marketplace that brings colleagues together across silos, with good deeds that transcend workplace projects.
+  abstract: |
+    Hamilton helps organizations create diverse, cohesive teams, with a marketplace that organically cultivates trust-based connections. We are partnering with companies that are facing the organizational challenges of scale -- large, siloed corporations as well as growth-stage firms expecting to increase headcount by 50% or more. Our solution helps companies move toward a cohesive and enjoyable working environment, by matching colleagues based on unique personal skills and needs. We apply automated technologies -- community identification algorithms and data-driven market mechanisms --  to create genuine connections among colleagues. This scalable approach helps fuel trust and teamwork across organizational silos.
 
-- name: Sidney Li
-  project: Hamilton
-  location: United States
-  bio: |
-    Sidney Li grew up in the San Francisco Bay Area and is currently residing in Baltimore. He graduated from Harvard College in 2019 and is a tech strategy consultant at McKinsey & Co. Sidney has a deep interest in practical ethics. He first met Glen Weyl as a fellow at the Safra Center for Ethics, and is writing an article on free speech on social media.
-  image: sidney-li.jfif
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/sidneycli/
+    Our approach creates a bespoke, non-monetary marketplace for one-off favors among colleagues. These favors bring colleagues together through ad-hoc interactions that go beyond workplace projects. By scaffolding genuine connections, Hamilton’s marketplace contributes to an inviting and collaborative working environment.
 
-- name: Allison Tam
-  project: Hamilton
-  location: United Kingdom | United States
-  bio: |
-    Allison Tam recently graduated from MIT in 2020 with a BS/MS in computer science. She currently works at DeepMind as a research engineer. Her previous research was in developing machine learning methods for drug discovery. Having grown up in the Bay Area, Allison also loves hiking and spending time in the outdoors.
-  image: allison-tam.jpg
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/allison-tam/
+    Hamilton exploits a unique feature of workplace connections to bring colleagues together. Members of the same company have existing affinities -- an advantage that no “gig” or “on-demand” marketplace (e.g., TaskRabbit) could ever make use of. However, these same collegial relationships can also seem aloof -- among co-workers, “favors” are irregular and isolated events. Unlike a friend who would amicably and compassionately help with an apartment move, colleagues would be more austere about making such a request.
 
-- name: Elena V. Molina
-  project: Arthaus
-  location: Cuba | Spain
-  bio: |
-    Elena V. Molina is an educator, filmmaker, and cyborg currently living between Havana and Barcelona. Personally committed to connecting Cubans artists with the international art scene, she co-founded Arthaus, a Havana-based artist residency and art space.
-  image: elena-molina.jpg
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/elenavmolina/
-    - text: Twitter
-      href: https://twitter.com/elenavmolina
+    Through Hamilton, we re-define ways of working to help organizations make the most of their intellectual and social diversity. Powered by digital technologies, we hope to lay the foundation for a more united and productive world that celebrates diversity.
+  people:
+    - name: Sidney Li
+      location: United States
+      bio: |
+        **Sidney Li** grew up in the San Francisco Bay Area and is currently residing in Baltimore. He graduated from Harvard College in 2019 and is a tech strategy consultant at McKinsey & Co. Sidney has a deep interest in practical ethics. He first met Glen Weyl as a fellow at the Safra Center for Ethics, and is writing an article on free speech on social media.
+      image: sidney-li.jfif
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/sidneycli/
+        - text: Contact
+          href: mailto:sidney.li@gmail.com
+    - name: Allison Tam
+      location: United Kingdom | United States
+      bio: |
+        **Allison Tam** recently graduated from MIT in 2020 with a BS/MS in computer science. She currently works at DeepMind as a research engineer. Her previous research was in developing machine learning methods for drug discovery. Having grown up in the Bay Area, Allison also loves hiking and spending time in the outdoors.
+      image: allison-tam.jpg
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/allison-tam/
+        - text: Contact
+          href: mailto:allisontam2@gmail.com
 
-- name: Sato Ozawa
-  project: Unbuilt Ventures
-  location: Australia
-  bio: |
-    Sato Ozawa was born and raised in the Greater Tokyo Area and earned his bachelor’s degrees in Policy Management from Keio SFC. Sato started his career as an entrepreneur who naively attempted to solve Japanese animators’ scarcity by implementing a currency system with reciprocity on a decentralized peer-to-peer network. Followed by a ten-year career as a graphic designer and art director, Sato resumed his serial entrepreneurship. He launched a sports apparel brand, a creative agency, and a fintech start-up. Then Sato co-founded “Unbuilt Ventures” and tapped into an investment career.
-  image: sato-ozawa.jpg
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/satoozawa
-    - text: Twitter
-      href: https://twitter.com/SatoOzawa
+- title: Arthaus Artist Residency
+  subtitle: Public Goods x Cuba
+  slug: arthaus-artist-residency
+  logo: arthaus.png
+  names: Elena V. Molina
+  locations: Cuba | Spain
+  shortDescription: |
+    Public Goods x Cuba will be an event series on strengthening civic cooperation and rethinking our future, with a focus on Cuba. It strives to serve as a meeting point for local and international communities looking for solutions to reduce inequality, build a more cooperative social life and heal political divides.
+  abstract: |
+    With this online event series, Arthaus Residency aspires to introduce those who want to build a more sustainable future with technologies that embrace egalitarianism and decentralization, and generate innovations that help unlock the immense benefits of societal cooperation. We hope to achieve this through community building, education and action between civic leaders, organizations, scholars, innovators from Cuba and abroad.
 
-- name: Douglas Powell
-  project: S8R Software Cooperative Starter Kit
-  location: United States
-  bio: |
-    Douglas Powell has worked on media software projects for 20 years. He has always been an informal market macroeconomics student. The growth of Ethereum has turned him into an economics hobbyist. He hopes that using cryptocurrency economics hobbyists has a similar impact on economics as personal computer hobbyists had on computing.
-  image: douglas-powell.jpg
-  links:
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/doug-powell-65b441b5/
-    - text: Twitter
-      href: https://twitter.com/zerodoug1
-    - text: Twitter (ssociety)
-      href: https://twitter.com/ssociety00
+    The recent growth in internet access and technology use in Cuba has promoted the emergence of civic networks working around today's most pressing issues: wide stagnation, financial destitution, and government centralization. Taking advantage of this current trend, we are organizing a series of talks, workshops and hackathons exploring next-generation political economies, as well as radical models for reducing inequality, building shared prosperity, and healing political divides.
 
-- name: Emilio Sempris
-  project: MIO
-  location: Panama
-  bio: |
-    Emilio Sempris is the former Minister of Environment of Panama. Fmr Director-General of the Water Center for the Humid Tropics of Latin America and the Caribbean, under UNESCO. He has 20 years of experience in international development, climate change, and sustainability. He is also the co-founder of the Brundtland School.
-  image: emilio-sempris.jpg
-  links:
-    - text: Academia
-      href: https://independent.academia.edu/EmilioSempris
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/emiliosempris/
-    - text: Twitter
-      href: https://twitter.com/EmilioSempris
+    Our talks will bring together mission-driven individuals and networks from around the world to discuss radical ideas on a more prosperous and decentralized society, next generation economies, and updated governance. Our program is an invitation to civil society to rethink current growth incentives & private ownership structures, and to collectibly explore new exit-to-community and cooperative forms.
 
-- name: Aaron Soskin
-  project: Govrn
-  location: United States
-  bio: |
-    Aaron Soskin is the Founder and CEO of Govrn, a campaign finance platform that uses incentives based solutions to help solve today’s most significant issues.  Before working on Govrn, Aaron worked as a Management Consultant for four years.
-  image: aaron-soskin.jpg
+    Through our co-creation events, we aim to foster collective intelligence and global interdisciplinary collaboration and research, supporting communities in building infrastructure in a non-excludable and non-rivalrous way, as well as in creating open technologies that aid in working collectively towards a more equitable economy and in generating public goods.
   links:
-    - text: Github
-      href: https://github.com/amsos
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/aaron-soskin-3b342965/
-    - text: Twitter
-      href: https://twitter.com/AaronSoskin
+    - text: Instagram
+      href: https://www.instagram.com/arthaus_artist_residency/
+    - text: Contact
+      href: mailto:elenavmolina@gmail.com
+  people:
+    - name: Elena V. Molina
+      location: Cuba | Spain
+      bio: |
+        **Elena V. Molina** is an educator, filmmaker, and cyborg currently living between Havana and Barcelona. Personally committed to connecting Cubans artists with the international art scene, she co-founded Arthaus, a Havana-based artist residency and art space.
+      image: elena-molina.jpg
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/elenavmolina/
+        - text: Twitter
+          href: https://twitter.com/elenavmolina
 
-- name: Christine Vandevoorde
-  project: Govrn
-  location: United States
-  bio: |
-    Christine Vandevoorde is a civic data scientist with an environmental engineering background. She earned her M.S. at NYU’s Center for Urban Science and Progress, where she studied public entrepreneurship, machine learning for civic problems, and collective innovation in the public sector.
-  image: christine-vandevoorde.jpg
+- title: Unbuilt Ventures
+  slug: unbuilt-ventures
+  logo: unbuilt.png
+  names: Sato Ozawa
+  locations: Australia
+  shortDescription: |
+    Unbuilt is a project aiming to democratise entrepreneurial finance. The project addresses both sides of finance; venture financial inclusion to social entrepreneurs and the fairness of ownership and distributions.
+  abstract: |
+    We decided to take a two-step approach to democratise venture finance because it was not feasible to bring two new ideas into the established ecosystem simultaneously. We have concentrated on sharpening the investment strategy as the first step and looking for clues for the next step. We have been weaving our investment thesis based on the learnings from the fellowship program. We achieved several milestones in these ten weeks. We published the landing page, completed the investor deck, and got an anchor LP on board. We are looking to start funding civic tech projects around the RadicalxChange community. We plan to invest in projects, especially around the DeFi area and continue to work with like-minded entrepreneurs to speculate our next step's structure.
   links:
-    - text: Github
-      href: https://github.com/christinevandev
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/christinevandev/
-    - text: Twitter
-      href: https://twitter.com/TinaVandev
+    - text: Website
+      href: https://unbuilt.vc/
+    - text: Contact
+      href: mailto:s@unbuilt.vc
+  people:
+    - name: Sato Ozawa
+      location: Australia
+      bio: |
+        **Sato Ozawa** was born and raised in the Greater Tokyo Area and earned his bachelor’s degrees in Policy Management from Keio SFC. Sato started his career as an entrepreneur who naively attempted to solve Japanese animators’ scarcity by implementing a currency system with reciprocity on a decentralized peer-to-peer network. Followed by a ten-year career as a graphic designer and art director, Sato resumed his serial entrepreneurship. He launched a sports apparel brand, a creative agency, and a fintech start-up. Then Sato co-founded “Unbuilt Ventures” and tapped into an investment career.
+      image: sato-ozawa.jpg
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/satoozawa
+        - text: Twitter
+          href: https://twitter.com/SatoOzawa
 
-- name: Raymond Yeh
-  project: Infrastructure for Anonymous Goods Distribution
-  location: Singapore
-  bio: |
-    Raymond Yeh is a technologist whose work focuses on data privacy & identity. As a software engineer at GovTech Singapore, his work includes the first nationwide digital education credential, OpenCerts. He's also an author at geek.sg on blockchain and zero-knowledge proofs.
-  image: raymond-yeh.jpg
+- title: opportunity.coop
+  slug: opportunity-coop
+  logo: opportunity-coop.png
+  names: Douglas Powell
+  locations: United States
+  shortDescription: |
+    A collective action platform for funding and scaling cooperatives
+  abstract: |
+    The platform provides the following for qualifying common and public good cooperatives and DAOs.
+    Co-op membership system honoring data dignity standards
+    Crowdfunding of proof of concepts and prototypes
+    Easily configure three democratic governance options for cooperative communities
+    Community net profit sharing system open to any member
   links:
-    - text: Github
-      href: https://github.com/yehjxraymond
-    - text: LinkedIn
-      href: https://www.linkedin.com/in/raymondyeh/
-    - text: Twitter
-      href: https://twitter.com/geek_sg
+    - text: Website
+      href: beta-opportunity-coop.org
+    - text: Contact
+      href: mailto:doug@ssociety.org
+  people:
+    - name: Douglas Powell
+      location: United States
+      bio: |
+        **Douglas Powell** has worked on media software projects for 20 years. He has always been an informal market macroeconomics student. The growth of Ethereum has turned him into an economics hobbyist. He hopes that using cryptocurrency economics hobbyists has a similar impact on economics as personal computer hobbyists had on computing.
+      image: douglas-powell.jpg
+      links:
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/doug-powell-65b441b5/
+        - text: Twitter
+          href: https://twitter.com/zerodoug1
+        - text: Twitter (ssociety)
+          href: https://twitter.com/ssociety00
+
+- title: MIO
+  slug: MIO
+  names: Emilio Sempris
+  locations: Panama
+  shortDescription: |
+  abstract: |
+  people:
+    - name: Emilio Sempris
+      location: Panama
+      bio: |
+        **Emilio Sempris** is the former Minister of Environment of Panama. Fmr Director-General of the Water Center for the Humid Tropics of Latin America and the Caribbean, under UNESCO. He has 20 years of experience in international development, climate change, and sustainability. He is also the co-founder of the Brundtland School.
+      image: emilio-sempris.jpg
+      links:
+        - text: Academia
+          href: https://independent.academia.edu/EmilioSempris
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/emiliosempris/
+        - text: Twitter
+          href: https://twitter.com/EmilioSempris
+
+- title: Govrn
+  slug: Govrn
+  logo: govrn.png
+  names: Aaron Soskin & Christine Vandevoorde
+  locations: United States
+  shortDescription: |
+    Govrn is building the next generation of politics and governance by using Outcome-Based Donations to re-align existing political incentives to work for the people. Their platform is providing the base layer for the new paradigm of Open Source Politics and Composable Governance.
+  abstract: |
+    Govrn aims to make politics simple, easy, transparent, and accountable for users who have just made their first political donation or feel that they don’t have a home in politics today.  We accomplish this by enabling Outcome-Based Donations for users to make contributions to politicians.  Outcome-Based Donations allow constituents to donate money to politicians on the condition the politician meets a community defined Outcome or KPI (kind of like Kickstarter + OKRs but for politics).  For better or worse, politicians are incentivized by donation dollars.  Instead of fighting that incentive, we leverage the incentive and give everyone access to it, essentially allowing anyone to be their own PAC or Politician (what crypto did to banks, Govrn does to political parties).
+
+    By starting with Campaign Finance, we're creating the platform and building blocks for the real movement that is starting, Open Source Politics.  Open Source Politics is one of openness and transparency, meaning that anyone can contribute to politics in any way they see fit.  By taking this ecosystem and building it into a technology platform that allows for Composable Governance, we’re able to change politics from a hierarchical system, to a decentralized network system.  This brings ubiquity, competition, and innovation to politics and governance, a space that is currently outdated with all-time highs in dis-satisfaction and dis-trust.
+  links:
+    - text: Website
+      href: https://www.govrn.io/
+    - text: Contact
+      href: mailto:aaron@govrn.io
+  people:
+    - name: Aaron Soskin
+      location: United States
+      bio: |
+        **Aaron Soskin** is the Founder and CEO of Govrn, a campaign finance platform that uses incentives based solutions to help solve today’s most significant issues.  Before working on Govrn, Aaron worked as a Management Consultant for four years.
+      image: aaron-soskin.jpg
+      links:
+        - text: Github
+          href: https://github.com/amsos
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/aaron-soskin-3b342965/
+        - text: Twitter
+          href: https://twitter.com/AaronSoskin
+    - name: Christine Vandevoorde
+      location: United States
+      bio: |
+        **Christine Vandevoorde** is a civic data scientist with an environmental engineering background. She earned her M.S. at NYU’s Center for Urban Science and Progress, where she studied public entrepreneurship, machine learning for civic problems, and collective innovation in the public sector.
+      image: christine-vandevoorde.jpg
+      links:
+        - text: Github
+          href: https://github.com/christinevandev
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/christinevandev/
+        - text: Twitter
+          href: https://twitter.com/TinaVandev
+
+- title: VeilOS
+  slug: VeilOS
+  logo: veilos.svg
+  names: Raymond Yeh
+  locations: Singapore
+  shortDescription: |
+    VeilOS is a platform which can be used for online deliberation, governance or good distribution. The platform uses zero-knowledge proof (ZKP) to allow users to prove that they are part of an organisation without revealing their actual identities.
+  abstract: |
+    As we move discussions and governance online, we face the dilemma between authenticating users in an online space and providing anonymity to said user. Once a person authenticates with an application such as a voting application online, the person has to trust the platform not to attribute his identity to his vote.
+
+    VeilOS uses Zero-knowledge proofs to ensure that users are authenticated and enforce limits on their actions while ensuring their identity is kept private. The platform supports multiple applications such as voting, suggestion box, whistle-blowing and even goods distribution.
+
+    For walkthrough and discussion on the use-cases, please read https://geek.sg/blog/veilos-preview-of-privacy-preserving-application-engine.
+  links:
+    - text: Website
+      href: http://veilos.io/
+    - text: Blog Post
+      href: https://geek.sg/blog/veilos-preview-of-privacy-preserving-application-engine
+    - text: Contact
+      href: mailto:ray@geek.sg
+  people:
+    - name: Raymond Yeh
+      location: Singapore
+      bio: |
+        **Raymond Yeh** is a technologist whose work focuses on data privacy & identity. As a software engineer at GovTech Singapore, his work includes the first nationwide digital education credential, OpenCerts. He's also an author at geek.sg on blockchain and zero-knowledge proofs.
+      image: raymond-yeh.jpg
+      links:
+        - text: Github
+          href: https://github.com/yehjxraymond
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/raymondyeh/
+        - text: Twitter
+          href: https://twitter.com/geek_sg

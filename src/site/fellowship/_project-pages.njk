@@ -1,0 +1,17 @@
+---
+layout: "layouts/_base.njk"
+pagination:
+  data: fellows2021
+  size: 1
+  alias: project
+  addAllPagesToCollections: true
+permalink: "fellowship/{{ project.slug }}/"
+eleventyComputed:
+  title: "{{ project.title }}"
+---
+
+<!-- prettier-ignore -->
+{% import "components/project-page.njk" as projectPage %}
+
+<!-- prettier-ignore -->
+{{ projectPage.render(project, pagination) }}
