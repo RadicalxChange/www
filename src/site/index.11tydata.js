@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: true,
+    isOn: false,
     title: "RadicalxChange Fellowship Closing Ceremony",
     description: `April 1st, 1:15 pm to 3:30 pm UTC
 
