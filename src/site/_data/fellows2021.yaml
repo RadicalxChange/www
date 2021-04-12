@@ -1,6 +1,7 @@
 - title: Not all CivTech Is Made Equal
   subtitle: What can we learn from the Taiwanese Civic Technology Ecosystem? (A Research Paper)
   slug: taiwan-civic-tech
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=1567
   names: Paula Berman & Deborah Tien
   locations: Brazil | Australia
   shortDescription: |
@@ -35,6 +36,7 @@
 
 - title: Education & The Epistemic Ecosystem
   slug: education-and-the-epistemic-ecosystem
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=4017
   names: Megan Bogia
   locations: United States
   shortDescription: |
@@ -56,6 +58,7 @@
 - title: SonR
   slug: SonR
   logo: SonR.png
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=5239
   names: Tracey Bowen
   locations: Indonesia
   shortDescription: |
@@ -88,6 +91,7 @@
 - title: OS City
   slug: os-city
   logo: os-city.png
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=3684
   names: Jesus Cepeda
   locations: Mexico
   shortDescription: |
@@ -118,6 +122,7 @@
 - title: The Global Centre for Risk and Innovation
   slug: the-global-centre-for-risk-and-innovation
   logo: gcri.jpeg
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=3368
   names: Jack Henderson & Saeed Valadbaygi
   locations: United States | Canada
   shortDescription: |
@@ -169,6 +174,7 @@
 
 - title: Hamilton
   slug: hamilton
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=1173
   names: Sidney Li & Allison Tam
   locations: United States | United Kingdom
   shortDescription: |
@@ -207,6 +213,7 @@
   subtitle: Arthaus Artist Residency
   slug: public-goods-x-cuba
   logo: arthaus.png
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=2563
   names: Elena V. Molina
   locations: Cuba | Spain
   shortDescription: |
@@ -239,6 +246,7 @@
 - title: Unbuilt Ventures
   slug: unbuilt-ventures
   logo: unbuilt.png
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=4881
   names: Sato Ozawa
   locations: Australia
   shortDescription: |
@@ -265,6 +273,7 @@
 - title: opportunity.coop
   slug: opportunity-coop
   logo: opportunity-coop.png
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=2005
   names: Douglas Powell
   locations: United States
   shortDescription: |
@@ -300,6 +309,7 @@
 
 - title: Amicable Metropolitan Area (AMA)
   slug: AMA
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=2972
   names: Emilio Sempris
   locations: Panama
   shortDescription: |
@@ -325,6 +335,7 @@
 - title: Govrn
   slug: Govrn
   logo: govrn.png
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=782
   names: Aaron Soskin & Christine Vandevoorde
   locations: United States
   shortDescription: |
@@ -367,6 +378,7 @@
 - title: VeilOS
   slug: VeilOS
   logo: veilos.svg
+  presentationURL: https://www.youtube-nocookie.com/embed/j-39vOSUNHk?start=4435
   names: Raymond Yeh
   locations: Singapore
   shortDescription: |

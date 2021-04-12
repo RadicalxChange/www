@@ -76,6 +76,15 @@
       {% endfor %}
     </ul>
   </aside>
+  <div class="mt-12 mb-8 col-span-columns youtube-container">
+    <iframe
+      class="w-full h-full"
+      src="{{ project.presentationURL }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
   <!-- prettier-ignore -->
   {% for p in project.people %}
   <div class="mt-12 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12">
