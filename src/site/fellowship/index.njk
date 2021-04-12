@@ -115,7 +115,7 @@ sponsors:
       {{ fellowsBlurb | markdown | safe }}
     </div>
   </div>
-  <h2 class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mt-4 font-medium">Click on any project below to read more about it!</h2>
+  <h2 class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mt-4">Click on any project below to read more about it!</h2>
   <ol class="col-span-full mt-12">
     <!-- prettier-ignore -->
     {% for s in fellows2021 %}
@@ -138,37 +138,6 @@ sponsors:
             Find out more about the project
           </a>
         </div>
-        <ol class="col-span-full mt-12">
-          <!-- prettier-ignore -->
-          {% for p in s.people %}
-          <div class="mt-12 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12">
-            <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
-              <div class="markdown markdown-sm">
-                {{ p.bio | markdown | safe }}
-              </div>
-              <!-- prettier-ignore -->
-              {% if p.links.length > 0 %}
-              <ul class="flex flex-wrap space-x-4 my-12">
-                <!-- prettier-ignore -->
-                {% for link in p.links %}
-                <li class="mt-4">
-                  <a class="thick-link uppercase" href="{{ link.href }}">
-                    {{ link.text }}
-                  </a>
-                </li>
-                <!-- prettier-ignore -->
-                {% endfor %}
-              </ul>
-              <!-- prettier-ignore -->
-              {% endif %}
-            </div>
-            <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
-              <div class="tile" style="background-image: url('/images/fellows-2021/{{ p.image }}');"></div>
-            </div>
-          </div>
-          <!-- prettier-ignore -->
-          {% endfor %}
-        </ol>
       </div>
       <div class="col-span-columns lg:border-b"></div>
     </div>
