@@ -81,7 +81,16 @@ supporters:
 <!-- prettier-ignore -->
 {{ menu.render() }}
 <!-- prettier-ignore -->
-{{ introduction.render(headerText, introductionBlurb) }}
+{% call introduction.render(headerText, introductionBlurb) %}
+<div>
+  <a
+    href="/media/announcements/rxc-leadership-open-call"
+    class="thick-link uppercase"
+    >Now hiring for Senior Executive role</a
+  >
+</div>
+<!-- prettier-ignore -->
+{% endcall %}
 <section
   id="chapters"
   class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
@@ -113,6 +122,13 @@ supporters:
   >
     <div class="markdown">
       {{ aboutBlurb | markdown | safe }}
+    </div>
+    <div class="mt-4">
+      <a
+        href="/media/announcements/rxc-leadership-open-call"
+        class="thick-link uppercase"
+        >Now hiring for Senior Executive role</a
+      >
     </div>
   </div>
   <div
