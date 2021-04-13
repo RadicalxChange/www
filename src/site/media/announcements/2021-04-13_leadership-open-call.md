@@ -21,7 +21,7 @@ This senior executive role (title TBD) will entail working closely with Radicalx
 
 ## Primary Responsibilities
 
-*(a) Fundraising*
+*a) Fundraising*
 
 - Identify potential new donors
 
@@ -29,7 +29,7 @@ This senior executive role (title TBD) will entail working closely with Radicalx
 
 - Develop fundraising materials and update fundraising strategy
 
-*(b) Mission Directed Activities*
+*b) Mission Directed Activities*
 
 -  Contribute motivational and visionary leadership to ensure RxC’s policies, procedures and activities are congruent with its mission and vision
 
@@ -49,7 +49,7 @@ This senior executive role (title TBD) will entail working closely with Radicalx
 
 - Travel as required based on needs of the organization
 
-*(c) Grants Development & Financial Management*
+*c) Grants Development & Financial Management*
 
 - Identify grant opportunities and liaise with funders
 
@@ -61,7 +61,7 @@ This senior executive role (title TBD) will entail working closely with Radicalx
 
 - Troubleshoot grant implementation issues.
 
-*(d) Board Management*
+*d) Board Management*
 
 - Maintain consistent communication with the CEO and President of RxC and close contact with the Executive Committee, Board of Directors, Conference Chairs, and Committee Leadership
 
@@ -73,7 +73,7 @@ This senior executive role (title TBD) will entail working closely with Radicalx
 
 - Identify policy needs and make recommendations
 
-*(e) External Outreach*
+*e) External Outreach*
 
 - Strengthen external and internal communication and outreach efforts
 
