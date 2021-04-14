@@ -81,16 +81,7 @@ supporters:
 <!-- prettier-ignore -->
 {{ menu.render() }}
 <!-- prettier-ignore -->
-{% call introduction.render(headerText, introductionBlurb) %}
-<div>
-  <a
-    href="/media/announcements/rxc-leadership-open-call"
-    class="thick-link uppercase"
-    >Now hiring for Senior Executive role</a
-  >
-</div>
-<!-- prettier-ignore -->
-{% endcall %}
+{{ introduction.render(headerText, introductionBlurb) }}
 <section
   id="chapters"
   class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
@@ -122,13 +113,6 @@ supporters:
   >
     <div class="markdown">
       {{ aboutBlurb | markdown | safe }}
-    </div>
-    <div class="mt-4">
-      <a
-        href="/media/announcements/rxc-leadership-open-call"
-        class="thick-link uppercase"
-        >Now hiring for Senior Executive role</a
-      >
     </div>
   </div>
   <div
@@ -178,7 +162,14 @@ supporters:
       </tbody>
     </table>
   </div>
-  <div class="col-span-columns pb-12 lg:pb-32 lg:border-b"></div>
+  <div class="col-span-columns mt-6 lg:mt-16">
+    <a
+      href="/media/announcements/rxc-leadership-open-call"
+      class="thick-link uppercase"
+      >Now hiring for Senior Executive role</a
+    >
+  </div>
+  <div class="col-span-columns pb-6 lg:pb-16 lg:border-b"></div>
 </section>
 <section
   id="press"
