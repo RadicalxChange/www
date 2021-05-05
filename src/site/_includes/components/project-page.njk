@@ -69,7 +69,12 @@
     <ul class="text-size--1 mt-12 text-center">
       {% for link in project.links %}
       <li class="mt-4">
-        <a class="thick-link uppercase" href="{{ link.href }}" target="_blank">
+        <a
+          class="thick-link uppercase"
+          href="{{ link.href }}"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
           {{ link.text }}
         </a>
       </li>

@@ -54,7 +54,12 @@
     <ul class="list-none text-size--1 space-y-line-1/2">
       {% for reading in concept.readings %}
       <li>
-        <a class="block" href="{{ reading.href }}">
+        <a
+          class="block"
+          href="{{ reading.href }}"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
           <span class="underline">{{ reading.title }}</span>
           <br />
           <span class="text-size--2">{{ reading.author }}</span>
@@ -69,7 +74,12 @@
       {% for tool in concept.tools %}
       <li class="space-y-line-1 pb-line-3/2 border-b">
         <h3>
-          <a class="thick-link uppercase" href="{{ tool.href }}">{{
+          <a
+            class="thick-link uppercase"
+            href="{{ tool.href }}"
+            target="_blank"
+            rel="noopener nofollow noreferrer"
+          >{{
             tool.title
           }}</a>
         </h3>
@@ -78,7 +88,12 @@
         <ul class="flex space-x-4">
           {% for link in tool.links %}
           <li>
-            <a class="thick-link uppercase" href="{{ link.href }}">
+            <a
+              class="thick-link uppercase"
+              href="{{ link.href }}"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
               {{ link.text }}
             </a>
           </li>
