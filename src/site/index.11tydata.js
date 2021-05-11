@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: true,
+    isOn: false,
     title: "Quadratic Voting at Work",
     description: `May 11th, 4:00 pm to 5:30 pm UTC
 
