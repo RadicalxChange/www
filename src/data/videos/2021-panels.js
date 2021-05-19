@@ -1,5 +1,22 @@
 const data = [
   {
+    title: "Quadratic Voting at Work",
+    speakers: "Charlotte Cavaille, Chris Hansen, Sachin Mittal, Jake Interrante",
+    description: `Quadratic Voting offers hope to revitalize collective decision-making in a wide range of domains in society and the economy, e.g., corporations, governments, unions, games, ratings, research, et cetera. An increasing number of examples support that hope in this radical voting method. In this panel discussion, you hear from current practices by policy-makers in the Colorado government and academic researchers and their insights from working with Quadratic Voting in preference polling.
+
+SPEAKERS
+Charlotte Cavaille is an Assistant Professor at the Ford School of Public Policy at the University of Michigan. Before moving to Michigan, she was an Assistant Professor at the School of Foreign Service at Georgetown University. She was also a fellow at the Center for the Study of Democratic Politics at Princeton University. She received a Ph.D. in Government and Social Policy from Harvard University in November 2014. Some of her work appeared in The Journal of Politics and the American Political Science Review. Her research examines the dynamics of popular attitudes towards redistributive social policies at a time of rising inequality, high fiscal stress, and high levels of immigration.
+
+Senator Chris Hansen represents Senate District 31 in the Colorado State Senate. He specializes in energy sector economics and data analytics, with 20+ years of experience in the global energy industry and five years in the Colorado General Assembly. He currently serves on the Joint Budget Committee, as well as Chair of the Senate Appropriations Committee. Before his work as an elected official, he was Senior Director at IHS Markit, where he led a global portfolio of energy products, events, and partnerships. Dr. Hansen holds a BSc in Nuclear Engineering from Kansas State University; a Graduate Diploma of Civil Engineering from the University of the Witwatersrand, South Africa; a Master of Science in Engineering Systems from MIT; and a Ph.D. in Economic Geography from Oxford University.  In addition to his current role in the state senate, Hansen serves as Chairman of the Board of Western Freedom, a non-profit dedicated to integrating the power system and RTO in the West.  He is also the Co-Founder and Director at the Colorado Energy & Water Institute and as Founder of the Colorado Science and Engineering Policy Fellowship.
+
+Sachin Mittal is stewarding KERNEL at Gitcoin.
+
+MODERATOR
+Jake Interrante is Editor in Chief of the Chicago Policy Review and an MPP candidate ’21 at the University of Chicago Harris School of Public Policy. Previously, Jake worked as a policy professional in the community development finance field. During his time working with Massachusetts Housing Partnership’s ONE Mortgage Program, he helped working-class families buy homes in otherwise unaffordable parts of the State. Before that, he helped finance amenities in economically disadvantaged communities as Development Coordinator for Partners for the Common Good, a DC-based CDFI Loan Fund. His published work on comparative borrower outcomes in the ONE Mortgage program and FHA Mortgage Program appeared in the March 2020 edition of Cityscape. Jake also holds a B.A.s in Public Policy and Political Science from the University of Chicago.`,
+    videoId: "dNIx52tn1sQ",
+    date: "2021-05-11",
+  },
+  {
     title: "Data Agency: Individual or Shared?",
     speakers: "Jennifer Morone, Matt Prewitt, Nick Vincent, Kaliya Young",
     description: `Digital networks have centralized power over identities and information, creating problems for both markets and democracy. Does the solution require more shared agency over data?  What might that look like?  This panel discussion is structured around thought experiments to find solutions to this issue.
@@ -11,7 +28,7 @@ Nick Vincent is a Ph.D. student in Northwestern University's Technology and Soci
 
 Kaliya Young also known as the "Identity Woman" has spent the last 15 years working to bring about the creation of a new layer of the internet for people based on open standards. She co-founding the Internet Identity Workshop, which was recently profiled in the Wired UK. In 2017 she graduated in the very first cohort from UT Austin's iSchool with a Master of Science in Identity Management and Security. Her master's thesis The Domains of Identity: A framework for understanding identity systems in contemporary society is being published this month by Anthem Press. In 2019, she traveled to India for two months as a New America India-US Public Interest Technology fellow to study Aadhaar their national ID system. She co-founded HumanFirst.Tech with Shireen Mitchel, a project focused on creating space for diverse voices and building a more inclusive industry. In 2012 she was recognized as a Young Global Leader by the World Economic Forum and Fast Company named her as one of the most influential women in tech in 2009. She consults with governments, NGO’s, startups, and enterprises on decentralized identity technologies.
 
-Moderator
+MODERATOR
 Jennifer Morone is the CEO of RadicalxChange Foundation and a multidisciplinary visual artist, activist, and filmmaker. Her work focuses on the human experience in relation to technology, economics, politics, and identity, and the moral and ethical issues that arise from such systems. Her interests lie in exploring ways of creating social justice and equal distribution of the future. Morone is a trained sculptor with BFA from SUNY Purchase and earned her MA in Design Interactions at the Royal College of Art in London with Dunne and Raby. Her work has been presented at institutions, festivals, museums, and galleries around the world including ZKM, Kunsthalle Düsseldorf, Ars Electronica, HEK, the Martin Gropius Bau, the Science Gallery, Transmediale, SMBA, Carroll/Fletcher Gallery, panke.gallery, Aksioma, Drugo more, and featured extensively on international media outlets such as The Economist, WIRED, WMMNA, Vice, the Guardian, BBC World News, Tagesspiegel, Netzpolitik, the Observer.`,
     videoId: "eRo6mff6vLY",
     date: "2021-01-28",
