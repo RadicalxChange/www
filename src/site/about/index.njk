@@ -55,6 +55,8 @@ supporters:
     href: "https://www.nesta.org.uk/"
   - name: Ocean Protocol
     href: "https://oceanprotocol.com/"
+  - name: One Project
+    href: "https://oneproject.org/"
   - name: Polco
     href: "https://polco.us/"
   - name: Totle
@@ -221,7 +223,12 @@ supporters:
     <ul class="text-size--1">
       {%- for supporter in supporters -%}
       <li class="comma-separated">
-        <a href="{{ supporter.href }}">{{ supporter.name }}</a>
+        <a
+          href="{{ supporter.href }}"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >{{ supporter.name }}</a
+        >
       </li>
       {%- endfor -%}
     </ul>
