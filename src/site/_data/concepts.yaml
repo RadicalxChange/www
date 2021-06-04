@@ -136,10 +136,24 @@
       href: /media/blog/between-scarcity-and-abundance/
       date: "2020-04-15T04:00:00.000Z"
   tools:
+    - title: RxC QV
+      href: https://quadraticvote.radicalxchange.org/
+      description: |
+        RadicalxChange's in-house Quadratic Voting tool. Use this tool to create elections, send unique invite links to voters, and view results in a sleek and simple interface. Forked from an open source Gitcoin tool (see below).
+      links:
+        - text: GitHub
+          href: https://github.com/RadicalxChange/quadratic-voting
+    - title: QuadraticVote.co
+      href: https://quadraticvote.co/
+      description: |
+        A Quadratic Voting web app developed by Gitcoin. This app was used to select community winners of Gitcoin Hackathons.
+      links:
+        - text: GitHub
+          href: https://github.com/Anish-Agnihotri/quadratic-voting
     - title: Government Technology Agency (Singapore)
       href: https://qv.geek.sg/
       description: |
-        If you want to do a casual Quadratic Vote with your peers, this web app is a great choice. It is all straightforward from election creation, email / link invites, and quadratic voting to result analysis. You can even build your own interface on top of it using the associated APIs.
+        Another great choice for doing a casual Quadratic Vote with your peers. It is all straightforward from election creation, email / link invites, and quadratic voting to result analysis. You can even build your own interface on top of it using the associated APIs.
       links:
         - text: Twitter
           href: https://twitter.com/GovTechSG
