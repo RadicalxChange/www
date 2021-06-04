@@ -21,15 +21,76 @@ introductionBlurb: |
 {{ menu.render() }}
 <!-- prettier-ignore -->
 {% call introduction.render(headerText, introductionBlurb) %}
-<div>
-  <a href="/community/chapters" class="thick-link uppercase"
-    >Get involved with your local chapter</a
-  >
-</div>
+<ul class="flex space-between">
+  <li class="mr-4">
+    <a href="/community/chapters" class="thick-link uppercase"
+      >Get involved with your local chapter</a
+    >
+  </li>
+  <li class="mr-4">
+    <a
+      href="https://forms.gle/Z1TfHfLPErF2eAEWA"
+      target="_blank"
+      rel="noopener nofollow noreferrer"
+      class="thick-link uppercase"
+      >Post a collaboration</a
+    >
+  </li>
+</ul>
 <!-- prettier-ignore -->
 {% endcall %}
+<section
+  id="job-board"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-4 lg:pb-8 my-margin"
+>
+  <ol class="col-span-full mt-12">
+    <!-- prettier-ignore -->
+    {% for s in collaborations %}
+    <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
+      <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4">
+        <div class="col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8">
+          <h1 class="uppercase break-words">{{ s.title }}</h1>
+          <h2>{{ s.organization }}</h2>
+        </div>
+        <div class="text-right col-start-column-3 col-end-margin-2 lg:col-start-column-9 lg:col-end-margin-2">
+          <p>{{ s.location }}</p>
+          <p>{{ s.datePosted }}</p>
+        </div>
+      </button>
+      <div class="hidden row-start-2 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4 pb-12 lg:pb-16">
+        <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
+          <div class="markdown markdown-sm mb-12">
+            {{ s.description | markdown | safe }}
+          </div>
+          <a class="thick-link text-size--1 uppercase" href="/fellowship/{{ s.slug }}">
+            Apply for this job
+          </a>
+        </div>
+      </div>
+      <div class="col-span-columns lg:border-b"></div>
+    </div>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ol>
+</section>
 <!-- prettier-ignore -->
 {{ footer.render() }}
+<script>
+  var collapsibles = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "grid") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "grid";
+      }
+    });
+  }
+</script>
 <script>
   // prettier-ignore
   {% include "components/menu.js" %}
