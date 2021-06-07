@@ -27,6 +27,14 @@ introductionBlurb: |
       >Get involved with your local chapter</a
     >
   </li>
+  <li class="mb-8 lg:mb-0 lg:mr-12">
+    <button
+      id="toggleBoard"
+      type="button"
+      class="thick-link uppercase text-left focus:outline-none"
+      >Find a collaboration</button
+    >
+  </li>
   <li>
     <a
       href="https://forms.gle/Z1TfHfLPErF2eAEWA"
@@ -40,8 +48,8 @@ introductionBlurb: |
 <!-- prettier-ignore -->
 {% endcall %}
 <section
-  id="job-board"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-4 lg:pb-8 my-margin"
+  id="jobBoard"
+  class="hidden grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-4 lg:pb-8 my-margin"
 >
   <ol class="col-span-full mt-12">
     <!-- prettier-ignore -->
@@ -76,6 +84,20 @@ introductionBlurb: |
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>
+  var toggleBoard = document.getElementById("toggleBoard");
+  toggleBoard.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var jobBoard = document.getElementById("jobBoard");
+    if (jobBoard.style.display === "grid") {
+      jobBoard.style.display = "none";
+      toggleBoard.textContent = "Find a collaboration";
+    } else {
+      jobBoard.style.display = "grid";
+      toggleBoard.textContent = "Hide collaborations";
+      jobBoard.scrollIntoView();
+    }
+  });
+
   var collapsibles = document.getElementsByClassName("collapsible");
   var i;
 
