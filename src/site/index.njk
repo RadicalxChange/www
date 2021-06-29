@@ -99,14 +99,15 @@ homeConcepts:
     >
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="{{ 'https://www.eventbrite.com/e/rxc-voice-from-election-insights-to-action-tickets-161035444349' if not rxcTv.isOn else '#tv'}}"
+        href="{{ 'https://radicalxchange-s.simplecast.com/episodes/yakov-feygin-and-nick-vincent-data-dividends' if not rxcTv.isOn else '#tv'}}"
         target="{{ '_blank' if not rxcTv.isOn else ''}}"
         rel="noopener nofollow noreferrer"
       >
         <!-- prettier-ignore -->
         {% if not rxcTv.isOn %}
-        <h2 class="font-bold">RxC Livestream</h2>
-        <p>{{ rxcTv.title }}</p>
+        <h2 class="font-bold">New Podcast</h2>
+        <p>RadicalxChange(s)</p>
+        <p>Yakov Feygin and Nick Vincent: On Data Dividends</p>
         <!-- prettier-ignore -->
         {% else %}
         <h2 class="font-bold">Streaming Now</h2>

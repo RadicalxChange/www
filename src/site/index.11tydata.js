@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: true,
+    isOn: false,
     title: "RxC Voice: From Election Insights to Action",
     description: `June 30th, 6:00 pm to 7:00 pm UTC
 
