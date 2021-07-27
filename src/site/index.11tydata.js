@@ -1,16 +1,32 @@
 module.exports = {
   rxcTv: {
     isOn: false,
-    title: "RxC Voice: From Election Insights to Action",
-    description: `June 30th, 6:00 pm to 7:00 pm UTC
+    title: "Navigating Digital Identity in Political Economies",
+    description: `July 28th, 5:00 pm to 6:30 pm UTC
 
-RxC Voice is RadicalxChange Foundation's new governance tool combining liquid democracy, online deliberation, and quadratic voting using QF (Quadratic Funding), Pol.is, and QV (Quadratic Voting).
+Most digital identity systems are centralized (e.g. in big government or technology organizations) or individualistic (e.g. in most blockchain projects). However, being in the world is fundamentally social and intersectional — we are all part of networks. So how might we formalize digital identity in a way that better reflects this complex reality? This panel with leading social technology and computer researchers explores more robust digital identity approaches and potential application areas in political economies.
 
-Our first pilot asked our delegation, "What activities should the RadicalxChange Foundation prioritize in 2021-2022?" The results can be seen here and we look forward to sharing reflections on the process including a Q&A with the community.
+The starting point for the conversation will be Prof. Bryan Ford's paper Identity and Personhood in Digital Democracy: Evaluating Inclusion, Equality, Security, and Privacy in Pseudonym Parties and Other Proofs of Personhood.
 
-We'll go over the curation of the ballot, share interesting insights, look at the next steps for the project, and examine the mechanics of how the vote came to be.
+Register to join this spirited panel and ask questions.
 
-See RxC President Matt Prewitt (who will lead the event) talk about the exciting election outcomes with CEO Jennifer Lyn Morone and Project Developer Alex Randaccio. From delegation to deliberation to the curation of the ballot and then the election, many lessons were gleaned and we're looking forward to sharing how we can make RxC Voice better.`,
-    slidoUrl: "https://app.sli.do/event/5mxfke4o",
+## Speakers
+
+Prof. Bryan Ford (@brynosaurus) leads the Decentralized/Distributed Systems (DEDIS) research laboratory at the Swiss Federal Institute of Technology in Lausanne (EPFL). Ford's research focuses on decentralized systems, security and privacy, digital democracy, and blockchain technology. Since earning his Ph.D. at MIT, Ford has held faculty positions at Yale University and EPFL. His awards include the Jay Lepreau Best Paper Award, the NSF CAREER award, and the AXA Research Chair. Inventions he is known for include parsing expression grammars, delegative or liquid democracy, and scalable sharded blockchains. He has advised numerous companies and governments, including serving on the US DARPA Information Science and Technology (ISAT) Study Group and on the Swiss Federal E-voting Experts Dialog.
+
+Shireen Mitchell (@digitalsista)is an award-winning technological woman of color, founder, author, speaker, social entrepreneur, nonprofit leader, advocate, diversity analyst, and a political, digital & social strategist. She is a native New Yorker playing video games, designing BBS boards and gopher sites prior to the Web going worldwide. As an early adopter and one of the few women of color web designers in the early '90s, she's been involved with tech and social networks for over 30 years. She founded Digital Sisters/Sistas Inc.--the first organization to focus on women and girls of color in tech and online access. She created the first women of color web multimedia management firm (MHG). Her recent projects are Tech Media Swirl, Stopping Online Violence Against Women (SOVAW) & Human First Tech. As an author, she's written “Gaining Daily Access to Science and Technology” in the book “50 Ways to Improve Women’s Lives” and “Access to Technology: Race, Gender, and Class Bias,” The Scholar and Feminist Online.
+
+Shireen has been named one of the Fast Company's The Most Influential Women in Technology, DC Tech Titan, DC's Top Ten most influential in Social Media, The Root 100: African-American Leaders of Excellence and GovFresh's 100+ Women in Government & Tech. I've been awarded the Social Citizen: Apps for Democracy DC, Rising Star: Woman of Color in Technology, and Heroine in Tech.
+
+Kaliya Young (@identitywoman) is an expert in self-sovereign identity and identity on the blockchain. She is the co-author of a Comprehensive guide to Self-Sovereign Identity and is widely known as Identity Woman (it's also the name of her blog and her twitter handle). She is committed her life to the development of an open standards based layer of the internet that empowers people. In 2005, Young co-founded the Internet Identity Workshop with Doc Searls and Phil Windley. Five years later she founded the Personal Data Ecosystem Consortium to catalyze a network of companies working to give individuals the tools to collect, manage and gain value from their own personal data generated actively and passively as they interact with all kinds of digital systems. In 2016 she began the Identity Ecosystem Map project and collaborating in leading its development. She consults with and advises companies seeking to develop products in this ecosystem. She is the co-founder with Shireen Mitchel of HumanFirst.Tech a project focused the needs of diverse communities and building an inclusive industry.
+
+Currently she is the Chair of the Interoperability Working Group for Good Health Pass at the Trust over IP Foundation, Co-Chair of the Interoperability Working Group at the Decentralized Identity Foundation (DIF) and Co-Chair of the Secure Data Store Working Group jointly charted by the Credentials Community Group at the W3C and DIF.
+
+Young has been named one of the most influential women in tech by Fast Company Magazine. She has presented keynotes to the MyData, Identiverse and Gartner’s Identity and Access Management Summit in London. She has spoken at, the K(no)w Identity conference, EMMA’s IEES conference, DWeb Summit, European Identity Conference, Gnomedex, Data Week, Privacy Identity and Innovation, NIST’s IDTrust Conference, SXSW and BlogHer. She has been quoted in a range of media including the New York Times, MIT Technology Review, Business Week, and ReadWriteWeb.
+
+## Moderator
+
+Glen Weyl (@glenweyl) works to collaboratively envision, design, experiment with and organize around next generation political economic institutions. He serves at Microsoft’s Office of the Chief Technology Officer Political Economist and Social Technologist (OCTOPEST), where he helps design and implement technology ambitious corporate social commitments. He is Founder and Chair of the RadicalxChange Foundation, a non-profit that coordinates a global social movement for social technology. Previously he was 2007 Valedictorian of Princeton University, received his PhD in economics from there in 2008, was Junior Fellow at the Harvard Society of Fellows, Assistant Professor of Economics and Law at University of Chicago, co-author with Eric Posner of Radical Markets: Uprooting Capitalism and Democracy for a Just Society and co-author and technical lead of the Edmund J. Safra Center Rapid Response Task Force on Covid-19 that was a foundation of the Biden administration’s covid-19 response plan. In 2018, he was one of Bloomberg Businessweek’s 50 most influential people, WIRED’s 25 people shaping the next 25 years of technology and Coindesk’s 10 most influential people in blockchain.`,
+    slidoUrl: "https://app.sli.do/event/aqrwjqu8",
   },
 };
