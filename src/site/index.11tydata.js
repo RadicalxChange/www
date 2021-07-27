@@ -27,6 +27,6 @@ Young has been named one of the most influential women in tech by Fast Company M
 ## Moderator
 
 Glen Weyl (@glenweyl) works to collaboratively envision, design, experiment with and organize around next generation political economic institutions. He serves at Microsoft’s Office of the Chief Technology Officer Political Economist and Social Technologist (OCTOPEST), where he helps design and implement technology ambitious corporate social commitments. He is Founder and Chair of the RadicalxChange Foundation, a non-profit that coordinates a global social movement for social technology. Previously he was 2007 Valedictorian of Princeton University, received his PhD in economics from there in 2008, was Junior Fellow at the Harvard Society of Fellows, Assistant Professor of Economics and Law at University of Chicago, co-author with Eric Posner of Radical Markets: Uprooting Capitalism and Democracy for a Just Society and co-author and technical lead of the Edmund J. Safra Center Rapid Response Task Force on Covid-19 that was a foundation of the Biden administration’s covid-19 response plan. In 2018, he was one of Bloomberg Businessweek’s 50 most influential people, WIRED’s 25 people shaping the next 25 years of technology and Coindesk’s 10 most influential people in blockchain.`,
-    slidoUrl: "",
+    slidoUrl: "https://app.sli.do/event/aqrwjqu8",
   },
 };
