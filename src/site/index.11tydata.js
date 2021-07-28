@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: false,
+    isOn: true,
     title: "Navigating Digital Identity in Political Economies",
     description: `July 28th, 5:00 pm to 6:30 pm UTC
 
