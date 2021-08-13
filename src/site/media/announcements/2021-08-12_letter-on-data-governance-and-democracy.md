@@ -9,6 +9,8 @@ postHeader: "A Letter on Data Governance and Democracy"
 
 [Sign the letter on Github](https://github.com/RadicalxChange/datagovletter/issues/new?assignees=alexrandaccio&labels=signature&template=sign-letter.yml&title=%5BSIGN%5D+Your+Name+Here)
 
+[Sign the letter on Twitter](https://twitter.com/RadxChange/status/1423062256728870916)
+
 We are big believers in robust, democratically accountable systems of data governance. Systems that shift the power balance from monopolistic firms to accountable intermediaries, allowing for productive collaboration through interoperability and portability, and understand that data is fundamentally collective and should be governed as such, rather than through the narrow frame of individual property rights and freedoms.
 
 While there is no singular solution, we've found that many different ideas about the specifics of data policy are compatible with these foundational principles.
