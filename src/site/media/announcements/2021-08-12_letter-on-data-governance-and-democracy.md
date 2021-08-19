@@ -1,15 +1,35 @@
 ---
 layout: "layouts/announcement.njk"
-date: "2021-08-11"
+date: "2021-08-12"
 title: "A Letter on Data Governance and Democracy"
 postHeader: "A Letter on Data Governance and Democracy"
 ---
 
 ![a letter on data governance and democracy](/images/announcements/data_gov_letter_thumbnail.png)
 
-[Sign the letter on Github](https://github.com/RadicalxChange/datagovletter/issues/new?assignees=alexrandaccio&labels=signature&template=sign-letter.yml&title=%5BSIGN%5D+Your+Name+Here)
+<a
+  class="github-button"
+  href="https://github.com/RadicalxChange/datagovletter/issues/new?assignees=alexrandaccio&labels=signature&template=sign-letter.yml&title=%5BSIGN%5D+Your+Name+Here"
+  data-size="large"
+  aria-label="Sign the letter on Github">Sign the letter on Github</a>
+<script
+  async
+  defer
+  src="https://buttons.github.io/buttons.js">
+</script>
 
-[Sign the letter on Twitter](https://twitter.com/RadxChange/status/1423062256728870916)
+<a
+  href="https://twitter.com/messages/compose?recipient_id=1062812681730543617&ref_src=twsrc%5Etfw"
+  class="twitter-dm-button"
+  data-size="large"
+  data-text="Hi, I&#39;d like to sign the RxC Data Freedom Act Working Group&#39;s Letter on Data Governance and Democracy. Here is my name and affiliation:"
+  data-screen-name="RadxChange"
+  data-show-count="false">Sign the letter on Twitter</a>
+<script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  charset="utf-8">
+</script>
 
 We are big believers in robust, democratically accountable systems of data governance. Systems that shift the power balance from monopolistic firms to accountable intermediaries, allowing for productive collaboration through interoperability and portability, and understand that data is fundamentally collective and should be governed as such, rather than through the narrow frame of individual property rights and freedoms.
 
@@ -43,7 +63,35 @@ We believe the following principles will characterize tomorrow’s successful sc
 
 We are cautiously encouraged by recent policy, including the EU’s Data Governance Act and Digital Markets Act, the NPD proposal in India, the California Consumer Privacy Act, and other legislation that aims to address the current dysfunction. However, some of these proposals retain troubling characteristics, such as emphasizing individual control and ownership, prohibiting the delegation of data rights, mistaking anonymization for the creation of so-called ‘non personal data’, or defaulting to state stewardship of data. We believe the above principles show a markedly better way forward.
 
-Divya Siddarth - RadicalxChange Foundation, Ostrom Workshop  
+---
+
+<a
+  class="github-button"
+  href="https://github.com/RadicalxChange/datagovletter/issues/new?assignees=alexrandaccio&labels=signature&template=sign-letter.yml&title=%5BSIGN%5D+Your+Name+Here"
+  data-size="large"
+  aria-label="Sign the letter on Github">Sign the letter on Github</a>
+<script
+  async
+  defer
+  src="https://buttons.github.io/buttons.js">
+</script>
+
+<a
+  href="https://twitter.com/messages/compose?recipient_id=1062812681730543617&ref_src=twsrc%5Etfw"
+  class="twitter-dm-button"
+  data-size="large"
+  data-text="Hi, I&#39;d like to sign the RxC Data Freedom Act Working Group&#39;s Letter on Data Governance and Democracy. Here is my name and affiliation:"
+  data-screen-name="RadxChange"
+  data-show-count="false">Sign the letter on Twitter</a>
+<script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  charset="utf-8">
+</script>
+
+## Signatures
+
+***Divya Siddarth - RadicalxChange Foundation, Ostrom Workshop  
 Matt Prewitt - RadicalxChange Foundation  
 Jennifer Lyn Morone - RadicalxChange Foundation  
 E. Glen Weyl - RadicalxChange Foundation  
@@ -79,3 +127,4 @@ Fares El Choufi - Individual
 Serj Hunt - Human Systems  
 Tanya Lee - Austin Self-Learning  
 Robert O’Brien - Data Commons NZ / Yumi Labs  
+Gustavo Pellegrini Dias - UChicago College, RadicalxChange Brasil***
