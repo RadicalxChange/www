@@ -71,10 +71,6 @@
 
     Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on.
   readings:
-    - title: "Quadratic Payments: A Primer"
-      author: Vitalik Buterin
-      href: https://vitalik.ca/general/2019/12/07/quadratic.html
-      date: "2019-12-07T05:00:00.000Z"
     - title: "Agonistics: Thinking The World Politically"
       author: Chantal Mouffe
       href: https://www.barnesandnoble.com/w/agonistics-chantal-mouffe/1113507188
