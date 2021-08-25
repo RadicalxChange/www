@@ -131,4 +131,4 @@ Anne-Marie Slaughter - New America
 Gustavo Pellegrini Dias - UChicago College, RadicalxChange Brasil  
 Keith Stevens - Individual  
 Alex Randaccio - RadicalxChange Foundation  
-G. Angela Corpus***
+G. Angela Corpus - RadicalxChange Foundation***
