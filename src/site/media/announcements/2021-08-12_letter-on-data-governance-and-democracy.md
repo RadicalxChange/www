@@ -127,6 +127,8 @@ Fares El Choufi - Individual
 Serj Hunt - Human Systems  
 Tanya Lee - Austin Self-Learning  
 Robert O’Brien - Data Commons NZ / Yumi Labs  
+Anne-Marie Slaughter - New America  
 Gustavo Pellegrini Dias - UChicago College, RadicalxChange Brasil  
 Keith Stevens - Individual  
-Alex Randaccio - RadicalxChange Foundation***
+Alex Randaccio - RadicalxChange Foundation  
+G. Angela Corpus***
