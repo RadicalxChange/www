@@ -51,7 +51,31 @@
       {{ concept.description | markdown | safe }}
       <p>Read more about this concept below.</p>
     </div>
-    <ul class="list-none text-size--1 space-y-line-1/2">
+    <div class="flex {{ 'space-x-4' if concept.press else ''}} mt-12 mb-8">
+      <button type="button" id=press-button class="{{ 'block' if concept.press else 'hidden'}} underline focus:outline-none text-size--1">
+        Press
+      </button>
+      <button type="button" id=readings-button class="focus:outline-none text-size--1">
+        Readings
+      </button>
+    </div>
+    <ul id=press-list class="{{ 'block' if concept.press else 'hidden'}} list-none text-size--1 space-y-line-1/2">
+      {% for press in concept.press %}
+      <li>
+        <a
+          class="block"
+          href="{{ press.href }}"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <span class="underline">{{ press.title }}</span>
+          <br />
+          <span class="text-size--2">{{ press.publication }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <ul id=readings-list class="{{ 'hidden' if concept.press else 'block'}} list-none text-size--1 space-y-line-1/2">
       {% for reading in concept.readings %}
       <li>
         <a
@@ -118,6 +142,28 @@
     </p>
   </div>
 </div>
+<script>
+  var pressButton = document.getElementById("press-button");
+  var readingsButton = document.getElementById("readings-button");
+  var pressList = document.getElementById("press-list");
+  var readingsList = document.getElementById("readings-list");
+
+  pressButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    this.style.textDecoration = "underline";
+    readingsButton.style.textDecoration = "none";
+    pressList.style.display = "block";
+    readingsList.style.display = "none";
+  });
+
+  readingsButton.addEventListener("click", function() {
+    this.classList.toggle("active");
+    this.style.textDecoration = "underline"
+    pressButton.style.textDecoration = "none";
+    readingsList.style.display = "block";
+    pressList.style.display = "none";
+  });
+</script>
 <script>
   // prettier-ignore
   {% include "components/close-button.js" %}

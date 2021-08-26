@@ -70,6 +70,15 @@
     Quadratic Voting (QV)  is a redesigned voting method reflecting the intensity of people's preferences in collective decisions. It greatly mitigates tyranny-of-the-majority and factional control problems.
 
     Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on.
+  press:
+    - title: "QV Polling Method Gains Steam in Colorado State Legislature"
+      publication: RxC Blog
+      href: https://www.radicalxchange.org/media/blog/qv-polling-method-gains-steam-in-colorado-state-legislature/
+      date: "2021-05-24T04:00:00.000Z"
+    - title: "Colorado Tried a New Way to Vote: Make People Pay—Quadratically"
+      publication: Wired
+      href: https://www.wired.com/story/colorado-quadratic-voting-experiment/
+      date: "2019-04-16T04:00:00.000Z"
   readings:
     - title: "Agonistics: Thinking The World Politically"
       author: Chantal Mouffe
