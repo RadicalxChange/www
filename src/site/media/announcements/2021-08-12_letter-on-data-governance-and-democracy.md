@@ -98,7 +98,8 @@ E. Glen Weyl - RadicalxChange Foundation
 Sylvie Delacroix - University of Birmingham, Mozilla, Alan Turing Institute   
 Shiv Malik - Pool Foundation  
 Nils Gilman - Berggruen Institute  
-Sebastian Benthall - New York University School of Law Yakov Feygin - Berggruen Institute  
+Sebastian Benthall - New York University School of Law  
+Yakov Feygin - Berggruen Institute  
 S. Amadae - University of Helsinki  
 Nathalia Ramos - Berggruen Institute  
 Katrina Ligett - The Data Co-Ops Project  
@@ -134,4 +135,15 @@ Alex Randaccio - RadicalxChange Foundation
 G. Angela Corpus - RadicalxChange Foundation  
 Steven McKie - Amentum Capital  
 Leon Erichsen - Individual  
-Andreas Fauler - Rocketstar Foundation***
+Andreas Fauler - Rocketstar Foundation  
+Emilio Sempris - Brundtland School  
+Kris Jones - Commons Stack  
+Ryan Miller - Individual  
+Saeed Valadbaygi - The Global Centre for Risk and Innovation (GCRI)  
+Stanisław Szufa - Pabulib  
+Disruption Joe - Gitcoin  
+Connor O'Day - Gitcoin  
+Joshua Shane - RadicalxChange Seattle  
+Gershon Ballas - Individual  
+Paul Keller - Open Future  
+Scott Moore - Gitcoin***
