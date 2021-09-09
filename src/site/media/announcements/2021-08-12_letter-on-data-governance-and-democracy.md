@@ -146,4 +146,7 @@ Connor O'Day - Gitcoin
 Joshua Shane - RadicalxChange Seattle  
 Gershon Ballas - Individual  
 Paul Keller - Open Future  
-Scott Moore - Gitcoin***
+Scott Moore - Gitcoin  
+Billy Bog - Individual  
+Nikoline Nik - RadicalxChange  
+Maria Savona - University of Sussex and Luiss University***
