@@ -18,7 +18,8 @@ The argument proceeds like this.
 **First**: infrastructure is best interpreted not as roads or power lines or anything else in particular, but as scarce resources upon which self-reinforcing processes depend.
 
 **Second**: whoever owns (or has absolute authority over) infrastructure has immense power, because exponentially-evolving processes depend on it.
-Third: capitalists should never own infrastructure. Capitalism isn’t built for that. The justifications of profit and private ownership end wherever infrastructure begins.
+
+**Third**: capitalists should never own infrastructure. Capitalism isn’t built for that. The justifications of profit and private ownership end wherever infrastructure begins.
 
 **Fourth**: technocratic management of infrastructure fails too, because the responsible stewardship of infrastructure depends on answering hypercomplex questions, the answers to which depend on information locked away in the minds of the people likely to be impacted by infrastructure.
 
@@ -147,7 +148,7 @@ Obvious failure modes include investing in infrastructure nobody wants, like “
 
 Thus, technocratic governance can take societies full steam ahead toward an unattractive, dysfunctional future. Years of apparent progress are reevaluated in the fullness of time as decades of folly.
 
-The subtler issues are hard for technocrats to foresee in their planning spreadsheets. But they are at the very heart of normative political conversations. Thus, broad-based participating in decision-making is our best way of understanding them.
+The subtler issues are hard for technocrats to foresee in their planning spreadsheets. But they are at the very heart of normative political conversations. Thus, broad-based participation in decision-making is our best way of understanding them.
 
 Smart 21st-century governments with a democratic mindset try to get this right. They try to achieve coincidence between the governor and the governed, and they generally do a much better job representing the public interest than private parties would. But they often fail nonetheless. Sometimes they lack the tools or the mandate to incorporate rich and legitimate democratic feedback into their decisions. Sometimes they use problematic institutions like town hall or public planning meetings. They need to do better, and many are working on it.[^2]
 
