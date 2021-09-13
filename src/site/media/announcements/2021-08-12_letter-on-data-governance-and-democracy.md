@@ -152,4 +152,5 @@ Nikoline Nik - RadicalxChange
 Maria Savona - University of Sussex and Luiss University  
 Diogo G. R. Costa - Escola Nacional de Administração Pública (ENAP)  
 Cody Hill - The Data Union  
-James Felton Keith - The Data Union***
+James Felton Keith - The Data Union  
+Erik Rind - ImagineBC***
