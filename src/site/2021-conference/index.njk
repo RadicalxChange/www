@@ -1,0 +1,107 @@
+---
+layout: layouts/_base.njk
+title: Conference
+headerText: A New Era of Democracy
+introductionBlurb: |
+  This year we have taken a different approach to the 2021 conference. In the spirit of truly fostering participation, innovation, deliberation, and co-creation we have designed the event be a participatory conference - an Open Space unConference. This means that there will be no keynotes or panels, it’s about learning and getting stuff done!
+bodyText: |
+  The agenda will be created live by attendees present at the opening circle.
+
+  Through dozens of sessions and lunch you will have plenty of chances to present your ideas, ask questions, engage in challenging dialog, and make new professional connections. The Open Space unConference format is perfect for a rapidly moving field where the organizing team cannot predetermine what needs to be discussed.
+
+  Big ideas, concrete partnerships, and meaningful relationships emerge from Open Space events at a higher rate than conventional conferences. We are excited about Open Space as a path toward solidifying and growing communities of common purpose.
+
+  You can find out more about how Open Space unconference works [here](https://www.radicalxchange.org/2021-conference/faq).
+
+  With the pandemic has come both uncertainty about being able to move freely in the world for such events, and a heightened sense of awareness about the climate impacts of travel for events such as these, this year we are also experimenting with a multi-event that will take place in three locations over three weeks in December.
+
+  [December 4th in-person, Taipei, Taiwan, organized with g0v jothon](https://www.radicalxchange.org/2021-conference/taipei)
+
+  [December 10th online, Qiqo Chat (GMT)](https://www.radicalxchange.org/2021-conference/online)
+
+  [December 17th in-person, Denver, Colorado](https://www.radicalxchange.org/2021-conference/denver)
+
+  In addition to the in-person and online events, there will be an unique and never before seen 3-part program streamed LIVE the day before each Open Space unConference that thematically relate to the succeeding event, to inspire and learn, called RxC TV.
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/conference-menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin"
+>
+  <div class="fixed top-0 right-0 h-screen w-1/5 conference_menu">
+    <div class="w-full">
+      <button class="bg-black h-16 w-full">
+        <a href="/events">
+          <p class="text-white text-size--1 m-2">Watch past conferences</p>
+        </a>
+      </button>
+      <h1 class="font-display uppercase text-center my-6 text-size-4">
+        2021 Annual Conference
+      </h1>
+    </div>
+    <div>
+      <button class="conference_button">
+        <a href="/2021-conference/taipei">
+          <p class="text-white uppercase text-size--2 m-2">To Taipei Event</p>
+        </a>
+      </button>
+      <button class="conference_button">
+        <a href="/2021-conference/online">
+          <p class="text-white uppercase text-size--2 m-2">To Online Event</p>
+        </a>
+      </button>
+      <button class="conference_button">
+        <a href="/2021-conference/denver">
+          <p class="text-white uppercase text-size--2 m-2">To Denver Event</p>
+        </a>
+      </button>
+    </div>
+  </div>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block align-top") }}
+    </a>
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display">
+      A New Era
+    </h1>
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display">
+      of Democracy
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2"
+  >
+    <h2 class="text-size-2 font-bold">
+      Participation, Innovation, Deliberation, Co-Creation
+    </h2>
+    <p class="font-bold">
+      December 3rd - 17th - Taipei, Online, Denver
+    </p>
+    <div class="markdown font-bold">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="markdown">
+      {{ bodyText | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

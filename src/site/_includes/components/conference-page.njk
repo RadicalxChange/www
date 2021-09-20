@@ -1,0 +1,164 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/conference-menu.njk" as menu %}
+
+<!-- prettier-ignore -->
+{% macro render(venue, pagination) %}
+<!-- prettier-ignore -->
+{{ closeButton.render(href="/2021-conference") }}
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="z-10 block fixed left-0 bottom-0 mb-bottom-button ml-xmargin lg:ml-lg/xmargin"
+>
+  <a
+    is="a-replace"
+    class="group inline-flex items-center justify-start py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.previous | default(pagination.href.last, true) }}"
+  >
+    <span>←</span>
+    <div
+      class="hidden lg:inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+    >
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      {{ pagination.page.previous.title if pagination.page.previous else pagination.page.last.title }}
+    </div>
+  </a>
+</div>
+<div
+  class="z-10 block fixed right-0 bottom-0 mb-bottom-button mr-xmargin lg:mr-lg/xmargin"
+>
+  <a
+    is="a-replace"
+    class="group inline-flex items-center justify-end py-2 px-4 border rounded-oval text-size--1 text-white bg-black"
+    href="{{ pagination.href.next | default(pagination.href.first, true) }}"
+    ><div
+      class="hidden lg:inline-block max-w-0 group-hover:max-w-lg text-size--3 overflow-hidden whitespace-nowrap transition-max-width duration-1000 ease-in-out"
+    >
+      {{ pagination.page.next.title if pagination.page.next else pagination.page.first.title }}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <span>→</span>
+  </a>
+</div>
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin"
+>
+  <div class="conference_menu">
+    <h1 class="font-display uppercase text-center my-6 text-size-4 mt-24">
+      2021 Annual Conference
+    </h1>
+    <div>
+      <button class="conference_button">
+        <a href="/2021-conference/taipei">
+          <p class="text-white uppercase text-size--2 m-2">To Taipei Event</p>
+        </a>
+      </button>
+      <button class="conference_button">
+        <a href="/2021-conference/online">
+          <p class="text-white uppercase text-size--2 m-2">To Online Event</p>
+        </a>
+      </button>
+      <button class="conference_button">
+        <a href="/2021-conference/denver">
+          <p class="text-white uppercase text-size--2 m-2">To Denver Event</p>
+        </a>
+      </button>
+    </div>
+  </div>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block align-top") }}
+    </a>
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display">
+      {{ venue.title }}
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2"
+  >
+    <p class="font-bold">Where: {{ venue.location }}</p>
+    <p class="font-bold">When: {{ venue.datetime }}</p>
+    <div class="markdown font-bold">
+      {{ venue.introductionBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a href="{{ venue.eventbrite }}">
+          <p class="text-white uppercase text-size--2 m-2">Get Ticket</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">The format</p>
+    <div class="markdown">
+      {{ venue.formatBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a href="/2021-conference/faq">
+          <p class="text-white uppercase text-size--2 m-2">See FAQ</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Who will be there</p>
+    <div class="markdown">
+      {{ venue.personnelBlurb | markdown | safe }}
+    </div>
+    <p class="font-bold">
+      In the event of increased COVID-19 restrictions for in-person gatherings, we will move the physical meeting(s) online.
+    </p>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a href="#topics">
+          <p class="text-white uppercase text-size--2 m-2">See topics</p>
+        </a>
+      </button>
+    </div>
+    <div>
+      <p class="font-bold uppercase">Additional programming</p>
+      <p class="mt-0">RxC TV (included with your ticket)</p>
+    </div>
+    <div class="markdown">
+      {{ venue.rxcTvBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a href="{{ venue.eventbrite }}">
+          <p class="text-white uppercase text-size--2 m-2">Get Ticket</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">More about RadicalxChange</p>
+    <div class="markdown">
+      {{ venue.rxcBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a href="/">
+          <p class="text-white uppercase text-size--2 m-2">Learn more</p>
+        </a>
+      </button>
+    </div>
+    <p id="topics" class="font-bold uppercase">Discussion Topics</p>
+    <div class="markdown">
+      {{ venue.topics | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endmacro %}
