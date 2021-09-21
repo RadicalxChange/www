@@ -22,6 +22,8 @@ bodyText: |
   [December 17th in-person, Denver, Colorado](/2021-conference/denver)
 
   In addition to the in-person and online events, there will be an unique and never before seen 3-part program streamed LIVE the day before each Open Space unConference that thematically relate to the succeeding event, to inspire and learn, called RxC TV.
+
+  You can watch our past conferences [here](/events).
 ---
 
 <!-- prettier-ignore -->
@@ -43,16 +45,15 @@ bodyText: |
 >
   <div id="sidebar" class="conference_menu">
     <div class="w-full">
-      <button class="bg-black h-16 w-full">
-        <a href="/events">
-          <p class="text-white text-size--1 m-2">Watch past conferences</p>
+      <button class="bg-black w-full">
+        <a href="/2021-conference">
+          <h1 class="font-display uppercase text-center my-4 text-size-4 text-white">
+            2021 Annual Conference
+          </h1>
         </a>
       </button>
-      <h1 class="font-display uppercase text-center my-6 text-size-4">
-        2021 Annual Conference
-      </h1>
     </div>
-    <div>
+    <div class="mt-auto mb-12 ml-4 mr-8 text-center">
       <button class="conference_button">
         <a href="/2021-conference/taipei">
           <p class="text-white uppercase text-size--2 m-2">To Taipei Event</p>
@@ -68,21 +69,26 @@ bodyText: |
           <p class="text-white uppercase text-size--2 m-2">To Denver Event</p>
         </a>
       </button>
+      <button class="conference_button w-24">
+        <a href="/2021-conference/faq">
+          <p class="text-white uppercase text-size--2 m-2">FAQ</p>
+        </a>
+      </button>
     </div>
   </div>
   <header class="col-span-columns mb-8">
     <a href="/">
       {{ logo.render(classes="hidden lg:inline-block lg:w-1/10 align-top") }}
     </a>
-    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display">
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-xl/display">
       A New Era
     </h1>
-    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display">
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-xl/display">
       of Democracy
     </h1>
   </header>
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 space-y-line-3/2"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2 mb-12"
   >
     <h2 class="text-size-2 font-bold">
       Participation, Innovation, Deliberation, Co-Creation
@@ -90,10 +96,10 @@ bodyText: |
     <p class="font-bold">
       December 3rd - 17th - Taipei, Online, Denver
     </p>
-    <div class="markdown font-bold text-justify">
+    <div class="markdown markdown-sm font-bold text-justify">
       {{ introductionBlurb | markdown | safe }}
     </div>
-    <div class="markdown">
+    <div class="markdown markdown-sm">
       {{ bodyText | markdown | safe }}
     </div>
     {{ caller() if caller }}

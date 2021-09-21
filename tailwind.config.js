@@ -28,6 +28,7 @@ module.exports = {
       "size-4": ["var(--step-4)", "1.14"],
       "size-display": ["25.56vw", "0.959"],
       "size-lg/display": ["clamp(80px, 6.81vw, 98px)", "0.98"],
+      "size-xl/display": ["clamp(90px, 9vw, 125px)", "0.98"],
       "size-donate": ["clamp(56px, 3.89vw, 72px)", "0.98"],
     },
     fontFamily: {
