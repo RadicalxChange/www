@@ -45,9 +45,9 @@
   </a>
 </div>
 <div
-  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin"
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen py-margin lg:py-lg/margin"
 >
-  <div class="conference_menu">
+  <div id="sidebar" class="conference_menu">
     <h1 class="font-display uppercase text-center my-6 text-size-4 mt-24">
       2021 Annual Conference
     </h1>
@@ -82,13 +82,17 @@
   >
     <p class="font-bold">Where: {{ venue.location }}</p>
     <p class="font-bold">When: {{ venue.datetime }}</p>
-    <div class="markdown font-bold">
+    <div class="markdown font-bold text-justify">
       {{ venue.introductionBlurb | markdown | safe }}
     </div>
     <div class="conference_inline-button">
       <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
       <button class="inline-block conference_button">
-        <a href="{{ venue.eventbrite }}">
+        <a
+          href="{{ venue.eventbrite }}"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
           <p class="text-white uppercase text-size--2 m-2">Get Ticket</p>
         </a>
       </button>
