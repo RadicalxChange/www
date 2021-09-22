@@ -3,7 +3,7 @@
 
   @screen lg {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 41vh 1fr;
     @apply fixed;
     @apply top-0;
     @apply right-0;

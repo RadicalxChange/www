@@ -3,7 +3,7 @@ layout: layouts/_base.njk
 title: Conference
 headerText: A New Era of Democracy
 introductionBlurb: |
-  This year we have taken a different approach to the 2021 conference. In the spirit of truly fostering participation, innovation, deliberation, and co-creation we have designed the event be a participatory conference - an Open Space unConference. This means that there will be no keynotes or panels, it’s about learning and getting stuff done!
+  This year we have taken a different approach to the RxC conference. In the spirit of truly fostering participation, innovation, deliberation, and co-creation we have designed the event be a participatory conference - an Open Space unConference. This means that there will be no keynotes or panels, it’s about learning and getting stuff done!
 bodyText: |
   The agenda will be created live by attendees present at the opening circle.
 
@@ -15,15 +15,19 @@ bodyText: |
 
   With the pandemic has come both uncertainty about being able to move freely in the world for such events, and a heightened sense of awareness about the climate impacts of travel for events such as these, this year we are also experimenting with a multi-event that will take place in three locations over three weeks in December.
 
-  [December 4th in-person, Taipei, Taiwan, organized with g0v jothon](/2021-conference/taipei)
+  **December 4th in-person, Taipei, Taiwan, organized with g0v jothon** - [View details](/2021-conference/taipei)
 
-  [December 10th online, Qiqo Chat (GMT)](/2021-conference/online)
+  **December 10th online, Qiqo Chat (GMT)** - [View details](/2021-conference/online)
 
-  [December 17th in-person, Denver, Colorado](/2021-conference/denver)
+  **December 17th in-person, Denver, Colorado** - [View details](/2021-conference/denver)
 
   In addition to the in-person and online events, there will be an unique and never before seen 3-part program streamed LIVE the day before each Open Space unConference that thematically relate to the succeeding event, to inspire and learn, called RxC TV.
-
-  You can watch our past conferences [here](/events).
+sponsorsBlurb: |
+  This program is made possible with the help of our supporters.
+sponsors:
+  - name: Omidyar
+    href: "https://omidyar.com/"
+    image: "omidyar-network.png"
 ---
 
 <!-- prettier-ignore -->
@@ -40,7 +44,8 @@ bodyText: |
 <!-- prettier-ignore -->
 {{ menu.render() }}
 <!-- prettier-ignore -->
-<div
+<section
+  id="info"
   class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin"
 >
   <div id="sidebar" class="conference_menu">
@@ -53,20 +58,20 @@ bodyText: |
         </a>
       </button>
     </div>
-    <div class="mt-auto mb-12 ml-4 mr-8 text-center">
+    <div class="mb-auto ml-4 mr-8 text-center">
       <button class="conference_button">
         <a href="/2021-conference/taipei">
-          <p class="text-white uppercase text-size--2 m-2">To Taipei Event</p>
+          <p class="text-white uppercase text-size--2 m-2">Taipei Event</p>
         </a>
       </button>
       <button class="conference_button">
         <a href="/2021-conference/online">
-          <p class="text-white uppercase text-size--2 m-2">To Online Event</p>
+          <p class="text-white uppercase text-size--2 m-2">Online Event</p>
         </a>
       </button>
       <button class="conference_button">
         <a href="/2021-conference/denver">
-          <p class="text-white uppercase text-size--2 m-2">To Denver Event</p>
+          <p class="text-white uppercase text-size--2 m-2">Denver Event</p>
         </a>
       </button>
       <button class="conference_button w-24">
@@ -102,9 +107,57 @@ bodyText: |
     <div class="markdown markdown-sm">
       {{ bodyText | markdown | safe }}
     </div>
+    <div class="text-size--1">
+      <a
+        href="/events"
+        class="thick-link uppercase"
+        >Watch our past conferences</a
+      >
+    </div>
+    <div class="text-size--1">
+      <a
+        href="mailto:event-info@radicalxchange.org"
+        class="thick-link uppercase"
+        >Contact us for questions & inquiries</a
+      >
+    </div>
     {{ caller() if caller }}
   </div>
-</div>
+</section>
+<section
+  id="sponsors"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 mt-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Supporters</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-4 lg:col-end-column-8 space-y-10"
+  >
+    <div class="markdown">
+      {{ sponsorsBlurb | markdown | safe }}
+    </div>
+    <ul class="text-size--1 inline-block">
+      {%- for sponsor in sponsors -%}
+      <img
+        src="/images/sponsors-2021/{{ sponsor.image }}"
+        class="inline-block mr-8 lg:mr-12 w-1/4 lg:w-1/3"
+      >
+      {%- endfor -%}
+    </ul>
+    <div class="text-size--1">
+      <a
+        href="mailto:rxc21@radicalxchange.org?subject=Becoming%20a%20RxC%202021%20Conference%20supporter&body=I'd%20like%20to%20become%20a%20RadicalxChange%202021%20Conference%20supporter."
+        target="_blank"
+        class="thick-link uppercase"
+        >BECOME A SUPPORTER OF THIS EVENT</a
+      >
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>
