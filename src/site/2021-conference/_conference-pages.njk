@@ -1,0 +1,17 @@
+---
+layout: "layouts/_base.njk"
+pagination:
+  data: conferenceVenues2021
+  size: 1
+  alias: venue
+  addAllPagesToCollections: true
+permalink: "2021-conference/{{ venue.slug }}/"
+eleventyComputed:
+  title: "{{ venue.title }}"
+---
+
+<!-- prettier-ignore -->
+{% import "components/conference-page.njk" as conferencePage %}
+
+<!-- prettier-ignore -->
+{{ conferencePage.render(venue, pagination) }}

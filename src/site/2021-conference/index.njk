@@ -1,0 +1,474 @@
+---
+layout: layouts/_base.njk
+title: Conference
+headerText: A New Era of Democracy
+introductionBlurb: |
+  This year we have taken a different approach to the RxC conference. In the spirit of truly fostering participation, innovation, deliberation, and co-creation we have designed the event be a participatory conference - an Open Space unConference. This means that there will be no keynotes or panels, it’s about learning and getting stuff done!
+bodyText: |
+  The agenda will be created live by attendees present at the opening circle.
+
+  Through dozens of sessions and lunch you will have plenty of chances to present your ideas, ask questions, engage in challenging dialog, and make new professional connections. The Open Space unConference format is perfect for a rapidly moving field where the organizing team cannot predetermine what needs to be discussed.
+
+  Big ideas, concrete partnerships, and meaningful relationships emerge from Open Space events at a higher rate than conventional conferences. We are excited about Open Space as a path toward solidifying and growing communities of common purpose.
+
+  You can find out more about how Open Space unconference works [here](/2021-conference/faq).
+
+  With the pandemic has come both uncertainty about being able to move freely in the world for such events, and a heightened sense of awareness about the climate impacts of travel for events such as these, this year we are also experimenting with a multi-event that will take place in three locations over three weeks in December.
+
+  **December 4th in-person, Taipei, Taiwan, organized with g0v jothon** - [View details](/2021-conference/taipei)
+
+  **December 10th online, Qiqo Chat (GMT)** - [View details](/2021-conference/online)
+
+  **December 17th in-person, Denver, Colorado** - [View details](/2021-conference/denver)
+
+  In addition to the in-person and online events, there will be an unique and never before seen 3-part program streamed LIVE the day before each Open Space unConference that thematically relate to the succeeding event, to inspire and learn, called RxC TV.
+sponsorsBlurb: |
+  This program is made possible with the help of our supporters.
+sponsors:
+  - name: Omidyar
+    href: "https://omidyar.com/"
+    image: "omidyar-network.png"
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/conference-menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+<section
+  id="info"
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin"
+>
+  <div id="sidebar" class="conference_menu">
+    <div class="w-full">
+      <button class="bg-black w-full text-center">
+        <a href="/2021-conference">
+          <h1 class="font-display uppercase text-center my-4 text-size-4 text-white">
+            2021 Annual Conference
+          </h1>
+        </a>
+      </button>
+    </div>
+    <div class="mb-auto ml-4 mr-8 text-center">
+      <button class="conference_button">
+        <a href="/2021-conference/taipei">
+          <p class="text-white uppercase text-size--2 m-2">Taipei Event</p>
+        </a>
+      </button>
+      <button class="conference_button">
+        <a href="/2021-conference/online">
+          <p class="text-white uppercase text-size--2 m-2">Online Event</p>
+        </a>
+      </button>
+      <button class="conference_button">
+        <a href="/2021-conference/denver">
+          <p class="text-white uppercase text-size--2 m-2">Denver Event</p>
+        </a>
+      </button>
+      <button class="conference_button w-24">
+        <a href="/2021-conference/faq">
+          <p class="text-white uppercase text-size--2 m-2">FAQ</p>
+        </a>
+      </button>
+    </div>
+  </div>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block lg:w-1/10 align-top") }}
+    </a>
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-xl/display">
+      A New Era
+    </h1>
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-xl/display">
+      of Democracy
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2 mb-12"
+  >
+    <h2 class="text-size-2 font-bold">
+      Participation, Innovation, Deliberation, Co-Creation
+    </h2>
+    <p class="font-bold">
+      December 3rd - 17th - Taipei, Online, Denver
+    </p>
+    <div class="markdown markdown-sm font-bold text-justify">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="markdown markdown-sm">
+      {{ bodyText | markdown | safe }}
+    </div>
+    <div class="text-size--1">
+      <a
+        href="/events"
+        class="thick-link uppercase"
+        >Watch our past conferences</a
+      >
+    </div>
+    <div class="text-size--1">
+      <a
+        href="mailto:event-info@radicalxchange.org"
+        class="thick-link uppercase"
+        >Contact us for questions & inquiries</a
+      >
+    </div>
+    {{ caller() if caller }}
+  </div>
+</section>
+<section
+  id="sponsors"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 mt-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-3 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Supporters</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-4 lg:col-end-column-8 space-y-10"
+  >
+    <div class="markdown">
+      {{ sponsorsBlurb | markdown | safe }}
+    </div>
+    <ul class="text-size--1 inline-block">
+      {%- for sponsor in sponsors -%}
+      <img
+        src="/images/sponsors-2021/{{ sponsor.image }}"
+        class="inline-block mr-8 lg:mr-12 w-1/4 lg:w-1/3"
+      >
+      {%- endfor -%}
+    </ul>
+    <div class="text-size--1">
+      <a
+        href="mailto:rxc21@radicalxchange.org?subject=Becoming%20a%20RxC%202021%20Conference%20supporter&body=I'd%20like%20to%20become%20a%20RadicalxChange%202021%20Conference%20supporter."
+        target="_blank"
+        class="thick-link uppercase"
+        >BECOME A SUPPORTER OF THIS EVENT</a
+      >
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+/* Menus */
+
+const Menu = function ($menu) {
+  this.$menu = $menu;
+  this.$menuInner = $menu.querySelector("#menu_inner");
+
+  this.menuItems = [];
+  this.firstItem = null;
+  this.lastItem = null;
+  this.isOpen = false;
+
+  this.openAnimationTimer = null;
+  this.closeAnimationTimer = null;
+  this.handleMouseLeave = this._handleMouseLeave.bind(this);
+  this.handleTouchOutside = this._handleTouchOutside.bind(this);
+};
+
+Menu.prototype.init = function () {
+  let menuElements = this.$menu.querySelectorAll("[data-menu-item]");
+  for (let menuElement of menuElements) {
+    let menuItem = new MenuItem(menuElement, this);
+    menuItem.init();
+    this.menuItems.push(menuItem);
+  }
+
+  let numItems = this.menuItems.length;
+  if (numItems > 0) {
+    this.firstItem = this.menuItems[0];
+    this.lastItem = this.menuItems[numItems - 1];
+  }
+};
+
+Menu.prototype.setFocusToItem = function (newItem) {
+  for (let menuItem of this.menuItems) {
+    menuItem.blur();
+  }
+  newItem.focus();
+};
+
+Menu.prototype.setFocusToFirstItem = function () {
+  this.setFocusToItem(this.firstItem);
+};
+
+Menu.prototype.setFocusToLastItem = function () {
+  this.setFocusToItem(this.lastItem);
+};
+
+Menu.prototype.setFocusToPreviousItem = function (currentItem) {
+  let newItem;
+  if (currentItem === this.firstItem) {
+    newItem = this.lastItem;
+  } else {
+    let index = this.menuItems.indexOf(currentItem);
+    newItem = this.menuItems[index - 1];
+  }
+  this.setFocusToItem(newItem);
+};
+
+Menu.prototype.setFocusToNextItem = function (currentItem) {
+  let newItem;
+  if (currentItem === this.lastItem) {
+    newItem = this.firstItem;
+  } else {
+    let index = this.menuItems.indexOf(currentItem);
+    newItem = this.menuItems[index + 1];
+  }
+  this.setFocusToItem(newItem);
+};
+
+Menu.prototype._handleTouchOutside = function (event) {
+  if (this.$menuInner.contains(event.target)) {
+    return;
+  }
+  this.close();
+};
+
+Menu.prototype._handleMouseLeave = function (event) {
+  if (event.relatedTarget === null) {
+    return;
+  }
+  this.close();
+};
+
+Menu.prototype.open = function () {
+  if (this.isOpen) {
+    return;
+  }
+
+  this.$menuInner.classList.remove("hidden");
+  this.$menu.classList.add("menu_open");
+  this.openAnimationTimer = setTimeout(() => {
+    this.openAnimationTimer = null;
+    document.addEventListener("touchstart", this.handleTouchOutside);
+    this.$menuInner.addEventListener("mouseleave", this.handleMouseLeave);
+    bodyScrollLock.disableBodyScroll(this.$menuInner);
+    this.isOpen = true;
+  }, 550);
+};
+
+Menu.prototype.close = function () {
+  if (!this.isOpen) {
+    return;
+  }
+
+  this.$menuInner.removeEventListener("mouseleave", this.handleMouseLeave);
+  document.removeEventListener("touchstart", this.handleTouchOutside);
+  this.$menu.classList.remove("menu_open");
+  this.closeAnimationTimer = setTimeout(() => {
+    this.closeAnimationTimer = null;
+    this.$menuInner.classList.add("hidden");
+    bodyScrollLock.enableBodyScroll(this.$menuInner);
+    this.isOpen = false;
+  }, 550);
+};
+
+/* MenuButton */
+
+const MenuButton = function ($button, menu) {
+  this.$button = $button;
+  this.menu = menu;
+
+  this.keyCode = Object.freeze({
+    TAB: 9,
+    RETURN: 13,
+    ESC: 27,
+    SPACE: 32,
+    PAGEUP: 33,
+    PAGEDOWN: 34,
+    END: 35,
+    HOME: 36,
+    LEFT: 37,
+    UP: 38,
+    RIGHT: 39,
+    DOWN: 40,
+  });
+};
+
+MenuButton.prototype.init = function () {
+  this.$button.addEventListener("keydown", this.handleKeyDown.bind(this));
+  if (this.$button.dataset.menuButton === "hover") {
+    this.$button.addEventListener("touchstart", this.handleClick.bind(this));
+    this.$button.addEventListener(
+      "mouseenter",
+      this.handleMouseEnter.bind(this)
+    );
+  } else {
+    this.$button.addEventListener("click", this.handleClick.bind(this));
+  }
+};
+
+MenuButton.prototype.handleKeyDown = function (event) {
+  let flag = false;
+
+  switch (event.keyCode) {
+    case this.keyCode.SPACE:
+    case this.keyCode.RETURN:
+    case this.keyCode.DOWN:
+      this.menu.open();
+      this.menu.setFocusToFirstItem();
+      flag = true;
+      break;
+    case this.keyCode.UP:
+      this.menu.open();
+      this.menu.setFocusToLastItem();
+      flag = true;
+      break;
+    default:
+      break;
+  }
+
+  if (flag) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+};
+
+MenuButton.prototype.handleMouseEnter = function (event) {
+  if (!this.menu.isOpen) {
+    this.menu.open();
+    this.menu.setFocusToFirstItem();
+  }
+  event.stopPropagation();
+  event.preventDefault();
+};
+
+MenuButton.prototype.handleClick = function (event) {
+  if (this.menu.isOpen) {
+    this.menu.close();
+  } else {
+    this.menu.open();
+    this.menu.setFocusToFirstItem();
+  }
+  event.stopPropagation();
+  event.preventDefault();
+};
+
+/* MenuItem */
+
+const MenuItem = function ($item, menu) {
+  this.$item = $item;
+  this.menu = menu;
+
+  this.keyCode = Object.freeze({
+    TAB: 9,
+    RETURN: 13,
+    ESC: 27,
+    SPACE: 32,
+    PAGEUP: 33,
+    PAGEDOWN: 34,
+    END: 35,
+    HOME: 36,
+    LEFT: 37,
+    UP: 38,
+    RIGHT: 39,
+    DOWN: 40,
+  });
+};
+
+MenuItem.prototype.init = function () {
+  this.$item.tabIndex = -1;
+  this.$item.addEventListener("keydown", this.handleKeydown.bind(this));
+};
+
+MenuItem.prototype.handleKeydown = function (event) {
+  if (event.ctrlKey || event.altKey || event.metaKey) {
+    return;
+  }
+
+  let flag = false;
+  switch (event.keyCode) {
+    case this.keyCode.UP:
+      this.menu.setFocusToPreviousItem(this);
+      flag = true;
+      break;
+    case this.keyCode.DOWN:
+      this.menu.setFocusToNextItem(this);
+      flag = true;
+      break;
+    case this.keyCode.HOME:
+    case this.keyCode.PAGEUP:
+      this.menu.setFocusToFirstItem();
+      flag = true;
+      break;
+    case this.keyCode.END:
+    case this.keyCode.PAGEDOWN:
+      this.menu.setFocusToLastItem();
+      flag = true;
+      break;
+    case this.keyCode.ESC:
+      this.menu.close();
+      flag = true;
+      break;
+    case this.keyCode.TAB:
+      this.menu.close();
+      break;
+    default:
+      break;
+  }
+
+  if (flag) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+};
+
+MenuItem.prototype.blur = function () {
+  this.$item.tabIndex = -1;
+};
+
+MenuItem.prototype.focus = function () {
+  this.$item.tabIndex = 0;
+  this.$item.focus();
+};
+
+/* Attachment code */
+const menu = new Menu(document.querySelector("#menu"));
+menu.init();
+
+for (const $menuButton of document.querySelectorAll("[data-menu-button]")) {
+  const menuButton = new MenuButton($menuButton, menu);
+  menuButton.init();
+}
+
+/* Hide buttons when you scroll to footer */
+const $footer = document.getElementById("footer");
+const $sidebar = document.getElementById("sidebar");
+const $theMenuSlider = document.getElementById("menu_slider");
+const $theMenuButton = document.getElementById("menu_button");
+const disappearObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio >= 0.1) {
+        $theMenuButton.classList.add("menu_button-closed");
+        $sidebar.style.position = "absolute";
+      } else {
+        $theMenuButton.classList.remove("menu_button-closed");
+        $sidebar.style.position = "fixed";
+      }
+      if (entry.intersectionRatio >= 0.5) {
+        $theMenuSlider.classList.add("menu_slider-closed");
+        $sidebar.style.position = "absolute";
+      } else {
+        $theMenuSlider.classList.remove("menu_slider-closed");
+        $sidebar.style.position = "fixed";
+      }
+    });
+  },
+  { threshold: [0.1, 0.5] }
+);
+disappearObserver.observe($footer);
+</script>

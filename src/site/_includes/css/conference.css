@@ -1,0 +1,44 @@
+.conference_menu {
+  @apply hidden;
+
+  @screen lg {
+    display: grid;
+    grid-template-rows: 41vh 1fr;
+    @apply fixed;
+    @apply top-0;
+    @apply right-0;
+    @apply h-screen;
+    @apply w-1/5;
+  }
+}
+
+.conference_button {
+  @apply bg-black;
+  @apply rounded-lg;
+  @apply w-full;
+  @apply px-4;
+  @apply mb-6;
+}
+
+.conference_inline-button {
+  @apply block;
+
+  @screen lg {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .conference_button {
+    @apply bg-black;
+    @apply rounded-lg;
+    @apply w-full;
+    @apply px-4;
+    @apply mb-0;
+    @apply ml-0;
+    width: 10rem;
+
+    @screen lg {
+      @apply ml-12;
+    }
+  }
+}
