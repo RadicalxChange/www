@@ -31,6 +31,6 @@ Tom Atlee (@tomatlee) is co-founder of the nonprofit Co-Intelligence Institute i
 ## Moderator
 
 Jennifer Morone (@jlmorone) is an artist and CEO of RadicalxChange Foundation. As an artist, she makes work that seeks to disrupt the narratives that humans create – such as corporations and nation states, and has been dealing with the problematic of the position of the individual in the contemporary world of work for many years. In 2014 she registered herself as a corporation – Jennifer Lyn Morone™ Inc, of which she is the director, the shareholder, and the basic product, in order to try to provoke the ruling economic and legal system from within. Since 2019 she has been working on The Scheme of Things, a co-creative process that brings to life imaginations of what a desirable post-work world might look like through various media.`,
-    slidoUrl: "",
+    slidoUrl: "https://app.sli.do/event/hmftj1pa",
   },
 };
