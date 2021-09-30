@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: false,
+    isOn: true,
     title: "Exploring Social Technologies for Democracy",
     description: `September 30th, 4:00 pm to 5:30 pm UTC
 
