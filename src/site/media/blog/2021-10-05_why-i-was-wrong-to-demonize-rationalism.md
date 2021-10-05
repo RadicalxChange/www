@@ -3,7 +3,7 @@ layout: "layouts/blog-post.njk"
 date: "2021-10-05"
 title: "Why I was Wrong to Demonize Rationalism"
 postHeader: "Why I was Wrong to Demonize Rationalism"
-postAuthor: "Glen Weyl"
+postAuthor: "E. Glen Weyl"
 ---
 
 Over the past months, I have singled out the “Rationalist” community for opprobrium.  The Rationalists are a cluster of people who read blogs like Slate Star Codex (now Astral Codex Ten), Overcoming Bias and Less Wrong.  They are strongly associated with but distinct from other communities and research programs, such as Effective Altruism and long-termism, with which I have sometimes conflated them.  I gradually realized that doing so has been against my principles and driven by feelings of guilt and shame, primarily my recognition of the limitations of the pattern of thought in the community I am embarrassed that I used to fall into.
