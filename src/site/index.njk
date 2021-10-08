@@ -24,6 +24,8 @@ homeConcepts:
 <!-- prettier-ignore -->
 {% import "components/rxc-tv.njk" as rxcTvWidget %}
 <!-- prettier-ignore -->
+{% import "components/popup.njk" as popupWidget %}
+<!-- prettier-ignore -->
 {% import "components/logo.njk" as logo %}
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
@@ -144,6 +146,13 @@ homeConcepts:
 <script>
   // prettier-ignore
   {% include "components/rxc-tv.js" %}
+</script>
+<!-- prettier-ignore -->
+{% elif popup.isOn %}
+{{ popupWidget.render(popup.title, popup.bodyText, popup.link) }}
+<script>
+  // prettier-ignore
+  {% include "components/popup.js" %}
 </script>
 <!-- prettier-ignore -->
 {% endif %}
