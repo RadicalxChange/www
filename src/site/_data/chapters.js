@@ -429,6 +429,17 @@ const chapters = [
     foundingYear: "2020",
   },
   {
+    title: "Oklahoma, United States",
+    headerText: "Oklahoma, United States",
+    city: "Oklahoma",
+    country: "United States",
+    coordinates: {},
+    meetupUrl: "#",
+    contactOrganizer: "oklahomarxc@pm.me",
+    twitter: "rxcoklahoma",
+    foundingYear: "2021",
+  },
+  {
     title: "Oslo, Norway",
     headerText: "Oslo, Norway",
     city: "Oslo",
