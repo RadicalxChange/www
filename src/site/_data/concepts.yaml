@@ -293,6 +293,15 @@
       href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810
       date: "2018-01-24T04:00:00.000Z"
   tools:
+    - title: Geo Web
+      href: https://www.geoweb.network/
+      description: |
+        Geo Web is a set of open protocols for anchoring digital content (e.g., augmented reality, NFTs, apps, games, etc.) to physical locations. It uses partial common ownership to administer its global digital land market with all proceeds being used to fund public goods. The network currently runs on Ethereum's Kovan testnet, but will launch on an Ethereum L2 rollup soon.
+      links:
+        - text: Twitter
+          href: https://twitter.com/thegeoweb
+        - text: Github
+          href: https://github.com/Geo-Web-Project
     - title: Harberger Ads
       href: https://hads.xyz/
       description: |
