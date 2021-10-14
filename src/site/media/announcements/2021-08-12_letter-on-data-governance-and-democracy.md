@@ -153,4 +153,9 @@ Maria Savona - University of Sussex and Luiss University
 Diogo G. R. Costa - Escola Nacional de Administração Pública (ENAP)  
 Cody Hill - The Data Union  
 James Felton Keith - The Data Union  
-Erik Rind - ImagineBC***
+Erik Rind - ImagineBC  
+Aaron Soskin - Govrn  
+Najmuzzaman Mohammad - Individual  
+Alek Tarkowski - Open Future  
+Nikoline Arns - DoinGud  
+Spencer Gurley - UCSC***
