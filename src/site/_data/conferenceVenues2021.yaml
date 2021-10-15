@@ -1,7 +1,7 @@
 - title: Taipei
   slug: taipei
   location: TBD - Taipei, Taiwan
-  datetime: December 4th, 2021 | 10am - 6pm CST
+  datetime: December 4th, 2021 | 10am - 5pm CST
   introductionBlurb: |
     Organized by RxC in collaboration with  [g0v jothon](https://g0v.asia/), the Taipei unConference will focus on the themes such as People/Public/Private Partnerships, life in the age of a post-COVID world, and engaging the public in citizen science to help navigate climate change, among others.
 
@@ -16,7 +16,7 @@
 
     Big ideas, concrete partnerships, and meaningful relationships emerge from Open Space events at a higher rate than conventional conferences. We are excited about Open Space as a path toward solidifying and growing communities of common purpose.
   personnelBlurb: |
-    Government folks from the Digital Ministry of Taiwan, Audrey Tang’s office, the digital innovation and social innovation labs, and the AIT (American Institute in Taiwan); the civic tech community g0v, Code for Japan, Code for South Korea; Academics; Artists; Activists; and more.
+    Government folks from the Digital Ministry of Taiwan, Audrey Tang’s office, the digital innovation, and social innovation labs; the civic tech community g0v; Academics; Artists; Activists; and more.
   rxcTvBlurb: |
     In addition to the in-person and online events, RadicalxChange is putting together RxC TV, a unique and never before seen 3-part program that will be streamed LIVE the day before each Open Space unConference and thematically relate to the succeeding event, to inspire and learn.
 
@@ -25,6 +25,16 @@
     RadicalxChange (RxC) is a global movement for next-generation political economies. It advances plurality, equality, community, and decentralization through upgrades of democracy, markets, the data economy, the commons, and identity.
 
     RxC connects people from all walks of life - ranging from social scientists and technologists to artists and activists. The movement is ever-evolving and always welcoming new people and ideas to make our social world more diverse, equal, and free.
+  COVIDprotocols: |
+    We will require all entrants to the conference to be vaccinated against COVID-19.
+
+    [Taiwan Centers for Disease Control](https://www.cdc.gov.tw/En)
+
+    [Current Government Regulations for Foreigners](https://www.boca.gov.tw/cp-220-5081-c06dc-2.html)
+
+    This event will be presented in accordance with applicable public health requirements as of the date of the event, which could include changes to capacity, attendance prerequisites, procedures, and other protective measures. Any updated protocols will be included in your ticket reminder email closer to the event date.
+
+    If you cannot comply with these protocols, please join us for our [Online unConference](https://www.eventbrite.com/e/2021-radicalxchange-conference-qiqo-online-tickets-169788872087) and register for that event.
   topics: |
     - Civic Tech in Asia: collaborations between Taiwan, Korea and Japan
     - Digital Identity & Personhood: risks and opportunities
@@ -33,8 +43,6 @@
     - Georgism in the 21st Century
     - Technology and the Legitimacy of Political Authority
     - Artists involvement in the RxC Community
-
-
 
 - title: Online
   slug: online
@@ -63,6 +71,8 @@
     RadicalxChange (RxC) is a global movement for next-generation political economies. It advances plurality, equality, community, and decentralization through upgrades of democracy, markets, the data economy, the commons, and identity.
 
     RxC connects people from all walks of life - ranging from social scientists and technologists to artists and activists. The movement is ever-evolving and always welcoming new people and ideas to make our social world more diverse, equal, and free.
+  COVIDprotocols: |
+    This event is fully online.
   topics: |
     - Constitutional Theory and the Blockchain
     - RadicalxChange Latin America Meetup
@@ -73,7 +83,6 @@
     - Peer Project Feedback
     - Partial Common Ownership of NFTs
     - Quadratic Voting in Civilization VI
-
 
 - title: Denver
   slug: denver
@@ -102,6 +111,16 @@
     RadicalxChange (RxC) is a global movement for next-generation political economies. It advances plurality, equality, community, and decentralization through upgrades of democracy, markets, the data economy, the commons, and identity.
 
     RxC connects people from all walks of life - ranging from social scientists and technologists to artists and activists. The movement is ever-evolving and always welcoming new people and ideas to make our social world more diverse, equal, and free.
+  COVIDprotocols: |
+    We will require all entrants to the conference to be vaccinated against COVID-19, and will have additional testing available due to the Delta variant.
+
+    [COVID-19 Vaccination Information](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/How-Do-I-Get-a-COVID-19-Vaccine.html)
+
+    In addition, the hotel's preventative measures include Cleaning & Sanitization, Temperature & Wellbeing Checks, Hand Hygiene & Social Distancing, Food Safety Protocols, and more.
+
+    This event will be presented in accordance with applicable public health requirements as of the date of the event, which could include changes to capacity, attendance prerequisites, procedures, and other protective measures. Any updated protocols will be included in your ticket reminder email closer to the event date.
+
+    If you cannot comply with these protocols, please join us for our [Online unConference](https://www.eventbrite.com/e/2021-radicalxchange-conference-qiqo-online-tickets-169788872087) and register for that event.
   topics: |
     - Using Quadratic Funding to Address Climate Change
     - Partial Common Ownership and Indigenous Thinking on Land
