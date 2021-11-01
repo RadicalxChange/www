@@ -158,4 +158,7 @@ Aaron Soskin - Govrn
 Najmuzzaman Mohammad - Individual  
 Alek Tarkowski - Open Future  
 Nikoline Arns - DoinGud  
-Spencer Gurley - UCSC***
+Spencer Gurley - UCSC  
+Ryan Lee - Individual  
+Ben Little - CU Boulder  
+Jim Callaway - Individual  ***
