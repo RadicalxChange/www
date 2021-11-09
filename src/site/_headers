@@ -3,6 +3,7 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self' qiqochat.com *.qiqochat.com; frame-ancestors 'self'; form-action 'self'
 
 /fonts/*
   Cache-Control: public, max-age=86400, must-revalidate
