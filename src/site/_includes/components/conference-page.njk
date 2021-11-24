@@ -154,7 +154,7 @@
     <!-- prettier-ignore -->
     {% endif %}
     <!-- prettier-ignore -->
-    {% if venue.title != "Online" %}
+    {% if venue.title == "Denver" %}
     <p class="font-bold uppercase">COVID Protocols</p>
     <div class="markdown markdown-sm">
       {{ venue.COVIDprotocols | markdown | safe }}
