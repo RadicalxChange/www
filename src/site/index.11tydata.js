@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: true,
+    isOn: false,
     title: "3rd Annual RadicalxChange unConference Opening Livestream",
     description: `December 3rd, 11:00 am to 3:00 pm UTC
 
