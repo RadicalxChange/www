@@ -4,19 +4,15 @@ module.exports = {
     title: "3rd Annual RadicalxChange unConference Opening Livestream",
     description: `December 3rd, 11:00 am to 3:00 pm UTC
 
-Welcome to the 3rd Annual RadicalxChange unConference
+Welcome to the 3rd Annual RadicalxChange unConference. See the opening livestream schedule below:
 
-Opening Livestream Schedule:
-
-RxC TV
-11:00 am to 2:00 pm UTC
+RxC TV - 11:00 am to 2:00 pm UTC
 
 In addition to the in-person and online events, RadicalxChange is putting together RxC TV, a unique and never before seen 3-part program that will be streamed LIVE the day before each Open Space unConference and thematically related to the succeeding event, to inspire and learn.
 
 Broadcasts will be on December 3rd, 9th, and 16th corresponding to their respective time zones.
 
-Opening Ceremony
-2:30 pm to 3:00 pm UTC
+Opening Ceremony - 2:30 pm to 3:00 pm UTC
 
 A panel from the RadicalxChange Foundation welcomes you to the 3rd Annual RadicalxChange unConference.
 
