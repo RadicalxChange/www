@@ -1,7 +1,7 @@
 module.exports = {
   rxcTv: {
     isOn: true,
-    title: "The Livestream will begin momentarily",
+    title: "The Livestream will begin soon",
     description: `December 9th, 6:00 pm to 9:00 pm UTC
 
 Sorry, we are experiencing some technical difficulties. The livestream will begin soon.
