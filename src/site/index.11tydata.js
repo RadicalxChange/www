@@ -1,12 +1,8 @@
 module.exports = {
   rxcTv: {
     isOn: true,
-    title: "The Livestream will begin soon",
+    title: "RxC TV - Week 2/3",
     description: `December 9th, 6:00 pm to 9:00 pm UTC
-
-Sorry, we are experiencing some technical difficulties. The livestream will begin soon.
-
----
 
 Welcome to the 3rd Annual RadicalxChange unConference.
 
