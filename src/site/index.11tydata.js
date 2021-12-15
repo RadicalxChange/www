@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: true,
+    isOn: false,
     title: "RxC TV - Day 3",
     description: `December 16th, 7:00 pm to 10:00 pm MST
 
