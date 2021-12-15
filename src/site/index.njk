@@ -101,15 +101,14 @@ homeConcepts:
     >
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="{{ 'https://radicalxchange-s.simplecast.com/episodes/james-evans-computational-social-scientist-knowledge-lab-director-and-professor-at-uchicago-iKfBVrDS' if not rxcTv.isOn else '#tv'}}"
+        href="{{ '/2021-conference/' if not rxcTv.isOn else '#tv'}}"
         target="{{ '_blank' if not rxcTv.isOn else ''}}"
         rel="noopener nofollow noreferrer"
       >
         <!-- prettier-ignore -->
         {% if not rxcTv.isOn %}
-        <h2 class="font-bold">New Podcast</h2>
-        <p>RadicalxChange(s)</p>
-        <p>James Evans: Computational Social Scientist, Knowledge Lab Director, and Professor at Uchicago</p>
+        <h2 class="font-bold">3rd Annual RadicalxChange unConference Livestream</h2>
+        <p>{{ rxcTv.title }}</p>
         <!-- prettier-ignore -->
         {% else %}
         <h2 class="font-bold">Streaming Now</h2>
