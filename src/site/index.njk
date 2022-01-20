@@ -101,15 +101,15 @@ homeConcepts:
     >
       <a
         class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="{{ 'https://radicalxchange-s.simplecast.com/episodes/james-evans-computational-social-scientist-knowledge-lab-director-and-professor-at-uchicago-iKfBVrDS' if not rxcTv.isOn else '#tv'}}"
+        href="{{ '/media/blog/sovereign-nonsense/' if not rxcTv.isOn else '#tv'}}"
         target="{{ '_blank' if not rxcTv.isOn else ''}}"
         rel="noopener nofollow noreferrer"
       >
         <!-- prettier-ignore -->
         {% if not rxcTv.isOn %}
-        <h2 class="font-bold">New Podcast</h2>
-        <p>RadicalxChange(s)</p>
-        <p>James Evans: Computational Social Scientist, Knowledge Lab Director, and Professor at Uchicago</p>
+        <h2 class="font-bold">New Blog Post</h2>
+        <p>Sovereign Nonsense:</p>
+        <p>A Review of <i>The Sovereign Individual</i> By James Dale Davidson and Lord William Rees-Mogg</p>
         <!-- prettier-ignore -->
         {% else %}
         <h2 class="font-bold">Streaming Now</h2>
