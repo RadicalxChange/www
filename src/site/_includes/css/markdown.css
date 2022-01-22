@@ -59,6 +59,11 @@
     @apply my-markdown-md;
   }
 
+  .no-y-margin {
+    @apply my-0 !important;
+    @apply mx-auto !important;
+  }
+
   .twitter-tweet {
     margin-top: theme("spacing.markdown-md") !important;
     margin-bottom: theme("spacing.markdown-md") !important;
