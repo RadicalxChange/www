@@ -714,9 +714,9 @@ const chapters = [
     foundingYear: "2019",
   },
   {
-    title: "West Virgina, United States",
-    headerText: "West Virgina, United States",
-    city: "West Virgina",
+    title: "Appalachia, United States",
+    headerText: "Appalachia, United States",
+    city: "Appalachia",
     country: "United States",
     coordinates: { lat: 37.293008, lng: -88.977571 },
     meetupUrl: "#",
