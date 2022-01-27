@@ -82,7 +82,7 @@ These are good things. But there’s an obvious objection to using SALSA NFTs fo
 
 In the yin-yang symbol, the black field contains a white dot, and the white field contains a black dot. This symbolizes the idea that forces in balance must contain their opposite. Here, for the market mechanism of SALSA to do its work – letting market mechanisms improve the allocation of governance power and letting stakeholders “cash out” their power – an element of non-market judgment has to be in place, holding back the forces of corruption. Here, the Veto Tokens play that role.
 
-The power in these tokens cannot be sold. It can’t even be transferred. Only the Open Collective stakeholder who was initially issued each Veto NFT can use the special QV voting power it contains.
+The power in these tokens cannot be sold. It can’t even be transferred. Only the Open Collective stakeholder who was initially issued each Veto NFT can use the special QV voting power it contains. For more on non-transferability in governance, see [Vitalik Buterin’s recent post](https://vitalik.ca/general/2022/01/26/soulbound.html).
 
 **Every significant governance decision can be blocked by a quadratic vote exceeding some threshold (50%, 67%, or similar)**. But this will not result in a gridlocked veto-ocracy. We are not talking about lots of parties with unilateral veto power: vetoes here are collective decisions by the Veto NFT holders. And the QV tokens used in veto votes can be used *for or against vetos*. So, if a decision has been passed through the normal governance process, but you know it faces significant opposition, you can allocate a portion of your veto QV budget to oppose the veto and help ensure it passes.
 
