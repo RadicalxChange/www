@@ -100,7 +100,7 @@ homeConcepts:
       class="lg:absolute lg:top-0 lg:left-0 lg:flex lg:flex-col lg:w-full lg:h-full bg-black text-white"
     >
       <a
-        class="flex-initial block pt-margin lg:pt-lg/margin pb-margin lg:pb-4 px-4 lg:px-6 text-size-1 lg:text-size-0"
+        class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
         href="{{ '/media/blog/a-speculative-sketch-of-a-dao-with-open-collective/' if not rxcTv.isOn else '#tv'}}"
         target="{{ '_blank' if not rxcTv.isOn else ''}}"
         rel="noopener nofollow noreferrer"
@@ -115,6 +115,15 @@ homeConcepts:
         <p>{{ rxcTv.title }}</p>
         <!-- prettier-ignore -->
         {% endif %}
+      </a>
+      <div class="flex-initial border-b mx-6"></div>
+      <a
+        class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
+        href="https://discord.com/invite/2Eg62dxeUY"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+      >
+        <p>Join the RadicalxChange community on Discord</p>
       </a>
       <div class="flex-initial hidden lg:block border-b mx-6"></div>
       <div

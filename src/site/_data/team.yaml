@@ -1,5 +1,5 @@
 - name: "Jennifer Lyn Morone"
-  title: "CEO"
+  title: "Chief Creative Officer"
   image: "jennifer_lyn_morone.png"
   website: "http://jennifermorone.com/"
   twitter: "https://twitter.com/jlmorone"
@@ -19,20 +19,6 @@
   twitter: "https://twitter.com/joguldi"
   bio: |
     Jo Guldi is a scholar of Britain's history and its empire who is especially involved in questions of state expansion, the contestation of property under capitalism, and how state and property concepts are recorded in the built environment's landscape. These themes informed her first book, Roads to Power, which examined Britain's interkingdom highway and its users from 1740 to 1848. They also inform her current research into rent disputes and land reform for my next monograph, The Long Land War, which profiles three moments in the history of property: the Irish Land Court of 1881 and its invention of rent control, the ideology of "squatting" in post-1940 Britain, and the creation of the "participatory map" for contesting legal boundaries in Britain and India in the 1970s and 80s.
-- name: "Fanny Lakoubay"
-  title: "Communications Lead"
-  image: "fanny_lakoubay.png"
-  twitter: "https://twitter.com/flakoubay"
-  linkedin: "https://www.linkedin.com/in/fannylakoubay/"
-  bio: |
-    Fanny Lakoubay is a New-York-based communication & operations specialist with 12+ years of experience in art+tech, blockchain, and ESG projects. She is the head of communications for the RadicalxChange Foundation. She is involved in CADAF art fairs (New Art Academy) and EthTurin hackathon. She regularly speaks at conferences worldwide and teaches at New York University, Fashion Institute of Technology, and Christie's Education. Fanny has also worked with larger organizations such as Christie's auction house, Collectrium SaaS inventory management system, Artnet e-commerce site, and Societe Generale & Royal Bank of Scotland banks. She holds a master's from HEC Paris business school and a BA in Art History / Art Appraisal and speaks English, French and German.
-- name: "Lawrence Lundy"
-  title: "Strategy Lead"
-  image: "lawrence_lundy-bryan.png"
-  twitter: "https://twitter.com/flakoubay"
-  linkedin: "https://www.linkedin.com/in/fannylakoubay/"
-  bio: |
-    Lawrence Lundy-Bryan is a technology analyst and investor. He advises startups, corporates, and the public sector on technology trends and strategy. He works with RadicalxChange, a global community rethinking economic and political institutions; Lunar Ventures, a venture capital firm investing in cutting-edge technology startups; and Outlier Ventures, a startup accelerator investing in decentralized software. He also informs technology policy as an advisor to the OECD Blockchain Advisory Group, a Fellow at the WEF Centre for the Fourth Industrial Revolution, and an Expert Advisor to the UK All-Party Parliamentary Group (APPG) on Blockchain. He contributed to the UK Cryptoasset Taskforce led by HM Treasury and the UK National Data Strategy guided by the Department for Digital, Culture Media & Sport.
 - name: "Alex Randaccio"
   title: "Technical Director"
   image: "alex_randaccio.png"
@@ -48,3 +34,8 @@
   image: "jack-henderson.png"
   bio: |
     Jack Henderson is a digital democracy researcher with RadicalxChange Foundation, the ERC's BlockchainGov project, and the Coalition Of Automated Legal Applications. Jack holds a degree in economics from Princeton University.
+- name: "Paula Berman"
+  title: "Chief Operating Officer"
+  image: "paula_berman.png"
+  bio: |
+    Paula Berman is a hacktivist, digital identity geek and COO of RadicalxChange.
