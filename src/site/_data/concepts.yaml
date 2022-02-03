@@ -304,6 +304,15 @@
           href: https://twitter.com/thegeoweb
         - text: Github
           href: https://github.com/Geo-Web-Project
+    - title: Eden Network
+      href: https://www.edennetwork.io/
+      description: |
+        Eden is a priority transaction network that protects traders from frontrunning, aligns incentives for block producers, and redistributes miner extractable value by allocating Ethereum blockspace with Harberger taxation.
+      links:
+        - text: Twitter
+          href: https://twitter.com/edennetwork
+        - text: Github
+          href: https://github.com/eden-network
     - title: Harberger Ads
       href: https://hads.xyz/
       description: |
