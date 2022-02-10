@@ -6,7 +6,7 @@ postHeader: "Why I Am a Pluralist"
 postAuthor: "E. Glen Weyl"
 ---
 
-I increasingly use the terms “**pluralist**” to describe myself and “**Plurality**” to describe the direction I want to see technology go in.[^1]  This essay, following up on my “Why I am not" series [ˆ2], tries to articulate what I mean by this and where it might lead us.  
+I increasingly use the terms “**pluralist**” to describe myself and “**Plurality**” to describe the direction I want to see technology go in.[^1]  This essay, following up on my “Why I am not" series [^2], tries to articulate what I mean by this and where it might lead us.  
 
 The piece filters through my academic-technologist lens many things I have learned since Eric Posner and I published Radical Markets, but more than anything what I have learned from my fellow RadicalxChange board members Danielle Allen, Audrey Tang and Christopher Kulendran Thomas.[^3]  While the piece raises many more questions than it answers, my hope is that these will be precise enough, in a way they have not been in the past, to help stimulate a coherent Plurality agenda for technology.  
 
