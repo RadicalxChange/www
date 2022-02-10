@@ -30,7 +30,7 @@ Pluralism is an element of multiple other philosophies that I do not myself embr
 
 - The first is what might be called “*dynamism*” or “*liberalism*”, namely that I view evolution of the set of social groups as critical to the success of pluralism.  This contrasts with conservative and much religious and consociational thought, where the plurality of groups constituting society is often seen as static.
 
-- The second is “*self-government*” or “*democracy*s”, namely that I think it is crucial for the pluralistic groups to be accountable to the individuals who make them up, without putting those individuals above the groups in fundamental significance.  This contrasts with reactionary thought (such as fascism and corporatism), where groups usually have an authoritarian, personalistic and hierarchical structure.
+- The second is “*self-government*” or “*democracy*”, namely that I think it is crucial for the pluralistic groups to be accountable to the individuals who make them up, without putting those individuals above the groups in fundamental significance.  This contrasts with reactionary thought (such as fascism and corporatism), where groups usually have an authoritarian, personalistic and hierarchical structure.
 
 - The last is what might be called “*cooperation*”, namely that we should aim for cooperation and roughly coherence/consensus across social groups towards common goals, which contrasts with much postmodernism, relativism and nihilism.
 
