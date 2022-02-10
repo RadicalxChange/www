@@ -149,7 +149,7 @@ Here’s an illustration:
 
 ![Partial common ownership with SALSA](/images/blog/salsa-licensing.png)
 
-## How the SALSA Licenses Work
+## Specifics on SALSA Licenses
 
 SALSA licenses are a fairer and more efficient form of ownership than traditional private property. They’re inspired by a roughly Georgist point of view. To dive into the philosophy and economic logic, see [here](http://assets.press.princeton.edu/chapters/s11222.pdf), [here](https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf), and [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3698941). For now, let's just specify the mechanics.
 
@@ -174,7 +174,7 @@ The hard question is what else we need to do to minimize the amount of wealth th
 In short, outside of the SALSA license transactions, we want all CC transactions to be strongly biased towards (a) *transactions between community members* for (b) *services that can’t be directly removed from the community, not goods that can*. Let’s take (a) and (b) in order.
 
 
-## How to Tax Exit
+## Specifics on Taxing Exit
 
 The CC generally cannot be sent from one address to another without a tax being calculated and sent into the community treasury. Here are the details of those exit taxes.
 
