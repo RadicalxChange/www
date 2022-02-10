@@ -151,7 +151,7 @@ Here’s an illustration:
 
 ## How the SALSA Licenses Work
 
-SALSA licenses are a fairer and more efficient form of ownership than traditional private property. They’re inspired by a roughly Georgist point of view. To dive into the philosophy and economic logic, see [here](http://assets.press.princeton.edu/chapters/s11222.pdf), [here](https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf), and [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3698941). For the rest of this piece, I’m going to skip the background and just specify the mechanics.
+SALSA licenses are a fairer and more efficient form of ownership than traditional private property. They’re inspired by a roughly Georgist point of view. To dive into the philosophy and economic logic, see [here](http://assets.press.princeton.edu/chapters/s11222.pdf), [here](https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf), and [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3698941). For now, let's just specify the mechanics.
 
 When a community member buys the SALSA license for an asset, she gets the right to use or improve that asset as she pleases for a certain period of time.[^6] **It’s a bit like a lease**. However, unlike a lease, she must also pay a special license fee to the community treasury, which is calculated as a percentage of the price paid at auction. **This is a bit like a property tax**. And **at the end of her license period, the license goes back up for auction**. She **can continue to hold the asset** by putting in a winning bid. If she does not win the bidding, then **the winning bidder’s payment goes to her**, and she relinquishes the license.
 
