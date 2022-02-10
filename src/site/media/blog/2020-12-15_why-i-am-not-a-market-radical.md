@@ -1,8 +1,8 @@
 ---
 layout: "layouts/blog-post.njk"
 date: "2020-12-15"
-title: "Why I am not a Market Radical"
-postHeader: "Why I am not a Market Radical"
+title: "Why I Am not a Market Radical"
+postHeader: "Why I Am not a Market Radical"
 postAuthor: "E. Glen Weyl"
 ---
 
