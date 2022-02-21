@@ -71,6 +71,10 @@
 
     Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on.
   readings:
+    - title: Agent-Based Models of Quadratic Voting
+      author: Jacob Kelter, Andreas Bugler, Uri Wilensky
+      href: https://www.researchgate.net/publication/357590353_Agent-Based_Models_of_Quadratic_Voting
+      date: "2021"
     - title: "Agonistics: Thinking The World Politically"
       author: Chantal Mouffe
       href: https://www.barnesandnoble.com/w/agonistics-chantal-mouffe/1113507188
@@ -81,6 +85,14 @@
       author: Charlotte Cavaillé et al.
       href: https://lawreview.uchicago.edu/sites/lawreview.uchicago.edu/files/3Chen_WEB_FINAL.pdf
       date: "1905-07-11T05:00:00.000Z"
+    - title: Between Abundance and Scarcity
+      author: Matt Prewitt
+      href: /media/blog/between-scarcity-and-abundance/
+      date: "2020-04-15T04:00:00.000Z"
+    - title: "Chapter 2 of Radical Markets"
+      author: Eric A. Posner, E. Glen Weyl
+      href: http://radicalmarkets.com/chapters/radical-democracy/
+      date: "2018"
     - title: Democracy Squared
       author: Eric A. Posner, E. Glen Weyl
       href: https://www.vanderbiltlawreview.org/2015/03/voting-squared-quadratic-voting-in-democratic-politics/
@@ -97,40 +109,32 @@
       author: Eric A. Posner, E. Glen Weyl
       href: /media/papers/qv-and-the-public-good.pdf
       date: "2017-02-06T05:00:00.000Z"
-    - title: Quadratic Voting in the Wild
-      author: David Quarfoot et al.
-      href: http://www.sci.sdsu.edu/crmse/msed/papers/Quarfoot2.pdf
-      date: "2017-02-14T05:00:00.000Z"
     - title: "Quadratic Voting: A New Way to Govern Blockchains for Enterprises"
       author: Sherman Lee
       href: https://www.forbes.com/sites/shermanlee/2018/05/30/quadratic-voting-a-new-way-to-govern-blockchains-for-enterprises/#1760146b6ef8
       date: "2018-05-30T04:00:00.000Z"
+    - title: "Quadratic Voting in Colorado: 2020"
+      author: Leon Erichsen, Matt Prewitt
+      href: /media/blog/quadratic-voting-in-colorado-2020/
+      date: "2020-01-04T05:00:00.000Z"
+    - title: Quadratic Voting in the Wild
+      author: David Quarfoot et al.
+      href: http://www.sci.sdsu.edu/crmse/msed/papers/Quarfoot2.pdf
+      date: "2017-02-14T05:00:00.000Z"
     - title:
         "QV or Not QV? That is the Question: Some Skepticism about Radical Egalitarian
         Voting Markets"
       author: Richard L. Hasen
       href: https://lawreview.uchicago.edu/publication/qv-or-not-qv-question-some-skepticism-about-radical-egalitarian-voting-marketss
       date: "1905-07-10T05:00:00.000Z"
-    - title: Towards a Connected Society
-      author: Danielle Allen
-      href: https://lsa.umich.edu/social-solutions/diversity-democracy/oci-series/excerpts/volume-i/toward-a-connected-society.html
-      date: "2018-02-28T05:00:00.000Z"
-    - title: "Quadratic Voting in Colorado: 2020"
-      author: Leon Erichsen, Matt Prewitt
-      href: /media/blog/quadratic-voting-in-colorado-2020/
-      date: "2020-01-04T05:00:00.000Z"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
       href: /media/papers/The_Handbook_for_Radical_Local_Democracy.pdf
       date: "2019"
-    - title: "Chapter 2 of Radical Markets"
-      author: Eric A. Posner, E. Glen Weyl
-      href: http://radicalmarkets.com/chapters/radical-democracy/
-      date: "2018"
-    - title: Between Abundance and Scarcity
-      author: Matt Prewitt
-      href: /media/blog/between-scarcity-and-abundance/
-      date: "2020-04-15T04:00:00.000Z"
+    - title: Towards a Connected Society
+      author: Danielle Allen
+      href: https://lsa.umich.edu/social-solutions/diversity-democracy/oci-series/excerpts/volume-i/toward-a-connected-society.html
+      date: "2018-02-28T05:00:00.000Z"
   tools:
     - title: RxC QV
       href: https://quadraticvote.radicalxchange.org/
