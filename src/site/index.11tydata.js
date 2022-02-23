@@ -1,14 +1,12 @@
 module.exports = {
   rxcTv: {
     isOn: false,
-    title: "RxC TV - Day 3",
-    description: `December 16th, 7:00 pm to 10:00 pm MST
+    title: "RxC TV - Day 4",
+    description: `February 25th, 4:00 pm to 7:00 pm UTC
 
-Welcome to the 3rd Annual RadicalxChange unConference.
+In addition to the in-person and online events of the 3rd Annual RadicalxChange unConference in December 2021, RadicalxChange put together RxC TV, a unique 3-part program that was streamed live the day before each Open Space unConference and thematically related to the succeeding event, to inspire and learn.
 
-In addition to the in-person and online unConference events, RadicalxChange is putting together RxC TV, a unique and never before seen 3-part program that will be streamed LIVE the day before each Open Space unConference and thematically related to the succeeding event, to inspire and learn.
-
-Broadcasts will be on December 3rd, 9th, and 16th corresponding to their respective time zones.`,
+We have since assembled a fourth episode of never before seen bonus content. RadicalxChange presents: RxC TV - Day 4.`,
     slidoUrl: "",
   },
   popup: {
