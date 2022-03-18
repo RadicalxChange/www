@@ -1,0 +1,18 @@
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/nav-link.njk" as navLink %}
+
+<!-- prettier-ignore -->
+{% macro render(wikiLinks) %}
+<div id="sideNav" class="inline-block sticky pt-2 pb-4 col-start-column-1 col-end-gutter-3 row-start-1 border-r lg:min-h-screen">
+    <!-- prettier-ignore -->
+    {% for item in wikiLinks %}
+      <!-- prettier-ignore -->
+      {{ navLink.render(item) }}
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{% endmacro %}

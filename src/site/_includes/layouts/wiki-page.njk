@@ -1,0 +1,60 @@
+---
+permalink: "wiki/{{ slug | defaultSlug: title }}/index.html"
+---
+
+<!-- prettier-ignore -->
+{% import "components/scroll-indicator.njk" as scrollIndicator %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/side-nav.njk" as sideNav %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% set ogType="article" %}
+
+<!-- prettier-ignore -->
+{% block metaTags %}
+<!-- prettier-ignore -->
+{{ super() }}
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<!-- prettier-ignore -->
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{{ scrollIndicator.render() }}
+<div
+  class="lg:min-h-screen relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-6 pb-8 lg:py-lg/marginoverflow-hidden"
+>
+  <article
+    class="inline-block col-start-column-4 col-end-gutter-9 markdown markdown-sm"
+  >
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    {{ content | markdown | safe }}
+  </article>
+  <!-- prettier-ignore -->
+  {{ sideNav.render(wikiLinks) }}
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/hash-as-scroll.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/scroll-indicator.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endblock %}
