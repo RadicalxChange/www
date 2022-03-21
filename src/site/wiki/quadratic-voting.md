@@ -1,6 +1,7 @@
 ---
 layout: "layouts/wiki-page.njk"
 title: "Quadratic Voting"
+slug: "quadratic-voting"
 ---
 
 Quadratic Voting (QV) is a redesigned voting method reflecting the intensity of people’s preferences in collective decisions. It greatly mitigates tyranny-of-the-majority and factional control problems.
