@@ -1,10 +1,10 @@
 <!-- prettier-ignore -->
 {% macro render(item) %}
-<div id="navLink" class="w-full">
+<div id="nav-link" class="w-full text-size--1">
   <!-- prettier-ignore -->
   {% if item.items %}
-  <div class="navItem">
-    <div class="linkContainer collapsible">
+  <div class="nav-item">
+    <div class="link-container collapsible">
       <!-- prettier-ignore -->
       {% if item.to %}
       <a href="{{item.to}}" class="">
@@ -18,12 +18,12 @@
       <!-- prettier-ignore -->
       {% endif %}
     </div>
-    <div class="innerLinks hidden">
+    <div class="inner-links hidden">
       <!-- prettier-ignore -->
       {% for childItem in item.items %}
-        <div class="navItem">
-          <div class="linkContainer">
-            <a href="{{childItem.to}}" class="">
+        <div class="nav-item">
+          <div class="link-container">
+            <a href="{{ childItem.to }}" class="text-size--2">
               {{childItem.id}}
             </a>
           </div>
@@ -34,8 +34,8 @@
   </div>
   <!-- prettier-ignore -->
   {% else %}
-  <div class="navItem">
-    <div class="linkContainer">
+  <div class="nav-item">
+    <div class="link-container">
       <a href="{{item.to}}" class="">
         {{item.id}}
       </a>

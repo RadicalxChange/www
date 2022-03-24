@@ -1,31 +1,40 @@
-.navItem {
-  width: 100%;
-}
+#side-nav {
+  @apply top-0;
+  height: calc(100vh - 80px);
 
-.linkContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem 0.5rem 2rem;
-}
-.linkContainer:hover {
-  opacity: 0.5;
-}
-
-.innerLinks {
-  display: block;
-  line-height: 1.6;
-  font-weight: 400;
-  margin-left: 1rem;
-}
-
-.wiki {
-  article {
-    display: inline-block !important;
+  .nav-item {
+    width: 100%;
   }
 
-  .wiki-page {
-    display: inline-block !important;
+  .link-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  .link-container:hover {
+    opacity: 0.5;
+  }
+
+  .inner-links {
+    line-height: 1.6;
+    font-weight: 400;
+    margin-left: 1rem;
+  }
+}
+
+#table-of-contents_container {
+  @apply inline-block;
+  @apply top-0;
+  @apply py-4 pl-4;
+  height: calc(100vh - 80px);
+}
+
+.toc-item {
+  margin-bottom: .5rem;
+
+  .list-aligned {
+    padding: .5rem 0 0 .5rem;
   }
 }

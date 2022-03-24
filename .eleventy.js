@@ -33,6 +33,11 @@ module.exports = function (config) {
     .use(require("markdown-it-toc-done-right"), {
       slugify: uslug,
       listClass: "list-aligned",
+      listType: "ul",
+      containerClass: "toc",
+      containerId: "toc",
+      itemClass: "toc-item",
+      linkClass: "toc-link",
     })
     .use(require("markdown-it-footnote"));
   markdown.renderer.rules.footnote_block_open = () => `<hr/>\n<ol>\n`;
@@ -70,6 +75,11 @@ module.exports = function (config) {
     } else {
       return customSlug;
     }
+  });
+
+  // Path to wiki file on Github
+  config.addFilter("editPath", function (absolutePath) {
+    return absolutePath.replace("./src/site/wiki/", "https://github.com/RadicalxChange/www/blob/wiki-test/src/site/wiki/");
   });
 
   // Array.slice()

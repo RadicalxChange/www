@@ -7,7 +7,7 @@ permalink: "wiki/{{ slug }}/index.html"
 <!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
 <!-- prettier-ignore -->
-{% import "components/side-nav.njk" as sideNav %}
+{% import "components/nav-link.njk" as navLink %}
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
 
@@ -33,7 +33,7 @@ permalink: "wiki/{{ slug }}/index.html"
 <!-- prettier-ignore -->
 {{ scrollIndicator.render() }}
 <div
-  class="lg:min-h-screen relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-6 pb-8 lg:py-lg/marginoverflow-hidden"
+  class="lg:min-h-screen relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4 pt-6 pb-8 lg:py-lg/marginoverflow-hidden"
 >
   <article
     class="inline-block col-start-column-4 col-end-gutter-9 markdown markdown-sm"
@@ -43,11 +43,43 @@ permalink: "wiki/{{ slug }}/index.html"
     </header>
     {{ content | markdown | safe }}
   </article>
-  <!-- prettier-ignore -->
-  {{ sideNav.render(wikiLinks) }}
+  <aside id="table-of-contents_container" class="sticky col-start-column-10 col-end-gutter-12">
+    <ul id="table-of-contents" class="list-none pl-4 pr-1 mt-20 mb-12 border-l text-size--1">
+      <li class="mb-2">
+        <a
+          class="inline-block border rounded py-2 px-3 hover:opacity-80"
+          href="{{ page.inputPath | editPath }}"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <div class="flex items-center">
+            <img class="mr-2" src="/images/ui/mark-github.svg" />
+            <span>Edit Page</span>
+          </div>
+        </a>
+      </li>
+      <li class="mt-4 mb-2 uppercase">
+        <span>On this page</span>
+      </li>
+    </ul>
+  </aside>
+  <nav id="side-nav" class="inline-block sticky top-0 pt-2 pb-4 col-start-column-1 col-end-gutter-3 row-start-1 border-r lg:min-h-screen">
+    <!-- prettier-ignore -->
+    {% for item in wikiLinks %}
+      <!-- prettier-ignore -->
+      {{ navLink.render(item) }}
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </nav>
 </div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
+<script>
+  var tocContainer = document.getElementById("table-of-contents");
+  var toc = document.getElementById("toc");
+
+  tocContainer.appendChild(toc);
+</script>
 <script>
   // prettier-ignore
   {% include "components/hash-as-scroll.js" %}

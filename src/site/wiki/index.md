@@ -2,6 +2,7 @@
 layout: "layouts/wiki-page.njk"
 title: "RadicalxChange Wiki"
 ---
+[toc]
 
 Welcome to the official RadicalxChange wiki! This will contain lots of helpful great information about stuff we're doing and it's gonna be really cool and great. This is placeholder text for now.
 
