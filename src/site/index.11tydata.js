@@ -10,7 +10,7 @@ We have since assembled a fourth episode of never before seen bonus content. Rad
     slidoUrl: "",
   },
   popup: {
-    isOn: true,
+    isOn: false,
     title: "Watch Streams From Our Last Conference",
     bodyText: `Democracy is in crisis at a critical moment when we face seemingly insurmountable challenges from growing economic disparity, climate change, and a global pandemic. Despite increased and active involvement of citizens in the democratic process, our governing systems, stifled with deepening polarization, are halting progress.
 
