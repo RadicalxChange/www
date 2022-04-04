@@ -16,6 +16,8 @@ A natural place to look for candidates for such technology-ideology pairs is *Si
 
 Without taking a computer game too seriously, there is a logic to the way they carve up ideological space. In this document, I take their thinking and run with it, attempting to be fair to the self-understanding of each group and thus to welcome collaboration and critique from those who feel they generally identify with the camps. At the same time, *I* primarily wrote this document, and no one will be confused about which camp I identify with; last week I released something of a mission statement for Digital Democracy/Plurality/pluralism. As with any classifications of political beliefs, most people will find themselves somewhere in the middle of these groupings (as pictured in the diagram below) and many will find that even the space spanned by them captures only some elements of their views. Nonetheless, I believe classification is useful to allow those outside these debates about the future of governance an entry point into them. Debates about a distant future are often confusing and obscure, so I hope this may help simplify them.
 
+![What these ideologies have in common](/images/blog/ideologies-triangle.png)
+
 ## Corporate Libertarianism
 
 <div class="html">
