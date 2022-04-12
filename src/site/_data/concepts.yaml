@@ -43,7 +43,7 @@
       date: "2020-11-05T05:00:00.000Z"
     - title: "Chapter 5 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
-      href: http://radicalmarkets.com/chapters/data-as-labor/
+      href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
       date: "2018"
   tools:
     - title: Ocean Protocol
@@ -91,7 +91,7 @@
       date: "2020-04-15T04:00:00.000Z"
     - title: "Chapter 2 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
-      href: http://radicalmarkets.com/chapters/radical-democracy/
+      href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
       date: "2018"
     - title: Democracy Squared
       author: Eric A. Posner, E. Glen Weyl
@@ -127,6 +127,10 @@
       author: Richard L. Hasen
       href: https://lawreview.uchicago.edu/publication/qv-or-not-qv-question-some-skepticism-about-radical-egalitarian-voting-marketss
       date: "1905-07-10T05:00:00.000Z"
+    - title: Storable Votes and Quadratic Voting, an Experiment on Four California Propositions
+      author: Alessandra Casella, Luis Sanchez
+      href: https://www.nber.org/system/files/working_papers/w25510/w25510.pdf
+      date: "2019"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
       href: /media/papers/The_Handbook_for_Radical_Local_Democracy.pdf
@@ -380,7 +384,7 @@
       date: "2014-04-22T04:00:00.000Z"
     - title: "Chapter 4 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
-      href: http://radicalmarkets.com/chapters/dismembering-the-octopus/
+      href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
       date: "2018"
   tools: []
 - title: Intersectional Social Identity
