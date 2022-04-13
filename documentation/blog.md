@@ -53,7 +53,7 @@ Favorite llama properties:
 - Footnotes
 
 ```
-This text has some sublty to it.[^1]
+This text has some subtlety to it.[^1]
 
 [^1]: I can explain more here.
 ```
@@ -108,10 +108,10 @@ If you are developing locally, you need to run `npm run build:images` before new
 
 ## Post the blog post
 
-To post a blog post, merge your blog post onto `master` on GitHub. Netlify will notice new commits and deploy them.
+To post a blog post, merge your blog post onto `main` on GitHub. Netlify will notice new commits and deploy them.
 
 ## Edit a blog post
 
-To edit a blog post, change any content you want and merge the changes back to `master` on GitHub. Netlify will notice new commits and deploy them.
+To edit a blog post, change any content you want and merge the changes back to `main` on GitHub. Netlify will notice new commits and deploy them.
 
 Do not change the title of a blog post! The title of a blog post is used to generate its permalink. If you change the title a blog post has been online, you are probably breaking a link to that content from somewhere else (a tweet, another blog post, etc.). If you really must change the title of a post, you can add a `slug` key to the post metadata to override the generated permalink. The `slug` value should be the slug generated from the old title.
