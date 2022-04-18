@@ -70,8 +70,8 @@ First, with “soulbound” or non-transferable community tokens, our mechanisms
 
 <div class="html">
 <div class="grid grid-cols-1 md:grid-cols-2">
-  <img class="no-y-margin w-60 h-auto md:h-60 md:w-auto" src="/images/blog/soulbound-in-games.png" />
-  <img class="no-y-margin w-60 h-auto md:h-60 md:w-auto" src="/images/blog/soulbound-tokens.png" />
+  <img class="no-y-margin w-60 h-auto md:h-60 md:w-auto" src="/images/blog/necklace-of-calisea.png" />
+  <img class="no-y-margin w-60 h-auto md:h-60 md:w-auto" src="/images/blog/poaps.png" />
 </div>
 <div class="markdown markdown-xs mt-6">
 {{ 'Credit: ["Soulbound"](https://vitalik.ca/general/2022/01/26/soulbound.html) by Vitalik Buterin' | markdown | safe }}
@@ -100,7 +100,7 @@ It also transforms Plural Ownership. In an individualistic setup, buying an asse
 - [Discord #salsa channel](https://discord.gg/bspM4tAWu6)
 - This group is already organized and has [their own website](https://partialcommonownership.com/)
 
-![Harberger tax](/images/blog/harberger-tax-outrun.png)
+![Harberger tax](/images/blog/harberger-tax-outrun.jpeg)
 <div class="html">
 <div class="markdown markdown-xs">
 {{ 'Credit: ["What is Harberger Tax & Where Does The Blockchain Fit In?"](https://medium.com/@simondlr/what-is-harberger-tax-where-does-the-blockchain-fit-in-1329046922c6#) by Simon de la Rouviere' | markdown | safe }}
