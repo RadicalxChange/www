@@ -5,6 +5,10 @@ title: "A New Chapter for RadicalxChange"
 postHeader: "A New Chapter for RadicalxChange"
 ---
 
+<div class="html">
+<iframe height="175px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/d9dbde11-d6bf-4896-9420-d49382564512?dark=false"></iframe>
+</div>
+
 Hannah Arendt concludes her otherwise dark book, [Origins of Totalitarianism](https://en.wikipedia.org/wiki/The_Origins_of_Totalitarianism), with the hopeful message that humanity’s greatest capacity is renewal–the capacity to begin again, to imagine and bring about new, better, common futures.
 
 In other words, when we hear the end is near, let’s remember: renewal is here.
