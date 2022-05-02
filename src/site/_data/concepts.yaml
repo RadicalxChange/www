@@ -64,10 +64,10 @@
           href: https://twitter.com/realmaskbook
         - text: GitHub
           href: https://github.com/DimensionDev/Maskbook
-- title: Quadratic Voting
-  slug: quadratic-voting
+- title: Plural Voting
+  slug: plural-voting
   description: |
-    Quadratic Voting (QV)  is a redesigned voting method reflecting the intensity of people's preferences in collective decisions. It greatly mitigates tyranny-of-the-majority and factional control problems.
+    Plural Voting (also known as Quadratic Voting or QV) is a redesigned voting method reflecting the intensity of people's preferences in collective decisions. It greatly mitigates tyranny-of-the-majority and factional control problems.
 
     Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on.
   readings:
@@ -186,12 +186,12 @@
           href: https://twitter.com/furtherfield
         - text: GitHub
           href: https://github.com/lazaruslabs/culturestake
-- title: Quadratic Funding
-  slug: quadratic-funding
+- title: Plural Funding
+  slug: plural-funding
   description: |
-    Quadratic Funding (QF) is a more democratic and scalable form of matching funding for public goods, i.e. any projects valuable to large groups of people and accessible to the general public.
+    Plural Funding (also known as Quadratic Funding or QF) is a more democratic and scalable form of matching funding for public goods, i.e. any projects valuable to large groups of people and accessible to the general public.
 
-    “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. QF optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In QF, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] QF strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public.
+    “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. Plural Funding optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In Plural Funding, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] Plural Funding strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public.
   readings:
     - title: "Pairwise coordination subsidies: a new quadratic funding design"
       author: Vitalik Buterin
@@ -241,12 +241,12 @@
           href: https://twitter.com/gitcoin
         - text: GitHub
           href: https://github.com/gitcoinco/downtownstimulus
-- title: Partial Common Ownership
-  slug: partial-common-ownership
+- title: Plural Ownership
+  slug: plural-ownership
   description: |
-    Partial common ownership is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
+    Plural ownership (also known as partial common ownership) is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
 
-    In partial common ownership systems (also known under the acronyms COST and SALSA), assets belong to no one and everyone. An asset’s current possessor, must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
+    In plural ownership ownership systems (also known under the acronyms COST and SALSA), assets belong to no one and everyone. An asset’s current possessor, must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
 
     Join the conversation with our active SALSA working group on [Discord](https://discord.gg/qqrTPKVVse) and [Github](https://github.com/RadicalxChange/salsa-nft/discussions).
   readings:
@@ -306,7 +306,7 @@
     - title: Geo Web
       href: https://www.geoweb.network/
       description: |
-        Geo Web is a set of open protocols for anchoring digital content (e.g., augmented reality, NFTs, apps, games, etc.) to physical locations. It uses partial common ownership to administer its global digital land market with all proceeds being used to fund public goods. The network currently runs on Ethereum's Kovan testnet, but will launch on an Ethereum L2 rollup soon.
+        Geo Web is a set of open protocols for anchoring digital content (e.g., augmented reality, NFTs, apps, games, etc.) to physical locations. It uses plural ownership to administer its global digital land market with all proceeds being used to fund public goods. The network currently runs on Ethereum's Kovan testnet, but will launch on an Ethereum L2 rollup soon.
       links:
         - text: Twitter
           href: https://twitter.com/thegeoweb
@@ -387,10 +387,10 @@
       href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
       date: "2018"
   tools: []
-- title: Intersectional Social Identity
-  slug: intersectional-social-identity
+- title: Plural Identity
+  slug: plural-identity
   description: |
-    Whereas most existing identity concepts are either centralized or individualistic, Intersectional Social Identity (XID) solutions embody human identities' social, and multi-dimensional characteristics. XID makes use of three central primitives:
+    Whereas most existing identity concepts are either centralized or individualistic, Plural Identity (XID) solutions embody human identities' social, and multi-dimensional characteristics. XID makes use of three central primitives:
 
     1. Each participant has a digital journal listing all their identifying information. (Only that individual has access to the complete set of data in that store.)
     2. For each input X in their digital journal, each participant also stores the set of other participants who also keep copies of X.

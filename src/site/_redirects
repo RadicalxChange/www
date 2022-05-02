@@ -1,3 +1,9 @@
+# renamed concepts to plurality
+/concepts/quadratic-voting /concepts/plural-voting
+/concepts/quadratic-funding /concepts/plural-funding
+/concepts/intersectional-social-identity /concepts/plural-identity
+/concepts/partial-common-ownership /concepts/plural-ownership
+
 /fellowship/arthaus-artist-residency /fellowship/public-goods-x-cuba
 /fellowship/mio /fellowship/ama
 
