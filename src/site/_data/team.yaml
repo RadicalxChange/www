@@ -39,3 +39,8 @@
   image: "paula_berman.png"
   bio: |
     Paula Berman is a hacktivist, digital identity geek and COO of RadicalxChange.
+- name: "Divya Siddarth"
+  title: "Researcher in Residence"
+  image: "divya-siddarth.png"
+  bio: |
+    Divya Siddarth is a political economist and social technologist. Her current research focus is around promoting and preserving the digital commons, building the technology and policy infrastructure for decentralized governance, and devising frameworks for collectively-focused, rather than centrally concentrated, AI. She builds technology at Microsoft, imagines new technological worlds with Verses, and thinks about how to govern it all with RadicalxChange, Metagov, and the Ostrom Workshop.
