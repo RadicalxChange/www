@@ -5,24 +5,30 @@
 
     People should be able to exert democratic collective bargaining power over their data, in order to make joint decisions controlling its use, and negotiate appropriate compensation.
   readings:
-    - title: Data Dignity at RadicalxChange
-      author: M Eifler, Vi Hart
-      href: https://theartofresearch.org/data-dignity-at-radicalxchange/
-      date: "2019-06-08T04:00:00.000Z"
+    - title:
+        "The Agency Costs of Agency Capitalism: Activist Investors and the Revaluation
+        of Governance Rights"
+      author: Ronald J. Gilson and Jeffrey N. Gordon
+      href: https://www.cbs.dk/files/cbs.dk/agency_cost_ssrn_3-13-13_0.pdf
+      date: "2013-03-11T04:00:00.000Z"
+    - title: A Proposal to Limit the Anti-Competitive Power of Institutional Investors
+      author: Eric A. Posner, Fiona M. Scott Morton, E. Glen Weyl
+      href: /media/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf
+      date: "2016-11-22T05:00:00.000Z"
+    - title: The Automation Charade
+      author: Astra Taylor
+      href: https://logicmag.io/failure/the-automation-charade/
+      date: "2018-08-01T04:00:00.000Z"
     - title:
         "Bottom-Up Data Trusts: Disturbing the ‘One Size Fits All’ Approach to Data
         Governance"
       author: Sylvie Delacroix. Neil Lawrence
       href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3265315
       date: "2018-11-09T05:00:00.000Z"
-    - title: Data workers of the world, unite
-      author: The Economist
-      href: https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite
-      date: "2018-07-07T04:00:00.000Z"
-    - title: Who Owns the Future?
-      author: Jaron Lanier
-      href: https://en.wikipedia.org/wiki/Who_Owns_the_Future%3F
-      date: "2013"
+    - title: Data Dignity at RadicalxChange
+      author: M Eifler, Vi Hart
+      href: https://theartofresearch.org/data-dignity-at-radicalxchange/
+      date: "2019-06-08T04:00:00.000Z"
     - title: The Data Freedom Act
       author: RadicalxChange Foundation Ltd.
       href: /media/papers/data-freedom-act.pdf
@@ -33,15 +39,39 @@
       author: Nicholas Vincent, Hanlin Li, Nicole Tilly, Stevie Chancellor, Brent Hecht
       href: https://arxiv.org/abs/2012.09995
       date: "2020-12-18T05:00:00.000Z"
-    - title: The Automation Charade
-      author: Astra Taylor
-      href: https://logicmag.io/failure/the-automation-charade/
-      date: "2018-08-01T04:00:00.000Z"
+    - title: Data workers of the world, unite
+      author: The Economist
+      href: https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite
+      date: "2018-07-07T04:00:00.000Z"
+    - title: "Chapter 5 of Radical Markets"
+      author: Eric A. Posner, E. Glen Weyl
+      href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
+      date: "2018"
     - title: "Solving the Social Dilemma: The Data Freedom Act"
       author: Matt Prewitt, Leon Erichsen
       href: /media/blog/solving-the-social-dilemma/
       date: "2020-11-05T05:00:00.000Z"
-    - title: "Chapter 5 of Radical Markets"
+    - title: Who Owns the Future?
+      author: Jaron Lanier
+      href: https://en.wikipedia.org/wiki/Who_Owns_the_Future%3F
+      date: "2013"
+    - title: Anticompetitive Effects of Common Ownership
+      author: José Azar, Martin C. Schmalz, Isabel Tecu
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2427345
+      date: "2014-04-22T04:00:00.000Z"
+    - title: Antitrust Remedies for Labor Market Power
+      author: Suresh Naidu, Eric A. Posner, E. Glen Weyl
+      href: /media/papers/antitrust-remedies-for-labor-market-power.pdf
+      date: "2018-02-24T05:00:00.000Z"
+    - title: Horizontal Shareholding and Antitrust Policy
+      author: Fiona Scott Morton, Herbert Hovenkamp
+      href: https://www.yalelawjournal.org/feature/horizontal-shareholding-and-antitrust-policy
+      date: "2018-05-01T04:00:00.000Z"
+    - title: Productivity and Misallocation in General Equilibrium
+      author: David Rezza Baqaee, Emmanuel Farhi
+      href: https://www.nber.org/papers/w24007
+      date: "2017-11-01T04:00:00.000Z"
+    - title: "Chapter 4 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
       href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
       date: "2018"
@@ -193,26 +223,30 @@
 
     “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. Plural Funding optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In Plural Funding, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] Plural Funding strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public.
   readings:
-    - title: "Pairwise coordination subsidies: a new quadratic funding design"
-      author: Vitalik Buterin
-      href: https://ethresear.ch/t/pairwise-coordination-subsidies-a-new-quadratic-funding-design/5553
-      date: "2019-06-19T04:00:00.000Z"
-    - title: "Liberal Radicalism: A Flexible Design for Philanthropic Matching Funds"
-      author: Vitalik Buterin et al.
-      href: /media/papers/liberal-radicalism.pdf
-      date: "2018-09-18T04:00:00.000Z"
-    - title: Pairwise Coordination Subsidies
-      author: Vitalik Buterin
-      href: https://ethresear.ch/t/pairwise-coordination-subsidies-a-new-quadratic-funding-design/5553
-      date: "2019-06-19T04:00:00.000Z"
-    - title: "Quadratic Payments: A Primer"
-      author: Vitalik Buterin
-      href: https://vitalik.ca/general/2019/12/07/quadratic.html
-      date: "2019-12-07T05:00:00.000Z"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
       href: /media/papers/The_Handbook_for_Radical_Local_Democracy.pdf
       date: "2019"
+    - title: How Soulbound Tokens Can Make Gitcoin Grants More Pluralistic
+      author: Leon Erichsen
+      href: https://gov.gitcoin.co/t/how-soulbound-tokens-can-make-gitcoin-grants-more-pluralistic/10077
+      date: "2022-03-15T04:00:00.000Z"
+    - title: "Liberal Radicalism: A Flexible Design for Philanthropic Matching Funds"
+      author: Vitalik Buterin et al.
+      href: /media/papers/liberal-radicalism.pdf
+      date: "2018-09-18T04:00:00.000Z"
+    - title: "Pairwise coordination subsidies: a new quadratic funding design"
+      author: Vitalik Buterin
+      href: https://ethresear.ch/t/pairwise-coordination-subsidies-a-new-quadratic-funding-design/5553
+      date: "2019-06-19T04:00:00.000Z"
+    - title: Plural Funding
+      author: Glen Weyl, Leon Erichsen
+      href: https://www.youtube.com/watch?v=RM7UFpSemjA
+      date: "2022-03-08T05:00:00.000Z"
+    - title: "Quadratic Payments: A Primer"
+      author: Vitalik Buterin
+      href: https://vitalik.ca/general/2019/12/07/quadratic.html
+      date: "2019-12-07T05:00:00.000Z"
   tools:
     - title: Clr.fund
       href: https://clr.fund/
@@ -250,30 +284,14 @@
 
     A group of Web3 technologists has come together to form an independent RadicalxChange chapter focused on bringing Partial Common Ownership Tokens to Ethereum.  Learn more on our [website](https://partialcommonownership.com) or join the conversation in our active [Discord](https://discord.gg/CjxV954JMT).
   readings:
-    - title: Ownership and Punishment
+    - title: Between Abundance and Scarcity
       author: Matt Prewitt
-      href: /media/papers/ownership-and-punishment.pdf
-      date: "1905-07-11T05:00:00.000Z"
-    - title: Property Attachments
-      author: Lee Anne Fennell
-      href: https://lawreview.uchicago.edu/publication/property-attachmentss
-      date: "2019-05-28T04:00:00.000Z"
-    - title: Property in Radical Markets
-      author: Katrina Miriam Wyman
-      href: https://lawreview.uchicago.edu/publication/property-radical-marketss
-      date: "1905-07-11T05:00:00.000Z"
-    - title: Progress and Poverty
-      author: Henry George
-      href: https://en.wikipedia.org/wiki/Progress_and_Poverty
-      date: "1879"
-    - title: The 'Socialism' of Léon Walras and His Economic Thinking
-      author: Léon Walras
-      href: https://www.jstor.org/stable/3486110?seq=1#page_scan_tab_contents
-      date: "1980"
-    - title: Reimagining Property
-      author: Matt Prewitt
-      href: https://medium.com/blockchannel/reimagining-property-fbce9d3832a4
-      date: "2018-08-06T04:00:00.000Z"
+      href: /media/blog/between-scarcity-and-abundance/
+      date: "2020-04-15T04:00:00.000Z"
+    - title: "Depreciating Licenses"
+      author: E. Glen Weyl, Anthony Lee Zhang
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810
+      date: "2018-01-24T04:00:00.000Z"
     - title: Do not design for speculators
       author: Tony Sheng
       href: https://tonysheng.substack.com/p/dont-design-speculators
@@ -282,26 +300,42 @@
       author: Richard Arnott
       href: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1536-7150.2004.00334.x
       date: "2017-09-17T04:00:00.000Z"
-    - title: Redesigning Spectrum Licenses to Encourage Innovation and Investment
-      author: Paul Milgrom, E. Glen Weyl, Anthony Lee Zhang
-      href: /media/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf
-      date: "2017-09-17T04:00:00.000Z"
-    - title: Between Abundance and Scarcity
-      author: Matt Prewitt
-      href: /media/blog/between-scarcity-and-abundance/
-      date: "2020-04-15T04:00:00.000Z"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
       href: /media/papers/The_Handbook_for_Radical_Local_Democracy.pdf
       date: "2019"
+    - title: Ownership and Punishment
+      author: Matt Prewitt
+      href: /media/papers/ownership-and-punishment.pdf
+      date: "1905-07-11T05:00:00.000Z"
+    - title: Progress and Poverty
+      author: Henry George
+      href: https://en.wikipedia.org/wiki/Progress_and_Poverty
+      date: "1879"
+    - title: Property Attachments
+      author: Lee Anne Fennell
+      href: https://lawreview.uchicago.edu/publication/property-attachmentss
+      date: "2019-05-28T04:00:00.000Z"
+    - title: Property in Radical Markets
+      author: Katrina Miriam Wyman
+      href: https://lawreview.uchicago.edu/publication/property-radical-marketss
+      date: "1905-07-11T05:00:00.000Z"
     - title: "Chapter 1 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
       href: http://assets.press.princeton.edu/chapters/s11222.pdf
       date: "2018"
-    - title: "Depreciating Licenses"
-      author: E. Glen Weyl, Anthony Lee Zhang
-      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810
-      date: "2018-01-24T04:00:00.000Z"
+    - title: Redesigning Spectrum Licenses to Encourage Innovation and Investment
+      author: Paul Milgrom, E. Glen Weyl, Anthony Lee Zhang
+      href: /media/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf
+      date: "2017-09-17T04:00:00.000Z"
+    - title: Reimagining Property
+      author: Matt Prewitt
+      href: https://medium.com/blockchannel/reimagining-property-fbce9d3832a4
+      date: "2018-08-06T04:00:00.000Z"
+    - title: The 'Socialism' of Léon Walras and His Economic Thinking
+      author: Léon Walras
+      href: https://www.jstor.org/stable/3486110?seq=1#page_scan_tab_contents
+      date: "1980"
   tools:
     - title: Geo Web
       href: https://www.geoweb.network/
@@ -351,55 +385,54 @@
       links:
         - text: GitHub
           href: https://github.com/simondlr/thisartworkisalwaysonsale
-- title: Radical Antitrust
-  slug: radical-antitrust
+- title: Plural Money
+  slug: plural-money
   description: |
-    Radical Antitrust is about looking for cartels in unexpected places, and recognizing that consumers and workers can be harmed through more than simply price. For example, markets could be made fairer if there were more stakeholder representation on boards; more thoughtful limits on mergers and acquisitions; and fewer investors exerting control over multiple companies within an industry.
+    Plural Money is a variation on an old idea. Community or “complementary” currencies are a huge and underexplored design space, promising grassroots economic empowerment. But we think that new technologies can make community currencies a much more powerful tool than they’ve ever been before.
+
+    By (1) applying intersectional identity ideas, such as “soulbound” tokens, to creatively map communities, (2) using the currencies to purchase partial common ownership of shared assets (instead of traditional private property), and (3) setting smart transfer and exit taxes to hold value within communities, we think “plural money” promises an explosion of grassroots value creation.
   readings:
-    - title:
-        "The Agency Costs of Agency Capitalism: Activist Investors and the Revaluation
-        of Governance Rights"
-      author: Ronald J. Gilson and Jeffrey N. Gordon
-      href: https://www.cbs.dk/files/cbs.dk/agency_cost_ssrn_3-13-13_0.pdf
-      date: "2013-03-11T04:00:00.000Z"
-    - title: A Proposal to Limit the Anti-Competitive Power of Institutional Investors
-      author: Eric A. Posner, Fiona M. Scott Morton, E. Glen Weyl
-      href: /media/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf
-      date: "2016-11-22T05:00:00.000Z"
-    - title: Antitrust Remedies for Labor Market Power
-      author: Suresh Naidu, Eric A. Posner, E. Glen Weyl
-      href: /media/papers/antitrust-remedies-for-labor-market-power.pdf
-      date: "2018-02-24T05:00:00.000Z"
-    - title: Horizontal Shareholding and Antitrust Policy
-      author: Fiona Scott Morton, Herbert Hovenkamp
-      href: https://www.yalelawjournal.org/feature/horizontal-shareholding-and-antitrust-policy
-      date: "2018-05-01T04:00:00.000Z"
-    - title: Productivity and Misallocation in General Equilibrium
-      author: David Rezza Baqaee, Emmanuel Farhi
-      href: https://www.nber.org/papers/w24007
-      date: "2017-11-01T04:00:00.000Z"
-    - title: Anticompetitive Effects of Common Ownership
-      author: José Azar, Martin C. Schmalz, Isabel Tecu
-      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2427345
-      date: "2014-04-22T04:00:00.000Z"
-    - title: "Chapter 4 of Radical Markets"
-      author: Eric A. Posner, E. Glen Weyl
-      href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
-      date: "2018"
-  tools: []
+    - title: "Sovereign Cryptocurrencies for People, Corporations, Banks and Communities: Foundations for Grassroots Cryptoeconomy"
+      author: Ehud Shapiro
+      href: https://arxiv.org/abs/2202.05619
+      date: "2022-02-11T04:00:00.000Z"
+  tools:
+    - title: Resource
+      href: https://www.resourcenetwork.co/
+      description: |
+        Resource is a decentralized, circular economy fueled by local resources and human potential.
+      links:
+        - text: Discord
+          href: https://discord.gg/UuTCRuuZMP
+        - text: Twitter
+          href: https://twitter.com/ReSource_Fi
+        - text: Github
+          href: https://github.com/ReSource-Network/
 - title: Plural Identity
   slug: plural-identity
   description: |
-    Whereas most existing identity concepts are either centralized or individualistic, Plural Identity (XID) solutions embody human identities' social, and multi-dimensional characteristics. XID makes use of three central primitives:
+    Whereas most existing identity concepts are either centralized (with a small number of large, institutional credential providers), or individualistic (with self-authentication), Plural Identity solutions are aimed at expanding the scope of possible credential verifiers to include a wider variety of authenticators. To that end it can use non-transferable markers of affiliations, memberships, or credentials, such as [Soulbound Tokens (SBTs)](https://vitalik.ca/general/2022/01/26/soulbound.html) — which are a bit like NFTs, except that they are not bought, sold, or traded; or [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential), a tamper-evident credential using cryptography to authenticate its authorship. In doing so, Plural Identity better embodies human identities’ social, and multi-dimensional characteristics.
 
-    1. Each participant has a digital journal listing all their identifying information. (Only that individual has access to the complete set of data in that store.)
-    2. For each input X in their digital journal, each participant also stores the set of other participants who also keep copies of X.
-    3. Each participant stores a degree of credit. They are willing to offer other participants credit as “social collateral” to give their identity statements credibility.
+    Plural Identity solutions are new and the possibilities are still emerging. But they are likely to become an important tool for establishing digital identity and defining community, unlocking important new governance structures. To name a few:
+
+    - establishing the reliability of information sources in an era of deep fakes
+
+    - permissioning access to communities’ shared assets, including data
+
+    - making DAOs less plutocratic by anchoring governance power in community participation
+
+    - [improving plural funding](https://gov.gitcoin.co/t/how-soulbound-tokens-can-make-gitcoin-grants-more-pluralistic/10077?u=leone) by serving as a privacy-preserving, hard-to-fake evidence of group membership
+
+    These are still early days for XIDs, and we are excited to help steer them in a productive direction.
   readings:
-    - title: Verifying Identity as a Social Intersection
-      author: Nicole Immorlica, Matthew O. Jackson, E. Glen Weyl
-      href: /media/papers/verifying-identity-as-a-social-intersection.pdf
-      date: "2019-01-04T05:00:00.000Z"
+    - title: How Soulbound Tokens Can Make Gitcoin Grants More Pluralistic
+      author: Leon Erichsen
+      href: https://gov.gitcoin.co/t/how-soulbound-tokens-can-make-gitcoin-grants-more-pluralistic/10077
+      date: "2022-03-15T04:00:00.000Z"
+    - title: Intersectional Social Data
+      author: Lucas Geier, Kaliya Young, E. Glen Weyl
+      href: /media/blog/2019-10-24-uh78r5/
+      date: "2019-10-24T04:00:00.000Z"
     - title: "Motivating the Case for Decentralized Social Identity: Part One"
       author: E. Glen Weyl, Lucas Geiger, Kaliya Young
       href: /media/blog/2019-06-06-d4utdx/
@@ -412,16 +445,35 @@
       author: E. Glen Weyl, Lucas Geiger, Kaliya Young
       href: /media/blog/2019-06-08-51kyu5/
       date: "2019-06-08T04:00:00.000Z"
+    - title: Plural Funding
+      author: Glen Weyl, Leon Erichsen
+      href: https://www.youtube.com/watch?v=RM7UFpSemjA
+      date: "2022-03-08T05:00:00.000Z"
+    - title: Soulbound
+      author: Vitalik Buterin
+      href: https://vitalik.ca/general/2022/01/26/soulbound.html
+      date: "2022-01-26T05:00:00.000Z"
+    - title: Verifying Identity as a Social Intersection
+      author: Nicole Immorlica, Matthew O. Jackson, E. Glen Weyl
+      href: /media/papers/verifying-identity-as-a-social-intersection.pdf
+      date: "2019-01-04T05:00:00.000Z"
     - title:
         Who Watches the Watchmen? A Review of Subjective Approaches for Sybil-Resistance in Proof of Personhood Protocols
       author: Divya Siddarth, Sergey Ivliev, Santiago Siri, Paula Berman
       href: /media/papers/who-watches-the-watchmen.pdf
       date: "2020-11-12T04:00:00.000Z"
-    - title: Intersectional Social Data
-      author: Lucas Geier, Kaliya Young, E. Glen Weyl
-      href: /media/blog/2019-10-24-uh78r5/
-      date: "2019-10-24T04:00:00.000Z"
   tools:
+    - title: BrightID
+      href: https://www.brightid.org/
+      description: |
+        BrightID is a social identity network that allows people to prove to applications that they aren’t using multiple accounts. It solves the unique identity problem through the creation and analysis of a social graph. See how BrightID is experimenting with [Soulbound NFTs](https://github.com/BrightID/BrightID-Soulbound-NFT).
+      links:
+        - text: Discord
+          href: https://discord.gg/nTtuB2M
+        - text: Twitter
+          href: https://twitter.com/BrightIDProject
+        - text: GitHub
+          href: https://github.com/BrightID
     - title: Equality Protocol / Democracy Earth
       href: https://democracy.earth/
       description: |
@@ -431,6 +483,17 @@
           href: https://twitter.com/DemocracyEarth
         - text: GitHub
           href: https://github.com/DemocracyEarth/paper
+    - title: Goldfinch
+      href: https://docs.goldfinch.finance/goldfinch/
+      description: |
+        Goldfinch is a decentralized credit protocol with a mission to expand access to capital and foster financial inclusion. The protocol makes crypto loans without crypto collateral. See how Goldfinch is experimenting with [Soulbound NFTs](https://docs.goldfinch.finance/goldfinch/unique-identity-uid).
+      links:
+        - text: GitHub
+          href: https://github.com/goldfinch-eng
+        - text: Discord
+          href: https://discord.gg/HVeaca3fN8
+        - text: Twitter
+          href: https://twitter.com/goldfinch_fi
     - title: Idena
       href: https://idena.io/
       description: |
@@ -440,3 +503,25 @@
           href: https://twitter.com/IdenaNetwork
         - text: GitHub
           href: https://github.com/idena-network
+    - title: Optimism
+      href: https://app.optimism.io/governance
+      description: |
+        The Optimism Collective is a new model for properly rewarding those who create or sustain public goods.
+      links:
+        - text: Twitter
+          href: https://twitter.com/optimismPBC
+        - text: Discord
+          href: https://discord-gateway.optimism.io/
+        - text: Github
+          href: https://github.com/ethereum-optimism
+    - title: Sismo
+      href: https://app.optimism.io/governance
+      description: |
+        Sismo issues ZK badges for reputation aggregation and privacy preserving access control.
+      links:
+        - text: Twitter
+          href: https://twitter.com/sismo_eth
+        - text: Github
+          href: https://github.com/sismo-core
+        - text: Discord
+          href: https://discord.gg/uAPtsfNrve
