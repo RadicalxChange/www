@@ -101,14 +101,14 @@ homeConcepts:
     >
       <a
         class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="{{ '/media/announcements/a-new-chapter-for-radicalxchange/' if not rxcTv.isOn else '#tv'}}"
+        href="{{ 'https://radicalxchange-replayed.simplecast.com/episodes/value-in-the-data-economy-diane-coyle-sushant-kumar-and-matt-prewitt-Il2Mq4Z_' if not rxcTv.isOn else '#tv'}}"
         target="{{ '_blank' if not rxcTv.isOn else ''}}"
         rel="noopener nofollow noreferrer"
       >
         <!-- prettier-ignore -->
         {% if not rxcTv.isOn %}
-        <h2 class="font-bold">New Blog Post</h2>
-        <p>A New Chapter for RadicalxChange</p>
+        <h2 class="font-bold">New Podcast</h2>
+        <p>Value in the Data Economy</p>
         <!-- prettier-ignore -->
         {% else %}
         <h2 class="font-bold">Streaming Now</h2>
@@ -125,6 +125,25 @@ homeConcepts:
       >
         <p>Join the RadicalxChange community on Discord</p>
       </a>
+      <div class="flex-initial border-b mx-6"></div>
+      <div class="grid grid-cols-2">
+        <a
+          class="flex-initial block hover:opacity-80 py-margin my-auto lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0 border-r"
+          href="https://quadraticvote.radicalxchange.org/"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-center">RxC QV</p>
+        </a>
+        <a
+          class="flex-initial block hover:opacity-80 py-margin my-auto lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
+          href="https://voice.radicalxchange.org/"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-center">RxC Voice</p>
+        </a>
+      </div>
       <div class="flex-initial hidden lg:block border-b mx-6"></div>
       <div
         id="twitter-marquee"
