@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: false,
+    isOn: true,
     title: "Governance and Technological Progress",
     description: `May 13th, 3:30 pm to 5:00 pm UTC
 
