@@ -408,8 +408,8 @@
           href: https://twitter.com/ReSource_Fi
         - text: Github
           href: https://github.com/ReSource-Network/
-- title: Plural Identity
-  slug: plural-identity
+- title: Soulbound Tokens
+  slug: soulbound-tokens
   description: |
     Whereas most existing identity concepts are either centralized (with a small number of large, institutional credential providers), or individualistic (with self-authentication), Plural Identity solutions are aimed at expanding the scope of possible credential verifiers to include a wider variety of authenticators. To that end it can use non-transferable markers of affiliations, memberships, or credentials, such as [Soulbound Tokens (SBTs)](https://vitalik.ca/general/2022/01/26/soulbound.html) — which are a bit like NFTs, except that they are not bought, sold, or traded; or [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential), a tamper-evident credential using cryptography to authenticate its authorship. In doing so, Plural Identity better embodies human identities’ social, and multi-dimensional characteristics.
 
@@ -466,7 +466,7 @@
     - title: BrightID
       href: https://www.brightid.org/
       description: |
-        BrightID is a social identity network that allows people to prove to applications that they aren’t using multiple accounts. It solves the unique identity problem through the creation and analysis of a social graph. See how BrightID is experimenting with [Soulbound NFTs](https://github.com/BrightID/BrightID-Soulbound-NFT).
+        BrightID is a social identity network that allows people to prove to applications that they aren’t using multiple accounts. It solves the unique identity problem through the creation and analysis of a social graph.
       links:
         - text: Discord
           href: https://discord.gg/nTtuB2M
@@ -474,6 +474,8 @@
           href: https://twitter.com/BrightIDProject
         - text: GitHub
           href: https://github.com/BrightID
+        - text: SBTs
+          href: https://github.com/BrightID/BrightID-Soulbound-NFT
     - title: Equality Protocol / Democracy Earth
       href: https://democracy.earth/
       description: |
@@ -486,7 +488,7 @@
     - title: Goldfinch
       href: https://docs.goldfinch.finance/goldfinch/
       description: |
-        Goldfinch is a decentralized credit protocol with a mission to expand access to capital and foster financial inclusion. The protocol makes crypto loans without crypto collateral. See how Goldfinch is experimenting with [Soulbound NFTs](https://docs.goldfinch.finance/goldfinch/unique-identity-uid).
+        Goldfinch is a decentralized credit protocol with a mission to expand access to capital and foster financial inclusion. The protocol makes crypto loans without crypto collateral.
       links:
         - text: GitHub
           href: https://github.com/goldfinch-eng
@@ -494,6 +496,8 @@
           href: https://discord.gg/HVeaca3fN8
         - text: Twitter
           href: https://twitter.com/goldfinch_fi
+        - text: SBTs
+          href: https://docs.goldfinch.finance/goldfinch/unique-identity-uid
     - title: Idena
       href: https://idena.io/
       description: |
