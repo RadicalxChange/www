@@ -84,7 +84,7 @@ The question is, how to do it? How could we actually build community-oriented cu
 
 ## Values, incentives and exit costs – why use local currencies?
 
-![Plant sprouting from coins - from geo.coop](/images/blog/money-seed.png)
+![Plant sprouting from coins - from geo.coop](/images/blog/money-seed.jpeg)
 
 An important motivator of community currency use is expressing shared values. Accepting a community’s currency would be a signal of support. Spending it would be a signal of belonging. And the unique values of the community would show up in the resultant economy.
 
