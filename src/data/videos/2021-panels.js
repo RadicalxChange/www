@@ -26,7 +26,7 @@ His blog - Random Communications from an Evolutionary Edge - explores a wide ran
 MODERATOR:
 Jennifer Morone (@jlmorone) - Artist and CEO of RadicalxChange Foundation. As an artist, she makes work that seeks to disrupt the narratives that humans create – such as corporations and nation states, and has been dealing with the problematic position of the individual in the contemporary world of work for many years. In 2014, she registered herself as a corporation – Jennifer Lyn Morone™ Inc, of which she is the director, the shareholder, and the basic product, in order to try to provoke the ruling economic and legal system from within. Since 2019 she has been working on The Scheme of Things, a co-creative process that brings to life imaginations of what a desirable post-work world might look like through various media.`,
     videoId: "I4DKkcmruxA",
-    date: "2022-10-07",
+    date: "2021-10-07",
   },
   {
     title: "Navigating Digital Identity in Political Economies",
@@ -42,7 +42,7 @@ Kaliya Young is an expert in self-sovereign identity and identity on the blockch
 
 E. Glen Weyl (@glenweyl) works to collaboratively envision, design, experiment with and organize around next generation political economic institutions.  He serves at Microsoft’s Office of the Chief Technology Officer Political Economist and Social Technologist (OCTOPEST), where he helps design and implement technology ambitious corporate social commitments.  He is Founder and Chair of the RadicalxChange Foundation, a non-profit that coordinates a global social movement for social technology.  Previously he was 2007 Valedictorian of Princeton University, received his PhD in economics from there in 2008, was Junior Fellow at the Harvard Society of Fellows, Assistant Professor of Economics and Law at University of Chicago, co-author with Eric Posner of Radical Markets: Uprooting Capitalism and Democracy for a Just Society and co-author and technical lead of the Edmund J. Safra Center Rapid Response Task Force on Covid-19 that was a foundation of the Biden administration’s covid-19 response plan. In 2018, he was one of Bloomberg Businessweek’s 50 most influential people, WIRED’s 25 people shaping the next 25 years of technology and Coindesk’s 10 most influential people in blockchain.`,
     videoId: "UmwP6cJJq6E",
-    date: "2022-07-29",
+    date: "2021-07-29",
   },
   {
     title: "RxC Voice: From Election Insights to Action",
