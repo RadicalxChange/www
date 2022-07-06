@@ -39,7 +39,7 @@ permalink: "media/blog/{{ slug | defaultSlug: title }}/index.html"
       <p>{{ postAuthor }}</p>
       <p>{{ date | readableDate }}</p>
     </header>
-    {{ content | markdown | safe }}
+    {{ content | markdown | latex | safe }}
   </article>
 </div>
 <script>

@@ -1,5 +1,6 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
+const katex = require("katex");
 const yaml = require("js-yaml");
 const fs = require("fs");
 const { DateTime } = require("luxon");
@@ -39,6 +40,13 @@ module.exports = function (config) {
   markdown.renderer.rules.footnote_block_close = () => `</ol>\n`;
   config.setLibrary("md", markdown);
   config.addFilter("markdown", (value) => markdown.render(value));
+  config.addFilter("latex", (content) => {
+  return content.replace(/\$\$(.+?)\$\$/g, (_, equation) => {
+    const cleanEquation = equation.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+
+    return katex.renderToString(cleanEquation, { throwOnError: false });
+  });
+});
 
   // Support YAML for data
   config.addDataExtension("yaml", (contents) => yaml.safeLoad(contents));

@@ -223,6 +223,10 @@
 
     “Matching funding” is a model of funding public goods where a fund from governments or philanthropic institutions matches individual contributions to a project. Plural Funding optimizes matching funds by prioritizing projects based on the number of people who contributed. This way, funds meant to benefit the public go towards projects that _really benefit a broad public_, instead of things that only have a few wealthy backers. In Plural Funding, [total funding] for a proposal is [the square root of each contribution to it → summed up, then squared.] Plural Funding strongly encourages people to make contributions, no matter how small, and ensures a democratic allocation of funds meant to benefit the public.
   readings:
+    - title: A flexible design for funding public goods
+      author: Vitalik Buterin, Zoë Hitzig, Glen Weyl
+      href: https://arxiv.org/pdf/1809.06421.pdf
+      date: "2019-07-02T04:00:00.000Z"
     - title: The Handbook for Radical Local Democracy
       author: Matt Prewitt, Paul Healy
       href: /media/papers/The_Handbook_for_Radical_Local_Democracy.pdf
