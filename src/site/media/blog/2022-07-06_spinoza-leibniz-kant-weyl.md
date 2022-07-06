@@ -1,6 +1,6 @@
 ---
 layout: "layouts/blog-post.njk"
-date: "2022-06-27"
+date: "2022-07-06"
 title: "Spinoza, Leibniz, Kant, and Weyl"
 postHeader: "Spinoza, Leibniz, Kant, and Weyl"
 postAuthor: "Michael H. Freedman"
