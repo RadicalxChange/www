@@ -101,6 +101,17 @@
 
     Voters receive budgets of “voice credits,” which they allocate to different questions on the ballot to signal the intensity of their conviction. Their voice credits convert to “counted votes” according to their square root. So if you put one voice credit on an issue, that is one vote; four credits are two votes; nine credits are three votes, and so on.
   readings:
+    - title:
+        "A Decision Theoretic Approach to Understanding Survey Response: Likert vs.
+        Quadratic Voting for Attitudinal Research"
+      author: Charlotte Cavaillé et al.
+      href: https://lawreview.uchicago.edu/sites/lawreview.uchicago.edu/files/3Chen_WEB_FINAL.pdf
+      date: "1905-07-11T05:00:00.000Z"
+    - title:
+        "A New Consensus Protocol: Quadratic Voting with Multiple Alternatives"
+      author: Jon X. Eguia, Nicole Immorlica, Katrina Ligett, Glen Weyl, Dimitrios Xefteris
+      href: https://deliverypdf.ssrn.com/delivery.php?ID=336017068111082117073078066115084112028053007053033039065095095064115100122013102112048110119035050040030030123079097081068064007021047086002012100111068117016123024008082048006025066089069086066075107104070123064105070094066087070002088001090013122000&EXT=pdf&INDEX=TRUE
+      date: "2019-02-02T05:00:00.000Z"
     - title: Agent-Based Models of Quadratic Voting
       author: Jacob Kelter, Andreas Bugler, Uri Wilensky
       href: https://www.researchgate.net/publication/357590353_Agent-Based_Models_of_Quadratic_Voting
@@ -109,12 +120,6 @@
       author: Chantal Mouffe
       href: https://www.barnesandnoble.com/w/agonistics-chantal-mouffe/1113507188
       date: "2013"
-    - title:
-        "A Decision Theoretic Approach to Understanding Survey Response: Likert vs.
-        Quadratic Voting for Attitudinal Research"
-      author: Charlotte Cavaillé et al.
-      href: https://lawreview.uchicago.edu/sites/lawreview.uchicago.edu/files/3Chen_WEB_FINAL.pdf
-      date: "1905-07-11T05:00:00.000Z"
     - title: Between Abundance and Scarcity
       author: Matt Prewitt
       href: /media/blog/between-scarcity-and-abundance/
