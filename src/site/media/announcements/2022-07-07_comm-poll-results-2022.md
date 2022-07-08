@@ -1,22 +1,13 @@
 ---
 layout: "layouts/announcement.njk"
-date: "2022-07-07"
+date: "2022-07-08"
 title: "Community Poll Results 2022"
 postHeader: "RxC Community Poll Results 2022"
 ---
 
 To the Community of RadicalxChange Foundation Ltd.:
 
-We recently concluded our second annual RadicalxChange Community Poll on RxC Voice, a participatory governance platform that combines liquid democracy, online deliberation, and Quadratic Voting. Here are the results.
-
-- **Decision:** RadicalxChange Agenda 2022-2023
-- **Description:** What activities should the RadicalxChange Foundation prioritize in 2022-2023?
-- **Dates:** May 2nd to May 25th, 2022
-- **Process:** (1) Delegation, (2) Conversation, (3) Decision
-- **Invitations:** A sign-up form was distributed to the community via the RadicalxChange newsletter, Twitter, and Discord. Everyone who filled out the sign-up form was invited to participate in the poll.
-- **Participants:** 38 community members signed up and participated in the process.
-
-Participants in the poll delegated voice credits to fellow community members, engaged in a democratic conversation via [Polis](https://pol.is/home), ratified the resulting [ballot curated by RxC Foundation](/media/announcements/community-poll-ballot-2022/), and prioritized the ballot’s 23 proposals in a quadratic vote. Consistent with the results from last year’s inaugural Community Poll[^1], the democratic process ran smoothly and resulted in actionable and valuable takeaways.
+We recently concluded our second annual Community Poll using RxC Voice.[^1] Over the first three weeks of May, 38 members[^2] of our community considered the question: “What activities should the RadicalxChange Foundation prioritize in 2022-2023?” Participants in the poll delegated voice credits to fellow community members, deliberated in a [Polis](https://pol.is/home) conversation, ratified the resulting [ballot curated by RxC Foundation](/media/announcements/community-poll-ballot-2022/), and prioritized the ballot’s 23 proposals in a quadratic vote. Consistent with the results from last year’s inaugural Community Poll[^3], the democratic process ran smoothly and resulted in actionable and valuable takeaways.
 
 ![Community poll results graph](/images/blog/poll-results-graph-2022.png)
 
@@ -28,11 +19,13 @@ While all of the proposals are recognized, here are the top 5 ranked by votes: (
 4. Help organizations and communities experiment with RadicalxChange ideas in the real world. (40 votes)
 5. Make educational content to explain RadicalxChange ideas and philosophy to people without background in political economy / tech. (37 votes)
 
-The poll results send a clear signal for the RadicalxChange Foundation to focus on making its tools, methodologies, and resources legible and useful to chapters and other communities. As a matter of fact, we have already begun a project that we believe will be instrumental in achieving this goal: a RadicalxChange Wiki. We would like the RxC Wiki to become a central repository containing all collective knowledge about RxC concepts, tools, and methodologies. For example, we want the page on Quadratic Voting to contain not only detailed information on how QV works, but also what decision-making bodies have experimented with QV and what they learned from those experiments. We also want the Wiki to be a source of *collective* knowledge, so we are designing it to be editable by anyone on Github. Once we have finished writing the core content for the Wiki, we will publish it to our website and make it editable by the whole community. Relatedly, we are also developing digestible educational content, including a series of videos intended to explain various RadicalxChange concepts to a wider audience.
+The poll results send a clear signal for the RadicalxChange Foundation to focus on making its tools, methodologies, and resources legible and useful to chapters and other communities.
+
+As a matter of fact, we have already begun a project that we believe will be instrumental in achieving this goal: an RxC Wiki. We would like the RxC Wiki to become a central repository containing all collective knowledge about RxC concepts, tools, and methodologies. For example, we want the page on Quadratic Voting to contain not only detailed information on how QV works, but also what decision-making bodies have experimented with QV and what they learned from those experiments. We also want the Wiki to be a source of *collective* knowledge, so we are designing it to be editable by anyone on Github. Once we have finished writing the core content for the Wiki, we will publish it to our website and make it editable by the whole community. Relatedly, we are also developing digestible educational content, including a series of videos intended to explain various RadicalxChange concepts to a wider audience.
 
 We will continue to expand our efforts to facilitate pilots of RadicalxChange ideas in the real world. We have had some major successes this year, including Quadratic Voting polls in the Colorado State Legislature and the Nashville Metropolitan Council. Controlled, iterative, real-world experimentation with radical ideas remains core to our mission at RadicalxChange.
 
-We also appreciated the feedback regarding the content of our newsletter. We will redouble our efforts to make the newsletter an engaging and reliable source of information about ongoing projects, new publications, and other RxC news.
+We also hear the feedback regarding our newsletter loud and clear. We will put greater focus on making it an engaging and reliable source of information about ongoing projects, new publications, and other RxC news.
 
 Finally, we will continue to iterate on the RxC Voice platform itself. There remains much work to be done to improve the UI/UX, particularly for those who wish to run decision-making events of their own using the app.
 
@@ -67,4 +60,10 @@ If you have any questions, comments, or ideas about RxC Voice, feel free to visi
 23. Help make Twitter a place that espouses the ideals we hold in the RadicalxChange community. (-3 votes)
 24. Develop shared symbolism and "mythology". Flags, songs, events, rituals, etc. Like how Georgists had the Land song. (-9 votes)
 
-[^1]: See [results from last year’s inaugural poll](https://www.radicalxchange.org/media/announcements/rxc-voice-pilot-results/).
+**Notes**
+
+[^1]: We built RxC Voice as an open source, a participatory governance platform that combines liquid democracy, online deliberation, and Quadratic Voting. Reach out if you want help integrating the tool into your community!
+
+[^2]: All members of our community were invited to this open process via the RadicalxChange newsletter, Twitter, and Discord. All who responded to the sign-up form were invited to participate in the poll.
+
+[^3]: See [results from last year’s inaugural poll](https://www.radicalxchange.org/media/announcements/rxc-voice-pilot-results/).
