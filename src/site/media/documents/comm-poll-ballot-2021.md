@@ -1,8 +1,8 @@
 ---
 layout: "layouts/announcement.njk"
 date: "2021-06-02"
-title: "Curated Ballot"
-postHeader: "RxC Voice Curated Ballot"
+title: "Community Poll Ballot 2021"
+postHeader: "RxC Community Poll 2021 - Curated Ballot"
 ---
 
 **Decision:** RadicalxChange Agenda 2021-2022  

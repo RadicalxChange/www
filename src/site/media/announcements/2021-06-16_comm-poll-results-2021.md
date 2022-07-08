@@ -1,15 +1,15 @@
 ---
 layout: "layouts/announcement.njk"
 date: "2021-06-16"
-title: "RxC Voice Pilot Results"
-postHeader: "RxC Voice Pilot Results"
+title: "Community Poll Results 2021"
+postHeader: "RxC Community Poll Results 2021"
 ---
 
 To the Community of RadicalxChange Foundation Ltd.:
 
 In keeping with our goal and promise to make the RadicalxChange Foundation democratically governed and accountable, the RxC team built a new participatory governance application called RxC Voice, combining liquid democracy, online deliberation, and quadratic voting. Having just concluded the first instance of this large-scale collective decision pilot, here are the results for the question posed: 'What activities should the RadicalxChange Foundation prioritize in 2021-2022?'
 
-The experiment ran from May 17th to June 8th, 2021 and was structured in three foundational stages: (1) Delegation, (2) Deliberation, and (3) Election. Prior to the event, the RxC Foundation team put out an open call inviting members of the community to take part in the pilot. Out of around 150 who requested to take part or were invited, 68 signed up and participated in the process by delegating voice credits to fellow representatives, engaging in a democratic conversation via [Polis](https://pol.is/home), ratifying the resulting [ballot curated by RxC Foundation](https://www.radicalxchange.org/media/announcements/curated-ballot/), and prioritizing the ballot's 54 proposals in a quadratic vote. In the end the democratic process ran smoothly and resulted in actionable and valuable takeaways.
+The experiment ran from May 17th to June 8th, 2021 and was structured in three foundational stages: (1) Delegation, (2) Deliberation, and (3) Election. Prior to the event, the RxC Foundation team put out an open call inviting members of the community to take part in the pilot. Out of around 150 who requested to take part or were invited, 68 signed up and participated in the process by delegating voice credits to fellow representatives, engaging in a democratic conversation via [Polis](https://pol.is/home), ratifying the resulting [ballot curated by RxC Foundation](/media/announcements/community-poll-ballot-2021/), and prioritizing the ballot's 54 proposals in a quadratic vote. In the end the democratic process ran smoothly and resulted in actionable and valuable takeaways.
 
 ![RxC Voice pilot results - bar graph](/images/blog/voice-results-graph.png)
 
@@ -26,7 +26,7 @@ There was a strong mandate for the RadicalxChange Foundation to continue to deve
 
 These were just a few of the many valuable signals expressed in this experiment. Overall, we were delighted with the quality of participation from the delegates, and are really thrilled to have this new mechanism for community governance available to us. Thank you to all who participated and took the time to share their insights. And thanks to all RadicalxChange friends for the energy you continue to bring to the community!
 
-If you have any questions, comments, or ideas about RxC Voice, feel free to visit the dedicated channels on our [Discord server](https://discord.gg/8pGQ2eSb2Q) or contact us at voice@radicalxchange.org. You can also find the [open-source code repository on Github](https://github.com/RadicalxChange/rxc-voice), where you can feel free to clone, fork, submit pull requests, and post issues.
+If you have any questions, comments, or ideas about RxC Voice, feel free to visit the dedicated channels on our [Discord server](https://discord.gg/6hcumQKrqr) or contact us at voice@radicalxchange.org. You can also find the [open-source code repository on Github](https://github.com/RadicalxChange/rxc-voice), where you can feel free to clone, fork, submit pull requests, and post issues.
 
 Jennifer Lyn Morone, Chief Executive Officer  
 Matthew Prewitt, President

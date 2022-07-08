@@ -1,3 +1,7 @@
+# new naming convention for community poll announcements
+/media/announcements/curated-ballot /media/announcements/community-poll-ballot-2021
+/media/announcements/rxc-voice-pilot-results /media/announcements/community-poll-results-2021
+
 # renamed concepts to plurality
 /concepts/quadratic-voting /concepts/plural-voting
 /concepts/quadratic-funding /concepts/plural-funding
