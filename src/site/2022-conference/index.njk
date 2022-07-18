@@ -1,0 +1,131 @@
+---
+layout: layouts/_base.njk
+title: 2022 Conference
+headerText: Exploring Digital Identity For Decentralized Societies
+introductionBlurb: |
+  Protocols for decentralized social verification are a key missing element of the Internet. In the absence of broadly adopted open standards, so far this role has largely been filled by big technology organizations. Yet, the challenge of furthering open protocols that can support better and more scalable forms of digital sociality, greater local control and federation as well as composable and community-bound rights, is within reach.
+bodyText: |
+  This is a central theme for us, as many of the proposals being worked on with the RxC global community (e.g  [Plural Voting](/concepts/plural-voting/), [Plural Funding](/concepts/plural-funding/), and [Data Dignity](/concepts/data-dignity/)) require some form of participant authentication to be put into practice. As such, recently the [DeSoc paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) advanced powerful new concepts and served to ignite important conversations around this theme within the blockchain space. Moreover, many other communities, such as the [Internet Identity Workshop](https://internetidentityworkshop.com/), W3C working groups and [others](https://www.planetwork.net/asn), have worked on related challenges and fostered many of the innovations that are being used on the current web with tooling developed and ready for Web3 too. With this gathering, our aim is to facilitate a space for knowledge exchange, risk mitigation, and cross-collaboration across an extensive plurality of actors.
+personnelBlurb: |
+  **Everyone exploring these topics is proactively welcome, no matter what their level of experience or expertise is.** Please join the event if you are interested in any of the following topics:
+
+  - DeSoc & Soulbound Tokens
+  - Privacy Enhancing Technologies
+  - Decentralized Identifiers and Verifiable Credentials
+  - Data Governance and Public Policy Issues
+  - Regenerative Economy & Community Currencies
+  - Web3 being applied to Governments and Governance
+  - Blockchain for Good Applications
+  - Proof of Personhood / Sybil Resistance / Anti-bots Techniques
+  - Decentralized Identity Developments
+  - Decentralized Autonomous Organizations
+  - Self-Sovereign Identity
+  - Privacy Implications with AR and VR
+  - **And more! Please don't limit yourself to these suggestions, and bring in your full creativity to co-create this gathering with us!**
+formatBlurb: |
+  **There won't be speakers, keynotes, or panels.** At the beginning of each day of the event, all of the attendees will gather and co-create the agenda with participant-led sessions, discussions and workshops. This **Open Space UnConference** format is social technology meant to support in-depth dialogue and rich interactions, allowing for a full exploration of the topic!
+scheduleBlurb: |
+  Each day will run **for a total of 5 hours.** We'll start with an Opening Circle and Agenda Creation session, then have 3 hours of participant-led sessions and a Closing Circle. We will also have session notes and be compiling a Book of Proceedings. 
+
+  Time: Anchored in time zones in the Americas.
+
+  - Pacific Time: 7am - 12pm
+  - Mountain Time: 8am - 1pm
+  - Eastern Time: 10am - 3pm
+  - Europe Time: 3pm - 8pm London / 4pm - 9pm Berlin
+
+  **We ask you to as best you can to fully commit to being at the event for the full time.**
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen py-margin lg:py-lg/margin bg-golden-fizz"
+>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block align-top") }}
+    </a>
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display break-words">
+      Exploring Digital
+    </h1>
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display break-words">
+      Identity For
+    </h1>
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display break-words">
+      Decentralized Societies
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2"
+  >
+    <p><strong>Where?</strong> Qiqo Chat, Online</p>
+    <p><strong>When?</strong> August 16th & 18th, 7:00 AM to 12:00 PM PDT / 10:00 AM to 3:00 PM EDT</p>
+    <div class="markdown markdown-sm font-bold text-justify">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="markdown markdown-sm">
+      {{ bodyText | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href="https://www.eventbrite.com/e/exploring-digital-identity-for-decentralized-societies-tickets-385643188157"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">The format</p>
+    <div class="markdown markdown-sm">
+      {{ formatBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a href="/2022-conference/faq">
+          <p class="text-white uppercase text-size--2 m-2">See FAQ</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Who should come</p>
+    <div class="markdown markdown-sm">
+      {{ personnelBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href="https://www.eventbrite.com/e/exploring-digital-identity-for-decentralized-societies-tickets-385643188157"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Schedule</p>
+    <div class="markdown markdown-sm">
+      {{ scheduleBlurb | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
