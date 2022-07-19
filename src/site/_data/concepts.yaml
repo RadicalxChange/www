@@ -425,12 +425,12 @@
           href: https://twitter.com/ReSource_Fi
         - text: Github
           href: https://github.com/ReSource-Network/
-- title: Soulbound Tokens
-  slug: soulbound-tokens
+- title: Social Identity
+  slug: social-identity
   description: |
-    Whereas most existing identity concepts are either centralized (with a small number of large, institutional credential providers), or individualistic (with self-authentication), Plural Identity solutions are aimed at expanding the scope of possible credential verifiers to include a wider variety of authenticators. To that end it can use non-transferable markers of affiliations, memberships, or credentials, such as [Soulbound Tokens (SBTs)](https://vitalik.ca/general/2022/01/26/soulbound.html) — which are a bit like NFTs, except that they are not bought, sold, or traded; or [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential), a tamper-evident credential using cryptography to authenticate its authorship. In doing so, Plural Identity better embodies human identities’ social, and multi-dimensional characteristics.
+    Whereas most existing identity concepts are either centralized (with a small number of large, institutional credential providers), or individualistic (with self-authentication), Social Identity solutions are aimed at expanding the scope of possible credential verifiers to include a wider variety of authenticators. To that end it can use non-transferable markers of affiliations, memberships, or credentials, such as [Soulbound Tokens (SBTs)](https://vitalik.ca/general/2022/01/26/soulbound.html) — which are a bit like NFTs, except that they are not bought, sold, or traded; or [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential), a tamper-evident credential using cryptography to authenticate its authorship. In doing so, Social Identity better embodies human identities’ social, and multi-dimensional characteristics.
 
-    Plural Identity solutions are new and the possibilities are still emerging. But they are likely to become an important tool for establishing digital identity and defining community, unlocking important new governance structures. To name a few:
+    Social Identity solutions are new and the possibilities are still emerging. But they are likely to become an important tool for establishing digital identity and defining community, unlocking important new governance structures. To name a few:
 
     - establishing the reliability of information sources in an era of deep fakes
 

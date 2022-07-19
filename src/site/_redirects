@@ -5,8 +5,9 @@
 # renamed concepts to plurality
 /concepts/quadratic-voting /concepts/plural-voting
 /concepts/quadratic-funding /concepts/plural-funding
-/concepts/intersectional-social-identity /concepts/soulbound-tokens
-/concepts/plural-identity /concepts/soulbound-tokens
+/concepts/intersectional-social-identity /concepts/social-identity
+/concepts/plural-identity /concepts/social-identity
+/concepts/soulbound-tokens /concepts/social-identity
 /concepts/partial-common-ownership /concepts/plural-property
 /concepts/plural-ownership /concepts/plural-property
 
