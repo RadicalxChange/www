@@ -14,7 +14,15 @@
 }
 
 .circle {
- border-radius: 125px;
- -webkit-border-radius: 125px;
- -moz-border-radius: 125px;
+  border-radius: 125px;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+  .circle {
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+  }
 }
