@@ -3,7 +3,7 @@ layout: "layouts/blog-post.njk"
 date: "2022-08-01"
 title: "Abstraction v Composability Tradeoffs in Web3"
 postHeader: "Abstraction v. Composability Tradeoffs in Web3"
-postAuthor: "Shrey Jain, Puja Ohlhaver, Leon Erichsen, Glen Weyl"
+postAuthor: "Shrey Jain, Glen Weyl"
 ---
 
 It is difficult to design a system that is capable of being both abstractable—or generalizable—and composable in  unique settings. This canonical generalization problem is often discussed amongst designers of AI systems and standard's committees.
@@ -110,7 +110,7 @@ So, I decided to issue a credential to Tyiska with his DID being the credentialS
 </figure>
 </div>
 
-You might figure by now that even DIDs are susceptible to scarlet letters. Their current shapes and forms are not exceptionally complete, generalizable, secure, and standardized. DIDs require very careful additional engineering and thus promotion of the standard may be a lower priority than iteration on it. This outcome is not due to the incompetence of the Disco team, but rather illustrates the challenges of getting this right on standards alone.
+You might figure by now that even DIDs are susceptible to scarlet letters. Their current shapes and forms are not exceptionally complete, generalizable, secure, and standardized. DIDs require very careful additional engineering and thus promotion of the standard may be a lower priority than iteration on it.
 
 Section 3.3 of the verifiable credentials specification comments on [verifiable presentations](https://www.w3.org/TR/vc-data-model/#presentations), which specify the components needed to present a VC in a verified manner. One key component of this presentation is the [Presentation Proof Graph](https://www.w3.org/TR/vc-data-model/#info-graph-vp) which requires the signature of the owner of the VC to be considered verifiable. However, as shown in Table 1., this does not solve the scarlet letter problem as one can still index widely-accessible online VCs.
 
@@ -140,7 +140,7 @@ Section 3.3 of the verifiable credentials specification comments on [verifiable 
 </figure>
 </div>
 
-In the VC specification, section [7.3 comments specifically on identifier-based correlation](https://www.w3.org/TR/vc-data-model/#personally-identifiable-information), which is a possible solution to solving the issue of scarlet letters by not being able to correlate identities with one another. The specification reads that "disclosing the credential identifier (credential.id) leads to situations where multiple verifiers, or an issuer and a verifier, can collude to correlate the holder. If holders want to reduce correlation, they should use VC schemes that allow hiding the identifier during verifiable presentation". Possibly, Tyiska used his DID only once. Nevertheless, it does not solve the problem that I was able to issue a public claim about a specific individual DID. If the DID were offline or secret, I would not have been able to issue this VC. In theory, with an off-chain solution Mike should also be able to delete the data from his stream or could encrypt all of it. This however, does not solve the scarlet letter problem and makes it very taxing for Mike to continue to monitor what data is sent to his stream or not. And as shown in the implementation example above, is not the case today. 
+In the VC specification, section [7.3 comments specifically on identifier-based correlation](https://www.w3.org/TR/vc-data-model/#personally-identifiable-information), which is a possible solution to solving the issue of scarlet letters by not being able to correlate identities with one another. The specification reads that "disclosing the credential identifier (credential.id) leads to situations where multiple verifiers, or an issuer and a verifier, can collude to correlate the holder. If holders want to reduce correlation, they should use VC schemes that allow hiding the identifier during verifiable presentation". Possibly, Tyiska used his DID only once. Nevertheless, it does not solve the problem that I was able to issue a public claim about a specific individual DID. If the DID were offline or secret, I would not have been able to issue this VC. In theory, with an off-chain solution Mike should also be able to delete the data from his stream or could encrypt all of it. This however, does not solve the scarlet letter problem and makes it very taxing for Mike to continue to monitor what data is sent to his stream or not. And as shown in the implementation example above, is not the case today.
 
 This also shows a potential deviation from the specification. Again, I want to reiterate that DID v1.0 is the *only* standardized specification of all this work. The DID methods and implementations of VCs are a no man's land, as shown partly in this example. The W3C director claimed, "The DID core specification as it is now does not lack proofs of implementability", which may be true for DID v1.0. However, it remains clear that the translation from specification to scalable adoption for DID methods and VCs still needs to improve.  Currently, unsigned online VCs are conceptually equivalent to indexable SBTs whose subjects haven't countersigned them. The lack of a single "silver bullet" solution means we should keep an open mind and continue experimentation across different methodologies.  
 
@@ -208,7 +208,7 @@ As a supporter of the RadicalxChange and Plurality paradigm you may know that te
 
 It is inadvisable to commit your organization to any particular technology substrate, but to rather focus on integrating  plural solutions from different camps of thought. We need to be cautious with the pace that we adopt standards. For any technical innovation, specifically, when applied in more complex networks like large-scale political economies, there is a lot of friction to revert.
 
-*This piece owes its existence to many amazing conversations with amazing people. I will name only a few: [Glen Weyl](https://twitter.com/glenweyl), [Puja Ohlhaver](https://twitter.com/pujaohlhaver), [Vitalik Buterin](https://twitter.com/VitalikButerin), Leon Erichschen, [Yorke Rhodes](https://twitter.com/yorkerhodes), [Enrico Bottazzi](https://twitter.com/backaes), [JB Rubinovitz](https://twitter.com/rubinovitz), [Josh Sperling](https://twitter.com/selfsovrin), [Michael Mignano](https://twitter.com/mignano), [Paula Berman](https://twitter.com/_paulaberman), and [Matthew Prewitt](https://twitter.com/m_t_prewitt).*
+*This piece owes its existence to many amazing conversations with amazing people. I will name only a few: [Puja Ohlhaver](https://twitter.com/pujaohlhaver), [Vitalik Buterin](https://twitter.com/VitalikButerin), Leon Erichschen, [Yorke Rhodes](https://twitter.com/yorkerhodes), [Enrico Bottazzi](https://twitter.com/backaes), [JB Rubinovitz](https://twitter.com/rubinovitz), [Josh Sperling](https://twitter.com/selfsovrin), [Michael Mignano](https://twitter.com/mignano), [Paula Berman](https://twitter.com/_paulaberman), and [Matthew Prewitt](https://twitter.com/m_t_prewitt).*
 
 **Notes**
 
