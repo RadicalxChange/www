@@ -171,6 +171,34 @@ topics: |
     <div class="markdown markdown-sm">
       {{ topics | markdown | safe }}
     </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href="https://www.eventbrite.com/e/exploring-digital-identity-for-decentralized-societies-tickets-385643188157"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Confirmed Participants</p>
+    <div class="col-span-columns">
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {% for s in conferenceRegistrants2022 %}
+        <div>
+          <div class="tile circle" style="background-image: url('/images/conference-registrants-2022/{{ s.image }}');"></div>
+          <div
+            class="w-full p-2"
+          >
+            <h3 class="text-size--2">{{ s.name }}</h3>
+            <p class="text-size--4">{{ s.affiliation }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
     {{ caller() if caller }}
   </div>
 </div>
