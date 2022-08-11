@@ -154,6 +154,101 @@ const data = [
 		affiliation: "RadicalxChange Foundation",
 		image: "jennifer_lyn_morone.jpg",
 	},
+	{
+		name: "Ashley Hodgson",
+		affiliation: "St. Olaf College",
+		image: "Ashley Hodgson - St. Olaf College.jpg",
+	},
+	{
+		name: "Ben Biedermann ",
+		affiliation: "JOLOCOM",
+		image: "Ben Biedermann  - JOLOCOM.jpg",
+	},
+	{
+		name: "Brent Shambaugh",
+		affiliation: "bshambaugh.eth",
+		image: "Brent Shambaugh - bshambaugh.eth.jpg",
+	},
+	{
+		name: "Debra Farber",
+		affiliation: "WOPLLI",
+		image: "Debra Farber - WOPLLI.jpg",
+	},
+	{
+		name: "Felix Hilderbrandt",
+		affiliation: "Lukso",
+		image: "Felix Hilderbrandt - Lukso.jpeg",
+	},
+	{
+		name: "Jay Stanley",
+		affiliation: "American Civil Liberties Union",
+		image: "Jay Stanley - American Civil Liberties Union.jpg",
+	},
+	{
+		name: "Jay Laurence",
+		affiliation: "ReddCoin (RDD)",
+		image: "Jay Laurence - ReddCoin (RDD).jpg",
+	},
+	{
+		name: "John Connell",
+		affiliation: "",
+		image: "John Connell -.jpg",
+	},
+	{
+		name: "Jonny Howle",
+		affiliation: "Disco",
+		image: "Jonny Howle - Disco.png",
+	},
+	{
+		name: "joseph beverley",
+		affiliation: "SoulBis",
+		image: "joseph beverley - SoulBis.jpg",
+	},
+	{
+		name: "Kate Sills",
+		affiliation: "Independent",
+		image: "Kate Sills - Independent.jpeg",
+	},
+	{
+		name: "Kevin Owocki",
+		affiliation: "Gitcoin",
+		image: "Kevin Owocki - Gitcoin.jpg",
+	},
+	{
+		name: "Kim Yeaseo",
+		affiliation: "Isosphere DAO",
+		image: "Kim Yeaseo - Isosphere DAO.JPG",
+	},
+	{
+		name: "Mitchell Travers",
+		affiliation: "Soulbis Pty Ltd",
+		image: "Mitchell Travers - Soulbis Pty Ltd.jpg",
+	},
+	{
+		name: "Rahul Rumalla",
+		affiliation: "Otterspace",
+		image: "Rahul Rumalla - Otterspace.jpg",
+	},
+	{
+		name: "Robert Reddick",
+		affiliation: "Tauxbe Data",
+		image: "Robert Reddick - Tauxbe Data.jpg",
+	},
+	{
+		name: "Tim Daubenscjütz",
+		affiliation: "",
+		image: "tim daubenscjütz -.jpg",
+	},
+	{
+		name: "Nirmala Shome",
+		affiliation: "The Fabricant",
+		image: "Nirmala Shome - The Fabricant.jpeg",
+	},
+	{
+		name: "E. Glen Weyl",
+		affiliation: "RadicalxChange Foundation",
+		image: "e._glen_weyl.jpg",
+	},
 ];
 
 // Sort by last name
