@@ -120,11 +120,6 @@ const data = [
 		image: "DSC_0676.jpg",
 	},
 	{
-		name: "Vitalik Buterin",
-		affiliation: "Ethereum Foundation",
-		image: "vitalik_buterin.jpg",
-	},
-	{
 		name: "Puja Ohlhaver",
 		affiliation: "Flashbots Ltd.",
 		image: "puja_ohlhaver.jpg",
