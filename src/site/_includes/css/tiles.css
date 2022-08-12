@@ -4,6 +4,7 @@
   /* background image in element style. include linear-gradient(black, black) for grayscale */
   background-size: cover;
   background-blend-mode: saturation;
+  background-position: center;
 }
 
 /* https://stackoverflow.com/questions/29307971/css-grid-of-squares-with-flexbox */
