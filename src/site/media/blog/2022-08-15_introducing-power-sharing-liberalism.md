@@ -211,8 +211,6 @@ So we need to find compass points—love of family and friends and/or faith. But
 
 Then, make way for freedom.
 
-*[I’m sure I’ve made many mistakes here. Please respond to correct, challenge, and improve!]*
-
 **Notes**
 
 [^1]: See the heterodox argument by W. B. Allen in *George Washington: America's First Progressive* (Peter Lang, 2008).
