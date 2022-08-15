@@ -54,9 +54,12 @@
   }
 
   img,
-  table,
-  blockquote {
+  table {
     @apply my-markdown-md;
+  }
+
+  blockquote {
+	   @apply pl-4 m-4 border-l-2;
   }
 
   .no-y-margin {
