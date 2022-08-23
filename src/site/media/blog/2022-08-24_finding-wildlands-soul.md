@@ -1,6 +1,6 @@
 ---
 layout: "layouts/blog-post.njk"
-date: "2022-08-23"
+date: "2022-08-24"
 title: "Finding Wildland's Soul"
 postHeader: "Finding Wildland's Soul"
 postAuthor: "RadicalxChange Foundation"
