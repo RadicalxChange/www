@@ -24,7 +24,7 @@ Matt Prewitt (@m_t_prewitt) is RadicalxChange Foundation’s president, a writer
     slidoUrl: "https://app.sli.do/event/tjW7711jARfGXbgJueJZb1",
   },
   popup: {
-    isOn: true,
+    isOn: false,
     title: "Announcing the Next RxC Conference August 2022",
     bodyText: `Protocols for decentralized social verification are a key missing element of the Internet. But the goal of furthering open protocols that can support better and more scalable forms of digital sociality, greater local control and federation as well as composable and community-bound rights, is within reach. The [DeSoc paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) advanced powerful new concepts and served to ignite important conversations around this theme within the blockchain space. Moreover, many other communities, such as the [Internet Identity Workshop](https://internetidentityworkshop.com/), W3C working groups and [others](https://www.planetwork.net/asn), have worked on related challenges and fostered many of the innovations that are being used on the current web with tooling developed and ready for Web3 too. With this gathering, our aim is to facilitate a space for knowledge exchange, risk mitigation, and cross-collaboration across an extensive plurality of actors.`,
     link: "/2022-conference",
