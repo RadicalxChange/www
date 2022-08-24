@@ -8,6 +8,8 @@ postAuthor: "RadicalxChange Foundation"
 
 ![Finding Wildland's Soul](/images/blog/wildlands-soul.png)
 
+This post is abridged for our blog. [Read the full report here](/media/documents/finding-wildlands-soul-full-report.pdf)
+
 Most blockchain-based platforms face a seemingly impossible conundrum: while they aim to bypass intermediators and create distributive political economies, their very architecture is one that often produces plutocracy.
 
 Concentrations of power happen when these platforms delineate membership (i.e. who is given the right to weigh in on decisions) through financial transactions or the use of scarce resources. This is a technical choice employed to overcome (or raise the cost of) [Sybil Attacks](https://en.wikipedia.org/wiki/Sybil_attack). However, under such primitives, power is deterministically re-centralized in the hands of small groups — a predictable, all too common dynamic that must be anticipated and avoided if those networks are to deliver on the goals of distributed and broad empowerment.
@@ -106,3 +108,5 @@ Note that while these balances of incentives and of privacy and publicity are de
 Similar adjustments will be needed for SBTs that nurture their beneficial uses and prevent perilous ones. Critical developments will include solutions for community recovery and programmably plural privacy, as well as the emergence of norms and standards for things like negative reputation and differentiating between consented commitments (SBTs) and non-consented claims (tags).
 
 There are challenges ahead, and good reasons for caution. But in a space that moves quickly, there is already much that can be done here with confidence. With a few small but meaningful steps in these directions, Wildland and others can establish themselves as first-movers beyond plutocracy in web3 and toward Plurality.
+
+This post is abridged for our blog. [Read the full report here](/media/documents/finding-wildlands-soul-full-report.pdf)
