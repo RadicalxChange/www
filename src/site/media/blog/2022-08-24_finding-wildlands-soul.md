@@ -8,7 +8,7 @@ postAuthor: "RadicalxChange Foundation"
 
 ![Finding Wildland's Soul](/images/blog/wildlands-soul.png)
 
-This post is abridged for our blog. [Read the full report here](/media/documents/finding-wildlands-soul-full-report.pdf)
+*This post is abridged for our blog.* [*Read the full report here*](/media/documents/finding-wildlands-soul-full-report.pdf)
 
 Most blockchain-based platforms face a seemingly impossible conundrum: while they aim to bypass intermediators and create distributive political economies, their very architecture is one that often produces plutocracy.
 
@@ -109,4 +109,4 @@ Similar adjustments will be needed for SBTs that nurture their beneficial uses a
 
 There are challenges ahead, and good reasons for caution. But in a space that moves quickly, there is already much that can be done here with confidence. With a few small but meaningful steps in these directions, Wildland and others can establish themselves as first-movers beyond plutocracy in web3 and toward Plurality.
 
-This post is abridged for our blog. [Read the full report here](/media/documents/finding-wildlands-soul-full-report.pdf)
+*This post is abridged for our blog.* [*Read the full report here*](/media/documents/finding-wildlands-soul-full-report.pdf)
