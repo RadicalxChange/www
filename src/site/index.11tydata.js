@@ -24,9 +24,15 @@ Matt Prewitt (@m_t_prewitt) is RadicalxChange Foundation’s president, a writer
     slidoUrl: "https://app.sli.do/event/tjW7711jARfGXbgJueJZb1",
   },
   popup: {
-    isOn: false,
-    title: "Announcing the Next RxC Conference August 2022",
-    bodyText: `Protocols for decentralized social verification are a key missing element of the Internet. But the goal of furthering open protocols that can support better and more scalable forms of digital sociality, greater local control and federation as well as composable and community-bound rights, is within reach. The [DeSoc paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) advanced powerful new concepts and served to ignite important conversations around this theme within the blockchain space. Moreover, many other communities, such as the [Internet Identity Workshop](https://internetidentityworkshop.com/), W3C working groups and [others](https://www.planetwork.net/asn), have worked on related challenges and fostered many of the innovations that are being used on the current web with tooling developed and ready for Web3 too. With this gathering, our aim is to facilitate a space for knowledge exchange, risk mitigation, and cross-collaboration across an extensive plurality of actors.`,
-    link: "/2022-conference",
+    isOn: true,
+    title: "Announcing the RxC Warsaw Conference October 2022",
+    bodyText: `With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
+
+This October, the RxC community will safely gather in neighboring Warsaw, Poland, for a day of solidarity, inspiration, and co-creation.
+
+Together in Warsaw, we will learn of pioneering digital democracy practices in Ukraine, Estonia, and across Eastern Europe. We will experience works of art as windows to connection, and examine European institutions through the frame of pluralistic governance. We will uplift the work of activists, social fabric weavers, and critical voices. We will consider European cases for community currencies, data cooperatives, decentralized identity systems, communication tools, and other pro-social digital infrastructures and civic technologies.
+
+We invite you to join us at our conference “RadicalxChange Warsaw: Europe and The Futures of Pluralism” in Poland this fall, with the support of [Wildland](https://wildland.io). The event will take place on Tuesday, the 18th of October 2022, at the [Mała Warszawa](https://goo.gl/maps/J3r6PqmAJTiAcDmZ6) conference center. This follows the weekend of the [2022 Freedom Games in Łódź, Poland, & Online (Oct 14-16)](https://igrzyskawolnosci.pl/en/) where RadicalxChange is a partner.`,
+    link: "/events/2022-warsaw",
   },
 };

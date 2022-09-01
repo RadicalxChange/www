@@ -1,0 +1,204 @@
+---
+layout: layouts/_base.njk
+title: 2022 Warsaw
+headerText: "RadicalxChange Warsaw: Europe and The Futures of Pluralism"
+introductionBlurb: |
+  With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
+
+  This October, the RxC community will safely gather in neighboring Warsaw, Poland, for a day of solidarity, inspiration, and co-creation.
+
+  Together in Warsaw, we will learn of pioneering digital democracy practices in Ukraine, Estonia, and across Eastern Europe. We will experience works of art as windows to connection, and examine European institutions through the frame of pluralistic governance. We will uplift the work of activists, social fabric weavers, and critical voices. We will consider European cases for community currencies, data cooperatives, decentralized identity systems, communication tools, and other pro-social digital infrastructures and civic technologies.
+bodyText: |
+  We invite you to join us at our conference “RadicalxChange Warsaw: Europe and The Futures of Pluralism” in Poland this fall, with the support of [Wildland](https://wildland.io). The event will take place on Tuesday, the 18th of October 2022, at the [Mała Warszawa](https://goo.gl/maps/J3r6PqmAJTiAcDmZ6) conference center. This follows the weekend of the [2022 Freedom Games in Łódź, Poland, & Online (Oct 14-16)](https://igrzyskawolnosci.pl/en/) where RadicalxChange is a partner.
+topicsBlurb: |
+  All are welcome to join, and we’ll be covering topics like:
+
+  - Examining European institutions through the frame of pluralistic, decentralized governance models
+  - Considering European cases for community currencies, data coops, DeID systems, SBTs, and other pro-social technologies
+  - Paving the blockchain/web3 roads to increased user agency, interoperability, political participation, and funding the common good
+  - Uplifting the work of activists, social fabric weavers, and critical voices
+  - Experiencing works of art as windows to connection and means of change.
+scheduleBlurb: |
+  Our day will go from 9 AM to 6 PM CEST (UTC+2). Registration opens at 8 AM CEST (UTC+2).
+
+  MORE DETAILS COMING SOON.
+covidProtocols: |
+  - We will require all entrants to the conference to be vaccinated against COVID-19 - entrants to the event must show vaccination against COVID-19 (e.g. EU digital COVID certificate, etc.).
+  - We will be conducting day-of COVID tests.
+  - While wearing a mask is not obligatory, please practice applicable public health and safety guidelines and requirements by the [Polish Government](https://www.gov.pl/web/gsse-warszawa/covid-19).
+freedomGamesBlurb: |
+  RadicalxChange will also be participating in the Freedom Games 2022, October 14-16. See the [Freedom Games website](https://igrzyskawolnosci.pl/en/) for more information about attending.
+rxcBlurb: |
+  RadicalxChange (RxC) is a global movement for next-generation political economies. It advances plurality, equality, community, and decentralization through upgrades of democracy, markets, the data economy, the commons, and identity. RxC connects people from all walks of life - ranging from social scientists and technologists to artists and activists. The movement is ever-evolving and always welcoming new people and ideas to make our social world more diverse, equal, and free.
+wildlandBlurb: |
+  Wildland is a new, open protocol for data management spun out of the Golem Foundation. Wildland's endgame is to redefine the way individuals manage their digital data. Its innovative data-centered approach is designed to provide an alternative to the currently dominant service-oriented model of delivering software to end users. This boils down to giving individuals explicit control over the choice of data storage infrastructure, therefore, guaranteeing data availability and accessibility while preserving users’ privacy and digital sovereignty. Learn more about this initiative [here](https://golem.foundation/2020/04/09/wildland.html).
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen py-margin lg:py-lg/margin bg-golden-fizz"
+>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block align-top") }}
+    </a>
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display break-words">
+      RadicalxChange Warsaw:
+    </h1>
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display break-words">
+      Europe and The
+    </h1>
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display break-words">
+      Futures of Pluralism
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2"
+  >
+    <p><strong>Where? </strong>
+      <a
+        href="https://goo.gl/maps/J3r6PqmAJTiAcDmZ6"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        class="inline-link"
+      >
+        MAŁA WARSZAWA
+      </a> - Otwocka 14, 03-759 Warszawa, Poland</p>
+    <p><strong>When? </strong>Tuesday, 18 October 2022, 9:00 AM to 6:00 PM CEST</p>
+    <div class="markdown markdown-sm font-bold text-justify">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="markdown markdown-sm">
+      {{ bodyText | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href=""
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Why you should come</p>
+    <div class="markdown markdown-sm">
+      {{ topicsBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href=""
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Schedule</p>
+    <div class="markdown markdown-sm">
+      {{ scheduleBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href="https://hackmd.io/hL1TE9p8SgSXAhRe97JSmA"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Warsaw</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">A guide to Warsaw / lodging / travel</p>
+    <div class="markdown markdown-sm">
+      {{ "See this [guide to traveling in Warsaw](https://hackmd.io/hL1TE9p8SgSXAhRe97JSmA)" | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href=""
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">COVID protocols</p>
+    <div class="markdown markdown-sm">
+      {{ covidProtocols | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href=""
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Freedom Games</p>
+    <div class="markdown markdown-sm">
+      {{ freedomGamesBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href=""
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">More about RadicalxChange</p>
+    <div class="markdown markdown-sm">
+      {{ rxcBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href=""
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">More about Wildland</p>
+    <div class="markdown markdown-sm">
+      {{ wildlandBlurb | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
