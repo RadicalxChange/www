@@ -1,3 +1,8 @@
+# move conferences under events
+/events/2022-poland-conference /events/2022-warsaw
+/2022-conference /events/2022-conference
+/2021-conference /events/2021-conference
+
 # new naming convention for community poll announcements
 /media/announcements/curated-ballot /media/announcements/community-poll-ballot-2021
 /media/announcements/rxc-voice-pilot-results /media/announcements/community-poll-results-2021
