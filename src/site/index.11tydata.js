@@ -25,7 +25,7 @@ Matt Prewitt (@m_t_prewitt) is RadicalxChange Foundation’s president, a writer
   },
   popup: {
     isOn: true,
-    title: "Announcing the RxC Warsaw Conference October 2022",
+    title: "Announcing the RxC Warsaw Conference & Freedom Games",
     bodyText: `With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
 
 This October, the RxC community will safely gather in Łódź, Poland for the [2022 Freedom Games (Oct 14-16)](https://igrzyskawolnosci.pl/en/), and subsequently in neighboring Warsaw, Poland, for a day of solidarity, inspiration, and co-creation.
