@@ -5,20 +5,22 @@
 
     People should be able to exert democratic collective bargaining power over their data, in order to make joint decisions controlling its use, and negotiate appropriate compensation.
   readings:
-    - title:
-        "The Agency Costs of Agency Capitalism: Activist Investors and the Revaluation
-        of Governance Rights"
-      author: Ronald J. Gilson and Jeffrey N. Gordon
-      href: https://www.cbs.dk/files/cbs.dk/agency_cost_ssrn_3-13-13_0.pdf
-      date: "2013-03-11T04:00:00.000Z"
-    - title: A Proposal to Limit the Anti-Competitive Power of Institutional Investors
-      author: Eric A. Posner, Fiona M. Scott Morton, E. Glen Weyl
-      href: /media/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf
-      date: "2016-11-22T05:00:00.000Z"
+    - title: A Relational Theory of Data Governance
+      author: Salome Viljoen
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3727562
+      date: "2020-11-11T04:00:00.000Z"
+    - title: A View of the Future of Our Data
+      author: Matt Prewitt
+      href: https://www.noemamag.com/a-view-of-the-future-of-our-data/
+      date: "2021-02-23T04:00:00.000Z"
     - title: The Automation Charade
       author: Astra Taylor
       href: https://logicmag.io/failure/the-automation-charade/
       date: "2018-08-01T04:00:00.000Z"
+    - title: "Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning"
+      author: Yongchan Kwon, James Zou
+      href: https://arxiv.org/abs/2110.14049
+      date: "2021-10-26T04:00:00.000Z"
     - title:
         "Bottom-Up Data Trusts: Disturbing the ‘One Size Fits All’ Approach to Data
         Governance"
@@ -39,14 +41,26 @@
       author: Nicholas Vincent, Hanlin Li, Nicole Tilly, Stevie Chancellor, Brent Hecht
       href: https://arxiv.org/abs/2012.09995
       date: "2020-12-18T05:00:00.000Z"
+    - title: "The Data Station: Combining Data, Compute, and Market Forces"
+      author: Raul Castro Fernandez, et al.
+      href: https://arxiv.org/abs/2009.00035
+      date: "2020-08-31T04:00:00.000Z"
     - title: Data workers of the world, unite
       author: The Economist
       href: https://www.economist.com/the-world-if/2018/07/07/data-workers-of-the-world-unite
       date: "2018-07-07T04:00:00.000Z"
+    - title: "Don’t give OpenAI all the credit for GPT-3: You might have helped create the latest 'astonishing' advance in AI too"
+      author: Nicholas Vincent
+      href: https://www.psagroup.org/blogposts/62
+      date: "2020-09-22T05:00:00.000Z"
     - title: "Chapter 5 of Radical Markets"
       author: Eric A. Posner, E. Glen Weyl
       href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
       date: "2018"
+    - title: "Society Runs on Information Flows"
+      author: Johannes Stutz
+      href: https://blog.openmined.org/society-runs-on-information-flows/
+      date: "2021-02-11T05:00:00.000Z"
     - title: "Solving the Social Dilemma: The Data Freedom Act"
       author: Matt Prewitt, Leon Erichsen
       href: /media/blog/solving-the-social-dilemma/
@@ -55,36 +69,7 @@
       author: Jaron Lanier
       href: https://en.wikipedia.org/wiki/Who_Owns_the_Future%3F
       date: "2013"
-    - title: Anticompetitive Effects of Common Ownership
-      author: José Azar, Martin C. Schmalz, Isabel Tecu
-      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2427345
-      date: "2014-04-22T04:00:00.000Z"
-    - title: Antitrust Remedies for Labor Market Power
-      author: Suresh Naidu, Eric A. Posner, E. Glen Weyl
-      href: /media/papers/antitrust-remedies-for-labor-market-power.pdf
-      date: "2018-02-24T05:00:00.000Z"
-    - title: Horizontal Shareholding and Antitrust Policy
-      author: Fiona Scott Morton, Herbert Hovenkamp
-      href: https://www.yalelawjournal.org/feature/horizontal-shareholding-and-antitrust-policy
-      date: "2018-05-01T04:00:00.000Z"
-    - title: Productivity and Misallocation in General Equilibrium
-      author: David Rezza Baqaee, Emmanuel Farhi
-      href: https://www.nber.org/papers/w24007
-      date: "2017-11-01T04:00:00.000Z"
-    - title: "Chapter 4 of Radical Markets"
-      author: Eric A. Posner, E. Glen Weyl
-      href: http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf
-      date: "2018"
   tools:
-    - title: Ocean Protocol
-      href: https://oceanprotocol.com/
-      description: |
-        Ocean Protocol is a digital infrastructure to power the web3 data economy. It is the root for applications such as data marketplaces, crypto-secure data custody and data management, as well as easier to implement data unions, trusts, and cooperatives.
-      links:
-        - text: Twitter
-          href: https://twitter.com/oceanprotocol
-        - text: GitHub
-          href: https://github.com/oceanprotocol
     - title: Maskbook
       href: https://chrome.google.com/webstore/detail/maskbook/jkoeaghipilijlahjplgbfiocjhldnap
       description: |
@@ -94,6 +79,31 @@
           href: https://twitter.com/realmaskbook
         - text: GitHub
           href: https://github.com/DimensionDev/Maskbook
+    - title: Ocean Protocol
+      href: https://oceanprotocol.com/
+      description: |
+        Ocean Protocol is a digital infrastructure to power the web3 data economy. It is the root for applications such as data marketplaces, crypto-secure data custody and data management, as well as easier to implement data unions, trusts, and cooperatives.
+      links:
+        - text: Twitter
+          href: https://twitter.com/oceanprotocol
+        - text: GitHub
+          href: https://github.com/oceanprotocol
+    - title: OpenMined
+      href: https://www.openmined.org/
+      description: |
+        OpenMined is building software that makes it possible for one person to answer a question using data owned by another, without ever seeing or acquiring a copy of that data. OpenMined calls this process Remote Data Science. The advent of remote data science means that, in a huge variety of domains across society, current tradeoffs between sharing data and protecting that data will be broken.
+      links:
+        - text: Twitter
+          href: https://twitter.com/openminedorg
+        - text: GitHub
+          href: https://github.com/OpenMined
+    - title: Pool
+      href: https://www.pooldata.io/
+      description: |
+        Pool’s purpose is to redistribute power, value and control in the data economy. Pool's platform supports organizations called Data Unions, who enable ordinary people to monetize and share their data. Because those people are positively engaged in sharing their information, data products on Pool’s platform are richer, more relevant, and far easier to license.
+      links:
+        - text: Twitter
+          href: https://twitter.com/pooldata
 - title: Plural Voting
   slug: plural-voting
   description: |
