@@ -3,7 +3,7 @@ layout: "layouts/blog-post.njk"
 date: "2022-09-08"
 title: "Plural Money, Socially-Provided Goods, and the Principal-Agent Problem"
 postHeader: "Plural Money, Socially-Provided Goods, and the Principal-Agent Problem"
-postAuthor: "Matt Prewitt, Glen Weyl"
+postAuthor: "Matt Prewitt, E. Glen Weyl"
 ---
 
 ## The problem with using money for socially-provided goods; and the problem with not using it
