@@ -7,6 +7,23 @@ postAuthor: "Audrey Tang, E. Glen Weyl"
 ---
 [toc]
 
+<div class="html">
+<div class="toc-mobile">
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#english">English</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#deutsch">Deutsch</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#汉语">汉语</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#ελληνικά">Ελληνικά</a>
+</div>
+</div>
+
 ## English
 
 Introducing and soliciting collaboration on *Plurality: Technology for Collaborative Diversity and Democracy*
