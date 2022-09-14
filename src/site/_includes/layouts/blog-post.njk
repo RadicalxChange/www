@@ -41,11 +41,8 @@ permalink: "media/blog/{{ slug | defaultSlug: title }}/index.html"
     </header>
     {{ content | markdown | latex | safe }}
   </article>
-  <aside id="table-of-contents_container" class="sticky col-start-column-13 col-end-gutter-15">
+  <aside id="table-of-contents_container" class="hidden lg:sticky lg:col-start-column-13 lg:col-end-gutter-15">
     <ul id="table-of-contents" class="list-none pl-4 pr-1 mt-20 mb-12 border-l text-size--1">
-      <li class="mt-4 mb-2 uppercase">
-        <span>On this page</span>
-      </li>
     </ul>
   </aside>
 </div>
