@@ -75,12 +75,12 @@ Below is an outline divided into parts and chapters. Each chapter lists estimate
 <ol style="list-style-type:upper-roman">
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">Preface: Seeing Plural</p><p style="display:inline-block"> (5 pages):</p>
-    </div> We will open the book with a poetic-spiritual reflection on the omnipresence of plurality at every scale of reality and what an extension of this into our technological future might feel like.
+      <p style="font-weight:bold; display:inline-block">Preface: Seeing Plural</p><p style="display:inline-block">&nbsp;(5 pages):</p>
+    </div>We will open the book with a poetic-spiritual reflection on the omnipresence of plurality at every scale of reality and what an extension of this into our technological future might feel like.
   </li>
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">Introduction: The War Between Democracy and Technology</p><p style="display:inline-block"> (10 pages):</p>
+      <p style="font-weight:bold; display:inline-block">Introduction: The War Between Democracy and Technology</p><p style="display:inline-block">&nbsp;(10 pages):</p>
     </div> The headline-grabbing conflicts between tech and democracy at once reflect and conceal a deeper tension between the directions technology has developed and the principles of a democratic society. While specific technologies that have come out of the AI and web3 traditions have significant potential, they are fundamentally anti-democratic political ideologies rather than technologies, committed to the centralization of power and extreme individualism respectively.
   </li>
   <li>
@@ -142,7 +142,7 @@ Below is an outline divided into parts and chapters. Each chapter lists estimate
   </li>
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">Impact</p><p style="display:inline-block"> (Intro 5 pages):</p>
+      <p style="font-weight:bold; display:inline-block">Impact</p><p style="display:inline-block">&nbsp;(Intro 5 pages):</p>
     </div> Democracy has gotten a bad reputation in much of the world for failing to deliver on critical global challenges. This is because it hasn’t kept pace with technology; when it does, Taiwan’s experience shows it can outperform authoritarian regime. Each chapter will highlight statistics illustrating the success possible in countries like Taiwan and Estonia that have made digital democracy a reality.
     <ol>
       <li>
@@ -172,6 +172,8 @@ Below is an outline divided into parts and chapters. Each chapter lists estimate
   </li>
 </ol>
 </div>
+
+*This post is licensed under CC0, no rights reserved*
 
 ## Deutsch
 
@@ -226,12 +228,12 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
 <ol style="list-style-type:upper-roman">
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">Vorwort: Das Plurale sehen</p><p style="display:inline-block"> (5 Seiten):</p>
+      <p style="font-weight:bold; display:inline-block">Vorwort: Das Plurale sehen</p><p style="display:inline-block">&nbsp;(5 Seiten):</p>
     </div> Wir eröffnen das Buch mit einer poetisch-spirituellen Reflexion über die Allgegenwart der Pluralität in jedem Maßstab der Wirklichkeit und darüber, wie sich eine Ausweitung davon in unsere technologische Zukunft anfühlen könnte.
   </li>
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">Einleitung: Der Krieg zwischen Demokratie und Technologie</p><p style="display:inline-block"> (10 Seiten):</p>
+      <p style="font-weight:bold; display:inline-block">Einleitung: Der Krieg zwischen Demokratie und Technologie</p><p style="display:inline-block">&nbsp;(10 Seiten):</p>
     </div> Die aufsehenerregenden Konflikte zwischen Technologie und Demokratie spiegeln und verbergen zugleich eine tiefere Spannung zwischen den Richtungen, in die sich die Technologie entwickelt hat, und den Prinzipien einer demokratischen Gesellschaft. Während bestimmte Technologien, die aus der KI- und Web-3-Tradition hervorgegangen sind, ein erhebliches Potenzial haben, handelt es sich bei diesen eher um fundamental antidemokratische politische Ideologien als um Technologien, welche der Zentralisierung von Macht bzw. dem extremen Individualismus verschrieben sind.
   </li>
   <li>
@@ -293,7 +295,7 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
   </li>
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">Auswirkungen</p><p style="display:inline-block"> (Intro 5 Seiten):</p>
+      <p style="font-weight:bold; display:inline-block">Auswirkungen</p><p style="display:inline-block">&nbsp;(Intro 5 Seiten):</p>
     </div> Demokratie hat in weiten Teilen der Welt einen schlechten Ruf, weil sie bei der Bewältigung wichtiger globaler Herausforderungen versagt. Das liegt daran, dass sie nicht mit der Technologie Schritt gehalten hat; wenn sie es doch tut, zeigt die Erfahrung Taiwans, dass sie autoritäre Regime übertrumpfen kann. In jedem Kapitel werden Statistiken vorgestellt, die den Erfolg von Ländern wie Taiwan und Estland veranschaulichen, die die digitale Demokratie verwirklicht haben.
     <ol>
       <li>
@@ -383,12 +385,12 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
 <ol style="list-style-type:upper-roman">
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">序言：看見多元宇宙</p><p style="display:inline-block"> (五頁):</p>
+      <p style="font-weight:bold; display:inline-block">序言：看見多元宇宙</p><p style="display:inline-block">&nbsp;(五頁):</p>
     </div> 本書的開始，將以富有詩意與靈性的方式，反思現實世界裡不同尺度上無所不在的多元宇宙，並探索它在我們的科技未來中可能會是什麼模樣。
   </li>
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">導論：民主與科技間的戰爭</p><p style="display:inline-block"> (十頁):</p>
+      <p style="font-weight:bold; display:inline-block">導論：民主與科技間的戰爭</p><p style="display:inline-block">&nbsp;(十頁):</p>
     </div> 在民主與科技之間博人眼球的爭議能夠立即反映出科技的發展和民主社會的原則之間更為深層的衝突。雖然 AI 和 web3 延伸出來的技術有著無窮潛力，這些方向卻往往連繫到與民主社會背道而馳的政治理念，其核心概念分別為中央集權和極端的個人主義。
   </li>
   <li>
@@ -450,7 +452,7 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
   </li>
   <li>
     <div style="margin-bottom:1.5em">
-      <p style="font-weight:bold; display:inline-block">影響力</p><p style="display:inline-block"> (5頁):</p>
+      <p style="font-weight:bold; display:inline-block">影響力</p><p style="display:inline-block">&nbsp;(5頁):</p>
     </div> 民主制度在部分地區，未能因應關鍵的全球挑戰而飽受質疑，是因為它沒有跟上科技發展的步伐；當它跟上時，台灣的經驗清楚表明，它可以勝過威權政權制度。在這些章節中會更清楚說明影響力的統計數據，顯示台灣和愛沙尼亞等國家，如何將數位民主化為現實的成功經驗。
     <ol>
       <li>
