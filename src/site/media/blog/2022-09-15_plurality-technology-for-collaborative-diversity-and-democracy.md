@@ -336,6 +336,8 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
 
 內文介紹並尋求各界協作
 
+*Chinese translation by Noah Yeh, Jacky Wang, Vivian Chen, Isabel Hou, Elena Chen, Gisele Chou, KC Chen, Stamford Hwang*
+
 我們即將迎來一趟新的旅程，希望各位可以加入我們。過往五年裡，我們與你們中的許多人一起協作，希望為聚焦於金融化與中心化 AI 主導的未來科技方向，發展出替代敘事。
 
 **多元宇宙（Plurality）**，是運用認同、尊重並賦能共同協作的科技，來跨越社會與文化差異。接下來的概述，會更清楚的描繪這個概念。
