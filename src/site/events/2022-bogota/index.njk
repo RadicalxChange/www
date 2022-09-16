@@ -1,0 +1,137 @@
+---
+layout: layouts/_base.njk
+title: 2022 Bogotá
+headerText: "Plurality tent @ Schelling Point"
+introductionBlurb: |
+  Interdependent, Cooperative and Diverse Complexity: Building a Plurality Agenda for Democracy & Web3
+
+  RadicalxChange Foundation and Fundación Karisma invite you to join us in learning, getting inspired and co-creating with us at our pop-up event at Schelling Point — Bogotá!
+bodyText: |
+  Since 2018, our communities have advanced a series of ground-breaking primitives — many of which have been widely adopted within the Ethereum ecosystem. Now, we are centering the narrative on a broader conceptual framing that connects those primitives into a cohesive vision: **Plurality** 🖖
+
+  Plurality is both a democratic agenda for the future of technology and governance, and a social philosophy based on the principle of *fostering cooperation across diversity*. Throughout the past few years, pluralistic features have been instantiated on multiple Ethereum-based protocols, ranging from governance, identity, payments, reputation and public goods funding solutions; and also by forward looking governments, and other innovative digital platforms.
+
+  At the Plurality tent @ Schelling Point — Bogotá, we'd like to highlight these achievements, and point the way forward to a path that can support even more complexity, diversity and structure, through novel and recombinant ecosystems at Web3 and other infrastructures of power, such as governments and grassroots movements.
+topicsBlurb: |
+  All are welcome to join, and we’ll be covering topics like:
+
+  - Examining Web3 platforms through the frame of pluralistic, decentralized governance models.
+  - Paving the blockchain/web3 roads to increased user agency, interoperability, political participation, and funding the common good.
+  - Uplifting the work of activists, social fabric weavers, and critical voices.
+  - Experiencing works of art as windows to connection and means of change.
+  - Exploring use cases for community currencies, data coops, DeID systems, SBTs, and other pro-social technologies
+scheduleBlurb: |
+  Our day will go from 10 AM to 5 PM COT.
+
+  MORE DETAILS COMING SOON.
+freedomGamesBlurb: |
+  RadicalxChange will also be participating in the Freedom Games 2022, October 14-16. See the [Freedom Games website](https://igrzyskawolnosci.pl/en/) for more information about attending.
+rxcBlurb: |
+  RadicalxChange (RxC) is a global movement for next-generation political economies. It advances plurality, equality, community, and decentralization through upgrades of democracy, markets, the data economy, the commons, and identity. RxC connects people from all walks of life - ranging from social scientists and technologists to artists and activists. The movement is ever-evolving and always welcoming new people and ideas to make our social world more diverse, equal, and free.
+fkBlurb: |
+  [Karisma](https://web.karisma.org.co/) is a civil society organization that seeks to protect and promote human rights and social justice in the design and use of digital technologies. Founded in 2003, Karisma is positioned today as one of the main Latin American civil society organizations that work to promote human rights in the digital world.
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen py-margin lg:py-lg/margin bg-golden-fizz"
+>
+  <header class="col-span-columns mb-8">
+    <div class="w-full lg:w-2/5 flex flex-row justify-between">
+      <img
+        class="inline-block my-auto w-5/12 max-w-xl"
+        src="/images/logos/logo.svg"
+        alt="RadicalxChange logo"
+      />
+      <img
+        class="inline-block w-4/12 max-w-xl"
+        src="/images/rxc2022bogota/fundacion-karisma-logo.png"
+        alt="Fundación Karisma logo"
+      />
+    </div>
+    <div class="w-full lg:w-3/5 mt-32 flex flex-row justify-between">
+      <img
+        class="inline-block my-auto w-8/12 max-w-xl"
+        src="/images/rxc2022bogota/2022-bogota-header.png"
+        alt="Plurality @ Schelling Point Bogotá"
+      />
+      <img
+        class="inline-block w-3/12 max-w-xl"
+        src="/images/rxc2022bogota/logo.png"
+        alt="Plurality @ Schelling Point Bogotá"
+      />
+    </div>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2"
+  >
+    <p><strong>Where? </strong>Gran Américas Pavilion</p>
+    <p><strong>When? </strong>Monday, 10 October 2022, 10:00 AM to 5:00 PM COT</p>
+    <div class="markdown markdown-sm font-bold text-justify">
+      {{ "This event will be free and open to the public" | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <div class="markdown markdown-sm font-bold text-justify">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="markdown markdown-sm">
+      {{ bodyText | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href="https://community910829.typeform.com/to/L3vsKwlW"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Host a session</p>
+        </a>
+      </button>
+    </div>
+    <p class="font-bold uppercase">Why you should come</p>
+    <div class="markdown markdown-sm">
+      {{ topicsBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Schedule</p>
+    <div class="markdown markdown-sm">
+      {{ scheduleBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">More about RadicalxChange</p>
+    <div class="markdown markdown-sm">
+      {{ rxcBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">More about Fundación Karisma</p>
+    <div class="markdown markdown-sm">
+      {{ fkBlurb | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
