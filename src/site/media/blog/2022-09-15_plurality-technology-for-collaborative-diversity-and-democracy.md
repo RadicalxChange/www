@@ -328,7 +328,7 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
 </ol>
 </div>
 
-## 汉语
+## 華文
 
 多元宇宙：數位協作與民主的科技典範
 
