@@ -17,7 +17,7 @@ postAuthor: "Audrey Tang, E. Glen Weyl"
     href="#deutsch">Deutsch</a>
   <a
     style="display:block; margin-bottom:1em"
-    href="#汉语">汉语</a>
+    href="#華文">華文</a>
   <a
     style="display:block; margin-bottom:1em"
     href="#ελληνικά">Ελληνικά</a>
