@@ -34,7 +34,7 @@ While our precise plan will evolve with the advances in Plurality research and p
 
 At the same time, as pluralists, we don’t want to reach only “web3 natives”, and as such we hope to make it a beautiful physical object, widely accessible, distributed and reviewed in standard publishing and media channels. Thus, we need not just hackers and writers, but also designers, storytellers, marketers, translators, publishers and so forth to work with us. And we understand that some of these will prefer more individual entitlements over governance rights on speculative potential cash flows, possibilities we are open to negotiating with partners who share our goals and vision along other dimensions. In any case, neither Audrey nor Glen will receive any compensation nor royalties for their work on the text, to comply with legal responsibilities associated with their employment and to ensure that any revenue supports our mission and the community we hope to build.
 
-We will soon be debuting the software platform that will support our writing in public and managing of participation, but if you perceive a way you want to contribute prior to that, please feel free to [write to Glen](glen@radicalxchange.org). The future of technology can honor and support the values we hold dear if we work together to imagine and explain it.
+We will soon be debuting the software platform that will support our writing in public and managing of participation, but if you perceive a way you want to contribute prior to that, please feel free to [write to Glen](mailto:glen@radicalxchange.org). The future of technology can honor and support the values we hold dear if we work together to imagine and explain it.
 
 <h2>Overview</h2>
 
@@ -189,7 +189,7 @@ Während sich unser präziser Plan mit Fortschritten in der Pluralitätsforschun
 
 Gleichzeitig wollen wir als Pluralist\*innen nicht, dass das Buch nur "Web3-Natives" erreicht, und so hoffen wir, ein schönes physisches Objekt zu kreieren, das allgemein zugänglich ist und über herkömmliche Verlags- und Medienkanäle verbreitet und rezensiert wird. Wir brauchen also nicht nur Hacker\*innen und Autor\*innen, sondern auch Designer\*innen, Berichterstatter\*innen, Vermarkter\*innen, Verleger\*innen und so weiter, die mit uns zusammenarbeiten. Und wir sind uns bewusst, dass einige jener individuellere Ansprüche als Stimmrechte auf spekulative potenzielle Geldflüsse bevorzugen werden. Wir sind offen für Verhandlungen mit Partner\*innen, die unsere Ziele und Visionen in verschiedenen Dimensionen teilen. In jedem Fall werden weder Audrey noch Glen für ihre Arbeit an dem Text Vergütung oder Lizenzgebühren erhalten, um die mit ihren Anstellungen verbundenen rechtlichen Verpflichtungen zu erfüllen und um sicherzustellen, dass alle Einnahmen unsere Mission und die Gemeinschaft, die wir aufzubauen hoffen, unterstützen.
 
-Wir werden in Kürze die Software-Plattform vorstellen, die unser Schreiben in der Öffentlichkeit und Verwaltung der Teilnahme unterstützen wird. Wenn Sie schon vorher eine Möglichkeit sehen sollten, einen Beitrag zu leisten, [schreiben Sie bitte Glen](glen@radicalxchange.org). Die Zukunft der Technologie kann die Werte, die uns wichtig sind, ehren und unterstützen, wenn wir gemeinsam daran arbeiten, sie auszumalen und zu erklären.
+Wir werden in Kürze die Software-Plattform vorstellen, die unser Schreiben in der Öffentlichkeit und Verwaltung der Teilnahme unterstützen wird. Wenn Sie schon vorher eine Möglichkeit sehen sollten, einen Beitrag zu leisten, [schreiben Sie bitte Glen](mailto:glen@radicalxchange.org). Die Zukunft der Technologie kann die Werte, die uns wichtig sind, ehren und unterstützen, wenn wir gemeinsam daran arbeiten, sie auszumalen und zu erklären.
 
 <h2>Überblick</h2>
 
@@ -348,7 +348,7 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
 
 我們倡導多元，因此不只希望接觸到 「web3 原生社群」，更希望本書可以成為一份美麗的實體物件，在傳統的媒體及發行場域中也能廣泛被接受、發行及反饋。我們不只需要黑客與作家，我們也需要設計師、說故事的人、行銷人及發行商來跟我們合作。我們同時也理解這些合作單位可能會偏好某些獨家權利，多過於未來現金流的治理權。對於擁有共同目標及願景的夥伴，我們在協商時會開放迎接各種可能性。但在任何情況下，唐鳳、格倫為本書撰寫文字，都不會收取任何報酬或是版稅，以符合伴隨他們職位的法律規範；營收只會用來支持我們盼望建立的社群與公益使命。
 
-我們很快會將開放寫作及參與管理的平台公諸於世。如果你想要提前貢獻，[請寫信到 Glen](glen@radicalxchange.org)。如果我們能共同想像及解釋，科技的未來就有可能認同也支持我們所珍惜的價值。
+我們很快會將開放寫作及參與管理的平台公諸於世。如果你想要提前貢獻，[請寫信到 Glen](mailto:glen@radicalxchange.org)。如果我們能共同想像及解釋，科技的未來就有可能認同也支持我們所珍惜的價值。
 
 <h2>概述</h2>
 
@@ -501,7 +501,7 @@ Nachstehend finden Sie eine Gliederung in Abschnitte und Kapitel. Jedes Kapitel 
 
 Ταυτοχρονα, οντας Πλουραλιστες, δεν επιθυμουμε αυτο το βιβλιο να κυκλοφορησει μονο για εκεινους που ασχολουνται ηδη ενεργα με το Web3 και γι’αυτο ελπιζουμε να το μετατρεψουμε σε ενα ομορφο, υψηλης εκδοτικης ποιοτητας και ευρειας διανομης φυσικο αντικειμενο. Ως αποτελεσμα, δεν αναζητουμε μονο συγγραφεις και προγραμματιστες αλλα και σχεδιαστες, storytellers, μεταφραστες, εκδοτες και επαγγελματιες του marketing να συνεργαστουν μαζι μας. Αναγνωριζουμε οτι καποιοι θα προτιμουν να αποκτησουν ατομικα εμπορικα δικαιωματα και ειμαστε ανοιχτοι στο να διαπραγματευτουμε τετοιες συμφωνιες με συνεργατες που μοιραζονται τις ιδιες αξιες και οραμα με εμας. Τελος, ουτε η Audrey, ουτε ο Glen θα λαβουν καποια αποζημιωση ή εμπορικα δικαιωματα για την εργασια τους σε συμμορφωση με τις νομικες ευθυνες των εργοδοτων τους αλλα και με σκοπο ολα τα κερδη να δοθουν στην αποστολη και στην κοινοτητα που θελουν να χτισουν.
 
-Θα κυκλοφορησουμε πολυ συντομα την πλατφορμα που θα στηριξει την συγγραφη του βιβλιου και την συμμετοχη του κοινου αλλα αν εχετε ιδεες για το πως να συνδραμετε πριν την κυκλοφορια της πλατφορμας, [μπορειτε να τις στειλετε στο Glen](glen@radicalxchange.org). Aν δουλεψουμε ολοι μαζι, τοτε το μελλον της τεχνολογιας μπορει να τιμησει και να υποστηριξει τις αξιες που ολοι κραταμε βαθεια μεσα μας.
+Θα κυκλοφορησουμε πολυ συντομα την πλατφορμα που θα στηριξει την συγγραφη του βιβλιου και την συμμετοχη του κοινου αλλα αν εχετε ιδεες για το πως να συνδραμετε πριν την κυκλοφορια της πλατφορμας, [μπορειτε να τις στειλετε στο Glen](mailto:glen@radicalxchange.org). Aν δουλεψουμε ολοι μαζι, τοτε το μελλον της τεχνολογιας μπορει να τιμησει και να υποστηριξει τις αξιες που ολοι κραταμε βαθεια μεσα μας.
 
 ## 日本語
 
@@ -519,7 +519,7 @@ Plurality: 協働可能な多様性と民主主義のためのテクノロジー
 
 同時に、私たちはPlurality 主義者として、「Web 3 ネイティブ」な人たちだけに届けたいわけでありません。そのため、この著作を物理的な作品としても、標準的な出版およびメディア流通経路でも幅広い範囲で配布され、レビューされ、読まれる美しい物理的作品にしたいと考えています。したがって、ハッカーやライターだけではなく、デザイナー、ストーリーテラー、マーケター、翻訳者、出版社などにも協力していただく必要があります。“今のうちにこれに貢献しておけば、今後ソーシャルキャピタルを含めた資産が手に入るかもしれない”という人がいる反面、より個人的な利益・権利を求める人がいることも理解しています。このため場合によっては、私たちの目標やビジョンをはじめ、他の側面でも同じような考えを持つ方々と連携する交渉も受け付けます。いずれにせよ、この呼びかけをしているオードリー・タンもグレン・ワイルも、著作する文章の貢献に対する報酬やロイヤルティを受け取ることはありません。こうする目的は、わたしたちそれぞれが雇用に関連する法的責任を遵守し、私たちの使命と私たちが構築したいと考えているコミュニティを収益が支えていけることを保証するためです。
 
-私たちは、公の場での執筆と参加の管理を可能にするソフトウェアで実現される基盤をまもなく公開しますが、それ以前に貢献したい方法を思いついた場合には、[どうか Glen 宛にお知らせください。](glen@radicalxchange.org)私たちが協力してテクノロジーを想像し説明することで、テクノロジーの未来は、私たちが大切にしている価値を尊重し可能にするものになれます。
+私たちは、公の場での執筆と参加の管理を可能にするソフトウェアで実現される基盤をまもなく公開しますが、それ以前に貢献したい方法を思いついた場合には、[どうか Glen 宛にお知らせください。](mailto:glen@radicalxchange.org)私たちが協力してテクノロジーを想像し説明することで、テクノロジーの未来は、私たちが大切にしている価値を尊重し可能にするものになれます。
 
 <h2>概要</h2>
 
@@ -539,6 +539,125 @@ Uber が台湾に上陸したとき、世界の多くの地域と同様に、そ
 
 しかし、インターネットやその他の革新的であり方を変えるようなテクノロジーと同様に、Pluralityは、私たちが投資した分だけしか繁栄しません。インターネットは、米国国防総省の高等研究計画局 (ARPANET) が新しい分散型ユーザーインターフェースの設計を実験するために設立したネットワークとして始まりました。しかし、J.C.リックライダー(JCR Licklider)のようなARPANET の創設者のビジョンは、私たちも今回のPluralityを同様の構想に基づいて構想設計していますが、それを実行するために必要な公的および国際的な支援と多機関による投資を動員しなかったため、非常に部分的にしか実現されませんでした。構想が実現せずに、リックライダーが予測したように、その可能性を妨げた独占企業によって多くの可能性が占有されてしまいました。今日、今こそ、私たちはその過ちを正し、私たちのテクノロジーが私たちの最高の理想を劣化させるのではなく、その理想を明らかにし、また、実現するような未来を築く機会です。すべての活動家、アーティスト、技術者、市民、政策立案者、組織は、その未来のための闘いにおいて重要な役割を担っています。
 
+<div class="markdown markdown-sm italic text-center mt-12 mb-12">
+
+When we see “internet of things”, let’s make it an internet of beings.
+
+When we see “virtual reality”, let’s make it a shared reality.
+
+When we see “machine learning”, let’s make it collaborative learning.
+
+When we see “user experience”, let’s make it about human experience.
+
+When we hear “the singularity is near”, let us remember: the plurality is here.
+</div>
+
+<h2>Chapter outline</h2>
+
+Below is an outline divided into parts and chapters. Each chapter lists estimated page length and gives a summary of the argument of the relevant chapter, in a proportion of roughly one sentence to each 5 pages. All of this is a first draft sketch.
+
+<div class="html">
+<ol style="list-style-type:upper-roman">
+  <li>
+    <div style="margin-bottom:1.5em">
+      <p style="font-weight:bold; display:inline-block">Preface: Seeing Plural</p><p style="display:inline-block">&nbsp;(5 pages):</p>
+    </div>We will open the book with a poetic-spiritual reflection on the omnipresence of plurality at every scale of reality and what an extension of this into our technological future might feel like.
+  </li>
+  <li>
+    <div style="margin-bottom:1.5em">
+      <p style="font-weight:bold; display:inline-block">Introduction: The War Between Democracy and Technology</p><p style="display:inline-block">&nbsp;(10 pages):</p>
+    </div> The headline-grabbing conflicts between tech and democracy at once reflect and conceal a deeper tension between the directions technology has developed and the principles of a democratic society. While specific technologies that have come out of the AI and web3 traditions have significant potential, they are fundamentally anti-democratic political ideologies rather than technologies, committed to the centralization of power and extreme individualism respectively.
+  </li>
+  <li>
+    <p style="font-weight:bold">Plurality</p>
+    <ol>
+      <li>
+        Living in a Plural World (15 pages): From the most basic physical level of quantum mechanics to the greatest heights, “beauty, growth, progress – all result from the union of the unlike.” (Star Trek quote). These all therefore depend on maintaining and proliferating diversity, while also strengthening communication and cooperation across difference. Information and communications technology can map the dynamic landscape of social relationships and facilitate new connections and organizations that span such networks.
+      </li>
+      <li>
+        The Lost Dao (15 pages) The idea of a network society, where individuals and social groups are both dynamic intersections of each other, originated in the theories of sociologists, economists and philosophers like Henry George, Georg Simmel and John Dewey. This vision was the foundation of what become the internet, but was never articulated with philosophical clarity, allowing it to be forgotten and superseded by other philosophies, focused on imitation of human intelligence or the liberation of individuals from social bonds. This book aims to recover that lost vision, show how it has and can succeed and chart a path forward for it to flourish.
+      </li>
+      <li>
+        A View from Yu Shan (20 pages) Taiwan sits at the intersection of the continental plates of Eurasia and America, and at the ideological intersection of the Chinese centralized AI ideology, the American hyper-capitalist ideology and European values-based regulatory states. As the physical fault line has pushed the highest point in Taiwan, Yu Shan, higher, so too these ideological tensions have pushed Taiwan to develop a pluralist synthesis that allowed it to become the most technologically advanced and most actively democratic country in the world. This chapter will give a vivid and emotive portrait of the life in Taiwan’s digital democracy from multiple vantage points: that of the minister, that of a civic activist, that of an ordinary digitally disengaged citizen, that of a businessperson, etc. It will also briefly tell the history of how Taiwan’s digital democracy emerged, drawing parallels and contrasts to the circumstances of other liberal democratic countries today.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p style="font-weight:bold">Freedom</p>
+    <ol>
+      <li>
+        Human Rights as an Operating System (5 pages) Just as industrial democracies are built on the foundation of universal human rights, digital democracies depend on the universal defense of human rights in the digital realm. Access to these capabilities is currently limited and proprietary, undermining the potential of Plurality. Each chapter in this section will begin with a short sketch of an interaction that the realization of this right will enable.
+      </li>
+      <li>
+        Personhood (10 pages) The rights to life, travel and personal recognition are the most fundamental of rights and yet the identity systems that make these possible online are controlled by a few proprietary platforms. Decentralized and pluralistic identity systems that are now emerging from the web3 space can empower a range of new functionalities that take the internet as far beyond its current state as the internet took prior modes of communication.
+      </li>
+      <li>
+        Association (10 pages) Social networks map association in the digital age, while blockchains provide the digital equivalent of public squares. If these can be extended by public-interested investment to enrich the reputation and social relationships these convey, they have the potential to extend the reach of social relationships far broader beyond today and substitute for many of the functions traditionally assigned to anonymous market exchange.
+      </li>
+      <li>
+        Commerce (5 pages) With the participation of legitimate institutions (such as central banks, governments and banks), digital currencies can have a network structure that allows both the benefits of sovereignty and privacy and of international interoperability, freeing payments both from the chaos of cryptocurrencies and the inefficient monopolies that currently dominate payments.
+      </li>
+      <li>
+        Property (10 pages) While the fundamental assets of the digital world (data, computation and memory) are created in a distributed manner, the lack of open standards for securely sharing them has concentrated power in a few big tech companies. Public investment in developing open standards for secure sharing in these areas will allow civil society and business groups to achieve far more ambitious collaboration, more efficiently, with greater trust, privacy, and sovereignty.
+      </li>
+      <li>
+        Access and education (5 pages) Online human rights are only relevant to those who can access and navigate cyberspace. High speed broadband access and digital competence, not just literacy, education must therefore be universal human rights.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p style="font-weight:bold">Democracy</p>
+    <ol>
+      <li>
+        Democracy as Applications (10 pages) Democratic institutions are applications that can run on these foundations and have three fundamental components: deliberation, compromise and pluralism. These institutions can not only transform the public sector but also the private sector, democratizing business, and depend in turn on such democratized financing models. Each chapter will begin with a vignette of ways technologies are being used today to achieve digital democracy.
+      </li>
+      <li>
+        Deliberation (5 pages) Advances in statistics (often associated with AI) make it possible “broad listening”, where millions of people can hear the distilled essence of the distribution of opinion of their peers, empowering democratic deliberation at scale.
+      </li>
+      <li>
+        Compromise (5 pages) Advances in mechanism design (often associated with web3) make compromise and horse-trading at scale possible, allowing direct democracy that doesn’t fall into the traps of tyranny of the majority.
+      </li>
+      <li>
+        Pluralism (5 pages) Social networks allow us to trace social cleavages and divisions, allowing us to both empower “local” communities to self-govern and to actively create incentives for bridging these divides.
+      </li>
+      <li>
+        Finance (5 pages) New forms of social organization emerging from the web3 community allow us to transcend the market-state divide by creating an emergent social sector that can provide democratic services at scale.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <div style="margin-bottom:1.5em">
+      <p style="font-weight:bold; display:inline-block">Impact</p><p style="display:inline-block">&nbsp;(Intro 5 pages):</p>
+    </div> Democracy has gotten a bad reputation in much of the world for failing to deliver on critical global challenges. This is because it hasn’t kept pace with technology; when it does, Taiwan’s experience shows it can outperform authoritarian regime. Each chapter will highlight statistics illustrating the success possible in countries like Taiwan and Estonia that have made digital democracy a reality.
+    <ol>
+      <li>
+        Media (5 pages) Misinformation can be contained while maintaining vibrant free speech with algorithms that surface content with surprising consensus and active participation of civil society groups that harness humor.
+      </li>
+      <li>
+        Health (5 pages) Pandemics and other public health crises can be identified and responded with agility and minimal economic costs if civil society can rapidly design systems for allocating scarce health resources and targeting chains of transmission.
+      </li>
+      <li>
+        Environment (5 pages) Environmental harms, from the local to the global, can quickly be identified without invading privacy if citizens can form horizontal “data coalitions” that can bargain with governments to live up to their responsibilities and ensure community members do the same.
+      </li>
+      <li>
+        Jobs (5 pages) By harnessing digital technologies for human engagement rather than replacement, digital technologies can create better jobs than they eclipse, leading to naturally broadly shared prosperity and participation.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p style="font-weight:bold">Forward</p>
+    <ol>
+      <li>
+        Institutions (20 pages) The large-scale investment necessary to realize Plurality will require fusing together funding sources from a variety of sectors and countries to combine and transcend the motives of national interest, profit and charity. Experimentation with diverse communities across many geographic locations will have to closely tie to the standardization that can achieve international scale, harnessing a network of digital ministers like that in Taiwan. Private sector businesses, academic institutions, charitable organizations, and activists will all have to be drawn into contributions lured by the prestige and vision of the future that comes with contributing to the future of open standards. While ambitious, this plan largely extends the history of the internet stimulated by the network of user research laboratories funded by the Advanced Research Projects Agency (ARPANET), extending it to our current multipolar world.
+      </li>
+      <li>
+        Action (10 pages) While success will require coordination at the highest levels, every citizen has a role to play to build the momentum to make this possible. We will show how hackers, investors, businesspeople, activists, artists, voters all can be part of a movement to make our tools serve our values rather than be dictated by them.
+      </li>
+    </ol>
+  </li>
+</ol>
+</div>
+
 ## Русский
 
 Приглашаем к сотрудничеству по созданию книги
@@ -553,7 +672,7 @@ Uber が台湾に上陸したとき、世界の多くの地域と同様に、そ
 
 В то же время, как плюралисты, мы не хотим, чтобы эта книга касалось только «коренных жителей Web 3», и поэтому мы надеемся создать прекрасный физический объект, широкодоступный, распространяемый и рецензируемый в стандартных издательских и медиа-каналах.  Таким образом, мы нуждаемся в сотрудничестве не только с хакерами и писателями, но так же с дизайнерами, рассказчиками, маркетологами, переводчиками, издателями, и так далее. И мы понимаем, что некоторые из них предпочтут более индивидуальные выплаты, а не права управления гипотетически возможными заработками: и мы открыты для переговоров с партнерами по поводу таких возможностей, которые разделяют наши цели и видение касательно других параметров.  В любом случае, ни Одри, ни Глен не получат никакой компенсации или гонораров за свою работу над текстом, чтобы выполнить юридические обязательства, связанные с их работой, и гарантировать, что любой доход направлен на поддержку нашей миссии и сообщества, которое мы надеемся создать.
 
-В скором времени мы представим программную платформу для поддержки общественного написания и управлением участия, но если у вас идеи относительно того, как вы можете быть полезны до этого, [пожалуйста пишите на Glen](glen@radicalxchange.org).  Будущее технологий может соблюдать и поддерживать ценности, которыми мы дорожим, если мы будем работать вместе над тем, чтобы его вообразить и объяснить.
+В скором времени мы представим программную платформу для поддержки общественного написания и управлением участия, но если у вас идеи относительно того, как вы можете быть полезны до этого, [пожалуйста пишите на Glen](mailto:glen@radicalxchange.org).  Будущее технологий может соблюдать и поддерживать ценности, которыми мы дорожим, если мы будем работать вместе над тем, чтобы его вообразить и объяснить.
 
 <h2>Обзор</h2>
 
