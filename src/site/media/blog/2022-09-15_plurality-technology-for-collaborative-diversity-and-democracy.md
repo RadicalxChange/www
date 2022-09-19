@@ -21,6 +21,21 @@ postAuthor: "Audrey Tang, E. Glen Weyl"
   <a
     style="display:block; margin-bottom:1em"
     href="#ελληνικά">Ελληνικά</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#日本語">日本語</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#русский">Русский</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#italiano">Italiano</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#한국어">한국어</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#français">Français</a>
 </div>
 </div>
 
