@@ -24,6 +24,12 @@ scheduleBlurb: |
   MORE DETAILS COMING SOON.
 freedomGamesBlurb: |
   RadicalxChange will also be participating in the Freedom Games 2022, October 14-16. See the [Freedom Games website](https://igrzyskawolnosci.pl/en/) for more information about attending.
+recordingBlurb: |
+  Please note that the event will be filmed and photographed. We will make photos and recordings of the event available online for all interested parties.
+
+  Event participants who do not want to be photographed or filmed should ask for a special sticker at the registration desk on-site. By placing the sticker on your name tag, you will notify our crew that you would prefer not to be included in the recordings.
+covidBlurb: |
+  Polish law does not require event participants to show proof of vaccination or undergo a rapid test on-site. Masking is encouraged but not mandatory. If the epidemic situation and the legal requirements change we will notify all registered event participants about the new requirements prior to the event date.
 rxcBlurb: |
   RadicalxChange (RxC) is a global movement for next-generation political economies. It advances plurality, equality, community, and decentralization through upgrades of democracy, markets, the data economy, the commons, and identity. RxC connects people from all walks of life - ranging from social scientists and technologists to artists and activists. The movement is ever-evolving and always welcoming new people and ideas to make our social world more diverse, equal, and free.
 wildlandBlurb: |
@@ -150,6 +156,20 @@ wildlandBlurb: |
           <p class="text-white uppercase text-size--2 m-2">Tickets</p>
         </a>
       </button>
+    </div>
+    <p class="font-bold uppercase">The event will be recorded</p>
+    <div class="markdown markdown-sm">
+      {{ recordingBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">COVID-19 on-site protocol</p>
+    <div class="markdown markdown-sm">
+      {{ covidBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
     </div>
     <p class="font-bold uppercase">More about RadicalxChange</p>
     <div class="markdown markdown-sm">
