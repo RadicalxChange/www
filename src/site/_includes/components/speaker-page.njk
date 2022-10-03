@@ -1,0 +1,36 @@
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% macro render(speaker, defaultBio) %}
+<!-- prettier-ignore -->
+{{ closeButton.render("/2022-warsaw") }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 py-margin lg:py-lg/margin mb-24 lg:mb-0"
+>
+  <div class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-9">
+    <header class="text-size--1 mb-line-3/2">
+      <h1>{{ speaker.name }}</h1>
+      {% if speaker.title %}
+      <p>{{ speaker.title }}</p>
+      {% endif %}
+    </header>
+    <div class="markdown markdown-sm mb-line-1">
+      <!-- prettier-ignore -->
+      {% if speaker.bio %}
+      {{ speaker.bio | markdown | safe }}
+      <!-- prettier-ignore -->
+      {% else %}
+      {{ defaultBio | markdown | safe }}
+      <!-- prettier-ignore -->
+      {% endif %}
+    </div>
+    <img src="/images/speakers/{{ speaker.image }}" class="w-full" />
+  </div>
+</div>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endmacro %}

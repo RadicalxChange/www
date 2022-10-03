@@ -118,15 +118,18 @@ wildlandBlurb: |
         <p class="font-bold">{{ p.title }}</p>
         <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {% for s in p.speakers %}
-          <div>
-            <div class="tile circle" style="background-image: url('/images/warsaw-speakers-2022/{{ s.image }}');"></div>
+          <a
+            class="hover:opacity-80 uppercase"
+            href="/speakers/{{ s.name | slug }}"
+            >
+            <div class="tile circle" style="background-image: url('/images/speakers/{{ s.image }}');"></div>
             <div
               class="w-full p-2"
             >
               <h3 class="text-size--2">{{ s.name }}</h3>
               <p class="text-size--4">{{ s.affiliation }}</p>
             </div>
-          </div>
+          </a>
           {% endfor %}
         </div>
       </div>
