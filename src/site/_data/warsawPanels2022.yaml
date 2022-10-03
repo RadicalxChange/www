@@ -1,0 +1,132 @@
+- time: 9:00am-10:00am
+  title: Registration & coffee
+- time: 10:00am-10:25am
+  title: "Welcoming remarks: Intro to RxC & Pluralism"
+  speakers:
+    - name: Jack Henderson
+      affiliation: RadicalxChange
+      image: jack-henderson.png
+    - name: Paula Berman
+      affiliation: RadicalxChange
+      image: paula_berman.jpeg
+    - name: Matt Prewitt
+      affiliation: RadicalxChange
+      image: matt_prewitt.jpg
+      bio: |
+        Matt Prewitt is President of RadicalxChange Foundation. He is a lawyer, writer and technologist focused on new institutions for power sharing and collective intelligence.`,
+- time: 10:30am-11:15am
+  title: Digital Democracy
+  speakers:
+    - name: Matt Prewitt
+      affiliation: RadicalxChange
+      image: matt_prewitt.jpg
+      bio: |
+        Matt Prewitt is President of RadicalxChange Foundation. He is a lawyer, writer and technologist focused on new institutions for power sharing and collective intelligence.`,
+    - name: Stav Shaffir
+      affiliation: Shira Center | former MP of Israel
+      image: stav-shaffir.jpeg
+      bio: |
+        "Social entrepreneur, Former Member of Parliament, Leader of the Green Movement and Founder of the Shira Center; a special academy for people with special needs. Shaffir was the youngest woman ever elected as a MP in Israel. Previously she was one of the leaders of the Israeli social movement that brought hundreds of thousands of Israelis into the streets in 2011, and became Israel's biggest-ever protest, focusing on housing, social services and democracy. A year later, Shaffir got elected in a nationwide primary and became an MP at age 27, and a member of the Finance Committee. Shaffir now works globally on creating collaborations to build the future of democracy, and is a regular contributor to Haaretz newspaper. Numerous publications have recognized her outstanding work: Forbes' 30 Under 30, Apolitical’s The World’s Most Influential Young People in Government, TheMarker 100 Influencers on the Israeli Economy. In 2017 she was selected as a Young Global Leader by the World Economic Forum."
+    - name: Kazimierz Popławski
+      affiliation: Deep Baltic
+      image: kazimierz-poplawski.jpeg
+    - name: Juha Leppanen
+      affiliation: Demos Helsinki
+      image: juha-leppanen.jpeg
+      bio: |
+        Juha Leppänen serves as the Chief Executive of Demos Helsinki. With a mission to build a fair, sustainable and joyful next era, Juha helps national and local governments, businesses and NGOs to anticipate and lead key transformations of our century. Juha has studied and written extensively on the need for 21st-century governance, focusing on democratic innovations, institutional imagination, and methodical experimentalism. Key works include Finland’s framework for experimentalist policymaking and the Humble Governance model. He is consistently pushing for an ambitious agenda in governance of collective problems like the climate crisis, digital transformation, and the economy.
+- time: 11:30am-12:00pm
+  title: Art As a Means of Change
+  speakers:
+    - name: Sara Polak
+      affiliation: Paioneers Lab
+      image: sara-polak.jpeg
+    - name: Alec Empire
+      affiliation: Atari Teenage Riot
+      image: alec-empire.jpeg
+- time: 12:05pm-12:45pm
+  title: Art As a Means of Change
+  speakers:
+    - name: Victoria Ivanova
+      affiliation: Serpentine
+      image: victoria-ivanova.jpeg
+      bio: |
+        Victoria is a curator, writer and strategic consultant, currently R&D Strategic Lead as part of Serpentine’s Arts Technologies team. With a focus on systemic and infrastructural conditions that shape socio-economic, political and institutional realities, Victoria develops innovative approaches to organisational design, policy, finance and rights. She is a co-founder of Izolyatsia – an interdisciplinary cultural platform founded in Donetsk, Ukraine, in 2010, as well of various experiments at the intersection of art and strategy.
+    - name: Anna Engelhardt
+      affiliation: Digital Democracies Institute | Distributed Cognition Cooperative
+      image: anna-engelhardt.jpeg
+      bio: |
+        Anna Engelhardt is a Russian research-based media artist and writer. Engelhardt's practice explores infrastructures of post-Soviet cyberspace, developing digital networks as analogue structures. Engelhardt's investigations take on multiple forms of media as they develop over time, including publications, videos, websites, and physical objects. Engelhardt's primary interest lies in decolonial approaches to cyberspace.
+    - name: Kateryna Rusetska
+      affiliation: Dnipro Center for Contemporary Culture
+      image: kateryna-rusetska.jpeg
+      bio: |
+        Kateryna Rusetska is the co-founder, programme curator and project manager of the Kultura Medialna NGO and the Dnipro Center for Contemporary Culture.
+- time: 12:45pm-1:30pm
+  title: Forking Capitalism for the Common Good
+  speakers:
+    - name: Maïmonatou Mar
+      affiliation: Gribouilli | RxC Paris
+      image: maïmonatou-mar.jpeg
+      bio: |
+        Maïmonatou Mar, PhD is Co-Founder and COO of Gribouilli, the first vocational organization to support and empower women working as nannies in France and its subsidiary cooperative. Along with her mother Aminata Diouf, a senior nanny, Mar has built a network of more than 1000 women and established partnerships with major public and private stakeholders. Mar believes that bottom-up initiatives and cooperative models have the power to revive democratic and economic governance. She has launched the French Chapter of RadicalxChange where she often applies systems thinking she has learned from her previous experience in STEM. Mar has received multiple recognition for her work on social justice. She is Obama Leader and Board Member of French foundations and think tanks on labour and social innovation.
+    - name: Calum Bowden
+      affiliation: Black Swan DAO
+      image: calum-bowden.jpeg
+- time: 1:45pm-3:00pm
+  title: Lunch break
+- time: 3:00pm-3:45pm
+  title: Data
+  speakers:
+    - name: Alek Tarkowski
+      affiliation: Open Future
+      image: alek-tarkowski.jpeg
+      bio: |
+        Dr Alek Tarkowski is a digital activist, strategist and sociologist of technology. He is the co-founder and Strategy Director at the Open Future think tank. He also sits on the Board of Directors of Creative Commons and chairs the Oversight Board of Centrum Cyfrowe, a Polish digital think-and-do tank. His experience includes strategic advisory role in the Polish Office of the Prime Minister and membership in the European Commission Expert Group on AI and Data in Education. His work focuses on strategies and public policies through which digital technologies are shaped to maximize public benefit. New Europe Challenger 2016 and Leadership Academy of Poland alumnus (class of 2017).
+    - name: Joanna Rutkowska
+      affiliation: Golem Foundation | Wildland.io
+      image: joanna-rutkowska.jpeg
+      bio: |
+        Joanna Rutkowska is a founder of Invisible Things Lab and the Qubes OS project, which she has been leading since its inception in 2010. Prior to that she has been focusing on system-level offensive security research. Together with her team at ITL, she has presented numerous attacks on virtualization systems and Intel security technologies, including the famous series of exploits against the Intel Trusted Execution Technology (TXT), the still-only-one software attack demonstrating Intel VT-d escape, and also supervised her team with the pioneering research on breaking into the Intel vPro BIOS and AMT/MT technology. She is also known for writing Blue Pill, the first hardware virtualization-based rootkit, introducing Evil Maid attack, and for her prior work on kernel-mode malware for Windows and Linux in the first half of the 2000s. She proudly holds 0 (zero) patents.
+    - name: Sille Sepp
+      affiliation: MyData
+      image: sille-sepp.jpeg
+    - name: Katarzyna Szymielewicz
+      affiliation: Panoptykon Foundation
+      image: katarzyna-szymielewicz.jpeg
+      bio: |
+        Expert in human rights and technology, lawyer and activist. Co-founder and head of the Panoptykon Foundation – Polish NGO defending human rights in surveillance society. From 2012 to 2020 vice-president of European Digital Rights. In the past – associate at Clifford Chance and member of civic advisory board for the Minister of Digital Affairs in Poland. Ashoka Fellow.
+- time: 4:00pm-4:45pm
+  title: Realizing the Web3 Dream - Towards Non-plutocratic, User-centered Governance
+  speakers:
+    - name: Puja Ohlhaver
+      affiliation: FlashBots
+      image: puja-ohlhaver.jpeg
+      bio: |
+        Puja Ohlhaver is Strategy Counsel at FlashBots and co-author of the paper "Decentralized Society: Finding Web3's Soul." Ohlhaver is a technologist and lawyer who explores the intersection of technology, democracy, and markets. She is an advocate of digital social innovation, as a path to rebooting democracy and testing regulatory innovations. She is an inventor and founder of ClearPath Surgical, a company that seeks to improve health outcomes in minimally invasive surgery. She holds a law degree from Stanford Law School and was previously an investment management attorney.
+    - name: Przemek Kowalczyk
+      affiliation: Ramp Network
+      image: przemek-kowalczyk.jpeg
+    - name: Shrey Jain
+      affiliation: Microsoft
+      image: shrey-jain.png
+      bio: Shrey Jain is a Web3 researcher at Microsoft. Shrey's research focuses on coordination and identity. Shrey is also a technical advisor to product teams at Microsoft and its partners on the best ways to explore Web3 incubations. Shrey works under Glen Weyl and Yorke Rhodes and collaborates with key Web3 researchers like Vitalik Buterin. Shrey previously did research in machine learning for health at the Vector Institute of Technology and MIT CSAIL under the advisory of Dr. Marzyeh Ghassemi as well as worked with Microsoft's Health & AI team. Previously, Shrey has also launched large-scale healthcare projects during the COVID-19 pandemic projects advised by Geoffrey Hinton that operated in Canada and Somalia. Shrey loves to travel, and has qualified for 3 age group world championship triathlons coached by Paula Findlay.
+    - name: Julian Zawistowski
+      affiliation: Golem Foundation | Wildland.io
+      image: julian-zawistowski.jpeg
+- time: 5:00pm-5:45pm
+  title: Digital Activism
+  speakers:
+    - name: Joanna Erbel
+      affiliation: CoopTech Hub | Blisko Foundation
+      image: joanna-erbel.jpeg
+      bio: |
+        Joanna Erbel is a sociologist and urban activist. Since 2007 she has been active in strengthening local communities, increasing the extent of social participation and the quality of urban democracy, as well as supporting sustainable development cities and promoting good solutions for housing policy. Founder of the Blisko Foundation. Since November 2015 she has been a member of the Working Group for Social Affairs, in the process of updating the development strategy of Warsaw – Warsaw 2030. Since 2011 she has been a member of the Congress of Urban Movements (KRM)
+    - name: Iryna Solovey
+      affiliation: Garage Gang
+      image: iryna-solovey.png
+      bio: |
+        Iryna Solovey is a key expert on training and development of the EU Project for Civil Society Development in Ukraine. Since 2008 — the strategist for community development, the president of the public organization "Garage Gang", co-founder of the platform of social innovations "Big Idea" and strategic development consultant for the urban program “City Code”. She holds a Bachelor of Economics and Management Marketing Post-graduate Diploma from McGill University (Montreal, Canada). Garage Gang NGO is a non-profit non-governmental organization that has been implementing the mission of resilient communities in Ukraine since 2009. Starting in 2012, together with the team, she has been successfully developing a crowdfunding mechanism Spilonokosht at the Big Idea platform biggggidea.com. The main purpose of her professional activity is to enable sustainable urban development through the strengthening of creative potential of communities, the crowdfunding of civic initiatives and entrepreneurial leadership, and the empowerment of talents to participate in self-organized initiatives. She teaches courses in Crowdfunding and Fundraising Strategies at the Ukrainian Catholic University. Regularly gives public lectures on managing urban projects, the culture of giving and strategic philanthropy, social entrepreneurship, community development, cultural change and institutional growth conflicts. Promotes the game City Synergy as a learning instrument for getting crews in sync.
+    - name: Alona Shevchenko
+      affiliation: Ukraine DAO
+      image: alona-shevchenko.jpeg

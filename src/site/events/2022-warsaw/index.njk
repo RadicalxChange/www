@@ -20,8 +20,6 @@ topicsBlurb: |
   - Experiencing works of art as windows to connection and means of change.
 scheduleBlurb: |
   Our day will go from 10 AM to 6 PM CEST (UTC+2). Registration opens at 8:30 AM CEST (UTC+2).
-
-  MORE DETAILS COMING SOON.
 freedomGamesBlurb: |
   RadicalxChange will also be participating in the Freedom Games 2022, October 14-16. See the [Freedom Games website](https://igrzyskawolnosci.pl/en/) for more information about attending.
 recordingBlurb: |
@@ -112,6 +110,27 @@ wildlandBlurb: |
     <p class="font-bold uppercase">Schedule</p>
     <div class="markdown markdown-sm">
       {{ scheduleBlurb | markdown | safe }}
+    </div>
+    <div>
+      {% for p in warsawPanels2022 %}
+      <div class="mt-16">
+        <p>{{ p.time }}</p>
+        <p class="font-bold">{{ p.title }}</p>
+        <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
+          {% for s in p.speakers %}
+          <div>
+            <div class="tile circle" style="background-image: url('/images/warsaw-speakers-2022/{{ s.image }}');"></div>
+            <div
+              class="w-full p-2"
+            >
+              <h3 class="text-size--2">{{ s.name }}</h3>
+              <p class="text-size--4">{{ s.affiliation }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
     </div>
     <div class="conference_inline-button">
       <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
