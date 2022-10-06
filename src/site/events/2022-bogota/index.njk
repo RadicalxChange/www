@@ -22,8 +22,6 @@ topicsBlurb: |
   - Exploring use cases for community currencies, data coops, DeID systems, SBTs, and other pro-social technologies
 scheduleBlurb: |
   Our day will go from 10 AM to 5 PM COT.
-
-  MORE DETAILS COMING SOON.
 freedomGamesBlurb: |
   RadicalxChange will also be participating in the Freedom Games 2022, October 14-16. See the [Freedom Games website](https://igrzyskawolnosci.pl/en/) for more information about attending.
 rxcBlurb: |
@@ -89,6 +87,22 @@ fkBlurb: |
     </div>
     <div class="conference_inline-button">
       <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Schedule</p>
+    <div class="markdown markdown-sm">
+      {{ scheduleBlurb | markdown | safe }}
+    </div>
+    <div>
+      {% for p in bogotaPanels2022 %}
+      <div class="mt-16">
+        <p>{{ p.time }}</p>
+        <p class="font-bold">{{ p.title }}</p>
+        <p>{{ p.speakers }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
       <button class="inline-block conference_button">
         <a
           href="https://community910829.typeform.com/to/L3vsKwlW"
@@ -102,13 +116,6 @@ fkBlurb: |
     <p class="font-bold uppercase">Why you should come</p>
     <div class="markdown markdown-sm">
       {{ topicsBlurb | markdown | safe }}
-    </div>
-    <div class="conference_inline-button">
-      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
-    </div>
-    <p class="font-bold uppercase">Schedule</p>
-    <div class="markdown markdown-sm">
-      {{ scheduleBlurb | markdown | safe }}
     </div>
     <div class="conference_inline-button">
       <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
