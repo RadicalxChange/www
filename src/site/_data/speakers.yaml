@@ -29,9 +29,13 @@
 - name: Sara Polak
   affiliation: Paioneers Lab
   image: sara-polak.jpeg
+  bio: |
+    Sara Polak is an Oxford-educated archaeologist working in artificial intelligence. She has worked in startups in London and LA for 7 years and after almost 10 years abroad returned back home to the Czech Republic to help centralise the innovative and technological environment and boost Czech Republic's economy and society through multidisciplinary scalable adoption of cutting edge technologies. PhD in exploring the evolution of music and the effect of Mozart's compositions on human cognition. Writing a book on memes and history.
 - name: Alec Empire
   affiliation: Atari Teenage Riot
   image: alec-empire.jpeg
+  bio: |
+    Alec is an experimental electronic musician, best known as the driving force behind the hugely influential, and internationally successful band Atari Teenage Riot. He is also a prolific and distinguished solo artist, producer, and DJ. He has released over 20 long play albums, contributed to dozens of film soundtracks, and remixed over seventy tracks for various artists including Björk, Rammstein, Slayer, and many more. An outspoken and fiercely independent artist, he is widely recognized as one of the icons of the digital counterculture, and “the conscience of electronic music.”
 - name: Victoria Ivanova
   affiliation: Serpentine
   image: victoria-ivanova.jpeg
@@ -55,6 +59,8 @@
 - name: Calum Bowden
   affiliation: Black Swan DAO
   image: calum-bowden.jpeg
+  bio: |
+    Calum Bowden collaborates on stories, worlds, and platforms that reconnect the cultural with the technological, economical, political and ecological. He co-founded Trust and Black Swan.
 - name: Alek Tarkowski
   affiliation: Open Future
   image: alek-tarkowski.jpeg
@@ -68,6 +74,10 @@
 - name: Sille Sepp
   affiliation: MyData
   image: sille-sepp.jpeg
+  bio: |
+    Sille Sepp serves as the Director of operations at MyData Global, an international nonprofit aimed at empowering individuals by improving their right to self-determination regarding their personal data. Sille focuses on supporting data professionals and organisations in developing human-centric personal data-based services and processes, in order to create more value for individuals, service providers and society at large. With a background in Sociology and Urban Governance, Sille is especially keen to explore the MyData concept in the urban context, and the implications of digital technologies and the data economy on society.
+
+    Previously, Sille has led the Andmekool (School of Data) initiative in Estonia, focusing on raising data literacy among the public sector and civil society. She is an experienced coordinator and training facilitator.
 - name: Katarzyna Szymielewicz
   affiliation: Panoptykon Foundation
   image: katarzyna-szymielewicz.jpeg
@@ -84,10 +94,13 @@
 - name: Shrey Jain
   affiliation: Microsoft
   image: shrey-jain.png
-  bio: Shrey Jain is a Web3 researcher at Microsoft. Shrey's research focuses on coordination and identity. Shrey is also a technical advisor to product teams at Microsoft and its partners on the best ways to explore Web3 incubations. Shrey works under Glen Weyl and Yorke Rhodes and collaborates with key Web3 researchers like Vitalik Buterin. Shrey previously did research in machine learning for health at the Vector Institute of Technology and MIT CSAIL under the advisory of Dr. Marzyeh Ghassemi as well as worked with Microsoft's Health & AI team. Previously, Shrey has also launched large-scale healthcare projects during the COVID-19 pandemic projects advised by Geoffrey Hinton that operated in Canada and Somalia. Shrey loves to travel, and has qualified for 3 age group world championship triathlons coached by Paula Findlay.
+  bio: |
+    Shrey Jain is a Web3 researcher at Microsoft. Shrey's research focuses on coordination and identity. Shrey is also a technical advisor to product teams at Microsoft and its partners on the best ways to explore Web3 incubations. Shrey works under Glen Weyl and Yorke Rhodes and collaborates with key Web3 researchers like Vitalik Buterin. Shrey previously did research in machine learning for health at the Vector Institute of Technology and MIT CSAIL under the advisory of Dr. Marzyeh Ghassemi as well as worked with Microsoft's Health & AI team. Previously, Shrey has also launched large-scale healthcare projects during the COVID-19 pandemic projects advised by Geoffrey Hinton that operated in Canada and Somalia. Shrey loves to travel, and has qualified for 3 age group world championship triathlons coached by Paula Findlay.
 - name: Julian Zawistowski
   affiliation: Golem Foundation | Wildland.io
   image: julian-zawistowski.jpeg
+  bio: |
+    Julian Zawistowski is a decentralised systems visionary and entrepreneur, founder and – until June 2019 – CEO of Golem Factory. Economist by trade, fascinated with blockchain technology, as well as sociology and economics of decentralised systems. In the past consultant and researcher of public policies, co-founder of Institute for Structural Research.
 - name: Joanna Erbel
   affiliation: CoopTech Hub | Blisko Foundation
   image: joanna-erbel.jpeg
@@ -101,3 +114,5 @@
 - name: Alona Shevchenko
   affiliation: Ukraine DAO
   image: alona-shevchenko.jpeg
+  bio: |
+    Alona Shevchenko is a co-founder of Ukraine DAO and co-organizer of the Kyiv Tech Simmit. Alona is Ukrainian, based in the UK. Alone grew up in a rural area in Eastern Ukraine and spent a lot of her free time as a teenager reading books (there weren’t many other ways to entertain yourself) and watering tomatoes in her family’s vegetable garden (didn’t enjoy that very much, not gonna lie). While Ukrainian and Russian are her native languages, Alona also speaks French (although it’s rusty now) and is a member and qualified translator of the Chartered Institute of Linquists in the UK. Currently Alona mostly uses Ukrainian and English.

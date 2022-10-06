@@ -1,7 +1,7 @@
 - time: 8:30am-10:00am
   title: Registration & coffee
 - time: 10:00am-10:25am
-  title: "Welcoming remarks: Intro to RxC & Pluralism"
+  title: Introducing RxC & Plurality
   speakers:
     - name: Jack Henderson
       affiliation: RadicalxChange
@@ -15,7 +15,7 @@
       bio: |
         Matt Prewitt is President of RadicalxChange Foundation. He is a lawyer, writer and technologist focused on new institutions for power sharing and collective intelligence.`,
 - time: 10:30am-11:15am
-  title: Envisioning Digital Democracy
+  title: Imagining How Democracy Could Work
   speakers:
     - name: Matt Prewitt
       affiliation: RadicalxChange
@@ -36,7 +36,7 @@
       bio: |
         Juha Leppänen serves as the Chief Executive of Demos Helsinki. With a mission to build a fair, sustainable and joyful next era, Juha helps national and local governments, businesses and NGOs to anticipate and lead key transformations of our century. Juha has studied and written extensively on the need for 21st-century governance, focusing on democratic innovations, institutional imagination, and methodical experimentalism. Key works include Finland’s framework for experimentalist policymaking and the Humble Governance model. He is consistently pushing for an ambitious agenda in governance of collective problems like the climate crisis, digital transformation, and the economy.
 - time: 11:30am-12:00pm
-  title: Inspiring Change Through Art
+  title: Changing Society Through Art and Technology
   speakers:
     - name: Sara Polak
       affiliation: Paioneers Lab
@@ -44,7 +44,7 @@
     - name: Alec Empire
       affiliation: Atari Teenage Riot
       image: alec-empire.jpeg
-- time: 12:05pm-12:45pm
+- time: 12:15pm-12:45pm
   title: Connecting Across Difference Through Art & Culture
   speakers:
     - name: Victoria Ivanova
@@ -76,7 +76,7 @@
 - time: 1:45pm-3:00pm
   title: Lunch break
 - time: 3:00pm-3:45pm
-  title: Governing Shared Data
+  title: Shared Information and its Governance
   speakers:
     - name: Alek Tarkowski
       affiliation: Open Future
@@ -97,7 +97,7 @@
       bio: |
         Expert in human rights and technology, lawyer and activist. Co-founder and head of the Panoptykon Foundation – Polish NGO defending human rights in surveillance society. From 2012 to 2020 vice-president of European Digital Rights. In the past – associate at Clifford Chance and member of civic advisory board for the Minister of Digital Affairs in Poland. Ashoka Fellow.
 - time: 4:00pm-4:45pm
-  title: Realizing the Web3 Dream - Towards User-centered Governance and Decentralized Societies
+  title: Web3 and The Dream of Radically Distributed Governance
   speakers:
     - name: Puja Ohlhaver
       affiliation: FlashBots
@@ -115,7 +115,7 @@
       affiliation: Golem Foundation | Wildland.io
       image: julian-zawistowski.jpeg
 - time: 5:00pm-5:45pm
-  title: Empowering Civic Hacktivism
+  title: Strengthening Civic Hacktivism
   speakers:
     - name: Joanna Erbel
       affiliation: CoopTech Hub | Blisko Foundation
