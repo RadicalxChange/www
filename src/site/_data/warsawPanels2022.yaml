@@ -34,7 +34,7 @@
 - time: 11:30am-12:15pm
   title: User Agency and Democratic Data Governance
   description: |
-    A person’s data contains deep, predictive insights about other people with whom they associate, so whenever one person discloses or withholds it, countless others are affected in important ways. Indeed if anyone has absolute control over “their own” data, no one does. Democratically and mutually accountable consortia for data governance are the most promising direction for our institutions to evolve in to grapple with this fundamental issue. This panel will discuss the emerging legal, regulatory, and technological landscape that could enable these new institutions to thrive.
+    Most people agree platforms should not control our digital lives, but when conversations move to precise alternatives, natural misalignments arise. For instance, some want user agency and individual control of data. Others see almost all data as shared, interpersonal, and in need of democratic governance. This panel will discuss new paradigms for data governance.
   speakers:
     - name: Alek Tarkowski
       affiliation: Open Future
@@ -89,7 +89,7 @@
 - time: 4:15pm-5:00pm
   title: Web3 and The Dream of Radically Distributed Governance
   description: |
-    Basically all technology is dual-use. And though most uses of web3 technologies have been for financial speculation and accumulation, those same technologies could be repurposed to deliver radically distributed governance and facilitate cooperation across diversity. This panel will discuss the role of common knowledge in coordination, how decentralization has led to context collapse, and how web3 could be harnessed as a substrate for plural publics and network societies.
+    While most uses of web3 technologies have been for financial speculation and accumulation, those same technologies can be repurposed to support "plural publics" and cooperation across diversity. This panel will discuss how blockchains create "common knowledge" and why they could play an important role in most human coordination if they start to hold social context.
   speakers:
     - name: Puja Ohlhaver
       affiliation: FlashBots
@@ -113,7 +113,10 @@
       image: joanna-erbel.jpeg
     - name: Iryna Solovey
       affiliation: Garage Gang
-      image: iryna-solovey.png
+      image: iryna-solovey.jpeg
     - name: Alona Shevchenko
       affiliation: Ukraine DAO
       image: alona-shevchenko.jpeg
+    - name: Paula Berman
+      affiliation: RadicalxChange
+      image: paula_berman.jpeg
