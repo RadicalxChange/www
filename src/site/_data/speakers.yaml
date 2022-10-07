@@ -116,3 +116,61 @@
   image: alona-shevchenko.jpeg
   bio: |
     Alona Shevchenko is a co-founder of Ukraine DAO and co-organizer of the Kyiv Tech Simmit. Alona is Ukrainian, based in the UK. Alone grew up in a rural area in Eastern Ukraine and spent a lot of her free time as a teenager reading books (there weren’t many other ways to entertain yourself) and watering tomatoes in her family’s vegetable garden (didn’t enjoy that very much, not gonna lie). While Ukrainian and Russian are her native languages, Alona also speaks French (although it’s rusty now) and is a member and qualified translator of the Chartered Institute of Linquists in the UK. Currently Alona mostly uses Ukrainian and English.
+- name: Audrey Tang
+  affiliation: Digital Minister of Taiwan
+  image: audrey-tang.jpeg
+  bio: |
+    Audrey Tang (@audreyt) is Taiwan’s first digital minister and the first openly transgender government minister in the world. She is known for revitalizing the computer languages Perl and Haskell, as well as for building the online spreadsheet system EtherCalc in collaboration with Dan Bricklin. In the public sector, she has served on the Taiwan National Development Council’s open data and K-12 curriculum committees and has led the country’s first e-Rulemaking project. In the private sector, Audrey has worked as a consultant with Apple on computational linguistics, with Oxford University Press on crowd lexicography, and with Socialtext on social interaction design. In the social sector, Audrey actively contributes to g0v (“gov zero”), a vibrant community focusing on creating tools for the civil society, with the call to “fork the government.” She also hosts the video podcast "Innovative Minds with Audrey Tang".
+- name: Claudia Chwalisz
+  affiliation: DemocracyNext
+  image: claudia-chwalisz.jpeg
+- name: Cory Doctorow
+  affiliation: Craphound, Electronic Frontier Foundation
+  image: cory-doctorow.jpeg
+  bio: |
+    Cory Doctorow (craphound.com) is a science fiction author, activist and journalist. He is the author of many books, most recently RADICALIZED and WALKAWAY, science fiction for adults; HOW TO DESTROY SURVEILLANCE CAPITALISM, nonfiction about monopoly and conspiracy; IN REAL LIFE, a graphic novel; and the picture book POESY THE MONSTER SLAYER. His latest book is ATTACK SURFACE, a standalone adult sequel to LITTLE BROTHER; his next nonfiction book is CHOKEPOINT CAPITALISM, with Rebecca Giblin, about monopoly, monopsony and fairness in the creative arts labor market, (Beacon Press, 2022). In 2020, he was inducted into the Canadian Science Fiction and Fantasy Hall of Fame.
+- name: Ehud Shapiro
+  affiliation: Weizmann Institute of Science
+  image: ehud-shapiro.jpeg
+  bio: |
+    Ehud Shapiro is an interdisciplinary scientist, entrepreneur, artist and political activist. He got a BA/BSc in Mathematics and Philosophy from Tel Aviv University in 1979, a PhD in Computer Science from Yale University in 1982, and has been with the Weizmann Institute of Science ever since, where he holds the Harry Weinrebe Professorial Chair of Computer Science and Biology.  His PhD research on inductive logic programming and on algorithmic debugging has served as a foundation for these two disciplines. At Weizmann he developed the discipline of concurrent logic programming and the distributed logic programming language Concurrent Prolog. In 1993 he founded Ubique Ltd., the first Internet social networking software startup.  In 1995 Ubique launched Virtual Places 1.0, a social networking/2D metaverse application with 2D avatars on web pages, providing instant-messaging, chat rooms, joint and guided web-surfing, online events and games, and integrated voice-over-IP.  This was more than a decade before Facebook was founded and two-and-a-half decades before it announced its interest in the metaverse. He sold Ubique to America Online, performed a management-buy-out, and then sold it again to IBM in 1998, where its technology was the basis of SameTime, IBM's successful corporate network communication and collaboration product. Upon return to Weizmann in 1998, Ehud switched to Biology, and led research projects on biomolecular computers, synthetic biology, and human cell lineage reconstruction, for which he received two ERC Advanced Grants. In 2017 he began working on digital democracy, initially with Nimrod Talmon and later also with collaborators and a research team he formed at Weizmann. In 2020 Ehud founded a new Israeli political party, democratit. Ehud is a bass singer and the founder and artistic director of the Ba-Rock Band. He is presently on Sabbatical at Columbia University, the Department of Computer Science.
+- name: Henry Farrell
+  affiliation: Johns Hopkins School of Advanced International Studies
+  image: henry-farrell.jpeg
+  bio: |
+    Henry Farrell is SNF Agora Institute Professor at Johns Hopkins School of Advanced International Studies, 2019 winner of the Friedrich Schiedel Prize for Politics and Technology, and Editor in Chief of the Monkey Cage blog at the Washington Post. He works on a variety of topics, including democracy, the politics of the Internet and international and comparative political economy. He has written articles and book chapters as well as two books, The Political Economy of Trust: Interests, Institutions and Inter-Firm Cooperation, published by Cambridge University Press, and (with Abraham Newman) Of Privacy and Power: The Transatlantic Fight over Freedom and Security, published by Princeton University Press.
+- name: Joe Edelman
+  affiliation: The School for Social Design
+  image: joe-edelman.png
+  bio: |
+    Joe developed the meaning-based organizational metrics at Couchsurfing.com, then co-founded the Center for Humane Technology with Tristan Harris, and coined the term “Time Well Spent” for a family of metrics adopted by teams at Facebook, Google, and Apple. Since then, he's worked on the philosophical underpinnings for new business metrics, design methods, and political movements. The central idea is to make people's sources of meaning explicit, so that how meaningful or meaningless things are can be rigorously accounted for. His previous career was in HCI and programming language design.
+- name: Leon Erichsen
+  affiliation: Gitcoin
+  image: leon-erichsen.jpeg
+  bio: |
+    Leon Erichsen is a social technologist who works on numerous topics, including the philosophy of pluralism, internet governance, and the future of political economies. In his day job, he works with Gitcoin, building products for plural capital provision. Previously, he studied management, philosophy, and economics at Frankfurt & School of Finance & Management and worked as an entrepreneurship and technology evangelist at RadicalxChange Foundation.
+- name: Luuk van Middelaar
+  affiliation: Leiden Law School
+  image: luuk-van-middelaar.png
+  bio: |
+    Luuk van Middelaar is a political theorist and historian. The author of the prizewinning The Passage to Europe (2013), he recently published Le Réveil géopolitique de l’Europe (2022), Pandemonium (2021) and Alarums and Excursions (2019), groundbreaking accounts of the Union’s crisis politics.
+- name: Morshed Mannan
+  affiliation: European University Institute
+  image: morshed-mannan.jpeg
+  bio: |
+    Dr. Morshed Mannan's research focuses on blockchain governance and platform cooperatives. He received his Ph.D. from Leiden Law School on the emergence of democratic firms in the platform economy. He is a member of the BlockchainGov research project and a Research Affiliate of the Institute for the Cooperative Digital Economy at The New School. Morshed has acted as an expert for UN DESA on the legal framework for platform cooperatives and consulted for the International Co-operative Alliance and the NCBA CLUSA-International on topics of cooperative law. He has been called to the Bar of England & Wales and Bangladesh.
+- name: Patryk Wachowiec
+  affiliation: Civil Development Forum (Poland)
+  image: patryk-wachowiec.jpeg
+  bio: |
+    Patryk Wachowiec is the Rule of Law in Poland editor and Legal Analyst at the Civil Development Forum (Poland). Previously, he was a parliamentary consultant at the Bureau of Research of the Chancellery of the Sejm where he was providing legal assistance for Deputies and Sejm bodies. His tasks included counselling on a range of legal and systemic topics, in particular analyzing the quality of drafted legal solutions and consulting with the Petitions Committee of the Sejm. He also cooperated with the European Centre for Parliamentary Research and Documentation (ECPRD). Since 2015, Wachowiec is a founder and CEO at CADR Institute – foundation aiming particularly to track and improve government transparency and support law simplification. His main interest is constitutional and EU law, as well as government openess. He also holds a degree in European studies from Warsaw University.
+- name: Sylvie Delacroix
+  affiliation: University of Birmingham, Alan Turing Institute
+  image: sylvie-delacroix.jpeg
+  bio: |
+    Sylvie Delacroix is a professor in law and ethics at the University of Birmingham and a fellow of the Alan Turing Institute. Her interest in the infrastructure that moulds our habits notably leads her to pay attention to the power imbalances that stem from our increased reliance on data-reliant tools. As a concrete way of mitigating the latter, she co-chairs the Data trust Initiative. @SylvieDelacroix
+- name: Tom Atlee
+  affiliation: Co-Intelligence Institute
+  image: tom-atlee.jpeg
+  bio: |
+    Tom Atlee is founder and research director of the nonprofit Co-Intelligence Institute, author of four books including the Tao of Democracy and Empowering Public Wisdom, and creator of the Wise Democracy Pattern Language. He researches how to scale citizen and stakeholder dialogues and deliberations on public issues, both in-person and virtually, in ways that generate energy and guidance for longterm broad benefit. His co-intelligence work emerged from his experiences on the 9-month 400 person “leaderful" (self-organizing) Great Peace March across the US in 1986. He currently lives in a cooperative house in Eugene, Oregon.

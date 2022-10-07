@@ -1,31 +1,17 @@
 ---
 layout: layouts/_base.njk
-title: 2022 Warsaw
-headerText: "RadicalxChange Warsaw: Europe and The Futures of Pluralism"
+title: 2022 Freedom Games
+headerText: "2022 Freedom Games"
 introductionBlurb: |
   With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
 
-  This October, the RxC community will safely gather in neighboring Warsaw, Poland, for a day of solidarity, inspiration, and co-creation.
+  This October, the RxC community will safely gather in Łódź, Poland for the 2022 Freedom Games (Oct 14-16), and subsequently in neighboring Warsaw, Poland, for a day of solidarity, inspiration, and co-creation.
 
-  Together in Warsaw, we will learn of pioneering digital democracy practices in Ukraine, Estonia, and across Eastern Europe. We will experience works of art as windows to connection, and examine European institutions through the frame of pluralistic governance. We will uplift the work of activists, social fabric weavers, and critical voices. We will consider European cases for community currencies, data cooperatives, decentralized identity systems, communication tools, and other pro-social digital infrastructures and civic technologies.
+  Together in Poland, we will learn of pioneering digital democracy practices in Ukraine, Estonia, and across Eastern Europe. We will experience works of art as windows to connection, and examine European institutions through the frame of pluralistic governance. We will uplift the work of activists, social fabric weavers, and critical voices. We will consider European cases for community currencies, data cooperatives, decentralized identity systems, communication tools, and other pro-social digital infrastructures and civic technologies.
 bodyText: |
-  We invite you to join us at our conference “RadicalxChange Warsaw: Europe and The Futures of Pluralism” in Poland this fall, with the support of [Wildland](https://wildland.io). The event will take place on Tuesday, the 18th of October 2022, at the [Mała Warszawa](https://goo.gl/maps/J3r6PqmAJTiAcDmZ6) conference center. This follows the weekend of the [2022 Freedom Games in Łódź, Poland, & Online (Oct 14-16)](https://igrzyskawolnosci.pl/en/) where RadicalxChange is a partner.
-topicsBlurb: |
-  All are welcome to join, and we’ll be covering topics like:
-
-  - Examining European institutions through the frame of pluralistic, decentralized governance models
-  - Considering European cases for community currencies, data coops, DeID systems, SBTs, and other pro-social technologies
-  - Paving the blockchain/web3 roads to increased user agency, interoperability, political participation, and funding the common good
-  - Uplifting the work of activists, social fabric weavers, and critical voices
-  - Experiencing works of art as windows to connection and means of change.
-scheduleBlurb: |
-  Our day will go from 10 AM to 6 PM CEST (UTC+2). Registration opens at 8:30 AM CEST (UTC+2).
-freedomGamesBlurb: |
-  RadicalxChange will also be participating in the [Freedom Games 2022](https://igrzyskawolnosci.pl/en/), October 14-16. See our [schedule for the Freedom Games here](/events/2022-freedom-games).
-recordingBlurb: |
-  Please note that the event will be filmed and photographed. We will make photos and recordings of the event available online for all interested parties.
-
-  Event participants who do not want to be photographed or filmed should ask for a special sticker at the registration desk on-site. By placing the sticker on your name tag, you will notify our crew that you would prefer not to be included in the recordings.
+  We invite you to join us at the [2022 Freedom Games in Łódź, Poland, & Online (Oct 14-16)](https://igrzyskawolnosci.pl/en/), and at our conference “[RadicalxChange Warsaw: Europe and The Futures of Pluralism](/events/2022-warsaw/)” in Poland this fall, with the support of [Wildland](https://wildland.io).
+warsawBlurb: |
+  RadicalxChange will also be hosting a conference “[RadicalxChange Warsaw: Europe and The Futures of Pluralism](/events/2022-warsaw/)” in Warsaw, with the support of [Wildland](https://wildland.io). The event will take place on Tuesday, the 18th of October 2022, at the [Mała Warszawa](https://goo.gl/maps/J3r6PqmAJTiAcDmZ6) conference center.
 covidBlurb: |
   Polish law does not require event participants to show proof of vaccination or undergo a rapid test on-site. Masking is encouraged but not mandatory. If the epidemic situation and the legal requirements change we will notify all registered event participants about the new requirements prior to the event date.
 rxcBlurb: |
@@ -51,28 +37,13 @@ wildlandBlurb: |
       {{ logo.render(classes="hidden lg:inline-block align-top") }}
     </a>
     <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display break-words">
-      RadicalxChange Warsaw:
-    </h1>
-    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display break-words">
-      Europe and The
-    </h1>
-    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display break-words">
-      Futures of Pluralism
+      Freedom Games 2022
     </h1>
   </header>
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2"
   >
-    <p><strong>Where? </strong>
-      <a
-        href="https://goo.gl/maps/J3r6PqmAJTiAcDmZ6"
-        target="_blank"
-        rel="noopener nofollow noreferrer"
-        class="inline-link"
-      >
-        MAŁA WARSZAWA
-      </a> - Otwocka 14, 03-759 Warszawa, Poland</p>
-    <p><strong>When? </strong>Tuesday, 18 October 2022, 9:00 AM to 6:00 PM CEST</p>
+    <p>15-16 October 2022</p>
     <div class="markdown markdown-sm font-bold text-justify">
       {{ introductionBlurb | markdown | safe }}
     </div>
@@ -83,20 +54,17 @@ wildlandBlurb: |
       <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
       <button class="inline-block conference_button">
         <a
-          href="https://www.eventbrite.com/e/radicalxchange-warsaw-europe-and-the-futures-of-pluralism-tickets-411692000857"
+          href="https://sklep.liberte.pl/bilety/"
           target="_blank"
           rel="noopener nofollow noreferrer"
         >
-          <p class="text-white uppercase text-size--2 m-2">Register</p>
+          <p class="text-white uppercase text-size--2 m-2">Tickets</p>
         </a>
       </button>
     </div>
     <p class="font-bold uppercase">Schedule</p>
-    <div class="markdown markdown-sm">
-      {{ scheduleBlurb | markdown | safe }}
-    </div>
     <div>
-      {% for p in warsawPanels2022 %}
+      {% for p in lodzPanels2022 %}
       <div class="mt-16">
         <p>{{ p.time }}</p>
         <p class="font-bold">{{ p.title }}</p>
@@ -124,54 +92,6 @@ wildlandBlurb: |
       <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
       <button class="inline-block conference_button">
         <a
-          href="https://www.eventbrite.com/e/radicalxchange-warsaw-europe-and-the-futures-of-pluralism-tickets-411692000857"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-        >
-          <p class="text-white uppercase text-size--2 m-2">Register</p>
-        </a>
-      </button>
-    </div>
-    <p class="font-bold uppercase">Why you should come</p>
-    <div class="markdown markdown-sm">
-      {{ topicsBlurb | markdown | safe }}
-    </div>
-    <div class="conference_inline-button">
-      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
-      <button class="inline-block conference_button">
-        <a
-          href="https://www.eventbrite.com/e/radicalxchange-warsaw-europe-and-the-futures-of-pluralism-tickets-411692000857"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-        >
-          <p class="text-white uppercase text-size--2 m-2">Register</p>
-        </a>
-      </button>
-    </div>
-    <p class="font-bold uppercase">A guide to Warsaw / lodging / travel</p>
-    <div class="markdown markdown-sm">
-      {{ "See this [guide to traveling in Warsaw](https://hackmd.io/hL1TE9p8SgSXAhRe97JSmA)" | markdown | safe }}
-    </div>
-    <div class="conference_inline-button">
-      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
-      <button class="inline-block conference_button">
-        <a
-          href="https://hackmd.io/hL1TE9p8SgSXAhRe97JSmA"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-        >
-          <p class="text-white uppercase text-size--2 m-2">Guide</p>
-        </a>
-      </button>
-    </div>
-    <p class="font-bold uppercase">Freedom Games</p>
-    <div class="markdown markdown-sm">
-      {{ freedomGamesBlurb | markdown | safe }}
-    </div>
-    <div class="conference_inline-button">
-      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
-      <button class="inline-block conference_button">
-        <a
           href="https://sklep.liberte.pl/bilety/"
           target="_blank"
           rel="noopener nofollow noreferrer"
@@ -180,12 +100,21 @@ wildlandBlurb: |
         </a>
       </button>
     </div>
-    <p class="font-bold uppercase">The event will be recorded</p>
+    <p class="font-bold uppercase">RadicalxChange Warsaw</p>
     <div class="markdown markdown-sm">
-      {{ recordingBlurb | markdown | safe }}
+      {{ warsawBlurb | markdown | safe }}
     </div>
     <div class="conference_inline-button">
       <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+      <button class="inline-block conference_button">
+        <a
+          href="https://www.eventbrite.com/e/radicalxchange-warsaw-europe-and-the-futures-of-pluralism-tickets-411692000857"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p class="text-white uppercase text-size--2 m-2">Register</p>
+        </a>
+      </button>
     </div>
     <p class="font-bold uppercase">COVID-19 on-site protocol</p>
     <div class="markdown markdown-sm">

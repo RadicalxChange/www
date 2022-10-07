@@ -1,0 +1,155 @@
+- time: Sat, 15 Oct 2022 | 11:00 - 12:00
+  location: Plenary session
+  title: Harnessing Web3 for Good
+  description: |
+    Much of “web3” is about financial speculation and accumulation. But in certain pockets of the crypto ecosystem, civic projects have taken root with democratic values and begun to flower. This panel will discuss how web3 has opened up ways for the world to support Ukraine, to crowdfund open source software projects, and to improve political campaigning.
+  speakers:
+    - name: Leon Erichsen
+      affiliation: Gitcoin
+      image: leon-erichsen.jpeg
+    - name: Alona Shevchenko
+      affiliation: Ukraine DAO
+      image: alona-shevchenko.jpeg
+    - name: Paula Berman
+      affiliation: RadicalxChange
+      image: paula_berman.jpeg
+- time: Sat, 15 Oct 2022 | 12:15 - 12:45
+  location: Main event stage
+  title: Citizens’ Assemblies and DemocracyNext
+  description: |
+    In recent years, Europe has increasingly embraced citizens’ assemblies. As a democratic and deliberative model, these bodies have proven adaptable, legitimate, and effective. Could they go further, exercising more vital political authority, and even replacing elections?
+  speakers:
+    - name: Claudia Chwalisz
+      affiliation: DemocracyNext
+      image: claudia-chwalisz.jpeg
+- time: Sat, 15 Oct 2022 | 12:45 - 13:15
+  location: Main event stage
+  title: Technology for Democracy in Ukraine
+  description: |
+    Hear from Alona Shevchenko, the co-founder of UkraineDAO, which has raised and distributed millions of dollars to aid Ukraine, and organizer of the Kyiv Tech Summit, which convenes local technologists to solve on-the-ground problems in the Ukrainian people’s fight for freedom. Both initiatives are supported by the Ministry of Digital Transformation of Ukraine.
+  speakers:
+    - name: Alona Shevchenko
+      affiliation: Ukraine DAO
+      image: alona-shevchenko.jpeg
+- time: Sat, 15 Oct 2022 | 13:30 - 14:30
+  location: Plenary session
+  title: Plural Money
+  description: |
+    We often accept money as a fact of life. In fact, it is an institution whose design empowers some actors and shapes society. Cryptocurrencies have reminded us of the possibility that money could work differently; yet it is not clear that the most well-known cryptocurrencies set money on a more democratic path. This panel explores unexpected possible futures for money.
+  speakers:
+    - name: Matt Prewitt
+      affiliation: RadicalxChange
+      image: matt_prewitt.jpg
+    - name: Ehud Shapiro
+      affiliation: Weizmann Institute of Science
+      image: ehud-shapiro.jpeg
+    - name: Joanna Erbel
+      affiliation: CoopTech Hub | Blisko Foundation
+      image: joanna-erbel.jpeg
+- time: Sat, 15 Oct 2022 | 14:30 - 15:30
+  title: Lunch
+- time: Sat, 15 Oct 2022 | 15:30 - 16:30
+  location: Plenary session
+  title: Network Society
+  description: |
+    Social thinkers like John Dewey have long imagined the proliferation of “new publics” that could serve the roles nation-states are no longer able to fulfill in a globalized world. New technologies have led to unprecedented public problems, but they also yield new opportunities. Imagine the cascading benefits of digital public spaces that algorithmically highlight points of consensus and encourage conversation across lines of difference. This panel will discuss the relationship between technology and new publics.
+  speakers:
+    - name: Shrey Jain (M)
+      affiliation: Microsoft
+      image: shrey-jain.png
+    - name: Henry Farrell
+      affiliation: Johns Hopkins School of Advanced International Studies
+      image: henry-farrell.jpeg
+    - name: Julian Zawistowski
+      affiliation: Golem Foundation | Wildland.io
+      image: julian-zawistowski.jpeg
+    - name: Puja Ohlhaver (virtual)
+      affiliation: FlashBots
+      image: puja-ohlhaver.jpeg
+- time: Sat, 15 Oct 2022 | 16:45 - 17:45
+  location: Plenary session
+  title: Deliberation Technology
+  description: |
+    When people think of democracy narrowly as voting on referenda, which often lead to superficial decisions, they conclude democracy is broken. But democracy is so much more than voting. A huge part of it is deliberation: rich, exploratory spaces where we share our views, listen and learn from each other, and creatively bridge across our different values to co-create a common vision. This panel will discuss new spaces, institutions, and technologies for deliberative democracy.
+  speakers:
+    - name: Tom Atlee (virtual)
+      affiliation: Co-Intelligence Institute
+      image: tom-atlee.jpeg
+    - name: Claudia Chwalisz
+      affiliation: DemocracyNext
+      image: claudia-chwalisz.jpeg
+    - name: Joe Edelman
+      affiliation: The School for Social Design
+      image: joe-edelman.png
+    - name: Juha Leppanen
+      affiliation: Demos Helsinki
+      image: juha-leppanen.jpeg
+    - name: Jack Henderson (M)
+      affiliation: RadicalxChange
+      image: jack-henderson.png
+- time: Sat, 15 Oct 2022 | 18:00 - 18:45
+  location: Plenary session
+  title: The Future of Jurisprudence
+  description: |
+    In a sense, the promise of network technology, and the hope of democracy, is to distribute authority. And perhaps no institution is in more obvious tension with this ambition than courts: a centralized and technocratic institution that plays a vital role in every democratic society. In Europe, a system of plural constitutional orders underpins the most successful political project of the last half century; yet is now encountering serious difficulty. On digital networks, efforts to democratize the judicial function have been similarly halting, from Facebook’s oversight board to web3. What is the future of jurisprudence?
+  speakers:
+    - name: Matt Prewitt (M)
+      affiliation: RadicalxChange
+      image: matt_prewitt.jpg
+    - name: Patryk Wachowiec
+      affiliation: Civil Development Forum (Poland)
+      image: patryk-wachowiec.jpeg
+    - name: Morshed Mannan
+      affiliation: European University Institute
+      image: morshed-mannan.jpeg
+- time: Sat, 15 Oct 2022 | 19:00 - 19:45
+  location: Plenary session
+  title: Information Flows and Data Trusts
+  description: |
+    A person’s data contains deep, predictive insights about other people with whom they associate, so whenever one person discloses or withholds it, countless others are affected in important ways. Indeed if anyone has absolute control over “their own” data, no one does. Democratically and mutually accountable consortia for data governance are the most promising direction for our institutions to evolve in to grapple with this fundamental issue. This panel will discuss the emerging legal, regulatory, and technological landscape that could enable these new institutions to thrive.
+  speakers:
+    - name: Sylvie Delacroix (virtual)
+      affiliation: University of Birmingham, Alan Turing Institute
+      image: sylvie-delacroix.jpeg
+    - name: Morshed Mannan
+      affiliation: European University Institute
+      image: morshed-mannan.jpeg
+    - name: Alek Tarkowski (M)
+      affiliation: Open Future
+      image: alek-tarkowski.jpeg
+    - name: Katarzyna Szymielewicz
+      affiliation: Panoptykon Foundation
+      image: katarzyna-szymielewicz.jpeg
+- time: Sat, 15 Oct 2022 | 20:00 - 21:15
+  location: Plenary session
+  title: Plurality
+  description: |
+    In this wide-ranging conversation, Audrey and Cory discuss aspects of their work that are not well understood; their concerns with escapist ideologies and the promise of connecting across difference; the importance of increasing the bandwidth of democracy; what plurality means to them and how it can be a guide for steering the future of technology; how Taiwan sits at the triangular intersection of American capitalism, European values-based democracy, and Chinese centralized or AI-driven governance; the elements of pluralism inherent to the European project; the media ecosystem; the role of science fiction; and much more. Cory has just released a new book, Chokepoint Capitalism, and Audrey is currently writing her first book, Plurality, with Glen Weyl.
+  speakers:
+    - name: Matt Prewitt (M)
+      affiliation: RadicalxChange
+      image: matt_prewitt.jpg
+    - name: Audrey Tang
+      affiliation: Digital Minister of Taiwan
+      image: audrey-tang.jpeg
+    - name: Cory Doctorow
+      affiliation: Craphound, Electronic Frontier Foundation
+      image: cory-doctorow.jpeg
+- time: Sun, 16 Oct 2022 | 11:00 - 11:30
+  location: Main event stage
+  title: The Future of the European Union After Crises
+  description: |
+    For a long time, European politics has been a top-down affair. But in recent crises, it was the European public at large which asked for joint action — bottom-up. During the Covid-19 pandemic, calls for solidarity and help by Italian and Spanish citizens triggered far-reaching decisions, such as the joint purchase of vaccines and the massive EU recovery fund. The brutal war in Ukraine likewise strengthens a sentiment of continental belonging. Drawing on the work of John Dewey and Hannah Arendt, Luuk van Middelaar will speak about the new and unexpected interplay between the European public and its political leaders.
+  speakers:
+    - name: Luuk van Middelaar
+      affiliation: Leiden Law School
+      image: luuk-van-middelaar.png
+- time: Sun, 16 Oct 2022 | 11:30 - 12:00
+  location: Main event stage
+  title: Cities and Democracy
+  description: |
+    Stav Shaffir helped lead the Israeli social movement that brought hundreds of thousands of Israelis into the streets in 2011. At age 27, she became the youngest woman ever elected as a Member of Parliament in Israel. Now Shaffir is focused on global collaborations building the future of democracy. In her eyes, cities are at the heart of democracy and pluralism, and they are the most compelling level of society to foster democratic innovations. Hear why Shaffir sees the most likely paths to a flourishing future for democracy running through our cities.
+  speakers:
+    - name: Stav Shaffir
+      affiliation: Shira Center | former MP of Israel
+      image: stav-shaffir.jpeg
