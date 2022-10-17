@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: false,
+    isOn: true,
     title: "Governance and Technological Progress",
     description: `October 18th, 9:00am to 6:00 pm CEST
 
@@ -14,7 +14,7 @@ Together we will learn of pioneering digital democracy practices in Ukraine, Est
     slidoUrl: "https://app.sli.do/event/hMbwwnMR3XfHqd541maCk3",
   },
   popup: {
-    isOn: true,
+    isOn: false,
     title: "Announcing the RxC Warsaw Conference & Freedom Games",
     bodyText: `With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
 
