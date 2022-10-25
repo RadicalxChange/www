@@ -1,7 +1,7 @@
 module.exports = {
   rxcTv: {
     isOn: false,
-    title: "Governance and Technological Progress",
+    title: "RadicalxChange Warsaw: Europe and The Futures of Pluralism",
     description: `October 18th, 9:00am to 6:00 pm CEST
 
 With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
