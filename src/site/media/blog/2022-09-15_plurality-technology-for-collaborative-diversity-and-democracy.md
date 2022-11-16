@@ -39,6 +39,9 @@ postAuthor: "Audrey Tang, E. Glen Weyl"
   <a
     style="display:block; margin-bottom:1em"
     href="#polski">Polski</a>
+  <a
+    style="display:block; margin-bottom:1em"
+    href="#español">Español</a>
 </div>
 </div>
 
@@ -1448,3 +1451,154 @@ Poniższy konspekt dzieli się na części i rozdziały. Dla każdego rozdziału
   </li>
 </ol>
 </div>
+
+## Español
+
+Presentando y pidiendo colaboración para *Pluralidad: Tecnología para la Diversidad y Democracia Colaborativa*
+
+Estamos a punto de embarcarnos en un viaje y esperamos que te unas a nosotros. Durante esta reciente media década, con la colaboración de muchas y muchos de ustedes, hemos estado desarrollando una narrativa alternativa sobre el futuro de la tecnología a las habituales que se enfocan en la financiarización o la inteligencia artificial centralizada. La Pluralidad, como la llamamos, es la tecnología que reconoce, respeta y potencia la cooperación considerando las diferencias sociales y culturales. Se puede conocer un poco más al respecto en la descripción general a continuación. Creemos que la pluralidad es el paradigma tecnológico natural para apoyar el florecimiento de las sociedades democráticas y puede remediar muchas de las divisiones arraigadas en nuestro mundo actual. Queremos contarle al mundo sobre esta posibilidad para que podamos estimular la inversión y la experimentación diversas y coordinadas que pueden hacerla realidad. Y queremos tu ayuda.
+
+Si bien nuestro plan preciso evolucionará con los avances en la investigación de la Pluralidad y las realidades prácticas, estamos comprometidos a incorporar las ideas del libro en la forma en que lo creamos, distribuimos y apoyamos financieramente. Todo el material será una Obra Cultural Libre, en la categoría más permisiva de la licencia Creative Commons. Planeamos escribir el libro en público en una estructura similar a git, donde solicitaremos asistencia editorial y de investigación abiertamente de la comunidad, e involucraremos a quiénes contribuyan para ayudarnos a priorizar las solicitudes de cambio y, eventualmente, controlar el contenido del libro. Apoyaremos los gastos financieros para la disponibilidad del libro utilizando una variedad de mecanismos alineados y nativos de la web3, que incluyen las subvenciones de Financiamiento Plural / Cuadrático, los "autógrafos" NFT en copias físicas y digitales compradas del libro y las NFT SALSA / Harberger para conseguir acceso a Glen como orador / consultor. Representaremos una variedad de roles que contribuyen al libro utilizando Soulbound Tokens (SBT), que utilizaremos como la base para la gobernanza de las decisiones sobre el contenido después de su publicación física, incluyendo la disposición de gran parte de los fondos recaudados, prácticamente convirtiendo a la comunidad del libro en una Organización Autónoma Distribuida (DAO). Tendremos estrecha colaboración con Protocol Labs (PL) para construir el sustrato tecnológico que permita que esto funcione, con la expectativa de ayudar a inventar un nuevo modelo de publicación para la era web3.
+
+A la vez, como pluralistas, no queremos llegar solo a los "nativos web3", y por eso esperamos hacer que el libro sea un hermoso objeto físico, fácilmente accesible, distribuido y revisado en canales de publicación y medios estándar. Por lo tanto, no solo necesitamos a hackers y escritores, sino también a diseñadores, narradores, marqueteros, traductores, editoriales, etc. para trabajar con nosotros. Y cómo entendemos que se pueden preferir más derechos individuales en lugar de derechos de gobernanza sobre potenciales flujos especulativos, estamos abiertos a negociar con socios que comparten nuestras metas y visión en otras dimensiones. En cualquier caso, ni Audrey ni Glen recibirán ninguna compensación ni regalías por su trabajo en el texto, para cumplir con las responsabilidades legales asociadas con su empleo y para garantizar que cualquier ingreso apoye nuestra misión y a la comunidad que esperamos construir.
+
+Pronto presentaremos la plataforma de software que apoyará nuestra redacción en público y la gestión de la participación, pero si identificas una forma en que deseas contribuir antes de eso, no dudes en [escribir a Glen](mailto:glen@radicalxchange.org). El futuro de la tecnología puede honrar y apoyar los valores que apreciamos si trabajamos juntas y juntos para imaginarlo y explicarlo.
+
+<h2>VISIÓN GENERAL</h2>
+
+La tecnología y la democracia están en guerra: la tecnología refuerza la vigilancia autoritaria y corroe las instituciones democráticas, mientras que las democracias contraatacan con una regulación restrictiva y el conservadurismo del sector público. Sin embargo, este conflicto no es inevitable; es una elección que hemos hecho al invertir en tecnologías antidemocráticas, como la Inteligencia Artificial (IA) y las criptomonedas. Algunos lugares, como la comunidad Ethereum, Estonia, el estado de Colorado y especialmente Taiwán, se han centrado en tecnologías que potencian la colaboración diversa y han visto florecer la democracia y la tecnología juntas. Este libro, de los líderes de este nuevo paradigma de la Pluralidad, muestra por primera vez cómo cada tecnólogo, decisor político, líder empresarial y activista puede construir un mundo más colaborativo, diverso y productivamente democrático.
+
+Cuando Uber llegó a Taiwán, su presencia fue divisoria, tal como lo ha sido en gran parte del mundo. Pero en lugar de que las redes sociales echaran más gasolina a las llamas, la plataforma vTaiwan que uno de nosotros desarrolló como ministro allí, empoderó a los ciudadanos que opinaban sobre el tema para tener una conversación reflexiva y deliberativa con miles de participantes sobre cómo se debería regular el servicio de transporte de pasajeros. Esta tecnología aprovechó las herramientas estadísticas asociadas a menudo con la IA para agrupar la opinión, permitiendo a cada participante digerir rápidamente la articulación más clara de los puntos de vista de sus conciudadanos y contribuir con sus propios pensamientos. Las opiniones que obtuvieron apoyo de todas las líneas iniciales de división adquirieron visibilidad, alcanzando un consenso aproximado que garantizó los beneficios de las nuevas herramientas de transporte y al mismo tiempo protegía los derechos de los trabajadores, y fue implementado por el gobierno. Este proceso se ha utilizado para resolver docenas de problemas polémicos en Taiwán y se está extendiendo rápidamente por todo el mundo a gobiernos, cooperativas y comunidades blockchain.
+
+Sin embargo, vTaiwan sólo rasca la superficie de cómo se puede diseñar la tecnología para percibir, respetar y unir las diferencias sociales para la colaboración. Las nuevas reglas de votación y financiamiento que surgen del ecosistema Ethereum pueden remodelar la forma en que gobernamos los sectores público y privado; los mundos virtuales inmersivos están potenciando las conexiones empáticas que cruzan las líneas de exclusión social; las redes sociales y los canales de noticias pueden diseñarse para construir cohesión social y generar sentido de forma compartida, en lugar de separarnos. Y, como ha demostrado la experiencia de Taiwán, los beneficios sociales potenciales son inmensos, permitiendo la mejor respuesta del mundo a una variedad de crisis recientes, desde la pandemia de Covid hasta la desinformación y la creación de una prosperidad ampliamente compartida.
+
+Si bien algunos países y ecosistemas han invertido decenas de millones de dólares en tales tecnologías, el resto del mundo ha invertido cientos de miles de millones en IA y criptomonedas, que persiguen objetivos fundamentalmente diferentes. La IA tiene como objetivo automatizar la participación humana, centralizar el poder, fortalecer las autocracias y menoscabar a la clase media. Las criptomonedas especulativas, las redes sociales adictivas y los "metaversos" escapistas han socavado el tejido social, reforzado las divisiones sociales, propagado una infodemia y proliferado la criminalidad. No es de extrañar, entonces, que los países que han invertido en estas tecnologías vean a la democracia y la tecnología como enemigos.
+
+Pero aún no es demasiado tarde para cambiar de rumbo: podemos invertir en tecnologías que establezcan derechos humanos digitales, potencien el pluralismo y prosperen en sociedades democráticas, permitiéndoles superar al autoritarismo y al hipercapitalismo. Podemos invertir para dar a cada persona un derecho inalienable a la individualidad digital (personhood) con una nueva generación de tecnologías de identidad descentralizada (DID) que permiten a cada persona viajar, realizar transacciones, realizar negocios y participar en comunidades democráticas libres de vigilancia centralizada. Podemos hacer que la libertad de asociación sea una realidad en el mundo digital con redes sociales y libros distribuidos (ledgers) responsables gestionados por la comunidad, que forman las asambleas y las plazas públicas del futuro, mientras cierran las crecientes divisiones entre grupos. Podemos asegurar los derechos de propiedad digital mediante la creación de mercados públicos y avenidas principales del futuro con tecnologías criptográficas para el intercambio seguro y preservador de la privacidad de datos, cómputo y almacenamiento entre pares, libre del control de las plataformas monopolistas. Podemos garantizar el derecho al comercio con monedas digitales interoperables a nivel internacional, respaldadas por el gobierno, y que protegen la privacidad. Y podemos facilitar que cada ciudadana y ciudadano acceda a estos derechos, logrando que Internet de alta velocidad sea un derecho humano y que la educación en competencias digitales sea un elemento central en los planes de estudio de las escuelas públicas.
+
+Garantizar estos derechos humanos digitales fundamentales hace que el pluralismo en el mundo digital no solo sea posible, sino sea natural. En Taiwán, los caracteres ideográficos para "digital" y "plural" son los mismos: 數位. La experiencia allí y en ecosistemas similares ha demostrado cómo estos fundamentos, incluso en forma naciente, promueven una democracia floreciente. Las identidades seguras y privadas permiten a los ciudadanos participar en deliberaciones reflexivas y consensos razonados, como en vTaiwán, sin enfrentar ataques de trolls y bots. El intercambio privado de datos permite a los barrios y comunidades proporcionar servicios (desde el monitoreo de la contaminación hasta los mapas de disponibilidad de máscaras) por sí mismos en lugar de depender de plataformas propietarias. Los pagos abiertos y confiables permiten formas creativas de microfinanciación colectiva para respaldar bienes comunitarios sin burocracias pesadas. Los sistemas de reputación entre pares empoderan a la sociedad civil para combatir la desinformación, a menudo con humor, mientras mantienen un discurso vibrante y abierto.
+
+Es más, si bien estas herramientas pueden transformar el sector público en todo el mundo, no sólo son relevantes, ni siquiera principalmente, relevantes para las democracias nacionales. En cambio, brindan una manera para que cada organización, desde iglesias hasta corporaciones, fomente una cooperación más productiva y dinámica. Las empresas pueden potenciar el emprendimiento corporativo y la infraestructura transversal entre departamentos más rápido que nunca. El intercambio de datos privado y soberano puede contener y curar enfermedades. Un nuevo entorno mediático puede ser simultáneamente más confiable y consensuado que nunca en hechos clave, mientras empodera a las voces marginadas por los influyentes tradicionales. Por lo tanto, la Pluralidad no es solo para la política y el gobierno, como tampoco lo fue Internet para los militares y las universidades que la construyeron por primera vez. En cambio, es un nuevo paradigma tecnológico que puede transformar cada sector y la vida de cada persona para mejor, si aprendemos a aprovecharlo.
+
+Pero al igual que Internet y otras tecnologías transformadoras, la Pluralidad solo prosperará en la medida en que invirtamos en ella. Internet comenzó como una red establecida por la Agencia de Proyectos de Investigación Avanzados del Departamento de Defensa de los Estados Unidos (ARPANET) para experimentar con nuevos diseños descentralizados de interfaz de usuario. Sin embargo, la visión de los fundadores de ARPANET, como JCR Licklider, en la que la nuestra está estrechamente modelada, solo se realizó parcialmente porque nunca movilizó el apoyo público e internacional y la inversión multisectorial necesaria para llevarla a cabo. En cambio, como predijo Licklider, fue capturado principalmente por monopolistas que obstaculizaron su potencial. Ahora tenemos la oportunidad de corregir ese error y construir un futuro donde nuestras tecnologías expresen y potencien nuestros más altos ideales, en lugar de degradarlos. Cada activista, artista, especialista en tecnología, ciudadana, ciudadano, decisor político y organización tiene un papel clave que desempeñar en la lucha por ese futuro.
+
+<div class="markdown markdown-sm italic text-center mt-12 mb-12">
+
+Cuando vemos “internet de las cosas”, hagámosla un internet de seres.
+
+Cuando vemos “realidad virtual”, hagámosla una realidad compartida.
+
+Cuando vemos “aprendizaje automático”, hagámoslo aprendizaje colaborativo.
+
+Cuando vemos “experiencia de usuario”, hagámoslo que sea experiencia humana.
+
+Cuando escuchemos “la singularidad está cerca”, recordemos: la pluralidad está aquí.
+</div>
+
+<h2>ESQUEMA DE CAPÍTULOS</h2>
+
+A continuación se presenta un esquema dividido en partes y capítulos. Cada capítulo enumera la longitud estimada de la página y ofrece un resumen del argumento del capítulo correspondiente, en una proporción de aproximadamente una oración por cada 5 páginas. Todo esto es un primer borrador del boceto.
+
+<div class="html">
+<ol style="list-style-type:upper-roman">
+  <li>
+    <div style="margin-bottom:1.5em">
+      <p style="font-weight:bold; display:inline-block">Prólogo: Ver en Plural</p><p style="display:inline-block">&nbsp;(5 páginas):</p>
+    </div>Abriremos el libro con una reflexión poético-espiritual sobre la omnipresencia de la pluralidad en todas las escalas de la realidad y cómo podría sentirse una extensión de esto en nuestro futuro tecnológico.
+  </li>
+  <li>
+    <div style="margin-bottom:1.5em">
+      <p style="font-weight:bold; display:inline-block">Introducción: La guerra entre la democracia y la tecnología</p><p style="display:inline-block">&nbsp;(10 páginas):</p>
+    </div> Los conflictos que acaparan los titulares entre la tecnología y la democracia reflejan y ocultan a la vez una tensión más profunda entre las direcciones en las que se ha desarrollado la tecnología y los principios de una sociedad democrática. Si bien las tecnologías específicas que han surgido de las trayectorias de IA y web3 tienen un potencial significativo, son fundamentalmente ideologías políticas antidemocráticas en lugar de tecnologías, comprometidas con la centralización del poder y el individualismo extremo, respectivamente.
+  </li>
+  <li>
+    <p style="font-weight:bold">Pluralidad</p>
+    <ol>
+      <li>
+        Viviendo en un Mundo Plural (15 páginas): Desde el nivel físico más básico de la mecánica cuántica hasta las mayores alturas, "la belleza, el crecimiento, el progreso, todo es el resultado de la unión de lo diferente". (Cita de Star Trek). Por lo tanto, todo esto depende de mantener y proliferar la diversidad, mientras se fortalece la comunicación y la cooperación cuando existen diferencias. Las tecnologías de la información y la comunicación pueden mapear el panorama dinámico de las relaciones sociales y facilitar nuevas conexiones y organizaciones que cubran esas redes.
+      </li>
+      <li>
+        La DAO perdida (15 páginas) La idea de una sociedad red, donde las personas y los grupos sociales son intersecciones dinámicas entre sí, se originó en las teorías de sociólogos, economistas y filósofos como Henry George, Georg Simmel y John Dewey. Esta visión fue la base de lo llegó a ser Internet, pero nunca se articuló con claridad filosófica, permitiendo que fuera olvidada y reemplazada por otras filosofías, centradas en la imitación de la inteligencia humana o la liberación de las personas de los vínculos sociales. Este libro tiene como objetivo recuperar esa visión perdida, mostrar cómo ha tenido y puede tener éxito, y trazar un camino a seguir para que florezca.
+      </li>
+      <li>
+        Una visión desde Yu Shan (20 páginas) Taiwán se encuentra en la intersección de las placas continentales de Eurasia y América, y en la intersección ideológica de la IA centralizada china, el hipercapitalismo estadounidense y los estados reguladores europeos basados en valores. Como la falla tectónica ha empujado el punto más alto en Taiwán, Yu Shan, más alto, también estas tensiones ideológicas han empujado a Taiwán a desarrollar una síntesis pluralista que le permitió convertirse en el país tecnológicamente más avanzado y más activamente democrático del mundo. Este capítulo brindará un retrato vívido y emotivo de la vida en la democracia digital de Taiwán desde varios puntos de vista: el de la ministra, el de un activista cívico, el de un ciudadano común desconectado digitalmente, el de un empresario, etc. También contará brevemente la historia de cómo surgió la democracia digital de Taiwán, trazando paralelismos y contrastes con las circunstancias de otros países democráticos liberales en la actualidad.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p style="font-weight:bold">Libertad</p>
+    <ol>
+      <li>
+        Los derechos humanos como sistema operativo (5 páginas) Así como las democracias industriales se construyen sobre la base de los derechos humanos universales, las democracias digitales dependen de la defensa universal de los derechos humanos en el ámbito digital. El acceso a estas capacidades es actualmente limitado y propietario, socavando el potencial de la Pluralidad. Cada capítulo de esta sección comenzará con un breve esbozo de una interacción que la realización de este derecho permitirá.
+      </li>
+      <li>
+        Individualidad (10 páginas) Los derechos a la vida, los viajes y el reconocimiento personal son los derechos más fundamentales y, sin embargo, los sistemas de identidad que los hacen posibles en línea están controlados por unas pocas plataformas propietarias. Los sistemas de identidad descentralizados y pluralistas que ahora están emergiendo del espacio web3 pueden potenciar una gama de nuevas funcionalidades que llevan a Internet mucho más allá de su estado actual, tal como Internet llevó a los modos de comunicación anteriores.
+      </li>
+      <li>
+        Asociación (10 páginas) Las redes sociales mapean la asociación en la era digital, mientras que las cadenas de bloques proporcionan el equivalente digital de las plazas públicas. Si se pueden ampliar mediante inversiones de interés público para enriquecer la reputación y las relaciones sociales que transmiten, tienen el potencial de extender el alcance de las relaciones sociales mucho más allá de lo actual  y sustituir muchas de las funciones tradicionalmente asignadas al mercado de valores anónimo.
+      </li>
+      <li>
+        Comercio (5 páginas) Con la participación de instituciones legítimas (como bancos centrales, gobiernos y bancos), las monedas digitales pueden tener una estructura de red que permita tanto los beneficios de la soberanía y la privacidad como de la interoperabilidad internacional, liberando a los pagos tanto del caos de las criptomonedas como de los monopolios ineficientes que actualmente dominan los pagos.
+      </li>
+      <li>
+        Propiedad (10 páginas) Si bien los activos fundamentales del mundo digital (datos, cómputo y memoria) se crean de manera distribuida, la falta de estándares abiertos para compartirlos de forma segura ha concentrado el poder en unas pocas gigantes empresas tecnológicas. La inversión pública en el desarrollo de estándares abiertos para un intercambio seguro en estas áreas permitirá a la sociedad civil y a los grupos empresariales lograr una colaboración mucho más ambiciosa, más eficiente, con mayor confianza, privacidad y soberanía.
+      </li>
+      <li>
+        Acceso y educación (5 páginas) Los derechos humanos en línea sólo son relevantes para quienes pueden acceder y navegar por el ciberespacio. Por lo tanto, el acceso a la banda ancha de alta velocidad y la educación en competencias digitales, no solo la alfabetización, deben ser derechos humanos universales.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p style="font-weight:bold">Democracia</p>
+    <ol>
+      <li>
+        La democracia como aplicaciones (10 páginas) Las instituciones democráticas son aplicaciones que pueden funcionar sobre estos cimientos y tienen tres componentes fundamentales: deliberación, acuerdo y pluralismo. Estas instituciones no solo pueden transformar el sector público sino también el sector privado, democratizando los negocios, y depender a su vez de dichos modelos de financiamiento democratizados. Cada capítulo comenzará con una viñeta de las formas en que las tecnologías se están utilizando hoy en día para lograr la democracia digital.
+      </li>
+      <li>
+        Deliberación (5 páginas) Los avances en estadística (a menudo asociados con la IA) hacen posible la "escucha amplia" (broad listening), donde millones de personas pueden escuchar la esencia destilada de la distribución de la opinión de sus pares, potenciando la deliberación democrática a escala.
+      </li>
+      <li>
+        Acuerdo (5 páginas) Los avances en el diseño de mecanismos (a menudo asociados con web3) hacen posible el acuerdo y el tira y afloja a escala, permitiendo una democracia directa que no caiga en las trampas de la tiranía de la mayoría.
+      </li>
+      <li>
+        Pluralismo (5 páginas) Las redes sociales nos permiten rastrear brechas y divisiones sociales, lo que nos permite empoderar a las comunidades "locales" para que se auto-gobiernen y activamente creen incentivos para cerrar estas brechas.
+      </li>
+      <li>
+        Finanzas (5 páginas) Las nuevas formas de organización social que surgen de la comunidad web3 nos permiten trascender la división mercado-estado mediante la creación de un sector social emergente que puede proporcionar servicios democráticos a escala.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <div style="margin-bottom:1.5em">
+      <p style="font-weight:bold; display:inline-block">Impacto</p><p style="display:inline-block">&nbsp;(Introducción 5 páginas):</p>
+    </div> La democracia se ha ganado una mala reputación en gran parte del mundo por no cumplir ante los desafíos globales críticos. Esto se debe a que no ha seguido el ritmo de la tecnología; cuando lo hace, como la experiencia de Taiwán lo muestra, puede desempeñarse mejor que un régimen autoritario. Cada capítulo destacará las estadísticas que ilustran el éxito posible en países como Taiwán y Estonia que han hecho la democracia digital una realidad.
+    <ol>
+      <li>
+        Medios (5 páginas) La desinformación se puede contener mientras se mantiene una libertad de expresión vibrante con algoritmos que sacan a la superficie contenido con un sorprendente consenso y con la participación activa de grupos de la sociedad civil que aprovechan el humor.
+      </li>
+      <li>
+        Salud (5 páginas) Las pandemias y otras crisis de salud pública pueden identificarse y atenderse con agilidad y costos económicos mínimos, si la sociedad civil puede diseñar rápidamente sistemas para asignar recursos escasos de salud escasos y enfocarse en las cadenas de transmisión.
+      </li>
+      <li>
+        Medio ambiente (5 páginas) Los daños ambientales, tanto en el plano local como a nivel mundial, se pueden identificar rápidamente sin invadir la privacidad si los ciudadanos pueden formar "coaliciones de datos" horizontales que puedan negociar con los gobiernos para cumplir con sus responsabilidades y garantizar que los miembros de la comunidad hagan lo mismo.
+      </li>
+      <li>
+        Trabajos (5 páginas) Al aprovechar las tecnologías digitales para lograr mayor participación humana en lugar del reemplazo, las tecnologías digitales pueden crear mejores empleos de los que declinan, lo que lleva a una prosperidad y participación natural ampliamente compartidas.
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p style="font-weight:bold">Hacia Adelante</p>
+    <ol>
+      <li>
+        Instituciones (20 páginas) La inversión a gran escala necesaria para conseguir la Pluralidad requerirá fusionar fuentes de financiamiento de una variedad de sectores y países para combinar y trascender los motivos del interés nacional, lucro y caridad. La experimentación con diversas comunidades en varias ubicaciones geográficas tendrá que vincularse estrechamente con la estandarización que puede alcanzar una escala internacional, aprovechando una red de ministros digitales como la de Taiwán. Las empresas del sector privado, las instituciones académicas, las organizaciones benéficas y los activistas deberán participar en las contribuciones atraídos por el prestigio y la visión del futuro que viene con la contribución al futuro de los estándares abiertos. Aunque ambicioso, este plan extiende en gran medida la historia de Internet estimulada por la red de laboratorios de investigación de usuarios financiados por la Agencia de Proyectos de Investigación Avanzados (ARPANET), ampliándola a nuestro mundo multipolar actual.
+      </li>
+      <li>
+        Acción (10 páginas) Si bien el éxito requerirá coordinación al más alto nivel, cada ciudadana y ciudadano tiene un papel que desempeñar para generar el impulso que lo haga posible. Mostraremos cómo hackers, inversionistas, empresarios, activistas, artistas, y electores pueden ser parte de un movimiento para hacer que nuestras herramientas sirvan a nuestros valores en lugar de que sean dictadas por ellas.
+      </li>
+    </ol>
+  </li>
+</ol>
+</div>
+
+*Esta publicación tiene licencia CC0, sin derechos reservados*
