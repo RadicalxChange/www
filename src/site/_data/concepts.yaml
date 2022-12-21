@@ -361,9 +361,9 @@
       date: "1980"
   tools:
     - title: Geo Web
-      href: https://www.geoweb.network/
+      href: https://geoweb.land/
       description: |
-        Geo Web is a set of open protocols for anchoring digital content (e.g., augmented reality, NFTs, apps, games, etc.) to physical locations. It uses plural property to administer its global digital land market with all proceeds being used to fund public goods. The network currently runs on Ethereum's Kovan testnet, but will launch on an Ethereum L2 rollup soon.
+        Geo Web is a set of open protocols for anchoring digital content (e.g., augmented reality, NFTs, apps, games, etc.) to physical locations. It uses plural property to administer its global digital land market with all proceeds being used to fund public goods. The network runs on the Optimism L2 Rollup.
       links:
         - text: Twitter
           href: https://twitter.com/thegeoweb
