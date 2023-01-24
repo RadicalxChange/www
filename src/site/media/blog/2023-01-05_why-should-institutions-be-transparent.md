@@ -170,7 +170,7 @@ Transparency is not an inherent good. It’s a powerful medicine to be applied w
 
 --
 
-*Thanks to Leon Erichsen for extremely helpful feedback.*
+*Thanks to Leon Erichsen and Alex Randaccio for extremely helpful feedback.*
 
 
 **Notes**
