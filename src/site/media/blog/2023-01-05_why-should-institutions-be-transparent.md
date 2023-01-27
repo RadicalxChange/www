@@ -36,7 +36,7 @@ A recent exchange between journalist Ezra Klein and technologist Vitalik Buterin
 
 There’s something interesting in this. Klein and Buterin both think deeply about democracy and institutions, yet neither, to my ears, has a complete theory about when and why transparency is good. Many people, though – from democratic citizens to digital platform participants to corporate employees – demand more transparency almost reflexively, as if it were self-evidently reasonable and pro-democratic.
 
-Puzzling through this, I realized that my own ideas about transparency were rather gauzy, considering the importance of the issue. So, I puzzled through it at some length. In this essay I share the tentative framework that I landed on. I share it in the hope that it elicits useful feedback, or advances others’ thinking, or both.
+Puzzling through this, I realized that my own ideas about transparency were rather gauzy. So, I puzzled through it at some length. I share the tentative framework that I landed on in the hope that it elicits useful feedback, or advances others’ thinking, or both.
 
 Here’s my thesis: **Calling for more transparency is justified approximately to the extent that we reasonably believe it will reveal an illegitimate exercise of authority. Conversely, increasing transparency in institutions that exercise authority legitimately typically does more harm (in the form of reduced trust) than good (in the form of reduced corruption).**
 
