@@ -1,6 +1,6 @@
 module.exports = {
   rxcTv: {
-    isOn: false,
+    isOn: true,
     title: "Rethinking Art Ownership: In Conversation With Serpentine & RxC",
     description: `March 21st, 17:30 GMT | 10:30 AM PDT
 
