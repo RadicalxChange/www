@@ -1,17 +1,13 @@
 module.exports = {
   rxcTv: {
     isOn: false,
-    title: "RadicalxChange Warsaw: Europe and The Futures of Pluralism",
-    description: `October 18th, 9:00am to 6:00 pm CEST
+    title: "Rethinking Art Ownership: In Conversation With Serpentine & RxC",
+    description: `March 21st, 17:30 GMT | 10:30 AM PDT
 
-With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
-
-This October, the RxC community will gather in-person (& Online) in Łódź, Poland (Oct 15-16) and in Warsaw, Poland (Oct 18).
-
-Here we invite you to our conference in Warsaw: “RadicalxChange Warsaw: Europe and The Futures of Pluralism.” The event will take place on Tuesday, October 18th, 2022 at the Mała Warszawa conference center, with the support of [Wildland](https://wildland.io).
-
-Together we will learn of pioneering digital democracy practices in Ukraine, Estonia, and across Eastern Europe. We will experience works of art as windows to connection, and examine European institutions through the frame of pluralistic governance. We will uplift the work of activists, social fabric weavers, and critical voices. And we will consider European cases for community currencies, data cooperatives, decentralized identity systems, communication tools, and other pro-social digital infrastructures and civic technologies.`,
-    slidoUrl: "https://app.sli.do/event/hMbwwnMR3XfHqd541maCk3",
+    Art enriches society through the weaving of relations between the cultures that create it, and the cultures that receive it. Conventional ownership and private property rules undermine such interactions in the context of art understood as a public good, constraining liquidity and alienating artists from the very communities that should be their allies: collaborators, neighbourhoods, collectors and supporting institutions. We recently published a blog post that discussed some of the most explicit pinch points within the existing art economy and argued for the need to initiate a new chapter in rethinking art ownership by introducing it from the perspective of Partial Common Ownership.
+    
+    Join RxC and Serpentine UK in a discussion with the authors of the post: Victoria Ivanova (Serpentine UK), Matt Prewitt (RxC), and Paula Berman (RxC | Host).`,
+    slidoUrl: "",
   },
   popup: {
     isOn: false,

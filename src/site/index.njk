@@ -101,14 +101,14 @@ homeConcepts:
     >
       <a
         class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="{{ '/media/blog/rethinking-art-ownership/' if not rxcTv.isOn else '#tv'}}"
+        href="{{ 'https://twitter.com/RadxChange/status/1637686135034871808' if not rxcTv.isOn else '#tv'}}"
         target="{{ '_blank' if not rxcTv.isOn else ''}}"
         rel="noopener nofollow noreferrer"
       >
         <!-- prettier-ignore -->
         {% if not rxcTv.isOn %}
-        <h2 class="font-bold">New Blog Post</h2>
-        <p>Rethinking Art Ownership</p>
+        <h2 class="font-bold">RxC Livestream</h2>
+        <p>{{ rxcTv.title }}</p>
         <!-- prettier-ignore -->
         {% else %}
         <h2 class="font-bold">Streaming Now</h2>
