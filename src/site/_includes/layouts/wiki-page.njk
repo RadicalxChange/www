@@ -75,6 +75,10 @@ permalink: "wiki/{{ slug }}/index.html"
 <!-- prettier-ignore -->
 {{ footer.render() }}
 <script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
+<script>
   var tocContainer = document.getElementById("table-of-contents");
   var toc = document.getElementById("toc");
 
