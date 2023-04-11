@@ -1,0 +1,67 @@
+---
+layout: "layouts/blog-post.njk"
+date: "2023-03-01"
+title: "Rethinking Art Ownership"
+postHeader: "Rethinking Art Ownership: Partial Common Ownership as a Step Towards a More Symbiotic Ecosystem"
+postAuthor: "Paula Berman, Victoria Ivanova, Matt Prewitt"
+---
+
+<div class="html">
+<iframe height="175px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/f31de26b-f5ca-498c-b02c-f8dd1d4d95e8?dark=false"></iframe>
+</div>
+
+Art enriches society through the weaving of relations between the cultures that create it, and the cultures that receive it. Conventional ownership and private property rules undermine such interactions in the context of art understood as a public good, **constraining liquidity** and **alienating artists from the very communities that should be their allies**: collaborators, neighbourhoods, collectors and supporting institutions. We take a look at some of the most explicit pinch points within the existing art economy and argue for the need  to initiate a new chapter in rethinking art ownership by introducing it from the perspective of **Partial Common Ownership**.
+
+*We invite you to take part in our [pol.is conversation](https://pol.is/8rzdymvzec) on the topic, which will be open until the end of March. If you have any further suggestions or feedback or would like to continue being involved, please [email us](mailto:fae@serpentinegalleries.org) and/or sign up to the [Future Art Ecosystems newsletter](https://futureartecosystems.org/).*
+
+## I. Art & Subsistence
+
+Art emerges from deliberate and dedicated practice, which requires time, space and, in the case of most contemporary art practices, extensive collaborations with peers, communities and organisations. This brings into focus [a critical distinction](https://wageforwork.com/home#top) between the labour of producing and showing art, and the value that an art object might at some stage obtain in the market. Very few artists can rely [on either institutional support or gallery representation](https://news.artnet.com/art-world/new-ubs-study-finds-four-percent-of-star-artists-2125323) (which has traditionally offered the only route into the market), and even with gallery representation, the illiquidity that emerges as a byproduct of [current art market mechanisms and logics](https://www.econstor.eu/bitstream/10419/157983/1/bna-327_20120000_malik_phillips_tainted_love.pdf), makes ‘the market’ a highly unreliable source of subsistence.
+
+As a result, [68% of visual artists in England have additional jobs](https://www.artscouncil.org.uk/sites/default/files/download-file/Livelihoods%20of%20Visual%20Artists%20Summary%20Report.pdf) with one in five having three or more different jobs. Meanwhile, a [recent European Union survey on the status and working conditions of artists and creative professionals](https://eenca.com/eenca/assets/File/EENCA%20publications/Study%20on%20the%20status%20and%20working%20conditions%20of%20artists%20and%20creative%20professionals%20-%20Final%20report.pdf) found that the state of the current legal and economic frameworks available to artists is such that ‘careers in the cultural and creative sectors may happen by chance and are often beyond rational planning’.
+
+Historically, the social welfare state approach of subsidising artistic practices via commissions, grants and subsistence schemes remains the ‘gold standard’ of policy-led interventions to support a thriving and socially-oriented art ecosystem. But it has been limited to only a handful of wealthy democratic nation-states. Furthermore, in the last decade, austerity and pressures to show legible and quantifiable social impact have stripped that system down to a much more modest offer even in the most generous jurisdictions such as the Netherlands and the Nordics. 
+
+The recent interest in Universal Basic Income (UBI) may be seen as an attempt to (re)introduce a social welfare approach in another guise. While UBI use-cases remain limited and the debates surrounding its impacts are heated, [Ireland is currently trialing UBI to address the precarity of artistic labour and production as part of a pilot scheme running between 2022 and 2025.](https://www.citizensinformation.ie/en/employment/unemployment_and_redundancy/employment_support_schemes/basic_income_arts.html)
+
+These findings indicate that there is a dire need to test new mechanisms for upgrading and diversifying the models of institutional and market support of art ecosystems that can offer greater liquidity to artists and their communities.
+
+## II. Towards a More Relational Understanding of Art Ownership
+
+Generally, states have shied away from regulating the art market or wider art industry practices with the exception of some jurisdictions introducing a **resale royalty provision**. The resale royalty is a corrective mechanism insofar as it gives the artist a share in the rise of the value of their work, recognising that it is the increased appreciation of their work that leads to a higher financial valuation, and so it is equitable for the artist to be entitled to a percentage on the resale profit.
+
+![The Gleaners, by Jean-François Millet](/images/blog/the-gleaners.png)
+
+Originally legislated in France in 1920 following the scandalous resale of Jean-François Millet’s paintings *The Angelus* and *The Gleaners* that allowed the collector to derive a significant profit whilst the artist’s family was living in extreme poverty, the resale royalty law has consequently been enacted in more than 70 countries, with the important exceptions of the US and China which comprise more than 63% of the global art market.
+
+There remains, however, a major gap between the word of law and the practices in the art market. The opacity of the market makes it hard to monitor and enforce, and artists are often unaware of their rights (or are reluctant to enforce them as gallery representation is a rare gift). One can only speculate whether the ecosystemic resistance to the resale royalty has been ideological, or whether the additional logistical overheads, possible enforcement challenges and the sobering pragmatism of contractual transactions have made the necessary systemic efforts towards the resale royalty’s adoption seem too onerous, particularly in the context of a formerly niche market that trades in aura.
+
+Fast forward a century, and we can confidently say that the backdrop conditions have shifted significantly, in the art field and certainly beyond. In 2022, the [global art market was worth $65.1 billion](https://www.artbasel.com/stories/seven-key-takeaways-from-the-2022-art-market-report?lang=en), up by 29% from 2020. In recent years, blockchain technology has been touted as a potential game changer as far as the logistics of tracing transactions and automating the enforcement of resale royalties (or any other type of revenue split) are concerned. Indeed, the advent of the NFT market not only provided a parallel economic niche for artists who were previously unsupported by the mainstream art industry, but also showed that art ownership and liquidity are not inherently antithetical. Rather, they are products of negotiable mechanisms and underlying infrastructures.    
+
+More generally, crypto and derivative finance may have opened up a Pandora's box of seemingly endless financialisation, but they have also created a space for deconstructing and reconfiguring what ownership means and how it is practised. **Instead of a monolithic exclusive property right, ownership can be radically reimagined, making it possible to positively entangle the interests of multiple parties in context-specific and unprecedented ways.**
+
+If we approach art ‘ownership’ as an institution for the ecosystemic support of value creation between its various actors, then we must think beyond the resale royalty. We know that just as art accrues in value through circulation; the advancement of artistic practice never happens in a vacuum. Low-cost (often migrant) neighbourhoods have long hosted artists and have been essential in supporting artists' careers whether in New York, Berlin or Athens. Small galleries or non-profits/publicly funded organisations are often the first ones to take the risk of supporting an emerging artist. Specific communities around social, political or climate issues, or teams of professionals and experts (e.g. musicians, scientists, technologists, etc) often contribute their know-how without charging, or at a symbolic rate. As a result, most artistic practices are nurtured through networked forms of support.
+
+Suppose we consider four kinds of interests: the communities from which art emerges, artists themselves, owners of art, and viewers. Conventional ownership creates a certain set of relationships between these interests, but new kinds of ownership could reinvent them. 
+
+Conventional ownership empowers the owner of the art object – whether that’s a state museum or a private collector – giving them control over the value of the symbolic link between the viewer and the community/issue. What if, instead, the work of art could function as a fluid social or financial link between the viewer and the source community/issue? Might a different model of ownership better facilitate that type of engagement? 
+
+## III. Partial Common Ownership for Greater Alignment between Market Incentives and Ecosystemic Support
+
+We believe there are ways of opening up ownership that would better recognise and respect the social embeddedness and collective/networked nature of cultural creation. One example is Partial Common Ownership (PCO), – a hybrid form of ownership that levels the playing field between incumbent art owners and others; encourages more liquidity; and maintains alignment between the interests of collectors, creators, and communities.
+
+![Opening up ownership](/images/blog/opening-ownership-diagram.jpeg)
+
+Here’s an example. Let’s say an artist makes a physical installation that emerged as a collaboration with a friend, a musician and a group of local refugee children whose voices were remixed into the audio component of the work. Together with their gallerist who runs a small space in the same neighbourhood where the children now live and the artwork was shown, they sell, to a collector, a special licence to the work via a special online marketplace – splitting the revenue between the artist, the gallery, the musician, and the children’s families. The collector now owns the licence, entitling them to take possession of the work.
+
+Here’s where it gets interesting: the terms of the licence are such that every two years, its holder must assess and declare the value of the licence and put it back on auction on the public marketplace. The licence holder must also pay a fee calibrated against their self-declared amount (the higher the declared amount, the higher the fee). The key element that makes this work: if somebody else bids more for the licence, the artwork passes to them. This means that licence owners are incentivised not to declare too low a price, or they risk losing the right to possess the art to another bidder. Conversely, they can make it hard for others to outbid them by declaring a high price, so long as they can reward the community accordingly, through the proportional fee. Importantly, if the licence holder gets ‘outbid’ by someone else, this is not to their detriment because the higher bid is *paid to them*. So as the value of the art increases, the entire network around it – collector, artist, and other beneficiaries like the community – participate equally in the value gain.
+
+![PCO Art Model](/images/blog/art-pco-diagram.jpeg)
+
+There are, of course, many ways in which the fees could be allocated or community beneficiaries appointed, but this is a question for another day. What’s core is that through this kind of hybrid ownership, art could create a series of networked entanglements between people, places and economic practices. Through Partial Common Ownership, the artwork instantiates the possibility of art to create new forms of interdependence that can lead to more conscious and symbiotic systems, and ways of life.
+
+Partial Common Ownership punctures the conventional assumption that an ‘owner’ should have absolute and permanent power over the asset, and no necessary relationship with any further community (e.g., the artistic community that helped produce the asset, or the public viewing community that helps make it valuable). PCO encourages the emergence of a new archetype for ‘collecting’ that is rooted in ‘stewardship’ and opens it up to new forms of networked organisation. A PCO ‘owner’ is within an ongoing relationship with a community, and has contingent power over the asset. 
+
+This reimagination of ownership would transform the relationships between artists, the communities that nurture them, art supporters, and the general public. Gains in the value of art would no longer accrue only to art owners, but also to artists and communities, supporting the foundations and integrity of a creative culture. 
+
+*Please take part in our [pol.is conversation](https://pol.is/8rzdymvzec) on the topic, which will be open until the end of March.*

@@ -1,5 +1,7 @@
 # RadicalxChange www Site
 
+This is the repo for [radicalxchange.org](https://radicalxchange.org/)
+
 The RadicalxChange www site is meant to:
 
 - Teach users about RadicalxChange's core concepts

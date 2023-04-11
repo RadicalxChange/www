@@ -1,0 +1,122 @@
+- time: 8:30am-10:00am
+  title: Registration & coffee
+- time: 10:00am-10:25am
+  title: Increasing Returns and RadicalxChange
+  description: |
+    Capitalism ignores increasing returns processes, even though these are the real sources of our prosperity. By ignoring and parasitizing them, capitalism “bleeds the goose” that lays its golden eggs. Harnessing and proliferating increasing returns will depend on governing them as such: less private property, more shared democratic control. This is the work of RadicalxChange.
+  speakers:
+    - name: Jack Henderson
+      affiliation: RadicalxChange
+      image: jack-henderson.png
+    - name: Paula Berman
+      affiliation: RadicalxChange
+      image: paula_berman.jpeg
+    - name: Matt Prewitt
+      affiliation: RadicalxChange
+      image: matt_prewitt.jpg
+- time: 10:30am-11:15am
+  title: Imagining How Democracy Could Work
+  description: |
+    To make necessary social progress this century, democracy must recapture the world's imagination. Democracy is itself a technology, and it is in need — and capable — of evolution. It is itself an ideal, a human project that is just beginning. This panel will discuss how democracy-to-come could work, what it might look and feel like, and how this imagination informs the steps we can take today.
+  speakers:
+    - name: Matt Prewitt
+      affiliation: RadicalxChange
+      image: matt_prewitt.jpg
+    - name: Stav Shaffir
+      affiliation: Shira Center | former MP of Israel
+      image: stav-shaffir.jpeg
+    - name: Kazimierz Popławski
+      affiliation: Baltic Review
+      image: kazimierz-poplawski.jpeg
+    - name: Juha Leppanen
+      affiliation: Demos Helsinki
+      image: juha-leppanen.jpeg
+- time: 11:30am-12:15pm
+  title: User Agency and Democratic Data Governance
+  description: |
+    Most people agree platforms should not control our digital lives, but when conversations move to precise alternatives, natural misalignments arise. For instance, some want user agency and individual control of data. Others see almost all data as shared, interpersonal, and in need of democratic governance. This panel will discuss new paradigms for data governance.
+  speakers:
+    - name: Alek Tarkowski
+      affiliation: Open Future
+      image: alek-tarkowski.jpeg
+    - name: Joanna Rutkowska
+      affiliation: Golem Foundation | Wildland.io
+      image: joanna-rutkowska.jpeg
+    - name: Sille Sepp
+      affiliation: MyData
+      image: sille-sepp.jpeg
+    - name: Katarzyna Szymielewicz
+      affiliation: Panoptykon Foundation
+      image: katarzyna-szymielewicz.jpeg
+- time: 12:30pm-1:15pm
+  title: Forking Capitalism for the Common Good
+  description: |
+    All notions of economic value derive from our social foundations; capitalism's focus on the former has tended to erode the latter. A focus instead on our relationships will be central to new political economies that deliver broad empowerment and flourishing. This panel will feature two examples of this relational work: Gribouilli in Paris and the Black Swan collective in Berlin.
+  speakers:
+    - name: Maïmonatou Mar
+      affiliation: Gribouilli | RxC Paris
+      image: maïmonatou-mar.jpeg
+    - name: Calum Bowden
+      affiliation: Black Swan DAO
+      image: calum-bowden.jpeg
+- time: 1:30pm-2:15pm
+  title: "Artists and Technology: Substitution or Co-Evolution"
+  description: |
+    In conversations about the future of technological disruption, most people might not think first of the art world. And yet web3 brought the NFT craze in 2021, on the back of empowering artists and creators, and more recently attention has swung to AI text-to-image generators, such as DALL-E and Stable Diffusion, which have led many to wonder — or worry — about the future of human art and creation. This panel will discuss the interaction between emerging technologies and artists, and how technology could better complement and co-evolve with artists to empower more creative and meaningful works.
+  speakers:
+    - name: Sara Polak
+      affiliation: Paralelní Polis / Paioneers Lab
+      image: sara-polak.jpeg
+    - name: Alec Empire
+      affiliation: Atari Teenage Riot
+      image: alec-empire.jpeg
+- time: 2:15pm-3:15pm
+  title: Lunch break
+- time: 3:15pm-4:00pm
+  title: Connecting Across Difference Through Art and Culture
+  description: |
+    Art and culture help shape our social lives. They weave us together, strengthening civil society and the social fabric. They shed new light on human experience, helping us become more aware and perceptive of our world, both seeing its injustices, which can help spur mobilization against them, and helping us imagine positive visions of how to better live together. At the same time, much of our artistic and cultural institutions are shaped by media and technology. This panel will discuss the role of art and culture in society, how modern platforms tend to constrain art and consolidate culture, and the opportunities to better support art and culture in all their diverse complexities.
+  speakers:
+    - name: Victoria Ivanova
+      affiliation: Serpentine
+      image: victoria-ivanova.jpeg
+    - name: Anna Engelhardt
+      affiliation: Digital Democracies Institute | Distributed Cognition Cooperative
+      image: anna-engelhardt.jpeg
+    - name: Kateryna Rusetska
+      affiliation: Dnipro Center for Contemporary Culture
+      image: kateryna-rusetska.jpeg
+- time: 4:15pm-5:00pm
+  title: Web3 and The Dream of Radically Distributed Governance
+  description: |
+    While most uses of web3 technologies have been for financial speculation and accumulation, those same technologies can be repurposed to support "plural publics" and cooperation across diversity. This panel will discuss how blockchains create "common knowledge" and why they could play an important role in most human coordination if they start to hold social context.
+  speakers:
+    - name: Puja Ohlhaver
+      affiliation: FlashBots
+      image: puja-ohlhaver.jpeg
+    - name: Przemek Kowalczyk
+      affiliation: Ramp Network
+      image: przemek-kowalczyk.jpeg
+    - name: Shrey Jain
+      affiliation: Microsoft
+      image: shrey-jain.png
+    - name: Julian Zawistowski
+      affiliation: Golem Foundation | Wildland.io
+      image: julian-zawistowski.jpeg
+- time: 5:15pm-6:00pm
+  title: Strengthening Civic Hacktivism
+  description: |
+    War in Ukraine, crises in our institutions and social fabric, catastrophes on the horizon. The challenges we face appear global, existential, and insurmountable. But as Margaret Mead said: “Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it's the only thing that ever has.” If we are to make any real positive change in the world, it will come out of the fabric that already exists, out of our own local communities and “hybrid neighborhoods”. This panel will discuss the role of civic hacktivism and the interplay between technology and social movements.
+  speakers:
+    - name: Joanna Erbel
+      affiliation: CoopTech Hub | Blisko Foundation
+      image: joanna-erbel.jpeg
+    - name: Iryna Solovey
+      affiliation: Garage Gang
+      image: iryna-solovey.jpeg
+    - name: Alona Shevchenko
+      affiliation: Ukraine DAO
+      image: alona-shevchenko.jpeg
+    - name: Paula Berman
+      affiliation: RadicalxChange
+      image: paula_berman.jpeg

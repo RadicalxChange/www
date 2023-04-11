@@ -1,0 +1,18 @@
+---
+layout: "layouts/_base.njk"
+pagination:
+  data: speakers
+  size: 1
+  alias: speaker
+  addAllPagesToCollections: true
+permalink: "speakers/{{ speaker.name | slug }}/"
+title: Speakers
+defaultBio: |
+  _No biography available at this time._
+---
+
+<!-- prettier-ignore -->
+{% import "components/speaker-page.njk" as speakerPage %}
+
+<!-- prettier-ignore -->
+{{ speakerPage.render(speaker, defaultBio) }}

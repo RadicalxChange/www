@@ -1,6 +1,78 @@
 const press = [
   {
     title:
+      "Matt Prewitt: Let’s Use New Forms of Money to Commit to Our Communities",
+    href:
+      "https://www.coindesk.com/layer2/2022/05/19/lets-use-new-forms-of-money-to-commit-to-our-communities/",
+    publication: "CoinDesk",
+    date: "2022-05-19T00:00:00.000Z",
+  },
+  {
+    title:
+      "The Decentralized Mystique",
+    href:
+      "https://www.coindesk.com/layer2/2022/06/07/the-decentralized-mystique/",
+    publication: "CoinDesk",
+    date: "2022-06-06T00:00:00.000Z",
+  },
+  {
+    title:
+      "Could Local Digital Currencies Improve Communities?",
+    href:
+      "https://www.coindesk.com/podcasts/the-breakdown-with-nlw/could-local-digital-currencies-improve-communities/",
+    publication: "CoinDesk",
+    date: "2022-05-22T00:00:00.000Z",
+  },
+  {
+    title:
+      "Ethereum Co-founder Foresees Future Where ‘Soulbound Tokens’ Dominate",
+    href:
+      "https://www.coinspeaker.com/ethereum-soulbound-tokens-dominate/",
+    publication: "Coinspeaker",
+    date: "2022-05-26T00:00:00.000Z",
+  },
+  {
+    title:
+      "The Web3 Decentralization Debate is Focused on the Wrong Question",
+    href:
+      "https://www.wired.com/story/web3-blockchain-decentralization-governance/",
+    publication: "Wired",
+    date: "2022-05-12T00:00:00.000Z",
+  },
+  {
+    title:
+      "How Soulbound Tokens Could Reduce Speculation and Improve DAO Voting",
+    href:
+      "https://unchainedpodcast.com/how-soul-bound-tokens-could-reduce-speculation-and-improve-dao-voting-ep-360/",
+    publication: "Unchained",
+    date: "2022-06-07T00:00:00.000Z",
+  },
+  {
+    title:
+      "After DeFi, DeSoc: Finding Web 3’s Soul",
+    href:
+      "https://www.coindesk.com/layer2/2022/05/11/after-defi-desoc-finding-web-3s-soul/",
+    publication: "CoinDesk",
+    date: "2022-05-11T00:00:00.000Z",
+  },
+  {
+    title:
+      "Quadratic Voting Poll",
+    href:
+      "https://www.economist.com/interactive/2021/12/18/quadratic-voting",
+    publication: "The Economist",
+    date: "2021-12-18T00:00:00.000Z",
+  },
+  {
+    title:
+      "The mathematical method that could offer a fairer way to vote",
+    href:
+      "https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote",
+    publication: "The Economist",
+    date: "2021-12-18T00:00:00.000Z",
+  },
+  {
+    title:
       "A View Of The Future Of Our Data",
     href:
       "https://www.noemamag.com/a-view-of-the-future-of-our-data/",
