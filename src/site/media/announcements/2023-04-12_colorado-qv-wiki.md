@@ -1,6 +1,6 @@
 ---
 layout: "layouts/announcement.njk"
-date: "2023-04-11"
+date: "2023-04-12"
 title: "Quadratic Voting in Colorado"
 postHeader: "Quadratic Voting in Colorado"
 ---
