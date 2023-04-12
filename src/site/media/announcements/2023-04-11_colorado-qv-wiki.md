@@ -17,7 +17,7 @@ Working with RadicalxChange Foundation and Democracy Earth Foundation, the Democ
 
 In June 2020, officials in Colorado’s executive branch decided to bring QV into a new context. As part of an effort led by Ben Henderson and Hana Sayeed from the Governor’s Office of Operations, RadicalxChange Foundation implemented a process by which interagency working groups used QV to prioritize their yearly goals, using basic [spreadsheet templates](https://drive.google.com/drive/folders/1trnAJ1XOLyZk-0mgedZ3G98MQH3xrL0m?usp=sharing) from RadicalxChange Foundation.
 
-The process began with a test vote on a moot issue – favorite Colorado sports teams – to familiarize the voters with QV. Then, working group participants had an opportunity to argue and hear arguments for different proposed ‘20/’21 priorities. Finally, they used live QV ballots to help determine what the group felt most strongly about.
+The process began with a test poll on a moot issue – favorite Colorado sports teams – to familiarize the participants with QV. Then, working group participants had an opportunity to argue and hear arguments for different proposed ‘20/’21 priorities. Finally, they used live QV ballots to help determine what the group felt most strongly about.
 
 Seeing the benefits of the process in these interagency groups, several agency leaders began using it for group decisions in other contexts.
 
@@ -25,13 +25,13 @@ Two examples of this are that a) Colorado’s Department of Higher Education ado
 
 The pandemic created enormous challenges for Colorado’s citizens and government, but QV helped Colorado more nimbly respond to them. It proved a useful way to structure decisions involving complex tradeoffs, and it appears likely that it will remain a vital tool for state governance.[^3]
 
-In some of the decisions taken with QV, the results of the interagency votes were not ultimately adopted by the Governor’s office. This was disappointing for some participants and points to unavoidable challenges around using democratic systems to make decisions when the final authority rests elsewhere.
+In some of the decisions taken with QV, the results of the interagency polls were not ultimately adopted by the Governor’s office. This was disappointing for some participants and points to unavoidable challenges around using democratic systems to make decisions when the final authority rests elsewhere.
 
 ## Legislature Utilizes New RxC QV application in 2021
 
 In Spring 2021, the Democratic Caucus of the House of Representatives used QV once again to prioritize proposed spending bills. This time, the Democratic Caucus of the Senate conducted their own QV poll as well.
 
-With a limited budget of $50 million and over 80 bills to consider, QV helped Caucus leaders gather detailed information about the group’s collective priorities. The results were both anonymous and non-binding—these weren’t official votes cast on the record.
+With a limited budget of $50 million and over 80 bills to consider, QV helped Caucus leaders gather detailed information about the group’s collective priorities. The results were both anonymous and non-binding—these were not official votes cast on the record.
 
 Though the Democratic Caucus organized the Preference Poll, they maintained that their objective was efficiency, not partisanship: “I also offered this up to the Republicans,” Hansen said on a RadicalxChange livestream.[^4]
 
@@ -43,7 +43,7 @@ After the 2021 poll, Senator Hansen stated his intention that QV should become a
 
 In Spring 2022, the Democratic Caucus of the House of Representatives, the Democratic Caucus of the Senate, and the Republican Caucus of the Senate all used the [RxC QV](https://quadraticvote.radicalxchange.org/) web application to hold internal polls to aid deliberations over the appropriations process. Procedurally, the polling methodology was roughly the same as in 2021.
 
-The 2022 polls featured improvements to the RxC QV interface. To make QV more intuitive for users, the RadicalxChange team added new interactive animations representing voice credits as square blocks that can be grouped together and spent on effective votes.
+The 2022 polls featured improvements to the RxC QV interface. To make QV more intuitive for users, the RadicalxChange team added new interactive animations representing voice credits as square blocks that can be grouped together and spent to express preference for options in the poll.
 
 ![RxC QV interface represents voice credits as blocks](/images/blog/qv-blocks.png)
 
