@@ -7,18 +7,19 @@
   to: /wiki/
 - id: About RxC
   to: /wiki/about
-- id: Concepts
-  path: /wiki/
-  items:
-    - id: Data Dignity
-      to: /wiki/data-dignity/
-    - id: Quadratic Voting
-      to: /wiki/quadratic-voting/
-    - id: Quadratic Funding
-      to: /wiki/quadratic-funding/
-    - id: Partial Common Ownership
-      to: /wiki/pco/
-    - id: Radical Antitrust
-      to: /wiki/radical-antitrust/
-    - id: Intersectional Social Identity
-      to: /wiki/isd/
+- id: Data Dignity
+  to: /wiki/data-dignity/
+- id: Quadratic Voting
+  to: /wiki/quadratic-voting/
+- id: Plural Funding
+  to: /wiki/plural-funding/
+- id: Plural Property
+  to: /wiki/plural-property/
+- id: Plural Money
+  to: /wiki/plural-money
+- id: Social Identity
+  to: /wiki/social-identity/
+- id: Radical Antitrust
+  to: /wiki/radical-antitrust/
+- id: QV in Colorado
+  to: /wiki/colorado-qv/
