@@ -33,37 +33,56 @@ permalink: "wiki/{{ slug }}/index.html"
 <!-- prettier-ignore -->
 {{ scrollIndicator.render() }}
 <div
-  class="lg:min-h-screen relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4 pt-6 pb-8 lg:py-lg/marginoverflow-hidden"
+  class="lg:min-h-screen relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4 pt-6 pb-8 px-4 lg:py-lg/marginoverflow-hidden"
 >
   <article
-    class="inline-block col-start-column-4 col-end-gutter-9 markdown markdown-sm"
+    class="inline-block col-start-column-1 col-end-gutter-4 lg:col-start-column-4 lg:col-end-gutter-9 markdown markdown-sm"
   >
+
     <header>
       <h1>{{ title }}</h1>
     </header>
+    <button class="lg:hidden w-full border rounded mb-8 py-2 px-3 outline-none hover:opacity-80">
+      <a
+        class="edit-button_text"
+        href="{{ page.inputPath | editPath }}"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+      >
+        <div class="flex justify-center">
+          <img class="github-icon mr-2" src="/images/ui/mark-github.svg" />
+          <span>Edit Page</span>
+        </div>
+      </a>
+    </button>
+    <button class="grid lg:hidden w-full border rounded py-2 px-3 hover:opacity-80 focus:outline-none">
+      <span id="dropdown-btn" class="text-left pl-2">On this page</span>
+      <div id="table-of-contents_mobile" class="row-start-2">
+      </div>
+    </button>
     {{ content | markdown | safe }}
   </article>
-  <aside id="table-of-contents_container" class="sticky col-start-column-10 col-end-gutter-12">
-    <ul id="table-of-contents" class="list-none pl-4 pr-1 mt-20 mb-12 border-l text-size--1">
-      <li class="mb-2">
+  <aside id="table-of-contents_container" class="inline-block w-full lg:sticky lg:col-start-column-10 lg:col-end-gutter-12">
+    <ul id="table-of-contents" class="inline-block list-none lg:pl-4 lg:pr-1 lg:mt-20 lg:mb-12 lg:border-l text-size--1">
+      <li class="mb-2 hidden lg:inline-block">
         <a
           class="inline-block border rounded py-2 px-3 hover:opacity-80"
           href="{{ page.inputPath | editPath }}"
           target="_blank"
           rel="noopener nofollow noreferrer"
         >
-          <div class="flex items-center">
+          <div class="flex">
             <img class="mr-2" src="/images/ui/mark-github.svg" />
             <span>Edit Page</span>
           </div>
         </a>
       </li>
-      <li class="mt-4 mb-2 uppercase">
+      <li class="mt-4 mb-2 uppercase hidden lg:inline-block">
         <span>On this page</span>
       </li>
     </ul>
   </aside>
-  <nav id="side-nav" class="inline-block sticky top-0 pt-2 pb-4 col-start-column-1 col-end-gutter-3 row-start-1 border-r lg:min-h-screen">
+  <nav id="side-nav" class="hidden lg:inline-block sticky top-0 pt-2 pb-4 col-start-column-1 col-end-gutter-3 row-start-1 border-r lg:min-h-screen">
     <!-- prettier-ignore -->
     {% for item in wikiLinks %}
       <!-- prettier-ignore -->
@@ -79,10 +98,39 @@ permalink: "wiki/{{ slug }}/index.html"
   {% include "components/menu.js" %}
 </script>
 <script>
-  var tocContainer = document.getElementById("table-of-contents");
-  var toc = document.getElementById("toc");
+  const toc = document.getElementById("toc");
+  let tocContainer = document.getElementById("table-of-contents");
+  let tocContainerMobile = document.getElementById("table-of-contents_mobile");
+  let prevWidthLarge = window.innerWidth >= 768;
 
-  tocContainer.appendChild(toc);
+  // Get the dropdown button
+  const dropdownBtn = document.getElementById("dropdown-btn");
+
+  // Add an event listener to the button to toggle the dropdown menu
+  dropdownBtn.addEventListener("click", () => {
+    tocContainerMobile.classList.toggle("show");
+  });
+
+  function handleResize() {
+    const currWidthLarge = window.innerWidth >= 768;
+    
+    if (currWidthLarge !== prevWidthLarge) {
+      // Retrieve tocContainer and tocContainerMobile each time to ensure correct elements are used
+      tocContainer = document.getElementById("table-of-contents");
+      tocContainerMobile = document.getElementById("table-of-contents_mobile");
+
+      const srcContainer = prevWidthLarge ? tocContainer : tocContainerMobile;
+      const destContainer = currWidthLarge ? tocContainer : tocContainerMobile;
+      destContainer.appendChild(srcContainer.removeChild(toc));
+      prevWidthLarge = currWidthLarge;
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+
+  // Initial placement of the toc element based on window size
+  const container = prevWidthLarge ? tocContainer : tocContainerMobile;
+  container.appendChild(toc);
 </script>
 <script>
   // prettier-ignore
