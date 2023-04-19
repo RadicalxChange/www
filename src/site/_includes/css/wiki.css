@@ -1,19 +1,33 @@
 #side-nav {
   @apply top-0;
-  height: calc(100vh - 80px);
+  height: auto;
+  display: none;
+}
+#side-nav.show {
+  display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  #side-nav {
+    display: inline-block;
+    position: sticky;
+    height: calc(100vh - 80px);
+  }
 }
 .nav-item {
   width: 100%;
 }
 .link-container {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
   padding: 0.5rem 1rem;
 }
 .link-container:hover {
   opacity: 0.5;
+}
+@media only screen and (min-width: 768px) {
+  .link-container {
+    text-align: left;
+  }
 }
 .inner-links {
   line-height: 1.6;

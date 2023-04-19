@@ -184,29 +184,3 @@
     }
   }
 }
-
-#table-of-contents_container {
-  @apply inline-block;
-  @apply top-0;
-  @apply py-4 pl-4;
-  height: calc(100vh - 80px);
-}
-
-.toc-item {
-  margin-bottom: .5rem;
-
-  .list-aligned {
-    padding: .5rem 0 0 .5rem;
-  }
-}
-
-.toc-mobile {
-  display: block;
-}
-
-@media only screen and (min-width: 768px) {
-
-  .toc-mobile {
-    display: none;
-  }
-}

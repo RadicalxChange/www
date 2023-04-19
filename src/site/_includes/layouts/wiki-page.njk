@@ -36,7 +36,7 @@ permalink: "wiki/{{ slug }}/index.html"
   class="lg:min-h-screen relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4 pt-6 pb-8 px-4 lg:py-lg/marginoverflow-hidden"
 >
   <article
-    class="inline-block col-start-column-1 col-end-gutter-4 lg:col-start-column-4 lg:col-end-gutter-9 markdown markdown-sm"
+    class="inline-block row-start-3 lg:row-start-1 mt-6 lg:mt-0 col-start-column-1 col-end-gutter-4 lg:col-start-column-4 lg:col-end-gutter-9 markdown markdown-sm"
   >
 
     <header>
@@ -56,15 +56,15 @@ permalink: "wiki/{{ slug }}/index.html"
       </a>
     </button>
     <button class="grid lg:hidden w-full border rounded py-2 px-3 hover:opacity-80 focus:outline-none">
-      <span id="dropdown-btn" class="text-left pl-2">On this page</span>
+      <span id="dropdown-toc" class="text-left pl-2">On this page</span>
       <div id="table-of-contents_mobile" class="row-start-2">
       </div>
     </button>
     {{ content | markdown | safe }}
   </article>
-  <aside id="table-of-contents_container" class="inline-block w-full lg:sticky lg:col-start-column-10 lg:col-end-gutter-12">
-    <ul id="table-of-contents" class="inline-block list-none lg:pl-4 lg:pr-1 lg:mt-20 lg:mb-12 lg:border-l text-size--1">
-      <li class="mb-2 hidden lg:inline-block">
+  <aside id="table-of-contents_container" class="hidden lg:inline-block w-full lg:sticky lg:col-start-column-10 lg:col-end-gutter-12">
+    <ul id="table-of-contents" class="list-none lg:pl-4 lg:pr-1 lg:mt-20 lg:mb-12 lg:border-l text-size--1">
+      <li class="mb-2">
         <a
           class="inline-block border rounded py-2 px-3 hover:opacity-80"
           href="{{ page.inputPath | editPath }}"
@@ -77,12 +77,15 @@ permalink: "wiki/{{ slug }}/index.html"
           </div>
         </a>
       </li>
-      <li class="mt-4 mb-2 uppercase hidden lg:inline-block">
+      <li class="mt-4 mb-2 uppercase">
         <span>On this page</span>
       </li>
     </ul>
   </aside>
-  <nav id="side-nav" class="hidden lg:inline-block sticky top-0 pt-2 pb-4 col-start-column-1 col-end-gutter-3 row-start-1 border-r lg:min-h-screen">
+  <button id="dropdown-nav" class="lg:hidden row-start-1 col-start-column-1 col-end-gutter-4 pt-2 pb-8 px-3 border-b hover:opacity-80 focus:outline-none">
+    <span class="text-center pl-2 markdown markdown-sm">More wiki pages</span>
+  </button>
+  <nav id="side-nav" class="top-0 py-2 col-start-column-1 col-end-gutter-4 lg:col-end-gutter-3 row-start-2 lg:row-start-1 border-b lg:border-b-0 lg:border-r lg:min-h-screen">
     <!-- prettier-ignore -->
     {% for item in wikiLinks %}
       <!-- prettier-ignore -->
@@ -103,12 +106,19 @@ permalink: "wiki/{{ slug }}/index.html"
   let tocContainerMobile = document.getElementById("table-of-contents_mobile");
   let prevWidthLarge = window.innerWidth >= 768;
 
-  // Get the dropdown button
-  const dropdownBtn = document.getElementById("dropdown-btn");
+  // Get the dropdown buttons
+  const dropdownToc = document.getElementById("dropdown-toc");
+  const dropdownNav = document.getElementById("dropdown-nav");
+
+  // Get dropdown menu for nav (toc menu is already declared above)
+  const navMenu = document.getElementById("side-nav");
 
   // Add an event listener to the button to toggle the dropdown menu
-  dropdownBtn.addEventListener("click", () => {
+  dropdownToc.addEventListener("click", () => {
     tocContainerMobile.classList.toggle("show");
+  });
+  dropdownNav.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
   });
 
   function handleResize() {
