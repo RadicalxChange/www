@@ -19,6 +19,7 @@
 @import "./message-marquee.css";
 @import "./twitter-marquee.css";
 @import "./footer.css";
+@import "./wiki.css";
 
 @import "tailwindcss/utilities";
 

@@ -1,0 +1,64 @@
+<!-- prettier-ignore -->
+{% macro render(item) %}
+<div id="nav-link" class="w-full text-size--1">
+  <!-- prettier-ignore -->
+  {% if item.items %}
+  <div class="nav-item">
+    <div class="link-container collapsible">
+      <!-- prettier-ignore -->
+      {% if item.to %}
+      <a href="{{item.to}}" class="">
+        {{item.id}}
+      </a>
+      <!-- prettier-ignore -->
+      {% else %}
+      <span class="w-full cursor-pointer">
+        {{item.id}}
+      </span>
+      <!-- prettier-ignore -->
+      {% endif %}
+    </div>
+    <div class="inner-links hidden">
+      <!-- prettier-ignore -->
+      {% for childItem in item.items %}
+        <div class="nav-item">
+          <div class="link-container">
+            <a href="{{ childItem.to }}" class="text-size--2">
+              {{childItem.id}}
+            </a>
+          </div>
+        </div>
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% else %}
+  <div class="nav-item">
+    <div class="link-container">
+      <a href="{{item.to}}" class="">
+        {{item.id}}
+      </a>
+    </div>
+  </div>
+  <!-- prettier-ignore -->
+  {% endif %}
+</div>
+<script>
+  var collapsibles = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var innerLinks = this.nextElementSibling;
+      if (innerLinks.style.display === "block") {
+        innerLinks.style.display = "none";
+      } else {
+        innerLinks.style.display = "block";
+      }
+    });
+  }
+</script>
+<!-- prettier-ignore -->
+{% endmacro %}

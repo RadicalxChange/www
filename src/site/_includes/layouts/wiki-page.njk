@@ -1,0 +1,154 @@
+---
+permalink: "wiki/{{ slug }}/index.html"
+---
+
+<!-- prettier-ignore -->
+{% import "components/scroll-indicator.njk" as scrollIndicator %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/nav-link.njk" as navLink %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% set ogType="article" %}
+
+<!-- prettier-ignore -->
+{% block metaTags %}
+<!-- prettier-ignore -->
+{{ super() }}
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<!-- prettier-ignore -->
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{{ scrollIndicator.render() }}
+<div
+  class="lg:min-h-screen relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 mb-4 pt-6 pb-8 px-4 lg:py-lg/marginoverflow-hidden"
+>
+  <article
+    class="inline-block row-start-3 lg:row-start-1 mt-6 lg:mt-0 col-start-column-1 col-end-gutter-4 lg:col-start-column-4 lg:col-end-gutter-9 markdown markdown-sm"
+  >
+
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <button class="lg:hidden w-full border rounded mb-8 py-2 px-3 outline-none hover:opacity-80">
+      <a
+        class="edit-button_text"
+        href="{{ page.inputPath | editPath }}"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+      >
+        <div class="flex justify-center">
+          <img class="github-icon mr-2" src="/images/ui/mark-github.svg" />
+          <span>Edit Page</span>
+        </div>
+      </a>
+    </button>
+    <button class="grid lg:hidden w-full border rounded py-2 px-3 hover:opacity-80 focus:outline-none">
+      <span id="dropdown-toc" class="text-left pl-2">On this page</span>
+      <div id="table-of-contents_mobile" class="row-start-2">
+      </div>
+    </button>
+    {{ content | markdown | safe }}
+  </article>
+  <aside id="table-of-contents_container" class="hidden lg:inline-block w-full lg:sticky lg:col-start-column-10 lg:col-end-gutter-12">
+    <ul id="table-of-contents" class="list-none lg:pl-4 lg:pr-1 lg:mt-20 lg:mb-12 lg:border-l text-size--1">
+      <li class="mb-2">
+        <a
+          class="inline-block border rounded py-2 px-3 hover:opacity-80"
+          href="{{ page.inputPath | editPath }}"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <div class="flex">
+            <img class="mr-2" src="/images/ui/mark-github.svg" />
+            <span>Edit Page</span>
+          </div>
+        </a>
+      </li>
+      <li class="mt-4 mb-2 uppercase">
+        <span>On this page</span>
+      </li>
+    </ul>
+  </aside>
+  <button id="dropdown-nav" class="lg:hidden row-start-1 col-start-column-1 col-end-gutter-4 pt-2 pb-8 px-3 border-b hover:opacity-80 focus:outline-none">
+    <span class="text-center pl-2 markdown markdown-sm">More wiki pages</span>
+  </button>
+  <nav id="side-nav" class="top-0 py-2 col-start-column-1 col-end-gutter-4 lg:col-end-gutter-3 row-start-2 lg:row-start-1 border-b lg:border-b-0 lg:border-r lg:min-h-screen">
+    <!-- prettier-ignore -->
+    {% for item in wikiLinks %}
+      <!-- prettier-ignore -->
+      {{ navLink.render(item) }}
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </nav>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
+<script>
+  const toc = document.getElementById("toc");
+  let tocContainer = document.getElementById("table-of-contents");
+  let tocContainerMobile = document.getElementById("table-of-contents_mobile");
+  let prevWidthLarge = window.innerWidth >= 768;
+
+  // Get the dropdown buttons
+  const dropdownToc = document.getElementById("dropdown-toc");
+  const dropdownNav = document.getElementById("dropdown-nav");
+
+  // Get dropdown menu for nav (toc menu is already declared above)
+  const navMenu = document.getElementById("side-nav");
+
+  // Add an event listener to the button to toggle the dropdown menu
+  dropdownToc.addEventListener("click", () => {
+    tocContainerMobile.classList.toggle("show");
+  });
+  dropdownNav.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  function handleResize() {
+    const currWidthLarge = window.innerWidth >= 768;
+    
+    if (currWidthLarge !== prevWidthLarge) {
+      // Retrieve tocContainer and tocContainerMobile each time to ensure correct elements are used
+      tocContainer = document.getElementById("table-of-contents");
+      tocContainerMobile = document.getElementById("table-of-contents_mobile");
+
+      const srcContainer = prevWidthLarge ? tocContainer : tocContainerMobile;
+      const destContainer = currWidthLarge ? tocContainer : tocContainerMobile;
+      destContainer.appendChild(srcContainer.removeChild(toc));
+      prevWidthLarge = currWidthLarge;
+    }
+  }
+
+  window.addEventListener("resize", handleResize);
+
+  // Initial placement of the toc element based on window size
+  const container = prevWidthLarge ? tocContainer : tocContainerMobile;
+  container.appendChild(toc);
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/hash-as-scroll.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/scroll-indicator.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endblock %}

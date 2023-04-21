@@ -85,6 +85,11 @@ module.exports = function (config) {
     }
   });
 
+  // Path to wiki file on Github
+  config.addFilter("editPath", function (absolutePath) {
+    return absolutePath.replace("./src/site/wiki/", "https://github.com/RadicalxChange/www/blob/wiki-test/src/site/wiki/");
+  });
+
   // Array.slice()
   config.addFilter("slice", function (array, ...args) {
     return array.slice(...args);

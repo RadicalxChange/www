@@ -176,6 +176,10 @@
       author: Richard L. Hasen
       href: https://lawreview.uchicago.edu/publication/qv-or-not-qv-question-some-skepticism-about-radical-egalitarian-voting-marketss
       date: "1905-07-10T05:00:00.000Z"
+    - title: QV Polling Method Gains Steam in Colorado State Legislature
+      author: Alex Randaccio, Eli Zeger
+      href: /media/blog/qv-polling-method-gains-steam-in-colorado-state-legislature/
+      date: "2021-05-24T00:00:00:000Z"
     - title: Storable Votes and Quadratic Voting, an Experiment on Four California Propositions
       author: Alessandra Casella, Luis Sanchez
       href: https://www.nber.org/system/files/working_papers/w25510/w25510.pdf
@@ -229,7 +233,7 @@
     - title: CultureStake / Furtherfield
       href: https://www.furtherfield.org/culturestake-2/
       description: |
-        ‪CultureStake’s playful Quadratic Voting app allows you to vote on the types of cultural activity you would like to see in your locality. It democratizes arts commissioning by providing communities and artists with a radical tool to make cultural decisions together.
+        CultureStake’s playful Quadratic Voting app allows you to vote on the types of cultural activity you would like to see in your locality. It democratizes arts commissioning by providing communities and artists with a radical tool to make cultural decisions together.
       links:
         - text: Twitter
           href: https://twitter.com/furtherfield
@@ -274,7 +278,7 @@
     - title: Clr.fund
       href: https://clr.fund/
       description: |
-        ‪Clr.fund is a protocol for Quadratic Funding of public goods projects in the Ethereum ecosystem. Using a combination of exclusive cryptography and mechanism design it aims to prevent Sybil-attacks, bribery, and collusion in the Quadratic Funding process.
+        Clr.fund is a protocol for Quadratic Funding of public goods projects in the Ethereum ecosystem. Using a combination of exclusive cryptography and mechanism design it aims to prevent Sybil-attacks, bribery, and collusion in the Quadratic Funding process.
       links:
         - text: Twitter
           href: https://twitter.com/clrfund
@@ -283,7 +287,7 @@
     - title: Gitcoin Grants
       href: https://gitcoin.co/grants/
       description: |
-        ‪Gitcoin Grants is a Quadratic Funding platform for public goods projects, primarily, in the Ethereum ecosystem. Beyond that, it featured matching funds for public Covid-19 and Black Lives Matter causes. Its enchanting interface is the go-to-place for radical public goods pilots.
+        Gitcoin Grants is a Quadratic Funding platform for public goods projects, primarily, in the Ethereum ecosystem. Beyond that, it featured matching funds for public Covid-19 and Black Lives Matter causes. Its enchanting interface is the go-to-place for radical public goods pilots.
       links:
         - text: Twitter
           href: https://twitter.com/gitcoin
@@ -292,7 +296,7 @@
     - title: Downtown Stimulus
       href: https://downtownstimulus.com/
       description: |
-        ‪Downtown Stimulus is a Quadratic Funding based aid program for small businesses in Boulder, Colorado, that suffered as a consequence of Covid-19. Get in touch and bring the magic of Quadratic Funding to small businesses in your locality, too.
+        Downtown Stimulus is a Quadratic Funding based aid program for small businesses in Boulder, Colorado, that suffered as a consequence of Covid-19. Get in touch and bring the magic of Quadratic Funding to small businesses in your locality, too.
       links:
         - text: Twitter
           href: https://twitter.com/gitcoin
@@ -381,14 +385,14 @@
     - title: Harberger Ads
       href: https://hads.xyz/
       description: |
-        ‪Harberger Ads is an advertising marketplace governed by the rules of SALSA. Bootstrapped in a hackathon, the application allows you to sell ad space on your site or to possess other people's ad spaces. In its current version, Harberger Ads runs on Ethereum's test network.
+        Harberger Ads is an advertising marketplace governed by the rules of SALSA. Bootstrapped in a hackathon, the application allows you to sell ad space on your site or to possess other people's ad spaces. In its current version, Harberger Ads runs on Ethereum's test network.
       links:
         - text: GitHub
           href: https://github.com/theoephraim/harberger-ads
     - title: Nonomos
       href: https://nonomos.com/
       description: |
-        ‪Nonomos is a pilot application on Ethereum’s Rinkeby test network that by means of SALSA, governs the rights to cast YouTube videos on the associated site nonomos.com. Beyond that, it lets you mint and interact with additional unique tokens that work like SALSA.
+        Nonomos is a pilot application on Ethereum’s Rinkeby test network that by means of SALSA, governs the rights to cast YouTube videos on the associated site nonomos.com. Beyond that, it lets you mint and interact with additional unique tokens that work like SALSA.
       links:
         - text: GitHub
           href: https://github.com/anoanoano/NonomosHL
@@ -514,7 +518,7 @@
     - title: Equality Protocol / Democracy Earth
       href: https://democracy.earth/
       description: |
-        ‪Equality Protocol is a probabilistic score for human identity on Ethereum. The score results from a subjective (deliberative process) and an objective (Gini coefficients) input. Certain scores give you the right to participate in e.g. universal basic incomes or elections.
+        Equality Protocol is a probabilistic score for human identity on Ethereum. The score results from a subjective (deliberative process) and an objective (Gini coefficients) input. Certain scores give you the right to participate in e.g. universal basic incomes or elections.
       links:
         - text: Twitter
           href: https://twitter.com/DemocracyEarth
@@ -536,7 +540,7 @@
     - title: Idena
       href: https://idena.io/
       description: |
-        ‪Idena is a proof-of-person blockchain that proves the humanness and uniqueness of its participants by running AI-hard Turing tests around the globe at the same time. Every node in the network is linked to one cryptoidentity, one single person, and has equal voting power.
+        Idena is a proof-of-person blockchain that proves the humanness and uniqueness of its participants by running AI-hard Turing tests around the globe at the same time. Every node in the network is linked to one cryptoidentity, one single person, and has equal voting power.
       links:
         - text: Twitter
           href: https://twitter.com/IdenaNetwork
