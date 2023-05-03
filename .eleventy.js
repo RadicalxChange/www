@@ -87,7 +87,7 @@ module.exports = function (config) {
 
   // Path to wiki file on Github
   config.addFilter("editPath", function (absolutePath) {
-    return absolutePath.replace("./src/site/wiki/", "https://github.com/RadicalxChange/www/blob/wiki-test/src/site/wiki/");
+    return absolutePath.replace("./src/site/wiki/", "https://github.com/RadicalxChange/www/blob/main/src/site/wiki/");
   });
 
   // Array.slice()
