@@ -54,3 +54,5 @@ These are still early days for XIDs, and we are excited to help steer them in a 
 [Optimism](https://app.optimism.io/governance) - The Optimism Collective is a new model for properly rewarding those who create or sustain public goods.
 
 [Sismo](https://app.optimism.io/governance) - Sismo issues ZK badges for reputation aggregation and privacy preserving access control.
+
+[Relation](https://www.relationlabs.ai/) - With the awakening of data sovereignty, Relation is reconfiguring the social relations of individuals in a decentralized way. We make it possible for every Soul to mint readable, understandable, programmable SBTs to represent proofs of their friendships, affiliations, membership certificate qualifications, commitments, etc., on the chain.
