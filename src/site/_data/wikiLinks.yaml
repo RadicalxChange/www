@@ -9,17 +9,19 @@
   to: /wiki/about
 - id: Data Dignity
   to: /wiki/data-dignity/
-- id: Quadratic Voting
-  to: /wiki/quadratic-voting/
 - id: Plural Funding
   to: /wiki/plural-funding/
 - id: Plural Property
   to: /wiki/plural-property/
+- id: PCO Art
+  to: /wiki/pco-art
 - id: Plural Money
   to: /wiki/plural-money
-- id: Social Identity
-  to: /wiki/social-identity/
-- id: Radical Antitrust
-  to: /wiki/radical-antitrust/
+- id: Quadratic Voting
+  to: /wiki/quadratic-voting/
 - id: QV in Colorado
   to: /wiki/colorado-qv/
+- id: Radical Antitrust
+  to: /wiki/radical-antitrust/
+- id: Social Identity
+  to: /wiki/social-identity/

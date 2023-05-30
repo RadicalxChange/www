@@ -11,6 +11,8 @@ In Plural Property systems, assets belong to no one and everyone. An asset’s c
 
 A group of Web3 technologists has come together to form an independent RadicalxChange chapter focused on bringing Partial Common Ownership Tokens to Ethereum.  Learn more on our [website](https://partialcommonownership.com) or join the conversation in our active [Discord](https://discord.gg/CjxV954JMT).
 
+In addition, RadicalxChange Foundation is collaborating with Serpentine Arts Technologies and a team of Plural Property builders to [introduce partial common ownership](/wiki/pco-art) to the culture and practice of artists and collectors. We are building infrastructure for the management of partial common ownership interests and helping artists experiment with this new concept for the stewardship of their work.
+
 ### Further Reading
 
 [Between Abundance and Scarcity](/media/blog/between-scarcity-and-abundance/) - Matt Prewitt
