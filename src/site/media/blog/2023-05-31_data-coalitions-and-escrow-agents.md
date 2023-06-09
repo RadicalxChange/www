@@ -6,6 +6,8 @@ postHeader: "Data Coalitions and Escrow Agents"
 postAuthor: "Jack Henderson, Matt Prewitt"
 ---
 
+![Data Coalitions and Escrow Agents](/images/blog/data-coalitions-header.png)
+
 > Computer system and network security should be viewed as the other side of the coin of information sharing. What is needed is a systematic technical solution to the problem of sure and convenient access by individuals and groups to the resources they have selectively been authorized to use, at the same time denying access to individuals and groups not so authorized. The solution must include audit trails, authorization channels, and facilities for continuous testing and evaluation. The problem of determining who should be authorized to use what and how is, of course, a separate matter, since it depends on the context.
 
 – J.C.R. “Lick” Licklider, founder of ARPANET, *Computers and Government* (1979)
