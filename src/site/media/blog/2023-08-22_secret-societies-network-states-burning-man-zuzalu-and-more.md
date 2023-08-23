@@ -184,6 +184,8 @@ But I don’t see how we can avoid undertaking this work. Our techniques for con
 
 I’ve proposed a few ideas that I think warrant pilots. If you agree, reach out and help make it happen.
 
+_Major thanks to Paula Berman, Jack Henderson, Angela Corpus, Alex Randaccio, and Christopher Kulendran Thomas for feedback, conversations and ideas that contributed to this piece.
+
 **Notes**
 
 [^1]: If those three things correspond to three classical elements – earth, fire, and air – what of the fourth? Indulge me by thinking of narrativization as the manipulation of “water”. This is a generative metaphor: Water brings coherence and renewal, and sustains life. It protects the earth - the body that unites and sustains us, and for which we are responsible – from the sun’s energetic assault. It does this by changing phases readily, thus dampening excesses of energy. Counterintuitively, water orders itself when energy is removed from it, not when it is added. As vapor cools, it first condenses into liquid, then crystallizes into ice. It thus constantly prepares to repeat its protective role. It holds the other elements in harmony.
