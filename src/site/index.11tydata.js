@@ -12,17 +12,11 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
   popup: {
     isOn: true,
     title: "Beyond Cultures of Ownership: Emerging Strategies for Interdependence",
-    bodyText: `How can art and culture help reshape our understanding of ownership?
+    bodyText: `**RadicalxChange & Serpentine Arts Technologies with Dark Matter Labs & Somerset House co-host a one-day gathering in London on 3 Nov 2023.**
 
 Join us on the 3rd of November, 2023, at Somerset House, London, to explore and strategise how art and culture can play an active part in reconfiguring ownership. We see ‘ownership’ as the underlying power dynamic of our time that can either create or block possibilities for rebalancing our relationships with technology, the planet, and one another.
 
-We invite artists, activists, researchers, technologists, and policymakers active and interested in connecting the dots between cultural production, political economies, and systems change. By creating a space for all of us to come together from different contexts, we hope to sketch out connections between new imaginaries and practises that instigate more plural and relational protocols for interdependence.
-
-Beyond Cultures of Ownership will run in (un)conference style, which allows for emergent agenda-setting and deep exchanges between participants. We have invited Improbable to facilitate this conversation. Improbable is a theatre company who specialise in using a process called Open Space Technology (OST). OST is a simple way for groups of people to think, work and take action together around a shared concern. There is no set agenda and you decide what to discuss. You are free to move between conversations in a single session depending on what interests you. You can read more about Improbable and Open Space here.
-
-The day will begin and end with contributions that draw from multiple areas of contemporary thinking and practise, and which are meant to inspire participant-led Open Space sessions. We’ll hear from artists, policy and technology researchers, activists, and social innovators: Adrienne Buller, Danielle Brathwaite-Shirley, Hilary Cottam, Holly Herndon & Mat Dryhurst, Indy Johar, Divya Siddarth, and Sam Sivapragasam. Their provocations will provide a set of common references to explore the role of the arts alongside the legal, political, cultural, and ethical assumptions that underpin ownership.
-
-Our hope is for participants to walk away feeling part of a new community creatively re-imagining the legal, cultural, and ethical assumptions that underpin ownership. Follow-up opportunities announced during the event will facilitate continuous engagement and collaborations to help these ideas evolve and operationalise.`,
+We invite artists, activists, researchers, technologists, and policymakers active and interested in connecting the dots between cultural production, political economies, and systems change. By creating a space for all of us to come together from different contexts, we hope to sketch out connections between new imaginaries and practises that instigate more plural and relational protocols for interdependence.`,
     link: "/media/announcements/beyond-cultures-of-ownership",
   },
 };
