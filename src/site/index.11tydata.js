@@ -10,17 +10,19 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     slidoUrl: "",
   },
   popup: {
-    isOn: false,
-    title: "Announcing the RxC Warsaw Conference & Freedom Games",
-    bodyText: `With Europe at war, the world has profoundly changed since our conferences in Taipei and Denver last December. More than ever, we must step up together and embrace the power of diverse cooperation.
+    isOn: true,
+    title: "Beyond Cultures of Ownership: Emerging Strategies for Interdependence",
+    bodyText: `How can art and culture help reshape our understanding of ownership?
 
-This October, the RxC community will gather in-person (& Online) in Łódź, Poland (Oct 15-16) and in Warsaw, Poland (Oct 18).
+Join us on the 3rd of November, 2023, at Somerset House, London, to explore and strategise how art and culture can play an active part in reconfiguring ownership. We see ‘ownership’ as the underlying power dynamic of our time that can either create or block possibilities for rebalancing our relationships with technology, the planet, and one another.
 
-At the [2022 Freedom Games](https://igrzyskawolnosci.pl/en/) in Łódź, with the support of [Fundacja Liberté!](https://liberte.pl/), RadicalxChange has an entire program of panels and keynotes on “[21st Century Infrastructure: From State Capacity to Shared Capacity](/events/2022-freedom-games/).”
+We invite artists, activists, researchers, technologists, and policymakers active and interested in connecting the dots between cultural production, political economies, and systems change. By creating a space for all of us to come together from different contexts, we hope to sketch out connections between new imaginaries and practises that instigate more plural and relational protocols for interdependence.
 
-And in Warsaw, with the support of Wildland, RadicalxChange is hosting a community event called “[RxC Warsaw: Europe and The Futures of Pluralism](/events/2022-warsaw/).”
+Beyond Cultures of Ownership will run in (un)conference style, which allows for emergent agenda-setting and deep exchanges between participants. We have invited Improbable to facilitate this conversation. Improbable is a theatre company who specialise in using a process called Open Space Technology (OST). OST is a simple way for groups of people to think, work and take action together around a shared concern. There is no set agenda and you decide what to discuss. You are free to move between conversations in a single session depending on what interests you. You can read more about Improbable and Open Space here.
 
-We invite you to Poland, where together we will learn of pioneering digital democracy practices in Ukraine, Estonia, and across Eastern Europe. We will experience works of art as windows to connection, and examine European institutions through the frame of pluralistic governance. We will uplift the work of activists, social fabric weavers, and critical voices. And we will consider European cases for community currencies, data cooperatives, decentralized identity systems, communication tools, and other pro-social digital infrastructures and civic technologies.`,
-    link: "/events/2022-warsaw",
+The day will begin and end with contributions that draw from multiple areas of contemporary thinking and practise, and which are meant to inspire participant-led Open Space sessions. We’ll hear from artists, policy and technology researchers, activists, and social innovators: Adrienne Buller, Danielle Brathwaite-Shirley, Hilary Cottam, Holly Herndon & Mat Dryhurst, Indy Johar, Divya Siddarth, and Sam Sivapragasam. Their provocations will provide a set of common references to explore the role of the arts alongside the legal, political, cultural, and ethical assumptions that underpin ownership.
+
+Our hope is for participants to walk away feeling part of a new community creatively re-imagining the legal, cultural, and ethical assumptions that underpin ownership. Follow-up opportunities announced during the event will facilitate continuous engagement and collaborations to help these ideas evolve and operationalise.`,
+    link: "/media/announcements/beyond-cultures-of-ownership",
   },
 };
