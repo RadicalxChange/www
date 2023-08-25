@@ -17,6 +17,6 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
 Join us on the 3rd of November, 2023, at Somerset House, London, to explore and strategise how art and culture can play an active part in reconfiguring ownership. We see ‘ownership’ as the underlying power dynamic of our time that can either create or block possibilities for rebalancing our relationships with technology, the planet, and one another.
 
 We invite artists, activists, researchers, technologists, and policymakers active and interested in connecting the dots between cultural production, political economies, and systems change. By creating a space for all of us to come together from different contexts, we hope to sketch out connections between new imaginaries and practises that instigate more plural and relational protocols for interdependence.`,
-    link: "/media/announcements/beyond-cultures-of-ownership",
+    link: "/events/2023-london",
   },
 };
