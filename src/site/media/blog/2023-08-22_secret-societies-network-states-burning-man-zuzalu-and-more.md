@@ -6,7 +6,7 @@ postHeader: "Secret Societies, Network States, Burning Man, Zuzalu, and More: Th
 postAuthor: "Matt Prewitt"
 ---
 
-The sociologist Georg Simmel wrote a long essay in 1906 called “[The Sociology of Secrecy and Secret Societies](https://www.jstor.org/stable/2762562?seq=21).” It is really difficult to read. The sentences are long, dense and overfull with meaning. The English translations retain the cadence of antiquated academic German.
+The sociologist Georg Simmel wrote a meaty essay in 1906 called “[The Sociology of Secrecy and Secret Societies](https://www.jstor.org/stable/2762562?seq=21).” It is really difficult to read. The sentences are long, dense and overfull with meaning. The English translations retain the cadence of antiquated academic German.
 
 ![Sociology of Secrecy and of Secret Societies, by Georg Simmel](/images/blog/sociology-of-secrecy-and-of-secret-societies.png)
 
@@ -108,7 +108,7 @@ When the special knowledge of a community is externalized, or recorded in some p
 
 In the strongest and most intimate private relationships, confidentiality is frequently assumed, and agreements often proceed on the basis of unsecured trust. By contrast in public life, confidentiality is rarely assumed and assurances are generally demanded. [Demands of transparency](https://www.radicalxchange.org/media/blog/why-should-institutions-be-transparent/) reveal the public’s presumption of ill intentions by those in power: transparency is designed to break up the proverbial “smoke-filled rooms” in which secrets are shared between the powerful, so that those secrets do not result in the emergence of “sub-communities” operating at odds with the wider polis.
 
-To a considerable degree, the strength of the informational barrier between a community and its surrounding context indicates the extent to which that community really amounts to a coherent community, as distinct from that surrounding context. One even sees this pattern even on the level of an individual: a person whose thoughts could be thoroughly read from the outside would be for that reason completely manipulable, and therefore potentially devoid of either autonomy or responsibility for their actions. 
+To a considerable degree, the strength of the informational barrier between a community and its surrounding context indicates the extent to which that community really amounts to a coherent community, as distinct from that surrounding context. One even sees this pattern on the level of an individual: a person whose thoughts could be thoroughly read from the outside would be for that reason completely manipulable, and therefore potentially devoid of either autonomy or responsibility for their actions. 
 
 This pattern has important implications for the interaction between community formation and cryptographic techniques including public blockchains, zero-knowledge proofs and other privacy enhancing technologies, and [designated verifier signatures](https://ethresear.ch/t/designated-verifier-signatures/15100).
 
@@ -184,7 +184,7 @@ But I don’t see how we can avoid undertaking this work. Our techniques for con
 
 I’ve proposed a few ideas that I think warrant pilots. If you agree, reach out and help make it happen.
 
-_Major thanks to Paula Berman, Jack Henderson, Angela Corpus, Alex Randaccio, and Christopher Kulendran Thomas for feedback, conversations and ideas that contributed to this piece.
+*Major thanks to Paula Berman, Jack Henderson, Angela Corpus, Alex Randaccio, and Christopher Kulendran Thomas for feedback, conversations and ideas that contributed to this piece.
 
 **Notes**
 
