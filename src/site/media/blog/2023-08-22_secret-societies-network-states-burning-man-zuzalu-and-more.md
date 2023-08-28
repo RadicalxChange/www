@@ -138,9 +138,9 @@ All of these patterns warrant further study. The role of mutual vulnerability in
 
 These patterns help explain why the intensification of basic information technologies can weaken communities. Open networks of money and information reduce the importance of local associations, frustrate secrecy, attenuate mutual vulnerability, and facilitate exit from community. This is the atomization that sociologists like Simmel have studied since the industrial revolution. The problem has not diminished but intensified, and there is no reason to think the trend will break.
 
-I worry about this, and that is why I find new community initiatives are interesting and important. Still, they cannot repeat past mistakes. They should absorb the lessons of past failures with the ardor of technologists building tirelessly atop past successes.
+I worry about this, and that is why I find new community initiatives interesting and important. Still, they cannot repeat past mistakes. They should absorb the lessons of past failures with the ardor of technologists building atop past successes. 
 
-The patterns outlined above suggest certain directions of travel for “responsible experimenters” interested in improving our powers of community-building. In that spirit, here are two concrete experiments in community-building that strike me as plausible and interesting.
+The patterns outlined above suggest certain directions of travel for “responsible experimenters” interested in improving our techniques of community-building. In that spirit, here are two concrete experiments that strike me as plausible and interesting.
 
 ![Experimenters](/images/blog/experimenters.png)
 
