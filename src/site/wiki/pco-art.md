@@ -81,7 +81,7 @@ Many types of art (performance art, AxAT, socially engaged art) are poorly suite
 
 ## How to Get Involved
 
-The PCOArt project is initiated by RadicalxChange and the [Future Art Ecosystems](https://futureartecosystems.org/) team at Serpentine Arts Technologies, in collaboration with Graven Prest and Cody Hatfield, with advisory support by Will Holley and Lucy Sollitt.
+The PCOArt project is initiated by RadicalxChange, Serpentine Arts Technologies ([Future Art Ecosystems](https://futureartecosystems.org/)), and developed in collaboration with Aerocene Foundation, with technical support from Graven Prest and Cody Hatfield, and advisory support from Will Holley and Lucy Sollitt.
 
 Please [get in touch](mailto:victoriai@serpentinegalleries.org) if you are interested in finding out more or want to be part of our user testing.
 
