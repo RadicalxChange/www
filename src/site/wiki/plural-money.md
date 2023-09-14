@@ -17,6 +17,8 @@ By (1) applying intersectional identity ideas, such as “soulbound” tokens, t
 
 [Sovereign Cryptocurrencies for People, Corporations, Banks and Communities: Foundations for Grassroots Cryptoeconomy](https://arxiv.org/abs/2202.05619) - Ehud Shapiro
 
+[Ken Suzuki — PICSY : Proposing a New Currency System Using Social Computing, Introducing “Plural Money” from Japanese Complex System Researcher](https://medium.com/@tkgshn/ken-suzuki-picsy-proposing-a-new-currency-system-using-social-computing-introducing-plural-771d5d8ebdf6) - taka
+
 ## Tools
 
 [Resource](https://www.resourcenetwork.co/) - Resource is a decentralized, circular economy fueled by local resources and human potential.
