@@ -25,6 +25,8 @@ Plural Funding (also known as Quadratic Funding or QF) is a more democratic and 
 
 [Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html) - Vitalik Buterin
 
+[WTF is Plural QF](https://tkgshn.github.io/wtfispluralqf/) - taka
+
 ## Tools
 
 [Clr.fund](https://clr.fund/) - Clr.fund is a protocol for Quadratic Funding of public goods projects in the Ethereum ecosystem. Using a combination of exclusive cryptography and mechanism design it aims to prevent Sybil-attacks, bribery, and collusion in the Quadratic Funding process.
