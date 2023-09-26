@@ -10,7 +10,7 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     slidoUrl: "",
   },
   popup: {
-    isOn: true,
+    isOn: false,
     title: "Beyond Cultures of Ownership: Emerging Strategies for Interdependence",
     bodyText: `**RadicalxChange & Serpentine Arts Technologies with Dark Matter Labs & Somerset House co-host a one-day gathering in London on 3 Nov 2023.**
 
