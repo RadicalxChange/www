@@ -1,5 +1,11 @@
 const press = [
   {
+    title: "It’s like jury duty, but for getting things done",
+    href: "https://www.bostonglobe.com/2023/08/18/opinion/citizens-assemblies/",
+    publication: "The Boston Globe",
+    date: "2023-08-18T00:00:00.000Z"
+  },
+  {
     title:
       "Matt Prewitt: Let’s Use New Forms of Money to Commit to Our Communities",
     href:
