@@ -437,6 +437,10 @@
       author: Matt Prewitt
       href: /media/blog/plural-money-a-new-currency-design/
       date: "2022-02-07T04:00:00.000Z"
+    - title: Plural Money, Socially-Provided Goods, and the Principal-Agent Problem
+      author: Matt Prewitt, E. Glen Weyl
+      href: ​/media/blog/plural-money-socially-provided-goods-and-the-principal-agent-problem/
+      date: "2023-09-08"
     - title: "Sovereign Cryptocurrencies for People, Corporations, Banks and Communities: Foundations for Grassroots Cryptoeconomy"
       author: Ehud Shapiro
       href: https://arxiv.org/abs/2202.05619
@@ -453,6 +457,26 @@
           href: https://twitter.com/ReSource_Fi
         - text: Github
           href: https://github.com/ReSource-Network/
+    - title: Ğ1 Currency
+      href: https://g1currency.org/?PagePrincipale
+      description: |
+        Ğ1 is the first Free or Libre currency, introducing an innovative mechanism for money creation, delivered through sustainable blockchain technology, encouraging decentralised, community-level exchanges.
+      links:
+        - text: Forum
+          href: https://forum.monnaie-libre.fr/c/langues/english/101
+        - text: Telegram
+          href: https://t.me/LibreCurrency
+    - title: Freeos
+      href: https://www.freeos.io/
+      description: |
+        Freeos (rhymes with “free us”) is an Economic System that gives access to an easily accessible, democratic, crypto income for everyone. Freeos is managed directly by the people, for the people.
+      links:
+        - text: Twitter
+          href: https://twitter.com/FREEOS_dao
+        - text: GitHub
+          href: https://github.com/FREEOSDAO
+        - text: Telegram
+          href: https://t.me/freeos_talk
 - title: Social Identity
   slug: social-identity
   description: |

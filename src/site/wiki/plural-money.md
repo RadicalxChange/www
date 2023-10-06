@@ -13,6 +13,8 @@ By (1) applying intersectional identity ideas, such as “soulbound” tokens, t
 
 [Let's Use New Forms of Money to Commit to our Communities](/media/blog/lets-use-new-forms-of-money-to-commit-to-our-communities/) - Matt Prewitt
 
+[Plural Money, Socially-Provided Goods, and the Principal-Agent Problem](​/media/blog/plural-money-socially-provided-goods-and-the-principal-agent-problem/) - Matt Prewitt, E. Glen Weyl
+
 [Plural Money: A New Currency Design](/media/blog/plural-money-a-new-currency-design/) - Matt Prewitt
 
 [Sovereign Cryptocurrencies for People, Corporations, Banks and Communities: Foundations for Grassroots Cryptoeconomy](https://arxiv.org/abs/2202.05619) - Ehud Shapiro
@@ -22,3 +24,7 @@ By (1) applying intersectional identity ideas, such as “soulbound” tokens, t
 ## Tools
 
 [Resource](https://www.resourcenetwork.co/) - Resource is a decentralized, circular economy fueled by local resources and human potential.
+
+[Ğ1 Currency](https://g1currency.org/?PagePrincipale) - Ğ1 is the first Free or Libre currency, introducing an innovative mechanism for money creation, delivered through sustainable blockchain technology, encouraging decentralised, community-level exchanges.
+
+[Freeos](https://www.freeos.io/) - Freeos (rhymes with “free us”) is an Economic System that gives access to an easily accessible, democratic, crypto income for everyone. Freeos is managed directly by the people, for the people.
