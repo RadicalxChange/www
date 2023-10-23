@@ -5,7 +5,7 @@ slug: "community-exchange"
 ---
 [toc]
 
-In 2023, RadicalxChange experimented with a novel citizen engagement methodology in Colorado. Building on several years of work developing best practices for the use of pol.is and Quadratic Voting for deliberation and collective decision making, and inspired by successes of the Citizens Assembly model of engagement around the world, RadicalxChange sought to determine what advantages there might be to cross-pollinating the two methodologies.
+In 2023, RadicalxChange experimented with a novel citizen engagement methodology in Colorado, in partnership with [The Civic Canopy](https://www.civiccanopy.org/) and [Healthy Democracy](https://healthydemocracy.org/). Building on several years of work developing best practices for the use of pol.is and Quadratic Voting for deliberation and collective decision making, and inspired by successes of the Citizens Assembly model of engagement around the world, RadicalxChange sought to determine what advantages there might be to cross-pollinating the two methodologies.
 
 The opportunity presented itself in a partnership with the Office of Climate Preparedness (CPO), a newly-created office in the executive branch of the state of Colorado. The CPO was tasked by a State Senate bill with creating a roadmap that would coordinate climate preparedness policy across state government agencies. In order to invite citizens into the process, RadicalxChange assembled a representative sample of the state’s population to discuss climate preparedness policy and communicate their priorities to the CPO using the newly developed engagement model: “Community Exchange.”
 
@@ -41,7 +41,7 @@ The first panel was intended as a lightweight experiment to test out some of our
 
 **Recruitment Design**
 
-- Panelists were recruited through the mailing list and Twitter reach of Civic Canopy, a Colorado-based nonprofit organization and partner on the project. Each panelist was offered $100 for their participation.
+- Panelists were recruited through the mailing list and Twitter reach of Civic Canopy. Each panelist was offered $100 for their participation.
 - From the pool of volunteers, a panel would be selected by lottery using [Panelot](​​https://panelot.org/), an open-source sortition tool, according to demographic quotas that would be proportional to the state-wide demographics recorded in the most recent census.
 - The target panel size was 35 Colorado residents.
 
@@ -84,7 +84,7 @@ Panel 2 was the first of two full-scale panels. Panel 2 and Panel 3 were both se
 - In order to meet demographic goals and have a sufficiently random lottery, the goal was to recruit a volunteer pool of around 400 Colorado residents, from which the final panels would be selected.
 - A letter of invitation was sent out via USPS to about 19,000 randomly selected residential addresses in Colorado, using an online mailing service called [Lob](https://lob.com/). These addresses were pulled from the National Address Database ([NAD](https://www.transportation.gov/gis/national-address-database)). Counties not represented in the NAD were filled in using public record voter roll data.
 - The final panels were selected using Panelot.
-- In Panel 2 and Panel 3, Healthy Democracy (HD)—a partner organization that joined the project for Panels 2 and 3—held one-on-one orientation calls with each of the panelists to introduce them to the technologies they would need to use in the session for accessibility. HD also provided backstage tech support during the sessions to ensure that all panelists could participate fully.
+- In Panel 2 and Panel 3, Healthy Democracy (HD) held one-on-one orientation calls with each of the panelists to introduce them to the technologies they would need to use in the session for accessibility. HD also provided backstage tech support during the sessions to ensure that all panelists could participate fully.
 
 **Recruitment Results**
 
