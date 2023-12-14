@@ -7,6 +7,8 @@
   to: /wiki/
 - id: About RxC
   to: /wiki/about
+- id: Community Exchange
+  to: /wiki/community-exchange/
 - id: Data Dignity
   to: /wiki/data-dignity/
 - id: Civic Tech & Democracy
