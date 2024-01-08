@@ -2,7 +2,7 @@
 layout: "layouts/blog-post.njk"
 date: "2024-01-08"
 title: "Towards Decentralized Civic Infrastructure"
-postHeader: "Towards Decentralized Civic Infrastructure: Transforming civics with web3"
+postHeader: "Towards Decentralized Civic Infrastructure: Transforming Civics with Web3"
 postAuthor: "Calvin Po, Fang-Jui “Fang-Raye” Chang"
 ---
 

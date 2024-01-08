@@ -1,8 +1,8 @@
 ---
 layout: "layouts/blog-post.njk"
 date: "2024-01-08"
-title: "Evolving a new public with web3"
-postHeader: "Evolving a new public with web3"
+title: "Evolving a New Public with Web3"
+postHeader: "Evolving a New Public with Web3"
 postAuthor: "Calvin Po, Fang-Jui “Fang-Raye” Chang"
 ---
 
