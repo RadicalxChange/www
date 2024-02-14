@@ -102,7 +102,7 @@ Instead, conventional assets can simply be acquired by public or private bodies,
 
 Special investment funds could facilitate all of this. There will be complex legal and regulatory challenges in applying PCO to new regulatory domains—corporate securities, real estate law, data use regulation, etc. This is why the initial barriers are high. But the returns on a fundamentally better matrix of ownership—financial, political, and moral—could be immense.
 
-![Imagining Partial Common Ownership](pco-world.png)
+![Imagining Partial Common Ownership](/images/blog/pco-world.png)
 
 ## Pulling The Pieces Together
 
