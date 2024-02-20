@@ -142,6 +142,7 @@
 
   img {
     @apply border rounded;
+    @apply mx-auto;
   }
 
   p {
