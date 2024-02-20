@@ -1,6 +1,6 @@
 ---
 layout: "layouts/blog-post.njk"
-date: "2024-02-14"
+date: "2024-02-20"
 title: "PCO: A New Model of Ownership"
 postHeader: "PCO: A New Model of Ownership"
 postAuthor: "Matt Prewitt, Jack Henderson"
