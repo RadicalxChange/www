@@ -10,7 +10,7 @@ So we need to look elsewhere – beyond capitalism and other conventional wisdom
 
 RadicalxChange focuses on the details of how to do this, with particular attention to institutional innovation:
 
-  - **Research:** We support and contribute to rigorous research and development of novel decision-making and power-sharing systems, such as [quadratic voting](/wiki/plural-voting/) & [funding](/wiki/plural-funding/), [common ownership structures](/wiki/plural-property/), [plural currencies](/wiki/plural-money/), [social identity](/wiki/social-identity/), and “listening-at-scale” citizen engagement techniques.
+  - **Research:** We support and contribute to rigorous research and development of novel decision-making and power-sharing systems, such as [quadratic voting](/wiki/quadratic-voting/) & [funding](/wiki/plural-funding/), [common ownership structures](/wiki/plural-property/), [plural currencies](/wiki/plural-money/), [social identity](/wiki/social-identity/), and “listening-at-scale” citizen engagement techniques.
 
   - **Prototypes:** We develop open-source technologies, such as our [quadratic voting tool](https://demo.quadraticvote.radicalxchange.org/), [RxC Voice](https://voice.radicalxchange.org/), and [PCOArt](https://github.com/RadicalxChange/pco-art/), that enable dynamic experimentation and illustrate promising new directions in institutional design.
 
