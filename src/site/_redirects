@@ -7,15 +7,23 @@
 /media/announcements/curated-ballot /media/announcements/community-poll-ballot-2021
 /media/announcements/rxc-voice-pilot-results /media/announcements/community-poll-results-2021
 
-# renamed concepts to plurality
-/concepts/quadratic-voting /concepts/plural-voting
-/concepts/quadratic-funding /concepts/plural-funding
-/concepts/intersectional-social-identity /concepts/social-identity
-/concepts/plural-identity /concepts/social-identity
-/concepts/soulbound-tokens /concepts/social-identity
-/concepts/partial-common-ownership /concepts/plural-property
-/concepts/plural-ownership /concepts/plural-property
+# phased out concepts, moved data to wiki
+/concepts /wiki
+/concepts/data-dignity /wiki/data-dignity
+/concepts/quadratic-voting /wiki/quadratic-voting
+/concepts/plural-voting /wiki/quadratic-voting
+/concepts/quadratic-funding /wiki/plural-funding
+/concepts/plural-funding /wiki/plural-funding
+/concepts/partial-common-ownership /wiki/plural-property
+/concepts/plural-ownership /wiki/plural-property
+/concepts/plural-property /wiki/plural-property
+/concepts/plural-money /wiki/plural-money
+/concepts/intersectional-social-identity /wiki/social-identity
+/concepts/plural-identity /wiki/social-identity
+/concepts/soulbound-tokens /wiki/social-identity
+/concepts/social-identity /wiki/social-identity
 
+# fellowship projects renamed
 /fellowship/arthaus-artist-residency /fellowship/public-goods-x-cuba
 /fellowship/mio /fellowship/ama
 
