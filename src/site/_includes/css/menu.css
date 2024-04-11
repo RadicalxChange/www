@@ -2,13 +2,12 @@
   @apply z-40;
   @apply fixed top-0 left-0;
   @apply flex items-center;
-  @apply w-full;
+  @apply w-full lg:w-auto;
   @apply h-full;
   transform: translate3d(0, 100%, 0);
   @apply transition-transform duration-500;
 
   @screen lg {
-    @apply w-auto;
     transform: translate3d(calc(-100% + 30px), 0, 0);
   }
 }

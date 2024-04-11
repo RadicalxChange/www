@@ -68,8 +68,8 @@
   }
 
   .twitter-tweet {
-    margin-top: theme("spacing.markdown-md") !important;
-    margin-bottom: theme("spacing.markdown-md") !important;
+    @apply mt-markdown-md !important;
+    @apply mb-markdown-md !important;
   }
 
   hr {
@@ -126,10 +126,7 @@
 
   h1 {
     @apply font-display text-size-display;
-
-    @screen lg {
-      @apply text-size-lg/display;
-    }
+    @apply lg:text-size-lg/display;
   }
 
   h1,
