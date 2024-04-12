@@ -1,20 +1,18 @@
 .about_press-link:nth-child(n + 20) {
   @apply hidden;
-
-  @screen lg {
-    @apply block;
-  }
+  @apply lg:block;
 }
 
 .about_press-description {
   @apply hidden;
 
   @screen md {
-    @apply block;
     clip-path: inset(0 100% 0 0);
-    @apply transition-clip-path duration-300;
     max-width: 17ch;
   }
+  @apply md:block;
+  @apply md:transition-clip-path;
+  @apply md:duration-300;
 
   @screen lg {
     max-width: 19ch;

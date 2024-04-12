@@ -1,5 +1,5 @@
 const fs = require("fs").promises;
-const { AssetCache } = require("@11ty/eleventy-cache-assets");
+const { AssetCache } = require("@11ty/eleventy-fetch");
 const Parser = require("rss-parser");
 
 const CACHE_DIR = ".cache";

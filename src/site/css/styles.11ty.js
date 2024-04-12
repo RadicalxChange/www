@@ -21,7 +21,7 @@ module.exports = class {
       require("postcss-nested"),
       require("autoprefixer"),
       require("postcss-prettify"),
-      require("postcss-clean"), // comment this out to disable minification
+      require("cssnano"), // comment this out to disable minification
     ])
       .process(rawCss, { from: rawFilepath })
       .then((result) => result.css);

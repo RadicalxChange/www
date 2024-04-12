@@ -1,7 +1,10 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  purge: [],
+  content: [
+    './src/site/index.njk',
+    './src/site/**/*.{njk,css,js}'
+  ],
   theme: {
     screens: {
       md: { raw: "(min-width: 640px)" },

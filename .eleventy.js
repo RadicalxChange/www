@@ -12,6 +12,7 @@ const libraryData = require("./src/data/media/library");
 const papersData = require("./src/data/media/papers");
 const fetchPodcastsReplayed = require("./src/data/media/podcasts-replayed");
 const fetchPodcastsRadicalxchanges = require("./src/data/media/podcasts-radicalxchanges");
+const nunjucks = require("nunjucks");
 
 module.exports = function (config) {
   const isDev = process.env.RXC_DEV === "true";
@@ -46,15 +47,19 @@ module.exports = function (config) {
   config.setLibrary("md", markdown);
   config.addFilter("markdown", (value) => markdown.render(value));
   config.addFilter("latex", (content) => {
-  return content.replace(/\$\$(.+?)\$\$/g, (_, equation) => {
-    const cleanEquation = equation.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+    return content.replace(/\$\$(.+?)\$\$/g, (_, equation) => {
+      const cleanEquation = equation.replace(/&lt;/g, "<").replace(/&gt;/g, ">");
 
-    return katex.renderToString(cleanEquation, { throwOnError: false });
+      return katex.renderToString(cleanEquation, { throwOnError: false });
+    });
   });
-});
+
+  config.addFilter("safe", (content) => {
+    return new nunjucks.runtime.SafeString(content);
+  });
 
   // Support YAML for data
-  config.addDataExtension("yaml", (contents) => yaml.safeLoad(contents));
+  config.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   // Formatting for dates
   function readableDate(dateStr) {
