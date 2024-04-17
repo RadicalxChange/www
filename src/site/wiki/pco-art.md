@@ -91,9 +91,7 @@ Please [get in touch](mailto:victoriai@serpentinegalleries.org) if you are inter
 
 [RadicalxChange(s)](https://radicalxchange-s.simplecast.com/episodes/victoria-ivanova-rd-strategic-lead-at-serpentine-arts-technologies-JVDJXn0j) podcast episode on art & infrastructural experimentation
 
-[Plural Property](/concepts/plural-property/) key ideas
-
-[Plural Property wiki page](/wiki/plural-property/)
+[Partial Common Ownership wiki page](/wiki/partial-common-ownership/)
 
 ## Notes
 

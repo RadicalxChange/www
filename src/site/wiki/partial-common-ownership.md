@@ -1,17 +1,17 @@
 ---
 layout: "layouts/wiki-page.njk"
-title: "Plural Property"
-slug: "plural-property"
+title: "Partial Common Ownership"
+slug: "partial-common-ownership"
 ---
 [toc]
 
-Plural Property (also known as partial common ownership, COST, or SALSA) is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
+Partial Common Ownership (also known as PCO, Plural Property, COST, or SALSA) is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
 
-In Plural Property systems, assets belong to no one and everyone. An asset’s current possessor must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
+In Partial Common Ownership systems, assets belong to no one and everyone. An asset’s current possessor must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
 
 A group of Web3 technologists has come together to form an independent RadicalxChange chapter focused on bringing Partial Common Ownership Tokens to Ethereum.  Learn more on our [website](https://partialcommonownership.com) or join the conversation in our active [Discord](https://discord.gg/CjxV954JMT).
 
-In addition, RadicalxChange Foundation is collaborating with Serpentine Arts Technologies and a team of Plural Property builders to [introduce partial common ownership](/wiki/pco-art) to the culture and practice of artists and collectors. We are building infrastructure for the management of partial common ownership interests and helping artists experiment with this new concept for the stewardship of their work.
+In addition, RadicalxChange Foundation is collaborating with Serpentine Arts Technologies and a team of Partial Common Ownership builders to [introduce partial common ownership](/wiki/pco-art) to the culture and practice of artists and collectors. We are building infrastructure for the management of partial common ownership interests and helping artists experiment with this new concept for the stewardship of their work.
 
 ### Further Reading
 
@@ -43,7 +43,7 @@ In addition, RadicalxChange Foundation is collaborating with Serpentine Arts Tec
 
 ## Tools
 
-[Geo Web](https://geoweb.land/) - Geo Web is a set of open protocols for anchoring digital content (e.g., augmented reality, NFTs, apps, games, etc.) to physical locations. It uses plural property to administer its global digital land market with all proceeds being used to fund public goods. The network runs on the Optimism L2 Rollup.
+[Geo Web](https://geoweb.land/) - Geo Web is a set of open protocols for anchoring digital content (e.g., augmented reality, NFTs, apps, games, etc.) to physical locations. It uses partial common ownership to administer its global digital land market with all proceeds being used to fund public goods. The network runs on the Optimism L2 Rollup.
 
 [Eden Network](https://www.edennetwork.io/) - Eden is a priority transaction network that protects traders from frontrunning, aligns incentives for block producers, and redistributes miner extractable value by allocating Ethereum blockspace with Harberger taxation.
 

@@ -14,9 +14,10 @@
 /concepts/plural-voting /wiki/quadratic-voting
 /concepts/quadratic-funding /wiki/plural-funding
 /concepts/plural-funding /wiki/plural-funding
-/concepts/partial-common-ownership /wiki/plural-property
-/concepts/plural-ownership /wiki/plural-property
-/concepts/plural-property /wiki/plural-property
+/concepts/partial-common-ownership /wiki/partial-common-ownership
+/concepts/plural-ownership /wiki/partial-common-ownership
+/concepts/plural-property /wiki/partial-common-ownership
+/wiki/plural-property /wiki/partial-common-ownership
 /concepts/plural-money /wiki/plural-money
 /concepts/intersectional-social-identity /wiki/social-identity
 /concepts/plural-identity /wiki/social-identity

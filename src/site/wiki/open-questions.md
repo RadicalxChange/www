@@ -9,7 +9,7 @@ Below are some open questions we are thinking about this month. We would love to
 
 ## Property
 
-[Partial Common Ownership](/wiki/plural-property/): What's the best way to calculate “turnover rates”, i.e., tax rates on partial-common-ownership assets? Should they be statistical estimates based on similar properties; how exactly should they be arrived at? Are there other criteria to consider than just the rate of turnover of similar properties – such as the goals of the project?
+[Partial Common Ownership](/wiki/partial-common-ownership/): What's the best way to calculate “turnover rates”, i.e., tax rates on partial-common-ownership assets? Should they be statistical estimates based on similar properties; how exactly should they be arrived at? Are there other criteria to consider than just the rate of turnover of similar properties – such as the goals of the project?
 
 ## Voting and Deliberation
 
