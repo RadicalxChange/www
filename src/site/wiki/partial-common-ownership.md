@@ -5,13 +5,32 @@ slug: "partial-common-ownership"
 ---
 [toc]
 
-Partial Common Ownership (also known as PCO, Plural Property, COST, or SALSA) is a new way of managing assets that is fairer and more efficient than those under capitalism or communism.
+Partial common ownership (also known as PCO, COST, SALSA or Plural Property) is a new way of managing assets that is fairer and more efficient than conventional private property on the one hand; or conventional shared property on the other.
 
-In Partial Common Ownership systems, assets belong to no one and everyone. An asset’s current possessor must self-assess and declare its value. Based on the self-assessed value, they pay a fee, which can be used to fund public goods, or distributed as a social dividend.  If somebody bids more for that asset, current possessors sell it for their self-assessed value, resulting in more benefits for the public.
+<div class="html">
+<div class="border">
+<div class="markdown markdown-sm m-4">{{ "RadicalxChange Foundation is collaborating with Serpentine Arts Technologies and a team of builders to [introduce partial common ownership](https://www.radicalxchange.org/wiki/pco-art) to the culture and practice of artists and their communities. We are building infrastructure for the management of partial common ownership interests and facilitating experiments with this new way of stewarding cultural work (and more). Our inaugural project is with the Aerocene Foundation and the Salinas Grandes communities in Argentina." | markdown | safe }}
+</div>
+</div>
+</div>
 
-A group of Web3 technologists has come together to form an independent RadicalxChange chapter focused on bringing Partial Common Ownership Tokens to Ethereum.  Learn more on our [website](https://partialcommonownership.com) or join the conversation in our active [Discord](https://discord.gg/CjxV954JMT).
+Partial common ownership addresses a fundamental problem with conventional property interests: the marriage of transferability and permanence.
 
-In addition, RadicalxChange Foundation is collaborating with Serpentine Arts Technologies and a team of Partial Common Ownership builders to [introduce partial common ownership](/wiki/pco-art) to the culture and practice of artists and collectors. We are building infrastructure for the management of partial common ownership interests and helping artists experiment with this new concept for the stewardship of their work.
+Transferability gives owners absolute discretion to sell an asset to the highest bidder, and permanence gives owners power over an asset that lasts forever. Coupled together, they create long-lasting power concentrations with negative externalities. Permanent and transferable property rights let power flow out of the social contexts that generate value, leading to fragmentation and growing economic asymmetries.
+
+By decoupling permanence from transferability, partial common ownership makes assets less “capital-like” and splits them into separate “bundles of rights”:
+
+The first consists of a license to manage and benefit from the asset for a particular period of time. This is called the **stewardship license** and can be bought and sold through auctions at periodic intervals. The duration of the license may vary but at the end of it, a steward must always auction the asset—thereby it is a transferable but not permanent right.
+
+![PCO Diagram](/images/wiki/pco-diagram.png)
+
+The second “bundle of rights” consists of the **PCO residual** – enduring privileges acknowledging and empowering the living community that animates the asset. This is typically held by a community in perpetuity, on moral or political grounds. The community can evolve with changing membership, but the rights cannot be sold on the market. These rights include revenue streams that flow from the temporary licenses, as well as certain governance decisions.
+
+Most calls to rethink capitalism do not ask questions about the basic structure of property rights. Instead, they seek to either divide and fractionalize ownership (i.e. give more or different people a share of conventional ownership) or consolidate ownership (i.e. place it in the hands of some representative of the public, like the state).
+
+Yet fractionalized ownership doesn't specify who should manage the asset at any point in time, or how to avoid a tragedy of the commons scenario; while consolidated ownership runs the perennial risk of institutional dysfunction and illegitimate representation of stakeholders. Partial common ownership provides a third way. A model where an asset is more fluidly held between a public (owners of the **residual**) and private actors (who can temporarily control the **stewardship rights**), with incentives set to maximize its productive use.
+
+Learn more on our PCO [website](https://partialcommonownership.com/), or join the conversation in our active PCO [Discord](https://discord.gg/CjxV954JMT).
 
 ### Further Reading
 
