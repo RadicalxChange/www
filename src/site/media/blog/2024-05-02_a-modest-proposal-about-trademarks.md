@@ -1,0 +1,80 @@
+---
+layout: "layouts/blog-post.njk"
+date: "2024-05-02"
+title: "A Modest Proposal About Trademarks"
+postHeader: "A Modest Proposal About Trademarks"
+postAuthor: "Matt Prewitt"
+---
+
+On the whole, intellectual property law receives a lot of scrutiny. Rightly so. Copyright law has critics in open source communities and beyond who say it stifles creativity, lasts too long, serves bad-faith corporate interests, and much more. Patent law too has [thoughtful critics](https://www.i-mak.org/): it gums up innovation, disproportionately rewards those with the budget to “lawyer up”, and supports exorbitant pricing in pharmaceuticals and other industries. Trade secrets doctrines, a matter of growing importance, are also vigorously scrutinized inside and outside the legal academy.
+
+But one rarely hears criticism of intellectual property law’s sleepiest department: trademark law. Why?
+
+Because, I suspect, trademark protection seems at first like a rather sensible and inconsequential matter. Surely sellers should have remedies against other sellers trying to pass off their goods under a trademark that isn’t theirs, right? And surely, there are far bigger problems in our society than trademark owners protecting their brands?
+
+But trademark protection is much less sensible and much more significant than it seems. Recall that a huge part of the global economy consists in “brand-building”. Brand-building through targeted advertising, to name one example, has been the lifeblood of Silicon Valley. The strategic buying and selling of brands plays an important role in many of the highest-profile financial dealings. So if something is amiss in the way the law protects trademarks, we should not be surprised to find that it has distorted our social and economic lives on a gigantic scale.
+
+![Advertisements in a metropolitan square](/images/blog/metropolis-square.webp)
+
+Here, we argue that the privileges the law grants to trademark holders are much too strong and extensive. Consequently, trademark law incentivizes deceptive and antisocial behavior that makes consumers worse off. 
+
+Yet the true harms cannot be understood through the narrow lens of consumer welfare. Trademark law has caused global society, culture, economics, and language to bend themselves around the logic of branding, with deleterious effects so diffuse and profound as to defy easy description.
+
+## The Usual Story: Trademark Protection Helps Consumers Avoid Confusion
+
+In 1987, Richard Posner and William Landes wrote a [very influential article](https://www.jstor.org/stable/725498) on the theory of trademarks. They argued that trademark is best understood as the law’s attempt to encourage a marketplace in which consumers can easily find what they are looking for. In other words, trademarks help consumers lower their product “search costs”. Instead of sorting arduously through detailed claims, the consumer can reach an informed decision easily. Want a reasonably-priced German-engineered car? Go to a Volkswagen dealer. Want a functional athletic shoe that also has up-to-date style? Look at the latest Nikes. Etc.
+
+![Happy woman in a grocery store](/images/blog/joyful-shopper.webp)
+
+If trademarks were not protected, other businesses would try to freeload on the reputations that Volkswagen, Nike, and other reputable businesses have built, by confusing consumers into thinking their products were made by those companies or otherwise associated with those brands. Such confusion, Posner and Landes argued, would undermine the efficiency created by trademarks like Volkswagen and Nike, which help consumers find what they want quickly.
+This is a reasonable way of understanding why trademark protection does sometimes help consumers, and therefore why the law should indeed sometimes protect trademarks as intellectual property. But it is not the whole story.
+
+Trademark protection also creates opportunities for businesses to deceive consumers. When we talk about deception and confusion in the context of trademarks, we usually mean third sellers confusing consumers with deceptively-branded goods, like fake Louis Vuitton bags. However, ordinary businesses can also deceive consumers precisely through the use of the marks that they legally own. Posner and Landes are intellectually honest enough to make note of this fact, but they dismiss it without serious analysis. And in the almost-40 years since their influential article, their basic story that trademarks harmlessly reduce confusion has carried the day, snuffing out discussion of trademarks’ troubling deceptive potential.
+
+It’s time to take another look. How and why can trademarks be deceptive?
+
+## The Other Part Of The Story: Brand Mining
+
+You can think of every trademark like a kind of [implied promise](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2021394). The Nike Swoosh promises something like: *this is a reasonably well-made and functional shoe, designed with attention to athletic fashion trends*. Volkswagen promises: *This is a reasonably priced, high quality car, built with attention to detail in the German engineering tradition*. To be sure, different people will see slightly different implied promises in each brand, but a generally-defined implied promise, upon which most reasonable consumers familiar with the brand would agree, will always be discernible.
+
+Trademarks reduce consumers’ search costs *only if those implied promises are true*. If Nike pivots its business, deciding henceforth to make only Italian-leather dress shoes and Dutch wooden clogs, then the Nike reputation etched into consumers’ minds over decades will instead become a source of confusion. Consumers searching out cool running shoes will waste time looking at Nike’s latest products. And that waste will continue until the new reality of the Nike brand fully displaces the old implied promise in the mind of every consumer. 
+
+This process of updating perceptions is not instantaneous. If Nike stopped making athletic shoes, dedicated sneakerheads and athletes would get the news quickly, but most people wouldn’t. In fact, it would take years, and millions of inefficient searches for athletic shoes, before the whole relevant consumer population would fully update its understanding of what Nike now represents. In the interim, the Nike trademark would accomplish the opposite of decreasing search costs; it would confuse shoe-buyers and increase their search costs. Yet Nike would be within its rights to pivot the brand, and would bear no legal responsibility for the consequent confusion.
+
+Obviously, this example is a caricature. Few real businesses would see fit to betray their brand’s promise in such a random and irrational way. But in more calculated and subtle ways, businesses routinely exploit the fact that it takes time for consumers to realize that brands are not fulfilling their old promises. In the simplest case: financial buyers of strong brands frequently reduce the quality just slightly, while keeping the price the same, in order to reap high profits. By reducing quality just slightly, while burnishing the image through advertising, brand owners can maximize the time it takes for the market to notice the change in the brand’s implied promise. Eventually, the market figures it out, and the brand equity is reduced. But in the meantime, liquid profits are extracted in direct proportion to the amount that the brand was successfully used to deceive customers. We might call this and similar practices “brand mining”.
+
+![Corporate man inspecting commercial drugs](/images/blog/corporate-man.webp)
+
+Brand mining is usually more subtle than “lowering quality while keeping prices high,” because most brands’ implied promises involve more than a certain level of quality. For example, Budweiser promises not only that it is an economical beer, but that it is an *American* beer. For decades, to order a Budweiser meant to conspicuously embrace Americana, because everyone knows that Budweiser’s implied promise is that it is American. But after the company was acquired in 2008 by the Belgian company, InBev, is this promise still true? Arguably, since the acquisition, InBev has been exploiting a kind of slow-resolving confusion about whether Budweiser still represents what it once did. One might say the same about countless companies whose brands are strongly associated with a culture or region, but have sent important parts of their operations, supply chains, or ownership structures elsewhere.
+
+Even more subtly, companies that own many brands can manage them in concert to achieve a confusing many-faceted-ness. To name a simple example, companies that are perceived as too “corporate” or “establishment” routinely acquire smaller and hipper brands, both to establish relationships with those brands’ customers and to color the perception of the stodgier parent company. For example when Amazon bought Whole Foods, Amazon’s reputation was already that of a corporate behemoth, while Whole Foods’ remained that of a forward-thinking business pushing American shoppers toward conscious eating. Therefore there were business reasons that Amazon did not immediately tear down the Whole Foods signs and rebrand all the stores Amazon Grocery. But wouldn’t that have been less confusing to consumers? Wouldn’t calling it Amazon Grocery have given consumers a more accurate understanding of what the store really represented, and who stood behind it? 
+
+Consider, too, the management of luxury brands. They often make a rarified line of expensive custom products, while also lending their name to higher-volume lines called [diffusion lines](https://en.wikipedia.org/wiki/Diffusion_line), which tend to be more profitable. The consumers of the diffusion lines are to a great extent buying a status symbol, touched by a bit of prestige refracted from the brand’s most rarefied products. But the more clear it is that this is what is going on, the less the excellence of the true luxury products colors the perception of the diffusion lines. Conversely if the diffusion lines become too popular and too hard to distinguish from the true luxury products, wealthier consumers tend to abandon the brands for other, more exclusive ones. So the whole strategy involves intentionally generating and strategically maintaining ambiguity about what the brand really represents. I am not saying that practices like this should never be permitted; but the incentives to deceive consumers are quite clear.
+
+Small independent brands are often just as guilty of deception as big ones. If a young entrepreneur builds David, Inc., and then sells the company to mighty Goliath, Inc. so that the latter can reach Goliath-unfriendly consumers, has he not sold Goliath a license to deceive?
+
+In fact the financial valuation of a brand is an excellent measure of its potential for deception. The world’s most valuable brands are the ones in which consumers place the deepest, most durable, and therefore most exploitable faith. That faith is not always exploited: when businesses straightforwardly uphold the promises that their brands represent in consumers’ minds, trademark protection indeed reduces consumer confusion, in just the way Posner and Landes say. But where this is not the case, it is unclear why the law should still protect the trademarks as private property. 
+
+![A ship made of subsidiary brands](/images/blog/conglomerate-ship.webp)
+
+Trademarks are central to our culture and economy. We use them to navigate physical and virtual space; we use them in our language. So legally protecting not only those scrupulous trademark owners who uphold their brands’ implied promises, but also those who break and exploit them, has secondary harms that ripple throughout society. These, I suspect, are far more serious than leading consumers to waste time, or buy the wrong brand. 
+
+The most important secondary harm of protecting deceptive trademark uses is incentivizing wasteful *overinvestment* in all brands. If brands could only be used to create clarity for consumers – if all brand-mining uses were forbidden – then *all* brands, not only deceptively-used ones, would have less financial value. Because then, good-faith business owners wouldn’t be able to sell their trademarks to bad-faith financial buyers. Consequently, less money would get invested in brand image. This would benefit the public. Because investments in brand image largely take the form of buying advertising; which increases demand for advertising; which rewards other entrepreneurs and investors whose businesses manage to hijack the attention of consumers.
+
+Trademark protection is the wind in the sails of the attention-manipulation industry, from social media to addictive apps and AI. 
+
+## How To Fix It
+
+All of this could be easily fixed by a minor update to the law. It would only require a reaffirmation, in legislation, or perhaps in administrative or judicial doctrine, that trademarks may not be used in deceptive ways. 
+
+For example, administrators like the USPTO or FTC might keep periodically-updated public records of the “implied promise” represented by brands. Third parties or administrators could then challenge trademarks’ owners for substantially betraying those promises, possibly resulting in the loss of trademark protection. Administrative reviews of trademarks could occur especially during mergers and acquisitions, so that deceptive transfers would be blocked or at least scrutinized. Thus Goliath, Inc. should not be permitted to acquire David’s Slings™, along with David Inc.’s other assets.
+
+Does this sound radical? But it is only the return to sound and traditional business morals. The seeds of a prohibition on deceptive uses of trademarks even exist, largely forgotten, in trademark law. From the beginning of the doctrine, the basic sale of trademarks has been forbidden for just the kinds of reasons I’ve described: the common law in its wisdom recognized that third parties would have incentives to buy trademarks in order to deceive consumers about the identity of the seller or nature of products. Yet, trademark owners were traditionally allowed to sell the trademark *along with the underlying business*, and this exception came to dominate the rule. But the exception could simply be reined in, so that trademark acquisitions were reviewed for potentially deceptiveness.
+
+Relatedly, section 43(a) of the Lanham Act, the federal statute governing trademarks, contains a general prohibition against deceptive uses of trademarks. Courts have mostly ignored it, but they could revitalize it in order to uphold the principles I have outlined here. It could work similarly to the doctrine of *genericity*, a rule that courts do occasionally enforce, which says that when consumers start using a brand name to refer “generically” to a category of product (like “Band-Aid” or “Xerox”), the trademark must lose its legal protection and pass into the general language. Shouldn’t a trademark also lose protection if consumers generally think it promises something that the sellers aren’t delivering?
+
+Why not simply say that trademarks have to mean more or less what people think they mean?
+
+This may seem like a minor issue. I don’t think it is. Brands are the air we breathe. The power of the most fantastic technologies, like the internet and AI, often cashes out in nothing more fantastic than the power to make and unmake brand value. So it’s time to pay more attention to trademark law. If we were a little more thoughtful about the legal swords and shields this doctrine doled out to businesses, we might just send our culture, and our technology, on a happier trajectory.
+
+*Thanks to Tahir Amin for conversations and comments that led to this piece. Thanks also to Jack Henderson and Andrew Kortina for helpful feedback.*
