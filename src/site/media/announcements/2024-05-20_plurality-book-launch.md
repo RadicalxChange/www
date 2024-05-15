@@ -22,4 +22,15 @@ The ideas promise to transform every sector from health care to media, as illust
 
 Insert a blurb about the film here.
 
-[EMBEDDED VIDEO]
+<div class="html">
+    <div class="mt-4 mb-8">
+        <div class="events_youtube-container">
+        <iframe
+            src="https://www.youtube.com/embed/uZzbX1ubvnY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        ></iframe>
+    </div>
+</div>
