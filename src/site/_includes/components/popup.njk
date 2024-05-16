@@ -25,20 +25,9 @@
                 />
               </a>
             </div>
-            <div
-              class="flex-none flex items-center justify-between"
-            >
-              <h1 class="font-display text-size-lg/display uppercase text-center my-4">
-                {{ title }}
-              </h1>
-            </div>
-            <div
-              class="lg:block flex-grow overflow-y-auto"
-            >
-              <div class="markdown markdown-sm">
-                {{ bodyText | markdown | safe }}
-              </div>
-            </div>
+            <h1 class="font-display text-size-lg/display uppercase text-center my-4">
+              {{ title }}
+            </h1>
             <h1 class="font-body text-size-2 uppercase my-4">
               Film Trailer
             </h1>
@@ -51,6 +40,13 @@
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+              </div>
+            </div>
+            <div
+              class="lg:block flex-grow overflow-y-auto"
+            >
+              <div class="markdown markdown-sm">
+                {{ bodyText | markdown | safe }}
               </div>
             </div>
             <div

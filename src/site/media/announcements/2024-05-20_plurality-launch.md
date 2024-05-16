@@ -1,7 +1,7 @@
 ---
 layout: "layouts/announcement.njk"
 date: "2024-05-20"
-title: "Plurality Book Launch"
+title: "Plurality Launch"
 postHeader: "Plurality: The Future of Collaborative Technology and Democracy"
 ---
 

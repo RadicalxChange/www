@@ -11,7 +11,7 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
   },
   popup: {
     isOn: true,
-    title: "Plurality Book Launch",
+    title: "Plurality Launch",
     bodyText: `**Out now: *Plurality: The Future of Collaborative Technology and Democracy*, by E. Glen Weyl, Audrey Tang, and Community**
 
     Digital technology has catalyzed polarization, inequality, loneliness and fear.
@@ -21,6 +21,6 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     From intimate digitally empowered telepathy to global trade running on social networks rather than money, Plurality offers tools to radically enrich relationships while making sure we leave no one behind.
     
     The ideas promise to transform every sector from health care to media, as illustrated by the way it has been written: as a chorus of open, self-governing collaboration of voices from around the globe.`,
-    link: "/media/announcements/plurality-book-launch/",
+    link: "/media/announcements/plurality-launch/",
   },
 };
