@@ -11,12 +11,11 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
   },
   popup: {
     isOn: false,
-    title: "Beyond Cultures of Ownership: Emerging Strategies for Interdependence",
-    bodyText: `**RadicalxChange & Serpentine Arts Technologies with Dark Matter Labs & Somerset House co-host a one-day gathering in London on 3 Nov 2023.**
+    title: "Plurality Launch",
+    bodyText: `**Available now:**
+    *⿻ 數位 Plurality: The Future of Collaborative Technology and Democracy*, by E. Glen Weyl, Audrey Tang, and ⿻ Community
 
-Join us on the 3rd of November, 2023, at Somerset House, London, to explore and strategise how art and culture can play an active part in reconfiguring ownership. We see ‘ownership’ as the underlying power dynamic of our time that can either create or block possibilities for rebalancing our relationships with technology, the planet, and one another.
-
-We invite artists, activists, researchers, technologists, and policymakers active and interested in connecting the dots between cultural production, political economies, and systems change. By creating a space for all of us to come together from different contexts, we hope to sketch out connections between new imaginaries and practises that instigate more plural and relational protocols for interdependence.`,
-    link: "/events/2023-london",
+    Plurality offers a new way forward for technology and democracy. This co-created book shares the ideas that enabled Taiwan’s 1st Digital Minister Audrey Tang and her collaborators – the architects of Taiwan’s internationally acclaimed digital democracy – to achieve inclusive, technology-fueled growth. These promise to transform every sector, as well as strengthen social unity and diversity. The book was co-written as an open-source project by a multinational community of enthusiasts. We invite your participation and support in developing Plurality!`,
+    link: "/media/announcements/plurality-launch/",
   },
 };
