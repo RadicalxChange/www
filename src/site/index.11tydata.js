@@ -12,15 +12,10 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
   popup: {
     isOn: true,
     title: "Plurality Launch",
-    bodyText: `**Out now: *⿻ 數位 Plurality: The Future of Collaborative Technology and Democracy*, by E. Glen Weyl, Audrey Tang, and ⿻ Community**
+    bodyText: `**Available now:**
+    *⿻ 數位 Plurality: The Future of Collaborative Technology and Democracy*, by E. Glen Weyl, Audrey Tang, and ⿻ Community
 
-    Digital technology has catalyzed polarization, inequality, loneliness and fear.
-
-    Plurality details how Digital Minister Audrey Tang and her collaborators – architects of Taiwan’s internationally acclaimed digital democracy – achieved inclusive, technology-fueled growth that harnesses digital tools to strengthen both social unity and diversity.
-    
-    From intimate digitally empowered telepathy to global trade running on social networks rather than money, Plurality offers tools to radically enrich relationships while making sure we leave no one behind.
-    
-    The ideas promise to transform every sector from health care to media, as illustrated by the way it has been written: as a chorus of open, self-governing collaboration of voices from around the globe.`,
+    Plurality offers a new way forward for technology and democracy. This co-created book shares the ideas that enabled Taiwan’s 1st Digital Minister Audrey Tang and her collaborators – the architects of Taiwan’s internationally acclaimed digital democracy – to achieve inclusive, technology-fueled growth. These promise to transform every sector, as well as strengthen social unity and diversity. The book was co-written as an open-source project by a multinational community of enthusiasts. We invite your participation and support in developing Plurality!`,
     link: "/media/announcements/plurality-launch/",
   },
 };
