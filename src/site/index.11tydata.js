@@ -10,7 +10,7 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     slidoUrl: "",
   },
   popup: {
-    isOn: true,
+    isOn: false,
     title: "Plurality Launch",
     bodyText: `**Available now:**
     *⿻ 數位 Plurality: The Future of Collaborative Technology and Democracy*, by E. Glen Weyl, Audrey Tang, and ⿻ Community
