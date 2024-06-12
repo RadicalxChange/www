@@ -21,6 +21,8 @@ These are still early days for XIDs, and we are excited to help steer them in a 
 
 ## Further Reading
 
+[Compressed to 0: The Silent Strings of Proof of Personhood](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4749892) - Puja Ohlhaver, Mikhail Nikulin, Paula Berman
+
 [Decentralized Society: Finding Web3’s Soul](https://deliverypdf.ssrn.com/delivery.php?ID=639031071067107073082114024078004103097015064044037086104075020113002090101008025027063025012043117004047025064008068080015126123037031086044067114077124105122117105036051031098085102120019087002006072103090000076071100071108072079113118021029008083005&EXT=pdf&INDEX=TRUE) - E. Glen Weyl, Puja Ohlhaver, Vitalik Buterin
 
 [How Soulbound Tokens Can Make Gitcoin Grants More Pluralistic](https://gov.gitcoin.co/t/how-soulbound-tokens-can-make-gitcoin-grants-more-pluralistic/10077) - Leon Erichsen

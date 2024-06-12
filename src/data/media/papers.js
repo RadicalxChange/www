@@ -161,4 +161,22 @@ module.exports = [
     postAuthor: "Divya Siddarth, Sergey Ivliev, Santiago Siri, Paula Berman",
     series: [],
   },
+  {
+    url: "/media/papers/desoc.pdf",
+    date: "2022-05-10",
+    title: "Decentralized Society: Finding Web3's Soul",
+    postType: "Paper",
+    postHeader: "Decentralized Society: Finding Web3's Soul",
+    postAuthor: "Puja Ohlhaver, E. Glen Weyl, Vitalik Buterin",
+    series: [],
+  },
+  {
+    url: "/media/papers/silent_strings.pdf",
+    date: "2024-03-06",
+    title: "Compressed to 0: The Silent Strings of Proof of Personhood",
+    postType: "Paper",
+    postHeader: "Compressed to 0: The Silent Strings of Proof of Personhood",
+    postAuthor: "Puja Ohlhaver, Mikhail Nikulin, Paula Berman",
+    series: [],
+  },
 ];
