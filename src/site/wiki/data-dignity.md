@@ -21,6 +21,8 @@ People should be able to exert democratic collective bargaining power over their
 
 [Bottom-Up Data Trusts: Disturbing the ‘One Size Fits All’ Approach to Data Governance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3265315) - Sylvie Delacroix. Neil Lawrence
 
+[Data Assets: Tokenization and Valuation](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4419590) - Hirsh Pithadia, Enzo Fenoglio, Bogdan Batrinca, Philip Treleaven, Radu Echim, Andrei Bubutanu, Charles Kerrigan
+
 [Data Dignity at RadicalxChange](https://theartofresearch.org/data-dignity-at-radicalxchange/) - M Eifler, Vi Hart
 
 [The Data Freedom Act](/media/papers/data-freedom-act.pdf) - RadicalxChange Foundation Ltd.
@@ -50,3 +52,5 @@ People should be able to exert democratic collective bargaining power over their
 [OpenMined](https://www.openmined.org/) - OpenMined is building software that makes it possible for one person to answer a question using data owned by another, without ever seeing or acquiring a copy of that data. OpenMined calls this process Remote Data Science. The advent of remote data science means that, in a huge variety of domains across society, current tradeoffs between sharing data and protecting that data will be broken.
 
 [Pool](https://www.pooldata.io/) - Pool’s purpose is to redistribute power, value and control in the data economy. Pool's platform supports organizations called Data Unions, who enable ordinary people to monetize and share their data. Because those people are positively engaged in sharing their information, data products on Pool’s platform are richer, more relevant, and far easier to license.
+
+[Valyu Exchange](https://exchange.valyu.network/public/open) - Valyu Exchange is a platform which connects data providers / creators and users to help accelerate the growth of AI models and applications. You can discover, curate, license and monetise your dataset assets.
