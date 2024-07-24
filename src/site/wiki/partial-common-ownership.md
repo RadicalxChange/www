@@ -9,7 +9,7 @@ Partial common ownership (also known as PCO, COST, SALSA or Plural Property) is 
 
 <div class="html">
 <div class="border">
-<div class="markdown markdown-sm m-4">{{ "RadicalxChange Foundation is collaborating with Serpentine Arts Technologies and a team of builders to [introduce partial common ownership](https://www.radicalxchange.org/wiki/pco-art) to the culture and practice of artists and their communities. We are building infrastructure for the management of partial common ownership interests and facilitating experiments with this new way of stewarding cultural work (and more). Our inaugural project is with the Aerocene Foundation and the Salinas Grandes communities in Argentina." | markdown | safe }}
+<div class="markdown markdown-sm m-4">{{ "RadicalxChange Foundation is collaborating with Serpentine Arts Technologies (Future Art Ecosystems) and a team of builders to [introduce partial common ownership](https://www.radicalxchange.org/wiki/pco-art) to the culture and practice of artists and their communities. We are building infrastructure for the management of partial common ownership interests and facilitating experiments with this new way of stewarding cultural work (and more). Our inaugural project is with the Aerocene Foundation and the Salinas Grandes communities in Argentina as well as artists selected for the launch of the PCOArt blockchain system." | markdown | safe }}
 </div>
 </div>
 </div>
