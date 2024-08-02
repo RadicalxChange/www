@@ -21,6 +21,11 @@ By (1) applying intersectional identity ideas, such as “soulbound” tokens, t
 
 [Ken Suzuki — PICSY : Proposing a New Currency System Using Social Computing, Introducing “Plural Money” from Japanese Complex System Researcher](https://medium.com/@tkgshn/ken-suzuki-picsy-proposing-a-new-currency-system-using-social-computing-introducing-plural-771d5d8ebdf6) - taka
 
+
+[Introduction of Nameraka (Smooth) Society](https://nameteki.kensuzuki.org/english) - Ken Suzuki
+
+[Open Problems Toward the Realization of Nameraka (Smooth) Society](https://docs.google.com/presentation/d/17k9SWtBzgcY6tVGxtuN4OksvJzxkRf44P_4EorOY_0U/edit#slide=id.g2788cb1424e_2_4) - Ken Suzuki
+
 ## Tools
 
 [Resource](https://www.resourcenetwork.co/) - Resource is a decentralized, circular economy fueled by local resources and human potential.
