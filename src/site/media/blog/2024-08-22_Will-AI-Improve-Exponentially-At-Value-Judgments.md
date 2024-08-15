@@ -3,7 +3,7 @@ layout: "layouts/blog-post.njk"
 date: "2024-08-22"
 title: "Will AI Improve Exponentially At Value Judgments?"
 postHeader: "Will AI Improve Exponentially At Value Judgments?"
-postAuthor: "Author Name"
+postAuthor: "Matt Prewitt"
 ---
 
 AI has a measurement problem. We’d like to know whether the machines are getting smarter, and if so, by how much. But not everything can be measured with a wooden yardstick. It is especially hard to find objective metrics that distinguish between persuasive bullshit and authentic excellence in matters such as morality and aesthetics. According to some, the only arbiter of that is you. But when you decide whether you think AI is doing well with such value-laden questions, much more is at stake than meets the eye.
