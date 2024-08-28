@@ -67,6 +67,10 @@
     @apply mx-auto !important;
   }
 
+  .override-border {
+    @apply border-none;
+  }
+
   .twitter-tweet {
     @apply mt-markdown-md !important;
     @apply mb-markdown-md !important;

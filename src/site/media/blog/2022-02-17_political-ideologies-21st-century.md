@@ -7,7 +7,7 @@ postAuthor: "E. Glen Weyl"
 ---
 
 <div class="html">
-<img class="w-full max-w-2xl border-none" src="/images/blog/political-ideologies-civilization-VI.jpeg" />
+<img class="w-full max-w-2xl override-border" src="/images/blog/political-ideologies-civilization-VI.jpeg" />
 </div>
 
 Whatever their differences, there seems to be broad agreement that we’re in a moment of political flux and that the debates of today are unlikely to persist in the coming decades. Some see an inevitable future of world-spanning super-intelligences and others radical crypto-powered decentralization. But you don’t have to embrace such determinism to believe (like Yuval Noah Harari) that only ideologies that have a coherent vision of the future of technology (just as Fascism, Communism and Democracy did in the 20th century) are likely to thrive.
@@ -21,7 +21,7 @@ Without taking a computer game too seriously, there is a logic to the way they c
 ## Corporate Libertarianism
 
 <div class="html">
-<img class="w-full max-w-2xl border-none" src="/images/blog/corporate-libertarianism.jpeg" />
+<img class="w-full max-w-2xl override-border" src="/images/blog/corporate-libertarianism.jpeg" />
 </div>
 
 *Description:* Corporate Libertarians see digital technology as a pathway to liberate individuals from dependence on bureaucracy, collective organization, and coercion. They see cryptography and algorithmic coordination protecting of “negative liberties” of, e.g., speech and property untraceably, preventing collective sovereignties from impeding their exercise. They admire the transformative potential of entrepreneurial founders and hope to extend their domain to those usually covered by politics, like cities or nations. They view the decline of pre-digital social institutions (e.g. nation-states, “legacy” corporations”, unions, etc.) as inevitable, desirable and imminent. They see financial relationships, mediated by capitalist markets and based on profit, as the future in most domains.
@@ -65,7 +65,7 @@ Without taking a computer game too seriously, there is a logic to the way they c
 ## Synthetic Technocracy
 
 <div class="html">
-  <img class="w-full max-w-2xl border-none" src="/images/blog/synthetic-technocracy.jpeg" />
+  <img class="w-full max-w-2xl override-border" src="/images/blog/synthetic-technocracy.jpeg" />
 </div>
 
 *Description:* Synthetic Technocrats expect the arrival of Artificial General Intelligence (AGI), machines that outperform humans on all economically relevant tasks at minimal cost, in the coming decades. They believe it will effectively end economic scarcity and the need for most humans to work. They see the major problems of social organization as both achieving this outcome quickly and reckoning with the risks it poses, especially the potential existential threat of misaligned AGI objectives and the maldistribution of the economic abundance AGI enables. They view the solution to these problems as technical in nature and hope adequate solutions to them will help resolve a range of other existential risks, especially those related to interpersonal human conflict. They see science and technology as the path to solving most problems.
@@ -107,7 +107,7 @@ Without taking a computer game too seriously, there is a logic to the way they c
 ## Digital Democracy
 
 <div class="html">
-  <img class="w-full max-w-2xl border-none" src="/images/blog/digital-democracy.jpeg" />
+  <img class="w-full max-w-2xl override-border" src="/images/blog/digital-democracy.jpeg" />
 </div>
 
 *Description:* Digital Democrats locate the promise of digital technology in its capacity to empower the peaceful coexistence and collaboration of diverse and distributed communities. They center socio-technical systems (patterns of connections between tools, culture and political economies) over purely technical ones and thus celebrate a range of technologies serving democratic social organization (e.g. VR as a path to empathy, statistical text summarization to empower large scale deliberation, new political economic mechanisms that encourage cooperation). They seek to proliferate and diversify sites of social cooperation, while cooperating with and strengthening “legacy” loci of legitimacy. They seek a future managed by a diverse range of democratically governed communities cooperating in a subsidiary manner across scales.
