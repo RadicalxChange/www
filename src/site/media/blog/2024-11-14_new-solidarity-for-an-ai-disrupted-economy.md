@@ -1,0 +1,49 @@
+---
+layout: "layouts/blog-post.njk"
+date: "2024-11-14"
+title: "New Solidarity For An AI-Disrupted Economy"
+postHeader: "New Solidarity For An AI-Disrupted Economy"
+postAuthor: "Matt Prewitt, Jack Henderson"
+---
+
+RadicalxChange has launched a new magazine called *[Combinations](https://combinationsmag.com/)*, and one of its inaugural pieces is an essay by the two of us called [Post-Cognitive Income](https://www.combinationsmag.com/post-cognitive-income/). In it we attempt to grapple with AI's possible disruptions to labor in the coming years, and propose new structures of solidarity that will help workers weather the risks. We are now working to advocate and organize around this theme of new solidarity for an AI-disrupted economy. 
+
+On January 15 at the Mercator Foundation in Berlin, we will host a side-event of the [AI Action Summit](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia), together with the Technology and Global Affairs Innovation Hub at Sciences Po and the Global Solutions Initiative (GSI), that is focused on this topic. For more information on the event, see the event page [here](/events/2024-berlin/).
+
+Below is the expert consultation submitted by RadicalxChange and GSI to the Summit. It may also be treated as a shorter, policy-oriented version of our essay in *Combinations* linked above.
+
+---
+
+There is a “scaling hypothesis” about artificial intelligence, which says that AI systems will continue to improve *exponentially* as more and more data and compute are used to train them. The hypothesis is based on the past ten years of AI development, which is no guarantee of future results. Still, it should be taken seriously, for no one knows when or if this trend will bend. 
+
+Indeed it is possible—perhaps in the next five or ten years—that AI systems will be able to execute any well-defined cognitive task better, faster, and cheaper than any human. If so, it is possible that humans will not be able to earn an income through the performance of cognitive tasks. For want of a better term, we will call this circumstance *mental obsolescence*. Even if you assign a low probability to this outcome, the magnitude of its consequences make it important to consider from a policy perspective. 
+
+Many see Universal Basic Income (UBI) as the primary strategy for this contingency. However, UBI remains a poorly developed idea, and may be fatally flawed. For example, it may be ill-suited to end poverty in the comprehensive way its proponents expect. Further, even if most people derive most of their income from UBI, the human pursuit of wealth and status will continue by other means. For an elaboration on these points, see our essay on “Post-Cognitive Income” in *[Combinations](https://combinationsmag.com/)*.
+
+Instead, we propose a coherent strategy centering **community-led mutualization** associated with the following two policy recommendations:
+
+1. Establish a framework for ***data coalitions***: regulated entities that (a) license data to AI companies for conditional and/or temporary use, (b) in exchange for benefits that they are required to share directly with affected persons and/or government actors, and (c) serve as necessary counterparties with which AI companies and other firms must negotiate to obtain and/or sell vital economically or socially significant datasets.
+
+First, if AI is to become extraordinarily powerful, individuals’ and communities’ direct stakes in it must be maximized from a legal point of view. One of the clearest ways to do this is to increase their leverage by creating regulated data intermediaries—organizations with special duties to serve the public interest that serve as collective bargaining agents, and act as necessary counterparties for AI builders seeking to obtain crucial data. We call these ***data coalitions***.
+
+While certain data regulations have taken some steps in the right direction, none have gone far enough. The EU’s Data Governance Act allows for the formation of a special class of data intermediaries, an important step. But it treats them as marketplaces, not fiduciaries—thus failing to move beyond the traditional, individualistic data control paradigm, or to address the heart of the problem. And the EU’s AI Act, which is focused on safety issues, does not directly address concentration and distortion of power—that is, the subtler sociopolitical hazards of powerful AI.
+
+Certain AI hype has also led some to doubt the importance and urgency of building data coalitions. As some see it, AI systems have now passed the Turing Test purely by “scraping” open data, and with plenty more data waiting to be scraped, they never have to negotiate with any counterparties to obtain crucial data; and if AI systems ever run out of scrapable data before they reach AGI or ASI, then they can just rely on AI-generated “synthetic data” to take them the rest of the way. This explains why some are focused largely if not entirely on compute and/or energy—rather than high-quality data—as the main bottlenecks in AI development. 
+
+However, AI systems may run out of scrapable data before 2026 according to [expert forecasts](https://epochai.org/blog/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data), and “synthetic data” may prove, as we believe, to be of limited utility. If so, data coalitions are a likely candidate to be a future anchor of labor power.
+
+But labor organizations also don’t have to wait. Right now, they can start exercising collective bargaining power over data. For example, given increasing interest in multi-modal data directly from workplaces (such as from warehouse wearables or keystroke trackers), labor organizations can equip workers to start shielding new data from AI systems, in order to bring these emerging issues into the terms of negotiations with employers. We can shift from a dynamic of surveillance, where workers don’t know what’s happening with their data and so it remains low-quality, to one of production—where workers are engaged and able to add value by improving the quality of their data.
+
+2. Outline a strategy for facilitating new insurance pools, trusts, and mutual credit systems that will bring about a broader distribution of returns to post-cognitive income (PCI).
+
+Second, with or without data coalitions, we expect there will be other sources of **post-cognitive income** (PCI)—income that humans can earn even when in competition with super-intelligent and super-cheap AI systems—that fill a large part of the cultural and economic vacuum left by cognitive work. We identify three categories of PCI—capital ownership, personality rights (for example, endorsements), and relational work (for example, counseling and other intra-community work). The increased importance of PCI could either contribute to further alienation and erosion of the social fabric, or form the basis of a richer and more meaningful society. It depends, mainly, on the degree to which the returns to PCI are concentrated to individuals or mutualized across communities. Foreseeing the future shift to PCI gives us an opportunity to maximize the probability of positive outcomes.
+
+Thus, we propose the creation of new **regulated insurance pools, mutual trusts, and mutual credit systems**. These are pools of capital or contractual commitments organized to share future gains and losses. For example, national and transnational networks of workers can start committing to mutual trusts that would insure against specific risks like job loss, and increase the distribution of returns to PCI.
+
+Mutualizing capital is an old idea. But when the threshold of human mental obsolescence is crossed, the arguments for it will be stronger than ever before. The justifications of private ownership in liberal economies have long turned on incentives for efficient management, which is another way of saying *the skillful execution of (largely) cognitive tasks aimed at enhancing the value of the capital*. Mental obsolescence will undermine these justifications. Why should the legal owner of an asset be rewarded for its appreciation when her contributions to its value were wholly automated? This argument leads some to a sort of liberal-economics-ad-absurdam idea: that AI itself ought to hold title to capital. Yet that is a total surrender to automated power as opposed to the free human individual; exactly what liberal politics should be trying to avoid.
+
+Henry George and similar thinkers demonstrated that there are two classes of input to the value of an asset. The first is the work of the owner and the second is the development of the community around it. So where the owner’s work is increasingly automated, transferring ownership of assets to the communities that depend on them becomes increasingly sensible. One framework to consider here is **partial common ownership** (PCO), an ownership system that enables more efficient management of different assets, while fairly compensating those who contribute to its value.
+
+These new institutions, we believe, form a more promising route than UBI toward assuring a humane, meaningful, and pluralistic future with very powerful AI. There is a lot of hype in AI, but as its capabilities grow it clearly will transform society. We intend to use the time we have now—the next several years—to build pragmatic systems of solidarity that preserve dignity and community against those transformations. 
+
+RadicalxChange Foundation, Global Solutions Initiative, and Sciences Po will co-host an event on these topics on January 15th at the Mercator Foundation in Berlin. We hope it will be formally recognized as a side-event of the AI Action Summit in Paris, where we would also be delighted to send a representative to share our discussions, insights, and growing calls for collaboration.
