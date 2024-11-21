@@ -1,0 +1,162 @@
+---
+layout: layouts/_base.njk
+title: 2024 Berlin
+headerText: "New Solidarity For An AI-Disrupted Economy"
+introductionBlurb: |
+  Are trusted data intermediaries the future of labor?
+  
+  Join us on the **15th of January, 2025**, at **Stiftung Mercator** in **Berlin**, where we will specify policy strategies that will help support workers through AI's disruptions to labor in coming years. 
+
+  Our aim is to get everyone to take seriously the depth of the likely labor disruptions, hone in on policies that would help, and bring them to the upcoming [AI Action Summit](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia) and beyond. This includes the idea of [data coalitions](/media/documents/data-coalitions-and-escrow-agents.pdf) (which are "necessary counterparties" from which AI companies would need to negotiate rights to use large datasets) along with other ideas, like new insurance pools and forms of capital ownership. See our expert consultation to the Summit [here](/media/blog/new-solidarity-for-an-ai-disrupted-economy/).
+aboutBlurb: |
+  - 2-2:30pm: Welcome & Introduction
+
+  - 2:30-4pm: Panel 
+
+  - 4pm-4.15pm: Break
+
+  - 4:15-5:45pm: Breakouts
+    
+    - How to empower existing labor organizers to build proto data coalitions?
+    
+    - How to get data coalitions on the policy agenda?
+    
+    - How to structure a model law for data coalitions?
+
+  - 5.45pm-6pm: Closing
+
+  - 6pm-7pm: Drinks
+rxcBlurb: |
+  [RadicalxChange Foundation](/) is a 501(c)(3) nonprofit organization dedicated to democratic innovation and institutional design through operational partnerships and experimental projects between academia, government, art, technology, and beyond.
+globalSolutionsBlurb: |
+  The [Global Solutions Initiative](https://www.global-solutions-initiative.org/) proposes policy responses to major global problems, generated through a disciplined research program, elaborated in policy dialogues, and addressed by the G20, the G7 and other global governance fora.
+sciencesPoBlurb: |
+  The Paris School of International Affairs (PSIA) [Technology and Global Affairs Innovation Hub](https://www.sciencespo.fr/psia-innovation-hub/)'s core mission is to accelerate collaborative technology and governance to address global affairs challenges focused specifically on citizenship and tech, defence and security, and tech and prosperity.
+mercatorBlurb: |
+  [Stiftung Mercator](https://www.stiftung-mercator.de/en/) is a private, independent, and non-profit foundation, committed to an open society based on solidarity and equal opportunities.
+questionsBlurb: |
+  If you have any questions, please feel free to [email our team](mailto:info@radicalxchange.org).
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen py-margin lg:py-lg/margin bg-golden-fizz"
+>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block align-top") }}
+    </a>
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display break-words">
+      New Solidarity For
+    </h1>
+    <h1 class="font-display uppercase text-size-display lg:text-size-lg/display break-words">
+      An AI-Disrupted Economy
+    </h1>
+  </header>
+  <div class="grid gap-8 grid-cols-2 col-span-columns lg:col-start-column-1 lg:col-end-column-8 my-12">
+    <img 
+      class="m-4"
+      src="/images/announcements/sciencespo.png"
+    />
+    <img 
+      class="m-4 w-24"
+      src="/images/announcements/gsi.jpg"
+    />
+    <img 
+      class="m-4"
+      src="/images/announcements/stiftung-mercator.png"
+    />
+    <img 
+      class="my-12 mx-4"
+      src="/images/logos/logo.svg"
+    />
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2"
+  >
+    <p><strong>Where? </strong>
+      <a
+        href="https://www.stiftung-mercator.de/en/"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        class="inline-link"
+      >
+        Stiftung Mercator
+      </a> - Neue Promenade 6, 10178 Berlin, Germany</p>
+    <p><strong>When? </strong>Wednesday, 15 January 2025, 2:00 PM to 7:00 PM CET</p>
+    <div class="markdown markdown-sm">
+      {{ "*Please fill out this [form]() if you are interested in attending our event in Berlin!*" | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <div class="markdown markdown-sm text-justify">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Format</p>
+    <div class="markdown markdown-sm">
+      {{ aboutBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">How To Attend</p>
+    <div class="markdown markdown-sm">
+      {{ "*Due to limited capacity, please fill out this [interest form]() if you would like to attend the event.*" | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">RadicalxChange</p>
+    <div class="markdown markdown-sm">
+      {{ rxcBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Global Solutions Initiative</p>
+    <div class="markdown markdown-sm">
+      {{ globalSolutionsBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Technology and Global Affairs Innovation Hub at Sciences Po</p>
+    <div class="markdown markdown-sm">
+      {{ sciencesPoBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Stiftung Mercator</p>
+    <div class="markdown markdown-sm">
+      {{ mercatorBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <div class="markdown markdown-sm">
+      {{ questionsBlurb | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
