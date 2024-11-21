@@ -3,7 +3,7 @@ layout: "layouts/blog-post.njk"
 date: "2024-11-14"
 title: "New Solidarity For An AI-Disrupted Economy"
 postHeader: "New Solidarity For An AI-Disrupted Economy"
-postAuthor: "Matt Prewitt, Jack Hendersen"
+postAuthor: "Matt Prewitt, Jack Henderson"
 ---
 
 RadicalxChange has launched a new magazine called *[Combinations](https://combinationsmag.com/)*, and one of its inaugural pieces is an essay by the two of us called [Post-Cognitive Income](https://www.combinationsmag.com/post-cognitive-income/). In it we attempt to grapple with AI's possible disruptions to labor in the coming years, and propose new structures of solidarity that will help workers weather the risks. We are now working to advocate and organize around this theme of new solidarity for an AI-disrupted economy. 
