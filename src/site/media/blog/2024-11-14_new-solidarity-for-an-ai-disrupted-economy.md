@@ -8,7 +8,7 @@ postAuthor: "Matt Prewitt, Jack Henderson"
 
 RadicalxChange has launched a new magazine called *[Combinations](https://combinationsmag.com/)*, and one of its inaugural pieces is an essay by the two of us called [Post-Cognitive Income](https://www.combinationsmag.com/post-cognitive-income/). In it we attempt to grapple with AI's possible disruptions to labor in the coming years, and propose new structures of solidarity that will help workers weather the risks. We are now working to advocate and organize around this theme of new solidarity for an AI-disrupted economy. 
 
-On January 15 at the Mercator Foundation in Berlin, we will host a side-event of the [AI Action Summit](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia), together with the Technology and Global Affairs Innovation Hub at Sciences Po and the Global Solutions Initiative (GSI), that is focused on this topic. For more information on the event, see the event page [here](/events/2024-berlin/).
+On January 15 at the Mercator Foundation in Berlin, we will host a side-event of the [AI Action Summit](https://www.elysee.fr/en/sommet-pour-l-action-sur-l-ia), together with the Technology and Global Affairs Innovation Hub at Sciences Po and the Global Solutions Initiative (GSI), that is focused on this topic. For more information on the event, see the event page [here](/events/2025-berlin/).
 
 Below is the expert consultation submitted by RadicalxChange and GSI to the Summit. It may also be treated as a shorter, policy-oriented version of our essay in *Combinations* linked above.
 
