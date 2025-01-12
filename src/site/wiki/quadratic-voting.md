@@ -81,9 +81,7 @@ Quadratic Voting gives everyone equal power to direct the attention of the group
 
 ## Tools
 
-[RxC QV](https://quadraticvote.radicalxchange.org/) - RadicalxChange's in-house Quadratic Voting tool. Use this tool to create elections, send unique invite links to voters, and view results in a sleek and simple interface. Forked from an open source Gitcoin tool (see below).
-
-[QuadraticVote.co](https://quadraticvote.co/) - A Quadratic Voting web app developed by Gitcoin. This app was used to select community winners of Gitcoin Hackathons.
+[RxC QV](https://quadraticvote.radicalxchange.org/) - RadicalxChange's in-house Quadratic Voting tool. Use this tool to create elections, send unique invite links to voters, and view results in a sleek and simple interface.
 
 [Government Technology Agency (Singapore)](https://qv.geek.sg/) - Another great choice for doing a casual Quadratic Vote with your peers. It is all straightforward from election creation, email / link invites, and quadratic voting to result analysis. You can even build your own interface on top of it using the associated APIs.
 
