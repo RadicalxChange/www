@@ -9,7 +9,15 @@ Plural Money is a variation on an old idea. Community or “complementary” cur
 
 By (1) applying intersectional identity ideas, such as “soulbound” tokens, to creatively map communities, (2) using the currencies to purchase partial common ownership of shared assets (instead of traditional private property), and (3) setting smart transfer and exit taxes to hold value within communities, we think “plural money” promises an explosion of grassroots value creation.
 
-### Further Reading
+## Edges Experiments
+
+RadicalxChange facilitated plural money experiments in two "pop-up villages" in 2024. Read more on our blog about our experience piloting a community currency called ∈dges at [Edge Esmeralda](/media/blog/edges-a-plural-money-experiment/) and [Edge City Lanna](/media/blog/edges-2/).
+
+## Further Reading
+
+[Edges: A Plural Money Experiment](/media/blog/edges-a-plural-money-experiment/) - Alex Randaccio
+
+[Edges 2.0](/media/blog/edges-2/) - Matt Prewitt, Jack Henderson
 
 [Let's Use New Forms of Money to Commit to our Communities](/media/blog/lets-use-new-forms-of-money-to-commit-to-our-communities/) - Matt Prewitt
 

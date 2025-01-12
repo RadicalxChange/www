@@ -32,7 +32,7 @@ Yet fractionalized ownership doesn't specify who should manage the asset at any 
 
 Learn more on our PCO [website](https://partialcommonownership.com/), or join the conversation in our active PCO [Discord](https://discord.gg/CjxV954JMT).
 
-### Further Reading
+## Further Reading
 
 [Between Abundance and Scarcity](/media/blog/between-scarcity-and-abundance/) - Matt Prewitt
 

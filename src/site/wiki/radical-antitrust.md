@@ -7,7 +7,7 @@ slug: "radical-antitrust"
 
 Radical Antitrust is about looking for cartels in unexpected places, and recognizing that consumers and workers can be harmed through more than simply price. For example, markets could be made fairer if there were more stakeholder representation on boards; more thoughtful limits on mergers and acquisitions; and fewer investors exerting control over multiple companies within an industry.
 
-### Further Reading
+## Further Reading
 
 [The Agency Costs of Agency Capitalism: Activist Investors and the Revaluation of Governance Rights](https://www.cbs.dk/files/cbs.dk/agency_cost_ssrn_3-13-13_0.pdf) - Ronald J. Gilson, Jeffrey N. Gordon
 
