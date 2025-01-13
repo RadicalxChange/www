@@ -33,6 +33,10 @@ Quadratic Voting gives everyone equal power to direct the attention of the group
 
 - [Nashville Metro Council](https://www.forbes.com/sites/zengernews/2022/08/31/nashville-jersey-city-experiment-with-quadratic-voting---a-radical-step/)
 
+- [NYC District 9](/wiki/nyc-qv/)
+
+- [Community Exchange - Colorado Climate Assemblies](/wiki/community-exchange/)
+
 - RadicalxChange Community Polls
 
 ## Variations
