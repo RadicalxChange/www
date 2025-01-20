@@ -63,14 +63,13 @@ The dearth of successful precedents for trusted data intermediaries is a common 
 
 - Trusted data intermediaries must have unique data in order to compete in the marketplace. They will not have leverage otherwise. And until now, the focus has been on protecting data that already exists. Instead, trusted data intermediaries need to be a protective shield giving members the confidence to accept and participate in the production of deeper, privacy-protecting datasets. Otherwise they simply have no unique offering to contribute to technologists or to the marketplace.
 
-## Examples: Sensitive Medical Data. Neuralink.
+## Examples: Sensitive Medical Data. Neural Link Tech.
 The public hospital system of a medium-sized country enjoys a sufficient democratic mandate to create a trusted data intermediary covering all of its medical data. Until now, no comparably-detailed or comprehensive medical dataset has ever been made available to model trainers. The leader of the trusted intermediary, accountable to the entire citizenry, develops a strategy for protecting all citizens’ economic, privacy, and moral interests in the data, while also using it to create a leading medical AI. This results in a national-proprietary model, using advanced but non-frontier AI technology, that leads to various medical breakthroughs, whose international commercialization benefits the citizenry directly.
 
 A country develops a lightweight but strongly protective model law enabling private (but publicly obligated) trusted data intermediaries to operate in its jurisdiction. Two years later, neural link technology makes significant strides. Most people around the world adopt this technology extremely cautiously, knowing that it produces data which will train models owned by private companies based abroad. But in this country, leading professionals in various fields join together into sectoral-level trusted data intermediaries, and adopt it enthusiastically. Their data intermediaries become the stewards of the data they produce, which is used to train collectively-owned models which have world-leading performance in those sectoral verticals.
 
-–
-
-As an appendix, here are four premises that may help clarify my reasoning.
+## Appendix
+Here are four premises that may help clarify my reasoning.
 
 1. **It is not “hype” to predict that AI will get much, much better.**
 
