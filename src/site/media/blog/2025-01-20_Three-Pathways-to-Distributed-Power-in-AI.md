@@ -5,80 +5,42 @@ title: "Three Pathways to Distributed Power in the Age of AI"
 postHeader: "Three Pathways to Distributed Power in the Age of AI"
 postAuthor: "Matt Prewitt"
 ---
-
 On Jan 15, 2025 at Stiftung Mercator in Berlin, RadicalxChange Foundation, along with partners Global Solutions Initiative and Sciences Po Technology and Global Affairs Innovation Hub, co-hosted a [side event](https://www.radicalxchange.org/events/2025-berlin/) to the Paris AI Action Summit. We focused on the future of collective bargaining in the context of the AI revolution. The discussions helped to advance our thinking in several important ways. Here are some quick initial reflections.
-
 History suggests that following significant technological breakthroughs, individuals and communities often endure temporary but harmful losses of economic bargaining power. (For example, real living standards declined in industrializing countries between the mid-18th and the early-to-mid 19th centuries, in part because individuals’ contributions to vital productive processes became more interchangeable and therefore lacked bargaining power.) On a longer arc of history, new technology’s benefits usually accrue to whole societies, but such short-term social disruptions partly offset those benefits and frequently destabilize societies. It is therefore important to strategize toward achieving social equilibrium quickly, robustly, and without undermining the processes of technological development.
-
 Social rebalancing after technological breakthroughs occurs through at least three pathways: **technological, political, and social**. Technological rebalancing occurs when the dissemination or cheapening of the relevant technology undermines the advantage of the technology’s owners (as in the personal computer and software revolutions). Political rebalancing occurs when direct state interventions check the rights of businesses to exploit the new technology (as in the 18th century, when speech controls and intellectual property statutes limited the power of printing press owners). Social rebalancing occurs when social or labor organizations form a collective counterpower, achieving an economic foothold vis-a-vis the technology’s owners (as in the late part of the industrial revolution). These pathways are not mutually exclusive, possess unique benefits and drawbacks, and are more or less suitable in different societal and technological situations.
-
 What might these modes of rebalancing look like in the nascent AI revolution? Which are likeliest to mitigate losses of bargaining power and/or uphold the integrity of individuals and communities? We will first define, then critique and evaluate three pathways.
-
 ## Three Pathways to Mitigating AI Power Concentration
-
-### Technology dissemination: Open source.
-Possibly, open source AI models will develop in such a way that they remain competitive with the top proprietary models. If so, the power that accrues to the top models’ owners may not be extreme or unprecedented.
-
-### State power: Public AI and regulation.
-Possibly, the state or states with the best AI technology will both (a) remain democratic and (b) retain meaningful and public-interested power over the top models. If so, they may be able to redistribute profits and ownership enough to offset disruption, and regulate harmful misuses.
-
-### Collective bargaining: Collective information protection and production.
-Both more computing power and more high-quality data have the potential to unlock new frontier AI capabilities. Computing power is a fairly direct function of money, so this factor is likely to tend toward a concentration of AI’s power. However, new data cannot always be straightforwardly purchased. Thus, if important unique datasets are (a) produced, and (b) not easily or practically available for the top AI model owners, the owners of these datasets have a unique chance of producing AI technology on non-frontier or open source models whose performance can compete, at least in certain domains, with the leading proprietary models. Thus, maximizing both “open” model provision and “closed” data collection might provide the best formula to give leverage to organizers of AI counterpower. In this picture, trusted managers of significant, unique, collectively-produced datasets could act as tomorrow’s version of labor unions.
-
+1. **Technology dissemination: Open source.** Possibly, open source AI models will develop in such a way that they remain competitive with the top proprietary models. If so, the power that accrues to the top models’ owners may not be extreme or unprecedented.
+2. **State power: Public AI and regulation.** Possibly, the state or states with the best AI technology will both (a) remain democratic and (b) retain meaningful and public-interested power over the top models. If so, they may be able to redistribute profits and ownership enough to offset disruption, and regulate harmful misuses.
+3. **Collective bargaining: Collective information protection and production.** Both more computing power and more high-quality data have the potential to unlock new frontier AI capabilities. Computing power is a fairly direct function of money, so this factor is likely to tend toward a concentration of AI’s power. However, new data cannot always be straightforwardly purchased. Thus, if important unique datasets are (a) produced, and (b) not easily or practically available for the top AI model owners, the owners of these datasets have a unique chance of producing AI technology on non-frontier or open source models whose performance can compete, at least in certain domains, with the leading proprietary models. Thus, maximizing both “open” model provision and “closed” data collection might provide the best formula to give leverage to organizers of AI counterpower. In this picture, trusted managers of significant, unique, collectively-produced datasets could act as tomorrow’s version of labor unions.
 ## Evaluating These Three Pathways
-
-### Evaluation of the technology dissemination approach.
-A well-documented worry with this approach, amply documented elsewhere, is AI safety. But what about the power concentration logic – can “open” AI forestall power concentration?
-
+1. **The the technology dissemination approach.** A well-documented worry with this approach, amply documented elsewhere, is AI safety. But what about the power concentration logic – can “open” AI forestall power concentration?
 While far from certain, it is possible that the capacities of frontier and open models will not remain as similar as they are now, i.e. that the frontier models will pull away, especially as the availability of new general training data diminishes and the techniques for improving the models through compute power continue to advance.
-
-### Evaluation of the state power approach.
-States that do not control the leading models are in a similar position to any other powerful agent in society. They have an incentive to reduce the extent to which the leading models achieve strong economic or intelligence dominance over them and their societies. If accountable to their citizens, they will try to secure broad-based benefits to their societies from AI, but their leverage to act as a counterpower is unclear.
-
+2. **The state power approach.** States that do not control the leading models are in a similar position to any other powerful agent in society. They have an incentive to reduce the extent to which the leading models achieve strong economic or intelligence dominance over them and their societies. If accountable to their citizens, they will try to secure broad-based benefits to their societies from AI, but their leverage to act as a counterpower is unclear.
 On the other hand, states that do control leading models are, for that very reason, likely to have difficulty remaining truly accountable to citizens. If privately-controlled AI achieves extreme capability it will likely accrue enough capital to thoroughly control politics, undermining democratic accountability. If state-controlled AI achieves such capabilities, the state will simply become an unaccountable power.
-
 Regulations directly limiting AI or distributing its power in the public interest – a modern version of those that limited the power of the printing presses through speech restrictions and IP – are unlikely to enable these nations to act as a counterpower, because of the international nature of the technology.
-
 However, intelligent application of state power and regulation may significantly strengthen the other two approaches: maximizing the competitiveness of open source models, and removing obstacles to the collective creation of unique, deep datasets that can anchor countervailing economic power.
-
-### Evaluation of the collective bargaining approach.
-Specialized data, controlled by trusted intermediaries, is unlikely to be a critical ingredient to creating premier general AI models. However, it may allow its beneficiaries (from small collectives to sovereign states) to build non-frontier models that are maximally competitive with frontier models in the domains pertinent to the data. The deeper and more unique their data, the likelier this is to be true.
-
-## Synthesizing These Three Pathways Into a Productive Counterpower Agenda
+3. **The collective bargaining approach.** Specialized data, controlled by trusted intermediaries, is unlikely to be a critical ingredient to creating premier general AI models. However, it may allow its beneficiaries (from small collectives to sovereign states) to build non-frontier models that are maximally competitive with frontier models in the domains pertinent to the data. The deeper and more unique their data, the likelier this is to be true.
+## Synthesizing These Three Pathways Into a Productive Agenda
 None of these approaches suffices by itself to insure against extreme power concentration. In concert, they reinforce each other, pointing toward a promising strategy:
-
 1. Seek to minimize the distance between open models and leading proprietary ones (within the bounds of safety).  
 2. Do not overreach with direct regulation of non-frontier AI…instead, develop a regulatory program that makes it simple and minimally-risky to set up “trusted data intermediaries” (on the scale of communities, industries, and countries) which can act as collective bargaining agents in the marketplace, and which are obligated to advocate for their constituents’ complex interests in a fiduciary-style manner.  
 3. Encourage the production of unique datasets, managed by trusted intermediaries, which enables non-frontier AI to compete or outperform in particular domains or industries.
-
 To have a meaningful role in the marketplace, trusted data intermediaries must do much more than simply steward local data. They must, instead, become a socio-political vector that unlocks the unique collection of exponentially more data than presently exists.
-
 ## Dearth of Precedents
 The dearth of successful precedents for trusted data intermediaries is a common theme in this policy area. However, the reasons for the lack of precedents are quite clear.
-
 - Data intermediaries that serve as brokers of individual preferences for data simply do not count and will never work. Trusted data intermediaries, like unions, must act as collective bargainers. This means that like unions, they will sometimes contravene individual constituents’ preferences, which therefore cannot be sacrosanct. Their job is to act on behalf of the whole. This is the only way to represent data interests, since data is never a discrete chattel, but always a window onto underlying reality which cannot be “carved at the joints”.
-
 - Trusted data intermediaries are complex and legally undefined. This is an insurmountable obstacle for ground-up organization. People need clear templates and reliable legal certainty.
-
 - Trusted data intermediaries must have unique data in order to compete in the marketplace. They will not have leverage otherwise. And until now, the focus has been on protecting data that already exists. Instead, trusted data intermediaries need to be a protective shield giving members the confidence to accept and participate in the production of deeper, privacy-protecting datasets. Otherwise they simply have no unique offering to contribute to technologists or to the marketplace.
-
 ## Examples: Sensitive Medical Data. Neural Link Tech.
 The public hospital system of a medium-sized country enjoys a sufficient democratic mandate to create a trusted data intermediary covering all of its medical data. Until now, no comparably-detailed or comprehensive medical dataset has ever been made available to model trainers. The leader of the trusted intermediary, accountable to the entire citizenry, develops a strategy for protecting all citizens’ economic, privacy, and moral interests in the data, while also using it to create a leading medical AI. This results in a national-proprietary model, using advanced but non-frontier AI technology, that leads to various medical breakthroughs, whose international commercialization benefits the citizenry directly.
-
 A country develops a lightweight but strongly protective model law enabling private (but publicly obligated) trusted data intermediaries to operate in its jurisdiction. Two years later, neural link technology makes significant strides. Most people around the world adopt this technology extremely cautiously, knowing that it produces data which will train models owned by private companies based abroad. But in this country, leading professionals in various fields join together into sectoral-level trusted data intermediaries, and adopt it enthusiastically. Their data intermediaries become the stewards of the data they produce, which is used to train collectively-owned models which have world-leading performance in those sectoral verticals.
-
 ## Appendix
 Here are four premises that may help clarify my reasoning.
-
 1. **It is not “hype” to predict that AI will get much, much better.**
-
 2. **AI will not replace people, but it could make their economic contributions more interchangeable and therefore reduce their bargaining power.** An important counterweight to this reduction of bargaining power may be organizing toward the production and trusted management of high value datasets.
-
 3. **It is often claimed that data should be open because it is a non-rivalrous good, but this requires qualification.** Let us distinguish between “data” and “information” and place them at two ends of a spectrum.
-
-   - “Data” is information whose interpretation is non-trivial: for example a complex dataset from which valuable insights can only be extracted with elaborate analysis; or an old public text, like the works of Aristotle or Shakespeare, whose content is widely known yet whose interpretation still remains unfinished and fruitful.
-   - “Information” is data whose interpretation is trivial or self-evident. For example, the earnings data of a large public company: the primary import of this information is that it will affect the market when others find out about it. Such information therefore primarily benefits the first agent to act on it, and is therefore rivalrous. Another example is a password, which has no meaning or interpretation other than its usefulness in accessing a particular resource.
-
-   All data has information-like aspects, and information has data-like aspects. The critical point is that data is a public good, but information is rivalrous. AI also affects the triviality of data’s interpretation by making it much easier to extract information from data.
-
+- “Data” is information whose interpretation is non-trivial: for example a complex dataset from which valuable insights can only be extracted with elaborate analysis; or an old public text, like the works of Aristotle or Shakespeare, whose content is widely known yet whose interpretation still remains unfinished and fruitful.
+- “Information” is data whose interpretation is trivial or self-evident. For example, the earnings data of a large public company: the primary import of this information is that it will affect the market when others find out about it. Such information therefore primarily benefits the first agent to act on it, and is therefore rivalrous. Another example is a password, which has no meaning or interpretation other than its usefulness in accessing a particular resource.
+All data has information-like aspects, and information has data-like aspects. The critical point is that data is a public good, but information is rivalrous. AI also affects the triviality of data’s interpretation by making it much easier to extract information from data.
 4. **It is sometimes supposed that most of the important data, which will form the basis of the AI revolution for the foreseeable future, has already been collected and ingested by models.** This is true in certain domains, such as the open internet and public domain books. But it is not true in general. In the future, important changes will occur in data collection and access which will make all the world’s current data look like only an extremely sparse sample. For example, consider the data that new neural implant technology could collect, or the minute-by-minute blood chemistry data that future medical devices might collect, or 24/7 time-synced high resolution video capturing peoples’ movements and facial expressions at a population level. Consider also the possibilities of analyzing now-private data, such as existing health records, or population-level phone and text message content.
