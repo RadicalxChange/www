@@ -1,8 +1,8 @@
 ---
 layout: "layouts/blog-post.njk"
 date: "2025-01-20"
-title: "Three Pathways to Distributed Power in the Age of AI"
-postHeader: "Three Pathways to Distributed Power in the Age of AI"
+title: "Three Pathways to Distributed Power in the AI Economy"
+postHeader: "Three Pathways to Distributed Power in the AI Economy"
 postAuthor: "Matt Prewitt"
 ---
 On Jan 15, 2025 at Stiftung Mercator in Berlin, RadicalxChange Foundation, along with partners Global Solutions Initiative and Sciences Po Technology and Global Affairs Innovation Hub, co-hosted a [side event](https://www.radicalxchange.org/events/2025-berlin/) to the Paris AI Action Summit. We focused on the future of collective bargaining in the context of the AI revolution. The discussions helped to advance our thinking in several important ways. Here are some quick initial reflections.
