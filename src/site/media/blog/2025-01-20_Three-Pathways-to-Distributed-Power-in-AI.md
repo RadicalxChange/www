@@ -27,8 +27,8 @@ However, intelligent application of state power and regulation may significantly
 ## Synthesizing These Three Pathways Into a Productive Agenda
 None of these approaches suffices by itself to insure against extreme power concentration. In concert, they reinforce each other, pointing toward a promising strategy:
 1. Seek to minimize the distance between open models and leading proprietary ones (within the bounds of safety).  
-2. Do not overreach with direct regulation of non-frontier AI…instead, develop a regulatory program that makes it simple and minimally-risky to set up “trusted data intermediaries” (on the scale of communities, industries, and countries) which can act as collective bargaining agents in the marketplace, and which are obligated to advocate for their constituents’ complex interests in a fiduciary-style manner.  
-3. Encourage the production of unique datasets, managed by trusted intermediaries, which enables non-frontier AI to compete or outperform in particular domains or industries.
+2. Do not overreach with direct regulation of non-frontier AI…instead, develop a regulatory program that makes it simple and minimally legally risky to set up “trusted data intermediaries” (on the scale of communities, industries, and countries) which can act as collective bargaining agents in the marketplace, and which are obligated to advocate actively for their constituents’ complex interests in a fiduciary-style manner.  
+3. Encourage the production of unique datasets, managed by trusted intermediaries, which enable non-frontier AI to compete or outperform in particular domains or industries.
 To have a meaningful role in the marketplace, trusted data intermediaries must do much more than simply steward local data. They must, instead, become a socio-political vector that unlocks the unique collection of exponentially more data than presently exists.
 ## Dearth of Precedents?
 The dearth of major, successful precedents for trusted data intermediaries is a common theme in this policy area. However, the reasons for this scarcity are quite clear.
