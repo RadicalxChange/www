@@ -10,12 +10,13 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     slidoUrl: "",
   },
   popup: {
-    isOn: false,
-    title: "Plurality Launch",
-    bodyText: `**Available now:**
-    *⿻ 數位 Plurality: The Future of Collaborative Technology and Democracy*, by E. Glen Weyl, Audrey Tang, and ⿻ Community
+    isOn: true,
+    title: "Good Enough Ancestor Release",
+    bodyText: `Good Enough Ancestor tells the story of Audrey Tang, Taiwan’s first Digital Minister and the world’s first transgender minister, and how she took Taiwan from an occupation of their national legislature to a beacon of digital democracy. 
 
-    Plurality offers a new way forward for technology and democracy. This co-created book shares the ideas that enabled Taiwan’s 1st Digital Minister Audrey Tang and her collaborators – the architects of Taiwan’s internationally acclaimed digital democracy – to achieve inclusive, technology-fueled growth. These promise to transform every sector, as well as strengthen social unity and diversity. The book was co-written as an open-source project by a multinational community of enthusiasts. We invite your participation and support in developing Plurality!`,
-    link: "/media/announcements/plurality-launch/",
+Filmed over ten days in the lead up to Taiwan’s historic 2024 elections, the poetic documentary threads together Tang’s reflections on her own life—overcoming bullying, a life-threatening heart condition, and gender dysphoria—with the story of Taiwan’s evolution from martial law to its most recent election. Against the backdrop of rising authoritarianism and geopolitical tensions, Good Enough Ancestor is a timely reminder of the fragility of democracy and the responsibility to tend to it for future generations. 
+
+Click the link below to watch the film and read a roundtable discussion between Audrey Tang, director Cynthia Wade, editor Sasha Friedlander, and cinematographer Boaz "Bo" Freund for *Combinations* Magazine.`,
+    link: "https://www.combinationsmag.com/good-enough-ancestor/",
   },
 };
