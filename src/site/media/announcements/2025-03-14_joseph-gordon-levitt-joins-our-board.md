@@ -1,8 +1,8 @@
 ---
 layout: "layouts/announcement.njk"
 date: "2025-03-14"
-title: "Welcoming Joseph Gordon-Levitt"
-postHeader: "Welcoming Joseph Gordon-Levitt"
+title: "Joseph Gordon-Levitt Joins Our Board"
+postHeader: "Joseph Gordon-Levitt Joins Our Board"
 ---
 
 We are thrilled to welcome [Joseph Gordon-Levitt](https://www.imdb.com/name/nm0330687/) to the board of RadicalxChange Foundation!
