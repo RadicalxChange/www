@@ -6,6 +6,8 @@ postHeader: "Soft Determination Wins"
 postAuthor: "Malik Lakoubay"
 ---
 
+## What a moment together and a Pol.is conversation tells us about the future of democracy
+
 ![Good Enough Ancestor film poster](/images/blog/good-enough-ancestor-poster-2.png)
 
 From March 13 to March 20, RadicalxChange chapters around the world gathered in 9 cities across 3 continents in Barcelona, Berlin, Buenos Aires, Lisbon, London, New York City, Paris, San Francisco, and Zurich. They hosted screenings of *[Good Enough Ancestor](https://www.youtube.com/watch?v=idudNrLy8ek)*, a short documentary telling the story of Audrey Tang, Taiwan’s first Digital Minister and the world’s first transgender minister. Overcoming bullying, a fatal heart condition, and gender dysphoria, Tang has emerged as a leading figure of nonviolent resistance to authoritarianism.
