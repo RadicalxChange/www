@@ -32,4 +32,4 @@ From this online conversation, a number of hopeful and visionary comments surfac
 
 Against the backdrop of rising authoritarianism and geopolitical tensions, *Good Enough Ancestor* is a timely reminder of the fragility of democracy and the responsibility to tend to it for future generations. This `Pol.is` conversation is an opportunity to insert ourselves and bring others into the conversation on the future of democracy and how to protect it.
 
-A warm thank you to all organizers and participants. Don't hesitate to join this conversation. By bringing your own perspective, personal story, and disagreements, we may build a more plural future.
+A warm thank you to all organizers and participants. Don't hesitate to join [this conversation](https://Pol.is/report/r2nmfuncjpsbmrub5hy2h). By bringing your own perspective, personal story, and disagreements, we may build a more plural future.
