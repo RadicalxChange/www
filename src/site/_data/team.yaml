@@ -9,11 +9,6 @@
   image: "alex_randaccio.png"
   bio: |
     Alex leverages an interdisciplinary background in software development and political theory to build out and advance RadicalxChange projects. Alex proudly hails from Buffalo, New York.
-- name: "Angela Corpus"
-  title: "Director of Media and Partnerships"
-  image: "angela_corpus.png"
-  bio: |
-    G. Angela Corpus is a filmmaker, activist, content creator, event producer, and values justice for underrepresented communities and gender equity. She is the Director of Media and Partnerships for RadicalxChange. She has a background in online publishing and operations in the non-profit sector, as well as social media strategy for global advertising brands. She is also a semi-retired amateur rugby player, but still coaches and refs the sport. She lives in New York City.
 - name: "Jack Henderson"
   title: "Acting COO"
   image: "jack-henderson.png"
@@ -24,3 +19,8 @@
   image: "paula_berman.png"
   bio: |
     Paula Berman is a hacktivist, digital identity geek and COO of RadicalxChange.
+- name: "Malik Lakoubay"
+  title: "Director of Policy & Outreach"
+  image: "malik-lakoubay.png"
+  bio: |
+    Malik Lakoubay is Director of Policy and Outreach at the RadicalxChange Foundation, where he works at the intersection of emerging technologies and democratic innovation. A former capital markets executive with 15 years of experience in New York, he most recently served as Executive Director at Bank of America Securities. Now based in Buenos Aires, Malik is also an early-stage investor in consumer and retail startups. Malik holds a Master's in Management from HEC Paris. A dual U.S.-French citizen with roots across South Asia and Africa, he speaks English, French, and Spanish fluently.
