@@ -10,7 +10,7 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     slidoUrl: "",
   },
   popup: {
-    isOn: true,
+    isOn: false,
     title: "Good Enough Ancestor Release",
     bodyText: `Good Enough Ancestor tells the story of Audrey Tang, Taiwan’s first Digital Minister and the world’s first transgender minister, and how she took Taiwan from an occupation of their national legislature to a beacon of digital democracy. 
 
