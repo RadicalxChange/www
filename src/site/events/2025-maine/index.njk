@@ -1,0 +1,192 @@
+---
+layout: layouts/_base.njk
+headerText: "Foundations for the Digital Commons"
+introductionBlurb: |
+  This two-day event unites leaders, builders, lawyers, and technologists to advance the future of tech, policy and digital infrastructure to benefit the common good. Together, we’ll tackle emerging challenges and bold opportunities in collective data governance, digital deliberation, democratic innovation, and the rapidly evolving landscape of AI, antitrust, and intellectual property.
+
+  Hosted by the Roux Institute in partnership with RadicalxChange, and Bernstein Shur, the event will feature:
+
+  - Fast-paced lightning talks, breakout sessions, and collaborative deliberations
+
+  - Workshops to align on legal frameworks and policy solutions
+
+  - A civic tech hackathon focused on digital deliberation tools and interoperability
+
+  - Curated networking mixers and engaging programming—all set in beautiful Portland, Maine
+aboutBlurb: |
+  **Thursday, October 30 – Framing & Foundations**
+
+  - 8:30–9:00am | Check-in & Coffee
+
+  - 9:00–9:05am | Welcome from Roux Institute 
+
+  - 9:05–9:20am | New England's Opportunity to Lead
+
+  - 9:30-10:30am | Workshop 1: Citizens' Assembly 
+
+  - 10:45-11:45am | Workshop 2: Data Bargaining & Cooperatives
+
+  - 11:45am- 12:45pm | Lunch
+
+  - 12:45 - 1:45pm | Digital Deliberation Tools Demos
+
+  - 1:45- 2:45pm | Policy Pathways for Participatory Democracy and Data Stewardship
+
+  - 3:00 - 4:00pm | Keynote
+
+  - 4:00-5:00pm | Networking Reception
+
+  - 5:00-7:00pm | Evening Reception
+
+  **Friday, October 31 – Innovation Sprint**
+
+  - 9:00-9:30am | Breakfast & Networking
+
+  - 9:30am-10:15am | Inspiration & Problem Framing 
+
+  - 10:15 - 10:30am | Team Formation & Planning
+
+  - 10:30 - 11:30am | Research & Discovery Sprint
+
+  - 11:30 - 1:00pm | Hackathon Work Sessions & Lunch
+
+  - 1:00 - 2:00pm | Mentor Meetings
+
+  - 2:00-3:00pm | Pitches & Group Feedback
+travelAndAccomodations: |
+  **Hotels**
+  
+  We’ve secured discounted rates at the following hotels within walking distance to the venue:
+
+  - [AC Hotel Portland Downtown/Waterfront](https://www.marriott.com/en-us/hotels/pwmac-ac-hotel-portland-downtown-waterfront-me/overview/)
+
+  - [Residence Inn Portland Downtown/Waterfront](https://residenceinndowntownportland.com/)
+
+  **Flying into Portland**
+
+  - The nearest airport is Portland International Jetport (PWM), located just 15 minutes from downtown.
+
+  - From the airport, you can take a bus, taxi, or use Uber/Lyft to get to the Roux Institute.
+
+  **Flying into Boston**
+
+  - If you’re flying into **Boston Logan International Airport (BOS)**, you have a few easy options to get to Portland:
+
+    - **Concord Coach Lines** offers direct bus service from **Logan Airport to downtown Portland**.
+
+      - Buses run multiple times daily, with pickup right at each terminal.
+
+      - The trip takes about **2 hours** and drops you off at **Thompson’s Point** in Portland.
+
+      - From there, it’s a **10–15 minute ride** to the Roux Institute by taxi, Uber/Lyft, or local bus.
+
+    - Alternatively, you can rent a car and drive (approx. **2 hours** north via I‑95).
+
+    ***Tip:** Book Concord Coach in advance at [concordcoachlines.com](concordcoachlines.com) for best availability.*
+rxcBlurb: |
+  [RadicalxChange Foundation](/) is a 501(c)(3) nonprofit organization dedicated to democratic innovation and institutional design through operational partnerships and experimental projects between academia, government, art, technology, and beyond.
+rouxInstituteBlurb: |
+  Through integrating graduate-level learning, world-class research, industry partnership, and groundbreaking entrepreneurship, Northeastern University’s [Roux Institute](https://roux.northeastern.edu/) operates as a tech talent and innovation hub for Maine and beyond, driving bold innovation at the intersection of tech, data, and the life sciences.
+bernsteinShurBlurb: |
+  [Bernstein Shur](https://www.bernsteinshur.com/) is a New England-headquartered law firm that advises clients across the US and around the world.
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen py-margin lg:py-lg/margin bg-golden-fizz"
+>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block align-top") }}
+    </a>
+  </header>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 mb-12">
+    <img 
+      class="mb-2"
+      src="/images/announcements/2025-maine-image.webp"
+      alt="Foundations for the Digital Commons"
+    />
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2"
+  >
+    <p><strong>Where? </strong>
+      <a
+        href="https://roux.northeastern.edu/"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        class="inline-link"
+      >
+        The Roux Institute at Northeastern University
+      </a> - 100 Fore St, Portland, ME 04101, USA</p>
+    <p><strong>When? </strong>October 30-31, 2025</p>
+    <div class="markdown markdown-sm">
+      {{ "*Please RSVP for the event [here](https://events.humanitix.com/foundations-for-the-digital-commons) if you would like to attend.*" | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <div class="markdown markdown-sm text-justify">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Agenda</p>
+    <div class="markdown markdown-sm">
+      {{ aboutBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Travel and Accomodations</p>
+    <div class="markdown markdown-sm">
+      {{ travelAndAccomodations | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">How To Attend</p>
+    <div class="markdown markdown-sm">
+      {{ "*Please RSVP for the event [here](https://events.humanitix.com/foundations-for-the-digital-commons) if you would like to attend.*" | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">The Roux Institute</p>
+    <div class="markdown markdown-sm">
+      {{ rouxInstituteBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">RadicalxChange</p>
+    <div class="markdown markdown-sm">
+      {{ rxcBlurb | markdown | safe }}
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Bernstein Shur</p>
+    <div class="markdown markdown-sm">
+      {{ bernsteinShurBlurb | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

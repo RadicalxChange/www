@@ -10,13 +10,19 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     slidoUrl: "",
   },
   popup: {
-    isOn: false,
-    title: "Good Enough Ancestor Release",
-    bodyText: `Good Enough Ancestor tells the story of Audrey Tang, Taiwan’s first Digital Minister and the world’s first transgender minister, and how she took Taiwan from an occupation of their national legislature to a beacon of digital democracy. 
+    isOn: true,
+    title: "Foundations for the Digital Commons",
+    bodyText: `Join us October 30-31 in Portland, Maine for a two-day event that will unite leaders, builders, lawyers, and technologists to advance the future of tech, policy and digital infrastructure to benefit the common good. Together, we’ll tackle emerging challenges and bold opportunities in collective data governance, digital deliberation, democratic innovation, and the rapidly evolving landscape of AI, antitrust, and intellectual property.
 
-Filmed over ten days in the lead up to Taiwan’s historic 2024 elections, the poetic documentary threads together Tang’s reflections on her own life—overcoming bullying, a life-threatening heart condition, and gender dysphoria—with the story of Taiwan’s evolution from martial law to its most recent election. Against the backdrop of rising authoritarianism and geopolitical tensions, Good Enough Ancestor is a timely reminder of the fragility of democracy and the responsibility to tend to it for future generations. 
+Hosted by the Roux Institute in partnership with RadicalxChange, and Bernstein Shur, the event will feature:
 
-Click the link below to watch the film and read a roundtable discussion between Audrey Tang, director Cynthia Wade, editor Sasha Friedlander, and cinematographer Boaz "Bo" Freund for *Combinations* Magazine.`,
-    link: "https://www.combinationsmag.com/good-enough-ancestor/",
+- Fast-paced lightning talks, breakout sessions, and collaborative deliberations
+
+- Workshops to align on legal frameworks and policy solutions
+
+- A civic tech hackathon focused on digital deliberation tools and interoperability
+
+- Curated networking mixers and engaging programming—all set in beautiful Portland, Maine`,
+    link: "/events/2025-maine",
   },
 };
