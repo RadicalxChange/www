@@ -1,0 +1,89 @@
+---
+layout: layouts/_base.njk
+headerText: "What and How We Own: The Politics of Change"
+introductionBlurb: |
+  Our aim is to seed a coalition of loosely-aligned actors building a new paradigm for property and ownership in the 21st century. Through this three-day event, we will crystallize a set of projects and initiatives focused on reimagined property relations that the coalition can support and pursue together.
+
+  Co-hosted by RadicalxChange Foundation, Dark Matter Labs, and a Stanford University research team—with generous support from Rockefeller Foundation and Omidyar Network.
+aboutBlurb: |
+  Read more on the event [Notion page](https://what-and-how-we-own.notion.site/What-How-We-Own-The-Politics-of-Change-0755201b081549bfa8ff8426c1fdeb0f).
+rxcBlurb: |
+  [RadicalxChange Foundation](/) is a 501(c)(3) nonprofit organization dedicated to democratic innovation and institutional design through operational partnerships and experimental projects between academia, government, art, technology, and beyond.
+rouxInstituteBlurb: |
+  Through integrating graduate-level learning, world-class research, industry partnership, and groundbreaking entrepreneurship, Northeastern University’s [Roux Institute](https://roux.northeastern.edu/) operates as a tech talent and innovation hub for Maine and beyond, driving bold innovation at the intersection of tech, data, and the life sciences.
+bernsteinShurBlurb: |
+  [Bernstein Shur](https://www.bernsteinshur.com/) is a New England-headquartered law firm that advises clients across the US and around the world.
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen py-margin lg:py-lg/margin bg-golden-fizz"
+>
+  <header class="col-span-columns mb-8">
+    <a href="/">
+      {{ logo.render(classes="hidden lg:inline-block align-top") }}
+    </a>
+    <h1 class="font-display uppercase mt-32 text-size-display lg:text-size-lg/display break-words">
+      What and How We Own:
+    </h1>
+    <h1 class="font-display uppercase mt-0 text-size-display lg:text-size-lg/display break-words">
+      The Politics of Change
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-column-8 space-y-line-3/2"
+  >
+    <p><strong>Where? </strong>
+      <a
+        href="https://www.preservationpark.com/?mc_cid=a373a61fb3"
+        target="_blank"
+        rel="noopener nofollow noreferrer"
+        class="inline-link"
+      >
+        Preservation Park
+      </a> - Oakland, CA, USA</p>
+    <p><strong>When? </strong>March 1-3, 2024</p>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <div class="markdown markdown-sm text-justify">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    <div class="events_youtube-container">
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/925039435?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+          frameborder="0" 
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+          title="What and How We Own: The Politics of Change | Oakland 2024"
+        >
+        </iframe>
+      </div>
+    </div>
+    <div class="conference_inline-button">
+      <hr class="hidden lg:inline-block lg:w-full lg:my-auto">
+    </div>
+    <p class="font-bold uppercase">Read More</p>
+    <div class="markdown markdown-sm">
+      {{ aboutBlurb | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
