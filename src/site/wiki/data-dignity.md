@@ -35,7 +35,7 @@ People should be able to exert democratic collective bargaining power over their
 
 [Don’t give OpenAI all the credit for GPT-3: You might have helped create the latest 'astonishing' advance in AI too](https://www.psagroup.org/blogposts/62) - Nicholas Vincent
 
-[Chapter 5 of Radical Markets](http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf) - Eric A. Posner, E. Glen Weyl
+[Chapter 5 of Radical Markets](https://web.archive.org/web/20211023024820/http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf) - Eric A. Posner, E. Glen Weyl
 
 [Society Runs on Information Flows](https://blog.openmined.org/society-runs-on-information-flows/) - Johannes Stutz
 
