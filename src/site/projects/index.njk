@@ -1,0 +1,137 @@
+---
+layout: layouts/_base.njk
+title: Projects
+headerText: PROJECTS & POLICY PROPOSALS
+introductionBlurb: |
+  Since 2019, RxC has applied our tools and approaches in a range of contexts, collaborating with communities around the world on experiments and applications.
+  
+  To support the translation of experiments, research and edge practice into the mainstream policy reform agenda, and to inspire elected representatives, creative bureaucrats, advocates and cultural innovators, RxC have also developed policy frameworks, proposals and submissions on a range of topics across civic tech, digital rights and democractic participation.
+
+  Explore our projects and policy proposals below.
+projectsBlurb: |
+  Since 2019, RxC has applied our tools and approaches in a range of contexts, collaborating with communities around the world on experiments and applications.
+  
+  Click on a project below to learn more.
+proposalsBlurb: |
+  To support the translation of experiments, research and edge practice into the mainstream policy reform agenda, and to inspire elected representatives, creative bureaucrats, advocates and cultural innovators, RxC have also developed policy frameworks, proposals and submissions on a range of topics across civic tech, digital rights and democractic participation.
+  
+  Click on a policy proposal below to learn more.
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{{ introduction.render(headerText, introductionBlurb) }}
+<section
+  id="projects"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Projects</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+  >
+    <div class="markdown">
+      {{ projectsBlurb | markdown | safe }}
+    </div>
+  </div>
+  <ol class="col-span-full mt-12">
+    <!-- prettier-ignore -->
+    {% for s in projects %}
+    <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
+      <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 py-4">
+          <h1 class="uppercase break-words">{{ s.title }}</h1>
+      </button>
+      <div class="hidden row-start-2 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4 pb-12 lg:pb-16">
+        <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
+          <div class="markdown markdown-sm mb-12">
+            {{ s.shortDescription | markdown | safe }}
+          </div>
+          <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
+            Find out more about the project
+          </a>
+        </div>
+      </div>
+      <div class="col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 lg:border-b"></div>
+    </div>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ol>
+  <div class="col-span-columns pb-6 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="proposals"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Policy Proposals</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+  >
+    <div class="markdown">
+      {{ proposalsBlurb | markdown | safe }}
+    </div>
+  </div>
+  <ol class="col-span-full mt-12">
+    <!-- prettier-ignore -->
+    {% for s in proposals %}
+    <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
+      <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 py-4">
+          <h1 class="uppercase break-words">{{ s.title }}</h1>
+      </button>
+      <div class="hidden row-start-2 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4 pb-12 lg:pb-16">
+        <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
+          <div class="markdown markdown-sm mb-12">
+            {{ s.shortDescription | markdown | safe }}
+          </div>
+          <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
+            Find out more about the project
+          </a>
+        </div>
+      </div>
+      <div class="col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 lg:border-b"></div>
+    </div>
+    <!-- prettier-ignore -->
+    {% endfor %}
+  </ol>
+  <div class="col-span-columns pb-6 lg:pb-16 lg:border-b"></div>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  var collapsibles = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "grid") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "grid";
+      }
+    });
+  }
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
