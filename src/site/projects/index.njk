@@ -34,83 +34,73 @@ proposalsBlurb: |
 <!-- prettier-ignore -->
 {{ introduction.render(headerText, introductionBlurb) }}
 <section
-  id="projects"
+  id="projects & proposals"
   class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
 >
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Projects</h2>
-  </div>
-  <div
     class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
   >
-    <div class="markdown">
-      {{ projectsBlurb | markdown | safe }}
-    </div>
-  </div>
-  <ol class="col-span-full mt-12">
-    <!-- prettier-ignore -->
-    {% for s in projects %}
-    <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
-      <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 py-4">
-          <h1 class="uppercase break-words">{{ s.title }}</h1>
-      </button>
-      <div class="hidden row-start-2 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4 pb-12 lg:pb-16">
-        <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
-          <div class="markdown markdown-sm mb-12">
-            {{ s.shortDescription | markdown | safe }}
-          </div>
-          <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
-            Find out more about the project
-          </a>
-        </div>
-      </div>
-      <div class="col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 lg:border-b"></div>
-    </div>
-    <!-- prettier-ignore -->
-    {% endfor %}
-  </ol>
-  <div class="col-span-columns pb-6 lg:pb-16 lg:border-b"></div>
-</section>
-<section
-  id="proposals"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Policy Proposals</h2>
   </div>
   <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
   >
-    <div class="markdown">
-      {{ proposalsBlurb | markdown | safe }}
-    </div>
-  </div>
-  <ol class="col-span-full mt-12">
-    <!-- prettier-ignore -->
-    {% for s in proposals %}
-    <div class="grid grid-rows-auto/1fr grid-cols-layout-4 lg:grid-cols-layout-12">
-      <button type="button" class="collapsible text-left focus:outline-none text-size--1 col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 py-4">
-          <h1 class="uppercase break-words">{{ s.title }}</h1>
-      </button>
-      <div class="hidden row-start-2 col-span-full grid grid-cols-layout-4 lg:grid-cols-layout-12 my-4 pb-12 lg:pb-16">
-        <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8">
-          <div class="markdown markdown-sm mb-12">
-            {{ s.shortDescription | markdown | safe }}
+    <h3 class="pb-4 border-b">Projects</h3>
+    <table class="block">
+      <tbody class="block">
+        <ol class="col-span-full mt-12">
+          <!-- prettier-ignore -->
+          {% for s in projects %}
+          <div class="">
+            <button type="button" class="collapsible text-left focus:outline-none text-size--1 py-4">
+                <h1 class="uppercase break-words">{{ s.title }}</h1>
+            </button>
+            <div class="hidden my-4 pb-12 lg:pb-16">
+              <div class="">
+                <div class="markdown markdown-sm mb-12">
+                  {{ s.shortDescription | markdown | safe }}
+                </div>
+                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
+                  Find out more about this project
+                </a>
+              </div>
+            </div>
+            <div class="lg:border-b"></div>
           </div>
-          <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
-            Find out more about the project
-          </a>
-        </div>
-      </div>
-      <div class="col-start-column-1 col-end-column-3 lg:col-start-column-1 lg:col-end-gutter-8 lg:border-b"></div>
-    </div>
-    <!-- prettier-ignore -->
-    {% endfor %}
-  </ol>
+          <!-- prettier-ignore -->
+          {% endfor %}
+        </ol>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
+    <h3 class="pb-4 border-b">Policy Proposals</h3>
+    <table class="block">
+      <tbody class="block">
+        <ol class="col-span-full mt-12">
+          <!-- prettier-ignore -->
+          {% for s in proposals %}
+          <div class="">
+            <button type="button" class="collapsible text-left focus:outline-none text-size--1 py-4">
+                <h1 class="uppercase break-words">{{ s.title }}</h1>
+            </button>
+            <div class="hidden my-4 pb-12 lg:pb-16">
+              <div class="">
+                <div class="markdown markdown-sm mb-12">
+                  {{ s.shortDescription | markdown | safe }}
+                </div>
+                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
+                  Find out more about this policy proposal
+                </a>
+              </div>
+            </div>
+            <div class="lg:border-b"></div>
+          </div>
+          <!-- prettier-ignore -->
+          {% endfor %}
+        </ol>
+      </tbody>
+    </table>
+  </div>
   <div class="col-span-columns pb-6 lg:pb-16 lg:border-b"></div>
 </section>
 <!-- prettier-ignore -->
