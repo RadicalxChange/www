@@ -73,7 +73,7 @@ proposalsBlurb: |
                 <div class="markdown markdown-sm mb-12">
                   {{ s.shortDescription | markdown | safe }}
                 </div>
-                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
+                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.title | slug }}">
                   Find out more about this project
                 </a>
               </div>
@@ -102,7 +102,7 @@ proposalsBlurb: |
                 <div class="markdown markdown-sm mb-12">
                   {{ s.shortDescription | markdown | safe }}
                 </div>
-                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.slug }}">
+                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.title | slug }}">
                   Find out more about this policy proposal
                 </a>
               </div>
