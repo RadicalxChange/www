@@ -1,0 +1,162 @@
+---
+layout: layouts/_base.njk
+title: Projects
+headerText: PROJECTS & POLICY PROPOSALS
+introductionBlurb: |
+  Our current program of work is focused around four themes which convey our commitment to shaping positive, pluralistic possible futures in partnership with communities all around the world. We welcome new ideas and invite you to co-design the next experiment for your community.
+
+  - **Democratic Innovation** - Upgrading institutions with participatory methods for priority-setting and consensus-building
+
+  - **Resilient Decentralization** - Empowering distributed participation and local creativity to solve global problems
+
+  - **Collective Capability** - Enabling self-government, collaboration and resource sharing in diverse communities
+
+  - **Imaginative Capacity** - Inspiring curiosity, experimentation and agency to shape possible futures
+projectsBlurb: |
+  Since 2018, RxC has applied our methods, tools and research in collaboration with communities around the world, from state and local government to creative practice, in web3 communities and with policymakers: we have found every kind of governance system and community can benefit from new tools for participation, collaboration, resource-management and consensus-building. 
+
+  To support the translation of experiments, research and edge practice into the mainstream policy reform agenda, and to inspire elected representatives, creative bureaucrats, advocates and cultural innovators, RxC also develops policy frameworks, proposals and submissions on a range of topics across civic tech, digital rights and democratic participation. 
+
+  Review and download case studies of our past projects, or explore our projects, proposals and impacts through a timeline of our work to date.
+proposalsBlurb: |
+  To support the translation of experiments, research and edge practice into the mainstream policy reform agenda, and to inspire elected representatives, creative bureaucrats, advocates and cultural innovators, RxC have also developed policy frameworks, proposals and submissions on a range of topics across civic tech, digital rights and democractic participation.
+  
+  Click on a policy proposal below to learn more.
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{{ introduction.render(headerText, introductionBlurb) }}
+<section
+  id="projects & proposals"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Past Projects & Policy Proposals</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+  >
+    <div class="markdown">
+      {{ projectsBlurb | markdown | safe }}
+    </div>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
+  >
+    <h3 class="pb-4 border-b">Projects</h3>
+    <table class="block">
+      <tbody class="block">
+        <ol class="col-span-full mt-12">
+          <!-- prettier-ignore -->
+          {% for s in projects %}
+          <div class="">
+            <button type="button" class="collapsible text-left focus:outline-none text-size--1 py-4">
+                <h1 class="uppercase break-words">{{ s.title }}</h1>
+            </button>
+            <div class="hidden my-4 pb-12 lg:pb-16">
+              <div class="">
+                <div class="markdown markdown-sm mb-12">
+                  {{ s.shortDescription | markdown | safe }}
+                </div>
+                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.title | slug }}">
+                  Find out more about this project
+                </a>
+              </div>
+            </div>
+            <div class="lg:border-b"></div>
+          </div>
+          <!-- prettier-ignore -->
+          {% endfor %}
+        </ol>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
+    <h3 class="pb-4 border-b">Policy Proposals</h3>
+    <table class="block">
+      <tbody class="block">
+        <ol class="col-span-full mt-12">
+          <!-- prettier-ignore -->
+          {% for s in proposals %}
+          <div class="">
+            <button type="button" class="collapsible text-left focus:outline-none text-size--1 py-4">
+                <h1 class="uppercase break-words">{{ s.title }}</h1>
+            </button>
+            <div class="hidden my-4 pb-12 lg:pb-16">
+              <div class="">
+                <div class="markdown markdown-sm mb-12">
+                  {{ s.shortDescription | markdown | safe }}
+                </div>
+                <a class="thick-link text-size--1 uppercase" href="/projects/{{ s.title | slug }}">
+                  Find out more about this policy proposal
+                </a>
+              </div>
+            </div>
+            <div class="lg:border-b"></div>
+          </div>
+          <!-- prettier-ignore -->
+          {% endfor %}
+        </ol>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-span-columns pb-6 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="timeline"
+  class="min-h-screen grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-auto"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Timeline</h2>
+  </div>
+  <iframe
+    src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vRCcCxLZNigZgZdFWhQuV7hKB3HN784z7NfzM280LacvCe2qa0gdFjCDxKovzoG-NDYmZx1tAn3KZ_B&font=Default&lang=en&initial_zoom=2&width=100%25&height=630'
+    width='100%'
+    height='630'
+    webkitallowfullscreen
+    mozallowfullscreen
+    allowfullscreen
+    frameborder='0'
+    class="col-span-columns"
+    >
+    </iframe>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  var collapsibles = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "grid") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "grid";
+      }
+    });
+  }
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
