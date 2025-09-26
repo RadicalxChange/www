@@ -25,7 +25,7 @@ People should be able to exert democratic collective bargaining power over their
 
 [Data Dignity at RadicalxChange](https://theartofresearch.org/data-dignity-at-radicalxchange/) - M Eifler, Vi Hart
 
-[The Data Freedom Act](/media/papers/data-freedom-act.pdf) - RadicalxChange Foundation Ltd.
+[The Data Freedom Act](/updates/papers/data-freedom-act.pdf) - RadicalxChange Foundation Ltd.
 
 [Data Leverage: A Framework for Empowering the Public in its Relationship with Technology Companies](https://arxiv.org/abs/2012.09995) - Nicholas Vincent, Hanlin Li, Nicole Tilly, Stevie Chancellor, Brent Hecht
 
@@ -39,7 +39,7 @@ People should be able to exert democratic collective bargaining power over their
 
 [Society Runs on Information Flows](https://blog.openmined.org/society-runs-on-information-flows/) - Johannes Stutz
 
-[Solving the Social Dilemma: The Data Freedom Act](/media/blog/solving-the-social-dilemma/) - Matt Prewitt, Leon Erichsen
+[Solving the Social Dilemma: The Data Freedom Act](/updates/blog/solving-the-social-dilemma/) - Matt Prewitt, Leon Erichsen
 
 [Who Owns the Future?](https://en.wikipedia.org/wiki/Who_Owns_the_Future%3F) - Jaron Lanier
 

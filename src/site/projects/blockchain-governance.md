@@ -41,4 +41,4 @@ The "Finding Wildland's Soul" report published in 2022 is the central outcome of
 
 ## Are there any testimonials, documents, assets, links or other ways we can illustrate this project?
 
-[Finding Wildland's Soul](https://www.radicalxchange.org/media/documents/finding-wildlands-soul-full-report.pdf) - RadicalxChange
+[Finding Wildland's Soul](https://www.radicalxchange.org/updates/documents/finding-wildlands-soul-full-report.pdf) - RadicalxChange

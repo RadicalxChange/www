@@ -11,9 +11,9 @@ Radical Antitrust is about looking for cartels in unexpected places, and recogni
 
 [The Agency Costs of Agency Capitalism: Activist Investors and the Revaluation of Governance Rights](https://www.cbs.dk/files/cbs.dk/agency_cost_ssrn_3-13-13_0.pdf) - Ronald J. Gilson, Jeffrey N. Gordon
 
-[A Proposal to Limit the Anti-Competitive Power of Institutional Investors](/media/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf) - Eric A. Posner, Fiona M. Scott Morton, E. Glen Weyl
+[A Proposal to Limit the Anti-Competitive Power of Institutional Investors](/updates/papers/a-proposal-to-limit-the-anti-competitive-power-of-institutional-investors.pdf) - Eric A. Posner, Fiona M. Scott Morton, E. Glen Weyl
 
-[Antitrust Remedies for Labor Market Power](/media/papers/antitrust-remedies-for-labor-market-power.pdf) - Suresh Naidu, Eric A. Posner, E. Glen Weyl
+[Antitrust Remedies for Labor Market Power](/updates/papers/antitrust-remedies-for-labor-market-power.pdf) - Suresh Naidu, Eric A. Posner, E. Glen Weyl
 
 [Horizontal Shareholding and Antitrust Policy](https://www.yalelawjournal.org/feature/horizontal-shareholding-and-antitrust-policy) - Fiona Scott Morton, Herbert Hovenkamp
 

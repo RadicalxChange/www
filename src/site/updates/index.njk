@@ -1,0 +1,260 @@
+---
+layout: layouts/_base.njk
+title: Updates
+headerText: RxC UPDATES
+---
+
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 grid-rows-auto/auto/1fr/auto min-h-screen py-8"
+>
+  <header
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-8"
+  >
+    <h1 class="font-display text-size-display lg:text-size-lg/display">
+      <a href="/">{{ headerText }}</a>
+    </h1>
+  </header>
+  <form
+    class="col-span-columns grid lg:flex grid-cols-1 md:grid-cols-auto/auto justify-start lg:grid-cols-none -mr-4 mb-8"
+  >
+    <div>
+      <input
+        id="filter-blog"
+        type="checkbox"
+        name="media-filter"
+        value="Blog"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-blog">Blog</label>
+    </div>
+    <div>
+      <input
+        id="filter-papers"
+        type="checkbox"
+        name="media-filter"
+        value="Papers"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-papers">Papers</label>
+    </div>
+    <div>
+      <input
+        id="filter-announcements"
+        type="checkbox"
+        name="media-filter"
+        value="Announcements"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-announcements"
+        >Announcements</label
+      >
+    </div>
+    <div>
+      <input
+        id="filter-podcastsvideos"
+        type="checkbox"
+        name="media-filter"
+        value="Podcasts / Videos"
+      /><label class="pl-2 mr-4 text-size--1" for="filter-podcastsvideos"
+        >Podcasts / Videos</label
+      >
+    </div>
+  </form>
+  <ol
+    id="media-list"
+    class="col-span-columns grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-media gap-x-8 gap-y-16 mb-8"
+  ></ol>
+  <div class="col-span-columns pb-4 border-b text-size--1">
+    <button id="media-load-button" class="uppercase">Load more</button>
+  </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<template id="media-item-template">
+  <li data-media>
+    <a class="flex flex-col justify-between h-full media_border-b" href="#">
+      <div class="mb-8">
+        <p data-media-item-prop="postType" class="text-size--1"></p>
+        <h2
+          data-media-item-prop="postHeader"
+          class="leading-snug text-size-2 min-h-line-3 lg:min-h-line-5"
+        ></h2>
+      </div>
+      <div>
+        <p
+          data-media-item-prop="postAuthor"
+          class="text-size--2 lg:text-size--4"
+        ></p>
+        <p
+          data-media-item-prop="readableDate"
+          class="text-size--2 lg:text-size--4"
+        ></p>
+      </div>
+    </a>
+  </li>
+</template>
+<script>
+  const Media = function () {
+    this.$mediaList = document.getElementById("media-list");
+    this.$itemTemplate = document.getElementById(
+      "media-item-template"
+    ).content.firstElementChild;
+    this.$filters = document.querySelectorAll(
+      'input[type=checkbox][name="media-filter"]'
+    );
+    this.$loadButton = document.getElementById("media-load-button");
+
+    this.isLoading = false;
+
+    const shouldUseCache = history.state && history.state.cached;
+    const maybeMediaCache = sessionStorage.getItem("media");
+    if (shouldUseCache && maybeMediaCache) {
+      const mediaData = JSON.parse(maybeMediaCache);
+      this.checkedFilter = mediaData.checkedFilter;
+      this.items = mediaData.items;
+      this.nextPage = mediaData.nextPage;
+      this.renderFilter();
+      for (item of this.items) {
+        this.renderItem(item);
+      }
+      this.renderLoadButton();
+    } else {
+      this.checkedFilter = "All";
+      this.items = [];
+      this.nextPage = "/api/updates/all-1.json";
+      this.fetchMoreItems();
+    }
+  };
+
+  Media.prototype.FILTER_API = {
+    All: "/api/updates/all-1.json",
+    Blog: "/api/updates/blog-1.json",
+    Papers: "/api/updates/papers-1.json",
+    Announcements: "/api/updates/announcements-1.json",
+    "Podcasts / Videos": "/api/updates/podcastsVideos-1.json",
+  };
+
+  Media.prototype.init = function () {
+    for (const $filter of this.$filters) {
+      $filter.addEventListener("change", (event) => this.onFilterChange(event));
+    }
+
+    this.$loadButton.addEventListener("click", (event) => {
+      this.fetchMoreItems();
+    });
+
+    window.addEventListener("beforeunload", (event) => {
+      // Record state so it can be restored if user hits
+      // back button and overwritten if user navigates
+      // back here naturally
+      history.replaceState({ cached: true }, undefined, undefined);
+      sessionStorage.setItem(
+        "media",
+        JSON.stringify({
+          checkedFilter: this.checkedFilter,
+          items: this.items,
+          nextPage: this.nextPage,
+        })
+      );
+    });
+  };
+
+  Media.prototype.onFilterChange = function (event) {
+    // Manage checkbox state
+    if (event.target.checked) {
+      this.checkedFilter = event.target.value;
+    } else {
+      this.checkedFilter = "All";
+    }
+    this.renderFilter();
+
+    // Clear item list
+    this.items = [];
+    this.renderReset();
+
+    // Load new data
+    this.nextPage = this.FILTER_API[this.checkedFilter];
+    this.fetchMoreItems();
+  };
+
+  Media.prototype.fetchMoreItems = function () {
+    if (this.isLoading || !this.nextPage) {
+      return Promise.resolve();
+    }
+
+    this.$loadButton.innerText = "Loading...";
+    this.$loadButton.disabled = true;
+    this.isLoading = true;
+
+    return fetch(this.nextPage)
+      .then((r) => r.json())
+      .then((data) => {
+        for (const item of data.items) {
+          this.items.push(item);
+          this.renderItem(item);
+        }
+        this.isLoading = false;
+        this.nextPage = data.next;
+        this.renderLoadButton();
+      })
+      .catch((err) => {
+        console.error(err);
+        this.isLoading = false;
+        this.$loadButton.innerText = "Error: Reload the page.";
+        this.$loadButton.disabled = false;
+      });
+  };
+
+  Media.prototype.renderFilter = function () {
+    for (const $filter of this.$filters) {
+      if ($filter.value === this.checkedFilter) {
+        $filter.checked = true;
+      } else {
+        $filter.checked = false;
+      }
+    }
+  };
+
+  Media.prototype.renderItem = function (item) {
+    const $item = this.$itemTemplate.cloneNode(true);
+
+    const $anchor = $item.children[0];
+    $anchor.href = item.url;
+    $anchor.querySelector('[data-media-item-prop="postType"').innerText =
+      item.postType;
+    $anchor.querySelector('[data-media-item-prop="postHeader"').innerText =
+      item.postHeader;
+    $anchor.querySelector('[data-media-item-prop="postAuthor"').innerText =
+      item.postAuthor;
+    $anchor.querySelector('[data-media-item-prop="readableDate"').innerText =
+      item.readableDate;
+
+    this.$mediaList.appendChild($item);
+  };
+
+  Media.prototype.renderReset = function () {
+    while (this.$mediaList.firstChild) {
+      this.$mediaList.removeChild(this.$mediaList.firstChild);
+    }
+  };
+
+  Media.prototype.renderLoadButton = function (enabled) {
+    if (this.nextPage) {
+      this.$loadButton.innerText = "Load more";
+      this.$loadButton.disabled = false;
+    } else {
+      this.$loadButton.innerText = "The end";
+      this.$loadButton.disabled = true;
+    }
+  };
+
+  const media = new Media();
+  media.init();
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

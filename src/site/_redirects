@@ -34,6 +34,10 @@
 /kiosk /media/
 /kiosk/* /media/:splat
 
+# renamed Media to Updates
+/media /updates/
+/media/* /media/:splat
+
 
 # Legacy redirects from Website 1.0 2020
 /2019-berlin /events/2019-berlin/
@@ -62,8 +66,8 @@
 
 
 # Legacy redirects from WordPress 2020
-/blog   /media/
-/blog/posts/* /media/blog/:splat
+/blog   /updates/
+/blog/posts/* /updates/blog/:splat
 /2020-annual-conference /events/2020-conference
 /wp-content/uploads/2020/04/RoadmapToPandemicResilience.pdf /media/papers/RoadmapToPandemicResilience.pdf
 /wp-content/uploads/2020/03/RxC-Radically-Rethinking-Public-Purchasing.pdf /media/papers/RxC-Radically-Rethinking-Public-Purchasing.pdf

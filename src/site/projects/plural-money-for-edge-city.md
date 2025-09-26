@@ -44,6 +44,6 @@ The initial pilot at Edge Esmeralda demonstrated the viability of the core conce
 
 [Janine Leger & Timour Kosters: Co-Founders of Edge City](https://radicalxchange-s.simplecast.com/episodes/janine-leger-timour-kosters-co-founders-of-edge-city-OKmAPXbI)
 
-https://www.radicalxchange.org/media/blog/edges-a-plural-money-experiment/ 
+https://www.radicalxchange.org/updates/blog/edges-a-plural-money-experiment/ 
 
-https://www.radicalxchange.org/media/blog/edges-2/
+https://www.radicalxchange.org/updates/blog/edges-2/

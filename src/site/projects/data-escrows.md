@@ -45,6 +45,6 @@ N/A
 
 ## Are there any testimonials, documents, assets, links or other ways we can illustrate this project?
 
-- [**Data Coalitions and Escrow Agents](https://www.radicalxchange.org/media/documents/data-coalitions-and-escrow-agents.pdf) - RadicalxChange**
+- [**Data Coalitions and Escrow Agents](https://www.radicalxchange.org/updates/documents/data-coalitions-and-escrow-agents.pdf) - RadicalxChange**
 - [**Data Station: Delegated, Trustworthy, and Auditable Computation to Enable Data-Sharing Consortia with a Data Escrow](https://raulcastrofernandez.com/papers/data_station_paper-11.pdf) - Raul Castro Fernandez**
 - [**Controlling Dataflows with a Bolt-on Data Escrow](https://arxiv.org/pdf/2408.01580) - Raul Castro Fernandez**

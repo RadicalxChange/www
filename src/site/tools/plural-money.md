@@ -40,8 +40,8 @@ Plural Money is designed to make communities more fair, resilient, and participa
 
 We piloted Plural Money at two “pop-up villages” in 2024:
 
-- [**Edge Esmeralda](https://www.radicalxchange.org/media/blog/edges-a-plural-money-experiment/) (California):** A first experiment showing the viability of trust pools and exit taxes.
-- [**Edge City Lanna](https://www.radicalxchange.org/media/blog/edges-2/) (Thailand):** A second experiment where “∈dge markets” and even “fiscal stimulus” were introduced, making the currency more useful and valuable.
+- [**Edge Esmeralda](https://www.radicalxchange.org/updates/blog/edges-a-plural-money-experiment/) (California):** A first experiment showing the viability of trust pools and exit taxes.
+- [**Edge City Lanna](https://www.radicalxchange.org/updates/blog/edges-2/) (Thailand):** A second experiment where “∈dge markets” and even “fiscal stimulus” were introduced, making the currency more useful and valuable.
 
 ## What kind of organizations, governments or contexts can benefit from the application of this tool?
 

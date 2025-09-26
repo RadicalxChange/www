@@ -69,7 +69,7 @@ https://pco.art/
 
 https://www.radicalxchange.org/wiki/pco-art/ 
 
-https://www.radicalxchange.org/media/blog/rethinking-art-ownership/ 
+https://www.radicalxchange.org/updates/blog/rethinking-art-ownership/ 
 
 https://fairclouds.life/en/faq/what-is-partial-common-ownership/ 
 

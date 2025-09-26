@@ -39,7 +39,7 @@ The ideas underpinning the Data Freedom Act have had a tangible impact on the gl
 
 ## Are there any testimonials, documents, assets, links or other ways we can illustrate this project?
 
-https://www.radicalxchange.org/media/papers/data-freedom-act.pdf
+https://www.radicalxchange.org/updates/papers/data-freedom-act.pdf
 https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14541-European-Data-Union-Strategy_en
 https://www.hawley.senate.gov/hawley-blumenthal-unveil-bipartisan-bill-empowering-working-americans-to-sue-big-tech-ai-companies-for-stealing-creative-works/
 https://beta.radicalxchange.org/wiki/sectoral-data-bargaining/

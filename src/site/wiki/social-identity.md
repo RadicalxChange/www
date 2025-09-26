@@ -27,21 +27,21 @@ These are still early days for XIDs, and we are excited to help steer them in a 
 
 [How Soulbound Tokens Can Make Gitcoin Grants More Pluralistic](https://gov.gitcoin.co/t/how-soulbound-tokens-can-make-gitcoin-grants-more-pluralistic/10077) - Leon Erichsen
 
-[Intersectional Social Data](/media/blog/2019-10-24-uh78r5/) - Lucas Geier, Kaliya Young, E. Glen Weyl
+[Intersectional Social Data](/updates/blog/2019-10-24-uh78r5/) - Lucas Geier, Kaliya Young, E. Glen Weyl
 
-[Motivating the Case for Decentralized Social Identity: Part One](/media/blog/2019-06-06-d4utdx/) - E. Glen Weyl, Lucas Geiger, Kaliya Young
+[Motivating the Case for Decentralized Social Identity: Part One](/updates/blog/2019-06-06-d4utdx/) - E. Glen Weyl, Lucas Geiger, Kaliya Young
 
-[Motivating The Case for Decentralized Social Identity. Part Two](/media/blog/2019-06-07-motivating-the-case-for-decentralized-social-identity-part-2/) - E. Glen Weyl, Lucas Geiger, Kaliya Young
+[Motivating The Case for Decentralized Social Identity. Part Two](/updates/blog/2019-06-07-motivating-the-case-for-decentralized-social-identity-part-2/) - E. Glen Weyl, Lucas Geiger, Kaliya Young
 
-[Motivating the Case for Decentralized Social Identity: Part Three](/media/blog/2019-06-08-51kyu5/) - E. Glen Weyl, Lucas Geiger, Kaliya Young
+[Motivating the Case for Decentralized Social Identity: Part Three](/updates/blog/2019-06-08-51kyu5/) - E. Glen Weyl, Lucas Geiger, Kaliya Young
 
 [Plural Funding](https://www.youtube.com/watch?v=RM7UFpSemjA) - E. Glen Weyl, Leon Erichsen
 
 [Soulbound](https://vitalik.ca/general/2022/01/26/soulbound.html) - Vitalik Buterin
 
-[Verifying Identity as a Social Intersection](/media/papers/verifying-identity-as-a-social-intersection.pdf) - Nicole Immorlica, Matthew O. Jackson, E. Glen Weyl
+[Verifying Identity as a Social Intersection](/updates/papers/verifying-identity-as-a-social-intersection.pdf) - Nicole Immorlica, Matthew O. Jackson, E. Glen Weyl
 
-[Who Watches the Watchmen? A Review of Subjective Approaches for Sybil-Resistance in Proof of Personhood Protocols](/media/papers/who-watches-the-watchmen.pdf) - Divya Siddarth, Sergey Ivliev, Santiago Siri, Paula Berman
+[Who Watches the Watchmen? A Review of Subjective Approaches for Sybil-Resistance in Proof of Personhood Protocols](/updates/papers/who-watches-the-watchmen.pdf) - Divya Siddarth, Sergey Ivliev, Santiago Siri, Paula Berman
 
 ## Tools
 

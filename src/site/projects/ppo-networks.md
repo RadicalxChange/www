@@ -38,7 +38,7 @@ N/A
 
 ## Are there any testimonials, documents, assets, links or other ways we can illustrate this project?
 
-- [**The Missing Half of Open Government](https://www.radicalxchange.org/media/blog/the-missing-half-of-open-government/) - RadicalxChange**
+- [**The Missing Half of Open Government](https://www.radicalxchange.org/updates/blog/the-missing-half-of-open-government/) - RadicalxChange**
 - [**Digital Participation Infrastructure](https://www.newamerica.org/digital-impact-governance-initiative/collections/infrastructure-for-the-digital-age/digital-participation-infrastructure/) - New America**
 - [**Participation Officer Network](https://po.pdis.nat.gov.tw/en/po/) - Taiwan PDIS Official Site**
 - [**Inside Taiwan’s new digital democracy](https://www.economist.com/open-future/2019/03/12/inside-taiwans-new-digital-democracy) - The Economist**

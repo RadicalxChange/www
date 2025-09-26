@@ -42,6 +42,6 @@ N/A
 
 ## Are there any testimonials, documents, assets, links or other ways we can illustrate this project?
 
-- [**The Handbook for Radical Local Democracy](https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - RadicalxChange**
+- [**The Handbook for Radical Local Democracy](https://www.radicalxchange.org/updates/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - RadicalxChange**
 - [**Radical Solutions for Equality and Efficiency in Cities](https://www.oxfordurbanists.com/magazine/2020/1/31/radical-solutions-for-equality-and-efficiency-in-cities) - Oxford Urbanists**
 - [**3 Ways Cities Can Embrace the Next Generation of Democratic Governance](https://mayorsinnovation.org/2021/02/11/3-ways-cities-can-embrace-the-next-generation-of-democratic-governance/) - Mayors Innovation Project**

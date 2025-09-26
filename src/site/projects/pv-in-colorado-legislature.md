@@ -52,9 +52,9 @@ PV made it easy for the legislators to find common ground. It produced a more nu
 
 https://www.radicalxchange.org/wiki/colorado-qv/ 
 
-https://www.radicalxchange.org/media/blog/quadratic-voting-in-colorado-2020/ 
+https://www.radicalxchange.org/updates/blog/quadratic-voting-in-colorado-2020/ 
 
-https://www.radicalxchange.org/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf
+https://www.radicalxchange.org/updates/papers/The_Handbook_for_Radical_Local_Democracy.pdf
 
 https://www.wired.com/story/colorado-quadratic-voting-experiment/ 
 
