@@ -3,25 +3,47 @@ layout: layouts/_base.njk
 title: About
 headerText: ABOUT RxC
 introductionBlurb: |
-  The best opportunities for liberating social progress arise in times of technological transformation. Yet technologies that emerge from capitalist incentives too often fail to deliver on this promise. More often, they increase our capacity to pursue self-interest and externalize harm, exacerbating our deepest challenges rather than solving them. 
+  ## What is RadicalxChange?
 
-  So we need to look elsewhere – beyond capitalism and other conventional wisdom – to find real progress and deliver on technology’s true potential. We need better techniques for cooperating across difference: integrating our interests with others, making decisions together, and accepting the legitimacy of compromises. 
+  **RadicalxChange sparks imagination for transformative systems change. We provide participatory tools and collaborative approaches to cooperate across diversity and shape positive futures.**
 
-  RadicalxChange focuses on the details of how to do this, with particular attention to institutional innovation:
+  RxC helps communities of all kinds develop their capacity to set priorities, solve problems, fund and implement projects. We provide support, methods and policy frameworks to enable active participation, consensus-building, sharing and self-government.
 
-  - **Research:** We support and contribute to rigorous research and development of novel decision-making and power-sharing systems, such as [quadratic voting](/wiki/quadratic-voting/) & [funding](/wiki/plural-funding/), [common ownership structures](/wiki/partial-common-ownership/), [plural currencies](/wiki/plural-money/), [social identity](/wiki/social-identity/), and “listening-at-scale” citizen engagement techniques.
+  **We do this through:**
 
-  - **Prototypes:** We develop open-source technologies, such as our [quadratic voting tool](https://demo.quadraticvote.radicalxchange.org/), [RxC Voice](https://voice.radicalxchange.org/), and [PCOArt](https://github.com/RadicalxChange/pco-art/), that enable dynamic experimentation and illustrate promising new directions in institutional design.
+  - A global [community](/community) modeling positive futures through experimentation
 
-  - **Partnerships:** We work hand-in-hand with a wide variety of institutions, ranging from [governments](/wiki/colorado-qv/) to [arts institutions](https://www.serpentinegalleries.org/) to [data unions](/wiki/data-dignity/) and [web3 networks](/updates/blog/finding-wildlands-soul/), to facilitate careful real-world implementations of boundary-pushing systems.
+  - A stack of [tools and methods](/tools) for collaboration, consensus-building and decentralized governance
 
-  - **Movement-Building:** We [educate the public](/updates/) and [host events](/events/) to weave surprising coalitions that can help grow the movement for plural innovation and democratic revitalization.
+  - [Proposals and projects](/projects) to demonstrate practical application of innovative approaches and shape the mainstream policy agenda
 
-  RadicalxChange Foundation is a 501(c)(3) nonprofit organization dedicated to democratic innovation and institutional design through operational partnerships and experimental projects between academia, government, art, technology, and beyond.
-chaptersDescription: |
-  RadicalxChange chapters are the key organizations of the RxC community. Our chapters around the world develop local hubs for discussions, investigations, and implementations of the next-generation political economies that our community envisions.
+  **Our current program of work focuses on:**
 
-  Chapters warmly welcome people of all backgrounds and levels of experience. We’re committed to [tolerance, respect, and open discussion](/community/code-of-conduct).
+  - **Democratic Innovation** - Upgrading institutions with participatory methods for priority-setting and consensus-building
+
+  - **Resilient Decentralization** - Empowering distributed participation and local creativity to solve global problems
+
+  - **Collective Capability** - Enabling self-government, collaboration and resource sharing in diverse communities
+
+  - **Imaginative Capacity** - Inspiring curiosity, experimentation and agency to shape possible futures
+howWeWork: |
+  RxC demonstrates and documents new ways of setting priorities and solving problems. We believe doing this together, across divisions, is the antidote to polarization, a counterweight to elite influence, and a balm to the fear and distrust eroding public discourse.
+
+  RxC works with governments, communities, advocates and creators to model new approaches to collaboration. We support democratic and creative initiatives worldwide, translating cutting-edge practices into reform agendas that help leaders bring tomorrow’s solutions to today’s problems.
+
+  We welcome collaboration and invite you to contact us.
+quote1: |
+  “It needs to be **fast, fair and fun simultaneously**. If a space is **fast** in getting people's ideas into collective intelligence; if the common good, the shared value is derived quickly in a **fair** fashion; and finally, if for each minute of participation people feel there's an intrinsic **fun** in it, then the fast, fair, fun ensures a pro-social interaction online.”
+
+  [*Audrey Tang, 2021*](https://www.howtocitizen.com/episodes/fast-fair-fun-with-digital-minister-audrey-tang)
+quote2: |
+  “I believe in a future that is vastly brighter than the present thanks to radically transformative technology, and I believe in humans and humanity. I reject the mentality that the best we should try to do is to keep the world roughly the same as today but with less greed and more public healthcare. However, I think that not just magnitude but also direction matters... We need active human intention to choose the directions that we want, as the formula of "maximize profit" will not arrive at them automatically.”
+
+  [*Vitalik Buterin, 2023*](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html)
+communitiesDescription: |
+  RxC Communities around the world develop local hubs for discussions, investigations, and implementations of next-generation political economies.
+
+  We warmly welcome people of all backgrounds and levels of experience. We're committed to [tolerance, respect, and open discussion](/community/code-of-conduct).
 aboutBlurb: |
   The RadicalxChange Foundation strives to empower people and organizations in the global RxC movement to grow their ideas and initiatives. Feel free to contact us for any RxC related matters, including consultancy work related to democratic innovation or institutional design.
 supporters:
@@ -55,25 +77,52 @@ supporters:
 <!-- prettier-ignore -->
 {{ introduction.render(headerText, introductionBlurb) }}
 <section
-  id="chapters"
+  id="how-we-work"
   class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
 >
-  <div class="hidden lg:block col-start-column-1 col-end-gutter-4">
-    <h2>Chapters</h2>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">How We Work</h2>
+  </div>
+  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16">
+    <div class="markdown">
+      {{ howWeWork | markdown | safe }}
+    </div>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
+  >
+    <div class="markdown">
+      {{ quote1 | markdown | safe }}
+    </div>
+  </div>
+
+  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
+    <div class="markdown">
+      {{ quote2 | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="communities"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
+>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Communities</h2>
   </div>
   <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
     <div class="markdown">
-      {{ chaptersDescription | markdown | safe }}
+      {{ communitiesDescription | markdown | safe }}
     </div>
     <div class="mt-10 lg:mt-16">
-      {{ actionButton.render(href="/community/chapters", label="Join your local chapter")}}
+      {{ actionButton.render(href="/community", label="Join your local RxC Community")}}
     </div>
   </div>
   <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
 </section>
 <section
   id="foundation"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
 >
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
@@ -138,7 +187,7 @@ supporters:
 </section>
 <section
   id="press"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
 >
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
