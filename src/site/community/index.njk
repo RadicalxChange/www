@@ -6,6 +6,12 @@ introductionBlurb: |
   RadicalxChange is made up of a vibrant and diverse global community of forward-thinking technologists, social scientists, artists, activists, and entrepreneurs dedicated to a shared mission — to modernize and innovate the basic institutions of democracy and markets through a radically egalitarian and participatory vision for the future. There are many ways to get involved.
 
   RadicalxChange chapters are the key organizations of the RxC community. Our chapters around the world develop local hubs for discussions, investigations, and implementations of the next-generation political economies that our community envisions. Chapters warmly welcome people of all backgrounds and levels of experience. We’re committed to [tolerance, respect, and open discussion](/community/code-of-conduct).
+communityCalls: |
+  If you're curious about the work we do and the communities we're connected with, register to join one of our monthly community calls [first Wednesday of every month 10am Eastern Time/2pm GMT] by signing up for our newsletter (you can do so below, just scroll down to the black section), joining us on [Discord](https://discord.gg/yhbSX5PRjx), or by [emailing us](info@radicalxchange.org).
+eventsBlurb: |
+  Check our updates page for information on upcoming events: if you're planning on holding an event for our community soon, spread the word using this form.
+communitiesBlurb: |
+  Click on an RxC Community below for more information.
 ---
 
 <!-- prettier-ignore -->
@@ -20,33 +26,129 @@ introductionBlurb: |
 <!-- prettier-ignore -->
 {{ menu.render() }}
 <!-- prettier-ignore -->
-{% call introduction.render(headerText, introductionBlurb) %}
-<ul class="lg:flex lg:space-between">
-  <li class="mb-8 lg:mb-0 lg:mr-12">
-    <a href="/community/chapters" class="thick-link uppercase"
-      >Get involved with your local chapter</a
-    >
-  </li>
-  <li class="mb-8 lg:mb-0 lg:mr-12">
-    <a
-      href="/community/collaborations" class="thick-link uppercase"
-      >Find a collaboration</a
-    >
-  </li>
-  <li>
-    <a
-      href="https://forms.gle/Z1TfHfLPErF2eAEWA"
-      target="_blank"
-      rel="noopener nofollow noreferrer"
-      class="thick-link uppercase"
-      >Post a collaboration</a
-    >
-  </li>
-</ul>
-<!-- prettier-ignore -->
-{% endcall %}
+{{ introduction.render(headerText, introductionBlurb) }}
+<section
+  id="community-calls"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Join our Community Calls</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+  >
+    <div class="markdown">
+      {{ communityCalls | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="events"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Upcoming Global Events</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+  >
+    <div class="markdown">
+      {{ eventsBlurb | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="communities"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
+>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+  >
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Connect with Global RxC Communities</h2>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+  >
+    <div class="markdown">
+      {{ communitiesBlurb | markdown | safe }}
+    </div>
+  </div>
+  <div
+    class="col-span-columns mb-12 lg:mb-0"
+  >
+    <table class="block">
+      <tbody class="block">
+        <ol class="w-full mt-12 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-media gap-x-8 gap-y-16">
+          <!-- prettier-ignore -->
+          {% for s in communities %}
+          <li class="flex flex-col justify-between h-full media_border-b">
+            <button type="button" class="collapsible text-left focus:outline-none text-size--1 py-4">
+                <h1 class="uppercase break-words">{{ s.city }}</h1>
+            </button>
+            <div class="hidden my-4 pb-2 lg:pb-4">
+              <div>
+                <!-- prettier-ignore -->
+                {% if s.shortDescription %}
+                <div class="markdown markdown-sm mb-4">
+                  {{ s.shortDescription | markdown | safe }}
+                </div>
+                <!-- prettier-ignore -->
+                {% endif %}
+                <!-- prettier-ignore -->
+                {% if s.contact %}
+                <div class="markdown markdown-sm mb-4">
+                  Contact: {{ s.contact }}
+                </div>
+                <!-- prettier-ignore -->
+                {% endif %}
+                <!-- prettier-ignore -->
+                {% if s.contactInfo %}
+                <div class="markdown markdown-sm mb-4">
+                  {{ s.contactInfo | markdown | safe }}
+                </div>
+                <!-- prettier-ignore -->
+                {% endif %}
+                <!-- prettier-ignore -->
+                {% if s.wikiPage %}
+                <a class="thick-link text-size--1 uppercase" href="/wiki/{{ s.wikiPage }}">
+                  Find out more about this community
+                </a>
+                <!-- prettier-ignore -->
+                {% endif %}
+              </div>
+            </div>
+          </li>
+          <!-- prettier-ignore -->
+          {% endfor %}
+        </ol>
+      </tbody>
+    </table>
+  </div>
+</section>
 <!-- prettier-ignore -->
 {{ footer.render() }}
+<script>
+  var collapsibles = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < collapsibles.length; i++) {
+    collapsibles[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "grid") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "grid";
+      }
+    });
+  }
+</script>
 <script>
   // prettier-ignore
   {% include "components/menu.js" %}
