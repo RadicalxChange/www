@@ -4,7 +4,11 @@ title: "RadicalxChange Wiki"
 ---
 [toc]
 
-Welcome to the official RadicalxChange wiki! This is an open-source community effort, so feel free to suggest new topics, add new content, and provide examples wherever you think it might be helpful. All documentation can be edited via GitHub – if you're unsure how, follow the instructions below.
+Welcome to the RadicalxChange Wiki!
+
+In this section you'll find more detailed explainers on key RxC concepts, tools, project case studies and the activities of our global communities. Explore the background, or you're welcome to contribute new definitions, explainers or concepts you think would enrich our community of knowledge and practice.
+
+This is an open-source community effort, so feel free to suggest new topics, add new content, and provide examples wherever you think it might be helpful. All documentation can be edited via GitHub – if you're unsure how, follow the instructions below.
 
 ### Editing Pages (Markdown Files)
 
