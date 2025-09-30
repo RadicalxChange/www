@@ -10,7 +10,79 @@ In this section you'll find more detailed explainers on key RxC concepts, tools,
 
 This is an open-source community effort, so feel free to suggest new topics, add new content, and provide examples wherever you think it might be helpful. All documentation can be edited via GitHub – if you're unsure how, follow the instructions below.
 
-### Editing Pages (Markdown Files)
+## Key Themes and Projects
+
+- **Data Dignity**
+
+  - Tools
+
+    - [Community Exchange](/projects/citizens-assembly-in-colorado/)
+
+  - Projects
+
+    - [Open Questions](/wiki/open-questions/)
+
+- **Civic Tech**
+
+  - Tools
+
+    - [Plural Funding](/tools/plural-funding/)
+
+  - Projects
+
+    - [Community Governance for Blockchain](/community-governance-for-blockchain/)
+
+- **Radical Antitrust**
+
+  - Tools
+
+    - [Plural Ownership](/tools/plural-ownership/)
+
+  - Projects
+
+    - [The Handbook for Radical Local Democracy](/projects/the-handbook-for-radical-local-democracy/)
+
+- **Sectoral Data Bargaining**
+
+  - Tools
+
+    - [PCO Art](/wiki/pco-art/)
+
+  - Projects
+
+    - [Partial Common Ownership of Art platform for Serpentine Art Technologies](/projects/partial-common-ownership-for-serpentine-arts-technologies/)
+
+- **Social Identity**
+
+  - Tools
+
+    - [Plural Money](/tools/plural-money/)
+
+  - Projects
+
+    - [Plural Voting for Participatory Budgeting in NYC](/projects/plural-voting-for-participatory-budgeting-in-nyc/)
+
+    - [Plural Money for Edge City](/projects/plural-money-for-edge-city/)
+
+- **Participation Officers' Network**
+
+  - Tools
+
+    - [Plural Voting (aka Quadratic Voting)](/tools/plural-voting/)
+
+  - Projects
+
+    - [Plural Voting in the Colorado State Legislature](/projects/plural-voting-in-the-colorado-state-legislature/)
+
+    - [Plural Voting in Nashville, Tennessee](/projects/plural-voting-in-nashville/)
+
+    - [Citizens’ Assembly in Colorado](/projects/citizens-assembly-in-colorado/)
+
+- **The Data Freedom Act**
+
+- **Data Escrow**
+
+## Editing Pages (Markdown Files)
 
 - On developer docs page click on `Edit Page`
 - You need to be signed in to GitHub
