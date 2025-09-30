@@ -24,10 +24,10 @@ Voters allocate a budget of “voice credits” across issues; casting multiple 
 
 ## How has it been applied so far?
 
-- [**Taiwan’s Presidential Hackathon](https://presidential-hackathon.taiwan.gov.tw/en/international-track/) (2019–Present)** uses PV to help citizens choose their favorite teams and projects.
-- [**Colorado State Legislature](https://www.wired.com/story/colorado-quadratic-voting-experiment/) (2019–2023)** used PV to help legislators internally prioritize spending bills.
-- [**NYC District 9](https://www.radicalxchange.org/wiki/nyc-qv/) (2023)** used PV in a $1M participatory budgeting campaign, allowing certified residents to vote on and direct those funds to affordable housing development.
-- [**Nashville Metro Council](https://www.rockefellerfoundation.org/grantee-impact-stories/an-unusual-partnership-advances-a-more-democratic-way-to-vote/) (2023)** used PV to prioritize amendments to the city budget.
+- **[Taiwan’s Presidential Hackathon](https://presidential-hackathon.taiwan.gov.tw/en/international-track/) (2019–Present)** uses PV to help citizens choose their favorite teams and projects.
+- **[Colorado State Legislature](https://www.wired.com/story/colorado-quadratic-voting-experiment/) (2019–2023)** used PV to help legislators internally prioritize spending bills.
+- **[NYC District 9](https://www.radicalxchange.org/wiki/nyc-qv/) (2023)** used PV in a $1M participatory budgeting campaign, allowing certified residents to vote on and direct those funds to affordable housing development.
+- **[Nashville Metro Council](https://www.rockefellerfoundation.org/grantee-impact-stories/an-unusual-partnership-advances-a-more-democratic-way-to-vote/) (2023)** used PV to prioritize amendments to the city budget.
 - **Brazil’s [Gramado and Joao Pessoa city councils](https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote) (2019)** used PV to help councillors internally rank their spending priorities, helping identify where there was broad support.
 
 ## What kind of organizations, governments or contexts can benefit from the application of this tool?
