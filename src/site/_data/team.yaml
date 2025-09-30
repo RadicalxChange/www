@@ -1,26 +1,61 @@
 - name: "Matt Prewitt"
-  title: "President"
+  title: "Foundation President"
   image: "matt_prewitt.png"
   twitter: "https://twitter.com/m_t_prewitt"
   bio: |
     Matthew Prewitt is RadicalxChange Foundation’s president, a writer and blockchain industry advisor, and a former plaintiff's side antitrust and consumer class action litigator and federal law clerk.
-- name: "Alex Randaccio"
-  title: "Technical Director"
-  image: "alex_randaccio.png"
+- name: "Jess Scully"
+  title: "Executive Director"
+  image: "jess-scully.png"
+  linkedin: "http://www.linkedin.com/in/jessscully"
   bio: |
-    Alex leverages an interdisciplinary background in software development and political theory to build out and advance RadicalxChange projects. Alex proudly hails from Buffalo, New York.
+    Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination.
+
+    She is a Non Executive Director of Parents for Climate, a member of Women for Election's Political Advisory Board and Senior Associate at the Sydney Policy Lab. Her book, *Glimpses of Utopia: Real Ideas for a Fairer World*, offers solutions to the climate and inequality crises. Jess is currently undertaking Higher Degree Research in Political Philosophy, focusing on overlapping consensus and imaginative hope, at the University of Sydney.
+
+    During her time as an elected Councillor and Deputy Lord Mayor of Sydney Jess successfully established a Meanwhile Use housing model to address gendered violence and the housing crisis; introduced a framework for an inclusive economy through Community Wealth Building; and encouraged the city to undertake a citizens' jury to shape its 2030-2050 strategic plan.
+
+    Jess spent three years as a World Bank consultant designing policy and institutional reform for urban transformation in Indonesia; served as a policy advisor to the NSW Minister for the Arts; and founded and directed Vivid Ideas, Australia's largest creative industries event. She has edited magazines, hosted Saturday Afternoons on ABC Radio, and convened events across innovation, cultural sector, local and activist communities.
+
+    Jess is based in Sydney, Australia and is fluent in English and Spanish.
+
+    Connect with Jess:
+
+    [Signal](https://signal.me/#u/jessscully.80)
+
+    [Email](mailto:jess@radicalxchange.org)
+    
+    [LinkedIn](http://www.linkedin.com/in/jessscully)
 - name: "Jack Henderson"
-  title: "Acting COO"
+  title: "Director of Operations"
   image: "jack-henderson.png"
   bio: |
-    Jack Henderson is COO at RadicalxChange Foundation, where he focuses on accelerating institutional innovation to match the pace of technological innovation. His recent writing is focused on data coalitions, partial common ownership, and the future of work. Jack is from Pennsylvania, studied economics at Princeton, and is now based in Brooklyn.
-- name: "Paula Berman"
-  title: "Chief Operating Officer"
-  image: "paula_berman.png"
-  bio: |
-    Paula Berman is a hacktivist, digital identity geek and COO of RadicalxChange.
+    Jack Henderson is Director of Operations at RadicalxChange Foundation, where he focuses on accelerating institutional innovation to match the pace of technological innovation. His recent writing is focused on data coalitions, partial common ownership, and the future of work. Jack is from Pennsylvania, studied economics at Princeton, and is now based in Brooklyn.
 - name: "Malik Lakoubay"
   title: "Director of Policy & Outreach"
   image: "malik-lakoubay.png"
   bio: |
     Malik Lakoubay is Director of Policy and Outreach at the RadicalxChange Foundation, where he works at the intersection of emerging technologies and democratic innovation. A former capital markets executive with 15 years of experience in New York, he most recently served as Executive Director at Bank of America Securities. Now based in Buenos Aires, Malik is also an early-stage investor in consumer and retail startups. Malik holds a Master's in Management from HEC Paris. A dual U.S.-French citizen with roots across South Asia and Africa, he speaks English, French, and Spanish fluently.
+- name: "Paula Berman"
+  title: "Director of Programs & Partnerships"
+  image: "paula_berman.png"
+  bio: |
+    Paula Berman is a researcher and facilitator working with governments to expand citizen participation and pioneer new models of democratic governance. Her writing examines institutional design and the ways governance and technology can be structured to strengthen participation and resilience in democracy.
+
+    _Selected work_
+
+    Applied / Policy
+
+    - [The Missing Half of Open Government](https://www.radicalxchange.org/media/blog/the-missing-half-of-open-government/), RadicalxChange (2025)
+    
+    - [Colorado Climate Assemblies](https://www.newamerica.org/political-reform/briefs/exploring-plural-voting-as-a-method-for-citizen-engagement/), New America (2024)
+    
+    - [The Community Wallet: Participatory Budgeting with Quadratic Voting](https://www.radicalxchange.org/wiki/nyc-qv/), New York City Council District 9 (2023)
+    
+    - [Future Democracy Lab](https://www.rockefellerfoundation.org/grantee-impact-stories/an-unusual-partnership-advances-a-more-democratic-way-to-vote/), Brazil (2022)
+    
+    Peer-reviewed
+    
+    - [Compressed to 0: The Silent Strings of Proof of Personhood](https://stanford-jblp.pubpub.org/pub/compressed-to-0-proof-personhood/release/5), Stanford Journal of Blockchain Law & Policy (2025) 
+    
+    - [Who Watches the Watchmen? A Review of Subjective Approaches for Sybil-Resistance in Proof of Personhood Protocols](https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2020.590171/full), Frontiers in Blockchain (2020)
