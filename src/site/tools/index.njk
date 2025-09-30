@@ -11,7 +11,7 @@ introductionBlurb: |
 
     We'd love to work with you to enhance your processes and unlock the ideas, passions and perspectives of your community in service of shared visions.
 methodsBlurb: |
-    RxC promotes and stewards methodologies and tools for collaboration, supports communities of innovators, and stimulates radical imagination for transformative change.
+    **RxC promotes and stewards methodologies and tools for collaboration, supports communities of innovators, and stimulates radical imagination for transformative change.**
 
     We deploy a range of tools developed within our community, including the Plural Stack:
 votingBlurb: |
@@ -44,10 +44,21 @@ impactBlurb: |
     Gitcoin
 
     Global Dialogues
+homeConcepts:
+  - name: Plural Voting
+    href: /tools/plural-voting/
+    element: <quadratic-voting-animation/>
+  - name: Plural Funding
+    href: /tools/plural-funding/
+    element: <quadratic-funding-animation/>
+  - name: Plural Ownership
+    href: /tools/plural-ownership/
+    element: <partial-common-ownership-animation/>
+  - name: Plural Money
+    href: /tools/plural-money/
+    element: <data-dignity-animation/>
 ---
 
-<!-- prettier-ignore -->
-{% import "components/introduction.njk" as introduction %}
 <!-- prettier-ignore -->
 {% import "components/action-button.njk" as actionButton %}
 <!-- prettier-ignore -->
@@ -59,51 +70,128 @@ impactBlurb: |
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
-<!-- prettier-ignore -->
-{{ introduction.render(headerText, introductionBlurb) }}
-<section
-  id="methods & tools"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
->
+<div class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin">
+  <header class="col-span-columns mb-8">
+    <h1 class="font-display text-size-display lg:text-size-lg/display">
+      <a href="/">{{ headerText }}</a>
+    </h1>
+  </header>
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2"
   >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Methods & Tools</h2>
+    <div class="markdown">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
   </div>
-  <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+</div>
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 bg-golden-fizz py-margin lg:py-lg/margin"
+>
+  <section
+    id="methods & tools"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
   >
     <div class="markdown">
       {{ methodsBlurb | markdown | safe }}
     </div>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
-  >
-    <div class="markdown mb-12">
-        {{ votingBlurb | markdown | safe }}
+    <div 
+      id="concepts"
+      class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-16 lg:gap-y-12"
+    >
+      {% for concept in homeConcepts%}
+      <a
+        class="group flex flex-col items-center justify-between"
+        href="{{ concept.href }}"
+      >
+        <div></div>
+        <div class="w-full max-w-xs">
+          {{ concept.element | safe }}
+        </div>
+        <h2
+          class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0 group-hover:thick-link"
+        >
+          {{ concept.name }}
+        </h2>
+      </a>
+      {% endfor %}
     </div>
-    <div class="markdown mb-12">
-        {{ fundingBlurb | markdown | safe }}
+    <div
+      class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+    >
+      <div class="markdown">
+        {{ impactBlurb | markdown | safe }}
+      </div>
     </div>
-    <div class="markdown mb-12">
-        {{ ownershipBlurb | markdown | safe }}
-    </div>
-    <div class="markdown mb-12">
-        {{ moneyBlurb | markdown | safe }}
-    </div>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
-  >
-    <div class="markdown">
-      {{ impactBlurb | markdown | safe }}
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 <!-- prettier-ignore -->
 {{ footer.render() }}
+<script>
+  const Animation = function ($root) {
+    this.$root = $root;
+
+    this.onMouseEnter = this._onMouseEnter.bind(this);
+    this.onMouseLeave = this._onMouseLeave.bind(this);
+    this.onIntersect = this._onIntersect.bind(this);
+    this.observer = new IntersectionObserver(this.onIntersect, {
+      threshold: [0.5, 1],
+    });
+  };
+
+  Animation.prototype.init = function () {
+    this.$root.addEventListener("mouseenter", this.onMouseEnter);
+    this.$root.addEventListener("mouseleave", this.onMouseLeave);
+    this.observer.observe(this.$root);
+  };
+
+  Animation.prototype._onIntersect = function (entries) {
+    if (window.innerWidth >= 768) {
+      return;
+    }
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio <= 0.5) {
+        this.animate(false);
+      } else if (entry.intersectionRatio === 1) {
+        this.animate(true);
+      }
+    });
+  };
+
+  Animation.prototype._onMouseEnter = function () {
+    if (window.innerWidth < 768) {
+      return;
+    }
+    this.animate(true);
+  };
+
+  Animation.prototype._onMouseLeave = function () {
+    if (window.innerWidth < 768) {
+      return;
+    }
+    this.animate(false);
+  };
+
+  Animation.prototype.animate = function (state) {
+    if (state) {
+      this.$root.children[1].children[0].setAttribute("on", true);
+    } else {
+      this.$root.children[1].children[0].removeAttribute("on");
+    }
+  };
+
+  const $concepts = document.getElementById("concepts").children;
+  for (const $concept of $concepts) {
+    const animation = new Animation($concept);
+    animation.init();
+  }
+</script>
 <script>
   // prettier-ignore
   {% include "components/menu.js" %}
 </script>
+<script src="/animations/data-dignity.js"></script>
+<script src="/animations/quadratic-voting.js"></script>
+<script src="/animations/quadratic-funding.js"></script>
+<script src="/animations/partial-common-ownership.js"></script>
+<script src="/animations/radical-antitrust.js"></script>
+<script src="/animations/intersectional-identity.js"></script>
