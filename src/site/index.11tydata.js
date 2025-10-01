@@ -10,7 +10,7 @@ Join RxC and Serpentine UK in a discussion with the authors of the post: Victori
     slidoUrl: "",
   },
   popup: {
-    isOn: true,
+    isOn: false,
     title: "Foundations for the Digital Commons",
     bodyText: `Join us October 30-31 in Portland, Maine for a two-day event that will unite leaders, builders, lawyers, and technologists to advance the future of tech, policy and digital infrastructure to benefit the common good. Together, we’ll tackle emerging challenges and bold opportunities in collective data governance, digital deliberation, democratic innovation, and the rapidly evolving landscape of AI, antitrust, and intellectual property.
 
