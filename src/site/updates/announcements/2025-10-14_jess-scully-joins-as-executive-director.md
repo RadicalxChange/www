@@ -30,4 +30,4 @@ We see these as the foundations of systemic transformation — the scaffolding t
 
 In that spirit, we invite our community to join us in shaping the **next articulation of our core values** through a collaborative process on the [Agora Citizen Network](https://agoracitizen.network/feed/conversation/4OcpxQ) throughout October. This open dialogue embodies our faith that the next radical exchange is always ahead — co-created, plural, and alive in conversation.
 
-![Jess Scully](/images/team/jess-scully.jpg)
+![Jess Scully](/_images/team/jess-scully.jpg)
