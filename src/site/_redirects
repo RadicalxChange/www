@@ -36,7 +36,8 @@
 
 # renamed Media to Updates
 /media /updates/
-/media/* /media/:splat
+/media/* /updates/:splat
+/api/media/* /api/updates/:splat
 
 
 # Legacy redirects from Website 1.0 2020
