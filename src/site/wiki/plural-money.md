@@ -11,19 +11,19 @@ By (1) applying intersectional identity ideas, such as “soulbound” tokens, t
 
 ## Edges Experiments
 
-RadicalxChange facilitated plural money experiments in two "pop-up villages" in 2024. Read more on our blog about our experience piloting a community currency called ∈dges at [Edge Esmeralda](/media/blog/edges-a-plural-money-experiment/) and [Edge City Lanna](/media/blog/edges-2/).
+RadicalxChange facilitated plural money experiments in two "pop-up villages" in 2024. Read more on our blog about our experience piloting a community currency called ∈dges at [Edge Esmeralda](/updates/blog/edges-a-plural-money-experiment/) and [Edge City Lanna](/updates/blog/edges-2/).
 
 ## Further Reading
 
-[Edges: A Plural Money Experiment](/media/blog/edges-a-plural-money-experiment/) - Alex Randaccio
+[Edges: A Plural Money Experiment](/updates/blog/edges-a-plural-money-experiment/) - Alex Randaccio
 
-[Edges 2.0](/media/blog/edges-2/) - Matt Prewitt, Jack Henderson
+[Edges 2.0](/updates/blog/edges-2/) - Matt Prewitt, Jack Henderson
 
-[Let's Use New Forms of Money to Commit to our Communities](/media/blog/lets-use-new-forms-of-money-to-commit-to-our-communities/) - Matt Prewitt
+[Let's Use New Forms of Money to Commit to our Communities](/updates/blog/lets-use-new-forms-of-money-to-commit-to-our-communities/) - Matt Prewitt
 
-[Plural Money, Socially-Provided Goods, and the Principal-Agent Problem](​/media/blog/plural-money-socially-provided-goods-and-the-principal-agent-problem/) - Matt Prewitt, E. Glen Weyl
+[Plural Money, Socially-Provided Goods, and the Principal-Agent Problem](​/updates/blog/plural-money-socially-provided-goods-and-the-principal-agent-problem/) - Matt Prewitt, E. Glen Weyl
 
-[Plural Money: A New Currency Design](/media/blog/plural-money-a-new-currency-design/) - Matt Prewitt
+[Plural Money: A New Currency Design](/updates/blog/plural-money-a-new-currency-design/) - Matt Prewitt
 
 [Sovereign Cryptocurrencies for People, Corporations, Banks and Communities: Foundations for Grassroots Cryptoeconomy](https://arxiv.org/abs/2202.05619) - Ehud Shapiro
 

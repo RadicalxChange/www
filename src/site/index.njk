@@ -1,24 +1,48 @@
 ---
 layout: layouts/_base.njk
+introductionBlurb: |
+  **RadicalxChange empowers people to be the leaders, collaborators, stewards and funders we need to build more positive, participatory, pluralistic futures.**
+
+  **We work across political, technological, cultural and social domains and divides to update social operating systems that are spiraling towards collapse.**
+
+  We support human agency and supercharge collective action with tools, methods and connections to cooperate across diversity, decentralize power, and make decision-making fast, fair and fun.
+
+  Some say that trajectories of monopolization and extraction, of polarization and tribalism, of exit or authoritarianism, are inevitable. We know otherwise: that leadership is found in diverse communities around the world, and that the systemic transitions we need are more joyful, creative and generative than possible through these narrow and exclusive frames. 
+
+  Together, we spark radical imagination and implement achievable alternatives to the status quo. We invite you to join us: the stakes are high and the moment is here. We’re the generation that gets to shape a future we can actually look forward to.
+howBlurb: |
+  - A global [community](/community) modeling positive futures through experimentation
+
+  - A stack of [tools and methods](/tools) facilitating collaboration, consensus-building and decentralized governance
+
+  - [Proposals and projects](/projects) demonstrating practical applications and mainstream policy agendas
+
+  We deploy a range of tools developed within our community, including the Plural Stack:
+joinUsBlurb: |
+  If you're...
+
+  - a **policy maker** or **academic**, you may be interested in our [projects, policy proposals](/projects), or [latest publications](/updates).
+  - a **builder** or **developer**, check out the stack of [plural tools](/tools) and our [wiki](/wiki).
+  - a **community organizer**, you may be interested in joining one of our [IRL communities](/community) in cities around the world, or [starting your own](/community).
+  - a **creator**, **storyteller** or **radical thinker**, check out our [projects](/projects), [podcast or updates](/updates).
+  - an **industry body or association**, explore our [projects](/projects), [upcoming events](/events) and [announcements](/updates).
+
+  We invite radical thinkers, builders, innovators and the curious to join our global [community](/community)—sign up for the [newsletter](http://eepurl.com/gywH7r) and our [monthly calls](https://calendar.google.com/calendar/u/0/embed?src=c_lucq4409c3e2db9j5vld22p8to@group.calendar.google.com&ctz=America/New_York) (first Wednesday of every month at 10am ET/2pm GMT).
+
+  [Contact us](mailto:info@radicalxchange.org) to co-design new experiments and tools for your community.
 homeConcepts:
   - name: Plural Voting
-    href: /wiki/quadratic-voting/
+    href: /tools/plural-voting/
     element: <quadratic-voting-animation/>
   - name: Plural Funding
-    href: /wiki/plural-funding/
+    href: /tools/plural-funding/
     element: <quadratic-funding-animation/>
-  - name: Partial Common Ownership
-    href: /wiki/partial-common-ownership/
+  - name: Plural Ownership
+    href: /tools/plural-ownership/
     element: <partial-common-ownership-animation/>
-  - name: Data Dignity
-    href: /wiki/data-dignity/
-    element: <radical-antitrust-animation/>
   - name: Plural Money
-    href: /wiki/plural-money/
+    href: /tools/plural-money/
     element: <data-dignity-animation/>
-  - name: Social Identity
-    href: /wiki/social-identity/
-    element: <intersectional-identity-animation/>
 ---
 
 <!-- prettier-ignore -->
@@ -35,43 +59,93 @@ homeConcepts:
 <!-- prettier-ignore -->
 {{ menu.render() }}
 <div
-  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/1fr/auto content-between min-h-screen bg-golden-fizz"
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 content-between min-h-screen bg-golden-fizz"
 >
   <header
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mt-margin lg:mt-lg/margin mb-12 lg:mb-8"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mt-margin lg:mt-lg/margin mb-16"
   >
     <h1
       class="font-display text-size-display lg:text-size-lg/display uppercase"
     >
       <a href="/">
         <span class="inline lg:hidden"
-          >RXC is a social movement for next generation political
-          economies</span
+          >RxC is Enabling cooperation across diversity for the common good</span
         >
         {{ logo.render(classes="hidden lg:inline-block align-top") }}
       </a>
     </h1>
   </header>
   <div
-    id="concepts"
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 self-center grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 lg:gap-y-12 mb-16 lg:mb-8"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
   >
-    {% for concept in homeConcepts%}
-    <a
-      class="group flex flex-col items-center justify-between"
-      href="{{ concept.href }}"
+    <div class="markdown">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+    {{ caller() if caller }}
+  </div>
+  <div class="col-span-columns lg:col-end-gutter-9 mb-16">
+    <p class="font-bold uppercase">We focus on:</p>
+    <ol class="w-full mt-8 grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-4 max-w-3xl mx-auto">
+      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
+        <p class="font-bold">Democratic Transformation</p>
+        <p class="italic text-sm">How should we govern?</p>
+        <p>Forging the foundations of 21st century governance</p>
+      </li>
+      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
+        <p class="font-bold">Resilient Decentralization</p>
+        <p class="italic text-sm">How should we build?</p>
+        <p>Accelerating distributed participation and local creativity to solve global problems</p>
+      </li>
+      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
+        <p class="font-bold">Collective Agency</p>
+        <p class="italic text-sm">Who are "we"?</p>
+        <p>Empowering "plural publics" to form and act in the face of shared challenges</p>
+      </li>
+      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
+        <p class="font-bold">Imaginative Hope</p>
+        <p class="italic text-sm">Where are we going?</p>
+        <p>Inspiring curiosity, experimentation and agency to shape possible futures</p>
+      </li>
+    </ol>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+  >
+    <p class="font-bold uppercase">We do this through:</p>
+    <div class="markdown">
+      {{ howBlurb | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 self-center mb-16">
+    <div 
+      id="concepts"
+      class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-16 lg:gap-y-12"
     >
-      <div></div>
-      <div class="w-full max-w-sm">
-        {{ concept.element | safe }}
-      </div>
-      <h2
-        class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0 group-hover:thick-link"
+      {% for concept in homeConcepts%}
+      <a
+        class="group flex flex-col items-center justify-between"
+        href="{{ concept.href }}"
       >
-        {{ concept.name }}
-      </h2>
-    </a>
-    {% endfor %}
+        <div></div>
+        <div class="w-full max-w-xs">
+          {{ concept.element | safe }}
+        </div>
+        <h2
+          class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0 group-hover:thick-link"
+        >
+          {{ concept.name }}
+        </h2>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+  >
+    <p class="font-bold uppercase">We invite you to join us:</p>
+    <div class="markdown">
+      {{ joinUsBlurb | markdown | safe }}
+    </div>
   </div>
   <div
     class="sticky bottom-0 hidden lg:block col-start-margin-1 col-end-column-10 w-full pt-2 bg-white font-display text-size-lg/display"
@@ -79,79 +153,64 @@ homeConcepts:
     <div class="message-marquee">
       <div class="marquee__inner">
         <span class="uppercase mx-6 whitespace-nowrap"
-          >A Social Movement for Next-Generation Political Economies</span
+          >Enabling cooperation across diversity for the common good</span
         >
         <span aria-hidden="true" class="uppercase mx-6 whitespace-nowrap"
-          >A Social Movement for Next-Generation Political Economies</span
+          >Enabling cooperation across diversity for the common good</span
         >
         <span aria-hidden="true" class="uppercase mx-6 whitespace-nowrap"
-          >A Social Movement for Next-Generation Political Economies</span
+          >Enabling cooperation across diversity for the common good</span
         >
         <span aria-hidden="true" class="uppercase mx-6 whitespace-nowrap"
-          >A Social Movement for Next-Generation Political Economies</span
+          >Enabling cooperation across diversity for the common good</span
         >
       </div>
     </div>
   </div>
   <aside
-    class="lg:relative col-span-full lg:col-start-column-10 lg:col-end-last lg:row-span-full order-first lg:order-none"
+    class="lg:relative col-span-full lg:col-start-column-10 lg:col-end-last lg:[grid-row:1/span_7] order-first lg:order-none"
   >
     <div
       class="lg:absolute lg:top-0 lg:left-0 lg:flex lg:flex-col lg:w-full lg:h-full bg-black text-white"
     >
-      <a
-        class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="{{ '/media/blog/eu-data-union-strategy/' if not rxcTv.isOn else '#tv'}}"
-        target="{{ '_blank' if not rxcTv.isOn else ''}}"
-        rel="noopener nofollow noreferrer"
-      >
-        <!-- prettier-ignore -->
-        {% if not rxcTv.isOn %}
-        <h2 class="font-bold">New Blog Post</h2>
-        <p>EU Data Union Strategy: RxC Contribution</p>
-        <!-- prettier-ignore -->
-        {% else %}
-        <h2 class="font-bold">Streaming Now</h2>
-        <p>{{ rxcTv.title }}</p>
-        <!-- prettier-ignore -->
-        {% endif %}
-      </a>
-      <div class="flex-initial border-b mx-6"></div>
-      <a
-        class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="https://discord.com/invite/2Eg62dxeUY"
-        target="_blank"
-        rel="noopener nofollow noreferrer"
-      >
-        <p>Join the RadicalxChange community on Discord</p>
-      </a>
-      <div class="flex-initial border-b mx-6"></div>
-      <a
-        class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
-        href="https://quadraticvote.radicalxchange.org/"
-        target="_blank"
-        rel="noopener nofollow noreferrer"
-      >
-        <p>Use RxC QV - Quadratic Voting App</p>
-      </a>
-      <div class="flex-initial hidden lg:block border-b mx-6"></div>
-      <div
-        id="twitter-marquee"
-        class="flex-grow hidden lg:block mx-4 overflow-hidden"
-      >
-        <div class="marquee__inner">
-          <a
-            class="twitter-timeline py-4 text-size--2"
-            href="https://twitter.com/RadxChange?ref_src=twsrc%5Etfw"
-            target="_blank"
-            rel="noopener nofollow noreferrer"
-            data-theme="dark"
-            data-chrome="noheader nofooter noborders noscrollbar transparent"
-            data-dnt="true"
-          >
-            <span class="px-2">Loading tweets by @RadxChange...</span>
-          </a>
-        </div>
+      <div class="sticky top-0">
+
+          class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
+          href="/updates/announcements/jess-scully-joins-as-executive-director/"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p>Jess Scully Joins as Executive Director of RadicalxChange</p>
+        </a>
+        <div class="flex-initial border-b mx-6"></div>
+
+          class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
+          href="/events/foundations-digital-commons-maine/"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <h2 class="font-bold">Foundations for the Digital Commons</h2>
+          <p>October 30-31 in Maine</p>
+        </a>
+        <div class="flex-initial border-b mx-6"></div>
+        <a
+          class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
+          href="https://www.agoracitizen.app/conversation/4OcpxQ"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p>Help Us Renew Our Values & Principles on Agora</p>
+        </a>
+        <div class="flex-initial border-b mx-6"></div>
+        <a
+          class="flex-initial block hover:opacity-80 py-margin lg:py-lg/margin px-4 lg:px-6 text-size-1 lg:text-size-0"
+          href="https://calendar.google.com/calendar/embed?src=c_lucq4409c3e2db9j5vld22p8to%40group.calendar.google.com&ctz=America%2FNew_York"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+        >
+          <p>Sign Up for the RadicalxChange Monthly Community Call</p>
+        </a>
+        <div class="flex-initial hidden lg:block border-b mx-6"></div>
       </div>
     </div>
   </aside>

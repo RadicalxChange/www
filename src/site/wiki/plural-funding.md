@@ -13,11 +13,11 @@ Plural Funding (also known as Quadratic Funding or QF) is a more democratic and 
 
 [A flexible design for funding public goods](https://arxiv.org/pdf/1809.06421.pdf) - Vitalik Buterin, Zoë Hitzig, E. Glen Weyl
 
-[The Handbook for Radical Local Democracy](/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - Matt Prewitt, Paul Healy
+[The Handbook for Radical Local Democracy](/updates/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - Matt Prewitt, Paul Healy
 
 [How Soulbound Tokens Can Make Gitcoin Grants More Pluralistic](https://gov.gitcoin.co/t/how-soulbound-tokens-can-make-gitcoin-grants-more-pluralistic/10077) - Leon Erichsen
 
-[Liberal Radicalism: A Flexible Design for Philanthropic Matching Funds](/media/papers/liberal-radicalism.pdf) - Vitalik Buterin et al.
+[Liberal Radicalism: A Flexible Design for Philanthropic Matching Funds](/updates/papers/liberal-radicalism.pdf) - Vitalik Buterin et al.
 
 [Pairwise coordination subsidies: a new quadratic funding design](https://ethresear.ch/t/pairwise-coordination-subsidies-a-new-quadratic-funding-design/5553) - Vitalik Buterin
 

@@ -8,10 +8,10 @@ const posthtml = require("posthtml");
 const beautifyHtml = require("js-beautify").html;
 const uslug = require("uslug");
 const lodashChunk = require("lodash.chunk");
-const libraryData = require("./src/data/media/library");
-const papersData = require("./src/data/media/papers");
-const fetchPodcastsReplayed = require("./src/data/media/podcasts-replayed");
-const fetchPodcastsRadicalxchanges = require("./src/data/media/podcasts-radicalxchanges");
+const libraryData = require("./src/data/updates/library");
+const papersData = require("./src/data/updates/papers");
+const fetchPodcastsReplayed = require("./src/data/updates/podcasts-replayed");
+const fetchPodcastsRadicalxchanges = require("./src/data/updates/podcasts-radicalxchanges");
 const nunjucks = require("nunjucks");
 
 module.exports = function (config) {
@@ -105,7 +105,7 @@ module.exports = function (config) {
     const all = []
       .concat(
         collectionApi
-          .getFilteredByGlob("src/site/media/announcements/*")
+          .getFilteredByGlob("src/site/updates/announcements/*")
           .map((item) => ({
             url: item.url,
             date: item.data.date,
@@ -117,7 +117,7 @@ module.exports = function (config) {
             series: item.data.series || [],
           })),
         collectionApi
-          .getFilteredByGlob("src/site/media/blog/*")
+          .getFilteredByGlob("src/site/updates/blog/*")
           .map((item) => ({
             url: item.url,
             date: item.data.date,
@@ -129,7 +129,7 @@ module.exports = function (config) {
             series: item.data.series || [],
           })),
         collectionApi
-          .getFilteredByGlob("src/site/media/videos/*")
+          .getFilteredByGlob("src/site/updates/videos/*")
           .map((item) => ({
             url: item.url,
             date: item.data.date,

@@ -53,7 +53,7 @@ Quadratic Voting gives everyone equal power to direct the attention of the group
 
 [Agonistics: Thinking The World Politically](https://www.barnesandnoble.com/w/agonistics-chantal-mouffe/1113507188) - Chantal Mouffe
 
-[Between Abundance and Scarcity](/media/blog/between-scarcity-and-abundance/) - Matt Prewitt
+[Between Abundance and Scarcity](/updates/blog/between-scarcity-and-abundance/) - Matt Prewitt
 
 [Chapter 2 of Radical Markets](http://governance40.com/wp-content/uploads/2018/11/Eric-Posner-E.-Weyl-Radical-Markets_-Uprooting-Capitalism-and-Democracy-for-a-Just-Society-Princeton-University-Press-2018.pdf) - Eric A. Posner, E. Glen Weyl
 
@@ -65,21 +65,21 @@ Quadratic Voting gives everyone equal power to direct the attention of the group
 
 [On Collusion](https://vitalik.ca/general/2019/04/03/collusion.html) - Vitalik Buterin
 
-[Quadratic Voting and the Public Good: Introduction](/media/papers/qv-and-the-public-good.pdf) - Eric A. Posner, E. Glen Weyl
+[Quadratic Voting and the Public Good: Introduction](/updates/papers/qv-and-the-public-good.pdf) - Eric A. Posner, E. Glen Weyl
 
 [Quadratic Voting: A New Way to Govern Blockchains for Enterprises](https://www.forbes.com/sites/shermanlee/2018/05/30/quadratic-voting-a-new-way-to-govern-blockchains-for-enterprises/#1760146b6ef8) - Sherman Lee
 
-[Quadratic Voting in Colorado: 2020](/media/blog/quadratic-voting-in-colorado-2020/) - Leon Erichsen, Matt Prewitt
+[Quadratic Voting in Colorado: 2020](/updates/blog/quadratic-voting-in-colorado-2020/) - Leon Erichsen, Matt Prewitt
 
 [Quadratic Voting in the Wild](http://www.sci.sdsu.edu/crmse/msed/papers/Quarfoot2.pdf) - David Quarfoot et al.
 
 [QV or Not QV? That is the Question: Some Skepticism about Radical Egalitarian Voting Markets](https://lawreview.uchicago.edu/publication/qv-or-not-qv-question-some-skepticism-about-radical-egalitarian-voting-marketss) - Richard L. Hasen
 
-[QV Polling Method Gains Steam in Colorado State Legislature](/media/blog/qv-polling-method-gains-steam-in-colorado-state-legislature/) - Alex Randaccio, Eli Zeger
+[QV Polling Method Gains Steam in Colorado State Legislature](/updates/blog/qv-polling-method-gains-steam-in-colorado-state-legislature/) - Alex Randaccio, Eli Zeger
 
 [Storable Votes and Quadratic Voting, an Experiment on Four California Propositions](https://www.nber.org/system/files/working_papers/w25510/w25510.pdf) - Alessandra Casella, Luis Sanchez
 
-[The Handbook for Radical Local Democracy](/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - Matt Prewitt, Paul Healy
+[The Handbook for Radical Local Democracy](/updates/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - Matt Prewitt, Paul Healy
 
 [Towards a Connected Society](https://lsa.umich.edu/social-solutions/diversity-democracy/oci-series/excerpts/volume-i/toward-a-connected-society.html) - Danielle Allen
 

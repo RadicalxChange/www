@@ -83,7 +83,7 @@ Please [get in touch](mailto:victoriai@serpentinegalleries.org) if you are inter
 
 ## Further Resources
 
-[Rethinking Art Ownership](/media/blog/rethinking-art-ownership/) blog
+[Rethinking Art Ownership](/updates/blog/rethinking-art-ownership/) blog
 
 [RadicalxChange(s)](https://radicalxchange-s.simplecast.com/episodes/victoria-ivanova-rd-strategic-lead-at-serpentine-arts-technologies-JVDJXn0j) podcast episode on art & infrastructural experimentation
 

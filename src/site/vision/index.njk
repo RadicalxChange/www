@@ -1,0 +1,136 @@
+---
+layout: layouts/_base.njk
+title: Vision
+headerText: OUR VISION
+introductionBlurb: |
+  **The future needs all of us: enabling human agency and creativity in all its dazzling diversity is essential to addressing today's polycrises.**
+
+  We spark imagination for transformative systems change. Through our experiments and collaborations, we are building the foundations of the next economy, a revitalized democracy, robust commoning and decentralized systems for 21st century governance.
+valuesBlurb: |
+  **As part of our Strategic Alignment for 2026 and beyond, RxC is renewing our Values and Principles — based on your feedback.**
+
+  We invite you to help us re-articulate the core values of RadicalxChange throughout the month of October 2025. Join the conversation on [Agora Citizen Network](https://www.agoracitizen.app/conversation/4OcpxQ).
+theoryOfChange: |
+  **More positive futures are built on empowering individuals and communities to shape their worlds in service of their common goals. Today's cracks let the light in, giving us an opening to imagine and create better futures.**
+
+  Transformative change comes from supporting human agency and enabling collective action. New possibilities for societal organization arise through developing, testing, and mainstreaming new ideas in partnership with communities, social movements, and networks.
+
+  RxC provides communities of all kinds with practical methods and policy frameworks to enable active participation, consensus-building, resource sharing and self-government.
+quote1: |
+  “Rapid, transformative change is most likely to happen when a **Crisis** occurs in conjunction with disruptive **Movements** and visionary **Ideas** permeating society. None of them alone is sufficient.”
+
+  [Roman Krznaric, *History for Tomorrow*, 2024](https://www.romankrznaric.com/history-for-tomorrow)
+quote2: |
+  “Technology and democracy are trapped between two sides of a widening gulf. That divide is damaging both sides of the conflict, undermining democracy and slowing technological development. As collateral damage, it is retarding economic growth, undermining confidence in social institutions and fueling inequality… Another path is possible. Technology and democracy can be each other's greatest allies.”
+
+  [E. Glen Weyl and Audrey Tang, *Plurality*, 2024](https://www.plurality.net/)
+whyThisMatters1: |
+  **We face a polycrisis - some say, systemic societal collapse - and the very conditions that created it now block solutions: concentrated market power, centralized decision-making and corrosive political polarization.**
+
+  19th- and 20th-century forms of markets and democracy have failed to meet today's challenges, eroding public faith in traditional governance. The rise of autocracy makes it urgent to upgrade our institutions to overcome gridlock and deliver on the common good.
+whyThisMatters2: |
+  Online, we observe an enclosure of the digital commons, plutocracy and state capture by a new wave of monopolists. Existential threats like AI amid calls for unbridled technological acceleration demand new forms of collaborative governance and distributed ownership to strengthen creative culture and sustain the open-source movement.
+
+  RadicalxChange pushes back against these currents with practical tools that reimagine C21st models for more inclusive, resilient and adaptable social and market relations.
+
+  Successful civic technologies in places like Taiwan, in institutions retooled to take feedback, show us that scalable deliberation and bridging practices can renew the promise of democratic participation. Emerging movements towards deeper civic discourse in places like Japan, with systems that make policymaking collaborative and accessible, show us there’s an unmet desire in the community to shape the future. 
+
+  The innovation of many web3 communities show us that cooperative property forms, governance and market mechanisms can overcome the inefficiencies of stagnant systems and enable collective contributions towards shared public purpose. Social technologies which decentralize control and counter majoritarian or plutocratic domination enable more creative and generative solutions in communities of place, passion, purpose or identity.
+
+  Trajectories of monopolization and extraction, of polarization and tribalism, of founder-rule, exit or authoritarianism are not inevitable. The solutions to the crises we face won’t come from supermen or speculators but from diverse communities online and offline around the world. We work to elevate and amplify these bottom-up solutions and to reshape technology to serve our pluralistic, positive future.
+quote3: |
+  “Our supposedly perfectly competitive market economy, so it would seem, is actually plagued by monopolized and missing markets.”
+
+  [Eric Posner and E. Glen Weyl, *Radical Markets*, 2018](https://www.jstor.org/stable/j.ctvc77c4f)
+quote4: |
+  “The decisions we make today really could commit us to a future where any valuable work done by any human being will become fair game for a tech company to hoover up into its AI model and monetize, while that human being gets nothing.”
+
+  [Joseph Gordon-Levitt, 2025](https://www.hollywoodreporter.com/business/digital/joseph-gordon-levitt-ai-donald-trump-1236334007/)
+---
+
+<!-- prettier-ignore -->
+{% import "components/introduction.njk" as introduction %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<!-- prettier-ignore -->
+{{ introduction.render(headerText, introductionBlurb) }}
+<section
+  id="values-and-principles"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
+>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Our Values and Principles</h2>
+  </div>
+  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16">
+    <div class="markdown">
+      {{ valuesBlurb | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="theory-of-change"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
+>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Our Theory of Change</h2>
+  </div>
+  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16">
+    <div class="markdown">
+      {{ theoryOfChange | markdown | safe }}
+    </div>
+  </div>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
+  >
+    <div class="markdown">
+      {{ quote1 | markdown | safe }}
+    </div>
+  </div>
+
+  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
+    <div class="markdown">
+      {{ quote2 | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
+</section>
+<section
+  id="why-this-matters"
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 pb-4 lg:pb-8 my-margin"
+>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
+    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Why This Work Matters Now</h2>
+  </div>
+  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16">
+    <div class="markdown">
+      {{ whyThisMatters1 | markdown | safe }}
+      {{ whyThisMatters2 | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-16">
+    <div class="markdown">
+      {{ quote3 | markdown | safe }}
+    </div>
+  </div>
+  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 mb-12 lg:mb-16">
+    <div class="markdown">
+      {{ quote4 | markdown | safe }}
+    </div>
+  </div>
+</section>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>

@@ -71,10 +71,10 @@ Feel free to contact the RadicalxChange Foundation for any QV related matters, i
 
 [^1]: Adam Rogers, "[Colorado Tried a New Way to Vote: Make People Pay—Quadratically](https://www.wired.com/story/colorado-quadratic-voting-experiment/)", *Wired*, April 16, 2019.
 
-[^2]: Leon Erichsen and Matt Prewitt, "[Quadratic Voting in Colorado: 2020](/media/blog/quadratic-voting-in-colorado-2020/)", RadicalxChange Blog, January 4, 2021.
+[^2]: Leon Erichsen and Matt Prewitt, "[Quadratic Voting in Colorado: 2020](/updates/blog/quadratic-voting-in-colorado-2020/)", RadicalxChange Blog, January 4, 2021.
 
 [^3]: *Ibid.*
 
 [^4]: "[Quadratic Voting at Work - Charlotte Cavaille, Chris Hansen, Sachin Mittal, and Jake Interrante](https://www.youtube.com/watch?v=dNIx52tn1sQ&themeRefresh=1)", RadicalxChange Livestream, May 11, 2021.
 
-[^5]: Alex Randaccio and Eli Zeger, “[QV Polling Method Gains Steam in Colorado State Legislature](/media/blog/qv-polling-method-gains-steam-in-colorado-state-legislature/)”, RadicalxChange Blog, May 24, 2021.
+[^5]: Alex Randaccio and Eli Zeger, “[QV Polling Method Gains Steam in Colorado State Legislature](/updates/blog/qv-polling-method-gains-steam-in-colorado-state-legislature/)”, RadicalxChange Blog, May 24, 2021.

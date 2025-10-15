@@ -34,7 +34,7 @@ Learn more on our PCO [website](https://partialcommonownership.com/), or join th
 
 ## Further Reading
 
-[Between Abundance and Scarcity](/media/blog/between-scarcity-and-abundance/) - Matt Prewitt
+[Between Abundance and Scarcity](/updates/blog/between-scarcity-and-abundance/) - Matt Prewitt
 
 [Depreciating Licenses](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2744810) - E. Glen Weyl, Anthony Lee Zhang
 
@@ -42,9 +42,9 @@ Learn more on our PCO [website](https://partialcommonownership.com/), or join th
 
 [Does the Henry George Theorem Provide a Practical Guide to Optimal City Size?](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1536-7150.2004.00334.x) - Richard Arnott
 
-[The Handbook for Radical Local Democracy](/media/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - Matt Prewitt, Paul Healy
+[The Handbook for Radical Local Democracy](/updates/papers/The_Handbook_for_Radical_Local_Democracy.pdf) - Matt Prewitt, Paul Healy
 
-[Ownership and Punishment](/media/papers/ownership-and-punishment.pdf) - Matt Prewitt
+[Ownership and Punishment](/updates/papers/ownership-and-punishment.pdf) - Matt Prewitt
 
 [Progress and Poverty](https://en.wikipedia.org/wiki/Progress_and_Poverty) - Henry George
 
@@ -54,7 +54,7 @@ Learn more on our PCO [website](https://partialcommonownership.com/), or join th
 
 [Chapter 1 of Radical Markets](http://assets.press.princeton.edu/chapters/s11222.pdf) - Eric A. Posner, E. Glen Weyl
 
-[Redesigning Spectrum Licenses to Encourage Innovation and Investment](/media/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf) - Paul Milgrom, E. Glen Weyl, Anthony Lee Zhang
+[Redesigning Spectrum Licenses to Encourage Innovation and Investment](/updates/papers/redesigning-spectrum-licenses-to-encourage-innovation-and-investment.pdf) - Paul Milgrom, E. Glen Weyl, Anthony Lee Zhang
 
 [Reimagining Property](https://medium.com/blockchannel/reimagining-property-fbce9d3832a4) - Matt Prewitt
 

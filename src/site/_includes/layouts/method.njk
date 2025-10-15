@@ -1,0 +1,77 @@
+---
+permalink: "tools/{{ slug | defaultSlug: title }}/index.html"
+---
+
+<!-- prettier-ignore -->
+{% import "components/scroll-indicator.njk" as scrollIndicator %}
+<!-- prettier-ignore -->
+{% import "components/close-button.njk" as closeButton %}
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% set ogType="article" %}
+
+<!-- prettier-ignore -->
+{% block metaTags %}
+<!-- prettier-ignore -->
+{{ super() }}
+<meta property="og:article:author" content="{{ RadicalxChange }}" />
+<!-- prettier-ignore -->
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ scrollIndicator.render() }}
+<!-- prettier-ignore -->
+{{ closeButton.render("/tools") }}
+<div
+  class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
+>
+  <article
+    class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-12 markdown markdown-sm"
+  >
+    <header>
+      <h1>{{ postHeader }}</h1>
+      <button
+        type="button"
+        onclick="window.print()"
+        class="print:hidden inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black"
+        aria-label="Download a PDF of this page"
+      >
+        <!-- download icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 3a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4A1 1 0 0 1 8.707 10.293L11 12.586V4a1 1 0 0 1 1-1z"/>
+          <path d="M5 20a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H5z"/>
+        </svg>
+        <span>Download PDF</span>
+      </button>
+    </header>
+    {{ content | markdown | latex | safe }}
+  </article>
+  <aside id="table-of-contents_container" class="hidden lg:sticky lg:col-start-column-13 lg:col-end-gutter-15">
+    <ul id="table-of-contents" class="list-none pl-4 pr-1 mt-20 mb-12 border-l text-size--1">
+    </ul>
+  </aside>
+</div>
+<script>
+  var tocContainer = document.getElementById("table-of-contents");
+  var toc = document.getElementById("toc");
+  tocContainer.appendChild(toc);
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/hash-as-scroll.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/scroll-indicator.js" %}
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/close-button.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endblock %}

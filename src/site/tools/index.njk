@@ -1,0 +1,191 @@
+---
+layout: layouts/_base.njk
+title: Methods and Tools
+headerText: METHODS & TOOLS
+introductionBlurb: |
+    **RxC tailors, deploys and supports transformative methodologies and tools to empower collaboration and consensus-building.**
+
+    These approaches can be applied in diverse contexts to help counter polarization, overcome the tyranny of the majority, reshape the use and ownership of assets, and help communities make nuanced choices when deciding on policy proposals, investments, budget allocations or crowd funding. 
+
+    Inspired by the ideas of [*Radical Markets*](https://www.jstor.org/stable/j.ctvc77c4f), [*Plurality*](https://www.plurality.net/) and our collaborations since 2018, RxC is fine-tuning the Plural Stack through experiments to help communities, associations and governments around the world supercharge participation. 
+methodsBlurb: |
+    We deploy a range of tools developed within our community, including the Plural Stack:
+votingBlurb: |
+    [**Plural Voting**](/tools/plural-voting) makes it easy for a community to set priorities from a list of potential choices.
+fundingBlurb: |
+    [**Plural Funding**](/tools/plural-funding) enables more democratic and scalable allocation of funds for public benefit.
+ownershipBlurb: |
+    [**Plural Ownership**](/tools/plural-ownership) maximises productive uses of assets by making rights more fluid.
+moneyBlurb: |
+    [**Plural Money**](/tools/plural-money) incentivizes value-creation and circulation within communities.
+impactBlurb: |
+    We test these methodologies and tools in a range of contexts, from government decision making to artistic practice, and support this work with advocacy on policy proposals and frameworks which improve governance for participation. In addition to these tools, RxC also champions approaches developed by our chapters and our ecosystem of peers, working with collaborators and helping to embed them in new contexts, with the objective of mainstreaming deeper methods of participation for institutional innovation. 
+
+    We also promote platforms, tools and methods developed in our ecosystem including:
+
+    [Pol.is](http://Pol.is)
+
+    [Context Engine](https://contextengine.xyz/about)
+
+    [Talk to the City](https://talktothe.city/)
+
+    [Agora](https://agoracitizen.network/)
+
+    [Tapir](https://tapir.xyz/how-it-works/)
+
+    [Voqua](https://voqua.io/)
+
+    [Gitcoin](https://www.gitcoin.co/)
+
+    We'd love to work with you to enhance your processes and unlock the ideas, passions and perspectives of your community in service of shared visions.
+homeConcepts:
+  - name: Plural Voting
+    href: /tools/plural-voting/
+    element: <quadratic-voting-animation/>
+  - name: Plural Funding
+    href: /tools/plural-funding/
+    element: <quadratic-funding-animation/>
+  - name: Plural Ownership
+    href: /tools/plural-ownership/
+    element: <partial-common-ownership-animation/>
+  - name: Plural Money
+    href: /tools/plural-money/
+    element: <data-dignity-animation/>
+---
+
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+<div class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-auto/auto content-between min-h-screen bg-golden-fizz py-margin lg:py-lg/margin">
+  <header class="col-span-columns mb-8">
+    <h1 class="font-display text-size-display lg:text-size-lg/display">
+      <a href="/">{{ headerText }}</a>
+    </h1>
+  </header>
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2"
+  >
+    <div class="markdown">
+      {{ introductionBlurb | markdown | safe }}
+    </div>
+  </div>
+</div>
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 bg-golden-fizz py-margin lg:py-lg/margin"
+>
+  <section
+    id="methods & tools"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+  >
+    <div class="markdown">
+      {{ methodsBlurb | markdown | safe }}
+    </div>
+    <div 
+      id="concepts"
+      class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-16 lg:gap-y-12"
+    >
+      {% for concept in homeConcepts%}
+      <a
+        class="group flex flex-col items-center justify-between"
+        href="{{ concept.href }}"
+      >
+        <div></div>
+        <div class="w-full max-w-xs">
+          {{ concept.element | safe }}
+        </div>
+        <h2
+          class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0 group-hover:thick-link"
+        >
+          {{ concept.name }}
+        </h2>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+   <div
+      class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
+    >
+      <div class="markdown">
+        {{ impactBlurb | markdown | safe }}
+      </div>
+    </div>
+</div>
+<!-- prettier-ignore -->
+{{ footer.render() }}
+<script>
+  const Animation = function ($root) {
+    this.$root = $root;
+
+    this.onMouseEnter = this._onMouseEnter.bind(this);
+    this.onMouseLeave = this._onMouseLeave.bind(this);
+    this.onIntersect = this._onIntersect.bind(this);
+    this.observer = new IntersectionObserver(this.onIntersect, {
+      threshold: [0.5, 1],
+    });
+  };
+
+  Animation.prototype.init = function () {
+    this.$root.addEventListener("mouseenter", this.onMouseEnter);
+    this.$root.addEventListener("mouseleave", this.onMouseLeave);
+    this.observer.observe(this.$root);
+  };
+
+  Animation.prototype._onIntersect = function (entries) {
+    if (window.innerWidth >= 768) {
+      return;
+    }
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio <= 0.5) {
+        this.animate(false);
+      } else if (entry.intersectionRatio === 1) {
+        this.animate(true);
+      }
+    });
+  };
+
+  Animation.prototype._onMouseEnter = function () {
+    if (window.innerWidth < 768) {
+      return;
+    }
+    this.animate(true);
+  };
+
+  Animation.prototype._onMouseLeave = function () {
+    if (window.innerWidth < 768) {
+      return;
+    }
+    this.animate(false);
+  };
+
+  Animation.prototype.animate = function (state) {
+    if (state) {
+      this.$root.children[1].children[0].setAttribute("on", true);
+    } else {
+      this.$root.children[1].children[0].removeAttribute("on");
+    }
+  };
+
+  const $concepts = document.getElementById("concepts").children;
+  for (const $concept of $concepts) {
+    const animation = new Animation($concept);
+    animation.init();
+  }
+</script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
+<script src="/animations/data-dignity.js"></script>
+<script src="/animations/quadratic-voting.js"></script>
+<script src="/animations/quadratic-funding.js"></script>
+<script src="/animations/partial-common-ownership.js"></script>
+<script src="/animations/radical-antitrust.js"></script>
+<script src="/animations/intersectional-identity.js"></script>

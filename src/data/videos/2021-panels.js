@@ -51,7 +51,7 @@ E. Glen Weyl (@glenweyl) works to collaboratively envision, design, experiment w
 
 The experiment ran from May 17th to June 8th, 2021 and was structured in three foundational stages: (1) Delegation, (2) Deliberation, and (3) Election. Prior to the event, the RxC Foundation team put out an open call inviting members of the community to take part in the pilot. Out of around 150 who requested to take part or were invited, 68 signed up and participated in the process by delegating voice credits to fellow representatives, engaging in a democratic conversation via Polis, ratifying the resulting ballot curated by RxC Foundation, and prioritizing the ballot’s 54 proposals in a quadratic vote. In the end the democratic process ran smoothly and resulted in actionable and valuable takeaways.
 
-Read more at https://www.radicalxchange.org/media/announcements/rxc-voice-pilot-results/`,
+Read more at https://www.radicalxchange.org/updates/announcements/rxc-voice-pilot-results/`,
     videoId: "37ng0ZWQNNk",
     date: "2021-07-02",
   },
