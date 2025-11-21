@@ -18,12 +18,14 @@
     Signal: Bastin.01
 
 - city: Brussels, Belgium
-  contact: Anja Von Rosenstiel
+  contact: Anja Von Rosenstiel, Andreas Fauler
   contactInfo: |
-    Signal (Anja): anna_R06.36
+    Signal (Anja): anna_R06.36  (Andreas): XQTStrategy.42
 
 - city: Frankfurt, Germany
   contact: Andreas Fauler
+  contactInfo: |
+    Signal: XQTStrategy.42
 
 - city: London, England
   shortDescription: |
