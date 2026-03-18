@@ -1,0 +1,86 @@
+/* Pagefind UI overrides to match RxC design */
+
+/* Override Pagefind CSS custom properties */
+:root {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: #000000;
+  --pagefind-ui-text: #000000;
+  --pagefind-ui-background: #FFFFFF;
+  --pagefind-ui-border: #000000;
+  --pagefind-ui-tag: #EDFF38;
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 0px;
+  --pagefind-ui-image-border-radius: 0px;
+  --pagefind-ui-image-box-ratio: 0;
+  --pagefind-ui-font: "Suisse Intl", sans-serif;
+}
+
+/* Search input styling */
+.pagefind-ui__search-input {
+  font-family: "Suisse Intl", sans-serif !important;
+  font-size: var(--step-0) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 0 !important;
+  padding: 0.75rem 1rem !important;
+  outline: none !important;
+}
+
+.pagefind-ui__search-input:focus {
+  border-width: 2px !important;
+  box-shadow: none !important;
+}
+
+/* Search button */
+.pagefind-ui__search-clear {
+  color: #000000 !important;
+}
+
+/* Results styling */
+.pagefind-ui__result-link {
+  font-family: "Suisse Intl", sans-serif !important;
+  font-weight: bold !important;
+  color: #000000 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid currentColor !important;
+}
+
+.pagefind-ui__result-link:hover {
+  border-bottom-width: 2px !important;
+}
+
+.pagefind-ui__result-excerpt {
+  font-family: "Suisse Intl", sans-serif !important;
+  font-size: var(--step--1) !important;
+  color: #000000 !important;
+}
+
+/* Filter buttons (content type) */
+.pagefind-ui__filter-panel {
+  font-family: "Suisse Intl", sans-serif !important;
+}
+
+.pagefind-ui__filter-name {
+  text-transform: uppercase !important;
+  font-size: var(--step--2) !important;
+}
+
+/* Message text */
+.pagefind-ui__message {
+  font-family: "Suisse Intl", sans-serif !important;
+  font-size: var(--step--1) !important;
+}
+
+/* Result tags (metadata like content type) */
+.pagefind-ui__result-tag {
+  background-color: #EDFF38 !important;
+  color: #000000 !important;
+  font-size: var(--step--2) !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  padding: 2px 8px !important;
+}
+
+/* Loading state */
+.pagefind-ui__loading {
+  color: #6C6C6C !important;
+}

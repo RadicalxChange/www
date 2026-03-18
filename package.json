@@ -8,7 +8,8 @@
   "scripts": {
     "build:images": "node ./src/site/images.js",
     "build:site": "npx @11ty/eleventy",
-    "build": "npm run build:images; npm run build:site",
+    "build:search": "npx pagefind",
+    "build": "npm run build:images; npm run build:site; npm run build:search",
     "serve": "npx @11ty/eleventy --serve",
     "serve:dev": "RXC_DEV=true npm run serve"
   },
@@ -45,5 +46,8 @@
     "tailwindcss": "^3.4.3",
     "terser": "^5.30.3",
     "uslug": "^1.0.4"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
   }
 }

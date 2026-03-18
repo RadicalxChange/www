@@ -1,0 +1,63 @@
+---
+layout: layouts/_base.njk
+title: "Search"
+description: "Search RadicalxChange's wiki, blog posts, project case studies, and more."
+---
+
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{% block otherHead %}
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js"></script>
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block body %}
+<!-- prettier-ignore -->
+{{ menu.render() }}
+
+<div class="grid grid-cols-layout-4 lg:grid-cols-layout-12 py-margin lg:py-lg/margin min-h-screen">
+  <div class="col-span-columns lg:col-start-column-3 lg:col-end-gutter-10">
+    <h1 class="font-display text-size-4 uppercase mb-8 text-center">Search</h1>
+    <div id="search"></div>
+  </div>
+</div>
+
+<!-- prettier-ignore -->
+{{ footer.render() }}
+
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      showImages: false,
+      excerptLength: 25,
+      resetStyles: false
+    });
+
+    // Auto-focus the search input
+    var input = document.querySelector("#search input[type='text']");
+    if (input) {
+      input.focus();
+    }
+
+    // Support ?q= query parameter for direct linking
+    var params = new URLSearchParams(window.location.search);
+    var query = params.get("q");
+    if (query && input) {
+      input.value = query;
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+  });
+</script>
+<!-- prettier-ignore -->
+{% endblock %}

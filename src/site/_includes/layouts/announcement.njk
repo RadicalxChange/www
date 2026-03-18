@@ -31,8 +31,11 @@ permalink: "updates/announcements/{{ slug | defaultSlug: title }}/index.html"
   class="grid grid-cols-layout-4 lg:grid-cols-layout-16 py-margin lg:py-lg/margin mb-24 lg:mb-0"
 >
   <article
+    data-pagefind-body
     class="col-span-columns lg:col-start-column-4 lg:col-end-gutter-13 markdown markdown-sm"
   >
+    <span data-pagefind-meta="type:Announcement" data-pagefind-filter="type:Announcement" hidden></span>
+    <span data-pagefind-meta="date:{{ date | readableDate }}" hidden></span>
     <header>
       <h1>{{ postHeader }}</h1>
       <p>{{ date | readableDate }}</p>
