@@ -1,0 +1,9 @@
+site: dist
+glob: "**/*.html"
+exclude_selectors:
+  - "nav"
+  - "footer"
+  - "[data-pagefind-ignore]"
+  - ".menu"
+  - "#menu"
+  - "#footer"
