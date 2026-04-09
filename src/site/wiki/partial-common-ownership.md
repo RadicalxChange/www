@@ -73,3 +73,5 @@ Learn more on our PCO [website](https://partialcommonownership.com/), or join th
 [Wildcards](https://wildcards.world/) - Wildcards applies gamification of market powers to fundraising for animal conservation. The "Wildcards" are tokens à la SALSA, which income goes to conservation foundations. The possessors of the tokens, or guardians of the animals, compare their contributions on a leaderboard.
 
 [This Artwork Is Always On Sale](https://thisartworkisalwaysonsale.com/) - TAIAOS is a unique, rare digital artwork that is always on sale along the economic lines of SALSA. The scarcity of the digital artwork, its always-on auction & management of patronage towards the artist is all enabled through blockchain smart contracts on Ethereum.
+
+[Unihedge](https://unihedge.org/) - Unihedge is a decentralized prediction market powered by Reverse Harberger Tax (RHTAX) that turns forecasts into self-priced, continuously tradable positions. Traders declare a buyout price and pay a one-time tax based on time to expiry, feeding a compounding reward pool that rewards early, accurate positioning.
