@@ -6,11 +6,11 @@ postHeader: "Reactive vs. Co-Creative Democracy"
 postAuthor: "Martin Rausch, Tom Atlee, Jenna Büchy"
 ---
 
-> *Editor's note —* The essay below is by Martin Rausch, co-author with Tom Atlee and Jenna Büchy of *Finding Light Through the Cracks: Reinventing Democracy with Audrey Tang* — a short, accessible book distilling the principles behind Taiwan's experiments in co-creative governance, with contributions from Audrey Tang herself. Tom Atlee is a longtime pioneer in collective intelligence work through the Co-Intelligence Institute.
+> The essay below is by Martin Rausch, with Tom Atlee and Jenna Büchy, co-authors of *Finding Light Through the Cracks: Reinventing Democracy with Audrey Tang* — a short, accessible book distilling the principles behind Taiwan's experiments in co-creative governance, with contributions from Audrey Tang herself.
 >
-> The book reads as a natural companion to *Plurality* by Glen Weyl, Audrey Tang, and the ⿻ community. Where *Plurality* maps the full architecture of collaborative technology and democracy, *Finding Light* zooms in on the democracy field — making its principles legible through vivid stories and frameworks. In his endorsement, Glen Weyl calls it "a ray of hope to be treasured in the hearts of every person who yearns for their voice to be heard."
+> The book reads as a natural companion to *Plurality* by Glen Weyl, Audrey Tang, and the ⿻ community. Where *Plurality* maps the full architecture of collaborative technology and democracy, *Finding Light* zooms in on the democracy field, making its principles legible through vivid stories and frameworks. In his endorsement, Glen Weyl calls it "a ray of hope to be treasured in the hearts of every person who yearns for their voice to be heard and every institution that seeks the common good and common sense."
 >
-> In the post that follows, Martin uses the contrast of Uber regulation across Taiwan, Switzerland, and the United States to surface a question that rarely gets asked directly: what does each democracy's design assume about its citizens — and what does it tell them in return?
+> In the post that follows, Martin uses the contrast of Uber regulation across Taiwan, Switzerland, and the United States to ask: what does each democracy's design assume about its citizens, and what does it tell them in return?
 >
 > *Finding Light Through the Cracks* is available in English and German on Amazon, and freely downloadable under a Creative Commons license at [co-intelligence.institute/audrey-book](https://co-intelligence.institute/audrey-book).
 
