@@ -1,0 +1,277 @@
+---
+layout: layouts/_base.njk
+title: "Community Week NYC × RadicalxChange"
+description: "A live conversation with NYC community builders during Community Week 2026 — a partnership between RadicalxChange and Community Week NYC."
+permalink: /communityweeknyc/index.html
+introBlurb: |
+  This is a partnership to gather structured, cross-cutting insight from the
+  ~600 community builders convening for Community Week NYC. Together we are
+  asking, in public and in real time, what community builders need to do their
+  work — and what would have to change for that work to be properly
+  resourced.
+
+  The conversation is built around two questions:
+
+  1. **What skills, resources, and infrastructure** do community builders need
+     to sustain and grow their work?
+  2. **What would a *community economy*** — grants, residencies, civic
+     infrastructure — look like in practice?
+
+  The bigger picture: community is civic infrastructure, and it is currently
+  under-resourced, under-recognised, and under-invested in. This conversation
+  is a first step toward building the evidence base for change.
+cwnycBlurb: |
+  Community Week NYC is a citywide celebration of belonging that spotlights
+  the organizers, spaces, and communities connecting New Yorkers. From May
+  9–17, 2026, communities across all five boroughs will host events built on
+  a shared belief: that being intentional about belonging builds deeper
+  relationships, healthier cities, and stronger local economies. Presented by
+  Sugary NYC and week nights.
+
+  [communityweek.nyc](https://www.communityweek.nyc)
+rxcBlurb: |
+  [RadicalxChange Foundation](/) is a 501(c)(3) nonprofit organization
+  dedicated to democratic innovation and institutional design through
+  operational partnerships and experimental projects between academia,
+  government, art, technology, and beyond.
+closingBlurb: |
+  Join us at **"The Future of Social Connection"** on **17 May 2026**, the
+  closing event of Community Week, where Jack Henderson will present a
+  report-back from the engagement.
+---
+
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+<!-- prettier-ignore -->
+{% import "components/logo.njk" as logo %}
+
+<!-- prettier-ignore -->
+{% block otherHead %}
+<style>
+  .cwnyc-polis-embed {
+    min-height: 600px;
+  }
+  @media (min-width: 768px) {
+    .cwnyc-polis-embed {
+      min-height: 700px;
+    }
+  }
+  /* pol.is/embed.js sets max-width: 0 on the injected iframe; reset it so the
+     iframe fills the wrapper. Also ensure it has visible height. */
+  .cwnyc-polis-embed iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 600px;
+    border: 0;
+    display: block;
+  }
+</style>
+<!-- prettier-ignore -->
+{% endblock %}
+
+<!-- prettier-ignore -->
+{{ menu.render() }}
+
+<div
+  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 py-margin lg:py-lg/margin bg-golden-fizz"
+>
+  <!-- Co-branded logos -->
+  <header
+    class="col-span-columns flex flex-wrap items-center gap-x-6 gap-y-4 mb-12 lg:mb-16"
+  >
+    <a href="/" class="block" aria-label="RadicalxChange home">
+      <img
+        src="/images/logos/logo.svg"
+        width="566"
+        height="97"
+        alt="RadicalxChange"
+        class="h-12 lg:h-16 w-auto"
+      />
+    </a>
+    <span aria-hidden="true" class="font-display text-size-2 lg:text-size-4 leading-none"
+      >×</span
+    >
+    <a
+      href="https://www.communityweek.nyc"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="block"
+      aria-label="Community Week NYC"
+    >
+      <!--
+        TODO(cwnyc-logo): a transparent-background SVG (or PNG) is preferred
+        and pending from CWNYC. The current asset is the official 1024×537
+        wordmark + pigeon banner on a solid blue background — displaying
+        as-is per partner direction until the transparent version arrives.
+      -->
+      <img
+        src="/images/communityweeknyc/cwnyc-logo.png"
+        width="1024"
+        height="537"
+        alt="Community Week NYC, May 9–17 2026"
+        class="h-16 lg:h-24 w-auto"
+      />
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-12 lg:mb-16">
+    <h1 class="font-display text-size-display lg:text-size-lg/display uppercase">
+      What do community builders need to thrive?
+    </h1>
+    <p class="mt-line-3/2 text-size-1 lg:text-size-2">
+      A live conversation with NYC community builders during Community Week
+      2026 — a partnership between RadicalxChange and Community Week NYC.
+    </p>
+  </div>
+
+  <!-- Intro -->
+  <section
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-16"
+  >
+    <div class="markdown">
+      {{ introBlurb | markdown | safe }}
+    </div>
+  </section>
+
+  <!-- Polis embed -->
+  <section
+    id="join"
+    class="col-span-columns mb-16 scroll-mt-8"
+  >
+    <h2
+      class="font-display text-size-2 lg:text-size-4 uppercase mb-4"
+    >
+      Join the conversation
+    </h2>
+    <p class="mb-6 text-size-0 lg:text-size-1">
+      Vote on statements from other community builders, and add your own. It
+      takes 2 minutes.
+    </p>
+
+    <!--
+      Polis embed — Polis's documented script-based pattern
+      (https://compdemocracy.org/Polis/). The script auto-creates an iframe
+      pointing at https://pol.is/<conversation_id>/embed.
+
+      The conversation_id appears in two places on this page; keep them in sync:
+        1. data-conversation_id on the .polis div below
+        2. the href on the "Open the conversation in a new tab" fallback link
+
+      The inline guard below preserves a "coming soon" fallback if the ID is
+      ever reverted to the POLIS_CONVO_ID_TODO sentinel — useful if the
+      conversation needs to be taken offline temporarily.
+
+      Fallback link: a direct "Open in a new tab" link is rendered beneath the
+      embed in case the iframe fails to load (CSP, ad-blockers, etc.).
+    -->
+    <div
+      class="cwnyc-polis-embed border-2 border-black bg-white relative overflow-hidden"
+    >
+      <div class="polis" data-conversation_id="6epckxncim"></div>
+      <div
+        class="cwnyc-polis-placeholder absolute inset-0 hidden flex-col items-center justify-center text-center p-8"
+      >
+        <p class="font-bold uppercase text-size-0 mb-2">
+          Polis embed — coming soon
+        </p>
+        <p class="text-size--1 text-gray max-w-md">
+          The live conversation will appear here once it is seeded.
+        </p>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var slot = document.querySelector(".cwnyc-polis-embed .polis");
+        if (!slot) return;
+        var id = slot.getAttribute("data-conversation_id");
+        if (!id || id === "POLIS_CONVO_ID_TODO") {
+          slot.style.display = "none";
+          var ph = document.querySelector(".cwnyc-polis-placeholder");
+          if (ph) {
+            ph.classList.remove("hidden");
+            ph.classList.add("flex");
+          }
+          return;
+        }
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://pol.is/embed.js";
+        document.head.appendChild(s);
+      })();
+    </script>
+
+    <p class="mt-4 text-size--1">
+      Trouble loading?
+      <a
+        href="https://pol.is/6epckxncim"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-link"
+      >
+        Open the conversation in a new tab →
+      </a>
+    </p>
+  </section>
+
+  <!-- About the partners -->
+  <section
+    class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 mb-16"
+  >
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
+      <div>
+        <h3 class="font-bold uppercase mb-4 text-size-0">
+          About Community Week NYC
+        </h3>
+        <div class="markdown markdown-sm">
+          {{ cwnycBlurb | markdown | safe }}
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold uppercase mb-4 text-size-0">
+          About RadicalxChange
+        </h3>
+        <div class="markdown markdown-sm">
+          {{ rxcBlurb | markdown | safe }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2"
+  >
+    <div class="markdown markdown-sm">
+      {{ closingBlurb | markdown | safe }}
+    </div>
+    <p class="text-size--1">
+      Contact:
+      <a href="mailto:info@radicalxchange.org" class="inline-link"
+        >info@radicalxchange.org</a
+      >
+      (RadicalxChange) and
+      <a href="mailto:hello@communityweek.nyc" class="inline-link"
+        >hello@communityweek.nyc</a
+      >
+      (Community Week NYC).
+    </p>
+    <p class="text-size--1">
+      <strong>Community Week participant?</strong> RxC is offering a free
+      workshop —
+      <a href="mailto:info@radicalxchange.org" class="inline-link"
+        >get in touch</a
+      >.
+    </p>
+  </section>
+</div>
+
+<!-- prettier-ignore -->
+{{ footer.render() }}
+
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
