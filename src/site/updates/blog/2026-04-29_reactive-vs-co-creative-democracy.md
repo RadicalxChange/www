@@ -12,7 +12,7 @@ postAuthor: "Martin Rausch, Tom Atlee, Jenna Büchy"
 >
 > In the post that follows, Martin uses the contrast of Uber regulation across Taiwan, Switzerland, and the United States to ask: what does each democracy's design assume about its citizens, and what does it tell them in return?
 >
-> *Finding Light Through the Cracks* is available in English and German on Amazon, and freely downloadable under a Creative Commons license at [co-intelligence.institute/audrey-book](https://co-intelligence.institute/audrey-book).
+> *Finding Light Through the Cracks* is available in English and German on Amazon, and freely downloadable under a Creative Commons license at [co-intelligence.institute/book-audrey](https://co-intelligence.institute/book-audrey).
 
 ---
 
@@ -116,4 +116,4 @@ Taiwan has been doing exactly that for a decade. Not through revolution or ideol
 
 ---
 
-*Finding Light Through the Cracks – Reinventing Democracy with Audrey Tang is authored by Martin Rausch, with the support of Tom Atlee and Jenna Büchy, with contributions from Audrey Tang. Available in English and German editions on Amazon, and freely downloadable at [co-intelligence.institute/audrey-book](https://co-intelligence.institute/audrey-book) under a Creative Commons license (CC BY-NC-SA).*
+*Finding Light Through the Cracks – Reinventing Democracy with Audrey Tang is authored by Martin Rausch, with the support of Tom Atlee and Jenna Büchy, with contributions from Audrey Tang. Available in English and German editions on Amazon, and freely downloadable at [co-intelligence.institute/book-audrey](https://co-intelligence.institute/book-audrey) under a Creative Commons license (CC BY-NC-SA).*
