@@ -41,7 +41,7 @@ TIMEOUT_SECONDS = 30
 # the whole section off the page until the conversation has enough data
 # to be worth showing.
 MIN_TOTAL_VOTES = 50
-MIN_PARTICIPANTS = 20
+MIN_PARTICIPANTS = 10
 
 # Per-statement vote floor for cards. The ratio (20% of participants)
 # scales with the conversation: as more people participate, the bar for a

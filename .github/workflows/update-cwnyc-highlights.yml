@@ -17,7 +17,7 @@ name: Update CWNYC highlights
 
 on:
   schedule:
-    - cron: "0 */4 * * *"  # every 4h on the hour, UTC
+    - cron: "0 * * * *"  # hourly on the hour, UTC
   workflow_dispatch: {}
 
 # Avoid overlapping runs if a scheduled run is still going when the
