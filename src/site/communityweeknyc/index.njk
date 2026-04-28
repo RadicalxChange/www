@@ -212,6 +212,89 @@ closingBlurb: |
     </p>
   </section>
 
+  <!--
+    Running highlights — hand-curated synthesis of the live conversation.
+
+    Data source: src/site/_data/communityweekHighlights.json
+    Edit that file to update the section. The whole section hides if
+    `statements` is empty, so the page can ship without highlights.
+
+    Schema:
+      {
+        "lastUpdated": "2026-05-12",          // ISO date, shown via readableDate
+        "stats":   { "votes": 1247, "statements": 42, "participants": 128 },
+        "synthesis": "Markdown prose paragraph(s).",
+        "statements": [
+          {
+            "title": "Short heading",         // optional
+            "text":  "The actual statement text from Polis.",
+            "votes": { "agree": 78, "disagree": 8, "pass": 14 }   // ints; sum to 100
+          }
+          // up to 3
+        ]
+      }
+  -->
+  {% if communityweekHighlights and communityweekHighlights.statements and communityweekHighlights.statements.length %}
+  <section
+    id="highlights"
+    class="col-span-columns mb-16 scroll-mt-8"
+  >
+    <h2
+      class="font-display text-size-2 lg:text-size-4 uppercase mb-6"
+    >
+      Running highlights
+    </h2>
+
+    {% if communityweekHighlights.stats %}
+    <div class="grid grid-cols-3 border-y-2 border-black mb-12">
+      <div class="py-4 lg:py-6 px-2 text-center border-r-2 border-black">
+        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.votes }}</p>
+        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Votes</p>
+      </div>
+      <div class="py-4 lg:py-6 px-2 text-center border-r-2 border-black">
+        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.statements }}</p>
+        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Statements</p>
+      </div>
+      <div class="py-4 lg:py-6 px-2 text-center">
+        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.participants }}</p>
+        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Participants</p>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+      {% for s in communityweekHighlights.statements %}
+      <article class="border-2 border-black p-6 flex flex-col bg-white">
+        {% if s.title %}
+        <h3 class="font-bold uppercase text-size--1 mb-3">{{ s.title }}</h3>
+        {% endif %}
+        <p class="text-size-1 lg:text-size-2 mb-6 flex-grow">“{{ s.text }}”</p>
+        <div class="flex h-2 mb-2 overflow-hidden" aria-hidden="true">
+          <span class="block bg-black" style="width: {{ s.votes.agree }}%"></span>
+          <span class="block bg-red" style="width: {{ s.votes.disagree }}%"></span>
+          <span class="block bg-gray" style="width: {{ s.votes.pass }}%"></span>
+        </div>
+        <p class="text-size--4 text-gray">
+          {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass
+        </p>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if communityweekHighlights.synthesis %}
+    <div class="markdown markdown-sm mb-8">
+      {{ communityweekHighlights.synthesis | markdown | safe }}
+    </div>
+    {% endif %}
+
+    {% if communityweekHighlights.lastUpdated %}
+    <p class="text-size--4 text-gray">
+      Last updated: {{ communityweekHighlights.lastUpdated | readableDate }}
+    </p>
+    {% endif %}
+  </section>
+  {% endif %}
+
   <!-- About the partners -->
   <section
     class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 mb-16"
