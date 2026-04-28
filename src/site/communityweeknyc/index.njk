@@ -213,22 +213,32 @@ closingBlurb: |
   </section>
 
   <!--
-    Running highlights — hand-curated synthesis of the live conversation.
+    Running highlights — automatically populated from the live Polis
+    conversation. Do not edit by hand.
 
     Data source: src/site/_data/communityweekHighlights.json
-    Edit that file to update the section. The whole section hides if
-    `statements` is empty, so the page can ship without highlights.
+    Writer: scripts/update_cwnyc_highlights.py
+    Cron:   .github/workflows/update-cwnyc-highlights.yml (every 4h)
+
+    The whole section hides if `statements` is empty, so the page ships
+    cleanly when the conversation hasn't crossed the safety thresholds yet
+    (see MIN_TOTAL_VOTES / MIN_PARTICIPANTS in the script).
 
     Schema:
       {
-        "lastUpdated": "2026-05-12",          // ISO date, shown via readableDate
-        "stats":   { "votes": 1247, "statements": 42, "participants": 128 },
-        "synthesis": "Markdown prose paragraph(s).",
+        "lastUpdated": "2026-05-12T14:00:00Z",       // ISO timestamp, UTC
+        "stats": { "votes": N, "statements": N, "participants": N } | null,
         "statements": [
           {
-            "title": "Short heading",         // optional
+            "label": "Highest agreement"             // | "Most divided" | "Most engaged"
+                                                      //   — column header for the card
             "text":  "The actual statement text from Polis.",
-            "votes": { "agree": 78, "disagree": 8, "pass": 14 }   // ints; sum to 100
+            "votes": {
+              "agree":    78,                        // integer percentages,
+              "disagree":  8,                        //   sum to 100 via
+              "pass":     14,                        //   largest-remainder rounding
+              "total":   312                         // raw vote count (= agree+disagree+pass)
+            }
           }
           // up to 3
         ]
@@ -240,10 +250,14 @@ closingBlurb: |
     class="col-span-columns mb-16 scroll-mt-8"
   >
     <h2
-      class="font-display text-size-2 lg:text-size-4 uppercase mb-6"
+      class="font-display text-size-2 lg:text-size-4 uppercase mb-4"
     >
       Running highlights
     </h2>
+    <p class="mb-8 text-size-0 lg:text-size-1">
+      A live snapshot of the conversation, refreshed automatically through
+      Community Week. Read it as a check-in, not a conclusion.
+    </p>
 
     {% if communityweekHighlights.stats %}
     <div class="grid grid-cols-3 border-y-2 border-black mb-12">
@@ -265,8 +279,8 @@ closingBlurb: |
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
       {% for s in communityweekHighlights.statements %}
       <article class="border-2 border-black p-6 flex flex-col bg-white">
-        {% if s.title %}
-        <h3 class="font-bold uppercase text-size--1 mb-3">{{ s.title }}</h3>
+        {% if s.label %}
+        <p class="font-bold uppercase text-size--1 text-gray mb-3 tracking-wide">{{ s.label }}</p>
         {% endif %}
         <p class="text-size-1 lg:text-size-2 mb-6 flex-grow">“{{ s.text }}”</p>
         <div class="flex h-2 mb-2 overflow-hidden" aria-hidden="true">
@@ -275,21 +289,18 @@ closingBlurb: |
           <span class="block bg-gray" style="width: {{ s.votes.pass }}%"></span>
         </div>
         <p class="text-size--4 text-gray">
-          {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass
+          {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass · {{ s.votes.total }} votes
         </p>
       </article>
       {% endfor %}
     </div>
 
-    {% if communityweekHighlights.synthesis %}
-    <div class="markdown markdown-sm mb-8">
-      {{ communityweekHighlights.synthesis | markdown | safe }}
-    </div>
-    {% endif %}
-
     {% if communityweekHighlights.lastUpdated %}
     <p class="text-size--4 text-gray">
-      Last updated: {{ communityweekHighlights.lastUpdated | readableDate }}
+      Last updated: {{ communityweekHighlights.lastUpdated | readableDate }}.
+      Conversation data via
+      <a href="https://pol.is" class="inline-link" target="_blank" rel="noopener noreferrer">Polis</a>,
+      <a href="https://creativecommons.org/licenses/by/4.0/" class="inline-link" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
     </p>
     {% endif %}
   </section>
