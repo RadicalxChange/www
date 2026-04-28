@@ -147,28 +147,25 @@ closingBlurb: |
     </p>
 
     <!--
-      TODO(polis): swap POLIS_CONVO_ID_TODO with the real Polis conversation ID
-      once seeded by RxC. The ID appears in two places on this page:
-        1. data-conversation_id on the .polis div below
-        2. the href on the "Open the conversation in a new tab" fallback link
-      Keep them in sync.
-
-      Embed approach: Polis's documented script-based embed
+      Polis embed — Polis's documented script-based pattern
       (https://compdemocracy.org/Polis/). The script auto-creates an iframe
       pointing at https://pol.is/<conversation_id>/embed.
 
-      Until a real ID is wired in, the inline guard below skips loading
-      embed.js and renders a clean preview placeholder, so partner reviewers
-      do not see pol.is's error page.
+      The conversation_id appears in two places on this page; keep them in sync:
+        1. data-conversation_id on the .polis div below
+        2. the href on the "Open the conversation in a new tab" fallback link
 
-      Fallback: a direct-link "Open the conversation in a new tab" line is
-      rendered beneath the embed in case the iframe fails to load (CSP,
-      ad-blockers, etc.).
+      The inline guard below preserves a "coming soon" fallback if the ID is
+      ever reverted to the POLIS_CONVO_ID_TODO sentinel — useful if the
+      conversation needs to be taken offline temporarily.
+
+      Fallback link: a direct "Open in a new tab" link is rendered beneath the
+      embed in case the iframe fails to load (CSP, ad-blockers, etc.).
     -->
     <div
       class="cwnyc-polis-embed border-2 border-black bg-white relative overflow-hidden"
     >
-      <div class="polis" data-conversation_id="POLIS_CONVO_ID_TODO"></div>
+      <div class="polis" data-conversation_id="6epckxncim"></div>
       <div
         class="cwnyc-polis-placeholder absolute inset-0 hidden flex-col items-center justify-center text-center p-8"
       >
@@ -206,7 +203,7 @@ closingBlurb: |
     <p class="mt-4 text-size--1">
       Trouble loading?
       <a
-        href="https://pol.is/POLIS_CONVO_ID_TODO"
+        href="https://pol.is/6epckxncim"
         target="_blank"
         rel="noopener noreferrer"
         class="inline-link"
