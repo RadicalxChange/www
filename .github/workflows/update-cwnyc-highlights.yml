@@ -1,0 +1,60 @@
+# Pulls live data from the public Polis CSV exports for conversation
+# 6epckxncim and writes src/site/_data/communityweekHighlights.json.
+# Netlify rebuilds on the resulting commit, so the page reflects the
+# latest snapshot within ~minutes of each scheduled run.
+#
+# To take this offline mid-week (e.g. if Polis goes down or the data
+# looks weird and we need to freeze the page), comment out the
+# `schedule:` block below and push to main. The page will keep
+# showing whatever JSON was last committed until the cron is
+# re-enabled. `workflow_dispatch` stays available for manual triggers
+# either way.
+#
+# GitHub will email the workflow author on scheduled-workflow failures
+# by default, so transient pol.is outages surface without extra config.
+
+name: Update CWNYC highlights
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"  # every 4h on the hour, UTC
+  workflow_dispatch: {}
+
+# Avoid overlapping runs if a scheduled run is still going when the
+# next one fires (or someone hits "Run workflow" manually).
+concurrency:
+  group: update-cwnyc-highlights
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --disable-pip-version-check requests==2.32.3 pandas==2.2.3
+
+      - name: Run unit tests
+        run: python -m unittest scripts/test_update_cwnyc_highlights.py
+
+      - name: Update highlights JSON
+        run: python scripts/update_cwnyc_highlights.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet src/site/_data/communityweekHighlights.json; then
+            echo "No substantive change — skipping commit."
+          else
+            git add src/site/_data/communityweekHighlights.json
+            git commit -m "[automated] update CWNYC highlights"
+            git push
+          fi
