@@ -29,6 +29,11 @@ module.exports = function (config) {
     linkify: true,
     typographer: true,
   })
+    // The `replacements` core rule converts (c)->©, (r)->®, (tm)->™, (p)->§,
+    // ...->…, --->—, --->–, +-->±. Disable it so phrases like "501(c)(3)" and
+    // list items like "(a) ... (b) ... (c) ..." render literally. Smart quotes
+    // remain on (handled by the separate `smartquotes` rule).
+    .disable("replacements")
     .use(require("markdown-it-anchor"), {
       slugify: uslug,
     })
