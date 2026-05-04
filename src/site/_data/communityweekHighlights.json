@@ -1,5 +1,9 @@
 {
-  "lastUpdated": "2026-04-28T21:04:30Z",
+  "lastUpdated": "2026-05-04T22:53:58Z",
   "statements": [],
-  "stats": null
+  "stats": {
+    "participants": 11,
+    "statements": 32,
+    "votes": 175
+  }
 }
