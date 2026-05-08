@@ -72,7 +72,7 @@ class SelectCardsTests(unittest.TestCase):
         self.assertEqual(uch.select_cards([], participants_count=100), [])
 
     def test_below_threshold_returns_empty(self):
-        # min_votes = max(20, 0.2 * 100) = 20. All comments below 20.
+        # min_votes = max(5, int(0.3 * 100)) = 30. Both comments below 30.
         stats = [_stat(0, 5, 1, 1), _stat(1, 4, 2, 2)]
         self.assertEqual(uch.select_cards(stats, participants_count=100), [])
 
@@ -124,7 +124,9 @@ class SelectCardsTests(unittest.TestCase):
     def test_rule_a_b_c_all_collide_yields_one_card(self):
         # Only one eligible comment — rule (a) takes it, rules (b) and (c)
         # find nothing to fall back to.
-        stats = [_stat(0, 18, 1, 1)]  # total 20 — exactly the floor
+        # min_votes at participants_count=100 is max(5, 30) = 30, so the
+        # comment needs total >= 30 to be eligible.
+        stats = [_stat(0, 28, 1, 1)]  # total 30 — exactly the threshold
         cards = uch.select_cards(stats, participants_count=100)
         self.assertEqual(len(cards), 1)
         self.assertEqual(cards[0]["label"], "Highest agreement")
