@@ -38,17 +38,20 @@ TIMEOUT_SECONDS = 30
 
 # Section-level safety gate. Below either threshold the script writes an
 # empty `statements` list — the template's hide-if-empty gate then keeps
-# the whole section off the page until the conversation has enough data
-# to be worth showing.
-MIN_TOTAL_VOTES = 50
-MIN_PARTICIPANTS = 10
+# the whole section off the page. Set to 0 during Community Week so the
+# section appears as soon as any individual statement clears the
+# per-statement floor below.
+MIN_TOTAL_VOTES = 0
+MIN_PARTICIPANTS = 0
 
-# Per-statement vote floor for cards. The ratio (20% of participants)
+# Per-statement vote floor for cards. The ratio (30% of participants)
 # scales with the conversation: as more people participate, the bar for a
-# card to appear rises proportionally. The hard floor (20) prevents
-# pulling cards from too thin a slice in early days.
-MIN_VOTES_PER_STATEMENT_FLOOR = 20
-MIN_VOTES_PER_STATEMENT_RATIO = 0.2
+# card to appear rises proportionally. The hard floor (5) prevents
+# pulling cards from too thin a slice in early days. At 17 participants
+# this gives a 5-vote threshold (int truncation of 5.1); at 100 it'd
+# give 30.
+MIN_VOTES_PER_STATEMENT_FLOOR = 5
+MIN_VOTES_PER_STATEMENT_RATIO = 0.3
 
 OUT_PATH = Path("src/site/_data/communityweekHighlights.json")
 
