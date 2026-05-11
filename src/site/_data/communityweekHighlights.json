@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-05-11T16:29:25Z",
+  "lastUpdated": "2026-05-11T18:55:11Z",
   "statements": [
     {
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 88,
+        "agree": 89,
         "disagree": 0,
-        "pass": 12,
-        "total": 8
+        "pass": 11,
+        "total": 9
       }
     },
     {
@@ -33,8 +33,8 @@
     }
   ],
   "stats": {
-    "participants": 19,
-    "statements": 32,
-    "votes": 335
+    "participants": 20,
+    "statements": 33,
+    "votes": 345
   }
 }
