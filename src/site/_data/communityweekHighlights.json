@@ -1,40 +1,40 @@
 {
-  "lastUpdated": "2026-05-11T18:55:11Z",
+  "lastUpdated": "2026-05-11T20:44:49Z",
   "statements": [
     {
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 89,
+        "agree": 90,
         "disagree": 0,
-        "pass": 11,
-        "total": 9
+        "pass": 10,
+        "total": 10
       }
     },
     {
       "label": "Most divided",
-      "text": "A peer network of other community builders would matter more to me than a one-off grant.",
+      "text": "I spend more time on logistics (marketing, outreach, finding venues, making materials, follow-up) than on the actual community work I care about.",
       "votes": {
-        "agree": 30,
-        "disagree": 30,
-        "pass": 40,
-        "total": 10
+        "agree": 34,
+        "disagree": 33,
+        "pass": 33,
+        "total": 9
       }
     },
     {
       "label": "Most engaged",
       "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
-        "agree": 23,
-        "disagree": 46,
-        "pass": 31,
-        "total": 13
+        "agree": 21,
+        "disagree": 43,
+        "pass": 36,
+        "total": 14
       }
     }
   ],
   "stats": {
-    "participants": 20,
+    "participants": 21,
     "statements": 33,
-    "votes": 345
+    "votes": 378
   }
 }
