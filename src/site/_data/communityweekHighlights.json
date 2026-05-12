@@ -1,40 +1,40 @@
 {
-  "lastUpdated": "2026-05-11T20:44:49Z",
+  "lastUpdated": "2026-05-12T17:06:58Z",
   "statements": [
     {
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 90,
+        "agree": 91,
         "disagree": 0,
-        "pass": 10,
-        "total": 10
+        "pass": 9,
+        "total": 11
       }
     },
     {
       "label": "Most divided",
-      "text": "I spend more time on logistics (marketing, outreach, finding venues, making materials, follow-up) than on the actual community work I care about.",
+      "text": "A year-long paid residency for ~50 NYC community builders annually would change the field more than spreading the same money across hundreds of small grants.",
       "votes": {
-        "agree": 34,
-        "disagree": 33,
-        "pass": 33,
-        "total": 9
+        "agree": 42,
+        "disagree": 41,
+        "pass": 17,
+        "total": 12
       }
     },
     {
       "label": "Most engaged",
       "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
-        "agree": 21,
-        "disagree": 43,
-        "pass": 36,
-        "total": 14
+        "agree": 27,
+        "disagree": 40,
+        "pass": 33,
+        "total": 15
       }
     }
   ],
   "stats": {
-    "participants": 21,
+    "participants": 22,
     "statements": 33,
-    "votes": 378
+    "votes": 411
   }
 }
