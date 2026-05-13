@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T21:40:33Z",
+  "lastUpdated": "2026-05-13T23:02:51Z",
   "statements": [
     {
       "label": "Highest agreement",
@@ -25,16 +25,16 @@
       "label": "Most engaged",
       "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
-        "agree": 41,
-        "disagree": 27,
-        "pass": 32,
-        "total": 22
+        "agree": 44,
+        "disagree": 26,
+        "pass": 30,
+        "total": 23
       }
     }
   ],
   "stats": {
-    "participants": 29,
+    "participants": 30,
     "statements": 35,
-    "votes": 619
+    "votes": 620
   }
 }
