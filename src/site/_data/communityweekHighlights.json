@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T17:58:23Z",
+  "lastUpdated": "2026-05-13T19:59:33Z",
   "statements": [
     {
       "label": "Highest agreement",
@@ -8,33 +8,33 @@
         "agree": 93,
         "disagree": 0,
         "pass": 7,
-        "total": 14
+        "total": 15
       }
     },
     {
       "label": "Most divided",
       "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
-        "agree": 34,
-        "disagree": 33,
-        "pass": 33,
-        "total": 18
+        "agree": 37,
+        "disagree": 32,
+        "pass": 31,
+        "total": 19
       }
     },
     {
       "label": "Most engaged",
-      "text": "Philanthropy, not government, is the most realistic source of sustained support for community work in NYC.",
+      "text": "Most of the money I spend on my community comes out of my own pocket and that's not sustainable.",
       "votes": {
-        "agree": 28,
-        "disagree": 5,
-        "pass": 67,
+        "agree": 61,
+        "disagree": 28,
+        "pass": 11,
         "total": 18
       }
     }
   ],
   "stats": {
-    "participants": 25,
+    "participants": 26,
     "statements": 34,
-    "votes": 511
+    "votes": 533
   }
 }
