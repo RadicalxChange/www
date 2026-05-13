@@ -1,40 +1,40 @@
 {
-  "lastUpdated": "2026-05-13T03:49:30Z",
+  "lastUpdated": "2026-05-13T17:58:23Z",
   "statements": [
     {
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 92,
+        "agree": 93,
         "disagree": 0,
-        "pass": 8,
-        "total": 13
+        "pass": 7,
+        "total": 14
       }
     },
     {
       "label": "Most divided",
-      "text": "The communities I build are partly a response to the failures of public institutions.",
+      "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
-        "agree": 40,
-        "disagree": 40,
-        "pass": 20,
-        "total": 15
+        "agree": 34,
+        "disagree": 33,
+        "pass": 33,
+        "total": 18
       }
     },
     {
       "label": "Most engaged",
-      "text": "I've thought seriously about stopping my community work in the past year because of burnout",
+      "text": "Philanthropy, not government, is the most realistic source of sustained support for community work in NYC.",
       "votes": {
-        "agree": 30,
-        "disagree": 35,
-        "pass": 35,
-        "total": 17
+        "agree": 28,
+        "disagree": 5,
+        "pass": 67,
+        "total": 18
       }
     }
   ],
   "stats": {
-    "participants": 24,
-    "statements": 33,
-    "votes": 477
+    "participants": 25,
+    "statements": 34,
+    "votes": 511
   }
 }
