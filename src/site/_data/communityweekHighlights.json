@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T22:07:01Z",
+  "lastUpdated": "2026-05-14T23:53:54Z",
   "statements": [
     {
       "label": "Highest agreement",
@@ -15,10 +15,10 @@
       "label": "Most divided",
       "text": "The communities I build are partly a response to the failures of public institutions.",
       "votes": {
-        "agree": 41,
-        "disagree": 36,
-        "pass": 23,
-        "total": 22
+        "agree": 43,
+        "disagree": 35,
+        "pass": 22,
+        "total": 23
       }
     },
     {
@@ -35,6 +35,6 @@
   "stats": {
     "participants": 35,
     "statements": 38,
-    "votes": 764
+    "votes": 770
   }
 }
