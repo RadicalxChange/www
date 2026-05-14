@@ -1,40 +1,40 @@
 {
-  "lastUpdated": "2026-05-14T13:59:31Z",
+  "lastUpdated": "2026-05-14T16:12:18Z",
   "statements": [
     {
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 94,
+        "agree": 95,
         "disagree": 0,
-        "pass": 6,
-        "total": 18
+        "pass": 5,
+        "total": 19
       }
     },
     {
       "label": "Most divided",
       "text": "The communities I build are partly a response to the failures of public institutions.",
       "votes": {
-        "agree": 40,
-        "disagree": 35,
-        "pass": 25,
-        "total": 20
+        "agree": 38,
+        "disagree": 38,
+        "pass": 24,
+        "total": 21
       }
     },
     {
       "label": "Most engaged",
       "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
-        "agree": 42,
-        "disagree": 25,
-        "pass": 33,
-        "total": 24
+        "agree": 44,
+        "disagree": 24,
+        "pass": 32,
+        "total": 25
       }
     }
   ],
   "stats": {
-    "participants": 31,
+    "participants": 32,
     "statements": 36,
-    "votes": 643
+    "votes": 694
   }
 }
