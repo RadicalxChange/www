@@ -1,12 +1,45 @@
 {
   "consensus": [
     {
+      "isUserSubmitted": false,
+      "minGroupAgreeRate": 0.9286,
+      "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
+      "votes": {
+        "agree": 94,
+        "disagree": 0,
+        "pass": 6,
+        "total": 32
+      }
+    },
+    {
       "isUserSubmitted": true,
-      "minGroupAgreeRate": 0.9,
+      "minGroupAgreeRate": 0.9167,
+      "text": "Not a must but nice to have: impact measurement for their groups, data collection. This could also be beneficial for grant applications",
+      "votes": {
+        "agree": 87,
+        "disagree": 0,
+        "pass": 13,
+        "total": 30
+      }
+    },
+    {
+      "isUserSubmitted": true,
+      "minGroupAgreeRate": 0.8889,
       "text": "A robust community enterprise means listening to people and adapting based on their needs.",
       "votes": {
-        "agree": 92,
-        "disagree": 0,
+        "agree": 88,
+        "disagree": 8,
+        "pass": 4,
+        "total": 25
+      }
+    },
+    {
+      "isUserSubmitted": true,
+      "minGroupAgreeRate": 0.875,
+      "text": "Practically, what I need is a low-cost space to hold my events.",
+      "votes": {
+        "agree": 84,
+        "disagree": 8,
         "pass": 8,
         "total": 13
       }
@@ -14,130 +47,24 @@
     {
       "isUserSubmitted": false,
       "minGroupAgreeRate": 0.8333,
-      "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
+      "text": "Venues that benefit from hosting communities should offer builders better terms (lower minimums, off-peak access, reduced fees) not just charge market rates.",
       "votes": {
-        "agree": 95,
-        "disagree": 0,
-        "pass": 5,
-        "total": 21
-      }
-    },
-    {
-      "isUserSubmitted": true,
-      "minGroupAgreeRate": 0.8,
-      "text": "Not a must but nice to have: impact measurement for their groups, data collection. This could also be beneficial for grant applications",
-      "votes": {
-        "agree": 80,
-        "disagree": 0,
-        "pass": 20,
-        "total": 20
-      }
-    },
-    {
-      "isUserSubmitted": false,
-      "minGroupAgreeRate": 0.6667,
-      "text": "Practical workshops from experienced community builders would help me more than written guides or general resources.",
-      "votes": {
-        "agree": 69,
-        "disagree": 5,
-        "pass": 26,
-        "total": 19
-      }
-    },
-    {
-      "isUserSubmitted": false,
-      "minGroupAgreeRate": 0.6429,
-      "text": "Subsidized access to venues across the five boroughs would change what I can do more than direct funding.",
-      "votes": {
-        "agree": 65,
-        "disagree": 15,
-        "pass": 20,
-        "total": 20
+        "agree": 85,
+        "disagree": 6,
+        "pass": 9,
+        "total": 33
       }
     }
   ],
-  "groups": [
-    {
-      "id": 0,
-      "representativeStatements": [
-        {
-          "inGroupN": 7,
-          "inGroupRate": 0.4286,
-          "isUserSubmitted": false,
-          "outGroupN": 13,
-          "outGroupRate": 0.0,
-          "score": 6.462,
-          "text": "I would do this work full-time if I could financially.",
-          "voteType": "disagree"
-        },
-        {
-          "inGroupN": 7,
-          "inGroupRate": 0.2857,
-          "isUserSubmitted": false,
-          "outGroupN": 14,
-          "outGroupRate": 0.0,
-          "score": 4.8,
-          "text": "Venues that benefit from hosting communities should offer builders better terms (lower minimums, off-peak access, reduced fees) not just charge market rates.",
-          "voteType": "disagree"
-        },
-        {
-          "inGroupN": 7,
-          "inGroupRate": 0.2857,
-          "isUserSubmitted": false,
-          "outGroupN": 14,
-          "outGroupRate": 0.0,
-          "score": 4.8,
-          "text": "The city should treat community builders as a recognized category like artists or small businesses with permits, tax status, and access designed for them.",
-          "voteType": "disagree"
-        }
-      ],
-      "size": 8
-    },
-    {
-      "id": 1,
-      "representativeStatements": [
-        {
-          "inGroupN": 16,
-          "inGroupRate": 0.8125,
-          "isUserSubmitted": false,
-          "outGroupN": 7,
-          "outGroupRate": 0.0,
-          "score": 6.9966,
-          "text": "The platforms I rely on (Instagram, Eventbrite, Partiful) could change overnight and break my community",
-          "voteType": "agree"
-        },
-        {
-          "inGroupN": 13,
-          "inGroupRate": 0.6923,
-          "isUserSubmitted": false,
-          "outGroupN": 7,
-          "outGroupRate": 0.0,
-          "score": 5.9717,
-          "text": "The administrative side of community work (insurance, permits, legal, payments) is or would be a real barrier for me.",
-          "voteType": "agree"
-        },
-        {
-          "inGroupN": 13,
-          "inGroupRate": 0.9231,
-          "isUserSubmitted": true,
-          "outGroupN": 4,
-          "outGroupRate": 0.0,
-          "score": 5.1891,
-          "text": "simple systems (like CRM/community platforms) so we can focus on the 'how'—rather than the administrative 'what.' and spaces to do it",
-          "voteType": "agree"
-        }
-      ],
-      "size": 23
-    }
-  ],
-  "lastUpdated": "2026-05-15T03:47:16Z",
+  "groups": [],
+  "lastUpdated": "2026-05-15T16:52:13Z",
   "stats": {
-    "commenters": 8,
-    "groups": 2,
-    "participants": 35,
-    "statements": 38,
-    "votersInConv": 31,
-    "votes": 770
+    "commenters": 10,
+    "groups": 3,
+    "participants": 50,
+    "statements": 44,
+    "votersInConv": 45,
+    "votes": 1227
   },
   "topStatements": [
     {
@@ -145,21 +72,21 @@
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 95,
+        "agree": 94,
         "disagree": 0,
-        "pass": 5,
-        "total": 21
+        "pass": 6,
+        "total": 32
       }
     },
     {
       "isUserSubmitted": false,
       "label": "Most divided",
-      "text": "The communities I build are partly a response to the failures of public institutions.",
+      "text": "Philanthropy, not government, is the most realistic source of sustained support for community work in NYC.",
       "votes": {
-        "agree": 43,
-        "disagree": 35,
-        "pass": 22,
-        "total": 23
+        "agree": 23,
+        "disagree": 23,
+        "pass": 54,
+        "total": 35
       }
     },
     {
@@ -167,10 +94,10 @@
       "label": "Most engaged",
       "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
-        "agree": 44,
-        "disagree": 26,
-        "pass": 30,
-        "total": 27
+        "agree": 43,
+        "disagree": 33,
+        "pass": 24,
+        "total": 37
       }
     }
   ]
