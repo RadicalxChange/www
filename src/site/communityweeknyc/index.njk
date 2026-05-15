@@ -262,17 +262,29 @@ closingBlurb: |
       <h3 class="font-display text-size-2 lg:text-size-2 uppercase mb-4">
         Opinion groups
       </h3>
-      <p class="mb-8 text-size-0">
+      <p class="mb-4 text-size-0">
         Polis identified two clusters of voters based on patterns in how
         they voted. Each group is characterized below by the statements
         that set them apart from the other group — what was statistically
         distinctive about their voting, not what every group member voted.
       </p>
+      {#
+        How-to-read caveat. The "only N people" number is rendered from
+        JSON as the size of Group 1 (= groups[0] in the array, where
+        Polis's smaller cluster currently lives). If the smaller group
+        becomes Group 2, this copy will need a touch-up.
+      #}
+      <p class="italic text-size--1 text-gray mb-8">
+        Polis identifies these clusters from overall voting patterns
+        across all statements. With Group 1 at only {{ communityweekHighlights.groups[0].size }}
+        people, the specific distinctive statements below are directional
+        rather than definitive — useful for surfacing questions, not for
+        drawing conclusions about types of community builders.
+      </p>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {% for g in communityweekHighlights.groups %}
         <div class="border-2 border-black p-6 bg-white">
-          <p class="font-bold uppercase text-size-0 mb-1 tracking-wide">Group {{ g.id + 1 }}</p>
-          <p class="text-size--2 text-gray mb-6">{{ g.size }} participant{% if g.size != 1 %}s{% endif %}</p>
+          <p class="font-bold uppercase text-size-0 mb-6 tracking-wide">Group {{ g.id + 1 }} · {{ g.size }} participant{% if g.size != 1 %}s{% endif %}</p>
           <ol class="space-y-5">
             {% for s in g.representativeStatements %}
             <li>
