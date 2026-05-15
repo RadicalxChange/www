@@ -1,17 +1,6 @@
 {
   "consensus": [
     {
-      "isUserSubmitted": false,
-      "minGroupAgreeRate": 0.9286,
-      "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
-      "votes": {
-        "agree": 94,
-        "disagree": 0,
-        "pass": 6,
-        "total": 32
-      }
-    },
-    {
       "isUserSubmitted": true,
       "minGroupAgreeRate": 0.9167,
       "text": "Not a must but nice to have: impact measurement for their groups, data collection. This could also be beneficial for grant applications",
@@ -35,13 +24,24 @@
     },
     {
       "isUserSubmitted": true,
-      "minGroupAgreeRate": 0.875,
+      "minGroupAgreeRate": 0.8889,
       "text": "Practically, what I need is a low-cost space to hold my events.",
       "votes": {
-        "agree": 84,
-        "disagree": 8,
-        "pass": 8,
-        "total": 13
+        "agree": 86,
+        "disagree": 7,
+        "pass": 7,
+        "total": 14
+      }
+    },
+    {
+      "isUserSubmitted": false,
+      "minGroupAgreeRate": 0.8667,
+      "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
+      "votes": {
+        "agree": 91,
+        "disagree": 0,
+        "pass": 9,
+        "total": 33
       }
     },
     {
@@ -57,14 +57,14 @@
     }
   ],
   "groups": [],
-  "lastUpdated": "2026-05-15T16:52:13Z",
+  "lastUpdated": "2026-05-15T23:06:26Z",
   "stats": {
     "commenters": 10,
     "groups": 3,
-    "participants": 50,
+    "participants": 51,
     "statements": 44,
-    "votersInConv": 45,
-    "votes": 1227
+    "votersInConv": 46,
+    "votes": 1244
   },
   "topStatements": [
     {
@@ -72,10 +72,10 @@
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 94,
+        "agree": 91,
         "disagree": 0,
-        "pass": 6,
-        "total": 32
+        "pass": 9,
+        "total": 33
       }
     },
     {
@@ -92,12 +92,12 @@
     {
       "isUserSubmitted": false,
       "label": "Most engaged",
-      "text": "I've thought seriously about stopping my community work in the past year because of burnout",
+      "text": "Community builders should be paid for their work, not just reimbursed for expenses.",
       "votes": {
-        "agree": 43,
-        "disagree": 33,
-        "pass": 24,
-        "total": 37
+        "agree": 74,
+        "disagree": 13,
+        "pass": 13,
+        "total": 38
       }
     }
   ]
