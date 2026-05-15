@@ -1,23 +1,21 @@
 # Pulls live data from the public Polis CSV exports for conversation
 # 6epckxncim and writes src/site/_data/communityweekHighlights.json.
 # Netlify rebuilds on the resulting commit, so the page reflects the
-# latest snapshot within ~minutes of each scheduled run.
+# latest snapshot within ~minutes of each run.
 #
-# To take this offline mid-week (e.g. if Polis goes down or the data
-# looks weird and we need to freeze the page), comment out the
-# `schedule:` block below and push to main. The page will keep
-# showing whatever JSON was last committed until the cron is
-# re-enabled. `workflow_dispatch` stays available for manual triggers
-# either way.
+# Conversation closed 2026-05-14. Cron disabled — `workflow_dispatch`
+# only. Re-enable by uncommenting the schedule block below if the
+# conversation reopens (and bump the cron expression appropriately).
 #
-# GitHub will email the workflow author on scheduled-workflow failures
-# by default, so transient pol.is outages surface without extra config.
+# GitHub will email the workflow author on workflow failures by
+# default, so transient pol.is outages on manual runs surface without
+# extra config.
 
 name: Update CWNYC highlights
 
 on:
-  schedule:
-    - cron: "0 * * * *"  # hourly on the hour, UTC
+  # schedule:
+  #   - cron: "0 * * * *"  # hourly on the hour, UTC — disabled 2026-05-14
   workflow_dispatch: {}
 
 # Avoid overlapping runs if a scheduled run is still going when the
@@ -39,7 +37,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install --disable-pip-version-check requests==2.32.3 pandas==2.2.3
+        run: pip install --disable-pip-version-check requests==2.32.3 pandas==2.2.3 scipy==1.13.1
 
       - name: Run unit tests
         run: python -m unittest scripts/test_update_cwnyc_highlights.py

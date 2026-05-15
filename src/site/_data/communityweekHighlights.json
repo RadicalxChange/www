@@ -1,7 +1,216 @@
 {
-  "lastUpdated": "2026-05-14T23:53:54Z",
-  "statements": [
+  "consensus": [
     {
+      "isUserSubmitted": true,
+      "minGroupAgreeRate": 0.9,
+      "text": "A robust community enterprise means listening to people and adapting based on their needs.",
+      "votes": {
+        "agree": 92,
+        "disagree": 0,
+        "pass": 8,
+        "total": 13
+      }
+    },
+    {
+      "isUserSubmitted": false,
+      "minGroupAgreeRate": 0.8333,
+      "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
+      "votes": {
+        "agree": 95,
+        "disagree": 0,
+        "pass": 5,
+        "total": 21
+      }
+    },
+    {
+      "isUserSubmitted": true,
+      "minGroupAgreeRate": 0.8,
+      "text": "Not a must but nice to have: impact measurement for their groups, data collection. This could also be beneficial for grant applications",
+      "votes": {
+        "agree": 80,
+        "disagree": 0,
+        "pass": 20,
+        "total": 20
+      }
+    },
+    {
+      "isUserSubmitted": false,
+      "minGroupAgreeRate": 0.6667,
+      "text": "Practical workshops from experienced community builders would help me more than written guides or general resources.",
+      "votes": {
+        "agree": 69,
+        "disagree": 5,
+        "pass": 26,
+        "total": 19
+      }
+    },
+    {
+      "isUserSubmitted": false,
+      "minGroupAgreeRate": 0.6429,
+      "text": "Subsidized access to venues across the five boroughs would change what I can do more than direct funding.",
+      "votes": {
+        "agree": 65,
+        "disagree": 15,
+        "pass": 20,
+        "total": 20
+      }
+    }
+  ],
+  "conversationClosed": true,
+  "divisive": [
+    {
+      "groupAgreeRates": [
+        {
+          "groupId": 0,
+          "n": 4,
+          "rate": 0.0
+        },
+        {
+          "groupId": 1,
+          "n": 13,
+          "rate": 0.9231
+        }
+      ],
+      "isUserSubmitted": true,
+      "text": "simple systems (like CRM/community platforms) so we can focus on the 'how'—rather than the administrative 'what.' and spaces to do it",
+      "votes": {
+        "agree": 71,
+        "disagree": 6,
+        "pass": 23,
+        "total": 17
+      }
+    },
+    {
+      "groupAgreeRates": [
+        {
+          "groupId": 0,
+          "n": 7,
+          "rate": 0.0
+        },
+        {
+          "groupId": 1,
+          "n": 16,
+          "rate": 0.8125
+        }
+      ],
+      "isUserSubmitted": false,
+      "text": "The platforms I rely on (Instagram, Eventbrite, Partiful) could change overnight and break my community",
+      "votes": {
+        "agree": 57,
+        "disagree": 13,
+        "pass": 30,
+        "total": 23
+      }
+    },
+    {
+      "groupAgreeRates": [
+        {
+          "groupId": 0,
+          "n": 7,
+          "rate": 0.1429
+        },
+        {
+          "groupId": 1,
+          "n": 13,
+          "rate": 0.9231
+        }
+      ],
+      "isUserSubmitted": false,
+      "text": "I would do this work full-time if I could financially.",
+      "votes": {
+        "agree": 65,
+        "disagree": 15,
+        "pass": 20,
+        "total": 20
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": 0,
+      "representativeStatements": [
+        {
+          "inGroupN": 7,
+          "inGroupRate": 0.4286,
+          "isUserSubmitted": false,
+          "outGroupN": 13,
+          "outGroupRate": 0.0,
+          "score": 6.462,
+          "text": "I would do this work full-time if I could financially.",
+          "voteType": "disagree"
+        },
+        {
+          "inGroupN": 7,
+          "inGroupRate": 0.2857,
+          "isUserSubmitted": false,
+          "outGroupN": 14,
+          "outGroupRate": 0.0,
+          "score": 4.8,
+          "text": "Venues that benefit from hosting communities should offer builders better terms (lower minimums, off-peak access, reduced fees) not just charge market rates.",
+          "voteType": "disagree"
+        },
+        {
+          "inGroupN": 7,
+          "inGroupRate": 0.2857,
+          "isUserSubmitted": false,
+          "outGroupN": 14,
+          "outGroupRate": 0.0,
+          "score": 4.8,
+          "text": "The city should treat community builders as a recognized category like artists or small businesses with permits, tax status, and access designed for them.",
+          "voteType": "disagree"
+        }
+      ],
+      "size": 8
+    },
+    {
+      "id": 1,
+      "representativeStatements": [
+        {
+          "inGroupN": 16,
+          "inGroupRate": 0.8125,
+          "isUserSubmitted": false,
+          "outGroupN": 7,
+          "outGroupRate": 0.0,
+          "score": 6.9966,
+          "text": "The platforms I rely on (Instagram, Eventbrite, Partiful) could change overnight and break my community",
+          "voteType": "agree"
+        },
+        {
+          "inGroupN": 13,
+          "inGroupRate": 0.6923,
+          "isUserSubmitted": false,
+          "outGroupN": 7,
+          "outGroupRate": 0.0,
+          "score": 5.9717,
+          "text": "The administrative side of community work (insurance, permits, legal, payments) is or would be a real barrier for me.",
+          "voteType": "agree"
+        },
+        {
+          "inGroupN": 13,
+          "inGroupRate": 0.9231,
+          "isUserSubmitted": true,
+          "outGroupN": 4,
+          "outGroupRate": 0.0,
+          "score": 5.1891,
+          "text": "simple systems (like CRM/community platforms) so we can focus on the 'how'—rather than the administrative 'what.' and spaces to do it",
+          "voteType": "agree"
+        }
+      ],
+      "size": 23
+    }
+  ],
+  "lastUpdated": "2026-05-15T03:24:59Z",
+  "stats": {
+    "commenters": 8,
+    "groups": 2,
+    "participants": 35,
+    "statements": 38,
+    "votersInConv": 31,
+    "votes": 770
+  },
+  "topStatements": [
+    {
+      "isUserSubmitted": false,
       "label": "Highest agreement",
       "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
@@ -12,6 +221,7 @@
       }
     },
     {
+      "isUserSubmitted": false,
       "label": "Most divided",
       "text": "The communities I build are partly a response to the failures of public institutions.",
       "votes": {
@@ -22,6 +232,7 @@
       }
     },
     {
+      "isUserSubmitted": false,
       "label": "Most engaged",
       "text": "I've thought seriously about stopping my community work in the past year because of burnout",
       "votes": {
@@ -31,10 +242,5 @@
         "total": 27
       }
     }
-  ],
-  "stats": {
-    "participants": 35,
-    "statements": 38,
-    "votes": 770
-  }
+  ]
 }
