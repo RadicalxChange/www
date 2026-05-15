@@ -288,10 +288,10 @@ class SelectRepresentativePerGroupTests(unittest.TestCase):
         self.assertIn(("comment-1", "agree"), g1_votes)
 
 
-# ---- Consensus / divisive ------------------------------------------------
+# ---- Consensus ----------------------------------------------------------
 
 
-class ConsensusDivisiveTests(unittest.TestCase):
+class ConsensusTests(unittest.TestCase):
     def test_consensus_picks_minimum_across_groups(self):
         # Comment 0: both groups strongly agree -> consensus
         # Comment 1: group 0 agrees, group 1 doesn't -> not consensus
@@ -330,51 +330,6 @@ class ConsensusDivisiveTests(unittest.TestCase):
         ]
         self.assertEqual(uch.select_consensus(stats, min_votes=10), [])
 
-    def test_divisive_picks_largest_gap(self):
-        # Three comments:
-        # 0: g0 92% agree, g1 10% agree -> gap 82pp (highest)
-        # 1: g0 50% agree, g1 30% agree -> gap 20pp
-        # 2: g0 25% agree, g1 25% agree -> gap 0pp (consensus, not divisive)
-        stats = [
-            _cg_stat(
-                0,
-                g0_voted=12, g0_agree=11, g0_disagree=0, g0_pass=1,
-                g1_voted=20, g1_agree=2, g1_disagree=16, g1_pass=2,
-            ),
-            _cg_stat(
-                1,
-                g0_voted=10, g0_agree=5, g0_disagree=2, g0_pass=3,
-                g1_voted=10, g1_agree=3, g1_disagree=4, g1_pass=3,
-            ),
-            _cg_stat(
-                2,
-                g0_voted=8, g0_agree=2, g0_disagree=4, g0_pass=2,
-                g1_voted=8, g1_agree=2, g1_disagree=4, g1_pass=2,
-            ),
-        ]
-        divisive = uch.select_divisive(stats, min_votes=5, top_n=3)
-        self.assertEqual(len(divisive), 3)
-        self.assertEqual(divisive[0]["comment_id"], 0)
-
-    def test_divisive_skips_comments_with_empty_group(self):
-        # Comment 0 has zero group-0 voters -> gap is undefined -> dropped.
-        # Comment 1 has both groups -> included.
-        stats = [
-            _cg_stat(
-                0,
-                g0_voted=0, g0_agree=0, g0_disagree=0, g0_pass=0,
-                g1_voted=10, g1_agree=10, g1_disagree=0, g1_pass=0,
-            ),
-            _cg_stat(
-                1,
-                g0_voted=6, g0_agree=5, g0_disagree=0, g0_pass=1,
-                g1_voted=6, g1_agree=0, g1_disagree=5, g1_pass=1,
-            ),
-        ]
-        divisive = uch.select_divisive(stats, min_votes=5)
-        self.assertEqual(len(divisive), 1)
-        self.assertEqual(divisive[0]["comment_id"], 1)
-
 
 # ---- Output shape: isUserSubmitted propagates --------------------------
 
@@ -393,20 +348,6 @@ class IsUserSubmittedPropagationTests(unittest.TestCase):
         cards = [uch._consensus_card(r) for r in consensus]
         self.assertEqual(len(cards), 1)
         self.assertTrue(cards[0]["isUserSubmitted"])
-
-    def test_divisive_card_carries_flag(self):
-        stats = [
-            _cg_stat(
-                0,
-                g0_voted=8, g0_agree=7, g0_disagree=0, g0_pass=1,
-                g1_voted=20, g1_agree=2, g1_disagree=16, g1_pass=2,
-                is_user=False,
-            ),
-        ]
-        divisive = uch.select_divisive(stats, min_votes=5)
-        cards = [uch._divisive_card(r) for r in divisive]
-        self.assertEqual(len(cards), 1)
-        self.assertFalse(cards[0]["isUserSubmitted"])
 
 
 if __name__ == "__main__":

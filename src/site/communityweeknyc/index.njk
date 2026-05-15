@@ -132,7 +132,200 @@ closingBlurb: |
     </div>
   </section>
 
-  <!-- Polis embed -->
+  <!--
+    What's emerging — mid-conversation snapshot, automatically populated
+    from the Polis CSV exports on an hourly cron. Do not edit by hand.
+
+    Data source: src/site/_data/communityweekHighlights.json
+    Writer: scripts/update_cwnyc_highlights.py
+    Workflow: .github/workflows/update-cwnyc-highlights.yml (hourly cron)
+
+    The whole section hides if `topStatements` is empty. Each inner
+    subsection (consensus / groups) is independently gated and degrades
+    to absence when its array is empty.
+
+    Schema:
+      {
+        "lastUpdated":   "2026-05-15T07:00:00Z",
+        "stats": {
+          "votes": N, "statements": N, "participants": N,
+          "votersInConv": N, "commenters": N, "groups": N
+        } | null,
+        "topStatements": [ /* three at-a-glance cards: label, text,
+                              isUserSubmitted, votes{agree,disagree,
+                              pass,total} */ ],
+        "consensus": [
+          { "text": "...", "isUserSubmitted": true|false,
+            "votes": {...}, "minGroupAgreeRate": 0.XX }
+        ],
+        "groups": [
+          { "id": 0, "size": N,
+            "representativeStatements": [
+              { "text": "...", "isUserSubmitted": true|false,
+                "voteType": "agree"|"disagree",
+                "inGroupRate": 0.XX, "outGroupRate": 0.YY,
+                "inGroupN": N, "outGroupN": N, "score": 0.ZZ }
+            ] }
+        ]
+      }
+  -->
+  {% if communityweekHighlights and communityweekHighlights.topStatements and communityweekHighlights.topStatements.length %}
+  <section
+    id="highlights"
+    class="col-span-columns mb-16 scroll-mt-8"
+  >
+    <h2
+      class="font-display text-size-2 lg:text-size-4 uppercase mb-4"
+    >
+      What's emerging
+    </h2>
+    <p class="mb-8 text-size-0 lg:text-size-1">
+      Community Week NYC is running through May 15, with
+      {% if communityweekHighlights.stats and communityweekHighlights.stats.participants %}{{ communityweekHighlights.stats.participants }}{% else %}dozens of{% endif %}
+      community builders contributing to this conversation so far. Below
+      is a snapshot of what's emerging. Voting is still open — results
+      will continue to shift as more people vote.
+    </p>
+
+    {% if communityweekHighlights.stats %}
+    <div class="grid grid-cols-3 border-y-2 border-black mb-8">
+      <div class="py-4 lg:py-6 px-2 text-center border-r-2 border-black">
+        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.votes }}</p>
+        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Votes</p>
+      </div>
+      <div class="py-4 lg:py-6 px-2 text-center border-r-2 border-black">
+        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.statements }}</p>
+        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Statements</p>
+      </div>
+      <div class="py-4 lg:py-6 px-2 text-center">
+        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.participants }}</p>
+        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Participants</p>
+      </div>
+    </div>
+    {% endif %}
+
+    <p class="mb-12 text-size--1 lg:text-size-0 text-gray">
+      Polis groups participants by how similarly they vote. Below are the
+      patterns that have emerged so far — statements both groups agreed
+      on, and what distinguishes the two clusters of voters from each
+      other.
+    </p>
+
+    <!-- Top three at-a-glance cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
+      {% for s in communityweekHighlights.topStatements %}
+      <article class="border-2 border-black p-6 flex flex-col bg-white">
+        {% if s.label %}
+        <p class="font-bold uppercase text-size--1 text-gray mb-3 tracking-wide">{{ s.label }}</p>
+        {% endif %}
+        <p class="text-size-1 lg:text-size-2 mb-6 flex-grow">“{{ s.text }}”
+          {% if s.isUserSubmitted %}<span class="text-size--2 text-gray font-normal whitespace-nowrap">— submitted by a participant</span>{% endif %}
+        </p>
+        <div class="flex h-2 mb-2 overflow-hidden" aria-hidden="true">
+          <span class="block bg-black" style="width: {{ s.votes.agree }}%"></span>
+          <span class="block bg-red" style="width: {{ s.votes.disagree }}%"></span>
+          <span class="block bg-gray" style="width: {{ s.votes.pass }}%"></span>
+        </div>
+        <p class="text-size--4 text-gray">
+          {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass · {{ s.votes.total }} votes
+        </p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <!-- Points of consensus -->
+    {% if communityweekHighlights.consensus and communityweekHighlights.consensus.length %}
+    <div class="mb-16">
+      <h3 class="font-display text-size-2 lg:text-size-2 uppercase mb-2">
+        Points of consensus
+      </h3>
+      <p class="italic text-size--1 text-gray mb-6">
+        Statements both opinion groups agreed on most strongly.
+      </p>
+      <ol class="space-y-6">
+        {% for s in communityweekHighlights.consensus %}
+        <li class="border-b border-black pb-6 last:border-b-0">
+          <p class="text-size-0 lg:text-size-1 mb-3">“{{ s.text }}”
+            {% if s.isUserSubmitted %}<span class="text-size--2 text-gray font-normal whitespace-nowrap">— submitted by a participant</span>{% endif %}
+          </p>
+          <div class="flex h-2 mb-2 overflow-hidden" aria-hidden="true">
+            <span class="block bg-black" style="width: {{ s.votes.agree }}%"></span>
+            <span class="block bg-red" style="width: {{ s.votes.disagree }}%"></span>
+            <span class="block bg-gray" style="width: {{ s.votes.pass }}%"></span>
+          </div>
+          <p class="text-size--4 text-gray">
+            {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass · {{ s.votes.total }} votes
+            · agreed across both opinion groups (lowest group agree rate: {{ (s.minGroupAgreeRate * 100) | round | int }}%)
+          </p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endif %}
+
+    <!-- Opinion groups -->
+    {% if communityweekHighlights.groups and communityweekHighlights.groups.length %}
+    <div class="mb-16">
+      <h3 class="font-display text-size-2 lg:text-size-2 uppercase mb-4">
+        Opinion groups
+      </h3>
+      <p class="mb-8 text-size-0">
+        Polis identified two clusters of voters based on patterns in how
+        they voted. Each group is characterized below by the statements
+        that set them apart from the other group — what was statistically
+        distinctive about their voting, not what every group member voted.
+      </p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {% for g in communityweekHighlights.groups %}
+        <div class="border-2 border-black p-6 bg-white">
+          <p class="font-bold uppercase text-size-0 mb-1 tracking-wide">Group {{ g.id + 1 }}</p>
+          <p class="text-size--2 text-gray mb-6">{{ g.size }} participant{% if g.size != 1 %}s{% endif %}</p>
+          <ol class="space-y-5">
+            {% for s in g.representativeStatements %}
+            <li>
+              <p class="font-bold uppercase text-size--2 text-gray mb-2 tracking-wide">
+                Most distinctively {{ s.voteType }}D with
+              </p>
+              <p class="text-size--1 lg:text-size-0 mb-2">“{{ s.text }}”
+                {% if s.isUserSubmitted %}<span class="text-size--2 text-gray font-normal whitespace-nowrap">— submitted by a participant</span>{% endif %}
+              </p>
+              <p class="text-size--4 text-gray">
+                {{ (s.inGroupRate * 100) | round | int }}% of this group {{ s.voteType }}d
+                (n={{ s.inGroupN }}), vs {{ (s.outGroupRate * 100) | round | int }}% of others
+                (n={{ s.outGroupN }})
+              </p>
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if communityweekHighlights.stats and communityweekHighlights.stats.participants %}
+    <p class="italic text-size--1 text-gray mb-4">
+      This is a small sample ({{ communityweekHighlights.stats.participants }} voters,
+      {% if communityweekHighlights.stats.groups %}{{ communityweekHighlights.stats.groups }}{% else %}2{% endif %} groups).
+      Findings are suggestive of patterns in the conversation, not
+      definitive about NYC community builders as a whole. The full
+      conversation is
+      <a class="inline-link" href="https://pol.is/6epckxncim" target="_blank" rel="noopener noreferrer">available on Polis</a>.
+    </p>
+    {% endif %}
+
+    {% if communityweekHighlights.lastUpdated %}
+    <p class="text-size--4 text-gray">
+      Last updated: {{ communityweekHighlights.lastUpdated | readableDate }}.
+      Conversation data via
+      <a href="https://pol.is" class="inline-link" target="_blank" rel="noopener noreferrer">Polis</a>,
+      <a href="https://creativecommons.org/licenses/by/4.0/" class="inline-link" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+    </p>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <!-- Polis embed (moved below results — invites voting on top of in-progress data) -->
   <section
     id="join"
     class="col-span-columns mb-16 scroll-mt-8"
@@ -140,10 +333,11 @@ closingBlurb: |
     <h2
       class="font-display text-size-2 lg:text-size-4 uppercase mb-4"
     >
-      Join the conversation
+      Add your voice
     </h2>
-    <p class="inline-block mb-6 px-3 py-2 bg-light-gold border-2 border-black text-size--1 lg:text-size-0 font-bold uppercase tracking-wide">
-      Voting closed May 14. Results below.
+    <p class="mb-6 text-size-0 lg:text-size-1">
+      Voting is still open. Take 2 minutes to vote on statements — or
+      submit your own — and your input will appear in the results above.
     </p>
 
     <!--
@@ -210,227 +404,6 @@ closingBlurb: |
       </a>
     </p>
   </section>
-
-  <!--
-    What emerged — post-conversation report, automatically populated
-    from the Polis CSV exports. Do not edit by hand.
-
-    Data source: src/site/_data/communityweekHighlights.json
-    Writer: scripts/update_cwnyc_highlights.py
-    Workflow: .github/workflows/update-cwnyc-highlights.yml
-              (cron disabled; manual dispatch only after 2026-05-14)
-
-    The whole section hides if `topStatements` is empty. Each inner
-    subsection (consensus / divisive / groups) is independently
-    gated and degrades to absence when its array is empty.
-
-    Schema:
-      {
-        "lastUpdated":         "2026-05-14T20:00:00Z",
-        "conversationClosed":  true,
-        "stats": {
-          "votes": N, "statements": N, "participants": N,
-          "votersInConv": N, "commenters": N, "groups": N
-        } | null,
-        "topStatements": [ /* same three-card structure: label, text,
-                              isUserSubmitted, votes{agree,disagree,
-                              pass,total} */ ],
-        "consensus": [
-          { "text": "...", "isUserSubmitted": true|false,
-            "votes": {...}, "minGroupAgreeRate": 0.XX }
-        ],
-        "divisive": [
-          { "text": "...", "isUserSubmitted": true|false,
-            "votes": {...},
-            "groupAgreeRates": [
-              { "groupId": 0, "rate": 0.XX, "n": N },
-              { "groupId": 1, "rate": 0.YY, "n": N }
-            ] }
-        ],
-        "groups": [
-          { "id": 0, "size": N,
-            "representativeStatements": [
-              { "text": "...", "isUserSubmitted": true|false,
-                "voteType": "agree"|"disagree",
-                "inGroupRate": 0.XX, "outGroupRate": 0.YY,
-                "inGroupN": N, "outGroupN": N, "score": 0.ZZ }
-            ] }
-        ]
-      }
-  -->
-  {% if communityweekHighlights and communityweekHighlights.topStatements and communityweekHighlights.topStatements.length %}
-  <section
-    id="highlights"
-    class="col-span-columns mb-16 scroll-mt-8"
-  >
-    <h2
-      class="font-display text-size-2 lg:text-size-4 uppercase mb-4"
-    >
-      What emerged
-    </h2>
-    <p class="mb-8 text-size-0 lg:text-size-1">
-      Community Week NYC ran from May 8–14, with
-      {% if communityweekHighlights.stats and communityweekHighlights.stats.participants %}{{ communityweekHighlights.stats.participants }}{% else %}dozens of{% endif %}
-      community builders contributing to this conversation. Below is a
-      summary of what emerged. The full conversation, including all
-      statements and the opinion-group visualization, is
-      <a class="inline-link" href="https://pol.is/6epckxncim" target="_blank" rel="noopener noreferrer">available on Polis</a>.
-    </p>
-
-    {% if communityweekHighlights.stats %}
-    <div class="grid grid-cols-3 border-y-2 border-black mb-12">
-      <div class="py-4 lg:py-6 px-2 text-center border-r-2 border-black">
-        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.votes }}</p>
-        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Votes</p>
-      </div>
-      <div class="py-4 lg:py-6 px-2 text-center border-r-2 border-black">
-        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.statements }}</p>
-        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Statements</p>
-      </div>
-      <div class="py-4 lg:py-6 px-2 text-center">
-        <p class="font-display text-size-2 lg:text-size-4 leading-none">{{ communityweekHighlights.stats.participants }}</p>
-        <p class="text-size--2 lg:text-size--1 uppercase mt-2">Participants</p>
-      </div>
-    </div>
-    {% endif %}
-
-    <!-- Top three at-a-glance cards -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
-      {% for s in communityweekHighlights.topStatements %}
-      <article class="border-2 border-black p-6 flex flex-col bg-white">
-        {% if s.label %}
-        <p class="font-bold uppercase text-size--1 text-gray mb-3 tracking-wide">{{ s.label }}</p>
-        {% endif %}
-        <p class="text-size-1 lg:text-size-2 mb-6 flex-grow">“{{ s.text }}”
-          {% if s.isUserSubmitted %}<span class="text-size--2 text-gray font-normal whitespace-nowrap">— submitted by a participant</span>{% endif %}
-        </p>
-        <div class="flex h-2 mb-2 overflow-hidden" aria-hidden="true">
-          <span class="block bg-black" style="width: {{ s.votes.agree }}%"></span>
-          <span class="block bg-red" style="width: {{ s.votes.disagree }}%"></span>
-          <span class="block bg-gray" style="width: {{ s.votes.pass }}%"></span>
-        </div>
-        <p class="text-size--4 text-gray">
-          {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass · {{ s.votes.total }} votes
-        </p>
-      </article>
-      {% endfor %}
-    </div>
-
-    <!-- Points of consensus -->
-    {% if communityweekHighlights.consensus and communityweekHighlights.consensus.length %}
-    <div class="mb-16">
-      <h3 class="font-display text-size-2 lg:text-size-2 uppercase mb-6">
-        Points of consensus
-      </h3>
-      <ol class="space-y-6">
-        {% for s in communityweekHighlights.consensus %}
-        <li class="border-b border-black pb-6 last:border-b-0">
-          <p class="text-size-0 lg:text-size-1 mb-3">“{{ s.text }}”
-            {% if s.isUserSubmitted %}<span class="text-size--2 text-gray font-normal whitespace-nowrap">— submitted by a participant</span>{% endif %}
-          </p>
-          <div class="flex h-2 mb-2 overflow-hidden" aria-hidden="true">
-            <span class="block bg-black" style="width: {{ s.votes.agree }}%"></span>
-            <span class="block bg-red" style="width: {{ s.votes.disagree }}%"></span>
-            <span class="block bg-gray" style="width: {{ s.votes.pass }}%"></span>
-          </div>
-          <p class="text-size--4 text-gray">
-            {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass · {{ s.votes.total }} votes
-            · agreed across both opinion groups (lowest group agree rate: {{ (s.minGroupAgreeRate * 100) | round | int }}%)
-          </p>
-        </li>
-        {% endfor %}
-      </ol>
-    </div>
-    {% endif %}
-
-    <!-- Where the cohort divided -->
-    {% if communityweekHighlights.divisive and communityweekHighlights.divisive.length %}
-    <div class="mb-16">
-      <h3 class="font-display text-size-2 lg:text-size-2 uppercase mb-6">
-        Where the cohort divided
-      </h3>
-      <ol class="space-y-8">
-        {% for s in communityweekHighlights.divisive %}
-        <li class="border-b border-black pb-8 last:border-b-0">
-          <p class="text-size-0 lg:text-size-1 mb-4">“{{ s.text }}”
-            {% if s.isUserSubmitted %}<span class="text-size--2 text-gray font-normal whitespace-nowrap">— submitted by a participant</span>{% endif %}
-          </p>
-          <div class="flex h-2 mb-2 overflow-hidden" aria-hidden="true">
-            <span class="block bg-black" style="width: {{ s.votes.agree }}%"></span>
-            <span class="block bg-red" style="width: {{ s.votes.disagree }}%"></span>
-            <span class="block bg-gray" style="width: {{ s.votes.pass }}%"></span>
-          </div>
-          <p class="text-size--4 text-gray mb-4">
-            Overall: {{ s.votes.agree }}% agree · {{ s.votes.disagree }}% disagree · {{ s.votes.pass }}% pass · {{ s.votes.total }} votes
-          </p>
-          <div class="space-y-2">
-            {% for g in s.groupAgreeRates %}
-            <div>
-              <div class="flex items-baseline justify-between mb-1">
-                <span class="text-size--2 lg:text-size--1 font-bold uppercase tracking-wide">Group {{ g.groupId + 1 }}</span>
-                <span class="text-size--4 text-gray">{{ (g.rate * 100) | round | int }}% agree · n={{ g.n }}</span>
-              </div>
-              <div class="flex h-2 bg-light-gold overflow-hidden border border-black" aria-hidden="true">
-                <span class="block bg-black" style="width: {{ (g.rate * 100) | round | int }}%"></span>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </li>
-        {% endfor %}
-      </ol>
-    </div>
-    {% endif %}
-
-    <!-- Opinion groups -->
-    {% if communityweekHighlights.groups and communityweekHighlights.groups.length %}
-    <div class="mb-16">
-      <h3 class="font-display text-size-2 lg:text-size-2 uppercase mb-4">
-        Opinion groups
-      </h3>
-      <p class="mb-8 text-size-0">
-        Polis identified two distinct opinion groups in the conversation.
-        Each is characterized below by the statements its members were
-        most distinctively likely to agree or disagree with.
-      </p>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {% for g in communityweekHighlights.groups %}
-        <div class="border-2 border-black p-6 bg-white">
-          <p class="font-bold uppercase text-size-0 mb-1 tracking-wide">Group {{ g.id + 1 }}</p>
-          <p class="text-size--2 text-gray mb-6">{{ g.size }} participant{% if g.size != 1 %}s{% endif %}</p>
-          <ol class="space-y-5">
-            {% for s in g.representativeStatements %}
-            <li>
-              <p class="font-bold uppercase text-size--2 text-gray mb-2 tracking-wide">
-                Most distinctively {{ s.voteType }}D with
-              </p>
-              <p class="text-size--1 lg:text-size-0 mb-2">“{{ s.text }}”
-                {% if s.isUserSubmitted %}<span class="text-size--2 text-gray font-normal whitespace-nowrap">— submitted by a participant</span>{% endif %}
-              </p>
-              <p class="text-size--4 text-gray">
-                {{ (s.inGroupRate * 100) | round | int }}% of this group {{ s.voteType }}d
-                (n={{ s.inGroupN }}), vs {{ (s.outGroupRate * 100) | round | int }}% of others
-                (n={{ s.outGroupN }})
-              </p>
-            </li>
-            {% endfor %}
-          </ol>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    {% if communityweekHighlights.lastUpdated %}
-    <p class="text-size--4 text-gray">
-      Last updated: {{ communityweekHighlights.lastUpdated | readableDate }}.
-      Conversation data via
-      <a href="https://pol.is" class="inline-link" target="_blank" rel="noopener noreferrer">Polis</a>,
-      <a href="https://creativecommons.org/licenses/by/4.0/" class="inline-link" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
-    </p>
-    {% endif %}
-  </section>
-  {% endif %}
 
   <!-- About the partners -->
   <section

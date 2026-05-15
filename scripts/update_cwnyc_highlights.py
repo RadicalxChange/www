@@ -5,15 +5,12 @@ Pulls public CSV exports for conversation 6epckxncim / report
 r45wsbrxmtk78wndwbhpm and writes the JSON file that
 src/site/communityweeknyc/index.njk reads.
 
-The conversation closed on 2026-05-14. This script now produces a
-post-conversation report including:
+This script produces a mid-conversation snapshot including:
 
-- `topStatements`: the original three at-a-glance cards (highest
-  agreement / most divided / most engaged)
+- `topStatements`: three at-a-glance cards (highest agreement /
+  most divided / most engaged)
 - `consensus`: top 5 statements with the highest minimum-across-groups
   agree rate (i.e. agreed-on by both opinion groups)
-- `divisive`: top 3 statements with the largest agree-rate gap between
-  the two opinion groups
 - `groups`: per-group representative statements computed using Polis's
   documented representative-comments algorithm
   (https://compdemocracy.org/representative-comments/) — Laplace-
@@ -62,11 +59,11 @@ MIN_PARTICIPANTS = 0
 MIN_VOTES_PER_STATEMENT_FLOOR = 5
 MIN_VOTES_PER_STATEMENT_RATIO = 0.3
 
-# Min-votes threshold for consensus/divisive selection. Uses
-# `voters_in_conv` (the population Polis itself uses for analysis —
-# people who voted on enough comments to be assigned a group), not
-# `voters`. ceil() so that "25% of voters_in_conv" rounds up — at 31
-# voters_in_conv this gives 8.
+# Min-votes threshold for consensus selection. Uses `voters_in_conv`
+# (the population Polis itself uses for analysis — people who voted on
+# enough comments to be assigned a group), not `voters`. ceil() so
+# that "25% of voters_in_conv" rounds up — at 31 voters_in_conv this
+# gives 8.
 def min_votes_for_findings(voters_in_conv: int) -> int:
     return max(5, math.ceil(0.25 * voters_in_conv))
 
@@ -341,7 +338,7 @@ def representative_score(
     return r, p, r * (1 - p)
 
 
-# ---- Consensus / divisive / per-group selection ---------------------------
+# ---- Consensus / per-group selection --------------------------------------
 
 
 def select_consensus(
@@ -369,35 +366,6 @@ def select_consensus(
             }
         )
     enriched.sort(key=lambda r: (-r["min_group_agree_rate"], -r["total"]))
-    return enriched[:top_n]
-
-
-def select_divisive(
-    cg_stats: list[dict[str, Any]],
-    min_votes: int,
-    top_n: int = 3,
-) -> list[dict[str, Any]]:
-    """Statements with the largest absolute gap in agree rate between
-    groups. Both groups must have at least one voter on the comment
-    (otherwise the gap is meaningless)."""
-    candidates = [
-        r
-        for r in cg_stats
-        if r["total"] >= min_votes and r["g0_voted"] > 0 and r["g1_voted"] > 0
-    ]
-    enriched = []
-    for r in candidates:
-        g0_rate = r["g0_agree"] / r["g0_voted"]
-        g1_rate = r["g1_agree"] / r["g1_voted"]
-        enriched.append(
-            {
-                **r,
-                "g0_agree_rate": g0_rate,
-                "g1_agree_rate": g1_rate,
-                "agree_rate_gap": abs(g0_rate - g1_rate),
-            }
-        )
-    enriched.sort(key=lambda r: (-r["agree_rate_gap"], -r["total"]))
     return enriched[:top_n]
 
 
@@ -580,26 +548,6 @@ def _consensus_card(r: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _divisive_card(r: dict[str, Any]) -> dict[str, Any]:
-    pct_a, pct_d, pct_p = percentages_to_100(
-        [r["total_agree"], r["total_disagree"], r["total_pass"]]
-    )
-    return {
-        "text": r["text"],
-        "isUserSubmitted": r["isUserSubmitted"],
-        "votes": {
-            "agree": pct_a,
-            "disagree": pct_d,
-            "pass": pct_p,
-            "total": r["total"],
-        },
-        "groupAgreeRates": [
-            {"groupId": 0, "rate": round(r["g0_agree_rate"], 4), "n": r["g0_voted"]},
-            {"groupId": 1, "rate": round(r["g1_agree_rate"], 4), "n": r["g1_voted"]},
-        ],
-    }
-
-
 # ---- Main ------------------------------------------------------------------
 
 
@@ -634,9 +582,7 @@ def main() -> int:
     if total_votes < MIN_TOTAL_VOTES or voters < MIN_PARTICIPANTS:
         log.info("Below safety gate. Writing empty state.")
         payload: dict[str, Any] = {
-            "conversationClosed": True,
             "consensus": [],
-            "divisive": [],
             "groups": [],
             "stats": None,
             "topStatements": [],
@@ -651,7 +597,7 @@ def main() -> int:
         cg_stats = parse_comment_groups(comments, comment_groups)
         min_findings_votes = min_votes_for_findings(voters_in_conv)
         log.info(
-            "Consensus/divisive eligibility: votes>=%d (max(5, ceil(0.25*%d)))",
+            "Consensus eligibility: votes>=%d (max(5, ceil(0.25*%d)))",
             min_findings_votes, voters_in_conv,
         )
 
@@ -660,16 +606,6 @@ def main() -> int:
             log.info(
                 "Consensus: comment-id=%d (min group agree=%.0f%%, total=%d)",
                 r["comment_id"], r["min_group_agree_rate"] * 100, r["total"],
-            )
-
-        divisive_rows = select_divisive(cg_stats, min_findings_votes, top_n=3)
-        for r in divisive_rows:
-            log.info(
-                "Divisive: comment-id=%d (gap=%.0f pts, g0=%.0f%% n=%d, g1=%.0f%% n=%d)",
-                r["comment_id"],
-                r["agree_rate_gap"] * 100,
-                r["g0_agree_rate"] * 100, r["g0_voted"],
-                r["g1_agree_rate"] * 100, r["g1_voted"],
             )
 
         # Authoritative group sizes come from participant-votes.csv —
@@ -684,9 +620,7 @@ def main() -> int:
         )
 
         payload = {
-            "conversationClosed": True,
             "consensus": [_consensus_card(r) for r in consensus_rows],
-            "divisive": [_divisive_card(r) for r in divisive_rows],
             "groups": groups_rows,
             "stats": {
                 "votes": total_votes,
