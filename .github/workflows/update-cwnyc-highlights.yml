@@ -3,19 +3,18 @@
 # Netlify rebuilds on the resulting commit, so the page reflects the
 # latest snapshot within ~minutes of each run.
 #
-# Conversation closed 2026-05-14. Cron disabled — `workflow_dispatch`
-# only. Re-enable by uncommenting the schedule block below if the
-# conversation reopens (and bump the cron expression appropriately).
+# Hourly refresh during Community Week event (May 15). Disable by
+# commenting out the schedule block once the conversation is fully
+# closed.
 #
 # GitHub will email the workflow author on workflow failures by
-# default, so transient pol.is outages on manual runs surface without
-# extra config.
+# default, so transient pol.is outages surface without extra config.
 
 name: Update CWNYC highlights
 
 on:
-  # schedule:
-  #   - cron: "0 * * * *"  # hourly on the hour, UTC — disabled 2026-05-14
+  schedule:
+    - cron: "0 * * * *"  # hourly on the hour, UTC
   workflow_dispatch: {}
 
 # Avoid overlapping runs if a scheduled run is still going when the

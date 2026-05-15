@@ -56,75 +56,6 @@
       }
     }
   ],
-  "conversationClosed": true,
-  "divisive": [
-    {
-      "groupAgreeRates": [
-        {
-          "groupId": 0,
-          "n": 4,
-          "rate": 0.0
-        },
-        {
-          "groupId": 1,
-          "n": 13,
-          "rate": 0.9231
-        }
-      ],
-      "isUserSubmitted": true,
-      "text": "simple systems (like CRM/community platforms) so we can focus on the 'how'—rather than the administrative 'what.' and spaces to do it",
-      "votes": {
-        "agree": 71,
-        "disagree": 6,
-        "pass": 23,
-        "total": 17
-      }
-    },
-    {
-      "groupAgreeRates": [
-        {
-          "groupId": 0,
-          "n": 7,
-          "rate": 0.0
-        },
-        {
-          "groupId": 1,
-          "n": 16,
-          "rate": 0.8125
-        }
-      ],
-      "isUserSubmitted": false,
-      "text": "The platforms I rely on (Instagram, Eventbrite, Partiful) could change overnight and break my community",
-      "votes": {
-        "agree": 57,
-        "disagree": 13,
-        "pass": 30,
-        "total": 23
-      }
-    },
-    {
-      "groupAgreeRates": [
-        {
-          "groupId": 0,
-          "n": 7,
-          "rate": 0.1429
-        },
-        {
-          "groupId": 1,
-          "n": 13,
-          "rate": 0.9231
-        }
-      ],
-      "isUserSubmitted": false,
-      "text": "I would do this work full-time if I could financially.",
-      "votes": {
-        "agree": 65,
-        "disagree": 15,
-        "pass": 20,
-        "total": 20
-      }
-    }
-  ],
   "groups": [
     {
       "id": 0,
@@ -199,7 +130,7 @@
       "size": 23
     }
   ],
-  "lastUpdated": "2026-05-15T03:24:59Z",
+  "lastUpdated": "2026-05-15T03:47:16Z",
   "stats": {
     "commenters": 8,
     "groups": 2,
