@@ -1,5 +1,14 @@
 module.exports = [
   {
+    url: "/updates/papers/the-plural-stack.pdf",
+    date: "2026-06-17",
+    title: "The ⿻ Plural Stack: Rebuilding our Digital Foundations from Protocol Up",
+    postType: "Paper",
+    postHeader: "The ⿻ Plural Stack: Rebuilding our Digital Foundations from Protocol Up",
+    postAuthor: "Andreas Fauler, et al",
+    series: [],
+  },
+  {
     url: "/updates/papers/The_Handbook_for_Radical_Local_Democracy.pdf",
     date: "2020-05-27",
     title: "The Handbook for Radical Local Democracy",
