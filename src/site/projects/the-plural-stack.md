@@ -5,7 +5,7 @@ title: "The ⿻ Plural Stack: Rebuilding our Digital Foundations from Protocol U
 postHeader: "The ⿻ Plural Stack: Rebuilding our Digital Foundations from Protocol Up"
 ---
 
-*By Andreas Fauler · June 17, 2026*
+*By Andreas Fauler, Anja von Rosenstiel, Jacopo Nuti, Ferdinand Ferroli, Arno Laeven, Marina Markezic, Vyara Savova, Mateo Rodriguez, Jack Henderson · June 17, 2026*
 
 *Contact: [andreas@radicalxchange.org](mailto:andreas@radicalxchange.org)*
 
