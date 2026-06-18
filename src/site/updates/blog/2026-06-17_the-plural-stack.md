@@ -4,7 +4,7 @@ slug: "the-plural-stack"
 date: "2026-06-17"
 title: "Europe Doesn't Need Its Own Big Tech. It Needs Protocols Nobody Can Capture."
 postHeader: "Europe Doesn't Need Its Own Big Tech. It Needs Protocols Nobody Can Capture."
-postAuthor: "Andreas Fauler"
+postAuthor: "Andreas Fauler, Anja von Rosenstiel, Jacopo Nuti, Ferdinand Ferroli et al"
 ---
 
 *Introducing the ⿻ Plural Stack, a third path for digital infrastructure.*
