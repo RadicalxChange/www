@@ -5,13 +5,13 @@ heroHeadline: |
 heroSubhead: |
   Where Singularity imagines AI making human contribution obsolete, we advance [Plurality](https://plurality.net/) — a philosophy that keeps human agency and democratic participation at the wheel, and treats technology as a means of cooperating across difference.
 theoryPracticeBlurb: |
-  We leap from theory into practice. Our work spans [research](/updates), [civic-tech prototypes](https://quadraticvote.radicalxchange.org/) that turn our ideas into working mechanisms, [partnerships](/projects) that build "civic muscle" in communities, and a global [community](/community) that tests these ideas across very different contexts. Together, these have begun to transform democratic and market institutions — in [Colorado](https://www.wired.com/story/colorado-quadratic-voting-experiment/), [Nashville](https://www.forbes.com/sites/zengernews/2022/08/31/nashville-jersey-city-experiment-with-quadratic-voting---a-radical-step/), [New York](/wiki/nyc-qv/), the [UK](https://www.serpentinegalleries.org/whats-on/beyond-cultures-of-ownership/), [Brazil](https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote), Sydney, and beyond.
+  Our work spans [research](/updates), [civic-tech prototypes](https://quadraticvote.radicalxchange.org/) that turn our ideas into working mechanisms, [partnerships](/projects) that build "civic muscle" in communities, and a global [community](/community) that tests these ideas across very different contexts. Together, these have begun to transform democratic and market institutions — in [Colorado](https://www.wired.com/story/colorado-quadratic-voting-experiment/), [Nashville](https://www.forbes.com/sites/zengernews/2022/08/31/nashville-jersey-city-experiment-with-quadratic-voting---a-radical-step/), [New York](/wiki/nyc-qv/), the [UK](https://www.serpentinegalleries.org/whats-on/beyond-cultures-of-ownership/), [Brazil](https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote), Sydney, and beyond.
 nationalScaleBlurb: |
-  This approach is already reshaping politics at the national scale. [Taiwan's world-leading embrace](https://www.wired.com/story/how-taiwans-unlikely-digital-minister-hacked-the-pandemic/) is well known; the next iteration is emerging in Japan, where the [Plurality book](https://plurality.net/read/) inspired [Team Mirai](https://www.techpolicy.press/japans-team-mirai-uses-tech-to-bolster-democracy-not-undermine-it/) — a new independent party that won 11 parliamentary seats in 2026, using AI to help citizens understand and shape policy.
+  [Taiwan's world-leading embrace](https://www.wired.com/story/how-taiwans-unlikely-digital-minister-hacked-the-pandemic/) is well known; the next iteration is emerging in Japan, where the [Plurality book](https://plurality.net/read/) inspired [Team Mirai](https://www.techpolicy.press/japans-team-mirai-uses-tech-to-bolster-democracy-not-undermine-it/) — a new independent party using AI to help citizens understand and shape policy.
 missionBlurb: |
-  RadicalxChange's role is to be the connective tissue for this ecosystem: community work proves the methods on the ground, while ambitious, economy-scale proposals carry them to the grand challenges of our era. Both serve the same goal — helping humans, not algorithms, steer the AI transition.
+  RadicalxChange is the connective tissue for this ecosystem: community work proves the methods on the ground, while ambitious, economy-scale proposals carry them to the grand challenges of our era. Both serve the same goal — helping humans, not algorithms, steer the AI transition.
 toolsBlurb: |
-  The mechanisms behind the work — the Plural Stack:
+  The Plural Stack:
 joinUsBlurb: |
   If you're...
 
@@ -73,9 +73,9 @@ homeConcepts:
   </header>
   <!-- 1. HERO: foundation headline + Singularity-vs-Plurality subhead -->
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
   >
-    <h2 class="font-bold text-size-2 lg:text-size-4">
+    <h2 class="font-bold text-size-2 lg:text-size-4 mb-4">
       {{ heroHeadline }}
     </h2>
     <div class="markdown text-size-0 lg:text-size-1">
@@ -85,17 +85,17 @@ homeConcepts:
   </div>
   <!-- 2. Theory -> practice -->
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
   >
-    <p class="font-bold uppercase">From theory to practice:</p>
+    <p class="font-bold uppercase mb-4">From theory to practice:</p>
     <div class="markdown">
       {{ theoryPracticeBlurb | markdown | safe }}
     </div>
   </div>
   <!-- 3. National-scale proof, with pull-stat -->
-  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-16">
-    <p class="font-bold uppercase mb-8">Proof at the national scale:</p>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8 items-center">
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0">
+    <p class="font-bold uppercase mb-4">Proof at the national scale:</p>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8 items-start">
       <div class="markdown lg:col-span-2">
         {{ nationalScaleBlurb | markdown | safe }}
       </div>
@@ -109,16 +109,17 @@ homeConcepts:
   </div>
   <!-- 4. Mission close -->
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
   >
-    <p class="font-bold uppercase">Our role:</p>
+    <p class="font-bold uppercase mb-4">Our role:</p>
     <div class="markdown">
       {{ missionBlurb | markdown | safe }}
     </div>
   </div>
   <!-- 5. Plural Stack: condensed, demoted to a compact tile row -> /tools -->
-  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-16">
-    <p class="font-bold uppercase mb-8">{{ toolsBlurb }}</p>
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24">
+    <p class="font-bold uppercase mb-1">{{ toolsBlurb }}</p>
+    <p class="text-size--1 mb-4">The mechanisms behind the work.</p>
     <div
       id="concepts"
       class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8"
@@ -145,9 +146,9 @@ homeConcepts:
     </div>
   </div>
   <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
   >
-    <p class="font-bold uppercase">We invite you to join us:</p>
+    <p class="font-bold uppercase mb-4">We invite you to join us:</p>
     <div class="markdown">
       {{ joinUsBlurb | markdown | safe }}
     </div>
