@@ -1,21 +1,17 @@
 ---
 layout: layouts/_base.njk
-introductionBlurb: |
-  **RadicalxChange Foundation is an international nonprofit advancing participatory governance for the age of AI.**
-
-  **Where Singularity imagines AI making human contribution obsolete, we advance [Plurality](https://plurality.net/): a philosophy that keeps human agency and democratic participation at the wheel and treats technology as a means of cooperating across difference.**
-
-  We leap from theory into practice, connecting a global movement that turns these ideas into working mechanisms, tests them in diverse contexts, and brings models of participation and collaborative governance to the grand challenges of our era.
-howBlurb: |
-  **We leap from theory into practice.** Our work includes:
-
-  - [Research](/updates) and civic-tech [prototypes](https://quadraticvote.radicalxchange.org/) that turn our ideas into working mechanisms
-
-  - [Projects with partners](/projects) that build "civic muscle" in communities and bring these methods to transform democratic and market institutions — from [Colorado](https://www.wired.com/story/colorado-quadratic-voting-experiment/) and [Nashville](https://www.forbes.com/sites/zengernews/2022/08/31/nashville-jersey-city-experiment-with-quadratic-voting---a-radical-step/) to [NYC](/wiki/nyc-qv/), the [UK](https://www.serpentinegalleries.org/whats-on/beyond-cultures-of-ownership/), [Brazil](https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote), Sydney, and more
-
-  - A global [community](/community) that tests these ideas in diverse contexts
-
-  We deploy a range of tools developed within our community, including the Plural Stack:
+heroHeadline: |
+  RadicalxChange Foundation is an international nonprofit advancing participatory governance for the age of AI.
+heroSubhead: |
+  Where Singularity imagines AI making human contribution obsolete, we advance [Plurality](https://plurality.net/) — a philosophy that keeps human agency and democratic participation at the wheel, and treats technology as a means of cooperating across difference.
+theoryPracticeBlurb: |
+  We leap from theory into practice. Our work spans [research](/updates), [civic-tech prototypes](https://quadraticvote.radicalxchange.org/) that turn our ideas into working mechanisms, [partnerships](/projects) that build "civic muscle" in communities, and a global [community](/community) that tests these ideas across very different contexts. Together, these have begun to transform democratic and market institutions — in [Colorado](https://www.wired.com/story/colorado-quadratic-voting-experiment/), [Nashville](https://www.forbes.com/sites/zengernews/2022/08/31/nashville-jersey-city-experiment-with-quadratic-voting---a-radical-step/), [New York](/wiki/nyc-qv/), the [UK](https://www.serpentinegalleries.org/whats-on/beyond-cultures-of-ownership/), [Brazil](https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote), Sydney, and beyond.
+nationalScaleBlurb: |
+  This approach is already reshaping politics at the national scale. [Taiwan's world-leading embrace](https://www.wired.com/story/how-taiwans-unlikely-digital-minister-hacked-the-pandemic/) is well known; the next iteration is emerging in Japan, where the [Plurality book](https://plurality.net/read/) inspired [Team Mirai](https://www.techpolicy.press/japans-team-mirai-uses-tech-to-bolster-democracy-not-undermine-it/) — a new independent party that won 11 parliamentary seats in 2026, using AI to help citizens understand and shape policy.
+missionBlurb: |
+  RadicalxChange's role is to be the connective tissue for this ecosystem: community work proves the methods on the ground, while ambitious, economy-scale proposals carry them to the grand challenges of our era. Both serve the same goal — helping humans, not algorithms, steer the AI transition.
+toolsBlurb: |
+  The mechanisms behind the work — the Plural Stack:
 joinUsBlurb: |
   If you're...
 
@@ -28,10 +24,6 @@ joinUsBlurb: |
   We invite radical thinkers, builders, innovators and the curious to join our global [community](/community)—sign up for the [newsletter](http://eepurl.com/gywH7r) and our [monthly calls](https://calendar.google.com/calendar/u/0/embed?src=c_lucq4409c3e2db9j5vld22p8to@group.calendar.google.com&ctz=America/New_York) (first Wednesday of every month at 9am ET/3pm CET).
 
   [Contact us](mailto:info@radicalxchange.org) to co-design new experiments and tools for your community.
-aiTransitionBlurb: |
-  [Taiwan's world-leading embrace](https://www.wired.com/story/how-taiwans-unlikely-digital-minister-hacked-the-pandemic/) of this approach is well known. The next iteration comes from Japan, where the [Plurality book](https://plurality.net/read/) inspired [Team Mirai](https://www.techpolicy.press/japans-team-mirai-uses-tech-to-bolster-democracy-not-undermine-it/), a new independent party that won 11 parliamentary seats in 2026 using AI to facilitate broader democratic participation in understanding and shaping policy.
-
-  RadicalxChange's mission is to serve as the connective tissue that supports this ecosystem. The community work proves the method on the ground. Ambitious, economy-scale proposals bring these models of participation and collaborative governance to the grand challenges of our era. They serve the same agenda: helping humans steer the AI transition.
 homeConcepts:
   - name: Plural Voting
     href: /tools/plural-voting/
@@ -57,6 +49,8 @@ homeConcepts:
 {% import "components/menu.njk" as menu %}
 <!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
+<!-- prettier-ignore -->
+{% import "components/action-button.njk" as actionButton %}
 
 <!-- prettier-ignore -->
 {{ menu.render() }}
@@ -77,51 +71,57 @@ homeConcepts:
       </a>
     </h1>
   </header>
+  <!-- 1. HERO: foundation headline + Singularity-vs-Plurality subhead -->
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
   >
-    <div class="markdown">
-      {{ introductionBlurb | markdown | safe }}
+    <h2 class="font-bold text-size-2 lg:text-size-4">
+      {{ heroHeadline }}
+    </h2>
+    <div class="markdown text-size-0 lg:text-size-1">
+      {{ heroSubhead | markdown | safe }}
     </div>
     {{ caller() if caller }}
   </div>
-  <div class="col-span-columns lg:col-end-gutter-9 mb-16">
-    <p class="font-bold uppercase">We focus on:</p>
-    <ol class="w-full mt-8 grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-4 max-w-3xl mx-auto">
-      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
-        <p class="font-bold">Democratic Transformation</p>
-        <p class="italic text-sm">How should we govern?</p>
-        <p>Forging the foundations of 21st century governance</p>
-      </li>
-      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
-        <p class="font-bold">Resilient Decentralization</p>
-        <p class="italic text-sm">How should we build?</p>
-        <p>Accelerating distributed participation and local creativity to solve global problems</p>
-      </li>
-      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
-        <p class="font-bold">Collective Agency</p>
-        <p class="italic text-sm">Who are "we"?</p>
-        <p>Empowering "plural publics" to form and act in the face of shared challenges</p>
-      </li>
-      <li class="flex flex-col justify-between h-64 w-full border-2 m-auto p-4">
-        <p class="font-bold">Imaginative Hope</p>
-        <p class="italic text-sm">Where are we going?</p>
-        <p>Inspiring curiosity, experimentation and agency to shape possible futures</p>
-      </li>
-    </ol>
-  </div>
+  <!-- 2. Theory -> practice -->
   <div
     class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
   >
-    <p class="font-bold uppercase">We do this through:</p>
+    <p class="font-bold uppercase">From theory to practice:</p>
     <div class="markdown">
-      {{ howBlurb | markdown | safe }}
+      {{ theoryPracticeBlurb | markdown | safe }}
     </div>
   </div>
-  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 self-center mb-16">
-    <div 
+  <!-- 3. National-scale proof, with pull-stat -->
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-16">
+    <p class="font-bold uppercase mb-8">Proof at the national scale:</p>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8 items-center">
+      <div class="markdown lg:col-span-2">
+        {{ nationalScaleBlurb | markdown | safe }}
+      </div>
+      <div class="flex flex-col justify-center h-full border-2 p-6">
+        <p class="font-display text-size-xl/display leading-none">11</p>
+        <p class="font-bold uppercase mt-3">
+          parliamentary seats won by Japan's Team Mirai in 2026
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 4. Mission close -->
+  <div
+    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
+  >
+    <p class="font-bold uppercase">Our role:</p>
+    <div class="markdown">
+      {{ missionBlurb | markdown | safe }}
+    </div>
+  </div>
+  <!-- 5. Plural Stack: condensed, demoted to a compact tile row -> /tools -->
+  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-16">
+    <p class="font-bold uppercase mb-8">{{ toolsBlurb }}</p>
+    <div
       id="concepts"
-      class="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-16 lg:gap-y-12"
+      class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8"
     >
       {% for concept in homeConcepts%}
       <a
@@ -129,24 +129,19 @@ homeConcepts:
         href="{{ concept.href }}"
       >
         <div></div>
-        <div class="w-full max-w-xs">
+        <div class="w-full max-w-[7rem]">
           {{ concept.element | safe }}
         </div>
         <h2
-          class="lg:h-line-2 mt-6 text-center text-size-2 lg:text-size-0 group-hover:thick-link"
+          class="mt-3 text-center text-size--1 group-hover:thick-link"
         >
           {{ concept.name }}
         </h2>
       </a>
       {% endfor %}
     </div>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 space-y-line-3/2 mb-16"
-  >
-    <p class="font-bold uppercase">Steering the AI transition:</p>
-    <div class="markdown">
-      {{ aiTransitionBlurb | markdown | safe }}
+    <div class="mt-8">
+      {{ actionButton.render(href="/tools", label="Explore the Plural Stack") }}
     </div>
   </div>
   <div
