@@ -17,6 +17,24 @@ eleventyExcludeFromCollections: true
 <!-- prettier-ignore -->
 {% import "components/button.njk" as button %}
 
+<!-- A/B comparison harness — styleguide-only overrides so the canonical
+     content-card macro stays the single source of truth. These classes do not
+     ship; they only let us compare variants side-by-side on real fonts. -->
+<style>
+  /* Title-weight variant B: Suisse Bold instead of the canonical regular. */
+  .ab-bold h3 {
+    font-weight: 700;
+  }
+  /* Rule-placement variant B: hairline under the meta (today's Updates idiom)
+     instead of the canonical top hairline over the tag. */
+  .ab-bottom-rule > a {
+    border-top: 0;
+    padding-top: 0;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1.5rem;
+  }
+</style>
+
 <main class="mx-auto max-w-6xl px-xmargin lg:px-lg/xmargin py-block space-y-section">
   <!-- PAGE TITLE -->
   <header class="space-y-element">
@@ -137,6 +155,62 @@ eleventyExcludeFromCollections: true
       {{ card.render(href="#", tag="Project", title="Plural Voting in the Colorado Legislature", description="A first-in-the-nation experiment using quadratic voting to set budget priorities in a US state legislature.") }}
       {{ card.render(href="#", tag="Policy Proposal", title="Data Freedom Act", description="A model bill establishing data coalitions and fiduciary duties for the data economy.") }}
     </div>
+  </section>
+
+  <!-- A/B #1 — TITLE WEIGHT, judged as a full grid (the tiled effect is the decision) -->
+  <!-- prettier-ignore -->
+  {% set abCards = [
+    {tag:"Paper", title:"The Plural Stack: Rebuilding our Digital Foundations from Protocol Up", m1:"Andreas Fauler, et al", m2:"June 17, 2026"},
+    {tag:"Announcement", title:"Civic AI Launches at Oxford", m1:"RxC Team", m2:"March 31, 2026"},
+    {tag:"Blog Post", title:"Europe Doesn't Need Its Own Big Tech. It Needs Protocols Nobody Can Capture.", m1:"Andreas Fauler, Anja von Rosenstiel et al", m2:"June 17, 2026"},
+    {tag:"Podcast", title:"Takahiro Anno: Fixing Bugs in Democracy", m1:"Takahiro Anno, Jess Scully", m2:"November 11, 2025"},
+    {tag:"Announcement", title:"Germany Launches a Digital Democracy Lab", m1:"RxC Team", m2:"February 3, 2026"},
+    {tag:"Blog Post", title:"Reactive vs. Co-Creative Democracy", m1:"Martin Rausch, Tom Atlee, Jenna Büchy", m2:"April 29, 2026"},
+    {tag:"Announcement", title:"Co-Creative Democracy, From Taipei to NYC", m1:"RxC Team", m2:"May 5, 2026"},
+    {tag:"Podcast", title:"What Protests Want, With Yuting Jiang", m1:"Yuting Jiang, Jess Scully", m2:"November 26, 2025"}
+  ] %}
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="A/B #1 — Card title weight", eyebrow="Judge as a grid, not one card") }}
+    <p class="text-size--1 opacity-60 max-w-2xl">The decision hinges on the tiled effect, so both are rendered as full 8-card grids. Hypothesis: <strong>regular</strong> for density — bold can turn into a heavy, vibrating field when tiled.</p>
+
+    <p class="text-size--1 font-bold uppercase tracking-wide">A · Suisse regular (canonical / shipped)</p>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-block gap-y-section">
+      <!-- prettier-ignore -->
+      {% for c in abCards %}{{ card.render(href="#", tag=c.tag, title=c.title, meta1=c.m1, meta2=c.m2) }}{% endfor %}
+    </div>
+
+    <p class="text-size--1 font-bold uppercase tracking-wide pt-block">B · Suisse bold</p>
+    <div class="ab-bold grid grid-cols-2 lg:grid-cols-4 gap-x-block gap-y-section">
+      <!-- prettier-ignore -->
+      {% for c in abCards %}{{ card.render(href="#", tag=c.tag, title=c.title, meta1=c.m1, meta2=c.m2) }}{% endfor %}
+    </div>
+  </section>
+
+  <!-- A/B #2 — RULE PLACEMENT, framed for rollout-consistency vs current bottom-rule -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="A/B #2 — Rule placement", eyebrow="Rollout consistency check") }}
+    <p class="text-size--1 opacity-60 max-w-2xl">Top hairline over the tag (the stronger system, matches the brand-book header-with-rule logic) vs the bottom rule used on Updates today — so we can see whether a mixed idiom mid-rollout reads as intentional or just transitional.</p>
+
+    <p class="text-size--1 font-bold uppercase tracking-wide">A · Top rule over tag (canonical / shipped)</p>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-block gap-y-block">
+      <!-- prettier-ignore -->
+      {% for c in abCards %}{% if loop.index <= 4 %}{{ card.render(href="#", tag=c.tag, title=c.title, meta1=c.m1, meta2=c.m2) }}{% endif %}{% endfor %}
+    </div>
+
+    <p class="text-size--1 font-bold uppercase tracking-wide pt-block">B · Bottom rule under meta (today's Updates idiom)</p>
+    <div class="ab-bottom-rule grid grid-cols-2 lg:grid-cols-4 gap-x-block gap-y-block">
+      <!-- prettier-ignore -->
+      {% for c in abCards %}{% if loop.index <= 4 %}{{ card.render(href="#", tag=c.tag, title=c.title, meta1=c.m1, meta2=c.m2) }}{% endif %}{% endfor %}
+    </div>
+  </section>
+
+  <!-- Resolved decisions (no A/B needed) -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="Resolved", eyebrow="Locked, for the record") }}
+    <ul class="space-y-element text-size-0 max-w-2xl list-disc pl-6">
+      <li><strong>Tag / meta opacity — locked at 60%.</strong> Effective <code>#666</code> on white = <strong>5.74:1</strong>, passes WCAG AA for normal text (4.5:1). Description at 80% = 12.6:1.</li>
+      <li><strong>Eyebrow — optional, used only where it earns it.</strong> Standard-on-every-section would just re-create the stacked-label noise from audit finding&nbsp;#2.</li>
+    </ul>
   </section>
 
   <!-- BLACK SECTION moment — the "sandwich" confidence move; yellow as accent within -->
