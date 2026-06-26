@@ -64,10 +64,7 @@ homeConcepts:
       class="font-display text-size-display lg:text-size-lg/display uppercase"
     >
       <a href="/">
-        <span class="inline lg:hidden"
-          >RxC is Enabling cooperation across diversity for the common good</span
-        >
-        {{ logo.render(classes="hidden lg:inline-block align-top") }}
+        {{ logo.render(classes="inline-block align-top") }}
       </a>
     </h1>
   </header>
@@ -151,26 +148,6 @@ homeConcepts:
     <p class="font-bold uppercase mb-4">We invite you to join us:</p>
     <div class="markdown">
       {{ joinUsBlurb | markdown | safe }}
-    </div>
-  </div>
-  <div
-    class="sticky bottom-0 hidden lg:block col-start-margin-1 col-end-column-10 w-full pt-2 bg-white font-display text-size-lg/display"
-  >
-    <div class="message-marquee">
-      <div class="marquee__inner">
-        <span class="uppercase mx-6 whitespace-nowrap"
-          >Enabling cooperation across diversity for the common good</span
-        >
-        <span aria-hidden="true" class="uppercase mx-6 whitespace-nowrap"
-          >Enabling cooperation across diversity for the common good</span
-        >
-        <span aria-hidden="true" class="uppercase mx-6 whitespace-nowrap"
-          >Enabling cooperation across diversity for the common good</span
-        >
-        <span aria-hidden="true" class="uppercase mx-6 whitespace-nowrap"
-          >Enabling cooperation across diversity for the common good</span
-        >
-      </div>
     </div>
   </div>
 </div>
