@@ -1,0 +1,173 @@
+---
+layout: layouts/_base.njk
+title: Component Styleguide
+permalink: /styleguide/index.html
+eleventyExcludeFromCollections: true
+---
+
+<!-- prettier-ignore -->
+{% block otherHead %}
+<meta name="robots" content="noindex, nofollow" />
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% import "components/section-header.njk" as sectionHeader %}
+<!-- prettier-ignore -->
+{% import "components/content-card.njk" as card %}
+<!-- prettier-ignore -->
+{% import "components/button.njk" as button %}
+
+<main class="mx-auto max-w-6xl px-xmargin lg:px-lg/xmargin py-block space-y-section">
+  <!-- PAGE TITLE -->
+  <header class="space-y-element">
+    <p class="text-size--1 font-bold uppercase tracking-wide">
+      RxC · Component Styleguide
+    </p>
+    <h1 class="font-display uppercase text-size-xl/display leading-none">
+      Pixels, not prose
+    </h1>
+    <p class="text-size-0 max-w-2xl">
+      Live render of the proposed PR&nbsp;#3 components on real brand fonts and
+      tokens. This page is <strong>noindex</strong> and not linked in nav — a
+      working reference, not a public page. Nothing here is applied to existing
+      templates yet.
+    </p>
+  </header>
+
+  <!-- TYPE ROLES -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="Type roles", eyebrow="Foundations") }}
+    <div class="space-y-block">
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Display / page title — Messer, ALL CAPS</p>
+        <p class="font-display uppercase text-size-lg/display leading-none">Plurality at the wheel</p>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Section header — Suisse Bold</p>
+        <p class="font-bold text-size-2">Projects &amp; policy proposals</p>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Eyebrow / kicker — Suisse Bold uppercase, tracked</p>
+        <p class="font-bold text-size--1 uppercase tracking-wide">From the field</p>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Body — Suisse, size-0</p>
+        <p class="text-size-0 max-w-2xl">RadicalxChange advances participatory governance for the age of AI — keeping human agency and democratic participation at the wheel, and treating technology as a means of cooperating across difference.</p>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Meta — size--1</p>
+        <p class="text-size--1 opacity-60">RxC Team · June 17, 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUTTONS -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="Buttons", eyebrow="Two weights, one rhythm") }}
+    <div class="flex flex-wrap items-center gap-block">
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Primary</p>
+        {{ button.primary(href="#", label="Explore the Plural Stack") }}
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Secondary</p>
+        {{ button.secondary(href="#", label="Read the paper") }}
+      </div>
+    </div>
+  </section>
+
+  <!-- MOTIFS — where yellow lives -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="Motifs", eyebrow="Where the yellow lives") }}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-block items-start">
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Highlight mark</p>
+        <p class="text-size-1">Helping <span class="mark-highlight">humans, not algorithms</span>, steer the AI transition.</p>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Yellow underline</p>
+        <p class="text-size-1">A philosophy called <span class="underline-yellow">Plurality</span>.</p>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Icon circle</p>
+        <span class="icon-circle text-size-1 font-bold">&rarr;</span>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Number circle</p>
+        <div class="flex gap-element">
+          <span class="number-circle text-size--1">1</span>
+          <span class="number-circle text-size--1">2</span>
+          <span class="number-circle text-size--1">3</span>
+        </div>
+      </div>
+      <div class="space-y-element">
+        <p class="text-size--1 opacity-60 uppercase tracking-wide">Stat callout</p>
+        <div class="border border-black p-element max-w-xs">
+          <p class="font-display text-size-xl/display leading-none">11</p>
+          <p class="font-bold uppercase text-size--1 mt-element">parliamentary seats won by Japan's Team Mirai in 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION HEADER component -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="Section header", eyebrow="With eyebrow + See all") }}
+    <div class="space-y-block">
+      <p class="text-size--1 opacity-60">Default — title + rule:</p>
+      {{ sectionHeader.render(title="Updates") }}
+      <p class="text-size--1 opacity-60 pt-block">With eyebrow + “See all →”:</p>
+      {{ sectionHeader.render(title="Latest updates", eyebrow="From the field", seeAllHref="/updates", seeAllLabel="See all") }}
+    </div>
+  </section>
+
+  <!-- CONTENT CARD grid — varied lengths prove uniform height + bottom-aligned meta -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="Content card", eyebrow="The canonical card", seeAllHref="/updates", seeAllLabel="See all") }}
+    <p class="text-size--1 opacity-60 max-w-2xl">Deliberately mixed title lengths — note the meta row stays bottom-aligned across the row, with no forced empty gaps (the old card padded short titles with a min-height hack).</p>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-block gap-y-section">
+      {{ card.render(href="#", tag="Paper", title="The Plural Stack: Rebuilding our Digital Foundations from Protocol Up", meta1="Andreas Fauler, et al", meta2="June 17, 2026") }}
+      {{ card.render(href="#", tag="Announcement", title="Civic AI Launches at Oxford", meta1="RxC Team", meta2="March 31, 2026") }}
+      {{ card.render(href="#", tag="Blog Post", title="Europe Doesn't Need Its Own Big Tech. It Needs Protocols Nobody Can Capture.", meta1="Andreas Fauler, Anja von Rosenstiel et al", meta2="June 17, 2026") }}
+      {{ card.render(href="#", tag="Podcast", title="Takahiro Anno: Fixing Bugs in Democracy", meta1="Takahiro Anno, Jess Scully", meta2="November 11, 2025") }}
+    </div>
+
+    <p class="text-size--1 opacity-60 max-w-2xl pt-block">Same card, with a short description (Projects / Proposals use this variant):</p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-block gap-y-block">
+      {{ card.render(href="#", tag="Project", title="Plural Voting in the Colorado Legislature", description="A first-in-the-nation experiment using quadratic voting to set budget priorities in a US state legislature.") }}
+      {{ card.render(href="#", tag="Policy Proposal", title="Data Freedom Act", description="A model bill establishing data coalitions and fiduciary duties for the data economy.") }}
+    </div>
+  </section>
+
+  <!-- BLACK SECTION moment — the "sandwich" confidence move; yellow as accent within -->
+  <section class="space-y-block">
+    {{ sectionHeader.render(title="Black-section moment", eyebrow="Big gestures use black, not yellow fills") }}
+  </section>
+</main>
+
+<!-- Full-bleed black band lives outside the padded container -->
+<section class="is-on-dark bg-black text-white">
+  <div class="mx-auto max-w-6xl px-xmargin lg:px-lg/xmargin py-section space-y-block">
+    <p class="text-size--1 font-bold uppercase tracking-wide">The Plural Stack</p>
+    <p class="font-display uppercase text-size-lg/display leading-none max-w-4xl">
+      Technology for <span class="mark-highlight text-black">cooperation</span> across difference
+    </p>
+    <p class="text-size-0 max-w-2xl">
+      Black carries the confident moments — hero bands, dividers, the footer. Yellow stays an
+      accent <span class="mark-highlight">inside</span> them, so the big gestures don't spend the
+      one accent color.
+    </p>
+    <div class="flex flex-wrap gap-element items-center pt-element">
+      <a class="group inline-flex items-center justify-between py-2 px-4 xl:pl-6 xl:pr-4 border border-white rounded-oval text-size--1" href="#">
+        <span class="text-center uppercase">Explore the stack</span>
+      </a>
+      <span class="number-circle text-size--1">1</span>
+      <span class="number-circle text-size--1">2</span>
+      <span class="number-circle text-size--1">3</span>
+    </div>
+  </div>
+</section>
+
+<div class="mx-auto max-w-6xl px-xmargin lg:px-lg/xmargin py-section">
+  <p class="text-size--1 opacity-60">End of styleguide.</p>
+</div>
