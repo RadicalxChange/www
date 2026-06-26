@@ -38,6 +38,41 @@ The RadicalxChange www site is built on [11ty](https://www.11ty.dev/). It's styl
 
 ## Design
 
+> A refinement effort is tightening the site's craft _within_ the existing brand
+> (hierarchy, spacing, component consistency, restraint). See `DESIGN_DIRECTION.md`
+> for the audit and plan. The tokens below are the shared foundation that work builds on.
+
+### Palette
+
+Three brand colors, nothing else:
+
+| Token            | Hex       | Role                                                         |
+| ---------------- | --------- | ----------------------------------------------------------- |
+| `black`          | `#000000` | Primary ink; black section bands ("the big moments").       |
+| `white`          | `#FFFFFF` | Default page surface.                                        |
+| `golden-fizz`    | `#EDFF38` | Brand **yellow** — punctuation only.                        |
+
+**Yellow is punctuation, not wallpaper.** Use it for accents (underlines, icon
+circles, highlight marks, number circles, a single key callout) and the rare,
+countable full-bleed jolt (newsletter, donate CTA, 404). Reach for **black
+sections** — not yellow fills — for big confident moments. Default surface is white.
+
+**Contrast rule (ADA), from the Brand Book:** black-on-yellow, black-on-white, or
+white/yellow-on-black only — **never** yellow/white on yellow/white, and never
+yellow text on white.
+
+`gray` and `red` remain in the config but are **restricted, non-brand** colors kept
+only for functional data-viz on the Community Week NYC microsite. Don't use them on
+brand surfaces.
+
+### Surface & color scheme
+
+`global.css` sets `color-scheme: light` and a white `body` background so no page can
+fall through to the browser's dark canvas (which previously made black text invisible
+in OS dark mode). These live on low-specificity selectors, so any utility
+(`bg-black`, `bg-golden-fizz`, a page's `bodyBg`) still overrides them — intentionally
+dark or yellow bands are unaffected.
+
 ### Grid
 
 Pages are laid out on grids. A grid has fixed-width margins, fixed-width gutters and fluid columns. Desktop pages are on a 12-column or 16-column grid. Mobile pages are on a 4-column grid.
@@ -48,11 +83,44 @@ We use TailWind's built-in scale for general size and space. These utilities use
 
 For typography heavy pages, we use a multiple of line height for vertical spacing. The utilities use `em` units.
 
+#### Section rhythm
+
+For the gaps **between** structural blocks, prefer the documented rhythm tokens over
+ad-hoc `mb-16` / `mb-8` one-offs, so every page shares one calm cadence:
+
+| Token     | Value                    | Use                                   |
+| --------- | ------------------------ | ------------------------------------- |
+| `section` | `clamp(4rem, 8vw, 8rem)` | Between major page sections.          |
+| `block`   | `clamp(2rem, 4vw, 3rem)` | Between blocks within a section.      |
+| `element` | `1.5rem`                 | Between elements within a block.      |
+
+Apply as any Tailwind spacing utility, e.g. `mb-section`, `space-y-block`, `py-section`,
+`gap-element`.
+
 ### Typography
 
 We use a [fluid type scale](https://utopia.fyi/blog/designing-with-fluid-type-scales) for almost all text. This scale provides a base text size and "steps" up and down from that. If you assign a step size to text, it will automatically scale relative to the width of the browser.
 
 For text written in Messer font, use font-size in the `vw` unit instead.
+
+#### Type roles
+
+Two families, a small set of roles. **Only one Messer weight is licensed for web**
+(`MesserV2.0-Condensed`, 400) — so display hierarchy comes from **size, not weight**.
+Keep to these roles rather than inventing per-page sizes:
+
+| Role                | Font (`font-…`)        | Treatment                                   | Notes                                            |
+| ------------------- | ---------------------- | ------------------------------------------- | ------------------------------------------------ |
+| Display / page title | `display` (Messer)     | **ALL CAPS**, `size-lg/display`+            | One per page. Caps only — Messer is a caps face. |
+| Hero statement      | `display` (Messer caps) | short, oversized                            | Keep it short (≈4–8 words); long copy → standfirst. |
+| Section header      | `body` bold (Suisse)   | `size-2`, with a hairline rule beneath      | Pairs with the eyebrow below.                    |
+| Eyebrow / kicker    | `body` bold (Suisse)   | uppercase, `size--1`, letter-spaced, quiet  | A small label, **not** a headline.               |
+| Body                | `body` (Suisse)        | `size-0`                                    | Brand body face is Suisse Book.¹                 |
+| Meta (author/date/tag) | `body` (Suisse)     | `size--1`                                   | One consistent size for all metadata.            |
+
+¹ The Brand Book specifies **Suisse Int'l Book** for paragraph text; today `font-body`
+resolves to Suisse Int'l _Regular_. A small, deliberate drift to reconcile in a later
+typography pass — flagged, not silently changed.
 
 ## Code Layout
 

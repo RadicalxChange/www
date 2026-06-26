@@ -1,3 +1,23 @@
+/* Lock the site to a light surface.
+
+   Without this, pages that don't paint their own background fall through to the
+   browser's default canvas — which is BLACK for visitors whose OS is in dark
+   mode, rendering black body text invisible (Updates, articles, Search, Wiki…).
+   `color-scheme: light` also keeps native controls and scrollbars light.
+
+   This is a DEFAULT, not an override: the background/color live on the low-
+   specificity `body` element selector, so any Tailwind utility on a page
+   wrapper or section (bg-black, bg-golden-fizz, text-white, or a page's
+   `bodyBg`) still wins. Intentionally-dark bands are unaffected. */
+:root {
+  color-scheme: light;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: theme("colors.white");
+  color: theme("colors.black");
 }
