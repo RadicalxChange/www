@@ -62,8 +62,13 @@ white/yellow-on-black only — **never** yellow/white on yellow/white, and never
 yellow text on white.
 
 `gray` and `red` remain in the config but are **restricted, non-brand** colors kept
-only for functional data-viz on the Community Week NYC microsite. Don't use them on
-brand surfaces.
+only for functional data-viz on the Community Week NYC microsite (pass / disagree vote
+bars). **They are retained intentionally — please don't "tidy them up."** There the
+colors carry _meaning_ (data encoding), not decoration, so they're a different category
+from the brand surface and removing them would break the vote bars. The brand rule
+(black / white / yellow) governs brand surfaces; a data-viz legend is exempt. Revisit
+the encoding only if/when CWNYC gets a visual refresh on its own merits. Don't use them
+on brand surfaces, and don't introduce new usages.
 
 ### Surface & color scheme
 
