@@ -39,15 +39,25 @@ module.exports = {
       body: ["Suisse Intl", "sans-serif"],
     },
     colors: {
-      "golden-fizz": "#EDFF38",
-      "light-gold": "#FAFFC3",
-      red: "#C53030",
+      // ---- Brand palette (locked) — the only colors for brand surfaces ----
+      // Per the RxC Brand Book: black + white + yellow, nothing else. Yellow is
+      // punctuation (marks, underlines, icon circles, one callout), never
+      // wallpaper. Contrast rule (ADA): black-on-yellow, black-on-white, or
+      // white/yellow-on-black only — never yellow/white on yellow/white.
       black: "#000000",
-      "light-black": "#010101",
       white: "#FFFFFF",
-      gray: "#6C6C6C",
+      "golden-fizz": "#EDFF38", // brand yellow
+
       transparent: "transparent",
       current: "currentColor",
+
+      // ---- Restricted (non-brand) — do NOT use on brand surfaces ----
+      // Retained only for functional data-visualization on the Community Week
+      // NYC microsite (pass / disagree vote bars). Not part of the brand
+      // system and slated for removal when that page is redesigned. Do not
+      // introduce new usages — reach for the brand palette above instead.
+      gray: "#6C6C6C",
+      red: "#C53030",
     },
     extend: {
       borderRadius: {
@@ -85,6 +95,13 @@ module.exports = {
       },
       height: { 36: "9rem" },
       spacing: {
+        // Section rhythm — documented vertical-spacing scale (see README →
+        // Design → Spacing). Use these for the gaps BETWEEN structural blocks
+        // (e.g. mb-section, space-y-block, py-section) instead of ad-hoc
+        // mb-16 / mb-8 one-offs, so pages share one calm, consistent rhythm.
+        section: "clamp(4rem, 8vw, 8rem)", // between major page sections
+        block: "clamp(2rem, 4vw, 3rem)", // between blocks within a section
+        element: "1.5rem", // between elements within a block
         margin: "1rem",
         "lg/margin": "1.5rem",
         ymargin: "1rem",
