@@ -67,4 +67,4 @@ The clearest opening is the state-led AI programs now emerging among the "middle
 
 The terms under which AI enters the world are still being set, and they turn on one choice being made now: who owns the value these systems create. It won't be settled by winning the argument and waiting for a statute. It will be settled when the first working pieces are built and the law and the market fall in behind them — the difference between reaching the equilibrium now and reaching it, in Amodei's words, after years of hatred, threats, and mutual acrimony.
 
-*With thanks to Glen Weyl and all the participants in the RadicalxChange salon for their feedback.*
+*With thanks to Glen Weyl and all the participants in the RadicalxChange salon for their feedback. This work was supported by The Rockefeller Foundation.*
