@@ -15,7 +15,7 @@ We're bringing that question to the Dialogue as an official virtual side event �
 
 ## The problem: AI that doesn't see you
 
-Ask a leading AI how to handle a conflict with your in-laws. One tells you to keep a respectful distance. Another says seek compromise — their meddling may come from love. A third suggests journaling. None is *wrong*; there is no fact of the matter. Where there's no right answer, the model's **values** decide — and recent analysis finds frontier models cluster in the worldview of wealthy, secular societies, often more so than the population of any country on earth, reflecting the outlook of almost no major faith community. For much of humanity, that means daily interaction with systems that quietly treat someone else's assumptions as the default. Faith leaders across traditions have begun naming what that costs: not merely being underserved — feeling unseen.
+When you ask an AI a question with no factual answer — a family dilemma, an ethical judgment, a matter of practice or belief — its values shape the response. And those values are not neutral. [Recent analysis by The Economist](https://www.economist.com/briefing/2026/06/25/ai-models-values-are-very-different-from-most-peoples) found that frontier AI models cluster in the worldview of wealthy, secular societies — often more so than the population of any country on earth — and reflect the outlook of almost no major faith community. For much of humanity, that means daily interaction with systems that quietly treat someone else's assumptions as the default. Faith leaders across traditions have begun naming what that costs: not merely being underserved — feeling unseen.
 
 ## A session where the audience is the authors
 
