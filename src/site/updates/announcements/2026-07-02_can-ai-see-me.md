@@ -1,10 +1,9 @@
 ---
-layout: "layouts/blog-post.njk"
-slug: "can-ai-see-me"
+layout: "layouts/announcement.njk"
+slug: "2026-07-can-ai-see-me"
 date: "2026-07-02"
 title: "Can AI See Me? The case for plural AI heads to the UN's Global Dialogue"
 postHeader: "Can AI See Me? The case for plural AI heads to the UN's Global Dialogue"
-postAuthor: "RadicalxChange"
 ---
 
 Three weeks ago, RadicalxChange founder E. Glen Weyl [argued in The Economist](https://www.economist.com/by-invitation/2026/06/11/silicon-valley-needs-to-get-god) that AI will only serve humanity well if the people building it engage the world's faiths and cultures as partners, designing technology that strengthens diverse communities instead of imposing one worldview on everyone.
