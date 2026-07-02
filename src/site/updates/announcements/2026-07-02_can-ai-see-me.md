@@ -8,7 +8,7 @@ postHeader: "Can AI See Me? The case for plural AI heads to the UN's Global Dial
 
 Three weeks ago, RadicalxChange founder E. Glen Weyl [argued in The Economist](https://www.economist.com/by-invitation/2026/06/11/silicon-valley-needs-to-get-god) that AI will only serve humanity well if the people building it engage the world's faiths and cultures as partners, designing technology that strengthens diverse communities instead of imposing one worldview on everyone.
 
-On **Monday 6 July**, that argument goes to the first session of the United Nations [Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en). We're joining an official virtual side event, "Can AI See Me?", convened by our friends at **Parity** with **Sikh LGBT+ Inclusion** and **Free Community Church**, faith leaders and peacebuilders who have been living these questions long before AI made them urgent. Glen, and our Executive Director **Jess Scully**, join them on the virtual stage. And true to the argument, they won't just make the case — they'll open it to a live, global room and ask everyone there to help write the answer.
+On **Monday 6 July**, we are bringing that argument to the first session of the United Nations [Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en). We're co-convening an official virtual side event, "Can AI See Me?", with our friends at **Parity**, **Sikh LGBT+ Inclusion** and **Free Community Church**, faith leaders and peacebuilders who have been living these questions long before AI made them urgent.
 
 **👉 [Register free — Monday 6 July, 2:00pm CEST](https://us02web.zoom.us/webinar/register/WN_tdwSt7bnS9uaUKM2Fd8zpg)** (1pm London · 8am New York · 8pm Singapore · 10pm Sydney)
 
