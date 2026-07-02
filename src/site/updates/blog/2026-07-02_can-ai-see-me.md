@@ -7,7 +7,7 @@ postHeader: "Can AI See Me? We're putting the question to a live global room at 
 postAuthor: "RadicalxChange"
 ---
 
-Three weeks ago, RadicalxChange founder E. Glen Weyl [argued in The Economist]([https://www.economist.com/by-invitation/2026/06/11/silicon-valley-needs-to-get-god]) that the future of AI depends on making room for the world's traditions inside the institutions now building it, protecting rooted communities rather than raising one tower over them all.
+Three weeks ago, RadicalxChange founder E. Glen Weyl [argued in The Economist](https://www.economist.com/by-invitation/2026/06/11/silicon-valley-needs-to-get-god) that the future of AI depends on making room for the world's traditions inside the institutions now building it, protecting rooted communities rather than raising one tower over them all.
 
 On **Monday 6 July**, that argument goes to the first session of the United Nations **Global Dialogue on AI Governance**. We're joining an official virtual side event, "Can AI See Me?", convened by our friends at **Parity** with **Sikh LGBT+ Inclusion** and **Free Community Church** — faith leaders and peacebuilders who have been living these questions long before AI made them urgent. Glen, and our Executive Director **Jess Scully**, join them on the virtual stage. And true to the argument, no one just makes the case: together, they hand it to a live, global room to answer.
 
