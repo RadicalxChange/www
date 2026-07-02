@@ -15,13 +15,13 @@ We're bringing that question to the Dialogue as an official virtual side event �
 
 ## The problem: AI that doesn't see you
 
-When you ask an AI a question with no factual answer — a family dilemma, an ethical judgment, a matter of practice or belief — its values shape the response. And those values are not neutral. [Recent analysis by The Economist](https://www.economist.com/briefing/2026/06/25/ai-models-values-are-very-different-from-most-peoples) found that frontier AI models cluster in the worldview of wealthy, secular societies — often more so than the population of any country on earth — and reflect the outlook of almost no major faith community. For much of humanity, that means daily interaction with systems that quietly treat someone else's assumptions as the default. Faith leaders across traditions have begun naming what that costs: not merely being underserved — feeling unseen.
+When you ask an AI a question with no factual answer — a family dilemma, an ethical judgment, a matter of practice or belief — its values shape the response. And those values are not neutral. [Recent analysis](https://www.economist.com/briefing/2026/06/25/ai-models-values-are-very-different-from-most-peoples) finds that frontier AI models cluster in the worldview of wealthy, secular, Western societies and reflect the outlook of almost no major faith community. For much of humanity, that means daily interaction with systems that quietly treat someone else's assumptions as the default. Faith leaders across traditions have begun naming that feeling of being unseen.
 
-## A session where the audience is the authors
+## A session where the audience are the authors
 
-RadicalxChange advances **plurality**: human participation at the centre, technology as a means of cooperating across difference rather than flattening it. So this session is built to practise what it argues.
+RadicalxChange advances **plurality**: human participation at the centre, technology as a means of cooperating across difference rather than flattening it. So this session is built to practise what it argues. RxC founder E. Glen Weyl made this case in [a recent essay in The Economist]([https://www.economist.com/by-invitation/2026/06/11/silicon-valley-needs-to-get-god]), arguing that the partnership between technology and the world's traditions — protecting many rooted communities rather than building one tower over them — is the path to AI that carries humanity along. On Monday, he brings that argument to the UN, and this session is built to practise it.
 
-After short lived-experience testimony from faith leaders in the UK, Singapore, and the US — and a governance bridge from RxC founder **E. Glen Weyl** — facilitator **Jess Scully** opens a live **Pol.is** deliberation around one question: *what would AI governance need to do so that everyone in this room felt seen by AI?* Everyone votes, everyone can add statements, and the algorithm surfaces the points that **bridge** groups who otherwise disagree — common ground, not the loudest voice.
+After short lived-experience testimony from faith leaders in the UK, Singapore, and the US — and a bridge from Glen — facilitator **Jess Scully** opens a live **Pol.is** deliberation around one question: *what would AI governance need to do so that everyone in this room felt seen by AI?* Everyone votes, everyone can add statements, and the algorithm surfaces the points that **bridge** groups who otherwise disagree — common ground, not the loudest voice.
 
 The deliberation stays open for 24 hours after the session. Then a **Quadratic Voting** round asks participants to weigh the real tensions — personalisation versus protection, pluralism versus capability — and set shared priorities. The result, the participant-authored **"Geneva Reflection" principles**, will be compiled and submitted to the Dialogue's Joint Secretariat: perspectives from communities too often absent from the rooms where AI is decided, carried into them.
 
@@ -35,7 +35,7 @@ The deliberation stays open for 24 hours after the session. Then a **Quadratic V
 
 ## Come ready to participate
 
-The session runs 45 minutes and your voice is part of the design. Registrants will also receive an optional five-minute values-discernment exercise built on the Personal Moral Compass — a small taste, before the event, of what AI that *asks who you are* feels like.
+The session runs 45 minutes and your voice is part of the design. Registrants will also receive an optional five-minute values-discernment exercise built on the Personal Moral Compass — a small taste of what AI that *asks who you are* feels like.
 
 **🗓 Monday 6 July 2026 · 2:00–2:45pm CEST · 👉 [Register](https://us02web.zoom.us/webinar/register/WN_tdwSt7bnS9uaUKM2Fd8zpg)**
 
