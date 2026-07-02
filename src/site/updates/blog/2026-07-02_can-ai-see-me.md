@@ -9,7 +9,7 @@ postAuthor: "RadicalxChange"
 
 Three weeks ago, RadicalxChange founder E. Glen Weyl [argued in The Economist](https://www.economist.com/by-invitation/2026/06/11/silicon-valley-needs-to-get-god) that AI will only serve humanity well if the people building it engage the world's faiths and cultures as partners, designing technology that strengthens diverse communities instead of imposing one worldview on everyone.
 
-On **Monday 6 July**, that argument goes to the first session of the United Nations **Global Dialogue on AI Governance**. We're joining an official virtual side event, "Can AI See Me?", convened by our friends at **Parity** with **Sikh LGBT+ Inclusion** and **Free Community Church**, faith leaders and peacebuilders who have been living these questions long before AI made them urgent. Glen, and our Executive Director **Jess Scully**, join them on the virtual stage. And true to the argument, they won't just make the case — they'll open it to a live, global room and ask everyone there to help write the answer.
+On **Monday 6 July**, that argument goes to the first session of the United Nations [Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en). We're joining an official virtual side event, "Can AI See Me?", convened by our friends at **Parity** with **Sikh LGBT+ Inclusion** and **Free Community Church**, faith leaders and peacebuilders who have been living these questions long before AI made them urgent. Glen, and our Executive Director **Jess Scully**, join them on the virtual stage. And true to the argument, they won't just make the case — they'll open it to a live, global room and ask everyone there to help write the answer.
 
 **👉 [Register free — Monday 6 July, 2:00pm CEST](https://us02web.zoom.us/webinar/register/WN_tdwSt7bnS9uaUKM2Fd8zpg)** (1pm London · 8am New York · 8pm Singapore · 10pm Sydney)
 
@@ -37,4 +37,4 @@ The session runs 45 minutes and your voice is part of the design. Registrants wi
 
 **🗓 Monday 6 July 2026 · 2:00–2:45pm CEST · 👉 [Register](https://us02web.zoom.us/webinar/register/WN_tdwSt7bnS9uaUKM2Fd8zpg)**
 
-*"Can AI See Me? Human Dignity, Identity, and Moral Agency in Global AI Governance" is convened by Parity with Sikh LGBT+ Inclusion, Free Community Church, and RadicalxChange Foundation as an online side event of the UN Global Dialogue on AI Governance (6–7 July 2026, Palexpo, Geneva).*
+*"Can AI See Me? Human Dignity, Identity, and Moral Agency in Global AI Governance" is convened by Parity with Sikh LGBT+ Inclusion, Free Community Church, and RadicalxChange Foundation as an online side event of the [UN Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en) (6–7 July 2026, Palexpo, Geneva).*
