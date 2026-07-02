@@ -2,14 +2,14 @@
 layout: "layouts/blog-post.njk"
 slug: "can-ai-see-me"
 date: "2026-07-02"
-title: "Can AI See Me? We're putting the question to a live global room at the UN"
-postHeader: "Can AI See Me? We're putting the question to a live global room at the UN"
+title: "Can AI See Me? The case for plural AI heads to the UN's Global Dialogue"
+postHeader: "Can AI See Me? The case for plural AI heads to the UN's Global Dialogue"
 postAuthor: "RadicalxChange"
 ---
 
 Three weeks ago, RadicalxChange founder E. Glen Weyl [argued in The Economist](https://www.economist.com/by-invitation/2026/06/11/silicon-valley-needs-to-get-god) that AI will only serve humanity well if the people building it engage the world's faiths and cultures as partners, designing technology that strengthens diverse communities instead of imposing one worldview on everyone.
 
-On **Monday 6 July**, that argument goes to the first session of the United Nations **Global Dialogue on AI Governance**. We're joining an official virtual side event, "Can AI See Me?", convened by our friends at **Parity** with **Sikh LGBT+ Inclusion** and **Free Community Church** — faith leaders and peacebuilders who have been living these questions long before AI made them urgent. Glen, and our Executive Director **Jess Scully**, join them on the virtual stage. And true to the argument, no one just makes the case: together, they hand it to a live, global room to answer.
+On **Monday 6 July**, that argument goes to the first session of the United Nations **Global Dialogue on AI Governance**. We're joining an official virtual side event, "Can AI See Me?", convened by our friends at **Parity** with **Sikh LGBT+ Inclusion** and **Free Community Church**, faith leaders and peacebuilders who have been living these questions long before AI made them urgent. Glen, and our Executive Director **Jess Scully**, join them on the virtual stage. And true to the argument, they won't just make the case — they'll open it to a live, global room and ask everyone there to help write the answer.
 
 **👉 [Register free — Monday 6 July, 2:00pm CEST](https://us02web.zoom.us/webinar/register/WN_tdwSt7bnS9uaUKM2Fd8zpg)** (1pm London · 8am New York · 8pm Singapore · 10pm Sydney)
 
@@ -21,7 +21,7 @@ When you ask an AI a question with no factual answer — a family dilemma, an et
 
 After short lived-experience testimony from faith leaders in the UK, Singapore, and the US, Glen and Jess will open a live **Pol.is** deliberation around one question: *what would AI governance need to do so that everyone in this room felt seen by AI?*
 
-The deliberation stays open for 24 hours after the session. Then a **Quadratic Voting** round asks participants to weigh the real tensions — personalization versus protection, pluralism versus capability — and set shared priorities. The result, the participant-authored **"Geneva Reflection" principles**, will be compiled and submitted to the Dialogue's Joint Secretariat: perspectives from communities too often absent from the rooms where AI is decided, carried into them.
+The deliberation stays open for 24 hours after the session. Then a **Quadratic Voting** round asks participants to weigh the real tensions — personalization versus protection, pluralism versus capability — and set shared priorities. The result — the participant-authored **"Geneva Reflection" principles** — will be submitted to the Dialogue's Joint Secretariat, carrying perspectives from communities too often absent from the rooms where AI is decided.
 
 ## Who you'll hear from
 
@@ -33,7 +33,7 @@ The deliberation stays open for 24 hours after the session. Then a **Quadratic V
 
 ## Come ready to participate
 
-The session runs 45 minutes and your voice is part of the design. Registrants will also receive an optional five-minute values-discernment exercise built on the Personal Moral Compass — a small taste of what AI that *asks who you are* feels like.
+The session runs 45 minutes and your voice is part of the design. Registrants will also receive an optional five-minute values-discernment exercise built on the Personal Moral Compass — a small preview of what it feels like when an AI starts by asking *who you are*.
 
 **🗓 Monday 6 July 2026 · 2:00–2:45pm CEST · 👉 [Register](https://us02web.zoom.us/webinar/register/WN_tdwSt7bnS9uaUKM2Fd8zpg)**
 
