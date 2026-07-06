@@ -117,7 +117,7 @@
       "title": "Strange bedfellows",
       "caption": "Boundary Keepers and Recognition Seekers disagree about almost everything above — most of all about whose job it is to reflect a culture's values. But on one thing they speak with a single voice: they do not want AI to know them intimately. “I don't want to feel seen by AI” carried both groups decisively, against the one group that welcomes that closeness.",
       "reading": "How to read the cards: in each one, groups A and C — the rivals of the divide above — lean the same way, while B stands apart. That inversion of the room's main fault line is the finding.",
-      "takeaway": "This is the room's hidden second consensus: whatever else AI becomes, the right not to be intimately known by it must be protected. It enters the ballot below as",
+      "takeaway": "This is the room's hidden second consensus: whatever else AI becomes, the right not to be intimately known by it must be protected. It surfaces in the draft ideas below as",
       "takeaway_link_label": "P10 — the right not to be seen",
       "statements": [23, 30, 55],
       "cross_ref_note": "The divide these two groups are known for:"
@@ -163,7 +163,7 @@
       },
       {
         "label": "Reflections Working Group",
-        "detail": "Participants refine the draft principles below into a final ballot.",
+        "detail": "Where we are now: participants are making sense of these results together and distilling them into ballot items.",
         "status": "current"
       },
       {
@@ -178,9 +178,10 @@
       }
     ],
     "qv_explainer": "Quadratic voting measures how much people care, not just what they prefer. Each voter gets the same budget of credits; one vote for a principle costs 1 credit, two votes cost 4, three cost 9. Spreading credits is cheap, piling them on one priority is expensive — so the results reveal intensity honestly.",
-    "qv_pending_note": "The quadratic vote is not yet open. Once it closes, the results — credits allocated per principle — will appear here.",
-    "principles_title": "The draft ballot: ten principles",
-    "principles_intro": "Drafted from the deliberation record by the conveners, for the Reflections Working Group to refine. Expand a principle to see the statements that ground it. Two principles sit on live tensions the room did not resolve; the quadratic vote will weigh them.",
+    "qv_pending_note": "The quadratic vote opens once the Reflections Working Group has settled the ballot. When it closes, the results — credits allocated per item — will appear here.",
+    "principles_title": "Ten ideas for ballot items",
+    "principles_intro": "These are starting points, not a finished ballot: readings of the deliberation record, distilled into the kind of principles the room seemed to be asking for. The Reflections Working Group is making sense of the Pol.is results now, and these ideas are theirs to challenge, rewrite, merge, or replace — each one cites the statements it is drawn from, so the drafting can be checked against the votes. Two sit on live tensions the room did not resolve; if they survive revision, the quadratic vote will weigh them.",
+    "feedback_ask": "If you took part in the event: do these ideas capture what you said — and what did we miss? Tell us which to keep, rework, or drop.",
     "principles": [
       { "id": "P1", "title": "Contestability", "text": "Guarantee communities a binding, resourced channel to challenge how an AI system represents their tradition and to get errors fixed.", "grounding": [2, 10, 45], "tension": false },
       { "id": "P2", "title": "Answerability of value-setters", "text": "Make whoever sets an AI system's values legally accountable, through enforceable regulation, to the people affected.", "grounding": [10, 21, 20], "tension": false },

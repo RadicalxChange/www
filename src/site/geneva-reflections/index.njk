@@ -340,7 +340,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
          credits bar and the list re-sorts by credits, descending — no
          restructuring needed. #}
       {% if QV.status != "final" %}
-      <p class="gr-counts mb-6"><strong class="text-black">Voting opens soon.</strong> {{ C.pipeline.qv_pending_note }}</p>
+      <p class="gr-counts mb-6"><strong class="text-black">The ballot is still taking shape.</strong> {{ C.pipeline.qv_pending_note }}</p>
       {% endif %}
       <ol class="gr-ballot">
         {% for q in QV.sorted %}
@@ -369,6 +369,9 @@ description: "What would AI governance need to do so that everyone felt seen by 
       </ol>
       {% if QV.status == "final" and QV.voters %}
       <p class="gr-counts mt-2">{{ QV.voters }} voters{% if QV.credits_per_voter %}, {{ QV.credits_per_voter }} credits each{% endif %}.</p>
+      {% endif %}
+      {% if QV.status != "final" %}
+      <p class="gr-prose text-size--1 mt-8"><strong>{{ C.pipeline.feedback_ask }}</strong> Share your revisions through the <a class="underline" href="{{ C.footer.rwg_signup_url }}">Reflections Working Group</a>{% if C.footer.contact_email %} or write to <a class="underline" href="mailto:{{ C.footer.contact_email }}">{{ C.footer.contact_email }}</a>{% endif %}.</p>
       {% endif %}
     </div>
   </section>
