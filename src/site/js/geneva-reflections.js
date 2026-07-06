@@ -6,6 +6,30 @@
 (function () {
   "use strict";
 
+  // Session recording: click-to-load YouTube embed. Until the visitor
+  // presses play, nothing is requested from YouTube (the facade is plain
+  // HTML/CSS); without JS the facade is a normal link to the video.
+  var video = document.querySelector(".gr-video[data-youtube-id]");
+  if (video) {
+    var facade = video.querySelector(".gr-video-facade");
+    facade.addEventListener("click", function (e) {
+      e.preventDefault();
+      var iframe = document.createElement("iframe");
+      iframe.src =
+        "https://www.youtube-nocookie.com/embed/" +
+        encodeURIComponent(video.getAttribute("data-youtube-id")) +
+        "?autoplay=1";
+      iframe.title = "Session recording (YouTube)";
+      iframe.setAttribute(
+        "allow",
+        "autoplay; encrypted-media; picture-in-picture"
+      );
+      iframe.setAttribute("allowfullscreen", "");
+      video.replaceChild(iframe, facade);
+      iframe.focus();
+    });
+  }
+
   var table = document.getElementById("gr-explorer-table");
   var filters = document.getElementById("gr-filters");
   if (!table || !filters) return;
