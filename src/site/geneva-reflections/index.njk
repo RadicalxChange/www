@@ -209,7 +209,6 @@ description: "What would AI governance need to do so that everyone felt seen by 
         <span><span class="gr-swatch" style="background:#1a1a1a"></span>agree</span>
         <span><span class="gr-swatch" style="background:#d9d9d9"></span>pass</span>
         <span><span class="gr-swatch" style="background:repeating-linear-gradient(-45deg,#fff,#fff 3px,#6c6c6c 3px,#6c6c6c 4px)"></span>disagree</span>
-        <span>{{ C.legend_note }}</span>
       </div>
       <div class="grid gap-x-8 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
         {% for theme in C.consensus.themes %}
@@ -319,22 +318,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
     </div>
   </section>
 
-  {# ---------- 5. reading these numbers (quiet, stated once) ---------- #}
-  <section id="notes" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-note">
-      <h2 class="mb-4">{{ C.notes.title }}</h2>
-      <div class="grid gap-6 md:grid-cols-2">
-        {% for note in C.notes.items %}
-        <div>
-          <h3 class="mb-1">{{ note.title }}</h3>
-          <p>{{ note.text }}</p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  {# ---------- 6. what happens next ---------- #}
+  {# ---------- 5. what happens next ---------- #}
   <section id="next" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <h2 class="mb-6">{{ C.pipeline.title }}</h2>
