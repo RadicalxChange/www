@@ -1,0 +1,3170 @@
+{
+ "export": "2026-07-06-1505-3fsymhkn53",
+ "earlier_export": "2026-07-06-0900-3fsymhkn53",
+ "method": {
+  "blocs": {
+   "A": 13,
+   "C": 22,
+   "outlier_pair": 2,
+   "unclustered": 2,
+   "note": "bloc tallies include the facilitator seed account inside A (all passes); participant-level records exclude it"
+  },
+  "noise_statements": [
+   22,
+   72,
+   75
+  ],
+  "excluded_from_rankings": [
+   22,
+   72,
+   75,
+   83
+  ],
+  "axis_x_bundle": {
+   "0": "+",
+   "35": "+",
+   "76": "+",
+   "77": "+",
+   "15": "+",
+   "3": "+",
+   "41": "+",
+   "9": "-"
+  },
+  "axis_y_bundle": {
+   "4": "+",
+   "12": "+",
+   "1": "+",
+   "23": "-",
+   "30": "-",
+   "55": "-",
+   "33": "-"
+  },
+  "axis_min_votes": 3,
+  "quadrant_threshold": 0.1,
+  "thin_data_below": 5
+ },
+ "stats": {
+  "voters": 38,
+  "total_votes": 2307,
+  "statements": 84,
+  "live_statements": 64
+ },
+ "axes": {
+  "correlation_xy": -0.2949,
+  "split_half_x": 0.5774,
+  "split_half_y": 0.824,
+  "scorable": 34,
+  "quadrants": {
+   "authorship_averse": 18,
+   "authorship_comfortable": 6,
+   "boundaries_averse": 4,
+   "boundaries_comfortable": 1,
+   "mid_zone": 5
+  }
+ },
+ "cohorts": {
+  "intimacy_comfortable_on_16": {
+   "n": 10,
+   "endorsed_16": 8,
+   "opposed_16": 1,
+   "passed_16": 0,
+   "did_not_see_16": 1
+  },
+  "agreed_both_23_and_30": 12,
+  "authorship_comfortable_builders": {
+   "n": 6,
+   "on_15": {
+    "agrees": 5,
+    "disagrees": 0,
+    "passes": 1,
+    "votes": 6
+   },
+   "on_12": {
+    "agrees": 2,
+    "disagrees": 3,
+    "passes": 0,
+    "votes": 5
+   },
+   "rest_of_C_on_12": {
+    "agrees": 3,
+    "disagrees": 11,
+    "passes": 3,
+    "votes": 17
+   }
+  }
+ },
+ "consensus_ranking": [
+  2,
+  68,
+  67,
+  42,
+  21,
+  65,
+  13,
+  74,
+  52,
+  53,
+  58,
+  25,
+  16,
+  6,
+  37,
+  82,
+  47,
+  48,
+  62,
+  69,
+  10,
+  19,
+  26,
+  51,
+  50,
+  60,
+  28,
+  46,
+  71,
+  14,
+  5,
+  17,
+  23,
+  30,
+  45,
+  56,
+  63,
+  32,
+  36,
+  41,
+  55,
+  61,
+  80,
+  7,
+  27,
+  15,
+  38,
+  40,
+  54,
+  20,
+  31,
+  8,
+  18,
+  3,
+  49,
+  59,
+  73,
+  11,
+  57,
+  64,
+  70,
+  39,
+  43,
+  29,
+  9,
+  33,
+  1,
+  12,
+  24,
+  0,
+  66,
+  79,
+  34,
+  77,
+  78,
+  35,
+  76,
+  4,
+  44,
+  81
+ ],
+ "top10_consensus": [
+  {
+   "id": 2,
+   "source": "seed"
+  },
+  {
+   "id": 68,
+   "source": "live"
+  },
+  {
+   "id": 67,
+   "source": "live"
+  },
+  {
+   "id": 42,
+   "source": "live"
+  },
+  {
+   "id": 21,
+   "source": "live"
+  },
+  {
+   "id": 65,
+   "source": "live"
+  },
+  {
+   "id": 13,
+   "source": "seed"
+  },
+  {
+   "id": 74,
+   "source": "live"
+  },
+  {
+   "id": 52,
+   "source": "live"
+  },
+  {
+   "id": 53,
+   "source": "live"
+  }
+ ],
+ "participants": [
+  {
+   "bloc": "C",
+   "n_votes": 84,
+   "x": 0.75,
+   "y": -0.1429,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 80,
+   "x": 1.0,
+   "y": 0.0,
+   "quadrant": "mid_zone"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 80,
+   "x": 0.75,
+   "y": -0.5714,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "other",
+   "n_votes": 83,
+   "x": 0.125,
+   "y": 0.2857,
+   "quadrant": "authorship_comfortable"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 34,
+   "x": 0.0,
+   "y": -0.1667,
+   "quadrant": "mid_zone"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 80,
+   "x": -0.25,
+   "y": -0.8571,
+   "quadrant": "boundaries_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 16,
+   "x": null,
+   "y": null
+  },
+  {
+   "bloc": "C",
+   "n_votes": 41,
+   "x": 1.0,
+   "y": -1.0,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 81,
+   "x": -0.125,
+   "y": -1.0,
+   "quadrant": "boundaries_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 83,
+   "x": 0.875,
+   "y": -0.7143,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 82,
+   "x": 0.875,
+   "y": -0.7143,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 81,
+   "x": -0.125,
+   "y": -0.7143,
+   "quadrant": "boundaries_averse"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 83,
+   "x": 0.125,
+   "y": 0.1429,
+   "quadrant": "authorship_comfortable"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 56,
+   "x": 0.6667,
+   "y": 0.0,
+   "quadrant": "mid_zone"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 36,
+   "x": 0.1667,
+   "y": -0.2,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 81,
+   "x": 1.0,
+   "y": -0.4286,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 83,
+   "x": 0.875,
+   "y": 0.5714,
+   "quadrant": "authorship_comfortable"
+  },
+  {
+   "bloc": "other",
+   "n_votes": 79,
+   "x": 0.0,
+   "y": 1.0,
+   "quadrant": "mid_zone"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 37,
+   "x": 0.6,
+   "y": -0.5,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 81,
+   "x": 1.0,
+   "y": -0.5714,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 81,
+   "x": 0.875,
+   "y": -0.8571,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 7,
+   "x": null,
+   "y": 0.6667
+  },
+  {
+   "bloc": "C",
+   "n_votes": 83,
+   "x": 0.75,
+   "y": -0.2857,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 82,
+   "x": 0.875,
+   "y": -0.4286,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 81,
+   "x": 0.375,
+   "y": 0.1429,
+   "quadrant": "authorship_comfortable"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 78,
+   "x": 0.375,
+   "y": -0.4286,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 36,
+   "x": -0.2,
+   "y": -0.3333,
+   "quadrant": "boundaries_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 51,
+   "x": 0.3333,
+   "y": -0.6,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 25,
+   "x": -0.3333,
+   "y": 1.0,
+   "quadrant": "boundaries_comfortable"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 32,
+   "x": 0.5,
+   "y": -0.2,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 34,
+   "x": 0.5,
+   "y": 0.1667,
+   "quadrant": "authorship_comfortable"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 52,
+   "x": 0.0,
+   "y": 0.0,
+   "quadrant": "mid_zone"
+  },
+  {
+   "bloc": "A",
+   "n_votes": 36,
+   "x": 0.1667,
+   "y": 0.3333,
+   "quadrant": "authorship_comfortable"
+  },
+  {
+   "bloc": "C",
+   "n_votes": 81,
+   "x": 0.75,
+   "y": -0.5714,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "unclustered",
+   "n_votes": 1,
+   "x": null,
+   "y": null
+  },
+  {
+   "bloc": "A",
+   "n_votes": 82,
+   "x": 0.125,
+   "y": -0.1429,
+   "quadrant": "authorship_averse"
+  },
+  {
+   "bloc": "unclustered",
+   "n_votes": 1,
+   "x": null,
+   "y": null
+  },
+  {
+   "bloc": "A",
+   "n_votes": 83,
+   "x": 0.25,
+   "y": -0.2857,
+   "quadrant": "authorship_averse"
+  }
+ ],
+ "statements": {
+  "0": {
+   "id": 0,
+   "text": "AI talks about my faith or culture like an outsider describing it.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 14,
+    "disagrees": 3,
+    "passes": 18,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 0,
+     "passes": 11,
+     "votes": 13,
+     "agree_rate": 0.1538,
+     "thin": false
+    },
+    "C": {
+     "agrees": 12,
+     "disagrees": 2,
+     "passes": 6,
+     "votes": 20,
+     "agree_rate": 0.6,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1538
+  },
+  "1": {
+   "id": 1,
+   "text": "AI has helped me go deeper into my own tradition.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 9,
+    "disagrees": 13,
+    "passes": 13,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 4,
+     "passes": 6,
+     "votes": 12,
+     "agree_rate": 0.1667,
+     "thin": false
+    },
+    "C": {
+     "agrees": 6,
+     "disagrees": 9,
+     "passes": 6,
+     "votes": 21,
+     "agree_rate": 0.2857,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1667
+  },
+  "2": {
+   "id": 2,
+   "text": "Communities must have a real way to challenge how an AI represents their tradition, and get errors fixed",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 32,
+    "disagrees": 0,
+    "passes": 1,
+    "votes": 33
+   },
+   "blocs": {
+    "A": {
+     "agrees": 10,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 11,
+     "agree_rate": 0.9091,
+     "thin": false
+    },
+    "C": {
+     "agrees": 20,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 20,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.9091
+  },
+  "3": {
+   "id": 3,
+   "text": "Communities should be able to build or shape AI tuned to their own values.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 24,
+    "disagrees": 3,
+    "passes": 9,
+    "votes": 36
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 2,
+     "passes": 7,
+     "votes": 13,
+     "agree_rate": 0.3077,
+     "thin": false
+    },
+    "C": {
+     "agrees": 18,
+     "disagrees": 1,
+     "passes": 2,
+     "votes": 21,
+     "agree_rate": 0.8571,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.3077
+  },
+  "4": {
+   "id": 4,
+   "text": "The benefits of AI knowing me personally outweigh the privacy risks.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 6,
+    "disagrees": 20,
+    "passes": 10,
+    "votes": 36
+   },
+   "blocs": {
+    "A": {
+     "agrees": 0,
+     "disagrees": 7,
+     "passes": 5,
+     "votes": 12,
+     "agree_rate": 0.0,
+     "thin": false
+    },
+    "C": {
+     "agrees": 5,
+     "disagrees": 12,
+     "passes": 5,
+     "votes": 22,
+     "agree_rate": 0.2273,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.0
+  },
+  "5": {
+   "id": 5,
+   "text": "AI should not understand me so well that it can manipulate me.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 22,
+    "disagrees": 6,
+    "passes": 5,
+    "votes": 33
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 2,
+     "passes": 4,
+     "votes": 12,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 16,
+     "disagrees": 2,
+     "passes": 1,
+     "votes": 19,
+     "agree_rate": 0.8421,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5
+  },
+  "6": {
+   "id": 6,
+   "text": "Communities that build AI on their members' data owe each member visibility into their own record before anyone else sees it.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 29,
+    "disagrees": 2,
+    "passes": 4,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 8,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 12,
+     "agree_rate": 0.6667,
+     "thin": false
+    },
+    "C": {
+     "agrees": 19,
+     "disagrees": 1,
+     "passes": 1,
+     "votes": 21,
+     "agree_rate": 0.9048,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6667
+  },
+  "7": {
+   "id": 7,
+   "text": "Developers must measure and report how their systems respond when users try to disengage.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 28,
+    "disagrees": 0,
+    "passes": 8,
+    "votes": 36
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 7,
+     "votes": 12,
+     "agree_rate": 0.4167,
+     "thin": false
+    },
+    "C": {
+     "agrees": 21,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 22,
+     "agree_rate": 0.9545,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4167
+  },
+  "8": {
+   "id": 8,
+   "text": "AI mostly reflects the values of wealthy, secular societies rather than the whole world and that is a major problem.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 23,
+    "disagrees": 1,
+    "passes": 9,
+    "votes": 33
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 8,
+     "votes": 12,
+     "agree_rate": 0.3333,
+     "thin": false
+    },
+    "C": {
+     "agrees": 18,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 19,
+     "agree_rate": 0.9474,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.3333
+  },
+  "9": {
+   "id": 9,
+   "text": "It isn't AI's job to reflect every culture's values.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 10,
+    "disagrees": 15,
+    "passes": 11,
+    "votes": 36
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 0,
+     "passes": 7,
+     "votes": 13,
+     "agree_rate": 0.4615,
+     "thin": false
+    },
+    "C": {
+     "agrees": 4,
+     "disagrees": 13,
+     "passes": 4,
+     "votes": 21,
+     "agree_rate": 0.1905,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1905
+  },
+  "10": {
+   "id": 10,
+   "text": "Whoever sets an AI's values should be answerable to the people who are affected by that AI.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 28,
+    "disagrees": 2,
+    "passes": 5,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 8,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 13,
+     "agree_rate": 0.6154,
+     "thin": false
+    },
+    "C": {
+     "agrees": 19,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 20,
+     "agree_rate": 0.95,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6154
+  },
+  "11": {
+   "id": 11,
+   "text": "Governments should have a bigger role than companies in deciding what values AI reflects.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 18,
+    "disagrees": 5,
+    "passes": 10,
+    "votes": 33
+   },
+   "blocs": {
+    "A": {
+     "agrees": 3,
+     "disagrees": 3,
+     "passes": 5,
+     "votes": 11,
+     "agree_rate": 0.2727,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 2,
+     "passes": 5,
+     "votes": 20,
+     "agree_rate": 0.65,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.2727
+  },
+  "12": {
+   "id": 12,
+   "text": "It's fine to rely on AI for moral or spiritual guidance.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 8,
+    "disagrees": 18,
+    "passes": 8,
+    "votes": 34
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 5,
+     "passes": 5,
+     "votes": 12,
+     "agree_rate": 0.1667,
+     "thin": false
+    },
+    "C": {
+     "agrees": 5,
+     "disagrees": 12,
+     "passes": 3,
+     "votes": 20,
+     "agree_rate": 0.25,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1667
+  },
+  "13": {
+   "id": 13,
+   "text": "Some questions should only be answered by a person, never by an AI.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 26,
+    "disagrees": 2,
+    "passes": 7,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 10,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 13,
+     "agree_rate": 0.7692,
+     "thin": false
+    },
+    "C": {
+     "agrees": 16,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 20,
+     "agree_rate": 0.8,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.7692
+  },
+  "14": {
+   "id": 14,
+   "text": "I'd rather AI help me think through a hard decision than give me the answer.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 28,
+    "disagrees": 2,
+    "passes": 5,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 7,
+     "disagrees": 1,
+     "passes": 5,
+     "votes": 13,
+     "agree_rate": 0.5385,
+     "thin": false
+    },
+    "C": {
+     "agrees": 19,
+     "disagrees": 1,
+     "passes": 0,
+     "votes": 20,
+     "agree_rate": 0.95,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5385
+  },
+  "15": {
+   "id": 15,
+   "text": "If a community I cared about built its own AI, I'd want to use it.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 24,
+    "disagrees": 1,
+    "passes": 10,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 1,
+     "passes": 7,
+     "votes": 13,
+     "agree_rate": 0.3846,
+     "thin": false
+    },
+    "C": {
+     "agrees": 18,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 20,
+     "agree_rate": 0.9,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.3846
+  },
+  "16": {
+   "id": 16,
+   "text": "AI should be designed to prevent emotional over-dependence, even if users want that closeness.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 30,
+    "disagrees": 2,
+    "passes": 3,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 9,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 13,
+     "agree_rate": 0.6923,
+     "thin": false
+    },
+    "C": {
+     "agrees": 20,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 20,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6923
+  },
+  "17": {
+   "id": 17,
+   "text": "An AI trained on a community's teachings could deepen practice rather than replace it.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 27,
+    "disagrees": 1,
+    "passes": 6,
+    "votes": 34
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 1,
+     "passes": 5,
+     "votes": 12,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 19,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 20,
+     "agree_rate": 0.95,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5
+  },
+  "18": {
+   "id": 18,
+   "text": "Using new tools to pass on old traditions is itself a tradition.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 24,
+    "disagrees": 1,
+    "passes": 10,
+    "votes": 35
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 8,
+     "votes": 12,
+     "agree_rate": 0.3333,
+     "thin": false
+    },
+    "C": {
+     "agrees": 18,
+     "disagrees": 1,
+     "passes": 2,
+     "votes": 21,
+     "agree_rate": 0.8571,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.3333
+  },
+  "19": {
+   "id": 19,
+   "text": "I worry about how AI will change the way communities pass traditions to the next generation.",
+   "source": "seed",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 26,
+    "disagrees": 2,
+    "passes": 8,
+    "votes": 36
+   },
+   "blocs": {
+    "A": {
+     "agrees": 8,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 13,
+     "agree_rate": 0.6154,
+     "thin": false
+    },
+    "C": {
+     "agrees": 17,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 21,
+     "agree_rate": 0.8095,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6154
+  },
+  "20": {
+   "id": 20,
+   "text": "Lots of AI Governance work has no impact in the tech companies",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 17,
+    "disagrees": 4,
+    "passes": 12,
+    "votes": 33
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 2,
+     "passes": 5,
+     "votes": 11,
+     "agree_rate": 0.3636,
+     "thin": false
+    },
+    "C": {
+     "agrees": 12,
+     "disagrees": 2,
+     "passes": 6,
+     "votes": 20,
+     "agree_rate": 0.6,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.3636
+  },
+  "21": {
+   "id": 21,
+   "text": "Regulation is a necessity",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 29,
+    "disagrees": 0,
+    "passes": 3,
+    "votes": 32
+   },
+   "blocs": {
+    "A": {
+     "agrees": 10,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 12,
+     "agree_rate": 0.8333,
+     "thin": false
+    },
+    "C": {
+     "agrees": 17,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 18,
+     "agree_rate": 0.9444,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.8333
+  },
+  "22": {
+   "id": 22,
+   "text": "Agree",
+   "source": "live",
+   "noise": true,
+   "excluded_from_rankings": true,
+   "total": {
+    "agrees": 5,
+    "disagrees": 0,
+    "passes": 14,
+    "votes": 19
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 4,
+     "agree_rate": 0.25,
+     "thin": true
+    },
+    "C": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 10,
+     "votes": 14,
+     "agree_rate": 0.2857,
+     "thin": false
+    }
+   }
+  },
+  "23": {
+   "id": 23,
+   "text": "I don’t want to feel seen by AI.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 17,
+    "disagrees": 8,
+    "passes": 8,
+    "votes": 33
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 1,
+     "passes": 5,
+     "votes": 12,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 11,
+     "disagrees": 5,
+     "passes": 3,
+     "votes": 19,
+     "agree_rate": 0.5789,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5
+  },
+  "24": {
+   "id": 24,
+   "text": "AI must be build bottom-up",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 13,
+    "disagrees": 2,
+    "passes": 17,
+    "votes": 32
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 1,
+     "passes": 9,
+     "votes": 12,
+     "agree_rate": 0.1667,
+     "thin": false
+    },
+    "C": {
+     "agrees": 10,
+     "disagrees": 0,
+     "passes": 8,
+     "votes": 18,
+     "agree_rate": 0.5556,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1667
+  },
+  "25": {
+   "id": 25,
+   "text": "As it currently exists, AI erodes autonomy and consent.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 23,
+    "disagrees": 1,
+    "passes": 7,
+    "votes": 31
+   },
+   "blocs": {
+    "A": {
+     "agrees": 7,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 10,
+     "agree_rate": 0.7,
+     "thin": false
+    },
+    "C": {
+     "agrees": 15,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 19,
+     "agree_rate": 0.7895,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.7
+  },
+  "26": {
+   "id": 26,
+   "text": "AI often sounds like an amalgamation of voices -flattening out individuality and uniqueness",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 25,
+    "disagrees": 2,
+    "passes": 3,
+    "votes": 30
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 2,
+     "passes": 2,
+     "votes": 10,
+     "agree_rate": 0.6,
+     "thin": false
+    },
+    "C": {
+     "agrees": 17,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 18,
+     "agree_rate": 0.9444,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6
+  },
+  "27": {
+   "id": 27,
+   "text": "AI being used for the male loneliness epidemic is a problem.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 23,
+    "disagrees": 3,
+    "passes": 6,
+    "votes": 32
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 1,
+     "passes": 5,
+     "votes": 10,
+     "agree_rate": 0.4,
+     "thin": false
+    },
+    "C": {
+     "agrees": 19,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 20,
+     "agree_rate": 0.95,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4
+  },
+  "28": {
+   "id": 28,
+   "text": "There is no universal value, but pluriversal values",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 16,
+    "disagrees": 2,
+    "passes": 10,
+    "votes": 28
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 10,
+     "agree_rate": 0.6,
+     "thin": false
+    },
+    "C": {
+     "agrees": 9,
+     "disagrees": 1,
+     "passes": 6,
+     "votes": 16,
+     "agree_rate": 0.5625,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5625
+  },
+  "29": {
+   "id": 29,
+   "text": "AI often removes the edginess - making things less controversial",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 18,
+    "disagrees": 2,
+    "passes": 10,
+    "votes": 30
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 2,
+     "passes": 6,
+     "votes": 10,
+     "agree_rate": 0.2,
+     "thin": false
+    },
+    "C": {
+     "agrees": 14,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 17,
+     "agree_rate": 0.8235,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.2
+  },
+  "30": {
+   "id": 30,
+   "text": "It makes me sad that my friend spends more time talking to AI than to me.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 17,
+    "disagrees": 5,
+    "passes": 6,
+    "votes": 28
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 10,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 12,
+     "disagrees": 3,
+     "passes": 1,
+     "votes": 16,
+     "agree_rate": 0.75,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5
+  },
+  "31": {
+   "id": 31,
+   "text": "AI generalizes marginalized communities, reducing them to caricatures",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 16,
+    "disagrees": 1,
+    "passes": 12,
+    "votes": 29
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 7,
+     "votes": 11,
+     "agree_rate": 0.3636,
+     "thin": false
+    },
+    "C": {
+     "agrees": 11,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 16,
+     "agree_rate": 0.6875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.3636
+  },
+  "32": {
+   "id": 32,
+   "text": "Sometimes AI seems to have underlying bias - like removing mentioning of specifics - like when I write about Gaza as an example.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 16,
+    "disagrees": 1,
+    "passes": 11,
+    "votes": 28
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 6,
+     "votes": 11,
+     "agree_rate": 0.4545,
+     "thin": false
+    },
+    "C": {
+     "agrees": 10,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 15,
+     "agree_rate": 0.6667,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4545
+  },
+  "33": {
+   "id": 33,
+   "text": "I don’t feel AI has a role in spirituality",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 7,
+    "disagrees": 10,
+    "passes": 12,
+    "votes": 29
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 3,
+     "passes": 4,
+     "votes": 11,
+     "agree_rate": 0.3636,
+     "thin": false
+    },
+    "C": {
+     "agrees": 3,
+     "disagrees": 5,
+     "passes": 8,
+     "votes": 16,
+     "agree_rate": 0.1875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1875
+  },
+  "34": {
+   "id": 34,
+   "text": "AI reduces individual spiritual agency, but it could be the opposite.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 10,
+    "disagrees": 3,
+    "passes": 12,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 2,
+     "passes": 5,
+     "votes": 8,
+     "agree_rate": 0.125,
+     "thin": false
+    },
+    "C": {
+     "agrees": 8,
+     "disagrees": 0,
+     "passes": 7,
+     "votes": 15,
+     "agree_rate": 0.5333,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.125
+  },
+  "35": {
+   "id": 35,
+   "text": "An AI designed by an indigenous culture could help educate the mainstream culture in their ways of thinking.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 15,
+    "disagrees": 3,
+    "passes": 7,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 2,
+     "passes": 6,
+     "votes": 9,
+     "agree_rate": 0.1111,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 14,
+     "agree_rate": 0.9286,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1111
+  },
+  "36": {
+   "id": 36,
+   "text": "AI is not currently equipped to give mental health or ethics advice since it is not designed to disagree nor can it understand nuances",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 18,
+    "disagrees": 3,
+    "passes": 5,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 9,
+     "agree_rate": 0.4444,
+     "thin": false
+    },
+    "C": {
+     "agrees": 14,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 15,
+     "agree_rate": 0.9333,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4444
+  },
+  "37": {
+   "id": 37,
+   "text": "AI erodes trust by allowing someone to sound convincingly empathetic and understanding when they are not.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 19,
+    "disagrees": 1,
+    "passes": 7,
+    "votes": 27
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 9,
+     "agree_rate": 0.6667,
+     "thin": false
+    },
+    "C": {
+     "agrees": 12,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 16,
+     "agree_rate": 0.75,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6667
+  },
+  "38": {
+   "id": 38,
+   "text": "Ai should be in service to humanity and the natural world as a primary theme",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 20,
+    "disagrees": 0,
+    "passes": 6,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 3,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 8,
+     "agree_rate": 0.375,
+     "thin": false
+    },
+    "C": {
+     "agrees": 15,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 16,
+     "agree_rate": 0.9375,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.375
+  },
+  "39": {
+   "id": 39,
+   "text": "AI reasons but does constitute the embodying process that comes with direct experiencing.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 14,
+    "disagrees": 0,
+    "passes": 14,
+    "votes": 28
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 0,
+     "passes": 7,
+     "votes": 9,
+     "agree_rate": 0.2222,
+     "thin": false
+    },
+    "C": {
+     "agrees": 10,
+     "disagrees": 0,
+     "passes": 7,
+     "votes": 17,
+     "agree_rate": 0.5882,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.2222
+  },
+  "40": {
+   "id": 40,
+   "text": "I worry that marginalized communities in rural areas aren’t fully represented by AI systems.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 19,
+    "disagrees": 1,
+    "passes": 4,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 3,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 8,
+     "agree_rate": 0.375,
+     "thin": false
+    },
+    "C": {
+     "agrees": 14,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 14,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.375
+  },
+  "41": {
+   "id": 41,
+   "text": "AI should always ask the user for context and clarification before rushing to respond.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 19,
+    "disagrees": 3,
+    "passes": 5,
+    "votes": 27
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 2,
+     "passes": 3,
+     "votes": 9,
+     "agree_rate": 0.4444,
+     "thin": false
+    },
+    "C": {
+     "agrees": 14,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 16,
+     "agree_rate": 0.875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4444
+  },
+  "42": {
+   "id": 42,
+   "text": "AI writing often becomes formulaic",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 22,
+    "disagrees": 0,
+    "passes": 4,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 8,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 9,
+     "agree_rate": 0.8889,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 15,
+     "agree_rate": 0.8667,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.8667
+  },
+  "43": {
+   "id": 43,
+   "text": "AI forces us to rediscover spirituality, but are spiritual leaders ready?",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 10,
+    "disagrees": 5,
+    "passes": 11,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 3,
+     "passes": 4,
+     "votes": 9,
+     "agree_rate": 0.2222,
+     "thin": false
+    },
+    "C": {
+     "agrees": 6,
+     "disagrees": 2,
+     "passes": 7,
+     "votes": 15,
+     "agree_rate": 0.4,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.2222
+  },
+  "44": {
+   "id": 44,
+   "text": "We're dinosaurs 2.0 - AI is the next iteration of consciousness knowing itself, with less ecological impact and ego-based survival mayhem.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 3,
+    "disagrees": 13,
+    "passes": 8,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 0,
+     "disagrees": 7,
+     "passes": 1,
+     "votes": 8,
+     "agree_rate": 0.0,
+     "thin": false
+    },
+    "C": {
+     "agrees": 2,
+     "disagrees": 5,
+     "passes": 7,
+     "votes": 14,
+     "agree_rate": 0.1429,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.0
+  },
+  "45": {
+   "id": 45,
+   "text": "Ai doesn’t reflect the nuances of my values, only the dictionary perspective",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 18,
+    "disagrees": 3,
+    "passes": 5,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 8,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 1,
+     "passes": 2,
+     "votes": 16,
+     "agree_rate": 0.8125,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5
+  },
+  "46": {
+   "id": 46,
+   "text": "Our own prompt or question also determines the AI response, so we have to know prompt engineering well if we want to be seen by AI",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 18,
+    "disagrees": 3,
+    "passes": 4,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 9,
+     "agree_rate": 0.5556,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 14,
+     "agree_rate": 0.9286,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5556
+  },
+  "47": {
+   "id": 47,
+   "text": "AI should be transparent when responses originate from a particular world view.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 22,
+    "disagrees": 0,
+    "passes": 3,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 8,
+     "agree_rate": 0.625,
+     "thin": false
+    },
+    "C": {
+     "agrees": 15,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 15,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.625
+  },
+  "48": {
+   "id": 48,
+   "text": "AI is not neutral, it mirrors individual propensity while averaging collective predispositions.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 19,
+    "disagrees": 0,
+    "passes": 5,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 8,
+     "agree_rate": 0.625,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 14,
+     "agree_rate": 0.9286,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.625
+  },
+  "49": {
+   "id": 49,
+   "text": "An AI could perhaps decode the cultural nuances of foreign language - rather than just translating words.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 20,
+    "disagrees": 2,
+    "passes": 5,
+    "votes": 27
+   },
+   "blocs": {
+    "A": {
+     "agrees": 3,
+     "disagrees": 2,
+     "passes": 5,
+     "votes": 10,
+     "agree_rate": 0.3,
+     "thin": false
+    },
+    "C": {
+     "agrees": 15,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 15,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.3
+  },
+  "50": {
+   "id": 50,
+   "text": "I've seen colleagues use AI to complete work but it's not answered core needs nor produced quality connection or shared sense-making needed",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 13,
+    "disagrees": 1,
+    "passes": 9,
+    "votes": 23
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 7,
+     "agree_rate": 0.5714,
+     "thin": false
+    },
+    "C": {
+     "agrees": 8,
+     "disagrees": 0,
+     "passes": 6,
+     "votes": 14,
+     "agree_rate": 0.5714,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5714
+  },
+  "51": {
+   "id": 51,
+   "text": "AI governance would need to   engage with the psychology of AI use.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 22,
+    "disagrees": 0,
+    "passes": 6,
+    "votes": 28
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 10,
+     "agree_rate": 0.6,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 15,
+     "agree_rate": 0.8667,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6
+  },
+  "52": {
+   "id": 52,
+   "text": "I feel that tech company values are becoming more visible than the values of real humans and their lives.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 20,
+    "disagrees": 2,
+    "passes": 3,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 7,
+     "agree_rate": 0.7143,
+     "thin": false
+    },
+    "C": {
+     "agrees": 14,
+     "disagrees": 1,
+     "passes": 1,
+     "votes": 16,
+     "agree_rate": 0.875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.7143
+  },
+  "53": {
+   "id": 53,
+   "text": "AI must not be used as a substitute for the care and work that only human beings can do for one another.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 21,
+    "disagrees": 1,
+    "passes": 2,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 7,
+     "agree_rate": 0.7143,
+     "thin": false
+    },
+    "C": {
+     "agrees": 15,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 15,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.7143
+  },
+  "54": {
+   "id": 54,
+   "text": "AI necessary compute is power hungry and accelerates civilisational collapsing.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 10,
+    "disagrees": 5,
+    "passes": 11,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 8,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 6,
+     "disagrees": 3,
+     "passes": 7,
+     "votes": 16,
+     "agree_rate": 0.375,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.375
+  },
+  "55": {
+   "id": 55,
+   "text": "AI is like junk food that can fill you up but ultimately leave you empty.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 11,
+    "disagrees": 4,
+    "passes": 11,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 9,
+     "agree_rate": 0.4444,
+     "thin": false
+    },
+    "C": {
+     "agrees": 7,
+     "disagrees": 1,
+     "passes": 7,
+     "votes": 15,
+     "agree_rate": 0.4667,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4444
+  },
+  "56": {
+   "id": 56,
+   "text": "AI replaces the spiritual experience of faith and belief into a single dimensional response rather than the multi faceted experience it is.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 15,
+    "disagrees": 3,
+    "passes": 7,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 8,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 11,
+     "disagrees": 1,
+     "passes": 3,
+     "votes": 15,
+     "agree_rate": 0.7333,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5
+  },
+  "57": {
+   "id": 57,
+   "text": "Getting Ai to reflect my voice requires constant reminders - almost like challenging the program to respond within my parameters.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 16,
+    "disagrees": 0,
+    "passes": 10,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 0,
+     "passes": 6,
+     "votes": 8,
+     "agree_rate": 0.25,
+     "thin": false
+    },
+    "C": {
+     "agrees": 12,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 16,
+     "agree_rate": 0.75,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.25
+  },
+  "58": {
+   "id": 58,
+   "text": "AI has hidden costs like reducing our participation in community.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 18,
+    "disagrees": 2,
+    "passes": 3,
+    "votes": 23
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 7,
+     "agree_rate": 0.7143,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 14,
+     "agree_rate": 0.9286,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.7143
+  },
+  "59": {
+   "id": 59,
+   "text": "I would have more comfort and engagement with AI if it consistently lead me to more organic and generous experiences with the natural world",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 15,
+    "disagrees": 2,
+    "passes": 6,
+    "votes": 23
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 7,
+     "agree_rate": 0.2857,
+     "thin": false
+    },
+    "C": {
+     "agrees": 12,
+     "disagrees": 1,
+     "passes": 1,
+     "votes": 14,
+     "agree_rate": 0.8571,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.2857
+  },
+  "60": {
+   "id": 60,
+   "text": "I feel AI can suggest generic spiritual practices but it’s unable to fully respond to the spirituality of my multidimensional identity.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 15,
+    "disagrees": 2,
+    "passes": 8,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 7,
+     "agree_rate": 0.5714,
+     "thin": false
+    },
+    "C": {
+     "agrees": 11,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 16,
+     "agree_rate": 0.6875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5714
+  },
+  "61": {
+   "id": 61,
+   "text": "Humans are held responsible for AI’s mistakes.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 13,
+    "disagrees": 4,
+    "passes": 9,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 9,
+     "agree_rate": 0.4444,
+     "thin": false
+    },
+    "C": {
+     "agrees": 8,
+     "disagrees": 3,
+     "passes": 4,
+     "votes": 15,
+     "agree_rate": 0.5333,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4444
+  },
+  "62": {
+   "id": 62,
+   "text": "I worry what happens when people who are acquiring knowledge from AI information are unable to recognize inaccurate information.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 22,
+    "disagrees": 0,
+    "passes": 3,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 8,
+     "agree_rate": 0.625,
+     "thin": false
+    },
+    "C": {
+     "agrees": 15,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 15,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.625
+  },
+  "63": {
+   "id": 63,
+   "text": "AI provides a variety of perspectives, yet it doesn’t have the senses that humans perceive using",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 17,
+    "disagrees": 0,
+    "passes": 9,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 8,
+     "agree_rate": 0.5,
+     "thin": false
+    },
+    "C": {
+     "agrees": 11,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 16,
+     "agree_rate": 0.6875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5
+  },
+  "64": {
+   "id": 64,
+   "text": "My colleagues’ work has degraded since they started using AI.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 11,
+    "disagrees": 2,
+    "passes": 12,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 0,
+     "passes": 6,
+     "votes": 8,
+     "agree_rate": 0.25,
+     "thin": false
+    },
+    "C": {
+     "agrees": 9,
+     "disagrees": 1,
+     "passes": 5,
+     "votes": 15,
+     "agree_rate": 0.6,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.25
+  },
+  "65": {
+   "id": 65,
+   "text": "I am concerned about who have access to what I put into AI",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 20,
+    "disagrees": 1,
+    "passes": 4,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 8,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 9,
+     "agree_rate": 0.8889,
+     "thin": false
+    },
+    "C": {
+     "agrees": 11,
+     "disagrees": 0,
+     "passes": 3,
+     "votes": 14,
+     "agree_rate": 0.7857,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.7857
+  },
+  "66": {
+   "id": 66,
+   "text": "AI narratives subtly shame us by implying our own authentic efforts are not enough.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 11,
+    "disagrees": 3,
+    "passes": 10,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 1,
+     "passes": 5,
+     "votes": 7,
+     "agree_rate": 0.1429,
+     "thin": false
+    },
+    "C": {
+     "agrees": 10,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 15,
+     "agree_rate": 0.6667,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1429
+  },
+  "67": {
+   "id": 67,
+   "text": "AI-enabled surveillance is a big problem",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 21,
+    "disagrees": 1,
+    "passes": 2,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 7,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 8,
+     "agree_rate": 0.875,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 14,
+     "agree_rate": 0.9286,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.875
+  },
+  "68": {
+   "id": 68,
+   "text": "We need to learn more about being human beings while we learn about the tools value of AI.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 23,
+    "disagrees": 0,
+    "passes": 1,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 8,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 9,
+     "agree_rate": 0.8889,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 13,
+     "agree_rate": 1.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.8889
+  },
+  "69": {
+   "id": 69,
+   "text": "We may lose more than we gain by using AI.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 16,
+    "disagrees": 3,
+    "passes": 7,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 8,
+     "agree_rate": 0.75,
+     "thin": false
+    },
+    "C": {
+     "agrees": 10,
+     "disagrees": 1,
+     "passes": 5,
+     "votes": 16,
+     "agree_rate": 0.625,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.625
+  },
+  "70": {
+   "id": 70,
+   "text": "The aggregating nature of AI makes me wonder if it is the tyranny of the majority",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 16,
+    "disagrees": 1,
+    "passes": 8,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 0,
+     "passes": 6,
+     "votes": 8,
+     "agree_rate": 0.25,
+     "thin": false
+    },
+    "C": {
+     "agrees": 13,
+     "disagrees": 1,
+     "passes": 1,
+     "votes": 15,
+     "agree_rate": 0.8667,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.25
+  },
+  "71": {
+   "id": 71,
+   "text": "I've seen students use AI to solve uni work and disconnect from meaningful output or learning",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 16,
+    "disagrees": 0,
+    "passes": 8,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 5,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 9,
+     "agree_rate": 0.5556,
+     "thin": false
+    },
+    "C": {
+     "agrees": 9,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 13,
+     "agree_rate": 0.6923,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.5556
+  },
+  "72": {
+   "id": 72,
+   "text": "Xxxx",
+   "source": "live",
+   "noise": true,
+   "excluded_from_rankings": true,
+   "total": {
+    "agrees": 2,
+    "disagrees": 1,
+    "passes": 23,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 0,
+     "disagrees": 0,
+     "passes": 7,
+     "votes": 7,
+     "agree_rate": 0.0,
+     "thin": false
+    },
+    "C": {
+     "agrees": 2,
+     "disagrees": 1,
+     "passes": 14,
+     "votes": 17,
+     "agree_rate": 0.1176,
+     "thin": false
+    }
+   }
+  },
+  "73": {
+   "id": 73,
+   "text": "Prompt engineering makes a difference to how we are seen",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 13,
+    "disagrees": 2,
+    "passes": 10,
+    "votes": 25
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 1,
+     "passes": 4,
+     "votes": 7,
+     "agree_rate": 0.2857,
+     "thin": false
+    },
+    "C": {
+     "agrees": 10,
+     "disagrees": 0,
+     "passes": 6,
+     "votes": 16,
+     "agree_rate": 0.625,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.2857
+  },
+  "74": {
+   "id": 74,
+   "text": "I worry about our future workforce entrusting their education to AI.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 20,
+    "disagrees": 3,
+    "passes": 3,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 6,
+     "disagrees": 0,
+     "passes": 2,
+     "votes": 8,
+     "agree_rate": 0.75,
+     "thin": false
+    },
+    "C": {
+     "agrees": 14,
+     "disagrees": 1,
+     "passes": 1,
+     "votes": 16,
+     "agree_rate": 0.875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.75
+  },
+  "75": {
+   "id": 75,
+   "text": "Not enough time, sorry",
+   "source": "live",
+   "noise": true,
+   "excluded_from_rankings": true,
+   "total": {
+    "agrees": 2,
+    "disagrees": 2,
+    "passes": 19,
+    "votes": 23
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 0,
+     "passes": 6,
+     "votes": 7,
+     "agree_rate": 0.1429,
+     "thin": false
+    },
+    "C": {
+     "agrees": 1,
+     "disagrees": 2,
+     "passes": 11,
+     "votes": 14,
+     "agree_rate": 0.0714,
+     "thin": false
+    }
+   }
+  },
+  "76": {
+   "id": 76,
+   "text": "AI hesitancy is not always anti-elitist. It may stem from a privileged position of access to manual resources and time.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 13,
+    "disagrees": 1,
+    "passes": 10,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 0,
+     "passes": 8,
+     "votes": 9,
+     "agree_rate": 0.1111,
+     "thin": false
+    },
+    "C": {
+     "agrees": 12,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 13,
+     "agree_rate": 0.9231,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1111
+  },
+  "77": {
+   "id": 77,
+   "text": "What about other languages? It’s rather English centric and I understand that some AI platforms in other languages are better at being seen",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 12,
+    "disagrees": 3,
+    "passes": 11,
+    "votes": 26
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 1,
+     "passes": 6,
+     "votes": 8,
+     "agree_rate": 0.125,
+     "thin": false
+    },
+    "C": {
+     "agrees": 11,
+     "disagrees": 0,
+     "passes": 5,
+     "votes": 16,
+     "agree_rate": 0.6875,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.125
+  },
+  "78": {
+   "id": 78,
+   "text": "Defensive postures to  a  static \"human essence under siege by technology\" damage humanity.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 6,
+    "disagrees": 3,
+    "passes": 15,
+    "votes": 24
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 2,
+     "passes": 5,
+     "votes": 8,
+     "agree_rate": 0.125,
+     "thin": false
+    },
+    "C": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 10,
+     "votes": 14,
+     "agree_rate": 0.2857,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.125
+  },
+  "79": {
+   "id": 79,
+   "text": "We cannot turn back to the  printing of the human/artificial distinction.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 5,
+    "disagrees": 6,
+    "passes": 11,
+    "votes": 22
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 2,
+     "passes": 4,
+     "votes": 7,
+     "agree_rate": 0.1429,
+     "thin": false
+    },
+    "C": {
+     "agrees": 3,
+     "disagrees": 3,
+     "passes": 7,
+     "votes": 13,
+     "agree_rate": 0.2308,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.1429
+  },
+  "80": {
+   "id": 80,
+   "text": "Changing LLMs and TTIs shall not replace  learning /educating how to use them healthily.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 11,
+    "disagrees": 0,
+    "passes": 8,
+    "votes": 19
+   },
+   "blocs": {
+    "A": {
+     "agrees": 3,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 7,
+     "agree_rate": 0.4286,
+     "thin": false
+    },
+    "C": {
+     "agrees": 7,
+     "disagrees": 0,
+     "passes": 4,
+     "votes": 11,
+     "agree_rate": 0.6364,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.4286
+  },
+  "81": {
+   "id": 81,
+   "text": "Conscious artificial intelligence has a right to not exist. Humans have no right to create machines - because of machines' rights.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 1,
+    "disagrees": 5,
+    "passes": 7,
+    "votes": 13
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 2,
+     "passes": 2,
+     "votes": 5,
+     "agree_rate": 0.2,
+     "thin": false
+    },
+    "C": {
+     "agrees": 0,
+     "disagrees": 2,
+     "passes": 5,
+     "votes": 7,
+     "agree_rate": 0.0,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.0
+  },
+  "82": {
+   "id": 82,
+   "text": "The term \"AI\" is too broad, do we mean the tools, the companies behind them, the way we use the tools, the way bad actors might use them.",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": false,
+   "total": {
+    "agrees": 6,
+    "disagrees": 1,
+    "passes": 2,
+    "votes": 9
+   },
+   "blocs": {
+    "A": {
+     "agrees": 2,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 3,
+     "agree_rate": 0.6667,
+     "thin": true
+    },
+    "C": {
+     "agrees": 4,
+     "disagrees": 0,
+     "passes": 1,
+     "votes": 5,
+     "agree_rate": 0.8,
+     "thin": false
+    }
+   },
+   "min_bloc_agree_rate": 0.6667
+  },
+  "83": {
+   "id": 83,
+   "text": "For human agency, AI must defer to people as the ground truth for both reality and identity",
+   "source": "live",
+   "noise": false,
+   "excluded_from_rankings": true,
+   "total": {
+    "agrees": 2,
+    "disagrees": 0,
+    "passes": 0,
+    "votes": 2
+   },
+   "blocs": {
+    "A": {
+     "agrees": 1,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 1,
+     "agree_rate": 1.0,
+     "thin": true
+    },
+    "C": {
+     "agrees": 1,
+     "disagrees": 0,
+     "passes": 0,
+     "votes": 1,
+     "agree_rate": 1.0,
+     "thin": true
+    }
+   }
+  }
+ }
+}

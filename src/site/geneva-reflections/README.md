@@ -1,5 +1,8 @@
 # /geneva-reflections — "Can AI See Me?" results page
 
+> **Draft companion page:** `/geneva-reflections/story/` — see
+> "The story page" section at the bottom of this file.
+
 Interactive results page for **"Can AI See Me? Human Dignity, Identity, and
 Moral Agency in Global AI Governance"** (official virtual side event of the
 first UN Global Dialogue on AI Governance, 6 July 2026): the Pol.is
@@ -51,9 +54,9 @@ The JS file only adds sorting and preset filters to the table.
 
 ## Refreshing the data (final Pol.is export)
 
-1. Replace the two CSVs in `data/` (keep the `*-participant-votes.csv` /
-   `*-comment-groups.csv` suffixes; the script globs for them and, if several
-   match, uses the lexicographically last — delete the old snapshot).
+1. Place the new CSVs in `data/` and update the `SNAPSHOT` prefix pinned in
+   `scripts/analyze.py` (it is deliberately pinned so newer exports in
+   `data/` cannot silently change this published page).
 2. `python3 scripts/analyze.py`
 3. `npm run build` (or `npm run serve` to check locally).
 
@@ -128,3 +131,66 @@ build`) and ships as static HTML at `/geneva-reflections/`. If it must be
 published before the branch merges, the built `dist/geneva-reflections/`
 + `dist/css/styles.css` + `dist/js/geneva-reflections.js` are the only
 artifacts it needs beyond the shared site assets.
+
+## The story page (/geneva-reflections/story/) — draft for review
+
+A story-first companion to the data report, built for readers with zero
+Pol.is literacy. Progressive disclosure: narrative claim → evidence card
+(verbatim statement + tallies) → downloadable raw data. It is `noindex`,
+carries a dismissible "draft for review" banner (fill in the
+`FEEDBACK_URL` constant at the top of
+`src/site/geneva-reflections/story/index.njk`), and must be shared only as
+a draft until reviewed.
+
+### Which export governs what
+
+| Page | Export | Pipeline |
+|---|---|---|
+| `/geneva-reflections/` + `/data/` | **09:00** (2,201 votes) | `scripts/analyze.py` (pinned to the 09:00 files) → `site-data/results.json` |
+| `/geneva-reflections/story/` | **15:05** (2,307 votes) | `scripts/story_compute.py` → `site-data/computed.json` |
+
+Never mix them: the published report reflects its snapshot and its tallies
+must not silently change. Small tally differences between the two pages
+are expected and disclosed on the story page. Both exports' CSVs and
+`computed.json` are downloadable from `/files/geneva-reflections/`
+(copied there by `story_compute.py`).
+
+### The story page's data rules
+
+- Every number renders from `computed.json`; nothing is hand-typed.
+- Blocs: 15:05 group 0 = A (13, includes the facilitator seed account,
+  disclosed), group 2 = C (22). Group 1 is an n=2 outlier pair — never
+  characterized, folded into "other" in visuals. Cross-bloc claims compare
+  A and C only.
+- Participant 0 (facilitator; 20 votes, all passes) is excluded from
+  participant-level visuals, included in bloc tallies.
+- Noise statements 22, 72, 75 excluded everywhere; 83 (2 votes) excluded
+  from ranked displays.
+- **Axis bundles** (published in `computed.json → method`): remedy axis X
+  (+ authorship / − boundaries) = mean signed vote over
+  {0+, 35+, 76+, 77+, 15+, 3+, 41+, 9−}; intimacy axis Y (+ comfortable /
+  − averse) over {4+, 12+, 1+, 23−, 30−, 55−, 33−}; pass = 0; ≥3 votes in
+  the bundle required, else unscored. The axes are analyst-curated, not
+  algorithm-discovered — the page's caveat box says so and may not be
+  softened or removed.
+- Honesty rules: verbatim statement text only (trailing whitespace
+  trimmed; spelling preserved); raw counts before percentages; thin-data
+  marker under 5 bloc votes; no demographic claims; "consensus" only above
+  75% agreement in both blocs; the limits section stays.
+- Computed values that differ from the drafting brief (trusted per the
+  compute-first rule): split-half reliabilities 0.58 / 0.82 (brief
+  expected 0.47 / 0.58); voters 38 (brief "~37"); builders cohort on [15]
+  5/0/1 and on [12] 2–3 vs rest-of-C 3–11 (brief 4/0/0 and 3/1/1 vs
+  2/10/1).
+
+### Promoting or removing the story page after review
+
+- **Promote:** delete the review banner block (`st-banner`) and the
+  `robots noindex` meta from `story/index.njk`; set the real
+  `FEEDBACK_URL` or remove the link; optionally cross-link from the main
+  page (it deliberately has no link to the draft).
+- **Remove:** delete `src/site/geneva-reflections/story/`,
+  `src/site/_data/genevaStory.js`, `src/site/js/geneva-story.js`,
+  `src/site/_includes/css/geneva-story.css` (+ its import in
+  `styles.css`), `scripts/story_compute.py`, `site-data/computed.json`,
+  and `src/site/files/geneva-reflections/`.
