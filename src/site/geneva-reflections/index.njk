@@ -154,32 +154,27 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 <main class="geneva">
 
-  {# ---------- hero (unchanged) ---------- #}
+  {# ---------- hero ---------- #}
   <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-8">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <p class="gr-kicker mb-4">{{ C.hero.event_name }} · {{ C.hero.event_date }}</p>
-      <h1 class="gr-hero-question mb-6">“{{ C.hero.question }}”</h1>
       <p class="gr-prose mb-2">{{ C.hero.official_line }}, convened by
         {%- for cv in C.hero.conveners %}
         {% if cv.url %}<a class="underline" href="{{ cv.url }}">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %}{% if not loop.last %},{% endif %}
         {%- endfor %}.
       </p>
-      <p class="gr-prose font-bold text-size-1">{{ C.hero.promise }}</p>
     </div>
   </header>
 
-  {# ---------- stats bar (unchanged) ---------- #}
+  {# ---------- stats bar ---------- #}
   <section aria-label="Participation at a glance" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-12">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <div class="gr-stats">
         <div class="gr-stat"><span class="gr-stat-number">{{ P.participants }}</span><span class="gr-stat-label">participants</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_votes_display }}</span><span class="gr-stat-label">votes cast</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ (P.live_share * 100) | round }}%</span><span class="gr-stat-label">of statements written live by participants ({{ P.live_statements }} of {{ P.total_statements }})</span></div>
         <div class="gr-stat"><span class="gr-stat-number">{{ C.stats.continents_display }}</span><span class="gr-stat-label">continents</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements</span></div>
         <div class="gr-stat"><span class="gr-stat-number">{{ P.opinion_groups }}</span><span class="gr-stat-label">opinion groups found</span></div>
       </div>
-      <p class="gr-counts mt-2">{{ C.stats.anonymity_note }}</p>
     </div>
   </section>
 
@@ -193,10 +188,17 @@ description: "What would AI governance need to do so that everyone felt seen by 
           <span class="gr-video-label">{{ C.video.title }}</span>
         </a>
       </div>
-      <p class="gr-counts mt-2">{{ C.video.caption }} {{ C.video.privacy_note }}</p>
+      <p class="gr-counts mt-2">{{ C.video.caption }}</p>
     </div>
   </section>
   {% endif %}
+
+  {# ---------- the question ---------- #}
+  <section aria-label="The deliberation question" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <h1 class="gr-hero-question">“{{ C.hero.question }}”</h1>
+    </div>
+  </section>
 
   {# ---------- 1. what the room agreed on ---------- #}
   <section id="agreed" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
