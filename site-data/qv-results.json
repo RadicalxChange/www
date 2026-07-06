@@ -1,0 +1,18 @@
+{
+  "status": "pending",
+  "voted_at": null,
+  "voters": null,
+  "credits_per_voter": null,
+  "principles": [
+    { "id": "P1", "votes": null, "credits": null },
+    { "id": "P2", "votes": null, "credits": null },
+    { "id": "P3", "votes": null, "credits": null },
+    { "id": "P4", "votes": null, "credits": null },
+    { "id": "P5", "votes": null, "credits": null },
+    { "id": "P6", "votes": null, "credits": null },
+    { "id": "P7", "votes": null, "credits": null },
+    { "id": "P8", "votes": null, "credits": null },
+    { "id": "P9", "votes": null, "credits": null },
+    { "id": "P10", "votes": null, "credits": null }
+  ]
+}

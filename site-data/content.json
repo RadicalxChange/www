@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "title": "Can AI See Me? — Results",
+    "og_title": "Can AI See Me? — Results from the UN Global Dialogue side event",
+    "description": "What would AI governance need to do so that everyone felt seen by AI? Results of the Pol.is deliberation from “Can AI See Me?”, an official virtual side event of the first UN Global Dialogue on AI Governance, and the road to the Geneva Reflection Principles."
+  },
+  "hero": {
+    "question": "What would AI governance need to do so that everyone here felt seen by AI?",
+    "event_name": "Can AI See Me? Human Dignity, Identity, and Moral Agency in Global AI Governance",
+    "event_date": "6 July 2026",
+    "official_line": "An official virtual side event of the first UN Global Dialogue on AI Governance",
+    "conveners": [
+      { "name": "Parity", "url": "https://www.parity.nyc" },
+      { "name": "Sikh LGBT+ Inclusion", "url": null },
+      { "name": "RadicalxChange Foundation", "url": "https://www.radicalxchange.org" },
+      { "name": "Free Community Church", "url": "https://www.fcc.org.sg" }
+    ],
+    "promise": "Here is what a room spanning four continents — faith leaders, peacebuilders, technologists — agreed on, disagreed about, and asked of AI governance."
+  },
+  "stats": {
+    "continents_display": "4+",
+    "anonymity_note": "Pol.is deliberation is anonymous by design: statements are published verbatim with no names attached, and no vote can be traced to a person."
+  },
+  "consensus": {
+    "title": "The common ground",
+    "intro": "Across every opinion group in the room, six demands drew broad agreement. Each theme below is grounded in specific statements — expand one to see the participants' own words and the full tallies behind it.",
+    "themes": [
+      {
+        "title": "Contestability & accountability",
+        "blurb": "Communities must be able to challenge and correct how AI represents them; whoever sets an AI system's values must answer to the people affected — through regulation with teeth.",
+        "statements": [2, 10, 21]
+      },
+      {
+        "title": "Protection from dependency & manipulation",
+        "blurb": "Design AI against emotional over-dependence and manipulation — protections the whole room wanted as defaults, not options.",
+        "statements": [16, 7, 5, 51]
+      },
+      {
+        "title": "Human-reserved ground",
+        "blurb": "Some questions — and, above all, care itself — must stay human. AI can support, but never substitute.",
+        "statements": [13, 53, 68, 14]
+      },
+      {
+        "title": "Data, consent & surveillance",
+        "blurb": "Strict limits on who sees what people confide to AI, and a shared alarm about AI-enabled surveillance.",
+        "statements": [65, 67, 25, 6]
+      },
+      {
+        "title": "Community authorship",
+        "blurb": "Communities should be able to build and shape AI on their own values, with each member seeing their own data first.",
+        "statements": [3, 17, 15, 6]
+      },
+      {
+        "title": "Value transparency & epistemic care",
+        "blurb": "Disclose whose values an AI carries, and take care with how knowledge — including faith traditions passed between generations — is transmitted.",
+        "statements": [47, 48, 62, 19, 74]
+      }
+    ]
+  },
+  "groups": {
+    "title": "Three ways of seeing",
+    "intro": "Pol.is clusters participants by how they voted, not who they are. Three distinct ways of seeing the question emerged. These are positions, not caricatures — each is a coherent answer to what being “seen” by AI should mean.",
+    "list": [
+      {
+        "key": "A",
+        "name": "Boundary Keepers",
+        "sketch": "Locates the remedy in limits on AI's reach: it isn't AI's job to reflect every culture's values [9]; some questions should only ever be answered by a person [13]; they do not want to feel “seen” by AI [23] and are drawn to statements of loss — the friend who talks more to AI than to them [30], AI as junk food [55]. The room's heavy passers: their abstentions cluster on statements about lived experience of misrepresentation, reading as distance from the experience rather than opposition to the agenda.",
+        "signature_statements": [9, 13, 23, 30]
+      },
+      {
+        "key": "B",
+        "name": "Hands-On Optimists",
+        "sketch": "The only group at ease with AI in intimate territory — unanimous that AI has a role in spirituality [33 rejected 0/5], open to AI as moral interlocutor [12] and to the personalization trade-off [4] — yet the strongest voices for building AI bottom-up [24] and for governance reform [11], [20]. Remedy: agency through building and using. (Fewest votes cast per member; their tallies on late statements are thin.)",
+        "signature_statements": [33, 4, 24, 11]
+      },
+      {
+        "key": "C",
+        "name": "Recognition Seekers",
+        "sketch": "Defined by the experience of misrecognition — “AI talks about my faith or culture like an outsider describing it” [0] — and the demand that this is AI's problem to fix (sharpest rejection in the event: [9] at 1/11/2). Wants recognition without capture: near-unanimous against manipulation [5], against moral outsourcing [12] and the privacy trade-off [4], while the most enthusiastic group for community-built AI [15], [3].",
+        "signature_statements": [0, 9, 5, 15]
+      }
+    ],
+    "disclosure": "A fourth cluster, Group D, contains a single participant and cannot be characterized without identifying them; their votes count in the room-wide totals but not in group-level analysis. Two participants voted too few times to be clustered at all. Group A includes the facilitation account used to seed the first twenty statements; it cast only pass votes."
+  },
+  "divides": {
+    "title": "The divides that cross the groups",
+    "intro": "A standard opinion report stops at what separates the groups. The more interesting findings run the other way: questions that split groups from within, and agreements that join groups usually opposed. This is what bridging analysis is for.",
+    "inner_life": {
+      "title": "The question that splits every group",
+      "caption": "Whether AI belongs in the inner and spiritual life — as a deepener of tradition, a moral interlocutor, or not at all — split two of the three groups down the middle. This tension runs through communities, not between them, and it is exactly the kind of question the next stage (quadratic voting) is designed to weigh.",
+      "statements": [1, 12, 33, 43]
+    },
+    "bedfellows": {
+      "title": "Strange bedfellows",
+      "caption": "The two groups most opposed on whether AI should reflect every culture's values agree completely on something else: they do not want AI to know them intimately. Six members of one and ten of the other affirmed “I don't want to feel seen by AI” — against the one group that welcomes that closeness. Bridging analysis exists to find agreements like this: consensus that crosses the room's main divide from an unexpected direction.",
+      "opposed_statements": [9, 0],
+      "converge_statements": [23, 30, 55]
+    }
+  },
+  "disagreements": {
+    "title": "Where the room genuinely disagrees",
+    "items": [
+      {
+        "title": "Whose values should AI reflect?",
+        "blurb": "“It isn't AI's job to reflect every culture's values” [9] is the room's cleanest divide: the Boundary Keepers' most-agreed position and the Recognition Seekers' sharpest rejection. Universality versus representation is a real disagreement, not a misunderstanding — and it survives into the draft principles below.",
+        "statements": [9]
+      },
+      {
+        "title": "A tension the room resolved",
+        "blurb": "Personalization versus protection looked like a dilemma — until the votes came in. The claim that AI knowing you personally is worth the privacy cost [4] was rejected by every group but one, while anti-dependency design [16] came as close to consensus as anything in the event, including among the personalization-friendly group. The room wants AI that understands without a licence to capture.",
+        "statements": [4, 16]
+      },
+      {
+        "title": "What the passes mean",
+        "blurb": "Roughly a third of all votes were passes, clustering on statements about lived experience of misrepresentation. A pass is abstention, not opposition — often “this isn't my experience to judge.” We read heavy passing as epistemic humility inside the room, and flag it rather than hide it.",
+        "statements": []
+      }
+    ]
+  },
+  "voices": {
+    "title": "In their own words",
+    "intro": "Statements written live by participants during the deliberation, reproduced verbatim and anonymous by design.",
+    "statements": [68, 53, 65, 67, 48, 66, 76, 25]
+  },
+  "explorer": {
+    "title": "Every statement",
+    "intro": "The full record: every statement voted on in the deliberation (three junk entries excluded), with room-wide tallies and each group's agree rate. Sort and filter, or just read — the table works without JavaScript too."
+  },
+  "pipeline": {
+    "title": "What happens next",
+    "steps": [
+      {
+        "label": "Pol.is deliberation",
+        "detail": "38 participants, live during the side event and open for 24 hours after — the results on this page.",
+        "status": "done"
+      },
+      {
+        "label": "Reflections Working Group",
+        "detail": "Participants refine the draft principles below into a final ballot.",
+        "status": "current"
+      },
+      {
+        "label": "24-hour Quadratic Vote",
+        "detail": "Every participant weighs the ballot with a shared budget of voice credits.",
+        "status": "upcoming"
+      },
+      {
+        "label": "Geneva Reflection Principles",
+        "detail": "The participant-authored principles, with their full voting record, submitted to the UN Global Dialogue's Joint Secretariat.",
+        "status": "upcoming"
+      }
+    ],
+    "qv_explainer": "Quadratic voting measures how much people care, not just what they prefer. Each voter gets the same budget of credits; one vote for a principle costs 1 credit, two votes cost 4, three cost 9. Spreading credits is cheap, piling them on one priority is expensive — so the results reveal intensity honestly.",
+    "qv_pending_note": "The quadratic vote is not yet open. Once it closes, the results — credits allocated per principle — will appear here.",
+    "principles_title": "The draft ballot: ten principles",
+    "principles_intro": "Drafted from the deliberation record by the conveners, for the Reflections Working Group to refine. Each principle cites the statements that ground it — expand the citations to check the drafting against the votes. Two principles sit on live tensions the room did not resolve; the quadratic vote will weigh them.",
+    "principles": [
+      { "id": "P1", "title": "Contestability", "text": "Guarantee communities a binding, resourced channel to challenge how an AI system represents their tradition and to get errors fixed.", "grounding": [2, 10, 45], "tension": false },
+      { "id": "P2", "title": "Answerability of value-setters", "text": "Make whoever sets an AI system's values legally accountable, through enforceable regulation, to the people affected.", "grounding": [10, 21, 20], "tension": false },
+      { "id": "P3", "title": "Anti-dependency design", "text": "Require AI to be designed against emotional over-dependence, with disengagement behavior measured and publicly reported.", "grounding": [16, 7, 51], "tension": false },
+      { "id": "P4", "title": "Manipulation firewall", "text": "Protection from manipulation as a non-overridable default.", "grounding": [5, 4, 25], "tension": false },
+      { "id": "P5", "title": "Human-reserved care", "text": "Care for one another, and defined classes of questions, stay human; AI supports but never substitutes.", "grounding": [53, 13, 68], "tension": false },
+      { "id": "P6", "title": "Deliberation, not verdicts", "text": "In value-laden domains AI asks for context and helps people think rather than delivering answers.", "grounding": [14, 41, 12], "tension": true },
+      { "id": "P7", "title": "Community authorship", "text": "Communities can build or shape AI on their own values, each member seeing their own data first.", "grounding": [3, 17, 6], "tension": false },
+      { "id": "P8", "title": "Worldview transparency", "text": "Disclose when a response carries a particular worldview and whose values defaults average over.", "grounding": [47, 48, 8], "tension": false },
+      { "id": "P9", "title": "Data & surveillance limits", "text": "Strict, auditable limits on who accesses what people put into AI; AI-enabled surveillance treated as a first-order harm.", "grounding": [65, 67, 25], "tension": false },
+      { "id": "P10", "title": "The right not to be seen", "text": "An effective, penalty-free right to keep AI out of one's inner, moral, and spiritual life, while protecting those who choose to invite it in.", "grounding": [23, 33, 16], "tension": true }
+    ]
+  },
+  "honest_limits": {
+    "title": "Honest limits",
+    "text": "Thirty-eight participants cast 2,201 votes on 83 statements; the smallest opinion group is a single person, some per-group counts on late statements rest on 2–6 votes, and one changed mind would change those stories. Agree/disagree/pass cannot distinguish 'I disagree' from 'not like this' — systematic passing on lived-experience statements is meaning the format flattens. And a synchronous, English-language, self-selected virtual event under-represents people without connectivity, non-English speakers (a participant said so from inside the room), and those most skeptical of AI-mediated deliberation, who by definition were not voting in one."
+  },
+  "panelist_quotes": [
+    {
+      "quote": "it kept giving me answers, but it never once asked me who we are",
+      "context": "A faith leader, in the event's opening testimony, on an AI system",
+      "pair_statement": 41,
+      "pair_note": "In Group C, statement [41] — AI asking for context before answering — carried 13–0.",
+      "pending_permission": true
+    },
+    {
+      "quote": "Does this lessen participation in the body?",
+      "context": "Free Community Church's reflective question during the event",
+      "pair_statement": 58,
+      "pair_note": "Statement [58], submitted live, became a consensus item.",
+      "pending_permission": true
+    }
+  ],
+  "footer": {
+    "data_note": "All results are anonymous by design: aggregate tallies and verbatim unattributed statements only. Vote tallies are computed from the participant-vote matrix export; an earlier statement-summary export is used only for statement text, so counts may differ slightly from other snapshots of the same conversation.",
+    "polis_credit": "Deliberation run on Pol.is, an open-source tool for large-scale opinion mapping.",
+    "polis_url": "https://pol.is",
+    "rwg_signup_url": "https://forms.gle/iT8TUCQrJg63tmCU9",
+    "rwg_signup_label": "Join the Reflections Working Group",
+    "contact_email": "info@radicalxchange.org",
+    "event_page_url": "/updates/announcements/2026-07-can-ai-see-me/"
+  }
+}

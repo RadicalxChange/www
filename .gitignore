@@ -3,3 +3,9 @@ node_modules/
 dist/
 .cache
 .vscode
+.claude/
+
+# Raw Pol.is exports for /geneva-reflections: contain participant-level vote
+# rows, so they stay out of the public repo. Only the aggregated
+# site-data/results.json is committed. See src/site/geneva-reflections/README.md
+data/
