@@ -156,14 +156,19 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
   {# ---------- masthead ---------- #}
   <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-10">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
       <h1 class="gr-masthead mb-2">{{ C.hero.title }}</h1>
       <p class="gr-kicker mb-3">{{ C.hero.subtitle }} · {{ C.hero.event_date }}</p>
-      <p class="gr-counts gr-prose">{{ C.hero.official_line }}, convened by
+      <p class="gr-counts gr-prose">An official virtual side event of the first <a class="underline" href="{{ C.hero.dialogue_url }}">UN Global Dialogue on AI Governance</a>, convened by
         {%- for cv in C.hero.conveners %}
         {% if cv.url %}<a class="underline" href="{{ cv.url }}">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %}{% if not loop.last %},{% endif %}
         {%- endfor %}.
       </p>
+    </div>
+    <div class="hidden md:block col-span-columns lg:col-start-column-10 lg:col-end-margin-2">
+      <a href="{{ C.hero.dialogue_url }}">
+        <img src="/images/geneva/un-global-dialogue-banner.webp" alt="UN Global Dialogue on AI Governance" width="640" height="360" style="width: 100%; max-width: 16rem; margin-left: auto; display: block" decoding="async" />
+      </a>
     </div>
   </header>
 
@@ -269,7 +274,6 @@ description: "What would AI governance need to do so that everyone felt seen by 
         </article>
         {% endfor %}
       </div>
-      <p class="gr-counts gr-prose mt-6">{{ C.groups.disclosure }}</p>
     </div>
   </section>
 

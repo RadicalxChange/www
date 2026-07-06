@@ -2,7 +2,7 @@
   "meta": {
     "title": "Can AI See Me? — Results",
     "og_title": "Can AI See Me? — Results from the UN Global Dialogue side event",
-    "description": "What would AI governance need to do so that everyone felt seen by AI? Results of the Pol.is deliberation from “Can AI See Me?”, an official virtual side event of the first UN [Global Dialogue on AI Governance](https://www.un.org/global-dialogue-ai-governance/en), and the road to the Geneva Reflection Principles."
+    "description": "What would AI governance need to do so that everyone felt seen by AI? Results of the Pol.is deliberation from “Can AI See Me?”, an official virtual side event of the first UN Global Dialogue on AI Governance, and the road to the Geneva Reflection Principles."
   },
   "hero": {
     "title": "Can AI See Me?",
@@ -10,6 +10,7 @@
     "question": "What would AI governance need to do so that everyone here felt seen by AI?",
     "question_kicker": "The question put to the room",
     "event_date": "6 July 2026",
+    "dialogue_url": "https://www.un.org/global-dialogue-ai-governance/en",
     "official_line": "An official virtual side event of the first UN Global Dialogue on AI Governance",
     "conveners": [
       { "name": "Parity", "url": "https://www.parity.nyc" },
@@ -101,7 +102,7 @@
         "cards": [0],
         "references": [9, 5, 15, 3]
       }
-    ],
+    ]
   },
   "split": {
     "kicker": "03 · The deepest divide",
