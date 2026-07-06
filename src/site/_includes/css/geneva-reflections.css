@@ -202,10 +202,11 @@
 .geneva .gr-thin {
   color: #6c6c6c;
 }
-/* thin-data table cells: greyed, per the ◔ legend */
+/* thin-data table cells: greyed, per the ◔ legend (background carries the
+   de-emphasis; text stays WCAG AA against it) */
 .geneva .gr-cell-thin {
-  color: #8a8a8a;
-  background: #f7f7f7;
+  color: #5f5f5f;
+  background: #f0f0f0;
 }
 
 /* legend */
