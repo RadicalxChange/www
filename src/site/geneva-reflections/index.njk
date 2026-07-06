@@ -173,6 +173,21 @@ description: "What would AI governance need to do so that everyone felt seen by 
     </div>
   </section>
 
+  {# ---------- session recording ---------- #}
+  {% if C.video %}
+  <section id="recording" aria-label="Session recording" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-3 lg:col-end-gutter-11">
+      <div class="gr-video" data-youtube-id="{{ C.video.youtube_id }}">
+        <a class="gr-video-facade" href="{{ C.video.url }}">
+          <span class="gr-video-play" aria-hidden="true"></span>
+          <span class="gr-video-label">{{ C.video.title }}</span>
+        </a>
+      </div>
+      <p class="gr-counts mt-2">{{ C.video.caption }} {{ C.video.privacy_note }}</p>
+    </div>
+  </section>
+  {% endif %}
+
   {# ---------- 3. common ground ---------- #}
   <section id="common-ground" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">

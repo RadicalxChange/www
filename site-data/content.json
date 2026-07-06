@@ -21,6 +21,13 @@
     "continents_display": "4+",
     "anonymity_note": "Pol.is deliberation is anonymous by design: statements are published verbatim with no names attached, and no vote can be traced to a person."
   },
+  "video": {
+    "youtube_id": "Rj419GhtAG4",
+    "url": "https://youtu.be/Rj419GhtAG4",
+    "title": "Watch the session recording",
+    "caption": "Lived-experience testimony from faith leaders in the UK, Singapore, and the US, then the live deliberation behind the results below.",
+    "privacy_note": "Plays in YouTube's privacy-enhanced mode; nothing loads from YouTube until you press play."
+  },
   "consensus": {
     "title": "The common ground",
     "intro": "Across every opinion group in the room, six demands drew broad agreement. Each theme below is grounded in specific statements — expand one to see the participants' own words and the full tallies behind it.",
