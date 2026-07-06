@@ -14,19 +14,16 @@
       { "name": "Sikh LGBT+ Inclusion", "url": null },
       { "name": "RadicalxChange Foundation", "url": "https://www.radicalxchange.org" },
       { "name": "Free Community Church", "url": "https://www.fcc.org.sg" }
-    ],
-    "promise": "Here is what a room spanning four continents — faith leaders, peacebuilders, technologists — agreed on, disagreed about, and asked of AI governance."
+    ]
   },
   "stats": {
-    "continents_display": "4+",
-    "anonymity_note": "Pol.is deliberation is anonymous by design: statements are published verbatim with no names attached, and no vote can be traced to a person."
+    "continents_display": "4+"
   },
   "video": {
     "youtube_id": "Rj419GhtAG4",
     "url": "https://youtu.be/Rj419GhtAG4",
     "title": "Watch the session recording",
-    "caption": "Lived-experience testimony from faith leaders in the UK, Singapore, and the US, then the live deliberation behind the results below.",
-    "privacy_note": "Plays in YouTube's privacy-enhanced mode; nothing loads from YouTube until you press play."
+    "caption": "Lived-experience testimony from faith leaders in the UK, Singapore, and the US, then the live deliberation behind the results below."
   },
   "legend_note": "◔ = thin data: fewer than 5 votes cast in that group; treat as directional.",
   "consensus": {
