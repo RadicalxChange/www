@@ -157,7 +157,7 @@
   );
 }
 
-/* per-group agree-rate mini bar */
+/* per-group row: letter | stacked bar | "% agree (x/n)" */
 .geneva .gr-mini {
   display: grid;
   grid-template-columns: 1.1rem minmax(0, 1fr) auto;
@@ -165,45 +165,9 @@
   align-items: center;
   font-size: var(--step--3);
 }
-.geneva .gr-mini-track {
-  height: 0.55rem;
-  background: #f3f3f3;
-}
-.geneva .gr-mini-fill {
-  display: block;
-  height: 100%;
-}
-.geneva .gr-fill-A { background: var(--gr-group-a); }
-.geneva .gr-fill-B { background: var(--gr-group-b); }
-.geneva .gr-fill-C { background: var(--gr-group-c); }
 .geneva .gr-text-A { color: var(--gr-group-a); }
 .geneva .gr-text-B { color: var(--gr-group-b); }
 .geneva .gr-text-C { color: var(--gr-group-c); }
-
-/* diverging net-agree bar: center line, agree to the right */
-.geneva .gr-diverge {
-  position: relative;
-  height: 0.9rem;
-  background: #f7f7f7;
-}
-.geneva .gr-diverge::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: -2px;
-  bottom: -2px;
-  width: 1px;
-  background: #9a9a9a;
-}
-.geneva .gr-diverge-fill {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-/* de-emphasized (non-focal) rows: dim the bar only, never the text */
-.geneva .gr-dim .gr-diverge-fill {
-  opacity: 0.45;
-}
 
 /* ---- statement cards ------------------------------------------------ */
 
@@ -399,18 +363,55 @@
   color: #6c6c6c;
 }
 
-/* QV results bars (rendered when qv-results.json is final) */
+/* ballot list; QV credit bars drop in per item when results are final */
+.geneva .gr-ballot {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+  .geneva .gr-ballot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.geneva .gr-ballot-item {
+  border-top: 1px solid var(--gr-rule);
+  padding-top: 0.6rem;
+}
 .geneva .gr-qv-row {
   display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.6rem;
   align-items: center;
   font-size: var(--step--2);
+  margin: 0.3rem 0;
 }
 .geneva .gr-qv-fill {
   display: block;
   height: 0.9rem;
   background: #1a1a1a;
+}
+
+/* the centerpiece section */
+.geneva .gr-feature {
+  border-top: 6px solid #1a1a1a;
+  padding-top: 1.25rem;
+}
+
+/* quiet notes: visible headings, subdued body, stated once */
+.geneva .gr-note {
+  border-top: 1px solid var(--gr-rule);
+  padding-top: 1rem;
+}
+.geneva .gr-note h2 {
+  font-size: var(--step-0);
+}
+.geneva .gr-note h3 {
+  font-size: var(--step--1);
+}
+.geneva .gr-note p {
+  font-size: var(--step--2);
+  color: #6c6c6c;
+  max-width: 46em;
 }
 
 /* ---- accessibility --------------------------------------------------- */

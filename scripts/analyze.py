@@ -48,6 +48,11 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
 OUT_PATH = os.path.join(ROOT, "site-data", "results.json")
+# Public statement-level CSV (aggregate tallies only — never participant
+# rows), served as the download link on the results pages. src/site/files is
+# passthrough-copied by Eleventy.
+CSV_PATH = os.path.join(ROOT, "src", "site", "files",
+                        "geneva-reflections-statements.csv")
 
 JUNK_IDS = {22, 72, 75}          # "Agree", "Xxxx", "Not enough time, sorry"
 SEED_MAX_ID = 19                 # statements 0-19 are facilitator seeds
@@ -215,8 +220,29 @@ def main():
         json.dump(results, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
+    group_letters = sorted(group_sizes)
+    with open(CSV_PATH, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        header = ["statement_id", "statement", "source", "non_substantive",
+                  "votes", "agrees", "disagrees", "passes"]
+        for g in group_letters:
+            header += [f"group_{g}_votes", f"group_{g}_agrees",
+                       f"group_{g}_disagrees", f"group_{g}_passes"]
+        w.writerow(header)
+        for sid in stmt_ids:
+            s = statements[str(sid)]
+            row = [s["id"], s["text"], s["source"],
+                   "yes" if s["junk"] else "no",
+                   s["total"]["votes"], s["total"]["agrees"],
+                   s["total"]["disagrees"], s["total"]["passes"]]
+            for g in group_letters:
+                t = s["groups"][g]
+                row += [t["votes"], t["agrees"], t["disagrees"], t["passes"]]
+            w.writerow(row)
+
     p = results["participation"]
     print(f"wrote {os.path.relpath(OUT_PATH, ROOT)}")
+    print(f"wrote {os.path.relpath(CSV_PATH, ROOT)}")
     print(f"  participants {p['participants']} | votes {p['total_votes']} | "
           f"statements {p['total_statements']} ({p['live_statements']} live) | "
           f"groups {p['group_sizes']} + {p['unclustered']} unclustered")

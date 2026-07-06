@@ -44,10 +44,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 {# This page carries no analytics or tracking (a condition of publishing the
    deliberation results) and doesn't use KaTeX, so it overrides the base
-   layout's head blocks: no rabbit analytics, no katex stylesheet, and the
-   menu's body-scroll-lock dependency is deferred (it's only needed once the
-   menu opens). The custom-elements polyfill is dropped because this page
-   renders no <a is="a-replace"> elements. #}
+   layout's head blocks. See src/site/geneva-reflections/README.md. #}
 <!-- prettier-ignore -->
 {% block headScripts %}
 <script
@@ -64,8 +61,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
 <!-- prettier-ignore -->
 {% endblock %}
 
-{# Preload only the fonts this page actually renders above the fold
-   (display face + body regular/bold); italics load on demand. #}
+{# Preload only the fonts this page actually renders above the fold. #}
 <!-- prettier-ignore -->
 {% block fontPreloads %}
 <link rel="preload" href="/fonts/hinted-MesserV20-Condensed.woff2" as="font" type="font/woff2" crossorigin />
@@ -74,14 +70,25 @@ description: "What would AI governance need to do so that everyone felt seen by 
 <!-- prettier-ignore -->
 {% endblock %}
 
-{# ---------- macros ---------- #}
+{# ---------- macros ----------
+
+   One number language: the headline figure is always "% agree (x/n)" and the
+   only visual is the tricolor stacked agree/pass/disagree bar. Full tallies
+   live in tooltips and aria-labels only. Each statement renders as a card
+   exactly once on this page (enforced by geneva.js); every other mention is
+   a reference that anchor-links to the card, or to its row on the data page.
+#}
 
 {% macro thinGlyph(t) %}{% if t.thin %}<span class="gr-thin"><span aria-hidden="true">◔</span><span class="sr-only"> (thin)</span></span>{% endif %}{% endmacro %}
 
 {% macro countsLine(t) %}{{ t.agrees }} agree · {{ t.disagrees }} disagree · {{ t.passes }} pass · n={{ t.votes }}{% endmacro %}
 
+{% macro figureFor(s) %}{{ (s.agree_rate * 100) | round }}% agree ({{ s.total.agrees }}/{{ s.total.votes }}){% endmacro %}
+
+{% macro floorNote(s) %}{% if s.consensus_min_agree_rate != null %} · every group ≥ {{ (s.consensus_min_agree_rate * 100) | round(0, "floor") }}%{% endif %}{% endmacro %}
+
 {% macro stackBar(t, label) %}
-<div class="gr-stack" role="img" aria-label="{{ label }}: {{ countsLine(t) }}">
+<div class="gr-stack" role="img" title="{{ label }}: {{ countsLine(t) }}" aria-label="{{ label }}: {{ countsLine(t) }}">
   {% if t.votes > 0 %}
   <span class="gr-seg gr-seg-agree" style="width: {{ (t.agrees / t.votes * 100) | round(1) }}%"></span>
   <span class="gr-seg gr-seg-pass" style="width: {{ (t.passes / t.votes * 100) | round(1) }}%"></span>
@@ -90,52 +97,55 @@ description: "What would AI governance need to do so that everyone felt seen by 
 </div>
 {% endmacro %}
 
-{# per-group agree-rate mini bars for groups A/B/C #}
-{% macro miniBars(s) %}
-<div class="flex flex-col gap-1" role="img" aria-label="Agree rate by opinion group. {% for g in ['A', 'B', 'C'] %}{% set t = s.groups[g] %}Group {{ g }}: {% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }} percent ({{ t.agrees }} of {{ t.votes }}){% else %}no votes{% endif %}. {% endfor %}">
+{% macro groupRows(s) %}
+<div class="flex flex-col gap-1">
   {% for g in ["A", "B", "C"] %}
   {% set t = s.groups[g] %}
-  <div class="gr-mini" aria-hidden="true">
-    <span class="font-bold gr-text-{{ g }}">{{ g }}</span>
-    <span class="gr-mini-track"><span class="gr-mini-fill gr-fill-{{ g }}" style="width: {% if t.votes > 0 %}{{ (t.agree_rate * 100) | round(1) }}{% else %}0{% endif %}%"></span></span>
-    <span class="gr-counts" title="Group {{ g }}: {{ countsLine(t) }}">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}% <span class="text-gray">({{ t.agrees }}/{{ t.votes }})</span>{% else %}–{% endif %}{{ thinGlyph(t) }}</span>
+  <div class="gr-mini">
+    <span class="font-bold gr-text-{{ g }}" aria-hidden="true">{{ g }}</span>
+    {{ stackBar(t, "Group " + g) }}
+    <span class="gr-counts">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}% agree ({{ t.agrees }}/{{ t.votes }}){% else %}–{% endif %}{{ thinGlyph(t) }}</span>
   </div>
   {% endfor %}
 </div>
 {% endmacro %}
 
-{# one diverging net-agree row for group g on statement s; focal groups full-strength #}
-{% macro divergeRow(s, g, focal) %}
-{% set t = s.groups[g] %}
-<div class="gr-mini{% if not focal %} gr-dim{% endif %}">
-  <span class="font-bold gr-text-{{ g }}" aria-hidden="true">{{ g }}</span>
-  <span class="gr-diverge" role="img" aria-label="Group {{ g }} net agreement {% if t.votes > 0 %}{{ (t.net_agree * 100) | round }} percent. {{ countsLine(t) }}{% else %}not available (no votes){% endif %}" title="Group {{ g }}: {{ countsLine(t) }}">
-    {% if t.votes > 0 %}
-    {% set w = ((t.net_agree if t.net_agree >= 0 else -t.net_agree) * 50) | round(1) %}
-    <span class="gr-diverge-fill gr-fill-{{ g }}" style="width: {{ w }}%; {% if t.net_agree >= 0 %}left: 50%{% else %}left: {{ (50 - w) | round(1) }}%{% endif %}"></span>
-    {% endif %}
-  </span>
-  <span class="gr-counts" aria-hidden="true" title="Group {{ g }}: {{ countsLine(t) }}">{% if t.votes > 0 %}{{ "+" if t.net_agree >= 0 }}{{ (t.net_agree * 100) | round }}{% else %}–{% endif %}{{ thinGlyph(t) }}</span>
-</div>
-{% endmacro %}
-
-{% macro stmtText(s) %}{% if s.text %}{{ s.text }}{% else %}<em>Statement #{{ s.id }} — text pending the final data export.</em>{% endif %}{% endmacro %}
-
 {% macro sourceBadge(s) %}<span class="gr-badge {% if s.source == 'live' %}text-black{% else %}text-gray{% endif %}">{{ "written live" if s.source == "live" else "seed" }}</span>{% endmacro %}
 
-{# full statement card: text, total bar, per-group mini bars #}
-{% macro stmtCard(sid) %}
+{# Tier-1 card: quote, bar, one figure. #}
+{% macro cardCompact(sid) %}
 {% set s = S["" ~ sid] %}
 <div class="gr-card flex flex-col gap-3" id="s{{ s.id }}">
-  <p class="gr-stmt-text">“{{ stmtText(s) }}”</p>
-  <div class="flex items-baseline gap-2">
+  <p class="gr-stmt-text flex-grow">“{{ s.text }}”</p>
+  <div class="flex items-baseline gap-2 flex-wrap">
     <span class="gr-counts">#{{ s.id }}</span>
     {{ sourceBadge(s) }}
   </div>
   {{ stackBar(s.total, "All participants") }}
-  <p class="gr-counts">{{ countsLine(s.total) }}</p>
-  {{ miniBars(s) }}
+  <p class="gr-counts"><strong class="text-black">{{ figureFor(s) }}</strong>{{ floorNote(s) }}</p>
 </div>
+{% endmacro %}
+
+{# Tier-2 card: adds the per-group breakdown. #}
+{% macro cardFull(sid) %}
+{% set s = S["" ~ sid] %}
+<div class="gr-card flex flex-col gap-3" id="s{{ s.id }}">
+  <p class="gr-stmt-text flex-grow">“{{ s.text }}”</p>
+  <div class="flex items-baseline gap-2 flex-wrap">
+    <span class="gr-counts">#{{ s.id }}</span>
+    {{ sourceBadge(s) }}
+  </div>
+  {{ stackBar(s.total, "All participants") }}
+  <p class="gr-counts"><strong class="text-black">{{ figureFor(s) }}</strong></p>
+  {{ groupRows(s) }}
+</div>
+{% endmacro %}
+
+{# Text reference to a statement: links to its card here, or to its row on
+   the data page if it has no card. Never re-renders the card. #}
+{% macro refLine(sid) %}
+{% set s = S["" ~ sid] %}
+<a class="underline" href="{% if C.carded[sid] %}#s{{ sid }}{% else %}/geneva-reflections/data/#s{{ sid }}{% endif %}">[{{ sid }}] “{{ s.text | truncate(64) }}”</a> <span class="gr-counts">— {{ figureFor(s) }}</span>
 {% endmacro %}
 
 <!-- prettier-ignore -->
@@ -144,7 +154,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 <main class="geneva">
 
-  {# ---------- 1. hero ---------- #}
+  {# ---------- hero (unchanged) ---------- #}
   <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-8">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <p class="gr-kicker mb-4">{{ C.hero.event_name }} · {{ C.hero.event_date }}</p>
@@ -158,7 +168,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
     </div>
   </header>
 
-  {# ---------- 2. stats bar ---------- #}
+  {# ---------- stats bar (unchanged) ---------- #}
   <section aria-label="Participation at a glance" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-12">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <div class="gr-stats">
@@ -188,42 +198,45 @@ description: "What would AI governance need to do so that everyone felt seen by 
   </section>
   {% endif %}
 
-  {# ---------- 3. common ground ---------- #}
-  <section id="common-ground" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
-      <h2>{{ C.consensus.title }}</h2>
-    </div>
-    <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
-      <p class="gr-prose mb-6">{{ C.consensus.intro }}</p>
-      <div class="gr-legend mb-4" aria-hidden="true">
+  {# ---------- 1. what the room agreed on ---------- #}
+  <section id="agreed" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <h2 class="mb-4">{{ C.consensus.title }}</h2>
+      <p class="gr-prose mb-4">{{ C.consensus.intro }}</p>
+      <div class="gr-legend mb-8">
         <span><span class="gr-swatch" style="background:#1a1a1a"></span>agree</span>
         <span><span class="gr-swatch" style="background:#d9d9d9"></span>pass</span>
         <span><span class="gr-swatch" style="background:repeating-linear-gradient(-45deg,#fff,#fff 3px,#6c6c6c 3px,#6c6c6c 4px)"></span>disagree</span>
-        <span>◔ = thin data: fewer than 5 votes cast in that group; treat as directional</span>
+        <span>{{ C.legend_note }}</span>
       </div>
-      {% for theme in C.consensus.themes %}
-      <details {% if loop.first %}open{% endif %}>
-        <summary>
-          <h3>{{ theme.title }}</h3>
-        </summary>
-        <div class="pb-6">
-          <p class="gr-prose mb-4">{{ theme.blurb }}</p>
-          {% if theme.cross_refs %}
-          <p class="gr-prose gr-counts mb-4">{% for ref in theme.cross_refs %}<a class="underline" href="#s{{ ref.id }}">{{ ref.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
-          {% endif %}
-          <div class="grid gap-4 md:grid-cols-2">
-            {% for sid in theme.statements %}
-            {{ stmtCard(sid) }}
-            {% endfor %}
-          </div>
+      <div class="grid gap-x-8 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+        {% for theme in C.consensus.themes %}
+        <div class="gr-theme">
+          <h3 class="mb-2">{{ theme.title }}</h3>
+          <p class="text-size--1 mb-3">{{ theme.blurb }}</p>
+          {{ cardCompact(theme.exemplar) }}
+          <details class="mt-2">
+            <summary><span class="gr-counts">Supporting statements &amp; group detail</span></summary>
+            <div class="flex flex-col gap-4 pb-4">
+              <div>
+                <p class="gr-counts mb-1">By group, for the statement above:</p>
+                {{ groupRows(S["" ~ theme.exemplar]) }}
+              </div>
+              {% for sid in theme.supporting %}
+              {{ cardFull(sid) }}
+              {% endfor %}
+              {% if theme.cross_refs %}
+              <p class="gr-counts">{% for ref in theme.cross_refs %}<a class="underline" href="#s{{ ref.id }}">{{ ref.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+              {% endif %}
+            </div>
+          </details>
         </div>
-      </details>
-      {% endfor %}
-      <p class="gr-counts mt-3">Statements are shown verbatim and are anonymous by design — Pol.is records no authorship visible to anyone.</p>
+        {% endfor %}
+      </div>
     </div>
   </section>
 
-  {# ---------- 4. opinion groups ---------- #}
+  {# ---------- 2. the three groups (portraits visible, cards collapsed) ---------- #}
   <section id="groups" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <h2 class="mb-4">{{ C.groups.title }}</h2>
@@ -233,20 +246,22 @@ description: "What would AI governance need to do so that everyone felt seen by 
         <article class="gr-group-col gr-border-{{ grp.key }}">
           <h3 class="mb-1"><span class="gr-text-{{ grp.key }}">{{ grp.key }}</span> — {{ grp.name }}</h3>
           <p class="gr-counts mb-3">{{ P.group_sizes[grp.key] }} participants</p>
-          <p class="text-size--1 mb-5">{{ grp.sketch }}</p>
-          <h4 class="gr-kicker mb-2">Signature statements</h4>
-          <div class="flex flex-col gap-4">
-            {% for sid in grp.signature_statements %}
-            {% set s = S["" ~ sid] %}
-            <div class="gr-card flex flex-col gap-2">
-              <p class="gr-stmt-text text-size--1">“{{ stmtText(s) }}”</p>
-              <p class="gr-counts">#{{ s.id }} · net agreement by group (left = disagree, right = agree)</p>
-              {% for g in ["A", "B", "C"] %}
-              {{ divergeRow(s, g, g == grp.key) }}
+          <p class="text-size--1 mb-3">{{ grp.sketch }}</p>
+          <details>
+            <summary><span class="gr-counts">Signature statements</span></summary>
+            <div class="flex flex-col gap-4 pb-4">
+              {% for sid in grp.cards %}
+              {{ cardFull(sid) }}
               {% endfor %}
+              {% if grp.references | length > 0 %}
+              <ul class="flex flex-col gap-2 text-size--2">
+                {% for sid in grp.references %}
+                <li>{{ refLine(sid) }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
             </div>
-            {% endfor %}
-          </div>
+          </details>
         </article>
         {% endfor %}
       </div>
@@ -254,194 +269,70 @@ description: "What would AI governance need to do so that everyone felt seen by 
     </div>
   </section>
 
-  {# ---------- 5. divides that cross the groups ---------- #}
-  <section id="divides" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <h2 class="mb-4">{{ C.divides.title }}</h2>
-      <p class="gr-prose mb-10">{{ C.divides.intro }}</p>
-
-      <div class="mb-12">
-        <h3 class="mb-2">{{ C.divides.inner_life.title }}</h3>
-        <p class="gr-prose mb-6">{{ C.divides.inner_life.caption }}</p>
-        <div class="grid gap-4 md:grid-cols-2">
-          {% for sid in C.divides.inner_life.statements %}
-          {% set s = S["" ~ sid] %}
-          <div class="gr-card flex flex-col gap-3">
-            <p class="gr-stmt-text">“{{ stmtText(s) }}”</p>
-            <p class="gr-counts">#{{ s.id }} · votes within each group</p>
-            {% for g in ["A", "B", "C"] %}
-            {% set t = s.groups[g] %}
-            <div class="gr-mini">
-              <span class="font-bold gr-text-{{ g }}" aria-hidden="true">{{ g }}</span>
-              {{ stackBar(t, "Group " + g) }}
-              <span class="gr-counts" title="Group {{ g }}: {{ countsLine(t) }}">{{ t.agrees }}·{{ t.disagrees }}·{{ t.passes }}{{ thinGlyph(t) }}</span>
-            </div>
-            {% endfor %}
-            <p class="gr-counts">Counts shown as agree · disagree · pass.</p>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
-      <div>
-        <h3 class="mb-2">{{ C.divides.bedfellows.title }}</h3>
-        <p class="gr-prose mb-6">{{ C.divides.bedfellows.caption }}</p>
-        <div class="grid gap-4 md:grid-cols-2">
-          <div>
-            <h4 class="gr-kicker mb-3">Opposed here…</h4>
-            <div class="flex flex-col gap-4">
-              {% for sid in C.divides.bedfellows.opposed_statements %}
-              {% set s = S["" ~ sid] %}
-              <div class="gr-card flex flex-col gap-2">
-                <p class="gr-stmt-text text-size--1">“{{ stmtText(s) }}”</p>
-                <p class="gr-counts">#{{ s.id }} · net agreement (left = disagree, right = agree)</p>
-                {% for g in ["A", "B", "C"] %}
-                {{ divergeRow(s, g, g != "B") }}
-                {% endfor %}
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-          <div>
-            <h4 class="gr-kicker mb-3">…in complete agreement here</h4>
-            <div class="flex flex-col gap-4">
-              {% for sid in C.divides.bedfellows.converge_statements %}
-              {% set s = S["" ~ sid] %}
-              <div class="gr-card flex flex-col gap-2">
-                <p class="gr-stmt-text text-size--1">“{{ stmtText(s) }}”</p>
-                <p class="gr-counts">#{{ s.id }} · net agreement (left = disagree, right = agree)</p>
-                {% for g in ["A", "B", "C"] %}
-                {{ divergeRow(s, g, true) }}
-                {% endfor %}
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {# ---------- 6. genuine disagreements ---------- #}
-  <section id="disagreements" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
-      <h2>{{ C.disagreements.title }}</h2>
-    </div>
-    <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
-      <div class="grid gap-8">
-        {% for item in C.disagreements.items %}
-        <div>
-          <h3 class="mb-2">{{ item.title }}</h3>
-          <p class="gr-prose mb-4">{{ item.blurb }}</p>
-          {% if item.statements | length > 0 %}
-          <div class="grid gap-4 md:grid-cols-2">
-            {% for sid in item.statements %}
-            {{ stmtCard(sid) }}
-            {% endfor %}
-          </div>
-          {% else %}
-          <div class="gr-card">
-            <p class="gr-counts mb-2">The three most-passed statements (of those seen by at least 10 participants):</p>
-            <ul class="flex flex-col gap-2">
-              {% for sid in R.display_rankings.most_passed.slice(0, 3) %}
-              {% set s = S["" ~ sid] %}
-              <li class="text-size--1">“{{ stmtText(s) }}” <span class="gr-counts">— {{ (s.pass_rate * 100) | round }}% passed ({{ s.total.passes }} of {{ s.total.votes }})</span></li>
-              {% endfor %}
-            </ul>
-          </div>
+  {# ---------- 3. where it genuinely split ---------- #}
+  <section id="split" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-6 lg:mb-0">
+      <h2 class="mb-4">{{ C.split.title }}</h2>
+      <p class="gr-prose mb-4">{{ C.split.lead }}</p>
+      <details>
+        <summary><span class="gr-counts">{{ C.split.expander_title }}</span></summary>
+        <div class="flex flex-col gap-4 pb-4">
+          <h3>{{ C.split.resolved.title }}</h3>
+          <p class="text-size--1">{{ C.split.resolved.blurb }}</p>
+          {{ cardFull(C.split.resolved.statement) }}
+          {% if C.split.resolved.cross_refs %}
+          <p class="gr-counts">{% for ref in C.split.resolved.cross_refs %}<a class="underline" href="#s{{ ref.id }}">{{ ref.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
           {% endif %}
         </div>
-        {% endfor %}
-      </div>
+      </details>
+    </div>
+    <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
+      {{ cardFull(C.split.statement) }}
     </div>
   </section>
 
-  {# ---------- 7. in their own words ---------- #}
-  <section id="voices" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <h2 class="mb-4">{{ C.voices.title }}</h2>
-      <p class="gr-prose mb-8">{{ C.voices.intro }}</p>
+  {# ---------- 4. the surprise (centerpiece) ---------- #}
+  <section id="surprise" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-feature">
+      <p class="gr-kicker mb-2">{{ C.surprise.kicker }}</p>
+      <h2 class="mb-4">{{ C.surprise.title }}</h2>
+      <p class="gr-prose mb-10">{{ C.surprise.intro }}</p>
+
+      <h3 class="mb-2">{{ C.surprise.bedfellows.title }}</h3>
+      <p class="gr-prose mb-2">{{ C.surprise.bedfellows.caption }}</p>
+      <p class="gr-counts gr-prose mb-6">{{ C.surprise.bedfellows.cross_ref_note }} {% for sid in [9, 0] %}{{ refLine(sid) }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+      <div class="grid gap-4 md:grid-cols-3 mb-12">
+        {% for sid in C.surprise.bedfellows.statements %}
+        {{ cardFull(sid) }}
+        {% endfor %}
+      </div>
+
+      <h3 class="mb-2">{{ C.surprise.inner_life.title }}</h3>
+      <p class="gr-prose mb-6">{{ C.surprise.inner_life.caption }}</p>
       <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        {% for sid in C.voices.statements %}
-        {% set s = S["" ~ sid] %}
-        <figure class="gr-card flex flex-col gap-3">
-          <blockquote class="gr-quote flex-grow">“{{ stmtText(s) }}”</blockquote>
-          <figcaption class="gr-counts">#{{ s.id }} · {{ countsLine(s.total) }}</figcaption>
-          {{ stackBar(s.total, "All participants") }}
-        </figure>
+        {% for sid in C.surprise.inner_life.statements %}
+        {{ cardFull(sid) }}
         {% endfor %}
       </div>
-      {% for q in C.panelist_quotes %}
-      {% if not q.pending_permission %}
-      <figure class="gr-card mt-6">
-        <blockquote class="gr-quote">“{{ q.quote }}”</blockquote>
-        <figcaption class="gr-counts mt-2">{{ q.context }}. {{ q.pair_note }}</figcaption>
-      </figure>
-      {% endif %}
-      {% endfor %}
     </div>
   </section>
 
-  {# ---------- 8. statement explorer ---------- #}
-  <section id="explorer" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <h2 class="mb-4">{{ C.explorer.title }}</h2>
-      <p class="gr-prose mb-4">{{ C.explorer.intro }}</p>
-      <div id="gr-filters" class="flex flex-wrap gap-2 mb-4" hidden>
-        <button type="button" class="gr-filter" data-sort="id" data-dir="asc" aria-pressed="true">In order</button>
-        <button type="button" class="gr-filter" data-sort="minagree" data-dir="desc" aria-pressed="false">Most consensus</button>
-        <button type="button" class="gr-filter" data-sort="div" data-dir="desc" aria-pressed="false">Most divisive</button>
-        <button type="button" class="gr-filter" data-sort="passrate" data-dir="desc" aria-pressed="false">Most passed</button>
+  {# ---------- 5. reading these numbers (quiet, stated once) ---------- #}
+  <section id="notes" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-note">
+      <h2 class="mb-4">{{ C.notes.title }}</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        {% for note in C.notes.items %}
+        <div>
+          <h3 class="mb-1">{{ note.title }}</h3>
+          <p>{{ note.text }}</p>
+        </div>
+        {% endfor %}
       </div>
-      <div class="gr-table-wrap">
-        <table class="gr-table" id="gr-explorer-table">
-          <thead>
-            <tr>
-              <th scope="col" class="gr-num" data-key="id">#</th>
-              <th scope="col" data-key="text">Statement</th>
-              <th scope="col" class="gr-num" data-key="agrees">Agree</th>
-              <th scope="col" class="gr-num" data-key="disagrees">Disagree</th>
-              <th scope="col" class="gr-num" data-key="passes">Pass</th>
-              <th scope="col" class="gr-num" data-key="ga" title="Group A agree rate"><span class="gr-text-A">A</span>&nbsp;agree</th>
-              <th scope="col" class="gr-num" data-key="gb" title="Group B agree rate"><span class="gr-text-B">B</span>&nbsp;agree</th>
-              <th scope="col" class="gr-num" data-key="gc" title="Group C agree rate"><span class="gr-text-C">C</span>&nbsp;agree</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for key, s in S %}
-            {% if not s.junk and s.text %}
-            <tr
-              data-id="{{ s.id }}"
-              data-agrees="{{ s.total.agrees }}"
-              data-disagrees="{{ s.total.disagrees }}"
-              data-passes="{{ s.total.passes }}"
-              data-passrate="{{ s.pass_rate }}"
-              data-minagree="{{ s.consensus_min_agree_rate if s.consensus_min_agree_rate != null else -1 }}"
-              data-div="{{ s.divisiveness if s.divisiveness != null else -1 }}"
-              data-ga="{{ s.groups.A.agree_rate if s.groups.A.votes > 0 else -1 }}"
-              data-gb="{{ s.groups.B.agree_rate if s.groups.B.votes > 0 else -1 }}"
-              data-gc="{{ s.groups.C.agree_rate if s.groups.C.votes > 0 else -1 }}"
-            >
-              <td class="gr-num">{{ s.id }}</td>
-              <td><span class="gr-stmt-text">{{ stmtText(s) }}</span> {{ sourceBadge(s) }}</td>
-              <td class="gr-num">{{ s.total.agrees }}</td>
-              <td class="gr-num">{{ s.total.disagrees }}</td>
-              <td class="gr-num">{{ s.total.passes }}</td>
-              {% for g in ["A", "B", "C"] %}
-              {% set t = s.groups[g] %}
-              <td class="gr-num{% if t.thin %} gr-cell-thin{% endif %}" title="Group {{ g }}: {{ countsLine(t) }}">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}%{% else %}–{% endif %}{{ thinGlyph(t) }}</td>
-              {% endfor %}
-            </tr>
-            {% endif %}
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      <p class="gr-counts mt-3">“Most consensus” ranks by the lowest agree rate across groups A/B/C (a statement only ranks high if every group agrees); “most divisive” by the spread of net agreement across groups. Statements with fewer than {{ R.rules.min_group_votes_for_rankings }} votes in any group are unranked and sort last. Three non-substantive entries are excluded (“Agree”, a test message, and “Not enough time, sorry”). Four statements submitted in the final minutes are omitted pending the final export.</p>
     </div>
   </section>
 
-  {# ---------- 9. what happens next ---------- #}
+  {# ---------- 6. what happens next ---------- #}
   <section id="next" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <h2 class="mb-6">{{ C.pipeline.title }}</h2>
@@ -459,48 +350,63 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <h3 class="mb-2">{{ C.pipeline.principles_title }}</h3>
       <p class="gr-prose mb-6">{{ C.pipeline.principles_intro }}</p>
 
-      {% if QV.status == "final" %}
-      <div class="gr-card mb-8">
-        <h4 class="gr-kicker mb-3">Quadratic vote results — voice credits per principle{% if QV.voters %} ({{ QV.voters }} voters{% if QV.credits_per_voter %}, {{ QV.credits_per_voter }} credits each{% endif %}){% endif %}</h4>
-        <div class="flex flex-col gap-2">
-          {% for p in C.pipeline.principles %}
-          {% set q = QV.byId[p.id] %}
-          <div class="gr-qv-row">
-            <span class="font-bold">{{ p.id }}</span>
-            <span role="img" aria-label="{{ p.id }} {{ p.title }}: {{ q.credits }} credits{% if q.votes != null %}, {{ q.votes }} votes{% endif %}"><span class="gr-qv-fill" style="width: {{ (q.credits / QV.maxCredits * 100) | round(1) }}%"></span></span>
-            <span class="gr-counts">{{ q.credits }} credits{% if q.votes != null %} · {{ q.votes }} votes{% endif %}</span>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% else %}
-      <div class="gr-card mb-8">
-        <p><strong>Voting opens soon.</strong> {{ C.pipeline.qv_pending_note }}</p>
-      </div>
+      {# QV-results container: the compact list below is the empty state.
+         When qv-results.json flips to status "final", each principle gains a
+         credits bar and the list re-sorts by credits, descending — no
+         restructuring needed. #}
+      {% if QV.status != "final" %}
+      <p class="gr-counts mb-6"><strong class="text-black">Voting opens soon.</strong> {{ C.pipeline.qv_pending_note }}</p>
       {% endif %}
-
-      <div class="grid gap-4 md:grid-cols-2">
-        {% for p in C.pipeline.principles %}
-        <article class="gr-card">
-          <h4 class="font-bold mb-1">{{ p.id }} — {{ p.title }} {% if p.tension %}<span class="gr-badge" style="color: #c53030" title="The deliberation did not resolve this question; the quadratic vote will weigh it.">sits on a live tension</span>{% endif %}</h4>
-          <p class="text-size--1 mb-3">{{ p.text }}</p>
-          <details>
-            <summary><span class="gr-counts">Grounding statements: {% for sid in p.grounding %}[{{ sid }}]{% if not loop.last %} {% endif %}{% endfor %}</span></summary>
-            <div class="flex flex-col gap-3 pb-3">
-              {% for sid in p.grounding %}
-              {% set s = S["" ~ sid] %}
-              <div>
-                <p class="gr-stmt-text text-size--1 mb-1">[{{ s.id }}] “{{ stmtText(s) }}”</p>
-                <p class="gr-counts">{{ countsLine(s.total) }}</p>
-              </div>
-              {% endfor %}
+      <ol class="gr-ballot">
+        {% for q in QV.sorted %}
+        {% set p = C.pipeline.principlesById[q.id] %}
+        <li class="gr-ballot-item">
+          <div class="gr-ballot-head">
+            <h4 class="font-bold">{{ p.id }} — {{ p.title }} {% if p.tension %}<span class="gr-badge" style="color: #c53030" title="The deliberation did not resolve this question; the quadratic vote will weigh it.">sits on a live tension</span>{% endif %}</h4>
+            {% if QV.status == "final" %}
+            <div class="gr-qv-row">
+              <span role="img" aria-label="{{ p.id }} {{ p.title }}: {{ q.credits }} credits{% if q.votes != null %}, {{ q.votes }} votes{% endif %}"><span class="gr-qv-fill" style="width: {{ (q.credits / QV.maxCredits * 100) | round(1) }}%"></span></span>
+              <span class="gr-counts">{{ q.credits }} credits</span>
             </div>
+            {% endif %}
+          </div>
+          <p class="text-size--1 mb-1">{{ p.text }}</p>
+          <details>
+            <summary><span class="gr-counts">Grounded in {% for sid in p.grounding %}[{{ sid }}]{% if not loop.last %} {% endif %}{% endfor %}</span></summary>
+            <ul class="flex flex-col gap-1 pb-3 text-size--2">
+              {% for sid in p.grounding %}
+              <li>{{ refLine(sid) }}</li>
+              {% endfor %}
+            </ul>
           </details>
-        </article>
+        </li>
         {% endfor %}
-      </div>
+      </ol>
+      {% if QV.status == "final" and QV.voters %}
+      <p class="gr-counts mt-2">{{ QV.voters }} voters{% if QV.credits_per_voter %}, {{ QV.credits_per_voter }} credits each{% endif %}.</p>
+      {% endif %}
     </div>
   </section>
+
+  {# ---------- 7. full data ---------- #}
+  <section id="data" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-card flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8">
+      <a class="underline font-bold" href="/geneva-reflections/data/">{{ C.data_page.link_label }} →</a>
+      <a class="underline text-size--1" href="{{ C.data_page.csv_path }}" download>{{ C.data_page.csv_label }}</a>
+    </div>
+  </section>
+
+  {# ---------- panelist quotes (render only with permission) ---------- #}
+  {% for q in C.panelist_quotes %}
+  {% if not q.pending_permission %}
+  <section class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <figure class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-card">
+      <blockquote class="gr-quote">“{{ q.quote }}”</blockquote>
+      <figcaption class="gr-counts mt-2">{{ q.context }}. {{ q.pair_note }}</figcaption>
+    </figure>
+  </section>
+  {% endif %}
+  {% endfor %}
 
   {# ---------- page footer ---------- #}
   <section id="about-this-page" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
