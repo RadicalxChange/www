@@ -62,12 +62,7 @@
 }
 @media (min-width: 640px) {
   .geneva .gr-stats {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .geneva .gr-stats {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .geneva .gr-stat {
@@ -390,6 +385,21 @@
   display: block;
   height: 0.9rem;
   background: #1a1a1a;
+}
+
+/* compact consensus themes: the section should scan, not sprawl */
+.geneva .gr-theme h3 {
+  font-size: var(--step--1);
+}
+.geneva .gr-theme > p {
+  font-size: var(--step--2);
+}
+.geneva .gr-theme .gr-card {
+  padding: 0.75rem;
+  gap: 0.5rem;
+}
+.geneva .gr-theme .gr-stmt-text {
+  font-size: var(--step--1);
 }
 
 /* the centerpiece section */

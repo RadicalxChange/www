@@ -154,32 +154,27 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 <main class="geneva">
 
-  {# ---------- hero (unchanged) ---------- #}
+  {# ---------- hero ---------- #}
   <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-8">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <p class="gr-kicker mb-4">{{ C.hero.event_name }} · {{ C.hero.event_date }}</p>
-      <h1 class="gr-hero-question mb-6">“{{ C.hero.question }}”</h1>
       <p class="gr-prose mb-2">{{ C.hero.official_line }}, convened by
         {%- for cv in C.hero.conveners %}
         {% if cv.url %}<a class="underline" href="{{ cv.url }}">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %}{% if not loop.last %},{% endif %}
         {%- endfor %}.
       </p>
-      <p class="gr-prose font-bold text-size-1">{{ C.hero.promise }}</p>
     </div>
   </header>
 
-  {# ---------- stats bar (unchanged) ---------- #}
+  {# ---------- stats bar ---------- #}
   <section aria-label="Participation at a glance" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-12">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <div class="gr-stats">
         <div class="gr-stat"><span class="gr-stat-number">{{ P.participants }}</span><span class="gr-stat-label">participants</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_votes_display }}</span><span class="gr-stat-label">votes cast</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ (P.live_share * 100) | round }}%</span><span class="gr-stat-label">of statements written live by participants ({{ P.live_statements }} of {{ P.total_statements }})</span></div>
         <div class="gr-stat"><span class="gr-stat-number">{{ C.stats.continents_display }}</span><span class="gr-stat-label">continents</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements</span></div>
         <div class="gr-stat"><span class="gr-stat-number">{{ P.opinion_groups }}</span><span class="gr-stat-label">opinion groups found</span></div>
       </div>
-      <p class="gr-counts mt-2">{{ C.stats.anonymity_note }}</p>
     </div>
   </section>
 
@@ -193,23 +188,30 @@ description: "What would AI governance need to do so that everyone felt seen by 
           <span class="gr-video-label">{{ C.video.title }}</span>
         </a>
       </div>
-      <p class="gr-counts mt-2">{{ C.video.caption }} {{ C.video.privacy_note }}</p>
+      <p class="gr-counts mt-2">{{ C.video.caption }}</p>
     </div>
   </section>
   {% endif %}
 
+  {# ---------- the question ---------- #}
+  <section aria-label="The deliberation question" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <h1 class="gr-hero-question">“{{ C.hero.question }}”</h1>
+    </div>
+  </section>
+
   {# ---------- 1. what the room agreed on ---------- #}
   <section id="agreed" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.consensus.kicker }}</p>
       <h2 class="mb-4">{{ C.consensus.title }}</h2>
       <p class="gr-prose mb-4">{{ C.consensus.intro }}</p>
       <div class="gr-legend mb-8">
         <span><span class="gr-swatch" style="background:#1a1a1a"></span>agree</span>
         <span><span class="gr-swatch" style="background:#d9d9d9"></span>pass</span>
         <span><span class="gr-swatch" style="background:repeating-linear-gradient(-45deg,#fff,#fff 3px,#6c6c6c 3px,#6c6c6c 4px)"></span>disagree</span>
-        <span>{{ C.legend_note }}</span>
       </div>
-      <div class="grid gap-x-8 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+      <div class="grid gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
         {% for theme in C.consensus.themes %}
         <div class="gr-theme">
           <h3 class="mb-2">{{ theme.title }}</h3>
@@ -239,6 +241,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
   {# ---------- 2. the three groups (portraits visible, cards collapsed) ---------- #}
   <section id="groups" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.groups.kicker }}</p>
       <h2 class="mb-4">{{ C.groups.title }}</h2>
       <p class="gr-prose mb-8">{{ C.groups.intro }}</p>
       <div class="gr-groups">
@@ -248,7 +251,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
           <p class="gr-counts mb-3">{{ P.group_sizes[grp.key] }} participants</p>
           <p class="text-size--1 mb-3">{{ grp.sketch }}</p>
           <details>
-            <summary><span class="gr-counts">Signature statements</span></summary>
+            <summary><span class="gr-counts">{{ C.groups.evidence_label }}</span></summary>
             <div class="flex flex-col gap-4 pb-4">
               {% for sid in grp.cards %}
               {{ cardFull(sid) }}
@@ -272,19 +275,9 @@ description: "What would AI governance need to do so that everyone felt seen by 
   {# ---------- 3. where it genuinely split ---------- #}
   <section id="split" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-6 lg:mb-0">
+      <p class="gr-kicker mb-2">{{ C.split.kicker }}</p>
       <h2 class="mb-4">{{ C.split.title }}</h2>
       <p class="gr-prose mb-4">{{ C.split.lead }}</p>
-      <details>
-        <summary><span class="gr-counts">{{ C.split.expander_title }}</span></summary>
-        <div class="flex flex-col gap-4 pb-4">
-          <h3>{{ C.split.resolved.title }}</h3>
-          <p class="text-size--1">{{ C.split.resolved.blurb }}</p>
-          {{ cardFull(C.split.resolved.statement) }}
-          {% if C.split.resolved.cross_refs %}
-          <p class="gr-counts">{% for ref in C.split.resolved.cross_refs %}<a class="underline" href="#s{{ ref.id }}">{{ ref.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
-          {% endif %}
-        </div>
-      </details>
     </div>
     <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
       {{ cardFull(C.split.statement) }}
@@ -298,43 +291,35 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <h2 class="mb-4">{{ C.surprise.title }}</h2>
       <p class="gr-prose mb-10">{{ C.surprise.intro }}</p>
 
+      <p class="gr-kicker mb-1">{{ C.surprise.bedfellows.finding_label }}</p>
       <h3 class="mb-2">{{ C.surprise.bedfellows.title }}</h3>
-      <p class="gr-prose mb-2">{{ C.surprise.bedfellows.caption }}</p>
+      <p class="gr-prose mb-3">{{ C.surprise.bedfellows.caption }}</p>
+      <p class="gr-prose text-size--1 mb-2"><em>{{ C.surprise.bedfellows.reading }}</em></p>
       <p class="gr-counts gr-prose mb-6">{{ C.surprise.bedfellows.cross_ref_note }} {% for sid in [9, 0] %}{{ refLine(sid) }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
-      <div class="grid gap-4 md:grid-cols-3 mb-12">
+      <div class="grid gap-4 md:grid-cols-3 mb-4">
         {% for sid in C.surprise.bedfellows.statements %}
         {{ cardFull(sid) }}
         {% endfor %}
       </div>
+      <p class="gr-prose font-bold text-size--1 mb-12">{{ C.surprise.bedfellows.takeaway }} <a class="underline" href="#next">{{ C.surprise.bedfellows.takeaway_link_label }}</a>.</p>
 
+      <p class="gr-kicker mb-1">{{ C.surprise.inner_life.finding_label }}</p>
       <h3 class="mb-2">{{ C.surprise.inner_life.title }}</h3>
-      <p class="gr-prose mb-6">{{ C.surprise.inner_life.caption }}</p>
-      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <p class="gr-prose mb-3">{{ C.surprise.inner_life.caption }}</p>
+      <p class="gr-prose text-size--1 mb-6"><em>{{ C.surprise.inner_life.reading }}</em></p>
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4 mb-4">
         {% for sid in C.surprise.inner_life.statements %}
         {{ cardFull(sid) }}
         {% endfor %}
       </div>
+      <p class="gr-prose font-bold text-size--1">{{ C.surprise.inner_life.takeaway }}</p>
     </div>
   </section>
 
-  {# ---------- 5. reading these numbers (quiet, stated once) ---------- #}
-  <section id="notes" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-note">
-      <h2 class="mb-4">{{ C.notes.title }}</h2>
-      <div class="grid gap-6 md:grid-cols-2">
-        {% for note in C.notes.items %}
-        <div>
-          <h3 class="mb-1">{{ note.title }}</h3>
-          <p>{{ note.text }}</p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  {# ---------- 6. what happens next ---------- #}
+  {# ---------- 5. what happens next ---------- #}
   <section id="next" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.pipeline.kicker }}</p>
       <h2 class="mb-6">{{ C.pipeline.title }}</h2>
       <ol class="gr-pipeline mb-4">
         {% for step in C.pipeline.steps %}
@@ -355,7 +340,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
          credits bar and the list re-sorts by credits, descending — no
          restructuring needed. #}
       {% if QV.status != "final" %}
-      <p class="gr-counts mb-6"><strong class="text-black">Voting opens soon.</strong> {{ C.pipeline.qv_pending_note }}</p>
+      <p class="gr-counts mb-6"><strong class="text-black">The ballot is still taking shape.</strong> {{ C.pipeline.qv_pending_note }}</p>
       {% endif %}
       <ol class="gr-ballot">
         {% for q in QV.sorted %}
@@ -384,6 +369,9 @@ description: "What would AI governance need to do so that everyone felt seen by 
       </ol>
       {% if QV.status == "final" and QV.voters %}
       <p class="gr-counts mt-2">{{ QV.voters }} voters{% if QV.credits_per_voter %}, {{ QV.credits_per_voter }} credits each{% endif %}.</p>
+      {% endif %}
+      {% if QV.status != "final" %}
+      <p class="gr-prose text-size--1 mt-8"><strong>{{ C.pipeline.feedback_ask }}</strong> Share your revisions through the <a class="underline" href="{{ C.footer.rwg_signup_url }}">Reflections Working Group</a>{% if C.footer.contact_email %} or write to <a class="underline" href="mailto:{{ C.footer.contact_email }}">{{ C.footer.contact_email }}</a>{% endif %}.</p>
       {% endif %}
     </div>
   </section>
