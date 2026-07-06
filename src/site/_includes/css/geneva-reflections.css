@@ -236,8 +236,12 @@
   white-space: nowrap;
 }
 .geneva .gr-thin {
-  cursor: help;
-  border-bottom: 1px dotted #6c6c6c;
+  color: #6c6c6c;
+}
+/* thin-data table cells: greyed, per the ◔ legend */
+.geneva .gr-cell-thin {
+  color: #8a8a8a;
+  background: #f7f7f7;
 }
 
 /* legend */

@@ -76,7 +76,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 {# ---------- macros ---------- #}
 
-{% macro thinGlyph(t) %}{% if t.thin %}<span class="gr-thin" title="Thin data: this group's tally rests on fewer than 5 votes">◔<span class="sr-only"> (thin data: fewer than 5 votes in this group)</span></span>{% endif %}{% endmacro %}
+{% macro thinGlyph(t) %}{% if t.thin %}<span class="gr-thin"><span aria-hidden="true">◔</span><span class="sr-only"> (thin)</span></span>{% endif %}{% endmacro %}
 
 {% macro countsLine(t) %}{{ t.agrees }} agree · {{ t.disagrees }} disagree · {{ t.passes }} pass · n={{ t.votes }}{% endmacro %}
 
@@ -126,7 +126,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
 {# full statement card: text, total bar, per-group mini bars #}
 {% macro stmtCard(sid) %}
 {% set s = S["" ~ sid] %}
-<div class="gr-card flex flex-col gap-3">
+<div class="gr-card flex flex-col gap-3" id="s{{ s.id }}">
   <p class="gr-stmt-text">“{{ stmtText(s) }}”</p>
   <div class="flex items-baseline gap-2">
     <span class="gr-counts">#{{ s.id }}</span>
@@ -199,7 +199,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
         <span><span class="gr-swatch" style="background:#1a1a1a"></span>agree</span>
         <span><span class="gr-swatch" style="background:#d9d9d9"></span>pass</span>
         <span><span class="gr-swatch" style="background:repeating-linear-gradient(-45deg,#fff,#fff 3px,#6c6c6c 3px,#6c6c6c 4px)"></span>disagree</span>
-        <span>◔ = fewer than 5 votes in that group</span>
+        <span>◔ = thin data: fewer than 5 votes cast in that group; treat as directional</span>
       </div>
       {% for theme in C.consensus.themes %}
       <details {% if loop.first %}open{% endif %}>
@@ -208,6 +208,9 @@ description: "What would AI governance need to do so that everyone felt seen by 
         </summary>
         <div class="pb-6">
           <p class="gr-prose mb-4">{{ theme.blurb }}</p>
+          {% if theme.cross_refs %}
+          <p class="gr-prose gr-counts mb-4">{% for ref in theme.cross_refs %}<a class="underline" href="#s{{ ref.id }}">{{ ref.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+          {% endif %}
           <div class="grid gap-4 md:grid-cols-2">
             {% for sid in theme.statements %}
             {{ stmtCard(sid) }}
@@ -340,7 +343,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
           <div class="gr-card">
             <p class="gr-counts mb-2">The three most-passed statements (of those seen by at least 10 participants):</p>
             <ul class="flex flex-col gap-2">
-              {% for sid in R.rankings.most_passed.slice(0, 3) %}
+              {% for sid in R.display_rankings.most_passed.slice(0, 3) %}
               {% set s = S["" ~ sid] %}
               <li class="text-size--1">“{{ stmtText(s) }}” <span class="gr-counts">— {{ (s.pass_rate * 100) | round }}% passed ({{ s.total.passes }} of {{ s.total.votes }})</span></li>
               {% endfor %}
@@ -406,7 +409,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
           </thead>
           <tbody>
             {% for key, s in S %}
-            {% if not s.junk %}
+            {% if not s.junk and s.text %}
             <tr
               data-id="{{ s.id }}"
               data-agrees="{{ s.total.agrees }}"
@@ -426,7 +429,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
               <td class="gr-num">{{ s.total.passes }}</td>
               {% for g in ["A", "B", "C"] %}
               {% set t = s.groups[g] %}
-              <td class="gr-num" title="Group {{ g }}: {{ countsLine(t) }}">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}%{% else %}–{% endif %}{{ thinGlyph(t) }}</td>
+              <td class="gr-num{% if t.thin %} gr-cell-thin{% endif %}" title="Group {{ g }}: {{ countsLine(t) }}">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}%{% else %}–{% endif %}{{ thinGlyph(t) }}</td>
               {% endfor %}
             </tr>
             {% endif %}
@@ -434,7 +437,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
           </tbody>
         </table>
       </div>
-      <p class="gr-counts mt-3">“Most consensus” ranks by the lowest agree rate across groups A/B/C (a statement only ranks high if every group agrees); “most divisive” by the spread of net agreement across groups. Statements with fewer than {{ R.rules.min_group_votes_for_rankings }} votes in any group are unranked and sort last. Three junk statements ({{ R.rules.junk_ids | join(", ") }}) are excluded.</p>
+      <p class="gr-counts mt-3">“Most consensus” ranks by the lowest agree rate across groups A/B/C (a statement only ranks high if every group agrees); “most divisive” by the spread of net agreement across groups. Statements with fewer than {{ R.rules.min_group_votes_for_rankings }} votes in any group are unranked and sort last. Three non-substantive entries are excluded (“Agree”, a test message, and “Not enough time, sorry”). Four statements submitted in the final minutes are omitted pending the final export.</p>
     </div>
   </section>
 

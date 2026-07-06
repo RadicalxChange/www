@@ -19,6 +19,14 @@ module.exports = () => {
   results.participation.total_votes_display =
     results.participation.total_votes.toLocaleString("en-US");
 
+  // Rankings restricted to statements whose text is present in the export —
+  // statements voted on in the final minutes can appear in the vote matrix
+  // before the statement-text export catches up, and must not render.
+  const hasText = (id) => results.statements[String(id)].text;
+  results.display_rankings = Object.fromEntries(
+    Object.entries(results.rankings).map(([k, ids]) => [k, ids.filter(hasText)])
+  );
+
   qv.byId = Object.fromEntries(qv.principles.map((p) => [p.id, p]));
   qv.maxCredits = Math.max(
     1,

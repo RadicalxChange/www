@@ -55,7 +55,10 @@
       {
         "title": "Community authorship",
         "blurb": "Communities should be able to build and shape AI on their own values, with each member seeing their own data first.",
-        "statements": [3, 17, 15, 6]
+        "statements": [3, 17, 15],
+        "cross_refs": [
+          { "id": 6, "label": "See also the consent duty participants set for community-built AI — statement [6], under Data, consent & surveillance" }
+        ]
       },
       {
         "title": "Value transparency & epistemic care",
@@ -71,7 +74,7 @@
       {
         "key": "A",
         "name": "Boundary Keepers",
-        "sketch": "Locates the remedy in limits on AI's reach: it isn't AI's job to reflect every culture's values [9]; some questions should only ever be answered by a person [13]; they do not want to feel “seen” by AI [23] and are drawn to statements of loss — the friend who talks more to AI than to them [30], AI as junk food [55]. The room's heavy passers: their abstentions cluster on statements about lived experience of misrepresentation, reading as distance from the experience rather than opposition to the agenda.",
+        "sketch": "Locates the remedy in limits on AI's reach: it isn't AI's job to reflect every culture's values [9]; some questions should only ever be answered by a person [13]; they do not want to feel “seen” by AI [23] and are drawn to statements of loss — the friend who talks more to AI than to them [30], AI as “junk food” [55]. The room's heavy passers: their abstentions cluster on statements about lived experience of misrepresentation, reading as distance from the experience rather than opposition to the agenda.",
         "signature_statements": [9, 13, 23, 30]
       },
       {
@@ -131,7 +134,7 @@
   },
   "explorer": {
     "title": "Every statement",
-    "intro": "The full record: every statement voted on in the deliberation (three junk entries excluded), with room-wide tallies and each group's agree rate. Sort and filter, or just read — the table works without JavaScript too."
+    "intro": "The full record: every statement voted on in the deliberation — three non-substantive entries excluded (“Agree”, a test message, and “Not enough time, sorry”) — with room-wide tallies and each group's agree rate. Sort and filter, or just read — the table works without JavaScript too."
   },
   "pipeline": {
     "title": "What happens next",
