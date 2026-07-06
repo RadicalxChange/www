@@ -48,7 +48,7 @@ module.exports = () => {
   });
   content.groups.list.forEach((g) => (g.cards || []).forEach(claim));
   claim(content.split.statement);
-  claim(content.split.resolved.statement);
+  if (content.split.resolved) claim(content.split.resolved.statement);
   content.surprise.bedfellows.statements.forEach(claim);
   content.surprise.inner_life.statements.forEach(claim);
   content.carded = carded;
