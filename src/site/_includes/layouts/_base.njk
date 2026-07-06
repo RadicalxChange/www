@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
+    <!-- prettier-ignore -->
+    {% block fontPreloads %}
     <link
       rel="preload"
       href="/fonts/hinted-MesserV20-Condensed.woff2"
@@ -39,10 +41,16 @@
       type="font/woff2"
       crossorigin
     />
+    <!-- prettier-ignore -->
+    {% endblock %}
+    <!-- prettier-ignore -->
+    {% block mathStyles %}
     <link
       rel="stylesheet"
       href="https://unpkg.com/katex@latest/dist/katex.min.css"
     />
+    <!-- prettier-ignore -->
+    {% endblock %}
     <!-- prettier-ignore -->
     {% block metaTags %}
     <meta
