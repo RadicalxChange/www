@@ -154,11 +154,12 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 <main class="geneva">
 
-  {# ---------- hero ---------- #}
-  <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-8">
+  {# ---------- masthead ---------- #}
+  <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-10">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <p class="gr-kicker mb-4">{{ C.hero.event_name }} · {{ C.hero.event_date }}</p>
-      <p class="gr-prose mb-2">{{ C.hero.official_line }}, convened by
+      <h1 class="gr-masthead mb-2">{{ C.hero.title }}</h1>
+      <p class="gr-kicker mb-3">{{ C.hero.subtitle }} · {{ C.hero.event_date }}</p>
+      <p class="gr-counts gr-prose">{{ C.hero.official_line }}, convened by
         {%- for cv in C.hero.conveners %}
         {% if cv.url %}<a class="underline" href="{{ cv.url }}">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %}{% if not loop.last %},{% endif %}
         {%- endfor %}.
@@ -166,22 +167,10 @@ description: "What would AI governance need to do so that everyone felt seen by 
     </div>
   </header>
 
-  {# ---------- stats bar ---------- #}
-  <section aria-label="Participation at a glance" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-12">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <div class="gr-stats">
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.participants }}</span><span class="gr-stat-label">participants</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ C.stats.continents_display }}</span><span class="gr-stat-label">continents</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.opinion_groups }}</span><span class="gr-stat-label">opinion groups found</span></div>
-      </div>
-    </div>
-  </section>
-
-  {# ---------- session recording ---------- #}
-  {% if C.video %}
-  <section id="recording" aria-label="Session recording" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-3 lg:col-end-gutter-11">
+  {# ---------- session recording + participation band ---------- #}
+  <section id="recording" aria-label="Session recording and participation" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    {% if C.video %}
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-6 lg:mb-0">
       <div class="gr-video" data-youtube-id="{{ C.video.youtube_id }}">
         <a class="gr-video-facade" href="{{ C.video.url }}">
           <span class="gr-video-play" aria-hidden="true"></span>
@@ -190,13 +179,25 @@ description: "What would AI governance need to do so that everyone felt seen by 
       </div>
       <p class="gr-counts mt-2">{{ C.video.caption }}</p>
     </div>
+    <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+      <div class="gr-stats gr-stats-col">
+    {% else %}
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <div class="gr-stats">
+    {% endif %}
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.participants }}</span><span class="gr-stat-label">participants</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ C.stats.continents_display }}</span><span class="gr-stat-label">continents</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.opinion_groups }}</span><span class="gr-stat-label">opinion groups found</span></div>
+      </div>
+    </div>
   </section>
-  {% endif %}
 
   {# ---------- the question ---------- #}
   <section aria-label="The deliberation question" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <h1 class="gr-hero-question">“{{ C.hero.question }}”</h1>
+      <p class="gr-kicker mb-2">{{ C.hero.question_kicker }}</p>
+      <p class="gr-hero-question">“{{ C.hero.question }}”</p>
     </div>
   </section>
 

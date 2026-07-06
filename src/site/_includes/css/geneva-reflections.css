@@ -41,7 +41,14 @@
   max-width: 46em;
 }
 
-/* ---- hero ---------------------------------------------------------- */
+/* ---- masthead & question ------------------------------------------- */
+
+.geneva .gr-masthead {
+  font-family: Messer, sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  line-height: 0.98;
+}
 
 .geneva .gr-hero-question {
   font-family: Messer, sans-serif;
@@ -63,6 +70,14 @@
 @media (min-width: 640px) {
   .geneva .gr-stats {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* stats stacked in a column beside the video */
+@media (min-width: 768px) {
+  .geneva .gr-stats-col {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    height: 100%;
   }
 }
 .geneva .gr-stat {
