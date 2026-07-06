@@ -18,10 +18,31 @@ site-data/results.json         <- ALL numbers on the page come from here
 site-data/content.json         <- editorial copy; refers to statements by id only
 site-data/qv-results.json      <- quadratic-vote results (stub until the vote closes)
 src/site/_data/geneva.js       <- Eleventy loader exposing the three JSONs as `geneva`
-src/site/geneva-reflections/index.njk        <- the page (renders every number server-side)
+src/site/geneva-reflections/index.njk        <- the main page (tiered; every number server-side)
+src/site/geneva-reflections/data/index.njk   <- /geneva-reflections/data/: full statement table
+src/site/files/geneva-reflections-statements.csv <- statement-level CSV (written by analyze.py)
 src/site/_includes/css/geneva-reflections.css <- page styles (imported by styles.css)
-src/site/js/geneva-reflections.js            <- progressive enhancement (table sort/filter)
+src/site/js/geneva-reflections.js            <- progressive enhancement (video, table sort/filter)
 ```
+
+The main page is tiered: Tier 1 reads top-to-bottom with no interaction
+(consensus themes with one exemplar card each, the group portraits, the [9]
+divide, the bridging centerpiece, the pipeline); Tier 2 is native `<details>`
+expanders (supporting statements, group signature cards, divide detail);
+Tier 3 is the full table on /geneva-reflections/data/ plus the CSV download.
+
+**Render-once rule:** each statement gets exactly one card on the main page,
+assigned in `content.json` (theme `exemplar`/`supporting`, group `cards`,
+`split`, `surprise`). Everything else must be a reference — `geneva.js`
+builds the `carded` map and **throws at build time if a statement is
+assigned two cards**. Reference links resolve to the card anchor (`#s<id>`)
+or to the statement's row on the data page. The headline figure is always
+"% agree (x/n)" and the only visual is the stacked agree/pass/disagree bar;
+full tallies live in tooltips and aria-labels.
+
+The published CSV is the **statement-level aggregate** written by
+analyze.py. The raw participant-votes export stays out of the public repo
+(participant-level rows; see the gitignore note).
 
 The page is fully readable with JavaScript disabled: every chart is
 server-rendered HTML/CSS with visible counts and ARIA labels, expandable

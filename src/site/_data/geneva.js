@@ -19,10 +19,52 @@ module.exports = () => {
   results.participation.total_votes_display =
     results.participation.total_votes.toLocaleString("en-US");
 
+  // Rankings restricted to statements whose text is present in the export —
+  // statements voted on in the final minutes can appear in the vote matrix
+  // before the statement-text export catches up, and must not render.
+  const hasText = (id) => results.statements[String(id)].text;
+  results.display_rankings = Object.fromEntries(
+    Object.entries(results.rankings).map(([k, ids]) => [k, ids.filter(hasText)])
+  );
+
+  // Render-once rule: each statement gets exactly one card on the main page.
+  // `carded` maps statement id -> true for every id that owns a card, derived
+  // from the editorial structure, so reference links can resolve to the card
+  // anchor (#s<id>) on the main page or to the row on /geneva-reflections/data/.
+  const carded = {};
+  const claim = (id) => {
+    if (id == null) return;
+    if (carded[id]) {
+      throw new Error(
+        `geneva content.json: statement [${id}] is assigned a card twice — ` +
+          "the render-once rule requires a single canonical card per statement."
+      );
+    }
+    carded[id] = true;
+  };
+  content.consensus.themes.forEach((t) => {
+    claim(t.exemplar);
+    (t.supporting || []).forEach(claim);
+  });
+  content.groups.list.forEach((g) => (g.cards || []).forEach(claim));
+  claim(content.split.statement);
+  claim(content.split.resolved.statement);
+  content.surprise.bedfellows.statements.forEach(claim);
+  content.surprise.inner_life.statements.forEach(claim);
+  content.carded = carded;
+
   qv.byId = Object.fromEntries(qv.principles.map((p) => [p.id, p]));
   qv.maxCredits = Math.max(
     1,
     ...qv.principles.map((p) => (p.credits == null ? 0 : p.credits))
+  );
+  // Results view renders principles sorted by credits, descending.
+  qv.sorted =
+    qv.status === "final"
+      ? [...qv.principles].sort((a, b) => (b.credits || 0) - (a.credits || 0))
+      : qv.principles;
+  content.pipeline.principlesById = Object.fromEntries(
+    content.pipeline.principles.map((p) => [p.id, p])
   );
 
   return { results, content, qv };
