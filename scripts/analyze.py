@@ -93,8 +93,13 @@ def load_matrix(path):
 
 
 def main():
-    votes_path = find_one("*participant-votes*.csv")
-    groups_path = find_one("*comment-groups*.csv")
+    # Pinned to the 09:00 snapshot: /geneva-reflections/ was published from
+    # it and must not silently change. The story page uses the 15:05 export
+    # via scripts/story_compute.py. To move this page to a newer export,
+    # change SNAPSHOT deliberately.
+    SNAPSHOT = "2026-07-06-0900"
+    votes_path = find_one(f"{SNAPSHOT}*participant-votes*.csv")
+    groups_path = find_one(f"{SNAPSHOT}*comment-groups*.csv")
 
     texts = load_statement_text(groups_path)
     rows, stmt_ids = load_matrix(votes_path)

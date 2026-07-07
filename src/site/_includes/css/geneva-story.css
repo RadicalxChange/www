@@ -1,0 +1,180 @@
+/* /geneva-reflections/story/ — story-first companion to the data report.
+   Inherits the .geneva component styles (cards, bars, kickers); everything
+   here is scoped .st- and additive. */
+
+/* inline bloc-C text needs a darker green than the dot hue for WCAG AA */
+.geneva.st .gr-text-C {
+  color: #007858;
+}
+
+/* review banner */
+.geneva .st-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: var(--step--3);
+}
+.geneva .st-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+.geneva .st-banner button {
+  margin-left: auto;
+  font: inherit;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 0.4rem;
+}
+
+/* acts */
+.geneva .st-act {
+  scroll-margin-top: 2rem;
+}
+.geneva .st-hook {
+  font-weight: bold;
+  font-size: var(--step-1);
+  line-height: 1.25;
+  max-width: 30em;
+}
+.geneva .st-takeaway {
+  font-weight: bold;
+  max-width: 46em;
+}
+
+/* evidence card */
+.geneva .st-card {
+  border: 1px solid var(--gr-rule);
+  background: #fff;
+  padding: 0 1rem;
+  margin: 0;
+}
+.geneva .st-card > summary {
+  padding: 0.8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.8rem;
+}
+.geneva .st-card .st-claim {
+  font-weight: bold;
+  font-size: var(--step--1);
+}
+.geneva .st-card-body {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.geneva .st-cards {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+@media (min-width: 768px) {
+  .geneva .st-cards-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .geneva .st-cards-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* the caveat box — mandatory, may not be softened or removed */
+.geneva .st-caveat {
+  border: 2px solid #1a1a1a;
+  padding: 1rem;
+  background: #fff;
+  max-width: 52em;
+}
+.geneva .st-caveat h3 {
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.geneva .st-caveat p {
+  font-size: var(--step--2);
+}
+
+/* quadrant map + strip */
+.geneva .st-figure svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.geneva .st-figure text {
+  font-family: "Suisse Intl", sans-serif;
+}
+.geneva .st-figcaption {
+  font-size: var(--step--3);
+  color: #6c6c6c;
+  max-width: 46em;
+}
+.geneva .st-dot {
+  cursor: pointer;
+}
+.geneva .st-dot:focus-visible {
+  outline: 2px solid #1a1a1a;
+}
+
+/* strip popover panel */
+.geneva .st-strip-panel {
+  border: 1px solid var(--gr-rule);
+  background: #fff;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+.geneva .st-strip-panel[hidden] {
+  display: none;
+}
+
+/* ledger */
+.geneva .st-ledger {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .geneva .st-ledger {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .geneva .st-ledger {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.geneva .st-ledger-route {
+  font-size: var(--step--4);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6c6c6c;
+}
+
+/* ballot */
+.geneva .st-ballot {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+  .geneva .st-ballot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.geneva .st-ballot-item {
+  border-top: 1px solid var(--gr-rule);
+  padding-top: 0.6rem;
+}
+.geneva .st-flag {
+  color: #c53030;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* downloads */
+.geneva .st-downloads li {
+  font-size: var(--step--2);
+  padding: 0.2rem 0;
+}
