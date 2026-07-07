@@ -306,7 +306,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
         {{ cardFull(sid) }}
         {% endfor %}
       </div>
-      <p class="gr-prose font-bold text-size--1 mb-12">{{ C.surprise.bedfellows.takeaway }} <a class="underline" href="#next">{{ C.surprise.bedfellows.takeaway_link_label }}</a>.</p>
+      <p class="gr-prose font-bold text-size--1 mb-12">{{ C.surprise.bedfellows.takeaway }}</p>
 
       <p class="gr-kicker mb-1">{{ C.surprise.inner_life.finding_label }}</p>
       <h3 class="mb-2">{{ C.surprise.inner_life.title }}</h3>
@@ -335,49 +335,6 @@ description: "What would AI governance need to do so that everyone felt seen by 
         </li>
         {% endfor %}
       </ol>
-      <p class="gr-prose mb-10"><strong>How the vote works:</strong> {{ C.pipeline.qv_explainer }}</p>
-
-      <h3 class="mb-2">{{ C.pipeline.principles_title }}</h3>
-      <p class="gr-prose mb-6">{{ C.pipeline.principles_intro }}</p>
-
-      {# QV-results container: the compact list below is the empty state.
-         When qv-results.json flips to status "final", each principle gains a
-         credits bar and the list re-sorts by credits, descending — no
-         restructuring needed. #}
-      {% if QV.status != "final" %}
-      <p class="gr-counts mb-6"><strong class="text-black">The ballot is still taking shape.</strong> {{ C.pipeline.qv_pending_note }}</p>
-      {% endif %}
-      <ol class="gr-ballot">
-        {% for q in QV.sorted %}
-        {% set p = C.pipeline.principlesById[q.id] %}
-        <li class="gr-ballot-item">
-          <div class="gr-ballot-head">
-            <h4 class="font-bold">{{ p.id }} — {{ p.title }} {% if p.tension %}<span class="gr-badge" style="color: #c53030" title="The deliberation did not resolve this question; the quadratic vote will weigh it.">sits on a live tension</span>{% endif %}</h4>
-            {% if QV.status == "final" %}
-            <div class="gr-qv-row">
-              <span role="img" aria-label="{{ p.id }} {{ p.title }}: {{ q.credits }} credits{% if q.votes != null %}, {{ q.votes }} votes{% endif %}"><span class="gr-qv-fill" style="width: {{ (q.credits / QV.maxCredits * 100) | round(1) }}%"></span></span>
-              <span class="gr-counts">{{ q.credits }} credits</span>
-            </div>
-            {% endif %}
-          </div>
-          <p class="text-size--1 mb-1">{{ p.text }}</p>
-          <details>
-            <summary><span class="gr-counts">Grounded in {% for sid in p.grounding %}[{{ sid }}]{% if not loop.last %} {% endif %}{% endfor %}</span></summary>
-            <ul class="flex flex-col gap-1 pb-3 text-size--2">
-              {% for sid in p.grounding %}
-              <li>{{ refLine(sid) }}</li>
-              {% endfor %}
-            </ul>
-          </details>
-        </li>
-        {% endfor %}
-      </ol>
-      {% if QV.status == "final" and QV.voters %}
-      <p class="gr-counts mt-2">{{ QV.voters }} voters{% if QV.credits_per_voter %}, {{ QV.credits_per_voter }} credits each{% endif %}.</p>
-      {% endif %}
-      {% if QV.status != "final" %}
-      <p class="gr-prose text-size--1 mt-8"><strong>{{ C.pipeline.feedback_ask }}</strong> Share your revisions through the <a class="underline" href="{{ C.footer.rwg_signup_url }}">Reflections Working Group</a>{% if C.footer.contact_email %} or write to <a class="underline" href="mailto:{{ C.footer.contact_email }}">{{ C.footer.contact_email }}</a>{% endif %}.</p>
-      {% endif %}
     </div>
   </section>
 
