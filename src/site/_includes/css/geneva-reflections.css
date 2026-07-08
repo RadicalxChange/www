@@ -8,9 +8,14 @@
   --gr-group-a: #0072b2; /* Okabe–Ito blue */
   --gr-group-b: #d55e00; /* Okabe–Ito vermillion */
   --gr-group-c: #009e73; /* Okabe–Ito bluish green */
-  --gr-agree: #1a1a1a;
-  --gr-pass: #d9d9d9;
-  --gr-disagree-border: #6c6c6c;
+  /* vote palette (one system; bloc blue/green never shares an element
+     with it): agree = deep madder, inky enough to hold its own against
+     the black display type; pass = warm neutral; disagree keeps the
+     diagonal hatch in a cool ink-gray so grayscale/print/colorblind
+     readers get the same encoding. */
+  --gr-agree: #8c2b1e;
+  --gr-pass: #d9d2c9;
+  --gr-disagree-border: #47525c;
   --gr-rule: #e5e5e5;
 }
 
@@ -215,6 +220,13 @@
 }
 .geneva .gr-thin {
   color: #6c6c6c;
+}
+/* companion touch (one, after the self-critique pass): headline tally
+   bolds pick up the agree accent, tying the number to the agree fill it
+   summarizes. The vote palette stays off statement-provenance badges —
+   those are metadata, not votes (two systems, no blending). */
+.geneva .gr-counts strong {
+  color: var(--gr-agree);
 }
 /* thin-data table cells: greyed, per the ◔ legend (background carries the
    de-emphasis; text stays WCAG AA against it) */
