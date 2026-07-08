@@ -7,29 +7,6 @@
   color: #007858;
 }
 
-/* review banner */
-.geneva .st-banner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.4rem 1rem;
-  padding: 0.5rem 1rem;
-  background: #1a1a1a;
-  color: #fff;
-  font-size: var(--step--3);
-}
-.geneva .st-banner a {
-  color: #fff;
-  text-decoration: underline;
-}
-.geneva .st-banner button {
-  margin-left: auto;
-  font: inherit;
-  color: #fff;
-  cursor: pointer;
-  padding: 0 0.4rem;
-}
-
 /* acts */
 .geneva .st-act {
   scroll-margin-top: 2rem;
@@ -120,15 +97,51 @@
   outline: 2px solid #1a1a1a;
 }
 
-/* strip popover panel */
-.geneva .st-strip-panel {
+/* big computed facts (Act 2) */
+.geneva .st-bigfacts {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .geneva .st-bigfacts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.geneva .st-bigfact {
   border: 1px solid var(--gr-rule);
   background: #fff;
   padding: 1rem;
-  margin-top: 0.5rem;
 }
-.geneva .st-strip-panel[hidden] {
-  display: none;
+.geneva .st-bigfact .gr-stat-number {
+  font-size: var(--step-4);
+}
+
+/* dissolving-groups diagram: two panels side by side, stacked on mobile */
+.geneva .st-diagram {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .geneva .st-diagram {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.geneva .st-diagram svg {
+  width: 100%;
+  height: auto;
+  background: #fafafa;
+  border: 1px solid var(--gr-rule);
+}
+
+/* the two-remedies fork: equal visual weight, non-hierarchical */
+.geneva .st-remedies {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .geneva .st-remedies {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ledger */

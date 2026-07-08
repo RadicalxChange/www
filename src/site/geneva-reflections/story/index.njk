@@ -1,6 +1,7 @@
 ---
-title: "Can AI See Me? — The story of the deliberation"
-description: "A story-first reading of the “Can AI See Me?” Pol.is deliberation: what a room of faith leaders, peacebuilders, and technologists agreed on, how its opinions actually organize, and what it asked of AI governance."
+title: "Can AI See Me? — Results"
+description: "What a room of faith leaders, peacebuilders, and technologists agreed on about AI, where it genuinely split, and the red lines it drew — results of the “Can AI See Me?” deliberation at the first UN Global Dialogue on AI Governance."
+eleventyExcludeFromCollections: true
 ---
 
 <!-- prettier-ignore -->
@@ -16,11 +17,13 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
 <!-- prettier-ignore -->
 {% set ST = CP.statements %}
 <!-- prettier-ignore -->
-{% set Q = CP.axes.quadrants %}
+{% set C = geneva.content %}
 
-{# FEEDBACK_URL: placeholder — replace with the review form / mailto link. #}
-<!-- prettier-ignore -->
-{% set FEEDBACK_URL = "FEEDBACK_URL_PLACEHOLDER" %}
+{# Candidate replacement for /geneva-reflections — under side-by-side
+   comparison. noindex + excluded from collections/sitemap until promoted.
+   Every number renders from site-data/computed.json (15:05 export);
+   nothing is hand-typed. See src/site/geneva-reflections/README.md for the
+   promotion / discard procedures. #}
 
 <!-- prettier-ignore -->
 {% block metaTags %}
@@ -32,7 +35,7 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
 <!-- prettier-ignore -->
 {% endblock %}
 
-{# Same head treatment as the sibling results pages: no analytics, no KaTeX. #}
+{# Same head treatment as the main page: no analytics, no KaTeX. #}
 <!-- prettier-ignore -->
 {% block headScripts %}
 <script
@@ -57,9 +60,7 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
 <!-- prettier-ignore -->
 {% endblock %}
 
-{# ---------- macros ----------
-   Every number below is read from computed.json (scripts/story_compute.py,
-   15:05 export). Nothing is hand-typed. Raw counts, not percentages. #}
+{# ---------- macros: raw counts with every claim; passes always visible #}
 
 {% macro thin(t) %}{% if t.thin %}<span class="gr-thin"><span aria-hidden="true">◔</span><span class="sr-only"> (thin data: this bloc cast fewer than 5 votes here)</span></span>{% endif %}{% endmacro %}
 
@@ -89,7 +90,7 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
 {% endmacro %}
 
 {# Evidence card: plain-language claim on the face; verbatim statement,
-   tallies, and per-bloc bars inside. Works without JS (native details). #}
+   tallies, and per-bloc bars inside. Native details — works without JS. #}
 {% macro evcard(sid, claim) %}
 {% set s = ST["" ~ sid] %}
 <details class="st-card">
@@ -107,135 +108,144 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
 </details>
 {% endmacro %}
 
+{% macro diagramPanel(dots, panelLabel) %}
+<svg viewBox="0 0 360 310" role="img" aria-label="{{ panelLabel }}">
+  {% for d in dots %}
+  <circle
+    cx="{{ d.x }}" cy="{{ d.y }}" r="9"
+    fill="{% if d.g == 'A' %}var(--gr-group-a){% elif d.g == 'C' %}var(--gr-group-c){% elif d.g == 'B' %}var(--gr-group-b){% else %}#9a9a9a{% endif %}"
+    {% if d.closeness %}stroke="#1a1a1a" stroke-width="2.5"{% endif %}
+  ><title>09:00 group {{ d.origin }} → 15:05 {{ "bloc " + d.dest if d.dest == "A" or d.dest == "C" else d.dest }}{% if d.closeness %} · closeness cohort{% endif %}</title></circle>
+  {% endfor %}
+</svg>
+{% endmacro %}
+
 <!-- prettier-ignore -->
 {% block body %}
 {{ menu.render() }}
 
 <main class="geneva st">
 
-  {# ---------- review banner ---------- #}
-  <div id="st-banner" class="st-banner">
-    <strong>Draft for review</strong>
-    <span>the original data report is <a href="/geneva-reflections/">here</a></span>
-    <span>· tell us which you prefer <a href="{{ FEEDBACK_URL }}">here</a></span>
-    <button id="st-banner-dismiss" type="button" aria-label="Dismiss this banner">×</button>
-  </div>
+  {# ---------- masthead (forked from the main page) ---------- #}
+  <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-10">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
+      <h1 class="gr-masthead mb-2">{{ C.hero.title }}</h1>
+      <p class="gr-kicker mb-3">{{ C.hero.subtitle }} · {{ C.hero.event_date }}</p>
+      <p class="gr-counts gr-prose">An official virtual side event of the first <a class="underline" href="{{ C.hero.dialogue_url }}">UN Global Dialogue on AI Governance</a>, convened by
+        {%- for cv in C.hero.conveners %}
+        {% if cv.url %}<a class="underline" href="{{ cv.url }}">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %}{% if not loop.last %},{% endif %}
+        {%- endfor %}.
+      </p>
+    </div>
+    <div class="hidden md:block col-span-columns lg:col-start-column-10 lg:col-end-margin-2">
+      <a href="{{ C.hero.dialogue_url }}">
+        <img src="/images/geneva/un-global-dialogue-banner.webp" alt="UN Global Dialogue on AI Governance" width="640" height="360" style="width: 100%; max-width: 16rem; margin-left: auto; display: block" decoding="async" />
+      </a>
+    </div>
+  </header>
 
-  {# ---------- act 0: hero ---------- #}
-  <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-12 st-act">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <p class="gr-kicker mb-4">Can AI See Me? · An official virtual side event of the first UN Global Dialogue on AI Governance · 6 July 2026</p>
-      <h1 class="gr-hero-question mb-6">“What would AI governance need to do so that everyone here felt seen by AI?”</h1>
-      <p class="gr-prose mb-4">For forty-five minutes, faith leaders, peacebuilders, technologists, and civil-society voices from four-plus continents answered that question together — by writing statements and voting on each other's, live and for 24 hours after.</p>
-      <p class="st-hook mb-8">We asked how AI could see everyone. The room answered a question we didn't ask — whether it should.</p>
-      <div class="gr-stats">
+  {# ---------- recording + participation (forked from the main page;
+       stats recomputed from the 15:05 export) ---------- #}
+  <section id="recording" aria-label="Session recording and participation" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-6 lg:mb-0">
+      <div class="gr-video" data-youtube-id="{{ C.video.youtube_id }}">
+        <a class="gr-video-facade" href="{{ C.video.url }}">
+          <span class="gr-video-play" aria-hidden="true"></span>
+          <span class="gr-video-label">{{ C.video.title }}</span>
+        </a>
+      </div>
+      <p class="gr-counts mt-2">{{ C.video.caption }}</p>
+    </div>
+    <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+      <div class="gr-stats gr-stats-col">
         <div class="gr-stat"><span class="gr-stat-number">{{ CP.stats.voters }}</span><span class="gr-stat-label">voters</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ CP.stats.total_votes_display }}</span><span class="gr-stat-label">votes</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ CP.stats.total_votes_display }}</span><span class="gr-stat-label">votes cast</span></div>
         <div class="gr-stat"><span class="gr-stat-number">{{ CP.stats.statements }}</span><span class="gr-stat-label">statements</span></div>
         <div class="gr-stat"><span class="gr-stat-number">{{ CP.stats.live_statements }}</span><span class="gr-stat-label">written live by participants</span></div>
       </div>
     </div>
-  </header>
+  </section>
+
+  {# ---------- act 0: the question + the hook ---------- #}
+  <section aria-label="The deliberation question" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">The question put to the room</p>
+      <p class="gr-hero-question mb-6">“What would AI governance need to do so that everyone here felt seen by AI?”</p>
+      <p class="gr-prose mb-4">Faith leaders, peacebuilders, technologists, and civil-society voices across four-plus continents answered it together — writing statements and voting on each other's, live and for 24 hours after.</p>
+      <p class="st-hook">We asked how AI could see everyone. The room answered a question we didn't ask — whether it should.</p>
+    </div>
+  </section>
 
   {# ---------- act 1 ---------- #}
   <section id="act1" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <p class="gr-kicker mb-2">Act 1</p>
       <h2 class="mb-4">Recognition without intimacy</h2>
-      <p class="gr-prose mb-6">The conveners treated “being seen” as one thing. The room took it apart into two — and gave them opposite verdicts. Being seen <em>as a community</em>, accurately and accountably, was the strongest demand of the event. Being seen <em>as a person</em>, deeply and individually, was refused.</p>
+      <p class="gr-prose mb-6">The conveners treated “being seen” as one thing. The room took it apart into two — and gave them opposite verdicts. Being seen <em>as a community</em> — accurately represented, with the power to correct the record — was the event's strongest consensus. Being seen <em>as a person</em> — intimately known — was refused.</p>
       <div class="st-cards st-cards-2 mb-6">
         {{ evcard(2, "Seen as a community: the strongest consensus of the event") }}
         {{ evcard(4, "Seen as a person: rejected") }}
       </div>
-      <p class="st-takeaway">Representation is a collective right; intimate knowledge of individuals is a threat. The personalization-versus-protection trade-off we anticipated wasn't balanced by the room — it was dissolved.</p>
+      <p class="st-takeaway">Representation is a collective right; intimate knowledge of individuals is a threat. The personalization-versus-protection trade-off wasn't balanced by the room — it was dissolved.</p>
     </div>
   </section>
 
-  {# ---------- act 2: the map ---------- #}
+  {# ---------- act 2 ---------- #}
   <section id="act2" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-feature">
-      <p class="gr-kicker mb-2">Act 2 · The centerpiece</p>
-      <h2 class="mb-4">The map of the room</h2>
+      <p class="gr-kicker mb-2">Act 2</p>
+      <h2 class="mb-4">The divide the algorithm couldn't hold</h2>
 
-      <h3 class="mb-2">Two questions, not one</h3>
-      <p class="gr-prose mb-6">The room's opinions organize along two nearly independent axes (correlation {{ CP.axes.correlation_xy }}): <strong>where the remedy lies</strong> — boundaries around the human core, or community authorship of AI — and <strong>whether AI belongs close to you</strong>. Each axis is anchored by statements the room itself wrote or fought over:</p>
-      <div class="st-cards st-cards-2 mb-4">
-        {{ evcard(9, "Remedy, one pole: it isn't AI's job — the sharpest divide in the data") }}
-        {{ evcard(35, "Remedy, other pole: community authorship as a gift outward") }}
-      </div>
+      <p class="gr-prose mb-4">The room's visible fight is about whose job representation is:</p>
       <div class="st-cards st-cards-2 mb-8">
-        {{ evcard(23, "Intimacy, one pole: don't see me") }}
-        {{ evcard(12, "Intimacy, other pole: moral guidance from AI — mostly refused") }}
+        {{ evcard(9, "The fight: is reflecting every culture's values AI's job at all?") }}
+        <div>
+          <p class="text-size--1 mb-2">Bloc A leans agree ({{ ST["9"].blocs.A.agrees }}/{{ ST["9"].blocs.A.disagrees }}/{{ ST["9"].blocs.A.passes }}); bloc C rejects ({{ ST["9"].blocs.C.agrees }}/{{ ST["9"].blocs.C.disagrees }}/{{ ST["9"].blocs.C.passes }}). That is the divide the clustering algorithm sees — the one that defines the blocs.</p>
+          <p class="text-size--1">But a second divide ignores that fight entirely: whether AI belongs <em>close to you</em>. It shows up in three statements written live in the room:</p>
+        </div>
+      </div>
+      <div class="st-cards st-cards-3 mb-8">
+        {{ evcard(23, "Don't see me") }}
+        {{ evcard(30, "The lonely friend") }}
+        {{ evcard(55, "Junk food") }}
       </div>
 
-      <h3 class="mb-2">Where everyone stands</h3>
-      <p class="gr-prose mb-4">Score every participant on both axes and the room looks like this — not two tribes, but a landscape with one region conspicuously empty:</p>
+      <div class="st-bigfacts mb-8">
+        <div class="st-bigfact">
+          <span class="gr-stat-number">{{ CP.cohorts.both_23_and_30.n }}</span>
+          <p class="text-size--2">participants agreed with <em>both</em> “I don't want to feel seen by AI” and the lonely-friend statement — {{ CP.cohorts.both_23_and_30.by_bloc.C }} from bloc C and {{ CP.cohorts.both_23_and_30.by_bloc.A }} from bloc A: both sides of the main fight.</p>
+        </div>
+        <div class="st-bigfact">
+          <span class="gr-stat-number">{{ ST["23"].blocs.C.agrees }}–{{ ST["23"].blocs.C.disagrees }}</span>
+          <p class="text-size--2">how “I don't want to feel seen by AI” splits <em>inside</em> bloc C (agree–disagree, plus {{ ST["23"].blocs.C.passes }} passes). The divide runs through the majority bloc, not between the blocs.</p>
+        </div>
+      </div>
+
+      <h3 class="mb-2">Watch the algorithm lose it</h3>
+      <p class="gr-prose mb-4">At 09:00, Pol.is clustered these voters into four groups — including an 8-member group of the participants most comfortable with AI closeness. Six hours and 106 votes later, <strong>with not a single vote changed</strong>, the reclustering dissolved that group: {{ CP.crosswalk.b0900_destinations.C }} of its members were absorbed into bloc C, {{ CP.crosswalk.b0900_destinations.A }} into bloc A, {{ CP.crosswalk.b0900_destinations.other }} into the leftover pair. The divide went underground.</p>
 
       <figure class="st-figure mb-4">
-        {# Quadrant map: rendered server-side from computed.json.
-           x = remedy axis (+ authorship / − boundaries)
-           y = intimacy axis (+ comfortable / − averse)
-           Dot color = bloc; dot opacity = number of votes cast, so heavy
-           passers read as faint rather than central. #}
-        <svg viewBox="0 0 720 640" role="img" aria-label="Scatter plot of {{ CP.axes.scorable }} participants on two axes. Remedy axis, boundaries to authorship, runs left to right; intimacy axis, averse to comfortable, runs bottom to top. Quadrant counts: {{ Q.authorship_averse }} authorship and intimacy-averse; {{ Q.authorship_comfortable }} authorship and comfortable; {{ Q.boundaries_averse }} boundaries and averse; {{ Q.boundaries_comfortable }} boundaries and comfortable; {{ Q.mid_zone }} in the middle zone.">
-          <rect x="40" y="60" width="640" height="500" fill="#fafafa" />
-          {# mid-zone band ±0.1 #}
-          <rect x="{{ 360 - 32 }}" y="60" width="64" height="500" fill="#efefef" />
-          <rect x="40" y="{{ 310 - 25 }}" width="640" height="50" fill="#efefef" />
-          <line x1="360" y1="60" x2="360" y2="560" stroke="#c9c9c9" />
-          <line x1="40" y1="310" x2="680" y2="310" stroke="#c9c9c9" />
-          {# axis labels #}
-          <text x="44" y="330" font-size="13" fill="#6c6c6c">← boundaries around the human core</text>
-          <text x="676" y="330" font-size="13" fill="#6c6c6c" text-anchor="end">community authorship of AI →</text>
-          <text x="352" y="76" font-size="13" fill="#6c6c6c" text-anchor="end" transform="rotate(-90 352 76)">comfortable with AI up close ↑</text>
-          <text x="352" y="556" font-size="13" fill="#6c6c6c" transform="rotate(-90 352 556)">↓ keep AI at a distance</text>
-          {# quadrant labels with counts #}
-          <text x="670" y="546" font-size="14" font-weight="bold" text-anchor="end">“Represent us — and stay out of my interior” · {{ Q.authorship_averse }}</text>
-          <text x="670" y="86" font-size="14" font-weight="bold" text-anchor="end">“Represent us — and yes, know me” · {{ Q.authorship_comfortable }}</text>
-          <text x="50" y="546" font-size="14" font-weight="bold">“Boundaries — and distance” · {{ Q.boundaries_averse }}</text>
-          <text x="50" y="86" font-size="14" font-weight="bold">“Boundaries — but close” · {{ Q.boundaries_comfortable }} (thin)</text>
-          {# dots #}
-          {% for p in CP.participants %}
-          {% if p.x != null and p.y != null %}
-          <circle
-            cx="{{ (360 + p.x * 300) | round(1) }}"
-            cy="{{ (310 - p.y * 230) | round(1) }}"
-            r="7"
-            fill="{% if p.bloc == 'A' %}var(--gr-group-a){% elif p.bloc == 'C' %}var(--gr-group-c){% else %}#6c6c6c{% endif %}"
-            opacity="{{ (0.25 + 0.7 * (p.n_votes / CP.maxVotes)) | round(2) }}"
-          ><title>Bloc {{ p.bloc }} · {{ p.n_votes }} votes cast · remedy {{ p.x }}, intimacy {{ p.y }}</title></circle>
-          {% endif %}
-          {% endfor %}
-          {# legend #}
-          <g font-size="13">
-            <circle cx="52" cy="596" r="7" fill="var(--gr-group-a)" opacity="0.8" /><text x="64" y="600">bloc A ({{ CP.method.blocs.A }})</text>
-            <circle cx="180" cy="596" r="7" fill="var(--gr-group-c)" opacity="0.8" /><text x="192" y="600">bloc C ({{ CP.method.blocs.C }})</text>
-            <circle cx="310" cy="596" r="7" fill="#6c6c6c" opacity="0.8" /><text x="322" y="600">other</text>
-            <circle cx="400" cy="596" r="7" fill="#1a1a1a" opacity="0.3" /><text x="412" y="600">fainter = fewer votes cast (heavy passers)</text>
-          </g>
-        </svg>
+        <div class="st-diagram">
+          <div>
+            <p class="gr-kicker mb-1">09:00 — four groups</p>
+            {{ diagramPanel(CP.diagram.left, "The 09:00 clustering: four groups of dots — group A with " + CP.crosswalk.g0900_sizes.A + " members, the highlighted 8-member closeness-comfortable group B, group C with " + CP.crosswalk.g0900_sizes.C + ", a single-member group D, plus unclustered participants and one who joined later. Dots outlined in black are the closeness cohort.") }}
+          </div>
+          <div>
+            <p class="gr-kicker mb-1">15:05 — two blocs (same people, same votes)</p>
+            {{ diagramPanel(CP.diagram.right, "The 15:05 clustering of the same participants: bloc A with " + CP.crosswalk.g1505_sizes.A + " members shown, bloc C with " + CP.crosswalk.g1505_sizes.C + ", and a small set of others. The outlined closeness-cohort dots are now scattered inside the blocs rather than forming their own group.") }}
+          </div>
+        </div>
         <figcaption class="st-figcaption mt-2">
-          Of {{ CP.axes.scorable }} scorable participants: <strong>{{ Q.authorship_averse }}</strong> want community authorship <em>and</em> AI kept out of their interior life; <strong>{{ Q.authorship_comfortable }}</strong> want authorship and would welcome being known; <strong>{{ Q.boundaries_averse }}</strong> hold the Boundary-Keeper core (boundaries, distance); the fourth quadrant is effectively empty — <strong>{{ Q.boundaries_comfortable }}</strong> person, thin data — and {{ Q.mid_zone }} sit in the middle zone. Hover or focus a dot for its bloc and vote count; the exact statements composing each axis are published in <a class="underline" href="/files/geneva-reflections/computed.json">computed.json</a>.
+          The same {{ CP.diagram.left | length }} participants, twice. Colors are the machine's groupings (left: 09:00, with the 8-member closeness-comfortable group in orange; right: 15:05). <strong>Black outlines mark the closeness cohort</strong> — the {{ CP.cohorts.closeness.n }} people who, by their own votes, want AI closeness ({{ CP.cohorts.closeness.by_bloc.C }} now inside bloc C, {{ CP.cohorts.closeness.by_bloc.A }} in bloc A, {{ CP.cohorts.closeness.by_bloc.other }} in the leftover pair). At 09:00 most had their own group; at 15:05 the outlines are scattered through the blocs. Grey dots are the leftover pair and unclustered voters — never a faction.
         </figcaption>
       </figure>
 
-      <p class="gr-prose mb-6"><strong>The empty quadrant is the insight.</strong> Comfort with AI intimacy almost entails wanting community authorship — but authorship does not entail comfort. So the intimacy divide runs entirely <em>inside</em> the majority camp, invisible to any single grouping of the room.</p>
-
-      {# mandatory caveat box — may not be softened or removed #}
-      <aside class="st-caveat mb-8" aria-label="How to read this map — caveats">
-        <h3 class="mb-2">Read this map with care</h3>
-        <p class="mb-2">These axes were <strong>curated by the analysts</strong> from bundles of statements, not discovered by the clustering algorithm. The exact bundle behind each axis is published in <a class="underline" href="/files/geneva-reflections/computed.json">computed.json</a> so anyone can recompute or dispute them.</p>
-        <p class="mb-2">Internal consistency is moderate to good (split-half reliability ≈ {{ CP.axes.split_half_x }} for the remedy axis, {{ CP.axes.split_half_y }} for the intimacy axis).</p>
-        <p>A position near the center can mean moderate views <em>or</em> many passes — that is why dot opacity encodes how many votes each participant cast.</p>
+      <aside class="st-caveat mb-6" aria-label="What opinion clustering is and why it moves">
+        <h3 class="mb-2">What just happened, in plain language</h3>
+        <p>Pol.is groups people by the <em>overall similarity</em> of their voting patterns — it doesn't know which disagreements matter to you. With ~37 voters, one or two borderline people can tip the math from “four groups” to “two,” the way a photo grid re-sorts when you add a few pictures. Nothing was wrong with the votes; instability at this scale is a property of the method, not an error in the data. That is why this page anchors its claims in <strong>cohorts defined by votes</strong> (which survive any reclustering), not in the machine's group labels.</p>
       </aside>
 
-      <h3 class="mb-2">The coalition this explains</h3>
-      <p class="gr-prose mb-4">Exactly <strong>{{ CP.cohorts.agreed_both_23_and_30 }} participants agreed with both</strong> “I don't want to feel seen by AI” and the statement below — drawn from both ends of the remedy axis. The people who disagree most about what AI owes their cultures agree completely about what it must not do to their interiority.</p>
-      <div class="st-cards st-cards-2 mb-4">
-        {{ evcard(30, "The loss statement that crossed the room's main divide") }}
-        {{ evcard(26, "The room's own complaint: AI flattens individuality into an average") }}
-      </div>
-      <p class="st-figcaption">One more reason this page is a map and not a table: the room's own complaint was that AI flattens individuality into an average — single group labels do that to participants too. The map is this page taking the room's advice.</p>
+      <p class="st-takeaway">Some divides are too cross-cutting for clustering to hold: they run through communities, not between them. That is exactly what the ballot's tension items exist to measure.</p>
     </div>
   </section>
 
@@ -244,48 +254,12 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <p class="gr-kicker mb-2">Act 3</p>
       <h2 class="mb-4">Stricter rules than we proposed — including on themselves</h2>
-      <p class="gr-prose mb-6">The room did not just accept protective design — it demanded it over its own preferences. The anchor statement says “even if users want that closeness”; the room passed it {{ ST["16"].total.agrees }}–{{ ST["16"].total.disagrees }} with {{ ST["16"].total.passes }} passes. And the demand binds its own authors: of the <strong>{{ CP.cohorts.intimacy_comfortable_on_16.n }} participants who themselves want AI closeness</strong> (they disagreed with “I don't want to feel seen” or accepted the personalization trade-off), <strong>{{ CP.cohorts.intimacy_comfortable_on_16.endorsed_16 }} endorsed it; {{ CP.cohorts.intimacy_comfortable_on_16.opposed_16 }} opposed</strong>. Users petitioning for protective design against their own stated preferences.</p>
+      <p class="gr-prose mb-6">The room didn't just accept protective design — it demanded it over its own preferences. The anchor statement says “even if users want that closeness,” and the demand binds its own authors: of the <strong>{{ CP.cohorts.closeness.n }} participants in the closeness cohort</strong> — the people who, by their own votes, want AI intimacy — <strong>{{ CP.cohorts.closeness.on_16.endorsed }} endorsed it and only {{ CP.cohorts.closeness.on_16.opposed }} opposed</strong>. Users petitioning for protective design against their own stated preferences.</p>
       <div class="st-cards st-cards-2 mb-6">
         {{ evcard(16, "Protect us from over-dependence — even if we ask for the closeness") }}
         {{ evcard(51, "Regulate the psychology of use, not just the model") }}
       </div>
-      <p class="st-takeaway">And the room out-wrote its conveners: <strong>{{ CP.top10_live }} of the ten strongest cross-bloc consensus statements were written live by participants</strong>, not seeded — ranked: {% for t in CP.top10_consensus %}[{{ t.id }}] {{ t.source }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>
-    </div>
-  </section>
-
-  {# ---------- consensus vs contention strip ---------- #}
-  <section id="strip" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <h3 class="mb-2">Every statement, from unanimous to deeply split</h3>
-      <p class="st-figcaption mb-3">Each dot is one statement, placed by its <em>minimum</em> agree-rate across blocs A and C — a statement sits left only if both blocs backed it. Dot size = how many people voted on it. Click or focus a dot to see the statement.</p>
-      <figure class="st-figure">
-        <svg id="st-strip" viewBox="0 0 720 150" role="img" aria-label="Strip chart of all substantive statements ordered from cross-bloc consensus on the left to deeply split on the right.">
-          <line x1="30" y1="120" x2="690" y2="120" stroke="#c9c9c9" />
-          <text x="30" y="140" font-size="12" fill="#6c6c6c">← unanimous agree (both blocs)</text>
-          <text x="690" y="140" font-size="12" fill="#6c6c6c" text-anchor="end">deeply split →</text>
-          {% for sid in CP.consensus_ranking %}
-          {% set s = ST["" ~ sid] %}
-          <circle
-            class="st-dot"
-            tabindex="0"
-            data-sid="{{ s.id }}"
-            cx="{{ (30 + (1 - s.min_bloc_agree_rate) * 660) | round(1) }}"
-            cy="{{ 100 - (loop.index0 % 4) * 20 }}"
-            r="{{ (2.5 + s.total.votes * 0.14) | round(1) }}"
-            fill="#1a1a1a"
-            opacity="0.55"
-          ><title>[{{ s.id }}] “{{ s.text | truncate(90) }}” — min bloc agree rate {{ (s.min_bloc_agree_rate * 100) | round }}%, {{ s.total.votes }} votes</title></circle>
-          {% endfor %}
-          {# anchor labels #}
-          {% for sid in [2, 16, 9, 4] %}
-          {% set s = ST["" ~ sid] %}
-          <text x="{{ (30 + (1 - s.min_bloc_agree_rate) * 660) | round(1) }}" y="14" font-size="11" fill="#1a1a1a" text-anchor="middle">[{{ s.id }}]</text>
-          <line x1="{{ (30 + (1 - s.min_bloc_agree_rate) * 660) | round(1) }}" y1="18" x2="{{ (30 + (1 - s.min_bloc_agree_rate) * 660) | round(1) }}" y2="34" stroke="#9a9a9a" />
-          {% endfor %}
-        </svg>
-        <div id="st-strip-panel" class="st-strip-panel" tabindex="-1" hidden></div>
-        <script type="application/json" id="st-strip-data">{ {% for sid in CP.consensus_ranking %}{% set s = ST["" ~ sid] %}"{{ s.id }}": {"id": {{ s.id }}, "text": {{ s.text | dump | safe }}, "source": {{ ('"written live"' if s.source == 'live' else '"seed"') | safe }}, "a": {{ s.total.agrees }}, "d": {{ s.total.disagrees }}, "p": {{ s.total.passes }}, "n": {{ s.total.votes }}, "A": "{{ s.blocs.A.agrees }}·{{ s.blocs.A.disagrees }}·{{ s.blocs.A.passes }}", "C": "{{ s.blocs.C.agrees }}·{{ s.blocs.C.disagrees }}·{{ s.blocs.C.passes }}"}{% if not loop.last %},{% endif %}{% endfor %} }</script>
-      </figure>
+      <p class="st-takeaway">And the room out-wrote its conveners: <strong>{{ CP.top10_live }} of the ten strongest cross-bloc consensus statements were written live by participants</strong>, not seeded — in order: {% for t in CP.top10_consensus %}[{{ t.id }}] {{ t.source }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>
     </div>
   </section>
 
@@ -294,23 +268,27 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
       <p class="gr-kicker mb-2">Act 4</p>
       <h2 class="mb-4">The ledger of new ideas</h2>
-      <p class="gr-prose mb-6">Ideas that entered the world in this room — written live, voted up, and carried into the draft ballot below.</p>
+      <p class="gr-prose mb-6">Ideas that entered the world in this room — written live, voted up, and carried into the draft ballot in Act 5.</p>
       <div class="st-ledger">
         <div>
           <p class="st-ledger-route mb-1">→ ballot item R10</p>
           {{ evcard(23, "The right not to be known") }}
+          {{ evcard(30, "…and the loss it protects against") }}
         </div>
         <div>
           <p class="st-ledger-route mb-1">→ ballot item R9</p>
           {{ evcard(26, "Homogenization as a governance harm") }}
+          {{ evcard(70, "…the tyranny of the majority, aggregated") }}
         </div>
         <div>
           <p class="st-ledger-route mb-1">→ ballot item R7</p>
           {{ evcard(47, "Worldview provenance disclosure") }}
+          {{ evcard(48, "…because AI is not neutral") }}
         </div>
         <div>
           <p class="st-ledger-route mb-1">→ ballot item R2</p>
           {{ evcard(51, "The psychology of use as a regulatory object") }}
+          {{ evcard(66, "…including narratives that shame") }}
         </div>
         <div>
           <p class="st-ledger-route mb-1">→ ballot item R4</p>
@@ -319,6 +297,7 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
         <div>
           <p class="st-ledger-route mb-1">→ ballot item R8</p>
           {{ evcard(65, "What we confide deserves protection") }}
+          {{ evcard(67, "…and surveillance named as a first-order harm") }}
         </div>
         <div>
           <p class="st-ledger-route mb-1">→ ballot item R5</p>
@@ -328,92 +307,189 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
     </div>
   </section>
 
-  {# ---------- act 5: blocs, ballot, limits ---------- #}
+  {# ---------- act 5: one diagnosis, two remedies ---------- #}
   <section id="act5" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
-      <p class="gr-kicker mb-2">Act 5</p>
-      <h2 class="mb-4">The blocs, the ballot, the honest limits</h2>
+      <p class="gr-kicker mb-2">Act 5 · The conclusion</p>
+      <h2 class="mb-4">One diagnosis, two remedies, one condition</h2>
 
-      <h3 class="mb-2">Two stable blocs — a split about remedies, not about AI</h3>
-      <div class="grid gap-8 md:grid-cols-2 mb-6">
-        <div>
-          <p class="text-size--1 mb-3"><strong class="gr-text-A">Boundary Keepers (bloc A, {{ CP.method.blocs.A }})</strong> locate the remedy in boundaries around the human core: some questions belong to people, and being deeply known by a machine reads as loss. They pass heavily on statements about lived experience of misrepresentation — on “AI talks about my faith or culture like an outsider,” bloc A's tally is {{ ST["0"].blocs.A.agrees }}·{{ ST["0"].blocs.A.disagrees }}·{{ ST["0"].blocs.A.passes }} (agree·disagree·pass), which we read as distance from the experience, not opposition.</p>
-          <details class="st-card"><summary><span class="st-claim">Signature statements</span></summary>
-            <div class="st-card-body">
-              {{ evcard(9, "It isn't AI's job") }}
-              {{ evcard(13, "Some questions belong to people") }}
-            </div>
-          </details>
-        </div>
-        <div>
-          <p class="text-size--1 mb-3"><strong class="gr-text-C">Recognition Seekers (bloc C, {{ CP.method.blocs.C }})</strong> affirm firsthand experience of misrepresentation ({{ ST["0"].blocs.C.agrees }}·{{ ST["0"].blocs.C.disagrees }}·{{ ST["0"].blocs.C.passes }} on the same statement) and locate the remedy in accurate, accountable representation and community authorship.</p>
-          <details class="st-card"><summary><span class="st-claim">Signature statements</span></summary>
-            <div class="st-card-body">
-              {{ evcard(0, "The misrecognition experience") }}
-              {{ evcard(3, "Build it on our values") }}
-              {{ evcard(17, "Teaching-trained AI could deepen practice") }}
-            </div>
-          </details>
+      <h3 class="mb-2">Both blocs, same direction: the red lines</h3>
+      <p class="gr-prose mb-4">Before the room divides, it agrees on what it refuses. These rejections are the floor of the room, not one group's position:</p>
+      <div class="st-cards st-cards-2 st-strip mb-4">
+        {{ evcard(4, "Intimate personalization: rejected — zero agreement in bloc A") }}
+        {{ evcard(67, "Surveillance: a first-order harm") }}
+        {{ evcard(36, "AI that flatters instead of challenges") }}
+        {{ evcard(26, "The flattening of voice") }}
+      </div>
+      <div class="mb-10">
+        <p class="gr-counts mb-2">Adjacent red lines, same direction:</p>
+        <div class="st-cards st-cards-2">
+          {{ evcard(65, "Who accesses what we confide") }}
+          {{ evcard(42, "Formulaic voice") }}
         </div>
       </div>
-      <p class="gr-prose mb-10">A third strand runs through bloc C: the <strong>{{ CP.cohorts.authorship_comfortable_builders.n }} authorship-and-comfortable participants</strong> from the map — a cohort no clustering could stably hold. On community-agency statements they vote with the majority (on “If a community I cared about built its own AI…”: {{ CP.cohorts.authorship_comfortable_builders.on_15.agrees }}·{{ CP.cohorts.authorship_comfortable_builders.on_15.disagrees }}·{{ CP.cohorts.authorship_comfortable_builders.on_15.passes }} among them). They diverge only on intimacy: on relying on AI for moral or spiritual guidance they split {{ CP.cohorts.authorship_comfortable_builders.on_12.agrees }}–{{ CP.cohorts.authorship_comfortable_builders.on_12.disagrees }}, while the rest of bloc C rejects it {{ CP.cohorts.authorship_comfortable_builders.rest_of_C_on_12.agrees }}–{{ CP.cohorts.authorship_comfortable_builders.rest_of_C_on_12.disagrees }} (with {{ CP.cohorts.authorship_comfortable_builders.rest_of_C_on_12.passes }} passes).</p>
 
-      <h3 class="mb-2">The draft ballot (R1–R10)</h3>
-      <p class="gr-prose mb-6">Ten ideas distilled from the record for the quadratic vote, each grounded in the statements it came from. Two carry a tension flag: the room did not resolve them, and <strong>split spending there is the intended signal, not a flaw</strong>.</p>
-      <ol class="st-ballot mb-10">
+      <h3 class="mb-4">The fork in the remedy</h3>
+      <div class="st-remedies mb-4">
+        <div class="gr-group-col gr-border-C">
+          <h4 class="font-bold mb-1"><span class="gr-text-C">Authorship</span> — bloc C, {{ CP.method.blocs.C }} people</h4>
+          <p class="text-size--1 mb-3">Remake AI on communities' own terms. This is the one affirmative program in the data with broad support and no organized opposition.</p>
+          <div class="flex flex-col gap-2">
+            {{ evcard(3, "Communities building AI tuned to their values") }}
+            {{ evcard(17, "Community-trained AI deepening, not replacing, practice") }}
+            {{ evcard(6, "Members see their own data first") }}
+            {{ evcard(35, "An indigenous-designed AI educating the mainstream") }}
+          </div>
+        </div>
+        <div class="gr-group-col gr-border-A">
+          <h4 class="font-bold mb-1"><span class="gr-text-A">Boundaries</span> — bloc A, {{ CP.method.blocs.A }} people</h4>
+          <p class="text-size--1 mb-3">Whoever builds it, some human ground stays reserved. Bloc A endorses regulation ({{ ST["21"].blocs.A.agrees }}/{{ ST["21"].blocs.A.disagrees }}/{{ ST["21"].blocs.A.passes }}), contestability ({{ ST["2"].blocs.A.agrees }}/{{ ST["2"].blocs.A.disagrees }}/{{ ST["2"].blocs.A.passes }}), and member data rights ({{ ST["6"].blocs.A.agrees }}/{{ ST["6"].blocs.A.disagrees }}/{{ ST["6"].blocs.A.passes }}) — its distinctive position is about where AI belongs, not whether it should exist.</p>
+          <div class="flex flex-col gap-2 mb-3">
+            {{ evcard(9, "It isn't AI's job to reflect every culture's values") }}
+            {{ evcard(13, "Some questions belong only to a person") }}
+            {{ evcard(78, "The only bloc to defend the “human essence” posture") }}
+          </div>
+          <p class="gr-counts mb-1">Bloc A on the authorship program — abstention, not objection (passes shown as the pale middle band, distinct from striped disagreement):</p>
+          {% for sid in [3, 35] %}
+          {% set t = ST["" ~ sid].blocs.A %}
+          <div class="gr-mini">
+            <span class="gr-counts">[{{ sid }}]</span>
+            {{ bar(t, "Bloc A on statement " + sid) }}
+            <span class="gr-counts">{{ t.passes }} of {{ t.votes }} passes{{ thin(t) }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <p class="st-takeaway mb-10">The boundary-keepers don't oppose communal AI — they abstain from it. An abstention is an invitation to demonstrate, not a door closed.</p>
+
+      <h3 class="mb-2">The condition of compatibility</h3>
+      <p class="gr-prose mb-6">The two remedies are compatible on exactly one condition: that communal AI honors the red lines — including the right not to be seen. Ballot item <a class="underline" href="#ballot">R10</a> is that condition made concrete; <a class="underline" href="#ballot">R4's ⚑</a> marks the other tension the quadratic-voting stage will price. Split spending on the flagged items is the intended signal, not a flaw.</p>
+
+      <h4 id="ballot" class="font-bold mb-2">The draft ballot (R1–R10)</h4>
+      <ol class="st-ballot mb-4">
         <li class="st-ballot-item"><h4 class="font-bold">R1 — Contestability &amp; answerability</h4>
           <p class="text-size--1 mb-2">Communities get a binding channel to challenge how AI represents their tradition and get errors fixed; whoever sets an AI's values answers to the people affected.</p>
           {{ evcard(2, "Grounding: challenge and correct") }}{{ evcard(21, "Grounding: regulation is a necessity") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R2 — The psychology of use as a regulatory object</h4>
           <p class="text-size--1 mb-2">Governance engages how systems respond to distress, shame, and attachment — measured and regulated, not left to product choice.</p>
-          {{ evcard(66, "Grounding: narratives that shame") }}{{ evcard(7, "Grounding: measure responses to distress") }}</li>
+          {{ evcard(7, "Grounding: measure responses to distress") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R3 — Anti-dependency &amp; anti-manipulation by design</h4>
           <p class="text-size--1 mb-2">Systems designed against emotional over-dependence and manipulation, even when users want the closeness.</p>
           {{ evcard(5, "Grounding: understanding that can't manipulate") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R4 — Non-substitutable care <span class="st-flag">⚑ live tension</span></h4>
-          <p class="text-size--1 mb-2">AI must not substitute for the care and work only human beings can do for one another. The room agrees on the principle; where the substitution line sits is contested — split spending here is the signal.</p>
+          <p class="text-size--1 mb-2">AI must not substitute for the care and work only human beings can do for one another. The room agrees on the principle; where the substitution line sits is contested.</p>
           {{ evcard(68, "Grounding: learn to be human first") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R5 — Healthy use is learned, not patched</h4>
           <p class="text-size--1 mb-2">Learning to use AI healthily cannot be outsourced to model changes; education and practice are part of governance.</p>
-          {{ evcard(74, "Grounding: education entrusted to AI") }}</li>
+          {{ evcard(74, "Grounding: education entrusted to AI") }}{{ evcard(80, "Grounding: model changes can't replace learning") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R6 — Community authorship</h4>
           <p class="text-size--1 mb-2">Communities can build or shape AI tuned to their own values and teachings, with each member seeing their own data first.</p>
           {{ evcard(15, "Grounding: if my community built one, I'd want in") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R7 — Worldview provenance disclosure</h4>
           <p class="text-size--1 mb-2">Disclose when a response originates from a particular worldview, and whose values the defaults average over.</p>
-          {{ evcard(48, "Grounding: AI is not neutral") }}</li>
+          {{ evcard(62, "Grounding: knowledge acquired through a lens") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R8 — What we confide deserves protection</h4>
           <p class="text-size--1 mb-2">Strict, auditable limits on who accesses what people put into AI; AI-enabled surveillance treated as a first-order harm.</p>
-          {{ evcard(67, "Grounding: surveillance is a big problem") }}</li>
+          {{ evcard(25, "Grounding: autonomy and consent") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R9 — Homogenization as a governance harm</h4>
           <p class="text-size--1 mb-2">Flattening individuality and minority voices into an average is a harm governance names and measures.</p>
           {{ evcard(70, "Grounding: the tyranny of the majority, aggregated") }}</li>
         <li class="st-ballot-item"><h4 class="font-bold">R10 — The right not to be known <span class="st-flag">⚑ live tension</span></h4>
-          <p class="text-size--1 mb-2">An effective, penalty-free right to keep AI out of one's inner, moral, and spiritual life — protecting equally those who choose to invite it in. The room's intimacy divide runs inside every camp; split spending here is the signal.</p>
+          <p class="text-size--1 mb-2">An effective, penalty-free right to keep AI out of one's inner, moral, and spiritual life — protecting equally those who choose to invite it in.</p>
           {{ evcard(33, "Grounding: no role in spirituality — the contested pole") }}</li>
       </ol>
+    </div>
+  </section>
 
-      <h3 class="mb-2">Honest limits</h3>
-      <div class="gr-prose text-size--2 mb-6" style="color: #6c6c6c">
-        <p class="mb-2">This was one session: {{ CP.stats.voters }} self-selected participants, English-language, virtual. It offers depth of standpoint, not statistical representativeness.</p>
-        <p class="mb-2">Clustering at this scale is unstable — and we disclose it rather than hide it: a 09:00 snapshot of these same votes (106 fewer, none changed) clustered the room into <em>four</em> groups, including an 8-member personalization-comfortable faction that the 15:05 reclustering dissolved — 5 absorbed into bloc C, 2 into A, 1 into the outlier pair. That instability is a property of the method, and it is why this page maps individuals instead of leaning on group labels.</p>
-        <p class="mb-2">The format has limits a participant named from inside the room — “{{ ST["82"].text }}” ({{ counts(ST["82"].total) }}). Statement 83 arrived too late to gather votes ({{ ST["83"].total.votes }} cast). The facilitator's seed account sits inside bloc A's count of {{ CP.method.blocs.A }}; it cast only pass votes. The official clustering also contains an outlier pair (n=2) we do not characterize, folded into “other” in the map.</p>
-        <p>This page uses the fuller 15:05 export ({{ CP.stats.total_votes_display }} votes); the <a class="underline" href="/geneva-reflections/">original data report</a> reflects an earlier snapshot of the same conversation — small tally differences between the two pages are expected, and both are correct for their snapshot.</p>
+  {# ---------- honest limits ---------- #}
+  <section id="limits" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <h2 class="mb-4">Honest limits</h2>
+      <div class="gr-prose text-size--2" style="color: #6c6c6c">
+        <p class="mb-2">This was one session: {{ CP.stats.voters }} self-selected participants, English-language, virtual. It offers depth of standpoint, not statistical representativeness — and a participant raised the language point from inside the room: “{{ ST["77"].text }}” ({{ counts(ST["77"].total) }}).</p>
+        <p class="mb-2">Opinion clustering at this scale is unstable, and we disclose it rather than hide it: the same votes clustered into four groups at 09:00 and effectively two by 15:05, with zero votes changed (Act 2 shows it happening). Instability is a property of the method at ~{{ CP.stats.voters }} voters, not an error in the data — which is why this page's claims rest on vote-defined cohorts, not group labels.</p>
+        <p class="mb-2">The format has limits a participant named directly — “{{ ST["82"].text }}” ({{ counts(ST["82"].total) }}). Statement 83 arrived too late to gather votes ({{ ST["83"].total.votes }} cast). The facilitator's seed account sits inside bloc A's count of {{ CP.method.blocs.A }}; it cast only pass votes. The official clustering also contains a 2-member statistical leftover we do not characterize, shown as “other” in visuals.</p>
+        <p>Two export snapshots of this conversation exist (09:00 and 15:05); the fuller 15:05 export ({{ CP.stats.total_votes_display }} votes) governs every number on this page. Both are downloadable below.</p>
       </div>
+    </div>
+  </section>
 
-      <h3 class="mb-2">Download the data</h3>
-      <ul class="st-downloads mb-4">
-        <li><a class="underline" href="/files/geneva-reflections/computed.json">computed.json</a> — every number on this page, plus the axis definitions</li>
+  {# ---------- read the data yourself ---------- #}
+  <section id="data" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <h2 class="mb-4">Read the data yourself</h2>
+      <p class="gr-prose mb-3">The full record: every statement voted on in the deliberation — three non-substantive entries excluded (“Agree”, a test message, and “Not enough time, sorry”) — with room-wide tallies and each bloc's agree rate, from the 15:05 export. Sort and filter, or just read; the table works without JavaScript too.</p>
+      <p class="gr-legend mb-4"><span>◔ = thin data: fewer than 5 votes cast in that bloc; treat as directional. Thin cells are greyed.</span></p>
+      <div id="gr-filters" class="flex flex-wrap gap-2 mb-4" hidden>
+        <button type="button" class="gr-filter" data-sort="id" data-dir="asc" aria-pressed="true">In order</button>
+        <button type="button" class="gr-filter" data-sort="minagree" data-dir="desc" aria-pressed="false">Most consensus</button>
+        <button type="button" class="gr-filter" data-sort="passrate" data-dir="desc" aria-pressed="false">Most passed</button>
+      </div>
+      <div class="gr-table-wrap">
+        <table class="gr-table" id="gr-explorer-table">
+          <thead>
+            <tr>
+              <th scope="col" class="gr-num" data-key="id">#</th>
+              <th scope="col" data-key="text">Statement</th>
+              <th scope="col" class="gr-num" data-key="agrees">Agree</th>
+              <th scope="col" class="gr-num" data-key="disagrees">Disagree</th>
+              <th scope="col" class="gr-num" data-key="passes">Pass</th>
+              <th scope="col" class="gr-num" data-key="ga" title="Bloc A agree rate"><span class="gr-text-A">A</span>&nbsp;agree</th>
+              <th scope="col" class="gr-num" data-key="gc" title="Bloc C agree rate"><span class="gr-text-C">C</span>&nbsp;agree</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for key, s in ST %}
+            {% if not s.noise and s.text %}
+            <tr
+              id="s{{ s.id }}"
+              data-id="{{ s.id }}"
+              data-agrees="{{ s.total.agrees }}"
+              data-disagrees="{{ s.total.disagrees }}"
+              data-passes="{{ s.total.passes }}"
+              data-passrate="{{ (s.total.passes / s.total.votes) | round(4) if s.total.votes else -1 }}"
+              data-minagree="{{ s.min_bloc_agree_rate if s.min_bloc_agree_rate != null else -1 }}"
+              data-ga="{{ s.blocs.A.agree_rate if s.blocs.A.votes > 0 else -1 }}"
+              data-gc="{{ s.blocs.C.agree_rate if s.blocs.C.votes > 0 else -1 }}"
+            >
+              <td class="gr-num">{{ s.id }}</td>
+              <td><span class="gr-stmt-text">{{ s.text }}</span> <span class="gr-badge {% if s.source == 'live' %}text-black{% else %}text-gray{% endif %}">{{ "written live" if s.source == "live" else "seed" }}</span></td>
+              <td class="gr-num">{{ s.total.agrees }}</td>
+              <td class="gr-num">{{ s.total.disagrees }}</td>
+              <td class="gr-num">{{ s.total.passes }}</td>
+              {% for b in ["A", "C"] %}
+              {% set t = s.blocs[b] %}
+              <td class="gr-num{% if t.thin %} gr-cell-thin{% endif %}" title="Bloc {{ b }}: {{ counts(t) }}">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}%{% else %}–{% endif %}{{ thin(t) }}</td>
+              {% endfor %}
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="gr-counts mt-3 mb-8">“Most consensus” ranks by the lowest agree rate across blocs A and C (a statement ranks high only if both blocs backed it). Statement 83 gathered {{ ST["83"].total.votes }} votes before the export and is excluded from ranked orderings. Tallies are computed from the 15:05 participant-vote matrix; the statement-text export is authoritative for wording. The facilitator seed account (20 votes, all passes) is included in bloc A. Blocs map from Pol.is group-ids 0 (A) and 2 (C); the 2-member group 1 and two unclustered voters appear in room-wide totals only.</p>
+
+      <h3 class="mb-2">Downloads</h3>
+      <ul class="st-downloads mb-2">
+        <li><a class="underline" href="/files/geneva-reflections/computed.json">computed.json</a> — every number on this page, with method notes</li>
         <li><a class="underline" href="/files/geneva-reflections/{{ CP.export }}-participant-votes.csv">15:05 vote matrix (CSV)</a> · <a class="underline" href="/files/geneva-reflections/{{ CP.export }}-comment-groups.csv">15:05 statements (CSV)</a></li>
         <li><a class="underline" href="/files/geneva-reflections/{{ CP.earlier_export }}-participant-votes.csv">09:00 vote matrix (CSV)</a> · <a class="underline" href="/files/geneva-reflections/{{ CP.earlier_export }}-comment-groups.csv">09:00 statements (CSV)</a></li>
       </ul>
+      <p class="gr-counts">Anyone can audit the pipeline: <span class="gr-stmt-text">scripts/story_compute.py</span> in the site's repository regenerates computed.json from the CSVs.</p>
     </div>
   </section>
 
   {# ---------- coda ---------- #}
   <section id="coda" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16 st-act">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
-      <p class="gr-prose">What this small room produced — durable common ground, one principled disagreement held with clarity, and red lines its members drew for themselves — is early evidence that a community can surface its own common knowledge about AI. That is the first step toward communities authoring and governing AI that reflects their values, the direction RadicalxChange explores as <a class="underline" href="https://www.plurality.net/">Plurality</a>. The full tables behind this story live in the <a class="underline" href="/geneva-reflections/">original data report</a>.</p>
+      <p class="gr-prose mb-6">What this small room produced — a floor of shared red lines, a principled fork over remedies, and two tensions it chose to keep rather than resolve by majority — is early evidence that a community can surface its own common knowledge about AI. That is a first step toward communities authoring and governing AI on their own terms, the direction RadicalxChange explores as <a class="underline" href="https://www.plurality.net/">Plurality</a>. The next step is the quadratic-voting stage, which prices how much the community will spend on each principle — especially the two built on the tensions the room refused to resolve.</p>
+      {% if C.footer.rwg_signup_url %}
+      <p class="text-size--1"><a class="underline font-bold" href="{{ C.footer.rwg_signup_url }}">{{ C.footer.rwg_signup_label }} →</a> <span class="gr-counts">or write to <a class="underline" href="mailto:{{ C.footer.contact_email }}">{{ C.footer.contact_email }}</a></span></p>
+      {% endif %}
+    </div>
+    <div class="col-span-columns lg:col-start-column-10 lg:col-end-margin-2">
+      <p class="gr-counts mb-2">{{ C.footer.polis_credit }} <a class="underline" href="{{ C.footer.polis_url }}">pol.is</a></p>
+      <p class="gr-counts">Convened by {% for cv in C.hero.conveners %}{{ cv.name }}{% if not loop.last %} · {% endif %}{% endfor %} — <a class="underline" href="{{ C.footer.event_page_url }}">about the event</a>.</p>
     </div>
   </section>
 
@@ -421,7 +497,7 @@ description: "A story-first reading of the “Can AI See Me?” Pol.is deliberat
 
 {{ footer.render() }}
 
-<script src="/js/geneva-story.js" defer></script>
+<script src="/js/geneva-reflections.js" defer></script>
 <script>
   // prettier-ignore
   {% include "components/menu.js" %}

@@ -1,7 +1,7 @@
 # /geneva-reflections — "Can AI See Me?" results page
 
-> **Draft companion page:** `/geneva-reflections/story/` — see
-> "The story page" section at the bottom of this file.
+> **Candidate replacement under comparison:** `/geneva-reflections/story` — see
+> "The story candidate" section at the bottom of this file.
 
 Interactive results page for **"Can AI See Me? Human Dignity, Identity, and
 Moral Agency in Global AI Governance"** (official virtual side event of the
@@ -132,65 +132,152 @@ published before the branch merges, the built `dist/geneva-reflections/`
 + `dist/css/styles.css` + `dist/js/geneva-reflections.js` are the only
 artifacts it needs beyond the shared site assets.
 
-## The story page (/geneva-reflections/story/) — draft for review
+## The story candidate (/geneva-reflections/story) — under comparison
 
-A story-first companion to the data report, built for readers with zero
-Pol.is literacy. Progressive disclosure: narrative claim → evidence card
-(verbatim statement + tallies) → downloadable raw data. It is `noindex`,
-carries a dismissible "draft for review" banner (fill in the
-`FEEDBACK_URL` constant at the top of
-`src/site/geneva-reflections/story/index.njk`), and must be shared only as
-a draft until reviewed.
+A candidate **replacement** for the main page, forked from its layout
+shell and carrying everything it offers (masthead + UN banner, recording,
+stats, full statement table, downloads, RWG sign-up) — restructured as a
+story in five acts with every claim one click from its evidence. It is
+`noindex`, excluded from the sitemap (`eleventyExcludeFromCollections`),
+and has **no draft banner** so the visual comparison is undistorted.
+The main page is frozen as the comparison baseline: no link to the
+candidate, no data corrections there.
 
 ### Which export governs what
 
 | Page | Export | Pipeline |
 |---|---|---|
-| `/geneva-reflections/` + `/data/` | **09:00** (2,201 votes) | `scripts/analyze.py` (pinned to the 09:00 files) → `site-data/results.json` |
-| `/geneva-reflections/story/` | **15:05** (2,307 votes) | `scripts/story_compute.py` → `site-data/computed.json` |
+| `/geneva-reflections/` + `/data/` (frozen baseline) | **09:00** (2,201 votes) | `scripts/analyze.py` (pinned) → `site-data/results.json` |
+| `/geneva-reflections/story` (candidate) | **15:05** (2,307 votes; single source of truth for tallies) | `scripts/story_compute.py` → `site-data/computed.json` |
 
-Never mix them: the published report reflects its snapshot and its tallies
-must not silently change. Small tally differences between the two pages
-are expected and disclosed on the story page. Both exports' CSVs and
-`computed.json` are downloadable from `/files/geneva-reflections/`
-(copied there by `story_compute.py`).
+The 09:00 export is additionally read by `story_compute.py` for exactly one
+computation: the 09:00→15:05 group-assignment crosswalk behind the Act 2
+dissolving-groups diagram. Both exports' CSVs + `computed.json` download
+from `/files/geneva-reflections/`.
 
-### The story page's data rules
+### Honesty rules baked into the candidate
 
-- Every number renders from `computed.json`; nothing is hand-typed.
-- Blocs: 15:05 group 0 = A (13, includes the facilitator seed account,
-  disclosed), group 2 = C (22). Group 1 is an n=2 outlier pair — never
-  characterized, folded into "other" in visuals. Cross-bloc claims compare
-  A and C only.
-- Participant 0 (facilitator; 20 votes, all passes) is excluded from
-  participant-level visuals, included in bloc tallies.
-- Noise statements 22, 72, 75 excluded everywhere; 83 (2 votes) excluded
-  from ranked displays.
-- **Axis bundles** (published in `computed.json → method`): remedy axis X
-  (+ authorship / − boundaries) = mean signed vote over
-  {0+, 35+, 76+, 77+, 15+, 3+, 41+, 9−}; intimacy axis Y (+ comfortable /
-  − averse) over {4+, 12+, 1+, 23−, 30−, 55−, 33−}; pass = 0; ≥3 votes in
-  the bundle required, else unscored. The axes are analyst-curated, not
-  algorithm-discovered — the page's caveat box says so and may not be
-  softened or removed.
-- Honesty rules: verbatim statement text only (trailing whitespace
-  trimmed; spelling preserved); raw counts before percentages; thin-data
-  marker under 5 bloc votes; no demographic claims; "consensus" only above
-  75% agreement in both blocs; the limits section stays.
-- Computed values that differ from the drafting brief (trusted per the
-  compute-first rule): split-half reliabilities 0.58 / 0.82 (brief
-  expected 0.47 / 0.58); voters 38 (brief "~37"); builders cohort on [15]
-  5/0/1 and on [12] 2–3 vs rest-of-C 3–11 (brief 4/0/0 and 3/1/1 vs
-  2/10/1).
+Verbatim statement text only (whitespace runs collapse in HTML rendering;
+the CSVs carry the exact text); raw counts with every claim, percentages
+secondary; ◔ thin-data marker under 5 bloc votes; passes always rendered
+visually distinct from disagreement; no demographic claims; "consensus"
+only above 75% agreement in both blocs; bloc A is never "anti-AI" /
+"skeptics" / "resistant"; the 2-member leftover group is never a faction;
+the clustering-instability note and the limits section may not be cut.
+The closeness cohort (disagreed [23] or agreed [4]; n=10: 7 in C, 1 in A,
+2 in the pair) is defined by votes, not clustering, so it survives any
+future reclustering.
 
-### Promoting or removing the story page after review
+### Stale numbers on the frozen main page (09:00 → 15:05)
 
-- **Promote:** delete the review banner block (`st-banner`) and the
-  `robots noindex` meta from `story/index.njk`; set the real
-  `FEEDBACK_URL` or remove the link; optionally cross-link from the main
-  page (it deliberately has no link to the draft).
-- **Remove:** delete `src/site/geneva-reflections/story/`,
-  `src/site/_data/genevaStory.js`, `src/site/js/geneva-story.js`,
-  `src/site/_includes/css/geneva-story.css` (+ its import in
-  `styles.css`), `scripts/story_compute.py`, `site-data/computed.json`,
-  and `src/site/files/geneva-reflections/`.
+Headline: "38 participants" → 38 voters (39 matrix rows incl. the
+facilitator seed account); "83 statements" → 84; "3 opinion groups found"
+→ 2 blocs + a 2-member statistical leftover. Per-statement totals that
+changed (agree/disagree/pass), on `/geneva-reflections/` and
+`/geneva-reflections/data/`:
+
+| Statement | 09:00 | 15:05 |
+|---|---|---|
+| [0] | 14/3/17 | 14/3/18 |
+| [1] | 9/13/12 | 9/13/13 |
+| [2] | 31/0/1 | 32/0/1 |
+| [3] | 23/3/9 | 24/3/9 |
+| [4] | 6/20/9 | 6/20/10 |
+| [5] | 21/6/4 | 22/6/5 |
+| [6] | 28/2/4 | 29/2/4 |
+| [7] | 27/0/8 | 28/0/8 |
+| [8] | 23/1/8 | 23/1/9 |
+| [9] | 9/15/11 | 10/15/11 |
+| [10] | 27/2/5 | 28/2/5 |
+| [11] | 18/5/9 | 18/5/10 |
+| [12] | 8/18/7 | 8/18/8 |
+| [13] | 25/2/7 | 26/2/7 |
+| [14] | 27/2/5 | 28/2/5 |
+| [15] | 23/1/10 | 24/1/10 |
+| [16] | 29/2/3 | 30/2/3 |
+| [17] | 27/1/5 | 27/1/6 |
+| [18] | 23/1/10 | 24/1/10 |
+| [19] | 25/2/7 | 26/2/8 |
+| [20] | 16/4/12 | 17/4/12 |
+| [21] | 28/0/3 | 29/0/3 |
+| [23] | 17/7/7 | 17/8/8 |
+| [24] | 12/2/17 | 13/2/17 |
+| [25] | 22/1/6 | 23/1/7 |
+| [26] | 24/2/3 | 25/2/3 |
+| [27] | 23/3/5 | 23/3/6 |
+| [28] | 14/2/10 | 16/2/10 |
+| [29] | 18/2/9 | 18/2/10 |
+| [30] | 17/4/5 | 17/5/6 |
+| [31] | 16/1/11 | 16/1/12 |
+| [32] | 16/1/10 | 16/1/11 |
+| [33] | 6/10/12 | 7/10/12 |
+| [34] | 10/2/12 | 10/3/12 |
+| [35] | 15/3/6 | 15/3/7 |
+| [36] | 18/3/4 | 18/3/5 |
+| [37] | 18/1/7 | 19/1/7 |
+| [38] | 19/0/6 | 20/0/6 |
+| [39] | 13/0/14 | 14/0/14 |
+| [40] | 18/1/4 | 19/1/4 |
+| [41] | 18/3/5 | 19/3/5 |
+| [42] | 20/0/4 | 22/0/4 |
+| [43] | 10/5/10 | 10/5/11 |
+| [44] | 3/12/8 | 3/13/8 |
+| [45] | 17/3/4 | 18/3/5 |
+| [46] | 17/3/3 | 18/3/4 |
+| [47] | 21/0/3 | 22/0/3 |
+| [48] | 18/0/5 | 19/0/5 |
+| [49] | 20/2/4 | 20/2/5 |
+| [50] | 13/1/8 | 13/1/9 |
+| [51] | 21/0/6 | 22/0/6 |
+| [52] | 19/2/3 | 20/2/3 |
+| [53] | 21/1/1 | 21/1/2 |
+| [54] | 9/5/11 | 10/5/11 |
+| [55] | 10/4/10 | 11/4/11 |
+| [56] | 15/3/6 | 15/3/7 |
+| [57] | 15/0/10 | 16/0/10 |
+| [58] | 17/2/3 | 18/2/3 |
+| [59] | 14/2/6 | 15/2/6 |
+| [60] | 15/2/7 | 15/2/8 |
+| [61] | 12/4/9 | 13/4/9 |
+| [62] | 21/0/3 | 22/0/3 |
+| [63] | 16/0/9 | 17/0/9 |
+| [64] | 10/2/11 | 11/2/12 |
+| [65] | 19/1/4 | 20/1/4 |
+| [66] | 11/3/9 | 11/3/10 |
+| [67] | 20/1/1 | 21/1/2 |
+| [68] | 21/0/1 | 23/0/1 |
+| [69] | 15/2/7 | 16/3/7 |
+| [70] | 16/0/7 | 16/1/8 |
+| [71] | 16/0/7 | 16/0/8 |
+| [72] | 2/1/22 | 2/1/23 |
+| [73] | 12/2/10 | 13/2/10 |
+| [74] | 18/3/3 | 20/3/3 |
+| [75] | 2/2/17 | 2/2/19 |
+| [76] | 13/1/9 | 13/1/10 |
+| [77] | 12/3/10 | 12/3/11 |
+| [78] | 6/2/14 | 6/3/15 |
+| [79] | 5/4/11 | 5/6/11 |
+| [80] | 11/0/6 | 11/0/8 |
+| [81] | 1/5/5 | 1/5/7 |
+| [82] | 5/1/1 | 6/1/2 |
+
+### Promotion (one step, if the candidate wins)
+
+1. `git mv src/site/geneva-reflections/story/index.njk src/site/geneva-reflections/index.njk`
+   (overwriting the old main page — a route swap, never a content merge).
+2. In the moved file: delete the `robots noindex` meta line and the
+   `eleventyExcludeFromCollections: true` front-matter line.
+3. Retire `/geneva-reflections/data/` or leave it (it still serves the
+   09:00 snapshot; the candidate's table supersedes it) and add a redirect
+   from `/geneva-reflections/story` in `src/site/_redirects`.
+4. Rebuild. The old page remains recoverable from git history.
+
+### Discard (one step, if the baseline wins)
+
+`git revert` the candidate commits (or restore the prior
+`story/index.njk` from git history at the merge before this branch), and
+delete `scripts/story_compute.py`, `site-data/computed.json`,
+`src/site/_data/genevaStory.js`, `src/site/_includes/css/geneva-story.css`
+(+ its import), and `src/site/files/geneva-reflections/`. The main page
+is untouched either way.
+
