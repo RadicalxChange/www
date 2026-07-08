@@ -143,7 +143,6 @@
     "lead": "“It isn't AI's job to reflect every culture's values” is the room's cleanest divide: the Boundary Keepers' signature position and the Recognition Seekers' sharpest rejection. Universality versus representation is a real disagreement, not a misunderstanding.",
     "statement": 9
   },
-  "closing": "The split is over the remedy. The one affirmative program in the data — communities building and steering AI on their own terms — faces no organized opposition. And the bloc that holds back abstains rather than objects: an invitation to demonstrate, rather than a door closed.",
   "surprise": {
     "kicker": "04 · The findings a standard poll would miss",
     "title": "The surprise",
@@ -362,5 +361,9 @@
     "rwg_signup_label": "Join the Reflections Working Group",
     "contact_email": "info@radicalxchange.org",
     "event_page_url": "/updates/announcements/2026-07-can-ai-see-me/"
+  },
+  "tldr": {
+    "kicker": "00 · The TL;DR",
+    "text": "The room drew its red lines together — against intimate personalization, surveillance, and AI that flatters rather than challenges — and then split not over whether AI needs remaking but over the remedy. The larger bloc's answer is authorship: communities building and steering AI on their own terms, the one affirmative program in the data with broad support and no organized opposition. The smaller bloc's answer is boundaries: whoever builds it, some human ground stays reserved. And the boundary-keepers don't reject communal AI — they just passed on it, which suggests an invitation to demonstrate rather than a door closed."
   }
 }
