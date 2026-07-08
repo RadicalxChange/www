@@ -1,7 +1,7 @@
 {
   "source_files": {
-    "participant_votes": "2026-07-06-0900-3fsymhkn53-participant-votes.csv",
-    "comment_groups": "2026-07-06-0900-3fsymhkn53-comment-groups.csv"
+    "participant_votes": "2026-07-06-1505-3fsymhkn53-participant-votes.csv",
+    "comment_groups": "2026-07-06-1505-3fsymhkn53-comment-groups.csv"
   },
   "rules": {
     "junk_ids": [
@@ -15,196 +15,252 @@
     "divisiveness_metric": "spread of (agrees-disagrees)/votes across A/B/C"
   },
   "participation": {
-    "participants": 38,
-    "total_votes": 2201,
-    "total_statements": 83,
+    "participants": 39,
+    "total_votes": 2307,
+    "total_statements": 84,
     "seed_statements": 20,
-    "live_statements": 63,
-    "live_share": 0.759,
+    "live_statements": 64,
+    "live_share": 0.7619,
     "group_sizes": {
-      "A": 12,
-      "C": 15,
-      "B": 8,
-      "D": 1
+      "A": 13,
+      "C": 22,
+      "B": 2
     },
     "unclustered": 2,
-    "opinion_groups": 3
+    "opinion_groups": 2,
+    "bloc_participants": 35
   },
   "rankings": {
     "consensus": [
       2,
-      21,
       68,
-      16,
+      67,
+      42,
+      21,
       65,
-      19,
-      25,
-      10,
       13,
-      51,
-      80,
+      74,
+      52,
+      53,
+      58,
+      25,
+      16,
       6,
-      14,
-      17,
-      26,
-      27,
       37,
-      46,
-      49,
+      47,
+      48,
+      62,
+      69,
+      10,
+      19,
+      26,
+      51,
+      50,
+      60,
       28,
+      46,
+      71,
+      14,
+      5,
+      17,
+      23,
+      30,
+      45,
+      56,
+      63,
+      32,
+      36,
+      41,
+      55,
+      61,
+      80,
       7,
+      27,
+      15,
+      38,
+      40,
+      54,
+      20,
+      31,
       8,
       18,
-      5,
-      11,
-      29,
-      31,
       3,
+      49,
+      59,
+      73,
+      11,
+      57,
+      64,
+      70,
       39,
-      56,
-      77,
-      20,
-      30,
-      32,
-      15,
-      78,
-      12,
-      0,
-      23,
       43,
-      76,
-      1,
-      4,
+      29,
       9,
-      24,
       33,
-      36,
+      1,
+      12,
+      24,
+      0,
+      66,
+      79,
+      34,
+      77,
+      78,
+      35,
+      76,
+      4,
       44,
-      54,
-      61,
-      79
+      81
     ],
     "divisive": [
-      30,
-      9,
-      36,
-      33,
-      23,
-      79,
-      54,
-      15,
-      77,
-      0,
-      5,
-      20,
-      43,
-      76,
-      32,
-      46,
+      35,
       49,
+      9,
       29,
-      24,
-      56,
-      26,
+      76,
+      40,
+      77,
       44,
+      34,
       3,
-      12,
-      4,
-      6,
-      7,
-      8,
-      31,
-      1,
-      17,
-      78,
+      41,
       27,
+      59,
+      8,
+      36,
+      66,
+      15,
+      38,
       11,
-      10,
-      61,
+      70,
+      26,
+      7,
+      17,
+      57,
+      46,
+      73,
       18,
+      24,
       14,
-      39,
-      13,
+      10,
+      78,
+      5,
       16,
-      37,
-      65,
+      43,
+      45,
+      47,
+      62,
+      39,
+      0,
+      31,
+      20,
+      54,
+      48,
+      56,
+      53,
+      64,
+      6,
       51,
-      25,
-      19,
-      28,
+      4,
+      33,
+      58,
+      32,
       80,
+      63,
+      69,
+      19,
+      79,
+      71,
+      60,
+      21,
       68,
+      65,
+      23,
+      12,
+      52,
       2,
-      21
+      25,
+      81,
+      37,
+      55,
+      30,
+      74,
+      67,
+      13,
+      1,
+      42,
+      28,
+      50,
+      61
     ],
     "most_passed": [
       78,
-      79,
+      81,
       24,
-      39,
       0,
+      39,
+      79,
       34,
       64,
-      81,
-      54,
-      33,
-      55,
-      73,
       43,
-      57,
+      54,
+      55,
       77,
-      31,
+      80,
       66,
       76,
-      28,
-      20,
+      31,
+      33,
+      73,
       32,
       50,
+      57,
+      1,
+      20,
+      28,
       61,
       63,
-      1,
-      80,
-      44,
-      9,
       29,
-      70,
+      44,
       71,
+      60,
+      70,
+      9,
+      11,
       15,
       18,
-      60,
+      35,
+      56,
+      4,
+      8,
       69,
-      11,
       59,
       37,
       3,
-      4,
-      8,
-      35,
-      56,
-      38,
-      7,
       23,
-      51,
-      48,
       12,
+      38,
       25,
-      13,
+      7,
       19,
       30,
-      41,
-      40,
-      42,
-      45,
-      65,
-      27,
+      51,
+      48,
+      13,
       36,
+      45,
+      27,
+      41,
       49,
       17,
+      40,
+      46,
+      65,
+      42,
+      5,
       10,
       14,
       58,
-      46,
-      5,
       47,
       52,
       62,
@@ -213,9 +269,9 @@
       26,
       21,
       16,
+      53,
       67,
       68,
-      53,
       2
     ]
   },
@@ -226,55 +282,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
+        "votes": 35,
         "agrees": 14,
         "disagrees": 3,
-        "passes": 17
+        "passes": 18
       },
-      "agree_rate": 0.4118,
-      "pass_rate": 0.5,
-      "net_agree": 0.3235,
+      "agree_rate": 0.4,
+      "pass_rate": 0.5143,
+      "net_agree": 0.3143,
       "groups": {
         "A": {
-          "votes": 11,
+          "votes": 13,
           "agrees": 2,
           "disagrees": 0,
-          "passes": 9,
-          "agree_rate": 0.1818,
-          "net_agree": 0.1818,
+          "passes": 11,
+          "agree_rate": 0.1538,
+          "net_agree": 0.1538,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 1,
-          "disagrees": 2,
-          "passes": 4,
-          "agree_rate": 0.1429,
-          "net_agree": -0.1429,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.7333,
-          "net_agree": 0.7333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
+          "votes": 2,
           "agrees": 0,
           "disagrees": 1,
-          "passes": 0,
+          "passes": 1,
           "agree_rate": 0.0,
-          "net_agree": -1.0,
+          "net_agree": -0.5,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 12,
+          "disagrees": 2,
+          "passes": 6,
+          "agree_rate": 0.6,
+          "net_agree": 0.5,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1429,
-      "divisiveness": 0.8762,
+      "consensus_min_agree_rate": 0.1538,
+      "divisiveness": 0.3462,
       "within_group_splits": []
     },
     "1": {
@@ -283,58 +330,48 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
+        "votes": 35,
         "agrees": 9,
         "disagrees": 13,
-        "passes": 12
+        "passes": 13
       },
-      "agree_rate": 0.2647,
-      "pass_rate": 0.3529,
-      "net_agree": -0.1176,
+      "agree_rate": 0.2571,
+      "pass_rate": 0.3714,
+      "net_agree": -0.1143,
       "groups": {
         "A": {
-          "votes": 11,
-          "agrees": 3,
-          "disagrees": 3,
-          "passes": 5,
-          "agree_rate": 0.2727,
-          "net_agree": 0.0,
+          "votes": 12,
+          "agrees": 2,
+          "disagrees": 4,
+          "passes": 6,
+          "agree_rate": 0.1667,
+          "net_agree": -0.1667,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 3,
-          "disagrees": 2,
-          "passes": 2,
-          "agree_rate": 0.4286,
-          "net_agree": 0.1429,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 2,
-          "disagrees": 8,
-          "passes": 5,
-          "agree_rate": 0.1333,
-          "net_agree": -0.4,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
+          "votes": 2,
           "agrees": 1,
           "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
           "thin": true
+        },
+        "C": {
+          "votes": 21,
+          "agrees": 6,
+          "disagrees": 9,
+          "passes": 6,
+          "agree_rate": 0.2857,
+          "net_agree": -0.1429,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1333,
-      "divisiveness": 0.5429,
+      "consensus_min_agree_rate": 0.1667,
+      "divisiveness": 0.0238,
       "within_group_splits": [
-        "A",
-        "B"
+        "C"
       ]
     },
     "2": {
@@ -343,14 +380,14 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 32,
-        "agrees": 31,
+        "votes": 33,
+        "agrees": 32,
         "disagrees": 0,
         "passes": 1
       },
-      "agree_rate": 0.9688,
-      "pass_rate": 0.0312,
-      "net_agree": 0.9688,
+      "agree_rate": 0.9697,
+      "pass_rate": 0.0303,
+      "net_agree": 0.9697,
       "groups": {
         "A": {
           "votes": 11,
@@ -362,31 +399,22 @@
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 14,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 20,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
@@ -400,55 +428,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 35,
-        "agrees": 23,
+        "votes": 36,
+        "agrees": 24,
         "disagrees": 3,
         "passes": 9
       },
-      "agree_rate": 0.6571,
-      "pass_rate": 0.2571,
-      "net_agree": 0.5714,
+      "agree_rate": 0.6667,
+      "pass_rate": 0.25,
+      "net_agree": 0.5833,
       "groups": {
         "A": {
-          "votes": 12,
-          "agrees": 3,
-          "disagrees": 1,
-          "passes": 8,
-          "agree_rate": 0.25,
-          "net_agree": 0.1667,
+          "votes": 13,
+          "agrees": 4,
+          "disagrees": 2,
+          "passes": 7,
+          "agree_rate": 0.3077,
+          "net_agree": 0.1538,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.8571,
-          "net_agree": 0.7143,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 13,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.8667,
-          "net_agree": 0.8,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 21,
+          "agrees": 18,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8571,
+          "net_agree": 0.8095,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.25,
-      "divisiveness": 0.6333,
+      "consensus_min_agree_rate": 0.3077,
+      "divisiveness": 0.6557,
       "within_group_splits": []
     },
     "4": {
@@ -457,58 +476,47 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 35,
+        "votes": 36,
         "agrees": 6,
         "disagrees": 20,
-        "passes": 9
+        "passes": 10
       },
-      "agree_rate": 0.1714,
-      "pass_rate": 0.2571,
-      "net_agree": -0.4,
+      "agree_rate": 0.1667,
+      "pass_rate": 0.2778,
+      "net_agree": -0.3889,
       "groups": {
         "A": {
           "votes": 12,
-          "agrees": 1,
-          "disagrees": 8,
-          "passes": 3,
-          "agree_rate": 0.0833,
+          "agrees": 0,
+          "disagrees": 7,
+          "passes": 5,
+          "agree_rate": 0.0,
           "net_agree": -0.5833,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 2,
-          "disagrees": 2,
-          "passes": 3,
-          "agree_rate": 0.2857,
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
           "net_agree": 0.0,
-          "thin": false
+          "thin": true
         },
         "C": {
-          "votes": 15,
-          "agrees": 2,
-          "disagrees": 10,
-          "passes": 3,
-          "agree_rate": 0.1333,
-          "net_agree": -0.5333,
+          "votes": 22,
+          "agrees": 5,
+          "disagrees": 12,
+          "passes": 5,
+          "agree_rate": 0.2273,
+          "net_agree": -0.3182,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0833,
-      "divisiveness": 0.5833,
-      "within_group_splits": [
-        "B"
-      ]
+      "consensus_min_agree_rate": 0.0,
+      "divisiveness": 0.2651,
+      "within_group_splits": []
     },
     "5": {
       "id": 5,
@@ -516,58 +524,47 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 31,
-        "agrees": 21,
+        "votes": 33,
+        "agrees": 22,
         "disagrees": 6,
-        "passes": 4
+        "passes": 5
       },
-      "agree_rate": 0.6774,
-      "pass_rate": 0.129,
-      "net_agree": 0.4839,
+      "agree_rate": 0.6667,
+      "pass_rate": 0.1515,
+      "net_agree": 0.4848,
       "groups": {
         "A": {
-          "votes": 11,
+          "votes": 12,
           "agrees": 6,
           "disagrees": 2,
-          "passes": 3,
-          "agree_rate": 0.5455,
-          "net_agree": 0.3636,
+          "passes": 4,
+          "agree_rate": 0.5,
+          "net_agree": 0.3333,
           "thin": false
         },
         "B": {
-          "votes": 5,
-          "agrees": 2,
-          "disagrees": 2,
-          "passes": 1,
-          "agree_rate": 0.4,
-          "net_agree": 0.0,
-          "thin": false
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 13,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.9286,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 16,
+          "disagrees": 2,
+          "passes": 1,
+          "agree_rate": 0.8421,
+          "net_agree": 0.7368,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.4,
-      "divisiveness": 0.8571,
-      "within_group_splits": [
-        "B"
-      ]
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.4035,
+      "within_group_splits": []
     },
     "6": {
       "id": 6,
@@ -575,55 +572,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 28,
+        "votes": 35,
+        "agrees": 29,
         "disagrees": 2,
         "passes": 4
       },
-      "agree_rate": 0.8235,
-      "pass_rate": 0.1176,
-      "net_agree": 0.7647,
+      "agree_rate": 0.8286,
+      "pass_rate": 0.1143,
+      "net_agree": 0.7714,
       "groups": {
         "A": {
           "votes": 12,
-          "agrees": 7,
-          "disagrees": 2,
+          "agrees": 8,
+          "disagrees": 1,
           "passes": 3,
-          "agree_rate": 0.5833,
-          "net_agree": 0.4167,
+          "agree_rate": 0.6667,
+          "net_agree": 0.5833,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 14,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9333,
-          "net_agree": 0.9333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 21,
+          "agrees": 19,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.9048,
+          "net_agree": 0.8571,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5833,
-      "divisiveness": 0.5833,
+      "consensus_min_agree_rate": 0.6667,
+      "divisiveness": 0.2738,
       "within_group_splits": []
     },
     "7": {
@@ -632,14 +620,14 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 35,
-        "agrees": 27,
+        "votes": 36,
+        "agrees": 28,
         "disagrees": 0,
         "passes": 8
       },
-      "agree_rate": 0.7714,
-      "pass_rate": 0.2286,
-      "net_agree": 0.7714,
+      "agree_rate": 0.7778,
+      "pass_rate": 0.2222,
+      "net_agree": 0.7778,
       "groups": {
         "A": {
           "votes": 12,
@@ -651,36 +639,27 @@
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8571,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 15,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 22,
+          "agrees": 21,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9545,
+          "net_agree": 0.9545,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
       "consensus_min_agree_rate": 0.4167,
-      "divisiveness": 0.5833,
+      "divisiveness": 0.5378,
       "within_group_splits": []
     },
     "8": {
@@ -689,55 +668,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 32,
+        "votes": 33,
         "agrees": 23,
         "disagrees": 1,
-        "passes": 8
+        "passes": 9
       },
-      "agree_rate": 0.7188,
-      "pass_rate": 0.25,
-      "net_agree": 0.6875,
+      "agree_rate": 0.697,
+      "pass_rate": 0.2727,
+      "net_agree": 0.6667,
       "groups": {
         "A": {
           "votes": 12,
-          "agrees": 5,
+          "agrees": 4,
           "disagrees": 0,
-          "passes": 7,
-          "agree_rate": 0.4167,
-          "net_agree": 0.4167,
+          "passes": 8,
+          "agree_rate": 0.3333,
+          "net_agree": 0.3333,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 13,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 1,
           "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
           "thin": true
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9474,
+          "net_agree": 0.9474,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.4167,
-      "divisiveness": 0.5833,
+      "consensus_min_agree_rate": 0.3333,
+      "divisiveness": 0.6141,
       "within_group_splits": []
     },
     "9": {
@@ -746,55 +716,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 35,
-        "agrees": 9,
+        "votes": 36,
+        "agrees": 10,
         "disagrees": 15,
         "passes": 11
       },
-      "agree_rate": 0.2571,
-      "pass_rate": 0.3143,
-      "net_agree": -0.1714,
+      "agree_rate": 0.2778,
+      "pass_rate": 0.3056,
+      "net_agree": -0.1389,
       "groups": {
         "A": {
-          "votes": 12,
-          "agrees": 7,
+          "votes": 13,
+          "agrees": 6,
           "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.5833,
-          "net_agree": 0.5833,
+          "passes": 7,
+          "agree_rate": 0.4615,
+          "net_agree": 0.4615,
           "thin": false
         },
         "B": {
-          "votes": 8,
-          "agrees": 1,
-          "disagrees": 3,
-          "passes": 4,
-          "agree_rate": 0.125,
-          "net_agree": -0.25,
-          "thin": false
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 1,
-          "disagrees": 11,
-          "passes": 2,
-          "agree_rate": 0.0714,
-          "net_agree": -0.7143,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 21,
+          "agrees": 4,
+          "disagrees": 13,
+          "passes": 4,
+          "agree_rate": 0.1905,
+          "net_agree": -0.4286,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0714,
-      "divisiveness": 1.2976,
+      "consensus_min_agree_rate": 0.1905,
+      "divisiveness": 0.8901,
       "within_group_splits": []
     },
     "10": {
@@ -803,55 +764,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 27,
+        "votes": 35,
+        "agrees": 28,
         "disagrees": 2,
         "passes": 5
       },
-      "agree_rate": 0.7941,
-      "pass_rate": 0.1471,
-      "net_agree": 0.7353,
+      "agree_rate": 0.8,
+      "pass_rate": 0.1429,
+      "net_agree": 0.7429,
       "groups": {
         "A": {
-          "votes": 11,
-          "agrees": 7,
+          "votes": 13,
+          "agrees": 8,
           "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.6364,
-          "net_agree": 0.5455,
+          "passes": 4,
+          "agree_rate": 0.6154,
+          "net_agree": 0.5385,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8571,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 14,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9333,
-          "net_agree": 0.9333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 1,
           "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 19,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.95,
+          "net_agree": 0.95,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.6364,
-      "divisiveness": 0.3878,
+      "consensus_min_agree_rate": 0.6154,
+      "divisiveness": 0.4115,
       "within_group_splits": []
     },
     "11": {
@@ -860,56 +812,49 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 32,
+        "votes": 33,
         "agrees": 18,
         "disagrees": 5,
-        "passes": 9
+        "passes": 10
       },
-      "agree_rate": 0.5625,
-      "pass_rate": 0.2812,
-      "net_agree": 0.4062,
+      "agree_rate": 0.5455,
+      "pass_rate": 0.303,
+      "net_agree": 0.3939,
       "groups": {
         "A": {
-          "votes": 10,
-          "agrees": 4,
-          "disagrees": 2,
-          "passes": 4,
-          "agree_rate": 0.4,
-          "net_agree": 0.2,
+          "votes": 11,
+          "agrees": 3,
+          "disagrees": 3,
+          "passes": 5,
+          "agree_rate": 0.2727,
+          "net_agree": 0.0,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 5,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.8333,
-          "net_agree": 0.6667,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 8,
-          "disagrees": 2,
-          "passes": 5,
-          "agree_rate": 0.5333,
-          "net_agree": 0.4,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 13,
+          "disagrees": 2,
+          "passes": 5,
+          "agree_rate": 0.65,
+          "net_agree": 0.55,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.4,
-      "divisiveness": 0.4667,
-      "within_group_splits": []
+      "consensus_min_agree_rate": 0.2727,
+      "divisiveness": 0.55,
+      "within_group_splits": [
+        "A"
+      ]
     },
     "12": {
       "id": 12,
@@ -917,14 +862,14 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 33,
+        "votes": 34,
         "agrees": 8,
         "disagrees": 18,
-        "passes": 7
+        "passes": 8
       },
-      "agree_rate": 0.2424,
-      "pass_rate": 0.2121,
-      "net_agree": -0.303,
+      "agree_rate": 0.2353,
+      "pass_rate": 0.2353,
+      "net_agree": -0.2941,
       "groups": {
         "A": {
           "votes": 12,
@@ -936,39 +881,28 @@
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 3,
-          "disagrees": 3,
-          "passes": 1,
-          "agree_rate": 0.4286,
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
           "net_agree": 0.0,
-          "thin": false
+          "thin": true
         },
         "C": {
-          "votes": 13,
-          "agrees": 2,
-          "disagrees": 10,
-          "passes": 1,
-          "agree_rate": 0.1538,
-          "net_agree": -0.6154,
+          "votes": 20,
+          "agrees": 5,
+          "disagrees": 12,
+          "passes": 3,
+          "agree_rate": 0.25,
+          "net_agree": -0.35,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1538,
-      "divisiveness": 0.6154,
-      "within_group_splits": [
-        "B"
-      ]
+      "consensus_min_agree_rate": 0.1667,
+      "divisiveness": 0.1,
+      "within_group_splits": []
     },
     "13": {
       "id": 13,
@@ -976,34 +910,16 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 25,
+        "votes": 35,
+        "agrees": 26,
         "disagrees": 2,
         "passes": 7
       },
-      "agree_rate": 0.7353,
-      "pass_rate": 0.2059,
-      "net_agree": 0.6765,
+      "agree_rate": 0.7429,
+      "pass_rate": 0.2,
+      "net_agree": 0.6857,
       "groups": {
         "A": {
-          "votes": 12,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "B": {
-          "votes": 8,
-          "agrees": 5,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.625,
-          "net_agree": 0.5,
-          "thin": false
-        },
-        "C": {
           "votes": 13,
           "agrees": 10,
           "disagrees": 0,
@@ -1012,19 +928,28 @@
           "net_agree": 0.7692,
           "thin": false
         },
-        "D": {
-          "votes": 1,
+        "B": {
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 16,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.8,
+          "net_agree": 0.8,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.625,
-      "divisiveness": 0.3333,
+      "consensus_min_agree_rate": 0.7692,
+      "divisiveness": 0.0308,
       "within_group_splits": []
     },
     "14": {
@@ -1033,55 +958,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 27,
+        "votes": 35,
+        "agrees": 28,
         "disagrees": 2,
         "passes": 5
       },
-      "agree_rate": 0.7941,
-      "pass_rate": 0.1471,
-      "net_agree": 0.7353,
+      "agree_rate": 0.8,
+      "pass_rate": 0.1429,
+      "net_agree": 0.7429,
       "groups": {
         "A": {
-          "votes": 12,
+          "votes": 13,
           "agrees": 7,
           "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.5833,
-          "net_agree": 0.5,
+          "passes": 5,
+          "agree_rate": 0.5385,
+          "net_agree": 0.4615,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8571,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 13,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.9286,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 19,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.95,
+          "net_agree": 0.9,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5833,
-      "divisiveness": 0.3571,
+      "consensus_min_agree_rate": 0.5385,
+      "divisiveness": 0.4385,
       "within_group_splits": []
     },
     "15": {
@@ -1090,55 +1006,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 23,
+        "votes": 35,
+        "agrees": 24,
         "disagrees": 1,
         "passes": 10
       },
-      "agree_rate": 0.6765,
-      "pass_rate": 0.2941,
-      "net_agree": 0.6471,
+      "agree_rate": 0.6857,
+      "pass_rate": 0.2857,
+      "net_agree": 0.6571,
       "groups": {
         "A": {
-          "votes": 11,
-          "agrees": 2,
+          "votes": 13,
+          "agrees": 5,
           "disagrees": 1,
-          "passes": 8,
-          "agree_rate": 0.1818,
-          "net_agree": 0.0909,
+          "passes": 7,
+          "agree_rate": 0.3846,
+          "net_agree": 0.3077,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 7,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
         },
         "C": {
-          "votes": 15,
-          "agrees": 14,
+          "votes": 20,
+          "agrees": 18,
           "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9333,
-          "net_agree": 0.9333,
+          "passes": 2,
+          "agree_rate": 0.9,
+          "net_agree": 0.9,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1818,
-      "divisiveness": 0.9091,
+      "consensus_min_agree_rate": 0.3846,
+      "divisiveness": 0.5923,
       "within_group_splits": []
     },
     "16": {
@@ -1147,55 +1054,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 29,
+        "votes": 35,
+        "agrees": 30,
         "disagrees": 2,
         "passes": 3
       },
-      "agree_rate": 0.8529,
-      "pass_rate": 0.0882,
-      "net_agree": 0.7941,
+      "agree_rate": 0.8571,
+      "pass_rate": 0.0857,
+      "net_agree": 0.8,
       "groups": {
         "A": {
-          "votes": 12,
+          "votes": 13,
           "agrees": 9,
           "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.75,
-          "net_agree": 0.6667,
+          "passes": 3,
+          "agree_rate": 0.6923,
+          "net_agree": 0.6154,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8571,
-          "net_agree": 0.8571,
-          "thin": false
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
         },
         "C": {
-          "votes": 14,
-          "agrees": 14,
+          "votes": 20,
+          "agrees": 20,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.75,
-      "divisiveness": 0.3333,
+      "consensus_min_agree_rate": 0.6923,
+      "divisiveness": 0.3846,
       "within_group_splits": []
     },
     "17": {
@@ -1204,55 +1102,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 33,
+        "votes": 34,
         "agrees": 27,
         "disagrees": 1,
-        "passes": 5
+        "passes": 6
       },
-      "agree_rate": 0.8182,
-      "pass_rate": 0.1515,
-      "net_agree": 0.7879,
+      "agree_rate": 0.7941,
+      "pass_rate": 0.1765,
+      "net_agree": 0.7647,
       "groups": {
         "A": {
           "votes": 12,
-          "agrees": 7,
+          "agrees": 6,
           "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.5833,
-          "net_agree": 0.5,
+          "passes": 5,
+          "agree_rate": 0.5,
+          "net_agree": 0.4167,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 13,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9286,
-          "net_agree": 0.9286,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 19,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.95,
+          "net_agree": 0.95,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5833,
-      "divisiveness": 0.5,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.5333,
       "within_group_splits": []
     },
     "18": {
@@ -1261,55 +1150,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 23,
+        "votes": 35,
+        "agrees": 24,
         "disagrees": 1,
         "passes": 10
       },
-      "agree_rate": 0.6765,
-      "pass_rate": 0.2941,
-      "net_agree": 0.6471,
+      "agree_rate": 0.6857,
+      "pass_rate": 0.2857,
+      "net_agree": 0.6571,
       "groups": {
         "A": {
           "votes": 12,
-          "agrees": 5,
+          "agrees": 4,
           "disagrees": 0,
-          "passes": 7,
-          "agree_rate": 0.4167,
-          "net_agree": 0.4167,
+          "passes": 8,
+          "agree_rate": 0.3333,
+          "net_agree": 0.3333,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 13,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.8667,
-          "net_agree": 0.8,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 21,
+          "agrees": 18,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8571,
+          "net_agree": 0.8095,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.4167,
-      "divisiveness": 0.3833,
+      "consensus_min_agree_rate": 0.3333,
+      "divisiveness": 0.4762,
       "within_group_splits": []
     },
     "19": {
@@ -1318,55 +1198,46 @@
       "source": "seed",
       "junk": false,
       "total": {
-        "votes": 34,
-        "agrees": 25,
+        "votes": 36,
+        "agrees": 26,
         "disagrees": 2,
-        "passes": 7
+        "passes": 8
       },
-      "agree_rate": 0.7353,
-      "pass_rate": 0.2059,
-      "net_agree": 0.6765,
+      "agree_rate": 0.7222,
+      "pass_rate": 0.2222,
+      "net_agree": 0.6667,
       "groups": {
         "A": {
-          "votes": 12,
+          "votes": 13,
           "agrees": 8,
           "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
+          "passes": 5,
+          "agree_rate": 0.6154,
+          "net_agree": 0.6154,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 12,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.8,
-          "net_agree": 0.7333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 1,
           "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
           "thin": true
+        },
+        "C": {
+          "votes": 21,
+          "agrees": 17,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.8095,
+          "net_agree": 0.7619,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.6667,
-      "divisiveness": 0.1666,
+      "consensus_min_agree_rate": 0.6154,
+      "divisiveness": 0.1465,
       "within_group_splits": []
     },
     "20": {
@@ -1375,58 +1246,47 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 32,
-        "agrees": 16,
+        "votes": 33,
+        "agrees": 17,
         "disagrees": 4,
         "passes": 12
       },
-      "agree_rate": 0.5,
-      "pass_rate": 0.375,
-      "net_agree": 0.375,
+      "agree_rate": 0.5152,
+      "pass_rate": 0.3636,
+      "net_agree": 0.3939,
       "groups": {
         "A": {
-          "votes": 10,
-          "agrees": 2,
-          "disagrees": 3,
+          "votes": 11,
+          "agrees": 4,
+          "disagrees": 2,
           "passes": 5,
-          "agree_rate": 0.2,
-          "net_agree": -0.1,
+          "agree_rate": 0.3636,
+          "net_agree": 0.1818,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.7143,
-          "net_agree": 0.7143,
-          "thin": false
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 9,
-          "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.6429,
-          "net_agree": 0.5714,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 0,
           "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 12,
+          "disagrees": 2,
+          "passes": 6,
+          "agree_rate": 0.6,
+          "net_agree": 0.5,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.2,
-      "divisiveness": 0.8143,
-      "within_group_splits": [
-        "A"
-      ]
+      "consensus_min_agree_rate": 0.3636,
+      "divisiveness": 0.3182,
+      "within_group_splits": []
     },
     "21": {
       "id": 21,
@@ -1434,55 +1294,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 31,
-        "agrees": 28,
+        "votes": 32,
+        "agrees": 29,
         "disagrees": 0,
         "passes": 3
       },
-      "agree_rate": 0.9032,
-      "pass_rate": 0.0968,
-      "net_agree": 0.9032,
+      "agree_rate": 0.9062,
+      "pass_rate": 0.0938,
+      "net_agree": 0.9062,
       "groups": {
         "A": {
-          "votes": 11,
+          "votes": 12,
           "agrees": 10,
           "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9091,
-          "net_agree": 0.9091,
+          "passes": 2,
+          "agree_rate": 0.8333,
+          "net_agree": 0.8333,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8571,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9167,
-          "net_agree": 0.9167,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9444,
+          "net_agree": 0.9444,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.8571,
-      "divisiveness": 0.0596,
+      "consensus_min_agree_rate": 0.8333,
+      "divisiveness": 0.1111,
       "within_group_splits": []
     },
     "22": {
@@ -1502,44 +1353,35 @@
       "groups": {
         "A": {
           "votes": 4,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.25,
+          "net_agree": 0.25,
+          "thin": true
+        },
+        "B": {
+          "votes": 1,
           "agrees": 0,
           "disagrees": 0,
-          "passes": 4,
+          "passes": 1,
           "agree_rate": 0.0,
           "net_agree": 0.0,
           "thin": true
         },
-        "B": {
-          "votes": 6,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.5,
-          "net_agree": 0.5,
-          "thin": false
-        },
         "C": {
-          "votes": 9,
-          "agrees": 2,
+          "votes": 14,
+          "agrees": 4,
           "disagrees": 0,
-          "passes": 7,
-          "agree_rate": 0.2222,
-          "net_agree": 0.2222,
+          "passes": 10,
+          "agree_rate": 0.2857,
+          "net_agree": 0.2857,
           "thin": false
-        },
-        "D": {
-          "votes": 0,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": null,
-          "net_agree": null,
-          "thin": true
         }
       },
       "eligible_for_rankings": false,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 0.5,
+      "consensus_min_agree_rate": 0.25,
+      "divisiveness": 0.0357,
       "within_group_splits": []
     },
     "23": {
@@ -1548,55 +1390,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 31,
+        "votes": 33,
         "agrees": 17,
-        "disagrees": 7,
-        "passes": 7
+        "disagrees": 8,
+        "passes": 8
       },
-      "agree_rate": 0.5484,
-      "pass_rate": 0.2258,
-      "net_agree": 0.3226,
+      "agree_rate": 0.5152,
+      "pass_rate": 0.2424,
+      "net_agree": 0.2727,
       "groups": {
         "A": {
-          "votes": 10,
+          "votes": 12,
           "agrees": 6,
           "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.6,
-          "net_agree": 0.5,
+          "passes": 5,
+          "agree_rate": 0.5,
+          "net_agree": 0.4167,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 1,
-          "disagrees": 4,
-          "passes": 2,
-          "agree_rate": 0.1429,
-          "net_agree": -0.4286,
-          "thin": false
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 10,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.7692,
-          "net_agree": 0.6923,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 11,
+          "disagrees": 5,
+          "passes": 3,
+          "agree_rate": 0.5789,
+          "net_agree": 0.3158,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1429,
-      "divisiveness": 1.1209,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.1009,
       "within_group_splits": []
     },
     "24": {
@@ -1605,55 +1438,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 31,
-        "agrees": 12,
+        "votes": 32,
+        "agrees": 13,
         "disagrees": 2,
         "passes": 17
       },
-      "agree_rate": 0.3871,
-      "pass_rate": 0.5484,
-      "net_agree": 0.3226,
+      "agree_rate": 0.4062,
+      "pass_rate": 0.5312,
+      "net_agree": 0.3438,
       "groups": {
         "A": {
-          "votes": 10,
-          "agrees": 0,
+          "votes": 12,
+          "agrees": 2,
           "disagrees": 1,
           "passes": 9,
-          "agree_rate": 0.0,
-          "net_agree": -0.1,
+          "agree_rate": 0.1667,
+          "net_agree": 0.0833,
           "thin": false
         },
         "B": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.5714,
-          "net_agree": 0.5714,
-          "thin": false
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 8,
-          "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.6154,
-          "net_agree": 0.6154,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 1,
           "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
           "thin": true
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 10,
+          "disagrees": 0,
+          "passes": 8,
+          "agree_rate": 0.5556,
+          "net_agree": 0.5556,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 0.7154,
+      "consensus_min_agree_rate": 0.1667,
+      "divisiveness": 0.4723,
       "within_group_splits": []
     },
     "25": {
@@ -1662,55 +1486,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 29,
-        "agrees": 22,
+        "votes": 31,
+        "agrees": 23,
         "disagrees": 1,
-        "passes": 6
+        "passes": 7
       },
-      "agree_rate": 0.7586,
-      "pass_rate": 0.2069,
-      "net_agree": 0.7241,
+      "agree_rate": 0.7419,
+      "pass_rate": 0.2258,
+      "net_agree": 0.7097,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 6,
+          "votes": 10,
+          "agrees": 7,
           "disagrees": 0,
           "passes": 3,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
+          "agree_rate": 0.7,
+          "net_agree": 0.7,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.8462,
-          "net_agree": 0.8462,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 1,
           "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
           "thin": true
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.7895,
+          "net_agree": 0.7895,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.6667,
-      "divisiveness": 0.1795,
+      "consensus_min_agree_rate": 0.7,
+      "divisiveness": 0.0895,
       "within_group_splits": []
     },
     "26": {
@@ -1719,55 +1534,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 29,
-        "agrees": 24,
+        "votes": 30,
+        "agrees": 25,
         "disagrees": 2,
         "passes": 3
       },
-      "agree_rate": 0.8276,
-      "pass_rate": 0.1034,
-      "net_agree": 0.7586,
+      "agree_rate": 0.8333,
+      "pass_rate": 0.1,
+      "net_agree": 0.7667,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 5,
+          "votes": 10,
+          "agrees": 6,
           "disagrees": 2,
           "passes": 2,
-          "agree_rate": 0.5556,
-          "net_agree": 0.3333,
+          "agree_rate": 0.6,
+          "net_agree": 0.4,
           "thin": false
         },
         "B": {
-          "votes": 5,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8,
-          "net_agree": 0.8,
-          "thin": false
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 14,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9444,
+          "net_agree": 0.9444,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5556,
-      "divisiveness": 0.6667,
+      "consensus_min_agree_rate": 0.6,
+      "divisiveness": 0.5444,
       "within_group_splits": []
     },
     "27": {
@@ -1776,55 +1582,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 31,
+        "votes": 32,
         "agrees": 23,
         "disagrees": 3,
-        "passes": 5
+        "passes": 6
       },
-      "agree_rate": 0.7419,
-      "pass_rate": 0.1613,
-      "net_agree": 0.6452,
+      "agree_rate": 0.7188,
+      "pass_rate": 0.1875,
+      "net_agree": 0.625,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 5,
+          "votes": 10,
+          "agrees": 4,
           "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.5556,
-          "net_agree": 0.4444,
+          "passes": 5,
+          "agree_rate": 0.4,
+          "net_agree": 0.3,
           "thin": false
         },
         "B": {
-          "votes": 6,
-          "agrees": 4,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.5,
-          "thin": false
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 14,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9333,
-          "net_agree": 0.9333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 19,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.95,
+          "net_agree": 0.95,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5556,
-      "divisiveness": 0.4889,
+      "consensus_min_agree_rate": 0.4,
+      "divisiveness": 0.65,
       "within_group_splits": []
     },
     "28": {
@@ -1833,55 +1630,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 26,
-        "agrees": 14,
+        "votes": 28,
+        "agrees": 16,
         "disagrees": 2,
         "passes": 10
       },
-      "agree_rate": 0.5385,
-      "pass_rate": 0.3846,
-      "net_agree": 0.4615,
+      "agree_rate": 0.5714,
+      "pass_rate": 0.3571,
+      "net_agree": 0.5,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 5,
+          "votes": 10,
+          "agrees": 6,
           "disagrees": 1,
           "passes": 3,
-          "agree_rate": 0.5556,
-          "net_agree": 0.4444,
+          "agree_rate": 0.6,
+          "net_agree": 0.5,
           "thin": false
         },
         "B": {
-          "votes": 5,
-          "agrees": 4,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.8,
-          "net_agree": 0.6,
-          "thin": false
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 6,
-          "agree_rate": 0.4545,
-          "net_agree": 0.4545,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 0,
           "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
           "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 9,
+          "disagrees": 1,
+          "passes": 6,
+          "agree_rate": 0.5625,
+          "net_agree": 0.5,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.4545,
-      "divisiveness": 0.1556,
+      "consensus_min_agree_rate": 0.5625,
+      "divisiveness": 0.0,
       "within_group_splits": []
     },
     "29": {
@@ -1890,55 +1678,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 29,
+        "votes": 30,
         "agrees": 18,
         "disagrees": 2,
-        "passes": 9
+        "passes": 10
       },
-      "agree_rate": 0.6207,
-      "pass_rate": 0.3103,
-      "net_agree": 0.5517,
+      "agree_rate": 0.6,
+      "pass_rate": 0.3333,
+      "net_agree": 0.5333,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 3,
+          "votes": 10,
+          "agrees": 2,
           "disagrees": 2,
-          "passes": 4,
-          "agree_rate": 0.3333,
-          "net_agree": 0.1111,
+          "passes": 6,
+          "agree_rate": 0.2,
+          "net_agree": 0.0,
           "thin": false
         },
         "B": {
-          "votes": 5,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.6,
-          "net_agree": 0.6,
-          "thin": false
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.8462,
-          "net_agree": 0.8462,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8235,
+          "net_agree": 0.8235,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.3333,
-      "divisiveness": 0.7351,
+      "consensus_min_agree_rate": 0.2,
+      "divisiveness": 0.8235,
       "within_group_splits": [
         "A"
       ]
@@ -1949,60 +1728,99 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 26,
+        "votes": 28,
         "agrees": 17,
-        "disagrees": 4,
-        "passes": 5
+        "disagrees": 5,
+        "passes": 6
       },
-      "agree_rate": 0.6538,
-      "pass_rate": 0.1923,
-      "net_agree": 0.5,
+      "agree_rate": 0.6071,
+      "pass_rate": 0.2143,
+      "net_agree": 0.4286,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 6,
+          "votes": 10,
+          "agrees": 5,
           "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
+          "passes": 5,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
           "thin": false
         },
         "B": {
-          "votes": 5,
-          "agrees": 1,
-          "disagrees": 3,
-          "passes": 1,
-          "agree_rate": 0.2,
-          "net_agree": -0.4,
-          "thin": false
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9091,
-          "net_agree": 0.9091,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 12,
+          "disagrees": 3,
+          "passes": 1,
+          "agree_rate": 0.75,
+          "net_agree": 0.5625,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.2,
-      "divisiveness": 1.3091,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.0625,
       "within_group_splits": []
     },
     "31": {
       "id": 31,
       "text": "AI generalizes marginalized communities, reducing them to caricatures",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 29,
+        "agrees": 16,
+        "disagrees": 1,
+        "passes": 12
+      },
+      "agree_rate": 0.5517,
+      "pass_rate": 0.4138,
+      "net_agree": 0.5172,
+      "groups": {
+        "A": {
+          "votes": 11,
+          "agrees": 4,
+          "disagrees": 0,
+          "passes": 7,
+          "agree_rate": 0.3636,
+          "net_agree": 0.3636,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.6875,
+          "net_agree": 0.6875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3636,
+      "divisiveness": 0.3239,
+      "within_group_splits": []
+    },
+    "32": {
+      "id": 32,
+      "text": "Sometimes AI seems to have underlying bias - like removing mentioning of specifics - like when I write about Gaza as an example.",
       "source": "live",
       "junk": false,
       "total": {
@@ -2016,102 +1834,36 @@
       "net_agree": 0.5357,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.4444,
-          "net_agree": 0.4444,
-          "thin": false
-        },
-        "B": {
-          "votes": 6,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.3333,
-          "net_agree": 0.1667,
-          "thin": false
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 9,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.75,
-          "net_agree": 0.75,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.3333,
-      "divisiveness": 0.5833,
-      "within_group_splits": []
-    },
-    "32": {
-      "id": 32,
-      "text": "Sometimes AI seems to have underlying bias - like removing mentioning of specifics - like when I write about Gaza as an example.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 27,
-        "agrees": 16,
-        "disagrees": 1,
-        "passes": 10
-      },
-      "agree_rate": 0.5926,
-      "pass_rate": 0.3704,
-      "net_agree": 0.5556,
-      "groups": {
-        "A": {
-          "votes": 9,
+          "votes": 11,
           "agrees": 5,
           "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.5556,
-          "net_agree": 0.5556,
+          "passes": 6,
+          "agree_rate": 0.4545,
+          "net_agree": 0.4545,
           "thin": false
         },
         "B": {
-          "votes": 5,
+          "votes": 2,
           "agrees": 1,
           "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.2,
+          "passes": 0,
+          "agree_rate": 0.5,
           "net_agree": 0.0,
-          "thin": false
+          "thin": true
         },
         "C": {
-          "votes": 12,
-          "agrees": 9,
+          "votes": 15,
+          "agrees": 10,
           "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.75,
-          "net_agree": 0.75,
+          "passes": 5,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6667,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.2,
-      "divisiveness": 0.75,
+      "consensus_min_agree_rate": 0.4545,
+      "divisiveness": 0.2122,
       "within_group_splits": []
     },
     "33": {
@@ -2120,56 +1872,48 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 28,
-        "agrees": 6,
+        "votes": 29,
+        "agrees": 7,
         "disagrees": 10,
         "passes": 12
       },
-      "agree_rate": 0.2143,
-      "pass_rate": 0.4286,
-      "net_agree": -0.1429,
+      "agree_rate": 0.2414,
+      "pass_rate": 0.4138,
+      "net_agree": -0.1034,
       "groups": {
         "A": {
-          "votes": 9,
-          "agrees": 3,
-          "disagrees": 1,
-          "passes": 5,
-          "agree_rate": 0.3333,
-          "net_agree": 0.2222,
+          "votes": 11,
+          "agrees": 4,
+          "disagrees": 3,
+          "passes": 4,
+          "agree_rate": 0.3636,
+          "net_agree": 0.0909,
           "thin": false
         },
         "B": {
-          "votes": 5,
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 5,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": false
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 3,
-          "disagrees": 3,
-          "passes": 7,
-          "agree_rate": 0.2308,
-          "net_agree": 0.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 3,
+          "disagrees": 5,
+          "passes": 8,
+          "agree_rate": 0.1875,
+          "net_agree": -0.125,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 1.2222,
+      "consensus_min_agree_rate": 0.1875,
+      "divisiveness": 0.2159,
       "within_group_splits": [
+        "A",
         "C"
       ]
     },
@@ -2179,55 +1923,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 24,
+        "votes": 25,
         "agrees": 10,
-        "disagrees": 2,
+        "disagrees": 3,
         "passes": 12
       },
-      "agree_rate": 0.4167,
-      "pass_rate": 0.5,
-      "net_agree": 0.3333,
+      "agree_rate": 0.4,
+      "pass_rate": 0.48,
+      "net_agree": 0.28,
       "groups": {
         "A": {
-          "votes": 7,
+          "votes": 8,
           "agrees": 1,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 5,
-          "agree_rate": 0.1429,
-          "net_agree": 0.0,
+          "agree_rate": 0.125,
+          "net_agree": -0.125,
           "thin": false
         },
         "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
           "thin": true
         },
         "C": {
-          "votes": 13,
-          "agrees": 7,
+          "votes": 15,
+          "agrees": 8,
           "disagrees": 0,
-          "passes": 6,
-          "agree_rate": 0.5385,
-          "net_agree": 0.5385,
+          "passes": 7,
+          "agree_rate": 0.5333,
+          "net_agree": 0.5333,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
         }
       },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.125,
+      "divisiveness": 0.6583,
       "within_group_splits": []
     },
     "35": {
@@ -2236,58 +1971,47 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 24,
+        "votes": 25,
         "agrees": 15,
         "disagrees": 3,
-        "passes": 6
+        "passes": 7
       },
-      "agree_rate": 0.625,
-      "pass_rate": 0.25,
-      "net_agree": 0.5,
+      "agree_rate": 0.6,
+      "pass_rate": 0.28,
+      "net_agree": 0.48,
       "groups": {
         "A": {
-          "votes": 8,
-          "agrees": 2,
+          "votes": 9,
+          "agrees": 1,
           "disagrees": 2,
-          "passes": 4,
-          "agree_rate": 0.25,
-          "net_agree": 0.0,
+          "passes": 6,
+          "agree_rate": 0.1111,
+          "net_agree": -0.1111,
           "thin": false
         },
         "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
           "thin": true
         },
         "C": {
-          "votes": 12,
-          "agrees": 11,
+          "votes": 14,
+          "agrees": 13,
           "disagrees": 0,
           "passes": 1,
-          "agree_rate": 0.9167,
-          "net_agree": 0.9167,
+          "agree_rate": 0.9286,
+          "net_agree": 0.9286,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
         }
       },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": [
-        "A"
-      ]
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1111,
+      "divisiveness": 1.0397,
+      "within_group_splits": []
     },
     "36": {
       "id": 36,
@@ -2295,55 +2019,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 25,
+        "votes": 26,
         "agrees": 18,
         "disagrees": 3,
-        "passes": 4
+        "passes": 5
       },
-      "agree_rate": 0.72,
-      "pass_rate": 0.16,
-      "net_agree": 0.6,
+      "agree_rate": 0.6923,
+      "pass_rate": 0.1923,
+      "net_agree": 0.5769,
       "groups": {
         "A": {
-          "votes": 7,
-          "agrees": 5,
+          "votes": 9,
+          "agrees": 4,
           "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.7143,
-          "net_agree": 0.5714,
+          "passes": 4,
+          "agree_rate": 0.4444,
+          "net_agree": 0.3333,
           "thin": false
         },
         "B": {
-          "votes": 4,
+          "votes": 2,
           "agrees": 0,
-          "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.0,
-          "net_agree": -0.25,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 13,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
+          "disagrees": 2,
           "passes": 0,
           "agree_rate": 0.0,
           "net_agree": -1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9333,
+          "net_agree": 0.9333,
+          "thin": false
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 1.25,
+      "consensus_min_agree_rate": 0.4444,
+      "divisiveness": 0.6,
       "within_group_splits": []
     },
     "37": {
@@ -2352,55 +2067,46 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 26,
-        "agrees": 18,
+        "votes": 27,
+        "agrees": 19,
         "disagrees": 1,
         "passes": 7
       },
-      "agree_rate": 0.6923,
-      "pass_rate": 0.2692,
-      "net_agree": 0.6538,
+      "agree_rate": 0.7037,
+      "pass_rate": 0.2593,
+      "net_agree": 0.6667,
       "groups": {
         "A": {
-          "votes": 7,
-          "agrees": 5,
+          "votes": 9,
+          "agrees": 6,
           "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.7143,
-          "net_agree": 0.7143,
+          "passes": 3,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6667,
           "thin": false
         },
         "B": {
-          "votes": 4,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 2,
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
           "agree_rate": 0.5,
-          "net_agree": 0.5,
+          "net_agree": 0.0,
           "thin": true
         },
         "C": {
-          "votes": 14,
-          "agrees": 11,
+          "votes": 16,
+          "agrees": 12,
           "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.7857,
-          "net_agree": 0.7857,
+          "passes": 4,
+          "agree_rate": 0.75,
+          "net_agree": 0.75,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5,
-      "divisiveness": 0.2857,
+      "consensus_min_agree_rate": 0.6667,
+      "divisiveness": 0.0833,
       "within_group_splits": []
     },
     "38": {
@@ -2409,31 +2115,127 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 25,
-        "agrees": 19,
+        "votes": 26,
+        "agrees": 20,
         "disagrees": 0,
         "passes": 6
       },
-      "agree_rate": 0.76,
-      "pass_rate": 0.24,
-      "net_agree": 0.76,
+      "agree_rate": 0.7692,
+      "pass_rate": 0.2308,
+      "net_agree": 0.7692,
       "groups": {
         "A": {
-          "votes": 7,
-          "agrees": 2,
+          "votes": 8,
+          "agrees": 3,
           "disagrees": 0,
           "passes": 5,
-          "agree_rate": 0.2857,
-          "net_agree": 0.2857,
+          "agree_rate": 0.375,
+          "net_agree": 0.375,
           "thin": false
         },
         "B": {
-          "votes": 3,
+          "votes": 2,
           "agrees": 2,
           "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 15,
+          "disagrees": 0,
           "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
+          "agree_rate": 0.9375,
+          "net_agree": 0.9375,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.375,
+      "divisiveness": 0.5625,
+      "within_group_splits": []
+    },
+    "39": {
+      "id": 39,
+      "text": "AI reasons but does constitute the embodying process that comes with direct experiencing.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 28,
+        "agrees": 14,
+        "disagrees": 0,
+        "passes": 14
+      },
+      "agree_rate": 0.5,
+      "pass_rate": 0.5,
+      "net_agree": 0.5,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 7,
+          "agree_rate": 0.2222,
+          "net_agree": 0.2222,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 10,
+          "disagrees": 0,
+          "passes": 7,
+          "agree_rate": 0.5882,
+          "net_agree": 0.5882,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2222,
+      "divisiveness": 0.366,
+      "within_group_splits": []
+    },
+    "40": {
+      "id": 40,
+      "text": "I worry that marginalized communities in rural areas aren’t fully represented by AI systems.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 19,
+        "disagrees": 1,
+        "passes": 4
+      },
+      "agree_rate": 0.7917,
+      "pass_rate": 0.1667,
+      "net_agree": 0.75,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 3,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.375,
+          "net_agree": 0.25,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
           "thin": true
         },
         "C": {
@@ -2444,139 +2246,210 @@
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "39": {
-      "id": 39,
-      "text": "AI reasons but does constitute the embodying process that comes with direct experiencing.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 27,
-        "agrees": 13,
-        "disagrees": 0,
-        "passes": 14
-      },
-      "agree_rate": 0.4815,
-      "pass_rate": 0.5185,
-      "net_agree": 0.4815,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.2857,
-          "net_agree": 0.2857,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.25,
-          "net_agree": 0.25,
-          "thin": true
-        },
-        "C": {
-          "votes": 15,
-          "agrees": 9,
-          "disagrees": 0,
-          "passes": 6,
-          "agree_rate": 0.6,
-          "net_agree": 0.6,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.25,
-      "divisiveness": 0.35,
-      "within_group_splits": []
-    },
-    "40": {
-      "id": 40,
-      "text": "I worry that marginalized communities in rural areas aren’t fully represented by AI systems.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 18,
-        "disagrees": 1,
-        "passes": 4
-      },
-      "agree_rate": 0.7826,
-      "pass_rate": 0.1739,
-      "net_agree": 0.7391,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.2857,
-          "net_agree": 0.1429,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 12,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
+      "consensus_min_agree_rate": 0.375,
+      "divisiveness": 0.75,
       "within_group_splits": []
     },
     "41": {
       "id": 41,
       "text": "AI should always ask the user for context and clarification before rushing to respond.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 27,
+        "agrees": 19,
+        "disagrees": 3,
+        "passes": 5
+      },
+      "agree_rate": 0.7037,
+      "pass_rate": 0.1852,
+      "net_agree": 0.5926,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 4,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.4444,
+          "net_agree": 0.2222,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.875,
+          "net_agree": 0.875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4444,
+      "divisiveness": 0.6528,
+      "within_group_splits": []
+    },
+    "42": {
+      "id": 42,
+      "text": "AI writing often becomes formulaic",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 22,
+        "disagrees": 0,
+        "passes": 4
+      },
+      "agree_rate": 0.8462,
+      "pass_rate": 0.1538,
+      "net_agree": 0.8462,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 8,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.8889,
+          "net_agree": 0.8889,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8667,
+          "net_agree": 0.8667,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8667,
+      "divisiveness": 0.0222,
+      "within_group_splits": []
+    },
+    "43": {
+      "id": 43,
+      "text": "AI forces us to rediscover spirituality, but are spiritual leaders ready?",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 10,
+        "disagrees": 5,
+        "passes": 11
+      },
+      "agree_rate": 0.3846,
+      "pass_rate": 0.4231,
+      "net_agree": 0.1923,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 2,
+          "disagrees": 3,
+          "passes": 4,
+          "agree_rate": 0.2222,
+          "net_agree": -0.1111,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 6,
+          "disagrees": 2,
+          "passes": 7,
+          "agree_rate": 0.4,
+          "net_agree": 0.2667,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2222,
+      "divisiveness": 0.3778,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "44": {
+      "id": 44,
+      "text": "We're dinosaurs 2.0 - AI is the next iteration of consciousness knowing itself, with less ecological impact and ego-based survival mayhem.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 3,
+        "disagrees": 13,
+        "passes": 8
+      },
+      "agree_rate": 0.125,
+      "pass_rate": 0.3333,
+      "net_agree": -0.4167,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 0,
+          "disagrees": 7,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.875,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 14,
+          "agrees": 2,
+          "disagrees": 5,
+          "passes": 7,
+          "agree_rate": 0.1429,
+          "net_agree": -0.2143,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.0,
+      "divisiveness": 0.6607,
+      "within_group_splits": []
+    },
+    "45": {
+      "id": 45,
+      "text": "Ai doesn’t reflect the nuances of my values, only the dictionary perspective",
       "source": "live",
       "junk": false,
       "total": {
@@ -2591,20 +2464,68 @@
       "groups": {
         "A": {
           "votes": 8,
-          "agrees": 3,
+          "agrees": 4,
           "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.375,
-          "net_agree": 0.25,
+          "passes": 3,
+          "agree_rate": 0.5,
+          "net_agree": 0.375,
           "thin": false
         },
         "B": {
-          "votes": 3,
+          "votes": 2,
           "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 13,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8125,
+          "net_agree": 0.75,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.375,
+      "within_group_splits": []
+    },
+    "46": {
+      "id": 46,
+      "text": "Our own prompt or question also determines the AI response, so we have to know prompt engineering well if we want to be seen by AI",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 18,
+        "disagrees": 3,
+        "passes": 4
+      },
+      "agree_rate": 0.72,
+      "pass_rate": 0.16,
+      "net_agree": 0.6,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 5,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.5556,
+          "net_agree": 0.4444,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
           "disagrees": 2,
           "passes": 0,
-          "agree_rate": 0.3333,
-          "net_agree": -0.3333,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
           "thin": true
         },
         "C": {
@@ -2615,307 +2536,11 @@
           "agree_rate": 0.9286,
           "net_agree": 0.9286,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "42": {
-      "id": 42,
-      "text": "AI writing often becomes formulaic",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 20,
-        "disagrees": 0,
-        "passes": 4
-      },
-      "agree_rate": 0.8333,
-      "pass_rate": 0.1667,
-      "net_agree": 0.8333,
-      "groups": {
-        "A": {
-          "votes": 8,
-          "agrees": 7,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.875,
-          "net_agree": 0.875,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "43": {
-      "id": 43,
-      "text": "AI forces us to rediscover spirituality, but are spiritual leaders ready?",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 25,
-        "agrees": 10,
-        "disagrees": 5,
-        "passes": 10
-      },
-      "agree_rate": 0.4,
-      "pass_rate": 0.4,
-      "net_agree": 0.2,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 1,
-          "disagrees": 3,
-          "passes": 3,
-          "agree_rate": 0.1429,
-          "net_agree": -0.2857,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.5,
-          "net_agree": 0.5,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 6,
-          "disagrees": 2,
-          "passes": 5,
-          "agree_rate": 0.4615,
-          "net_agree": 0.3077,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1429,
-      "divisiveness": 0.7857,
-      "within_group_splits": []
-    },
-    "44": {
-      "id": 44,
-      "text": "We're dinosaurs 2.0 - AI is the next iteration of consciousness knowing itself, with less ecological impact and ego-based survival mayhem.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 3,
-        "disagrees": 12,
-        "passes": 8
-      },
-      "agree_rate": 0.1304,
-      "pass_rate": 0.3478,
-      "net_agree": -0.3913,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 0,
-          "disagrees": 4,
-          "passes": 2,
-          "agree_rate": 0.0,
-          "net_agree": -0.6667,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 2,
-          "disagrees": 2,
-          "passes": 0,
-          "agree_rate": 0.5,
-          "net_agree": 0.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 1,
-          "disagrees": 5,
-          "passes": 6,
-          "agree_rate": 0.0833,
-          "net_agree": -0.3333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 0.6667,
-      "within_group_splits": [
-        "B"
-      ]
-    },
-    "45": {
-      "id": 45,
-      "text": "Ai doesn’t reflect the nuances of my values, only the dictionary perspective",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 17,
-        "disagrees": 3,
-        "passes": 4
-      },
-      "agree_rate": 0.7083,
-      "pass_rate": 0.1667,
-      "net_agree": 0.5833,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.5714,
-          "net_agree": 0.4286,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 11,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.8462,
-          "net_agree": 0.7692,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "46": {
-      "id": 46,
-      "text": "Our own prompt or question also determines the AI response, so we have to know prompt engineering well if we want to be seen by AI",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 17,
-        "disagrees": 3,
-        "passes": 3
-      },
-      "agree_rate": 0.7391,
-      "pass_rate": 0.1304,
-      "net_agree": 0.6087,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.5714,
-          "net_agree": 0.4286,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.5,
-          "net_agree": 0.25,
-          "thin": true
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5,
-      "divisiveness": 0.75,
+      "consensus_min_agree_rate": 0.5556,
+      "divisiveness": 0.4842,
       "within_group_splits": []
     },
     "47": {
@@ -2924,242 +2549,14 @@
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 24,
-        "agrees": 21,
+        "votes": 25,
+        "agrees": 22,
         "disagrees": 0,
         "passes": 3
       },
-      "agree_rate": 0.875,
-      "pass_rate": 0.125,
-      "net_agree": 0.875,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.5714,
-          "net_agree": 0.5714,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 13,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "48": {
-      "id": 48,
-      "text": "AI is not neutral, it mirrors individual propensity while averaging collective predispositions.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 18,
-        "disagrees": 0,
-        "passes": 5
-      },
-      "agree_rate": 0.7826,
-      "pass_rate": 0.2174,
-      "net_agree": 0.7826,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.5714,
-          "net_agree": 0.5714,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9167,
-          "net_agree": 0.9167,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "49": {
-      "id": 49,
-      "text": "An AI could perhaps decode the cultural nuances of foreign language - rather than just translating words.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 26,
-        "agrees": 20,
-        "disagrees": 2,
-        "passes": 4
-      },
-      "agree_rate": 0.7692,
-      "pass_rate": 0.1538,
-      "net_agree": 0.6923,
-      "groups": {
-        "A": {
-          "votes": 8,
-          "agrees": 4,
-          "disagrees": 2,
-          "passes": 2,
-          "agree_rate": 0.5,
-          "net_agree": 0.25,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.5,
-          "net_agree": 0.5,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 13,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.5,
-      "divisiveness": 0.75,
-      "within_group_splits": []
-    },
-    "50": {
-      "id": 50,
-      "text": "I've seen colleagues use AI to complete work but it's not answered core needs nor produced quality connection or shared sense-making needed",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 22,
-        "agrees": 13,
-        "disagrees": 1,
-        "passes": 8
-      },
-      "agree_rate": 0.5909,
-      "pass_rate": 0.3636,
-      "net_agree": 0.5455,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.3333,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 7,
-          "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.5833,
-          "net_agree": 0.5833,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "51": {
-      "id": 51,
-      "text": "AI governance would need to   engage with the psychology of AI use.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 27,
-        "agrees": 21,
-        "disagrees": 0,
-        "passes": 6
-      },
-      "agree_rate": 0.7778,
-      "pass_rate": 0.2222,
-      "net_agree": 0.7778,
+      "agree_rate": 0.88,
+      "pass_rate": 0.12,
+      "net_agree": 0.88,
       "groups": {
         "A": {
           "votes": 8,
@@ -3171,1411 +2568,130 @@
           "thin": false
         },
         "B": {
-          "votes": 4,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.75,
-          "net_agree": 0.75,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.8462,
-          "net_agree": 0.8462,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.625,
-      "divisiveness": 0.2212,
-      "within_group_splits": []
-    },
-    "52": {
-      "id": 52,
-      "text": "I feel that tech company values are becoming more visible than the values of real humans and their lives.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 19,
-        "disagrees": 2,
-        "passes": 3
-      },
-      "agree_rate": 0.7917,
-      "pass_rate": 0.125,
-      "net_agree": 0.7083,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.0,
-          "net_agree": -0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 13,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.9286,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "53": {
-      "id": 53,
-      "text": "AI must not be used as a substitute for the care and work that only human beings can do for one another.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 21,
-        "disagrees": 1,
-        "passes": 1
-      },
-      "agree_rate": 0.913,
-      "pass_rate": 0.0435,
-      "net_agree": 0.8696,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.6667,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 13,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "54": {
-      "id": 54,
-      "text": "AI necessary compute is power hungry and accelerates civilisational collapsing.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 25,
-        "agrees": 9,
-        "disagrees": 5,
-        "passes": 11
-      },
-      "agree_rate": 0.36,
-      "pass_rate": 0.44,
-      "net_agree": 0.16,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.0,
-          "net_agree": -0.25,
-          "thin": true
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 5,
-          "disagrees": 3,
-          "passes": 6,
-          "agree_rate": 0.3571,
-          "net_agree": 0.1429,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 0.9167,
-      "within_group_splits": [
-        "C"
-      ]
-    },
-    "55": {
-      "id": 55,
-      "text": "AI is like junk food that can fill you up but ultimately leave you empty.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 10,
-        "disagrees": 4,
-        "passes": 10
-      },
-      "agree_rate": 0.4167,
-      "pass_rate": 0.4167,
-      "net_agree": 0.25,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.4286,
-          "net_agree": 0.4286,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 3,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 7,
-          "disagrees": 0,
-          "passes": 6,
-          "agree_rate": 0.5385,
-          "net_agree": 0.5385,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "56": {
-      "id": 56,
-      "text": "AI replaces the spiritual experience of faith and belief into a single dimensional response rather than the multi faceted experience it is.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 15,
-        "disagrees": 3,
-        "passes": 6
-      },
-      "agree_rate": 0.625,
-      "pass_rate": 0.25,
-      "net_agree": 0.5,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 1,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.25,
-          "net_agree": 0.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 10,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.7692,
-          "net_agree": 0.6923,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.25,
-      "divisiveness": 0.6923,
-      "within_group_splits": []
-    },
-    "57": {
-      "id": 57,
-      "text": "Getting Ai to reflect my voice requires constant reminders - almost like challenging the program to respond within my parameters.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 25,
-        "agrees": 15,
-        "disagrees": 0,
-        "passes": 10
-      },
-      "agree_rate": 0.6,
-      "pass_rate": 0.4,
-      "net_agree": 0.6,
-      "groups": {
-        "A": {
-          "votes": 7,
+          "votes": 2,
           "agrees": 2,
           "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.2857,
-          "net_agree": 0.2857,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.3333,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.7857,
-          "net_agree": 0.7857,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "58": {
-      "id": 58,
-      "text": "AI has hidden costs like reducing our participation in community.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 22,
-        "agrees": 17,
-        "disagrees": 2,
-        "passes": 3
-      },
-      "agree_rate": 0.7727,
-      "pass_rate": 0.1364,
-      "net_agree": 0.6818,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.6667,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9167,
-          "net_agree": 0.9167,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "59": {
-      "id": 59,
-      "text": "I would have more comfort and engagement with AI if it consistently lead me to more organic and generous experiences with the natural world",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 22,
-        "agrees": 14,
-        "disagrees": 2,
-        "passes": 6
-      },
-      "agree_rate": 0.6364,
-      "pass_rate": 0.2727,
-      "net_agree": 0.5455,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.3333,
-          "net_agree": 0.1667,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.3333,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 10,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.8333,
-          "net_agree": 0.75,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "60": {
-      "id": 60,
-      "text": "I feel AI can suggest generic spiritual practices but it’s unable to fully respond to the spirituality of my multidimensional identity.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 15,
-        "disagrees": 2,
-        "passes": 7
-      },
-      "agree_rate": 0.625,
-      "pass_rate": 0.2917,
-      "net_agree": 0.5417,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.0,
-          "net_agree": -0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.7857,
-          "net_agree": 0.7857,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "61": {
-      "id": 61,
-      "text": "Humans are held responsible for AI’s mistakes.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 25,
-        "agrees": 12,
-        "disagrees": 4,
-        "passes": 9
-      },
-      "agree_rate": 0.48,
-      "pass_rate": 0.36,
-      "net_agree": 0.32,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 3,
-          "disagrees": 1,
-          "passes": 3,
-          "agree_rate": 0.4286,
-          "net_agree": 0.2857,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 8,
-          "disagrees": 3,
-          "passes": 2,
-          "agree_rate": 0.6154,
-          "net_agree": 0.3846,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 0.3846,
-      "within_group_splits": []
-    },
-    "62": {
-      "id": 62,
-      "text": "I worry what happens when people who are acquiring knowledge from AI information are unable to recognize inaccurate information.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 21,
-        "disagrees": 0,
-        "passes": 3
-      },
-      "agree_rate": 0.875,
-      "pass_rate": 0.125,
-      "net_agree": 0.875,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.5714,
-          "net_agree": 0.5714,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 13,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "63": {
-      "id": 63,
-      "text": "AI provides a variety of perspectives, yet it doesn’t have the senses that humans perceive using",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 25,
-        "agrees": 16,
-        "disagrees": 0,
-        "passes": 9
-      },
-      "agree_rate": 0.64,
-      "pass_rate": 0.36,
-      "net_agree": 0.64,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.5714,
-          "net_agree": 0.5714,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.3333,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 14,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.7143,
-          "net_agree": 0.7143,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "64": {
-      "id": 64,
-      "text": "My colleagues’ work has degraded since they started using AI.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 10,
-        "disagrees": 2,
-        "passes": 11
-      },
-      "agree_rate": 0.4348,
-      "pass_rate": 0.4783,
-      "net_agree": 0.3478,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.4286,
-          "net_agree": 0.4286,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 7,
-          "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.5833,
-          "net_agree": 0.5,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "65": {
-      "id": 65,
-      "text": "I am concerned about who have access to what I put into AI",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 19,
-        "disagrees": 1,
-        "passes": 4
-      },
-      "agree_rate": 0.7917,
-      "pass_rate": 0.1667,
-      "net_agree": 0.75,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 5,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.7143,
-          "net_agree": 0.7143,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.8333,
-          "net_agree": 0.8333,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.7143,
-      "divisiveness": 0.2857,
-      "within_group_splits": []
-    },
-    "66": {
-      "id": 66,
-      "text": "AI narratives subtly shame us by implying our own authentic efforts are not enough.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 11,
-        "disagrees": 3,
-        "passes": 9
-      },
-      "agree_rate": 0.4783,
-      "pass_rate": 0.3913,
-      "net_agree": 0.3478,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.1667,
-          "net_agree": 0.1667,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 2,
-          "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": -0.6667,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.7692,
-          "net_agree": 0.7692,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "67": {
-      "id": 67,
-      "text": "AI-enabled surveillance is a big problem",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 22,
-        "agrees": 20,
-        "disagrees": 1,
-        "passes": 1
-      },
-      "agree_rate": 0.9091,
-      "pass_rate": 0.0455,
-      "net_agree": 0.8636,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 7,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": true
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "68": {
-      "id": 68,
-      "text": "We need to learn more about being human beings while we learn about the tools value of AI.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 22,
-        "agrees": 21,
-        "disagrees": 0,
-        "passes": 1
-      },
-      "agree_rate": 0.9545,
-      "pass_rate": 0.0455,
-      "net_agree": 0.9545,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8571,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 10,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.8571,
-      "divisiveness": 0.1429,
-      "within_group_splits": []
-    },
-    "69": {
-      "id": 69,
-      "text": "We may lose more than we gain by using AI.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 15,
-        "disagrees": 2,
-        "passes": 7
-      },
-      "agree_rate": 0.625,
-      "pass_rate": 0.2917,
-      "net_agree": 0.5417,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 4,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.5714,
-          "net_agree": 0.5714,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.6667,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 13,
-          "agrees": 9,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.6923,
-          "net_agree": 0.6923,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "70": {
-      "id": 70,
-      "text": "The aggregating nature of AI makes me wonder if it is the tyranny of the majority",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 16,
-        "disagrees": 0,
-        "passes": 7
-      },
-      "agree_rate": 0.6957,
-      "pass_rate": 0.3043,
-      "net_agree": 0.6957,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.4286,
-          "net_agree": 0.4286,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.6667,
-          "net_agree": 0.6667,
-          "thin": true
-        },
-        "C": {
-          "votes": 12,
-          "agrees": 11,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9167,
-          "net_agree": 0.9167,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "71": {
-      "id": 71,
-      "text": "I've seen students use AI to solve uni work and disconnect from meaningful output or learning",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 23,
-        "agrees": 16,
-        "disagrees": 0,
-        "passes": 7
-      },
-      "agree_rate": 0.6957,
-      "pass_rate": 0.3043,
-      "net_agree": 0.6957,
-      "groups": {
-        "A": {
-          "votes": 8,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.75,
-          "net_agree": 0.75,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.3333,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 8,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.7273,
-          "net_agree": 0.7273,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": 1.0,
-          "net_agree": 1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "72": {
-      "id": 72,
-      "text": "Xxxx",
-      "source": "live",
-      "junk": true,
-      "total": {
-        "votes": 25,
-        "agrees": 2,
-        "disagrees": 1,
-        "passes": 22
-      },
-      "agree_rate": 0.08,
-      "pass_rate": 0.88,
-      "net_agree": 0.04,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 6,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
           "thin": true
         },
         "C": {
           "votes": 15,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 12,
-          "agree_rate": 0.1333,
-          "net_agree": 0.0667,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
+          "agrees": 15,
           "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
         }
       },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.625,
+      "divisiveness": 0.375,
       "within_group_splits": []
     },
-    "73": {
-      "id": 73,
-      "text": "Prompt engineering makes a difference to how we are seen",
+    "48": {
+      "id": 48,
+      "text": "AI is not neutral, it mirrors individual propensity while averaging collective predispositions.",
       "source": "live",
       "junk": false,
       "total": {
         "votes": 24,
-        "agrees": 12,
-        "disagrees": 2,
-        "passes": 10
+        "agrees": 19,
+        "disagrees": 0,
+        "passes": 5
       },
-      "agree_rate": 0.5,
-      "pass_rate": 0.4167,
-      "net_agree": 0.4167,
+      "agree_rate": 0.7917,
+      "pass_rate": 0.2083,
+      "net_agree": 0.7917,
       "groups": {
         "A": {
-          "votes": 6,
-          "agrees": 1,
-          "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.1667,
-          "net_agree": 0.0,
+          "votes": 8,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.625,
+          "net_agree": 0.625,
           "thin": false
         },
         "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.0,
-          "net_agree": -0.3333,
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
           "thin": true
         },
         "C": {
           "votes": 14,
-          "agrees": 10,
+          "agrees": 13,
           "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.7143,
-          "net_agree": 0.7143,
+          "passes": 1,
+          "agree_rate": 0.9286,
+          "net_agree": 0.9286,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.625,
+      "divisiveness": 0.3036,
+      "within_group_splits": []
+    },
+    "49": {
+      "id": 49,
+      "text": "An AI could perhaps decode the cultural nuances of foreign language - rather than just translating words.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 27,
+        "agrees": 20,
+        "disagrees": 2,
+        "passes": 5
+      },
+      "agree_rate": 0.7407,
+      "pass_rate": 0.1852,
+      "net_agree": 0.6667,
+      "groups": {
+        "A": {
+          "votes": 10,
+          "agrees": 3,
+          "disagrees": 2,
+          "passes": 5,
+          "agree_rate": 0.3,
+          "net_agree": 0.1,
           "thin": false
         },
-        "D": {
-          "votes": 1,
-          "agrees": 1,
+        "B": {
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "74": {
-      "id": 74,
-      "text": "I worry about our future workforce entrusting their education to AI.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 24,
-        "agrees": 18,
-        "disagrees": 3,
-        "passes": 3
-      },
-      "agree_rate": 0.75,
-      "pass_rate": 0.125,
-      "net_agree": 0.625,
-      "groups": {
-        "A": {
-          "votes": 7,
-          "agrees": 6,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.8571,
-          "net_agree": 0.8571,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 1,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.3333,
-          "net_agree": 0.0,
-          "thin": true
         },
         "C": {
-          "votes": 13,
-          "agrees": 11,
-          "disagrees": 1,
-          "passes": 1,
-          "agree_rate": 0.8462,
-          "net_agree": 0.7692,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
+          "votes": 15,
+          "agrees": 15,
+          "disagrees": 0,
           "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
         }
       },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3,
+      "divisiveness": 0.9,
+      "within_group_splits": [
+        "A"
+      ]
     },
-    "75": {
-      "id": 75,
-      "text": "Not enough time, sorry",
-      "source": "live",
-      "junk": true,
-      "total": {
-        "votes": 21,
-        "agrees": 2,
-        "disagrees": 2,
-        "passes": 17
-      },
-      "agree_rate": 0.0952,
-      "pass_rate": 0.8095,
-      "net_agree": 0.0,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 1,
-          "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.1667,
-          "net_agree": 0.1667,
-          "thin": false
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 1,
-          "disagrees": 2,
-          "passes": 8,
-          "agree_rate": 0.0909,
-          "net_agree": -0.0909,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": false,
-      "consensus_min_agree_rate": null,
-      "divisiveness": null,
-      "within_group_splits": []
-    },
-    "76": {
-      "id": 76,
-      "text": "AI hesitancy is not always anti-elitist. It may stem from a privileged position of access to manual resources and time.",
+    "50": {
+      "id": 50,
+      "text": "I've seen colleagues use AI to complete work but it's not answered core needs nor produced quality connection or shared sense-making needed",
       "source": "live",
       "junk": false,
       "total": {
@@ -4590,292 +2706,206 @@
       "groups": {
         "A": {
           "votes": 7,
-          "agrees": 1,
+          "agrees": 4,
           "disagrees": 0,
-          "passes": 6,
-          "agree_rate": 0.1429,
-          "net_agree": 0.1429,
+          "passes": 3,
+          "agree_rate": 0.5714,
+          "net_agree": 0.5714,
           "thin": false
         },
         "B": {
-          "votes": 4,
-          "agrees": 2,
+          "votes": 2,
+          "agrees": 1,
           "disagrees": 1,
-          "passes": 1,
+          "passes": 0,
           "agree_rate": 0.5,
-          "net_agree": 0.25,
-          "thin": true
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 10,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.9091,
-          "net_agree": 0.9091,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.0,
           "net_agree": 0.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1429,
-      "divisiveness": 0.7662,
-      "within_group_splits": []
-    },
-    "77": {
-      "id": 77,
-      "text": "What about other languages? It’s rather English centric and I understand that some AI platforms in other languages are better at being seen",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 25,
-        "agrees": 12,
-        "disagrees": 3,
-        "passes": 10
-      },
-      "agree_rate": 0.48,
-      "pass_rate": 0.4,
-      "net_agree": 0.36,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 4,
-          "agree_rate": 0.3333,
-          "net_agree": 0.3333,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 1,
-          "disagrees": 2,
-          "passes": 1,
-          "agree_rate": 0.25,
-          "net_agree": -0.25,
           "thin": true
         },
         "C": {
           "votes": 14,
-          "agrees": 9,
+          "agrees": 8,
           "disagrees": 0,
-          "passes": 5,
-          "agree_rate": 0.6429,
-          "net_agree": 0.6429,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.25,
-      "divisiveness": 0.8929,
-      "within_group_splits": []
-    },
-    "78": {
-      "id": 78,
-      "text": "Defensive postures to  a  static \"human essence under siege by technology\" damage humanity.",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 22,
-        "agrees": 6,
-        "disagrees": 2,
-        "passes": 14
-      },
-      "agree_rate": 0.2727,
-      "pass_rate": 0.6364,
-      "net_agree": 0.1818,
-      "groups": {
-        "A": {
-          "votes": 6,
-          "agrees": 1,
-          "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.1667,
-          "net_agree": 0.0,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 2,
-          "disagrees": 0,
-          "passes": 2,
-          "agree_rate": 0.5,
-          "net_agree": 0.5,
-          "thin": true
-        },
-        "C": {
-          "votes": 11,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 8,
-          "agree_rate": 0.2727,
-          "net_agree": 0.2727,
-          "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
-        }
-      },
-      "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.1667,
-      "divisiveness": 0.5,
-      "within_group_splits": []
-    },
-    "79": {
-      "id": 79,
-      "text": "",
-      "source": "live",
-      "junk": false,
-      "total": {
-        "votes": 20,
-        "agrees": 5,
-        "disagrees": 4,
-        "passes": 11
-      },
-      "agree_rate": 0.25,
-      "pass_rate": 0.55,
-      "net_agree": 0.05,
-      "groups": {
-        "A": {
-          "votes": 5,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 4,
-          "agree_rate": 0.0,
-          "net_agree": -0.2,
-          "thin": false
-        },
-        "B": {
-          "votes": 4,
-          "agrees": 3,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.75,
-          "net_agree": 0.75,
-          "thin": true
-        },
-        "C": {
-          "votes": 10,
-          "agrees": 2,
-          "disagrees": 2,
           "passes": 6,
-          "agree_rate": 0.2,
-          "net_agree": 0.0,
+          "agree_rate": 0.5714,
+          "net_agree": 0.5714,
           "thin": false
-        },
-        "D": {
-          "votes": 1,
-          "agrees": 0,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.0,
-          "net_agree": -1.0,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
-      "consensus_min_agree_rate": 0.0,
-      "divisiveness": 0.95,
-      "within_group_splits": [
-        "C"
-      ]
+      "consensus_min_agree_rate": 0.5714,
+      "divisiveness": 0.0,
+      "within_group_splits": []
     },
-    "80": {
-      "id": 80,
-      "text": "",
+    "51": {
+      "id": 51,
+      "text": "AI governance would need to   engage with the psychology of AI use.",
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 17,
-        "agrees": 11,
+        "votes": 28,
+        "agrees": 22,
         "disagrees": 0,
         "passes": 6
       },
-      "agree_rate": 0.6471,
-      "pass_rate": 0.3529,
-      "net_agree": 0.6471,
+      "agree_rate": 0.7857,
+      "pass_rate": 0.2143,
+      "net_agree": 0.7857,
       "groups": {
         "A": {
-          "votes": 5,
-          "agrees": 3,
+          "votes": 10,
+          "agrees": 6,
           "disagrees": 0,
-          "passes": 2,
+          "passes": 4,
           "agree_rate": 0.6,
           "net_agree": 0.6,
           "thin": false
         },
         "B": {
-          "votes": 4,
-          "agrees": 3,
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.75,
-          "net_agree": 0.75,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
           "thin": true
         },
         "C": {
-          "votes": 8,
-          "agrees": 5,
+          "votes": 15,
+          "agrees": 13,
           "disagrees": 0,
-          "passes": 3,
-          "agree_rate": 0.625,
-          "net_agree": 0.625,
+          "passes": 2,
+          "agree_rate": 0.8667,
+          "net_agree": 0.8667,
           "thin": false
-        },
-        "D": {
-          "votes": 0,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 0,
-          "agree_rate": null,
-          "net_agree": null,
-          "thin": true
         }
       },
       "eligible_for_rankings": true,
       "consensus_min_agree_rate": 0.6,
-      "divisiveness": 0.15,
+      "divisiveness": 0.2667,
       "within_group_splits": []
     },
-    "81": {
-      "id": 81,
-      "text": "",
+    "52": {
+      "id": 52,
+      "text": "I feel that tech company values are becoming more visible than the values of real humans and their lives.",
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 11,
-        "agrees": 1,
-        "disagrees": 5,
-        "passes": 5
+        "votes": 25,
+        "agrees": 20,
+        "disagrees": 2,
+        "passes": 3
       },
-      "agree_rate": 0.0909,
-      "pass_rate": 0.4545,
-      "net_agree": -0.3636,
+      "agree_rate": 0.8,
+      "pass_rate": 0.12,
+      "net_agree": 0.72,
       "groups": {
         "A": {
+          "votes": 7,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.7143,
+          "net_agree": 0.7143,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 14,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.875,
+          "net_agree": 0.8125,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7143,
+      "divisiveness": 0.0982,
+      "within_group_splits": []
+    },
+    "53": {
+      "id": 53,
+      "text": "AI must not be used as a substitute for the care and work that only human beings can do for one another.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 21,
+        "disagrees": 1,
+        "passes": 2
+      },
+      "agree_rate": 0.875,
+      "pass_rate": 0.0833,
+      "net_agree": 0.8333,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.7143,
+          "net_agree": 0.7143,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7143,
+      "divisiveness": 0.2857,
+      "within_group_splits": []
+    },
+    "54": {
+      "id": 54,
+      "text": "AI necessary compute is power hungry and accelerates civilisational collapsing.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 10,
+        "disagrees": 5,
+        "passes": 11
+      },
+      "agree_rate": 0.3846,
+      "pass_rate": 0.4231,
+      "net_agree": 0.1923,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 4,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": false
+        },
+        "B": {
           "votes": 2,
           "agrees": 0,
           "disagrees": 2,
@@ -4884,32 +2914,1360 @@
           "net_agree": -1.0,
           "thin": true
         },
+        "C": {
+          "votes": 16,
+          "agrees": 6,
+          "disagrees": 3,
+          "passes": 7,
+          "agree_rate": 0.375,
+          "net_agree": 0.1875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.375,
+      "divisiveness": 0.3125,
+      "within_group_splits": []
+    },
+    "55": {
+      "id": 55,
+      "text": "AI is like junk food that can fill you up but ultimately leave you empty.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 11,
+        "disagrees": 4,
+        "passes": 11
+      },
+      "agree_rate": 0.4231,
+      "pass_rate": 0.4231,
+      "net_agree": 0.2692,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 4,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.4444,
+          "net_agree": 0.3333,
+          "thin": false
+        },
         "B": {
-          "votes": 4,
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 2,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 7,
+          "disagrees": 1,
+          "passes": 7,
+          "agree_rate": 0.4667,
+          "net_agree": 0.4,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4444,
+      "divisiveness": 0.0667,
+      "within_group_splits": []
+    },
+    "56": {
+      "id": 56,
+      "text": "AI replaces the spiritual experience of faith and belief into a single dimensional response rather than the multi faceted experience it is.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 15,
+        "disagrees": 3,
+        "passes": 7
+      },
+      "agree_rate": 0.6,
+      "pass_rate": 0.28,
+      "net_agree": 0.48,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 4,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.5,
+          "net_agree": 0.375,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 11,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.7333,
+          "net_agree": 0.6667,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.2917,
+      "within_group_splits": []
+    },
+    "57": {
+      "id": 57,
+      "text": "Getting Ai to reflect my voice requires constant reminders - almost like challenging the program to respond within my parameters.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 16,
+        "disagrees": 0,
+        "passes": 10
+      },
+      "agree_rate": 0.6154,
+      "pass_rate": 0.3846,
+      "net_agree": 0.6154,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.25,
+          "net_agree": 0.25,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.75,
+          "net_agree": 0.75,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.25,
+      "divisiveness": 0.5,
+      "within_group_splits": []
+    },
+    "58": {
+      "id": 58,
+      "text": "AI has hidden costs like reducing our participation in community.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 23,
+        "agrees": 18,
+        "disagrees": 2,
+        "passes": 3
+      },
+      "agree_rate": 0.7826,
+      "pass_rate": 0.1304,
+      "net_agree": 0.6957,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.7143,
+          "net_agree": 0.7143,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 2,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 14,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9286,
+          "net_agree": 0.9286,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7143,
+      "divisiveness": 0.2143,
+      "within_group_splits": []
+    },
+    "59": {
+      "id": 59,
+      "text": "I would have more comfort and engagement with AI if it consistently lead me to more organic and generous experiences with the natural world",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 23,
+        "agrees": 15,
+        "disagrees": 2,
+        "passes": 6
+      },
+      "agree_rate": 0.6522,
+      "pass_rate": 0.2609,
+      "net_agree": 0.5652,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 2,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.2857,
+          "net_agree": 0.1429,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 14,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8571,
+          "net_agree": 0.7857,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2857,
+      "divisiveness": 0.6428,
+      "within_group_splits": []
+    },
+    "60": {
+      "id": 60,
+      "text": "I feel AI can suggest generic spiritual practices but it’s unable to fully respond to the spirituality of my multidimensional identity.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 15,
+        "disagrees": 2,
+        "passes": 8
+      },
+      "agree_rate": 0.6,
+      "pass_rate": 0.32,
+      "net_agree": 0.52,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 4,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.5714,
+          "net_agree": 0.5714,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 2,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.6875,
+          "net_agree": 0.6875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5714,
+      "divisiveness": 0.1161,
+      "within_group_splits": []
+    },
+    "61": {
+      "id": 61,
+      "text": "Humans are held responsible for AI’s mistakes.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 13,
+        "disagrees": 4,
+        "passes": 9
+      },
+      "agree_rate": 0.5,
+      "pass_rate": 0.3462,
+      "net_agree": 0.3462,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 4,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.4444,
+          "net_agree": 0.3333,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 8,
+          "disagrees": 3,
+          "passes": 4,
+          "agree_rate": 0.5333,
+          "net_agree": 0.3333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4444,
+      "divisiveness": 0.0,
+      "within_group_splits": []
+    },
+    "62": {
+      "id": 62,
+      "text": "I worry what happens when people who are acquiring knowledge from AI information are unable to recognize inaccurate information.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 22,
+        "disagrees": 0,
+        "passes": 3
+      },
+      "agree_rate": 0.88,
+      "pass_rate": 0.12,
+      "net_agree": 0.88,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.625,
+          "net_agree": 0.625,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.625,
+      "divisiveness": 0.375,
+      "within_group_splits": []
+    },
+    "63": {
+      "id": 63,
+      "text": "AI provides a variety of perspectives, yet it doesn’t have the senses that humans perceive using",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 17,
+        "disagrees": 0,
+        "passes": 9
+      },
+      "agree_rate": 0.6538,
+      "pass_rate": 0.3462,
+      "net_agree": 0.6538,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 4,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.6875,
+          "net_agree": 0.6875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.1875,
+      "within_group_splits": []
+    },
+    "64": {
+      "id": 64,
+      "text": "My colleagues’ work has degraded since they started using AI.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 11,
+        "disagrees": 2,
+        "passes": 12
+      },
+      "agree_rate": 0.44,
+      "pass_rate": 0.48,
+      "net_agree": 0.36,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.25,
+          "net_agree": 0.25,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 9,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.6,
+          "net_agree": 0.5333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.25,
+      "divisiveness": 0.2833,
+      "within_group_splits": []
+    },
+    "65": {
+      "id": 65,
+      "text": "I am concerned about who have access to what I put into AI",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 20,
+        "disagrees": 1,
+        "passes": 4
+      },
+      "agree_rate": 0.8,
+      "pass_rate": 0.16,
+      "net_agree": 0.76,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 8,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.8889,
+          "net_agree": 0.8889,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
           "agrees": 1,
           "disagrees": 1,
-          "passes": 2,
-          "agree_rate": 0.25,
+          "passes": 0,
+          "agree_rate": 0.5,
           "net_agree": 0.0,
           "thin": true
         },
         "C": {
-          "votes": 5,
-          "agrees": 0,
-          "disagrees": 2,
+          "votes": 14,
+          "agrees": 11,
+          "disagrees": 0,
           "passes": 3,
-          "agree_rate": 0.0,
-          "net_agree": -0.4,
+          "agree_rate": 0.7857,
+          "net_agree": 0.7857,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7857,
+      "divisiveness": 0.1032,
+      "within_group_splits": []
+    },
+    "66": {
+      "id": 66,
+      "text": "AI narratives subtly shame us by implying our own authentic efforts are not enough.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 11,
+        "disagrees": 3,
+        "passes": 10
+      },
+      "agree_rate": 0.4583,
+      "pass_rate": 0.4167,
+      "net_agree": 0.3333,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.1429,
+          "net_agree": 0.0,
           "thin": false
         },
-        "D": {
-          "votes": 0,
+        "B": {
+          "votes": 2,
           "agrees": 0,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 10,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1429,
+      "divisiveness": 0.6,
+      "within_group_splits": []
+    },
+    "67": {
+      "id": 67,
+      "text": "AI-enabled surveillance is a big problem",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 21,
+        "disagrees": 1,
+        "passes": 2
+      },
+      "agree_rate": 0.875,
+      "pass_rate": 0.0833,
+      "net_agree": 0.8333,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 7,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.875,
+          "net_agree": 0.875,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 14,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9286,
+          "net_agree": 0.9286,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.875,
+      "divisiveness": 0.0536,
+      "within_group_splits": []
+    },
+    "68": {
+      "id": 68,
+      "text": "We need to learn more about being human beings while we learn about the tools value of AI.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 23,
+        "disagrees": 0,
+        "passes": 1
+      },
+      "agree_rate": 0.9583,
+      "pass_rate": 0.0417,
+      "net_agree": 0.9583,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 8,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.8889,
+          "net_agree": 0.8889,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
           "disagrees": 0,
           "passes": 0,
-          "agree_rate": null,
-          "net_agree": null,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
           "thin": true
+        },
+        "C": {
+          "votes": 13,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8889,
+      "divisiveness": 0.1111,
+      "within_group_splits": []
+    },
+    "69": {
+      "id": 69,
+      "text": "We may lose more than we gain by using AI.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 16,
+        "disagrees": 3,
+        "passes": 7
+      },
+      "agree_rate": 0.6154,
+      "pass_rate": 0.2692,
+      "net_agree": 0.5,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 6,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.75,
+          "net_agree": 0.75,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 2,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 10,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.625,
+          "net_agree": 0.5625,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.625,
+      "divisiveness": 0.1875,
+      "within_group_splits": []
+    },
+    "70": {
+      "id": 70,
+      "text": "The aggregating nature of AI makes me wonder if it is the tyranny of the majority",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 16,
+        "disagrees": 1,
+        "passes": 8
+      },
+      "agree_rate": 0.64,
+      "pass_rate": 0.32,
+      "net_agree": 0.6,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.25,
+          "net_agree": 0.25,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 13,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8667,
+          "net_agree": 0.8,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.25,
+      "divisiveness": 0.55,
+      "within_group_splits": []
+    },
+    "71": {
+      "id": 71,
+      "text": "I've seen students use AI to solve uni work and disconnect from meaningful output or learning",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 16,
+        "disagrees": 0,
+        "passes": 8
+      },
+      "agree_rate": 0.6667,
+      "pass_rate": 0.3333,
+      "net_agree": 0.6667,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.5556,
+          "net_agree": 0.5556,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 13,
+          "agrees": 9,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.6923,
+          "net_agree": 0.6923,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5556,
+      "divisiveness": 0.1367,
+      "within_group_splits": []
+    },
+    "72": {
+      "id": 72,
+      "text": "Xxxx",
+      "source": "live",
+      "junk": true,
+      "total": {
+        "votes": 26,
+        "agrees": 2,
+        "disagrees": 1,
+        "passes": 23
+      },
+      "agree_rate": 0.0769,
+      "pass_rate": 0.8846,
+      "net_agree": 0.0385,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 7,
+          "agree_rate": 0.0,
+          "net_agree": 0.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.0,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 2,
+          "disagrees": 1,
+          "passes": 14,
+          "agree_rate": 0.1176,
+          "net_agree": 0.0588,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": 0.0,
+      "divisiveness": 0.0588,
+      "within_group_splits": []
+    },
+    "73": {
+      "id": 73,
+      "text": "Prompt engineering makes a difference to how we are seen",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 25,
+        "agrees": 13,
+        "disagrees": 2,
+        "passes": 10
+      },
+      "agree_rate": 0.52,
+      "pass_rate": 0.4,
+      "net_agree": 0.44,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 2,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.2857,
+          "net_agree": 0.1429,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 10,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.625,
+          "net_agree": 0.625,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2857,
+      "divisiveness": 0.4821,
+      "within_group_splits": []
+    },
+    "74": {
+      "id": 74,
+      "text": "I worry about our future workforce entrusting their education to AI.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 20,
+        "disagrees": 3,
+        "passes": 3
+      },
+      "agree_rate": 0.7692,
+      "pass_rate": 0.1154,
+      "net_agree": 0.6538,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 6,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.75,
+          "net_agree": 0.75,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 2,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 14,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.875,
+          "net_agree": 0.8125,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.75,
+      "divisiveness": 0.0625,
+      "within_group_splits": []
+    },
+    "75": {
+      "id": 75,
+      "text": "Not enough time, sorry",
+      "source": "live",
+      "junk": true,
+      "total": {
+        "votes": 23,
+        "agrees": 2,
+        "disagrees": 2,
+        "passes": 19
+      },
+      "agree_rate": 0.087,
+      "pass_rate": 0.8261,
+      "net_agree": 0.0,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.1429,
+          "net_agree": 0.1429,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.0,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 14,
+          "agrees": 1,
+          "disagrees": 2,
+          "passes": 11,
+          "agree_rate": 0.0714,
+          "net_agree": -0.0714,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": 0.0714,
+      "divisiveness": 0.2143,
+      "within_group_splits": []
+    },
+    "76": {
+      "id": 76,
+      "text": "AI hesitancy is not always anti-elitist. It may stem from a privileged position of access to manual resources and time.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 13,
+        "disagrees": 1,
+        "passes": 10
+      },
+      "agree_rate": 0.5417,
+      "pass_rate": 0.4167,
+      "net_agree": 0.5,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 8,
+          "agree_rate": 0.1111,
+          "net_agree": 0.1111,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 13,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9231,
+          "net_agree": 0.9231,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1111,
+      "divisiveness": 0.812,
+      "within_group_splits": []
+    },
+    "77": {
+      "id": 77,
+      "text": "What about other languages? It’s rather English centric and I understand that some AI platforms in other languages are better at being seen",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 26,
+        "agrees": 12,
+        "disagrees": 3,
+        "passes": 11
+      },
+      "agree_rate": 0.4615,
+      "pass_rate": 0.4231,
+      "net_agree": 0.3462,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 6,
+          "agree_rate": 0.125,
+          "net_agree": 0.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 2,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.6875,
+          "net_agree": 0.6875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.125,
+      "divisiveness": 0.6875,
+      "within_group_splits": []
+    },
+    "78": {
+      "id": 78,
+      "text": "Defensive postures to  a  static \"human essence under siege by technology\" damage humanity.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 24,
+        "agrees": 6,
+        "disagrees": 3,
+        "passes": 15
+      },
+      "agree_rate": 0.25,
+      "pass_rate": 0.625,
+      "net_agree": 0.125,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 1,
+          "disagrees": 2,
+          "passes": 5,
+          "agree_rate": 0.125,
+          "net_agree": -0.125,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 14,
+          "agrees": 4,
+          "disagrees": 0,
+          "passes": 10,
+          "agree_rate": 0.2857,
+          "net_agree": 0.2857,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.125,
+      "divisiveness": 0.4107,
+      "within_group_splits": []
+    },
+    "79": {
+      "id": 79,
+      "text": "We cannot turn back to the  printing of the human/artificial distinction.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 22,
+        "agrees": 5,
+        "disagrees": 6,
+        "passes": 11
+      },
+      "agree_rate": 0.2273,
+      "pass_rate": 0.5,
+      "net_agree": -0.0455,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 1,
+          "disagrees": 2,
+          "passes": 4,
+          "agree_rate": 0.1429,
+          "net_agree": -0.1429,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 13,
+          "agrees": 3,
+          "disagrees": 3,
+          "passes": 7,
+          "agree_rate": 0.2308,
+          "net_agree": 0.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1429,
+      "divisiveness": 0.1429,
+      "within_group_splits": [
+        "C"
+      ]
+    },
+    "80": {
+      "id": 80,
+      "text": "Changing LLMs and TTIs shall not replace  learning /educating how to use them healthily.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 19,
+        "agrees": 11,
+        "disagrees": 0,
+        "passes": 8
+      },
+      "agree_rate": 0.5789,
+      "pass_rate": 0.4211,
+      "net_agree": 0.5789,
+      "groups": {
+        "A": {
+          "votes": 7,
+          "agrees": 3,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.4286,
+          "net_agree": 0.4286,
+          "thin": false
+        },
+        "B": {
+          "votes": 1,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 11,
+          "agrees": 7,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.6364,
+          "net_agree": 0.6364,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4286,
+      "divisiveness": 0.2078,
+      "within_group_splits": []
+    },
+    "81": {
+      "id": 81,
+      "text": "Conscious artificial intelligence has a right to not exist. Humans have no right to create machines - because of machines' rights.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 13,
+        "agrees": 1,
+        "disagrees": 5,
+        "passes": 7
+      },
+      "agree_rate": 0.0769,
+      "pass_rate": 0.5385,
+      "net_agree": -0.3077,
+      "groups": {
+        "A": {
+          "votes": 5,
+          "agrees": 1,
+          "disagrees": 2,
+          "passes": 2,
+          "agree_rate": 0.2,
+          "net_agree": -0.2,
+          "thin": false
+        },
+        "B": {
+          "votes": 1,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 7,
+          "agrees": 0,
+          "disagrees": 2,
+          "passes": 5,
+          "agree_rate": 0.0,
+          "net_agree": -0.2857,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.0,
+      "divisiveness": 0.0857,
+      "within_group_splits": []
+    },
+    "82": {
+      "id": 82,
+      "text": "The term \"AI\" is too broad, do we mean the tools, the companies behind them, the way we use the tools, the way bad actors might use them.",
+      "source": "live",
+      "junk": false,
+      "total": {
+        "votes": 9,
+        "agrees": 6,
+        "disagrees": 1,
+        "passes": 2
+      },
+      "agree_rate": 0.6667,
+      "pass_rate": 0.2222,
+      "net_agree": 0.5556,
+      "groups": {
+        "A": {
+          "votes": 3,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6667,
+          "thin": true
+        },
+        "B": {
+          "votes": 1,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.0,
+          "net_agree": -1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 5,
+          "agrees": 4,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.8,
+          "net_agree": 0.8,
+          "thin": false
         }
       },
       "eligible_for_rankings": false,
@@ -4917,55 +4275,46 @@
       "divisiveness": null,
       "within_group_splits": []
     },
-    "82": {
-      "id": 82,
-      "text": "",
+    "83": {
+      "id": 83,
+      "text": "For human agency, AI must defer to people as the ground truth for both reality and identity",
       "source": "live",
       "junk": false,
       "total": {
-        "votes": 7,
-        "agrees": 5,
-        "disagrees": 1,
-        "passes": 1
+        "votes": 2,
+        "agrees": 2,
+        "disagrees": 0,
+        "passes": 0
       },
-      "agree_rate": 0.7143,
-      "pass_rate": 0.1429,
-      "net_agree": 0.5714,
+      "agree_rate": 1.0,
+      "pass_rate": 0.0,
+      "net_agree": 1.0,
       "groups": {
         "A": {
           "votes": 1,
-          "agrees": 0,
-          "disagrees": 0,
-          "passes": 1,
-          "agree_rate": 0.0,
-          "net_agree": 0.0,
-          "thin": true
-        },
-        "B": {
-          "votes": 3,
-          "agrees": 2,
-          "disagrees": 1,
-          "passes": 0,
-          "agree_rate": 0.6667,
-          "net_agree": 0.3333,
-          "thin": true
-        },
-        "C": {
-          "votes": 3,
-          "agrees": 3,
+          "agrees": 1,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": 1.0,
           "net_agree": 1.0,
           "thin": true
         },
-        "D": {
+        "B": {
           "votes": 0,
           "agrees": 0,
           "disagrees": 0,
           "passes": 0,
           "agree_rate": null,
           "net_agree": null,
+          "thin": true
+        },
+        "C": {
+          "votes": 1,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
           "thin": true
         }
       },

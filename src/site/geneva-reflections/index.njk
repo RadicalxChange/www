@@ -85,7 +85,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 {% macro figureFor(s) %}{{ (s.agree_rate * 100) | round }}% agree ({{ s.total.agrees }}/{{ s.total.votes }}){% endmacro %}
 
-{% macro floorNote(s) %}{% if s.consensus_min_agree_rate != null %} · every group ≥ {{ (s.consensus_min_agree_rate * 100) | round(0, "floor") }}%{% endif %}{% endmacro %}
+{% macro floorNote(s) %}{% if s.consensus_min_agree_rate != null %} · both blocs ≥ {{ (s.consensus_min_agree_rate * 100) | round(0, "floor") }}%{% endif %}{% endmacro %}
 
 {% macro stackBar(t, label) %}
 <div class="gr-stack" role="img" title="{{ label }}: {{ countsLine(t) }}" aria-label="{{ label }}: {{ countsLine(t) }}">
@@ -99,11 +99,11 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
 {% macro groupRows(s) %}
 <div class="flex flex-col gap-1">
-  {% for g in ["A", "B", "C"] %}
+  {% for g in ["A", "C"] %}
   {% set t = s.groups[g] %}
   <div class="gr-mini">
     <span class="font-bold gr-text-{{ g }}" aria-hidden="true">{{ g }}</span>
-    {{ stackBar(t, "Group " + g) }}
+    {{ stackBar(t, "Bloc " + g) }}
     <span class="gr-counts">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}% agree ({{ t.agrees }}/{{ t.votes }}){% else %}–{% endif %}{{ thinGlyph(t) }}</span>
   </div>
   {% endfor %}
@@ -212,6 +212,9 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <p class="gr-kicker mb-2">{{ C.consensus.kicker }}</p>
       <h2 class="mb-4">{{ C.consensus.title }}</h2>
       <p class="gr-prose mb-4">{{ C.consensus.intro }}</p>
+      {% if C.consensus.redline_refs %}
+      <p class="gr-counts gr-prose mb-4">The red lines: {% for ref in C.consensus.redline_refs %}{{ refLine(ref.id) }}{% if ref.note %} — {{ ref.note }}{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+      {% endif %}
       <div class="gr-legend mb-8">
         <span><span class="gr-swatch" style="background:#1a1a1a"></span>agree</span>
         <span><span class="gr-swatch" style="background:#d9d9d9"></span>pass</span>
@@ -274,6 +277,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
         </article>
         {% endfor %}
       </div>
+      <p class="gr-counts mt-4">{{ C.groups.methods_note | replace("the two blocs", "the two blocs — " ~ (P.group_sizes.A + P.group_sizes.C) ~ " of " ~ P.participants ~ " participants") }}</p>
     </div>
   </section>
 

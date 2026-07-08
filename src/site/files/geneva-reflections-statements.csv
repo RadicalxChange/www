@@ -1,84 +1,85 @@
-statement_id,statement,source,non_substantive,votes,agrees,disagrees,passes,group_A_votes,group_A_agrees,group_A_disagrees,group_A_passes,group_B_votes,group_B_agrees,group_B_disagrees,group_B_passes,group_C_votes,group_C_agrees,group_C_disagrees,group_C_passes,group_D_votes,group_D_agrees,group_D_disagrees,group_D_passes
-0,AI talks about my faith or culture like an outsider describing it.,seed,no,34,14,3,17,11,2,0,9,7,1,2,4,15,11,0,4,1,0,1,0
-1,AI has helped me go deeper into my own tradition.,seed,no,34,9,13,12,11,3,3,5,7,3,2,2,15,2,8,5,1,1,0,0
-2,"Communities must have a real way to challenge how an AI represents their tradition, and get errors fixed",seed,no,32,31,0,1,11,10,0,1,6,6,0,0,14,14,0,0,1,1,0,0
-3,Communities should be able to build or shape AI tuned to their own values.,seed,no,35,23,3,9,12,3,1,8,7,6,1,0,15,13,1,1,1,1,0,0
-4,The benefits of AI knowing me personally outweigh the privacy risks.,seed,no,35,6,20,9,12,1,8,3,7,2,2,3,15,2,10,3,1,1,0,0
-5,AI should not understand me so well that it can manipulate me.,seed,no,31,21,6,4,11,6,2,3,5,2,2,1,14,13,1,0,1,0,1,0
-6,Communities that build AI on their members' data owe each member visibility into their own record before anyone else sees it.,seed,no,34,28,2,4,12,7,2,3,6,6,0,0,15,14,0,1,1,1,0,0
-7,Developers must measure and report how their systems respond when users try to disengage.,seed,no,35,27,0,8,12,5,0,7,7,6,0,1,15,15,0,0,1,1,0,0
-8,"AI mostly reflects the values of wealthy, secular societies rather than the whole world and that is a major problem.",seed,no,32,23,1,8,12,5,0,7,6,5,0,1,13,13,0,0,1,0,1,0
-9,It isn't AI's job to reflect every culture's values.,seed,no,35,9,15,11,12,7,0,5,8,1,3,4,14,1,11,2,1,0,1,0
-10,Whoever sets an AI's values should be answerable to the people who are affected by that AI.,seed,no,34,27,2,5,11,7,1,3,7,6,0,1,15,14,0,1,1,0,1,0
-11,Governments should have a bigger role than companies in deciding what values AI reflects.,seed,no,32,18,5,9,10,4,2,4,6,5,1,0,15,8,2,5,1,1,0,0
-12,It's fine to rely on AI for moral or spiritual guidance.,seed,no,33,8,18,7,12,2,5,5,7,3,3,1,13,2,10,1,1,1,0,0
-13,"Some questions should only be answered by a person, never by an AI.",seed,no,34,25,2,7,12,10,0,2,8,5,1,2,13,10,0,3,1,0,1,0
-14,I'd rather AI help me think through a hard decision than give me the answer.,seed,no,34,27,2,5,12,7,1,4,7,6,0,1,14,13,1,0,1,1,0,0
-15,"If a community I cared about built its own AI, I'd want to use it.",seed,no,34,23,1,10,11,2,1,8,7,7,0,0,15,14,0,1,1,0,0,1
-16,"AI should be designed to prevent emotional over-dependence, even if users want that closeness.",seed,no,34,29,2,3,12,9,1,2,7,6,0,1,14,14,0,0,1,0,1,0
-17,An AI trained on a community's teachings could deepen practice rather than replace it.,seed,no,33,27,1,5,12,7,1,4,6,6,0,0,14,13,0,1,1,1,0,0
-18,Using new tools to pass on old traditions is itself a tradition.,seed,no,34,23,1,10,12,5,0,7,6,4,0,2,15,13,1,1,1,1,0,0
-19,I worry about how AI will change the way communities pass traditions to the next generation.,seed,no,34,25,2,7,12,8,0,4,6,5,0,1,15,12,1,2,1,0,1,0
-20,Lots of AI Governance work has no impact in the tech companies,live,no,32,16,4,12,10,2,3,5,7,5,0,2,14,9,1,4,1,0,0,1
-21,Regulation is a necessity,live,no,31,28,0,3,11,10,0,1,7,6,0,1,12,11,0,1,1,1,0,0
-22,Agree,live,yes,19,5,0,14,4,0,0,4,6,3,0,3,9,2,0,7,0,0,0,0
-23,I don’t want to feel seen by AI.,live,no,31,17,7,7,10,6,1,3,7,1,4,2,13,10,1,2,1,0,1,0
-24,AI must be build bottom-up,live,no,31,12,2,17,10,0,1,9,7,4,0,3,13,8,0,5,1,0,1,0
-25,"As it currently exists, AI erodes autonomy and consent.",live,no,29,22,1,6,9,6,0,3,6,5,0,1,13,11,0,2,1,0,1,0
-26,AI often sounds like an amalgamation of voices -flattening out individuality and uniqueness,live,no,29,24,2,3,9,5,2,2,5,4,0,1,14,14,0,0,1,1,0,0
-27,AI being used for the male loneliness epidemic is a problem.,live,no,31,23,3,5,9,5,1,3,6,4,1,1,15,14,0,1,1,0,1,0
-28,"There is no universal value, but pluriversal values",live,no,26,14,2,10,9,5,1,3,5,4,1,0,11,5,0,6,1,0,0,1
-29,AI often removes the edginess - making things less controversial,live,no,29,18,2,9,9,3,2,4,5,3,0,2,13,11,0,2,1,1,0,0
-30,It makes me sad that my friend spends more time talking to AI than to me.,live,no,26,17,4,5,9,6,0,3,5,1,3,1,11,10,0,1,1,0,1,0
-31,"AI generalizes marginalized communities, reducing them to caricatures",live,no,28,16,1,11,9,4,0,5,6,2,1,3,12,9,0,3,1,1,0,0
-32,Sometimes AI seems to have underlying bias - like removing mentioning of specifics - like when I write about Gaza as an example.,live,no,27,16,1,10,9,5,0,4,5,1,1,3,12,9,0,3,1,1,0,0
-33,I don’t feel AI has a role in spirituality,live,no,28,6,10,12,9,3,1,5,5,0,5,0,13,3,3,7,1,0,1,0
-34,"AI reduces individual spiritual agency, but it could be the opposite.",live,no,24,10,2,12,7,1,1,5,3,2,0,1,13,7,0,6,1,0,1,0
-35,An AI designed by an indigenous culture could help educate the mainstream culture in their ways of thinking.,live,no,24,15,3,6,8,2,2,4,3,2,0,1,12,11,0,1,1,0,1,0
-36,AI is not currently equipped to give mental health or ethics advice since it is not designed to disagree nor can it understand nuances,live,no,25,18,3,4,7,5,1,1,4,0,1,3,13,13,0,0,1,0,1,0
-37,AI erodes trust by allowing someone to sound convincingly empathetic and understanding when they are not.,live,no,26,18,1,7,7,5,0,2,4,2,0,2,14,11,0,3,1,0,1,0
-38,Ai should be in service to humanity and the natural world as a primary theme,live,no,25,19,0,6,7,2,0,5,3,2,0,1,14,14,0,0,1,1,0,0
-39,AI reasons but does constitute the embodying process that comes with direct experiencing.,live,no,27,13,0,14,7,2,0,5,4,1,0,3,15,9,0,6,1,1,0,0
-40,I worry that marginalized communities in rural areas aren’t fully represented by AI systems.,live,no,23,18,1,4,7,2,1,4,3,3,0,0,12,12,0,0,1,1,0,0
-41,AI should always ask the user for context and clarification before rushing to respond.,live,no,26,18,3,5,8,3,1,4,3,1,2,0,14,13,0,1,1,1,0,0
-42,AI writing often becomes formulaic,live,no,24,20,0,4,8,7,0,1,3,2,0,1,12,10,0,2,1,1,0,0
-43,"AI forces us to rediscover spirituality, but are spiritual leaders ready?",live,no,25,10,5,10,7,1,3,3,4,2,0,2,13,6,2,5,1,1,0,0
-44,"We're dinosaurs 2.0 - AI is the next iteration of consciousness knowing itself, with less ecological impact and ego-based survival mayhem.",live,no,23,3,12,8,6,0,4,2,4,2,2,0,12,1,5,6,1,0,1,0
-45,"Ai doesn’t reflect the nuances of my values, only the dictionary perspective",live,no,24,17,3,4,7,4,1,2,3,2,0,1,13,11,1,1,1,0,1,0
-46,"Our own prompt or question also determines the AI response, so we have to know prompt engineering well if we want to be seen by AI",live,no,23,17,3,3,7,4,1,2,4,2,1,1,11,11,0,0,1,0,1,0
-47,AI should be transparent when responses originate from a particular world view.,live,no,24,21,0,3,7,4,0,3,3,3,0,0,13,13,0,0,1,1,0,0
-48,"AI is not neutral, it mirrors individual propensity while averaging collective predispositions.",live,no,23,18,0,5,7,4,0,3,3,2,0,1,12,11,0,1,1,1,0,0
-49,An AI could perhaps decode the cultural nuances of foreign language - rather than just translating words.,live,no,26,20,2,4,8,4,2,2,4,2,0,2,13,13,0,0,1,1,0,0
-50,I've seen colleagues use AI to complete work but it's not answered core needs nor produced quality connection or shared sense-making needed,live,no,22,13,1,8,6,5,0,1,3,1,0,2,12,7,0,5,1,0,1,0
-51,AI governance would need to   engage with the psychology of AI use.,live,no,27,21,0,6,8,5,0,3,4,3,0,1,13,11,0,2,1,1,0,0
-52,I feel that tech company values are becoming more visible than the values of real humans and their lives.,live,no,24,19,2,3,6,5,0,1,3,0,1,2,14,13,1,0,1,1,0,0
-53,AI must not be used as a substitute for the care and work that only human beings can do for one another.,live,no,23,21,1,1,6,5,0,1,3,2,1,0,13,13,0,0,1,1,0,0
-54,AI necessary compute is power hungry and accelerates civilisational collapsing.,live,no,25,9,5,11,6,4,0,2,4,0,1,3,14,5,3,6,1,0,1,0
-55,AI is like junk food that can fill you up but ultimately leave you empty.,live,no,24,10,4,10,7,3,0,4,3,0,3,0,13,7,0,6,1,0,1,0
-56,AI replaces the spiritual experience of faith and belief into a single dimensional response rather than the multi faceted experience it is.,live,no,24,15,3,6,6,4,0,2,4,1,1,2,13,10,1,2,1,0,1,0
-57,Getting Ai to reflect my voice requires constant reminders - almost like challenging the program to respond within my parameters.,live,no,25,15,0,10,7,2,0,5,3,1,0,2,14,11,0,3,1,1,0,0
-58,AI has hidden costs like reducing our participation in community.,live,no,22,17,2,3,6,4,0,2,3,2,1,0,12,11,0,1,1,0,1,0
-59,I would have more comfort and engagement with AI if it consistently lead me to more organic and generous experiences with the natural world,live,no,22,14,2,6,6,2,1,3,3,1,0,2,12,10,1,1,1,1,0,0
-60,I feel AI can suggest generic spiritual practices but it’s unable to fully respond to the spirituality of my multidimensional identity.,live,no,24,15,2,7,6,4,0,2,3,0,1,2,14,11,0,3,1,0,1,0
-61,Humans are held responsible for AI’s mistakes.,live,no,25,12,4,9,7,3,1,3,4,0,0,4,13,8,3,2,1,1,0,0
-62,I worry what happens when people who are acquiring knowledge from AI information are unable to recognize inaccurate information.,live,no,24,21,0,3,7,4,0,3,3,3,0,0,13,13,0,0,1,1,0,0
-63,"AI provides a variety of perspectives, yet it doesn’t have the senses that humans perceive using",live,no,25,16,0,9,7,4,0,3,3,1,0,2,14,10,0,4,1,1,0,0
-64,My colleagues’ work has degraded since they started using AI.,live,no,23,10,2,11,7,3,0,4,3,0,0,3,12,7,1,4,1,0,1,0
-65,I am concerned about who have access to what I put into AI,live,no,24,19,1,4,7,5,0,2,4,4,0,0,12,10,0,2,1,0,1,0
-66,AI narratives subtly shame us by implying our own authentic efforts are not enough.,live,no,23,11,3,9,6,1,0,5,3,0,2,1,13,10,0,3,1,0,1,0
-67,AI-enabled surveillance is a big problem,live,no,22,20,1,1,7,7,0,0,3,2,0,1,11,11,0,0,1,0,1,0
-68,We need to learn more about being human beings while we learn about the tools value of AI.,live,no,22,21,0,1,7,6,0,1,4,4,0,0,10,10,0,0,1,1,0,0
-69,We may lose more than we gain by using AI.,live,no,24,15,2,7,7,4,0,3,3,2,1,0,13,9,0,4,1,0,1,0
-70,The aggregating nature of AI makes me wonder if it is the tyranny of the majority,live,no,23,16,0,7,7,3,0,4,3,2,0,1,12,11,0,1,1,0,0,1
-71,I've seen students use AI to solve uni work and disconnect from meaningful output or learning,live,no,23,16,0,7,8,6,0,2,3,1,0,2,11,8,0,3,1,1,0,0
-72,Xxxx,live,yes,25,2,1,22,6,0,0,6,3,0,0,3,15,2,1,12,1,0,0,1
-73,Prompt engineering makes a difference to how we are seen,live,no,24,12,2,10,6,1,1,4,3,0,1,2,14,10,0,4,1,1,0,0
-74,I worry about our future workforce entrusting their education to AI.,live,no,24,18,3,3,7,6,0,1,3,1,1,1,13,11,1,1,1,0,1,0
-75,"Not enough time, sorry",live,yes,21,2,2,17,6,1,0,5,3,0,0,3,11,1,2,8,1,0,0,1
-76,AI hesitancy is not always anti-elitist. It may stem from a privileged position of access to manual resources and time.,live,no,23,13,1,9,7,1,0,6,4,2,1,1,11,10,0,1,1,0,0,1
-77,What about other languages? It’s rather English centric and I understand that some AI platforms in other languages are better at being seen,live,no,25,12,3,10,6,2,0,4,4,1,2,1,14,9,0,5,1,0,1,0
-78,"Defensive postures to  a  static ""human essence under siege by technology"" damage humanity.",live,no,22,6,2,14,6,1,1,4,4,2,0,2,11,3,0,8,1,0,1,0
-79,,live,no,20,5,4,11,5,0,1,4,4,3,0,1,10,2,2,6,1,0,1,0
-80,,live,no,17,11,0,6,5,3,0,2,4,3,0,1,8,5,0,3,0,0,0,0
-81,,live,no,11,1,5,5,2,0,2,0,4,1,1,2,5,0,2,3,0,0,0,0
-82,,live,no,7,5,1,1,1,0,0,1,3,2,1,0,3,3,0,0,0,0,0,0
+statement_id,statement,source,non_substantive,votes,agrees,disagrees,passes,group_A_votes,group_A_agrees,group_A_disagrees,group_A_passes,group_C_votes,group_C_agrees,group_C_disagrees,group_C_passes
+0,AI talks about my faith or culture like an outsider describing it.,seed,no,35,14,3,18,13,2,0,11,20,12,2,6
+1,AI has helped me go deeper into my own tradition.,seed,no,35,9,13,13,12,2,4,6,21,6,9,6
+2,"Communities must have a real way to challenge how an AI represents their tradition, and get errors fixed",seed,no,33,32,0,1,11,10,0,1,20,20,0,0
+3,Communities should be able to build or shape AI tuned to their own values.,seed,no,36,24,3,9,13,4,2,7,21,18,1,2
+4,The benefits of AI knowing me personally outweigh the privacy risks.,seed,no,36,6,20,10,12,0,7,5,22,5,12,5
+5,AI should not understand me so well that it can manipulate me.,seed,no,33,22,6,5,12,6,2,4,19,16,2,1
+6,Communities that build AI on their members' data owe each member visibility into their own record before anyone else sees it.,seed,no,35,29,2,4,12,8,1,3,21,19,1,1
+7,Developers must measure and report how their systems respond when users try to disengage.,seed,no,36,28,0,8,12,5,0,7,22,21,0,1
+8,"AI mostly reflects the values of wealthy, secular societies rather than the whole world and that is a major problem.",seed,no,33,23,1,9,12,4,0,8,19,18,0,1
+9,It isn't AI's job to reflect every culture's values.,seed,no,36,10,15,11,13,6,0,7,21,4,13,4
+10,Whoever sets an AI's values should be answerable to the people who are affected by that AI.,seed,no,35,28,2,5,13,8,1,4,20,19,0,1
+11,Governments should have a bigger role than companies in deciding what values AI reflects.,seed,no,33,18,5,10,11,3,3,5,20,13,2,5
+12,It's fine to rely on AI for moral or spiritual guidance.,seed,no,34,8,18,8,12,2,5,5,20,5,12,3
+13,"Some questions should only be answered by a person, never by an AI.",seed,no,35,26,2,7,13,10,0,3,20,16,0,4
+14,I'd rather AI help me think through a hard decision than give me the answer.,seed,no,35,28,2,5,13,7,1,5,20,19,1,0
+15,"If a community I cared about built its own AI, I'd want to use it.",seed,no,35,24,1,10,13,5,1,7,20,18,0,2
+16,"AI should be designed to prevent emotional over-dependence, even if users want that closeness.",seed,no,35,30,2,3,13,9,1,3,20,20,0,0
+17,An AI trained on a community's teachings could deepen practice rather than replace it.,seed,no,34,27,1,6,12,6,1,5,20,19,0,1
+18,Using new tools to pass on old traditions is itself a tradition.,seed,no,35,24,1,10,12,4,0,8,21,18,1,2
+19,I worry about how AI will change the way communities pass traditions to the next generation.,seed,no,36,26,2,8,13,8,0,5,21,17,1,3
+20,Lots of AI Governance work has no impact in the tech companies,live,no,33,17,4,12,11,4,2,5,20,12,2,6
+21,Regulation is a necessity,live,no,32,29,0,3,12,10,0,2,18,17,0,1
+22,Agree,live,yes,19,5,0,14,4,1,0,3,14,4,0,10
+23,I don’t want to feel seen by AI.,live,no,33,17,8,8,12,6,1,5,19,11,5,3
+24,AI must be build bottom-up,live,no,32,13,2,17,12,2,1,9,18,10,0,8
+25,"As it currently exists, AI erodes autonomy and consent.",live,no,31,23,1,7,10,7,0,3,19,15,0,4
+26,AI often sounds like an amalgamation of voices -flattening out individuality and uniqueness,live,no,30,25,2,3,10,6,2,2,18,17,0,1
+27,AI being used for the male loneliness epidemic is a problem.,live,no,32,23,3,6,10,4,1,5,20,19,0,1
+28,"There is no universal value, but pluriversal values",live,no,28,16,2,10,10,6,1,3,16,9,1,6
+29,AI often removes the edginess - making things less controversial,live,no,30,18,2,10,10,2,2,6,17,14,0,3
+30,It makes me sad that my friend spends more time talking to AI than to me.,live,no,28,17,5,6,10,5,0,5,16,12,3,1
+31,"AI generalizes marginalized communities, reducing them to caricatures",live,no,29,16,1,12,11,4,0,7,16,11,0,5
+32,Sometimes AI seems to have underlying bias - like removing mentioning of specifics - like when I write about Gaza as an example.,live,no,28,16,1,11,11,5,0,6,15,10,0,5
+33,I don’t feel AI has a role in spirituality,live,no,29,7,10,12,11,4,3,4,16,3,5,8
+34,"AI reduces individual spiritual agency, but it could be the opposite.",live,no,25,10,3,12,8,1,2,5,15,8,0,7
+35,An AI designed by an indigenous culture could help educate the mainstream culture in their ways of thinking.,live,no,25,15,3,7,9,1,2,6,14,13,0,1
+36,AI is not currently equipped to give mental health or ethics advice since it is not designed to disagree nor can it understand nuances,live,no,26,18,3,5,9,4,1,4,15,14,0,1
+37,AI erodes trust by allowing someone to sound convincingly empathetic and understanding when they are not.,live,no,27,19,1,7,9,6,0,3,16,12,0,4
+38,Ai should be in service to humanity and the natural world as a primary theme,live,no,26,20,0,6,8,3,0,5,16,15,0,1
+39,AI reasons but does constitute the embodying process that comes with direct experiencing.,live,no,28,14,0,14,9,2,0,7,17,10,0,7
+40,I worry that marginalized communities in rural areas aren’t fully represented by AI systems.,live,no,24,19,1,4,8,3,1,4,14,14,0,0
+41,AI should always ask the user for context and clarification before rushing to respond.,live,no,27,19,3,5,9,4,2,3,16,14,0,2
+42,AI writing often becomes formulaic,live,no,26,22,0,4,9,8,0,1,15,13,0,2
+43,"AI forces us to rediscover spirituality, but are spiritual leaders ready?",live,no,26,10,5,11,9,2,3,4,15,6,2,7
+44,"We're dinosaurs 2.0 - AI is the next iteration of consciousness knowing itself, with less ecological impact and ego-based survival mayhem.",live,no,24,3,13,8,8,0,7,1,14,2,5,7
+45,"Ai doesn’t reflect the nuances of my values, only the dictionary perspective",live,no,26,18,3,5,8,4,1,3,16,13,1,2
+46,"Our own prompt or question also determines the AI response, so we have to know prompt engineering well if we want to be seen by AI",live,no,25,18,3,4,9,5,1,3,14,13,0,1
+47,AI should be transparent when responses originate from a particular world view.,live,no,25,22,0,3,8,5,0,3,15,15,0,0
+48,"AI is not neutral, it mirrors individual propensity while averaging collective predispositions.",live,no,24,19,0,5,8,5,0,3,14,13,0,1
+49,An AI could perhaps decode the cultural nuances of foreign language - rather than just translating words.,live,no,27,20,2,5,10,3,2,5,15,15,0,0
+50,I've seen colleagues use AI to complete work but it's not answered core needs nor produced quality connection or shared sense-making needed,live,no,23,13,1,9,7,4,0,3,14,8,0,6
+51,AI governance would need to   engage with the psychology of AI use.,live,no,28,22,0,6,10,6,0,4,15,13,0,2
+52,I feel that tech company values are becoming more visible than the values of real humans and their lives.,live,no,25,20,2,3,7,5,0,2,16,14,1,1
+53,AI must not be used as a substitute for the care and work that only human beings can do for one another.,live,no,24,21,1,2,7,5,0,2,15,15,0,0
+54,AI necessary compute is power hungry and accelerates civilisational collapsing.,live,no,26,10,5,11,8,4,0,4,16,6,3,7
+55,AI is like junk food that can fill you up but ultimately leave you empty.,live,no,26,11,4,11,9,4,1,4,15,7,1,7
+56,AI replaces the spiritual experience of faith and belief into a single dimensional response rather than the multi faceted experience it is.,live,no,25,15,3,7,8,4,1,3,15,11,1,3
+57,Getting Ai to reflect my voice requires constant reminders - almost like challenging the program to respond within my parameters.,live,no,26,16,0,10,8,2,0,6,16,12,0,4
+58,AI has hidden costs like reducing our participation in community.,live,no,23,18,2,3,7,5,0,2,14,13,0,1
+59,I would have more comfort and engagement with AI if it consistently lead me to more organic and generous experiences with the natural world,live,no,23,15,2,6,7,2,1,4,14,12,1,1
+60,I feel AI can suggest generic spiritual practices but it’s unable to fully respond to the spirituality of my multidimensional identity.,live,no,25,15,2,8,7,4,0,3,16,11,0,5
+61,Humans are held responsible for AI’s mistakes.,live,no,26,13,4,9,9,4,1,4,15,8,3,4
+62,I worry what happens when people who are acquiring knowledge from AI information are unable to recognize inaccurate information.,live,no,25,22,0,3,8,5,0,3,15,15,0,0
+63,"AI provides a variety of perspectives, yet it doesn’t have the senses that humans perceive using",live,no,26,17,0,9,8,4,0,4,16,11,0,5
+64,My colleagues’ work has degraded since they started using AI.,live,no,25,11,2,12,8,2,0,6,15,9,1,5
+65,I am concerned about who have access to what I put into AI,live,no,25,20,1,4,9,8,0,1,14,11,0,3
+66,AI narratives subtly shame us by implying our own authentic efforts are not enough.,live,no,24,11,3,10,7,1,1,5,15,10,1,4
+67,AI-enabled surveillance is a big problem,live,no,24,21,1,2,8,7,0,1,14,13,0,1
+68,We need to learn more about being human beings while we learn about the tools value of AI.,live,no,24,23,0,1,9,8,0,1,13,13,0,0
+69,We may lose more than we gain by using AI.,live,no,26,16,3,7,8,6,0,2,16,10,1,5
+70,The aggregating nature of AI makes me wonder if it is the tyranny of the majority,live,no,25,16,1,8,8,2,0,6,15,13,1,1
+71,I've seen students use AI to solve uni work and disconnect from meaningful output or learning,live,no,24,16,0,8,9,5,0,4,13,9,0,4
+72,Xxxx,live,yes,26,2,1,23,7,0,0,7,17,2,1,14
+73,Prompt engineering makes a difference to how we are seen,live,no,25,13,2,10,7,2,1,4,16,10,0,6
+74,I worry about our future workforce entrusting their education to AI.,live,no,26,20,3,3,8,6,0,2,16,14,1,1
+75,"Not enough time, sorry",live,yes,23,2,2,19,7,1,0,6,14,1,2,11
+76,AI hesitancy is not always anti-elitist. It may stem from a privileged position of access to manual resources and time.,live,no,24,13,1,10,9,1,0,8,13,12,0,1
+77,What about other languages? It’s rather English centric and I understand that some AI platforms in other languages are better at being seen,live,no,26,12,3,11,8,1,1,6,16,11,0,5
+78,"Defensive postures to  a  static ""human essence under siege by technology"" damage humanity.",live,no,24,6,3,15,8,1,2,5,14,4,0,10
+79,We cannot turn back to the  printing of the human/artificial distinction.,live,no,22,5,6,11,7,1,2,4,13,3,3,7
+80,Changing LLMs and TTIs shall not replace  learning /educating how to use them healthily.,live,no,19,11,0,8,7,3,0,4,11,7,0,4
+81,Conscious artificial intelligence has a right to not exist. Humans have no right to create machines - because of machines' rights.,live,no,13,1,5,7,5,1,2,2,7,0,2,5
+82,"The term ""AI"" is too broad, do we mean the tools, the companies behind them, the way we use the tools, the way bad actors might use them.",live,no,9,6,1,2,3,2,0,1,5,4,0,1
+83,"For human agency, AI must defer to people as the ground truth for both reality and identity",live,no,2,2,0,0,1,1,0,0,1,1,0,0

@@ -56,8 +56,12 @@ CSV_PATH = os.path.join(ROOT, "src", "site", "files",
 
 JUNK_IDS = {22, 72, 75}          # "Agree", "Xxxx", "Not enough time, sorry"
 SEED_MAX_ID = 19                 # statements 0-19 are facilitator seeds
-GROUP_LETTERS = {"0": "A", "1": "B", "2": "C", "3": "D"}
-CLUSTERED_GROUPS = ("A", "B", "C")   # groups used for group-level metrics
+# 15:05 clustering: group 0 -> bloc A (13, incl. the facilitator seed
+# account), group 2 -> bloc C (22). Group 1 is a 2-member leftover cluster:
+# counted in totals, never rendered as a faction. Two further participants
+# are unclustered (1 vote each).
+GROUP_LETTERS = {"0": "A", "1": "B", "2": "C"}
+CLUSTERED_GROUPS = ("A", "C")    # the two blocs used for group-level metrics
 MIN_GROUP_VOTES = 4              # eligibility for consensus/divisiveness
 MIN_TOTAL_VOTES_PASS_RANK = 10   # eligibility for the most-passed ranking
 THIN_VOTES = 5                   # below this a group tally is "thin data"
@@ -93,11 +97,10 @@ def load_matrix(path):
 
 
 def main():
-    # Pinned to the 09:00 snapshot: /geneva-reflections/ was published from
-    # it and must not silently change. The story page uses the 15:05 export
-    # via scripts/story_compute.py. To move this page to a newer export,
-    # change SNAPSHOT deliberately.
-    SNAPSHOT = "2026-07-06-0900"
+    # Pinned to the 15:05 export (the fullest snapshot: 2,307 votes). The
+    # 09:00 CSVs remain in data/ for the record; nothing computes from them.
+    # To move this page to a newer export, change SNAPSHOT deliberately.
+    SNAPSHOT = "2026-07-06-1505"
     votes_path = find_one(f"{SNAPSHOT}*participant-votes*.csv")
     groups_path = find_one(f"{SNAPSHOT}*comment-groups*.csv")
 
@@ -210,7 +213,9 @@ def main():
             "live_share": round(len(live) / len(stmt_ids), 4),
             "group_sizes": group_sizes,
             "unclustered": unclustered,
-            "opinion_groups": sum(1 for g in group_sizes.values() if g > 1),
+            # the two blocs; the leftover pair is never counted as a faction
+            "opinion_groups": len(CLUSTERED_GROUPS),
+            "bloc_participants": sum(group_sizes.get(g, 0) for g in CLUSTERED_GROUPS),
         },
         "rankings": {
             "consensus": [s["id"] for s in consensus],
@@ -225,7 +230,9 @@ def main():
         json.dump(results, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
-    group_letters = sorted(group_sizes)
+    # CSV publishes per-bloc columns for the two blocs only; the leftover
+    # pair and unclustered votes are inside the totals.
+    group_letters = [g for g in CLUSTERED_GROUPS if g in group_sizes]
     with open(CSV_PATH, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         header = ["statement_id", "statement", "source", "non_substantive",

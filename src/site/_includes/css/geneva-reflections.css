@@ -273,7 +273,7 @@
 }
 @media (min-width: 768px) {
   .geneva .gr-groups {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .geneva .gr-group-col {
