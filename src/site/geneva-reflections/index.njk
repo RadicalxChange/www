@@ -97,13 +97,16 @@ description: "What would AI governance need to do so that everyone felt seen by 
 </div>
 {% endmacro %}
 
+{% set blocNames = {"A": "Boundary Keepers", "C": "Recognition Seekers"} %}
+{% set blocShort = {"A": "Boundary", "C": "Recognition"} %}
+
 {% macro groupRows(s) %}
 <div class="flex flex-col gap-1">
   {% for g in ["A", "C"] %}
   {% set t = s.groups[g] %}
-  <div class="gr-mini">
-    <span class="font-bold gr-text-{{ g }}" aria-hidden="true">{{ g }}</span>
-    {{ stackBar(t, "Bloc " + g) }}
+  <div class="gr-mini gr-mini-name">
+    <span class="font-bold gr-text-{{ g }}" aria-hidden="true">{{ blocShort[g] }}</span>
+    {{ stackBar(t, blocNames[g]) }}
     <span class="gr-counts">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}% agree ({{ t.agrees }}/{{ t.votes }}){% else %}–{% endif %}{{ thinGlyph(t) }}</span>
   </div>
   {% endfor %}
@@ -126,8 +129,8 @@ description: "What would AI governance need to do so that everyone felt seen by 
 </div>
 {% endmacro %}
 
-{# Tier-2 card: adds the per-group breakdown. #}
-{% macro cardFull(sid) %}
+{# Tier-2 card: adds the per-group breakdown; note flags e.g. rejections. #}
+{% macro cardFull(sid, note) %}
 {% set s = S["" ~ sid] %}
 <div class="gr-card flex flex-col gap-3" id="s{{ s.id }}">
   <p class="gr-stmt-text flex-grow">“{{ s.text }}”</p>
@@ -136,7 +139,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
     {{ sourceBadge(s) }}
   </div>
   {{ stackBar(s.total, "All participants") }}
-  <p class="gr-counts"><strong class="text-black">{{ figureFor(s) }}</strong></p>
+  <p class="gr-counts"><strong class="text-black">{{ figureFor(s) }}</strong>{% if note %} — {{ note }}{% endif %}</p>
   {{ groupRows(s) }}
 </div>
 {% endmacro %}
@@ -212,15 +215,12 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <p class="gr-kicker mb-2">{{ C.consensus.kicker }}</p>
       <h2 class="mb-4">{{ C.consensus.title }}</h2>
       <p class="gr-prose mb-4">{{ C.consensus.intro }}</p>
-      {% if C.consensus.redline_refs %}
-      <p class="gr-counts gr-prose mb-4">The red lines: {% for ref in C.consensus.redline_refs %}{{ refLine(ref.id) }}{% if ref.note %} — {{ ref.note }}{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</p>
-      {% endif %}
       <div class="gr-legend mb-8">
         <span><span class="gr-swatch" style="background:#1a1a1a"></span>agree</span>
         <span><span class="gr-swatch" style="background:#d9d9d9"></span>pass</span>
         <span><span class="gr-swatch" style="background:repeating-linear-gradient(-45deg,#fff,#fff 3px,#6c6c6c 3px,#6c6c6c 4px)"></span>disagree</span>
       </div>
-      <div class="grid gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-x-8 gap-y-8 md:grid-cols-2">
         {% for theme in C.consensus.themes %}
         <div class="gr-theme">
           <h3 class="mb-2">{{ theme.title }}</h3>
@@ -234,7 +234,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
                 {{ groupRows(S["" ~ theme.exemplar]) }}
               </div>
               {% for sid in theme.supporting %}
-              {{ cardFull(sid) }}
+              {{ cardFull(sid, theme.notes["" ~ sid] if theme.notes else null) }}
               {% endfor %}
               {% if theme.cross_refs %}
               <p class="gr-counts">{% for ref in theme.cross_refs %}<a class="underline" href="#s{{ ref.id }}">{{ ref.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
@@ -256,7 +256,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <div class="gr-groups">
         {% for grp in C.groups.list %}
         <article class="gr-group-col gr-border-{{ grp.key }}">
-          <h3 class="mb-1"><span class="gr-text-{{ grp.key }}">{{ grp.key }}</span> — {{ grp.name }}</h3>
+          <h3 class="mb-1"><span class="gr-text-{{ grp.key }}">{{ grp.name }}</span></h3>
           <p class="gr-counts mb-3">{{ P.group_sizes[grp.key] }} participants</p>
           <p class="text-size--1 mb-3">{{ grp.sketch }}</p>
           <details>
@@ -324,6 +324,15 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <p class="gr-prose font-bold text-size--1">{{ C.surprise.inner_life.takeaway }}</p>
     </div>
   </section>
+
+  {# ---------- closing ---------- #}
+  {% if C.closing %}
+  <section aria-label="Closing" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
+      <p class="gr-prose font-bold text-size-1">{{ C.closing }}</p>
+    </div>
+  </section>
+  {% endif %}
 
   {# ---------- 5. what happens next ---------- #}
   <section id="next" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
