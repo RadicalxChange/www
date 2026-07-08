@@ -175,6 +175,10 @@
   align-items: center;
   font-size: var(--step--3);
 }
+/* rows labeled by bloc first-word instead of a letter */
+.geneva .gr-mini-name {
+  grid-template-columns: 5.6rem minmax(0, 1fr) auto;
+}
 .geneva .gr-text-A { color: var(--gr-group-a); }
 .geneva .gr-text-B { color: var(--gr-group-b); }
 .geneva .gr-text-C { color: var(--gr-group-c); }

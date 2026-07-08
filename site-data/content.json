@@ -13,10 +13,22 @@
     "dialogue_url": "https://www.un.org/global-dialogue-ai-governance/en",
     "official_line": "An official virtual side event of the first UN Global Dialogue on AI Governance",
     "conveners": [
-      { "name": "Parity", "url": "https://www.parity.nyc" },
-      { "name": "Sikh LGBT+ Inclusion", "url": null },
-      { "name": "RadicalxChange Foundation", "url": "https://www.radicalxchange.org" },
-      { "name": "Free Community Church", "url": "https://www.fcc.org.sg" }
+      {
+        "name": "Parity",
+        "url": "https://www.parity.nyc"
+      },
+      {
+        "name": "Sikh LGBT+ Inclusion",
+        "url": null
+      },
+      {
+        "name": "RadicalxChange Foundation",
+        "url": "https://www.radicalxchange.org"
+      },
+      {
+        "name": "Free Community Church",
+        "url": "https://www.fcc.org.sg"
+      }
     ]
   },
   "stats": {
@@ -32,54 +44,59 @@
   "consensus": {
     "kicker": "01 · The common ground",
     "title": "What the room agreed on",
-    "intro": "Start with the red lines the room drew together: it rejected trading privacy for intimate personalization — six agreed, twenty disagreed, and in the smaller bloc not one person took the yes side; it demanded limits on surveillance and on who sees what people confide; it distrusted advice from a system that isn't designed to disagree with you; and it named the flattening of distinct voices into an average. This floor belongs to the whole room, not one side. On it, six demands drew broad support — each shown with one statement in participants' own words; expand a theme for its supporting statements and each bloc's numbers. Where the room split, it split over the remedy, not over whether AI needs remaking — that split comes next.",
-    "redline_refs": [
-      { "id": 4, "note": "rejected" },
-      { "id": 67 },
-      { "id": 65 },
-      { "id": 36 },
-      { "id": 26 },
-      { "id": 42 }
-    ],
+    "intro": "Four demands drew broad support. Where the room split comes next.",
     "themes": [
       {
-        "title": "Contestability & accountability",
-        "blurb": "Communities must be able to challenge and correct how AI represents them; whoever sets an AI system's values must answer to the people affected — through regulation with teeth.",
+        "title": "Answer to the people affected",
+        "blurb": "Communities can challenge and correct how AI portrays them; whoever sets AI's values answers for it; regulation is a necessity.",
         "exemplar": 2,
-        "supporting": [10, 21]
-      },
-      {
-        "title": "Protection from dependency & manipulation",
-        "blurb": "Design AI against emotional over-dependence and manipulation — protections the whole room wanted as defaults, not options.",
-        "exemplar": 16,
-        "supporting": [7, 5, 51]
-      },
-      {
-        "title": "Human-reserved ground",
-        "blurb": "Some questions — and, above all, care itself — must stay human. AI can support, but never substitute.",
-        "exemplar": 68,
-        "supporting": [53, 13, 14]
-      },
-      {
-        "title": "Data, consent & surveillance",
-        "blurb": "Strict limits on who sees what people confide to AI, and a shared alarm about AI-enabled surveillance.",
-        "exemplar": 65,
-        "supporting": [67, 25, 6]
-      },
-      {
-        "title": "Community authorship",
-        "blurb": "Communities should be able to build and shape AI on their own values, with each member seeing their own data first.",
-        "exemplar": 17,
-        "supporting": [3, 15],
-        "cross_refs": [
-          { "id": 6, "label": "See also the consent duty participants set for community-built AI — statement [6], under Data, consent & surveillance" }
+        "supporting": [
+          10,
+          21
         ]
       },
       {
-        "title": "Value transparency & epistemic care",
-        "blurb": "Disclose whose values an AI carries, and take care with how knowledge — including faith traditions passed between generations — is transmitted.",
-        "exemplar": 47,
-        "supporting": [48, 62, 19]
+        "title": "Don't use knowing us against us",
+        "blurb": "The room rejected trading privacy for personalization outright; it wants AI designed against emotional over-dependence even when users want the closeness, and hard limits on surveillance and on who sees what people confide.",
+        "exemplar": 16,
+        "supporting": [
+          4,
+          67,
+          65,
+          7,
+          5,
+          51,
+          25,
+          6
+        ],
+        "notes": {
+          "4": "rejected; among Boundary Keepers, not one person agreed"
+        }
+      },
+      {
+        "title": "Keep some ground human",
+        "blurb": "Some questions should only ever be answered by a person; AI must never substitute for human care; and advice from a system not designed to disagree with you deserves distrust.",
+        "exemplar": 13,
+        "supporting": [
+          53,
+          68,
+          14,
+          36,
+          19,
+          62,
+          74,
+          80
+        ]
+      },
+      {
+        "title": "Don't flatten us into an average",
+        "blurb": "Distinct voices and worldviews stay visible — no averaging everyone into the same output, and disclosure of whose values a response carries.",
+        "exemplar": 26,
+        "supporting": [
+          42,
+          47,
+          48
+        ]
       }
     ]
   },
@@ -92,16 +109,30 @@
       {
         "key": "A",
         "name": "Boundary Keepers",
-        "sketch": "Wants clear limits on where AI belongs. For this bloc the remedy is boundaries: whoever builds AI, some human ground stays reserved — some questions should only ever be answered by a person, and being deeply known by a machine reads as a loss, not a comfort. They often abstained on statements about being misrepresented by AI (distance from that experience, not opposition to fixing it) — and their stance on community-built AI is abstention too, not objection: on the flagship authorship statement, seven of thirteen passed, four agreed, two disagreed. An invitation to demonstrate, rather than a door closed.",
+        "sketch": "Wants clear limits on where AI belongs. Whoever builds it, some human ground stays reserved: some questions should only ever be answered by a person, and being deeply known by a machine reads as a loss, not a comfort. On community-built AI, they abstained far more than they objected: seven of thirteen passed, four agreed, two disagreed.",
         "cards": [],
-        "references": [9, 13, 23, 30, 55]
+        "references": [
+          9,
+          13,
+          23,
+          30,
+          55
+        ]
       },
       {
         "key": "C",
         "name": "Recognition Seekers",
-        "sketch": "Knows what it feels like when AI describes their faith or culture like an outsider — and insists that fixing this is AI's job, not theirs. Their remedy is authorship: communities building and steering AI on their own terms — the one affirmative program in the data with broad support and no organized opposition. They want recognition without capture: firmly against manipulation and privacy trade-offs.",
-        "cards": [0],
-        "references": [9, 5, 15, 3]
+        "sketch": "Knows what it feels like when AI describes their faith or culture like an outsider. Their remedy is authorship: communities building and steering AI on their own terms — the one affirmative program in the data with broad support and no organized opposition.",
+        "cards": [
+          0,
+          17,
+          3,
+          15
+        ],
+        "references": [
+          9,
+          5
+        ]
       }
     ],
     "methods_note": "Per-bloc breakdowns cover the two blocs; the remaining participants are counted in totals only."
@@ -112,6 +143,7 @@
     "lead": "“It isn't AI's job to reflect every culture's values” is the room's cleanest divide: the Boundary Keepers' signature position and the Recognition Seekers' sharpest rejection. Universality versus representation is a real disagreement, not a misunderstanding.",
     "statement": 9
   },
+  "closing": "The split is over the remedy. The one affirmative program in the data — communities building and steering AI on their own terms — faces no organized opposition. And the bloc that holds back abstains rather than objects: an invitation to demonstrate, rather than a door closed.",
   "surprise": {
     "kicker": "04 · The findings a standard poll would miss",
     "title": "The surprise",
@@ -119,10 +151,14 @@
     "bedfellows": {
       "finding_label": "Finding one — agreement across the divide",
       "title": "Strange bedfellows",
-      "caption": "Boundary Keepers and Recognition Seekers stand at opposite poles on whose job it is to reflect a culture's values. But on one thing they speak with a single voice: they do not want AI to know them intimately. “I don't want to feel seen by AI” carried both blocs — six agreed in one, eleven in the other — and the statements of loss beside it lean the same way.",
-      "reading": "How to read the cards: in each one, blocs A and C — the rivals of the divide above — lean the same way. Agreement that crosses the room's main fault line is the finding.",
+      "caption": "Boundary Keepers and Recognition Seekers stand at opposite poles on whose job it is to reflect a culture's values. But on one thing they speak with a single voice: they do not want AI to know them intimately. “I don't want to feel seen by AI” carried both blocs and the statements of loss beside it lean the same way.",
+      "reading": "How to read the cards: in each one, both blocs — the rivals of the divide above — lean the same way. Agreement that crosses the room's main fault line is the finding.",
       "takeaway": "This is the room's hidden second consensus: whatever else AI becomes, the right not to be intimately known by it must be protected.",
-      "statements": [23, 30, 55],
+      "statements": [
+        23,
+        30,
+        55
+      ],
       "cross_ref_note": "The divide these two blocs are known for:"
     },
     "inner_life": {
@@ -131,7 +167,12 @@
       "caption": "Whether AI belongs in the inner and spiritual life — as a deepener of tradition, a moral interlocutor, or not at all — is not a fight between the blocs. It runs through them: members of the same bloc, who vote together on nearly everything else, part ways here.",
       "reading": "How to read the cards: the bars below are within each bloc. Where a bloc's bar shows both solid (agree) and striped (disagree) in near-equal measure, that bloc is divided against itself.",
       "takeaway": "Neither bloc can settle this question for the room, because neither has settled it for itself.",
-      "statements": [1, 12, 33, 43]
+      "statements": [
+        1,
+        12,
+        33,
+        43
+      ]
     }
   },
   "notes": {
@@ -185,16 +226,116 @@
     "principles_intro": "These are starting points, not a finished ballot: readings of the deliberation record, distilled into the kind of principles the room seemed to be asking for. The Reflections Working Group is making sense of the Pol.is results now, and these ideas are theirs to challenge, rewrite, merge, or replace — each one cites the statements it is drawn from, so the drafting can be checked against the votes. Two sit on live tensions the room did not resolve; if they survive revision, the quadratic vote will weigh them.",
     "feedback_ask": "If you took part in the event: do these ideas capture what you said — and what did we miss? Tell us which to keep, rework, or drop.",
     "principles": [
-      { "id": "P1", "title": "Contestability", "text": "Guarantee communities a binding, resourced channel to challenge how an AI system represents their tradition and to get errors fixed.", "grounding": [2, 10, 45], "tension": false },
-      { "id": "P2", "title": "Answerability of value-setters", "text": "Make whoever sets an AI system's values legally accountable, through enforceable regulation, to the people affected.", "grounding": [10, 21, 20], "tension": false },
-      { "id": "P3", "title": "Anti-dependency design", "text": "Require AI to be designed against emotional over-dependence, with disengagement behavior measured and publicly reported.", "grounding": [16, 7, 51], "tension": false },
-      { "id": "P4", "title": "Manipulation firewall", "text": "Protection from manipulation as a non-overridable default.", "grounding": [5, 4, 25], "tension": false },
-      { "id": "P5", "title": "Human-reserved care", "text": "Care for one another, and defined classes of questions, stay human; AI supports but never substitutes.", "grounding": [53, 13, 68], "tension": false },
-      { "id": "P6", "title": "Deliberation, not verdicts", "text": "In value-laden domains AI asks for context and helps people think rather than delivering answers.", "grounding": [14, 41, 12], "tension": true },
-      { "id": "P7", "title": "Community authorship", "text": "Communities can build or shape AI on their own values, each member seeing their own data first.", "grounding": [3, 17, 6], "tension": false },
-      { "id": "P8", "title": "Worldview transparency", "text": "Disclose when a response carries a particular worldview and whose values defaults average over.", "grounding": [47, 48, 8], "tension": false },
-      { "id": "P9", "title": "Data & surveillance limits", "text": "Strict, auditable limits on who accesses what people put into AI; AI-enabled surveillance treated as a first-order harm.", "grounding": [65, 67, 25], "tension": false },
-      { "id": "P10", "title": "The right not to be seen", "text": "An effective, penalty-free right to keep AI out of one's inner, moral, and spiritual life, while protecting those who choose to invite it in.", "grounding": [23, 33, 16], "tension": true }
+      {
+        "id": "P1",
+        "title": "Contestability",
+        "text": "Guarantee communities a binding, resourced channel to challenge how an AI system represents their tradition and to get errors fixed.",
+        "grounding": [
+          2,
+          10,
+          45
+        ],
+        "tension": false
+      },
+      {
+        "id": "P2",
+        "title": "Answerability of value-setters",
+        "text": "Make whoever sets an AI system's values legally accountable, through enforceable regulation, to the people affected.",
+        "grounding": [
+          10,
+          21,
+          20
+        ],
+        "tension": false
+      },
+      {
+        "id": "P3",
+        "title": "Anti-dependency design",
+        "text": "Require AI to be designed against emotional over-dependence, with disengagement behavior measured and publicly reported.",
+        "grounding": [
+          16,
+          7,
+          51
+        ],
+        "tension": false
+      },
+      {
+        "id": "P4",
+        "title": "Manipulation firewall",
+        "text": "Protection from manipulation as a non-overridable default.",
+        "grounding": [
+          5,
+          4,
+          25
+        ],
+        "tension": false
+      },
+      {
+        "id": "P5",
+        "title": "Human-reserved care",
+        "text": "Care for one another, and defined classes of questions, stay human; AI supports but never substitutes.",
+        "grounding": [
+          53,
+          13,
+          68
+        ],
+        "tension": false
+      },
+      {
+        "id": "P6",
+        "title": "Deliberation, not verdicts",
+        "text": "In value-laden domains AI asks for context and helps people think rather than delivering answers.",
+        "grounding": [
+          14,
+          41,
+          12
+        ],
+        "tension": true
+      },
+      {
+        "id": "P7",
+        "title": "Community authorship",
+        "text": "Communities can build or shape AI on their own values, each member seeing their own data first.",
+        "grounding": [
+          3,
+          17,
+          6
+        ],
+        "tension": false
+      },
+      {
+        "id": "P8",
+        "title": "Worldview transparency",
+        "text": "Disclose when a response carries a particular worldview and whose values defaults average over.",
+        "grounding": [
+          47,
+          48,
+          8
+        ],
+        "tension": false
+      },
+      {
+        "id": "P9",
+        "title": "Data & surveillance limits",
+        "text": "Strict, auditable limits on who accesses what people put into AI; AI-enabled surveillance treated as a first-order harm.",
+        "grounding": [
+          65,
+          67,
+          25
+        ],
+        "tension": false
+      },
+      {
+        "id": "P10",
+        "title": "The right not to be seen",
+        "text": "An effective, penalty-free right to keep AI out of one's inner, moral, and spiritual life, while protecting those who choose to invite it in.",
+        "grounding": [
+          23,
+          33,
+          16
+        ],
+        "tension": true
+      }
     ]
   },
   "panelist_quotes": [
