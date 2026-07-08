@@ -209,6 +209,16 @@ description: "What would AI governance need to do so that everyone felt seen by 
     </div>
   </section>
 
+  {# ---------- 00. the tl;dr ---------- #}
+  {% if C.tldr %}
+  <section aria-label="TL;DR" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-10">
+      <p class="gr-kicker mb-2">{{ C.tldr.kicker }}</p>
+      <p class="font-bold text-size-1">{{ C.tldr.text }}</p>
+    </div>
+  </section>
+  {% endif %}
+
   {# ---------- 1. what the room agreed on ---------- #}
   <section id="agreed" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
@@ -324,15 +334,6 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <p class="gr-prose font-bold text-size--1">{{ C.surprise.inner_life.takeaway }}</p>
     </div>
   </section>
-
-  {# ---------- closing ---------- #}
-  {% if C.closing %}
-  <section aria-label="Closing" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
-      <p class="gr-prose font-bold text-size-1">{{ C.closing }}</p>
-    </div>
-  </section>
-  {% endif %}
 
   {# ---------- 5. what happens next ---------- #}
   <section id="next" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
