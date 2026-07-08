@@ -65,18 +65,15 @@ table — re-renders from the new `results.json`. Editorial copy in
 `content.json` references statements by id, so it needs no edits unless the
 final data changes a *story* (e.g. a within-group split disappearing).
 
-Analysis rules live at the top of `scripts/analyze.py`: junk statements
-(22, 72, 75) excluded from rankings and the table; statements 0–19 are
-facilitator seeds; group ids map 0→A, 1→B, 2→C, 3→D; Group D (n=1) and the
-two unclustered participants count in totals but not group metrics;
-consensus = minimum agree rate across A/B/C (≥4 votes per group);
-divisiveness = spread of net agreement across A/B/C; per-group tallies on
-fewer than 5 votes get the ◔ "thin data" glyph.
-
-**Known gap in the current snapshot:** statements 79–82 have votes in the
-matrix but no text (the comment-groups export is an older snapshot); they
-render as "text pending the final data export" and will be fixed
-automatically by the final export.
+Analysis rules live at the top of `scripts/analyze.py`: non-substantive
+statements (22, 72, 75) excluded from rankings and the table; statements
+0–19 are facilitator seeds; the 15:05 clustering yields two blocs — group
+id 0 → bloc A (13, includes the facilitator seed account) and 2 → bloc C
+(22) — plus a 2-member leftover cluster and two unclustered participants,
+all counted in totals but never rendered as a faction; consensus =
+minimum agree rate across blocs A/C (≥4 votes per bloc); divisiveness =
+spread of net agreement between them; per-bloc tallies on fewer than 5
+votes get the ◔ "thin data" glyph.
 
 ## Flipping the quadratic-vote section
 
@@ -146,14 +143,15 @@ a draft until reviewed.
 
 | Page | Export | Pipeline |
 |---|---|---|
-| `/geneva-reflections/` + `/data/` | **09:00** (2,201 votes) | `scripts/analyze.py` (pinned to the 09:00 files) → `site-data/results.json` |
+| `/geneva-reflections/` + `/data/` | **15:05** (2,307 votes) | `scripts/analyze.py` (pinned to the 15:05 files) → `site-data/results.json` |
 | `/geneva-reflections/story/` | **15:05** (2,307 votes) | `scripts/story_compute.py` → `site-data/computed.json` |
 
-Never mix them: the published report reflects its snapshot and its tallies
-must not silently change. Small tally differences between the two pages
-are expected and disclosed on the story page. Both exports' CSVs and
-`computed.json` are downloadable from `/files/geneva-reflections/`
-(copied there by `story_compute.py`).
+Both pages now compute from the 15:05 export — the latest data is the
+data. The 09:00 CSVs stay in `data/` and at
+`/files/geneva-reflections/` for the record, but nothing on either page
+references, compares, or computes from them. (The story draft's limits
+section still contains a stale two-snapshot sentence; it is noindex and
+under separate review.)
 
 ### The story page's data rules
 
