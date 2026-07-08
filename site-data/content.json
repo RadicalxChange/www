@@ -109,7 +109,7 @@
       {
         "key": "A",
         "name": "Boundary Keepers",
-        "sketch": "Wants clear limits on where AI belongs. Whoever builds it, some human ground stays reserved: some questions should only ever be answered by a person, and being deeply known by a machine reads as a loss, not a comfort. On community-built AI, they abstained far more than they objected: seven of thirteen passed, four agreed, two disagreed.",
+        "sketch": "Wants clear limits on where AI belongs, and thinks some questions should only ever be answered by a person, and being deeply known by a machine reads as a loss, not a comfort. On community-built AI, they agreed or passed far more than they objected.",
         "cards": [],
         "references": [
           9,
@@ -364,6 +364,6 @@
   },
   "tldr": {
     "kicker": "00 · The TL;DR",
-    "text": "The room drew its red lines together — against intimate personalization, surveillance, and AI that flatters rather than challenges — and then split not over whether AI needs remaking but over the remedy. The larger bloc's answer is authorship: communities building and steering AI on their own terms, the one affirmative program in the data with broad support and no organized opposition. The smaller bloc's answer is boundaries: whoever builds it, some human ground stays reserved. And the boundary-keepers don't reject communal AI — they just passed on it, which suggests an invitation to demonstrate rather than a door closed."
+    "text": "The room drew its red lines together — against intimate personalization, surveillance, and AI that flatters rather than challenges — and then split not over whether AI needs remaking but over the remedy. The larger bloc's answer is authorship: communities building and steering AI on their own terms. The smaller bloc's answer is boundaries: whoever builds it, some human ground stays reserved. And the boundary-keepers appear open to communal AI — they mainly passed or agreed with those statements, an invitation to demonstrate rather than a door closed. That makes authorship the one affirmative program in the data with broad support and no organized opposition."
   }
 }
