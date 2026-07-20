@@ -7,15 +7,15 @@
 .geneva {
   --gr-group-a: #0072b2; /* Okabe–Ito blue */
   --gr-group-b: #d55e00; /* Okabe–Ito vermillion */
-  --gr-group-c: #009e73; /* Okabe–Ito bluish green */
-  /* vote palette (one system; bloc blue/green never shares an element
-     with it): agree = deep madder, inky enough to hold its own against
-     the black display type; pass = warm neutral; disagree keeps the
-     diagonal hatch in a cool ink-gray so grayscale/print/colorblind
-     readers get the same encoding. */
-  --gr-agree: #8c2b1e;
+  --gr-group-c: #8a5a0e; /* deep ochre — green now belongs to the vote palette */
+  /* vote palette (one system; bloc colors never share an element with
+     it): agree = deep green (7.13:1 on white, text-grade), pass = warm
+     neutral, disagree = diagonal hatch in deep red (7.52:1) so the
+     pattern still carries the encoding in grayscale, print, and for
+     colorblind readers — color is never the sole channel. */
+  --gr-agree: #166534;
   --gr-pass: #d9d2c9;
-  --gr-disagree-border: #47525c;
+  --gr-disagree-border: #a61b1b;
   --gr-rule: #e5e5e5;
 }
 
@@ -406,16 +406,25 @@
 }
 .geneva .gr-qv-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(9rem, 16rem) minmax(0, 1fr) auto;
   gap: 0.6rem;
   align-items: center;
   font-size: var(--step--2);
   margin: 0.3rem 0;
 }
+@media (max-width: 639px) {
+  .geneva .gr-qv-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .geneva .gr-qv-row > span[role="img"] {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+}
 .geneva .gr-qv-fill {
   display: block;
   height: 0.9rem;
-  background: #1a1a1a;
+  background: var(--gr-agree);
 }
 
 /* compact consensus themes: the section should scan, not sprawl */

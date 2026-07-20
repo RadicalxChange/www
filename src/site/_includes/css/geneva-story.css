@@ -2,11 +2,6 @@
    Inherits the .geneva component styles (cards, bars, kickers); everything
    here is scoped .st- and additive. */
 
-/* inline bloc-C text needs a darker green than the dot hue for WCAG AA */
-.geneva.st .gr-text-C {
-  color: #007858;
-}
-
 /* review banner */
 .geneva .st-banner {
   display: flex;

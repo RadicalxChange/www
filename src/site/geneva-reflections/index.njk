@@ -349,6 +349,23 @@ description: "What would AI governance need to do so that everyone felt seen by 
         </li>
         {% endfor %}
       </ol>
+
+      {% if QV.status == "final" and QV.sorted %}
+      <h3 class="mt-8 mb-2">{{ C.pipeline.qv_block.title }}</h3>
+      <p class="gr-prose gr-counts mb-6">{{ C.pipeline.qv_block.explainer }}</p>
+      <div class="flex flex-col gap-2 mb-6" style="max-width: 46em">
+        {% for item in QV.sorted %}
+        <div class="gr-qv-row">
+          <span class="text-size--2">{{ item.title }}</span>
+          <span role="img" aria-label="{{ item.title }}: {{ item.votes }} votes{% if item.unanimous %}, every voter in favor{% elif item.against == 0 %}, none against{% endif %}"><span class="gr-qv-fill" style="width: {{ (item.votes / QV.maxVotes * 100) | round(1) }}%"></span></span>
+          <span class="gr-counts"><strong class="text-black">{{ item.votes }}</strong>{% if item.unanimous %} · every voter in favor{% endif %}</span>
+        </div>
+        {% endfor %}
+      </div>
+      <p class="gr-counts mb-6" style="max-width: 46em">{{ QV.voters }} voters · {{ QV.credits_per_voter }} credits each · aggregate totals only, by design.</p>
+      <p class="gr-prose mb-6">{{ C.pipeline.qv_block.insights }}</p>
+      <p class="gr-prose font-bold">{{ C.pipeline.qv_block.forward }}</p>
+      {% endif %}
     </div>
   </section>
 
