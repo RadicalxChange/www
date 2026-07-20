@@ -97,8 +97,8 @@ description: "What would AI governance need to do so that everyone felt seen by 
 </div>
 {% endmacro %}
 
-{% set blocNames = {"A": "Boundary Keepers", "C": "Recognition Seekers"} %}
-{% set blocShort = {"A": "Boundary", "C": "Recognition"} %}
+{% set blocNames = {"A": "Boundary Keepers", "C": "Communal Builders"} %}
+{% set blocShort = {"A": "Boundary", "C": "Communal"} %}
 
 {% macro groupRows(s) %}
 <div class="flex flex-col gap-1">
@@ -194,9 +194,8 @@ description: "What would AI governance need to do so that everyone felt seen by 
       <div class="gr-stats">
     {% endif %}
         <div class="gr-stat"><span class="gr-stat-number">{{ P.participants }}</span><span class="gr-stat-label">participants</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ C.stats.continents_display }}</span><span class="gr-stat-label">continents</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements</span></div>
-        <div class="gr-stat"><span class="gr-stat-number">{{ P.opinion_groups }}</span><span class="gr-stat-label">opinion groups found</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_statements }}</span><span class="gr-stat-label">statements deliberated</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ QV.items | length }}</span><span class="gr-stat-label">principles distilled</span></div>
       </div>
     </div>
   </section>
@@ -291,49 +290,24 @@ description: "What would AI governance need to do so that everyone felt seen by 
     </div>
   </section>
 
-  {# ---------- 3. where it genuinely split ---------- #}
-  <section id="split" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-6 lg:mb-0">
-      <p class="gr-kicker mb-2">{{ C.split.kicker }}</p>
-      <h2 class="mb-4">{{ C.split.title }}</h2>
-      <p class="gr-prose mb-4">{{ C.split.lead }}</p>
-    </div>
-    <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
-      {{ cardFull(C.split.statement) }}
-    </div>
-  </section>
-
-  {# ---------- 4. the surprise (centerpiece) ---------- #}
-  <section id="surprise" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+  {# ---------- 3. the shared concern ---------- #}
+  {% if C.concern %}
+  <section id="concern" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-feature">
-      <p class="gr-kicker mb-2">{{ C.surprise.kicker }}</p>
-      <h2 class="mb-4">{{ C.surprise.title }}</h2>
-      <p class="gr-prose mb-10">{{ C.surprise.intro }}</p>
-
-      <p class="gr-kicker mb-1">{{ C.surprise.bedfellows.finding_label }}</p>
-      <h3 class="mb-2">{{ C.surprise.bedfellows.title }}</h3>
-      <p class="gr-prose mb-3">{{ C.surprise.bedfellows.caption }}</p>
-      <p class="gr-prose text-size--1 mb-2"><em>{{ C.surprise.bedfellows.reading }}</em></p>
-      <p class="gr-counts gr-prose mb-6">{{ C.surprise.bedfellows.cross_ref_note }} {% for sid in [9, 0] %}{{ refLine(sid) }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
-      <div class="grid gap-4 md:grid-cols-3 mb-4">
-        {% for sid in C.surprise.bedfellows.statements %}
+      <p class="gr-kicker mb-2">{{ C.concern.kicker }}</p>
+      <h2 class="mb-4">{{ C.concern.title }}</h2>
+      <p class="gr-prose mb-6">{{ C.concern.intro }}</p>
+      <div class="grid gap-4 md:grid-cols-2 mb-4" style="max-width: 56em">
+        {% for sid in C.concern.statements %}
         {{ cardFull(sid) }}
         {% endfor %}
       </div>
-      <p class="gr-prose font-bold text-size--1 mb-12">{{ C.surprise.bedfellows.takeaway }}</p>
-
-      <p class="gr-kicker mb-1">{{ C.surprise.inner_life.finding_label }}</p>
-      <h3 class="mb-2">{{ C.surprise.inner_life.title }}</h3>
-      <p class="gr-prose mb-3">{{ C.surprise.inner_life.caption }}</p>
-      <p class="gr-prose text-size--1 mb-6"><em>{{ C.surprise.inner_life.reading }}</em></p>
-      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4 mb-4">
-        {% for sid in C.surprise.inner_life.statements %}
-        {{ cardFull(sid) }}
-        {% endfor %}
-      </div>
-      <p class="gr-prose font-bold text-size--1">{{ C.surprise.inner_life.takeaway }}</p>
+      {% if C.concern.cross_refs %}
+      <p class="gr-counts">{% for ref in C.concern.cross_refs %}<a class="underline" href="#s{{ ref.id }}">{{ ref.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+      {% endif %}
     </div>
   </section>
+  {% endif %}
 
   {# ---------- 5. what happens next ---------- #}
   <section id="next" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
@@ -391,16 +365,7 @@ description: "What would AI governance need to do so that everyone felt seen by 
 
   {# ---------- page footer ---------- #}
   <section id="about-this-page" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
-    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-7 mb-6 lg:mb-0">
-      <h3 class="mb-2">Take part in what comes next</h3>
-      <p class="gr-prose text-size--1 mb-3">The Reflections Working Group — open to event participants — refines the ballot before the quadratic vote.</p>
-      {% if C.footer.rwg_signup_url %}
-      <a class="underline font-bold" href="{{ C.footer.rwg_signup_url }}">{{ C.footer.rwg_signup_label }} →</a>
-      {% else %}
-      <p class="text-size--1"><strong>{{ C.footer.rwg_signup_label }}:</strong> sign-up link coming shortly — meanwhile, write to <a class="underline" href="mailto:{{ C.footer.contact_email }}">{{ C.footer.contact_email }}</a>.</p>
-      {% endif %}
-    </div>
-    <div class="col-span-columns lg:col-start-column-8 lg:col-end-margin-2">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
       <h3 class="mb-2">About this data</h3>
       <p class="gr-counts mb-2">{{ C.footer.data_note }}</p>
       <p class="gr-counts mb-2">{{ C.footer.polis_credit }} <a class="underline" href="{{ C.footer.polis_url }}">pol.is</a></p>

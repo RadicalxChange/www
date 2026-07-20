@@ -47,10 +47,12 @@ module.exports = () => {
     (t.supporting || []).forEach(claim);
   });
   content.groups.list.forEach((g) => (g.cards || []).forEach(claim));
-  claim(content.split.statement);
-  if (content.split.resolved) claim(content.split.resolved.statement);
-  content.surprise.bedfellows.statements.forEach(claim);
-  content.surprise.inner_life.statements.forEach(claim);
+  if (content.split) claim(content.split.statement);
+  if (content.surprise) {
+    content.surprise.bedfellows.statements.forEach(claim);
+    content.surprise.inner_life.statements.forEach(claim);
+  }
+  if (content.concern) content.concern.statements.forEach(claim);
   content.carded = carded;
 
   // Final quadratic-vote results: aggregate item totals only (never voter-

@@ -2,8 +2,8 @@
   "status": "final",
   "voted_at": "2026-07-14",
   "voters": 17,
-  "credits_per_voter": 100,
-  "note": "Aggregates only, by design. One vote costs 1 credit, two cost 4, three cost 9; the ballot allowed spending against an item.",
+  "credits_per_voter": 99,
+  "note": "Aggregates only, by design. One vote costs 1 credit, two cost 4, three cost 9; a 99-credit budget nudges spending across items; the ballot allowed spending against an item.",
   "items": [
     {
       "title": "Challenge and correct",
