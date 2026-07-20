@@ -1,18 +1,69 @@
 {
-  "status": "pending",
-  "voted_at": null,
-  "voters": null,
-  "credits_per_voter": null,
-  "principles": [
-    { "id": "P1", "votes": null, "credits": null },
-    { "id": "P2", "votes": null, "credits": null },
-    { "id": "P3", "votes": null, "credits": null },
-    { "id": "P4", "votes": null, "credits": null },
-    { "id": "P5", "votes": null, "credits": null },
-    { "id": "P6", "votes": null, "credits": null },
-    { "id": "P7", "votes": null, "credits": null },
-    { "id": "P8", "votes": null, "credits": null },
-    { "id": "P9", "votes": null, "credits": null },
-    { "id": "P10", "votes": null, "credits": null }
+  "status": "final",
+  "voted_at": "2026-07-14",
+  "voters": 17,
+  "credits_per_voter": 100,
+  "note": "Aggregates only, by design. One vote costs 1 credit, two cost 4, three cost 9; the ballot allowed spending against an item.",
+  "items": [
+    {
+      "title": "Challenge and correct",
+      "votes": 43,
+      "against": 0,
+      "unanimous": false
+    },
+    {
+      "title": "Answerable values",
+      "votes": 45,
+      "against": 0,
+      "unanimous": false
+    },
+    {
+      "title": "No engineered dependence",
+      "votes": 41,
+      "against": 1,
+      "unanimous": false
+    },
+    {
+      "title": "Privacy, not surveillance",
+      "votes": 62,
+      "against": 0,
+      "unanimous": true
+    },
+    {
+      "title": "Care that leads to people",
+      "votes": 46,
+      "against": 1,
+      "unanimous": false
+    },
+    {
+      "title": "Teach wise use",
+      "votes": 44,
+      "against": 1,
+      "unanimous": false
+    },
+    {
+      "title": "The right to choose AI’s place in faith",
+      "votes": 15,
+      "against": 1,
+      "unanimous": false
+    },
+    {
+      "title": "Help us think, not answer for us",
+      "votes": 50,
+      "against": 0,
+      "unanimous": false
+    },
+    {
+      "title": "Never manipulate",
+      "votes": 62,
+      "against": 0,
+      "unanimous": true
+    },
+    {
+      "title": "Community-built AI",
+      "votes": 44,
+      "against": 0,
+      "unanimous": true
+    }
   ]
 }

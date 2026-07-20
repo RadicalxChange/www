@@ -75,22 +75,18 @@ minimum agree rate across blocs A/C (≥4 votes per bloc); divisiveness =
 spread of net agreement between them; per-bloc tallies on fewer than 5
 votes get the ◔ "thin data" glyph.
 
-## Flipping the quadratic-vote section
+## Quadratic-vote results (final)
 
-Edit `site-data/qv-results.json`:
+`site-data/qv-results.json` holds the final QV outcome as **aggregate item
+totals only** — voter-level data (the source sheet has names) must never
+enter the repo or the page. Shape: `{status: "final", voters, 
+credits_per_voter, items: [{title, votes, against, unanimous}]}`. Section
+05 renders the items as bars sorted by votes, with "every voter in favor"
+annotations where `unanimous` is true, plus the insights and
+Joint-Secretariat forward text from `content.json → pipeline.qv_block`.
 
-```json
-{
-  "status": "final",          // was "pending"
-  "voters": <n>,
-  "credits_per_voter": <n>,
-  "principles": [ { "id": "P1", "votes": <n>, "credits": <n> }, ... ]
-}
-```
-
-then rebuild. While `status` is `"pending"` the section shows "Voting opens
-soon / in progress"; when `"final"` it renders a credits-per-principle bar
-chart. Principle ids must match `content.json` → `pipeline.principles`.
+A draft blog post accompanying these results lives at
+`documentation/geneva-reflections-blog-draft.md` (not built).
 
 ## TODO placeholders
 

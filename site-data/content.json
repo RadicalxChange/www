@@ -196,27 +196,27 @@
   },
   "pipeline": {
     "kicker": "05 · From results to principles",
-    "title": "What happens next",
+    "title": "What happened next",
     "steps": [
       {
         "label": "Pol.is deliberation",
-        "detail": "38 participants, live during the side event and open for 24 hours after — the results on this page.",
+        "detail": "39 participants, live during the side event and open for 24 hours after — the results on this page.",
         "status": "done"
       },
       {
         "label": "Reflections Working Group",
-        "detail": "Where we are now: participants are making sense of these results together and distilling them into ballot items.",
-        "status": "current"
+        "detail": "Participants distilled the record into ten Geneva Reflection Principles and set the ballot.",
+        "status": "done"
       },
       {
-        "label": "24-hour Quadratic Vote",
-        "detail": "Every participant weighs the ballot with a shared budget of voice credits.",
-        "status": "upcoming"
+        "label": "Quadratic vote",
+        "detail": "17 participants weighed the ten principles, each with a budget of 100 voice credits.",
+        "status": "done"
       },
       {
-        "label": "Geneva Reflection Principles",
-        "detail": "The participant-authored principles, with their full voting record, submitted to the UN Global Dialogue's Joint Secretariat.",
-        "status": "upcoming"
+        "label": "UN Joint Secretariat",
+        "detail": "The principles, with their full voting record, were delivered to the Global Dialogue's Joint Secretariat ten days after the event.",
+        "status": "done"
       }
     ],
     "qv_explainer": "Quadratic voting measures how much people care, not just what they prefer. Each voter gets the same budget of credits; one vote for a principle costs 1 credit, two votes cost 4, three cost 9. Spreading credits is cheap, piling them on one priority is expensive — so the results reveal intensity honestly.",
@@ -335,7 +335,13 @@
         ],
         "tension": true
       }
-    ]
+    ],
+    "qv_block": {
+      "title": "What the vote prioritized",
+      "explainer": "Each of the 17 voters had 100 credits; one vote costs 1 credit, two cost 4, three cost 9 — so spending reveals how much people care, not just what they prefer. The ballot allowed spending against an item.",
+      "insights": "Three readings stand out. The room's red lines held under scarcity: forced to budget, Privacy, not surveillance and Never manipulate tied for first, and not one voter spent against either. The affirmative program held too: Community-built AI drew credits from every single voter — broad support and no organized opposition, confirmed under a budget. And the room spent on shared floors rather than on settling its inner divide: the right to choose AI's place in faith drew the least spending, with five voters leaving it untouched — the question the deliberation left open stayed open, on purpose.",
+      "forward": "Ten days after the event, the ten Geneva Reflection Principles — with this voting record — were delivered to the UN Joint Secretariat of the Global Dialogue on AI Governance. The conveners are now shaping the next phase: supporting communities of belief to author and govern AI of their own."
+    }
   },
   "panelist_quotes": [
     {
@@ -364,6 +370,6 @@
   },
   "tldr": {
     "kicker": "00 · The TL;DR",
-    "text": "The room drew its red lines together — against intimate personalization, surveillance, and AI that flatters rather than challenges — and then split not over whether AI needs remaking but over the remedy. The larger bloc's answer is authorship: communities building and steering AI on their own terms. The smaller bloc's answer is boundaries: whoever builds it, some human ground stays reserved. And the boundary-keepers appear open to communal AI — they mainly passed or agreed with those statements, an invitation to demonstrate rather than a door closed. That makes authorship the one affirmative program in the data with broad support and no organized opposition."
+    "text": "The room drew its red lines together — against intimate personalization, surveillance, and AI that flatters rather than challenges — and then split not over whether AI needs remaking but over the remedy. The larger bloc's answer is authorship: communities building and steering AI on their own terms. The smaller bloc's answer is boundaries: whoever builds it, some human ground stays reserved. And the boundary-keepers appear open to communal AI — they mainly passed or agreed with those statements, an invitation to demonstrate rather than a door closed. That makes authorship the one affirmative program in the data with broad support and no organized opposition. In the closing quadratic vote, protection from surveillance and manipulation tied for first — with not one vote against — and every voter spent credits for community-built AI. The ten principles are now with the UN Joint Secretariat."
   }
 }

@@ -53,19 +53,12 @@ module.exports = () => {
   content.surprise.inner_life.statements.forEach(claim);
   content.carded = carded;
 
-  qv.byId = Object.fromEntries(qv.principles.map((p) => [p.id, p]));
-  qv.maxCredits = Math.max(
-    1,
-    ...qv.principles.map((p) => (p.credits == null ? 0 : p.credits))
-  );
-  // Results view renders principles sorted by credits, descending.
-  qv.sorted =
-    qv.status === "final"
-      ? [...qv.principles].sort((a, b) => (b.credits || 0) - (a.credits || 0))
-      : qv.principles;
-  content.pipeline.principlesById = Object.fromEntries(
-    content.pipeline.principles.map((p) => [p.id, p])
-  );
+  // Final quadratic-vote results: aggregate item totals only (never voter-
+  // level data). Sorted by votes, descending, for the results bars.
+  if (qv.items) {
+    qv.sorted = [...qv.items].sort((a, b) => b.votes - a.votes);
+    qv.maxVotes = Math.max(1, ...qv.items.map((i) => i.votes));
+  }
 
   return { results, content, qv };
 };
