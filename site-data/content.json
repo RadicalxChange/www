@@ -103,13 +103,13 @@
   "groups": {
     "kicker": "02 · The people behind the votes",
     "title": "Two ways of seeing",
-    "intro": "Pol.is clusters participants by how they voted, not who they are. Two distinct ways of seeing the question emerged — and what separates them is the remedy, not whether AI needs remaking. These are positions, not caricatures — each is a coherent answer to what being “seen” by AI should mean.",
+    "intro": "Pol.is clusters participants by how they voted, not who they are. Two blocs emerged — split on the remedy, not on whether AI needs remaking.",
     "evidence_label": "Supporting evidence",
     "list": [
       {
         "key": "A",
         "name": "Boundary Keepers",
-        "sketch": "Wants clear limits on where AI belongs, and thinks some questions should only ever be answered by a person, and being deeply known by a machine reads as a loss, not a comfort. On community-built AI, they agreed or passed far more than they objected.",
+        "sketch": "Shares the concern about being known too well, and wants clear limits: some questions should only ever be answered by a person. On community-built AI they mostly passed rather than objected — openness to a vision they haven't yet seen demonstrated.",
         "cards": [],
         "references": [
           9,
@@ -121,8 +121,8 @@
       },
       {
         "key": "C",
-        "name": "Recognition Seekers",
-        "sketch": "Knows what it feels like when AI describes their faith or culture like an outsider. Their remedy is authorship: communities building and steering AI on their own terms — the one affirmative program in the data with broad support and no organized opposition.",
+        "name": "Communal Builders",
+        "sketch": "Knows what it feels like when AI describes their faith or culture like an outsider. Their answer is to build: communities authoring and governing AI on their own terms — the one affirmative program in the data.",
         "cards": [
           0,
           17,
@@ -136,43 +136,6 @@
       }
     ],
     "methods_note": "Per-bloc breakdowns cover the two blocs; the remaining participants are counted in totals only."
-  },
-  "split": {
-    "kicker": "03 · The deepest divide",
-    "title": "Where it genuinely split",
-    "lead": "“It isn't AI's job to reflect every culture's values” is the room's cleanest divide: the Boundary Keepers' signature position and the Recognition Seekers' sharpest rejection. Universality versus representation is a real disagreement, not a misunderstanding.",
-    "statement": 9
-  },
-  "surprise": {
-    "kicker": "04 · The findings a standard poll would miss",
-    "title": "The surprise",
-    "intro": "A standard opinion report stops at what separates the blocs. The two most consequential findings here run the other way — an agreement that joins the two blocs across their deepest divide, and a question that splits each bloc from within.",
-    "bedfellows": {
-      "finding_label": "Finding one — agreement across the divide",
-      "title": "Strange bedfellows",
-      "caption": "Boundary Keepers and Recognition Seekers stand at opposite poles on whose job it is to reflect a culture's values. But on one thing they speak with a single voice: they do not want AI to know them intimately. “I don't want to feel seen by AI” carried both blocs and the statements of loss beside it lean the same way.",
-      "reading": "How to read the cards: in each one, both blocs — the rivals of the divide above — lean the same way. Agreement that crosses the room's main fault line is the finding.",
-      "takeaway": "This is the room's hidden second consensus: whatever else AI becomes, the right not to be intimately known by it must be protected.",
-      "statements": [
-        23,
-        30,
-        55
-      ],
-      "cross_ref_note": "The divide these two blocs are known for:"
-    },
-    "inner_life": {
-      "finding_label": "Finding two — the divide inside each bloc",
-      "title": "The question that splits both blocs",
-      "caption": "Whether AI belongs in the inner and spiritual life — as a deepener of tradition, a moral interlocutor, or not at all — is not a fight between the blocs. It runs through them: members of the same bloc, who vote together on nearly everything else, part ways here.",
-      "reading": "How to read the cards: the bars below are within each bloc. Where a bloc's bar shows both solid (agree) and striped (disagree) in near-equal measure, that bloc is divided against itself.",
-      "takeaway": "Neither bloc can settle this question for the room, because neither has settled it for itself.",
-      "statements": [
-        1,
-        12,
-        33,
-        43
-      ]
-    }
   },
   "notes": {
     "title": "Reading these numbers",
@@ -195,27 +158,27 @@
     "csv_path": "/files/geneva-reflections-statements.csv"
   },
   "pipeline": {
-    "kicker": "05 · From results to principles",
-    "title": "What happened next",
+    "kicker": "04 · How it happened",
+    "title": "From a room to the UN",
     "steps": [
       {
         "label": "Pol.is deliberation",
-        "detail": "39 participants, live during the side event and open for 24 hours after — the results on this page.",
+        "detail": "39 participants wrote and voted on 84 statements, live and for 24 hours after — the results above.",
         "status": "done"
       },
       {
         "label": "Reflections Working Group",
-        "detail": "Participants distilled the record into ten Geneva Reflection Principles and set the ballot.",
+        "detail": "Participants distilled the record into ten Geneva Reflection Principles.",
         "status": "done"
       },
       {
         "label": "Quadratic vote",
-        "detail": "17 participants weighed the ten principles, each with a budget of 100 voice credits.",
+        "detail": "17 participants weighed the ten principles, 99 credits each.",
         "status": "done"
       },
       {
         "label": "UN Joint Secretariat",
-        "detail": "The principles, with their full voting record, were delivered to the Global Dialogue's Joint Secretariat ten days after the event.",
+        "detail": "The principles and their voting record, delivered ten days after the event.",
         "status": "done"
       }
     ],
@@ -338,8 +301,8 @@
     ],
     "qv_block": {
       "title": "What the vote prioritized",
-      "explainer": "Each of the 17 voters had 100 credits; one vote costs 1 credit, two cost 4, three cost 9 — so spending reveals how much people care, not just what they prefer. The ballot allowed spending against an item.",
-      "insights": "Three readings stand out. The room's red lines held under scarcity: forced to budget, Privacy, not surveillance and Never manipulate tied for first, and not one voter spent against either. The affirmative program held too: Community-built AI drew credits from every single voter — broad support and no organized opposition, confirmed under a budget. And the room spent on shared floors rather than on settling its inner divide: the right to choose AI's place in faith drew the least spending, with five voters leaving it untouched — the question the deliberation left open stayed open, on purpose.",
+      "explainer": "Each of the 17 voters had 99 credits: one vote costs 1, two cost 4, three cost 9 — spending reveals how much people care, and a budget just shy of 100 nudges it across items. Spending against an item was allowed.",
+      "insights": "The protections came first: Privacy, not surveillance and Never manipulate tied at 62, with not one vote against. Community-built AI finished mid-table on votes — but it was one of only three items every voter spent credits on: broad, unopposed support rather than intensity. And the room declined to force its open question: AI's place in faith drew the least spending.",
       "forward": "Ten days after the event, the ten Geneva Reflection Principles — with this voting record — were delivered to the UN Joint Secretariat of the Global Dialogue on AI Governance. The conveners are now shaping the next phase: supporting communities of belief to author and govern AI of their own."
     }
   },
@@ -370,6 +333,21 @@
   },
   "tldr": {
     "kicker": "00 · The TL;DR",
-    "text": "The room drew its red lines together — against intimate personalization, surveillance, and AI that flatters rather than challenges — and then split not over whether AI needs remaking but over the remedy. The larger bloc's answer is authorship: communities building and steering AI on their own terms. The smaller bloc's answer is boundaries: whoever builds it, some human ground stays reserved. And the boundary-keepers appear open to communal AI — they mainly passed or agreed with those statements, an invitation to demonstrate rather than a door closed. That makes authorship the one affirmative program in the data with broad support and no organized opposition. In the closing quadratic vote, protection from surveillance and manipulation tied for first — with not one vote against — and every voter spent credits for community-built AI. The ten principles are now with the UN Joint Secretariat."
+    "text": "The room agreed on the danger: AI that knows us too well — personalization sliding into dependence, dependence eroding human relationships. It split only on the remedy: Communal Builders are ready to author AI on their communities' own terms, while Boundary Keepers share the concern and mostly passed on the rest — an invitation to demonstrate. The closing vote confirmed the floor: the protections came first, and community-built AI was one of only three items every voter backed."
+  },
+  "concern": {
+    "kicker": "03 · The through-line",
+    "title": "The shared concern",
+    "intro": "Underneath everything, one worry unites the room: AI that comes too close to the person. Being known too deeply, engineered dependence, machines standing in for human relationships — both blocs drew the same line, and the closing vote put it first.",
+    "statements": [
+      23,
+      30
+    ],
+    "cross_refs": [
+      {
+        "id": 16,
+        "label": "The design demand this points to — statement [16], under Don't use knowing us against us"
+      }
+    ]
   }
 }

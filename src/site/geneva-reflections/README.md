@@ -29,8 +29,8 @@ src/site/js/geneva-reflections.js            <- progressive enhancement (video, 
 ```
 
 The main page is tiered: Tier 1 reads top-to-bottom with no interaction
-(consensus themes with one exemplar card each, the group portraits, the [9]
-divide, the bridging centerpiece, the pipeline); Tier 2 is native `<details>`
+(TL;DR, four pillars with one flagship card each, the bloc portraits, the
+shared-concern section, the process story with the QV results); Tier 2 is native `<details>`
 expanders (supporting statements, group signature cards, divide detail);
 Tier 3 is the full table on /geneva-reflections/data/ plus the CSV download.
 
@@ -68,8 +68,8 @@ final data changes a *story* (e.g. a within-group split disappearing).
 Analysis rules live at the top of `scripts/analyze.py`: non-substantive
 statements (22, 72, 75) excluded from rankings and the table; statements
 0–19 are facilitator seeds; the 15:05 clustering yields two blocs — group
-id 0 → bloc A (13, includes the facilitator seed account) and 2 → bloc C
-(22) — plus a 2-member leftover cluster and two unclustered participants,
+id 0 → bloc A (13, Boundary Keepers; includes the facilitator seed account)
+and 2 → bloc C (22, Communal Builders) — plus a 2-member leftover cluster and two unclustered participants,
 all counted in totals but never rendered as a faction; consensus =
 minimum agree rate across blocs A/C (≥4 votes per bloc); divisiveness =
 spread of net agreement between them; per-bloc tallies on fewer than 5
