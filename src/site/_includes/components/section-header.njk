@@ -1,0 +1,34 @@
+<!-- prettier-ignore -->
+{#
+  Section header — the shared "section header + rule + See all" motif.
+
+  Every listing and homepage section opens with this so the page has one
+  consistent rhythm instead of ad-hoc per-section headings.
+
+  Args:
+    title       (required) — section title, Suisse Bold
+    eyebrow     (optional) — small uppercase kicker above the title
+    seeAllHref  (optional) — if set, renders a right-aligned "See all →"
+    seeAllLabel (optional) — overrides the "See all" text
+#}
+{% macro render(title, eyebrow, seeAllHref, seeAllLabel) %}
+<div class="border-b border-black pb-element">
+  <!-- prettier-ignore -->
+  {% if eyebrow %}
+  <p class="mb-element text-size--1 font-bold uppercase tracking-wide">
+    {{ eyebrow }}
+  </p>
+  {% endif %}
+  <div class="flex items-baseline justify-between gap-element">
+    <h2 class="font-bold text-size-2">{{ title }}</h2>
+    <!-- prettier-ignore -->
+    {% if seeAllHref %}
+    <a
+      href="{{ seeAllHref }}"
+      class="shrink-0 text-size--1 uppercase tracking-wide thick-link"
+      >{{ seeAllLabel or "See all" }} &rarr;</a
+    >
+    {% endif %}
+  </div>
+</div>
+{% endmacro %}
