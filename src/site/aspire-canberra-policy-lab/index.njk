@@ -1,0 +1,402 @@
+---
+title: "ASPIRE National Forum Policy Lab — Results"
+description: "Results of the Policy Lab at the ASPIRE National Forum, Museum of Australian Democracy, Canberra, 10 August 2026: a Pol.is deliberation and quadratic vote on arts, culture and community participation as part of health in Australia."
+---
+
+<!-- prettier-ignore -->
+{% extends "layouts/_base.njk" %}
+
+<!-- prettier-ignore -->
+{% import "components/menu.njk" as menu %}
+<!-- prettier-ignore -->
+{% import "components/footer.njk" as footer %}
+
+<!-- prettier-ignore -->
+{% set R = aspire.results %}
+<!-- prettier-ignore -->
+{% set C = aspire.content %}
+<!-- prettier-ignore -->
+{% set QV = aspire.qv %}
+<!-- prettier-ignore -->
+{% set S = R.statements %}
+<!-- prettier-ignore -->
+{% set P = R.participation %}
+
+<!-- prettier-ignore -->
+{% block metaTags %}
+<meta name="description" content="{{ C.meta.description }}" />
+<meta property="og:locale" content="en_AU" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ C.meta.og_title }}" />
+<meta property="og:site_name" content="RadicalxChange" />
+<meta property="og:url" content="{{ metadata.url + page.url }}" />
+<meta property="og:image" content="{{ metadata.url }}/images/aspire-canberra/policy-lab-room-voting.jpg" />
+<meta property="og:image:width" content="2000" />
+<meta property="og:image:height" content="1500" />
+<meta property="og:description" content="{{ C.meta.description }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ C.meta.og_title }}" />
+<meta name="twitter:site" content="@radxchange" />
+<meta name="twitter:image" content="{{ metadata.url }}/images/aspire-canberra/policy-lab-room-voting.jpg" />
+<meta name="twitter:description" content="{{ C.meta.description }}" />
+<!-- prettier-ignore -->
+{% endblock %}
+
+{# Like /geneva-reflections, this page carries no analytics or tracking (a
+   condition of publishing deliberation results) and doesn't use KaTeX, so it
+   overrides the base layout's head blocks. See the README in this folder. #}
+<!-- prettier-ignore -->
+{% block headScripts %}
+<script
+  defer
+  src="https://unpkg.com/body-scroll-lock@3.0.2/lib/bodyScrollLock.min.js"
+  integrity="sha384-TPD9y0kmdvgK9D4a+br/KYlqMn9cLVXHDVxxN93FvPj+13bPJeMJZaXAB7+p/e7X"
+  crossorigin="anonymous"
+></script>
+<!-- prettier-ignore -->
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block mathStyles %}
+<!-- prettier-ignore -->
+{% endblock %}
+
+{# Preload only the fonts this page actually renders above the fold. #}
+<!-- prettier-ignore -->
+{% block fontPreloads %}
+<link rel="preload" href="/fonts/hinted-MesserV20-Condensed.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hinted-SuisseIntl-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hinted-SuisseIntl-Bold.woff2" as="font" type="font/woff2" crossorigin />
+<!-- prettier-ignore -->
+{% endblock %}
+
+{# ---------- macros ----------
+
+   Same number language as /geneva-reflections: the headline figure is always
+   "% agree (x/n)" and the only visual is the tricolor stacked
+   agree/pass/disagree bar. Full tallies live in tooltips and aria-labels.
+   Each statement renders as a card exactly once (enforced by aspire.js);
+   every other mention is a reference that anchor-links to the card, or to
+   its row on the data page.
+#}
+
+{% macro thinGlyph(t) %}{% if t.thin %}<span class="gr-thin"><span aria-hidden="true">◔</span><span class="sr-only"> (thin)</span></span>{% endif %}{% endmacro %}
+
+{% macro countsLine(t) %}{{ t.agrees }} agree · {{ t.disagrees }} disagree · {{ t.passes }} pass · n={{ t.votes }}{% endmacro %}
+
+{% macro figureFor(s) %}{{ (s.agree_rate * 100) | round }}% agree ({{ s.total.agrees }}/{{ s.total.votes }}){% endmacro %}
+
+{% macro floorNote(s) %}{% if s.consensus_min_agree_rate != null %} · all groups ≥ {{ (s.consensus_min_agree_rate * 100) | round(0, "floor") }}%{% endif %}{% endmacro %}
+
+{% macro stackBar(t, label) %}
+<div class="gr-stack" role="img" title="{{ label }}: {{ countsLine(t) }}" aria-label="{{ label }}: {{ countsLine(t) }}">
+  {% if t.votes > 0 %}
+  <span class="gr-seg gr-seg-agree" style="width: {{ (t.agrees / t.votes * 100) | round(1) }}%"></span>
+  <span class="gr-seg gr-seg-pass" style="width: {{ (t.passes / t.votes * 100) | round(1) }}%"></span>
+  <span class="gr-seg gr-seg-disagree" style="width: {{ (t.disagrees / t.votes * 100) | round(1) }}%"></span>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro groupName(key) %}{% for grp in C.groups.list %}{% if grp.key == key %}{{ grp.name }}{% endif %}{% endfor %}{% endmacro %}
+
+{% macro groupRows(s) %}
+<div class="flex flex-col gap-1">
+  {% for g in ["A", "B", "C"] %}
+  {% set t = s.groups[g] %}
+  <div class="gr-mini gr-mini-name">
+    <span class="font-bold gr-text-{{ g }}" aria-hidden="true">{{ g }}</span>
+    {{ stackBar(t, "Group " ~ g ~ " — " ~ groupName(g)) }}
+    <span class="gr-counts">{% if t.votes > 0 %}{{ (t.agree_rate * 100) | round }}% agree ({{ t.agrees }}/{{ t.votes }}){% else %}–{% endif %}{{ thinGlyph(t) }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro sourceBadge(s) %}<span class="gr-badge {% if s.source == 'live' %}text-black{% else %}text-gray{% endif %}">{{ "written live" if s.source == "live" else "seed" }}</span>{% endmacro %}
+
+{# Tier-1 card: quote, bar, one figure. #}
+{% macro cardCompact(sid) %}
+{% set s = S["" ~ sid] %}
+<div class="gr-card flex flex-col gap-3" id="s{{ s.id }}">
+  <p class="gr-stmt-text flex-grow">“{{ s.text }}”</p>
+  <div class="flex items-baseline gap-2 flex-wrap">
+    <span class="gr-counts">#{{ s.id }}</span>
+    {{ sourceBadge(s) }}
+  </div>
+  {{ stackBar(s.total, "All participants") }}
+  <p class="gr-counts"><strong class="text-black">{{ figureFor(s) }}</strong>{{ floorNote(s) }}</p>
+</div>
+{% endmacro %}
+
+{# Tier-2 card: adds the per-group breakdown; note flags e.g. rejections. #}
+{% macro cardFull(sid, note) %}
+{% set s = S["" ~ sid] %}
+<div class="gr-card flex flex-col gap-3" id="s{{ s.id }}">
+  <p class="gr-stmt-text flex-grow">“{{ s.text }}”</p>
+  <div class="flex items-baseline gap-2 flex-wrap">
+    <span class="gr-counts">#{{ s.id }}</span>
+    {{ sourceBadge(s) }}
+  </div>
+  {{ stackBar(s.total, "All participants") }}
+  <p class="gr-counts"><strong class="text-black">{{ figureFor(s) }}</strong>{% if note %} — {{ note }}{% endif %}</p>
+  {{ groupRows(s) }}
+</div>
+{% endmacro %}
+
+{# Text reference to a statement: links to its card here, or to its row on
+   the data page if it has no card. Never re-renders the card. #}
+{% macro refLine(sid) %}
+{% set s = S["" ~ sid] %}
+<a class="underline" href="{% if C.carded[sid] %}#s{{ sid }}{% else %}/aspire-canberra-policy-lab/data/#s{{ sid }}{% endif %}">[{{ sid }}] “{{ s.text | truncate(64) }}”</a> <span class="gr-counts">— {{ figureFor(s) }}</span>
+{% endmacro %}
+
+<!-- prettier-ignore -->
+{% block body %}
+{{ menu.render() }}
+
+<main class="geneva aspire-cb">
+
+  {# ---------- masthead ---------- #}
+  <header class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-12 lg:pt-16 pb-10">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
+      <p class="gr-kicker mb-3">{{ C.hero.kicker }}</p>
+      <h1 class="gr-masthead mb-2">{{ C.hero.title }}</h1>
+      <p class="gr-kicker mb-3">{{ C.hero.subtitle }}</p>
+      <p class="gr-counts gr-prose mb-2">{{ C.hero.event_date }} · {{ C.hero.venue }}</p>
+      <p class="gr-counts gr-prose">Convened by <a class="underline" href="{{ C.hero.aspire_url }}">ASPIRE</a> — the Australian Social Prescribing Institute for Research and Education; Policy Lab designed and facilitated by <a class="underline" href="{{ C.hero.rxc_url }}">RadicalxChange</a>.</p>
+    </div>
+    <div class="hidden md:block col-span-columns lg:col-start-column-10 lg:col-end-margin-2">
+      <img src="{{ C.media.room_banner.src }}" alt="{{ C.media.room_banner.alt }}" width="{{ C.media.room_banner.width }}" height="{{ C.media.room_banner.height }}" class="acb-photo" style="max-width: 18rem; margin-left: auto" decoding="async" />
+    </div>
+  </header>
+
+  {# ---------- about + participation band ---------- #}
+  <section aria-label="About the forum and participation" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-8 mb-6 lg:mb-0">
+      <p class="gr-prose mb-4">{{ C.hero.about_1 }}</p>
+      <p class="gr-prose">{{ C.hero.about_2 }}</p>
+    </div>
+    <div class="col-span-columns lg:col-start-column-9 lg:col-end-margin-2">
+      <div class="gr-stats gr-stats-col">
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.participants }}</span><span class="gr-stat-label">participants voting</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.shown_statements }}</span><span class="gr-stat-label">statements deliberated</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ P.total_votes_display }}</span><span class="gr-stat-label">votes cast</span></div>
+        <div class="gr-stat"><span class="gr-stat-number">{{ QV.options }}</span><span class="gr-stat-label">priorities weighed by {{ QV.voters }} voters</span></div>
+      </div>
+    </div>
+  </section>
+
+  {# ---------- the questions ---------- #}
+  <section aria-label="The questions put to the room" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.hero.questions_kicker }}</p>
+      {% for q in C.hero.questions %}
+      <p class="gr-counts{% if not loop.first %} mt-6{% endif %} mb-1">{{ q.tool }}</p>
+      <p class="gr-hero-question acb-question">“{{ q.text }}”</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ---------- 00. the tl;dr ---------- #}
+  {% if C.tldr %}
+  <section aria-label="TL;DR" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-10">
+      <p class="gr-kicker mb-2">{{ C.tldr.kicker }}</p>
+      <p class="font-bold text-size-1">{{ C.tldr.text }}</p>
+    </div>
+  </section>
+  {% endif %}
+
+  {# ---------- 01. what the room agreed on ---------- #}
+  <section id="agreed" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.consensus.kicker }}</p>
+      <h2 class="mb-4">{{ C.consensus.title }}</h2>
+      <p class="gr-prose mb-4">{{ C.consensus.intro }}</p>
+      <div class="gr-legend mb-8">
+        <span><span class="gr-swatch" style="background:var(--gr-agree)"></span>agree</span>
+        <span><span class="gr-swatch" style="background:var(--gr-pass)"></span>pass</span>
+        <span><span class="gr-swatch" style="background:repeating-linear-gradient(-45deg,#fff,#fff 3px,var(--gr-disagree-border) 3px,var(--gr-disagree-border) 4px)"></span>disagree</span>
+      </div>
+      <div class="grid gap-x-8 gap-y-8 md:grid-cols-2">
+        {% for theme in C.consensus.themes %}
+        <div class="gr-theme">
+          <h3 class="mb-2">{{ theme.title }}</h3>
+          <p class="text-size--1 mb-3">{{ theme.blurb }}</p>
+          {{ cardCompact(theme.exemplar) }}
+          <details class="mt-2">
+            <summary><span class="gr-counts">Supporting statements &amp; group detail</span></summary>
+            <div class="flex flex-col gap-4 pb-4">
+              <div>
+                <p class="gr-counts mb-1">By group, for the statement above:</p>
+                {{ groupRows(S["" ~ theme.exemplar]) }}
+              </div>
+              {% for sid in theme.supporting %}
+              {{ cardFull(sid, theme.notes["" ~ sid] if theme.notes else null) }}
+              {% endfor %}
+            </div>
+          </details>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {# ---------- 02. the three groups ---------- #}
+  <section id="groups" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.groups.kicker }}</p>
+      <h2 class="mb-4">{{ C.groups.title }}</h2>
+      <p class="gr-prose mb-8">{{ C.groups.intro }}</p>
+      <div class="gr-groups acb-groups-3">
+        {% for grp in C.groups.list %}
+        <article class="gr-group-col gr-border-{{ grp.key }}">
+          <h3 class="mb-1"><span class="gr-text-{{ grp.key }}">{{ grp.key }} — {{ grp.name }}</span></h3>
+          <p class="gr-counts mb-3">{{ P.group_sizes[grp.key] }} participants</p>
+          <p class="text-size--1 mb-3">{{ grp.sketch }}</p>
+          <details>
+            <summary><span class="gr-counts">{{ C.groups.evidence_label }}</span></summary>
+            <div class="flex flex-col gap-4 pb-4">
+              {% for sid in grp.cards %}
+              {{ cardFull(sid) }}
+              {% endfor %}
+              {% if grp.references | length > 0 %}
+              <ul class="flex flex-col gap-2 text-size--2">
+                {% for sid in grp.references %}
+                <li>{{ refLine(sid) }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+          </details>
+        </article>
+        {% endfor %}
+      </div>
+      <p class="gr-counts mt-4">{{ C.groups.methods_note }}</p>
+    </div>
+  </section>
+
+  {# ---------- 03. uncommon ground ---------- #}
+  {% if C.bridges %}
+  <section id="bridges" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-feature">
+      <p class="gr-kicker mb-2">{{ C.bridges.kicker }}</p>
+      <h2 class="mb-4">{{ C.bridges.title }}</h2>
+      <p class="gr-prose mb-6">{{ C.bridges.intro }}</p>
+      <div class="grid gap-4 md:grid-cols-2 mb-4" style="max-width: 56em">
+        {% for sid in C.bridges.statements %}
+        {{ cardFull(sid) }}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {# ---------- 04. the quadratic vote ---------- #}
+  {% if QV.status == "final" and QV.sorted %}
+  <section id="priorities" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.pipeline.qv_block.kicker }}</p>
+      <h2 class="mb-4">{{ C.pipeline.qv_block.title }}</h2>
+      <p class="gr-prose gr-counts mb-6">{{ C.pipeline.qv_block.explainer }}</p>
+      <div class="flex flex-col gap-2 mb-6" style="max-width: 46em">
+        {% for item in QV.sorted %}
+        <div class="gr-qv-row">
+          <span class="text-size--2"{% if item.description %} title="{{ item.description }}"{% endif %}>{{ item.title }}</span>
+          <span role="img" aria-label="{{ item.title }}: {{ item.votes }} net votes, {{ item.backers }} of {{ QV.voters }} voters in favour{% if item.against > 0 %}, {{ item.against }} against{% endif %}"><span class="gr-qv-fill" style="width: {{ (item.votes / QV.maxVotes * 100) | round(1) }}%"></span></span>
+          <span class="gr-counts"><strong class="text-black">{{ item.votes }}</strong> · {{ item.backers }} in favour{% if item.against > 0 %} · {{ item.against }} against{% endif %}</span>
+        </div>
+        {% endfor %}
+      </div>
+      <p class="gr-counts mb-6" style="max-width: 46em">{{ QV.voters }} voters · {{ QV.credits_per_voter }} credits each · {{ QV.credits_spent_display }} credits spent · aggregate totals only, by design.</p>
+      <p class="gr-prose mb-2" style="max-width: 56em">{{ C.pipeline.qv_block.insights }}</p>
+    </div>
+  </section>
+  {% endif %}
+
+  {# ---------- 05. how it happened ---------- #}
+  <section id="process" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2">
+      <p class="gr-kicker mb-2">{{ C.pipeline.kicker }}</p>
+      <h2 class="mb-6">{{ C.pipeline.title }}</h2>
+      <ol class="gr-pipeline acb-pipeline-5 mb-8">
+        {% for step in C.pipeline.steps %}
+        <li class="gr-step" data-status="{{ step.status }}">
+          <span class="gr-step-status">{% if step.status == "done" %}Complete{% elif step.status == "current" %}Under way{% else %}Coming up{% endif %}</span>
+          <h3>{{ step.label }}</h3>
+          <p class="text-size--1">{{ step.detail }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+      <div class="grid gap-6 md:grid-cols-2">
+        <figure>
+          <img src="{{ C.media.room_wide.src }}" alt="{{ C.media.room_wide.alt }}" width="{{ C.media.room_wide.width }}" height="{{ C.media.room_wide.height }}" class="acb-photo" loading="lazy" decoding="async" />
+          <figcaption class="gr-counts mt-2">{{ C.media.room_wide.alt }}</figcaption>
+        </figure>
+        <figure>
+          <video class="acb-video" controls muted loop playsinline preload="none" poster="{{ C.media.video.poster }}" aria-label="{{ C.media.video.aria_label }}">
+            <source src="{{ C.media.video.src }}" type="video/mp4" />
+          </video>
+          <figcaption class="gr-counts mt-2">{{ C.media.video.caption }}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  {# ---------- 06. full data ---------- #}
+  <section id="data" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-card flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8">
+      <a class="underline font-bold" href="/aspire-canberra-policy-lab/data/">{{ C.data_page.link_label }} →</a>
+      <a class="underline text-size--1" href="{{ C.data_page.csv_path }}" download>{{ C.data_page.csv_label }}</a>
+    </div>
+  </section>
+
+  {# ---------- about this data ---------- #}
+  <section id="about-this-data" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
+      <h3 class="mb-2">About this data</h3>
+      <p class="gr-counts mb-2">{{ C.footer.data_note }}</p>
+      <p class="gr-counts mb-2">{{ C.footer.polis_credit }} <a class="underline" href="{{ C.footer.polis_url }}">pol.is</a> · {{ C.footer.qv_credit }} <a class="underline" href="{{ C.footer.qv_url }}">quadraticvote.radicalxchange.org</a></p>
+      <p class="gr-counts">{{ C.footer.aspire_line }}</p>
+    </div>
+  </section>
+
+  {# ---------- closing CTA ---------- #}
+  <section id="stay-involved" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+    <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 gr-feature">
+      <h2 class="mb-4">Carry it forward</h2>
+      <p class="gr-prose mb-6">{{ C.cta.text }}</p>
+      <form
+        action="{{ C.cta.action }}"
+        method="post"
+        name="mc-embedded-subscribe-form"
+        target="_blank"
+        novalidate
+        class="acb-signup"
+      >
+        <input
+          type="email"
+          value=""
+          name="EMAIL"
+          placeholder="Type your email..."
+          aria-label="Email address"
+          required
+        />
+        <button type="submit" name="subscribe" class="uppercase">{{ C.cta.button }}</button>
+      </form>
+      <p class="gr-counts mt-3">{{ C.cta.privacy_note }} <a class="underline" href="https://mailchimp.com/legal/">Mailchimp's privacy practices</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+{{ footer.render() }}
+
+<script src="/js/geneva-reflections.js" defer></script>
+<script>
+  // prettier-ignore
+  {% include "components/menu.js" %}
+</script>
+<!-- prettier-ignore -->
+{% endblock %}

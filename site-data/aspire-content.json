@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "title": "ASPIRE National Forum Policy Lab — Results",
+    "og_title": "ASPIRE National Forum Policy Lab, Canberra — what the room agreed on, where it split, and what it chose to do next",
+    "description": "Results of the Policy Lab at the ASPIRE National Forum, Museum of Australian Democracy, Canberra, 10 August 2026: a Pol.is deliberation and quadratic vote on arts, culture and community participation as part of health in Australia."
+  },
+  "hero": {
+    "title": "The Policy Lab",
+    "kicker": "ASPIRE National Forum · Canberra",
+    "subtitle": "Arts, culture and community participation as part of health in Australia",
+    "event_date": "Monday 10 August 2026",
+    "venue": "Museum of Australian Democracy at Old Parliament House, Canberra",
+    "convener_line": "Convened by the Australian Social Prescribing Institute for Research and Education (ASPIRE); Policy Lab designed and facilitated by RadicalxChange.",
+    "aspire_url": "https://www.socialprescribing.org.au",
+    "rxc_url": "https://www.radicalxchange.org",
+    "about_1": "On Monday 10 August 2026, ASPIRE convened national and international leaders, practitioners and researchers at the Museum of Australian Democracy to advance the inclusion of arts, culture and creative practice in healthcare — one of the clearest, most under-recognised levers for prevention and wellbeing. Clinical services alone cannot address chronic disease, mental ill-health, loneliness and social fragmentation; governments already fund much of the work that can, but the value gets recorded in separate portfolio ledgers.",
+    "about_2": "The room included State, Territory and Commonwealth public servants across Health, Arts, Treasury and Finance, Social Services, Home Affairs and Infrastructure; researchers from universities, think tanks and not-for-profits; arts and culture practitioners, community-engaged organisations and cultural institutions; community services; primary care and mental health providers; and philanthropy and civil society. In the morning the room heard evidence and practice from global and Australian experts already delivering these connected approaches. In the afternoon, RadicalxChange facilitated a Policy Lab to turn that evidence into coordinated action.",
+    "questions_kicker": "The two questions put to the room",
+    "questions": [
+      {
+        "tool": "Pol.is deliberation",
+        "text": "What's actually going on right now with arts, culture and community participation as part of health in Australia?"
+      },
+      {
+        "tool": "Quadratic vote",
+        "text": "Given everything we've explored today, where should the ecosystem put its energy over the next 12 months?"
+      }
+    ]
+  },
+  "legend_note": "◔ = thin data: fewer than 5 votes cast in that group; treat as directional.",
+  "tldr": {
+    "kicker": "00 · The TL;DR",
+    "text": "This room agrees on a lot. Cross-sector partnership was the one statement every single voter endorsed; health is built in daily life, not in hospitals; and community organisations are already delivering health outcomes they are neither funded nor recognised for. The idea that arts and culture make no measurable difference to health was thrown out 66 votes to 1. The splits are about what could go wrong and who should pay: the largest group thinks the evidence is in and wants organised advocacy at scale; a second guards the arts against being turned into an instrument; a third wants government to own this beyond the electoral cycle. Asked where to put the next twelve months of energy, the room spread its credits across a broad, connected agenda — topped by a shared evidence framework that measures value across portfolios — and put more demonstration sites last."
+  },
+  "consensus": {
+    "kicker": "01 · The common ground",
+    "title": "What the room agreed on",
+    "intro": "Four threads drew support from every opinion group. The open questions the data surfaced — the evidence base, the role of philanthropy, the role of government, incentives and scale — come next.",
+    "themes": [
+      {
+        "title": "Cross-sector partnership is the point",
+        "blurb": "The one unanimous statement of the day, and its neighbours: investment and virtue don't belong to health or to the arts alone, and the connecting mechanisms are the missing infrastructure.",
+        "exemplar": 63,
+        "supporting": [52, 96, 20, 75]
+      },
+      {
+        "title": "Health is built in daily life",
+        "blurb": "Not in hospitals or clinics: arts, culture and creative outlets belong in health prevention, and connecting clinical care to community activity is worth doing.",
+        "exemplar": 35,
+        "supporting": [33, 13, 106]
+      },
+      {
+        "title": "Communities are already delivering — unrecognised",
+        "blurb": "Community organisations produce health outcomes they are neither funded nor recognised for; local capacity and genuinely participatory design are what needs nurturing.",
+        "exemplar": 3,
+        "supporting": [67, 94, 55]
+      },
+      {
+        "title": "Scale carefully — and stop re-proving the case",
+        "blurb": "Nobody in the room disputed that this work matters: the claim that it makes no measurable difference was rejected 66–1. Scaling should protect the relationships and local character that make it effective.",
+        "exemplar": 39,
+        "supporting": [54, 29, 44],
+        "notes": {
+          "29": "rejected across every group — the strongest disagreement in the data",
+          "44": "rejected: the room believes scale and intimacy can coexist"
+        }
+      }
+    ]
+  },
+  "groups": {
+    "kicker": "02 · The three splits",
+    "title": "Three ways of seeing",
+    "intro": "Pol.is clusters participants by how they voted, not who they are. Three groups emerged. They share the common ground above; what separates them is what they think could go wrong, and who they think should pay. Group names are editorial readings of the votes — the letters match the read-out shown in the room.",
+    "evidence_label": "Defining statements & group detail",
+    "list": [
+      {
+        "key": "A",
+        "name": "Momentum Makers",
+        "sketch": "The largest group. Thinks the evidence is in — “very strong”, needing “structured leadership and advocacy” — and that committed and passionate people are what pushes the agenda forward: not one member voted otherwise on either. Ready to scale from the good local examples Australia already has, without running more pilots.",
+        "cards": [87, 70, 2],
+        "references": [10, 86, 54, 66]
+      },
+      {
+        "key": "B",
+        "name": "Craft Guardians",
+        "sketch": "Sees the agenda from the arts sector's side and guards against the good going wrong: an arts-and-health push could become a perverse business model, framing arts primarily in health terms risks damaging the sector, and calling every park, library and choir “health infrastructure” risks stretching the term until it means nothing. The only group genuinely split on whether the evidence base is established.",
+        "cards": [14, 102, 41, 11],
+        "references": [91, 27, 93, 47]
+      },
+      {
+        "key": "C",
+        "name": "Long-Game Reformers",
+        "sketch": "Thinks government/s should pay for this, and wants a long-term agenda and funding at the centre. Philanthropy is currently funding work the government should be paying for — 18 votes to none — and short funding cycles are the single biggest barrier. The defining split is who pays, and the priority of thinking beyond the electoral cycle.",
+        "cards": [9, 8, 28],
+        "references": [34, 57, 19]
+      }
+    ],
+    "methods_note": "Per-group breakdowns cover the three clustered groups; one unclustered participant is counted in totals only. Group B's tallies on the seed statements include the facilitator seed account, which cast only passes."
+  },
+  "bridges": {
+    "kicker": "03 · Uncommon ground",
+    "title": "Ideas beneath the surface",
+    "intro": "A programme those who are divided might agree on: statements that carried every group despite the splits — experience-led rather than sector-led work, translation between the arts and health worlds, sustainability through existing approaches, and new, dedicated funding for scale.",
+    "statements": [99, 71, 104, 7]
+  },
+  "pipeline": {
+    "kicker": "05 · How it happened",
+    "title": "From evidence to a shared agenda",
+    "steps": [
+      {
+        "label": "The forum",
+        "detail": "Global and Australian experts already delivering connected arts-culture-health approaches presented evidence and practice through the morning.",
+        "status": "done"
+      },
+      {
+        "label": "Pol.is deliberation",
+        "detail": "73 participants wrote and voted on statements about what's actually going on — 6,723 votes across 117 statements, 68 of them written live in the room.",
+        "status": "done"
+      },
+      {
+        "label": "The pause",
+        "detail": "After a first round of evaluating priorities, the room stopped, collectively named the gaps in the option set, and decided together what additional options to put on the ballot before voting.",
+        "status": "done"
+      },
+      {
+        "label": "Quadratic vote",
+        "detail": "62 voters weighed the final 11 priorities with 99 credits each — spending 5,806 credits on where the ecosystem should put its energy over the next 12 months.",
+        "status": "done"
+      },
+      {
+        "label": "What comes next",
+        "detail": "ASPIRE shares these results with the ecosystem and carries the recommendations and actions of the event forward.",
+        "status": "current"
+      }
+    ],
+    "qv_block": {
+      "kicker": "04 · The priorities",
+      "title": "Where the room put its credits",
+      "explainer": "Each of the 62 voters had 99 credits: one vote for a priority costs 1 credit, two votes cost 4, three cost 9 — piling credits on a single priority is expensive, so the totals reveal how much people care, not just what they prefer. Voting against an option was allowed; totals are net.",
+      "insights": "The room funded an agenda, not a winner: the top eight priorities sit within 37 net votes of each other, from a shared health-and-culture evidence framework (170) through Treasury advocacy (169), support and training for artists (168), longer funding cycles (163), place-based coordination roles (162) and a cross-portfolio funding pool (160). The pattern breaks at the bottom: documentation of existing examples (89) and funded demonstration sites at genuine scale (54, with 10 of 62 voters spending against it) came last. Read together with the deliberation — where the room agreed it already has enough good local examples to justify scaling without more pilots — the message is consistent: stop proving, start building the connective tissue.",
+      "forward": "If you are interested in working with ASPIRE to carry forward any of the recommendations and actions of the event, the sign-up below goes to the team."
+    }
+  },
+  "data_page": {
+    "title": "Every statement and vote",
+    "intro": "The full record: every substantive statement voted on in the Policy Lab — three test entries and eight moderator-removed statements (mostly duplicates, each seen by at most two voters) are excluded from this table but flagged in the CSV — with room-wide tallies and each group's agree rate. Sort and filter, or just read — the table works without JavaScript too.",
+    "link_label": "Explore every statement and vote",
+    "csv_label": "Download the statement-level results (CSV)",
+    "csv_path": "/files/aspire-canberra-statements.csv"
+  },
+  "cta": {
+    "text": "Thank you for your contributions to the Policy Lab and the forum. If you are interested in working with ASPIRE to carry forward any of the recommendations and actions of the event, please enter your email address below and the team will be in touch.",
+    "action": "https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&id=2e47820582",
+    "button": "Keep me posted",
+    "privacy_note": "We use Mailchimp as our marketing platform. By subscribing, you acknowledge that your information will be transferred to Mailchimp for processing. You can unsubscribe at any time via the link in the footer of our emails."
+  },
+  "media": {
+    "room_wide": {
+      "src": "/images/aspire-canberra/policy-lab-room-voting.jpg",
+      "alt": "Participants at round tables in the Museum of Australian Democracy voting on their phones during the Policy Lab.",
+      "width": 2000,
+      "height": 1500
+    },
+    "room_banner": {
+      "src": "/images/aspire-canberra/policy-lab-aspire-banner.jpg",
+      "alt": "Policy Lab participants deliberating, with ASPIRE signage in the background.",
+      "width": 2000,
+      "height": 1500
+    },
+    "video": {
+      "src": "/images/aspire-canberra/policy-lab-room-pan.mp4",
+      "poster": "/images/aspire-canberra/policy-lab-room-pan-poster.jpg",
+      "caption": "Inside the Policy Lab: the room mid-deliberation, votes going in phone by phone.",
+      "aria_label": "Video: a slow pan of the Policy Lab room during voting"
+    }
+  },
+  "footer": {
+    "data_note": "All results are anonymous by design: aggregate tallies and verbatim unattributed statements only. Vote tallies and group breakdowns are computed from the participant-vote matrix in the Pol.is report export; the statement export is used only for statement text, so counts may differ by a vote or two from other snapshots of the same conversation. Pol.is re-clusters as votes accumulate: the groupings shown live in the room (28/14/30 of 72 voters) differ from the final export this page is computed from (31/21/20 of 73, plus one unclustered participant). Quadratic-vote results are aggregate option totals only; voter-level records never enter this site.",
+    "polis_credit": "Deliberation run on Pol.is, an open-source tool for large-scale opinion mapping.",
+    "polis_url": "https://pol.is",
+    "qv_credit": "Quadratic vote run on RadicalxChange's open-source quadratic voting app.",
+    "qv_url": "https://quadraticvote.radicalxchange.org",
+    "aspire_line": "ASPIRE — the Australian Social Prescribing Institute for Research and Education — is Australia's leading authority on advancing social prescribing: a cross-sectoral advocacy and convening organisation dedicated to research, fostering connections, and providing evidence and education on the social determinants of health."
+  }
+}
