@@ -278,27 +278,17 @@ description: "Results of the Policy Lab at the ASPIRE National Forum, Museum of 
   </section>
 
   {# ---------- 03. uncommon ground ---------- #}
-  {% if C.uncommon %}
-  <section id="uncommon" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+  {% if C.bridges %}
+  <section id="bridges" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-margin-2 gr-feature">
-      <p class="gr-kicker mb-2">{{ C.uncommon.kicker }}</p>
-      <h2 class="mb-4">{{ C.uncommon.title }}</h2>
-      <p class="gr-prose mb-6">{{ C.uncommon.intro }}</p>
+      <p class="gr-kicker mb-2">{{ C.bridges.kicker }}</p>
+      <h2 class="mb-4">{{ C.bridges.title }}</h2>
+      <p class="gr-prose mb-6">{{ C.bridges.intro }}</p>
       <div class="grid gap-4 md:grid-cols-2 mb-4" style="max-width: 56em">
-        {% for sid in C.uncommon.statements %}
-        {{ cardFull(sid, C.uncommon.notes["" ~ sid] if C.uncommon.notes else null) }}
-        {% endfor %}
-      </div>
-      <p class="gr-counts mb-10" style="max-width: 56em">{{ C.uncommon.tests_note }}</p>
-      {% if C.uncommon.bridge %}
-      <h3 class="mb-2">{{ C.uncommon.bridge.title }}</h3>
-      <p class="gr-prose mb-6">{{ C.uncommon.bridge.intro }}</p>
-      <div class="grid gap-4 md:grid-cols-2 mb-4" style="max-width: 56em">
-        {% for sid in C.uncommon.bridge.statements %}
+        {% for sid in C.bridges.statements %}
         {{ cardFull(sid) }}
         {% endfor %}
       </div>
-      {% endif %}
     </div>
   </section>
   {% endif %}

@@ -47,24 +47,8 @@ module.exports = () => {
     (t.supporting || []).forEach(claim);
   });
   content.groups.list.forEach((g) => (g.cards || []).forEach(claim));
-  if (content.uncommon) {
-    content.uncommon.statements.forEach(claim);
-    (content.uncommon.bridge ? content.uncommon.bridge.statements : []).forEach(claim);
-  }
+  if (content.bridges) content.bridges.statements.forEach(claim);
   content.carded = carded;
-
-  // The uncommon-ground cards must stay in lockstep with the computed
-  // cross-cutting flags — fail the build if editorial and analysis diverge.
-  if (content.uncommon) {
-    const computed = (results.rankings.cross_cutting || []).slice().sort();
-    const editorial = content.uncommon.statements.slice().sort();
-    if (JSON.stringify(computed) !== JSON.stringify(editorial)) {
-      throw new Error(
-        `aspire content.json: uncommon.statements [${editorial}] must match ` +
-          `rankings.cross_cutting [${computed}] from aspire_analyze.py.`
-      );
-    }
-  }
 
   // Final quadratic-vote results: aggregate item totals only (never voter-
   // level data). Sorted by votes, descending, for the results bars.

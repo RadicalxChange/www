@@ -46,18 +46,6 @@ Rules (see also src/site/aspire-canberra-policy-lab/README.md):
   - within_group_splits flags groups where opinion is genuinely divided:
     at least MIN_SPLIT_DECIDED non-pass votes and the minority side holds
     >= SPLIT_MINORITY_SHARE of them.
-  - Uncommon ground (cross-cutting divide), three tests on the per-group
-    agree rates: every group within [CROSS_LO, CROSS_HI] (0.35-0.65) and
-    the spread between the highest and lowest group <= CROSS_GAP (0.15).
-    The upper bound excludes statements where a cluster has moved well
-    past a simple majority; the lower bound excludes statements where
-    agreement in a cluster is too sparse to build on; the gap bound
-    excludes statements organised by the primary divide, which cannot
-    belong to a category defined by its absence. `cross_cutting` applies
-    the tests to agree rates over all votes cast (passes in the
-    denominator); `cross_cutting_decided` applies them to agree shares
-    among decided (non-pass) votes, >= MIN_SPLIT_DECIDED decided votes
-    per group required.
   - thin flags any per-group tally resting on fewer than THIN_VOTES votes.
 
 Re-running this script after replacing the CSVs fully refreshes every
@@ -91,9 +79,6 @@ MIN_TOTAL_VOTES_PASS_RANK = 10   # eligibility for the most-passed ranking
 THIN_VOTES = 5                   # below this a group tally is "thin data"
 MIN_SPLIT_DECIDED = 4            # a+d needed before a split can be flagged
 SPLIT_MINORITY_SHARE = 0.35      # minority share of non-pass votes
-CROSS_LO = 0.35                  # uncommon-ground band: lower bound…
-CROSS_HI = 0.65                  # …upper bound on every group's agree rate
-CROSS_GAP = 0.15                 # …and max spread between groups
 
 
 def load_comments(path):
@@ -182,22 +167,6 @@ def main():
         abc_agree = [by_group[g]["agree_rate"] for g in CLUSTERED_GROUPS] if eligible else []
         abc_net = [by_group[g]["net_agree"] for g in CLUSTERED_GROUPS] if eligible else []
 
-        # Uncommon ground: the divide cuts across the groups instead of
-        # between them. Two variants: agree rate over all votes cast, and
-        # agree share among decided (non-pass) votes.
-        cross = False
-        cross_decided = False
-        if eligible:
-            r = [by_group[g]["agree_rate"] for g in CLUSTERED_GROUPS]
-            cross = (max(r) <= CROSS_HI and min(r) >= CROSS_LO
-                     and max(r) - min(r) <= CROSS_GAP)
-            dec = [(by_group[g]["agrees"], by_group[g]["agrees"] + by_group[g]["disagrees"])
-                   for g in CLUSTERED_GROUPS]
-            if all(d >= MIN_SPLIT_DECIDED for _, d in dec):
-                rd = [a / d for a, d in dec]
-                cross_decided = (max(rd) <= CROSS_HI and min(rd) >= CROSS_LO
-                                 and max(rd) - min(rd) <= CROSS_GAP)
-
         splits = []
         for g in CLUSTERED_GROUPS:
             t = by_group.get(g)
@@ -225,8 +194,6 @@ def main():
             "consensus_min_agree_rate": round(min(abc_agree), 4) if eligible else None,
             "divisiveness": (round(max(abc_net) - min(abc_net), 4) if eligible else None),
             "within_group_splits": splits,
-            "cross_cutting": cross,
-            "cross_cutting_decided": cross_decided,
         }
 
     rankable = [s for s in statements.values() if s["eligible_for_rankings"]]
@@ -259,11 +226,6 @@ def main():
             "thin_data_below_votes": THIN_VOTES,
             "consensus_metric": "minimum agree rate across groups A/B/C",
             "divisiveness_metric": "spread of (agrees-disagrees)/votes across A/B/C",
-            "uncommon_ground_tests": (
-                f"every group's agree rate in [{CROSS_LO}, {CROSS_HI}] and "
-                f"spread across groups <= {CROSS_GAP}; the _decided variant "
-                "uses agree shares among non-pass votes"
-            ),
         },
         "participation": {
             "participants": len(rows),
@@ -283,9 +245,6 @@ def main():
             "consensus": [s["id"] for s in consensus],
             "divisive": [s["id"] for s in divisive],
             "most_passed": [s["id"] for s in passed],
-            "cross_cutting": sorted(
-                s["id"] for s in statements.values()
-                if s["cross_cutting"] or s["cross_cutting_decided"]),
         },
         "statements": statements,
     }
