@@ -149,10 +149,9 @@
     "csv_path": "/files/aspire-canberra-statements.csv"
   },
   "cta": {
-    "text": "Thank you for your contributions to the Policy Lab and the forum. If you are interested in working with ASPIRE to carry forward any of the recommendations and actions of the event, please enter your email address below and the team will be in touch.",
-    "action": "https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&id=2e47820582",
-    "button": "Keep me posted",
-    "privacy_note": "We use Mailchimp as our marketing platform. By subscribing, you acknowledge that your information will be transferred to Mailchimp for processing. You can unsubscribe at any time via the link in the footer of our emails."
+    "title": "Run a deliberation like this",
+    "text": "If you are interested in running a similar deliberation — and would like RadicalxChange's support in designing and facilitating it — get in touch:",
+    "email": "info@radicalxchange.org"
   },
   "media": {
     "room_wide": {
@@ -175,11 +174,11 @@
     }
   },
   "footer": {
-    "data_note": "All results are anonymous by design: aggregate tallies and verbatim unattributed statements only. Vote tallies and group breakdowns are computed from the participant-vote matrix in the Pol.is report export; the statement export is used only for statement text, so counts may differ by a vote or two from other snapshots of the same conversation. Pol.is re-clusters as votes accumulate: the groupings shown live in the room (28/14/30 of 72 voters) differ from the final export this page is computed from (31/21/20 of 73, plus one unclustered participant). Quadratic-vote results are aggregate option totals only; voter-level records never enter this site.",
+    "data_note": "All results are anonymous by design: aggregate tallies and verbatim unattributed statements only — no names, no individual voting records. Every number on this page is computed from the raw exports, nothing is hand-typed.",
+    "data_note_full": "All results are anonymous by design: aggregate tallies and verbatim unattributed statements only. Vote tallies and group breakdowns are computed from the participant-vote matrix in the Pol.is report export; the statement export is used only for statement text, so counts may differ by a vote or two from other snapshots of the same conversation. Pol.is re-clusters as votes accumulate: the groupings shown live in the room (28/14/30 of 72 voters) differ from the final export this page is computed from (31/21/20 of 73, plus one unclustered participant). Quadratic-vote results are aggregate option totals only; voter-level records never enter this site.",
     "polis_credit": "Deliberation run on Pol.is, an open-source tool for large-scale opinion mapping.",
     "polis_url": "https://pol.is",
     "qv_credit": "Quadratic vote run on RadicalxChange's open-source quadratic voting app.",
-    "qv_url": "https://quadraticvote.radicalxchange.org",
-    "aspire_line": "ASPIRE — the Australian Social Prescribing Institute for Research and Education — is Australia's leading authority on advancing social prescribing: a cross-sectoral advocacy and convening organisation dedicated to research, fostering connections, and providing evidence and education on the social determinants of health."
+    "qv_url": "https://quadraticvote.radicalxchange.org"
   }
 }

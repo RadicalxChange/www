@@ -356,36 +356,16 @@ description: "Results of the Policy Lab at the ASPIRE National Forum, Museum of 
   <section id="about-this-data" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9">
       <h3 class="mb-2">About this data</h3>
-      <p class="gr-counts mb-2">{{ C.footer.data_note }}</p>
-      <p class="gr-counts mb-2">{{ C.footer.polis_credit }} <a class="underline" href="{{ C.footer.polis_url }}">pol.is</a> · {{ C.footer.qv_credit }} <a class="underline" href="{{ C.footer.qv_url }}">quadraticvote.radicalxchange.org</a></p>
-      <p class="gr-counts">{{ C.footer.aspire_line }}</p>
+      <p class="gr-counts mb-2">{{ C.footer.data_note }} Full methodology notes are on the <a class="underline" href="/aspire-canberra-policy-lab/data/">data page</a>.</p>
+      <p class="gr-counts">{{ C.footer.polis_credit }} <a class="underline" href="{{ C.footer.polis_url }}">pol.is</a> · {{ C.footer.qv_credit }} <a class="underline" href="{{ C.footer.qv_url }}">quadraticvote.radicalxchange.org</a></p>
     </div>
   </section>
 
   {# ---------- closing CTA ---------- #}
-  <section id="stay-involved" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
+  <section id="get-in-touch" class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-16">
     <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 gr-feature">
-      <h2 class="mb-4">Carry it forward</h2>
-      <p class="gr-prose mb-6">{{ C.cta.text }}</p>
-      <form
-        action="{{ C.cta.action }}"
-        method="post"
-        name="mc-embedded-subscribe-form"
-        target="_blank"
-        novalidate
-        class="acb-signup"
-      >
-        <input
-          type="email"
-          value=""
-          name="EMAIL"
-          placeholder="Type your email..."
-          aria-label="Email address"
-          required
-        />
-        <button type="submit" name="subscribe" class="uppercase">{{ C.cta.button }}</button>
-      </form>
-      <p class="gr-counts mt-3">{{ C.cta.privacy_note }} <a class="underline" href="https://mailchimp.com/legal/">Mailchimp's privacy practices</a>.</p>
+      <h2 class="mb-4">{{ C.cta.title }}</h2>
+      <p class="gr-prose">{{ C.cta.text }} <a class="underline font-bold" href="mailto:{{ C.cta.email }}">{{ C.cta.email }}</a></p>
     </div>
   </section>
 
