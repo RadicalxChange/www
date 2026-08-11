@@ -35,29 +35,3 @@
   height: auto;
   background: #1a1a1a;
 }
-
-/* e-mail sign-up: same bones as the site footer form, on a light page */
-.aspire-cb .acb-signup {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  max-width: 30em;
-  border-bottom: 1px solid #1a1a1a;
-  padding-bottom: 0.5rem;
-}
-.aspire-cb .acb-signup input[type="email"] {
-  flex-grow: 1;
-  min-width: 0;
-  background: transparent;
-  outline: none;
-  font-size: var(--step--1);
-}
-.aspire-cb .acb-signup input[type="email"]::placeholder {
-  color: #6c6c6c;
-}
-.aspire-cb .acb-signup button {
-  font-size: var(--step--1);
-  font-weight: bold;
-  cursor: pointer;
-  white-space: nowrap;
-}

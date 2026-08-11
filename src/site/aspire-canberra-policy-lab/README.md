@@ -96,7 +96,8 @@ participant-votes matrix stays out of the repo.
 
 - Group names ("Momentum Makers", "Craft Guardians", "Long-Game
   Reformers") are **proposals** pending sign-off, as is the TL;DR text.
-- The sign-up form posts to the site's general Mailchimp list; if ASPIRE
-  follow-ups need their own list/tag, swap the `cta.action` URL in
-  `aspire-content.json`.
+- The closing CTA is a plain get-in-touch line (mailto
+  info@radicalxchange.org) inviting readers to run a similar
+  deliberation with RadicalxChange's support — no sign-up form, no
+  Mailchimp.
 - OG image is the room photo; a bespoke card was not designed.
