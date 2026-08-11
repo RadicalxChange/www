@@ -5,7 +5,10 @@ dist/
 .vscode
 .claude/
 
-# Raw Pol.is exports for /geneva-reflections: contain participant-level vote
+# Raw Pol.is exports (repo-root data/ only): contain participant-level vote
 # rows, so they stay out of the public repo. Only the aggregated
-# site-data/results.json is committed. See src/site/geneva-reflections/README.md
-data/
+# site-data/*.json is committed. See src/site/geneva-reflections/README.md.
+# The leading slash matters: a bare "data/" also matches nested directories
+# like src/site/<page>/data/, which silently dropped the Geneva data sub-page
+# from the repo (production 404).
+/data/
