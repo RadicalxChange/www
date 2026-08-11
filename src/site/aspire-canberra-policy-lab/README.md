@@ -77,6 +77,18 @@ Rules live at the top of `scripts/aspire_analyze.py`:
   are excluded from rankings and the table, kept flagged in the CSV.
 - Consensus = minimum agree rate across A/B/C (≥4 votes per group);
   divisiveness = spread of net agreement; thin-data glyph below 5 votes.
+- **Uncommon ground** (section 03) = the cross-cutting divide, three
+  tests on per-group agree rates: every group within 35–65% and spread
+  ≤15 points. Upper bound: no cluster has moved well past a simple
+  majority; lower bound: agreement nowhere too sparse to build on; gap
+  bound: a wide gap means the primary divide is organising the response,
+  and a statement organised by the primary divide cannot belong to a
+  category defined by its absence. Computed twice: on all votes cast
+  (`cross_cutting`) and on decided votes only (`cross_cutting_decided`);
+  the section shows the union ([16] and [17]), and `aspire.js` fails the
+  build if the editorial card list drifts from the computed flags. The
+  deck's bridge statements ([99] [71] [104] [7]) render beneath as
+  "Ideas beneath the surface".
 
 ## Refreshing the data
 

@@ -97,11 +97,21 @@
     ],
     "methods_note": "Per-group breakdowns cover the three clustered groups; one unclustered participant is counted in totals only. Group B's tallies on the seed statements include the facilitator seed account, which cast only passes."
   },
-  "bridges": {
+  "uncommon": {
     "kicker": "03 · Uncommon ground",
-    "title": "Ideas beneath the surface",
-    "intro": "A programme those who are divided might agree on: statements that carried every group despite the splits — experience-led rather than sector-led work, translation between the arts and health worlds, sustainability through existing approaches, and new, dedicated funding for scale.",
-    "statements": [99, 71, 104, 7]
+    "title": "The divides that cut across the groups",
+    "intro": "Most of what divides this room is organised by the three groups: on the contested statements, knowing someone's group predicts their vote. Uncommon ground is the remainder — statements where every group lands between 35% and 65% agreement, no more than 15 points apart. The disagreement is real, but it runs through every group rather than between them: these are the questions nobody's camp has settled. Exactly two statements qualify, and both are about delivery — know-how and capacity — not ideology.",
+    "statements": [16, 17],
+    "notes": {
+      "16": "agreement diluted by passing in every group — the room isn't sure health services know how",
+      "17": "qualifies on decided votes: 20 of 68 voters passed, and those who took a side split close to even in every group"
+    },
+    "tests_note": "The three tests: every group's agree rate at or below 65% (no cluster has moved well past a simple majority), at or above 35% (agreement nowhere too sparse to build on), and a spread of at most 15 points between groups (a wide gap means the primary divide is organising the response — and a statement organised by the primary divide cannot belong to a category defined by its absence). Statement [16] passes on all votes cast; [17] passes with passes set aside.",
+    "bridge": {
+      "title": "Ideas beneath the surface",
+      "intro": "The complement of the open questions above — a programme those who are divided might still agree on: statements that carried every group despite the splits. Experience-led rather than sector-led work, translation between the arts and health worlds, sustainability through existing approaches, and new, dedicated funding for scale.",
+      "statements": [99, 71, 104, 7]
+    }
   },
   "pipeline": {
     "kicker": "05 · How it happened",
