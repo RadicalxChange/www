@@ -1,0 +1,98 @@
+{
+  "status": "final",
+  "question": "Given everything we've explored today, where should the ecosystem put its energy over the next 12 months?",
+  "voters": 62,
+  "credits_per_voter": 99,
+  "credits_spent": 5806,
+  "options": 11,
+  "items": [
+    {
+      "title": "A shared health-and-culture evidence framework that measures public value across sectors, not just outputs within each silo",
+      "description": "",
+      "votes": 170,
+      "credits": 656,
+      "backers": 56,
+      "against": 2
+    },
+    {
+      "title": "Advocate to Treasury to embed wellbeing and prevention in decisions and institutions, with accountability for progress",
+      "description": "",
+      "votes": 169,
+      "credits": 779,
+      "backers": 52,
+      "against": 5
+    },
+    {
+      "title": "Support and training for artists/arts sector to enable health outcomes safely",
+      "description": "",
+      "votes": 168,
+      "credits": 684,
+      "backers": 55,
+      "against": 4
+    },
+    {
+      "title": "Longer funding cycles for community and arts organisations",
+      "description": "",
+      "votes": 163,
+      "credits": 587,
+      "backers": 56,
+      "against": 1
+    },
+    {
+      "title": "Place-based local coordination roles and referral infrastructure connecting health and community assets",
+      "description": "",
+      "votes": 162,
+      "credits": 644,
+      "backers": 56,
+      "against": 4
+    },
+    {
+      "title": "A dedicated cross-portfolio funding pool for health-generating infrastructure",
+      "description": "",
+      "votes": 160,
+      "credits": 576,
+      "backers": 57,
+      "against": 3
+    },
+    {
+      "title": "Improve mechanisms that enable government departments to work together rather than in silos",
+      "description": "",
+      "votes": 149,
+      "credits": 605,
+      "backers": 53,
+      "against": 4
+    },
+    {
+      "title": "Dedicated funding at local, state and commonwealth levels building capacity in community organisations to create health outcomes",
+      "description": "",
+      "votes": 133,
+      "credits": 475,
+      "backers": 54,
+      "against": 4
+    },
+    {
+      "title": "Targeted investment in communities with the fewest existing assets",
+      "description": "",
+      "votes": 103,
+      "credits": 327,
+      "backers": 44,
+      "against": 2
+    },
+    {
+      "title": "Documentation of leading Australian examples of combined arts-and-health approaches",
+      "description": "",
+      "votes": 89,
+      "credits": 247,
+      "backers": 48,
+      "against": 6
+    },
+    {
+      "title": "Funded demonstration sites at genuine scale",
+      "description": "",
+      "votes": 54,
+      "credits": 226,
+      "backers": 32,
+      "against": 10
+    }
+  ]
+}

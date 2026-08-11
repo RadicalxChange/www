@@ -1,0 +1,6179 @@
+{
+  "source_files": {
+    "participant_votes": "participant-votes.csv",
+    "comments": "comments.csv",
+    "report": "https://pol.is/report/r2fdeyrm3xmhrn2e8eekt"
+  },
+  "export_summary": {
+    "voters": "73",
+    "voters_in_conv": "72",
+    "commenters": "34",
+    "comments": "117",
+    "groups": "3"
+  },
+  "rules": {
+    "junk_ids": [
+      49,
+      50,
+      51
+    ],
+    "min_group_votes_for_rankings": 4,
+    "thin_data_below_votes": 5,
+    "consensus_metric": "minimum agree rate across groups A/B/C",
+    "divisiveness_metric": "spread of (agrees-disagrees)/votes across A/B/C"
+  },
+  "participation": {
+    "participants": 73,
+    "total_votes": 6723,
+    "total_statements": 117,
+    "shown_statements": 106,
+    "rejected_statements": 8,
+    "seed_statements": 49,
+    "live_statements": 68,
+    "live_share": 0.5812,
+    "group_sizes": {
+      "B": 21,
+      "C": 20,
+      "A": 31
+    },
+    "unclustered": 1,
+    "opinion_groups": 3,
+    "bloc_participants": 72
+  },
+  "rankings": {
+    "consensus": [
+      63,
+      35,
+      96,
+      52,
+      94,
+      39,
+      55,
+      106,
+      20,
+      13,
+      70,
+      75,
+      3,
+      62,
+      85,
+      30,
+      33,
+      67,
+      69,
+      92,
+      109,
+      88,
+      83,
+      71,
+      82,
+      76,
+      101,
+      77,
+      78,
+      54,
+      61,
+      64,
+      99,
+      90,
+      97,
+      98,
+      12,
+      73,
+      86,
+      81,
+      84,
+      89,
+      15,
+      105,
+      80,
+      111,
+      7,
+      16,
+      18,
+      1,
+      66,
+      100,
+      104,
+      68,
+      74,
+      10,
+      38,
+      46,
+      108,
+      113,
+      2,
+      47,
+      87,
+      41,
+      95,
+      110,
+      112,
+      4,
+      6,
+      23,
+      93,
+      22,
+      56,
+      72,
+      79,
+      48,
+      27,
+      21,
+      34,
+      60,
+      57,
+      9,
+      17,
+      107,
+      58,
+      91,
+      5,
+      102,
+      24,
+      28,
+      53,
+      8,
+      59,
+      31,
+      44,
+      19,
+      65,
+      25,
+      14,
+      43,
+      103,
+      11,
+      29
+    ],
+    "divisive": [
+      14,
+      8,
+      11,
+      9,
+      53,
+      102,
+      91,
+      27,
+      34,
+      57,
+      2,
+      25,
+      113,
+      43,
+      47,
+      41,
+      66,
+      28,
+      24,
+      48,
+      103,
+      21,
+      93,
+      110,
+      108,
+      23,
+      65,
+      111,
+      72,
+      87,
+      100,
+      95,
+      10,
+      19,
+      15,
+      80,
+      60,
+      86,
+      31,
+      112,
+      84,
+      104,
+      59,
+      85,
+      56,
+      74,
+      58,
+      98,
+      79,
+      5,
+      92,
+      12,
+      78,
+      22,
+      70,
+      33,
+      44,
+      73,
+      7,
+      54,
+      64,
+      107,
+      67,
+      18,
+      90,
+      88,
+      61,
+      13,
+      17,
+      1,
+      75,
+      81,
+      89,
+      82,
+      4,
+      6,
+      55,
+      76,
+      77,
+      101,
+      99,
+      109,
+      46,
+      69,
+      83,
+      94,
+      35,
+      39,
+      105,
+      3,
+      16,
+      38,
+      30,
+      71,
+      106,
+      68,
+      20,
+      96,
+      97,
+      52,
+      62,
+      29,
+      63
+    ],
+    "most_passed": [
+      107,
+      65,
+      56,
+      22,
+      58,
+      68,
+      114,
+      97,
+      24,
+      21,
+      17,
+      112,
+      72,
+      43,
+      5,
+      28,
+      16,
+      25,
+      46,
+      79,
+      31,
+      34,
+      105,
+      80,
+      104,
+      14,
+      113,
+      60,
+      38,
+      4,
+      1,
+      102,
+      62,
+      57,
+      18,
+      15,
+      6,
+      9,
+      87,
+      103,
+      101,
+      59,
+      78,
+      91,
+      115,
+      53,
+      90,
+      111,
+      47,
+      48,
+      61,
+      69,
+      95,
+      19,
+      99,
+      100,
+      73,
+      30,
+      81,
+      27,
+      74,
+      3,
+      41,
+      110,
+      84,
+      89,
+      7,
+      8,
+      12,
+      93,
+      20,
+      109,
+      10,
+      83,
+      77,
+      76,
+      54,
+      71,
+      64,
+      44,
+      11,
+      66,
+      2,
+      108,
+      82,
+      86,
+      98,
+      106,
+      23,
+      75,
+      39,
+      96,
+      55,
+      67,
+      70,
+      52,
+      85,
+      92,
+      13,
+      33,
+      88,
+      94,
+      29,
+      35,
+      63
+    ]
+  },
+  "statements": {
+    "0": {
+      "id": 0,
+      "text": "The most effective arts and health work happening right now depends on individual relationships, not formal agreements.\nWe already have enough good local examples in Australia to justify scaling without running more pilots.\nCommunity organisations are currently delivering health outcomes they are neither funded nor recognised for.\nThe most promising work in this space is happening outside the heal",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 1,
+        "agrees": 0,
+        "disagrees": 0,
+        "passes": 1
+      },
+      "agree_rate": 0.0,
+      "pass_rate": 1.0,
+      "net_agree": 0.0,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 1,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "1": {
+      "id": 1,
+      "text": "The most effective arts and health work happening right now depends on individual relationships, not formal agreements.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 72,
+        "agrees": 43,
+        "disagrees": 14,
+        "passes": 15
+      },
+      "agree_rate": 0.5972,
+      "pass_rate": 0.2083,
+      "net_agree": 0.4028,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 17,
+          "disagrees": 8,
+          "passes": 6,
+          "agree_rate": 0.5484,
+          "net_agree": 0.2903,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 12,
+          "disagrees": 3,
+          "passes": 6,
+          "agree_rate": 0.5714,
+          "net_agree": 0.4286,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 14,
+          "disagrees": 3,
+          "passes": 3,
+          "agree_rate": 0.7,
+          "net_agree": 0.55,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5484,
+      "divisiveness": 0.2597,
+      "within_group_splits": []
+    },
+    "2": {
+      "id": 2,
+      "text": "We already have enough good local examples in Australia to justify scaling without running more pilots.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 71,
+        "agrees": 56,
+        "disagrees": 8,
+        "passes": 7
+      },
+      "agree_rate": 0.7887,
+      "pass_rate": 0.0986,
+      "net_agree": 0.6761,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 27,
+          "disagrees": 2,
+          "passes": 1,
+          "agree_rate": 0.9,
+          "net_agree": 0.8333,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 10,
+          "disagrees": 6,
+          "passes": 5,
+          "agree_rate": 0.4762,
+          "net_agree": 0.1905,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 19,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.95,
+          "net_agree": 0.95,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4762,
+      "divisiveness": 0.7595,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "3": {
+      "id": 3,
+      "text": "Community organisations are currently delivering health outcomes they are neither funded nor recognised for.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 70,
+        "agrees": 59,
+        "disagrees": 1,
+        "passes": 10
+      },
+      "agree_rate": 0.8429,
+      "pass_rate": 0.1429,
+      "net_agree": 0.8286,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 25,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.8621,
+          "net_agree": 0.8276,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 16,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.7619,
+          "net_agree": 0.7619,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.9,
+          "net_agree": 0.9,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7619,
+      "divisiveness": 0.1381,
+      "within_group_splits": []
+    },
+    "4": {
+      "id": 4,
+      "text": "The most promising work in this space is happening outside the health system, not within it.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 71,
+        "agrees": 40,
+        "disagrees": 16,
+        "passes": 15
+      },
+      "agree_rate": 0.5634,
+      "pass_rate": 0.2113,
+      "net_agree": 0.338,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 18,
+          "disagrees": 9,
+          "passes": 4,
+          "agree_rate": 0.5806,
+          "net_agree": 0.2903,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 9,
+          "disagrees": 4,
+          "passes": 7,
+          "agree_rate": 0.45,
+          "net_agree": 0.25,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 13,
+          "disagrees": 3,
+          "passes": 4,
+          "agree_rate": 0.65,
+          "net_agree": 0.5,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.45,
+      "divisiveness": 0.25,
+      "within_group_splits": []
+    },
+    "5": {
+      "id": 5,
+      "text": "The portfolio that pays for the intervention is almost never the one that sees the benefit.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 25,
+        "disagrees": 25,
+        "passes": 19
+      },
+      "agree_rate": 0.3623,
+      "pass_rate": 0.2754,
+      "net_agree": 0.0,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 9,
+          "disagrees": 13,
+          "passes": 8,
+          "agree_rate": 0.3,
+          "net_agree": -0.1333,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 6,
+          "disagrees": 7,
+          "passes": 6,
+          "agree_rate": 0.3158,
+          "net_agree": -0.0526,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 10,
+          "disagrees": 5,
+          "passes": 5,
+          "agree_rate": 0.5,
+          "net_agree": 0.25,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3,
+      "divisiveness": 0.3833,
+      "within_group_splits": [
+        "A",
+        "B"
+      ]
+    },
+    "6": {
+      "id": 6,
+      "text": "There is already enough money in the system, it's just in the wrong places.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 42,
+        "disagrees": 14,
+        "passes": 13
+      },
+      "agree_rate": 0.6087,
+      "pass_rate": 0.1884,
+      "net_agree": 0.4058,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 20,
+          "disagrees": 5,
+          "passes": 5,
+          "agree_rate": 0.6667,
+          "net_agree": 0.5,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 9,
+          "disagrees": 4,
+          "passes": 7,
+          "agree_rate": 0.45,
+          "net_agree": 0.25,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 13,
+          "disagrees": 5,
+          "passes": 1,
+          "agree_rate": 0.6842,
+          "net_agree": 0.4211,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.45,
+      "divisiveness": 0.25,
+      "within_group_splits": []
+    },
+    "7": {
+      "id": 7,
+      "text": "This work will not scale without new, dedicated funding.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 47,
+        "disagrees": 12,
+        "passes": 9
+      },
+      "agree_rate": 0.6912,
+      "pass_rate": 0.1324,
+      "net_agree": 0.5147,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 22,
+          "disagrees": 5,
+          "passes": 2,
+          "agree_rate": 0.7586,
+          "net_agree": 0.5862,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 11,
+          "disagrees": 5,
+          "passes": 4,
+          "agree_rate": 0.55,
+          "net_agree": 0.3,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 14,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.7368,
+          "net_agree": 0.6316,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.55,
+      "divisiveness": 0.3316,
+      "within_group_splits": []
+    },
+    "8": {
+      "id": 8,
+      "text": "Short funding cycles are the single biggest barrier to this work right now.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 46,
+        "disagrees": 13,
+        "passes": 9
+      },
+      "agree_rate": 0.6765,
+      "pass_rate": 0.1324,
+      "net_agree": 0.4853,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 24,
+          "disagrees": 5,
+          "passes": 1,
+          "agree_rate": 0.8,
+          "net_agree": 0.6333,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 5,
+          "disagrees": 8,
+          "passes": 6,
+          "agree_rate": 0.2632,
+          "net_agree": -0.1579,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8947,
+          "net_agree": 0.8947,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2632,
+      "divisiveness": 1.0526,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "9": {
+      "id": 9,
+      "text": "Philanthropy is currently funding work that the government should be paying for.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 42,
+        "disagrees": 14,
+        "passes": 13
+      },
+      "agree_rate": 0.6087,
+      "pass_rate": 0.1884,
+      "net_agree": 0.4058,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 17,
+          "disagrees": 7,
+          "passes": 6,
+          "agree_rate": 0.5667,
+          "net_agree": 0.3333,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 7,
+          "disagrees": 7,
+          "passes": 6,
+          "agree_rate": 0.35,
+          "net_agree": 0.0,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9474,
+          "net_agree": 0.9474,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.35,
+      "divisiveness": 0.9474,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "10": {
+      "id": 10,
+      "text": "We have enough evidence — the barrier is political will, not proof.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 52,
+        "disagrees": 7,
+        "passes": 8
+      },
+      "agree_rate": 0.7761,
+      "pass_rate": 0.1194,
+      "net_agree": 0.6716,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 27,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.9643,
+          "net_agree": 0.9286,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 11,
+          "disagrees": 3,
+          "passes": 7,
+          "agree_rate": 0.5238,
+          "net_agree": 0.381,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 14,
+          "disagrees": 3,
+          "passes": 1,
+          "agree_rate": 0.7778,
+          "net_agree": 0.6111,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5238,
+      "divisiveness": 0.5476,
+      "within_group_splits": []
+    },
+    "11": {
+      "id": 11,
+      "text": "The evidence base is still too weak to justify major health system investment.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 10,
+        "disagrees": 52,
+        "passes": 7
+      },
+      "agree_rate": 0.1449,
+      "pass_rate": 0.1014,
+      "net_agree": -0.6087,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 1,
+          "disagrees": 28,
+          "passes": 0,
+          "agree_rate": 0.0345,
+          "net_agree": -0.931,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 8,
+          "disagrees": 7,
+          "passes": 5,
+          "agree_rate": 0.4,
+          "net_agree": 0.05,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 1,
+          "disagrees": 17,
+          "passes": 2,
+          "agree_rate": 0.05,
+          "net_agree": -0.8,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.0345,
+      "divisiveness": 0.981,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "12": {
+      "id": 12,
+      "text": "Current measurement frameworks cannot capture the value this work creates.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 47,
+        "disagrees": 12,
+        "passes": 9
+      },
+      "agree_rate": 0.6912,
+      "pass_rate": 0.1324,
+      "net_agree": 0.5147,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 19,
+          "disagrees": 6,
+          "passes": 5,
+          "agree_rate": 0.6333,
+          "net_agree": 0.4333,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 13,
+          "disagrees": 5,
+          "passes": 2,
+          "agree_rate": 0.65,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8333,
+          "net_agree": 0.7778,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6333,
+      "divisiveness": 0.3778,
+      "within_group_splits": []
+    },
+    "13": {
+      "id": 13,
+      "text": "Social prescribing, neighbourhood health or other connections between clinical care and arts and cultural outlets are still treated as a nice-to-have rather than core health infrastructure.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 64,
+        "disagrees": 2,
+        "passes": 3
+      },
+      "agree_rate": 0.9275,
+      "pass_rate": 0.0435,
+      "net_agree": 0.8986,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 30,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.9677,
+          "net_agree": 0.9355,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.7895,
+          "net_agree": 0.7368,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 19,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7895,
+      "divisiveness": 0.2632,
+      "within_group_splits": []
+    },
+    "14": {
+      "id": 14,
+      "text": "Framing arts and culture primarily in health terms risks damaging the arts sector.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 30,
+        "disagrees": 24,
+        "passes": 15
+      },
+      "agree_rate": 0.4348,
+      "pass_rate": 0.2174,
+      "net_agree": 0.087,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 4,
+          "disagrees": 21,
+          "passes": 5,
+          "agree_rate": 0.1333,
+          "net_agree": -0.5667,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 13,
+          "disagrees": 2,
+          "passes": 5,
+          "agree_rate": 0.65,
+          "net_agree": 0.55,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 13,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.6842,
+          "net_agree": 0.6316,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1333,
+      "divisiveness": 1.1983,
+      "within_group_splits": []
+    },
+    "15": {
+      "id": 15,
+      "text": "Clinicians currently see connecting people with things outside of health care as extra work rather than part of their job.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 47,
+        "disagrees": 8,
+        "passes": 13
+      },
+      "agree_rate": 0.6912,
+      "pass_rate": 0.1912,
+      "net_agree": 0.5735,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 17,
+          "disagrees": 5,
+          "passes": 7,
+          "agree_rate": 0.5862,
+          "net_agree": 0.4138,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 12,
+          "disagrees": 3,
+          "passes": 5,
+          "agree_rate": 0.6,
+          "net_agree": 0.45,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9474,
+          "net_agree": 0.9474,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5862,
+      "divisiveness": 0.5336,
+      "within_group_splits": []
+    },
+    "16": {
+      "id": 16,
+      "text": "Health services genuinely want to connect people to community activities but don't know how.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 41,
+        "disagrees": 11,
+        "passes": 17
+      },
+      "agree_rate": 0.5942,
+      "pass_rate": 0.2464,
+      "net_agree": 0.4348,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 19,
+          "disagrees": 4,
+          "passes": 7,
+          "agree_rate": 0.6333,
+          "net_agree": 0.5,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 11,
+          "disagrees": 3,
+          "passes": 6,
+          "agree_rate": 0.55,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 11,
+          "disagrees": 4,
+          "passes": 4,
+          "agree_rate": 0.5789,
+          "net_agree": 0.3684,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.55,
+      "divisiveness": 0.1316,
+      "within_group_splits": []
+    },
+    "17": {
+      "id": 17,
+      "text": "Community organisations are already at capacity and could not absorb more referrals tomorrow.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 28,
+        "disagrees": 20,
+        "passes": 20
+      },
+      "agree_rate": 0.4118,
+      "pass_rate": 0.2941,
+      "net_agree": 0.1176,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 10,
+          "disagrees": 10,
+          "passes": 9,
+          "agree_rate": 0.3448,
+          "net_agree": 0.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 7,
+          "disagrees": 4,
+          "passes": 9,
+          "agree_rate": 0.35,
+          "net_agree": 0.15,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 11,
+          "disagrees": 6,
+          "passes": 2,
+          "agree_rate": 0.5789,
+          "net_agree": 0.2632,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3448,
+      "divisiveness": 0.2632,
+      "within_group_splits": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "18": {
+      "id": 18,
+      "text": "The communities that would benefit most currently have the fewest of these assets.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 43,
+        "disagrees": 11,
+        "passes": 13
+      },
+      "agree_rate": 0.6418,
+      "pass_rate": 0.194,
+      "net_agree": 0.4776,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 20,
+          "disagrees": 5,
+          "passes": 4,
+          "agree_rate": 0.6897,
+          "net_agree": 0.5172,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 11,
+          "disagrees": 5,
+          "passes": 4,
+          "agree_rate": 0.55,
+          "net_agree": 0.3,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6111,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.55,
+      "divisiveness": 0.3111,
+      "within_group_splits": []
+    },
+    "19": {
+      "id": 19,
+      "text": "Philanthropy is better placed than government to fund the innovative and experimental.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 71,
+        "agrees": 24,
+        "disagrees": 36,
+        "passes": 11
+      },
+      "agree_rate": 0.338,
+      "pass_rate": 0.1549,
+      "net_agree": -0.169,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 6,
+          "disagrees": 20,
+          "passes": 5,
+          "agree_rate": 0.1935,
+          "net_agree": -0.4516,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 9,
+          "disagrees": 7,
+          "passes": 5,
+          "agree_rate": 0.4286,
+          "net_agree": 0.0952,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 9,
+          "disagrees": 9,
+          "passes": 1,
+          "agree_rate": 0.4737,
+          "net_agree": 0.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1935,
+      "divisiveness": 0.5468,
+      "within_group_splits": [
+        "B",
+        "C"
+      ]
+    },
+    "20": {
+      "id": 20,
+      "text": "The bridges and mechanisms that connect health and the arts are the missing infrastructure, not more programs.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 57,
+        "disagrees": 3,
+        "passes": 9
+      },
+      "agree_rate": 0.8261,
+      "pass_rate": 0.1304,
+      "net_agree": 0.7826,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 26,
+          "disagrees": 3,
+          "passes": 2,
+          "agree_rate": 0.8387,
+          "net_agree": 0.7419,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 16,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.8,
+          "net_agree": 0.8,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8333,
+          "net_agree": 0.8333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8,
+      "divisiveness": 0.0914,
+      "within_group_splits": []
+    },
+    "21": {
+      "id": 21,
+      "text": "Loneliness and disconnection are now bigger drivers of poor health in my community than any clinical factor.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 43,
+        "disagrees": 5,
+        "passes": 21
+      },
+      "agree_rate": 0.6232,
+      "pass_rate": 0.3043,
+      "net_agree": 0.5507,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 20,
+          "disagrees": 1,
+          "passes": 9,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6333,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 7,
+          "disagrees": 4,
+          "passes": 8,
+          "agree_rate": 0.3684,
+          "net_agree": 0.1579,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 16,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.8,
+          "net_agree": 0.8,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3684,
+      "divisiveness": 0.6421,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "22": {
+      "id": 22,
+      "text": "I've seen the benefits of joined-up thinking land in one part of the system, while funding and credit stay with the old model.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 41,
+        "disagrees": 5,
+        "passes": 23
+      },
+      "agree_rate": 0.5942,
+      "pass_rate": 0.3333,
+      "net_agree": 0.5217,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 22,
+          "disagrees": 1,
+          "passes": 7,
+          "agree_rate": 0.7333,
+          "net_agree": 0.7,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 9,
+          "disagrees": 2,
+          "passes": 10,
+          "agree_rate": 0.4286,
+          "net_agree": 0.3333,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 10,
+          "disagrees": 2,
+          "passes": 6,
+          "agree_rate": 0.5556,
+          "net_agree": 0.4444,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4286,
+      "divisiveness": 0.3667,
+      "within_group_splits": []
+    },
+    "23": {
+      "id": 23,
+      "text": "In my experience, there's little reward for working across silos — the incentives all point back to staying in your lane.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 37,
+        "disagrees": 26,
+        "passes": 6
+      },
+      "agree_rate": 0.5362,
+      "pass_rate": 0.087,
+      "net_agree": 0.1594,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 14,
+          "disagrees": 15,
+          "passes": 1,
+          "agree_rate": 0.4667,
+          "net_agree": -0.0333,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 9,
+          "disagrees": 8,
+          "passes": 3,
+          "agree_rate": 0.45,
+          "net_agree": 0.05,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 14,
+          "disagrees": 3,
+          "passes": 2,
+          "agree_rate": 0.7368,
+          "net_agree": 0.5789,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.45,
+      "divisiveness": 0.6122,
+      "within_group_splits": [
+        "A",
+        "B"
+      ]
+    },
+    "24": {
+      "id": 24,
+      "text": "The people who inspire me most in this field work outside the mainstream, and their stories rarely get told.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 71,
+        "agrees": 38,
+        "disagrees": 11,
+        "passes": 22
+      },
+      "agree_rate": 0.5352,
+      "pass_rate": 0.3099,
+      "net_agree": 0.3803,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 17,
+          "disagrees": 5,
+          "passes": 8,
+          "agree_rate": 0.5667,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 6,
+          "disagrees": 5,
+          "passes": 10,
+          "agree_rate": 0.2857,
+          "net_agree": 0.0476,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.75,
+          "net_agree": 0.7,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2857,
+      "divisiveness": 0.6524,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "25": {
+      "id": 25,
+      "text": "My own breakthroughs have only come from breaking the rules, not following them.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 70,
+        "agrees": 25,
+        "disagrees": 28,
+        "passes": 17
+      },
+      "agree_rate": 0.3571,
+      "pass_rate": 0.2429,
+      "net_agree": -0.0429,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 9,
+          "disagrees": 13,
+          "passes": 8,
+          "agree_rate": 0.3,
+          "net_agree": -0.1333,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 3,
+          "disagrees": 10,
+          "passes": 7,
+          "agree_rate": 0.15,
+          "net_agree": -0.35,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 13,
+          "disagrees": 5,
+          "passes": 2,
+          "agree_rate": 0.65,
+          "net_agree": 0.4,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.15,
+      "divisiveness": 0.75,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "26": {
+      "id": 26,
+      "text": "I've wanted to take a creative risk at work but held back because it didn't feel safe to fail.",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 2,
+        "agrees": 0,
+        "disagrees": 1,
+        "passes": 1
+      },
+      "agree_rate": 0.0,
+      "pass_rate": 0.5,
+      "net_agree": -0.5,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "27": {
+      "id": 27,
+      "text": "Arts and culture shouldn't have to compensate for a health system that ignores the whole person.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 39,
+        "disagrees": 19,
+        "passes": 10
+      },
+      "agree_rate": 0.5735,
+      "pass_rate": 0.1471,
+      "net_agree": 0.2941,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 11,
+          "disagrees": 13,
+          "passes": 5,
+          "agree_rate": 0.3793,
+          "net_agree": -0.069,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 12,
+          "disagrees": 4,
+          "passes": 4,
+          "agree_rate": 0.6,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 16,
+          "disagrees": 2,
+          "passes": 1,
+          "agree_rate": 0.8421,
+          "net_agree": 0.7368,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3793,
+      "divisiveness": 0.8058,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "28": {
+      "id": 28,
+      "text": "Funding for arts-based health programs should come from health budgets, not arts budgets.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 31,
+        "disagrees": 20,
+        "passes": 17
+      },
+      "agree_rate": 0.4559,
+      "pass_rate": 0.25,
+      "net_agree": 0.1618,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 12,
+          "disagrees": 10,
+          "passes": 6,
+          "agree_rate": 0.4286,
+          "net_agree": 0.0714,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 6,
+          "disagrees": 8,
+          "passes": 7,
+          "agree_rate": 0.2857,
+          "net_agree": -0.0952,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 13,
+          "disagrees": 2,
+          "passes": 4,
+          "agree_rate": 0.6842,
+          "net_agree": 0.5789,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2857,
+      "divisiveness": 0.6741,
+      "within_group_splits": [
+        "A",
+        "B"
+      ]
+    },
+    "29": {
+      "id": 29,
+      "text": "I don't believe arts and culture make a measurable difference to health outcomes.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 1,
+        "disagrees": 66,
+        "passes": 2
+      },
+      "agree_rate": 0.0145,
+      "pass_rate": 0.029,
+      "net_agree": -0.942,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 1,
+          "disagrees": 30,
+          "passes": 0,
+          "agree_rate": 0.0323,
+          "net_agree": -0.9355,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 0,
+          "disagrees": 19,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.95,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 0,
+          "disagrees": 17,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.9444,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.0,
+      "divisiveness": 0.0145,
+      "within_group_splits": []
+    },
+    "30": {
+      "id": 30,
+      "text": "In my experience, health services treat creative therapies as a \"nice to have,\" not real care.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 51,
+        "disagrees": 6,
+        "passes": 10
+      },
+      "agree_rate": 0.7612,
+      "pass_rate": 0.1493,
+      "net_agree": 0.6716,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 21,
+          "disagrees": 4,
+          "passes": 3,
+          "agree_rate": 0.75,
+          "net_agree": 0.6071,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.75,
+          "net_agree": 0.7,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.7895,
+          "net_agree": 0.7368,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.75,
+      "divisiveness": 0.1297,
+      "within_group_splits": []
+    },
+    "31": {
+      "id": 31,
+      "text": "The barriers people face accessing arts and culture for wellbeing are more about feeling worthy than about money or availability.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 23,
+        "disagrees": 30,
+        "passes": 16
+      },
+      "agree_rate": 0.3333,
+      "pass_rate": 0.2319,
+      "net_agree": -0.1014,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 6,
+          "disagrees": 16,
+          "passes": 7,
+          "agree_rate": 0.2069,
+          "net_agree": -0.3448,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 6,
+          "disagrees": 6,
+          "passes": 8,
+          "agree_rate": 0.3,
+          "net_agree": 0.0,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 11,
+          "disagrees": 8,
+          "passes": 1,
+          "agree_rate": 0.55,
+          "net_agree": 0.15,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2069,
+      "divisiveness": 0.4948,
+      "within_group_splits": [
+        "B",
+        "C"
+      ]
+    },
+    "32": {
+      "id": 32,
+      "text": "The health system's obsession with measurable outcomes crowds out approaches, like the arts, that are harder to quantify.",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 2,
+        "agrees": 1,
+        "disagrees": 0,
+        "passes": 1
+      },
+      "agree_rate": 0.5,
+      "pass_rate": 0.5,
+      "net_agree": 0.5,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "33": {
+      "id": 33,
+      "text": "Arts, culture and creative outlets should be considered essential parts of health prevention.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 70,
+        "agrees": 65,
+        "disagrees": 2,
+        "passes": 3
+      },
+      "agree_rate": 0.9286,
+      "pass_rate": 0.0429,
+      "net_agree": 0.9,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 30,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 15,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.75,
+          "net_agree": 0.65,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 20,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.75,
+      "divisiveness": 0.35,
+      "within_group_splits": []
+    },
+    "34": {
+      "id": 34,
+      "text": "Extra funding should go to community organisations and groups delivering health-improving activities, not to administrative bodies or systems that just connect people to them.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 40,
+        "disagrees": 13,
+        "passes": 16
+      },
+      "agree_rate": 0.5797,
+      "pass_rate": 0.2319,
+      "net_agree": 0.3913,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 18,
+          "disagrees": 5,
+          "passes": 7,
+          "agree_rate": 0.6,
+          "net_agree": 0.4333,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 7,
+          "disagrees": 8,
+          "passes": 4,
+          "agree_rate": 0.3684,
+          "net_agree": -0.0526,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.75,
+          "net_agree": 0.75,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3684,
+      "divisiveness": 0.8026,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "35": {
+      "id": 35,
+      "text": "Health is built in daily life, not in hospitals or clinics.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 63,
+        "disagrees": 4,
+        "passes": 2
+      },
+      "agree_rate": 0.913,
+      "pass_rate": 0.029,
+      "net_agree": 0.8551,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 27,
+          "disagrees": 3,
+          "passes": 0,
+          "agree_rate": 0.9,
+          "net_agree": 0.8,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 19,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.95,
+          "net_agree": 0.95,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 17,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8947,
+          "net_agree": 0.8421,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8947,
+      "divisiveness": 0.15,
+      "within_group_splits": []
+    },
+    "36": {
+      "id": 36,
+      "text": "Government is already funding health-generating activity, it just isn’t being recognised or measured.",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 2,
+        "agrees": 1,
+        "disagrees": 0,
+        "passes": 1
+      },
+      "agree_rate": 0.5,
+      "pass_rate": 0.5,
+      "net_agree": 0.5,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "37": {
+      "id": 37,
+      "text": "Arts and cultural programs should not be required to justify themselves in clinical or medical terms.",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 2,
+        "agrees": 1,
+        "disagrees": 0,
+        "passes": 1
+      },
+      "agree_rate": 0.5,
+      "pass_rate": 0.5,
+      "net_agree": 0.5,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "38": {
+      "id": 38,
+      "text": "Every time we ask a community program to prove itself in clinical terms, we risk destroying the very thing that made it work.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 70,
+        "agrees": 40,
+        "disagrees": 15,
+        "passes": 15
+      },
+      "agree_rate": 0.5714,
+      "pass_rate": 0.2143,
+      "net_agree": 0.3571,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 17,
+          "disagrees": 8,
+          "passes": 6,
+          "agree_rate": 0.5484,
+          "net_agree": 0.2903,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 10,
+          "disagrees": 2,
+          "passes": 8,
+          "agree_rate": 0.5,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 13,
+          "disagrees": 5,
+          "passes": 1,
+          "agree_rate": 0.6842,
+          "net_agree": 0.4211,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.1308,
+      "within_group_splits": []
+    },
+    "39": {
+      "id": 39,
+      "text": "Scaling what works in this space should be done carefully, so it doesn't strip out the relationships, creativity and local character that make it effective.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 63,
+        "disagrees": 0,
+        "passes": 5
+      },
+      "agree_rate": 0.9265,
+      "pass_rate": 0.0735,
+      "net_agree": 0.9265,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 27,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.931,
+          "net_agree": 0.931,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.85,
+          "net_agree": 0.85,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 19,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.85,
+      "divisiveness": 0.15,
+      "within_group_splits": []
+    },
+    "40": {
+      "id": 40,
+      "text": "This work can never be fully scaled because it relies on individuals going above and beyond.",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 2,
+        "agrees": 0,
+        "disagrees": 1,
+        "passes": 1
+      },
+      "agree_rate": 0.0,
+      "pass_rate": 0.5,
+      "net_agree": -0.5,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": -0.5,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "41": {
+      "id": 41,
+      "text": "Calling every park, library and choir \"health infrastructure\" risks stretching the term until it means nothing and helps no one make better decisions.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 70,
+        "agrees": 44,
+        "disagrees": 16,
+        "passes": 10
+      },
+      "agree_rate": 0.6286,
+      "pass_rate": 0.1429,
+      "net_agree": 0.4,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 14,
+          "disagrees": 13,
+          "passes": 3,
+          "agree_rate": 0.4667,
+          "net_agree": 0.0333,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 16,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.7619,
+          "net_agree": 0.7619,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 14,
+          "disagrees": 3,
+          "passes": 2,
+          "agree_rate": 0.7368,
+          "net_agree": 0.5789,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4667,
+      "divisiveness": 0.7286,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "42": {
+      "id": 42,
+      "text": ".Governments already struggle to fund core health services, adding parks, arts and community programs to the \"health\" ledger risks diluting scarce resources.",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 1,
+        "agrees": 0,
+        "disagrees": 0,
+        "passes": 1
+      },
+      "agree_rate": 0.0,
+      "pass_rate": 1.0,
+      "net_agree": 0.0,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 1,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.0,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "43": {
+      "id": 43,
+      "text": "Cross-portfolio funding pools only ever create confusion about who's accountable when things go wrong.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 71,
+        "agrees": 19,
+        "disagrees": 32,
+        "passes": 20
+      },
+      "agree_rate": 0.2676,
+      "pass_rate": 0.2817,
+      "net_agree": -0.1831,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 4,
+          "disagrees": 19,
+          "passes": 7,
+          "agree_rate": 0.1333,
+          "net_agree": -0.5,
+          "thin": false
+        },
+        "B": {
+          "votes": 21,
+          "agrees": 9,
+          "disagrees": 4,
+          "passes": 8,
+          "agree_rate": 0.4286,
+          "net_agree": 0.2381,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 6,
+          "disagrees": 9,
+          "passes": 5,
+          "agree_rate": 0.3,
+          "net_agree": -0.15,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1333,
+      "divisiveness": 0.7381,
+      "within_group_splits": [
+        "C"
+      ]
+    },
+    "44": {
+      "id": 44,
+      "text": "The idea that we can grow something to national scale while keeping it intimate and human is not realistic",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 17,
+        "disagrees": 43,
+        "passes": 7
+      },
+      "agree_rate": 0.2537,
+      "pass_rate": 0.1045,
+      "net_agree": -0.3881,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 6,
+          "disagrees": 23,
+          "passes": 1,
+          "agree_rate": 0.2,
+          "net_agree": -0.5667,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 5,
+          "disagrees": 9,
+          "passes": 4,
+          "agree_rate": 0.2778,
+          "net_agree": -0.2222,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 6,
+          "disagrees": 11,
+          "passes": 2,
+          "agree_rate": 0.3158,
+          "net_agree": -0.2632,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2,
+      "divisiveness": 0.3445,
+      "within_group_splits": [
+        "B",
+        "C"
+      ]
+    },
+    "45": {
+      "id": 45,
+      "text": "Governments already struggle to fund core health services, adding parks, arts and community programs to the \"health\" ledger risks diluting scarce resources",
+      "source": "seed",
+      "junk": false,
+      "rejected": true,
+      "total": {
+        "votes": 2,
+        "agrees": 0,
+        "disagrees": 0,
+        "passes": 2
+      },
+      "agree_rate": 0.0,
+      "pass_rate": 1.0,
+      "net_agree": 0.0,
+      "groups": {
+        "A": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.0,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "46": {
+      "id": 46,
+      "text": "Governments are already funding health-generating activity, it just isn’t being recognised or measured.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 70,
+        "agrees": 40,
+        "disagrees": 13,
+        "passes": 17
+      },
+      "agree_rate": 0.5714,
+      "pass_rate": 0.2429,
+      "net_agree": 0.3857,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 17,
+          "disagrees": 8,
+          "passes": 5,
+          "agree_rate": 0.5667,
+          "net_agree": 0.3,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 10,
+          "disagrees": 2,
+          "passes": 8,
+          "agree_rate": 0.5,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "C": {
+          "votes": 20,
+          "agrees": 13,
+          "disagrees": 3,
+          "passes": 4,
+          "agree_rate": 0.65,
+          "net_agree": 0.5,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.2,
+      "within_group_splits": []
+    },
+    "47": {
+      "id": 47,
+      "text": "Assigning an instrumental value to arts does not diminish their intrinsic value.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 69,
+        "agrees": 50,
+        "disagrees": 8,
+        "passes": 11
+      },
+      "agree_rate": 0.7246,
+      "pass_rate": 0.1594,
+      "net_agree": 0.6087,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 27,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.871,
+          "net_agree": 0.8387,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.7368,
+          "net_agree": 0.7368,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 9,
+          "disagrees": 7,
+          "passes": 3,
+          "agree_rate": 0.4737,
+          "net_agree": 0.1053,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4737,
+      "divisiveness": 0.7334,
+      "within_group_splits": [
+        "C"
+      ]
+    },
+    "48": {
+      "id": 48,
+      "text": "The system rewards sticking to the status quo, rather than exploring what might work better.",
+      "source": "seed",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 70,
+        "agrees": 51,
+        "disagrees": 8,
+        "passes": 11
+      },
+      "agree_rate": 0.7286,
+      "pass_rate": 0.1571,
+      "net_agree": 0.6143,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 26,
+          "disagrees": 2,
+          "passes": 2,
+          "agree_rate": 0.8667,
+          "net_agree": 0.8,
+          "thin": false
+        },
+        "B": {
+          "votes": 20,
+          "agrees": 8,
+          "disagrees": 5,
+          "passes": 7,
+          "agree_rate": 0.4,
+          "net_agree": 0.15,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 16,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8421,
+          "net_agree": 0.7895,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4,
+      "divisiveness": 0.65,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "49": {
+      "id": 49,
+      "text": "Testing",
+      "source": "live",
+      "junk": true,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 5,
+        "disagrees": 3,
+        "passes": 59
+      },
+      "agree_rate": 0.0746,
+      "pass_rate": 0.8806,
+      "net_agree": 0.0299,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 3,
+          "disagrees": 2,
+          "passes": 25,
+          "agree_rate": 0.1,
+          "net_agree": 0.0333,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 17,
+          "agree_rate": 0.0,
+          "net_agree": -0.0556,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 17,
+          "agree_rate": 0.1053,
+          "net_agree": 0.1053,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "50": {
+      "id": 50,
+      "text": "Testint",
+      "source": "live",
+      "junk": true,
+      "rejected": false,
+      "total": {
+        "votes": 63,
+        "agrees": 4,
+        "disagrees": 3,
+        "passes": 56
+      },
+      "agree_rate": 0.0635,
+      "pass_rate": 0.8889,
+      "net_agree": 0.0159,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 1,
+          "disagrees": 2,
+          "passes": 25,
+          "agree_rate": 0.0357,
+          "net_agree": -0.0357,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 0,
+          "disagrees": 1,
+          "passes": 16,
+          "agree_rate": 0.0,
+          "net_agree": -0.0588,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 3,
+          "disagrees": 0,
+          "passes": 15,
+          "agree_rate": 0.1667,
+          "net_agree": 0.1667,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "51": {
+      "id": 51,
+      "text": "Test",
+      "source": "live",
+      "junk": true,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 6,
+        "disagrees": 4,
+        "passes": 58
+      },
+      "agree_rate": 0.0882,
+      "pass_rate": 0.8529,
+      "net_agree": 0.0294,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 4,
+          "disagrees": 3,
+          "passes": 23,
+          "agree_rate": 0.1333,
+          "net_agree": 0.0333,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 17,
+          "agree_rate": 0.0526,
+          "net_agree": 0.0,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 18,
+          "agree_rate": 0.0526,
+          "net_agree": 0.0526,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "52": {
+      "id": 52,
+      "text": "Should be cross sector investment.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 63,
+        "disagrees": 1,
+        "passes": 4
+      },
+      "agree_rate": 0.9265,
+      "pass_rate": 0.0588,
+      "net_agree": 0.9118,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 30,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.9677,
+          "net_agree": 0.9355,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8947,
+          "net_agree": 0.8947,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 16,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8889,
+          "net_agree": 0.8889,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8889,
+      "divisiveness": 0.0466,
+      "within_group_splits": []
+    },
+    "53": {
+      "id": 53,
+      "text": "We have strong local evidence of success and economic impact",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 43,
+        "disagrees": 13,
+        "passes": 11
+      },
+      "agree_rate": 0.6418,
+      "pass_rate": 0.1642,
+      "net_agree": 0.4478,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 23,
+          "disagrees": 2,
+          "passes": 6,
+          "agree_rate": 0.7419,
+          "net_agree": 0.6774,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 5,
+          "disagrees": 9,
+          "passes": 4,
+          "agree_rate": 0.2778,
+          "net_agree": -0.2222,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 15,
+          "disagrees": 2,
+          "passes": 1,
+          "agree_rate": 0.8333,
+          "net_agree": 0.7222,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2778,
+      "divisiveness": 0.9444,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "54": {
+      "id": 54,
+      "text": "Evidence continues to grow about the impacts of arts participation on welling, and in arts in health practice. Great examples of practice",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 63,
+        "agrees": 54,
+        "disagrees": 2,
+        "passes": 7
+      },
+      "agree_rate": 0.8571,
+      "pass_rate": 0.1111,
+      "net_agree": 0.8254,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 27,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.931,
+          "net_agree": 0.8966,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6111,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9375,
+          "net_agree": 0.9375,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6667,
+      "divisiveness": 0.3264,
+      "within_group_splits": []
+    },
+    "55": {
+      "id": 55,
+      "text": "There are pockets of good work with no way to consistently evaluate and no consistent referral pathways",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 55,
+        "disagrees": 5,
+        "passes": 4
+      },
+      "agree_rate": 0.8594,
+      "pass_rate": 0.0625,
+      "net_agree": 0.7812,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 24,
+          "disagrees": 3,
+          "passes": 2,
+          "agree_rate": 0.8276,
+          "net_agree": 0.7241,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 2,
+          "passes": 1,
+          "agree_rate": 0.8235,
+          "net_agree": 0.7059,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9444,
+          "net_agree": 0.9444,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8235,
+      "divisiveness": 0.2385,
+      "within_group_splits": []
+    },
+    "56": {
+      "id": 56,
+      "text": "This kind of framing supports more opportunities and links to traditional applications of arts and culture",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 68,
+        "agrees": 41,
+        "disagrees": 3,
+        "passes": 24
+      },
+      "agree_rate": 0.6029,
+      "pass_rate": 0.3529,
+      "net_agree": 0.5588,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 22,
+          "disagrees": 0,
+          "passes": 9,
+          "agree_rate": 0.7097,
+          "net_agree": 0.7097,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 8,
+          "disagrees": 3,
+          "passes": 8,
+          "agree_rate": 0.4211,
+          "net_agree": 0.2632,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 7,
+          "agree_rate": 0.6111,
+          "net_agree": 0.6111,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4211,
+      "divisiveness": 0.4465,
+      "within_group_splits": []
+    },
+    "57": {
+      "id": 57,
+      "text": "This needs to be accompanied by initiatives that support art for art’s sake",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 65,
+        "agrees": 42,
+        "disagrees": 10,
+        "passes": 13
+      },
+      "agree_rate": 0.6462,
+      "pass_rate": 0.2,
+      "net_agree": 0.4923,
+      "groups": {
+        "A": {
+          "votes": 31,
+          "agrees": 21,
+          "disagrees": 6,
+          "passes": 4,
+          "agree_rate": 0.6774,
+          "net_agree": 0.4839,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 6,
+          "disagrees": 4,
+          "passes": 7,
+          "agree_rate": 0.3529,
+          "net_agree": 0.1176,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8824,
+          "net_agree": 0.8824,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3529,
+      "divisiveness": 0.7648,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "58": {
+      "id": 58,
+      "text": "Communities aren't supported to shape their environments for health & wellbeing. We need a Community Empowerment Act to address that gap.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 32,
+        "disagrees": 8,
+        "passes": 20
+      },
+      "agree_rate": 0.5333,
+      "pass_rate": 0.3333,
+      "net_agree": 0.4,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 18,
+          "disagrees": 4,
+          "passes": 7,
+          "agree_rate": 0.6207,
+          "net_agree": 0.4828,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 5,
+          "disagrees": 3,
+          "passes": 8,
+          "agree_rate": 0.3125,
+          "net_agree": 0.125,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 9,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.6,
+          "net_agree": 0.5333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3125,
+      "divisiveness": 0.4083,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "59": {
+      "id": 59,
+      "text": "Funding is the biggest barrier to implementation.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 65,
+        "agrees": 30,
+        "disagrees": 24,
+        "passes": 11
+      },
+      "agree_rate": 0.4615,
+      "pass_rate": 0.1692,
+      "net_agree": 0.0923,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 15,
+          "disagrees": 11,
+          "passes": 3,
+          "agree_rate": 0.5172,
+          "net_agree": 0.1379,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 5,
+          "disagrees": 8,
+          "passes": 6,
+          "agree_rate": 0.2632,
+          "net_agree": -0.1579,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 10,
+          "disagrees": 5,
+          "passes": 2,
+          "agree_rate": 0.5882,
+          "net_agree": 0.2941,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2632,
+      "divisiveness": 0.452,
+      "within_group_splits": [
+        "A",
+        "B"
+      ]
+    },
+    "60": {
+      "id": 60,
+      "text": "More data driven evidence",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 65,
+        "agrees": 30,
+        "disagrees": 21,
+        "passes": 14
+      },
+      "agree_rate": 0.4615,
+      "pass_rate": 0.2154,
+      "net_agree": 0.1385,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 11,
+          "disagrees": 12,
+          "passes": 4,
+          "agree_rate": 0.4074,
+          "net_agree": -0.037,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 12,
+          "disagrees": 3,
+          "passes": 4,
+          "agree_rate": 0.6316,
+          "net_agree": 0.4737,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 7,
+          "disagrees": 6,
+          "passes": 6,
+          "agree_rate": 0.3684,
+          "net_agree": 0.0526,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3684,
+      "divisiveness": 0.5107,
+      "within_group_splits": [
+        "A",
+        "C"
+      ]
+    },
+    "61": {
+      "id": 61,
+      "text": "Disconnect between stakeholders and working in silos. Shared understanding but perspectives not coming together to progress.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 53,
+        "disagrees": 1,
+        "passes": 10
+      },
+      "agree_rate": 0.8281,
+      "pass_rate": 0.1562,
+      "net_agree": 0.8125,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 27,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.931,
+          "net_agree": 0.931,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6667,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8235,
+          "net_agree": 0.7647,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6667,
+      "divisiveness": 0.2643,
+      "within_group_splits": []
+    },
+    "62": {
+      "id": 62,
+      "text": "Industry have social infrastructure that should be unlocked",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 49,
+        "disagrees": 2,
+        "passes": 13
+      },
+      "agree_rate": 0.7656,
+      "pass_rate": 0.2031,
+      "net_agree": 0.7344,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 22,
+          "disagrees": 1,
+          "passes": 6,
+          "agree_rate": 0.7586,
+          "net_agree": 0.7241,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.7647,
+          "net_agree": 0.7647,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 14,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.7778,
+          "net_agree": 0.7222,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7586,
+      "divisiveness": 0.0425,
+      "within_group_splits": []
+    },
+    "63": {
+      "id": 63,
+      "text": "Cross sector partnerships are essential",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 64,
+        "disagrees": 0,
+        "passes": 0
+      },
+      "agree_rate": 1.0,
+      "pass_rate": 0.0,
+      "net_agree": 1.0,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 28,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 1.0,
+      "divisiveness": 0.0,
+      "within_group_splits": []
+    },
+    "64": {
+      "id": 64,
+      "text": "Not all arts, artists and arts programs are necessarily able to deliver health outcomes.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 48,
+        "disagrees": 9,
+        "passes": 7
+      },
+      "agree_rate": 0.75,
+      "pass_rate": 0.1094,
+      "net_agree": 0.6094,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 22,
+          "disagrees": 6,
+          "passes": 1,
+          "agree_rate": 0.7586,
+          "net_agree": 0.5517,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8235,
+          "net_agree": 0.8235,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 12,
+          "disagrees": 3,
+          "passes": 3,
+          "agree_rate": 0.6667,
+          "net_agree": 0.5,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6667,
+      "divisiveness": 0.3235,
+      "within_group_splits": []
+    },
+    "65": {
+      "id": 65,
+      "text": "Social prescribing has under-valued the scalable and accessible receptive arts participation",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 28,
+        "disagrees": 10,
+        "passes": 29
+      },
+      "agree_rate": 0.4179,
+      "pass_rate": 0.4328,
+      "net_agree": 0.2687,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 14,
+          "disagrees": 5,
+          "passes": 10,
+          "agree_rate": 0.4828,
+          "net_agree": 0.3103,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 3,
+          "disagrees": 4,
+          "passes": 12,
+          "agree_rate": 0.1579,
+          "net_agree": -0.0526,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 11,
+          "disagrees": 1,
+          "passes": 6,
+          "agree_rate": 0.6111,
+          "net_agree": 0.5556,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1579,
+      "divisiveness": 0.6082,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "66": {
+      "id": 66,
+      "text": "We have strong local evidence and economic impact of successful projects…now is the time",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 49,
+        "disagrees": 5,
+        "passes": 6
+      },
+      "agree_rate": 0.8167,
+      "pass_rate": 0.1,
+      "net_agree": 0.7333,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 25,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8929,
+          "net_agree": 0.8571,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 9,
+          "disagrees": 4,
+          "passes": 4,
+          "agree_rate": 0.5294,
+          "net_agree": 0.2941,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5294,
+      "divisiveness": 0.7059,
+      "within_group_splits": []
+    },
+    "67": {
+      "id": 67,
+      "text": "Capacity within our community structures need to be nurtured and developed so we can support localised solutions",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 59,
+        "disagrees": 1,
+        "passes": 4
+      },
+      "agree_rate": 0.9219,
+      "pass_rate": 0.0625,
+      "net_agree": 0.9062,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 30,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.75,
+          "net_agree": 0.6875,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9444,
+          "net_agree": 0.9444,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.75,
+      "divisiveness": 0.3125,
+      "within_group_splits": []
+    },
+    "68": {
+      "id": 68,
+      "text": "Young adults are not well catered for in current models of social prescribing",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 67,
+        "agrees": 41,
+        "disagrees": 5,
+        "passes": 21
+      },
+      "agree_rate": 0.6119,
+      "pass_rate": 0.3134,
+      "net_agree": 0.5373,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 19,
+          "disagrees": 2,
+          "passes": 8,
+          "agree_rate": 0.6552,
+          "net_agree": 0.5862,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 10,
+          "disagrees": 1,
+          "passes": 8,
+          "agree_rate": 0.5263,
+          "net_agree": 0.4737,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 12,
+          "disagrees": 2,
+          "passes": 5,
+          "agree_rate": 0.6316,
+          "net_agree": 0.5263,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5263,
+      "divisiveness": 0.1125,
+      "within_group_splits": []
+    },
+    "69": {
+      "id": 69,
+      "text": "Need to intervene upstream not at symptomatic stage.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 53,
+        "disagrees": 1,
+        "passes": 10
+      },
+      "agree_rate": 0.8281,
+      "pass_rate": 0.1562,
+      "net_agree": 0.8125,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 23,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.7931,
+          "net_agree": 0.7586,
+          "thin": false
+        },
+        "B": {
+          "votes": 19,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9474,
+          "net_agree": 0.9474,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.75,
+          "net_agree": 0.75,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.75,
+      "divisiveness": 0.1974,
+      "within_group_splits": []
+    },
+    "70": {
+      "id": 70,
+      "text": "Committed and passionate people push the agenda forward.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 57,
+        "disagrees": 3,
+        "passes": 4
+      },
+      "agree_rate": 0.8906,
+      "pass_rate": 0.0625,
+      "net_agree": 0.8438,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 29,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 13,
+          "disagrees": 2,
+          "passes": 2,
+          "agree_rate": 0.7647,
+          "net_agree": 0.6471,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8333,
+          "net_agree": 0.7778,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7647,
+      "divisiveness": 0.3529,
+      "within_group_splits": []
+    },
+    "71": {
+      "id": 71,
+      "text": "Arts communities don’t speak the same language as health industry, which limits effective communication",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 63,
+        "agrees": 48,
+        "disagrees": 8,
+        "passes": 7
+      },
+      "agree_rate": 0.7619,
+      "pass_rate": 0.1111,
+      "net_agree": 0.6349,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 21,
+          "disagrees": 4,
+          "passes": 4,
+          "agree_rate": 0.7241,
+          "net_agree": 0.5862,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 13,
+          "disagrees": 2,
+          "passes": 2,
+          "agree_rate": 0.7647,
+          "net_agree": 0.6471,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 2,
+          "passes": 1,
+          "agree_rate": 0.8235,
+          "net_agree": 0.7059,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7241,
+      "divisiveness": 0.1197,
+      "within_group_splits": []
+    },
+    "72": {
+      "id": 72,
+      "text": "Australia needs to prioritise community & ecosystem flourishing over $$ for war. End AUKUS & spend $350bn on community health & wellbeing!",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 37,
+        "disagrees": 7,
+        "passes": 18
+      },
+      "agree_rate": 0.5968,
+      "pass_rate": 0.2903,
+      "net_agree": 0.4839,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 15,
+          "disagrees": 5,
+          "passes": 8,
+          "agree_rate": 0.5357,
+          "net_agree": 0.3571,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 7,
+          "disagrees": 2,
+          "passes": 8,
+          "agree_rate": 0.4118,
+          "net_agree": 0.2941,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8824,
+          "net_agree": 0.8824,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4118,
+      "divisiveness": 0.5883,
+      "within_group_splits": []
+    },
+    "73": {
+      "id": 73,
+      "text": "More focus needed on true local community development",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 66,
+        "agrees": 54,
+        "disagrees": 2,
+        "passes": 10
+      },
+      "agree_rate": 0.8182,
+      "pass_rate": 0.1515,
+      "net_agree": 0.7879,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 27,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.9,
+          "net_agree": 0.9,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 11,
+          "disagrees": 1,
+          "passes": 6,
+          "agree_rate": 0.6111,
+          "net_agree": 0.5556,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 16,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8889,
+          "net_agree": 0.8333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6111,
+      "divisiveness": 0.3444,
+      "within_group_splits": []
+    },
+    "74": {
+      "id": 74,
+      "text": "There needs to be more focus on evaluating the benefits of arts participation on society levels of social wellbeing",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 39,
+        "disagrees": 14,
+        "passes": 9
+      },
+      "agree_rate": 0.629,
+      "pass_rate": 0.1452,
+      "net_agree": 0.4032,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 18,
+          "disagrees": 7,
+          "passes": 2,
+          "agree_rate": 0.6667,
+          "net_agree": 0.4074,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.6875,
+          "net_agree": 0.625,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 10,
+          "disagrees": 6,
+          "passes": 3,
+          "agree_rate": 0.5263,
+          "net_agree": 0.2105,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5263,
+      "divisiveness": 0.4145,
+      "within_group_splits": [
+        "C"
+      ]
+    },
+    "75": {
+      "id": 75,
+      "text": "Cross sector collaboration needs to be funded and recognised through policy incentives.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 64,
+        "agrees": 57,
+        "disagrees": 2,
+        "passes": 5
+      },
+      "agree_rate": 0.8906,
+      "pass_rate": 0.0781,
+      "net_agree": 0.8594,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 28,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9655,
+          "net_agree": 0.9655,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 13,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.7647,
+          "net_agree": 0.7059,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 16,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8889,
+          "net_agree": 0.8333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7647,
+      "divisiveness": 0.2596,
+      "within_group_splits": []
+    },
+    "76": {
+      "id": 76,
+      "text": "Creating a positive ecosystem should include both arts and health and arts for art’s sake",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 54,
+        "disagrees": 1,
+        "passes": 7
+      },
+      "agree_rate": 0.871,
+      "pass_rate": 0.1129,
+      "net_agree": 0.8548,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 26,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8966,
+          "net_agree": 0.8621,
+          "thin": false
+        },
+        "B": {
+          "votes": 14,
+          "agrees": 10,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.7143,
+          "net_agree": 0.7143,
+          "thin": false
+        },
+        "C": {
+          "votes": 19,
+          "agrees": 18,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9474,
+          "net_agree": 0.9474,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7143,
+      "divisiveness": 0.2331,
+      "within_group_splits": []
+    },
+    "77": {
+      "id": 77,
+      "text": "Social prescribing pilots need to move to ‘stage 2’ and beyond",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 52,
+        "disagrees": 2,
+        "passes": 7
+      },
+      "agree_rate": 0.8525,
+      "pass_rate": 0.1148,
+      "net_agree": 0.8197,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 26,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.963,
+          "net_agree": 0.9259,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.7059,
+          "net_agree": 0.7059,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8235,
+          "net_agree": 0.7647,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7059,
+      "divisiveness": 0.22,
+      "within_group_splits": []
+    },
+    "78": {
+      "id": 78,
+      "text": "The mental/ health crisis is a cultural crisis - emerging from our disconnection as beings of nature and in relationship with all others",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 48,
+        "disagrees": 2,
+        "passes": 10
+      },
+      "agree_rate": 0.8,
+      "pass_rate": 0.1667,
+      "net_agree": 0.7667,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 20,
+          "disagrees": 1,
+          "passes": 6,
+          "agree_rate": 0.7407,
+          "net_agree": 0.7037,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.6875,
+          "net_agree": 0.625,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 17,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6875,
+      "divisiveness": 0.375,
+      "within_group_splits": []
+    },
+    "79": {
+      "id": 79,
+      "text": "The A&H sector needs support to set agendas for diverse economics-oriented research and advocacy, for now and for the future",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 59,
+        "agrees": 41,
+        "disagrees": 4,
+        "passes": 14
+      },
+      "agree_rate": 0.6949,
+      "pass_rate": 0.2373,
+      "net_agree": 0.6271,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 22,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.8148,
+          "net_agree": 0.7407,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 7,
+          "disagrees": 1,
+          "passes": 9,
+          "agree_rate": 0.4118,
+          "net_agree": 0.3529,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8,
+          "net_agree": 0.7333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4118,
+      "divisiveness": 0.3878,
+      "within_group_splits": []
+    },
+    "80": {
+      "id": 80,
+      "text": "The key thing to do is help decision makers better prioritise to achieve positive outcomes",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 41,
+        "disagrees": 7,
+        "passes": 14
+      },
+      "agree_rate": 0.6613,
+      "pass_rate": 0.2258,
+      "net_agree": 0.5484,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 19,
+          "disagrees": 2,
+          "passes": 8,
+          "agree_rate": 0.6552,
+          "net_agree": 0.5862,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 10,
+          "disagrees": 5,
+          "passes": 3,
+          "agree_rate": 0.5556,
+          "net_agree": 0.2778,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8,
+          "net_agree": 0.8,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5556,
+      "divisiveness": 0.5222,
+      "within_group_splits": []
+    },
+    "81": {
+      "id": 81,
+      "text": "It’s hard to invest in what’s common sense for the future, while meeting the expectations of the present….",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 39,
+        "disagrees": 13,
+        "passes": 9
+      },
+      "agree_rate": 0.6393,
+      "pass_rate": 0.1475,
+      "net_agree": 0.4262,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 16,
+          "disagrees": 7,
+          "passes": 4,
+          "agree_rate": 0.5926,
+          "net_agree": 0.3333,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 11,
+          "disagrees": 4,
+          "passes": 2,
+          "agree_rate": 0.6471,
+          "net_agree": 0.4118,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 12,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.7059,
+          "net_agree": 0.5882,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5926,
+      "divisiveness": 0.2549,
+      "within_group_splits": []
+    },
+    "82": {
+      "id": 82,
+      "text": "We need shared language to communicate both health / wellbeing value, and non instrumental value(s) and benefits",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 52,
+        "disagrees": 4,
+        "passes": 6
+      },
+      "agree_rate": 0.8387,
+      "pass_rate": 0.0968,
+      "net_agree": 0.7742,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 27,
+          "disagrees": 2,
+          "passes": 0,
+          "agree_rate": 0.931,
+          "net_agree": 0.8621,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 13,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.7222,
+          "net_agree": 0.6111,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8,
+          "net_agree": 0.8,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7222,
+      "divisiveness": 0.251,
+      "within_group_splits": []
+    },
+    "83": {
+      "id": 83,
+      "text": "funding models should take into account long term costs /expenses avoided, uncoupling long term finance decisions from shorter term politics",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 52,
+        "disagrees": 1,
+        "passes": 7
+      },
+      "agree_rate": 0.8667,
+      "pass_rate": 0.1167,
+      "net_agree": 0.85,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 27,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.9643,
+          "net_agree": 0.9286,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8235,
+          "net_agree": 0.8235,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.7333,
+          "net_agree": 0.7333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7333,
+      "divisiveness": 0.1953,
+      "within_group_splits": []
+    },
+    "84": {
+      "id": 84,
+      "text": "We need a good shared language to communicate the benefits without instrumentalisation",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 48,
+        "disagrees": 4,
+        "passes": 8
+      },
+      "agree_rate": 0.8,
+      "pass_rate": 0.1333,
+      "net_agree": 0.7333,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 22,
+          "disagrees": 3,
+          "passes": 2,
+          "agree_rate": 0.8148,
+          "net_agree": 0.7037,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 10,
+          "disagrees": 1,
+          "passes": 6,
+          "agree_rate": 0.5882,
+          "net_agree": 0.5294,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 16,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5882,
+      "divisiveness": 0.4706,
+      "within_group_splits": []
+    },
+    "85": {
+      "id": 85,
+      "text": "Not all artists / arts org have the skills or the capacity or the inclination to add value in arts and health",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 51,
+        "disagrees": 7,
+        "passes": 3
+      },
+      "agree_rate": 0.8361,
+      "pass_rate": 0.0492,
+      "net_agree": 0.7213,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 22,
+          "disagrees": 6,
+          "passes": 1,
+          "agree_rate": 0.7586,
+          "net_agree": 0.5517,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8235,
+          "net_agree": 0.7647,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7586,
+      "divisiveness": 0.4483,
+      "within_group_splits": []
+    },
+    "86": {
+      "id": 86,
+      "text": "We are beyond evidence, let’s define the pathway ahead",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 53,
+        "disagrees": 3,
+        "passes": 6
+      },
+      "agree_rate": 0.8548,
+      "pass_rate": 0.0968,
+      "net_agree": 0.8065,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 28,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9655,
+          "net_agree": 0.9655,
+          "thin": false
+        },
+        "B": {
+          "votes": 15,
+          "agrees": 9,
+          "disagrees": 2,
+          "passes": 4,
+          "agree_rate": 0.6,
+          "net_agree": 0.4667,
+          "thin": false
+        },
+        "C": {
+          "votes": 18,
+          "agrees": 16,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8889,
+          "net_agree": 0.8333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6,
+      "divisiveness": 0.4988,
+      "within_group_splits": []
+    },
+    "87": {
+      "id": 87,
+      "text": "The evidence is very strong. It needs structured leadership and advocacy.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 48,
+        "disagrees": 1,
+        "passes": 11
+      },
+      "agree_rate": 0.8,
+      "pass_rate": 0.1833,
+      "net_agree": 0.7833,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 28,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 8,
+          "disagrees": 1,
+          "passes": 8,
+          "agree_rate": 0.4706,
+          "net_agree": 0.4118,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 12,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8,
+          "net_agree": 0.8,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4706,
+      "divisiveness": 0.5882,
+      "within_group_splits": []
+    },
+    "88": {
+      "id": 88,
+      "text": "The public isn’t as aware of the benefits of art:culture on health and that makes it harder for politicians and govs to fund things now",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 58,
+        "agrees": 46,
+        "disagrees": 10,
+        "passes": 2
+      },
+      "agree_rate": 0.7931,
+      "pass_rate": 0.0345,
+      "net_agree": 0.6207,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 20,
+          "disagrees": 6,
+          "passes": 1,
+          "agree_rate": 0.7407,
+          "net_agree": 0.5185,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 13,
+          "disagrees": 3,
+          "passes": 0,
+          "agree_rate": 0.8125,
+          "net_agree": 0.625,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 13,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8667,
+          "net_agree": 0.8,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7407,
+      "divisiveness": 0.2815,
+      "within_group_splits": []
+    },
+    "89": {
+      "id": 89,
+      "text": "Art for art’s sake is a false binary - all arts can generate health.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 43,
+        "disagrees": 9,
+        "passes": 8
+      },
+      "agree_rate": 0.7167,
+      "pass_rate": 0.1333,
+      "net_agree": 0.5667,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 21,
+          "disagrees": 3,
+          "passes": 3,
+          "agree_rate": 0.7778,
+          "net_agree": 0.6667,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 10,
+          "disagrees": 3,
+          "passes": 4,
+          "agree_rate": 0.5882,
+          "net_agree": 0.4118,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 12,
+          "disagrees": 3,
+          "passes": 1,
+          "agree_rate": 0.75,
+          "net_agree": 0.5625,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5882,
+      "divisiveness": 0.2549,
+      "within_group_splits": []
+    },
+    "90": {
+      "id": 90,
+      "text": "clinicians have insufficient knowledge of the evidence",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 42,
+        "disagrees": 9,
+        "passes": 10
+      },
+      "agree_rate": 0.6885,
+      "pass_rate": 0.1639,
+      "net_agree": 0.541,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 19,
+          "disagrees": 6,
+          "passes": 4,
+          "agree_rate": 0.6552,
+          "net_agree": 0.4483,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 11,
+          "disagrees": 2,
+          "passes": 4,
+          "agree_rate": 0.6471,
+          "net_agree": 0.5294,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8,
+          "net_agree": 0.7333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6471,
+      "divisiveness": 0.285,
+      "within_group_splits": []
+    },
+    "91": {
+      "id": 91,
+      "text": "Social prescribing risks becoming medicalised or yet another silo",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 31,
+        "disagrees": 19,
+        "passes": 10
+      },
+      "agree_rate": 0.5167,
+      "pass_rate": 0.1667,
+      "net_agree": 0.2,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 9,
+          "disagrees": 15,
+          "passes": 5,
+          "agree_rate": 0.3103,
+          "net_agree": -0.2069,
+          "thin": false
+        },
+        "B": {
+          "votes": 15,
+          "agrees": 11,
+          "disagrees": 3,
+          "passes": 1,
+          "agree_rate": 0.7333,
+          "net_agree": 0.5333,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.6875,
+          "net_agree": 0.625,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3103,
+      "divisiveness": 0.8319,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "92": {
+      "id": 92,
+      "text": "The problem is not only one of political will, it’s also one of political capital and getting the public on board",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 51,
+        "disagrees": 8,
+        "passes": 3
+      },
+      "agree_rate": 0.8226,
+      "pass_rate": 0.0484,
+      "net_agree": 0.6935,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 21,
+          "disagrees": 7,
+          "passes": 0,
+          "agree_rate": 0.75,
+          "net_agree": 0.5,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8824,
+          "net_agree": 0.8824,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8824,
+          "net_agree": 0.8235,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.75,
+      "divisiveness": 0.3824,
+      "within_group_splits": []
+    },
+    "93": {
+      "id": 93,
+      "text": "We need longitudinal data to address the evidence  gap. It is just adding relevant  questions  to the existing  health surveys.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 39,
+        "disagrees": 14,
+        "passes": 8
+      },
+      "agree_rate": 0.6393,
+      "pass_rate": 0.1311,
+      "net_agree": 0.4098,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 18,
+          "disagrees": 7,
+          "passes": 2,
+          "agree_rate": 0.6667,
+          "net_agree": 0.4074,
+          "thin": false
+        },
+        "B": {
+          "votes": 18,
+          "agrees": 8,
+          "disagrees": 6,
+          "passes": 4,
+          "agree_rate": 0.4444,
+          "net_agree": 0.1111,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 13,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8125,
+          "net_agree": 0.75,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4444,
+      "divisiveness": 0.6389,
+      "within_group_splits": [
+        "B"
+      ]
+    },
+    "94": {
+      "id": 94,
+      "text": "True local participatory design is essential for meaningful engagement",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 60,
+        "agrees": 56,
+        "disagrees": 2,
+        "passes": 2
+      },
+      "agree_rate": 0.9333,
+      "pass_rate": 0.0333,
+      "net_agree": 0.9,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 27,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9643,
+          "net_agree": 0.9643,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 14,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.875,
+          "net_agree": 0.8125,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 15,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.9375,
+          "net_agree": 0.875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.875,
+      "divisiveness": 0.1518,
+      "within_group_splits": []
+    },
+    "95": {
+      "id": 95,
+      "text": "We all intrinsically understand the health benefits of health participant, but we are unable to articulate at the collective level",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 58,
+        "agrees": 37,
+        "disagrees": 12,
+        "passes": 9
+      },
+      "agree_rate": 0.6379,
+      "pass_rate": 0.1552,
+      "net_agree": 0.431,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 18,
+          "disagrees": 6,
+          "passes": 3,
+          "agree_rate": 0.6667,
+          "net_agree": 0.4444,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.75,
+          "net_agree": 0.6875,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 7,
+          "disagrees": 5,
+          "passes": 3,
+          "agree_rate": 0.4667,
+          "net_agree": 0.1333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4667,
+      "divisiveness": 0.5542,
+      "within_group_splits": [
+        "C"
+      ]
+    },
+    "96": {
+      "id": 96,
+      "text": "It’s time to stop trying to locate virtue within health or within arts. Cross sector partnering is essential.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 58,
+        "agrees": 53,
+        "disagrees": 1,
+        "passes": 4
+      },
+      "agree_rate": 0.9138,
+      "pass_rate": 0.069,
+      "net_agree": 0.8966,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 25,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8929,
+          "net_agree": 0.8571,
+          "thin": false
+        },
+        "B": {
+          "votes": 15,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9333,
+          "net_agree": 0.9333,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9333,
+          "net_agree": 0.9333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8929,
+      "divisiveness": 0.0762,
+      "within_group_splits": []
+    },
+    "97": {
+      "id": 97,
+      "text": "Such an opportunity to engage with industry for funding and participation",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 42,
+        "disagrees": 0,
+        "passes": 19
+      },
+      "agree_rate": 0.6885,
+      "pass_rate": 0.3115,
+      "net_agree": 0.6885,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 20,
+          "disagrees": 0,
+          "passes": 8,
+          "agree_rate": 0.7143,
+          "net_agree": 0.7143,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.6471,
+          "net_agree": 0.6471,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.6875,
+          "net_agree": 0.6875,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6471,
+      "divisiveness": 0.0672,
+      "within_group_splits": []
+    },
+    "98": {
+      "id": 98,
+      "text": "Every commonwealth and state/territory new policy proposals should contain a wellbeing impact statement",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 53,
+        "disagrees": 3,
+        "passes": 6
+      },
+      "agree_rate": 0.8548,
+      "pass_rate": 0.0968,
+      "net_agree": 0.8065,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 27,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.9643,
+          "net_agree": 0.9286,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 11,
+          "disagrees": 2,
+          "passes": 4,
+          "agree_rate": 0.6471,
+          "net_agree": 0.5294,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8824,
+          "net_agree": 0.8824,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6471,
+      "divisiveness": 0.3992,
+      "within_group_splits": []
+    },
+    "99": {
+      "id": 99,
+      "text": "It doesn't have to be arts or health, it has to be an experience, and led by what the community needs The arts as a health behaviour",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 59,
+        "agrees": 46,
+        "disagrees": 4,
+        "passes": 9
+      },
+      "agree_rate": 0.7797,
+      "pass_rate": 0.1525,
+      "net_agree": 0.7119,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 23,
+          "disagrees": 4,
+          "passes": 2,
+          "agree_rate": 0.7931,
+          "net_agree": 0.6552,
+          "thin": false
+        },
+        "B": {
+          "votes": 15,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8667,
+          "net_agree": 0.8667,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 10,
+          "disagrees": 0,
+          "passes": 5,
+          "agree_rate": 0.6667,
+          "net_agree": 0.6667,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.6667,
+      "divisiveness": 0.2115,
+      "within_group_splits": []
+    },
+    "100": {
+      "id": 100,
+      "text": "What we need most is shared funding infrastructure to bring together arts and health and respect their differences",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 59,
+        "agrees": 45,
+        "disagrees": 5,
+        "passes": 9
+      },
+      "agree_rate": 0.7627,
+      "pass_rate": 0.1525,
+      "net_agree": 0.678,
+      "groups": {
+        "A": {
+          "votes": 28,
+          "agrees": 23,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.8214,
+          "net_agree": 0.75,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 9,
+          "disagrees": 3,
+          "passes": 5,
+          "agree_rate": 0.5294,
+          "net_agree": 0.3529,
+          "thin": false
+        },
+        "C": {
+          "votes": 14,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9286,
+          "net_agree": 0.9286,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5294,
+      "divisiveness": 0.5757,
+      "within_group_splits": []
+    },
+    "101": {
+      "id": 101,
+      "text": "Healthcare should honour life( not industry)",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 57,
+        "agrees": 43,
+        "disagrees": 4,
+        "passes": 10
+      },
+      "agree_rate": 0.7544,
+      "pass_rate": 0.1754,
+      "net_agree": 0.6842,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 20,
+          "disagrees": 4,
+          "passes": 3,
+          "agree_rate": 0.7407,
+          "net_agree": 0.5926,
+          "thin": false
+        },
+        "B": {
+          "votes": 14,
+          "agrees": 10,
+          "disagrees": 0,
+          "passes": 4,
+          "agree_rate": 0.7143,
+          "net_agree": 0.7143,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 13,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8125,
+          "net_agree": 0.8125,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.7143,
+      "divisiveness": 0.2199,
+      "within_group_splits": []
+    },
+    "102": {
+      "id": 102,
+      "text": "This arts and health agenda could create a perverse business model that monetizes the experience in unhealthy ways",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 58,
+        "agrees": 31,
+        "disagrees": 15,
+        "passes": 12
+      },
+      "agree_rate": 0.5345,
+      "pass_rate": 0.2069,
+      "net_agree": 0.2759,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 8,
+          "disagrees": 12,
+          "passes": 7,
+          "agree_rate": 0.2963,
+          "net_agree": -0.1481,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 12,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.75,
+          "net_agree": 0.6875,
+          "thin": false
+        },
+        "C": {
+          "votes": 15,
+          "agrees": 11,
+          "disagrees": 2,
+          "passes": 2,
+          "agree_rate": 0.7333,
+          "net_agree": 0.6,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.2963,
+      "divisiveness": 0.8356,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "103": {
+      "id": 103,
+      "text": "Practioners are supported and well trained",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 17,
+        "disagrees": 33,
+        "passes": 11
+      },
+      "agree_rate": 0.2787,
+      "pass_rate": 0.1803,
+      "net_agree": -0.2623,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 10,
+          "disagrees": 10,
+          "passes": 7,
+          "agree_rate": 0.3704,
+          "net_agree": 0.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 2,
+          "disagrees": 13,
+          "passes": 2,
+          "agree_rate": 0.1176,
+          "net_agree": -0.6471,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 5,
+          "disagrees": 10,
+          "passes": 2,
+          "agree_rate": 0.2941,
+          "net_agree": -0.2941,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.1176,
+      "divisiveness": 0.6471,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "104": {
+      "id": 104,
+      "text": "Consider how existing approaches can support sustainability",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 63,
+        "agrees": 47,
+        "disagrees": 2,
+        "passes": 14
+      },
+      "agree_rate": 0.746,
+      "pass_rate": 0.2222,
+      "net_agree": 0.7143,
+      "groups": {
+        "A": {
+          "votes": 30,
+          "agrees": 28,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.9333,
+          "net_agree": 0.9333,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 9,
+          "disagrees": 1,
+          "passes": 7,
+          "agree_rate": 0.5294,
+          "net_agree": 0.4706,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 10,
+          "disagrees": 1,
+          "passes": 5,
+          "agree_rate": 0.625,
+          "net_agree": 0.5625,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5294,
+      "divisiveness": 0.4627,
+      "within_group_splits": []
+    },
+    "105": {
+      "id": 105,
+      "text": "Examples are needed of how large system infrastructure (national or state) can filter to local context sp",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 61,
+        "agrees": 40,
+        "disagrees": 7,
+        "passes": 14
+      },
+      "agree_rate": 0.6557,
+      "pass_rate": 0.2295,
+      "net_agree": 0.541,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 21,
+          "disagrees": 4,
+          "passes": 4,
+          "agree_rate": 0.7241,
+          "net_agree": 0.5862,
+          "thin": false
+        },
+        "B": {
+          "votes": 16,
+          "agrees": 9,
+          "disagrees": 0,
+          "passes": 7,
+          "agree_rate": 0.5625,
+          "net_agree": 0.5625,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 10,
+          "disagrees": 3,
+          "passes": 3,
+          "agree_rate": 0.625,
+          "net_agree": 0.4375,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5625,
+      "divisiveness": 0.1487,
+      "within_group_splits": []
+    },
+    "106": {
+      "id": 106,
+      "text": "We need a paradigm shift to a wellbeing economy that prioritises human and ecological flourishing, not corporate profit maximisation",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 62,
+        "agrees": 55,
+        "disagrees": 1,
+        "passes": 6
+      },
+      "agree_rate": 0.8871,
+      "pass_rate": 0.0968,
+      "net_agree": 0.871,
+      "groups": {
+        "A": {
+          "votes": 29,
+          "agrees": 26,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.8966,
+          "net_agree": 0.8621,
+          "thin": false
+        },
+        "B": {
+          "votes": 17,
+          "agrees": 14,
+          "disagrees": 0,
+          "passes": 3,
+          "agree_rate": 0.8235,
+          "net_agree": 0.8235,
+          "thin": false
+        },
+        "C": {
+          "votes": 16,
+          "agrees": 15,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9375,
+          "net_agree": 0.9375,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.8235,
+      "divisiveness": 0.114,
+      "within_group_splits": []
+    },
+    "107": {
+      "id": 107,
+      "text": "Acknowledgement of what went before I.e vichealth and WHO - promoting mental health -Herman, sacens, moodie",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 59,
+        "agrees": 28,
+        "disagrees": 2,
+        "passes": 29
+      },
+      "agree_rate": 0.4746,
+      "pass_rate": 0.4915,
+      "net_agree": 0.4407,
+      "groups": {
+        "A": {
+          "votes": 27,
+          "agrees": 12,
+          "disagrees": 2,
+          "passes": 13,
+          "agree_rate": 0.4444,
+          "net_agree": 0.3704,
+          "thin": false
+        },
+        "B": {
+          "votes": 15,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 10,
+          "agree_rate": 0.3333,
+          "net_agree": 0.3333,
+          "thin": false
+        },
+        "C": {
+          "votes": 17,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 6,
+          "agree_rate": 0.6471,
+          "net_agree": 0.6471,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.3333,
+      "divisiveness": 0.3138,
+      "within_group_splits": []
+    },
+    "108": {
+      "id": 108,
+      "text": "Everyone deserves access to art and it’s way more fun than a gym membership… which an insurer might fund… let’s treat art the same",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 41,
+        "agrees": 34,
+        "disagrees": 3,
+        "passes": 4
+      },
+      "agree_rate": 0.8293,
+      "pass_rate": 0.0976,
+      "net_agree": 0.7561,
+      "groups": {
+        "A": {
+          "votes": 19,
+          "agrees": 18,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.9474,
+          "net_agree": 0.8947,
+          "thin": false
+        },
+        "B": {
+          "votes": 10,
+          "agrees": 5,
+          "disagrees": 2,
+          "passes": 3,
+          "agree_rate": 0.5,
+          "net_agree": 0.3,
+          "thin": false
+        },
+        "C": {
+          "votes": 12,
+          "agrees": 11,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.9167,
+          "net_agree": 0.9167,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.6167,
+      "within_group_splits": []
+    },
+    "109": {
+      "id": 109,
+      "text": "we need to question our own paradigms if we wish to initiate change",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 31,
+        "agrees": 25,
+        "disagrees": 2,
+        "passes": 4
+      },
+      "agree_rate": 0.8065,
+      "pass_rate": 0.129,
+      "net_agree": 0.7419,
+      "groups": {
+        "A": {
+          "votes": 12,
+          "agrees": 9,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.75,
+          "net_agree": 0.6667,
+          "thin": false
+        },
+        "B": {
+          "votes": 8,
+          "agrees": 7,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.875,
+          "net_agree": 0.875,
+          "thin": false
+        },
+        "C": {
+          "votes": 11,
+          "agrees": 9,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.8182,
+          "net_agree": 0.7273,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.75,
+      "divisiveness": 0.2083,
+      "within_group_splits": []
+    },
+    "110": {
+      "id": 110,
+      "text": "The idea that there is additional funding available for such initiatives is naive - existing programs need to be leveraged",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 29,
+        "agrees": 18,
+        "disagrees": 7,
+        "passes": 4
+      },
+      "agree_rate": 0.6207,
+      "pass_rate": 0.1379,
+      "net_agree": 0.3793,
+      "groups": {
+        "A": {
+          "votes": 11,
+          "agrees": 5,
+          "disagrees": 4,
+          "passes": 2,
+          "agree_rate": 0.4545,
+          "net_agree": 0.0909,
+          "thin": false
+        },
+        "B": {
+          "votes": 7,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.7143,
+          "net_agree": 0.7143,
+          "thin": false
+        },
+        "C": {
+          "votes": 11,
+          "agrees": 8,
+          "disagrees": 3,
+          "passes": 0,
+          "agree_rate": 0.7273,
+          "net_agree": 0.4545,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4545,
+      "divisiveness": 0.6234,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "111": {
+      "id": 111,
+      "text": "Artists bring a different way of thinking that should not be co-opted",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 25,
+        "agrees": 17,
+        "disagrees": 4,
+        "passes": 4
+      },
+      "agree_rate": 0.68,
+      "pass_rate": 0.16,
+      "net_agree": 0.52,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 5,
+          "disagrees": 3,
+          "passes": 1,
+          "agree_rate": 0.5556,
+          "net_agree": 0.2222,
+          "thin": false
+        },
+        "B": {
+          "votes": 5,
+          "agrees": 3,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.6,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "C": {
+          "votes": 11,
+          "agrees": 9,
+          "disagrees": 0,
+          "passes": 2,
+          "agree_rate": 0.8182,
+          "net_agree": 0.8182,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5556,
+      "divisiveness": 0.596,
+      "within_group_splits": [
+        "A"
+      ]
+    },
+    "112": {
+      "id": 112,
+      "text": "by focusing purely on arts are we not creating the same silos and structures we wish to avoid or change",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 24,
+        "agrees": 13,
+        "disagrees": 4,
+        "passes": 7
+      },
+      "agree_rate": 0.5417,
+      "pass_rate": 0.2917,
+      "net_agree": 0.375,
+      "groups": {
+        "A": {
+          "votes": 9,
+          "agrees": 5,
+          "disagrees": 2,
+          "passes": 2,
+          "agree_rate": 0.5556,
+          "net_agree": 0.3333,
+          "thin": false
+        },
+        "B": {
+          "votes": 4,
+          "agrees": 3,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.75,
+          "net_agree": 0.75,
+          "thin": true
+        },
+        "C": {
+          "votes": 11,
+          "agrees": 5,
+          "disagrees": 2,
+          "passes": 4,
+          "agree_rate": 0.4545,
+          "net_agree": 0.2727,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.4545,
+      "divisiveness": 0.4773,
+      "within_group_splits": []
+    },
+    "113": {
+      "id": 113,
+      "text": "We need an equivalent to the UK’s All Parliamentary Group for arts and health",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 23,
+        "agrees": 16,
+        "disagrees": 2,
+        "passes": 5
+      },
+      "agree_rate": 0.6957,
+      "pass_rate": 0.2174,
+      "net_agree": 0.6087,
+      "groups": {
+        "A": {
+          "votes": 8,
+          "agrees": 8,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": false
+        },
+        "B": {
+          "votes": 4,
+          "agrees": 2,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.5,
+          "net_agree": 0.25,
+          "thin": true
+        },
+        "C": {
+          "votes": 11,
+          "agrees": 6,
+          "disagrees": 1,
+          "passes": 4,
+          "agree_rate": 0.5455,
+          "net_agree": 0.4545,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": true,
+      "consensus_min_agree_rate": 0.5,
+      "divisiveness": 0.75,
+      "within_group_splits": []
+    },
+    "114": {
+      "id": 114,
+      "text": "We are amid a right of passage, we will either flourish or fail - and invited to consider what futures are worthy of the best of us",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 16,
+        "agrees": 8,
+        "disagrees": 3,
+        "passes": 5
+      },
+      "agree_rate": 0.5,
+      "pass_rate": 0.3125,
+      "net_agree": 0.3125,
+      "groups": {
+        "A": {
+          "votes": 6,
+          "agrees": 3,
+          "disagrees": 1,
+          "passes": 2,
+          "agree_rate": 0.5,
+          "net_agree": 0.3333,
+          "thin": false
+        },
+        "B": {
+          "votes": 2,
+          "agrees": 1,
+          "disagrees": 1,
+          "passes": 0,
+          "agree_rate": 0.5,
+          "net_agree": 0.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 8,
+          "agrees": 4,
+          "disagrees": 1,
+          "passes": 3,
+          "agree_rate": 0.5,
+          "net_agree": 0.375,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "115": {
+      "id": 115,
+      "text": "our current theories on health change are not adequate to explain why SP is important.",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 12,
+        "agrees": 9,
+        "disagrees": 1,
+        "passes": 2
+      },
+      "agree_rate": 0.75,
+      "pass_rate": 0.1667,
+      "net_agree": 0.6667,
+      "groups": {
+        "A": {
+          "votes": 5,
+          "agrees": 3,
+          "disagrees": 1,
+          "passes": 1,
+          "agree_rate": 0.6,
+          "net_agree": 0.4,
+          "thin": false
+        },
+        "B": {
+          "votes": 1,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "C": {
+          "votes": 6,
+          "agrees": 5,
+          "disagrees": 0,
+          "passes": 1,
+          "agree_rate": 0.8333,
+          "net_agree": 0.8333,
+          "thin": false
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    },
+    "116": {
+      "id": 116,
+      "text": "A structure is needed for cross sectoral collaboration that allows everyone, down to grassroots practitioners, to share knowledge and learn",
+      "source": "live",
+      "junk": false,
+      "rejected": false,
+      "total": {
+        "votes": 3,
+        "agrees": 3,
+        "disagrees": 0,
+        "passes": 0
+      },
+      "agree_rate": 1.0,
+      "pass_rate": 0.0,
+      "net_agree": 1.0,
+      "groups": {
+        "A": {
+          "votes": 2,
+          "agrees": 2,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        },
+        "B": {
+          "votes": 0,
+          "agrees": 0,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": null,
+          "net_agree": null,
+          "thin": true
+        },
+        "C": {
+          "votes": 1,
+          "agrees": 1,
+          "disagrees": 0,
+          "passes": 0,
+          "agree_rate": 1.0,
+          "net_agree": 1.0,
+          "thin": true
+        }
+      },
+      "eligible_for_rankings": false,
+      "consensus_min_agree_rate": null,
+      "divisiveness": null,
+      "within_group_splits": []
+    }
+  }
+}
