@@ -1,0 +1,54 @@
+/* Reusable component motifs.
+
+   This is where the brand YELLOW lives — as punctuation, not wallpaper.
+   Keep these small and composable; pages assemble them, they don't restyle
+   them. See README → Design, and the /styleguide page for live examples. */
+
+/* Yellow highlight behind a word or phrase (inline). Black-on-yellow = ADA-safe. */
+.mark-highlight {
+  background-color: theme("colors.golden-fizz");
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0 0.12em;
+}
+
+/* Thick yellow underline sitting behind the text baseline. */
+.underline-yellow {
+  background-image: linear-gradient(
+    theme("colors.golden-fizz"),
+    theme("colors.golden-fizz")
+  );
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.32em;
+}
+
+/* Circle holding a glyph/icon — yellow fill, black mark (ADA-safe). */
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 9999px;
+  background-color: theme("colors.golden-fizz");
+  color: theme("colors.black");
+}
+
+/* Numbered step marker — outlined circle, used for ordered sequences. */
+.number-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 9999px;
+  border: 2px solid theme("colors.black");
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+/* Inside a black band (.is-on-dark), flip the outlined motifs to read on black. */
+.is-on-dark .number-circle {
+  border-color: theme("colors.white");
+}

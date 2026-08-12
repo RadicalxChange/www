@@ -1,0 +1,43 @@
+<!-- prettier-ignore -->
+{#
+  Content card — the ONE canonical card, promoted from the (good) Updates
+  card and made uniform-height without the old min-height hack.
+
+  Structure: tag · title · optional description · meta (author / date),
+  pinned to the bottom so meta aligns across a row. The whole card is the
+  link. Drop it in any CSS grid; `h-full` + the grid's stretch makes every
+  card in a row equal height, and `mt-auto` keeps the meta on the baseline.
+
+  Args:
+    href        (required)
+    title       (required)
+    tag         (optional) — small uppercase label (e.g. "Blog Post", "Project")
+    description (optional) — short standfirst (used by Projects/Proposals cards)
+    meta1       (optional) — e.g. author
+    meta2       (optional) — e.g. date
+#}
+{% macro render(href, title, tag, description, meta1, meta2) %}
+<a
+  href="{{ href }}"
+  class="group flex flex-col h-full pt-element border-t border-black"
+>
+  <!-- prettier-ignore -->
+  {% if tag %}
+  <p class="mb-element text-size--1 uppercase tracking-wide opacity-60">
+    {{ tag }}
+  </p>
+  {% endif %}
+  <h3 class="text-size-2 leading-tight group-hover:thick-link">{{ title }}</h3>
+  <!-- prettier-ignore -->
+  {% if description %}
+  <p class="mt-element text-size--1 opacity-80">{{ description }}</p>
+  {% endif %}
+  <!-- prettier-ignore -->
+  {% if meta1 or meta2 %}
+  <div class="mt-auto pt-block text-size--1 opacity-60">
+    {% if meta1 %}<p>{{ meta1 }}</p>{% endif %}
+    {% if meta2 %}<p>{{ meta2 }}</p>{% endif %}
+  </div>
+  {% endif %}
+</a>
+{% endmacro %}

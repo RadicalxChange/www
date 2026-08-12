@@ -1,0 +1,37 @@
+<!-- prettier-ignore -->
+{#
+  Buttons — two weights, one rhythm.
+
+  primary   — pill with sliding arrow. The page's main call to action.
+              (Matches the existing action-button so adoption is a rename.)
+  secondary — uppercase text + thick underline. For lower-priority actions
+              and "see all"-style links that aren't a section header.
+
+  Use at most one primary per view; reach for secondary otherwise.
+#}
+{% macro primary(href, label) %}
+<a
+  class="group inline-flex items-center justify-between py-2 px-4 xl:pl-6 xl:pr-4 border border-black rounded-oval text-size--1"
+  href="{{ href }}"
+>
+  <span class="text-center uppercase">{{ label }}</span>
+  <span
+    class="hidden xl:inline w-4 group-hover:w-12 transition-width duration-300 ease-out"
+  ></span>
+  <img
+    class="hidden xl:inline-block"
+    src="/images/ui/next-arrow.svg"
+    width="24"
+    height="18"
+    alt=""
+  />
+</a>
+{% endmacro %}
+
+{% macro secondary(href, label) %}
+<a
+  class="group inline-flex items-baseline gap-2 text-size--1 uppercase tracking-wide thick-link"
+  href="{{ href }}"
+  >{{ label }} <span aria-hidden="true">&rarr;</span></a
+>
+{% endmacro %}
