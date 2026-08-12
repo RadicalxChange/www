@@ -1,8 +1,10 @@
 .see-more-link {
-  @apply text-gray;
+  /* De-emphasized via opacity on brand black rather than an off-brand grey. */
+  color: theme("colors.black");
+  opacity: 0.6;
 
   &:hover {
-    @apply text-black;
+    opacity: 1;
   }
 }
 
