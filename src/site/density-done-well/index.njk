@@ -1,0 +1,955 @@
+---
+permalink: /density-done-well/index.html
+---
+{% raw %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Density Done Well</title>
+<meta name="description" content="The people who fight hardest over Sydney's density agree on a surprisingly long list of specifics — and so does everyone else. Findings from the Sydney Density Deliberations, a joint program of AMPLIFY and RadicalxChange.">
+<link rel="canonical" href="https://www.radicalxchange.org/density-done-well/">
+<link rel="icon" type="image/png" href="/images/logos/favicon.png">
+<meta property="og:locale" content="en_AU">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Density Done Well — Sydney Density Deliberations">
+<meta property="og:site_name" content="RadicalxChange">
+<meta property="og:url" content="https://www.radicalxchange.org/density-done-well/">
+<meta property="og:description" content="The people who fight hardest over Sydney's density agree on a surprisingly long list of specifics — and so does everyone else. Findings from the Sydney Density Deliberations, a joint program of AMPLIFY and RadicalxChange.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Density Done Well — Sydney Density Deliberations">
+<meta name="twitter:site" content="@radxchange">
+<meta name="twitter:description" content="The people who fight hardest over Sydney's density agree on a surprisingly long list of specifics — and so does everyone else. Findings from the Sydney Density Deliberations, a joint program of AMPLIFY and RadicalxChange.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Public+Sans:ital,wght@0,300..700;1,400..600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+</head>
+<body>
+<style>
+/* ══ tokens ══════════════════════════════════════════════════════════════
+   Pure black ground. Colour lives only INSIDE objects — never as a wash.
+   Single committed visual world: every colour painted explicitly. */
+:root{
+  --void:#000000;
+
+  /* the plurality ramp, read off the reference strip:
+     índigo → violeta → periwinkle → azul claro → orquídea → lavanda → menta → teal */
+  --r-indigo:#4B3A93;
+  --r-violet:#6E5FC4;
+  --r-peri:#8A83E2;
+  --r-sky:#93A6F0;
+  --r-orchid:#A845DE;
+  --r-lav:#A6A3C2;
+  --r-mint:#A5D3AE;
+  --r-teal:#7FA6A8;
+
+  /* the two camps, taken from the two ends of the ramp that read apart */
+  --nimby:#C85A5A;   /* red  · height sceptics      */
+  --yimby:#7BA0E0;   /* blue · high-rise supporters */
+  --fuse:#E3C2EB;    /* what red + blue make together on black */
+
+  --txt:#F4F2F8;
+  --txt-2:#A6A1B8;
+  --txt-3:#6B6680;
+  --line:rgba(255,255,255,.13);
+  --line-2:rgba(255,255,255,.07);
+
+  --f-disp:"Archivo",-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  --f-body:"Public Sans",-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,'SF Mono',Menlo,monospace;
+
+  --pad:clamp(1.15rem,4.5vw,3.5rem);
+  --measure:38rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--void)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  margin:0;
+  background:var(--void);
+  color:var(--txt);
+  font-family:var(--f-body);
+  font-size:clamp(1rem,.95rem + .2vw,1.08rem);
+  font-weight:390;
+  line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ══ chrome ═════════════════════════════════════════════════════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:40;
+  display:flex;align-items:center;gap:1.5rem;
+  padding:.85rem var(--pad);
+  background:rgba(0,0,0,.72);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-2);
+}
+.brand{font-family:var(--f-disp);font-weight:800;font-size:.95rem;
+  font-variation-settings:"wdth" 118;letter-spacing:.01em;color:var(--txt)}
+.brand i{font-style:normal;color:var(--nimby)}
+nav .links{margin-left:auto;display:flex;gap:1.35rem}
+nav a{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--txt-3);text-decoration:none;transition:color .2s}
+nav a:hover{color:var(--txt)}
+nav a:focus-visible{outline:2px solid var(--yimby);outline-offset:3px;border-radius:2px}
+@media (max-width:720px){nav .links{display:none}}
+
+.wrap{max-width:74rem;margin:0 auto;padding:0 var(--pad);position:relative;z-index:2}
+.col{max-width:var(--measure)}
+section{scroll-margin-top:4rem}
+p{margin:0 0 1.1em}
+
+.eyebrow{font-family:var(--f-mono);font-size:.66rem;font-weight:500;letter-spacing:.19em;
+  text-transform:uppercase;color:var(--txt-3);margin:0 0 1.2rem}
+h2{font-family:var(--f-disp);font-weight:800;
+  font-size:clamp(1.9rem,4.6vw,3.3rem);line-height:1.02;
+  font-variation-settings:"wdth" 108;letter-spacing:-.022em;
+  margin:0 0 1.1rem;max-width:19ch;text-wrap:balance;color:var(--txt)}
+.intro{font-size:clamp(1.02rem,1.5vw,1.18rem);color:var(--txt-2);max-width:44rem;margin:0 0 2.6rem}
+
+/* the reference ramp, stops packed tight so the hues stay adjacent
+   rather than smearing into one another. Loops back to indigo at 100%. */
+.grad{
+  background:linear-gradient(96deg,
+    #3838C2 0%, #4428CE 3.5%, #5420DC 7%, #5E22E2 11%, #6828E8 15%,
+    #7230EE 19%, #7C38F0 23%, #8642F2 27%, #9050F4 31%, #9A5EF6 35%,
+    #A46CF8 39%, #AE7AF8 43%, #B888FA 47%, #C296FA 51%, #CCA4FC 55%,
+    #D6B2FC 59%, #E0C0FE 63%, #E8CEFE 67%, #F2DAFF 71%, #E6C8FE 75%,
+    #D8B4FC 79%, #C89EFA 83%, #B686F6 86%, #A26EF2 89%, #8E56EE 92%,
+    #7A40EA 94%, #6630E2 96%, #4A26D0 98%, #3838C2 100%);
+  background-size:260% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:drift 9s linear infinite;
+}
+@keyframes drift{to{background-position:260% 0}}
+@media (prefers-reduced-motion:reduce){.grad{animation:none}}
+
+/* ══ hero ═══════════════════════════════════════════════════════════════ */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:7rem 0 3rem}
+h1{
+  font-family:var(--f-disp);font-weight:900;
+  font-size:clamp(2.9rem,11.5vw,9rem);line-height:.86;
+  font-variation-settings:"wdth" 112;letter-spacing:-.038em;
+  margin:1.4rem 0 0;text-wrap:balance;
+}
+/* the fluid colour loop, clipped inside the word.
+   The CSS gradient below is the floor — it renders on its own if the
+   canvas never paints. The canvas then overlays the real liquid motion,
+   already cut to the letterforms, so no blend mode is involved. */
+.fluid{
+  position:relative;display:inline-block;
+  background:linear-gradient(96deg,
+    #3838C2 0%, #4428CE 3.5%, #5420DC 7%, #5E22E2 11%, #6828E8 15%,
+    #7230EE 19%, #7C38F0 23%, #8642F2 27%, #9050F4 31%, #9A5EF6 35%,
+    #A46CF8 39%, #AE7AF8 43%, #B888FA 47%, #C296FA 51%, #CCA4FC 55%,
+    #D6B2FC 59%, #E0C0FE 63%, #E8CEFE 67%, #F2DAFF 71%, #E6C8FE 75%,
+    #D8B4FC 79%, #C89EFA 83%, #B686F6 86%, #A26EF2 89%, #8E56EE 92%,
+    #7A40EA 94%, #6630E2 96%, #4A26D0 98%, #3838C2 100%);
+  background-size:240% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+  animation:drift 9s linear infinite;
+}
+@media (prefers-reduced-motion:reduce){.fluid{animation:none}}
+/* once the canvas has actually painted, retire the CSS floor so the two
+   sets of glyphs can't fringe against each other */
+.fluid.painted{background:none;animation:none}
+/* line-height is .86, so the glyphs are taller than the span box —
+   the canvas has to overflow it vertically or the B and the y get clipped.
+   No drop-shadow: a bloom softens the edge, and a soft edge reads as
+   receding. The word pops off the black by being crisp and high-chroma
+   against it, not by glowing into it. */
+.fluid .fx{position:absolute;left:0;top:-25%;width:100%;height:150%;pointer-events:none}
+h1 .yimby{color:var(--yimby);display:inline-block}
+h1 .nimby{color:var(--nimby);display:inline-block}
+h1 .vs{
+  font-variation-settings:"wdth" 75;font-weight:400;font-style:italic;
+  font-size:.36em;color:var(--txt-3);vertical-align:.36em;padding:0 .2em;letter-spacing:0;
+}
+.lede{font-size:clamp(1.08rem,1.9vw,1.4rem);line-height:1.5;color:var(--txt-2);max-width:34rem;margin:2.2rem 0 0}
+.lede em{color:var(--txt);font-style:normal;font-weight:600}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:3rem;
+  font-family:var(--f-mono);font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--txt-3)}
+
+/* ══ marquee ════════════════════════════════════════════════════════════ */
+.marquee{overflow:hidden;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);padding:1.05rem 0}
+.mq-track{display:flex;gap:2.6rem;width:max-content;animation:mq 46s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}}
+.mq-item{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--txt-3);white-space:nowrap;display:flex;align-items:center;gap:2.6rem}
+.mq-item::after{content:"";width:4px;height:4px;border-radius:50%;background:var(--r-peri)}
+
+/* ══ big stat ═══════════════════════════════════════════════════════════ */
+.stat-sec{padding:clamp(5rem,14vw,9rem) 0;text-align:center}
+.giant{font-family:var(--f-disp);font-weight:900;
+  font-size:clamp(6rem,26vw,20rem);line-height:.82;
+  font-variation-settings:"wdth" 105;letter-spacing:-.05em;
+  margin:.5rem 0;font-variant-numeric:tabular-nums}
+.stat-cap{font-size:clamp(1.05rem,1.9vw,1.32rem);color:var(--txt-2);max-width:36rem;margin:1.4rem auto 0;line-height:1.5}
+.stat-cap em{color:var(--txt);font-style:normal;font-weight:600}
+
+.sec{padding:clamp(4rem,10vw,7rem) 0;border-top:1px solid var(--line-2)}
+
+/* ══ publics + tools ════════════════════════════════════════════════════ */
+.publics{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.1rem;margin:0 0 3.5rem}
+.pub{border:1px solid var(--line);padding:1.6rem 1.5rem;border-radius:3px;position:relative;overflow:hidden;background:var(--void)}
+.pub::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px}
+.pub.a::before{background:linear-gradient(90deg,var(--nimby),transparent)}
+.pub.b::before{background:linear-gradient(90deg,var(--yimby),transparent)}
+.pub .tag{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3)}
+.pub .n{font-family:var(--f-disp);font-weight:900;font-size:3.4rem;line-height:1;margin:.7rem 0 .1rem;
+  font-variation-settings:"wdth" 100;font-variant-numeric:tabular-nums}
+.pub.a .n{color:var(--nimby)}
+.pub.b .n{color:var(--yimby)}
+.pub h4{font-family:var(--f-disp);font-weight:700;font-size:1.02rem;margin:.2rem 0 .7rem;
+  font-variation-settings:"wdth" 105;color:var(--txt)}
+.pub p{font-size:.92rem;color:var(--txt-2);margin:0;line-height:1.6}
+
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1px;
+  background:var(--line-2);border:1px solid var(--line-2);border-radius:3px;overflow:hidden}
+.tool{background:var(--void);padding:1.5rem 1.35rem}
+.tool .step{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;color:var(--txt-3)}
+.tool h5{font-family:var(--f-disp);font-weight:700;font-size:1.05rem;margin:.75rem 0 .3rem;
+  font-variation-settings:"wdth" 105;color:var(--txt)}
+.tool .role{font-family:var(--f-mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;margin:0 0 .7rem}
+.tool:nth-child(1) .role{color:var(--yimby)}
+.tool:nth-child(2) .role{color:var(--r-peri)}
+.tool:nth-child(3) .role{color:var(--nimby)}
+.tool:nth-child(4) .role{color:var(--r-sky)}
+.tool p{font-size:.88rem;color:var(--txt-2);margin:0;line-height:1.6}
+
+/* ══ findings ═══════════════════════════════════════════════════════════ */
+.finds{display:flex;flex-direction:column;border-top:1px solid var(--line-2)}
+.find{display:grid;grid-template-columns:4.5rem 1fr;gap:0 1.5rem;padding:2rem 0;border-bottom:1px solid var(--line-2)}
+@media (max-width:640px){.find{grid-template-columns:1fr;gap:.6rem}}
+.find .num{font-family:var(--f-disp);font-weight:900;font-size:2.3rem;line-height:1;
+  font-variation-settings:"wdth" 90;color:transparent;
+  background:linear-gradient(140deg,var(--yimby),var(--r-peri),var(--nimby));
+  -webkit-background-clip:text;background-clip:text}
+.find h3{font-family:var(--f-disp);font-weight:700;font-size:clamp(1.2rem,2.3vw,1.6rem);line-height:1.18;
+  font-variation-settings:"wdth" 105;letter-spacing:-.012em;margin:0 0 .7rem;max-width:26ch;
+  text-wrap:balance;color:var(--txt)}
+.find p{font-size:.98rem;color:var(--txt-2);margin:0;max-width:46rem}
+.find p em{color:var(--txt);font-style:normal;font-weight:600}
+
+/* ══ conditions ═════════════════════════════════════════════════════════ */
+.conds{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.1rem}
+.cond{border:1px solid var(--line);border-radius:3px;padding:1.6rem 1.45rem;
+  background:var(--void);position:relative;overflow:hidden}
+.cond::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px}
+.cond:nth-child(1)::after{background:linear-gradient(90deg,var(--yimby),var(--r-peri))}
+.cond:nth-child(2)::after{background:linear-gradient(90deg,var(--r-teal),var(--yimby))}
+.cond:nth-child(3)::after{background:linear-gradient(90deg,var(--nimby),var(--r-indigo))}
+.cond:nth-child(4)::after{background:linear-gradient(90deg,var(--r-peri),var(--nimby))}
+.cond:nth-child(5)::after{background:linear-gradient(90deg,var(--r-violet),var(--yimby))}
+.cond:nth-child(6)::after{background:linear-gradient(90deg,var(--nimby),var(--r-peri))}
+.cond .label{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3);margin:0 0 .9rem}
+.cond h4{font-family:var(--f-disp);font-weight:700;font-size:1.2rem;line-height:1.2;
+  font-variation-settings:"wdth" 105;margin:0 0 1.1rem;text-wrap:balance;color:var(--txt)}
+.cond .fig{font-family:var(--f-disp);font-weight:900;font-size:2.9rem;line-height:1;
+  font-variation-settings:"wdth" 100;font-variant-numeric:tabular-nums;margin:0 0 .5rem}
+.cond .fig.sm{font-size:1.9rem}
+.cond .slash{color:var(--txt-3);font-size:.6em}
+.cond .desc{font-size:.88rem;color:var(--txt-2);margin:0 0 1.1rem;line-height:1.55}
+.cond .desc em{color:var(--txt);font-style:normal;font-weight:600}
+.cond .quote{font-size:.9rem;color:var(--txt-2);font-style:italic;margin:0;
+  padding-top:1rem;border-top:1px solid var(--line-2);line-height:1.55}
+
+/* ══ additive consensus bars ════════════════════════════════════════════ */
+.legend{border:1px solid var(--line);border-radius:3px;padding:1.3rem 1.4rem;margin:0 0 2.2rem;max-width:46rem;background:var(--void)}
+.legend .lt{font-family:var(--f-mono);font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3);margin:0 0 .9rem}
+.legend p{font-size:.9rem;color:var(--txt-2);margin:0 0 .9rem;line-height:1.6}
+.legend p:last-child{margin-bottom:0}
+.legend strong{color:var(--txt)}
+.swatch{display:inline-block;width:.72rem;height:.72rem;border-radius:2px;vertical-align:-.06em;margin-right:.3rem}
+.sw-n{background:var(--nimby)}.sw-y{background:var(--yimby)}.sw-f{background:var(--fuse)}
+
+.rows{display:flex;flex-direction:column;border-top:1px solid var(--line-2);margin-top:1.6rem}
+.row{padding:1.15rem 0;border-bottom:1px solid var(--line-2)}
+.row-top{display:flex;gap:.8rem;align-items:baseline;margin-bottom:.65rem;flex-wrap:wrap}
+.row-id{font-family:var(--f-mono);font-size:.62rem;font-weight:500;color:var(--txt-3);flex:none}
+.row-txt{font-size:.93rem;line-height:1.5;margin:0;color:var(--txt);flex:1;min-width:14rem}
+
+.mix{position:relative;height:15px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden;isolation:isolate}
+.mix .f{position:absolute;top:0;bottom:0;width:0;mix-blend-mode:screen;transition:width .95s cubic-bezier(.2,.85,.3,1)}
+.mix .f.n{left:0;background:linear-gradient(90deg,rgba(200,90,90,.5),var(--nimby))}
+.mix .f.y{right:0;background:linear-gradient(270deg,rgba(123,160,224,.5),var(--yimby))}
+.in .mix .f.n{width:calc(var(--a) * 1%)}
+.in .mix .f.y{width:calc(var(--b) * 1%)}
+@media (prefers-reduced-motion:reduce){.mix .f{transition:none}}
+.row-nums{display:flex;justify-content:space-between;margin-top:.45rem;
+  font-family:var(--f-mono);font-size:.66rem;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.row-nums .a{color:var(--nimby)}
+.row-nums .b{color:var(--yimby)}
+
+/* ══ interactive ════════════════════════════════════════════════════════ */
+.play{border:1px solid var(--line);border-radius:4px;padding:clamp(1.5rem,4vw,2.6rem);max-width:52rem;background:var(--void)}
+.play .hint{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3);margin:0 0 .8rem}
+#stmt{font-family:var(--f-disp);font-weight:700;font-size:clamp(1.25rem,3vw,1.95rem);
+  line-height:1.2;font-variation-settings:"wdth" 105;letter-spacing:-.014em;
+  margin:0 0 2rem;min-height:2.4em;text-wrap:balance;color:var(--txt)}
+.bigmix{position:relative;height:34px;background:rgba(255,255,255,.05);border-radius:3px;overflow:hidden;isolation:isolate}
+.bigmix .f{position:absolute;top:0;bottom:0;width:0;mix-blend-mode:screen;transition:width 1s cubic-bezier(.2,.85,.3,1)}
+.bigmix .f.n{left:0;background:linear-gradient(90deg,rgba(200,90,90,.45),var(--nimby))}
+.bigmix .f.y{right:0;background:linear-gradient(270deg,rgba(123,160,224,.45),var(--yimby))}
+@media (prefers-reduced-motion:reduce){.bigmix .f{transition:none}}
+.bigmix-labels{display:flex;justify-content:space-between;margin-top:.7rem;
+  font-family:var(--f-mono);font-size:.68rem;font-variant-numeric:tabular-nums}
+.bigmix-labels .a{color:var(--nimby)}
+.bigmix-labels .b{color:var(--yimby);text-align:right}
+.bigmix-labels .sub{display:block;color:var(--txt-3);font-size:.85em;letter-spacing:.06em;text-transform:uppercase;margin-top:.2rem}
+
+.toggles{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2.2rem}
+.tg{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.04em;
+  background:transparent;color:var(--txt-2);border:1px solid var(--line);
+  padding:.55rem .85rem;border-radius:2px;cursor:pointer;
+  transition:border-color .2s,color .2s,background .2s}
+.tg:hover{color:var(--txt);border-color:rgba(255,255,255,.3)}
+.tg:focus-visible{outline:2px solid var(--yimby);outline-offset:2px}
+.tg.on{color:#000;background:var(--fuse);border-color:var(--fuse);font-weight:500}
+.play-note{font-size:.95rem;color:var(--txt-2);margin:2rem 0 0;line-height:1.6}
+.play-note em{color:var(--txt);font-style:normal;font-weight:600}
+
+/* ══ pull quote ═════════════════════════════════════════════════════════ */
+.pull{padding:clamp(4.5rem,12vw,8rem) 0;text-align:center}
+.pull blockquote{font-family:var(--f-disp);font-weight:600;
+  font-size:clamp(1.5rem,4.4vw,3rem);line-height:1.14;
+  font-variation-settings:"wdth" 100;letter-spacing:-.024em;
+  margin:0 auto;max-width:20ch;text-wrap:balance;color:var(--txt)}
+.pull cite{display:block;font-family:var(--f-mono);font-style:normal;font-size:.66rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3);margin-top:1.8rem}
+
+/* ══ movement ═══════════════════════════════════════════════════════════ */
+.moves{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.1rem}
+.move{border:1px solid var(--line);border-radius:3px;padding:1.7rem 1.5rem;background:var(--void)}
+.move .big{font-family:var(--f-disp);font-weight:900;font-size:3.3rem;line-height:1;
+  font-variation-settings:"wdth" 100;font-variant-numeric:tabular-nums;margin:0 0 .8rem}
+.move .big.sm{font-size:2.2rem}
+.move .of{font-size:.42em;color:var(--txt-3);font-weight:700}
+.move h4{font-family:var(--f-disp);font-weight:700;font-size:1.05rem;line-height:1.25;
+  font-variation-settings:"wdth" 105;margin:0 0 .6rem;color:var(--txt)}
+.move p{font-size:.9rem;color:var(--txt-2);margin:0;line-height:1.6}
+.move p em{color:var(--txt);font-style:normal;font-weight:600}
+
+/* ══ footer ═════════════════════════════════════════════════════════════ */
+footer{border-top:1px solid var(--line);padding:clamp(3.5rem,9vw,6rem) 0 3rem;margin-top:clamp(3rem,8vw,5rem)}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2.5rem}
+@media (max-width:760px){.f-grid{grid-template-columns:1fr;gap:2rem}}
+footer h3{font-family:var(--f-disp);font-weight:800;font-size:clamp(1.5rem,3.4vw,2.3rem);
+  line-height:1.08;font-variation-settings:"wdth" 108;letter-spacing:-.02em;
+  margin:0 0 1rem;max-width:18ch;text-wrap:balance}
+footer p{font-size:.93rem;color:var(--txt-2);max-width:34rem}
+.f-col h5{font-family:var(--f-mono);font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--txt-3);margin:0 0 1rem;font-weight:500}
+.f-col a{display:block;color:var(--txt-2);text-decoration:none;font-size:.92rem;padding:.3rem 0;transition:color .2s}
+.f-col a:hover{color:var(--yimby)}
+.f-col a:focus-visible{outline:2px solid var(--yimby);outline-offset:2px}
+.f-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;
+  margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line-2);
+  font-family:var(--f-mono);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--txt-3)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+
+<nav>
+  <div class="brand">SDD<i>.</i></div>
+  <div class="links">
+    <a href="#method">Method</a>
+    <a href="#findings">Findings</a>
+    <a href="#conditions">Conditions</a>
+    <a href="#divide">The divide</a>
+    <a href="#movement">Movement</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════ -->
+<section class="hero wrap">
+  <p class="eyebrow">Sydney Density Deliberations · AMPLIFY × RadicalxChange</p>
+  <h1><span class="fluid" id="fluid"><canvas class="fx" id="fx" aria-hidden="true"></canvas>Beyond</span>
+    <span class="nimby">NIMBY</span><span class="vs">vs</span><span class="yimby">YIMBY</span></h1>
+  <p class="lede">The fight looks bigger than it is. Beneath the headlines, the people who fight hardest over Sydney's density agree on a surprisingly long list of <em>specifics</em> — and so does everyone else.</p>
+  <div class="hero-meta">
+    <span>Sydney · June–July 2026</span>
+    <span>2,535 surveyed · 172 deliberators</span>
+    <span>8 local government areas</span>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="mq-track">
+    <span class="mq-item">Public transport</span><span class="mq-item">Green space</span><span class="mq-item">Developer accountability</span><span class="mq-item">Affordability at 30% of income</span><span class="mq-item">Density near transport hubs</span><span class="mq-item">Strategic-stage consultation</span><span class="mq-item">Permanence, not goodwill</span><span class="mq-item">Walkable hubs</span><span class="mq-item">Housing mix</span><span class="mq-item">Tree canopy</span><span class="mq-item">Building quality</span><span class="mq-item">A room that reflects the community</span>
+    <span class="mq-item">Public transport</span><span class="mq-item">Green space</span><span class="mq-item">Developer accountability</span><span class="mq-item">Affordability at 30% of income</span><span class="mq-item">Density near transport hubs</span><span class="mq-item">Strategic-stage consultation</span><span class="mq-item">Permanence, not goodwill</span><span class="mq-item">Walkable hubs</span><span class="mq-item">Housing mix</span><span class="mq-item">Tree canopy</span><span class="mq-item">Building quality</span><span class="mq-item">A room that reflects the community</span>
+  </div>
+</div>
+
+<!-- ══ BIG STAT ══════════════════════════════════════════════════════ -->
+<section class="stat-sec wrap">
+  <p class="eyebrow rv">In AMPLIFY's national survey of 2,535 Australians</p>
+  <p class="giant grad"><span class="count" data-target="73">73</span>%</p>
+  <p class="stat-cap rv">sit in a <em>conditional middle</em>. Neither fixed supporters nor fixed opponents — their views on density depend on <em>how</em>, <em>where</em>, and <em>under what conditions</em> new housing gets built.</p>
+</section>
+
+<!-- ══ METHOD ════════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="method">
+  <p class="eyebrow rv">The methodology</p>
+  <h2 class="rv">A new way to find agreement where headlines see only fight.</h2>
+  <p class="intro rv">Most consultations ask what people <strong>oppose</strong>. We built a process that asks a different question: once we understand each other's positions, what might we move forward on <strong>together</strong>?</p>
+
+  <div class="publics">
+    <div class="pub a rv">
+      <div class="tag">Stage 1 · Sessions 1–2</div>
+      <div class="n"><span class="count" data-target="22">22</span></div>
+      <h4>The engaged public</h4>
+      <p>Highly informed, actively involved residents — both opponents and supporters of density, drawn from eight Sydney LGAs. The people who show up to fight over developments. They mapped the arguments first.</p>
+    </div>
+    <div class="pub b rv">
+      <div class="tag">Stage 2 · Sessions 3–4</div>
+      <div class="n"><span class="count" data-target="150">150</span></div>
+      <h4>The representative public</h4>
+      <p>Recruited to reflect the same neighbourhoods — no particular stake in housing. They tested whether the engaged public's bridging conditions held with everyday Sydneysiders. 58 returned for a fourth session.</p>
+    </div>
+  </div>
+
+  <div class="tools rv">
+    <div class="tool">
+      <div class="step">01 →</div>
+      <h5>Pol.is</h5>
+      <p class="role">Mapping the landscape</p>
+      <p>An open-source platform that clusters opinion, and then surfaces the statements that cross the divide it finds. Popularity and bridging are different measures, and it reports the second one.</p>
+    </div>
+    <div class="tool">
+      <div class="step">02 →</div>
+      <h5>Quadratic voting</h5>
+      <p class="role">Pricing intensity</p>
+      <p>Participants spend a limited budget of voice credits across priorities; each extra vote on one item costs quadratically more. Forces genuine trade-offs, revealing what people actually value most.</p>
+    </div>
+    <div class="tool">
+      <div class="step">03 →</div>
+      <h5>Stanford Online Deliberation</h5>
+      <p class="role">Testing against lived experience</p>
+      <p>Structured small-group video conversations with an automated moderator. Turns aggregate signals into human specifics — clarifying ambiguity, surfacing local context, letting quieter voices speak.</p>
+    </div>
+    <div class="tool">
+      <div class="step">04 →</div>
+      <h5>Baseline → endline</h5>
+      <p class="role">Measuring movement</p>
+      <p>Matched surveys before and after each cohort's process, to see whether structured deliberation shifts positions, perceptions of the other side, or both.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINDINGS ══════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="findings">
+  <p class="eyebrow rv">Three findings</p>
+  <h2 class="rv">What we learned when we actually asked.</h2>
+  <p class="intro rv">Two publics. Four sessions. 392 statements, 24,913 votes. Here's what emerged.</p>
+
+  <div class="finds">
+    <div class="find rv">
+      <div class="num">01</div>
+      <div>
+        <h3>The loudest objections turned out to be negotiable.</h3>
+        <p>Nine in ten of the group most strongly opposed to density would accept a development they dislike — if their community had real power over what gets built. The representative public ratified the same trade across its own divide. Community power is, before anything else, the condition of those who would otherwise say no.</p>
+      </div>
+    </div>
+    <div class="find rv">
+      <div class="num">02</div>
+      <div>
+        <h3>The people who fight hardest agree on a long list of specifics.</h3>
+        <p>Public transport, open space protected as density rises, homes essential workers can afford, a greater mix of housing types, design quality, schools and clinics attended to early, affordability defined at 30% of income. Several of these carried <em>every</em> participant on one side and strong majorities on the other. What divides them is much shorter: how high to build, whether supply alone delivers affordability, and whether infrastructure comes before housing or with it.</p>
+      </div>
+    </div>
+    <div class="find rv">
+      <div class="num">03</div>
+      <div>
+        <h3>A representative public arrived, on its own, at the same priorities.</h3>
+        <p>150 Sydneysiders with no particular stake in housing, recruited from the same neighbourhoods. Their quadratic vote put public transport first and green space second, both inside the top three the engaged cohort had set. They arrived there having never seen the engaged public's ballot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONDITIONS ════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="conditions">
+  <p class="eyebrow rv">Six conditions</p>
+  <h2 class="rv">Density done well, in Sydneysiders' own words.</h2>
+  <p class="intro rv">The bridging conditions that surfaced across every instrument the program used.</p>
+
+  <div class="conds">
+    <div class="cond rv">
+      <p class="label">01 · Transport</p>
+      <h4>Trains and buses that actually turn up.</h4>
+      <p class="fig grad"><span class="count" data-target="93">93</span>%</p>
+      <p class="desc">of the representative public agree better public transport and local amenities are the condition on density. It topped the quadratic vote in <em>both</em> publics.</p>
+      <p class="quote">“It just needs to be continually flowing so that the moment I step out, I have a choice.”</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">02 · Green space</p>
+      <h4>Parks are not a nice-to-have.</h4>
+      <p class="fig grad"><span class="count" data-target="94">94</span>%</p>
+      <p class="desc">of height sceptics — and 91% of supporters — agree that as density rises, guaranteed parks and open space matter more with every extra storey.</p>
+      <p class="quote">“Centuries and centuries old.” A park, once the land is taken, does not come back.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">03 · Accountability</p>
+      <h4>Developers held to what they build.</h4>
+      <p class="fig grad"><span class="count" data-target="99">99</span>%</p>
+      <p class="desc">the highest-agreement statement in the entire program. Nobody asked about developers — it came up anyway, in room after room.</p>
+      <p class="quote">“They claim bankruptcy and just disappear.” The builder's mistake becomes the owner's bill.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">04 · Affordability</p>
+      <h4>Pegged to income. Permanent. Enforced.</h4>
+      <p class="fig grad"><span class="count" data-target="30">30</span>%</p>
+      <p class="desc">of household income — the definition three of four engaged groups arrived at independently, set against the discount-off-market definition in current schemes.</p>
+      <p class="quote">Both camps agree who it is for: essential workers, young people, first-home buyers.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">05 · Built form</p>
+      <h4>Height that steps down.</h4>
+      <p class="fig grad sm">71% <span class="slash">/</span> 68%</p>
+      <p class="desc">of height sceptics and supporters both accept “high-rises on main roads, low-rise on backstreets”. One of the few built-form statements to carry the divide.</p>
+      <p class="quote">Concentrated growth near transport hubs is the shape of density both sides can name.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">06 · Consultation</p>
+      <h4>Early, strategic, and representative.</h4>
+      <p class="fig grad sm">80% <span class="slash">/</span> 81%</p>
+      <p class="desc">want communities setting vision and rules through long-term plans, rather than litigating every proposal one at a time. Both camps, near-identical numbers.</p>
+      <p class="quote">“A tick box exercise.” Consultation arrives after the decisions have been made.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PULL QUOTE ════════════════════════════════════════════════════ -->
+<section class="pull wrap">
+  <blockquote class="rv">I think in general people aren't opposed to development itself, they are opposed to development that is done without appropriate planning and infrastructure to go alongside it.</blockquote>
+  <cite class="rv">Representative public participant · endline survey</cite>
+</section>
+
+<!-- ══ THE DIVIDE ════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="divide">
+  <p class="eyebrow rv">The one real divide</p>
+  <h2 class="rv">Height splits the room. Until you give it a reason.</h2>
+  <p class="intro rv">Asked to reject high-rise outright, <strong>75%</strong> of the sceptic cluster agreed (R-s45). Every statement below runs the other way — agreeing means <em>accepting</em> high-rise. Watch how far the sceptics travel as the condition attached to it gets more concrete.</p>
+
+  <div class="legend rv">
+    <p class="lt">How to read the bars</p>
+    <p><span class="swatch sw-n"></span><strong>Red</strong> grows from the left: agreement among height sceptics, the NIMBY-leaning cluster (108 people). <span class="swatch sw-y"></span><strong>Blue</strong> grows from the right: agreement among high-rise supporters, the YIMBY-leaning cluster (40 people).</p>
+    <p><span class="swatch sw-f"></span>Where the two overlap they add together and <strong>ignite into pale rose-lilac</strong>. A wide bright band means the statement carried both camps — agreement across difference, as literal additive light. Two separated stubs with black between them means a divide.</p>
+  </div>
+
+  <div class="play rv">
+    <p class="hint">↓ The statement being voted on · agreeing means accepting high-rise</p>
+    <p id="stmt">NIMBYs/Boomers who complain about high rises need to accept we are in a growing city.</p>
+
+    <div class="bigmix" id="bigmix">
+      <div class="f n" id="bf-n"></div>
+      <div class="f y" id="bf-y"></div>
+    </div>
+    <div class="bigmix-labels">
+      <div class="a"><span id="bv-n">41%</span><span class="sub">Height sceptics · 108</span></div>
+      <div class="b"><span id="bv-y">87%</span><span class="sub">High-rise supporters · 40</span></div>
+    </div>
+
+    <p class="hint" style="margin-top:2.4rem">↓ Attach a condition and watch the sceptic bar climb</p>
+    <div class="toggles" id="toggles">
+      <button class="tg on" data-key="bare">No condition — just build up</button>
+      <button class="tg" data-key="opportunity">…it creates places to live</button>
+      <button class="tg" data-key="land">…the city has no land left</button>
+      <button class="tg" data-key="form">…on main roads, low-rise behind</button>
+      <button class="tg" data-key="stations">…near existing stations</button>
+      <button class="tg" data-key="affordable">…with affordable housing attached</button>
+    </div>
+
+    <p class="play-note">What the sceptics reject is <em>blanket</em> verticality, and they will say so at 75%. Asserted bare, high-rise still carries 41% of them. Tied to a place, a station, or a promise about affordability, it carries 81% — and the bar goes white all the way across.</p>
+  </div>
+
+  <div class="rows">
+    <div class="row"><div class="row-top"><div class="row-id">R-s45</div><p class="row-txt">No to massive high-rise buildings</p></div>
+      <div class="mix" style="--a:75;--b:3"><div class="f n"></div><div class="f y"></div></div>
+      <div class="row-nums"><span class="a">75%</span><span class="b">3%</span></div></div>
+    <div class="row"><div class="row-top"><div class="row-id">R-s125</div><p class="row-txt">Sydney lacks the space to build horizontally, so vertical development may be the way</p></div>
+      <div class="mix" style="--a:51;--b:90"><div class="f n"></div><div class="f y"></div></div>
+      <div class="row-nums"><span class="a">51%</span><span class="b">90%</span></div></div>
+    <div class="row"><div class="row-top"><div class="row-id">R-s175</div><p class="row-txt">High-rises on main roads, low-rise on backstreets — density done right</p></div>
+      <div class="mix" style="--a:71;--b:68"><div class="f n"></div><div class="f y"></div></div>
+      <div class="row-nums"><span class="a">71%</span><span class="b">68%</span></div></div>
+    <div class="row"><div class="row-top"><div class="row-id">R-s86</div><p class="row-txt">High density with shops and amenities near existing stations</p></div>
+      <div class="mix" style="--a:72;--b:81"><div class="f n"></div><div class="f y"></div></div>
+      <div class="row-nums"><span class="a">72%</span><span class="b">81%</span></div></div>
+    <div class="row"><div class="row-top"><div class="row-id">R-s191</div><p class="row-txt">More affordable housing; high-rises are fine in certain areas</p></div>
+      <div class="mix" style="--a:81;--b:90"><div class="f n"></div><div class="f y"></div></div>
+      <div class="row-nums"><span class="a">81%</span><span class="b">90%</span></div></div>
+    <div class="row"><div class="row-top"><div class="row-id">R-s168</div><p class="row-txt">Developers need to be held accountable for dodgy building standards</p></div>
+      <div class="mix" style="--a:98;--b:100"><div class="f n"></div><div class="f y"></div></div>
+      <div class="row-nums"><span class="a">98%</span><span class="b">100%</span></div></div>
+  </div>
+</section>
+
+<!-- ══ MOVEMENT ══════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="movement">
+  <p class="eyebrow rv">Before → after</p>
+  <h2 class="rv">Did deliberation move people?</h2>
+  <p class="intro rv">Positions themselves barely shifted. What moved was how each side saw the other — and what their opposition was actually about.</p>
+
+  <div class="moves">
+    <div class="move rv">
+      <p class="big grad"><span class="count" data-target="43">43</span><span class="of">/46</span></p>
+      <h4>found more common ground than they expected.</h4>
+      <p>93% of the representative public, and none disagreed. The same share felt able to genuinely express their views; 41 of 46 agreed a process like this would be a good way to shape housing policy.</p>
+    </div>
+    <div class="move rv">
+      <p class="big grad sm">−0.33 → +0.27</p>
+      <h4>Opposition moved off procedure and onto delivery.</h4>
+      <p>Among the engaged public, the strongest disqualifier at baseline was procedural — density built with residents having little say. After deliberation it flipped to net acceptance, the largest shift of any condition tested. Meanwhile the delivery conditions <em>hardened</em>.</p>
+    </div>
+    <div class="move rv">
+      <p class="big grad sm">Every item</p>
+      <h4>of perception rose in the engaged public.</h4>
+      <p>Feeling understood started as the survey's lowest item and was the only one to move up for some and down for none. Understanding of others rose alongside it, as did the sense that the other side is open to compromise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════ -->
+<footer class="wrap">
+  <div class="f-grid">
+    <div>
+      <h3 class="grad">Uncommon ground is more common than you'd think.</h3>
+      <p>The Sydney Density Deliberations was a joint program of AMPLIFY and the RadicalxChange Foundation, conducted across eight Sydney local government areas between June and July 2026. Led by Paula Berman (RadicalxChange), with Jess Scully, Jessica Lewatt, Stephen Beverly, Joshua Rhee, Min-Taec Kim and Rory Gallagher.</p>
+    </div>
+    <div class="f-col">
+      <h5>Read more</h5>
+      <a href="https://heyzine.com/flip-book/36a91d7953.html#page/1" target="_blank" rel="noopener">The Density Bargain →</a>
+      <a href="https://pol.is/report/r45ww7kx659szbzfyk7kj" target="_blank" rel="noopener">Pol.is report, engaged →</a>
+      <a href="https://docs.google.com/spreadsheets/d/1pJPgpuflGpUAH3wcUGxZJXY2mFBIHTX-/edit?usp=sharing&amp;ouid=110304088965275055667&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Uncommon Ground data →</a>
+    </div>
+    <div class="f-col">
+      <h5>The tools</h5>
+      <a href="https://pol.is" target="_blank" rel="noopener">Pol.is →</a>
+      <a href="https://www.radicalxchange.org/tools/plural-voting/" target="_blank" rel="noopener">Plural voting →</a>
+      <a href="https://stanforddeliberate.org/" target="_blank" rel="noopener">Stanford deliberation →</a>
+    </div>
+  </div>
+  <div class="f-bot">
+    <span>© 2026 AMPLIFY × RadicalxChange Foundation</span>
+    <span>Summary of findings</span>
+  </div>
+</footer>
+
+</main>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ── fluid colour loop, painted inside the word "Beyond" ──────────────
+     Liquid field is painted across the canvas, then cut to the glyphs with
+     destination-in. No blend modes, no isolation — the canvas arrives
+     already shaped like the word, so it composites over black correctly
+     in every engine. Colours stay saturated because the blobs are alpha-
+     blended, not summed: 'lighter' would drive everything to white.     */
+  var TEXT = 'Beyond';
+  var host = document.getElementById('fluid');
+  var cv   = document.getElementById('fx');
+  var ctx  = cv.getContext('2d');
+  var DPR  = Math.min(window.devicePixelRatio || 1, 2);
+  var BW = 0, BH = 0;                    // box size in CSS px
+  var SPEED = 7;                         // ← flow rate. 1 ≈ 70s per orbit, 7 ≈ 10s
+
+  // A full spectrum loop, weighted to the reference strip's cool end but
+  // running all the way through aqua, lime, amber, coral and magenta before
+  // returning to indigo. Many hues coexisting in one surface — the whole
+  // point of plurality, and what makes the bar feel alive rather than tidy.
+  // High-value hues, not pale ones: bright enough to hold the letterform
+  // against pure black, saturated enough not to read as washed.
+  /* Purple owns the long middle of the cycle — one unbroken 0.29→0.92 run,
+     moving against itself in hue (violet 255° → orchid 289°) and in
+     lightness (59% → 81%). Pink is down to a single stop, a 3% flash.
+     The green sits opposite it, reached and left through cyan: purple and
+     green are far apart on the wheel, and cyan is the only way across that
+     never passes through orange or yellow. */
+  /* No pink at all. Purple takes three quarters of the cycle and swings
+     between real extremes — from #4E14C0 at 42% lightness to #F0D4FF at
+     92% — so the word reads as one colour throwing light and shadow rather
+     than as a set of tints. The blues are pitched darker than before and
+     cut to a short bridge, which is the only way to reach the green without
+     crossing through orange or yellow. */
+  /* What makes this read as fluid rather than as stripes is even hue
+     velocity. The previous ramp swung ~200° of hue across its first quarter
+     and only ~40° across the remaining three, so the field crossed the fast
+     zone as a hard edge while the slow zone stayed smooth. Every step here
+     is 15–20° instead of 40–50°, the green is desaturated so the excursion
+     is shorter, and 0.00 and 1.00 hold the same colour so the wrap is
+     invisible. */
+  var RAMP = [
+    [0.00,'#4A14C4'],                                     // darkest purple, at the wrap
+    /* One arc, deep violet up to pale lilac and back, with a short blue at
+       the wrap. Hue only spans about 40° across the whole ramp, so there is
+       no fast zone anywhere and nothing can read as a stripe — the variety
+       comes from lightness instead, which runs 48% to 92%. */
+    [0.035,'#4428CE'],                                     // blue, at the wrap
+    [0.070,'#5420DC'],[0.110,'#5E22E2'],[0.150,'#6828E8'], // deep violets
+    [0.190,'#7230EE'],[0.230,'#7C38F0'],[0.270,'#8642F2'],
+    [0.310,'#9050F4'],[0.350,'#9A5EF6'],[0.390,'#A46CF8'],
+    [0.430,'#AE7AF8'],[0.470,'#B888FA'],[0.510,'#C296FA'],
+    [0.550,'#CCA4FC'],[0.590,'#D6B2FC'],[0.630,'#E0C0FE'],
+    [0.670,'#E8CEFE'],
+    [0.710,'#F2DAFF'],                                     // palest point
+    [0.750,'#E6C8FE'],[0.790,'#D8B4FC'],[0.830,'#C89EFA'],
+    [0.860,'#B686F6'],[0.890,'#A26EF2'],[0.920,'#8E56EE'],
+    [0.940,'#7A40EA'],[0.960,'#6630E2'],[0.980,'#4A26D0'], // back down, into blue
+    [1.000,'#3838C2']
+  ];
+  /* Must stay at 1. Above it, the field's range overshoots the ramp and the
+     surplus wraps onto the ramp's opening stops, sampling them twice as
+     often as everything else — and putting a crease in the field where the
+     wrap lands. At 1.3 that handed the first quarter of the ramp roughly a
+     third of all pixels, which is why a 9% green was covering the word. */
+  var CYCLES = 1.0;
+  var SCALE  = 1.15;                     // field frequency — lower = bigger, slower masses
+  var STIR   = 0.85;                     // domain-warp amplitude — high values go psychedelic
+  var OVER = 0.25;                       // canvas overflow above/below the box
+  var CH = 0, OY = 0;                    // canvas height, box top inside it
+
+  // The ramp baked into a 256-entry lookup table once, so the per-pixel loop
+  // is an array index rather than any colour maths.
+  var LUT = (function(){
+    var lc = document.createElement('canvas');
+    lc.width = 256; lc.height = 1;
+    var lx = lc.getContext('2d');
+    var g = lx.createLinearGradient(0, 0, 256, 0);
+    for (var s = 0; s < RAMP.length; s++) g.addColorStop(RAMP[s][0], RAMP[s][1]);
+    lx.fillStyle = g;
+    lx.fillRect(0, 0, 256, 1);
+    return lx.getImageData(0, 0, 256, 1).data;
+  })();
+
+  // Low-resolution buffer the fluid field is computed into, then scaled up.
+  // The field is smooth by construction, so the upscale costs no detail and
+  // saves ~16x the per-pixel work.
+  var fc = document.createElement('canvas');
+  var fx = fc.getContext('2d', {willReadFrequently: true});
+  var fimg = null, FW = 0, FH = 0;
+
+  function sizeCanvas(){
+    var b = host.getBoundingClientRect();
+    if (b.width < 2 || b.height < 2) return false;
+    BW = b.width; BH = b.height;
+    CH = BH * (1 + OVER * 2);
+    OY = BH * OVER;
+    cv.width  = Math.round(BW * DPR);
+    cv.height = Math.round(CH * DPR);
+
+    var nfw = Math.max(96, Math.min(300, Math.round(BW / 2.2)));
+    var nfh = Math.max(20, Math.round(nfw * CH / BW));
+    if (nfw !== FW || nfh !== FH){
+      FW = nfw; FH = nfh;
+      fc.width = FW; fc.height = FH;
+      fimg = fx.createImageData(FW, FH);
+    }
+    return true;
+  }
+
+  // Cheap smooth 2D noise: three sines whose arguments mix x and y, so the
+  // contours are not aligned to either axis and no grid shows through.
+  function nse(x, y){
+    return Math.sin(x) * Math.cos(y * 1.31)
+         + Math.sin(x * 1.73 + y * 0.61) * 0.60
+         + Math.cos(y * 2.13 - x * 0.47) * 0.42;
+  }
+
+  function paint(t){
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.clearRect(0, 0, BW, CH);
+
+    // No gradient at all any more. A linear gradient's colour is constant
+    // along every line perpendicular to its axis — that is what a band IS —
+    // so rotating, orbiting or warping one can only bend those bands, never
+    // dissolve them. The structure survived every previous attempt.
+    //
+    // Instead the colour is a scalar field evaluated per pixel, with the
+    // sampling position pushed around by the field itself before it is read.
+    // That is domain warping: the coordinates get folded and stirred, so the
+    // contours curl into each other and there is no axis left to line up on.
+    // It is the standard way of getting ink-in-water out of smooth noise.
+    var period = 9000 / SPEED * 7;
+    var w = t / period;
+
+    var t1 = w * 1.7, t2 = w * 1.3, t3 = w * 2.1, t4 = w * 0.9;
+    var d = fimg.data;
+    var p = 0;
+    var SC = SCALE / FH;                  // field scale, isotropic in x and y
+    var NORM = 1 / 2.05;                  // nse() range is about ±2.05
+
+    for (var yy = 0; yy < FH; yy++){
+      var ny = yy * SC;
+      for (var xx = 0; xx < FW; xx++){
+        var nx = xx * SC;
+
+        // first pass: where to look
+        var q1 = nse(nx + t1, ny - t2);
+        var q2 = nse(nx - t3, ny + t4 + 2.7);
+        // second pass: read from the stirred position. STIR has to stay
+        // modest — push it past ~1.5 and the contours fold back on
+        // themselves into tight curls, which is the psychedelic look
+        var v  = nse(nx + STIR * q1, ny + STIR * q2);
+
+        // wrap into the ramp — it starts and ends on the same colour, so
+        // the wrap is seamless and CYCLES controls how dense the mixing is
+        var u = (v * NORM * 0.5 + 0.5) * CYCLES + w * 0.30;
+        u -= Math.floor(u);
+
+        var li = (u * 255) << 2;
+        d[p++] = LUT[li];
+        d[p++] = LUT[li + 1];
+        d[p++] = LUT[li + 2];
+        d[p++] = 255;
+      }
+    }
+    fx.putImageData(fimg, 0, 0);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+
+    // Bilinear upscaling alone still leaves faint blockiness where the field
+    // changes fastest, so a small blur goes over the top. The image is drawn
+    // with an overscan of the blur radius: without it the blur would pull in
+    // transparency from beyond the edges and fade the outer strokes of the B
+    // and the d before the glyph mask is even applied.
+    var ob = Math.max(2, CH * 0.02);
+    if ('filter' in ctx) ctx.filter = 'blur(' + ob.toFixed(1) + 'px)';
+    ctx.drawImage(fc, -ob, -ob, BW + ob * 2, CH + ob * 2);
+    if ('filter' in ctx) ctx.filter = 'none';
+
+    // cut the field to the letterforms
+    var cs = getComputedStyle(host);
+    var fs = parseFloat(cs.fontSize) || 64;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.font = (cs.fontWeight || '900') + ' ' + fs + 'px ' + cs.fontFamily;
+    if ('letterSpacing' in ctx) ctx.letterSpacing = cs.letterSpacing;
+    var m = ctx.measureText(TEXT);
+    var tw = m.width || BW;
+    var asc  = m.actualBoundingBoxAscent  || fs * 0.72;
+    var desc = m.actualBoundingBoxDescent || fs * 0.08;
+    // the DOM box is set by the variable-width axis, which ctx.font can't
+    // express — scale horizontally so the drawn glyphs match it exactly
+    var kx = BW / tw;
+    ctx.globalCompositeOperation = 'destination-in';
+    ctx.setTransform(DPR * kx, 0, 0, DPR, 0, 0);
+    ctx.fillStyle = '#000';
+    // centre the glyphs on the span box, which sits OY down inside the canvas
+    ctx.fillText(TEXT, 0, OY + (BH - (asc + desc)) / 2 + asc);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  var last = 0;
+  function loop(t){
+    // 30fps: the field is now computed per pixel, and fluid motion this soft
+    // reads no better at 45 than at 30
+    if (t - last > 32){ paint(t); last = t; }
+    requestAnimationFrame(loop);
+  }
+  // did the canvas actually end up with visible pixels? Only then is it safe
+  // to retire the CSS gradient underneath — otherwise the word would vanish.
+  function hasInk(){
+    try {
+      var d = ctx.getImageData(0, 0, cv.width, cv.height).data;
+      for (var i = 3; i < d.length; i += 4 * 97) if (d[i] > 8) return true;
+      return false;
+    } catch (e) { return false; }
+  }
+
+  function start(){
+    if (!sizeCanvas()){ requestAnimationFrame(start); return; }
+    paint(performance.now());
+    if (hasInk()) host.classList.add('painted');
+    if (!reduce) requestAnimationFrame(loop);
+  }
+  // wait for the display face, or the box is measured at fallback-font size
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(start);
+  else window.addEventListener('load', start);
+  window.addEventListener('resize', function(){ if (sizeCanvas()) paint(performance.now()); });
+
+  /* ── reveal + bar fills ───────────────────────────────────────────── */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+  document.querySelectorAll('.rv, .row').forEach(function(el){ io.observe(el); });
+
+  /* ── counters ─────────────────────────────────────────────────────── */
+  var cio = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      cio.unobserve(e.target);
+      var el = e.target, target = parseFloat(el.dataset.target);
+      if (reduce){ el.textContent = target; return; }
+      var t0 = null, dur = 1100;
+      function step(ts){
+        if (!t0) t0 = ts;
+        var k = Math.min(1, (ts - t0) / dur);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }, {threshold:0.5});
+  document.querySelectorAll('.count').forEach(function(el){ el.textContent = '0'; cio.observe(el); });
+
+  /* ── height explorer ──────────────────────────────────────────────── */
+  /* Every statement runs the SAME WAY: agreeing means accepting high-rise.
+     The earlier set opened on "No to massive high-rise buildings", where
+     agreeing means the opposite — so on a single bar the sceptics appeared
+     to warm to height at the very moment they were hardening against it.
+     Ordered here by how far the sceptic cluster actually travels: 41 → 81. */
+  var STATES = {
+    bare:        {t:'NIMBYs/Boomers who complain about high rises need to accept we are in a growing city.', a:41, b:87},
+    opportunity: {t:'I do feel there needs to be high rise buildings as it does create more opportunities for people to live in.', a:47, b:85},
+    land:        {t:'Sydney lacks the space to build horizontally, so vertical development may be the way.', a:51, b:90},
+    form:        {t:'High-rises on main roads, low-rise on backstreets — density done right.', a:71, b:68},
+    stations:    {t:'High density with shops and amenities near existing stations.', a:72, b:81},
+    affordable:  {t:'More affordable housing; high-rises are fine in certain areas.', a:81, b:90}
+  };
+  var stmt = document.getElementById('stmt');
+  var vn = document.getElementById('bv-n'), vy = document.getElementById('bv-y');
+
+  function apply(key){
+    var s = STATES[key];
+    if (!s) return;
+    stmt.textContent = s.t;
+    document.getElementById('bf-n').style.width = s.a + '%';
+    document.getElementById('bf-y').style.width = s.b + '%';
+    vn.textContent = s.a + '%';
+    vy.textContent = s.b + '%';
+  }
+  document.getElementById('toggles').addEventListener('click', function(ev){
+    var btn = ev.target.closest('.tg');
+    if (!btn) return;
+    this.querySelectorAll('.tg').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    apply(btn.dataset.key);
+  });
+
+  var pio = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ pio.unobserve(e.target); apply('base'); } });
+  }, {threshold:0.3});
+  pio.observe(document.querySelector('.play'));
+})();
+</script>
+</body>
+</html>
+{% endraw %}
