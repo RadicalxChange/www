@@ -1,0 +1,1072 @@
+---
+permalink: /density-done-well/index.html
+---
+{% raw %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Findings from the Sydney Density Deliberations, a joint program of AMPLIFY and the RadicalxChange Foundation: where Sydney's housing-density opponents and supporters actually agree.">
+<meta name="color-scheme" content="only light">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Beyond YIMBY vs NIMBY — Sydney Density Deliberations">
+<meta property="og:description" content="The fight looks bigger than it is. The people who fight hardest over Sydney's density agree on a surprisingly long list of specifics — and so does everyone else.">
+<meta property="og:url" content="https://www.radicalxchange.org/density-done-well/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Beyond YIMBY vs NIMBY — Sydney Density Deliberations">
+<meta name="twitter:description" content="The fight looks bigger than it is. The people who fight hardest over Sydney's density agree on a surprisingly long list of specifics — and so does everyone else.">
+
+<title>Density Done Well</title>
+<link rel="canonical" href="https://www.radicalxchange.org/density-done-well/">
+<link rel="icon" type="image/png" href="/images/logos/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Public+Sans:ital,wght@0,300..700;1,400..600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<style>
+/* ══ tokens ══════════════════════════════════════════════════════════════
+   Pure black ground. Colour lives only INSIDE objects — never as a wash.
+   Single committed visual world: every colour painted explicitly. */
+:root{
+  --void:#000000;
+
+  /* the plurality ramp, read off the reference strip:
+     índigo → violeta → periwinkle → azul claro → orquídea → lavanda → menta → teal */
+  --r-indigo:#4B3A93;
+  --r-violet:#6E5FC4;
+  --r-peri:#8A83E2;
+  --r-sky:#93A6F0;
+  --r-orchid:#A845DE;
+  --r-lav:#A6A3C2;
+  --r-mint:#A5D3AE;
+  --r-teal:#7FA6A8;
+
+  /* the two camps, taken from the two ends of the ramp that read apart */
+  --nimby:#C85A5A;   /* red  · height sceptics      */
+  --yimby:#7BA0E0;   /* blue · high-rise supporters */
+  --fuse:#E3C2EB;    /* what red + blue make together on black */
+
+  --txt:#F4F2F8;
+  --txt-2:#A6A1B8;
+  --txt-3:#6B6680;
+  --line:rgba(255,255,255,.13);
+  --line-2:rgba(255,255,255,.07);
+
+  --f-disp:"Archivo",-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  --f-body:"Public Sans",-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,'SF Mono',Menlo,monospace;
+
+  --pad:clamp(1.15rem,4.5vw,3.5rem);
+  --measure:38rem;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--void)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  margin:0;
+  background:var(--void);
+  color:var(--txt);
+  font-family:var(--f-body);
+  font-size:clamp(1rem,.95rem + .2vw,1.08rem);
+  font-weight:390;
+  line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ══ chrome ═════════════════════════════════════════════════════════════ */
+/* The bar rides at the top of the hero and scrolls away with it, rather than
+   following the page down. It sits on the hero's own black, so it carries no
+   ground and no rule of its own — nothing to see once it has left. */
+nav{
+  position:relative;z-index:40;
+  display:flex;align-items:center;gap:1.5rem;
+  padding:1.15rem var(--pad) .4rem;
+}
+/* The nav keeps its own dark ground the whole way down the page, so white
+   marks stay legible over the cream half as well as over the hero. The two
+   logos are sized by optical weight rather than to a common height: the
+   AMPLIFY mark carries its own padded block, the RxC one is a bare wordmark,
+   so matching their heights would make AMPLIFY read smaller than it is. */
+.brand{display:flex;align-items:center;gap:.72rem;text-decoration:none;line-height:0}
+.brand img{display:block;width:auto}
+.lg-amp{height:40px}
+.lg-rxc{height:30px}
+.lg-x{font-family:var(--f-mono);font-size:.8rem;color:var(--txt-3);line-height:1}
+.brand:focus-visible{outline:2px solid var(--txt);outline-offset:4px;border-radius:2px}
+@media (max-width:520px){.lg-amp{height:30px}.lg-rxc{height:22px}.lg-x{font-size:.7rem}}
+nav .links{margin-left:auto;display:flex;gap:1.35rem}
+nav a{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--txt-3);text-decoration:none;transition:color .2s}
+nav a:hover{color:var(--txt)}
+nav a:focus-visible{outline:2px solid var(--yimby);outline-offset:3px;border-radius:2px}
+@media (max-width:720px){nav .links{display:none}}
+
+.wrap{max-width:74rem;margin:0 auto;padding:0 var(--pad);position:relative;z-index:2}
+.col{max-width:var(--measure)}
+section{scroll-margin-top:1.5rem}
+p{margin:0 0 1.1em}
+
+.eyebrow{font-family:var(--f-mono);font-size:.66rem;font-weight:500;letter-spacing:.19em;
+  text-transform:uppercase;color:var(--txt-3);margin:0 0 1.2rem}
+h2{font-family:var(--f-disp);font-weight:800;
+  font-size:clamp(1.9rem,4.6vw,3.3rem);line-height:1.02;
+  font-variation-settings:"wdth" 108;letter-spacing:-.022em;
+  margin:0 0 1.1rem;max-width:19ch;text-wrap:balance;color:var(--txt)}
+.intro{font-size:clamp(1.02rem,1.5vw,1.18rem);color:var(--txt-2);max-width:44rem;margin:0 0 2.6rem}
+/* every other block treats <em> as weight, not slant; .intro was the one that
+   never got the rule, so its one italic sat in a visible gap of its own side
+   bearing and read as a double space */
+.intro em{color:var(--txt);font-style:normal;font-weight:600}
+
+/* the reference ramp, stops packed tight so the hues stay adjacent
+   rather than smearing into one another. Loops back to indigo at 100%. */
+.grad{
+  background:linear-gradient(96deg,
+    #7B52F0 0%,    #6A62EC 5%,    #5F8AE4 9%,
+    #5FC8D8 13%,   #6A9CE8 17%,   #7B62F0 22%,   #9068F4 28%,
+    #BFC8FF 33%,   #EEF0FF 36%,   #C4B0FC 39%,   #A07AF6 44%,
+    #8A5CF0 50%,   #7642E4 57%,   #8B5CF6 64%,   #A47AF8 71%,
+    #C0A0FA 77%,   #E4D6FE 82%,   #C0A0FA 86%,   #A47AF8 90%,
+    #8E62F2 95%,   #7B52F0 100%);
+  background-size:260% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:gradsweep 14s linear infinite;
+}
+
+@media (prefers-reduced-motion:reduce){.grad{animation:none}}
+
+/* ══ the cream half ══════════════════════════════════════════════════════
+   Everything from the 73% down runs on cream. Rather than rewrite each
+   component, the palette tokens are redefined on this one wrapper and the
+   components inherit — they were all built to read from tokens, so they
+   flip wholesale. Only the things that assume a dark ground need real
+   changes, and those are handled explicitly below. */
+.cream{
+  --void:#FDF8E2;
+  --txt:#221E14;
+  --txt-2:#57523F;
+  --txt-3:#8A8265;
+  --line:rgba(34,30,20,.24);
+  --line-2:rgba(34,30,20,.12);
+  --navy:#1E3A5F;
+  --track:#E8E6D8;
+  background:var(--void);
+  color:var(--txt);
+}
+/* The display gradient has to come down in value on cream — the pale
+   lilacs that glowed on black would disappear against the paper.
+   background is a shorthand, so declaring it here resets every background
+   sub-property back to its initial value, background-clip included. The
+   clip has to be restated or the gradient stops being cut to the glyphs
+   and paints as a solid block behind them, with the transparent text
+   invisible on top of it. */
+.cream .grad{
+  background:linear-gradient(96deg,
+    #5A2FC8 0%,   #4C46C0 8%,   #3E7AB8 14%,
+    #3FA8B4 19%,  #4C7CC8 25%,  #5F44D8 32%,
+    #7A3AE0 40%,  #9448E4 48%,  #7C34D8 56%,
+    #6A2ECC 64%,  #8A48E0 73%,  #A268E8 81%,
+    #7E3EDC 90%,  #5A2FC8 100%);
+  background-size:260% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+}
+
+/* ══ hero ═══════════════════════════════════════════════════════════════ */
+/* the nav is in normal flow now, so the hero no longer has to reserve room
+   for it — it just claims what is left of the first screen */
+.hero{min-height:calc(100svh - 5rem);display:flex;flex-direction:column;justify-content:center;padding:3rem 0}
+h1{
+  font-family:var(--f-disp);font-weight:900;
+  font-size:clamp(2.9rem,11.5vw,9rem);line-height:.86;
+  font-variation-settings:"wdth" 112;letter-spacing:-.038em;
+  margin:1.4rem 0 0;text-wrap:balance;
+}
+/* The fluid colour loop, clipped inside the word.
+   The CSS gradient below is the floor — it renders on its own if the canvas
+   never paints. The canvas then overlays the real liquid motion, already cut
+   to the letterforms, so no blend mode is involved. */
+.fluid{
+  position:relative;display:inline-block;
+  background:linear-gradient(96deg,
+    #4B3A93 0%, #5A46A6 6%, #6E5FC4 12%, #8A83E2 19%, #9C9DEE 25%,
+    #93A6F0 31%, #A96FE8 38%, #A845DE 45%, #9C63C9 52%, #A6A3C2 59%,
+    #ADB4C8 65%, #A5D3AE 72%, #9BD2A9 79%, #7FA6A8 87%, #6D9099 93%, #4B3A93 100%);
+  background-size:240% 100%;
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;
+  animation:drift 9s linear infinite;
+}
+@keyframes drift{to{background-position:260% 0}}
+/* .grad is its own single-layer ramp elsewhere on the page and travels
+   horizontally on its own timing. */
+@keyframes gradsweep{to{background-position:-260% 0}}
+@media (prefers-reduced-motion:reduce){.fluid{animation:none}}
+/* once the canvas has actually painted, retire the CSS floor so the two
+   sets of glyphs can't fringe against each other */
+.fluid.painted{background:none;animation:none}
+/* line-height is .86, so the glyphs are taller than the span box — the
+   canvas has to overflow it vertically or the B and the y get clipped. */
+.fluid .fx{position:absolute;left:0;top:-25%;width:100%;height:150%;pointer-events:none}
+/* The two camps in the headline. The magenta is AMPLIFY's own, straight from
+   their mark. The data sections below keep the site's red/blue coding for the
+   same two camps. */
+h1 .yimby{color:#e7f177;display:inline-block}
+h1 .nimby{color:#ae117c;display:inline-block}
+h1 .vs{
+  font-variation-settings:"wdth" 75;font-weight:400;font-style:italic;
+  font-size:.36em;color:var(--txt-3);vertical-align:.36em;padding:0 .2em;letter-spacing:0;
+}
+.lede{font-size:clamp(1.08rem,1.9vw,1.4rem);line-height:1.5;color:var(--txt-2);max-width:34rem;margin:2.2rem 0 0}
+.lede em{color:var(--txt);font-style:normal;font-weight:600}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:3rem;
+  font-family:var(--f-mono);font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--txt-3)}
+
+/* ══ marquee ════════════════════════════════════════════════════════════ */
+.marquee{overflow:hidden;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);padding:1.05rem 0}
+.mq-track{display:flex;gap:2.6rem;width:max-content;animation:mq 46s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq-track{animation:none}}
+.mq-item{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--txt-3);white-space:nowrap;display:flex;align-items:center;gap:2.6rem}
+.mq-item::after{content:"";width:4px;height:4px;border-radius:50%;background:var(--r-peri)}
+
+/* ══ big stat ═══════════════════════════════════════════════════════════ */
+.stat-sec{padding:clamp(5rem,14vw,9rem) 0;text-align:center}
+.giant{font-family:var(--f-disp);font-weight:900;
+  font-size:clamp(6rem,26vw,20rem);line-height:.82;
+  font-variation-settings:"wdth" 105;letter-spacing:-.05em;
+  margin:.5rem 0;font-variant-numeric:tabular-nums}
+.stat-cap{font-size:clamp(1.05rem,1.9vw,1.32rem);color:var(--txt-2);max-width:36rem;margin:1.4rem auto 0;line-height:1.5}
+.stat-cap em{color:var(--txt);font-style:normal;font-weight:600}
+
+.sec{padding:clamp(4rem,10vw,7rem) 0;border-top:1px solid var(--line-2)}
+
+/* ══ publics + tools ════════════════════════════════════════════════════ */
+.publics{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.1rem;margin:0 0 3.5rem}
+.pub{border:1px solid var(--line);padding:1.6rem 1.5rem;border-radius:3px;position:relative;overflow:hidden;background:var(--void)}
+.pub::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px}
+.pub.a::before{background:linear-gradient(90deg,var(--nimby),transparent)}
+.pub.b::before{background:linear-gradient(90deg,var(--yimby),transparent)}
+.pub .tag{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3)}
+.pub .n{font-family:var(--f-disp);font-weight:900;font-size:3.4rem;line-height:1;margin:.7rem 0 .1rem;
+  font-variation-settings:"wdth" 100;font-variant-numeric:tabular-nums}
+.pub.a .n{color:var(--nimby)}
+.pub.b .n{color:var(--yimby)}
+.pub h4{font-family:var(--f-disp);font-weight:700;font-size:1.02rem;margin:.2rem 0 .7rem;
+  font-variation-settings:"wdth" 105;color:var(--txt)}
+.pub p{font-size:.92rem;color:var(--txt-2);margin:0;line-height:1.6}
+
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1px;
+  background:var(--line-2);border:1px solid var(--line-2);border-radius:3px;overflow:hidden}
+.tool{background:var(--void);padding:1.5rem 1.35rem}
+.tool .step{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;color:var(--txt-3)}
+.tool h5{font-family:var(--f-disp);font-weight:700;font-size:1.05rem;margin:.75rem 0 .3rem;
+  font-variation-settings:"wdth" 105;color:var(--txt)}
+/* the first three tools are real platforms, so their names carry a link out
+   to the people who built them. The fourth is a survey design, with nowhere
+   to send anyone, so it stays plain type. */
+.tool h5 a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line);
+  padding-bottom:.08em;transition:border-color .18s,color .18s}
+.tool h5 a:hover{border-bottom-color:currentColor}
+.tool h5 a:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.tool h5 a::after{content:"↗";font-family:var(--f-mono);font-size:.62em;
+  color:var(--txt-3);margin-left:.34em;vertical-align:.22em;border:0}
+.tool h5 a:hover::after{color:inherit}
+.tool .role{font-family:var(--f-mono);font-size:.63rem;letter-spacing:.09em;text-transform:uppercase;margin:0 0 .7rem}
+.tool:nth-child(1) .role{color:var(--yimby)}
+.tool:nth-child(2) .role{color:var(--r-peri)}
+.tool:nth-child(3) .role{color:var(--nimby)}
+.tool:nth-child(4) .role{color:var(--r-sky)}
+.tool p{font-size:.88rem;color:var(--txt-2);margin:0;line-height:1.6}
+
+/* ══ findings ═══════════════════════════════════════════════════════════ */
+.finds{display:flex;flex-direction:column;border-top:1px solid var(--line-2)}
+.find{display:grid;grid-template-columns:4.5rem 1fr;gap:0 1.5rem;padding:2rem 0;border-bottom:1px solid var(--line-2)}
+/* the last one's rule and the next section's top rule were stacking into two
+   lines with only padding between them; the section boundary is marked once */
+.find:last-child{border-bottom:0}
+@media (max-width:640px){.find{grid-template-columns:1fr;gap:.6rem}}
+.find .num{font-family:var(--f-disp);font-weight:900;font-size:2.3rem;line-height:1;
+  font-variation-settings:"wdth" 90;color:transparent;
+  background:linear-gradient(140deg,var(--yimby),var(--r-peri),var(--nimby));
+  -webkit-background-clip:text;background-clip:text}
+.find h3{font-family:var(--f-disp);font-weight:700;font-size:clamp(1.2rem,2.3vw,1.6rem);line-height:1.18;
+  font-variation-settings:"wdth" 105;letter-spacing:-.012em;margin:0 0 .7rem;max-width:26ch;
+  text-wrap:balance;color:var(--txt)}
+.find p{font-size:.98rem;color:var(--txt-2);margin:0;max-width:46rem}
+.find p em{color:var(--txt);font-style:normal;font-weight:600}
+
+/* ══ conditions ═════════════════════════════════════════════════════════ */
+.conds{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.1rem}
+.cond{border:1px solid var(--line);border-radius:3px;padding:1.6rem 1.45rem;
+  background:var(--void);position:relative;overflow:hidden}
+.cond::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px}
+.cond:nth-child(1)::after{background:linear-gradient(90deg,var(--yimby),var(--r-peri))}
+.cond:nth-child(2)::after{background:linear-gradient(90deg,var(--r-teal),var(--yimby))}
+.cond:nth-child(3)::after{background:linear-gradient(90deg,var(--nimby),var(--r-indigo))}
+.cond:nth-child(4)::after{background:linear-gradient(90deg,var(--r-peri),var(--nimby))}
+.cond:nth-child(5)::after{background:linear-gradient(90deg,var(--r-violet),var(--yimby))}
+.cond:nth-child(6)::after{background:linear-gradient(90deg,var(--nimby),var(--r-peri))}
+.cond .label{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3);margin:0 0 .9rem}
+.cond h4{font-family:var(--f-disp);font-weight:700;font-size:1.2rem;line-height:1.2;
+  /* no colour of its own, so .grad can clip the ramp into the letterforms */
+  font-variation-settings:"wdth" 105;margin:0 0 1.1rem;text-wrap:balance}
+.cond .desc{font-size:.88rem;color:var(--txt-2);margin:0 0 1.1rem;line-height:1.55}
+.cond .desc em{color:var(--txt);font-style:normal;font-weight:600}
+.cond .quote{font-size:.9rem;color:var(--txt-2);font-style:italic;margin:0;
+  padding-top:1rem;border-top:1px solid var(--line-2);line-height:1.55}
+
+/* ══ additive consensus bars ════════════════════════════════════════════ */
+
+
+/* ══ uncommon ground ════════════════════════════════════════════════════
+   The paired percentages carry the whole point here: these are statements
+   where the two clusters land within 15 points of each other, so the two
+   numbers sitting almost level IS the finding. No bars — a bar chart of
+   near-identical values would say less than the pair does. */
+
+.ug{display:grid;grid-template-columns:repeat(auto-fit,minmax(21rem,1fr));gap:clamp(2rem,4vw,3.5rem)}
+.ug h3{font-family:var(--f-disp);font-weight:800;font-size:1.2rem;line-height:1.24;
+  font-variation-settings:"wdth" 105;letter-spacing:-.012em;margin:0 0 .5rem;color:var(--txt)}
+.ug .key{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--txt-3);margin:0 0 1rem}
+.ug .say{font-size:.93rem;color:var(--txt-2);margin:0 0 1.4rem;line-height:1.6}
+/* Compact enough to carry all 23 statements without the section becoming a
+   scroll: the id sits inline at the end of its sentence rather than on a
+   line of its own, and the row padding is about half what a reading list
+   would take. */
+.ug ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.ug li{display:grid;grid-template-columns:4.3rem 1fr;gap:0 .85rem;padding:.5rem 0;
+  border-bottom:1px solid var(--line-2);align-items:baseline}
+@media (max-width:520px){.ug li{grid-template-columns:1fr;gap:.2rem}}
+.pair{font-family:var(--f-disp);font-weight:900;font-size:.9rem;
+  font-variation-settings:"wdth" 100;font-variant-numeric:tabular-nums;line-height:1.35}
+.pair .a{color:var(--nimby)}
+.pair .s{color:var(--txt-3);font-weight:400;padding:0 .06em}
+.pair .b{color:var(--yimby)}
+.ug li p{font-size:.82rem;line-height:1.42;margin:0;color:var(--txt)}
+.ug li .id{font-family:var(--f-mono);font-size:.56rem;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--txt-3);margin-left:.45rem;white-space:nowrap}
+
+/* ══ interactive ════════════════════════════════════════════════════════ */
+/* the explorer card — cream panel sitting on a hard navy offset, no blur */
+.play{
+  border:2px solid var(--txt);border-radius:14px;
+  padding:clamp(1.6rem,4vw,2.75rem);max-width:56rem;
+  background:var(--void);
+  box-shadow:14px 14px 0 var(--navy);
+}
+.play .hint{
+  font-family:var(--f-mono);font-size:.68rem;font-weight:500;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--nimby);margin:0 0 1rem;
+}
+#stmt{
+  font-family:var(--f-disp);font-weight:800;
+  font-size:clamp(1.5rem,3.6vw,2.5rem);line-height:1.12;
+  font-variation-settings:"wdth" 104;letter-spacing:-.02em;
+  margin:0 0 2.4rem;min-height:2.3em;text-wrap:balance;color:var(--txt);
+}
+/* Two independent bars instead of one converging track. Each camp now reads
+   on its own scale, which is what the statement actually asks — the old
+   track needed a legend to explain what the overlap meant. */
+.gauge{display:grid;grid-template-columns:auto 1fr auto;gap:1rem 1.25rem;align-items:center}
+@media (max-width:640px){.gauge{grid-template-columns:1fr;gap:.3rem 0}}
+.gauge .who{text-align:right;line-height:1.2}
+@media (max-width:640px){.gauge .who{text-align:left}}
+.gauge .who b{display:block;font-weight:650;font-size:1rem;color:var(--txt)}
+.gauge .track{height:34px;border-radius:4px;background:var(--track);overflow:hidden}
+.gauge .fill{height:100%;width:0;border-radius:4px;
+  transition:width 1s cubic-bezier(.2,.85,.3,1)}
+.gauge .fill.n{background:var(--nimby)}
+.gauge .fill.y{background:var(--yimby)}
+@media (prefers-reduced-motion:reduce){.gauge .fill{transition:none}}
+.gauge .pct{font-family:var(--f-disp);font-weight:900;font-size:1.9rem;
+  font-variation-settings:"wdth" 100;font-variant-numeric:tabular-nums;
+  color:var(--txt);min-width:3.6ch;text-align:right}
+
+.toggles{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+.tg{
+  font-family:var(--f-body);font-size:.86rem;font-weight:550;
+  background:transparent;color:var(--txt);border:2px solid var(--txt);
+  padding:.62rem 1.15rem;border-radius:999px;cursor:pointer;
+  transition:background .2s,color .2s;
+}
+.tg:hover{background:var(--track)}
+.tg:focus-visible{outline:2px solid var(--nimby);outline-offset:3px}
+.tg.on{color:var(--void);background:var(--navy);border-color:var(--navy)}
+.play-note{font-size:.95rem;color:var(--txt-2);margin:2.2rem 0 0;line-height:1.6}
+.play-note em{color:var(--txt);font-style:normal;font-weight:600}
+
+/* ══ pull quote ═════════════════════════════════════════════════════════ */
+.pull{padding:clamp(4.5rem,12vw,8rem) 0;text-align:center}
+.pull blockquote{font-family:var(--f-disp);font-weight:600;
+  font-size:clamp(1.5rem,4.4vw,3rem);line-height:1.14;
+  font-variation-settings:"wdth" 100;letter-spacing:-.024em;
+  /* no colour of its own: it inherits the page ink, and leaving the slot
+     empty lets .grad clip the ramp into the letterforms instead */
+  margin:0 auto;max-width:20ch;text-wrap:balance}
+/* the ramp is held still here. At this size a sweep drags the eye across the
+   sentence while it is being read; frozen at the start of the ramp, the
+   colour is a property of the words rather than something happening to them */
+.pull blockquote.grad{animation:none;background-position:0 0}
+.pull cite{display:block;font-family:var(--f-mono);font-style:normal;font-size:.66rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--txt-3);margin-top:1.8rem}
+
+/* ══ movement ═══════════════════════════════════════════════════════════ */
+.moves{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.1rem}
+.move{border:1px solid var(--line);border-radius:3px;padding:1.7rem 1.5rem;background:var(--void)}
+.move .big{font-family:var(--f-disp);font-weight:900;font-size:3.3rem;line-height:1;
+  font-variation-settings:"wdth" 100;font-variant-numeric:tabular-nums;margin:0 0 .8rem}
+.move .big.sm{font-size:2.2rem}
+.move h4{font-family:var(--f-disp);font-weight:700;font-size:1.05rem;line-height:1.25;
+  font-variation-settings:"wdth" 105;margin:0 0 .6rem;color:var(--txt)}
+.move p{font-size:.9rem;color:var(--txt-2);margin:0;line-height:1.6}
+.move p em{color:var(--txt);font-style:normal;font-weight:600}
+
+/* ══ footer ═════════════════════════════════════════════════════════════ */
+/* the rule is doing the separating, so the heading needs real air under it —
+   at the old value the two read as one object */
+/* The rule does the separating, so the heading needs air under it. The two
+   link columns are short and the colophon is tall, which was leaving a large
+   dead area on the right; the columns now sit closer together and the whole
+   grid closes up under them instead of stretching to the page edge. */
+footer{border-top:1px solid var(--line);margin-top:clamp(3rem,8vw,5rem)}
+/* The footer also carries .wrap, whose `padding:0 var(--pad)` shorthand zeroes
+   the top and bottom. A bare `footer` selector loses to it on specificity, so
+   every padding set there was silently discarded and the heading sat on the
+   rule. Qualifying with the class wins, and keeps the horizontal padding. */
+footer.wrap{padding-top:clamp(3.5rem,7vw,5rem);padding-bottom:2rem}
+.f-grid{display:grid;grid-template-columns:minmax(0,2.1fr) auto auto;
+  gap:clamp(2rem,5vw,4.5rem);align-items:start}
+@media (max-width:860px){.f-grid{grid-template-columns:1fr 1fr;gap:2.4rem}
+  .f-grid>:first-child{grid-column:1/-1}}
+@media (max-width:520px){.f-grid{grid-template-columns:1fr;gap:2rem}}
+footer h3{font-family:var(--f-disp);font-weight:800;font-size:clamp(1.4rem,2.6vw,1.9rem);
+  line-height:1.12;font-variation-settings:"wdth" 108;letter-spacing:-.02em;
+  margin:0 0 1.1rem;max-width:30ch;text-wrap:balance}
+/* the colophon was set to 38ch inside a much wider column, so it ran eight
+   lines deep against four rows of links and left a hole beside itself. Given
+   the full column it settles to five, and the two halves finish together. */
+footer p{font-size:.9rem;color:var(--txt-2);max-width:62ch;line-height:1.6;margin:0}
+.f-col h5{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--txt-3);margin:0 0 .9rem;font-weight:500}
+.f-col a{display:block;white-space:nowrap;color:var(--txt-2);text-decoration:none;
+  font-size:.9rem;padding:.34rem 0;transition:color .2s}
+.f-col a:hover{color:var(--yimby)}
+.f-col a:focus-visible{outline:2px solid var(--yimby);outline-offset:2px}
+/* a link sitting inside running text, marked by a rule under the words
+   rather than a colour change, so it does not compete with the emphasis
+   already carrying weight in these paragraphs */
+.inl{color:inherit;text-decoration:none;border-bottom:1px solid var(--line);
+  padding-bottom:.06em;transition:border-color .2s,color .2s}
+.inl:hover{color:var(--navy);border-bottom-color:currentColor}
+.inl:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.f-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;
+  margin-top:clamp(2.5rem,6vw,4rem);padding-top:1.4rem;border-top:1px solid var(--line-2);
+  font-family:var(--f-mono);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--txt-3)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="#top" aria-label="AMPLIFY × RadicalxChange"><img class="lg-amp" src="data:image/png;base64,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" alt="AMPLIFY"><span class="lg-x" aria-hidden="true">×</span><img class="lg-rxc" src="data:image/png;base64,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" alt="RadicalxChange"></a>
+  <div class="links">
+    <a href="#method">Method</a>
+    <a href="#findings">Findings</a>
+    <a href="#conditions">Conditions</a>
+    <a href="#divide">The divide</a>
+    <a href="#movement">Movement</a>
+    <a href="#uncommon">Uncommon ground</a>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ══ HERO ══════════════════════════════════════════════════════════ -->
+<section class="hero wrap">
+  <p class="eyebrow">Sydney Density Deliberations · AMPLIFY × RadicalxChange</p>
+  <h1><span class="fluid" id="fluid"><canvas class="fx" id="fx" aria-hidden="true"></canvas>Beyond</span>
+    <span class="yimby">YIMBY</span><span class="vs">vs</span><span class="nimby">NIMBY</span></h1>
+  <p class="lede">The fight looks bigger than it is. Beneath the headlines, the people who fight hardest over Sydney's density agree on a surprisingly long list of <em>specifics</em>—and so does everyone else.</p>
+  <div class="hero-meta">
+    <span>Sydney · June–July 2026</span>
+    <span>2,535 surveyed · 172 deliberators</span>
+    <span>8 local government areas</span>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="mq-track">
+    <span class="mq-item">Public transport</span><span class="mq-item">Green space</span><span class="mq-item">Developer accountability</span><span class="mq-item">Affordability at 30% of income</span><span class="mq-item">Density near transport hubs</span><span class="mq-item">Strategic-stage consultation</span><span class="mq-item">Permanence, not goodwill</span><span class="mq-item">Walkable hubs</span><span class="mq-item">Housing mix</span><span class="mq-item">Tree canopy</span><span class="mq-item">Building quality</span><span class="mq-item">A room that reflects the community</span>
+    <span class="mq-item">Public transport</span><span class="mq-item">Green space</span><span class="mq-item">Developer accountability</span><span class="mq-item">Affordability at 30% of income</span><span class="mq-item">Density near transport hubs</span><span class="mq-item">Strategic-stage consultation</span><span class="mq-item">Permanence, not goodwill</span><span class="mq-item">Walkable hubs</span><span class="mq-item">Housing mix</span><span class="mq-item">Tree canopy</span><span class="mq-item">Building quality</span><span class="mq-item">A room that reflects the community</span>
+  </div>
+</div>
+
+<div class="cream">
+
+<!-- ══ BIG STAT ══════════════════════════════════════════════════════ -->
+<section class="stat-sec wrap">
+  <p class="eyebrow rv">In AMPLIFY's national survey of 2,535 Australians</p>
+  <p class="giant grad"><span class="count" data-target="73">73</span>%</p>
+  <p class="stat-cap rv">sit in a <em>conditional middle</em>. Neither fixed supporters nor fixed opponents: their views on density depend on <em>how</em>, <em>where</em>, and <em>under what conditions</em> new housing gets built.</p>
+</section>
+
+<!-- ══ METHOD ════════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="method">
+  <p class="eyebrow rv">The methodology</p>
+  <h2 class="rv grad">Plural technologies: a new way to find common ground where the headlines show only deadlock.</h2>
+  <p class="intro rv">Most consultations ask what people <strong>accept or oppose</strong>. We built a process that asks a different question: once we understand each other's positions, what might we move forward on <strong>together</strong>? <a class="inl" href="https://drive.google.com/file/d/1Hj4UyW38XkGamMvQtyRMk4yTtekQzpu2/view?usp=sharing" target="_blank" rel="noopener">Read our full report here</a>.</p>
+
+  <div class="publics">
+    <div class="pub a rv">
+      <div class="tag">Stage 1 · Sessions 1–2</div>
+      <div class="n"><span class="count" data-target="22">22</span></div>
+      <h4>The engaged public</h4>
+      <p>Highly informed, actively involved residents — both opponents and supporters of density, drawn from eight Sydney LGAs. The people who show up to fight over developments. They helped us map the arguments first.</p>
+    </div>
+    <div class="pub b rv">
+      <div class="tag">Stage 2 · Sessions 3–4</div>
+      <div class="n"><span class="count" data-target="150">150</span></div>
+      <h4>The representative public</h4>
+      <p>Recruited to reflect the same neighbourhoods. They tested whether the engaged public's bridging conditions held with everyday Sydneysiders. 58 returned for a fourth session.</p>
+    </div>
+  </div>
+
+  <div class="tools rv">
+    <div class="tool">
+      <div class="step">01 →</div>
+      <h5><a href="https://compdemocracy.org/Polis/" target="_blank" rel="noopener noreferrer">Pol.is</a></h5>
+      <p class="role">Mapping the landscape</p>
+      <p>An open-source platform that clusters opinion, and then surfaces the statements that cross the divide it finds. Popularity and bridging are different measures, and it reports the second one.</p>
+    </div>
+    <div class="tool">
+      <div class="step">02 →</div>
+      <h5><a href="https://en.wikipedia.org/wiki/Quadratic_voting" target="_blank" rel="noopener noreferrer">Quadratic voting</a></h5>
+      <p class="role">Pricing intensity</p>
+      <p>Participants spend a limited budget of voice credits across priorities; each extra vote on one item costs quadratically more. Forces genuine trade-offs, revealing what people actually value most.</p>
+    </div>
+    <div class="tool">
+      <div class="step">03 →</div>
+      <h5><a href="https://deliberation.stanford.edu/tools-resources/online-deliberation-platform" target="_blank" rel="noopener noreferrer">Stanford Online Deliberation</a></h5>
+      <p class="role">Testing against lived experience</p>
+      <p>Structured small-group video conversations with an automated moderator. Turns aggregate signals into human specifics — clarifying ambiguity, surfacing local context, letting quieter voices speak.</p>
+    </div>
+    <div class="tool">
+      <div class="step">04 →</div>
+      <h5>Baseline → endline</h5>
+      <p class="role">Measuring movement</p>
+      <p>Matched surveys before and after each cohort's process, to see whether structured deliberation shifts positions, perceptions of the other side, or both.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINDINGS ══════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="findings">
+  <p class="eyebrow rv">Three findings</p>
+  <h2 class="rv grad">What we learned when we actually asked.</h2>
+  <p class="intro rv">Two publics. Four sessions. 392 statements, 24,913 votes. Here's what emerged.</p>
+
+  <div class="finds">
+    <div class="find rv">
+      <div class="num">01</div>
+      <div>
+        <h3>The loudest objections turned out to be negotiable.</h3>
+        <p>75% of height sceptics back a halt to massive high-rise; 81% of the same cluster supports high-rise in certain areas with affordability attached. Nine in ten engaged opposers would accept a development they dislike if their community had real power over what gets built—a trade the representative public ratified across its own divide. The pattern repeated across both publics: objections that look absolute turn out to have terms.</p>
+      </div>
+    </div>
+    <div class="find rv">
+      <div class="num">02</div>
+      <div>
+        <h3>The people who fight hardest agree on a long list of specifics.</h3>
+        <p>Public transport, protected open space, homes essential workers can afford, a mix of housing types, design quality, schools and clinics attended to early, consultation moved to the strategic planning stage, affordability defined at 30% of income and lasting permanently, an expanded role for public housing. What divides them is much shorter: how high to build, whether supply delivers affordability, and whether infrastructure comes first or alongside.</p>
+      </div>
+    </div>
+    <div class="find rv">
+      <div class="num">03</div>
+      <div>
+        <h3>The representative public arrived at the same priorities, and then some.</h3>
+        <p>A demographically representative group of 150 Sydneysiders put transport first and green space second on their own ballot, matching the engaged top three sight unseen. The agreements ran further: developers answerable for building standards drew 99% agreement, the program's highest, and housing aimed at essential workers, young people and first-home buyers carried both sides of this public's own divide. Their small groups then gave the demands specificity: green space held as a requirement, since once it's lost it can't be added back; and with public transport, more than new lines, what they want is frequency and reliability on the existing network—its current performance read as the primary test of the density promise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONDITIONS ════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="conditions">
+  <p class="eyebrow rv">Six conditions</p>
+  <h2 class="rv">Density done well, in Sydneysiders' own words.</h2>
+  <div class="conds">
+    <div class="cond rv">
+      <p class="label">01 · Transport</p>
+      <h4 class="grad">Transport that actually turns up.</h4>
+      <p class="desc">Better public transport and local amenities carried both camps almost equally. It took first place on the quadratic vote in <em>both</em> publics, and in the small groups the primary demand turned out to be frequency and reliability on the network already there, rather than new lines.</p>
+      <p class="quote">“It just needs to be continually flowing so that the moment I step out, I have a choice.”</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">02 · Green space</p>
+      <h4 class="grad">Green space as a condition, not an amenity.</h4>
+      <p class="desc">Guaranteeing parks and open space as density rises carried both camps. Green space came second on the representative ballot and third on the engaged — but in both, it drew more high-intensity votes than transport, the option ranked above it.</p>
+      <p class="quote">Once green space is lost to development, participants argued independently in different rooms, it cannot be recovered.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">03 · Accountability</p>
+      <h4 class="grad">Accountability for what developers build.</h4>
+      <p class="desc">Holding developers accountable for dodgy building standards drew the <em>highest agreement of any statement in the program</em>, and it was near-unanimous on both sides. Developers were never on the agenda for our small group discussions, but participants had a lot to say about it, anyway.</p>
+      <p class="quote">Developers who “claim bankruptcy and just disappear” once settlement completes. The builder's mistake becomes the owner's bill.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">04 · Affordability</p>
+      <h4 class="grad">Affordability aimed at the people being priced out.</h4>
+      <p class="desc">Participants across publics agree on who affordability is for: essential workers, young people, first-home buyers. In their small group discussions, the engaged public refined what affordability means: 30% of household income, set against the discount-off-market definition current incentive schemes use; lasting <em>permanently</em>; and delivered in part through an expanded role for public housing.</p>
+      <p class="quote">In the engaged cohort, participants across the divide agreed: affordability solutions that rest on private goodwill tend not to last.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">05 · Built form</p>
+      <h4 class="grad">Built form that steps down.</h4>
+      <p class="desc">High-rises on main roads with low-rise on backstreets was one of three statements to cross the deepest divide in the program, alongside high density near existing stations and high-rise in certain areas with affordable housing attached. Height sceptics rejected massive high-rise outright.</p>
+      <p class="quote">Asked where density already works, the rooms named places well served by public transport. The failures they named were judged by the same measure—places where homes went up and the transport never came.</p>
+    </div>
+    <div class="cond rv">
+      <p class="label">06 · Consultation</p>
+      <h4 class="grad">Consultation settled early, settled once.</h4>
+      <p class="desc">Both camps want consultation moved to the strategic stage, for opposite reasons: supporters so individual developments need not be fought one at a time, sceptics so residents can still shape what gets built. Participants in the engaged camp also converged on processes with randomly selected, demographically representative groups.</p>
+      <p class="quote">“A tick box exercise.” Consultation, as it stands, arrives after the decisions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PULL QUOTE ════════════════════════════════════════════════════ -->
+<section class="pull wrap">
+  <blockquote class="rv grad">I think in general people aren't opposed to development itself, they are opposed to development that is done without appropriate planning and infrastructure to go alongside it.</blockquote>
+  <cite class="rv">Representative public participant · endline survey</cite>
+</section>
+
+<!-- ══ THE DIVIDE ════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="divide">
+  <p class="eyebrow rv">The one real divide</p>
+  <h2 class="rv">Height splits the room. Until you give it a reason.</h2>
+  <p class="intro rv">Asked to reject high-rise outright, <strong>75%</strong> of the sceptic cluster agreed. Every statement below runs the other way — agreeing means <em>accepting</em> high-rise. Watch how far the sceptics travel as the condition attached to it gets more concrete.</p>
+
+  <div class="play rv">
+    <p class="hint">↓ The statement being voted on · agreeing means accepting high-rise</p>
+    <p id="stmt">NIMBYs/Boomers who complain about high rises need to accept we are in a growing city.</p>
+
+    <div class="gauge">
+      <div class="who"><b>Height sceptics</b></div>
+      <div class="track"><div class="fill n" id="bf-n"></div></div>
+      <div class="pct" id="bv-n">41%</div>
+
+      <div class="who"><b>Pro-density</b></div>
+      <div class="track"><div class="fill y" id="bf-y"></div></div>
+      <div class="pct" id="bv-y">87%</div>
+    </div>
+
+    <p class="hint" style="margin-top:2.6rem">↓ Attach a condition and watch the sceptic bar climb</p>
+    <div class="toggles" id="toggles">
+      <button class="tg on" data-key="bare">The demand, as sceptics usually hear it</button>
+      <button class="tg" data-key="opportunity">…it creates places to live</button>
+      <button class="tg" data-key="land">…the city has no land left</button>
+      <button class="tg" data-key="form">…on main roads, low-rise behind</button>
+      <button class="tg" data-key="stations">…near existing stations</button>
+      <button class="tg" data-key="affordable">…with affordable housing attached</button>
+    </div>
+
+    <p class="play-note">Sceptics reject high-rise when it comes unconditional. They backed <em>no to massive high-rise buildings</em>, and halting it because Sydney is becoming a concrete jungle. Tied to a place, a station, or a promise about affordability, most of them accept it.</p>
+  </div>
+</section>
+
+<!-- ══ MOVEMENT ══════════════════════════════════════════════════════ -->
+<section class="sec wrap" id="movement">
+  <p class="eyebrow rv">Before → after</p>
+  <h2 class="rv">Did deliberation move people?</h2>
+  <p class="intro rv">Positions themselves barely shifted. What moved most was how each side saw the other.</p>
+
+  <div class="moves">
+    <div class="move rv">
+      <p class="big grad"><span class="count" data-target="93">93</span>%</p>
+      <h4>of the representative public found more common ground than they expected.</h4>
+      <p>The same share felt able to genuinely express their views, and 89% agreed a process like this would be a good way to shape housing policy.</p>
+    </div>
+    <div class="move rv">
+      <p class="big grad sm">Every item</p>
+      <h4>of perception rose in the engaged public.</h4>
+      <p>Feeling understood started as the survey's lowest item and was the only one to move up for some and down for none. Understanding of others rose alongside it, as did the sense that the other side is open to compromise.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ UNCOMMON GROUND ═══════════════════════════════════════════════ -->
+<section class="sec wrap" id="uncommon">
+  <p class="eyebrow rv">Exploratory analysis</p>
+  <h2 class="rv grad">Uncommon ground: where the camp stops predicting the vote.</h2>
+  <p class="intro rv">Common ground is where the camps agree. Uncommon ground is where each camp disagrees with <strong>itself</strong>, in similar measure, and a voter's camp stops predicting their vote. This is a ground where alliances can cut across the divide in surprising ways, and a new majority could plausibly form, drawn from both sides at once. Eight of the engaged conversation's 138 statements qualify, and fifteen of the representative's 254 — six per cent of each.</p>
+
+  <div class="ug">
+    <div class="rv">
+      <h3>The engaged public asks how a promise is made to hold</h3>
+      <p class="key">Sceptics / supporters</p>
+      <p class="say">Six of the eight qualifying statements ask for a commitment that does not rest on trust. They want permanence, guarantees, transparency, certification. While the engaged divide runs on whether supply delivers affordability and on how high to build, these step around it entirely, asking for promises that hold.</p>
+      <ul>
+        <li><span class="pair"><span class="a">44</span><span class="s">/</span><span class="b">50</span></span>
+          <p>I&#8217;d accept more density if government tracked and published whether schools, GPs and traffic are keeping up before approving more development<span class="id">E-s11</span></p></li>
+        <li><span class="pair"><span class="a">40</span><span class="s">/</span><span class="b">42</span></span>
+          <p>I&#8217;d accept new development if I could see exactly where developer contributions went &#8212; a public dashboard of what was funded, where and when<span class="id">E-s7</span></p></li>
+        <li><span class="pair"><span class="a">50</span><span class="s">/</span><span class="b">36</span></span>
+          <p>Benefit afforded to the community directly, rather than a fund to Council to deliberate over, and reliance on lobbying<span class="id">E-s51</span></p></li>
+        <li><span class="pair"><span class="a">40</span><span class="s">/</span><span class="b">42</span></span>
+          <p>I would accept more housing on my street if appropriate provision of schools, GP clinics and transport were guaranteed<span class="id">E-s27</span></p></li>
+        <li><span class="pair"><span class="a">60</span><span class="s">/</span><span class="b">58</span></span>
+          <p>I would accept more development if there were permanently affordable homes for locals and better local shops and amenities<span class="id">E-s26</span></p></li>
+        <li><span class="pair"><span class="a">57</span><span class="s">/</span><span class="b">45</span></span>
+          <p>Quality homes, no private certifiers, system change<span class="id">E-s113</span></p></li>
+      </ul>
+    </div>
+
+    <div class="rv">
+      <h3>The representative public argues about how far affordability can reach</h3>
+      <p class="key">High-rise sceptics / supporters</p>
+      <p class="say">Eleven of the fifteen sit on affordability, probing both how far it can be taken and the arguments its own advocates will have to have among themselves.</p>
+      <ul>
+        <li><span class="pair"><span class="a">59</span><span class="s">/</span><span class="b">59</span></span>
+          <p>Everyone has somewhere to live<span class="id">R-s27</span></p></li>
+        <li><span class="pair"><span class="a">54</span><span class="s">/</span><span class="b">64</span></span>
+          <p>Unhoused people should be prioritised, particularly in Parramatta and Sydney CBD<span class="id">R-s66</span></p></li>
+        <li><span class="pair"><span class="a">47</span><span class="s">/</span><span class="b">38</span></span>
+          <p>Not just in Parramatta and CBD, but all areas<span class="id">R-s108</span></p></li>
+        <li><span class="pair"><span class="a">48</span><span class="s">/</span><span class="b">56</span></span>
+          <p>Everybody should be able to buy one house before anybody else can buy their second<span class="id">R-s101</span></p></li>
+        <li><span class="pair"><span class="a">63</span><span class="s">/</span><span class="b">55</span></span>
+          <p>Affordable housing makes housing affordable for everyone<span class="id">R-s31</span></p></li>
+        <li><span class="pair"><span class="a">61</span><span class="s">/</span><span class="b">61</span></span>
+          <p>Housing should only count as affordable if it costs no more than 30% of a household&#8217;s income<span class="id">R-s3</span></p></li>
+        <li><span class="pair"><span class="a">65</span><span class="s">/</span><span class="b">57</span></span>
+          <p>The government should give developers incentives if housing is sold to citizens who plan to live in the house<span class="id">R-s142</span></p></li>
+        <li><span class="pair"><span class="a">59</span><span class="s">/</span><span class="b">52</span></span>
+          <p>Builders need incentives to build, or they won&#8217;t. Taxing mum and dad investors won&#8217;t work<span class="id">R-s211</span></p></li>
+        <li><span class="pair"><span class="a">47</span><span class="s">/</span><span class="b">41</span></span>
+          <p>Builders and developers face so many approvals, fees and delays that many affordable projects never get started<span class="id">R-s9</span></p></li>
+        <li><span class="pair"><span class="a">57</span><span class="s">/</span><span class="b">58</span></span>
+          <p>Developers can build a variety of apartments for the various price brackets. How will this help the next group of buyers<span class="id">R-s200</span></p></li>
+        <li><span class="pair"><span class="a">53</span><span class="s">/</span><span class="b">58</span></span>
+          <p>The main opponents to new affordable housing are boomers who already own homes<span class="id">R-s79</span></p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════════════════ -->
+<footer class="wrap">
+  <div class="f-grid">
+    <div>
+      <h3 class="grad">Uncommon ground is more common than you'd think.</h3>
+      <p>The Sydney Density Deliberations was a joint program of AMPLIFY and the RadicalxChange Foundation. Designed and led by Paula Berman, together with Jess Scully, Jack Henderson, Jessica LeWatt, Stephen Beverley, Joshua Rhee, Min-Taec Kim and Rory Gallagher.</p>
+    </div>
+    <div class="f-col">
+      <h5>Read more</h5>
+      <a href="https://drive.google.com/file/d/1Hj4UyW38XkGamMvQtyRMk4yTtekQzpu2/view?usp=sharing" target="_blank" rel="noopener">Full report →</a>
+      <a href="https://heyzine.com/flip-book/36a91d7953.html#page/1" target="_blank" rel="noopener">The Density Bargain →</a>
+    </div>
+    <div class="f-col">
+      <h5>The tools</h5>
+      <a href="https://compdemocracy.org/Polis/" target="_blank" rel="noopener">Pol.is →</a>
+      <a href="https://en.wikipedia.org/wiki/Quadratic_voting" target="_blank" rel="noopener">Quadratic voting →</a>
+      <a href="https://deliberation.stanford.edu/tools-resources/online-deliberation-platform" target="_blank" rel="noopener">Stanford deliberation →</a>
+    </div>
+  </div>
+  <div class="f-bot">
+    <span>© 2026 AMPLIFY × RadicalxChange Foundation</span>
+    <span>Summary of findings</span>
+  </div>
+</footer>
+
+</div><!-- /cream -->
+
+</main>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ── fluid colour loop, painted inside the word "Beyond" ──────────────
+     Liquid field is painted across the canvas, then cut to the glyphs with
+     destination-in. No blend modes, no isolation — the canvas arrives
+     already shaped like the word, so it composites over black correctly
+     in every engine. Colours stay saturated because the blobs are alpha-
+     blended, not summed: 'lighter' would drive everything to white.     */
+  var TEXT = 'Beyond';
+  var host = document.getElementById('fluid');
+  var cv   = document.getElementById('fx');
+  var ctx  = cv.getContext('2d');
+  var DPR  = Math.min(window.devicePixelRatio || 1, 2);
+  var BW = 0, BH = 0;                    // box size in CSS px
+  var SPEED = 7;                         // ← flow rate. 1 ≈ 70s per orbit, 7 ≈ 10s
+
+  // A full spectrum loop, weighted to the reference strip's cool end but
+  // running all the way through aqua, lime, amber, coral and magenta before
+  // returning to indigo. Many hues coexisting in one surface — the whole
+  // point of plurality, and what makes the bar feel alive rather than tidy.
+  // High-value hues, not pale ones: bright enough to hold the letterform
+  // against pure black, saturated enough not to read as washed.
+  var RAMP = [
+    [0.00,'#5B2FD6'],[0.04,'#7A4AFF'],[0.08,'#9C6DFF'],[0.12,'#C2A0FF'],
+    [0.16,'#A9BCFF'],[0.20,'#74C8FF'],[0.24,'#3ADCEC'],[0.28,'#45E8C0'],
+    [0.32,'#7BE88E'],[0.36,'#B6F05C'],[0.40,'#EDE64F'],[0.44,'#FFC44A'],
+    [0.48,'#FF9C55'],[0.52,'#FF7070'],[0.56,'#FF5FA0'],[0.60,'#FF8FD4'],
+    [0.64,'#F274FF'],[0.68,'#CE7BFF'],[0.72,'#A855F7'],[0.76,'#8E5CF8'],
+    [0.80,'#7E6DFF'],[0.84,'#6E88FF'],[0.88,'#93AEFF'],[0.92,'#8461F5'],
+    [0.96,'#6C46E4'],[1.00,'#5B2FD6']
+  ];
+  var CYCLES = 1.3;                      // ramp repeats across the field's range
+  var SCALE  = 1.15;                     // field frequency — lower = bigger, slower masses
+  var STIR   = 0.85;                     // domain-warp amplitude — high values go psychedelic
+  var OVER = 0.25;                       // canvas overflow above/below the box
+  var CH = 0, OY = 0;                    // canvas height, box top inside it
+
+  // The ramp baked into a 256-entry lookup table once, so the per-pixel loop
+  // is an array index rather than any colour maths.
+  var LUT = (function(){
+    var lc = document.createElement('canvas');
+    lc.width = 256; lc.height = 1;
+    var lx = lc.getContext('2d');
+    var g = lx.createLinearGradient(0, 0, 256, 0);
+    for (var s = 0; s < RAMP.length; s++) g.addColorStop(RAMP[s][0], RAMP[s][1]);
+    lx.fillStyle = g;
+    lx.fillRect(0, 0, 256, 1);
+    return lx.getImageData(0, 0, 256, 1).data;
+  })();
+
+  // Low-resolution buffer the fluid field is computed into, then scaled up.
+  // The field is smooth by construction, so the upscale costs no detail and
+  // saves ~16x the per-pixel work.
+  var fc = document.createElement('canvas');
+  var fx = fc.getContext('2d', {willReadFrequently: true});
+  var fimg = null, FW = 0, FH = 0;
+
+  function sizeCanvas(){
+    var b = host.getBoundingClientRect();
+    if (b.width < 2 || b.height < 2) return false;
+    BW = b.width; BH = b.height;
+    CH = BH * (1 + OVER * 2);
+    OY = BH * OVER;
+    cv.width  = Math.round(BW * DPR);
+    cv.height = Math.round(CH * DPR);
+
+    var nfw = Math.max(64, Math.min(240, Math.round(BW / 3)));
+    var nfh = Math.max(20, Math.round(nfw * CH / BW));
+    if (nfw !== FW || nfh !== FH){
+      FW = nfw; FH = nfh;
+      fc.width = FW; fc.height = FH;
+      fimg = fx.createImageData(FW, FH);
+    }
+    return true;
+  }
+
+  // Cheap smooth 2D noise: three sines whose arguments mix x and y, so the
+  // contours are not aligned to either axis and no grid shows through.
+  function nse(x, y){
+    return Math.sin(x) * Math.cos(y * 1.31)
+         + Math.sin(x * 1.73 + y * 0.61) * 0.60
+         + Math.cos(y * 2.13 - x * 0.47) * 0.42;
+  }
+
+  function paint(t){
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.clearRect(0, 0, BW, CH);
+
+    // No gradient at all any more. A linear gradient's colour is constant
+    // along every line perpendicular to its axis — that is what a band IS —
+    // so rotating, orbiting or warping one can only bend those bands, never
+    // dissolve them. The structure survived every previous attempt.
+    //
+    // Instead the colour is a scalar field evaluated per pixel, with the
+    // sampling position pushed around by the field itself before it is read.
+    // That is domain warping: the coordinates get folded and stirred, so the
+    // contours curl into each other and there is no axis left to line up on.
+    // It is the standard way of getting ink-in-water out of smooth noise.
+    var period = 9000 / SPEED * 7;
+    var w = t / period;
+
+    var t1 = w * 1.7, t2 = w * 1.3, t3 = w * 2.1, t4 = w * 0.9;
+    var d = fimg.data;
+    var p = 0;
+    var SC = SCALE / FH;                  // field scale, isotropic in x and y
+    var NORM = 1 / 2.05;                  // nse() range is about ±2.05
+
+    for (var yy = 0; yy < FH; yy++){
+      var ny = yy * SC;
+      for (var xx = 0; xx < FW; xx++){
+        var nx = xx * SC;
+
+        // first pass: where to look
+        var q1 = nse(nx + t1, ny - t2);
+        var q2 = nse(nx - t3, ny + t4 + 2.7);
+        // second pass: read from the stirred position. STIR has to stay
+        // modest — push it past ~1.5 and the contours fold back on
+        // themselves into tight curls, which is the psychedelic look
+        var v  = nse(nx + STIR * q1, ny + STIR * q2);
+
+        // wrap into the ramp — it starts and ends on the same colour, so
+        // the wrap is seamless and CYCLES controls how dense the mixing is
+        var u = (v * NORM * 0.5 + 0.5) * CYCLES + w * 0.30;
+        u -= Math.floor(u);
+
+        var li = (u * 255) << 2;
+        d[p++] = LUT[li];
+        d[p++] = LUT[li + 1];
+        d[p++] = LUT[li + 2];
+        d[p++] = 255;
+      }
+    }
+    fx.putImageData(fimg, 0, 0);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+
+    // Bilinear upscaling alone still leaves faint blockiness where the field
+    // changes fastest, so a small blur goes over the top. The image is drawn
+    // with an overscan of the blur radius: without it the blur would pull in
+    // transparency from beyond the edges and fade the outer strokes of the B
+    // and the d before the glyph mask is even applied.
+    var ob = Math.max(2, CH * 0.02);
+    if ('filter' in ctx) ctx.filter = 'blur(' + ob.toFixed(1) + 'px)';
+    ctx.drawImage(fc, -ob, -ob, BW + ob * 2, CH + ob * 2);
+    if ('filter' in ctx) ctx.filter = 'none';
+
+    // cut the field to the letterforms
+    var cs = getComputedStyle(host);
+    var fs = parseFloat(cs.fontSize) || 64;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.font = (cs.fontWeight || '900') + ' ' + fs + 'px ' + cs.fontFamily;
+    if ('letterSpacing' in ctx) ctx.letterSpacing = cs.letterSpacing;
+    var m = ctx.measureText(TEXT);
+    var tw = m.width || BW;
+    var asc  = m.actualBoundingBoxAscent  || fs * 0.72;
+    var desc = m.actualBoundingBoxDescent || fs * 0.08;
+    // the DOM box is set by the variable-width axis, which ctx.font can't
+    // express — scale horizontally so the drawn glyphs match it exactly
+    var kx = BW / tw;
+    ctx.globalCompositeOperation = 'destination-in';
+    ctx.setTransform(DPR * kx, 0, 0, DPR, 0, 0);
+    ctx.fillStyle = '#000';
+    // centre the glyphs on the span box, which sits OY down inside the canvas
+    ctx.fillText(TEXT, 0, OY + (BH - (asc + desc)) / 2 + asc);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  var last = 0;
+  function loop(t){
+    // 30fps: the field is now computed per pixel, and fluid motion this soft
+    // reads no better at 45 than at 30
+    if (t - last > 32){ paint(t); last = t; }
+    requestAnimationFrame(loop);
+  }
+  // did the canvas actually end up with visible pixels? Only then is it safe
+  // to retire the CSS gradient underneath — otherwise the word would vanish.
+  function hasInk(){
+    try {
+      var d = ctx.getImageData(0, 0, cv.width, cv.height).data;
+      for (var i = 3; i < d.length; i += 4 * 97) if (d[i] > 8) return true;
+      return false;
+    } catch (e) { return false; }
+  }
+
+  function start(){
+    if (!sizeCanvas()){ requestAnimationFrame(start); return; }
+    paint(performance.now());
+    if (hasInk()) host.classList.add('painted');
+    if (!reduce) requestAnimationFrame(loop);
+  }
+  // wait for the display face, or the box is measured at fallback-font size
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(start);
+  else window.addEventListener('load', start);
+  window.addEventListener('resize', function(){ if (sizeCanvas()) paint(performance.now()); });
+
+  /* ── reveal + bar fills ───────────────────────────────────────────── */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  /* ── counters ─────────────────────────────────────────────────────── */
+  var cio = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      cio.unobserve(e.target);
+      var el = e.target, target = parseFloat(el.dataset.target);
+      if (reduce){ el.textContent = target; return; }
+      var t0 = null, dur = 1100;
+      function step(ts){
+        if (!t0) t0 = ts;
+        var k = Math.min(1, (ts - t0) / dur);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }, {threshold:0.5});
+  document.querySelectorAll('.count').forEach(function(el){ el.textContent = '0'; cio.observe(el); });
+
+  /* ── height explorer ──────────────────────────────────────────────── */
+  /* Every statement runs the SAME WAY: agreeing means accepting high-rise.
+     The earlier set opened on "No to massive high-rise buildings", where
+     agreeing means the opposite — so on a single bar the sceptics appeared
+     to warm to height at the very moment they were hardening against it.
+     Ordered here by how far the sceptic cluster actually travels: 41 → 81. */
+  var STATES = {
+    bare:        {t:'NIMBYs/Boomers who complain about high rises need to accept we are in a growing city.', a:41, b:87},
+    opportunity: {t:'I do feel there needs to be high rise buildings as it does create more opportunities for people to live in.', a:47, b:85},
+    land:        {t:'Sydney lacks the space to build horizontally, so vertical development may be the way.', a:51, b:90},
+    form:        {t:'High-rises on main roads, low-rise on backstreets — density done right.', a:71, b:68},
+    stations:    {t:'High density with shops and amenities near existing stations.', a:72, b:81},
+    affordable:  {t:'More affordable housing; high-rises are fine in certain areas.', a:81, b:90}
+  };
+  var stmt = document.getElementById('stmt');
+  var vn = document.getElementById('bv-n'), vy = document.getElementById('bv-y');
+
+  function apply(key){
+    var s = STATES[key];
+    if (!s) return;
+    stmt.textContent = s.t;
+    document.getElementById('bf-n').style.width = s.a + '%';
+    document.getElementById('bf-y').style.width = s.b + '%';
+    vn.textContent = s.a + '%';
+    vy.textContent = s.b + '%';
+  }
+  document.getElementById('toggles').addEventListener('click', function(ev){
+    var btn = ev.target.closest('.tg');
+    if (!btn) return;
+    this.querySelectorAll('.tg').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    apply(btn.dataset.key);
+  });
+
+  /* Draw the opening state straight away rather than waiting for the card
+     to scroll into view — the bars should be readable the moment the
+     section is, without anyone having to press a button first. The key is
+     taken from whichever toggle is marked active in the markup, so the two
+     can never drift apart again: this used to name its state literally, and
+     when the states were renamed it went on asking for one that no longer
+     existed, which left both bars sitting at zero until a click. */
+  var first = document.querySelector('.tg.on');
+  if (first) apply(first.dataset.key);
+})();
+</script>
+
+</body>
+</html>
+{% endraw %}
