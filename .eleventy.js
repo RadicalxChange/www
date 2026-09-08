@@ -226,6 +226,7 @@ module.exports = function (config) {
 
   // Pass through static assets
   // src/site/images is copied through its own pipeline (see package.json)
+  config.addPassthroughCopy("./src/site/assets");
   config.addPassthroughCopy("./src/site/fonts");
   config.addPassthroughCopy("./src/site/files");
   config.addPassthroughCopy("./src/site/js");
