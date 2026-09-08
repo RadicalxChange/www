@@ -1,233 +1,48 @@
-<!-- prettier-ignore -->
-{% import "components/logo.njk" as logo %}
-
-<!-- prettier-ignore -->
+{#
+  Site footer. Called as {{ footer.render() }} by every page.
+#}
 {% macro render() %}
-<footer id="footer" class="flex flex-col lg:min-h-screen">
-  <div
-    class="relative flex-initial grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-6 pb-8 lg:py-lg/margin bg-black text-white overflow-hidden"
-  >
-    <form
-      onsubmit="window.fathom.trackGoal('BZOTPUXU', 0);"
-      action="https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&amp;id=2e47820582"
-      method="post"
-      name="mc-embedded-subscribe-form"
-      target="_blank"
-      novalidate
-      class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-5 mb-8 lg:mb-0"
-    >
-      <div class="flex items-baseline pb-2 border-b mb-4 lg:text-size--1">
-        <div class="inline-block flex-grow">
-          <input
-            type="email"
-            value=""
-            name="EMAIL"
-            id="mce-EMAIL"
-            placeholder="Type your email..."
-            aria-label="Email Address"
-            class="w-full text-left text-size--2 lg:text-size--1 placeholder-white bg-transparent outline-none"
-          />
-        </div>
-        <button
-          type="submit"
-          name="subscribe"
-          id="mc-embedded-subscribe"
-          class="inline-block uppercase"
-        >
-          Submit
-        </button>
-      </div>
-      <h2 class="text-size-2 mb-2">
-        Join our newsletter
-      </h2>
-      <p class="text-size--2 lg:text-size--4 mb-12">
-        You can unsubscribe at any time by clicking the link in the footer of
-        our emails. For information about our privacy practices, please visit
-        our website. We use Mailchimp as our marketing platform. By clicking
-        below to subscribe, you acknowledge that your information will be
-        transferred to Mailchimp for processing.
-        <a
-          class="inline-link"
-          href="https://mailchimp.com/legal/"
-          target="_blank"
-          >Learn more about Mailchimp's privacy practices here.</a
-        >
-      </p>
-    </form>
-    <div
-      class="col-span-columns lg:col-start-column-7 lg:col-end-gutter-9 space-y-6 lg:space-y-8"
-    >
+<footer>
+  <div class="wrap">
+    <div class="cols">
       <div>
-        <h3 class="mb-3 lg:mb-4 lg:text-size--1">Contact us at:</h3>
-        <ul
-          class="flex lg:flex-col xl:flex-row lg:text-size--1 space-x-4 lg:space-x-0 xl:space-x-4 lg:space-y-4 xl:space-y-0"
-        >
-          <li class="uppercase">
-            <a href="mailto:info@radicalxchange.org" class="thick-link"
-              >E-mail</a
-            >
-          </li>
-          <li class="uppercase">
-            <a href="https://t.me/rxcfoundation" class="thick-link">Telegram</a>
-          </li>
+        <h4 id="newsletter">Stay in the loop</h4>
+        <p>One email a month. No spam, no resale of your data.</p>
+        <form class="signup" action="https://radicalxchange.us19.list-manage.com/subscribe/post?u=43120a1fed800e11539c2e78d&amp;id=2e47820582" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate onsubmit="if(window.fathom){window.fathom.trackGoal('BZOTPUXU', 0);}">
+          <label for="mce-EMAIL" class="skip">Email address</label>
+          <input id="mce-EMAIL" type="email" name="EMAIL" placeholder="you@email.com" required>
+          <button class="btn" type="submit" name="subscribe">Subscribe</button>
+        </form>
+        <a class="btn donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q66E4MUK6K6KQ">Donate</a> <a class="more" href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647" style="margin-left:.9rem;color:rgba(255,255,255,.85)">or give in crypto</a>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/tools/">Plural tools</a></li>
+          <li><a href="/projects/">Projects and case studies</a></li>
+          <li><a href="/community/">Community</a></li>
+          <li><a href="/updates/">Updates</a></li>
+          <li><a href="/wiki/">Library</a></li>
+          <li><a href="/search/">Search</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="mb-3 lg:mb-4 lg:text-size--1">Find us on:</h3>
-        <ul
-          class="flex flex-wrap lg:flex-col xl:flex-row lg:text-size--1 -mr-4 -mb-4"
-        >
-          <li class="uppercase mr-4 mb-4">
-            <a href="https://twitter.com/RadxChange" class="thick-link"
-              >Twitter</a
-            >
-          </li>
-          <li class="uppercase mr-4 mb-4">
-            <a href="https://www.instagram.com/radxchange/" class="thick-link"
-              >Instagram</a
-            >
-          </li>
-          <li class="uppercase mr-4 mb-4">
-            <a
-              href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw"
-              class="thick-link"
-              >YouTube</a
-            >
-          </li>
-          <li class="uppercase mr-4 mb-4">
-            <a
-              href="https://discord.com/invite/2Eg62dxeUY"
-              class="thick-link"
-              >Discord</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="lg:hidden">
-        <h3 class="mb-3 lg:mb-4 lg:text-size--1">Donate via:</h3>
-        <ul class="flex lg:text-size--1 space-x-4">
-          <li class="uppercase">
-            <a
-              href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
-              class="thick-link"
-              >PayPal</a
-            >
-          </li>
-          <li class="uppercase">
-            <a
-              href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
-              class="thick-link"
-              >Crypto</a
-            >
-          </li>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw">YouTube</a></li>
+          <li><a href="https://twitter.com/RadxChange">Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/radicalxchange">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/radxchange/">Instagram</a></li>
+          <li><a href="mailto:info@radicalxchange.org">info@radicalxchange.org</a></li>
         </ul>
       </div>
     </div>
-    <div class="hidden lg:block absolute top-0 right-0 px-8 py-lg/margin">
-      <div class="footer_card">
-        <div class="footer_card-inner">
-          <div class="footer_card-front">
-            <div aria-hidden="true" class="footer_donate-header">Donate</div>
-          </div>
-          <div class="footer_card-back">
-            <div class="footer_donate-options">
-              <h3 class="mb-3 lg:mb-4 lg:text-size--1">Donate via:</h3>
-              <ul class="flex lg:text-size--1 space-x-4">
-                <li class="uppercase">
-                  <a
-                    href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q66E4MUK6K6KQ"
-                    class="thick-link"
-                    >PayPal</a
-                  >
-                </li>
-                <li class="uppercase">
-                  <a
-                    href="https://commerce.coinbase.com/checkout/a68957cd-9253-4b60-ac6a-2b0d3f472647"
-                    class="thick-link"
-                    >Crypto</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="flex-grow grid grid-cols-layout-4 lg:grid-cols-layout-12 grid-rows-footer lg:grid-rows-none content-between min-h-screen lg:min-h-0 pt-margin lg:pt-lg/margin pb-2"
-  >
-    <div
-      class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-8 lg:mb-0"
-    >
-      <a class="flex justify-center lg:justify-start" href="/">{{
-        logo.render(classes="logo-no-min-width")
-      }}</a>
-    </div>
-    <ul
-      class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 flex flex-col justify-between max-h-96 mx-auto lg:mx-0 text-center lg:text-left text-size-1 lg:text-size--1 space-y-4"
-    >
-      <li class="uppercase">
-        <a href="/" class="thick-link">Home</a>
-      </li>
-      <li class="uppercase">
-        <a href="/about" class="thick-link">About</a>
-      </li>
-      <li class="uppercase">
-        <a href="/vision" class="thick-link">Vision</a>
-      </li>
-      <li class="uppercase">
-        <a href="/tools" class="thick-link">Tools</a>
-      </li>
-      <li class="uppercase">
-        <a href="/projects" class="thick-link">Projects</a>
-      </li>
-      <li class="uppercase">
-        <a href="/community" class="thick-link">Community</a>
-      </li>
-      <li class="uppercase">
-        <a href="/updates" class="thick-link">Updates</a>
-      </li>
-      <li class="uppercase">
-        <a href="/events" class="thick-link">Events</a>
-      </li>
-      <li class="uppercase">
-        <a href="/wiki" class="thick-link">Wiki</a>
-      </li>
-      <li class="uppercase">
-        <a href="/search" class="thick-link">Search</a>
-      </li>
-      <li class="uppercase">
-        <a href="/privacy-policy" class="thick-link">Privacy Policy</a>
-      </li>
-    </ul>
-    <div class="col-span-columns mt-8">
-      <div class="col-span-columns flex gap-x-16 flex-wrap">
-        <img
-          src="/images/mydata-member.jpeg"
-          width="200"
-          loading="lazy"
-          decoding="async"
-          class="mb-8"
-        />
-        <img
-          src="/images/nets4dem.webp"
-          width="200"
-          loading="lazy"
-          decoding="async"
-          class="mb-8"
-        />
-      </div>
-      <p class="text-center text-size--4">
-        © 2026 RadicalxChange Foundation Ltd.
-      </p>
-      <p class="text-center text-size--4">
-        RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit organization, does
-        not support or oppose candidates for public office or political parties.
-      </p>
+    <div class="legal">
+      <span>© 2026 RadicalxChange Foundation Ltd., a 501(c)(3) nonprofit. We do not support or oppose candidates for public office or political parties.</span>
+      <ul><li><a href="/privacy-policy/">Privacy</a></li><li><a href="/community/">Code of conduct</a></li></ul>
     </div>
   </div>
 </footer>
-<!-- prettier-ignore -->
+<script src="/assets/field.js" defer></script>
 {% endmacro %}

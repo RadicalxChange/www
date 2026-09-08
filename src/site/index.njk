@@ -1,269 +1,235 @@
 ---
 layout: layouts/_base.njk
-heroHeadline: |
-  RadicalxChange Foundation is an international nonprofit advancing participatory governance for the age of AI.
-heroSubhead: |
-  Where Singularity imagines AI making human contribution obsolete, we advance [Plurality](https://plurality.net/) — a philosophy that keeps human agency and democratic participation at the wheel, and treats technology as a means of cooperating across difference.
-theoryPracticeBlurb: |
-  Our work spans [research](/updates), [civic-tech prototypes](https://quadraticvote.radicalxchange.org/) that turn our ideas into working mechanisms, [partnerships](/projects) that build "civic muscle" in communities, and a global [community](/community) that tests these ideas across very different contexts. Together, these have begun to transform democratic and market institutions — in [Colorado](https://www.wired.com/story/colorado-quadratic-voting-experiment/), [Nashville](https://www.forbes.com/sites/zengernews/2022/08/31/nashville-jersey-city-experiment-with-quadratic-voting---a-radical-step/), [New York](/wiki/nyc-qv/), the [UK](https://www.serpentinegalleries.org/whats-on/beyond-cultures-of-ownership/), [Brazil](https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote), Sydney, and beyond.
-nationalScaleBlurb: |
-  [Taiwan's world-leading embrace](https://www.wired.com/story/how-taiwans-unlikely-digital-minister-hacked-the-pandemic/) is well known; the next iteration is emerging in Japan, where the [Plurality book](https://plurality.net/read/) inspired [Team Mirai](https://www.techpolicy.press/japans-team-mirai-uses-tech-to-bolster-democracy-not-undermine-it/) — a new independent party using AI to help citizens understand and shape policy.
-missionBlurb: |
-  RadicalxChange is the connective tissue for this ecosystem: community work proves the methods on the ground, while ambitious, economy-scale proposals carry them to the grand challenges of our era. Both serve the same goal — helping humans steer the AI transition.
-toolsBlurb: |
-  The Plural Stack:
-joinUsBlurb: |
-  If you're...
-
-  - a **policy maker** or **academic**, you may be interested in our [projects, policy proposals](/projects), or [latest publications](/updates).
-  - a **builder** or **developer**, check out the stack of [plural tools](/tools) and our [wiki](/wiki).
-  - a **community organizer**, you may be interested in joining one of our [IRL communities](/community) in cities around the world, or [starting your own](/community).
-  - a **creator**, **storyteller** or **radical thinker**, check out our [projects](/projects), [podcast or updates](/updates).
-  - an **industry body or association**, explore our [projects](/projects), [upcoming events](/events) and [announcements](/updates).
-
-  We invite radical thinkers, builders, innovators and the curious to join our global [community](/community)—sign up for the [newsletter](http://eepurl.com/gywH7r) and our [monthly calls](https://calendar.google.com/calendar/u/0/embed?src=c_lucq4409c3e2db9j5vld22p8to@group.calendar.google.com&ctz=America/New_York) (first Wednesday of every month at 9am ET/3pm CET).
-
-  [Contact us](mailto:info@radicalxchange.org) to co-design new experiments and tools for your community.
-homeConcepts:
-  - name: Plural Voting
-    href: /tools/plural-voting/
-    element: <quadratic-voting-animation/>
-  - name: Plural Funding
-    href: /tools/plural-funding/
-    element: <quadratic-funding-animation/>
-  - name: Plural Ownership
-    href: /tools/plural-ownership/
-    element: <partial-common-ownership-animation/>
-  - name: Plural Money
-    href: /tools/plural-money/
-    element: <data-dignity-animation/>
+title: ""
+description: "RadicalxChange is an international nonprofit advancing participatory governance in the age of AI. We build and field-test mechanisms that let people who disagree steward what they share."
 ---
-
-<!-- prettier-ignore -->
-{% import "components/rxc-tv.njk" as rxcTvWidget %}
-<!-- prettier-ignore -->
-{% import "components/popup.njk" as popupWidget %}
-<!-- prettier-ignore -->
-{% import "components/logo.njk" as logo %}
-<!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
-<!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
-<!-- prettier-ignore -->
-{% import "components/action-button.njk" as actionButton %}
-
-<!-- prettier-ignore -->
 {{ menu.render() }}
-<div
-  class="relative grid grid-cols-layout-4 lg:grid-cols-layout-12 content-between min-h-screen bg-golden-fizz"
->
-  <header
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mt-margin lg:mt-lg/margin mb-16"
-  >
-    <h1
-      class="font-display text-size-display lg:text-size-lg/display uppercase"
-    >
-      <a href="/">
-        {{ logo.render(classes="inline-block align-top") }}
-      </a>
-    </h1>
-  </header>
-  <!-- 1. HERO: foundation headline + Singularity-vs-Plurality subhead -->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
-  >
-    <h2 class="font-bold text-size-2 lg:text-size-4 mb-4">
-      {{ heroHeadline }}
-    </h2>
-    <div class="markdown text-size-0 lg:text-size-1">
-      {{ heroSubhead | markdown | safe }}
-    </div>
-    {{ caller() if caller }}
-  </div>
-  <!-- 2. Theory -> practice -->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
-  >
-    <p class="font-bold uppercase mb-4">From theory to practice:</p>
-    <div class="markdown">
-      {{ theoryPracticeBlurb | markdown | safe }}
-    </div>
-  </div>
-  <!-- 3. National-scale proof, with pull-stat -->
-  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0">
-    <p class="font-bold uppercase mb-4">Proof at the national scale:</p>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-8 items-start">
-      <div class="markdown lg:col-span-2">
-        {{ nationalScaleBlurb | markdown | safe }}
-      </div>
-      <div class="flex flex-col justify-center h-full border-2 p-6">
-        <p class="font-display text-size-xl/display leading-none">11</p>
-        <p class="font-bold uppercase mt-3">
-          parliamentary seats won by Japan's Team Mirai in 2026
-        </p>
+<main id="main">
+
+
+
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div>
+      <h1 id="h-hero">We help communities cooperate across difference.</h1>
+      <p class="lede">RadicalxChange is an international nonprofit advancing participatory governance in the age of AI. We build and field-test mechanisms that let people who disagree steward what they share, with partners, at real scale.</p>
+      <p class="lede">We also advance the practice: open research, monthly Salons, and a community of chapters in more than thirty cities.</p>
+      <div class="actions">
+        <a class="btn" href="#results">See the results</a>
+        <a class="more" href="/community/#chapters">Find a chapter near you</a>
       </div>
     </div>
+    <figure class="map" aria-label="Opinion map from the Sydney density deliberation">
+      <svg id="heroMap" viewBox="0 0 520 400" role="img" aria-labelledby="heroMapTitle"><title id="heroMapTitle">Two clusters of participants, with the region where they agreed highlighted in yellow</title></svg>
+      <figcaption><span class="swatch" style="background:var(--voice-a)"></span>Sydneysiders who wanted more housing. <span class="swatch" style="background:var(--voice-b)"></span>Sydneysiders who opposed it. 172 of them deliberated across eight councils. <span class="swatch" style="background:var(--common)"></span><b>The yellow is where they agreed.</b> <a href="/density-done-well/">See the Density Done Well results</a></figcaption>
+    </figure>
   </div>
-  <!-- 4. Mission close -->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
-  >
-    <p class="font-bold uppercase mb-4">Our role:</p>
-    <div class="markdown">
-      {{ missionBlurb | markdown | safe }}
+</section>
+
+<section class="section" id="results" aria-labelledby="h-results">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 id="h-results">What happened when communities got real power</h2>
+        <p>We partner with community champions and sector leaders, people with the local knowledge, credibility and networks to bring genuine diversity of perspective to every engagement. Recent results:</p>
+      </div>
+      <a class="more" href="/projects/">All projects and case studies</a>
     </div>
-  </div>
-  <!-- 5. Plural Stack: condensed, demoted to a compact tile row -> /tools -->
-  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24">
-    <p class="font-bold uppercase mb-1">{{ toolsBlurb }}</p>
-    <p class="text-size--1 mb-4">The mechanisms behind the work.</p>
-    <div
-      id="concepts"
-      class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8"
-    >
-      {% for concept in homeConcepts%}
-      <a
-        class="group flex flex-col items-center justify-between"
-        href="{{ concept.href }}"
-      >
-        <div></div>
-        <div class="w-full max-w-[7rem]">
-          {{ concept.element | safe }}
+
+    <div class="results">
+      <article class="result">
+        <div>
+          <p class="num"><mark>9 in 10</mark></p>
+          <p class="claim">engaged opponents would accept a development they dislike if their community had real power over what gets built.</p>
+          <p class="where">Density done well, Sydney. 2,535 Australians surveyed; 172 residents across 8 councils deliberated with Pol.is, quadratic voting and small groups. With AMPLIFY, June to July 2026.</p>
+          <a class="more" href="/density-done-well/">Read the case study</a>
         </div>
-        <h2
-          class="mt-3 text-center text-size--1 group-hover:thick-link"
-        >
-          {{ concept.name }}
-        </h2>
-      </a>
-      {% endfor %}
+        <div class="visual"><svg data-field="density-done-well" viewBox="0 0 160 160" aria-hidden="true"></svg></div>
+      </article>
+
+      <article class="result">
+        <div>
+          <p class="num"><mark>97%</mark></p>
+          <p class="claim">agreed that communities need a real way to challenge how AI represents their tradition.</p>
+          <p class="where">Can AI see me? 39 faith leaders and participants deliberated on 84 statements at an official side event of the UN Global Dialogue on AI Governance, distilling ten Geneva Reflection Principles delivered to the UN. With Parity, Sikh LGBT+ Inclusion and Free Community Church, July 2026.</p>
+          <a class="more" href="/geneva-reflections/">Read the ten principles</a>
+        </div>
+        <div class="visual"><svg data-field="geneva-reflections" viewBox="0 0 160 160" aria-hidden="true"></svg></div>
+      </article>
+
+      <article class="result">
+        <div>
+          <p class="num"><mark>91%</mark></p>
+          <p class="claim">of New York's community builders agreed their work deserves the same recognition and resourcing as the creator economy.</p>
+          <p class="where">Community Week NYC. 51 participants, 44 statements, 1,244 votes on Pol.is about what a community economy could look like. With Sugary NYC and Week Nights, May 2026.</p>
+          <a class="more" href="/communityweeknyc/">Read the report-back</a>
+        </div>
+        <div class="visual"><svg data-field="community-week-nyc" viewBox="0 0 160 160" aria-hidden="true"></svg></div>
+      </article>
+
+      <article class="result">
+        <div>
+          <p class="num"><mark>11</mark></p>
+          <p class="claim">prioritised next steps for bringing arts and culture into healthcare, from 73 leaders and 106 statements.</p>
+          <p class="where">ASPIRE Canberra Policy Lab. National and international practitioners and researchers deliberated at the Museum of Australian Democracy toward a shared health-and-culture evidence framework. With ASPIRE, August 2026.</p>
+          <a class="more" href="/aspire-canberra-policy-lab/">Read the case study</a>
+        </div>
+        <div class="visual"><svg data-field="aspire-canberra" viewBox="0 0 160 160" aria-hidden="true"></svg></div>
+      </article>
     </div>
-    <div class="mt-8">
-      {{ actionButton.render(href="/tools", label="Explore the Plural Stack") }}
+
+    <div class="live">
+      <h3>In the field now</h3>
+      <ol>
+        <li><span class="dot"></span><div><a class="title" href="https://highlandshomegrown.com/regen-data-centre">A better model for data centres</a><span class="desc">A community counter-offer for data centre development: local terms for renewable energy, safeguards for water and nature, local jobs and procurement, shared ownership or benefit-sharing, and ongoing participatory oversight. With Regen Labs, BWD Strategic and Highlands Homegrown Economy in the Southern Highlands, NSW.</span></div><span class="status">Stage one, 12 weeks</span></li>
+        <li><span class="dot"></span><div><a class="title" href="/updates/announcements/2025-04-federated-data-bargaining-with-openmined/">Network-sourced AI for journalism</a><span class="desc">Open-source infrastructure that lets news outlets control and price how AI systems access their reporting, and bargain collectively. Deployed with AMSI's network of more than 500 outlets in Indonesia and with partners in Uruguay and Denmark; a United States pilot begins this year. With OpenMined and the International Fund for Public Interest Media.</span></div><span class="status">Live, three countries</span></li>
+        <li><span class="dot b"></span><div><a class="title" href="https://climatepreparedness.colorado.gov/colorados-climate-preparedness-roadmap">Colorado's climate preparedness roadmap</a><span class="desc">Residents review climate-risk statements from their neighbours, vote on priorities and add their own before the state finalises where to focus adaptation. With Colorado's Office of Climate Preparedness and Disaster Recovery.</span></div><span class="status">Live, input open to 7 October</span></li>
+      </ol>
     </div>
   </div>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-9 mb-24 [&_.markdown>p:first-child]:!mt-0"
-  >
-    <p class="font-bold uppercase mb-4">We invite you to join us:</p>
-    <div class="markdown">
-      {{ joinUsBlurb | markdown | safe }}
+</section>
+
+<section class="section tint tools" aria-labelledby="h-tools">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 id="h-tools">The mechanisms, and where they've been tried</h2>
+        <p>Tools developed by our community to counter polarisation, add nuance to debate, reshape asset stewardship, give people leverage over their data, and set priorities across policy, budgets and resources.</p>
+      </div>
+      <a class="more" href="/tools/">How each one works</a>
+    </div>
+    <table>
+      <thead><tr><th scope="col">Mechanism</th><th scope="col">What it does</th><th scope="col">Where it's been tried</th><th scope="col">With</th></tr></thead>
+      <tbody>
+        <tr>
+          <th scope="row">Plural voting<small>formerly quadratic voting</small></th>
+          <td class="what">Everyone gets the same budget of voice credits. Extra votes on one issue cost more each time, so intensity counts without a loud minority dominating.</td>
+          <td class="tried"><a href="/projects/plural-voting-in-the-colorado-state-legislature">Colorado legislature</a>, <a href="/projects/plural-voting-in-nashville">Nashville council</a>, <a href="/projects/plural-voting-for-participatory-budgeting-in-nyc">NYC participatory budgeting</a>, <a href="/density-done-well/">Sydney</a></td>
+          <td class="with">Colorado General Assembly, Nashville Metro Council, NYC Council District 9, AMPLIFY</td>
+        </tr>
+        <tr>
+          <th scope="row">Plural assemblies</th>
+          <td class="what">Structured deliberation, usually with Pol.is: participants vote on each other's statements, and the map shows where divided groups actually agree.</td>
+          <td class="tried"><a href="/density-done-well/">Sydney</a>, <a href="/aspire-canberra-policy-lab/">Canberra</a>, <a href="/geneva-reflections/">Geneva</a>, <a href="/projects/citizens-assembly-in-colorado">Colorado citizens' assembly</a></td>
+          <td class="with">AMPLIFY, ASPIRE, Parity, The Civic Canopy, Healthy Democracy</td>
+        </tr>
+        <tr>
+          <th scope="row">Plural funding<small>formerly quadratic funding</small></th>
+          <td class="what">Small donations are matched according to how many people gave, not how much, so public goods that many care about get funded first.</td>
+          <td class="tried">Gitcoin Grants, more than $60M distributed</td>
+          <td class="with">Gitcoin</td>
+        </tr>
+        <tr>
+          <th scope="row">Plural ownership</th>
+          <td class="what">Time-limited stewardship with a recurring public fee, so assets serve the people around them rather than sit idle.</td>
+          <td class="tried"><a href="/projects/partial-common-ownership-for-serpentine-arts-technologies">Partial common ownership pilot</a>, pco.art</td>
+          <td class="with">Serpentine Arts Technologies</td>
+        </tr>
+        <tr>
+          <th scope="row">Collective data bargaining<small>data dignity in practice</small></th>
+          <td class="what">Publishers serve their content to AI systems from servers they control, on their own terms and for payment, and form consortia so they bargain as one rather than one by one.</td>
+          <td class="tried"><a href="/updates/announcements/2025-04-federated-data-bargaining-with-openmined/">Indonesia, more than 500 outlets</a>, Uruguay, Denmark</td>
+          <td class="with">OpenMined, AMSI, International Fund for Public Interest Media</td>
+        </tr>
+        <tr>
+          <th scope="row">Plural money</th>
+          <td class="what">Community currencies backed by a shared trust pool.</td>
+          <td class="tried"><a href="/projects/plural-money-for-edge-city">Edge Esmeralda, Edge City Lanna</a></td>
+          <td class="with">Edge City</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="foot quiet ui">We also support and deploy ecosystem tools including Pol.is, Talk to the City, Context Engine, Agora, Tapir, Voqua and Gitcoin.</p>
+  </div>
+</section>
+
+<section class="section partners" aria-labelledby="h-partners">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 id="h-partners">Who we work with</h2>
+        <p>Governments, institutions, community organisations and research partners.</p>
+      </div>
+      <a class="more" href="mailto:info@radicalxchange.org">Talk to us about an engagement</a>
+    </div>
+    <ul>
+      <li>Colorado Office of Climate Preparedness and Disaster Recovery</li>
+      <li>Colorado General Assembly</li>
+      <li>Nashville Metro Council</li>
+      <li>AMPLIFY</li>
+      <li>Museum of Australian Democracy</li>
+      <li>ASPIRE</li>
+      <li>Regen Labs</li>
+      <li>BWD Strategic</li>
+      <li>Highlands Homegrown Economy</li>
+      <li>Parity</li>
+      <li>Serpentine Arts Technologies</li>
+      <li>OpenMined</li>
+      <li>International Fund for Public Interest Media</li>
+      <li>AMSI (Indonesia)</li>
+      <li>Gitcoin</li>
+      <li>Edge City</li>
+      <li>The Civic Canopy</li>
+      <li>Healthy Democracy</li>
+      <li>MyData</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section tint" aria-labelledby="h-latest">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 id="h-latest">Read and watch the latest</h2>
+        <p>Salons, podcast, papers and announcements, alongside the archive of everything we've published since 2018.</p>
+      </div>
+      <a class="more" href="/updates/">All updates</a>
+    </div>
+    <div class="latest">
+      <div>
+        <div class="video"><iframe src="https://www.youtube.com/embed/9jyJux9ML3g" title="RadicalxChange Salon: The Plural Stack" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        <p class="video-cap">RadicalxChange Salon: The Plural Stack<span>Rebuilding our digital foundations from protocol up. September 2026.</span></p>
+      </div>
+      <ul class="posts">
+        <li><a href="/updates/blog/two-radical-ways-to-share-ai-ownership/">Two radical ways to share AI ownership</a><span class="meta"><i>Blog</i> Jack Henderson, Leon Erichsen, Matt Prewitt, June 2026</span></li>
+        <li><a href="/updates/announcements/2026-07-can-ai-see-me/">Can AI see me? The case for plural AI heads to the UN's Global Dialogue</a><span class="meta"><i>Announcement</i> July 2026</span></li>
+        <li><a href="/projects/the-plural-stack">The ⿻ Plural Stack: rebuilding our digital foundations from protocol up</a><span class="meta"><i class="paper">Paper</i> Andreas Fauler and others, June 2026</span></li>
+        <li><a href="https://youtu.be/OZqXrjwF3nE">RadicalxChange Salon: Reverse Alignment</a><span class="meta"><i>Salon</i> Building institutions in the shape of their tools, September 2026</span></li>
+        <li><a href="/updates/announcements/2026-05-co-creative-democracy-from-taipei-to-nyc/">Co-creative democracy, from Taipei to NYC</a><span class="meta"><i>Announcement</i> May 2026</span></li>
+      </ul>
     </div>
   </div>
-</div>
-<!-- prettier-ignore -->
+</section>
+
+<section class="section field" aria-labelledby="h-field">
+  <div class="wrap field">
+    <div>
+      <h2 id="h-field">Research alone doesn't shift power.</h2>
+      <p style="margin-top:1rem">So we pair open research with civic-tech prototypes, run them with real partners and communities, and feed what we learn back into policy proposals and further pilots. That's the civic muscle participatory governance actually requires, and it's built in public: through our Salons and podcast, through papers and proposals like the <a href="/projects/the-plural-stack">Plural Stack</a> and <a href="https://youtu.be/OZqXrjwF3nE">Reverse Alignment</a>, and through a global community that tests these ideas in its own cities.</p>
+      <a class="more" href="/about/">About the Foundation, the team and our approach</a>
+    </div>
+    <div>
+      <p class="board">The Foundation's board includes <b>E. Glen Weyl</b>, <b>Audrey Tang</b>, <b>Vitalik Buterin</b>, <b>Anne-Marie Slaughter</b>, <b>Christopher Kulendran Thomas</b> and <b>Joseph Gordon-Levitt</b>. RadicalxChange grew out of the ideas in <i>Radical Markets</i> and <i>Plurality</i>, and remains the home of the movement those books started.</p>
+      <p class="board">Chapters are autonomous and driven by their own local character, from Amsterdam to Auckland, Mexico City to Mumbai. Every chapter operates under our <a href="/community/code-of-conduct/">code of conduct</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section tint next" aria-labelledby="h-next">
+  <div class="wrap">
+    <div class="section-head"><h2 id="h-next">However you show up, there's a next step.</h2></div>
+    <dl>
+      <div><dt>Policymaker or academic</dt><dd><a href="/projects/">Browse projects and proposals</a></dd></div>
+      <div><dt>Builder or developer</dt><dd><a href="/tools/">Explore the tools and the library</a></dd></div>
+      <div><dt>Community organiser</dt><dd><a href="/community/#chapters">Find or start a chapter</a></dd></div>
+      <div><dt>Everyone</dt><dd><a href="/community/#call">Join the monthly community call, first Wednesday, 9am ET / 3pm CET</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+
+
+</main>
 {{ footer.render() }}
-<!-- prettier-ignore -->
-{% if rxcTv.isOn %}
-{{ rxcTvWidget.render(rxcTv.title, rxcTv.description, rxcTv.slidoUrl) }}
-<script>
-  // prettier-ignore
-  {% include "components/rxc-tv.js" %}
-</script>
-<!-- prettier-ignore -->
-{% elif popup.isOn %}
-{{ popupWidget.render(popup.title, popup.bodyText, popup.link) }}
-<script>
-  // prettier-ignore
-  {% include "components/popup.js" %}
-</script>
-<!-- prettier-ignore -->
-{% endif %}
-<script>
-  const Animation = function ($root) {
-    this.$root = $root;
-
-    this.onMouseEnter = this._onMouseEnter.bind(this);
-    this.onMouseLeave = this._onMouseLeave.bind(this);
-    this.onIntersect = this._onIntersect.bind(this);
-    this.observer = new IntersectionObserver(this.onIntersect, {
-      threshold: [0.5, 1],
-    });
-  };
-
-  Animation.prototype.init = function () {
-    this.$root.addEventListener("mouseenter", this.onMouseEnter);
-    this.$root.addEventListener("mouseleave", this.onMouseLeave);
-    this.observer.observe(this.$root);
-  };
-
-  Animation.prototype._onIntersect = function (entries) {
-    if (window.innerWidth >= 768) {
-      return;
-    }
-    entries.forEach((entry) => {
-      if (entry.intersectionRatio <= 0.5) {
-        this.animate(false);
-      } else if (entry.intersectionRatio === 1) {
-        this.animate(true);
-      }
-    });
-  };
-
-  Animation.prototype._onMouseEnter = function () {
-    if (window.innerWidth < 768) {
-      return;
-    }
-    this.animate(true);
-  };
-
-  Animation.prototype._onMouseLeave = function () {
-    if (window.innerWidth < 768) {
-      return;
-    }
-    this.animate(false);
-  };
-
-  Animation.prototype.animate = function (state) {
-    if (state) {
-      this.$root.children[1].children[0].setAttribute("on", true);
-    } else {
-      this.$root.children[1].children[0].removeAttribute("on");
-    }
-  };
-
-  const $concepts = document.getElementById("concepts").children;
-  for (const $concept of $concepts) {
-    const animation = new Animation($concept);
-    animation.init();
-  }
-</script>
-<script>
-  window.twttr = (function (d, s, id) {
-    var js,
-      fjs = d.getElementsByTagName(s)[0],
-      t = window.twttr || {};
-    if (d.getElementById(id)) return t;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-
-    t._e = [];
-    t.ready = function (f) {
-      t._e.push(f);
-    };
-
-    return t;
-  })(document, "script", "twitter-wjs");
-
-  twttr.ready(function (twttr) {
-    twttr.events.bind("rendered", function (event) {
-      setTimeout(() => {
-        document
-          .getElementById("twitter-marquee")
-          .classList.add("twitter-marquee");
-      }, 500);
-    });
-  });
-</script>
-<script>
-  // prettier-ignore
-  {% include "components/menu.js" %}
-</script>
-<script src="/animations/data-dignity.js"></script>
-<script src="/animations/quadratic-voting.js"></script>
-<script src="/animations/quadratic-funding.js"></script>
-<script src="/animations/partial-common-ownership.js"></script>
-<script src="/animations/radical-antitrust.js"></script>
-<script src="/animations/intersectional-identity.js"></script>

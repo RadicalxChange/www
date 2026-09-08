@@ -1,0 +1,46 @@
+{#
+  Shared article layout: blog posts, announcements, case studies, methods, wiki pages.
+  Child layouts set: kind (label), backHref, backLabel, pagefindType.
+#}
+{% import "components/menu.njk" as menu %}
+{% import "components/footer.njk" as footer %}
+{% extends "layouts/_base.njk" %}
+{% set ogType = "article" %}
+
+{% block metaTags %}
+{{ super() }}
+{% if date %}<meta property="og:article:published_time" content="{{ date }}" />{% endif %}
+{% if postAuthor %}<meta property="og:article:author" content="{{ postAuthor }}" />{% endif %}
+{% endblock %}
+
+{% block body %}
+{{ menu.render() }}
+<main id="main" class="article{% if kind %} {{ kind | lower | replace(" ", "-") }}{% endif %}">
+  <div class="wrap">
+    <header>
+      <p class="kicker"><a href="{{ backHref | default('/updates/') }}">{{ backLabel | default('Updates') }}</a>{% if kind %} &nbsp;<i>{{ kind }}</i>{% endif %}</p>
+      <h1>{{ postHeader | default(title) }}</h1>
+      {% if postAuthor or date %}
+      <p class="byline">{% if postAuthor %}<b>{{ postAuthor }}</b>{% endif %}{% if postAuthor and date %}, {% endif %}{% if date %}{{ date | readableDate }}{% endif %}</p>
+      {% endif %}
+    </header>
+    <article class="prose" data-pagefind-body>
+      {% if pagefindType %}<span data-pagefind-meta="type:{{ pagefindType }}" data-pagefind-filter="type:{{ pagefindType }}" hidden></span>{% endif %}
+      {% if postAuthor %}<span data-pagefind-meta="author:{{ postAuthor }}" hidden></span>{% endif %}
+      {% if date %}<span data-pagefind-meta="date:{{ date | readableDate }}" hidden></span>{% endif %}
+      {% block articleBody %}{{ content | markdown | latex | safe }}{% endblock %}
+    </article>
+    <aside data-pagefind-ignore>
+      <div id="rxc-toc" class="toc"></div>
+      {% block aside %}{% endblock %}
+    </aside>
+  </div>
+</main>
+{{ footer.render() }}
+<script>
+  // Move the markdown-generated table of contents (if any) into the sidebar.
+  (function(){var t=document.getElementById('toc'),a=document.getElementById('rxc-toc');
+  if(t&&a){var h=document.createElement('h4');h.textContent='On this page';a.appendChild(h);a.appendChild(t);t.style.display='block';}
+  else if(a){a.remove();}})();
+</script>
+{% endblock %}

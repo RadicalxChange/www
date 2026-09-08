@@ -1,0 +1,29 @@
+---
+layout: layouts/_base.njk
+title: "Library"
+description: "Reference articles, foundational papers and books on plural voting, plural funding, partial common ownership, data dignity and more."
+---
+{% import "components/menu.njk" as menu %}
+{% import "components/footer.njk" as footer %}
+{{ menu.render() }}
+<main id="main">
+
+<section class="page-hero"><div class="wrap">
+<div><h1>The research behind the practice.</h1><p class="lede">Formerly the Wiki. Reference articles on each mechanism, the academic papers they rest on, and the policy frameworks that carry them into the world. Written for people who want to understand how the tools work well enough to build with them or argue about them.</p></div>
+<div class="aside">The Library is open to contributors. <a href="/wiki/">Read the contributing guide</a>.</div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="twocol">
+<div><h3>Reference articles</h3><ul class="list">
+{% for item in wikiLinks %}{% if item.to and item.to != "/wiki/" %}<li><a href="{{ item.to }}">{{ item.id }}</a></li>{% endif %}{% endfor %}
+</ul></div>
+<div><h3>Papers</h3><ul class="list">
+{% for chunk in collections.media %}{% if chunk.filter == "papers" %}{% for p in chunk.items %}
+<li><a href="{{ p.url }}">{{ p.title | replace("⿻ ", "") }}</a><span class="meta"><i class="b">Paper</i> {% if p.postAuthor %}{{ p.postAuthor }}, {% endif %}{% if p.publisher %}{{ p.publisher }}, {% endif %}{{ p.date | truncate(4, true, "") }}</span></li>
+{% endfor %}{% endif %}{% endfor %}
+</ul>
+<h3 style="margin-top:2.5rem">Books</h3><p><i>Radical Markets: Uprooting Capitalism and Democracy for a Just Society</i> (Posner and Weyl, 2018) is where the movement began. <a href="https://plurality.net/">Plurality: The Future of Collaborative Technology and Democracy</a> (Tang, Weyl and the Plurality community, 2024) is where it went next, and is free to read online.</p></div>
+</div>
+</div></section>
+</main>
+{{ footer.render() }}

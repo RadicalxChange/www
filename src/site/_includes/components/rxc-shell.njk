@@ -1,0 +1,61 @@
+{#
+  RadicalxChange shell for standalone project pages that don't use layouts/_base.njk.
+  Usage in a page:
+    {% import "components/rxc-shell.njk" as shell %}
+    {{ shell.head() }}                      -- inside <head>
+    {{ shell.top("Project title", "Completed, July 2026", true) }}   -- first in <body>; third arg true = completed, false = live
+    {{ shell.bottom() }}                    -- last in <body>
+#}
+{% macro head() %}
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+<script src="https://rabbit.radicalxchange.org/script.js" site="SQHLZNME" included-domains="www.radicalxchange.org" defer></script>
+<style>
+.rxc-shell{--ink:#17203A;--paper:#fff;--common:#FFE01B;--quiet:#5F657E;--hair:#D9DBE3;--voice-b:#E23A6B;
+  font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:15px;line-height:1.3;box-sizing:border-box}
+.rxc-shell *{box-sizing:border-box;font-family:inherit;text-transform:none;letter-spacing:0;font-size:inherit;line-height:inherit}
+.rxc-shell a{color:inherit;text-decoration:none}
+.rxc-shell a:hover{text-decoration:underline;text-underline-offset:.3em}
+.rxc-shell a:focus-visible{outline:3px solid #2B3EFF;outline-offset:3px}
+.rxc-shell .wrap{max-width:78rem;margin:0 auto;padding:.75rem clamp(1.25rem,4vw,4.5rem);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.rxc-shell.top{border-bottom:2px solid var(--ink)}
+.rxc-shell.bottom{border-top:1px solid var(--hair);font-size:14px;color:var(--quiet)}
+.rxc-shell.bottom a{color:var(--ink)}
+.rxc-shell .crumbs{display:flex;align-items:center;gap:.5rem;color:var(--quiet);min-width:0}
+.rxc-shell .crumbs a{font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:.5rem}
+.rxc-shell .crumbs span.here{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rxc-shell .status{display:inline-flex;align-items:center;gap:.4rem;color:var(--quiet)}
+.rxc-shell .status i{width:.5rem;height:.5rem;border-radius:50%;background:var(--voice-b);display:inline-block}
+.rxc-shell .status.done i{background:var(--ink)}
+.rxc-shell .btn{border:2px solid var(--ink);padding:.45rem .8rem;font-weight:600;font-size:14px;line-height:1}
+.rxc-shell .btn:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+.rxc-shell .right{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+</style>
+{% endmacro %}
+
+{% macro top(title, status, done) %}
+<div class="rxc-shell top" role="banner">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="12" height="12"/><rect x="9" y="9" width="12" height="12"/></svg>RadicalxChange</a>
+      <span>/</span>
+      <a href="/projects/">Projects</a>
+      <span>/</span>
+      <span class="here">{{ title }}</span>
+    </nav>
+    <div class="right">
+      <!-- use class="status" for live work, class="status done" for completed -->
+      <span class="status{{ " done" if done }}"><i></i>{{ status }}</span>
+      <a class="btn" href="mailto:info@radicalxchange.org?subject={{ title | urlencode }}">Contact the team</a>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro bottom() %}
+<div class="rxc-shell bottom" role="contentinfo">
+  <div class="wrap">
+    <span>Part of <a href="/projects/">Projects</a> at RadicalxChange Foundation, a 501(c)(3) nonprofit.</span>
+    <span class="right"><a href="/#newsletter">Newsletter</a><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q66E4MUK6K6KQ">Donate</a><a href="mailto:info@radicalxchange.org">Contact</a></span>
+  </div>
+</div>
+{% endmacro %}

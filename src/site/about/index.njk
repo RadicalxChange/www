@@ -1,289 +1,45 @@
 ---
 layout: layouts/_base.njk
-title: About
-headerText: ABOUT RxC
-introductionBlurb: |
-  <div class="html"><p class="font-bold uppercase">What is RadicalxChange?</p></div>
-
-  **RadicalxChange sparks imagination for transformative systems change. We provide participatory tools and collaborative approaches to cooperate across diversity and shape positive futures.**
-
-  RxC helps communities of all kinds develop their capacity to set priorities, solve problems, fund public goods and implement collective projects. We provide support, tools and methods, forums for connection and policy frameworks to enable active participation, consensus-building, resource sharing and self-government.
-
-  <div class="html"><p class="font-bold uppercase">We do this through:</p></div>
-
-  - A global [community](/community) modeling positive futures through experimentation
-
-  - A stack of [tools and methods](/tools) for collaboration, consensus-building and decentralized governance
-
-  - [Proposals and projects](/projects) to demonstrate practical application of innovative approaches and shape the mainstream policy agenda
-
-  <div class="html">
-  <p class="font-bold uppercase">Our current program of work focuses on:</p>
-  <div class="w-full mb-16">
-    <ol
-      class="w-full mt-8 grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-4 max-w-3xl mr-auto !p-0
-        [&>li]:!m-0 [&>li]:flex [&>li]:flex-col [&>li]:justify-between [&>li]:h-64 [&>li]:w-full [&>li]:border-2 [&>li]:p-4"
-    >
-      <li>
-        <p class="font-bold">Democratic Transformation</p>
-        <p class="italic text-sm">How should we govern?</p>
-        <p>Forging the foundations of 21st century governance</p>
-      </li>
-      <li>
-        <p class="font-bold">Resilient Decentralization</p>
-        <p class="italic text-sm">How should we build?</p>
-        <p>Accelerating local creativity and distributed participation to solve global problems</p>
-      </li>
-      <li>
-        <p class="font-bold">Collective Agency</p>
-        <p class="italic text-sm">Who are "we"?</p>
-        <p>Empowering "plural publics" to form and act in the face of new shared challenges</p>
-      </li>
-      <li>
-        <p class="font-bold">Imaginative Hope</p>
-        <p class="italic text-sm">Where are we going?</p>
-        <p>Inspiring curiosity, experimentation and agency to shape possible futures</p>
-      </li>
-    </ol>
-  </div>
-  </div>
-howWeWork: |
-  RxC demonstrates and documents new ways of setting priorities and solving problems. We believe doing this together, across divisions, is the antidote to polarization, a counterweight to elite influence, and a balm to the fear and distrust eroding public discourse.
-
-  RxC works with communities, advocates,  creators and governments to model new approaches to collaboration. We support democratic and creative initiatives worldwide, translating cutting-edge practices into reform agendas to bring tomorrow's solutions to today's problems.
-
-  We apply the open source tools of the Plural Stack and the platforms created in our ecosystem, adapting them to a range of contexts to help drive bottom-up creativity and participation, generate accountability and co-creation, and to help fund the infrastructure we need in our physical and digital worlds.  
-
-  We work with partners from local, state and federal governments, industry groups and advocacy bodies, from web3 communities to activists and social movements, civil servants to political parties. We add value wherever people need to optimize their collective power to make decisions and solve problems together.
-
-  We seek to work in radically open, inclusive ways, and begin with the core belief in the value of every human and their unique perspective.
-  
-  We welcome collaboration and invite you to contact us.
-quote1: |
-  “It needs to be **fast, fair and fun simultaneously**. If a space is **fast** in getting people's ideas into collective intelligence; if the common good, the shared value is derived quickly in a **fair** fashion; and finally, if for each minute of participation people feel there's an intrinsic **fun** in it, then the fast, fair, fun ensures a pro-social interaction online.”
-
-  [Audrey Tang, 2021](https://www.howtocitizen.com/episodes/fast-fair-fun-with-digital-minister-audrey-tang)
-quote2: |
-  “I believe in a future that is vastly brighter than the present thanks to radically transformative technology, and I believe in humans and humanity. I reject the mentality that the best we should try to do is to keep the world roughly the same as today but with less greed and more public healthcare. However, I think that not just magnitude but also direction matters... We need active human intention to choose the directions that we want, as the formula of "maximize profit" will not arrive at them automatically.”
-
-  [Vitalik Buterin, 2023](https://vitalik.eth.limo/general/2023/11/27/techno_optimism.html)
-communitiesDescription: |
-  RxC Communities around the world develop local hubs for discussions, investigations, and implementations of next-generation political economies.
-
-  We warmly welcome people of all backgrounds and levels of experience. We're committed to [tolerance, respect, and open discussion](/community/code-of-conduct).
-aboutBlurb: |
-  The RadicalxChange Foundation strives to empower people and organizations in the global RxC movement to grow their ideas and initiatives. Feel free to contact us for any RxC related matters, including consultancy work related to democratic innovation or institutional design.
-supporters:
-  - name: Berggruen Institute
-    href: https://berggruen.org/
-  - name: Gitcoin
-    href: "https://gitcoin.co/"
-  - name: Omidyar Network
-    href: "https://www.omidyar.com/"
-  - name: One Project
-    href: "https://oneproject.org/"
-  - name: Optimism RetroPGF
-    href: https://optimism.mirror.xyz/
-  - name: The Rockefeller Foundation
-    href: "https://www.rockefellerfoundation.org/"
+title: "About"
+description: "RadicalxChange Foundation is an international nonprofit advancing participatory governance in the age of AI, championing Plurality."
 ---
-
-<!-- prettier-ignore -->
-{% import "components/introduction.njk" as introduction %}
-<!-- prettier-ignore -->
-{% import "components/action-button.njk" as actionButton %}
-<!-- prettier-ignore -->
-{% import "components/logo.njk" as logo %}
-<!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
-<!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
-
-<!-- prettier-ignore -->
 {{ menu.render() }}
-<!-- prettier-ignore -->
-{{ introduction.render(headerText, introductionBlurb) }}
-<section
-  id="how-we-work"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
->
-  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">How We Work</h2>
-  </div>
-  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16">
-    <div class="markdown">
-      {{ howWeWork | markdown | safe }}
-    </div>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
-  >
-    <div class="markdown">
-      {{ quote1 | markdown | safe }}
-    </div>
-  </div>
+<main id="main">
 
-  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
-    <div class="markdown">
-      {{ quote2 | markdown | safe }}
-    </div>
-  </div>
-  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
-</section>
-<section
-  id="communities"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
->
-  <div class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0">
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Communities</h2>
-  </div>
-  <div class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2">
-    <div class="markdown">
-      {{ communitiesDescription | markdown | safe }}
-    </div>
-    <div class="mt-10 lg:mt-16">
-      {{ actionButton.render(href="/community", label="Join your local RxC Community")}}
-    </div>
-  </div>
-  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
-</section>
-<section
-  id="foundation"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Foundation</h2>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
-  >
-    <div class="markdown">
-      {{ aboutBlurb | markdown | safe }}
-    </div>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-12 lg:mb-0"
-  >
-    <h3 class="pb-4 border-b">Board members</h3>
-    <table class="block">
-      <tbody class="block">
-        {% for member in board %}
-        <tr
-          class="flex items-center h-line-5/2 lg:h-line-3 xl:h-line-5/2 border-b text-size--1"
-        >
-          <td>
-            <a
-              class="see-more-link uppercase"
-              href="/board/{{ member.name | slug }}"
-              >{{ member.name }}</a
-            >
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  <div class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2">
-    <h3 class="pb-4 border-b">Team members</h3>
-    <table class="block">
-      <tbody class="block">
-        <!-- prettier-ignore -->
-        {% for member in team %}
-        <tr
-          class="flex items-center h-line-5/2 lg:h-line-3 xl:h-line-5/2 border-b text-size--1"
-        >
-          <td style="width: calc(50% + 1rem)">
-            <a
-              class="see-more-link uppercase"
-              href="/team/{{ member.name | slug }}"
-              >{{ member.name }}</a
-            >
-          </td>
-          <td style="width: calc(50% - 1rem)" class="clamp clamp-2">
-            {{ member.title }}
-          </td>
-        </tr>
-        <!-- prettier-ignore -->
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-  <div class="col-span-columns pb-6 lg:pb-16 lg:border-b"></div>
-</section>
-<section
-  id="press"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pt-4 lg:pt-4 pb-12 lg:pb-0 my-margin"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Select Press</h2>
-  </div>
-  <ul
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-4 lg:gap-y-6 justify-items-start"
-  >
-    <!-- prettier-ignore -->
-    {% for article in press | slice(0, 43) %}
-    <li class="about_press-link group relative">
-      <a class="block text-size--2" href="{{ article.href }}"
-        ><p>
-          <span class="group-hover:underline">{{ article.publication }}</span>
-        </p>
-        <p>{{ article.date | readableDate }}</p></a
-      >
-      <div
-        class="about_press-description z-10 absolute top-1/2 left-1/8 w-max p-2 bg-light-black text-white text-size--4"
-      >
-        {{ article.title }}
-      </div>
-    </li>
-    <!-- prettier-ignore -->
-    {% endfor %}
-    <li class="text-size--2">
-      <a href="/about/press" class="inline-link">See all press...</a>
-    </li>
-  </ul>
-  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
-</section>
-<section
-  id="supporters"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 pb-4 lg:pb-8 my-margin"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-6 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Supported by</h2>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-7 lg:col-end-margin-2 space-y-8"
-  >
-    <ul class="text-size--1">
-      {%- for supporter in supporters -%}
-      <li class="comma-separated">
-        <a
-          href="{{ supporter.href }}"
-          target="_blank"
-          rel="noopener nofollow noreferrer"
-          >{{ supporter.name }}</a
-        >
-      </li>
-      {%- endfor -%}
-    </ul>
-    <div class="text-size--1">
-      <a
-        href="mailto:support@radicalxchange.org?subject=Becoming%20a%20supporter&body=I'd%20like%20to%20become%20a%20RadicalxChange%20supporter."
-        target="_blank"
-        class="thick-link uppercase"
-        >Become a supporter</a
-      >
-    </div>
-  </div>
-</section>
-<!-- prettier-ignore -->
+<section class="page-hero"><div class="wrap">
+<div><h1>Participatory governance for the age of AI.</h1><p class="lede">Where Singularity imagines AI making human contribution obsolete, we advance Plurality: keeping human agency and democracy at the wheel, and treating technology as a means of cooperating across difference. RadicalxChange Foundation is a 501(c)(3) nonprofit founded in 2018 by economist Glen Weyl in the wake of <i>Radical Markets</i>, and now the home of the movement that <i>Plurality</i> extended.</p></div>
+<div class="aside">RadicalxChange is both a Foundation and a global community. The Foundation runs projects with partners and publishes research; the <a href="/community/">community</a> tests the ideas in its own cities. <a href="/vision/">Read the longer vision</a>.</div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="section-head"><div><h2>From theory to practice</h2><p>Research alone doesn't shift power. Four strands of work reinforce each other, and the connective tissue between them is the Foundation.</p></div></div>
+<div class="pillars">
+<div><h3>Research</h3><p>Open papers, frameworks and proposals, from the founding academic work on plural voting and funding to the <a href="/projects/the-plural-stack/">Plural Stack</a>. <a href="/wiki/">The Library</a>.</p></div>
+<div><h3>Civic-tech prototypes</h3><p>Turning ideas into working mechanisms: an open-source <a href="https://quadraticvote.radicalxchange.org/">plural voting tool</a>, partial common ownership of art, community currencies. <a href="/tools/">The tools</a>.</p></div>
+<div><h3>Partnerships</h3><p>Building "civic muscle" with governments, institutions and community organisations, from the <a href="/projects/plural-voting-in-the-colorado-state-legislature/">Colorado legislature</a> to <a href="/density-done-well/">Sydney's density debate</a> to the <a href="/geneva-reflections/">UN Global Dialogue on AI</a> to <a href="/updates/announcements/2025-04-federated-data-bargaining-with-openmined/">500 Indonesian newsrooms bargaining collectively with AI companies</a>. <a href="/projects/">The projects</a>.</p></div>
+<div><h3>Community</h3><p>A global network of chapters, Salons and a monthly call that tests these ideas across very different contexts. <a href="/community/">The community</a>.</p></div>
+</div>
+</div></section>
+<section class="section tint"><div class="wrap">
+<div class="twocol">
+<div><h3>Proof at national scale</h3><p>Taiwan's embrace of these methods under Audrey Tang is well known. The next iteration is emerging in Japan, where the <a href="https://plurality.net/read/">Plurality book</a> inspired <a href="https://www.techpolicy.press/japans-team-mirai-uses-tech-to-bolster-democracy-not-undermine-it/">Team Mirai</a>, an independent party using AI to help citizens understand and shape policy. In 2026 it won eleven parliamentary seats.</p></div>
+<div><h3>Our role</h3><p>RadicalxChange is the connective tissue for this ecosystem: community work proves the methods on the ground, while ambitious, economy-scale proposals carry them to the grand challenges of our era. Both serve the same goal, helping humans steer the AI transition.</p></div>
+</div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="section-head"><div><h2>Team</h2></div></div>
+<div class="people"><div><h3><a href="/team/jess-scully/" style="text-decoration:none">Jess Scully</a></h3><p class="role">Executive Director</p><p>Jess Scully is Executive Director of RadicalxChange and an advocate for civic imagination.</p></div><div><h3><a href="/team/jack-henderson/" style="text-decoration:none">Jack Henderson</a></h3><p class="role">Director of Operations</p><p>Jack Henderson is Director of Operations at RadicalxChange Foundation, where he focuses on accelerating institutional innovation to match the pace of technological innovation. His recent writing is focused on data coalitions, partial common ownership, and the future of work. Jack is from Pennsylvania, studied economics at Princeton, and is now based in Brooklyn.</p></div><div><h3><a href="/team/paula-berman/" style="text-decoration:none">Paula Berman</a></h3><p class="role">Director of Programs &amp; Partnerships</p><p>Paula Berman is a researcher and facilitator working with governments to expand citizen participation and pioneer new models of democratic governance. Her writing examines institutional design and the ways governance and technology can be structured to strengthen participation and resilience in democracy.</p></div></div>
+</div></section>
+<section class="section tint"><div class="wrap">
+<div class="section-head"><div><h2>Board</h2></div></div>
+<div class="people"><div><h3><a href="/board/e.-glen-weyl/" style="text-decoration:none">E. Glen Weyl</a></h3><p><a href="http://www.glenweyl.com/">Website</a></p></div><div><h3><a href="/board/vitalik-buterin/" style="text-decoration:none">Vitalik Buterin</a></h3><p><a href="https://vitalik.ca/">Website</a></p></div><div><h3><a href="/board/audrey-tang/" style="text-decoration:none">Audrey Tang</a></h3><p><a href="https://pdis.nat.gov.tw/zh-TW/track/">Website</a></p></div><div><h3><a href="/board/christopher-kulendran-thomas/" style="text-decoration:none">Christopher Kulendran Thomas</a></h3></div><div><h3><a href="/board/anne-marie-slaughter/" style="text-decoration:none">Anne-Marie Slaughter</a></h3><p><a href="https://www.newamerica.org/our-people/anne-marie-slaughter/">Website</a></p></div><div><h3><a href="/board/joseph-gordon-levitt/" style="text-decoration:none">Joseph Gordon-Levitt</a></h3><p><a href="https://hitrecord.org/">Website</a></p></div></div>
+</div></section>
+<section class="section"><div class="wrap">
+<div class="section-head"><div><h2>In the press</h2></div></div>
+<ul class="list"><li><a href="https://asia.nikkei.com/opinion/asia-can-show-the-west-how-to-integrate-tech-with-societal-needs">Asia can show the West how to integrate tech with societal needs</a><span class="meta">Nikkei Asia</span></li><li><a href="https://www.newamerica.org/political-reform/briefs/exploring-plural-voting-as-a-method-for-citizen-engagement/">Exploring Plural Voting as a Method for Citizen Engagement</a><span class="meta">New America</span></li><li><a href="https://www.rockefellerfoundation.org/grantee-impact-stories/an-unusual-partnership-advances-a-more-democratic-way-to-vote/">An Unusual Partnership Advances a More Democratic Way To Vote</a><span class="meta">Rockefeller Foundation</span></li><li><a href="https://www.wired.com/story/web3-blockchain-decentralization-governance/">The Web3 Decentralization Debate is Focused on the Wrong Question</a><span class="meta">Wired</span></li><li><a href="https://www.economist.com/christmas-specials/2021/12/18/the-mathematical-method-that-could-offer-a-fairer-way-to-vote">The mathematical method that could offer a fairer way to vote</a><span class="meta">The Economist</span></li><li><a href="https://www.noemamag.com/a-view-of-the-future-of-our-data/">A View Of The Future Of Our Data</a><span class="meta">Noema</span></li><li><a href="https://background.tagesspiegel.de/digitalisierung-und-ki/briefing/daten-genossenschaften-statt-daten-eigentum">Data Cooperatives Instead of Data Ownership</a><span class="meta">Tagesspiegel</span></li><li><a href="https://www.ft.com/content/5a9fad90-4f0a-11ea-95a0-43d18ec715f5">Digital tools can be a useful bolster to democracy</a><span class="meta">FT</span></li><li><a href="https://www.nytimes.com/2019/10/24/opinion/democracy-electoral-college.html">The United States Has Never Truly Been a Democracy</a><span class="meta">The New York Times</span></li><li><a href="https://www.bloomberg.com/news/articles/2019-05-01/a-new-way-of-voting-that-makes-zealotry-expensive">A New Way of Voting That Makes Zealotry Expensive</a><span class="meta">Bloomberg Businessweek</span></li><li><a href="https://www.wired.com/story/colorado-quadratic-voting-experiment/">Colorado Tried A New Way To Vote: Make People Pay—quadratically</a><span class="meta">Wired</span></li><li><a href="https://www.coindesk.com/markets/2019/03/26/the-radicalxchange-movements-crypto-cypherpunk-appeal">The RadicalxChange Movement&#x27;s Crypto-Cypherpunk Appeal</a><span class="meta">Coindesk</span></li><li><a href="https://hbr.org/2018/09/a-blueprint-for-a-better-digital-society">A Blueprint for a Better Digital Society</a><span class="meta">Harvard Business Review</span></li><li><a href="https://www.wsj.com/articles/demolishing-monopoly-from-below-how-two-radicals-would-remake-markets-1528887790">Demolishing Monopoly From Below: How Two Radicals Would Remake Markets</a><span class="meta">Wall Street Journal</span></li></ul>
+<p class="quiet ui" style="margin-top:1.5rem">RadicalxChange Foundation is a member of <a href="https://mydata.org">MyData Global</a> and the Nets4Dem network.</p>
+</div></section>
+
+</main>
 {{ footer.render() }}
-<script>
-  // prettier-ignore
-  {% include "components/menu.js" %}
-</script>
