@@ -10,47 +10,38 @@ description: "Blog posts, announcements, papers, Salons and podcast episodes fro
 
 <section class="page-hero"><div class="wrap">
 <div><h1>Read and watch.</h1><p class="lede">Everything the Foundation has published since 2018: blog, announcements, papers, Salons and the podcast. Filter by kind, or scroll by year.</p></div>
-<div class="aside">Subscribe to the <a href="#newsletter">newsletter</a> for one email a month. Podcast on <a href="https://feeds.simplecast.com/Tf4D47Lm">Simplecast</a>; video on <a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw">YouTube</a>.</div>
-</div></section>
-<section class="section"><div class="wrap">
-<div class="section-head"><div><h2>Latest Salons</h2></div><a class="more" href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw">All videos</a></div>
-<ul class="list">
-<li><a href="https://youtu.be/9jyJux9ML3g">RadicalxChange Salon: The Plural Stack</a><span class="meta"><i>Salon</i> Rebuilding our digital foundations from protocol up, September 2026</span></li>
-<li><a href="https://youtu.be/OZqXrjwF3nE">RadicalxChange Salon: Reverse Alignment</a><span class="meta"><i>Salon</i> Building institutions in the shape of their tools, September 2026</span></li>
-</ul>
-</div></section>
-<section class="section tint"><div class="wrap">
-<div class="section-head"><div><h2>Papers</h2><p>Published by the Foundation, by our team and board, or the founding academic work the mechanisms rest on.</p></div></div>
-<ul class="list">
-{% for chunk in collections.media %}{% if chunk.filter == "papers" %}{% for p in chunk.items %}
-<li><a href="{{ p.url }}">{{ p.title | replace("⿻ ", "") }}</a><span class="meta"><i class="b">Paper</i> {% if p.postAuthor %}{{ p.postAuthor }}, {% endif %}{% if p.publisher %}{{ p.publisher }}, {% endif %}{{ p.date | truncate(4, true, "") }}</span></li>
-{% endfor %}{% endif %}{% endfor %}
-</ul>
+<div class="aside">Subscribe to the <a href="#newsletter">newsletter</a> for one email a month. Podcast on <a href="https://open.spotify.com/show/1Dra7JqDbgw1eXJRk7Pq5e">Spotify</a> and <a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw">YouTube</a>; Salons and video on YouTube.</div>
 </div></section>
 <section class="section" id="archive"><div class="wrap">
-<div class="section-head"><div><h2>Blog, announcements, podcast and video</h2></div></div>
+<div class="section-head"><div><h2>Everything, by year</h2><p>Filter by kind. Podcast episodes link to our YouTube channel; the whole show is also on <a href="https://open.spotify.com/show/1Dra7JqDbgw1eXJRk7Pq5e">Spotify</a>.</p></div></div>
 <div class="filters" role="group" aria-label="Filter updates">
 <button type="button" data-filter="all" aria-pressed="true">All</button>
 <button type="button" data-filter="blog" aria-pressed="false">Blog</button>
 <button type="button" data-filter="announcement" aria-pressed="false">Announcements</button>
-<button type="button" data-filter="podcast" aria-pressed="false">Podcast and video</button>
+<button type="button" data-filter="paper" aria-pressed="false">Papers</button>
+<button type="button" data-filter="salon" aria-pressed="false">Salons</button>
+<button type="button" data-filter="podcast" aria-pressed="false">Podcast</button>
+<button type="button" data-filter="video" aria-pressed="false">Video</button>
 </div>
 <div id="archive-list">
-{% set year = "" %}
-{% for chunk in collections.media %}{% if chunk.filter == "all" %}{% for item in chunk.items %}{% if item.postType in ["Blog Post", "Announcement", "Podcast", "Video"] %}
-{% set y = item.date | truncate(4, true, "") %}
-{% if y != year %}{% if year != "" %}</ul>{% endif %}<p class="year">{{ y }}</p><ul class="list">{% set year = y %}{% endif %}
-{% set kind = "blog" if item.postType == "Blog Post" else ("announcement" if item.postType == "Announcement" else "podcast") %}
-<li data-kind="{{ kind }}"><a href="{{ item.url }}">{{ item.postHeader or item.title }}</a><span class="meta"><i{% if kind != "blog" %} class="b"{% endif %}>{{ "Blog" if kind == "blog" else item.postType }}</i>{% if item.postAuthor and item.postAuthor != "RxC Team" %} {{ item.postAuthor }},{% endif %} {{ item.readableDate }}</span></li>
-{% endif %}{% endfor %}{% endif %}{% endfor %}
-{% if year != "" %}</ul>{% endif %}
+{% for group in collections.archiveByYear %}
+<p class="year">{{ group.year }}</p>
+<ul class="list">
+{% for item in group.items %}{% if item.kind != "other" %}
+<li data-kind="{{ item.kind }}"><a href="{{ item.url }}">{{ (item.postHeader or item.title) | replace("⿻ ", "") }}</a><span class="meta"><i{% if item.kind != "blog" %} class="b"{% endif %}>{{ {"blog":"Blog","announcement":"Announcement","paper":"Paper","salon":"Salon","podcast":"Podcast","video":"Video"}[item.kind] }}</i>{% if item.postAuthor and item.postAuthor != "RxC Team" %} {{ item.postAuthor }},{% endif %}{% if item.publisher %} {{ item.publisher }},{% endif %} {{ item.readableDate }}</span></li>
+{% endif %}{% endfor %}
+</ul>
+{% endfor %}
 </div>
 </div></section>
 </main>
 {{ footer.render() }}
 <script>
-(function(){const bs=document.querySelectorAll('.filters button');const list=document.getElementById('archive-list');
-bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.filter;
-list.querySelectorAll('li').forEach(li=>li.hidden=!(f==='all'||li.dataset.kind===f));
-list.querySelectorAll('.year').forEach(y=>{let u=y.nextElementSibling;y.hidden=!u||![...u.children].some(li=>!li.hidden);});}));})();
+(function(){var bs=document.querySelectorAll('.filters button'),list=document.getElementById('archive-list');
+function apply(f){bs.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.filter===f));});
+list.querySelectorAll('li').forEach(function(li){li.hidden=!(f==='all'||li.dataset.kind===f);});
+list.querySelectorAll('.year').forEach(function(y){var u=y.nextElementSibling;y.hidden=!u||!Array.prototype.some.call(u.children,function(li){return !li.hidden;});});
+if(f!=='all'){history.replaceState(null,'','#'+f);}else{history.replaceState(null,'',location.pathname);}}
+bs.forEach(function(b){b.addEventListener('click',function(){apply(b.dataset.filter);});});
+var h=location.hash.replace('#','');if(h&&document.querySelector('.filters [data-filter="'+h+'"]'))apply(h);})();
 </script>

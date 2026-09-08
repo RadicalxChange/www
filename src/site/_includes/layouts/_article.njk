@@ -15,16 +15,16 @@
 
 {% block body %}
 {{ menu.render() }}
-<main id="main" class="article{% if kind %} {{ kind | lower | replace(" ", "-") }}{% endif %}">
+<main id="main" data-pagefind-body{% if date %} data-pagefind-sort="date:{{ date }}"{% endif %} class="article{% if kind %} {{ kind | lower | replace(" ", "-") }}{% endif %}">
   <div class="wrap">
     <header>
-      <p class="kicker"><a href="{{ backHref | default('/updates/') }}">{{ backLabel | default('Updates') }}</a>{% if kind %} &nbsp;<i>{{ kind }}</i>{% endif %}</p>
-      <h1>{{ postHeader | default(title) }}</h1>
+      <p class="kicker" data-pagefind-ignore><a href="{{ backHref | default('/updates/') }}">{{ backLabel | default('Updates') }}</a>{% if kind %} &nbsp;<i>{{ kind }}</i>{% endif %}</p>
+      <h1 data-pagefind-weight="10" data-pagefind-meta="title">{{ postHeader | default(title) }}</h1>
       {% if postAuthor or date %}
       <p class="byline">{% if postAuthor %}<b>{{ postAuthor }}</b>{% endif %}{% if postAuthor and date %}, {% endif %}{% if date %}{{ date | readableDate }}{% endif %}</p>
       {% endif %}
     </header>
-    <article class="prose" data-pagefind-body>
+    <article class="prose">
       {% if pagefindType %}<span data-pagefind-meta="type:{{ pagefindType }}" data-pagefind-filter="type:{{ pagefindType }}" hidden></span>{% endif %}
       {% if postAuthor %}<span data-pagefind-meta="author:{{ postAuthor }}" hidden></span>{% endif %}
       {% if date %}<span data-pagefind-meta="date:{{ date | readableDate }}" hidden></span>{% endif %}

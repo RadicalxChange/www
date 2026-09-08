@@ -314,3 +314,11 @@ body>div.grid,body>section.grid,body>main.grid{max-width:var(--wrap);margin-left
 .article.case-study .prose h2+*{margin-top:.4em}
 .article header{margin-bottom:0}
 .article .prose>:first-child{margin-top:0}
+
+[hidden]{display:none!important}
+.comms details{margin-top:.3rem}
+.comms summary{list-style:none;cursor:pointer;font-family:var(--display);font-size:.92rem;font-weight:600;color:var(--ink);text-decoration:underline;text-underline-offset:.25em;display:inline-block}
+.comms summary::-webkit-details-marker{display:none}
+.comms details[open] summary{text-decoration:none;color:var(--quiet)}
+.comms details .contact{margin-top:.4rem}
+.article header h1[data-pagefind-weight]{}
