@@ -56,4 +56,4 @@ The initial pilot in Colorado demonstrated how the combination of online deliber
 
 [**Community Exchange](https://www.radicalxchange.org/wiki/community-exchange/) - RadicalxChange**
 
-[**Exploring Plural Voting as a Method for Citizen Engagement](https://www.newamerica.org/political-reform/briefs/exploring-plural-voting-as-a-method-for-citizen-engagement/) - New America**
+[**Exploring Plural Voting as a Method for Citizen Engagement](https://www.newamerica.org/insights/exploring-plural-voting-as-a-method-for-citizen-engagement/) - New America**

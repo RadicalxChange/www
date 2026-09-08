@@ -52,4 +52,4 @@ https://manhattan.institute/article/nashville-jersey-city-experiment-with-quadra
 
 https://x.com/RadxChange/status/1537887483005874186 
 
-https://www.rockefellerfoundation.org/grantee-impact-stories/an-unusual-partnership-advances-a-more-democratic-way-to-vote/
+https://www.rockefellerfoundation.org/?p=54665

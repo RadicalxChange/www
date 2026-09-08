@@ -95,7 +95,7 @@ There is no requirement for SBTs to be linked to a legal name. Instead, they can
 
 Pluralism is about composable local control and diverse, networked cooperation; where many groups are empowered in a decentralized way to keep power away from the center, but at the same time those groups are discouraged from local rent-seeking that would undermine broader solidarity and common interests. Note that those values – of integrity to local context and accountability to shared standards, of privacy and transparency – can conflict.
 
-But SBTs suggest information structures that can meaningfully improve the tradeoff. With various combinations of [privacy techniques](https://vitalik.ca/general/2022/06/15/using_snarks.html), we can have programmably plural privacy, where SBTs can safely represent our [private, partially private, and public commitments](https://twitter.com/pujaohlhaver/status/1537091112443252737).
+But SBTs suggest information structures that can meaningfully improve the tradeoff. With various combinations of [privacy techniques](https://vitalik.eth.limo/general/2022/06/15/using_snarks.html), we can have programmably plural privacy, where SBTs can safely represent our [private, partially private, and public commitments](https://twitter.com/pujaohlhaver/status/1537091112443252737).
 
 Still, we recommend starting out with SBTs that do not contain Personally Identifiable Information and only represent purely public commitments. This both eases implementation since encryption techniques are less required, and, more importantly, lowers the risk of losing contextual integrity since the SBTs are only representing limited information on-chain.
 

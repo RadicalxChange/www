@@ -63,7 +63,7 @@ Quadratic Voting gives everyone equal power to direct the attention of the group
 
 [How does the 'Quadratic voting' find the next step for democracy in the blockchain community?](https://medium.com/@pupupupuisland.eth/how-does-the-quadratic-voting-find-the-next-step-for-democracy-in-the-blockchain-community-d6788fc0592d) - pupupupuisland
 
-[On Collusion](https://vitalik.ca/general/2019/04/03/collusion.html) - Vitalik Buterin
+[On Collusion](https://vitalik.eth.limo/general/2019/04/03/collusion.html) - Vitalik Buterin
 
 [Quadratic Voting and the Public Good: Introduction](/updates/papers/qv-and-the-public-good.pdf) - Eric A. Posner, E. Glen Weyl
 

@@ -127,4 +127,4 @@ This code of conduct also applies to unacceptable behavior occurring outside the
 
 info@radicalxchange.org
 
-This Code of Conduct was adapted in part from the [http://citizencodeofconduct.org/](http://citizencodeofconduct.org/) under a Creative Commons Attribution-ShareAlike license.
+This Code of Conduct was adapted in part from the [Citizen Code of Conduct](https://web.archive.org/web/2021/http://citizencodeofconduct.org/) (archived) under a Creative Commons Attribution-ShareAlike license.

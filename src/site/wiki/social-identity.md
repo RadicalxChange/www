@@ -5,7 +5,7 @@ slug: "social-identity"
 ---
 [toc]
 
-Whereas most existing identity concepts are either centralized (with a small number of large, institutional credential providers), or individualistic (with self-authentication), Social Identity solutions are aimed at expanding the scope of possible credential verifiers to include a wider variety of authenticators. To that end it can use non-transferable markers of affiliations, memberships, or credentials, such as [Soulbound Tokens (SBTs)](https://vitalik.ca/general/2022/01/26/soulbound.html) — which are a bit like NFTs, except that they are not bought, sold, or traded; or [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential), a tamper-evident credential using cryptography to authenticate its authorship. In doing so, Social Identity better embodies human identities’ social, and multi-dimensional characteristics.
+Whereas most existing identity concepts are either centralized (with a small number of large, institutional credential providers), or individualistic (with self-authentication), Social Identity solutions are aimed at expanding the scope of possible credential verifiers to include a wider variety of authenticators. To that end it can use non-transferable markers of affiliations, memberships, or credentials, such as [Soulbound Tokens (SBTs)](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) — which are a bit like NFTs, except that they are not bought, sold, or traded; or [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/#what-is-a-verifiable-credential), a tamper-evident credential using cryptography to authenticate its authorship. In doing so, Social Identity better embodies human identities’ social, and multi-dimensional characteristics.
 
 Social Identity solutions are new and the possibilities are still emerging. But they are likely to become an important tool for establishing digital identity and defining community, unlocking important new governance structures. To name a few:
 
@@ -37,7 +37,7 @@ These are still early days for XIDs, and we are excited to help steer them in a 
 
 [Plural Funding](https://www.youtube.com/watch?v=RM7UFpSemjA) - E. Glen Weyl, Leon Erichsen
 
-[Soulbound](https://vitalik.ca/general/2022/01/26/soulbound.html) - Vitalik Buterin
+[Soulbound](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) - Vitalik Buterin
 
 [Verifying Identity as a Social Intersection](/updates/papers/verifying-identity-as-a-social-intersection.pdf) - Nicole Immorlica, Matthew O. Jackson, E. Glen Weyl
 
