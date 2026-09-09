@@ -340,3 +340,9 @@ body>div.grid,body>section.grid,body>main.grid{max-width:var(--wrap);margin-left
   .section-head{display:block}.section-head .more{display:inline-block;margin-top:.75rem}
   .page-hero .aside{max-width:none}
 }
+/* list rows: title gets the space; metadata wraps and stays right-aligned */
+.list li{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
+.list .meta{white-space:normal;text-align:right;justify-self:end;line-height:1.45}
+.twocol .list li{grid-template-columns:minmax(0,1fr)}
+.twocol .list .meta{text-align:left;justify-self:start;margin-top:.15rem}
+@media (max-width:640px){.list li{grid-template-columns:1fr}.list .meta{text-align:left;justify-self:start}}
