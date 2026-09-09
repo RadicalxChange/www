@@ -8,7 +8,7 @@ const press = [
   {
     title:
       "Exploring Plural Voting as a Method for Citizen Engagement",
-    href: "https://www.newamerica.org/political-reform/briefs/exploring-plural-voting-as-a-method-for-citizen-engagement/",
+    href: "https://www.newamerica.org/insights/exploring-plural-voting-as-a-method-for-citizen-engagement/",
     publication: "New America",
     date: "2024-01-16T00:00:00.000Z",
   },
@@ -27,7 +27,7 @@ const press = [
   },
   {
     title: "An Unusual Partnership Advances a More Democratic Way To Vote",
-    href: "https://www.rockefellerfoundation.org/grantee-impact-stories/an-unusual-partnership-advances-a-more-democratic-way-to-vote/",
+    href: "https://www.rockefellerfoundation.org/?p=54665",
     publication: "Rockefeller Foundation",
     date: "2022-10-10T00:00:00.000Z",
   },

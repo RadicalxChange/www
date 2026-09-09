@@ -78,7 +78,7 @@ First, with “soulbound” or non-transferable community tokens, our mechanisms
   <img class="no-y-margin w-60 h-auto md:h-60 md:w-auto" src="/images/blog/poaps.png" />
 </div>
 <div class="markdown markdown-xs mt-6">
-{{ 'Credit: ["Soulbound"](https://vitalik.ca/general/2022/01/26/soulbound.html) by Vitalik Buterin' | markdown | safe }}
+{{ 'Credit: ["Soulbound"](https://vitalik.eth.limo/general/2022/01/26/soulbound.html) by Vitalik Buterin' | markdown | safe }}
 </div>
 </div>
 

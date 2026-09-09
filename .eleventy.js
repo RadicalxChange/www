@@ -105,8 +105,15 @@ module.exports = function (config) {
     return array.slice(...args);
   });
 
-  config.addCollection("media", async (collectionApi) => {
-    // Combine disparate source for media and sort them
+  // Where podcast episodes live for listeners. Simplecast is the feed host, not where people listen.
+  const YOUTUBE_CHANNEL = "https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw";
+  const SPOTIFY_SHOW = "https://open.spotify.com/show/1Dra7JqDbgw1eXJRk7Pq5e";
+  function listenLink(title) {
+    return `${YOUTUBE_CHANNEL}/search?query=${encodeURIComponent(title)}`;
+  }
+  const seriesOf = (v) => { try { return typeof v === "string" ? JSON.parse(v) : (v || []); } catch (e) { return []; } };
+
+  async function buildMediaAll(collectionApi) {
     const all = []
       .concat(
         collectionApi
@@ -143,7 +150,9 @@ module.exports = function (config) {
             postType: "Video",
             postHeader: item.data.postHeader,
             postAuthor: item.data.postAuthor || "RxC Team",
-            series: item.data.series || [],
+            series: seriesOf(item.data.series),
+            videoId: item.data.videoId,
+            description: item.data.description || "",
           })),
         libraryData.map((item) => ({
           ...item,
@@ -155,10 +164,16 @@ module.exports = function (config) {
         })),
         (await fetchPodcastsReplayed()).map((item) => ({
           ...item,
+          feedUrl: item.url,
+          url: listenLink(item.title),
+          spotify: SPOTIFY_SHOW,
           readableDate: readableDate(item.date),
         })),
         (await fetchPodcastsRadicalxchanges()).map((item) => ({
           ...item,
+          feedUrl: item.url,
+          url: listenLink(item.title),
+          spotify: SPOTIFY_SHOW,
           readableDate: readableDate(item.date),
         }))
       )
@@ -170,6 +185,48 @@ module.exports = function (config) {
         }
       });
 
+    return all;
+  }
+
+  // One archive, grouped by year, each item tagged with a filter kind.
+  config.addCollection("archiveByYear", async (collectionApi) => {
+    const all = await buildMediaAll(collectionApi);
+    const kindOf = (item) => {
+      if (item.postType === "Blog Post") return "blog";
+      if (item.postType === "Announcement") return "announcement";
+      if (item.postType === "Paper" || item.postType === "Library") return "paper";
+      if (item.postType === "Podcast") return "podcast";
+      if (item.postType === "Video") return (item.series || []).includes("Salon") ? "salon" : "video";
+      return "other";
+    };
+    const years = new Map();
+    for (const item of all) {
+      const y = String(item.date || "").slice(0, 4) || "Undated";
+      if (!years.has(y)) years.set(y, []);
+      years.get(y).push({ ...item, kind: kindOf(item) });
+    }
+    return [...years.entries()].sort((a, b) => (a[0] < b[0] ? 1 : -1)).map(([year, items]) => ({ year, items }));
+  });
+
+  // Flat, newest-first list for the homepage.
+  config.addCollection("latest", async (collectionApi) => {
+    const all = await buildMediaAll(collectionApi);
+    const kindOf = (item) => {
+      if (item.postType === "Blog Post") return "blog";
+      if (item.postType === "Announcement") return "announcement";
+      if (item.postType === "Paper" || item.postType === "Library") return "paper";
+      if (item.postType === "Podcast") return "podcast";
+      if (item.postType === "Video") return (item.series || []).includes("Salon") ? "salon" : "video";
+      return "other";
+    };
+    const items = all.map((i) => ({ ...i, kind: kindOf(i) })).filter((i) => i.kind !== "other");
+    const lead = items.find((i) => i.kind === "salon") || items.find((i) => i.videoId) || null;
+    const list = items.filter((i) => i !== lead && i.kind !== "video").slice(0, 4);
+    return { lead, list };
+  });
+
+  config.addCollection("media", async (collectionApi) => {
+    const all = await buildMediaAll(collectionApi);
     // Create filtered collections
     const blog = all.filter((item) => item.postType === "Blog Post");
     const papers = all.filter((item) => item.postType === "Paper");
@@ -226,6 +283,7 @@ module.exports = function (config) {
 
   // Pass through static assets
   // src/site/images is copied through its own pipeline (see package.json)
+  config.addPassthroughCopy("./src/site/assets");
   config.addPassthroughCopy("./src/site/fonts");
   config.addPassthroughCopy("./src/site/files");
   config.addPassthroughCopy("./src/site/js");

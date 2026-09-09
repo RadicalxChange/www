@@ -1,157 +1,37 @@
 ---
 layout: layouts/_base.njk
-title: Community
-headerText: RxC COMMUNITY
-introductionBlurb: |
-  RadicalxChange is made up of a vibrant and diverse global community of forward-thinking technologists, social scientists, artists, activists, and entrepreneurs dedicated to a shared mission — to modernize and innovate the basic institutions of democracy and markets through a radically egalitarian and participatory vision for the future. There are many ways to get involved.
-
-  RadicalxChange chapters are the key organizations of the RxC community. Our chapters around the world develop local hubs for discussions, investigations, and implementations of the next-generation political economies that our community envisions. Chapters warmly welcome people of all backgrounds and levels of experience. We're committed to tolerance, respect, and open discussion.
-
-  Read the full RxC Community Code of Conduct [here](/community/code-of-conduct).
-communityCalls: |
-  If you're curious about the work we do and the communities we're connected with, register to join one of our monthly community calls [first Wednesday of every month 9am ET/3pm CET] by signing up for our newsletter (you can do so below, just scroll down to the black section), joining us on [Discord](https://discord.gg/yhbSX5PRjx), or by [emailing us](info@radicalxchange.org).
-eventsBlurb: |
-  Check our updates page for information on upcoming events: if you're planning on holding an event for our community soon, spread the word using [this form](https://forms.gle/YtQABdjoGtovPrHo6).
-communitiesBlurb: |
-  Click on an RxC Community below for more information.
+title: "Community"
+description: "Join the RadicalxChange community: the monthly call, Discord, chapters in cities around the world, and how to start one."
 ---
-
-<!-- prettier-ignore -->
-{% import "components/introduction.njk" as introduction %}
-<!-- prettier-ignore -->
-{% import "components/logo.njk" as logo %}
-<!-- prettier-ignore -->
 {% import "components/menu.njk" as menu %}
-<!-- prettier-ignore -->
 {% import "components/footer.njk" as footer %}
-
-<!-- prettier-ignore -->
 {{ menu.render() }}
-<!-- prettier-ignore -->
-{{ introduction.render(headerText, introductionBlurb) }}
-<section
-  id="community-calls"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Join our Community Calls</h2>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
-  >
-    <div class="markdown">
-      {{ communityCalls | markdown | safe }}
-    </div>
-  </div>
-  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
-</section>
-<section
-  id="events"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Upcoming Global Events</h2>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
-  >
-    <div class="markdown">
-      {{ eventsBlurb | markdown | safe }}
-    </div>
-  </div>
-  <div class="col-span-columns pb-12 lg:pb-16 lg:border-b"></div>
-</section>
-<section
-  id="communities"
-  class="grid grid-cols-layout-4 lg:grid-cols-layout-12 my-margin"
->
-  <div
-    class="col-span-columns lg:col-start-column-1 lg:col-end-gutter-4 mb-4 lg:mb-0"
-  >
-    <h2 class="pb-4 lg:pb-0 border-b lg:border-b-0">Connect with Global RxC Communities</h2>
-  </div>
-  <div
-    class="col-span-columns lg:col-start-column-5 lg:col-end-margin-2 mb-12 lg:mb-16"
-  >
-    <div class="markdown">
-      {{ communitiesBlurb | markdown | safe }}
-    </div>
-  </div>
-  <div
-    class="col-span-columns mb-12 lg:mb-0"
-  >
-    <table class="block">
-      <tbody class="block">
-        <ol class="w-full mt-12 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 grid-rows-media gap-x-8 gap-y-16">
-          <!-- prettier-ignore -->
-          {% for s in communities %}
-          <li class="flex flex-col justify-between h-full media_border-b">
-            <button type="button" class="collapsible text-left focus:outline-none text-size--1 py-4">
-                <h1 class="uppercase break-words">{{ s.city }}</h1>
-            </button>
-            <div class="hidden my-4 pb-2 lg:pb-4">
-              <div>
-                <!-- prettier-ignore -->
-                {% if s.shortDescription %}
-                <div class="markdown markdown-sm mb-4">
-                  {{ s.shortDescription | markdown | safe }}
-                </div>
-                <!-- prettier-ignore -->
-                {% endif %}
-                <!-- prettier-ignore -->
-                {% if s.contact %}
-                <div class="markdown markdown-sm mb-4">
-                  Contact: {{ s.contact }}
-                </div>
-                <!-- prettier-ignore -->
-                {% endif %}
-                <!-- prettier-ignore -->
-                {% if s.contactInfo %}
-                <div class="markdown markdown-sm mb-4">
-                  {{ s.contactInfo | markdown | safe }}
-                </div>
-                <!-- prettier-ignore -->
-                {% endif %}
-                <!-- prettier-ignore -->
-                {% if s.wikiPage %}
-                <a class="thick-link text-size--1 uppercase" href="/wiki/{{ s.wikiPage }}">
-                  Find out more about this community
-                </a>
-                <!-- prettier-ignore -->
-                {% endif %}
-              </div>
-            </div>
-          </li>
-          <!-- prettier-ignore -->
-          {% endfor %}
-        </ol>
-      </tbody>
-    </table>
-  </div>
-</section>
-<!-- prettier-ignore -->
-{{ footer.render() }}
-<script>
-  var collapsibles = document.getElementsByClassName("collapsible");
-  var i;
+<main id="main">
 
-  for (i = 0; i < collapsibles.length; i++) {
-    collapsibles[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "grid") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "grid";
-      }
-    });
-  }
-</script>
-<script>
-  // prettier-ignore
-  {% include "components/menu.js" %}
-</script>
+<section class="page-hero"><div class="wrap">
+<div><h1>A global community that tests these ideas where it lives.</h1><p class="lede">RadicalxChange is made up of technologists, social scientists, artists, activists and public servants who share a mission: to modernise the basic institutions of democracy and markets through a radically egalitarian, participatory vision. There are many ways in.</p></div>
+<div class="aside">Everyone in the community operates under our <a href="/community/code-of-conduct/">code of conduct</a>.</div>
+</div></section>
+<section class="section" id="call"><div class="wrap">
+<div class="twocol">
+<div><h3>The monthly community call</h3><p>First Wednesday of every month, 9am ET / 3pm CET, open to anyone. It's the fastest way to see the work up close and meet the people doing it.</p><p><a class="btn primary" href="https://calendar.google.com/calendar/u/0/embed?src=c_lucq4409c3e2db9j5vld22p8to@group.calendar.google.com&amp;ctz=America/New_York">Add the call to your calendar</a></p></div>
+<div><h3>Between calls</h3><p>Our <a href="/updates/#salon">Salons</a> are recorded and free, and the podcast is on <a href="https://open.spotify.com/show/1Dra7JqDbgw1eXJRk7Pq5e">Spotify</a> and <a href="https://www.youtube.com/channel/UCxRk8v1Wcxa1TIKTvqrtSOw">YouTube</a>. The <a href="#newsletter">newsletter</a> goes out once a month, and we post on <a href="https://www.linkedin.com/company/radicalxchange">LinkedIn</a>, <a href="https://twitter.com/RadxChange">Twitter</a> and <a href="https://www.instagram.com/radxchange/">Instagram</a>.</p><p>Planning an event for the community? <a href="https://forms.gle/YtQABdjoGtovPrHo6">Tell us about it</a> and we'll spread the word. Past convenings are <a href="#convenings">listed below</a>.</p></div>
+</div>
+</div></section>
+<section class="section tint" id="chapters"><div class="wrap">
+<div class="section-head"><div><h2>Chapters</h2><p>Chapters are the local hubs of the community: autonomous, driven by their own character, welcoming people of every background and level of experience. Each chapter is contactable directly through its organisers.</p></div><a class="more" href="mailto:info@radicalxchange.org?subject=Starting%20or%20joining%20a%20chapter">Find or start a chapter</a></div>
+<div class="comms"><div><h3>Amsterdam, Netherlands</h3><p>Focusing on digital identity (Data Dignity, Social Identity, Self-Sovereign Identity) and decentralised trust infrastructure in the EU.</p><details><summary>Contact</summary><p class="contact">Jacopo Nuti</p><p class="info">Signal: jaco.101 | Discord: jaco_101</p></details></div><div><h3>Barcelona, Spain</h3><p>We focus on facilitation and discussion dynamics between a diverse audience and speakers, we have used dynamics like fishbowl and other play-full participatory sessions, for example playing Le Grand Jeu the game. Varied participants blending web3 developers with artist and social projects with specific focus on accessibility to local community.</p><details><summary>Contact</summary><p class="contact">Nikoline Arns</p><p class="info"><a href="https://discord.gg/TJCA7F2V">Discord</a> | Telegram: @nikoline_nik</p></details></div><div><h3>Berlin, Germany</h3><details><summary>Contact</summary><p class="contact">Kat Banas, Bastin Jafari</p><p class="info">Telegram: <a href="https://t.me/rxc_berlin">https://t.me/rxc_berlin</a></p></details></div><div><h3>Brussels, Belgium</h3><details><summary>Contact</summary><p class="contact">Anja Von Rosenstiel, Andreas Fauler</p><p class="info">Signal (Anja): anna_R06.36  (Andreas): XQTStrategy.42</p></details></div><div><h3>Frankfurt, Germany</h3><details><summary>Contact</summary><p class="contact">Andreas Fauler</p><p class="info">Signal: XQTStrategy.42</p></details></div><div><h3>London, England</h3><p>The RxC London community explores democratic innovation and institutional design, with a focus on connecting local policy debates to global experiments in plurality, governance, and technology. We host events and discussions that bring together researchers, practitioners, and the public around RadicalxChange ideas.</p><details><summary>Contact</summary><p class="contact">Guido Sforni</p><p class="info"><a href="https://discord.gg/g8gUVSUF">Discord</a></p></details></div><div><h3>Madrid, Spain</h3><details><summary>Contact</summary><p class="contact">Malik Lakoubay</p><p class="info">Telegram: @mlakoubay | <a href="mailto:malik@radicalxchange.org">Send Malik an email</a></p></details></div><div><h3>Lisbon, Portugal</h3><details><summary>Contact</summary><p class="contact">Leon Erichsen</p><p class="info"><a href="mailto:rxclisbon@proton.me">Send Leon an email</a></p></details></div><div><h3>Milan, Italy</h3><details><summary>Contact</summary><p class="contact">Alessandro Roboni</p><p class="info">Telegram: @ilsignorwolff</p></details></div><div><h3>Zurich, Switzerland</h3><p>Slow Co-Grow | Tuning up the chapter | Encouraging signals of incoming local Zürich Radxers | Interested to expand range and reach toward the &quot;Trust Valley&quot; of Lausanne-Geneva... eventually forking to their own chapters | &amp; Buzzing around further bridging potentials between the sister regions of Ethereum and Etherlaken. | In progress: Hub activations with Plural Events, plus Plural Tech and &quot;Comms Gardening&quot; aka &quot;Wisdom Flow&quot;</p><details><summary>Contact</summary><p class="contact">Charles Blass</p><p class="info">Telegram/Discord: @lovevolv | <a href="https://www.linkedin.com/in/rolandringgenberg/">LinkedIn</a> | <a href="mailto:roland@rolandringgenberg.com">Send Roland an email</a> | <a href="mailto:cb@lovevolv.org">Send Charles an email</a></p></details></div><div><h3>Kiev, Ukraine</h3><details><summary>Contact</summary><p class="contact">Max Semenchuk</p><p class="info"><a href="https://discord.gg/3SvbBEnb">Discord</a></p></details></div><div><h3>Warsaw, Poland</h3><details><summary>Contact</summary><p class="contact">Discord channel</p><p class="info"><a href="https://discord.gg/rQmpjVKN">Discord</a></p></details></div><div><h3>Paris, France</h3><details><summary>Contact</summary><p class="contact">Christophe Gauthier, Yuting Jiang</p><p class="info"><a href="mailto:rxcparis@radicalxchange.org">Send Christophe an email</a> and also direct POC, TBC</p></details></div><div><h3>Mexico City, Mexico</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/9hn5kzRe">Discord</a></p></details></div><div><h3>La Paz, Bolivia</h3><details><summary>Contact</summary><p class="contact">Beto Saavedra</p></details></div><div><h3>Buenos Aires, Argentina</h3><details><summary>Contact</summary><p class="contact">Malik</p><p class="info">Telegram: @mlakoubay | <a href="mailto:malik@radicalxchange.org">Send Malik an email</a> | <a href="https://discord.gg/32MTJGzE">Discord</a></p></details></div><div><h3>Brazil</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/yuecy6pC">Discord</a></p></details></div><div><h3>Melbourne, Australia</h3><p>Launched August 2026, the newest chapter in the network.</p><details><summary>Contact</summary><p class="contact">Get in touch via <a href="mailto:info@radicalxchange.org?subject=RxC%20Melbourne">info@radicalxchange.org</a> and we'll connect you with the organisers.</p></details></div><div><h3>Sydney, Australia</h3><p>We’re a growing chapter with an interest in the application of ideas from political philosophy and radical economics in real world contexts, and in how experiments in new forms of participation, decision-making and resource allocation can shift political discourse, support social movements, and expand the Overton Window for systems change.</p><details><summary>Contact</summary><p class="contact">Jess Scully</p><p class="info"><a href="mailto:jess@radicalxchange.org">Send Jess an email</a> | Discord channel</p></details></div><div><h3>Auckland, New Zealand</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/NBjdYUZB">Discord</a></p></details></div><div><h3>Tokyo, Japan</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/y4QXe6KtHh">Discord</a></p></details></div><div><h3>Seoul, Korea</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/JDxWvk49">Discord</a></p></details></div><div><h3>Mumbai, India</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/fTFu7K9A">Discord</a></p></details></div><div><h3>Taipei, Taiwan</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/mTY4Ugw3">Discord</a></p></details></div><div><h3>Boston, MA</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info">Signal (Anja): anna_R06.36 | <a href="https://discord.gg/QmJsQQxP">Discord</a></p></details></div><div><h3>Denver, CO</h3><details><summary>Contact</summary><p class="contact">Taylor Kendal</p><p class="info">Telegram: @tayken</p></details></div><div><h3>New York City, NY</h3><details><summary>Contact</summary><p class="contact">Jack</p><p class="info"><a href="mailto:jack@radicalxchange.org">Send Jack an email</a></p></details></div><div><h3>Bay Area, CA</h3><details><summary>Contact</summary><p class="contact">Matt</p><p class="info">Telegram: @mprewitt | <a href="https://discord.gg/mRcxSDv8">Discord</a></p></details></div><div><h3>LA, CA</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/pbmxVPS4">Discord</a></p></details></div><div><h3>Montreal, Canada</h3><details><summary>Contact</summary><p class="contact">Glosso</p><p class="info">Telegram: @Glosso</p></details></div><div><h3>Toronto, Canada</h3><details><summary>Contact</summary><p class="contact">Patcon</p><p class="info">Telegram: @patcon | <a href="https://discord.gg/qdetWqAW">Discord</a></p></details></div><div><h3>Philadelphia, PA</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/XVYCarEn">Discord</a></p></details></div><div><h3>Washington, DC</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/ZUwzCV7C">Discord</a></p></details></div><div><h3>Chicago, IL</h3><details><summary>Contact</summary><p class="contact">Discord Channel</p><p class="info"><a href="https://discord.gg/9BRwnCrc">Discord</a></p></details></div><div><h3>Casablanca, Morocco</h3><details><summary>Contact</summary><p class="contact">Aouatef Khelloqi</p><p class="info">Signal: @aoutef</p></details></div></div>
+</div></section>
+<section class="section" id="convenings"><div class="wrap">
+<div class="section-head"><div><h2>Convenings</h2><p>Conferences, summits and working sessions the Foundation has hosted or co-hosted since 2019, from Detroit to Kyiv. Planning something for the community? <a href="https://forms.gle/YtQABdjoGtovPrHo6">Tell us</a>.</p></div></div>
+<p class="year">2025</p><ul class="list"><li><a href="/events/2025-ukraine/">The Future of Digital Democracy: Learning with Ukraine</a><span class="desc">A global conversation on democratic resilience and frontline innovation in decentralised governance.</span><span class="meta">Online</span></li><li><a href="/events/2025-maine/">Foundations for the Digital Commons</a><span class="desc">Two days with leaders, builders, lawyers and technologists on tech, policy and digital infrastructure for the common good.</span><span class="meta">Maine</span></li><li><a href="/events/2025-berlin/">New Solidarity for an AI-Disrupted Economy</a><span class="desc">With the Global Solutions Initiative and Sciences Po, an official side event of the Paris AI Action Summit on AI, labour and new policy strategies.</span><span class="meta">Berlin</span></li></ul><p class="year">2024</p><ul class="list"><li><a href="/events/2024-plurality-european-tour/">Plurality European Tour</a><span class="desc">Two weeks of book launches and workshops across Europe with local partners and institutions.</span><span class="meta">Europe</span></li><li><a href="/events/2024-oakland/">What and How We Own: The Politics of Change</a><span class="desc">Seeding a coalition building a new paradigm for property and ownership in the 21st century.</span><span class="meta">Oakland</span></li></ul><p class="year">2023</p><ul class="list"><li><a href="/events/2023-london/">Beyond Cultures of Ownership</a><span class="desc">At Somerset House with Serpentine: how art and culture can reshape our understanding of ownership.</span><span class="meta">London</span></li></ul><p class="year">2022</p><ul class="list"><li><a href="/events/2022-warsaw/">Europe and the Futures of Pluralism</a><span class="desc">With Europe at war, a gathering on the power of diverse cooperation.</span><span class="meta">Warsaw</span></li><li><a href="/events/2022-freedom-games/">Freedom Games</a><span class="desc">RxC panels at the Freedom Games festival.</span><span class="meta">Łódź</span></li><li><a href="/events/2022-bogota/">Plurality Tent at Schelling Point</a><span class="desc">With Fundación Karisma: building a Plurality agenda for democracy and web3.</span><span class="meta">Bogotá</span></li><li><a href="/events/2022-conference/">Exploring Digital Identity for Decentralised Societies</a><span class="desc">Protocols for decentralised social verification as a missing layer of the internet.</span><span class="meta">Online</span></li><li><a href="/events/2022-panels/">2022 Panels</a><span class="desc">Recorded panel series.</span><span class="meta">Online</span></li></ul><p class="year">2021</p><ul class="list"><li><a href="/events/2021-conference/">A New Era of Democracy</a><span class="desc">A participatory conference designed around deliberation and co-creation.</span><span class="meta">Denver and online</span></li><li><a href="/events/2021-panels/">2021 Panels</a><span class="desc">Recorded panel series.</span><span class="meta">Online</span></li></ul><p class="year">2020</p><ul class="list"><li><a href="/events/2020-conference/">2020 Annual Conference</a><span class="desc">The first fully virtual RxC conference.</span><span class="meta">Online</span></li><li><a href="/events/2020-panels/">2020 Panels</a><span class="desc">Recorded panel series.</span><span class="meta">Online</span></li></ul><p class="year">2019</p><ul class="list"><li><a href="/events/2019-berlin/">2019 Berlin Conference</a><span class="desc">RadicalxChange&#x27;s first European conference.</span><span class="meta">Berlin</span></li><li><a href="/events/2019-conference/">2019 Annual Conference</a><span class="desc">The inaugural RadicalxChange conference.</span><span class="meta">Detroit</span></li></ul>
+</div></section>
+<section class="section tint"><div class="wrap">
+<div class="twocol">
+<div><h3>For organisations</h3><p>Governments, institutions and community organisations work with the Foundation directly. Publishers, unions and associations who want to bargain collectively with AI companies over their data can <a href="mailto:info@radicalxchange.org?subject=Collective%20data%20bargaining">start here</a>. <a href="/projects/">See how partnerships work</a>, or <a href="mailto:info@radicalxchange.org">get in touch</a>.</p></div>
+<div><h3>For builders</h3><p>The tools are open source. Start with <a href="https://quadraticvote.radicalxchange.org/">quadraticvote.radicalxchange.org</a> and the <a href="/wiki/">Library</a>, and bring questions to the monthly call.</p></div>
+</div>
+</div></section>
+
+</main>
+{{ footer.render() }}

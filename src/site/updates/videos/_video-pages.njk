@@ -9,6 +9,9 @@ eleventyComputed:
   title: "{{ video.title | safe  }}"
   postHeader: "{{ video.postHeader | safe }}"
   postAuthor: "{{ video.postAuthor | safe  }}"
+  series: "{{ video.series | default([]) | dump | safe }}"
+  videoId: "{{ video.videoId | safe }}"
+  description: "{{ video.description | default('') | safe }}"
 permalink: "updates/videos/{{ video.title | slug | safe }}/"
 ---
 

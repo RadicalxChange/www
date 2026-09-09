@@ -35,7 +35,13 @@ module.exports = async function () {
     return asset.getCachedValue();
   }
 
-  const items = await fetchEpisodes();
-  await asset.save(items, "json");
-  return items;
+  try {
+    const items = await fetchEpisodes();
+    await asset.save(items, "json");
+    return items;
+  } catch (err) {
+    // Feed unreachable: fall back to the last cached copy, or an empty list, rather than failing the build.
+    console.warn(`[podcasts] feed fetch failed (${err.message}); using cache or empty list`);
+    try { return await asset.getCachedValue(); } catch (e) { return []; }
+  }
 };

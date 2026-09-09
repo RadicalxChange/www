@@ -73,7 +73,7 @@ You're invited to our May 2025 Community Call on [Wednesday, May 7th at 12 pm E
 _Upcoming Events_  
 Matt Prewitt, RxC President, will participate in the [Global Solutions Summit](https://global-solutions-summit.org/public/events/fb1a1fa895/pages/ee6c36e7ca) on May 5-6 in Berlin. Matt will also attend the [INMA World Congress of News Media](https://www.inma.org/modules/event/2025WorldCongress/index.html) on May 19-23, and a workshop on "Using Collective Action to Develop a New Social Contract for Machine Reuse" organized by [Creative Commons](https://creativecommons.org/) on May 20, in NYC.   
   
-Jack Henderson, RxC COO, will also attend the [INMA World Congress of News Media](https://www.inma.org/modules/event/2025WorldCongress/index.html) and [Creative Commons](https://creativecommons.org/) workshop in NYC. Jack will also participate in the Digital Futures Roundtable Series organized by [New America's Planetary Politics program](https://www.newamerica.org/planetary-politics/) on June 3 in Washington, D.C.  
+Jack Henderson, RxC COO, will also attend the [INMA World Congress of News Media](https://www.inma.org/modules/event/2025WorldCongress/index.html) and [Creative Commons](https://creativecommons.org/) workshop in NYC. Jack will also participate in the Digital Futures Roundtable Series organized by [New America's Planetary Politics program](https://www.newamerica.org/programs/planetary-politics/) on June 3 in Washington, D.C.  
   
 Malik Lakoubay, RxC Head of Policy and Outreach, will participate in a panel on the [partial common ownership of art](https://www.radicalxchange.org/wiki/pco-art/) at the Parisian gallery [Artivistas](https://www.artivistas.fr/) on May 26.
 

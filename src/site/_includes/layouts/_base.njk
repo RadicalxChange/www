@@ -3,44 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="/images/logos/favicon.png" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <!-- prettier-ignore -->
     {% block fontPreloads %}
-    <link
-      rel="preload"
-      href="/fonts/hinted-MesserV20-Condensed.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/hinted-SuisseIntl-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/hinted-SuisseIntl-Italic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/hinted-SuisseIntl-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/hinted-SuisseIntl-BoldItalic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet" />
     <!-- prettier-ignore -->
     {% endblock %}
     <!-- prettier-ignore -->
@@ -67,14 +35,14 @@
     <meta property="og:url" content="{{ metadata.url + page.url }}" />
     <meta
       property="og:image"
-      content="{{ metadata.url }}/images/logos/open-graph-logo.png"
+      content="{{ metadata.url }}/assets/og-image.png"
     />
     <meta
       property="og:image:secure_url"
-      content="{{ metadata.url }}/images/logos/open-graph-logo.png"
+      content="{{ metadata.url }}/assets/og-image.png"
     />
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta
       property="og:description"
       content="{{ description | default(metadata.defaultDescription) }}"
@@ -87,7 +55,7 @@
     <meta name="twitter:site" content="@radxchange" />
     <meta
       name="twitter:image"
-      content="{{ metadata.url }}/images/logos/open-graph-logo.png"
+      content="{{ metadata.url }}/assets/og-image.png"
     />
     <meta name="twitter:creator" content="@radxchange" />
     <meta
@@ -101,11 +69,6 @@
     {% block headScripts %}
     <script src="https://unpkg.com/@ungap/custom-elements"></script>
     <script
-      src="https://unpkg.com/body-scroll-lock@3.0.2/lib/bodyScrollLock.min.js"
-      integrity="sha384-TPD9y0kmdvgK9D4a+br/KYlqMn9cLVXHDVxxN93FvPj+13bPJeMJZaXAB7+p/e7X"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://rabbit.radicalxchange.org/script.js"
       site="SQHLZNME"
       included-domains="www.radicalxchange.org"
@@ -116,6 +79,7 @@
     <!-- prettier-ignore -->
     {% block styles %}
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/assets/rxc.css" />
     <!-- prettier-ignore -->
     {% endblock %}
     <!-- prettier-ignore -->
@@ -127,7 +91,7 @@
     </title>
   </head>
   <!-- prettier-ignore -->
-  <body class="font-body font-normal text-size-0 {{ bodyBg }}">
+  <body class="{{ bodyBg }}">
     <!-- prettier-ignore -->
     {% block body %}
     {{ content | safe }}

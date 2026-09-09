@@ -23,7 +23,7 @@ Plural Funding (also known as Quadratic Funding or QF) is a more democratic and 
 
 [Plural Funding](https://www.youtube.com/watch?v=RM7UFpSemjA) - E. Glen Weyl, Leon Erichsen
 
-[Quadratic Payments: A Primer](https://vitalik.ca/general/2019/12/07/quadratic.html) - Vitalik Buterin
+[Quadratic Payments: A Primer](https://vitalik.eth.limo/general/2019/12/07/quadratic.html) - Vitalik Buterin
 
 [WTF is Plural QF](https://tkgshn.github.io/wtfispluralqf/) - taka
 

@@ -15,7 +15,7 @@
     "conveners": [
       {
         "name": "Parity",
-        "url": "https://www.parity.nyc"
+        "url": "https://paritynyc.org/"
       },
       {
         "name": "Sikh LGBT+ Inclusion",
@@ -26,8 +26,7 @@
         "url": "https://www.radicalxchange.org"
       },
       {
-        "name": "Free Community Church",
-        "url": "https://www.fcc.org.sg"
+        "name": "Free Community Church"
       }
     ]
   },

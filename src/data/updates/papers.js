@@ -1,5 +1,25 @@
 module.exports = [
   {
+    url: "https://ifstudies.org/report-brief/toward-associational-data-rights-a-digital-economy-for-families-&-the-common-good",
+    date: "2026-08-31",
+    title: "Toward Associational Data Rights: A Digital Economy for Families and the Common Good",
+    postType: "Paper",
+    postHeader: "Toward Associational Data Rights: A Digital Economy for Families and the Common Good",
+    postAuthor: "Matt Prewitt and co-authors",
+    publisher: "Institute for Family Studies",
+    series: [],
+  },
+  {
+    url: "https://hbr.org/2026/06/how-ai-companies-can-pay-fair-rates-for-the-content-they-need",
+    date: "2026-06-15",
+    title: "How AI Companies Can Pay Fair Rates for the Content They Need",
+    postType: "Paper",
+    postHeader: "How AI Companies Can Pay Fair Rates for the Content They Need",
+    postAuthor: "E. Glen Weyl, RxC founder and board chair",
+    publisher: "Harvard Business Review",
+    series: [],
+  },
+  {
     url: "/updates/papers/the-plural-stack.pdf",
     date: "2026-06-17",
     title: "The ⿻ Plural Stack: Rebuilding our Digital Foundations from Protocol Up",
@@ -36,7 +56,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/updates/papers/Data-Freedom-Act.pdf",
+    url: "/updates/papers/data-freedom-act.pdf",
     date: "2020-05-27",
     title: "Data Freedom Act",
     postType: "Paper",
@@ -45,7 +65,7 @@ module.exports = [
     series: [],
   },
   {
-    url: "/updates/papers/data-dividends-working-paper.pdf",
+    url: "/updates/papers/Data-Dividends-Working-Paper.pdf",
     date: "2020-08-06",
     title: "Data Dividends Working Paper",
     postType: "Paper",
