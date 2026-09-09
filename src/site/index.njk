@@ -32,7 +32,7 @@ description: "RadicalxChange is an international nonprofit advancing participato
   <div class="wrap">
     <div class="section-head">
       <div>
-        <h2 id="h-results">What happened when communities got real power</h2>
+        <h2 id="h-results">What happens when communities understand each other</h2>
         <p>We partner with community champions and sector leaders, people with the local knowledge, credibility and networks to bring genuine diversity of perspective to every engagement. Recent results:</p>
       </div>
       <a class="more" href="/projects/">All projects and case studies</a>
@@ -104,7 +104,7 @@ description: "RadicalxChange is an international nonprofit advancing participato
       <thead><tr><th scope="col">Mechanism</th><th scope="col">What it does</th><th scope="col">Where it's been tried</th><th scope="col">With</th></tr></thead>
       <tbody>
         <tr>
-          <th scope="row">Plural voting<small>formerly quadratic voting</small></th>
+          <th scope="row">Plural voting<small>also known as quadratic voting</small></th>
           <td class="what">Everyone gets the same budget of voice credits. Extra votes on one issue cost more each time, so intensity counts without a loud minority dominating.</td>
           <td class="tried"><a href="/projects/plural-voting-in-the-colorado-state-legislature">Colorado legislature</a>, <a href="/projects/plural-voting-in-nashville">Nashville council</a>, <a href="/projects/plural-voting-for-participatory-budgeting-in-nyc">NYC participatory budgeting</a>, <a href="/density-done-well/">Sydney</a></td>
           <td class="with">Colorado General Assembly, Nashville Metro Council, NYC Council District 9, AMPLIFY</td>
@@ -116,7 +116,7 @@ description: "RadicalxChange is an international nonprofit advancing participato
           <td class="with">AMPLIFY, ASPIRE, Parity, The Civic Canopy, Healthy Democracy</td>
         </tr>
         <tr>
-          <th scope="row">Plural funding<small>formerly quadratic funding</small></th>
+          <th scope="row">Plural funding<small>also known as quadratic funding</small></th>
           <td class="what">Small donations are matched according to how many people gave, not how much, so public goods that many care about get funded first.</td>
           <td class="tried">Gitcoin Grants, more than $60M distributed</td>
           <td class="with">Gitcoin</td>
@@ -159,7 +159,6 @@ description: "RadicalxChange is an international nonprofit advancing participato
       <li>Colorado General Assembly</li>
       <li>Nashville Metro Council</li>
       <li>AMPLIFY</li>
-      <li>Museum of Australian Democracy</li>
       <li>ASPIRE</li>
       <li>Regen Labs</li>
       <li>BWD Strategic</li>
@@ -173,7 +172,6 @@ description: "RadicalxChange is an international nonprofit advancing participato
       <li>Edge City</li>
       <li>The Civic Canopy</li>
       <li>Healthy Democracy</li>
-      <li>MyData</li>
     </ul>
   </div>
 </section>
@@ -188,16 +186,15 @@ description: "RadicalxChange is an international nonprofit advancing participato
       <a class="more" href="/updates/">All updates</a>
     </div>
     <div class="latest">
+      {% set lead = collections.latest.lead %}
       <div>
-        <div class="video"><iframe src="https://www.youtube.com/embed/9jyJux9ML3g" title="RadicalxChange Salon: The Plural Stack" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-        <p class="video-cap">RadicalxChange Salon: The Plural Stack<span>Rebuilding our digital foundations from protocol up. July 2026.</span></p>
+        <div class="video"><iframe src="https://www.youtube.com/embed/{{ lead.videoId }}" title="{{ lead.title }}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        <p class="video-cap"><a href="{{ lead.url }}">{{ lead.title }}</a><span>{{ lead.description }} {{ lead.readableDate }}.</span></p>
       </div>
       <ul class="posts">
-        <li><a href="/updates/blog/two-radical-ways-to-share-ai-ownership/">Two radical ways to share AI ownership</a><span class="meta"><i>Blog</i> Jack Henderson, Leon Erichsen, Matt Prewitt, June 2026</span></li>
-        <li><a href="/updates/announcements/2026-07-can-ai-see-me/">Can AI see me? The case for plural AI heads to the UN's Global Dialogue</a><span class="meta"><i>Announcement</i> July 2026</span></li>
-        <li><a href="/projects/the-plural-stack">The Plural Stack: rebuilding our digital foundations from protocol up</a><span class="meta"><i class="paper">Paper</i> Andreas Fauler and others, June 2026</span></li>
-        <li><a href="/updates/videos/radicalxchange-salon:-reverse-alignment/">RadicalxChange Salon: Reverse Alignment</a><span class="meta"><i>Salon</i> Building institutions in the shape of their tools, August 2026</span></li>
-        <li><a href="/updates/announcements/2026-05-co-creative-democracy-from-taipei-to-nyc/">Co-creative democracy, from Taipei to NYC</a><span class="meta"><i>Announcement</i> May 2026</span></li>
+{% for item in collections.latest.list %}
+        <li><a href="{{ item.url }}">{{ (item.postHeader or item.title) | replace("⿻ ", "") }}</a><span class="meta"><i{% if item.kind != "blog" %} class="paper"{% endif %}>{{ {"blog":"Blog","announcement":"Announcement","paper":"Paper","salon":"Salon","podcast":"Podcast"}[item.kind] }}</i>{% if item.postAuthor and item.postAuthor != "RxC Team" %} {{ item.postAuthor }},{% endif %} {{ item.readableDate }}</span></li>
+{% endfor %}
       </ul>
     </div>
   </div>
@@ -211,7 +208,7 @@ description: "RadicalxChange is an international nonprofit advancing participato
       <a class="more" href="/about/">About the Foundation, the team and our approach</a>
     </div>
     <div>
-      <p class="board">The Foundation's board includes <b>E. Glen Weyl</b>, <b>Audrey Tang</b>, <b>Vitalik Buterin</b>, <b>Anne-Marie Slaughter</b>, <b>Christopher Kulendran Thomas</b> and <b>Joseph Gordon-Levitt</b>. RadicalxChange grew out of the ideas in <i>Radical Markets</i> and <i>Plurality</i>, and remains the home of the movement those books started.</p>
+      <p class="board">The Foundation's board includes <b>E. Glen Weyl</b>, <b>Audrey Tang</b>, <b>Vitalik Buterin</b>, <b>Anne-Marie Slaughter</b>, <b>Christopher Kulendran Thomas</b> and <b>Joseph Gordon-Levitt</b>. RadicalxChange grew out of the ideas in <a href="https://press.princeton.edu/books/paperback/9780691196060/radical-markets"><i>Radical Markets</i></a> and <a href="https://plurality.net/"><i>Plurality</i></a>, and remains the home of the movement those books started.</p>
       <p class="board">Chapters are autonomous and driven by their own local character, from Amsterdam to Auckland, Mexico City to Mumbai. Every chapter operates under our <a href="/community/code-of-conduct/">code of conduct</a>.</p>
     </div>
   </div>

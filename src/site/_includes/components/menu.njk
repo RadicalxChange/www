@@ -5,7 +5,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <div class="wrap">
-    <a class="mark" href="/"><span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="12" height="12"/><rect x="9" y="9" width="12" height="12"/></svg></span>RadicalxChange</a>
+    <a class="mark" href="/"><span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="12" height="12"/><rect x="9" y="9" width="12" height="12"/></svg></span><span class="word">Radical<em>x</em>Change</span></a>
     <nav class="primary" aria-label="Primary">
       <ul>
         <li><a href="/about/">About</a></li>
@@ -18,7 +18,7 @@
         <li><a class="btn primary" href="/community/#call">Join the monthly call</a></li>
       </ul>
     </nav>
-    <details class="menu">
+    <details class="mnav">
       <summary>Menu</summary>
       <ul>
         <li><a href="/about/">About</a></li>
@@ -34,7 +34,7 @@
   </div>
 </header>
 <script>
-  (function(){var p=location.pathname;document.querySelectorAll('nav.primary a, .menu a').forEach(function(a){var h=a.getAttribute('href');
+  (function(){var p=location.pathname;document.querySelectorAll("nav.primary a, .mnav a").forEach(function(a){var h=a.getAttribute('href');
   if(h&&h!=='/'&&!a.classList.contains('btn')&&p.indexOf(h)===0){a.classList.add('nav-current');a.setAttribute('aria-current','page');}});})();
 </script>
 {% endmacro %}

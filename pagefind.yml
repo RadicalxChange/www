@@ -1,6 +1,7 @@
 site: dist
 glob: "**/*.html"
 exclude_selectors:
+  - ".mnav"
   - "nav"
   - "footer"
   - "[data-pagefind-ignore]"

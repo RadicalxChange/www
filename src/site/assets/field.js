@@ -2,7 +2,7 @@
   function rng(seed){let h=1779033703^seed.length;for(let i=0;i<seed.length;i++){h=Math.imul(h^seed.charCodeAt(i),3432918353);h=(h<<13)|(h>>>19);}return function(){h=Math.imul(h^(h>>>16),2246822507);h=Math.imul(h^(h>>>13),3266489909);h^=h>>>16;return(h>>>0)/4294967296;};}
   function gauss(r){let u=0,v=0;while(u===0)u=r();while(v===0)v=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
   function makePoints(seed,n,spread){const r=rng(seed),pts=[];for(let i=0;i<n;i++){pts.push({dx:gauss(r)*spread,dy:gauss(r)*spread,cluster:i<n/2?'a':'b',size:1.6+r()*1.8});}return pts;}
-  const A='#2B3EFF',B='#E23A6B',C='#FFE01B';
+  const A='#2B3EFF',B='#E23A6B',C='#EDFF38';
   function render(svg,pts,ca,cb,radius){
     let out='';
     for(const p of pts){

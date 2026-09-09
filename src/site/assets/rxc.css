@@ -9,7 +9,7 @@
   --paper:#FFFFFF;
   --voice-a:#2B3EFF;
   --voice-b:#E23A6B;
-  --common:#FFE01B;
+  --common:#EDFF38;
   --quiet:#5F657E;
   --hair:#D9DBE3;
   --tint:#F4F5F8;
@@ -51,11 +51,11 @@ p{margin:0 0 1rem}
 nav.primary ul{display:flex;gap:1.4rem;align-items:center;list-style:none;margin:0;padding:0}
 nav.primary a{text-decoration:none;font-family:var(--display);font-size:.95rem}
 nav.primary a:hover{text-decoration:underline;text-underline-offset:.35em}
-.menu{display:none}
-.menu summary{list-style:none;cursor:pointer;font-family:var(--display);font-weight:600;font-size:.95rem;border:2px solid var(--ink);padding:.6rem .9rem;line-height:1}
-.menu summary::-webkit-details-marker{display:none}
-.menu ul{list-style:none;margin:0;padding:1rem var(--gutter) 1.5rem;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:2px solid var(--ink);display:grid;gap:.9rem}
-.menu a{text-decoration:none;font-family:var(--display);font-size:1.15rem;font-weight:600}
+.mnav{display:none}
+.mnav summary{list-style:none;cursor:pointer;font-family:var(--display);font-weight:600;font-size:.95rem;border:2px solid var(--ink);padding:.6rem .9rem;line-height:1}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav ul{list-style:none;margin:0;padding:1rem var(--gutter) 1.5rem;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:2px solid var(--ink);display:grid;gap:.9rem}
+.mnav a{text-decoration:none;font-family:var(--display);font-size:1.15rem;font-weight:600}
 
 /* Hero */
 .hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--gutter);padding-top:clamp(3rem,7vw,6rem);padding-bottom:clamp(3rem,6vw,5rem);align-items:center}
@@ -163,7 +163,7 @@ footer .legal ul{display:flex;gap:1.25rem}
 
 @media (max-width:960px){
   nav.primary{display:none}
-  .menu{display:block;position:static}
+  .mnav{display:block;position:static}
   .bar{position:relative}
   .hero .wrap{grid-template-columns:1fr}
   .hero h1{max-width:none}
@@ -248,7 +248,7 @@ footer .legal ul{display:flex;gap:1.25rem}
 
 /* ---- coexistence with legacy Tailwind preflight ---- */
 a{text-decoration:underline;text-underline-offset:.2em}
-nav.primary a,.menu a,.mark,.btn,.live .title,.list li a,.posts a,.next dd a,footer ul a,.chapters a,.crumbs a{text-decoration:none}
+nav.primary a,.mnav a,.mark,.btn,.live .title,.list li a,.posts a,.next dd a,footer ul a,.chapters a,.crumbs a{text-decoration:none}
 footer .legal a{text-decoration:none}
 img,video,iframe{max-width:100%}
 
@@ -322,3 +322,21 @@ body>div.grid,body>section.grid,body>main.grid{max-width:var(--wrap);margin-left
 .comms details[open] summary{text-decoration:none;color:var(--quiet)}
 .comms details .contact{margin-top:.4rem}
 .article header h1[data-pagefind-weight]{}
+
+/* ---- brand ---- */
+@font-face{font-family:"Messer";src:url("/fonts/hinted-MesserV20-Condensed.woff2") format("woff2"),url("/fonts/hinted-MesserV20-Condensed.woff") format("woff");font-weight:400;font-display:swap}
+.mark .word{font-family:"Messer","Bricolage Grotesque",sans-serif;font-weight:400;text-transform:uppercase;font-size:1.55rem;letter-spacing:.01em;line-height:1;position:relative;top:.06em}
+.mark .word em{font-style:normal;text-transform:none}
+.prose a,.more,.list li a:hover,.posts a:hover,.live .title:hover,.next dd a:hover,.chapters a:hover{text-decoration-color:var(--common);text-decoration-thickness:2px;text-underline-offset:.2em}
+.prose a:hover,.more:hover{text-decoration-color:var(--ink)}
+/* mobile header: keep the menu button inside the bar */
+.mnav{display:none;align-items:center}
+.mnav summary{display:inline-flex;align-items:center;height:2.5rem;padding:0 .9rem;margin:0;line-height:1}
+@media (max-width:960px){.mnav{display:flex}.bar .wrap{min-height:3.75rem;padding-top:.5rem;padding-bottom:.5rem}}
+/* small screens: let long titles and metadata wrap */
+@media (max-width:640px){
+  .list .meta,.live .status,.live .place,.chapters .meta,.posts .meta{white-space:normal}
+  .list li a,.posts a,.live .title,h1,h2,h3{overflow-wrap:anywhere}
+  .section-head{display:block}.section-head .more{display:inline-block;margin-top:.75rem}
+  .page-hero .aside{max-width:none}
+}
