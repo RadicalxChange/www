@@ -151,6 +151,8 @@ module.exports = function (config) {
             postHeader: item.data.postHeader,
             postAuthor: item.data.postAuthor || "RxC Team",
             series: seriesOf(item.data.series),
+            videoId: item.data.videoId,
+            description: item.data.description || "",
           })),
         libraryData.map((item) => ({
           ...item,
@@ -204,6 +206,23 @@ module.exports = function (config) {
       years.get(y).push({ ...item, kind: kindOf(item) });
     }
     return [...years.entries()].sort((a, b) => (a[0] < b[0] ? 1 : -1)).map(([year, items]) => ({ year, items }));
+  });
+
+  // Flat, newest-first list for the homepage.
+  config.addCollection("latest", async (collectionApi) => {
+    const all = await buildMediaAll(collectionApi);
+    const kindOf = (item) => {
+      if (item.postType === "Blog Post") return "blog";
+      if (item.postType === "Announcement") return "announcement";
+      if (item.postType === "Paper" || item.postType === "Library") return "paper";
+      if (item.postType === "Podcast") return "podcast";
+      if (item.postType === "Video") return (item.series || []).includes("Salon") ? "salon" : "video";
+      return "other";
+    };
+    const items = all.map((i) => ({ ...i, kind: kindOf(i) })).filter((i) => i.kind !== "other");
+    const lead = items.find((i) => i.kind === "salon") || items.find((i) => i.videoId) || null;
+    const list = items.filter((i) => i !== lead && i.kind !== "video").slice(0, 4);
+    return { lead, list };
   });
 
   config.addCollection("media", async (collectionApi) => {
