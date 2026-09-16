@@ -1,0 +1,24 @@
+---
+layout: "layouts/blog-post.njk"
+slug: "the-fight-is-smaller-than-it-looks"
+date: "2026-09-16"
+title: "We Used Plural Tech in One of the Most Contested Debates in Urban Politics. The Fight Is Smaller Than It Looks."
+postHeader: "We Used Plural Tech in One of the Most Contested Debates in Urban Politics. The Fight Is Smaller Than It Looks."
+postAuthor: "RxC Team"
+---
+
+The density debate presents itself as a wall: NIMBY versus YIMBY, objectors versus builders, no way through. This winter, AMPLIFY and RadicalxChange ran a program built on a different hypothesis, that the deadlock is partly an artifact of the venues the debate runs through, and that different infrastructure would find different ground.
+
+*Read the findings at [radicalxchange.org/density-done-well](/density-done-well/) and the [full report here](https://drive.google.com/file/d/1yZHAft5NdAep4MkagRFYmXKzfiZA19tK/view?usp=sharing).*
+
+Our process was based in Sydney, Australia, and the design had two stages. We began with the people who fight hardest, recruiting what we call issue-native publics: 22 activists, balanced across opponents and supporters of increased density, drawn from eight Sydney local government areas. Most consultation designs treat these voices as a problem to control for. We recruited them as the starting point, because they know the argument from the inside, and because any consensus that survives them is worth testing. Across two sessions they mapped the debate on Pol.is, ranked priorities under the discipline of quadratic voting, and refined definitions in structured small-group deliberation. Then 150 demographically representative Sydneysiders from the same areas put what the activists produced to the test.
+
+The headline result is that the people deepest in the fight agree on a long list of specifics: public transport improvements, green space protected as density rises, homes essential workers and young people can afford, a greater mix of housing types, design quality, consultation moved earlier with results that last, affordability defined at 30% of household income and held permanently. Several of these conditions carried every participant on one side of the divide and strong majorities on the other. The list of what divides them is much shorter: how high to build, whether supply alone delivers affordability, and whether infrastructure comes before housing or alongside it.
+
+The larger public ratified the core of that list, and sharpened it. Transport and green space topped their quadratic ballot, just as it did for the engaged cohort, sight unseen. Its small groups specified that the transport demand means frequency and reliability on the existing network, whose current performance participants read as the primary test of whether the density promise will be kept. And the strongest consensus in the program was never asked for: 99% agreement that developers be held accountable for dodgy building standards, raised unprompted, with many accounts of building defects and the special levies that follow.
+
+The deepest divide, building height, behaved differently. 75% of the representative public's height sceptics back a halt to massive high-rise development. 81% of the same cluster supports high-rise in certain areas with affordability attached. Same people, different framing. The strongest trade of this kind was all about participation. Nine in ten engaged opposers would accept a development they dislike if their community had real power over what gets built, a trade the representative public backed across its own divide.
+
+The report also debuts Uncommon Ground, an analysis for finding the questions where support and opposition come from within both camps, and a person's camp no longer predicts their vote. These statements are the opposite of consensus, and that is their value: they mark where alliances could cut across the divide, and where new majorities could form, drawn from both sides at once. In the representative conversation, the band is where the bold affordability reforms live: incentives for developers who sell to owner-occupiers rather than investors, priority for unhoused people, even a queue in which everyone buys a first home before anyone buys a second. The engaged cohort's uncommon ground has a theme of its own: six of its eight statements ask for commitments that do not rest on trust, such as a public dashboard of developer contributions, services tracked and published, and certification taken out of private hands.
+
+The common ground a public can find depends on the infrastructure it deliberates in. The tools we used are open source; the methods are documented; the data is released with the report. What is missing is the shared civic infrastructure to make processes like this routine, and that is what this program makes the case for.
