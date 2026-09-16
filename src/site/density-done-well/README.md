@@ -11,7 +11,10 @@ shares **nothing** with the rest of the site: it deliberately does not extend
 design (black hero over a cream lower half, Google-hosted Archivo/Public
 Sans/JetBrains Mono, the canvas-driven "Beyond" wordmark, AMPLIFY and RxC
 logos embedded as data URIs) is final — do not restyle it or fold it into
-site components.
+site components. The page frames itself with its own thin RxC-branded
+breadcrumb bar and footer bar (`.rxc-shell`, Bricolage Grotesque) linking
+back to `/`, `/projects/`, the newsletter and donations; these are part of
+the delivered HTML, not the site's `menu`/`footer` components.
 
 `index.njk` is raw HTML wrapped in `{% raw %}` so Nunjucks passes it through
 untouched; the only Eleventy features used are the front-matter `permalink`
@@ -19,6 +22,8 @@ and the site-wide posthtml transform (minification in prod, beautify in dev),
 which every page gets. The only asset it takes from the site is the shared
 favicon (`/images/logos/favicon.png`).
 
-Like the sibling deliberation pages, it carries no analytics or tracking.
+Unlike the Geneva/ASPIRE pages, this one does carry the site's Fathom
+analytics snippet (`rabbit.radicalxchange.org/script.js`, restricted to
+`www.radicalxchange.org`, so it is inert on deploy previews and localhost).
 
 This file is excluded from the build via `.eleventyignore`.
