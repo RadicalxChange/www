@@ -1,19 +1,19 @@
 {
   "consensus": [
     {
-      "isUserSubmitted": true,
-      "minGroupAgreeRate": 0.9167,
-      "text": "Not a must but nice to have: impact measurement for their groups, data collection. This could also be beneficial for grant applications",
+      "isUserSubmitted": false,
+      "minGroupAgreeRate": 0.9048,
+      "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
       "votes": {
-        "agree": 87,
+        "agree": 91,
         "disagree": 0,
-        "pass": 13,
-        "total": 30
+        "pass": 9,
+        "total": 33
       }
     },
     {
       "isUserSubmitted": true,
-      "minGroupAgreeRate": 0.8889,
+      "minGroupAgreeRate": 0.875,
       "text": "A robust community enterprise means listening to people and adapting based on their needs.",
       "votes": {
         "agree": 88,
@@ -24,46 +24,119 @@
     },
     {
       "isUserSubmitted": true,
-      "minGroupAgreeRate": 0.8889,
-      "text": "Practically, what I need is a low-cost space to hold my events.",
+      "minGroupAgreeRate": 0.8,
+      "text": "Not a must but nice to have: impact measurement for their groups, data collection. This could also be beneficial for grant applications",
       "votes": {
         "agree": 86,
-        "disagree": 7,
-        "pass": 7,
-        "total": 14
-      }
-    },
-    {
-      "isUserSubmitted": false,
-      "minGroupAgreeRate": 0.8667,
-      "text": "There should be a \"community economy\" the way there is a creator economy, that is recognized and resourced",
-      "votes": {
-        "agree": 91,
         "disagree": 0,
-        "pass": 9,
-        "total": 33
+        "pass": 14,
+        "total": 29
       }
     },
     {
-      "isUserSubmitted": false,
-      "minGroupAgreeRate": 0.8333,
-      "text": "Venues that benefit from hosting communities should offer builders better terms (lower minimums, off-peak access, reduced fees) not just charge market rates.",
+      "isUserSubmitted": true,
+      "minGroupAgreeRate": 0.7692,
+      "text": "We need to help people outside the Community community understand the benefit of Community.",
       "votes": {
-        "agree": 85,
-        "disagree": 6,
-        "pass": 9,
-        "total": 33
+        "agree": 81,
+        "disagree": 0,
+        "pass": 19,
+        "total": 16
+      }
+    },
+    {
+      "isUserSubmitted": true,
+      "minGroupAgreeRate": 0.75,
+      "text": "It's difficult to find truly affordable NYC venues for private member events.",
+      "votes": {
+        "agree": 78,
+        "disagree": 5,
+        "pass": 17,
+        "total": 18
       }
     }
   ],
-  "groups": [],
-  "lastUpdated": "2026-05-15T23:06:26Z",
+  "groups": [
+    {
+      "id": 0,
+      "representativeStatements": [
+        {
+          "inGroupN": 12,
+          "inGroupRate": 0.5,
+          "isUserSubmitted": false,
+          "outGroupN": 21,
+          "outGroupRate": 0.0,
+          "score": 11.4904,
+          "text": "I spend more time on logistics (marketing, outreach, finding venues, making materials, follow-up) than on the actual community work I care about.",
+          "voteType": "disagree"
+        },
+        {
+          "inGroupN": 12,
+          "inGroupRate": 0.3333,
+          "isUserSubmitted": false,
+          "outGroupN": 19,
+          "outGroupRate": 0.0,
+          "score": 7.382,
+          "text": "I would do this work full-time if I could financially.",
+          "voteType": "disagree"
+        },
+        {
+          "inGroupN": 12,
+          "inGroupRate": 0.25,
+          "isUserSubmitted": false,
+          "outGroupN": 21,
+          "outGroupRate": 0.0,
+          "score": 6.3065,
+          "text": "NYC should create a fund that pays community builders directly for the time they put in, not just reimburses event costs",
+          "voteType": "disagree"
+        }
+      ],
+      "size": 14
+    },
+    {
+      "id": 1,
+      "representativeStatements": [
+        {
+          "inGroupN": 19,
+          "inGroupRate": 0.8947,
+          "isUserSubmitted": false,
+          "outGroupN": 12,
+          "outGroupRate": 0.0,
+          "score": 12.0,
+          "text": "The administrative side of community work (insurance, permits, legal, payments) is or would be a real barrier for me.",
+          "voteType": "agree"
+        },
+        {
+          "inGroupN": 21,
+          "inGroupRate": 0.9048,
+          "isUserSubmitted": false,
+          "outGroupN": 12,
+          "outGroupRate": 0.0833,
+          "score": 6.0869,
+          "text": "I spend more time on logistics (marketing, outreach, finding venues, making materials, follow-up) than on the actual community work I care about.",
+          "voteType": "agree"
+        },
+        {
+          "inGroupN": 21,
+          "inGroupRate": 0.8571,
+          "isUserSubmitted": false,
+          "outGroupN": 13,
+          "outGroupRate": 0.3077,
+          "score": 2.4724,
+          "text": "A peer network of other community builders would matter more to me than a one-off grant.",
+          "voteType": "agree"
+        }
+      ],
+      "size": 28
+    }
+  ],
+  "lastUpdated": "2026-10-02T23:34:34Z",
   "stats": {
     "commenters": 10,
-    "groups": 3,
+    "groups": 2,
     "participants": 51,
     "statements": 44,
-    "votersInConv": 46,
+    "votersInConv": 42,
     "votes": 1244
   },
   "topStatements": [
