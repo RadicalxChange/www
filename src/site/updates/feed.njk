@@ -1,0 +1,28 @@
+---
+permalink: /updates/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>RadicalxChange Updates</title>
+  <subtitle>{{ metadata.defaultDescription }}</subtitle>
+  {% set feedUrl %}{{ "/updates/feed.xml" | absoluteUrl(metadata.url) }}{% endset %}
+  <link href="{{ feedUrl }}" rel="self" type="application/atom+xml" />
+  <link href="{{ "/updates/" | absoluteUrl(metadata.url) }}" />
+  <updated>{{ collections.feed | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ feedUrl }}</id>
+  {%- for post in collections.feed %}
+  {% set absolutePostUrl %}{{ post.url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title or post.data.postHeader }}</title>
+    <link href="{{ absolutePostUrl }}" />
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <author>
+      <name>{{ post.data.postAuthor or "RxC Team" }}</name>
+    </author>
+    <category term="{{ "Announcement" if "/announcements/" in post.inputPath else "Blog Post" }}" />
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
