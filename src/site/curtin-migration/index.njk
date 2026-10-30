@@ -69,30 +69,24 @@ q{quotes:"“" "”"}
 /* ---------- hero ---------- */
 .hero{background:var(--fizz);color:var(--on-fizz);overflow:hidden}
 .hero :focus-visible{outline-color:#000}
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:26px 0;font-size:.95rem}
-.brand{font-weight:600}
-.brand span{font-weight:400}
-.nav{display:flex;gap:2rem;font-weight:500}
-.nav a{text-decoration:none}
-.nav a:hover{text-decoration:underline;text-underline-offset:.2em}
-.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:56px 0 100px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:88px 0 100px}
 .hero h1{font-size:clamp(3.4rem,7.6vw,7.4rem);line-height:.9;margin-bottom:34px}
 .hero .sub{font-size:1.4rem;line-height:1.45;max-width:30rem;margin-bottom:36px}
 .hero .sub b{font-weight:600;background:#000;color:var(--fizz);padding:0 .3em;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .actions{display:flex;gap:14px;flex-wrap:wrap}
-.cards{position:relative;height:640px}
-.card{position:absolute;background:#fff;color:#000;border-radius:18px;padding:20px 22px 18px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45)}
+.cards{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:26px 22px;align-items:start}
+.card{position:relative;background:#fff;color:#000;border-radius:18px;padding:20px 22px 18px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45)}
 .card .tag{font-size:.8rem;color:#555;margin-bottom:8px}
 .card q{display:block;font-weight:600;font-size:1.04rem;line-height:1.3;margin-bottom:14px}
 .agree-row{display:flex;align-items:center;gap:10px;font-size:.9rem}
 .agree-row b{font-size:1.5rem;line-height:1;font-weight:600;letter-spacing:-.02em}
 .mini{flex:1;height:8px;border-radius:99px;background:#e4e4e4;overflow:hidden}
 .mini i{display:block;height:100%;background:#000;border-radius:99px}
-.c1{top:0;left:0;width:262px;transform:rotate(-4deg)}
-.c2{top:44px;right:0;width:248px;transform:rotate(3.5deg)}
-.c3{top:262px;left:8px;width:262px;transform:rotate(-1.5deg)}
-.c4{top:300px;right:4px;width:248px;transform:rotate(4.5deg)}
-.sticker{position:absolute;left:150px;top:498px;width:132px;height:132px;border-radius:50%;background:#000;color:var(--fizz);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3}
+.c1{transform:rotate(-3.5deg)}
+.c2{transform:rotate(3deg);margin-top:44px}
+.c3{transform:rotate(-1.5deg)}
+.c4{transform:rotate(4deg);margin-top:30px}
+.sticker{position:relative;grid-column:1 / -1;justify-self:center;margin-top:4px;width:132px;height:132px;border-radius:50%;background:#000;color:var(--fizz);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3}
 .sticker b{display:block;font-family:var(--display);font-weight:400;font-size:3rem;line-height:.85;font-feature-settings:"lnum" 1}
 .sticker span{font-size:.78rem;font-weight:600;line-height:1.2}
 
@@ -305,7 +299,6 @@ footer{background:#000;color:#fff;padding:48px 0 56px}
 
 @media (max-width:900px){
   .wrap{padding:0 20px}
-  .nav{display:none}
   .hero-grid,.head,.groups-row,.pair,.no-card,.open-grid,.common,.foot,.glance-grid,.sub-head,.next-grid{grid-template-columns:1fr}
   .sub-head{margin:64px 0 20px}
   .how{grid-template-columns:1fr;gap:20px;padding:22px}
@@ -317,10 +310,9 @@ footer{background:#000;color:#fff;padding:48px 0 56px}
   .glance{padding:44px 0 0}
   .hero-grid{padding:28px 0 64px;gap:28px}
   .hero .sub{font-size:1.2rem}
-  .cards{height:auto;display:grid;gap:16px;padding:6px 4px 10px}
-  .card,.c1,.c2,.c3,.c4{position:relative;inset:auto;width:auto}
+  .cards{grid-template-columns:1fr;gap:16px;padding:6px 4px 10px}
+  .c2,.c4{margin-top:0}
   .c1{transform:rotate(-2deg)} .c2{transform:rotate(1.5deg)} .c3{transform:rotate(-1deg)} .c4{transform:rotate(2deg)}
-  .sticker{position:relative;left:auto;top:auto;justify-self:center;margin-top:6px}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:32px}
   .gtop .big{font-size:4.6rem}
@@ -388,10 +380,6 @@ footer{background:#000;color:#fff;padding:48px 0 56px}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="topbar">
-      <span class="brand">Curtin community conversation <span>on migration, October 2026</span></span>
-      <nav class="nav" aria-label="Sections"><a href="#groups">The groups</a><a href="#agree">Where they agree</a><a href="#open">Still open</a><a href="#priorities">Priorities</a><a href="#about">About these results</a></nav>
-    </div>
     <div class="hero-grid">
       <div>
         <h1>What would it take to trust our migration system?</h1>
