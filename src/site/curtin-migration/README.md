@@ -19,6 +19,12 @@ Suisse Intl, subset to Latin) and all chart data are embedded in the file, so
 it has no other dependencies. The only asset it takes from the site is the
 shared favicon (`/images/logos/favicon.png`).
 
+Its own link-preview image is `src/site/assets/curtin-migration-og.png`
+(1200×630, served at `/assets/curtin-migration-og.png` and referenced by
+the `og:image` and `twitter:image` tags). It was rendered from the page's
+own fonts and copy: the hero question, "266 people in Curtin answered",
+and three of the hero quotes. If the hero copy changes, regenerate it.
+
 Data sources: the Polis export of 30 October 2026
 (https://pol.is/report/r9fyrr8m6yfmfbwscfvp2) and the quadratic-vote results
 for 14 October 2026. Statements are shown verbatim. The opinion map is
