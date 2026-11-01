@@ -30,6 +30,13 @@ Data sources: the Polis export of 30 October 2026
 for 14 October 2026. Statements are shown verbatim. The opinion map is
 recomputed from the published vote matrix with the same PCA method Polis uses.
 
+The "Unlikely allies" section highlights the 52 affordability allies: people
+who backed both statement 33 (cost of living) and statement 29 (university
+housing). `DATA.allies` in the page script holds one character per grouped
+participant, in the same order as `DATA.people`: `b` backed both, `v` voted on
+both but did not back both, `-` did not vote on both. The bar figures and the
+numbers in the "Affordability allies" method note come from the same export.
+
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
 
