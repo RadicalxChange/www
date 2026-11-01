@@ -353,6 +353,15 @@ footer{background:#000;color:#fff;padding:48px 0 56px}
   .rest-list li{grid-template-columns:2.4rem 1fr}
   .rest-list .s{grid-column:2;white-space:normal}
 }
+/* ---------- hover a card to bring it forward and fade the rest (mouse and trackpad only) ---------- */
+@media (hover:hover) and (pointer:fine){
+  .pair,.pcard,.no-card{transition:opacity .2s ease}
+  #pairs:has(.pair:hover) .pair:not(:hover),
+  #priorities:has(.pcard:hover) .pcard:not(:hover),
+  #priorities:has(.pcard:hover) .no-card,
+  #priorities:has(.no-card:hover) .pcard{opacity:.25}
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:reduce){ .pair,.pcard,.no-card{transition:none} }
 @media (max-width:520px){ .steps{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ #map .pdot,.person,.gl{transition:none} .btn:hover,.gl:hover{transform:none} }
 
