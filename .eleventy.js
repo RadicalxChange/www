@@ -225,6 +225,17 @@ module.exports = function (config) {
     return { lead, list };
   });
 
+  // Newest site-authored posts for the Atom feed at /updates/feed.xml.
+  config.addCollection("feed", (collectionApi) => {
+    return []
+      .concat(
+        collectionApi.getFilteredByGlob("src/site/updates/announcements/*"),
+        collectionApi.getFilteredByGlob("src/site/updates/blog/*")
+      )
+      .sort((a, b) => b.date - a.date)
+      .slice(0, 30);
+  });
+
   config.addCollection("media", async (collectionApi) => {
     const all = await buildMediaAll(collectionApi);
     // Create filtered collections
