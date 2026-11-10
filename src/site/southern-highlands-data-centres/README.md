@@ -35,6 +35,26 @@ both (the same rule as the better-deal cards). The turnout figures sit in a
 smaller line under the buttons, and the second button jumps to "What this
 means for developers".
 
+## Layout
+
+- The type is set in rem, so the page's `.wrap` is too (`max-width:77.5rem`,
+  in place of the Curtin sheet's 1240px). A reader whose browser default
+  text size is 20px then gets a proportionally wider page. With the px cap,
+  that reader saw the hero headline break into five lines and the sticker
+  cover two of the quotes.
+- The hero headline is sized from its own column (`17.4cqi`, a container
+  query unit), so "Southern Highlands" always fits on one line, and from the
+  window height (`11.5vh`), so the headline, lede and buttons fit one screen
+  on a laptop. Two `nowrap` spans keep "Southern Highlands" and "accept, and
+  why?" whole. Screens under 45em tall get a smaller headline and lede.
+- The sticker sits beside the first quote card and covers no card. The card
+  stops short of it, and the column's top padding is worked out from the
+  sticker's height, so the sticker ends above the second card at any text
+  size.
+- Check any hero change at these sizes: 1728×966 with a 20px default text
+  size, 1440×790, 1366×650, 1024×700 and a 375px phone. Headless Chrome
+  takes `--blink-settings=defaultFontSize=20`.
+
 ## Assets
 
 - Photos: `src/site/assets/southern-highlands/forum-*.jpg`, web-sized copies
@@ -190,7 +210,8 @@ means for developers".
   risks", not "on whether to go ahead", because what separates them is
   harm, water, the rules and pace, not yes versus no.
 
-  "What this means for developers and governments" has a third paragraph:
+  "What this means for developers and governments" has one paragraph under
+  its heading:
   "Read quickly, these results sound like opposition: most people are in the
   more sceptical group, and about half of that group say 'not here'. Read
   closely, the other half are worried, but split on whether to say no. And
@@ -202,11 +223,13 @@ means for developers".
   Polis report shows the four outright-no statements at 52% to 77% of the
   sceptical group, so a reader can check.
 
-  The second paragraph quotes the draft model ("good for good developers",
-  "developers have struggled to get a clear picture of community needs").
-  Those lines come from the rationale column the project team wrote, so the
-  page credits "the draft model presented to residents at the forum", not
-  residents.
+  The section is short on purpose: about 360 words, and the checker caps it
+  at 380. Two earlier paragraphs were cut on 9 November 2026 as too much
+  text. One was a problem statement ("The industry now accepts that
+  communities need a real say…"). The other quoted the draft model ("good
+  for good developers", "developers have struggled to get a clear picture of
+  community needs"). Those quotes come from the rationale column the project
+  team wrote, so don't bring them back as residents' views.
 - The better-deal cards (A real say, Protections, Lasting value) are backed
   item by item, and a line under them says so: "Each item comes from the
   priority vote or from statements most people in both groups backed." The
@@ -231,9 +254,9 @@ means for developers".
   assessor"). The bullet says "pollution", not "emissions", to match the
   vote's wording. The community principles come from the draft model
   presented to residents at the forum; "a fair share" matches Jess's blog. The cards tag
-  six of the model's seven principles. The line under the cards gives the
-  seventh ("Respect diversity"): respect that some parts of the community
-  may remain opposed or sceptical.
+  six of the model's seven principles. The page notes ("The better
+  deal") give the seventh ("Respect diversity"): respect that some parts of
+  the community may remain opposed or sceptical.
 - Two lines elsewhere on the page follow from the stances. First, the caveat
   under the group cards now covers them: "these groups and the stances below
   describe who joined the conversation, not the whole Highlands". Second,

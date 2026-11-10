@@ -405,10 +405,18 @@ footer{background:#000;color:#fff;padding:48px 0 56px}
 .rxc-shell .btn:hover{transform:none}
 
 /* ---------- Southern Highlands additions ---------- */
+/* The type is set in rem, so the page width is too: it then grows with the reader's browser text size.
+   (The Curtin sheet caps the page at 1240px. With a 20px default text size, every column was squeezed.) */
+.wrap{max-width:77.5rem}
+/* hero: the headline is sized from its own column, so "Southern Highlands" always fits on one line,
+   and from the window height, so the opening text fits one screen on a laptop */
+.hero-grid > div:first-child{container-type:inline-size}
 .hero h1{font-size:clamp(3.4rem,7.2vw,7rem)}
-.hero .sub{max-width:31rem}
+.hero h1{font-size:clamp(2.6rem,min(17.4cqi,11.5vh),6.6rem);margin-bottom:26px;text-wrap:balance}
+.hero h1 .nw{white-space:nowrap}
+.hero .sub{max-width:none;margin-bottom:28px}
 /* who took part, in one small line under the buttons: the lede above it answers the question */
-.turnout{font-size:.95rem;line-height:1.5;max-width:31rem;margin-top:24px;opacity:.85}
+.turnout{font-size:.95rem;line-height:1.5;margin-top:22px;opacity:.85}
 .turnout b{font-weight:600}
 .turnout span{white-space:nowrap}
 /* the quote cards sit in a list of their own; their caption and the sticker follow it */
@@ -419,6 +427,23 @@ footer{background:#000;color:#fff;padding:48px 0 56px}
 .sticker{width:9.4rem;height:9.4rem}
 .sticker b{font-size:2.8rem}
 .sticker span{display:block;font-size:.7rem;line-height:1.2;margin-top:4px}
+@media (min-width:901px){
+  .hero-grid{padding:clamp(32px,6vh,80px) 0 clamp(48px,8vh,96px)}
+  /* The sticker sits beside the first card and covers no card at any text size. The card stops short of it,
+     and the column starts lower by the sticker's height less the first card's (10 + 22 + 18 + 20 - 14 = 56px
+     of padding and gap, 1.64rem of text), so the sticker's lower edge ends 14px above the second card. */
+  .cards-col{padding-top:calc(7.76rem - 56px)}
+  .sticker{top:0;right:-1.4rem}
+  .c1{width:calc(100% - 8.6rem)}
+}
+/* short laptop screens (1366 by 768 leaves about 650px): a smaller headline and lede keep the buttons in view.
+   The height is in em so it also catches a taller screen read at a larger browser text size. */
+@media (min-width:901px) and (max-height:45em){
+  .hero-grid{padding-top:28px}
+  .hero h1{font-size:clamp(2.6rem,min(17.4cqi,10vh),6.6rem);margin-bottom:18px}
+  .hero .sub{font-size:1.25rem;margin-bottom:22px}
+  .turnout{margin-top:16px}
+}
 /* the map hint names the gesture that works on the device in hand */
 .map-hint .h-fine{display:none}
 @media (hover:hover) and (pointer:fine){ .map-hint .h-fine{display:inline} .map-hint .h-touch{display:none} }
@@ -583,7 +608,7 @@ details.terms .rest-list .s{white-space:normal;text-align:right}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <h1>What would the Southern Highlands accept, and why?</h1>
+        <h1>What would the <span class="nw">Southern Highlands</span> <span class="nw">accept, and why?</span></h1>
         <p class="sub">A large data centre and a gas-fired power station are proposed for Moss Vale. Most residents who took part are sceptical, and they disagree sharply about the risks. But they back <b>the same terms</b> if a data centre goes ahead: clean power, recycled cooling water, the full plan up front, independent checks and a lasting share of the benefits.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what residents said</a><a class="btn line" href="#meaning">What this means for developers</a></div>
         <p class="turnout"><span>September and October 2026 ·</span> <span><b>157 people</b> ·</span> <span><b>4,823 votes</b> ·</span> <span><b>179 statements</b> ·</span> <span>more than <b>100</b> at the report-back forum</span></p>
@@ -761,8 +786,6 @@ details.terms .rest-list .s{white-space:normal;text-align:right}
       <p class="eyebrow">What this means for developers and governments</p>
       <h2 id="meaning-h" class="bargain-h">A better bargain starts with a community that can say clearly what it would accept, and why.</h2>
     </div>
-    <p class="core">The industry now accepts that communities need a real say. But there’s still no good way for communities and developers to reach agreement. Communities are rarely asked early, or given the information to work out what they’d accept, so what developers usually hear is opposition.</p>
-    <p class="core">The Southern Highlands pilot shows the first step. With independent expert information and a well-designed process, a community can say clearly what it would accept, and why. The draft model presented to residents at the forum says an organised, proactive community is “good for good developers”. It adds that when consultation is narrow, “developers have struggled to get a clear picture of community needs.”</p>
     <p class="core">Read quickly, these results sound like opposition: most people are in the more sceptical group, and about half of that group say “not here”. Read closely, the other half are worried, but split on whether to say no. And from the most open to the most opposed, residents back the same terms if a data centre does go ahead.</p>
     <h3 class="deal-h" id="deal">What a better deal looks like here</h3>
     <p class="deal-lead">For many residents, the first question is where: they don’t want a large data centre in the Sydney water basin, which covers most of the Highlands. If one does go ahead, here is what a better deal would include.</p>
@@ -771,7 +794,7 @@ details.terms .rest-list .s{white-space:normal;text-align:right}
       <div class="deal d2"><h3>Protections</h3><ul><li>Clean, genuinely new renewable power.</li><li>Cooling that recycles its own water instead of taking the town’s.</li><li>Limits on noise and pollution, set and checked independently for the life of the site.</li></ul><p class="pr">Community principles: Clean power · Smart water</p></div>
       <div class="deal d3"><h3>Lasting value</h3><ul><li>An ongoing share, paid into a community fund, with part set aside for future generations.</li><li>Long-term local jobs and training, not just construction work.</li><li>Waste heat put to local use. A share of the computing power is an idea still being explored.</li></ul><p class="pr">Community principles: Circular and local economy · Fair share</p></div>
     </div>
-    <p class="deal-src">Each item comes from the priority vote or from statements most people in both groups backed. The principles come from the draft model presented to residents at the forum. Its seventh principle is to respect that some parts of the community may remain opposed or sceptical.</p>
+    <p class="deal-src">Each item comes from the priority vote or from statements most people in both groups backed.</p>
     <h3 class="deal-h">What the process is designed to offer developers</h3>
     <div class="gains">
       <div class="gain"><h4>Certainty</h4><p>An early, clear answer on what the community will accept, and on what terms.</p></div>
@@ -814,7 +837,8 @@ details.terms .rest-list .s{white-space:normal;text-align:right}
         <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results.</p></div>
         <div class="arow"><h3>The priority vote</h3><p>38 ballots from session participants, each with 99 credits. We set aside one empty ballot. Net votes are votes for minus votes against. The matching statements from the conversation are close in meaning, not identical in wording.</p></div>
         <div class="arow"><h3>The quotes</h3><p>Quotes come from the nine small-group discussions on 23 and 24 September, transcribed automatically. We removed repeated words and fillers, used Australian spelling, and left out names.</p></div>
-        <div class="arow"><h3>The data</h3><p>From the Polis export of 9 November 2026, after the conversation closed, and the priority vote results. Statements appear as people wrote them, apart from three typos we corrected (in statements 37, 69 and 75). The better-deal summary draws on these results and on the draft model presented at the forum.</p></div>
+        <div class="arow"><h3>The data</h3><p>From the Polis export of 9 November 2026, after the conversation closed, and the priority vote results. Statements appear as people wrote them, apart from three typos we corrected (in statements 37, 69 and 75).</p></div>
+        <div class="arow"><h3>The better deal</h3><p>Each item on the better-deal cards comes from the priority vote or from statements most people in both groups backed. The community principles come from the draft model presented to residents at the forum. The cards show six of its seven principles. The seventh is to respect that some parts of the community may remain opposed or sceptical.</p></div>
       </div>
     </details>
     <div class="links"><a class="btn solid" href="https://pol.is/report/r4utekxcdbdadnswzmipc">Full Polis report</a><a class="btn line" href="https://pol.is/3ptindxrnf">The Polis conversation</a><a class="btn line" href="/assets/southern-highlands/priority-vote-ballots.csv" download>Priority vote ballots (CSV)</a></div>
