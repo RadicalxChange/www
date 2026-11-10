@@ -22,10 +22,18 @@ pairs scripts, with a short block of additions.
 
 It tells the story in the Curtin page's order: the two groups and who took
 part (the map: "mostly sceptical, but in different ways", a closer look
-inside the two groups as five stances along the line);
+inside the two groups as three stances along the line);
 where they agree on the terms anyway (uncommon ground, with every shared term
 folded underneath); the six conditions people want most; a short "what this
 means for developers and governments"; how it worked; and what happens next.
+
+The hero answers its own question. The lede says most residents who took part
+are sceptical and disagree sharply about the risks, but back the same terms if
+a data centre goes ahead, and names five of them. Each of the five rests on a
+statement most of both groups backed, a top-seven priority-vote condition, or
+both (the same rule as the better-deal cards). The turnout figures sit in a
+smaller line under the buttons, and the second button jumps to "What this
+means for developers".
 
 ## Assets
 
@@ -33,8 +41,9 @@ means for developers and governments"; how it worked; and what happens next.
   of the forum photos by John Swainston (the "JDS" files in the project's
   media folder).
 - Link-preview image: `src/site/assets/southern-highlands-data-centres-og.png`
-  (1200×630), rendered from the page's own fonts and copy. If the hero copy
-  changes, regenerate it.
+  (1200×630), rendered from the page's own fonts and copy. It shows the
+  headline, the head count and two of the hero quotes, so regenerate it if
+  any of those change.
 - Priority vote ballots: `src/site/assets/southern-highlands/priority-vote-ballots.csv`,
   the 38 counted ballots with voter names removed and the order scrambled.
   Never publish the raw QV export: it carries voter names.
@@ -54,7 +63,9 @@ means for developers and governments"; how it worked; and what happens next.
 - Groups are Polis's own: 104 people placed, Group 1 (13, "More open") and
   Group 2 (91, "More sceptical"), exactly 1 in 8 and 7 in 8. Group figures
   exclude the two accounts above. Where fewer than 20 people in a group voted,
-  the page shows how many.
+  the page shows how many: as "(n voted)" after the percentage, or, on the two
+  group cards, as a count in place of the percentage ("6 of 6 in Group 1
+  agree"), because "100%" overstates six votes.
 - The map has one job: to show who took part. It places all 104 grouped
   people, one dot each, along Polis's main divide, rebuilt from the vote
   matrix of the grouped people: PCA with missing votes set to the statement
@@ -64,61 +75,98 @@ means for developers and governments"; how it worked; and what happens next.
   no vertical scale. Dots glide into place when the map scrolls into view
   (reduced motion shows them in place).
 - The map card leads with the stances. The lead reads "Each dot is one
-  person, placed by how they voted. Moving right, people share more of the
-  concerns raised." The five stance names head the chart. The group-colour
+  person, placed by how they voted. People further to the right agreed with
+  more of the concerns about a data centre." (The concerns are the 17
+  statements Group 2 backed and Group 1 didn't.) The three stance names head
+  the chart. The group-colour
   legend, "Show me someone" and the hover hint sit under the chart, and the
   stance key follows. Every dot is drawn at full strength: the paler border
   shading was dropped in the editing pass, because the stances carry the
   story.
-- Dashed lines split the map into five stances, named in plain language so
+- Dashed lines split the map into three stances, named in plain language so
   the map says what each position means. They are a closer look inside the
   two Polis groups, not a rival count: the dots keep their group colours, the
-  first stance is Group 1 plus three Group 2 people, and the other four split
-  Group 2. The page calls them stances, never groups, and adds no tallies of
-  who is "open".
+  first stance is Group 1 plus three Group 2 people, and the other two split
+  the rest of Group 2 in half. The page calls them stances, never groups.
 
   | Stance | People | What it says |
   |---|---|---|
   | Open, if it's done well | 16 | Good design and the right conditions can avoid lasting harm; they want real local benefits in return |
-  | Unsure, want answers first | 9 | The planning rules aren't enough; they don't yet know enough about the water to judge |
-  | Worried, but open to terms | 35 | Expect harm to water and land; want approvals paused until the rules catch up; haven't ruled it out |
-  | Not here: protect the water | 33 | No large data centre in the Sydney water basin; many would talk about a smaller one |
-  | A firm no | 11 | Share almost every concern; no data centre here at all |
+  | Worried, not settled | 44 | Expect harm to the land; want approvals paused until the rules catch up; split on whether to say no to a data centre here |
+  | Not here | 44 | Don't want a data centre here; about half would still talk about a smaller one |
 
-  The key closes with "All five back the same terms if one does go ahead",
-  which hands over to the next section.
-- How the lines were drawn (also in the page notes, "The five stances"): each
+  The key closes with "All three back the same terms if a data centre does go
+  ahead", which hands over to the next section.
+
+  The key says what each stance thinks in plain words, and leaves the counts
+  to the page notes ("Behind each stance"). An earlier wording put the
+  evidence in the key ("about half who voted on one agreed, and many
+  passed"), and it read as jargon.
+- Plain language is a rule for the whole page, applied in a pass on
+  9 November 2026. Keep voting terms such as "passed" and "voted on" out of
+  the page's own sentences (they belong in the folded notes), prefer two
+  short sentences to one long one, use everyday words ("asking the
+  community", not "engagement"; "fund", not "resource"), and make sure a
+  reader can tell what every "one" or "it" points at. Residents' statements,
+  the ballot wording, the model's principle names and the lines from the
+  brief stay word for word.
+
+  An earlier draft had five stances. A review found that finer than the votes
+  allow: people in the two groups voted on a median of 33.5 of the 179
+  statements, so some claims rested on two or three voters, and "A firm no"
+  held only 9 of the 33 sceptical-group people who had agreed with an
+  outright no. Don't split the line further without checking how many voters
+  stand behind each claim.
+- How the lines were drawn (also in the page notes, "The three stances"): each
   sits in a gap between dots where agreement with one statement changes most.
-  The four statements are 1 (planning rules enough: 5 of 7 agreed left of the
-  line, 0 of 29 right), 22 (water worse: 1 of 12, then 27 of 30), 70 (not in
-  the Sydney water basin: 1 of 15, then 16 of 18) and 84 ("Say No.": 6 of 27,
-  then 8 of 8). Each split gives Fisher's exact p < 0.001, but the statements
+  The two statements are 1 (planning rules enough: 5 of 7 agreed left of the
+  line, 0 of 29 right) and 70 (not in the Sydney water basin: 1 of 15, then
+  16 of 18). Each split gives Fisher's exact p < 0.001, but the statements
   and cuts were chosen after looking at the data, so treat that as
   descriptive.
 - Every sentence in the key is checked against how that stretch voted (agree
-  out of everyone there who voted): for example, stance 3 needs most to agree
-  with 22, 13 and 43 and most not to agree with 70, 83 and 84. Agreement with
-  the 17 statements Group 2 backed and Group 1 didn't rises 15%, 44%, 66%, 82%,
-  95% from left to right, and in every stretch most people backed at least
-  three in four of the shared terms they voted on. If the wording changes,
-  re-check these claims rather than just re-running the numbers.
+  out of everyone there who voted). Each claim has a floor on how many voted
+  as well as a range for the share: at least three in four of five or more
+  voters for the 16-person first stance, and at least 60% of ten or more for
+  the other two. "About half would still talk about a smaller one" needs 40%
+  to 60% (statement 67: 9 of 17).
+
+  Four statements say no outright (83, 84, 98 and 129; statement 70 is about
+  where, so it is not one of them). Of the people who voted on at least one
+  of them: none of 10 in the first stance agreed with any; 10 of 18 in the
+  middle stance agreed with at least one, and pass was their most common
+  vote; 23 of 24 in "Not here" agreed with at least one. These counts are in
+  the page notes under "Behind each stance". "Split on whether to say no"
+  needs 40% to 60% of the middle stance to have agreed with at least one.
+
+  Agreement with the 17 statements Group 2 backed and Group 1 didn't rises
+  15%, 62%, 87% from left to right, and in every stretch most people backed
+  at least three in four of the shared terms they voted on (15 of 15, 32 of
+  39 and 37 of 42). If the wording changes, re-check these claims rather than
+  just re-running the numbers.
 - Dots within a dot's width of a dividing line are nudged a few pixels so none
   sits on it. On wide screens each stance's name sits over its stretch, with
   how many people are in it. Names are set in up to two lines (three if need
   be), stepping down from 14.5px to 12px before giving up. Narrower screens
-  number the stretches 1 to 5, and the key adds the numbers and counts.
+  number the stretches 1 to 3, and the key adds the numbers and counts.
   Pointing at a stance with a mouse, on the map or in the key, fades everyone
   else.
+- The hint under the map names the gesture that works on the device in hand:
+  "Hover over a dot" with a mouse, and "Tap the map or press 'Show me someone'" on
+  touch screens, where the dots are about 7px wide and a tap picks the
+  nearest person.
 - The hover card leads with the person's stance, then "Why they sit here":
   - how many of the 17 concerns they agreed with, out of those they voted on,
     with a small meter (this tracks position closely: correlation 0.81);
   - one of their votes that fits the stance. It says "Like most people here"
     only when most of that stance who voted on the statement voted the same
     way. Otherwise it quotes the most widely shared concern they rejected
-    (stance 1) or backed (stances 3 to 5). The fallback never quotes a "not
-    here" or "say no" statement (70, 83, 84) for stance 3, nor 84 for
-    stance 4, because those would contradict the stance. Stance 2 has no
-    fallback.
+    (stance 1) or backed (stances 2 and 3). The fallback never quotes a "not
+    here" or "say no" statement (70, 83, 84) for stance 2, because that
+    would contradict the stance. Statement 98 ("Tech bros should take their
+    data centres and bugger off.") counts as evidence but is never quoted on
+    a card. Six people have no vote that fits either rule, so their card
+    shows no quote.
 
   The two-group balance follows. Its quote shows only for people near the
   border (under 65% like their own group on the split statements), where it
@@ -135,7 +183,7 @@ means for developers and governments"; how it worked; and what happens next.
   4. their vote on it ("a" or "d");
   5. 1 if most of their stance voted the same way.
 
-  `#map-data` also carries `cuts` (the four dividing points) and `stances`
+  `#map-data` also carries `cuts` (the two dividing points) and `stances`
   (number and name).
 - Framing for developers without spin. The groups are Polis's and are
   reported as found. The groups heading is "Two groups, far apart on the
@@ -143,12 +191,22 @@ means for developers and governments"; how it worked; and what happens next.
   harm, water, the rules and pace, not yes versus no.
 
   "What this means for developers and governments" has a third paragraph:
-  "Read quickly, these results sound like opposition… Read closely, most of
-  that scepticism is about how and where, not whether." Of the 91 in the more
-  sceptical group, 11 are "A firm no"; the checker requires that to stay under
-  half. The page deliberately does not say "it just comes down to
-  conditions": the 33 in "Not here: protect the water" object to the
-  location, which terms alone can't fix on this site.
+  "Read quickly, these results sound like opposition: most people are in the
+  more sceptical group, and about half of that group say 'not here'. Read
+  closely, the other half are worried, but split on whether to say no. And
+  from the most open to the most opposed, residents back the same terms if a
+  data centre does go ahead." Of the 91 in the more sceptical group, 44 are "Not here" and 44
+  are "Worried, not settled"; the checker requires each to be 45% to 55%.
+  The page deliberately does not say "it just comes down to conditions", or
+  that the scepticism is "about how and where, not whether". The linked
+  Polis report shows the four outright-no statements at 52% to 77% of the
+  sceptical group, so a reader can check.
+
+  The second paragraph quotes the draft model ("good for good developers",
+  "developers have struggled to get a clear picture of community needs").
+  Those lines come from the rationale column the project team wrote, so the
+  page credits "the draft model presented to residents at the forum", not
+  residents.
 - The better-deal cards (A real say, Protections, Lasting value) are backed
   item by item, and a line under them says so: "Each item comes from the
   priority vote or from statements most people in both groups backed." The
@@ -172,7 +230,10 @@ means for developers and governments"; how it worked; and what happens next.
   the lifetime of their operation with an independent third party
   assessor"). The bullet says "pollution", not "emissions", to match the
   vote's wording. The community principles come from the draft model
-  presented at the forum; "a fair share" matches Jess's blog.
+  presented to residents at the forum; "a fair share" matches Jess's blog. The cards tag
+  six of the model's seven principles. The line under the cards gives the
+  seventh ("Respect diversity"): respect that some parts of the community
+  may remain opposed or sceptical.
 - Two lines elsewhere on the page follow from the stances. First, the caveat
   under the group cards now covers them: "these groups and the stances below
   describe who joined the conversation, not the whole Highlands". Second,
@@ -189,7 +250,10 @@ means for developers and governments"; how it worked; and what happens next.
   hover card says they sit near the border.
 - The shared terms, listed under the pairs, are the 28 statements that at
   least 70% of both groups agreed with (with at least 5 Group 1 and 20 Group 2
-  voters). Statements are shown as residents wrote them.
+  voters). Statements are shown as people wrote them, apart from three plain
+  typos corrected on the page and named in its notes: 37 ("could allow let",
+  one of the team's own starter statements), 69 ("imperitive") and 75
+  ("exisiting"). The Polis export and report keep the originals.
 - We tested for an unlikely-allies section (Curtin-style) and found nothing
   that holds up. People open to a smaller data centre (statement 67) don't
   share any other view more than chance would allow (best p = 0.22). Other
@@ -206,8 +270,9 @@ means for developers and governments"; how it worked; and what happens next.
 - Quotes come from the Session 2 discussion groups (nine breakouts, 23 and 24
   September), from automated transcripts, lightly tidied (repeated words and
   fillers removed, Australian spelling). The hero cards carry no date tags
-  (removed in the editing pass as noise). The page notes say where the quotes
-  come from, and no quote is attributed to a name.
+  (removed in the editing pass as noise). One caption under the stack says
+  who is speaking: "Residents, in the September discussion groups". The page
+  notes say where the quotes come from, and no quote is attributed to a name.
 - The hero sticker (96% "agreed any deal should still look fair in 20 years",
   statement 46) is deliberate. It is one of the three most widely backed
   statements (96% of 49, with 100% of Group 1 and 95% of Group 2). It frames
@@ -216,7 +281,7 @@ means for developers and governments"; how it worked; and what happens next.
   scores slightly higher but reads as being about money.
 - The "better deal" cards summarise these results under the partner
   two-pager's three headings, tagged with the community's principles from the
-  draft model presented at the forum. Principle 5 is "Fair share" as on the
+  draft model presented to residents at the forum. Principle 5 is "Fair share" as on the
   forum slides (the Strawperson document says "Shared value"). The model's
   dollar benchmark is deliberately left out.
 
