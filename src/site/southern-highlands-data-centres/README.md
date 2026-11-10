@@ -4,8 +4,9 @@ Standalone single-page microsite presenting the results of the Southern
 Highlands data centre pilot ("A Better Model for Data Centre Development"),
 run by RadicalxChange Foundation with Regen Labs, BWD Strategic and Highlands
 Homegrown Economy in the Southern Highlands of NSW (online sessions in the
-weeks of 14 and 21 September 2026, an open Polis conversation, and a
-report-back forum in Mittagong on 25 October 2026).
+weeks of 14 and 21 September 2026, an in-person session on 20 October, an
+open Polis conversation, and a report-back forum in Mittagong on 25 October
+2026).
 
 Like `/curtin-migration`, this page shares **nothing** with the rest of the
 site: it does not extend `layouts/_base.njk`, and carries its own `<style>`,
@@ -23,17 +24,83 @@ pairs scripts, with a short block of additions.
 It tells the story in the Curtin page's order: the two groups and who took
 part (the map: "mostly sceptical, but in different ways", a closer look
 inside the two groups as three stances along the line);
-where they agree on the terms anyway (uncommon ground, with every shared term
-folded underneath); the six conditions people want most; a short "what this
-means for developers and governments"; how it worked; and what happens next.
+where they agree on the terms anyway (the count of shared statements, then
+five uncommon-ground pairs, with all 28 statements in a fold); the conditions
+people want most (the whole priority vote as one ranked list); what the small
+groups said, in residents' own words; a short "what this means for developers
+and governments"; how it worked; and what happens next.
 
-The hero answers its own question. The lede says most residents who took part
-are sceptical and disagree sharply about the risks, but back the same terms if
-a data centre goes ahead, and names five of them. Each of the five rests on a
-statement most of both groups backed, a top-seven priority-vote condition, or
-both (the same rule as the better-deal cards). The turnout figures sit in a
-smaller line under the buttons, and the second button jumps to "What this
-means for developers".
+The headline is "What happened when the Southern Highlands set the terms?",
+and the hero answers it. The lede says most residents who took part are
+sceptical and disagree sharply about the risks, but back the same terms if a
+data centre goes ahead, and names six of them. Five rest on a statement most
+of both groups backed, a top-seven priority-vote condition, or both (the same
+rule as the better-deal cards). The sixth, "protection for nature", rests on
+statements 15, 66 and 77, which at least 70% of both groups backed. The turnout
+figures sit in a smaller line under the buttons, and the second button jumps
+to "What this means for developers".
+
+## Changes after Jess Scully's review (10 November 2026)
+
+Jess, who ran the project, reviewed the preview. What changed, and why:
+
+- The headline and the developer section's heading no longer say "accept",
+  which read as the community giving in. They were "What would the Southern
+  Highlands accept, and why?" and "A better bargain starts with a community
+  that can say clearly what it would accept, and why." (a line the original
+  brief had fixed word for word). They are now "What happened when the
+  Southern Highlands set the terms?" and "A better bargain starts with a
+  community that can name its priorities, terms and shared vision." Two
+  smaller lines in the developer section followed on Jack's go-ahead: "where
+  the community stands, and on what terms" (Certainty) and "what residents
+  want, and why" (local officials). One resident's quote in the hero still
+  says "accept"; those are their own words.
+- The next-step line names governments as well as developers: "Bringing
+  community terms like these to the table with governments and developers is
+  the next step in giving community voice real power." It still must not
+  claim the pilot did this.
+- The asks for developers and for governments use Jess's wording ("social
+  licence" in Australian spelling).
+- The count of shared statements is no longer tucked into a fold's label.
+  See the "shared statements" entry under "Data and counting rules".
+- Nature is more visible, without changing any figure: a sixth term in the
+  hero lede, a "Nature" pair (statements 13 and 15), the lead card of the
+  quotes section, and a fourth item on the Protections card (an independent
+  environmental assessment before approval, from statement 15).
+  A first draft went further. A line above the vote ranking said that
+  protecting plants and animals "came eighth in the vote, but 35 of 38
+  people backed it", and the checker had a special rule to admit that
+  condition as a source. Jack cut the line as cherry-picking, and the
+  special rule went with it. Don't pick out one item's best figure to lift a
+  theme someone wants lifted: nature rests on the same rule as every other
+  term, and sits in the ranking where the votes put it.
+- The whole priority vote is shown as a ranked chart, and the section's
+  eyebrow names it as quadratic voting. The button to the closed Polis
+  conversation became "Priority vote results", an in-page link to the chart.
+- "How this worked" counts four online sessions, one in-person session and
+  ten small groups (nine online, one in person).
+- A new section, "In their own words", carries quotes from the small groups.
+  See the quotes entries under "Data and counting rules".
+
+## Consolidation (10 November 2026)
+
+The first pass at Jess's points added blocks beside the sections they
+belonged to, and the page grew from about 29 phone screens to 38. Jack found
+it "quite long and a lot of info that may not be as legible and accessible
+to most everyday people", and asked for the related parts to be merged. What
+was merged:
+
+- The shared statements and the pairs. A "28 statements" block with a list of
+  seven had been added under the pairs. Now the count opens the section, the
+  pairs are its examples, and one fold lists all 28.
+- The priority vote. A 13-row ranking had been added under the six cards, so
+  the top six appeared twice. Now one ranked list is the whole display.
+- On phones, each "How this worked" step is one compact row (the number
+  beside its text) instead of a tall card.
+
+The quotes section stays on its own: it is not a second view of anything
+else on the page. When something new has to go on this page, put it inside
+the section it belongs to, and measure the phone length before and after.
 
 ## Layout
 
@@ -42,18 +109,35 @@ means for developers".
   text size is 20px then gets a proportionally wider page. With the px cap,
   that reader saw the hero headline break into five lines and the sticker
   cover two of the quotes.
-- The hero headline is sized from its own column (`17.4cqi`, a container
-  query unit), so "Southern Highlands" always fits on one line, and from the
-  window height (`11.5vh`), so the headline, lede and buttons fit one screen
-  on a laptop. Two `nowrap` spans keep "Southern Highlands" and "accept, and
-  why?" whole. Screens under 45em tall get a smaller headline and lede.
+- The hero headline is set in three lines that never break ("What happened
+  when the / Southern Highlands / set the terms?"): each is a block-level
+  `nowrap` span. It is sized from its own column (`13.7cqi`, a container
+  query unit), so the longest line fills 96% of the column at any width, and
+  from the window height (`11.5vh`), so the headline, lede and buttons fit
+  one screen on a laptop. The longest line is 7.033em wide in the display
+  face. If the headline changes, measure the new longest line and set the
+  cqi value to 96 divided by its width in em. There is no minimum size,
+  because a floor would push the longest line out of a narrow phone column.
+- Screens under 45em tall get a smaller headline and lede, and screens under
+  36em tall a smaller lede still. The heights are in em, so they also catch
+  a taller window read at a larger text size.
+- The hero buttons have slightly less side padding than the Curtin sheet's,
+  so the two sit side by side in a 1440px window at a 20px text size.
 - The sticker sits beside the first quote card and covers no card. The card
   stops short of it, and the column's top padding is worked out from the
   sticker's height, so the sticker ends above the second card at any text
   size.
 - Check any hero change at these sizes: 1728×966 with a 20px default text
-  size, 1440×790, 1366×650, 1024×700 and a 375px phone. Headless Chrome
-  takes `--blink-settings=defaultFontSize=20`.
+  size, 1440×790 (at 16px and at 20px), 1536×730, 1366×650, 1024×700 and a
+  375px phone. Headless Chrome takes `--blink-settings=defaultFontSize=20`,
+  but its window will not go narrower than about 500px, so check the phone
+  in a browser's device emulation.
+- The page is long on a phone: about 32 screens of 812px (about 29 before
+  the 10 November additions, and 38 before those were consolidated). The
+  hero's second button is the short cut to the developer section, which
+  starts about 21 screens down.
+- On phones (560px and under) each "How this worked" step is a compact row:
+  the number in a 4rem column beside the heading and text.
 
 ## Assets
 
@@ -223,7 +307,7 @@ means for developers".
   Polis report shows the four outright-no statements at 52% to 77% of the
   sceptical group, so a reader can check.
 
-  The section is short on purpose: about 360 words, and the checker caps it
+  The section is short on purpose: about 370 words, and the checker caps it
   at 380. Two earlier paragraphs were cut on 9 November 2026 as too much
   text. One was a problem statement ("The industry now accepts that
   communities need a real say…"). The other quoted the draft model ("good
@@ -243,6 +327,9 @@ means for developers".
   - recycled cooling: the "water" condition and 23;
   - noise and pollution limits checked independently: the "checks" condition
     and 39;
+  - an independent environmental assessment before approval: statements 15
+    and 77 (the priority-vote condition on protecting plants and animals
+    came eighth, outside the top seven, so it is not used as a source);
   - an ongoing share in a fund with an endowment: the "ongoing" condition,
     49 and 47;
   - long-term jobs: the "jobs" condition and 12;
@@ -271,9 +358,18 @@ means for developers".
   decided votes in Group 1 and 5 in Group 2). Eight people voted like their
   own group on fewer than 65% of those. The map no longer shades them; their
   hover card says they sit near the border.
-- The shared terms, listed under the pairs, are the 28 statements that at
-  least 70% of both groups agreed with (with at least 5 Group 1 and 20 Group 2
-  voters). Statements are shown as people wrote them, apart from three plain
+- The shared statements are the 28 that at least 70% of both groups agreed
+  with. Two groups can only be compared on a statement with at least 5
+  Group 1 and 20 Group 2 voters, and 81 of the 179 statements had that many,
+  so 28 is about one in three of them (the page notes say so). The count
+  opens the pairs section in large type ("28 statements won at least 70%
+  support in both groups. Here are five of them, each beside a big question
+  that splits the groups."), the five pairs are its examples, and one fold
+  after the pairs lists all 28, strongest first. The count is also in the
+  second "at a glance" card. Every pair's agreed statement must be one of
+  the 28; the checker tests that. Shares are worked out in whole numbers, so
+  a share exactly on the line counts (statement 81: 14 of 20 in Group 2).
+  Statements are shown as people wrote them, apart from three plain
   typos corrected on the page and named in its notes: 37 ("could allow let",
   one of the team's own starter statements), 69 ("imperitive") and 75
   ("exisiting"). The Polis export and report keep the originals.
@@ -281,21 +377,61 @@ means for developers".
   that holds up. People open to a smaller data centre (statement 67) don't
   share any other view more than chance would allow (best p = 0.22). Other
   cross-cutting statements have too few overlapping yes/no votes to test.
-- Uncommon-ground pairs (RxC's choice): statements 1 and 56, 22 and 23, 27
-  and 39, 71 and 80. Each "split" differs by at least 40 points between the
-  groups; each "agree" has at least 70% in both.
+- Uncommon-ground pairs (RxC's choice): statements 1 and 56, 22 and 23, 13
+  and 15 ("Nature", added 10 November 2026), 27 and 39, 71 and 80. Each
+  "split" differs by at least 40 points between the groups; each "agree" has
+  at least 70% in both. Statement 13 is also on the Group 2 card.
 - Priority vote (quadratic voting): 39 ballots exported, one empty ballot set
   aside, leaving 38. Net votes are votes for minus votes against; ranks tie
   where nets tie (=10th).
-- The six priority cards each show the closest statement from the
-  conversation (20, 23, 33, 39, 12 and 4); a majority of both groups backed
-  all six.
-- Quotes come from the Session 2 discussion groups (nine breakouts, 23 and 24
-  September), from automated transcripts, lightly tidied (repeated words and
-  fillers removed, Australian spelling). The hero cards carry no date tags
-  (removed in the editing pass as noise). One caption under the stack says
-  who is speaking: "Residents, in the September discussion groups". The page
-  notes say where the quotes come from, and no quote is attributed to a name.
+- The section ("The conditions people want most") is one ranked list of all
+  13 conditions: one bar per condition, scaled to the top net vote, with the
+  net votes and how many of the 38 ballots backed or opposed it. Two lines
+  are checked. The finding is "Clean power came first. Water recycling, an
+  ongoing share and independent checks followed." (ranks 1 to 4, none
+  tied). The caption ends "Most voters backed every condition" (the fewest
+  backers is 27 of 38).
+
+  Until 10 November 2026 the section led with six cards for the top six,
+  each with a grid of 38 dots and its closest statement from the
+  conversation (20, 23, 33, 39, 12 and 4). They went when the full ranking
+  came in: the top six then appeared twice, and the cut at six was
+  arbitrary (sixth place had +80 net votes, seventh +79).
+- Quotes come from the nine online small groups (the Session 2 breakouts of
+  23 and 24 September), from automated transcripts, lightly tidied: repeated
+  words and fillers removed, Australian spelling, and one place name the
+  transcript got wrong (the Wingecarribee River). The hero cards carry no
+  date tags (removed in the editing pass as noise). One caption under the
+  stack says who is speaking: "Residents, in the September discussion
+  groups". The page notes say where the quotes come from. No quote carries a
+  name, and none may: the project team asked for that.
+- The quotes section ("In their own words") follows the project team's
+  document "Small Group Deliberations 1 to 10: By Why, What, How, Who". It
+  sorts quotes from the ten small groups into themes and counts how many
+  groups raised each. The ten are the nine online breakouts and one
+  in-person session on 20 October. The page shows every theme raised in at
+  least half of the groups, most common first, each with a ten-dot count and
+  two quotes (three for the first):
+
+  | Theme on the page | Groups |
+  |---|---|
+  | Protect air, water, quiet and nature | 8 |
+  | A community-controlled fund, independent of council | 7 |
+  | Clear information and a real voice | 7 |
+  | The real decisions sit with the state, not council | 6 |
+  | Renewable energy as a baseline | 5 |
+  | Get on the front foot and set our own terms | 5 |
+  | Strong local skills, but stretched volunteers | 5 |
+
+  A line under the cards names the four themes raised in four groups. The
+  counts are the team's reading of the transcripts; nothing in this repo can
+  re-derive them. The document's name for the fourth theme is "Council can't
+  (or won't) deliver; real decisions sit with the state".
+
+  Every quote is from an online group. The document asks that the in-person
+  session's quotes be checked with participants before publication, so none
+  is used. To add or change a quote, keep the speaker's words in order and
+  cut only fillers and repeats.
 - The hero sticker (96% "agreed any deal should still look fair in 20 years",
   statement 46) is deliberate. It is one of the three most widely backed
   statements (96% of 49, with 100% of Group 1 and 95% of Group 2). It frames
