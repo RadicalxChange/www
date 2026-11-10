@@ -425,8 +425,8 @@ the section it belongs to, and measure the phone length before and after.
 
   A line under the cards names the four themes raised in four groups. The
   counts are the team's reading of the transcripts; nothing in this repo can
-  re-derive them. The document's name for the fourth theme is "Council can't
-  (or won't) deliver; real decisions sit with the state".
+  re-derive them. The titles on the page are plain-language versions of the
+  document's theme names.
 
   Every quote is from an online group. The document asks that the in-person
   session's quotes be checked with participants before publication, so none
