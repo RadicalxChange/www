@@ -2,8 +2,9 @@
 
 Standalone single-page microsite presenting the results of the Southern
 Highlands data centre pilot ("A Better Model for Data Centre Development"),
-run by RadicalxChange Foundation with Regen Labs, BWD Strategic and Highlands
-Homegrown Economy in the Southern Highlands of NSW (online sessions in the
+a community-led initiative of Highlands Homegrown Economy (convened with
+WinZero), Regen Labs, RadicalxChange Foundation and BWD Strategic in the
+Southern Highlands of NSW (online sessions in the
 weeks of 14 and 21 September 2026, an in-person session on 20 October, an
 open Polis conversation, and a report-back forum in Mittagong on 25 October
 2026).
@@ -101,6 +102,55 @@ was merged:
 The quotes section stays on its own: it is not a second view of anything
 else on the page. When something new has to go on this page, put it inside
 the section it belongs to, and measure the phone length before and after.
+
+## Wording from the media release (12 November 2026)
+
+The project's media release of 26 October 2026 ("Australia first: Southern
+Highlands community sets new terms for data centre development") is the
+public record of the forum. Where the page and the release differed on a
+fact, the page now follows the release:
+
+- More than 160 residents at the forum (the page had "more than 100").
+- The proposal is "near Moss Vale", not "for Moss Vale".
+- The four representatives are named: Carol Berry MP (Federal Member for
+  Whitlam), Wendy Tuckerman MP (State Member for Goulburn), Judy Hannan MP
+  (State Member for Wollondilly) and Wingecarribee Shire Mayor Erin Foley.
+  "They gave in-principle support" is the release's wording. "Agreed to
+  arrange meetings with the relevant state and federal ministers" came from
+  the project lead, not the release.
+- The funding line is the release's, word for word: "The project is
+  independently funded by six philanthropic organisations." The page names
+  no funder, and the checker fails if any other funding claim appears.
+- The partners appear in the release's order and roles: Highlands Homegrown
+  Economy first, as the community-owned initiative convened with WinZero;
+  Regen Labs for the research; RadicalxChange for the deliberation; BWD
+  Strategic for the independent assessment. The footer, and the two entries
+  on `/projects`, list them in that order too.
+- The in-person session of 20 October is described in the release's terms
+  (a community centre, the challenges and joys of regional life, how
+  benefits should be governed), and "Who took part" in the notes adds First
+  Nations community members and people with lived experience of
+  disadvantage.
+- "What happens next" adds the release's call for community to be the fourth
+  pillar of the national data centre standards, alongside energy, water and
+  land. National Cabinet backed mandatory national standards for large data
+  centres on 26 August 2026; reports differ on whether its statement named
+  water and land, so re-check before leaning on the detail.
+
+Not taken from the release, on purpose: "Australia first" (the release
+itself says "believed to be"); "counter-offer", which implies a negotiation
+the pilot was not part of; and "a representative group of 38" (the page
+says only that participants were invited to reflect a range of views).
+
+The release's Polis totals (158 participants, 4,901 votes, 167 statements)
+differ from the page's (157, 4,823, 179). The page's come from the final
+export under the counting rule below, and the export does not reproduce the
+release's (it holds 159 voters, 4,896 votes and 186 statements before
+anything is set aside). The page notes say the two differ.
+
+Still to settle with the project lead: the name of the fifth principle (see
+"Fair share" below), how the blueprint is described, and the opening
+paragraph.
 
 ## Layout
 
@@ -441,8 +491,10 @@ the section it belongs to, and measure the phone length before and after.
 - The "better deal" cards summarise these results under the partner
   two-pager's three headings, tagged with the community's principles from the
   draft model presented to residents at the forum. Principle 5 is "Fair share" as on the
-  forum slides (the Strawperson document says "Shared value"). The model's
-  dollar benchmark is deliberately left out.
+  forum slides, which show in two of the page's photos. The Strawperson
+  document and the 26 October media release call it "Shared value". The page
+  keeps the forum's name until the published blueprint settles it. The
+  model's dollar benchmark is deliberately left out.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
