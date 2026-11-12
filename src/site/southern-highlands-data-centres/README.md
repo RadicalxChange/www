@@ -142,11 +142,9 @@ itself says "believed to be"); "counter-offer", which implies a negotiation
 the pilot was not part of; and "a representative group of 38" (the page
 says only that participants were invited to reflect a range of views).
 
-The release's Polis totals (158 participants, 4,901 votes, 167 statements)
-differ from the page's (157, 4,823, 179). The page's come from the final
-export under the counting rule below, and the export does not reproduce the
-release's (it holds 159 voters, 4,896 votes and 186 statements before
-anything is set aside). The page notes say the two differ.
+The release's Polis totals differ slightly from the page's. The page keeps
+its own, which come from the final export under the counting rule below, and
+does not mention the difference.
 
 Still to settle with the project lead: the name of the fifth principle (see
 "Fair share" below), how the blueprint is described, and the opening
