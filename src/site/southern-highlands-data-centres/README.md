@@ -22,24 +22,84 @@ and the site-wide posthtml transform. It reuses the Curtin page's stylesheet,
 typefaces (Messer Condensed and Suisse Intl, subset to Latin), opinion-map and
 pairs scripts, with a short block of additions.
 
-It tells the story in the Curtin page's order: the two groups and who took
-part (the map: "mostly sceptical, but in different ways", a closer look
-inside the two groups as three stances along the line);
-where they agree on the terms anyway (the count of shared statements, then
-five uncommon-ground pairs, with all 28 statements in a fold); the conditions
-people want most (the whole priority vote as one ranked list); what the small
-groups said, in residents' own words; a short "what this means for developers
-and governments"; how it worked; and what happens next.
+It tells the story in this order: the community's seven principles, as
+residents presented them at the forum; the two groups and who took part (the
+map: "mostly sceptical, but in different ways", a closer look inside the two
+groups as three stances along the line); where they agree on the terms anyway
+(the count of shared statements, then five uncommon-ground pairs, with all 28
+statements in a fold); the conditions people want most (the whole priority
+vote as one ranked list); what the small groups said, in residents' own
+words; how it worked; and what happens next.
 
 The headline is "What happened when the Southern Highlands set the terms?",
-and the hero answers it. The lede says most residents who took part are
-sceptical and disagree sharply about the risks, but back the same terms if a
-data centre goes ahead, and names six of them. Five rest on a statement most
-of both groups backed, a top-seven priority-vote condition, or both (the same
-rule as the better-deal cards). The sixth, "protection for nature", rests on
-statements 15, 66 and 77, which at least 70% of both groups backed. The turnout
+and the hero answers it. The lede, trimmed from a partner's draft: "After
+years of fighting proposals it never asked for, most recently a gas-powered
+data centre near Moss Vale, the Southern Highlands got on the front foot.
+Most residents who took part are sceptical of a data centre here. But
+together they set out the terms one would have to meet." It names no terms:
+the principles section just below gives them, in the community's own words
+(Jack's call, 16 November 2026). Until then six terms followed, each backed by
+a statement most of both groups agreed with or a top-seven priority-vote
+condition; if a list ever returns, source every item the same way. The first
+sentence is the partners' framing, not a finding. The turnout
 figures sit in a smaller line under the buttons, and the second button jumps
-to "What this means for developers".
+to "What happens next".
+
+## Partners' review (16 November 2026)
+
+Two partners reviewed the preview, both reading it "through the eyes of the
+Southern Highlands community": Reece Proudfoot (Regen Labs and Highlands
+Homegrown Economy) marked it up, and Gaye White (WinZero) drafted a rebuild.
+Both found the developer-facing parts read like a sales pitch. What changed:
+
+- The developer section is gone: its "what this means for developers and
+  governments" eyebrow, the "Read quickly, these results sound like
+  opposition…" paragraph, the four cards on what the process offers
+  developers (certainty, time, cost, durability), the line for local
+  officials, and the developers' card under "Bring this process to your
+  community". The hero's second button now goes to "What happens next".
+  Jess's next-step line still names developers alongside governments.
+- The community's seven principles now follow the summary cards, in the
+  wording the project published on 26 October 2026, under the partner
+  two-pager's three headings, with the seventh ("Respect diversity") shown in
+  full. The section's heading is Jess's line with "model" for "bargain"
+  (Reece queried "bargain"; "a better model" is the project's own name):
+  "A better model starts with a community that can name its priorities,
+  terms and shared vision." The "first question is where" line moved there
+  too. The principles replace the better-deal cards, so their wording is the
+  community's, not a summary of the data.
+- The groups are named, not numbered: "More concerned" (91; Gaye's wording,
+  in place of "More sceptical") and "More open" (13). The larger group comes
+  first wherever the two appear together: the summary bar, the group cards,
+  both legends, the pairs and the folded list. On the map the axis still runs
+  from more open (left) to more concerned (right).
+- The pairs are titled by what both groups want (Gaye's titles, lightly
+  edited): "Show the full plan up front", "Protect the town water supply",
+  "Assess environmental impacts before approval", "Set noise limits
+  independently", "Strengthen the host community".
+- A visible line says how session participants were invited: "from across
+  the Highlands to reflect a range of views and backgrounds". It avoids
+  "representative", which 38 volunteers can't support.
+- The independence line no longer names developers: "The process is
+  independent: whoever funds it, no funder controls the questions or the
+  outcome. Residents may reach a conditional yes on better terms or a
+  well-reasoned no." The funding line drops the number ("independently funded
+  by philanthropic organisations"). Highlands Homegrown Economy is
+  "community-led", and Regen Labs also led "the local engagement".
+- The hero quote "I would be prepared to accept some poor impacts if there
+  was a greater good." went as divisive. Its replacement is "Get the community
+  involved in the very early stages rather than near the end." Jack turned
+  down "Here are the conditions, are you interested? We do it on our own
+  terms." as too antagonistic, so it also left the quotes section.
+- The notes add that one person may have taken part in more than one
+  activity, so the numbers can overlap.
+
+Not taken from Gaye's rebuild: its new look (this page keeps the shared
+microsite design), its paraphrases of residents' statements and the ballot
+wording (both stay word for word), its headline, and its shortened priority
+list. Two lines the original brief had fixed are gone with these changes:
+the independence line in its first form, and "Each community works toward
+the right outcome, with terms that make sense for its place."
 
 ## Changes after Jess Scully's review (10 November 2026)
 
@@ -65,7 +125,7 @@ Jess, who ran the project, reviewed the preview. What changed, and why:
 - The count of shared statements is no longer tucked into a fold's label.
   See the "shared statements" entry under "Data and counting rules".
 - Nature is more visible, without changing any figure: a sixth term in the
-  hero lede, a "Nature" pair (statements 13 and 15), the lead card of the
+  hero lede (since removed with the rest of that list), a "Nature" pair (statements 13 and 15), the lead card of the
   quotes section, and a fourth item on the Protections card (an independent
   environmental assessment before approval, from statement 15).
   A first draft went further. A line above the vote ranking said that
@@ -118,12 +178,14 @@ fact, the page now follows the release:
   "They gave in-principle support" is the release's wording. "Agreed to
   arrange meetings with the relevant state and federal ministers" came from
   the project lead, not the release.
-- The funding line is the release's, word for word: "The project is
-  independently funded by six philanthropic organisations." The page names
-  no funder, and the checker fails if any other funding claim appears.
+- The funding line followed the release ("independently funded by six
+  philanthropic organisations") until the partners' review, which dropped
+  the number. The page names no funder, and the checker fails if any other
+  funding claim appears.
 - The partners appear in the release's order and roles: Highlands Homegrown
-  Economy first, as the community-owned initiative convened with WinZero;
-  Regen Labs for the research; RadicalxChange for the deliberation; BWD
+  Economy first, as the community-led initiative convened with WinZero;
+  Regen Labs for the research and the local engagement; RadicalxChange for
+  the deliberation; BWD
   Strategic for the independent assessment. The footer, and the two entries
   on `/projects`, list them in that order too.
 - The in-person session of 20 October is described in the release's terms
@@ -180,10 +242,9 @@ paragraph.
   375px phone. Headless Chrome takes `--blink-settings=defaultFontSize=20`,
   but its window will not go narrower than about 500px, so check the phone
   in a browser's device emulation.
-- The page is long on a phone: about 32 screens of 812px (about 29 before
+- The page is long on a phone: about 31 screens of 812px (about 29 before
   the 10 November additions, and 38 before those were consolidated). The
-  hero's second button is the short cut to the developer section, which
-  starts about 21 screens down.
+  hero's second button jumps to "What happens next", about 27 screens down.
 - On phones (560px and under) each "How this worked" step is a compact row:
   the number in a 4rem column beside the heading and text.
 
@@ -212,12 +273,14 @@ paragraph.
   reproduces exactly.
 - Percentages are agrees out of everyone who voted on the statement (agree,
   disagree or pass), over all 157 people, grouped or not.
-- Groups are Polis's own: 104 people placed, Group 1 (13, "More open") and
-  Group 2 (91, "More sceptical"), exactly 1 in 8 and 7 in 8. Group figures
-  exclude the two accounts above. Where fewer than 20 people in a group voted,
-  the page shows how many: as "(n voted)" after the percentage, or, on the two
-  group cards, as a count in place of the percentage ("6 of 6 in Group 1
-  agree"), because "100%" overstates six votes.
+- Groups are Polis's own: 104 people placed, "More concerned" (91, Polis
+  group 1) and "More open" (13, Polis group 0), exactly 7 in 8 and 1 in 8.
+  The page names them rather than numbering them, and puts the larger group
+  first. Group figures exclude the two accounts above. Where fewer than 20
+  people in a group voted, the page shows how many: as "(n voted)" after the
+  percentage, or, on the two group cards, as a count in place of the
+  percentage ("6 of 6 in this group agree"), because "100%" overstates six
+  votes.
 - The map has one job: to show who took part. It places all 104 grouped
   people, one dot each, along Polis's main divide, rebuilt from the vote
   matrix of the grouped people: PCA with missing votes set to the statement
@@ -229,7 +292,7 @@ paragraph.
 - The map card leads with the stances. The lead reads "Each dot is one
   person, placed by how they voted. People further to the right agreed with
   more of the concerns about a data centre." (The concerns are the 17
-  statements Group 2 backed and Group 1 didn't.) The three stance names head
+  statements the more concerned group backed and the more open group didn't.) The three stance names head
   the chart. The group-colour
   legend, "Show me someone" and the hover hint sit under the chart, and the
   stance key follows. Every dot is drawn at full strength: the paler border
@@ -238,8 +301,8 @@ paragraph.
 - Dashed lines split the map into three stances, named in plain language so
   the map says what each position means. They are a closer look inside the
   two Polis groups, not a rival count: the dots keep their group colours, the
-  first stance is Group 1 plus three Group 2 people, and the other two split
-  the rest of Group 2 in half. The page calls them stances, never groups.
+  first stance is the more open group plus three of the more concerned, and
+  the other two split the rest of the more concerned group in half. The page calls them stances, never groups.
 
   | Stance | People | What it says |
   |---|---|---|
@@ -291,7 +354,7 @@ paragraph.
   the page notes under "Behind each stance". "Split on whether to say no"
   needs 40% to 60% of the middle stance to have agreed with at least one.
 
-  Agreement with the 17 statements Group 2 backed and Group 1 didn't rises
+  Agreement with the 17 statements the more concerned group backed and the more open group didn't rises
   15%, 62%, 87% from left to right, and in every stretch most people backed
   at least three in four of the shared terms they voted on (15 of 15, 32 of
   39 and 37 of 42). If the wording changes, re-check these claims rather than
@@ -337,65 +400,26 @@ paragraph.
 
   `#map-data` also carries `cuts` (the two dividing points) and `stances`
   (number and name).
-- Framing for developers without spin. The groups are Polis's and are
-  reported as found. The groups heading is "Two groups, far apart on the
-  risks", not "on whether to go ahead", because what separates them is
-  harm, water, the rules and pace, not yes versus no.
+- Framing without spin. The groups are Polis's and are reported as found.
+  The groups heading is "Two groups, far apart on the risks", not "on
+  whether to go ahead", because what separates them is harm, water, the
+  rules and pace, not yes versus no. The page deliberately does not say "it
+  just comes down to conditions", or that the scepticism is "about how and
+  where, not whether". Of the 91 in the more concerned group, 44 are "Not
+  here" and 44 are "Worried, not settled"; the checker requires each to be
+  45% to 55%. The linked Polis report shows the four outright-no statements
+  at 52% to 77% of that group, so a reader can check.
 
-  "What this means for developers and governments" has one paragraph under
-  its heading:
-  "Read quickly, these results sound like opposition: most people are in the
-  more sceptical group, and about half of that group say 'not here'. Read
-  closely, the other half are worried, but split on whether to say no. And
-  from the most open to the most opposed, residents back the same terms if a
-  data centre does go ahead." Of the 91 in the more sceptical group, 44 are "Not here" and 44
-  are "Worried, not settled"; the checker requires each to be 45% to 55%.
-  The page deliberately does not say "it just comes down to conditions", or
-  that the scepticism is "about how and where, not whether". The linked
-  Polis report shows the four outright-no statements at 52% to 77% of the
-  sceptical group, so a reader can check.
-
-  The section is short on purpose: about 370 words, and the checker caps it
-  at 380. Two earlier paragraphs were cut on 9 November 2026 as too much
-  text. One was a problem statement ("The industry now accepts that
-  communities need a real say…"). The other quoted the draft model ("good
-  for good developers", "developers have struggled to get a clear picture of
-  community needs"). Those quotes come from the rationale column the project
-  team wrote, so don't bring them back as residents' views.
-- The better-deal cards (A real say, Protections, Lasting value) are backed
-  item by item, and a line under them says so: "Each item comes from the
-  priority vote or from statements most people in both groups backed." The
-  checker maps each item to its sources and requires either a top-seven
-  priority-vote condition backed by most ballots, or a statement most of both
-  groups backed:
-  - engagement before an application: statements 72 and 30;
-  - the full plan: 56;
-  - an independent community-led body: 10 and the "ongoing" condition;
-  - clean power: the "clean" condition and 20;
-  - recycled cooling: the "water" condition and 23;
-  - noise and pollution limits checked independently: the "checks" condition
-    and 39;
-  - an independent environmental assessment before approval: statements 15
-    and 77 (the priority-vote condition on protecting plants and animals
-    came eighth, outside the top seven, so it is not used as a source);
-  - an ongoing share in a fund with an endowment: the "ongoing" condition,
-    49 and 47;
-  - long-term jobs: the "jobs" condition and 12;
-  - waste heat and shared computing power: the "heat" and "compute"
-    conditions.
-
-  "For the life of the site" also echoes the discussion groups ("ongoing for
-  the lifetime of their operation with an independent third party
-  assessor"). The bullet says "pollution", not "emissions", to match the
-  vote's wording. The community principles come from the draft model
-  presented to residents at the forum; "a fair share" matches Jess's blog. The cards tag
-  six of the model's seven principles. The page notes ("The better
-  deal") give the seventh ("Respect diversity"): respect that some parts of
-  the community may remain opposed or sceptical.
+  Until 16 November 2026 a section headed "What this means for developers
+  and governments" spelled this out for developers, with better-deal cards
+  backed item by item from the votes. Partners read it as a sales pitch, and
+  it went (see "Partners' review" above). If a developer-facing section ever
+  returns, don't credit residents with the project team's own words ("good
+  for good developers" came from the draft model's rationale column).
 - Two lines elsewhere on the page follow from the stances. First, the caveat
   under the group cards now covers them: "these groups and the stances below
   describe who joined the conversation, not the whole Highlands". Second,
-  "What a better deal looks like here" opens with "For many residents, the
+  the principles section's lead-in says "For many residents, the
   first question is where: they don't want a large data centre in the Sydney
   water basin, which covers most of the Highlands". About half of those who
   voted on statement 70 agreed (17 of 33). The "most of the Highlands" clause
@@ -403,12 +427,12 @@ paragraph.
   catchment.
 - The 22 "statements that split the groups" are those where each group's net
   vote points the opposite way and the two differ by at least 0.5 (at least 3
-  decided votes in Group 1 and 5 in Group 2). Eight people voted like their
+  decided votes in the more open group and 5 in the more concerned group). Eight people voted like their
   own group on fewer than 65% of those. The map no longer shades them; their
   hover card says they sit near the border.
 - The shared statements are the 28 that at least 70% of both groups agreed
   with. Two groups can only be compared on a statement with at least 5
-  Group 1 and 20 Group 2 voters, and 81 of the 179 statements had that many,
+  voters in the more open group and 20 in the more concerned group, and 81 of the 179 statements had that many,
   so 28 is about one in three of them (the page notes say so). The count
   opens the pairs section in large type ("28 statements won at least 70%
   support in both groups. Here are five of them, each beside a big question
@@ -416,7 +440,7 @@ paragraph.
   after the pairs lists all 28, strongest first. The count is also in the
   second "at a glance" card. Every pair's agreed statement must be one of
   the 28; the checker tests that. Shares are worked out in whole numbers, so
-  a share exactly on the line counts (statement 81: 14 of 20 in Group 2).
+  a share exactly on the line counts (statement 81: 14 of 20 in the more concerned group).
   Statements are shown as people wrote them, apart from three plain
   typos corrected on the page and named in its notes: 37 ("could allow let",
   one of the team's own starter statements), 69 ("imperitive") and 75
@@ -428,7 +452,7 @@ paragraph.
 - Uncommon-ground pairs (RxC's choice): statements 1 and 56, 22 and 23, 13
   and 15 ("Nature", added 10 November 2026), 27 and 39, 71 and 80. Each
   "split" differs by at least 40 points between the groups; each "agree" has
-  at least 70% in both. Statement 13 is also on the Group 2 card.
+  at least 70% in both. Statement 13 is also on the more concerned group's card.
 - Priority vote (quadratic voting): 39 ballots exported, one empty ballot set
   aside, leaving 38. Net votes are votes for minus votes against; ranks tie
   where nets tie (=10th).
@@ -452,7 +476,9 @@ paragraph.
   date tags (removed in the editing pass as noise). One caption under the
   stack says who is speaking: "Residents, in the September discussion
   groups". The page notes say where the quotes come from. No quote carries a
-  name, and none may: the project team asked for that.
+  name, and none may: the project team asked for that. Hero quotes should be
+  constructive, not divisive or antagonistic; the checker matches each
+  against the transcript.
 - The quotes section ("In their own words") follows the project team's
   document "Small Group Deliberations 1 to 10: By Why, What, How, Who". It
   sorts quotes from the ten small groups into themes and counts how many
@@ -482,19 +508,21 @@ paragraph.
   cut only fillers and repeats.
 - The hero sticker (96% "agreed any deal should still look fair in 20 years",
   statement 46) is deliberate. It is one of the three most widely backed
-  statements (96% of 49, with 100% of Group 1 and 95% of Group 2). It frames
+  statements (96% of 49, with 100% of the more open group and 95% of the more concerned group). It frames
   the page's argument in residents' own terms: a deal judged by long-term
   fairness, not a yes or no. Statement 49 (community investment fund, 98%)
   scores slightly higher but reads as being about money.
-- The "better deal" cards summarise these results under the partner
-  two-pager's three headings, tagged with the community's principles from the
-  draft model presented to residents at the forum. Principle 5 is "Fair share" as on the
-  forum slides, which show in two of the page's photos. The Strawperson
-  document and the 26 October media release call it "Shared value". The page
-  keeps the forum's name until the published blueprint settles it. The
-  model's dollar benchmark is deliberately left out.
+- The seven principles appear word for word as the project published them
+  on 26 October 2026, under the partner two-pager's three headings. The
+  checker holds the exact wording. Principle 5 is named "Fair share" as on
+  the forum slides, which show in two of the page's photos; the Strawperson
+  document and the published text call it "Shared value". The page keeps the
+  forum's name until the published blueprint settles it. The model's dollar
+  benchmark is deliberately left out.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
+(The page was first generated from a template by scripts kept outside this
+repo. Since 16 November 2026 it is edited directly.)
 
 This file is excluded from the build via `.eleventyignore`.
