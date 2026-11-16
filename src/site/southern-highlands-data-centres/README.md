@@ -47,10 +47,9 @@ to "What happens next".
 
 ## Partners' review (16 November 2026)
 
-Two partners reviewed the preview, both reading it "through the eyes of the
-Southern Highlands community": Reece Proudfoot (Regen Labs and Highlands
-Homegrown Economy) marked it up, and Gaye White (WinZero) drafted a rebuild.
-Both found the developer-facing parts read like a sales pitch. What changed:
+Two project partners reviewed the preview from the community's point of
+view: one marked it up, and one drafted a rebuild. Both asked for the
+developer-facing parts to go. What changed:
 
 - The developer section is gone: its "what this means for developers and
   governments" eyebrow, the "Read quickly, these results sound like
@@ -63,17 +62,17 @@ Both found the developer-facing parts read like a sales pitch. What changed:
   wording the project published on 26 October 2026, under the partner
   two-pager's three headings, with the seventh ("Respect diversity") shown in
   full. The section's heading is Jess's line with "model" for "bargain"
-  (Reece queried "bargain"; "a better model" is the project's own name):
+  (a partner queried "bargain"; "a better model" is the project's own name):
   "A better model starts with a community that can name its priorities,
   terms and shared vision." The "first question is where" line moved there
   too. The principles replace the better-deal cards, so their wording is the
   community's, not a summary of the data.
-- The groups are named, not numbered: "More concerned" (91; Gaye's wording,
+- The groups are named, not numbered: "More concerned" (91; a partner's wording,
   in place of "More sceptical") and "More open" (13). The larger group comes
   first wherever the two appear together: the summary bar, the group cards,
   both legends, the pairs and the folded list. On the map the axis still runs
   from more open (left) to more concerned (right).
-- The pairs are titled by what both groups want (Gaye's titles, lightly
+- The pairs are titled by what both groups want (a partner's titles, lightly
   edited): "Show the full plan up front", "Protect the town water supply",
   "Assess environmental impacts before approval", "Set noise limits
   independently", "Strengthen the host community".
@@ -94,7 +93,7 @@ Both found the developer-facing parts read like a sales pitch. What changed:
 - The notes add that one person may have taken part in more than one
   activity, so the numbers can overlap.
 
-Not taken from Gaye's rebuild: its new look (this page keeps the shared
+Not taken from the drafted rebuild: its new look (this page keeps the shared
 microsite design), its paraphrases of residents' statements and the ballot
 wording (both stay word for word), its headline, and its shortened priority
 list. Two lines the original brief had fixed are gone with these changes:
@@ -412,7 +411,7 @@ paragraph.
 
   Until 16 November 2026 a section headed "What this means for developers
   and governments" spelled this out for developers, with better-deal cards
-  backed item by item from the votes. Partners read it as a sales pitch, and
+  backed item by item from the votes. Partners asked for it to go, and
   it went (see "Partners' review" above). If a developer-facing section ever
   returns, don't credit residents with the project team's own words ("good
   for good developers" came from the draft model's rationale column).
