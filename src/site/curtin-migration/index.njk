@@ -260,9 +260,6 @@ details.all summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2r
 }
 
 /* ---------- priorities ---------- */
-.key{display:flex;gap:22px;font-size:.95rem;margin:0 0 26px;flex-wrap:wrap}
-.key span{display:inline-flex;align-items:center;gap:8px}
-.key i{width:13px;height:13px;border-radius:50%;display:inline-block}
 .prio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .pcard{background:var(--card);border-radius:24px;padding:26px 26px 24px;display:flex;flex-direction:column;border:2px solid var(--ink)}
 @supports (grid-template-rows:subgrid){.pcard{display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:0}.pcard .echo{align-self:start}}
@@ -270,27 +267,30 @@ details.all summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2r
 .pcard .tt{margin-bottom:22px;flex:1}
 .pcard p.t{font-weight:600;font-size:1.16rem;line-height:1.3}
 .pcard p.x{font-size:.9rem;color:var(--muted);margin-top:8px}
-.waffle{display:grid;grid-template-columns:repeat(15,1fr);gap:4px;margin-bottom:12px}
-.waffle i{aspect-ratio:1;border-radius:50%;background:var(--track)}
-.waffle i.y{background:var(--fizz);box-shadow:inset 0 0 0 1.5px rgba(1,34,83,.6)}
-.waffle i.n{background:var(--ink)}
+/* each change leads with its net votes, which set the order; one bar on a shared scale (the top change is full width) */
+.tally{margin:0 0 12px}
+.tally .big{display:flex;align-items:baseline;gap:.45rem;margin:0 0 12px;font-family:var(--display);font-weight:700;font-size:3rem;line-height:1;color:var(--ink);font-feature-settings:"lnum" 1}
+.tally .big span{font-family:var(--text);font-size:.95rem;font-weight:600;color:var(--muted)}
+.tbar{height:10px;border-radius:5px;background:var(--track);overflow:hidden}
+.tbar i{display:block;height:100%;border-radius:5px;background:var(--fizz)}
 .pstats{font-size:.95rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .pstats b{font-weight:600}
+.pcard .pstats{color:var(--muted);font-size:.92rem}
 .no-card{margin-top:28px;background:var(--navy);color:#fff;border-radius:28px;padding:34px 38px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
 .no-card h3{font-size:3rem;line-height:.95;margin:0 0 14px;color:var(--fizz)}
 .no-card p.t{font-weight:600;font-size:1.35rem;line-height:1.3;margin-bottom:14px}
 .no-card p.s{color:#C8D3E2;font-size:1rem}
-.no-card .waffle{max-width:420px}
-.no-card .waffle i{background:#2B4470}
-.no-card .waffle i.y{background:var(--fizz);box-shadow:none}
-.no-card .waffle i.n{background:#fff}
+.no-card .tally .big{color:#fff}
+.no-card .tally .big span{color:#d3e2e8}
 details.rest{margin-top:28px;border-top:2px solid var(--ink);padding-top:18px}
 details.rest summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2rem 0}
 .rest-list{list-style:none;margin:16px 0 0;padding:0}
 .rest-list li{display:grid;grid-template-columns:3rem 1fr auto;gap:16px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line)}
 .rest-list .r{font-family:var(--display);font-weight:600;font-size:2rem;line-height:1;font-feature-settings:"lnum" 1}
 .rest-list .t{font-weight:600}
-.rest-list .s{font-size:.92rem;color:var(--muted);white-space:nowrap}
+.rest-list .s{font-size:.92rem;color:var(--muted);white-space:nowrap;display:flex;align-items:baseline;gap:.6rem}
+.rest-list .rnet{font-family:var(--display);font-size:1.5rem;font-weight:700;color:var(--ink);font-feature-settings:"lnum" 1}
+.rest-list .rs{font-size:.9rem}
 
 /* ---------- at a glance ---------- */
 .glance{padding:64px 0 0}
@@ -611,14 +611,13 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
         <div class="cost"><div class="sq s4"><i></i><i></i><i></i><i></i></div><p><b>2 votes</b><br>4 credits</p></div>
         <div class="cost"><div class="sq s9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p><b>3 votes</b><br>9 credits</p></div>
       </div>
-      <p class="cap">On 14 October, 73 people used quadratic voting to spread a budget of credits across 13 possible changes, for or against. Each extra vote on the same idea costs more, so the totals show what people care about most.</p>
+      <p class="cap">At a workshop on 14 October, 73 people used quadratic voting to spread a budget of credits across 13 possible changes, for or against. Each extra vote on the same idea costs more, so the totals show what people care about most.</p>
     </div>
-    <p class="finding">Five of the top six echo ideas that most people in both groups backed in the conversation.</p>
-    <div class="key" aria-hidden="true"><span><i style="background:var(--fizz);box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.6)"></i>Backed it</span><span><i style="background:var(--ink)"></i>Opposed it</span><span><i style="background:var(--track)"></i>Neither</span></div>
+    <p class="finding">Five of the top six match ideas most people in both groups agreed with in the conversation.</p>
     <div class="prio-grid" id="prio"></div>
     <div class="no-card">
       <div><h3>And one clear no</h3><p class="t">Prioritise migrants in high-paying jobs, using salary rather than shortage lists to decide who qualifies.</p><p class="s">44 people opposed it and 13 backed it. Most of the opposition was mild, with one or two votes each.</p></div>
-      <div><div class="waffle" id="nowaffle" role="img" aria-label="13 of 73 backed it, 44 opposed it"></div><div class="pstats" style="color:#fff"><span><b>13</b> backed, <b>44</b> opposed</span><span>Net <b>−75</b> votes</span></div></div>
+      <div><div class="tally"><p class="big">−75<span>net votes</span></p></div></div>
     </div>
     <details class="rest">
       <summary>See the other six changes</summary>
@@ -976,14 +975,14 @@ const QV = [
   { t: 'Replace the permanent parent visa with a long-stay family visitor visa, letting parents and grandparents spend extended periods with family here.', y: 47, n: 14, net: 74 },
   { t: 'Publish a target to reduce the share of the population on temporary visas.', y: 43, n: 8, net: 71 }
 ];
-function waffle(box, y, n, total = 73) { for (let i = 0; i < total; i++) { const e = document.createElement('i'); if (i < y) e.className = 'y'; else if (i >= total - n) e.className = 'n'; box.appendChild(e); } }
+const VOTERS = 73;
+const TOPNET = QV[0].net;  // the top change's bar is full width; the others compare with it
 const pg = document.getElementById('prio'), rest = document.getElementById('rest');
 QV.forEach((q, i) => {
   if (i < 6) {
     const c = document.createElement('article'); c.className = 'pcard';
-    c.innerHTML = `<span class="rank" aria-hidden="true">${i + 1}</span><div class="tt"><p class="t"></p>${q.x ? '<p class="x"></p>' : ''}</div><div class="waffle" role="img" aria-label="${q.y} of 73 backed it, ${q.n} opposed it"></div><div class="pstats"><span><b>${q.y}</b> of 73 backed it</span><span>Net <b>+${q.net}</b> votes</span></div>`;
+    c.innerHTML = `<span class="rank" aria-hidden="true">${i + 1}</span><div class="tt"><p class="t"></p>${q.x ? '<p class="x"></p>' : ''}</div><div class="tally"><p class="big">+${q.net}<span>net votes</span></p><div class="tbar" aria-hidden="true"><i style="width:${(q.net / TOPNET * 100).toFixed(1)}%"></i></div></div><div class="pstats"><span>${q.y} of ${VOTERS} backed it, ${q.n} opposed</span></div>`;
     c.querySelector('.t').textContent = q.t; if (q.x) c.querySelector('.x').textContent = q.x;
-    waffle(c.querySelector('.waffle'), q.y, q.n);
     if (q.e) {
       const ec = document.createElement('div'); ec.className = 'echo';
       ec.innerHTML = `<p class="el">In the conversation, statement ${q.e[0]}</p><q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${q.e[2]}%</b>${q.e[4] < 20 ? `<span class="nn">(${q.e[4]} voted)</span>` : ''}</span><span><i class="dot g2"></i>Group 2 <b>${q.e[3]}%</b>${q.e[5] < 20 ? `<span class="nn">(${q.e[5]} voted)</span>` : ''}</span></div>${q.en ? '<p class="el" style="margin:6px 0 0;font-weight:400;color:var(--muted)"></p>' : ''}`;
@@ -994,11 +993,10 @@ QV.forEach((q, i) => {
     pg.appendChild(c);
   } else {
     const li = document.createElement('li');
-    li.innerHTML = `<span class="r">${i + 1}</span><span class="t"></span><span class="s"><b>${q.y}</b> of 73 backed it, net +${q.net}</span>`;
+    li.innerHTML = `<span class="r">${i + 1}</span><span class="t"></span><span class="s"><b class="rnet">+${q.net}</b><span class="rs">${q.y} of ${VOTERS} backed it</span></span>`;
     li.querySelector('.t').textContent = q.t; rest.appendChild(li);
   }
 });
-waffle(document.getElementById('nowaffle'), 13, 44);
 </script>
 <div class="rxc-shell bottom" role="contentinfo">
   <div class="wrap">
