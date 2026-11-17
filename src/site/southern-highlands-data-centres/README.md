@@ -38,15 +38,16 @@ deal). The lede, trimmed from a partner's draft: "After years of fighting
 proposals it never asked for, most recently a gas-powered data centre near
 Moss Vale, the Southern Highlands got on the front foot. Most residents who
 took part are sceptical of a data centre here, and many don't want one at
-all. But together they set out the terms one would have to meet." "Many don't
+all. But together they set out the terms any proposal would have to meet
+before they would consider it." "Many don't
 want one at all" rests on the four outright-no statements: 35 of the 54
 people who voted on at least one agreed with at least one. It names no terms:
 the principles section just below gives them, in the community's own words
 (Jack's call, 16 November 2026). Until then six terms followed, each backed by
 a statement most of both groups agreed with or a top-seven priority-vote
 condition; if a list ever returns, source every item the same way. The first
-sentence is the partners' framing, not a finding. The turnout
-figures sit in a smaller line under the buttons, and the second button jumps
+sentence is the partners' framing, not a finding. One participation
+figure sits in a smaller line under the buttons, and the second button jumps
 to "What happens next".
 
 ## Partners' review (16 November 2026)
@@ -255,6 +256,33 @@ read as consent, or as the language of a deal:
   page and `/projects` now describe a community-led pilot, and the home page
   status is current.
 
+## Clearer terms, fewer figures (17 November 2026)
+
+A reread after the changes above found the hero's last line unfinished, and
+the principles' lead-in at odds with the line on consent. Three sections also
+left half their width empty on a wide screen.
+
+- The lede now ends: "But together they set out the terms any proposal would
+  have to meet before they would consider it." It says what meeting the terms
+  gets a proposal: residents' consideration. Saying it would win their
+  support would overpromise, and would contradict the line that the work is
+  not evidence of support or consent.
+- The principles' lead-in no longer says "If one does go ahead, these are
+  their terms", which read as conditional consent. It now says: "Any proposal
+  would also have to meet these principles, and meeting them would not
+  guarantee a yes." The partner's page says the same: "A community may still
+  conclude that a proposal should not proceed."
+- The hero shows one participation figure: "September and October 2026 ·
+  157 people took part", as on the link-preview image. The vote count moved
+  to the notes ("That leaves 157 people and 4,823 votes"). The statement
+  count was already there, and the forum's 160+ is a "How this worked" step.
+- Layout: the principles heading sits beside its lead-in, and the seventh
+  principle beside the note on consent. "Who took part" is now the left
+  column of the independence box, under its bold line. In "What happens
+  next", the sticker, the asks and the buttons fill the right-hand column
+  beside the text. Before, the sticker sat alone in that column and the asks
+  ran below.
+
 ## Layout
 
 - The type is set in rem, so the page's `.wrap` is too (`max-width:77.5rem`,
@@ -286,7 +314,14 @@ read as consent, or as the language of a deal:
   375px phone. Headless Chrome takes `--blink-settings=defaultFontSize=20`,
   but its window will not go narrower than about 500px, so check the phone
   in a browser's device emulation.
-- The page is long on a phone: about 31 screens of 812px (about 29 before
+- Wide sections use their full width. The principles heading sits beside
+  its lead-in (bottom-aligned above 1100px, top-aligned below), the seventh
+  principle shares a row with the note, the independence box has two columns
+  under its bold line, and "What happens next" puts the asks beside the text.
+  Each stacks to one column at 900px and under. After a wording change, check
+  these at 1728×966 with 20px text and at 1024px, for a column left half
+  empty.
+- The page is long on a phone: about 32 screens of 812px (about 29 before
   the 10 November additions, and 38 before those were consolidated). The
   hero's second button jumps to "What happens next", about 27 screens down.
 - On phones (560px and under) each "How this worked" step is a compact row:

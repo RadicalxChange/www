@@ -283,7 +283,7 @@ details.rest summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2
 .echo q{display:block;font-size:.95rem;line-height:1.38;margin-bottom:4px}
 .echo .vals{font-size:.9rem;margin-top:6px}
 .next{background:var(--fizz);color:#000;padding:110px 0;position:relative;overflow:hidden}
-.next-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.next-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:start}
 .next h2{font-size:clamp(3.4rem,7vw,6.6rem);line-height:.9;margin-bottom:26px}
 .next p{font-size:1.35rem;line-height:1.45;max-width:32rem;margin-bottom:34px}
 .next .sticker2{justify-self:center;width:240px;height:240px;border-radius:50%;background:#000;color:var(--fizz);display:grid;place-items:center;text-align:center;transform:rotate(-10deg)}
@@ -582,10 +582,16 @@ details.terms{margin-top:36px}
 .prin dt{font-weight:600;font-size:1.04rem;line-height:1.3;margin-top:20px}
 .prin dt:first-child{margin-top:0}
 .prin dd{margin:5px 0 0;font-size:1rem;line-height:1.45}
-.prin-seventh{margin:22px 0 0;padding:18px 26px;border:2px solid var(--ink);border-radius:24px;font-size:1.04rem;line-height:1.45;max-width:none}
+.prin-seventh{margin:0;padding:22px 26px;border:2px solid var(--ink);border-radius:24px;font-size:1.04rem;line-height:1.45;max-width:none}
 .prin-seventh b{font-weight:600}
-.prin-note{margin:18px 0 0;font-size:1rem;line-height:1.5;max-width:46rem;color:var(--muted)}
-.recruit{margin:0 0 30px;font-size:1.1rem;line-height:1.5;max-width:46rem}
+.prin-note{grid-column:span 2;margin:0;font-size:1rem;line-height:1.5;max-width:none;color:var(--muted);text-wrap:pretty}
+.prin-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0 56px;align-items:end;margin-bottom:36px}
+.prin-top .eyebrow{grid-column:1/-1}
+.prin-top .head{margin-bottom:0}
+.prin-top .bargain-h{max-width:none!important}
+.prin-top .deal-lead{margin:0;max-width:40rem}
+.prin-foot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:center;margin-top:22px}
+.recruit{margin:0}
 .recruit b{font-weight:600}
 .deal{border-radius:24px;padding:26px 26px 22px;display:flex;flex-direction:column;gap:14px;background:var(--card);border:2px solid var(--ink)}
 .deal.d2{background:#000;color:#fff;border-color:#000}
@@ -596,9 +602,10 @@ details.terms{margin-top:36px}
 .steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .step{padding:24px 22px}
 .step .fig{font-size:3.6rem}
-.indep{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start;margin:0 0 44px;padding:28px 32px;border-radius:24px;background:var(--fizz);color:#000}
-.indep .big{font-weight:600;font-size:1.22rem;line-height:1.45}
+.indep{margin:0 0 44px;padding:30px 34px 32px;border-radius:24px;background:var(--fizz);color:#000}
+.indep .big{font-weight:600;font-size:1.36rem;line-height:1.38;max-width:62rem;margin:0 0 22px;text-wrap:balance}
 .indep p{font-size:1rem;line-height:1.5}
+.indep-more{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:12px 44px}
 .indep-more p + p{margin-top:12px}
 /* what happens next */
 .next{padding:110px 0}
@@ -608,8 +615,9 @@ details.terms{margin-top:36px}
 .next .np b{font-weight:600}
 .next .sticker2{width:250px;height:250px;padding:24px}
 .next .sticker2 b{font-size:2.5rem;line-height:.95}
-.asks-h{font-family:var(--display);font-size:clamp(2.2rem,3.6vw,3.2rem);line-height:1;margin:72px 0 22px}
-.asks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 30px}
+.next-side .sticker2{align-self:center}
+.asks-h{font-family:var(--display);font-size:clamp(2.2rem,3.6vw,3.2rem);line-height:1;margin:34px 0 18px}
+.asks{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin:0 0 26px}
 .ask{background:#fff;color:#000;border-radius:22px;padding:22px 24px;border:2px solid #000}
 .ask b{display:block;font-weight:600;font-size:1.08rem;margin-bottom:8px}
 .ask p{font-size:1rem;line-height:1.45;margin:0;max-width:none}
@@ -618,10 +626,13 @@ details.terms{margin-top:36px}
 .next .reps-cap{font-size:.95rem;line-height:1.45;margin:14px 0 0;max-width:52rem}
 #open-h{max-width:none}
 .next :focus-visible{outline-color:#000}
-@media (max-width:1100px){ .steps{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:1100px){ .steps{grid-template-columns:repeat(3,minmax(0,1fr))} .prin-top{align-items:start} }
 @media (max-width:900px){
   .card,.c1,.c2,.c3,.c4{width:auto}
-  .photos,.photos.three,.deal-grid,.indep,.asks,.reps{grid-template-columns:1fr}
+  .photos,.photos.three,.deal-grid,.indep-more,.prin-top,.prin-foot,.asks,.reps{grid-template-columns:1fr}
+  .prin-top{margin-bottom:28px}
+  .prin-top .deal-lead{margin-top:20px}
+  .prin-note{grid-column:auto}
   .photos{margin-bottom:36px}
   .photos img{height:clamp(200px,58vw,340px)}
   .photos.three{grid-template-columns:1fr 1fr}
@@ -633,7 +644,7 @@ details.terms{margin-top:36px}
   .next{padding:72px 0}
   .next .sticker2{width:180px;height:180px;padding:18px}
   .next .sticker2 b{font-size:1.8rem}
-  .asks-h{margin-top:48px}
+  .asks-h{margin-top:30px}
   .reps{margin-top:48px}
   .reps img{height:clamp(200px,60vw,320px)}
 }
@@ -676,9 +687,9 @@ details.terms{margin-top:36px}
     <div class="hero-grid">
       <div>
         <h1><span class="nw">What Southern Highlands</span> <span class="nw">residents said about</span> <span class="nw">data centres</span></h1>
-        <p class="sub">After years of fighting proposals it never asked for, most recently a gas-powered data centre near Moss Vale, the Southern Highlands got on the front foot. Most residents who took part are sceptical of a data centre here, and many don’t want one at all. But together they set out <b>the terms</b> one would have to&nbsp;meet.</p>
+        <p class="sub">After years of fighting proposals it never asked for, most recently a gas-powered data centre near Moss Vale, the Southern Highlands got on the front foot. Most residents who took part are sceptical of a data centre here, and many don’t want one at all. But together they set out <b>the terms</b> any proposal would have to meet before they would consider&nbsp;it.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what residents said</a><a class="btn line" href="#next">What happens next</a></div>
-        <p class="turnout"><span>September and October 2026 ·</span> <span><b>157 people</b> ·</span> <span><b>4,823 votes</b> ·</span> <span><b>179 statements</b> ·</span> <span>more than <b>160</b> at the report-back forum</span></p>
+        <p class="turnout"><span>September and October 2026 ·</span> <span><b>157 people</b> took part</span></p>
       </div>
       <div class="cards-col">
         <div class="cards" role="list" aria-label="Four things residents said in the discussion groups">
@@ -724,18 +735,22 @@ details.terms{margin-top:36px}
 
 <section class="block" id="principles" aria-labelledby="principles-h">
   <div class="wrap">
-    <div class="head">
+    <div class="prin-top">
       <p class="eyebrow">The community’s seven principles</p>
-      <h2 id="principles-h" class="bargain-h">A better model starts with a community that can name its priorities, terms and shared vision.</h2>
+      <div class="head">
+        <h2 id="principles-h" class="bargain-h">A better model starts with a community that can name its priorities, terms and shared vision.</h2>
+      </div>
+      <p class="deal-lead">At the forum, residents presented seven principles to their representatives. For many residents, the first question is where: they don’t want a large data centre in the Sydney water basin, which covers most of the Highlands. Any proposal would also have to meet these principles, and meeting them would not guarantee a yes.</p>
     </div>
-    <p class="deal-lead">At the forum, residents presented seven principles to their representatives. For many residents, the first question is where: they don’t want a large data centre in the Sydney water basin, which covers most of the Highlands. If one does go ahead, these are their terms.</p>
     <div class="deal-grid">
       <div class="deal d1"><h3>A real say</h3><dl class="prin"><dt>Community leadership</dt><dd>Support community decision-making about priorities and use of funds.</dd><dt>Transparent and accountable</dt><dd>Share the full picture from the start, including what kind of computing is planned, with ongoing independent checks backed by enforceable rules.</dd></dl></div>
       <div class="deal d2"><h3>Protections</h3><dl class="prin"><dt>Clean and green</dt><dd>Run the data centre on clean energy and protect our local environment.</dd><dt>Smart water</dt><dd>Water recycling and cooling tech that does not compete for town water or compromise water quality.</dd></dl></div>
       <div class="deal d3"><h3>Lasting value</h3><dl class="prin"><dt>Fair share</dt><dd>An ongoing share of benefits, including a permanent endowment for future generations.</dd><dt>Circular and local economy</dt><dd>High quality, long-term local jobs including Aboriginal-identified roles, and bring compute, water, power and heat into local industry.</dd></dl></div>
     </div>
-    <p class="prin-seventh"><b>Respect diversity.</b> Accept that some community members may still oppose or question the project.</p>
-    <p class="prin-note">An informed no is as valid as a conditional yes. This work is independent of the data centre’s proponent and does not assume that any development should proceed. It should not be cited by any proponent, consultant or party to proceedings as evidence of community support for, or consent to, a particular development.</p>
+    <div class="prin-foot">
+      <p class="prin-seventh"><b>Respect diversity.</b> Accept that some community members may still oppose or question the project.</p>
+      <p class="prin-note">An informed no is as valid as a conditional yes. This work is independent of the data centre’s proponent and does not assume that any development should proceed. It should not be cited by any proponent, consultant or party to proceedings as evidence of community support for, or consent to, a particular development.</p>
+    </div>
   </div>
 </section>
 
@@ -893,12 +908,14 @@ details.terms{margin-top:36px}
       <li class="step"><span class="fig">157</span><h3>In the open conversation</h3><p>People across the Highlands voted agree, disagree or pass on statements, and wrote 146 of their own.</p></li>
       <li class="step"><span class="fig">160+</span><h3>At the forum</h3><p>On 25 October in Mittagong, residents went through the results with their local, state and federal representatives.</p></li>
     </ol>
-    <p class="recruit"><b>Who took part.</b> Session participants were invited, not chosen at random. We sought a broad cross-section of the community, especially voices often missing from consultation: First Nations people, young people and people with lived experience of disadvantage. It was not designed to be a demographically representative sample. Sessions ran at lunchtime and in the evening so working parents could join, and the open conversation was open to anyone.</p>
     <div class="indep">
       <p class="big">The process is independent: whoever funds it, no funder controls the questions or the outcome. Residents may reach a conditional yes on better terms or a well-reasoned no.</p>
       <div class="indep-more">
-        <p>This pilot ran alongside community opposition to the proposed gas plant, and was not part of any negotiation over that proposal. The project is independently funded by philanthropic organisations.</p>
-        <p>It brings together four partners. Highlands Homegrown Economy is the community-led initiative, convened with WinZero, the local climate group. The community set the priorities, and independent specialists supported the work: RadicalxChange led the deliberative process, BWD Strategic led the independent technical, environmental and economic assessment, and Regen Labs and Highlands Homegrown Economy led local engagement and economic pathways.</p>
+        <p class="recruit"><b>Who took part.</b> Session participants were invited, not chosen at random. We sought a broad cross-section of the community, especially voices often missing from consultation: First Nations people, young people and people with lived experience of disadvantage. It was not designed to be a demographically representative sample. Sessions ran at lunchtime and in the evening so working parents could join, and the open conversation was open to anyone.</p>
+        <div>
+          <p>This pilot ran alongside community opposition to the proposed gas plant, and was not part of any negotiation over that proposal. The project is independently funded by philanthropic organisations.</p>
+          <p>It brings together four partners. Highlands Homegrown Economy is the community-led initiative, convened with WinZero, the local climate group. The community set the priorities, and independent specialists supported the work: RadicalxChange led the deliberative process, BWD Strategic led the independent technical, environmental and economic assessment, and Regen Labs and Highlands Homegrown Economy led local engagement and economic pathways.</p>
+        </div>
       </div>
     </div>
     <div class="photos three">
@@ -910,7 +927,7 @@ details.terms{margin-top:36px}
       <summary>Notes for checking the numbers</summary>
       <div class="arows">
         <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of people who agreed, out of everyone who voted on that statement, whether they agreed, disagreed or passed. The more open group is small, so where fewer than 20 people in a group voted, we show how many. On the group cards, we show the count instead of a percentage.</p></div>
-        <div class="arow"><h3>Who we counted</h3><p>As in the forum materials, we set aside two accounts: the one that loaded the 40 starter statements, and one that passed on every statement it saw. That leaves 157 people. 179 statements received votes: 33 starter statements, and 146 written by 79 participants.</p></div>
+        <div class="arow"><h3>Who we counted</h3><p>As in the forum materials, we set aside two accounts: the one that loaded the 40 starter statements, and one that passed on every statement it saw. That leaves 157 people and 4,823 votes. 179 statements received votes: 33 starter statements, and 146 written by 79 participants.</p></div>
         <div class="arow"><h3>Who took part</h3><p>Session participants were invited to reflect a range of views: environmental and conservation advocates, including people opposed to data centres; parents and young people; older residents; business owners and the local IT sector; First Nations community members; and community organisations, advocates for marginalised residents and people with lived experience of disadvantage. The Polis conversation was open to anyone. The same person may have taken part in more than one activity, so the numbers for each can overlap.</p></div>
         <div class="arow"><h3>The groups and the map</h3><p>Polis, an open-source tool, placed the 104 people who voted on at least seven statements into two groups by how they voted. Nobody chose a group; we named them. The map places each of them along the main divide in the votes. We rebuilt it from the published votes with the same method Polis uses, so it is close to the Polis report but not identical. Dots stack where people sit close together.</p></div>
         <div class="arow"><h3>The three stances</h3><p>We split the line in two places. Each split sits in a gap between dots, where agreement with one statement changes most. The first is statement 1, on whether meeting the planning rules should be enough: 5 of 7 people to the left of the line agreed, and 0 of 29 to the right. The second is statement 70, on keeping a large data centre out of the Sydney water basin: 1 of 15 people to the left of the line agreed, and 16 of 18 to the right. Each description sums up how the people in that stance voted. Each person saw only some statements, so a description fits most of the people who voted, not everyone.</p></div>
@@ -938,14 +955,16 @@ details.terms{margin-top:36px}
         <p class="np">Many residents also want a pause first: 70% backed an immediate moratorium on new data centre approvals until the rules catch up. Highlands Homegrown Economy, the community partner, supports a moratorium so communities have time to run a process like this one.</p>
         <p class="np"><b>Bringing community terms like these to the table with governments and developers is the next step in giving community voice real power.</b></p>
       </div>
-      <div class="sticker2" aria-hidden="true"><div><b>Thank you, Southern Highlands</b></div></div>
+      <div class="next-side">
+        <div class="sticker2" aria-hidden="true"><div><b>Thank you, Southern Highlands</b></div></div>
+        <h3 class="asks-h">Bring this process to your community</h3>
+        <div class="asks">
+          <div class="ask"><b>Governments</b><p>Legislate this process as standard to hear community voice, fund community-led processes like this one, and build true social licence.</p></div>
+          <div class="ask"><b>Communities</b><p>Host the process where you live and work.</p></div>
+        </div>
+        <div class="actions"><a class="btn solid" href="mailto:jess@radicalxchange.org?subject=Southern%20Highlands%20data%20centre%20pilot">Talk to us</a><a class="btn line" href="https://pol.is/report/r4utekxcdbdadnswzmipc">Explore the full data</a></div>
+      </div>
     </div>
-    <h3 class="asks-h">Bring this process to your community</h3>
-    <div class="asks">
-      <div class="ask"><b>Governments</b><p>Legislate this process as standard to hear community voice, fund community-led processes like this one, and build true social licence.</p></div>
-      <div class="ask"><b>Communities</b><p>Host the process where you live and work.</p></div>
-    </div>
-    <div class="actions"><a class="btn solid" href="mailto:jess@radicalxchange.org?subject=Southern%20Highlands%20data%20centre%20pilot">Talk to us</a><a class="btn line" href="https://pol.is/report/r4utekxcdbdadnswzmipc">Explore the full data</a></div>
     <div class="reps">
       <figure><img src="/assets/southern-highlands/forum-mayor.jpg" width="800" height="533" alt="Mayor Erin Foley speaks at the forum." loading="lazy"></figure>
       <figure><img src="/assets/southern-highlands/forum-state-mp.jpg" width="800" height="533" alt="Wendy Tuckerman MP speaks at the forum." loading="lazy"></figure>
