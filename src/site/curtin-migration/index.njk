@@ -131,9 +131,12 @@ section.block{padding:110px 0}
 
 /* ---------- map ---------- */
 .map-card{position:relative;border:2px solid var(--ink);border-radius:28px;padding:22px 26px 18px;background:var(--card)}
-.map-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:6px}
-.map-legend{display:flex;gap:22px;flex-wrap:wrap;font-size:.98rem;font-weight:500}
-.map-legend span{display:inline-flex;align-items:center;gap:8px}
+.map-top{display:flex;justify-content:flex-end;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:6px}
+.map-hint .h-touch{display:none}
+@media (hover:none){.map-hint .h-fine{display:none}.map-hint .h-touch{display:inline}}
+#map .grp-name{fill:var(--ink);font-family:var(--text);font-weight:700}
+#map .st-count{fill:var(--muted);font-family:var(--text)}
+.gtop .big small{font-size:.5em;font-weight:600}
 .someone{font:inherit;font-size:.95rem;font-weight:600;background:var(--ink);color:var(--paper);border:0;border-radius:99px;padding:.55rem 1.1rem;cursor:pointer}
 #map{display:block;width:100%;height:auto;touch-action:manipulation;cursor:crosshair;overflow:visible}
 #map .pdot{transition:transform 1.2s cubic-bezier(.2,.75,.2,1),fill .6s ease,opacity .6s ease}
@@ -164,7 +167,6 @@ section.block{padding:110px 0}
 .person .ex{border-top:1px solid var(--line);padding-top:9px;margin-top:10px}
 .person .ex .exl{display:flex;align-items:center;gap:7px;font-size:.84rem;font-weight:600;margin-bottom:4px}
 .person .ex q{display:block}
-.dot.pale{background:linear-gradient(90deg,var(--g1) 50%,var(--g2) 50%);opacity:.42}
 
 /* ---------- group cards ---------- */
 .groups-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
@@ -476,20 +478,20 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 <section class="glance" aria-label="At a glance">
   <div class="wrap glance-grid">
     <a class="gl" href="#groups">
-      <h3>Curtin splits in two</h3>
+      <h3>Two main groups</h3>
       <div class="split84" aria-hidden="true"><i style="width:84%;background:var(--g1)"></i><i style="width:16%;background:var(--g2)"></i></div>
-      <div class="split84-n" aria-hidden="true"><span><i class="dot g1"></i>84%</span><span>16%<i class="dot g2"></i></span></div>
-      <p>Of the 233 people placed in a group, 84% see migration working. 16% want fewer people, arriving more slowly.</p>
+      <div class="split84-n" aria-hidden="true"><span><i class="dot g1"></i>5 in 6</span><span>1 in 6<i class="dot g2"></i></span></div>
+      <p>Five in six see migration working. One in six want fewer people, arriving more slowly.</p>
       <span class="more">See the groups</span>
     </a>
     <a class="gl dark" href="#agree">
-      <h3>Even where they disagree, they agree on something</h3>
-      <p>On the topics that divide them most, both groups back seasonal visas, infrastructure that keeps pace, and respect for Australian laws and values.</p>
+      <h3>Both groups want a plan</h3>
+      <p>Most people in both groups want migration planned years ahead, with housing, roads, schools and hospitals keeping pace.</p>
       <span class="more">See where they agree</span>
     </a>
     <a class="gl tinted" href="#priorities">
-      <h3>Top priority: a 10-year plan</h3>
-      <p>65 of 73 voters backed a ten-year migration plan reported to Parliament. Five of the top six priorities echo ideas most people in both groups supported.</p>
+      <h3>First choice: a ten-year plan</h3>
+      <p>At a workshop on 14 October, 65 of 73 people backed a ten-year migration plan reported to Parliament.</p>
       <span class="more">See the priorities</span>
     </a>
   </div>
@@ -498,13 +500,13 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 <section class="block" id="groups" aria-labelledby="groups-h">
   <div class="wrap">
     <div class="head">
-      <h2 id="groups-h">Curtin splits into two groups</h2>
+      <h2 id="groups-h">Most people fit into one of two groups</h2>
     </div>
 
     <div class="groups-row">
       <div class="gcard one">
-        <div class="gtop"><span class="big">84<span class="pc">%</span></span><span class="who"><b>Group 1: Migration works</b>196 people</span></div>
-        <div class="qbox lead"><p class="lab">What sets them apart most</p><q>Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.</q>
+        <div class="gtop"><span class="big">5<small> in </small>6</span><span class="who"><b>Group 1: Migration works</b>196 people</span></div>
+        <div class="qbox lead"><p class="lab">What sets them apart</p><q>Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.</q>
           <div class="pcts"><span><i class="dot g1"></i><b>82%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>7%</b> of Group 2</span></div></div>
         <div class="qbox"><q>Australians should not forget we are all migrants except for First Nations people as so deal with newer migrants humanely</q>
           <div class="pcts"><span><i class="dot g1"></i><b>92%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>14%</b> of Group 2 <span class="nn">(14 voted)</span></span></div></div>
@@ -512,8 +514,8 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
           <div class="pcts"><span><i class="dot g1"></i><b>96%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>47%</b> of Group 2</span></div></div>
       </div>
       <div class="gcard two">
-        <div class="gtop"><span class="big">16<span class="pc">%</span></span><span class="who"><b>Group 2: Pace and control</b>37 people</span></div>
-        <div class="qbox lead"><p class="lab">What sets them apart most</p><q>A temporary visa should not lead to permanent residency.</q>
+        <div class="gtop"><span class="big">1<small> in </small>6</span><span class="who"><b>Group 2: Pace and control</b>37 people</span></div>
+        <div class="qbox lead"><p class="lab">What sets them apart</p><q>A temporary visa should not lead to permanent residency.</q>
           <div class="pcts"><span><i class="dot g2"></i><b>94%</b> of Group 2 agree <span class="nn">(17 voted)</span></span><span><i class="dot g1"></i><b>16%</b> of Group 1</span></div></div>
         <div class="qbox"><q>For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.</q>
           <div class="pcts"><span><i class="dot g2"></i><b>89%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>25%</b> of Group 1</span></div></div>
@@ -521,18 +523,17 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
           <div class="pcts"><span><i class="dot g2"></i><b>80%</b> of Group 2 agree <span class="nn">(15 voted)</span></span><span><i class="dot g1"></i><b>2%</b> of Group 1</span></div></div>
       </div>
     </div>
-    <p class="small-note">Group 2 is likely smaller here than in Curtin as a whole, because the people who join a conversation like this aren’t a random sample. 33 people voted on too few statements to be placed in a group.</p>
+    <p class="small-note">The people who joined in aren’t a random sample, so these groups describe who took part, not all of Curtin. 32 people voted on too few statements to be placed in a group.</p>
 
     <div class="sub-head"><h3>Where everyone sits</h3></div>
     <div class="map-card" id="map-card">
       <p class="map-lead">Each dot is one person, placed by how they voted. People who voted alike sit close together, so the higher the pile, the more people voted that way.</p>
       <div class="map-top">
-        <div class="map-legend"><span><i class="dot g1"></i>Group 1: Migration works</span><span><i class="dot g2"></i>Group 2: Pace and control</span><span style="font-weight:400"><i class="dot pale"></i>Paler: voted partly like the other group</span></div>
         <button class="someone" type="button" id="someone">Show me someone</button>
       </div>
       <svg id="map" viewBox="0 0 1000 560" role="img" aria-labelledby="map-desc"><desc id="map-desc">A map of 233 people. Group 1, 196 people, sits on the left, where people agreed that migration is working. Group 2, 37 people, sits on the right, where people agreed that fewer migrants should arrive more slowly. Where many people sit close together, the dots pile up.</desc></svg>
       <div class="person" id="person" aria-live="polite"></div>
-      <p class="map-hint">Hover over or tap a dot to see how that person voted.</p>
+      <p class="map-hint"><span class="h-fine">Hover over a dot to see how that person voted.</span><span class="h-touch">Tap the map or press “Show me someone” to see how one person voted.</span></p>
     </div>
 
 
@@ -619,7 +620,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
     <div class="head"><h2 id="about-h">How this worked</h2></div>
     <ol class="steps">
       <li class="step"><span class="fig">36</span><h3>Starter statements</h3><p>Kate Chaney’s team and RadicalxChange wrote the first statements to open the conversation.</p></li>
-      <li class="step"><span class="fig">266</span><h3>People took part</h3><p>From 8 to 27 October they voted agree, disagree or pass, online or at a workshop on 14 October, and added 501 statements of their own.</p></li>
+      <li class="step"><span class="fig">266</span><h3>People took part</h3><p>From 8 to 27 October they voted agree, disagree or pass, online or at a workshop on 14 October, and added statements of their own.</p></li>
       <li class="step"><span class="fig">2</span><h3>Groups emerged</h3><p>Polis, an open-source tool, grouped people who voted alike. Nobody chose a group. We named them.</p></li>
       <li class="step"><span class="fig">73</span><h3>Voters set priorities</h3><p>On 14 October they spread a budget of credits across 13 possible changes, using quadratic voting.</p></li>
     </ol>
@@ -627,7 +628,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <summary>Notes for checking the numbers</summary>
       <div class="arows">
         <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of a group who agreed, out of those in the group who voted on that statement. Later statements had fewer voters, so where fewer than 20 people in a group voted, we show how many.</p></div>
-        <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so it is close to the Polis report but not identical. Left to right is the main divide. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place. How often each person agreed overall is on their card. The 32 paler dots are people near the border who voted partly like the other group, mostly people who voted on fewer statements. Each person’s card shows up to two of their votes as examples. For each group they sided with, it shows the statement most of that group agreed with, preferring statements the person agreed with over ones they rejected.</p></div>
+        <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so it is close to the Polis report but not identical. Left to right is the main divide. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place. How often each person agreed overall is on their card. Each person’s card shows up to two of their votes as examples. For each group they sided with, it shows the statement most of that group agreed with, preferring statements the person agreed with over ones they rejected.</p></div>
         <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results. People who took part online and at the 14 October workshop gave very similar results.</p></div>
         <div class="arow"><h3>Affordability allies</h3><p>We looked for statements with similar support in both groups, then checked whether the same people backed them. For statements 33 and 29 they did: people who backed one had about ten times the odds of backing the other, even allowing for people who agree with most things. The link is clear in Group 1; Group 2 shows the same pattern, but it rests on 23 people. Of the others who backed one of the two, about half also voted on the other and didn’t back it. The other 38 didn’t get to vote on it. Had they voted like those who did, about 29 more would be allies, about 80 in all, but they may not have, and nearly all 38 are in Group 1. Treat this as a possible alliance, not a proven one.</p></div>
         <div class="arow"><h3>The priority vote</h3><p>A separate vote with its own voters. We set aside ballots that used fewer than 10 credits and kept the fuller ballot where someone voted twice, leaving 73 voters. Net votes are votes for minus votes against. The matching statements from the conversation are close in meaning, not identical in wording.</p></div>
@@ -664,20 +665,22 @@ function el(n, a, p) { const e = document.createElementNS(NS, n); for (const k i
 function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
 /* ================= map ================= */
+const NAME = ['Group 1', 'Group 2'], FULL = ['Group 1: Migration works', 'Group 2: Pace and control'];
 const MW = 1000, PL = 30, PR = 30, PT = 24, PB = 78;
 let MH = 560;
 const svg = document.getElementById('map');
 const people = DATA.people.map(([x, y, g, nv, ar, nc, l1, l2, e1, v1, e2, v2], i) => {
   const n = l1 + l2, own = g === 0 ? l1 : l2;
-  return { i, g, nv, ar, nc, l1, l2, n, e1, v1, e2, v2, share: n ? own / n : null, pale: n > 0 && own / n < .65, nx: x, ny: y, x: 0, y: 0 };
+  return { i, g, nv, ar, nc, l1, l2, n, e1, v1, e2, v2, share: n ? own / n : null, nx: x, ny: y, x: 0, y: 0 };
 });
 const finalFill = p => p.g === 0 ? 'var(--g1)' : 'var(--g2)';
-const finalOp = p => p.pale ? .42 : 1;
+const finalOp = () => 1;
 const defs = el('defs', {}, svg);
 const mk = el('marker', { id: 'arr', viewBox: '0 0 10 10', refX: 8, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
 el('path', { d: 'M0,0 L10,5 L0,10 z', fill: 'var(--ink)' }, mk);
 const axisLayer = el('g', {}, svg);
 const dotLayer = el('g', {}, svg);
+const labelLayer = el('g', { class: 'glabels' }, svg);
 const dots = people.map(p => el('circle', { r: 9, cx: 0, cy: 0, class: 'pdot', fill: p.g === 0 ? 'var(--g1)' : 'var(--g2)' }, dotLayer));
 const ring = el('circle', { r: 16, fill: 'none', stroke: 'var(--ink)', 'stroke-width': 3, opacity: 0, 'pointer-events': 'none' }, svg);
 let settled = false;
@@ -686,7 +689,7 @@ let settled = false;
 // step it moves sideways, so crowded stretches pile up like sand, not in columns. Narrow maps have fewer
 // dot widths across, so dots may roll a little further and pile less steeply. Both maps use this, and
 // the allies map keeps desktop-sized dots in its narrower column (narrow means the phone layout).
-function swarm(w) {
+function swarm(w, labelled) {
   const k = MW / w, narrow = w < 640 && window.matchMedia('(max-width: 900px)').matches, r = (narrow ? 2.9 : 5.2) * k, D = 2 * r + Math.max(1, .7 * k);
   const lo = PL + r, hi = MW - PR - r, reach = narrow ? 4 : 3, slope = narrow ? .7 : .9, placed = [];
   let top = 0;
@@ -704,11 +707,14 @@ function swarm(w) {
     }
     placed.push({ i: p.i, x: best.x, h: best.h }); top = Math.max(top, best.h);
   });
-  const fs = Math.max(17, 12.5 * k), axisH = Math.max(66, fs * 2.6), H = Math.ceil(PT + top + 2 * r + axisH), base = H - axisH;
-  return { k, r, H, base, pos: placed.map(q => ({ i: q.i, x: q.x, y: base - r - q.h })) };
+  const fs = Math.max(17, 12.5 * k), axisH = Math.max(66, fs * 2.6);
+  const fsG = (narrow ? 12.5 : 17) * k, fsC = (narrow ? 11 : 14) * k;
+  const labH = labelled ? (narrow ? fsG * 1.25 : fsG * 1.25 + fsC * 1.15 + 4 * k) + 10 * k : 0;  // a group's name (and count)
+  const H = Math.ceil(PT + labH + top + 2 * r + axisH), base = H - axisH;
+  return { k, r, H, base, top, narrow, fsG, fsC, pos: placed.map(q => ({ i: q.i, x: q.x, y: base - r - q.h })) };
 }
 function layout() {
-  const w = svg.clientWidth || MW, sw = swarm(w), k = sw.k, r = sw.r;
+  const w = svg.clientWidth || MW, sw = swarm(w, true), k = sw.k, r = sw.r;
   MH = sw.H;
   svg.setAttribute('viewBox', `0 0 ${MW} ${MH}`);
   sw.pos.forEach(q => { people[q.i].x = q.x; people[q.i].y = q.y; });
@@ -718,6 +724,22 @@ function layout() {
   const lab = (txt, attrs) => { const tx = el('text', Object.assign({ class: 'axis-label' }, attrs), axisLayer); tx.style.fontSize = fs + 'px'; tx.textContent = txt; };
   lab('Migration is working', { x: PL, y: axY + fs * 1.6 });
   lab(w < 640 ? 'Fewer, more slowly' : 'Fewer migrants, more slowly', { x: MW - PR, y: axY + fs * 1.6, 'text-anchor': 'end' });
+  // each group's name (and count) over its own stretch, both on one line above the tallest heap, as on the Warringah page
+  while (labelLayer.firstChild) labelLayer.removeChild(labelLayer.firstChild);
+  const yName = sw.base - sw.top - 2 * r - 10 * k - (sw.narrow ? 0 : sw.fsC * 1.15 + 4 * k);
+  [0, 1].forEach(gi => {
+    const xs = sw.pos.filter(q => people[q.i].g === gi).map(q => q.x).sort((a, b) => a - b);
+    const cx = (xs[Math.floor(xs.length * .1)] + xs[Math.floor(xs.length * .9)]) / 2;
+    const g = el('g', { class: 'grp' }, labelLayer);
+    el('title', {}, g).textContent = `${FULL[gi]}: ${xs.length} people`;
+    const t = el('text', { class: 'grp-name', x: cx.toFixed(1), y: yName.toFixed(1), 'text-anchor': 'middle' }, g);
+    t.style.fontSize = sw.fsG + 'px'; t.textContent = sw.narrow ? NAME[gi] : FULL[gi];
+    const dr = sw.fsG * .3, gap = 6 * k, wd = t.getComputedTextLength(), total = 2 * dr + gap + wd;
+    const left = Math.min(Math.max(cx - total / 2, PL), MW - PR - total), tx = left + 2 * dr + gap + wd / 2;
+    t.setAttribute('x', tx.toFixed(1));
+    el('circle', { cx: (left + dr).toFixed(1), cy: (yName - sw.fsG * .34).toFixed(1), r: dr.toFixed(1), fill: gi ? 'var(--g2)' : 'var(--g1)' }, g);
+    if (!sw.narrow) { const c = el('text', { class: 'st-count', x: tx.toFixed(1), y: (yName + sw.fsC * 1.15 + 4 * k).toFixed(1), 'text-anchor': 'middle' }, g); c.style.fontSize = sw.fsC + 'px'; c.textContent = xs.length + ' people'; }
+  });
   dots.forEach(d => d.setAttribute('r', r.toFixed(2)));
   ring.setAttribute('r', (r + 4 * k).toFixed(1));
   ring.setAttribute('stroke-width', (2 * k).toFixed(1));
@@ -755,7 +777,6 @@ else {
 const card = document.getElementById('person');
 const mapCard = document.getElementById('map-card');
 let current = -1;
-const NAME = ['Group 1', 'Group 2'], FULL = ['Group 1: Migration works', 'Group 2: Pace and control'];
 const VERB = { a: 'agreed', d: 'disagreed' };
 function example(id, v, side) {
   if (id < 0) return '';
