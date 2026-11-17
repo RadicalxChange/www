@@ -197,6 +197,8 @@ section.block{padding:104px 0}
 #map .st-name{fill:var(--ink);font-family:var(--text);font-weight:600}
 #map .st-count{fill:var(--muted);font-family:var(--text)}
 #map .st-badge{fill:var(--ink)}
+#map .grp-name{fill:var(--ink);font-family:var(--text);font-weight:700}
+#map .st-bracket{stroke:var(--ink);opacity:.45}
 #map .st-num{fill:var(--card);font-family:var(--text);font-weight:700;pointer-events:none}
 .st-key{border-top:1px solid var(--line);margin-top:16px;padding-top:16px}
 .st-h{font-weight:600;font-size:1.02rem;line-height:1.4;margin-bottom:4px}
@@ -509,8 +511,8 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <div class="st-key">
         <p class="st-h">A closer look inside Group 2</p>
         <ol class="st-list">
-          <li><p class="st-t"><span class="st-b" aria-hidden="true">1</span><span class="st-n">Fewer, but flexible</span><span class="st-c">98 people</span></p><p class="st-d">They want fewer people, more slowly, but most would still make room for care workers, genuine shortages and people who’ve built a life here. Most also say migration has made life here better.</p></li>
-          <li><p class="st-t"><span class="st-b" aria-hidden="true">2</span><span class="st-n">Fewer, with firm limits</span><span class="st-c">24 people</span></p><p class="st-d">They want fewer people too, and most of them also oppose a visa for care workers, quicker sponsorship for genuine shortages, and a path to stay for long-term residents.</p></li>
+          <li><p class="st-t"><span class="st-b" aria-hidden="true">A</span><span class="st-n">Fewer, but flexible</span><span class="st-c">98 people</span></p><p class="st-d">They want fewer people, more slowly, but most would still make room for care workers, genuine shortages and people who’ve built a life here. Most also say migration has made life here better.</p></li>
+          <li><p class="st-t"><span class="st-b" aria-hidden="true">B</span><span class="st-n">Fewer, with firm limits</span><span class="st-c">24 people</span></p><p class="st-d">They want fewer people too, and most of them also oppose a visa for care workers, quicker sponsorship for genuine shortages, and a path to stay for long-term residents.</p></li>
         </ol>
       </div>
     </div>
@@ -666,15 +668,25 @@ function layout() {
   });
   const fs = Math.max(17, 12.5 * k);
   const axisH = Math.max(AXIS, fs * 2.6);
-  // room above the heaps for the two names over Group 2's stretches (or numbered badges on narrow maps)
-  const fsL = (narrow ? 12 : 16) * k, fsC = (narrow ? 11 : 14) * k, br = 11 * k;
-  const near = people.filter(p => p.g === 1 && p.dv < CUT).map(p => p.dv).sort((a, b) => a - b);
-  const centres = [lo + ((near[Math.floor(near.length * .1)] + CUT) / 2) * (hi - lo), (sx + hi) / 2];
-  const halfW = [(sx - (lo + near[Math.floor(near.length * .1)] * (hi - lo))) / 2, (hi - sx) / 2];
-  const peak = c => Math.max(0, ...placed.filter(q => Math.abs(q.x - c.x) <= c.w).map(q => q.h + 2 * R));
-  const peaks = centres.map((x, j) => peak({ x, w: halfW[j] }));
-  const labelH = narrow ? 2 * br + 6 * k : fsL * 1.3 + fsC * 1.2 + 8 * k;
-  const headroom = Math.max(0, Math.max(...peaks) + labelH - top - 2 * R);
+  // two levels of labels, so colour and names tell one story: each group's name over its own stretch,
+  // and inside Group 2, under a bracket spanning the group, the names of its two parts either side of
+  // the divider (lettered badges on narrow maps, named in the key)
+  const fsG = (narrow ? 12.5 : 17) * k, fsL = (narrow ? 12 : 16) * k, fsC = (narrow ? 11 : 14) * k, br = 11 * k;
+  const nearDv = people.filter(p => p.g === 1 && p.dv < CUT).map(p => p.dv).sort((a, b) => a - b);
+  const g1Dv = people.filter(p => p.g === 0).map(p => p.dv).sort((a, b) => a - b);
+  const at = v => lo + v * (hi - lo);
+  const g2Left = at(nearDv[Math.floor(nearDv.length * .1)]);   // where most of Group 2 begins
+  const centres = [(g2Left + sx) / 2, (sx + hi) / 2];
+  const halfW = [(sx - g2Left) / 2, (hi - sx) / 2];
+  const g1x = at(g1Dv[Math.floor(g1Dv.length / 2)]), g1w = (at(g1Dv[Math.floor(g1Dv.length * .9)]) - at(g1Dv[Math.floor(g1Dv.length * .1)])) / 2;
+  const peak = (x, hw) => Math.max(0, ...placed.filter(q => Math.abs(q.x - x) <= hw).map(q => q.h + 2 * R));
+  const subPeak = Math.max(peak(centres[0], halfW[0]), peak(centres[1], halfW[1]));
+  const subH = narrow ? 2 * br + 4 * k : fsL * 1.25 + fsC * 1.15 + 6 * k;      // a part's name and count
+  const grpH = narrow ? fsG * 1.25 : fsG * 1.25 + fsC * 1.15 + 4 * k;          // a group's name (and count)
+  const brGap = 7 * k, brTick = 6 * k;
+  const bracketH = subPeak + subH + brGap;                                      // heights above the base line
+  const bandH = Math.max(bracketH + brTick, peak(g1x, g1w) + 8 * k);           // both group names share a line
+  const headroom = Math.max(0, bandH + grpH - top - 2 * R);
   MH = Math.ceil(TOP + top + 2 * R + headroom + axisH);
   svg.setAttribute('viewBox', `0 0 ${MW} ${MH}`);
   const base = MH - axisH;
@@ -687,24 +699,36 @@ function layout() {
   const rt = lab(narrow ? 'Fewer, more slowly' : 'Fewer people, more slowly', { x: MW - PR, y: y0 + fs * 1.6, 'text-anchor': 'end' });
   const room = MW - PL - PR - 30, used = lt.getBBox().width + rt.getBBox().width;  // never let the two labels touch
   if (used > room) [lt, rt].forEach(t => t.style.fontSize = (fs * room / used).toFixed(1) + 'px');
-  // the divider, and each stretch's name and count just above its own pile
+  // the labels: group names on one line across the top, then the bracket over Group 2, its two parts'
+  // names, and the divider between them
   while (stanceLayer.firstChild) stanceLayer.removeChild(stanceLayer.firstChild);
-  const yTopDiv = base - Math.max(...peaks) - labelH;
-  el('line', { class: 'st-div', x1: sx.toFixed(1), x2: sx.toFixed(1), y1: yTopDiv.toFixed(1), y2: y0.toFixed(1), 'stroke-width': (1.4 * k).toFixed(2), 'stroke-dasharray': `${(3 * k).toFixed(1)} ${(3.5 * k).toFixed(1)}` }, stanceLayer);
   if (mapCardEl) mapCardEl.classList.toggle('compact', narrow);
+  const text = (cls, x, y, size, str, g, anchor = 'middle') => { const t = el('text', { class: cls, x: x.toFixed(1), y: y.toFixed(1), 'text-anchor': anchor }, g); t.style.fontSize = size + 'px'; t.textContent = str; return t; };
+  const groupLabel = (gi, cx, name, count) => {
+    const g = el('g', { class: 'grp' }, stanceLayer);
+    el('title', {}, g).textContent = `${name}: ${count} people`;
+    const yName = base - bandH - (narrow ? 0 : fsC * 1.15 + 4 * k);
+    const t = text('grp-name', cx, yName, fsG, narrow ? NAME[gi] : name, g);
+    const r = fsG * .3, wd = t.getComputedTextLength(), shift = (r * 2 + 6 * k) / 2;
+    t.setAttribute('x', (cx + shift).toFixed(1));
+    el('circle', { cx: (cx + shift - wd / 2 - r - 6 * k).toFixed(1), cy: (yName - fsG * .34).toFixed(1), r: r.toFixed(1), fill: gi ? 'var(--g2)' : 'var(--g1)' }, g);
+    if (!narrow) text('st-count', cx + shift, base - bandH, fsC, count + ' people', g);
+  };
+  groupLabel(0, g1x, FULL[0], people.filter(p => p.g === 0).length);
+  groupLabel(1, (g2Left + hi) / 2, FULL[1], people.filter(p => p.g === 1).length);
+  const yBr = base - bracketH;
+  el('path', { class: 'st-bracket', d: `M${g2Left.toFixed(1)},${(yBr + brTick).toFixed(1)} V${yBr.toFixed(1)} H${hi.toFixed(1)} V${(yBr + brTick).toFixed(1)}`, fill: 'none', 'stroke-width': (1.4 * k).toFixed(2) }, stanceLayer);
+  el('line', { class: 'st-div', x1: sx.toFixed(1), x2: sx.toFixed(1), y1: yBr.toFixed(1), y2: y0.toFixed(1), 'stroke-width': (1.4 * k).toFixed(2), 'stroke-dasharray': `${(3 * k).toFixed(1)} ${(3.5 * k).toFixed(1)}` }, stanceLayer);
+  const ySub = base - subPeak - 6 * k;
   centres.forEach((cx, j) => {
-    const yb = base - peaks[j] - 6 * k;
     const g = el('g', { class: 'stance' }, stanceLayer);
-    el('title', {}, g).textContent = `${STANCES[j]}: ${stanceN[j]} people`;
+    el('title', {}, g).textContent = `Group 2, ${STANCES[j]}: ${stanceN[j]} people`;
     if (narrow) {
-      el('circle', { class: 'st-badge', cx: cx.toFixed(1), cy: (yb - br).toFixed(1), r: br.toFixed(1) }, g);
-      const t = el('text', { class: 'st-num', x: cx.toFixed(1), y: (yb - br + .36 * fsL).toFixed(1), 'text-anchor': 'middle' }, g);
-      t.style.fontSize = fsL + 'px'; t.textContent = j + 1;
+      el('circle', { class: 'st-badge', cx: cx.toFixed(1), cy: (ySub - br).toFixed(1), r: br.toFixed(1) }, g);
+      text('st-num', cx, ySub - br + .36 * fsL, fsL, 'AB'[j], g);
     } else {
-      const c = el('text', { class: 'st-count', x: cx.toFixed(1), y: yb.toFixed(1), 'text-anchor': 'middle' }, g);
-      c.style.fontSize = fsC + 'px'; c.textContent = stanceN[j] + ' people';
-      const t = el('text', { class: 'st-name', x: cx.toFixed(1), y: (yb - fsC * 1.2).toFixed(1), 'text-anchor': 'middle' }, g);
-      t.style.fontSize = fsL + 'px'; t.textContent = STANCES[j];
+      text('st-count', cx, ySub, fsC, stanceN[j] + ' people', g);
+      text('st-name', cx, ySub - fsC * 1.2, fsL, STANCES[j], g);
     }
   });
   dots.forEach(d => d.setAttribute('r', R.toFixed(2)));

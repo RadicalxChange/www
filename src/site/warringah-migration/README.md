@@ -84,12 +84,17 @@ a dot histogram, a swarm and two packed bubbles (17 November 2026).
 
 ## A closer look inside Group 2
 
-The map's dashed line marks where Group 2's far end begins, and the key under
-the map names its two stretches: "Fewer, but flexible" (98 people) and "Fewer,
-with firm limits" (24). They are a closer look inside Group 2, not new groups:
-the dots keep their group colours, and no dot rolls across the line. On maps
-under 640px wide the names give way to numbered badges, and the key shows the
-numbers.
+The map's labels have two levels, so its colours and names tell one story.
+Across the top, each group's name, colour dot and count sit over its own
+stretch; Group 2's name sits over a bracket spanning the group. Under that
+bracket, a dashed line marks where Group 2's far end begins, and the two parts
+are named either side of it: "Fewer, but flexible" (98 people) and "Fewer,
+with firm limits" (24). The key under the map describes both. They are a
+closer look inside Group 2, not new groups: the dots keep their group colours,
+and no dot rolls across the line. On maps under 640px wide the group names
+shorten to "Group 1" and "Group 2", the two parts become lettered badges (A
+and B, so they can't be mistaken for group numbers), and the key shows the
+letters.
 
 The far end is found the way the Teals stance analysis looks for stances:
 going along Group 2 from its far end, the cut is placed where the most
