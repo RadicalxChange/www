@@ -203,13 +203,18 @@ section.block{padding:104px 0}
 .st-key{border-top:1px solid var(--line);margin-top:16px;padding-top:16px}
 .st-h{font-weight:600;font-size:1.02rem;line-height:1.4;margin-bottom:4px}
 .st-list{list-style:none;margin:0;padding:0}
-.st-list li{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:4px 28px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem;line-height:1.45}
+.st-list li{display:grid;grid-template-columns:minmax(0,17.5rem) minmax(0,1fr);gap:4px 28px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem;line-height:1.45}
 .st-list li:last-child{border-bottom:0}
+.st-list li.g2row{border-bottom:0;padding-bottom:2px}
+/* Group 2's two parts sit under its heading, set in from a thin rule */
+.st-list li.part{margin-left:.4rem;padding-left:1.1rem;border-left:2px solid var(--line);grid-template-columns:minmax(0,calc(17.5rem - 1.5rem - 2px)) minmax(0,1fr)}
+.st-list li.part + li.part{border-top:0}
+.st-t .dot{width:11px;height:11px}
 .st-t{display:flex;align-items:center;flex-wrap:wrap;gap:4px 9px;font-weight:600;line-height:1.3}
 .st-b{display:none;flex:none;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--card);font-size:.76rem;font-weight:700;line-height:1}
 .st-c{font-weight:400;color:var(--muted);font-size:.85rem;white-space:nowrap}
 .map-card.compact .st-b{display:inline-grid}
-@media (max-width:700px){ .st-list li{grid-template-columns:1fr} }
+@media (max-width:700px){ .st-list li,.st-list li.part{grid-template-columns:1fr} }
 .person{position:absolute;z-index:5;width:330px;background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:18px;padding:16px 18px 14px;box-shadow:0 18px 40px -20px rgba(0,0,0,.5);font-size:.92rem;line-height:1.4;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .15s ease,transform .15s ease}
 .person.on{opacity:1;transform:none}
 .person .pg{display:flex;align-items:center;gap:8px;font-weight:600;font-size:1rem;margin-bottom:6px}
@@ -503,17 +508,18 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <p class="map-lead">Each dot is one person, placed by how they voted. People who voted alike sit close together, so the higher the pile, the more people voted that way.</p>
       <svg id="map" viewBox="0 0 1000 300" role="img" aria-labelledby="map-desc"><desc id="map-desc">368 people placed along the main divide in the votes. Group 1, Faster, fairer visas, 246 people, sits to the left in a high pile. Group 2, Fewer people, more slowly, 122 people, spreads out in a low pile to the right. A dashed line inside Group 2 marks where its 24 people furthest along begin.</desc></svg>
       <div class="map-foot">
-        <div class="map-legend"><span><i class="dot g1"></i>Group 1: Faster, fairer visas</span><span><i class="dot g2"></i>Group 2: Fewer people, more slowly</span></div>
         <button class="someone" type="button" id="someone">Show me someone</button>
       </div>
       <div class="person" id="person" aria-live="polite"></div>
       <p class="map-hint"><span class="h-fine">Hover over a dot to see how that person voted.</span><span class="h-touch">Tap the map or press “Show me someone” to see how one person voted.</span></p>
       <div class="st-key">
-        <p class="st-h">A closer look inside Group 2</p>
-        <ol class="st-list">
-          <li><p class="st-t"><span class="st-b" aria-hidden="true">A</span><span class="st-n">Fewer, but flexible</span><span class="st-c">98 people</span></p><p class="st-d">They want fewer people, more slowly, but most would still make room for care workers, genuine shortages and people who’ve built a life here. Most also say migration has made life here better.</p></li>
-          <li><p class="st-t"><span class="st-b" aria-hidden="true">B</span><span class="st-n">Fewer, with firm limits</span><span class="st-c">24 people</span></p><p class="st-d">They want fewer people too, and most of them also oppose a visa for care workers, quicker sponsorship for genuine shortages, and a path to stay for long-term residents.</p></li>
-        </ol>
+        <p class="st-h">The two groups, and a closer look inside Group 2</p>
+        <ul class="st-list">
+          <li class="grp"><p class="st-t"><i class="dot g1" aria-hidden="true"></i><span class="st-n">Group 1: Faster, fairer visas</span><span class="st-c">246 people</span></p><p class="st-d">They want visa decisions made faster, rules that don’t change after you’ve applied, and the freedom to leave a bad job without losing your visa. There’s no clear split inside this group.</p></li>
+          <li class="grp g2row"><p class="st-t"><i class="dot g2" aria-hidden="true"></i><span class="st-n">Group 2: Fewer people, more slowly</span><span class="st-c">122 people</span></p></li>
+          <li class="part"><p class="st-t"><span class="st-b" aria-hidden="true">A</span><span class="st-n">Fewer, but flexible</span><span class="st-c">98 people</span></p><p class="st-d">They want fewer people, more slowly, but most would still make room for care workers, genuine shortages and people who’ve built a life here. Most also say migration has made life here better.</p></li>
+          <li class="part"><p class="st-t"><span class="st-b" aria-hidden="true">B</span><span class="st-n">Fewer, with firm limits</span><span class="st-c">24 people</span></p><p class="st-d">They want fewer people too, and most of them also oppose a visa for care workers, quicker sponsorship for genuine shortages, and a path to stay for long-term residents.</p></li>
+        </ul>
       </div>
     </div>
   </div>

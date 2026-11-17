@@ -89,7 +89,10 @@ Across the top, each group's name, colour dot and count sit over its own
 stretch; Group 2's name sits over a bracket spanning the group. Under that
 bracket, a dashed line marks where Group 2's far end begins, and the two parts
 are named either side of it: "Fewer, but flexible" (98 people) and "Fewer,
-with firm limits" (24). The key under the map describes both. They are a
+with firm limits" (24). The key under the map follows the same two levels:
+Group 1's one-line description (ending "There's no clear split inside this
+group"), then Group 2's name and count with its two parts set in beneath it,
+each with its own line. They are a
 closer look inside Group 2, not new groups: the dots keep their group colours,
 and no dot rolls across the line. On maps under 640px wide the group names
 shorten to "Group 1" and "Group 2", the two parts become lettered badges (A
