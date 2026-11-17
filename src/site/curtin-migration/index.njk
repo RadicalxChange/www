@@ -213,6 +213,14 @@ section.block{padding:110px 0}
 .half.split{margin:18px 0}
 .half.agree{background:var(--soft);color:var(--navy);margin:18px 18px 18px 0;border-radius:20px;--trk:rgba(1,34,83,.18);--rng:var(--navy);--tk:#2C3E5A;--ring:var(--soft)}
 .half.agree .pill{background:var(--navy);color:#fff}
+details.all{margin-top:8px;border-top:1px solid rgba(255,255,255,.3);padding-top:18px}
+details.all summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2rem 0}
+.all-list{list-style:none;margin:16px 0 0;padding:0;column-count:2;column-gap:44px}
+.all-list li{break-inside:avoid;padding:12px 0;border-top:1px solid rgba(255,255,255,.18)}
+.all-list q{display:block;font-weight:500;line-height:1.4}
+.all-list .vals{color:#d3e2e8;font-size:.9rem;margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 16px}
+.all-list .nn{color:inherit;opacity:.85}
+@media (max-width:900px){.all-list{column-count:1}}
 .half q{display:block;font-weight:600;font-size:1.32rem;line-height:1.3;min-height:3.9em;margin-top:14px}
 
 /* ---------- unlikely allies ---------- */
@@ -544,9 +552,13 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   <div class="wrap">
     <div class="head">
       <h2 id="agree-h">Even where they disagree, they agree on something</h2>
-      <p class="head-line">They split on the big question, yet agree on something specific. This is uncommon ground: agreement between people who usually disagree.</p>
+      <p class="head-line">At least 7 in 10 people in each group agreed with 18 statements. Here are five of them, each beside a related statement the two groups disagree on.</p>
     </div>
     <div id="pairs"></div>
+    <details class="all">
+      <summary>See all 18 statements both groups agreed with</summary>
+      <ol class="all-list" id="all"></ol>
+    </details>
   </div>
 </section>
 
@@ -865,23 +877,54 @@ function dumbbell(a, b, na, nb) {
 
 /* each statement: [id, text, Group 1 %, Group 2 %, Group 1 voters, Group 2 voters] */
 const PAIRS = [
-  { topic: 'Temporary or permanent?', split: [69, 'A temporary visa should not lead to permanent residency.', 16, 94, 64, 17], agree: [12, 'For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.', 83, 83, 104, 30] },
-  { topic: 'How many, how fast?', split: [3, 'For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.', 25, 89, 106, 28], agree: [9, 'I’d trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.', 71, 75, 106, 28] },
-  { topic: 'Planning ahead', split: [2, 'For me, trust is less about how many people come here and more about whether anyone is clearly in charge of the plan.', 69, 20, 103, 30], agree: [0, 'I’d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 87, 77, 94, 30] },
-  { topic: 'Who should we choose?', split: [73, 'We should prioritise migrants from countries who are likely to assimilate into Australian society', 32, 90, 60, 21], agree: [78, 'Migrants should commit to respecting Australian laws and values.', 82, 100, 66, 17] },
-  { topic: 'Who should pay?', split: [28, 'People who choose to come here should be expected to cover more of the cost of settling in, including learning English.', 33, 90, 104, 31], agree: [139, 'The cost of dependents for temporary visa holders should be transparent.', 78, 100, 58, 17] }
+  { topic: 'Short-term visas for seasonal work', split: [69, 'A temporary visa should not lead to permanent residency.', 16, 94, 64, 17], agree: [12, 'For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.', 83, 83, 104, 30] },
+  { topic: 'Services that keep pace with growth', split: [3, 'For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.', 25, 89, 106, 28], agree: [9, 'I’d trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.', 71, 75, 106, 28] },
+  { topic: 'Plan 10 to 15 years ahead', split: [2, 'For me, trust is less about how many people come here and more about whether anyone is clearly in charge of the plan.', 69, 20, 103, 30], agree: [0, 'I’d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 87, 77, 94, 30] },
+  { topic: 'Respect for Australian laws and values', split: [73, 'We should prioritise migrants from countries who are likely to assimilate into Australian society', 32, 90, 60, 21], agree: [78, 'Migrants should commit to respecting Australian laws and values.', 82, 100, 66, 17] },
+  { topic: 'Be open about the costs', split: [28, 'People who choose to come here should be expected to cover more of the cost of settling in, including learning English.', 33, 90, 104, 31], agree: [139, 'The cost of dependents for temporary visa holders should be transparent.', 78, 100, 58, 17] }
 ];
 const pairsRoot = document.getElementById('pairs');
 PAIRS.forEach(p => {
   const d = document.createElement('article'); d.className = 'pair';
   d.innerHTML = `<div class="topic"><h3></h3><span class="n">Statements ${p.split[0]} and ${p.agree[0]}</span></div>
-    <div class="half split"><span class="pill">They split</span><q></q></div>
-    <div class="half agree"><span class="pill">They agree</span><q></q></div>`;
+    <div class="half split"><span class="pill">They disagree on</span><q></q></div>
+    <div class="half agree"><span class="pill">But both back</span><q></q></div>`;
   d.querySelector('h3').textContent = p.topic;
   const [qs, qa] = d.querySelectorAll('q'); qs.textContent = p.split[1]; qa.textContent = p.agree[1];
   d.querySelector('.split').appendChild(dumbbell(p.split[2], p.split[3], p.split[4], p.split[5]));
   d.querySelector('.agree').appendChild(dumbbell(p.agree[2], p.agree[3], p.agree[4], p.agree[5]));
   pairsRoot.appendChild(d);
+});
+
+/* all statements at least 7 in 10 of each group agreed with (10+ voters in each), highest shared support first:
+   [id, text, Group 1 %, Group 2 %, Group 1 voters, Group 2 voters] */
+const SHARED = [
+  [50, 'We need to ensure the skills we require are part of the criteria', 90, 93, 52, 14],
+  [12, 'For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.', 83, 83, 104, 30],
+  [76, 'Employers who exploit migrant workers should lose the right to sponsor visas.', 95, 82, 63, 17],
+  [78, 'Migrants should commit to respecting Australian laws and values.', 82, 100, 66, 17],
+  [148, 'Immigration is fundamentally a good thing. But, for all concerned the rules should be clear. Decisions should be made promptly.', 96, 82, 57, 11],
+  [74, 'Visas could be tied to working in regions that need workers.', 78, 94, 54, 18],
+  [129, 'I would like to hear more about the economic impact of migration, pro’s and con’s to stimulate a fact based debate.', 90, 78, 59, 18],
+  [139, 'The cost of dependents for temporary visa holders should be transparent.', 78, 100, 58, 17],
+  [180, 'Bipartisan support is required to create a big picture plan for migration in the future.', 86, 77, 58, 13],
+  [0, 'I’d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 87, 77, 94, 30],
+  [17, 'If a business invests in sponsoring someone, it should be able to count on them staying a few years, not moving on straightaway.', 76, 79, 114, 29],
+  [26, 'I’d trust the system more if ordinary people got clear information about how it works and a real say in it.', 73, 79, 114, 28],
+  [65, 'Permanent migrants should have skills Australia needs, such as construction.', 73, 81, 55, 16],
+  [229, 'The government has a responsibility, arguably poorly met at the moment, to build new houses in a timely manner to keep prices affordable', 85, 73, 27, 11],
+  [72, 'If migration is used to offset an ageing population, the numbers should be calculated and published.', 72, 72, 65, 18],
+  [126, 'I would like to have a government that thoroughly plans for immigration. Not one that just responds to the current political climate.', 97, 71, 60, 14],
+  [9, 'I’d trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.', 71, 75, 106, 28],
+  [52, 'Agree that the system needs to be streamlined more transparent and less complex', 86, 71, 64, 17]
+];
+const allRoot = document.getElementById('all');
+SHARED.forEach(([id, t, a, b, na, nb]) => {
+  const li = document.createElement('li');
+  const sm = n => n < 20 ? ` <span class="nn">(${n} voted)</span>` : '';
+  li.innerHTML = `<q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${a}%</b>${sm(na)}</span><span><i class="dot g2"></i>Group 2 <b>${b}%</b>${sm(nb)}</span><span>Statement ${id}</span></div>`;
+  li.querySelector('q').textContent = t;
+  allRoot.appendChild(li);
 });
 
 /* ================= unlikely allies: the same map, with the people who backed both lit up ================= */
