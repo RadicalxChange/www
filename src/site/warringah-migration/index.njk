@@ -529,7 +529,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   <div class="wrap">
     <div class="head side">
       <h2 id="agree-h">Even where they disagree, they agree on something</h2>
-      <p class="head-line">At least 7 in 10 people in each group agreed with 34 statements. Here are five of them, each next to a question the groups disagree on.</p>
+      <p class="head-line">At least 7 in 10 people in each group agreed with 34 statements. Here are five of them, each beside a related statement the two groups disagree on.</p>
     </div>
     <div id="pairs"></div>
     <details class="all">
@@ -861,18 +861,18 @@ function dumbbell(a, b, na, nb) {
 
 /* each statement: [id, text, Group 1 %, Group 2 %, Group 1 voters, Group 2 voters] */
 const PAIRS = [
-  { topic: 'How many people, and how fast?', split: [3, 'For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.', 16, 80, 206, 111], agree: [39, 'Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.', 85, 84, 192, 102] },
-  { topic: 'Temporary or permanent?', split: [11, 'Temporary visas should stay temporary. People who come on them know the deal, and staying on shouldn\'t be expected.', 39, 82, 213, 111], agree: [331, 'The pathway to stay permanently and become an Australian citizen should be clear from the start', 89, 80, 57, 30] },
-  { topic: 'How fast should visa decisions be?', split: [19, 'I\'d trust the system more if visa decisions were fast, because people\'s lives, jobs and families are on hold while they wait.', 80, 28, 207, 105], agree: [335, 'Once policy and legislation is set, the department should process applications in a fair, transparent and timely manner without interference', 98, 75, 59, 28] },
-  { topic: 'Protecting workers on visas', split: [18, 'No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.', 82, 34, 213, 111], agree: [74, 'Temporary migration programs need strong safeguards against worker exploitation and coercion.', 96, 79, 173, 95] },
-  { topic: 'Help to settle in', split: [27, 'If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.', 59, 22, 205, 110], agree: [412, 'Our capability to genuinely support arriving migrants needs to be considered when establishing numbers and pathways.', 88, 78, 33, 27] }
+  { topic: 'Plan and build ahead of growth', split: [3, 'For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.', 16, 80, 206, 111], agree: [39, 'Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.', 85, 84, 192, 102] },
+  { topic: 'A clear path to stay, from the start', split: [11, 'Temporary visas should stay temporary. People who come on them know the deal, and staying on shouldn\'t be expected.', 39, 82, 213, 111], agree: [331, 'The pathway to stay permanently and become an Australian citizen should be clear from the start', 89, 80, 57, 30] },
+  { topic: 'Fair, timely decisions', split: [19, 'I\'d trust the system more if visa decisions were fast, because people\'s lives, jobs and families are on hold while they wait.', 80, 28, 207, 105], agree: [335, 'Once policy and legislation is set, the department should process applications in a fair, transparent and timely manner without interference', 98, 75, 59, 28] },
+  { topic: 'Protect visa workers from exploitation', split: [18, 'No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.', 82, 34, 213, 111], agree: [74, 'Temporary migration programs need strong safeguards against worker exploitation and coercion.', 96, 79, 173, 95] },
+  { topic: 'Set numbers by the support we can give', split: [27, 'If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.', 59, 22, 205, 110], agree: [412, 'Our capability to genuinely support arriving migrants needs to be considered when establishing numbers and pathways.', 88, 78, 33, 27] }
 ];
 const pairsRoot = document.getElementById('pairs');
 PAIRS.forEach(p => {
   const d = document.createElement('article'); d.className = 'pair';
   d.innerHTML = `<div class="topic"><h3></h3><span class="n">Statements ${p.split[0]} and ${p.agree[0]}</span></div>
-    <div class="half split-half"><span class="pill">They split</span><q></q></div>
-    <div class="half agree"><span class="pill">They agree</span><q></q></div>`;
+    <div class="half split-half"><span class="pill">They disagree on</span><q></q></div>
+    <div class="half agree"><span class="pill">But both back</span><q></q></div>`;
   d.querySelector('h3').textContent = p.topic;
   const [qs, qa] = d.querySelectorAll('q'); qs.textContent = p.split[1]; qa.textContent = p.agree[1];
   d.querySelector('.split-half').appendChild(dumbbell(p.split[2], p.split[3], p.split[4], p.split[5]));

@@ -52,6 +52,9 @@ quotes change, regenerate it.
   group voted, the page shows how many.
 - **Shared statements:** at least 70% agreement in both groups, with at least
   10 voters in each: 34 statements, all listed in the fold under the pairs.
+  Each of the five pairs is titled by what both groups want, and its halves
+  are labelled "They disagree on" and "But both back", so the card reads as
+  one sentence.
 - **Statements where the groups took opposite sides:** one group's majority
   agreed and the other's majority disagreed, with at least 8 voters in each
   group: 17 statements. The hover cards count each person's votes on these.
