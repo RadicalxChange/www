@@ -67,6 +67,10 @@ quotes change, regenerate it.
   Net votes are votes for minus votes against. The chart shared after the
   session shows 56 voters because it keeps two ballots of 6 and 7 credits and
   matches names exactly; the order of all 13 changes is the same.
+  Each of the top six cards leads with its net votes, since they set the
+  order, with one bar on a shared scale (the top change is full width) and the
+  backers and opposers as a small line under it. The clear-no card shows its
+  net alone, and the other six in the fold lead with their nets.
 
 ## The map
 

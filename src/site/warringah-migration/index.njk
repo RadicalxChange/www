@@ -271,24 +271,21 @@ details.all summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2r
 .sq.s1{grid-template-columns:repeat(1,16px)} .sq.s4{grid-template-columns:repeat(2,16px)} .sq.s9{grid-template-columns:repeat(3,16px)}
 .how p.cap{font-size:1.1rem;line-height:1.45;max-width:36rem}
 .finding{font-family:var(--display);font-weight:700;color:var(--heading);font-size:clamp(1.35rem,2.1vw,1.8rem);line-height:1.2;margin:0 0 26px;max-width:44rem}
-.key{display:flex;gap:22px;font-size:.95rem;margin:0 0 24px;flex-wrap:wrap}
-.key span{display:inline-flex;align-items:center;gap:8px}
-.key i{width:13px;height:13px;border-radius:50%;display:inline-block}
-.key .k-y{background:var(--cyan);box-shadow:inset 0 0 0 1.5px var(--navy)}
-.key .k-n{background:var(--navy)}
-.key .k-0{background:var(--track)}
 .prio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .pcard{background:var(--card);border-radius:24px;padding:26px 26px 24px;display:flex;flex-direction:column;border:2px solid var(--navy)}
 @supports (grid-template-rows:subgrid){.pcard{display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:0}.pcard .echo{align-self:start}}
 .pcard .rank{font-family:var(--display);font-weight:700;font-size:2.4rem;line-height:1;margin-bottom:12px;color:var(--heading)}
 .pcard .tt{margin-bottom:22px;flex:1}
 .pcard p.t{font-weight:600;font-size:1.12rem;line-height:1.32}
-.waffle{display:grid;grid-template-columns:repeat(14,1fr);gap:4px;margin-bottom:12px}
-.waffle i{aspect-ratio:1;border-radius:50%;background:var(--track)}
-.waffle i.y{background:var(--cyan);box-shadow:inset 0 0 0 1.5px var(--navy)}
-.waffle i.n{background:var(--navy)}
+/* each change leads with its net votes, which set the order; one bar on a shared scale (the top change is full width) */
+.tally{margin:0 0 12px}
+.tally .big{display:flex;align-items:baseline;gap:.45rem;margin:0 0 12px;font-family:var(--display);font-weight:700;font-size:2.7rem;line-height:1;color:var(--heading)}
+.tally .big span{font-family:var(--text);font-size:.95rem;font-weight:600;color:var(--muted)}
+.tbar{height:10px;border-radius:5px;background:var(--track);overflow:hidden}
+.tbar i{display:block;height:100%;border-radius:5px;background:var(--cyan)}
 .pstats{font-size:.95rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .pstats b{font-weight:600}
+.pcard .pstats{color:var(--muted);font-size:.92rem}
 .echo{border-top:1px solid var(--line);margin-top:18px;padding-top:14px}
 .echo .el{font-size:.85rem;font-weight:600;margin-bottom:6px}
 .echo .en{font-size:.85rem;color:var(--muted);margin-top:6px}
@@ -298,18 +295,17 @@ details.all summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2r
 .no-card h3{font-size:2rem;line-height:1.1;margin:0 0 14px;color:var(--cyan)}
 .no-card p.t{font-weight:600;font-size:1.28rem;line-height:1.32;margin-bottom:14px}
 .no-card p.s{color:#d3e2e8;font-size:1rem}
-.no-card .waffle{max-width:420px}
-.no-card .waffle i{background:#2d4d60}
-.no-card .waffle i.y{background:var(--cyan);box-shadow:none}
-.no-card .waffle i.n{background:#fff}
-.no-card .pstats{color:#fff}
+.no-card .tally .big{color:#fff}
+.no-card .tally .big span{color:#d3e2e8}
 details.rest{margin-top:28px;border-top:2px solid var(--navy);padding-top:18px}
 details.rest summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2rem 0}
 .rest-list{list-style:none;margin:16px 0 0;padding:0}
 .rest-list li{display:grid;grid-template-columns:3rem 1fr auto;gap:16px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line)}
 .rest-list .r{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1;color:var(--heading)}
 .rest-list .t{font-weight:600}
-.rest-list .s{font-size:.92rem;color:var(--muted);white-space:nowrap}
+.rest-list .s{font-size:.92rem;color:var(--muted);white-space:nowrap;display:flex;align-items:baseline;gap:.6rem}
+.rest-list .rnet{font-family:var(--display);font-size:1.25rem;font-weight:700;color:var(--heading)}
+.rest-list .rs{font-size:.9rem}
 
 /* ---------- how this worked ---------- */
 .steps{list-style:none;margin:0 0 30px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
@@ -553,11 +549,10 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <p class="cap">At a community session on 11 November, 53 people used quadratic voting to spread a budget of credits across 13 possible changes, for or against. Each extra vote on the same idea costs more, so the totals show what people care about most.</p>
     </div>
     <p class="finding">The top three match ideas most people in both groups agreed with in the conversation.</p>
-    <div class="key" aria-hidden="true"><span><i class="k-y"></i>Backed it</span><span><i class="k-n"></i>Opposed it</span><span><i class="k-0"></i>Neither</span></div>
     <div class="prio-grid" id="prio"></div>
     <div class="no-card">
       <div><h3>And one clear no</h3><p class="t">Prioritise migrants in high-paying jobs, using salary rather than shortage lists to decide who qualifies.</p><p class="s">30 people opposed it and 9 backed it. Most of the opposition was mild, with one or two votes each.</p></div>
-      <div><div class="waffle" id="nowaffle" role="img" aria-label="9 of 53 backed it, 30 opposed it"></div><div class="pstats"><span><b>9</b> backed, <b>30</b> opposed</span><span>Net <b>−47</b> votes</span></div></div>
+      <div><div class="tally"><p class="big">−47<span>net votes</span></p></div></div>
     </div>
     <details class="rest">
       <summary>See the other six changes</summary>
@@ -907,14 +902,13 @@ const QV = [
   { t: 'Limit time on temporary visas to a maximum of about eight years.', y: 24, n: 11, net: 29 }
 ];
 const VOTERS = 53;
-function waffle(box, y, n, total = VOTERS) { for (let i = 0; i < total; i++) { const e = document.createElement('i'); if (i < y) e.className = 'y'; else if (i >= total - n) e.className = 'n'; box.appendChild(e); } }
+const TOPNET = QV[0].net;  // the top change's bar is full width; the others compare with it
 const pg = document.getElementById('prio'), rest = document.getElementById('rest');
 QV.forEach((q, i) => {
   if (i < 6) {
     const c = document.createElement('article'); c.className = 'pcard';
-    c.innerHTML = `<span class="rank" aria-hidden="true">${i + 1}</span><div class="tt"><p class="t"></p></div><div class="waffle" role="img" aria-label="${q.y} of ${VOTERS} backed it, ${q.n} opposed it"></div><div class="pstats"><span><b>${q.y}</b> of ${VOTERS} backed it</span><span>Net <b>+${q.net}</b> votes</span></div>`;
+    c.innerHTML = `<span class="rank" aria-hidden="true">${i + 1}</span><div class="tt"><p class="t"></p></div><div class="tally"><p class="big">+${q.net}<span>net votes</span></p><div class="tbar" aria-hidden="true"><i style="width:${(q.net / TOPNET * 100).toFixed(1)}%"></i></div></div><div class="pstats"><span>${q.y} of ${VOTERS} backed it, ${q.n} opposed</span></div>`;
     c.querySelector('.t').textContent = q.t;
-    waffle(c.querySelector('.waffle'), q.y, q.n);
     if (q.e) {
       const ec = document.createElement('div'); ec.className = 'echo';
       ec.innerHTML = `<p class="el">In the conversation, statement ${q.e[0]}</p><q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${q.e[2]}%</b></span><span><i class="dot g2"></i>Group 2 <b>${q.e[3]}%</b></span></div>${q.en ? '<p class="en"></p>' : ''}`;
@@ -925,11 +919,10 @@ QV.forEach((q, i) => {
     pg.appendChild(c);
   } else {
     const li = document.createElement('li');
-    li.innerHTML = `<span class="r">${i + 1}</span><span class="t"></span><span class="s"><b>${q.y}</b> of ${VOTERS} backed it, net +${q.net}</span>`;
+    li.innerHTML = `<span class="r">${i + 1}</span><span class="t"></span><span class="s"><b class="rnet">+${q.net}</b><span class="rs">${q.y} of ${VOTERS} backed it</span></span>`;
     li.querySelector('.t').textContent = q.t; rest.appendChild(li);
   }
 });
-waffle(document.getElementById('nowaffle'), 9, 30);
 </script>
 <div class="rxc-shell bottom" role="contentinfo">
   <div class="wrap">
