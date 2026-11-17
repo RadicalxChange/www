@@ -29,8 +29,8 @@ mode set below them). The RxC breadcrumb and footer bars keep RxC's own look.
 Its own link-preview image is `src/site/assets/curtin-migration-og.png`
 (1200×630, served at `/assets/curtin-migration-og.png` and referenced by
 the `og:image` and `twitter:image` tags). It was rendered from the page's
-own fonts and copy: the hero question, "266 people in Curtin answered",
-and three of the hero quotes. If the hero copy changes, regenerate it.
+own fonts and copy: the hero headline, "266 people took part" and the
+first two hero quotes. If the hero copy changes, regenerate it.
 
 Data sources: the Polis export of 30 October 2026
 (https://pol.is/report/r9fyrr8m6yfmfbwscfvp2) and the quadratic-vote results
@@ -100,29 +100,26 @@ HTML directly; every figure on the page has been checked against the exports.
 - Between 901px and about 1135px wide at the standard text size, the first
   card is narrower than it used to be, so its quote runs one or two lines
   longer.
+- The hero headline is three set lines, like the Warringah page's: "Curtin
+  wants", "a long-term plan" (boxed in navy) and "for migration". Each line is
+  `white-space:nowrap`, and the size comes from the hero text column
+  (`container-type:inline-size`): `min(14cqi,9vh,6.4rem)`. The widest line,
+  the boxed one, is about 6.7 times the size, so it always fits the column
+  and the lines never rewrap. Phones use `min(14cqi,3.6rem)`.
 - Short windows keep the headline, lede and buttons on the first screen. The
-  rules are inside `min-width:901px`, and a tall window is unchanged by them.
-  The pixel figures below are at the standard 16px text size.
-  - `.hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),88px)}`. The
-    space above the hero shrinks from 88px to 28px as the window goes from
-    752px to 692px tall.
-  - The headline's size is the smallest of three:
-    - `7.6vw`, as it always was.
-    - Its four-line size, where four lines fit: `27.78vh - 7.45rem`. Four
-      lines need a window as tall as the top bar (58px), the 88px above the
-      hero, the headline (3.6 × its size), the lede, gaps and buttons
-      (259px), and 24px to spare. Where they do not fit, the size stops at
-      `7.7rem - 13px`: the largest at which "What would it take" stays on
-      one line, so the headline sets in three lines.
-    - On very short windows, `37.04vh - 8.73rem`: three lines (2.7 × the
-      size), 28px above the hero, and 32px to spare under the buttons.
+  rules are inside `min-width:901px`:
+  - `.hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),88px)}` shrinks
+    the space above the hero.
+  - The headline's `9vh` limits it on short windows, and under 47.5em tall it
+    takes `min(14cqi,8vh,6.4rem)`.
   - Where the cards run well past the first screen, the headline starts
-    level with the first card instead of sitting halfway down the cards
-    (`align-items:start`). That is any window under 43.25em tall, and a
-    window under 62.5em wide that is under 53em tall.
+    level with the first card (`align-items:start`): any window under 43.25em
+    tall, and a window under 62.5em wide that is under 53em tall.
 
-  If the headline, the lede or the buttons change, measure again: these
-  numbers come from their heights.
+  Swept at 143 window sizes from 901×600 to 2560×1080 at 16px, the buttons
+  stay on the first screen at every one. The small turnout line under them
+  can fall just below it on the shortest windows. If the headline, lede or
+  buttons change, sweep again.
 - The closing "Thank you, Curtin" circle is sized in rem like its words
   (15rem, and 10.625rem at 900px and below), so the words stay inside it at
   any text size.
