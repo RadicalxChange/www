@@ -31,12 +31,16 @@ statements in a fold); the conditions people want most (the whole priority
 vote as one ranked list); what the small groups said, in residents' own
 words; how it worked; and what happens next.
 
-The headline is "What happened when the Southern Highlands set the terms?",
-and the hero answers it. The lede, trimmed from a partner's draft: "After
-years of fighting proposals it never asked for, most recently a gas-powered
-data centre near Moss Vale, the Southern Highlands got on the front foot.
-Most residents who took part are sceptical of a data centre here. But
-together they set out the terms one would have to meet." It names no terms:
+The headline is "What Southern Highlands residents said about data centres"
+(a partner's wording; until 16 November 2026 it was "What happened when the
+Southern Highlands set the terms?", which could be read as the language of a
+deal). The lede, trimmed from a partner's draft: "After years of fighting
+proposals it never asked for, most recently a gas-powered data centre near
+Moss Vale, the Southern Highlands got on the front foot. Most residents who
+took part are sceptical of a data centre here, and many don't want one at
+all. But together they set out the terms one would have to meet." "Many don't
+want one at all" rests on the four outright-no statements: 35 of the 54
+people who voted on at least one agreed with at least one. It names no terms:
 the principles section just below gives them, in the community's own words
 (Jack's call, 16 November 2026). Until then six terms followed, each backed by
 a statement most of both groups agreed with or a top-seven priority-vote
@@ -108,9 +112,10 @@ Jess, who ran the project, reviewed the preview. What changed, and why:
   which read as the community giving in. They were "What would the Southern
   Highlands accept, and why?" and "A better bargain starts with a community
   that can say clearly what it would accept, and why." (a line the original
-  brief had fixed word for word). They are now "What happened when the
+  brief had fixed word for word). They became "What happened when the
   Southern Highlands set the terms?" and "A better bargain starts with a
-  community that can name its priorities, terms and shared vision." Two
+  community that can name its priorities, terms and shared vision." (Both
+  have changed since: see the two sections below.) Two
   smaller lines in the developer section followed on Jack's go-ahead: "where
   the community stands, and on what terms" (Certainty) and "what residents
   want, and why" (local officials). One resident's quote in the hero still
@@ -181,12 +186,10 @@ fact, the page now follows the release:
   philanthropic organisations") until the partners' review, which dropped
   the number. The page names no funder, and the checker fails if any other
   funding claim appears.
-- The partners appear in the release's order and roles: Highlands Homegrown
-  Economy first, as the community-led initiative convened with WinZero;
-  Regen Labs for the research and the local engagement; RadicalxChange for
-  the deliberation; BWD
-  Strategic for the independent assessment. The footer, and the two entries
-  on `/projects`, list them in that order too.
+- The partners appear in the release's order: Highlands Homegrown Economy
+  first, as the community-led initiative convened with WinZero. Their roles
+  now follow the partner's own page (see "Tightened after public criticism").
+  The footer, the home page and `/projects` list them in that order too.
 - The in-person session of 20 October is described in the release's terms
   (a community centre, the challenges and joys of regional life, how
   benefits should be governed), and "Who took part" in the notes adds First
@@ -207,9 +210,50 @@ The release's Polis totals differ slightly from the page's. The page keeps
 its own, which come from the final export under the counting rule below, and
 does not mention the difference.
 
-Still to settle with the project lead: the name of the fifth principle (see
-"Fair share" below), how the blueprint is described, and the opening
-paragraph.
+Still to settle with the project lead: how the blueprint is described. (The
+fifth principle's name is settled: the partner's published model calls it
+"Fair share".)
+
+## Tightened after public criticism (16 November 2026)
+
+In mid-November 2026 the project was publicly criticised as a "counteroffer"
+that turns a no into a conditional yes. The page was tightened so it can't be
+read as consent, or as the language of a deal:
+
+- Headline: "What Southern Highlands residents said about data centres", in
+  place of "set the terms".
+- The hero says many don't want a data centre here at all, before the terms.
+- The sticker is statement 8: 92% agreed "the community should have a
+  meaningful say in whether and under what conditions major data centres
+  proceed" (95% of the more concerned group, 8 of 10 of the more open). It
+  replaced statement 46 ("any deal struck now should still look fair…"),
+  because "any deal" reads as dealmaking. `/projects` uses the same figure.
+- Under the principles, in the partner's words: an informed no is as valid
+  as a conditional yes; the work is independent of the proponent and doesn't
+  assume any development should proceed; and it "should not be cited by any
+  proponent, consultant or party to proceedings as evidence of community
+  support for, or consent to, a particular development".
+- The principles' names and wording follow the Southern Highlands Model as
+  Highlands Homegrown Economy now publishes it (the "Clean and green"
+  principle replaced "Clean power"), so the two public versions match. The
+  partner roles follow the same page.
+- "How this worked" says plainly who took part: invited, not chosen at
+  random; a broad cross-section, especially voices often missing from
+  consultation; not designed to be a demographically representative sample;
+  lunchtime and evening sessions so working parents could join. Partners
+  had described the sample differently in public, so keep this wording
+  consistent everywhere.
+- The priority vote says it ranked conditions and did not ask whether a data
+  centre should go ahead. The agreement section says agreement sits
+  alongside difference, not in place of it.
+- "What happens next" adds the call for a pause: 70% backed an immediate
+  moratorium on new approvals until the rules catch up (statement 43), and
+  Highlands Homegrown Economy supports one. It is framed as residents' call
+  and the partner's position, not RadicalxChange's.
+- The asks no longer include a funding ask ("or help fund the next one").
+- "Counter-offer" is gone from the site: the project's entries on the home
+  page and `/projects` now describe a community-led pilot, and the home page
+  status is current.
 
 ## Layout
 
@@ -218,13 +262,14 @@ paragraph.
   text size is 20px then gets a proportionally wider page. With the px cap,
   that reader saw the hero headline break into five lines and the sticker
   cover two of the quotes.
-- The hero headline is set in three lines that never break ("What happened
-  when the / Southern Highlands / set the terms?"): each is a block-level
+- The hero headline is set in three lines that never break ("What Southern
+  Highlands / residents said about / data centres"): each is a block-level
   `nowrap` span. It is sized from its own column (`13.7cqi`, a container
-  query unit), so the longest line fills 96% of the column at any width, and
-  from the window height (`11.5vh`), so the headline, lede and buttons fit
-  one screen on a laptop. The longest line is 7.033em wide in the display
-  face. If the headline changes, measure the new longest line and set the
+  query unit), so the longest line fills about 97% of the column at any
+  width, and from the window height (`11.5vh`), so the headline, lede and
+  buttons fit one screen on a laptop. The longest line, "What Southern
+  Highlands", is 7.052em wide in the display face. If the headline changes,
+  measure the new longest line and set the
   cqi value to 96 divided by its width in em. There is no minimum size,
   because a floor would push the longest line out of a narrow phone column.
 - Screens under 45em tall get a smaller headline and lede, and screens under
@@ -505,19 +550,23 @@ paragraph.
   session's quotes be checked with participants before publication, so none
   is used. To add or change a quote, keep the speaker's words in order and
   cut only fillers and repeats.
-- The hero sticker (96% "agreed any deal should still look fair in 20 years",
-  statement 46) is deliberate. It is one of the three most widely backed
-  statements (96% of 49, with 100% of the more open group and 95% of the more concerned group). It frames
-  the page's argument in residents' own terms: a deal judged by long-term
-  fairness, not a yes or no. Statement 49 (community investment fund, 98%)
-  scores slightly higher but reads as being about money.
-- The seven principles appear word for word as the project published them
-  on 26 October 2026, under the partner two-pager's three headings. The
-  checker holds the exact wording. Principle 5 is named "Fair share" as on
-  the forum slides, which show in two of the page's photos; the Strawperson
-  document and the published text call it "Shared value". The page keeps the
-  forum's name until the published blueprint settles it. The model's dollar
-  benchmark is deliberately left out.
+- The hero sticker is statement 8: 92% "agreed the community should have a
+  say in whether and how data centres proceed" (45 of 49; the statement reads
+  "a meaningful say in whether and under what conditions major data centres
+  proceed"). It holds both halves of the process's position, whether and on
+  what terms, in residents' own vote. It replaced statement 46 ("any deal
+  struck now should still look fair…", 96%) in mid-November 2026. The
+  sticker's text is set in four short lines at .66rem so they stay inside
+  the circle.
+- The seven principles appear word for word as Highlands Homegrown Economy
+  publishes the Southern Highlands Model (the "Why" graphic on its project
+  page, read 16 November 2026), with each description's first letter
+  capitalised, under the partner two-pager's three headings. The checker
+  holds the exact wording; if the partner's page changes, change this page
+  to match. The forum slides in the photos show earlier names ("Clean
+  Power"); the 26 October media release used earlier wording and called the
+  fifth principle "Shared Value". The model's dollar benchmark is
+  deliberately left out.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
