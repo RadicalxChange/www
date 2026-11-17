@@ -37,6 +37,22 @@ participant, in the same order as `DATA.people`: `b` backed both, `v` voted on
 both but did not back both, `-` did not vote on both. The bar figures and the
 numbers in the "Affordability allies" method note come from the same export.
 
+Hover-card examples: each person's card shows up to two of their votes. The
+last four fields of each `DATA.people` entry hold them: the example where they
+voted like Group 1 (statement number, then `a` agreed or `d` disagreed), then
+the example where they voted like Group 2 (`-1` and an empty string when there
+is none). The candidates are the 40 statements where the groups took opposite
+sides (one group's majority agreed and the other's disagreed, with at least 8
+voters in each group), limited to those the person voted on the same way as
+that group. The card prefers, in order: a statement the person agreed with
+over one they disagreed with; the one that group most widely shared (the share
+of the group on its side, as a 95% Wilson lower bound, so small samples count
+for less); the one more of that group voted on; then the lower statement
+number. `DATA.texts` holds the wording of every statement the cards use, from
+the export, with apostrophes set as ’. Until November 2026 the cards showed
+each person's most divisive vote instead (the largest gap between the groups),
+which put the bluntest statements on the most cards.
+
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
 
