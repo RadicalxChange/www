@@ -365,8 +365,10 @@ left half their width empty on a wide screen.
   matrix of the grouped people: PCA with missing votes set to the statement
   mean, scaled by sqrt(statements / votes cast), then a robust rescale so two
   outliers don't squash the rest. It is close to the Polis report's map but
-  not identical. Dots stack upward where people sit close together; there is
-  no vertical scale. Dots glide into place when the map scrolls into view
+  not identical. Dots pile up in rounded heaps where people sit close
+  together, as on the Warringah and Curtin pages: each drops near its place
+  and rolls up to three dot widths to the lowest free spot, never across a
+  stance's dividing line. There is no vertical scale. Dots glide into place when the map scrolls into view
   (reduced motion shows them in place).
 - The map card leads with the stances. The lead reads "Each dot is one
   person, placed by how they voted. People further to the right agreed with

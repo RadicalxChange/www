@@ -778,7 +778,7 @@ details.terms{margin-top:36px}
     <div class="sub-head"><h3>Mostly sceptical, but in different ways</h3></div>
     <div class="map-card" id="map-card">
       <p class="map-lead">Each dot is one person, placed by how they voted. People further to the right agreed with more of the concerns about a data centre.</p>
-      <svg id="map" viewBox="0 0 1000 300" role="img" aria-labelledby="map-desc"><desc id="map-desc">104 people placed along the main divide in the votes. The more open group, 13 people, sits to the left. The more concerned group, 91 people, sits to the right in much taller stacks. Dashed lines split the line into three stances, described below the map.</desc></svg>
+      <svg id="map" viewBox="0 0 1000 300" role="img" aria-labelledby="map-desc"><desc id="map-desc">104 people placed along the main divide in the votes. The more open group, 13 people, sits to the left. The more concerned group, 91 people, sits to the right in a much higher pile. Dashed lines split the line into three stances, described below the map.</desc></svg>
       <div class="map-foot">
         <div class="map-legend"><span><i class="dot g2"></i>More concerned</span><span><i class="dot g1"></i>More open</span></div>
         <button class="someone" type="button" id="someone">Show me someone</button>
@@ -929,7 +929,7 @@ details.terms{margin-top:36px}
         <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of people who agreed, out of everyone who voted on that statement, whether they agreed, disagreed or passed. The more open group is small, so where fewer than 20 people in a group voted, we show how many. On the group cards, we show the count instead of a percentage.</p></div>
         <div class="arow"><h3>Who we counted</h3><p>As in the forum materials, we set aside two accounts: the one that loaded the 40 starter statements, and one that passed on every statement it saw. That leaves 157 people and 4,823 votes. 179 statements received votes: 33 starter statements, and 146 written by 79 participants.</p></div>
         <div class="arow"><h3>Who took part</h3><p>Session participants were invited to reflect a range of views: environmental and conservation advocates, including people opposed to data centres; parents and young people; older residents; business owners and the local IT sector; First Nations community members; and community organisations, advocates for marginalised residents and people with lived experience of disadvantage. The Polis conversation was open to anyone. The same person may have taken part in more than one activity, so the numbers for each can overlap.</p></div>
-        <div class="arow"><h3>The groups and the map</h3><p>Polis, an open-source tool, placed the 104 people who voted on at least seven statements into two groups by how they voted. Nobody chose a group; we named them. The map places each of them along the main divide in the votes. We rebuilt it from the published votes with the same method Polis uses, so it is close to the Polis report but not identical. Dots stack where people sit close together.</p></div>
+        <div class="arow"><h3>The groups and the map</h3><p>Polis, an open-source tool, placed the 104 people who voted on at least seven statements into two groups by how they voted. Nobody chose a group; we named them. The map places each of them along the main divide in the votes. We rebuilt it from the published votes with the same method Polis uses, so it is close to the Polis report but not identical. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place.</p></div>
         <div class="arow"><h3>The three stances</h3><p>We split the line in two places. Each split sits in a gap between dots, where agreement with one statement changes most. The first is statement 1, on whether meeting the planning rules should be enough: 5 of 7 people to the left of the line agreed, and 0 of 29 to the right. The second is statement 70, on keeping a large data centre out of the Sydney water basin: 1 of 15 people to the left of the line agreed, and 16 of 18 to the right. Each description sums up how the people in that stance voted. Each person saw only some statements, so a description fits most of the people who voted, not everyone.</p></div>
         <div class="arow"><h3>Behind each stance</h3><p>Four statements say no to a data centre outright (83, 84, 98 and 129). In the first stance, 10 people voted on at least one of them, and none agreed. In the middle stance, 10 of 18 agreed with at least one, and pass was the most common vote. In the last stance, 23 of 24 agreed with at least one. Moving right, people also agreed more often with the 17 statements that the more concerned group backed and the more open group did not: 15% of votes in the first stance, 62% in the middle and 87% in the last. In every stance, most people backed at least three in four of the shared terms they voted on.</p></div>
         <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results.</p></div>
@@ -1022,8 +1022,8 @@ const ring = el('circle', { r: R + 5, fill: 'none', stroke: 'var(--ink)', 'strok
 let settled = false;
 function layout() {
   const w = svg.clientWidth || MW, k = MW / w, narrow = w < 640;
-  R = Math.max(7, Math.min(14, 3.6 * k));
-  const D = 2 * R + Math.max(1.5, .6 * k);
+  R = (narrow ? 3.6 : 7) * k;  // the dot's radius in screen pixels, converted to map units: bigger than the Warringah and Curtin pages' because there are fewer people
+  const D = 2 * R + Math.max(1, .7 * k);
   const lo = PL + R, hi = MW - PR - R;
   // stances: on wide maps each name sits over its own stretch of the line, wrapped to fit;
   // if any name can't fit, number the stretches instead and leave the names to the key below
@@ -1066,17 +1066,29 @@ function layout() {
   const band = STANCES.length ? head + 1.1 * fsL : 0;
   BANDY = TOP + head + .4 * fsL;
   const keep = R + 2.5 * k;  // dots stay just clear of each dividing line
-  // stack each dot on the lowest free spot at its own position along the divide
+  // rounded heaps (the same layout as the Warringah and Curtin pages): each dot drops near its true place on
+  // the line and rolls a little to the lowest free spot, paying for every step it moves sideways, so crowded
+  // stretches pile up like sand, not in columns. A dot never rolls across a stance's dividing line.
+  // Narrow maps have fewer dot widths across, so dots may roll a little further and pile less steeply.
+  const reach = narrow ? 4 : 3, slope = narrow ? .7 : .9;
   const placed = [];
   let top = 0;
   people.slice().sort((a, b) => a.dv - b.dv || a.i - b.i).forEach(p => {
-    let x = lo + p.dv * (hi - lo);
-    CUTS.forEach((c, j) => { x = p.dv < c ? Math.min(x, sx[j] - keep) : Math.max(x, sx[j] + keep); });
-    const near = placed.filter(q => Math.abs(q.x - x) < D);
-    const cands = [0].concat(near.map(q => q.h + Math.sqrt(Math.max(0, D * D - (q.x - x) ** 2)))).sort((a, b) => a - b);
-    const h = cands.find(c => near.every(q => (q.x - x) ** 2 + (q.h - c) ** 2 >= D * D - .5)) || 0;
-    placed.push({ x, h, p });
-    top = Math.max(top, h);
+    let from = lo, to = hi;  // this person's stretch of the line, kept just clear of the dividing lines
+    CUTS.forEach((c, j) => { if (p.dv < c) to = Math.min(to, sx[j] - keep); else from = Math.max(from, sx[j] + keep); });
+    const tx = Math.min(to, Math.max(from, lo + p.dv * (hi - lo)));
+    const local = placed.filter(q => Math.abs(q.x - tx) < (reach + 1.2) * D);
+    let best = null;
+    for (let s = -reach; s <= reach + .001; s += .25) {
+      const x = Math.min(to, Math.max(from, tx + s * D));
+      const near = local.filter(q => Math.abs(q.x - x) < D);
+      const cands = [0].concat(near.map(q => q.h + Math.sqrt(Math.max(0, D * D - (q.x - x) ** 2)))).sort((a, b) => a - b);
+      const h = cands.find(c => near.every(q => (q.x - x) ** 2 + (q.h - c) ** 2 >= D * D - .5)) || 0;
+      const score = h + slope * Math.abs(x - tx);
+      if (!best || score < best.score) best = { x, h, score };
+    }
+    placed.push({ x: best.x, h: best.h, p });
+    top = Math.max(top, best.h);
   });
   const axisH = AXIS * Math.max(1, k * .5);
   MH = Math.ceil(TOP + band + top + 2 * R + axisH);
@@ -1109,8 +1121,9 @@ function layout() {
     }
     el('title', {}, g).textContent = `${s.name}: ${stanceCount[j]} people`;
   });
-  dots.forEach(d => d.setAttribute('r', R.toFixed(1)));
-  ring.setAttribute('r', (R + 5).toFixed(1));
+  dots.forEach(d => d.setAttribute('r', R.toFixed(2)));
+  ring.setAttribute('r', (R + 4 * k).toFixed(1));
+  ring.setAttribute('stroke-width', (2 * k).toFixed(1));
   if (settled) { dots.forEach((d, i) => { d.style.transition = 'none'; d.style.transform = `translate(${people[i].x}px, ${people[i].y}px)`; }); svg.getBoundingClientRect(); dots.forEach(d => d.style.transition = ''); }
   hidePerson && hidePerson();
 }
