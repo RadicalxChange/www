@@ -29,7 +29,7 @@ mode set below them). The RxC breadcrumb and footer bars keep RxC's own look.
 Its own link-preview image is `src/site/assets/curtin-migration-og.png`
 (1200×630, served at `/assets/curtin-migration-og.png` and referenced by
 the `og:image` and `twitter:image` tags). It was rendered from the page's
-own fonts and copy: the hero headline, "266 people took part" and the
+own fonts and copy: the hero headline, "265 people took part" and the
 first two hero quotes. If the hero copy changes, regenerate it.
 
 Data sources: the Polis export of 30 October 2026
@@ -40,7 +40,9 @@ It shows only the main divide, left to right (the first value in each
 `DATA.people` entry), in rounded heaps like the Warringah page's: each dot
 drops near its place on the line and rolls up to three dot widths to the
 lowest free spot, paying for each step sideways, so crowded stretches pile up
-like sand. Both maps share this layout (`swarm()`). The second value, which used to set an "agreed more often"
+like sand. Both maps share this layout (`swarm()`). The main map names each
+group, with its count, on one line above the tallest heap, as the Warringah
+page does; the allies map does not. The second value, which used to set an "agreed more often"
 height, is no longer drawn: it tracked how often people pressed agree, which
 said little about their views, so each card shows that figure instead.
 
@@ -48,8 +50,10 @@ The "Unlikely allies" section highlights the 52 affordability allies: people
 who backed both statement 33 (cost of living) and statement 29 (university
 housing). `DATA.allies` in the page script holds one character per grouped
 participant, in the same order as `DATA.people`: `b` backed both, `v` voted on
-both but did not back both, `-` did not vote on both. The bar figures and the
-numbers in the "Affordability allies" method note come from the same export.
+both but did not back both, `-` did not vote on both. The allies backed both
+statements by definition, so the cards say so once and show only how everyone
+else who voted on each statement answered. Those figures and the numbers in the
+"Affordability allies" note come from the same export.
 
 Hover-card examples: each person's card shows up to two of their votes. The
 last four fields of each `DATA.people` entry hold them: the example where they
@@ -66,6 +70,44 @@ number. `DATA.texts` holds the wording of every statement the cards use, from
 the export, with apostrophes set as ’. Until November 2026 the cards showed
 each person's most divisive vote instead (the largest gap between the groups),
 which put the bluntest statements on the most cards.
+
+## Common format (November 2026)
+
+Every Teals migration page follows one layout, with the Warringah page as the
+reference build. On this page that means:
+
+- **Group order.** Group 1 is the larger group, shown first, in amber, on the
+  map's left ("Migration works", 196); Group 2 is the smaller, in violet, on
+  the right ("Pace and control", 37). `DATA.people` stores the mirrored line
+  position (`1 - x`), the group (0 = Group 1), and the lean counts and
+  examples in Group 1, Group 2 order.
+- **Wording.** "Two main groups", "Both groups want a plan" and "First choice:
+  ..." at a glance; "Most people fit into one of two groups"; natural
+  frequencies (5 in 6, 1 in 6); "What sets them apart"; a caveat that says
+  the groups describe who took part.
+- **Agreement.** Pairs are titled by what both groups back and labelled "They
+  disagree on" and "But both back" (`PAIRS`: id, text, Group 1 %, Group 2 %,
+  Group 1 voters, Group 2 voters). A fold lists all 18 statements at least 70%
+  of each group agreed with, with at least 10 voters in each (`SHARED`).
+- **Priorities.** Each card leads with its net votes, with one bar on a shared
+  scale (the top change is full width), and backers and opposers in a small
+  line. The clear-no card shows its net alone.
+- **Counting.** People are those who voted on at least one statement open for
+  voting: 265 (Polis counts 266, including one account whose only vote was on
+  its own statement, which the moderators held back). 233 were placed in a
+  group, 32 not. 419 statements were open for voting (36 starters); 118 others
+  were held back, and no one else voted on them; 21,315 votes.
+- **Notes**, in order: reading the percentages, reading the map, affordability
+  allies, the group cards, who and what we counted, pairing the statements,
+  the priority vote, the data.
+
+The groups are the page's own (from the 30 October export); Polis's current
+export assigns two more people to the smaller group, so the figures were
+recomputed from the export with the page's groups, recovered by matching each
+row's vote count, agree rate, statements written and example votes to a
+participant. That matching reproduces every group figure already on the page,
+and every alternative matching that also does gives the same 18 shared
+statements.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
