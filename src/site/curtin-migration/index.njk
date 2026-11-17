@@ -220,6 +220,7 @@ section.block{padding:110px 0}
 .head .head-line{margin-top:18px;max-width:42rem}
 .allies-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:start}
 .amap-card{margin:0}
+@media (min-width:901px){ .amap-card{position:sticky;top:24px} }  /* the short map stays beside the statements as they scroll */
 .amap-lead{display:flex;align-items:center;gap:10px}
 .amap-lead .dot{width:14px;height:14px}
 .dot.ally{background:var(--fizz);box-shadow:inset 0 0 0 1.5px var(--navy)}
@@ -524,12 +525,12 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 
     <div class="sub-head"><h3>Where everyone sits</h3></div>
     <div class="map-card" id="map-card">
-      <p class="map-lead">Each dot is one person, placed left to right by how they voted. Where many people sit, the dots stack up.</p>
+      <p class="map-lead">Each dot is one person, placed by how they voted. People who voted alike sit close together, so the higher the pile, the more people voted that way.</p>
       <div class="map-top">
         <div class="map-legend"><span><i class="dot g1"></i>Group 1: Pace and control</span><span><i class="dot g2"></i>Group 2: Migration works</span><span style="font-weight:400"><i class="dot pale"></i>Paler: voted partly like the other group</span></div>
         <button class="someone" type="button" id="someone">Show me someone</button>
       </div>
-      <svg id="map" viewBox="0 0 1000 560" role="img" aria-labelledby="map-desc"><desc id="map-desc">A map of 233 people. Group 1, 37 people, sits on the left, where people agreed that fewer migrants should arrive more slowly. Group 2, 196 people, sits on the right, where people agreed that migration is working. Where many people sit, the dots stack up.</desc></svg>
+      <svg id="map" viewBox="0 0 1000 560" role="img" aria-labelledby="map-desc"><desc id="map-desc">A map of 233 people. Group 1, 37 people, sits on the left, where people agreed that fewer migrants should arrive more slowly. Group 2, 196 people, sits on the right, where people agreed that migration is working. Where many people sit close together, the dots pile up.</desc></svg>
       <div class="person" id="person" aria-live="polite"></div>
       <p class="map-hint">Hover over or tap a dot to see how that person voted.</p>
     </div>
@@ -626,7 +627,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <summary>Notes for checking the numbers</summary>
       <div class="arows">
         <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of a group who agreed, out of those in the group who voted on that statement. Later statements had fewer voters, so where fewer than 20 people in a group voted, we show how many.</p></div>
-        <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so it is close to the Polis report but not identical. Left to right is the main divide. Dots stack up where many people sit, so height shows only how crowded a spot is. How often each person agreed overall is on their card. The 32 paler dots are people near the border who voted partly like the other group, mostly people who voted on fewer statements. Each person’s card shows up to two of their votes as examples. For each group they sided with, it shows the statement most of that group agreed with, preferring statements the person agreed with over ones they rejected.</p></div>
+        <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so it is close to the Polis report but not identical. Left to right is the main divide. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place. How often each person agreed overall is on their card. The 32 paler dots are people near the border who voted partly like the other group, mostly people who voted on fewer statements. Each person’s card shows up to two of their votes as examples. For each group they sided with, it shows the statement most of that group agreed with, preferring statements the person agreed with over ones they rejected.</p></div>
         <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results. People who took part online and at the 14 October workshop gave very similar results.</p></div>
         <div class="arow"><h3>Affordability allies</h3><p>We looked for statements with similar support in both groups, then checked whether the same people backed them. For statements 33 and 29 they did: people who backed one had about ten times the odds of backing the other, even allowing for people who agree with most things. The link is clear in Group 2; Group 1 shows the same pattern, but it rests on 23 people. Of the others who backed one of the two, about half also voted on the other and didn’t back it. The other 38 didn’t get to vote on it. Had they voted like those who did, about 29 more would be allies, about 80 in all, but they may not have, and nearly all 38 are in Group 2. Treat this as a possible alliance, not a proven one.</p></div>
         <div class="arow"><h3>The priority vote</h3><p>A separate vote with its own voters. We set aside ballots that used fewer than 10 credits and kept the fuller ballot where someone voted twice, leaving 73 voters. Net votes are votes for minus votes against. The matching statements from the conversation are close in meaning, not identical in wording.</p></div>
@@ -680,20 +681,30 @@ const dotLayer = el('g', {}, svg);
 const dots = people.map(p => el('circle', { r: 9, cx: 0, cy: 0, class: 'pdot', fill: p.g === 0 ? 'var(--g1)' : 'var(--g2)' }, dotLayer));
 const ring = el('circle', { r: 16, fill: 'none', stroke: 'var(--ink)', 'stroke-width': 3, opacity: 0, 'pointer-events': 'none' }, svg);
 let settled = false;
-// Lay people out along the main divide. Each dot stacks on the lowest free spot at its own
-// position, so up and down only shows how many people sit there. Both maps use this.
+// Lay people out along the main divide in rounded heaps (the same layout as the Warringah page): each
+// dot drops near its true place on the line and rolls a little to the lowest free spot, paying for every
+// step it moves sideways, so crowded stretches pile up like sand, not in columns. Narrow maps have fewer
+// dot widths across, so dots may roll a little further and pile less steeply. Both maps use this, and
+// the allies map keeps desktop-sized dots in its narrower column (narrow means the phone layout).
 function swarm(w) {
-  const k = MW / w, r = Math.min(14, Math.max(8, 3.6 * k)), D = 2 * r + Math.max(1.5, .6 * k);
-  const lo = PL + r, hi = MW - PR - r, placed = [];
+  const k = MW / w, narrow = w < 640 && window.matchMedia('(max-width: 900px)').matches, r = (narrow ? 2.9 : 5.2) * k, D = 2 * r + Math.max(1, .7 * k);
+  const lo = PL + r, hi = MW - PR - r, reach = narrow ? 4 : 3, slope = narrow ? .7 : .9, placed = [];
   let top = 0;
   people.slice().sort((a, b) => a.nx - b.nx || a.i - b.i).forEach(p => {
-    const x = lo + p.nx * (hi - lo);
-    const near = placed.filter(q => Math.abs(q.x - x) < D);
-    const cands = [0].concat(near.map(q => q.h + Math.sqrt(Math.max(0, D * D - (q.x - x) ** 2)))).sort((a, b) => a - b);
-    const h = cands.find(c => near.every(q => (q.x - x) ** 2 + (q.h - c) ** 2 >= D * D - .5)) || 0;
-    placed.push({ i: p.i, x, h }); top = Math.max(top, h);
+    const tx = lo + p.nx * (hi - lo);
+    const local = placed.filter(q => Math.abs(q.x - tx) < (reach + 1.2) * D);
+    let best = null;
+    for (let s = -reach; s <= reach + .001; s += .25) {
+      const x = Math.min(hi, Math.max(lo, tx + s * D));
+      const near = local.filter(q => Math.abs(q.x - x) < D);
+      const cands = [0].concat(near.map(q => q.h + Math.sqrt(Math.max(0, D * D - (q.x - x) ** 2)))).sort((a, b) => a - b);
+      const h = cands.find(c => near.every(q => (q.x - x) ** 2 + (q.h - c) ** 2 >= D * D - .5)) || 0;
+      const score = h + slope * Math.abs(x - tx);
+      if (!best || score < best.score) best = { x, h, score };
+    }
+    placed.push({ i: p.i, x: best.x, h: best.h }); top = Math.max(top, best.h);
   });
-  const axisH = 70 * Math.max(1, k * .5), H = Math.ceil(PT + top + 2 * r + axisH), base = H - axisH;
+  const fs = Math.max(17, 12.5 * k), axisH = Math.max(66, fs * 2.6), H = Math.ceil(PT + top + 2 * r + axisH), base = H - axisH;
   return { k, r, H, base, pos: placed.map(q => ({ i: q.i, x: q.x, y: base - r - q.h })) };
 }
 function layout() {
@@ -708,8 +719,9 @@ function layout() {
   const left = w < 640 ? 'Fewer, more slowly' : 'Fewer migrants, more slowly';
   lab(left, { x: PL, y: axY + fs * 1.6 });
   lab('Migration is working', { x: MW - PR, y: axY + fs * 1.6, 'text-anchor': 'end' });
-  dots.forEach(d => d.setAttribute('r', r.toFixed(1)));
-  ring.setAttribute('r', (r + 6).toFixed(1));
+  dots.forEach(d => d.setAttribute('r', r.toFixed(2)));
+  ring.setAttribute('r', (r + 4 * k).toFixed(1));
+  ring.setAttribute('stroke-width', (2 * k).toFixed(1));
   if (settled) { dots.forEach((d, i) => { d.style.transition = 'none'; d.style.transform = `translate(${people[i].x}px, ${people[i].y}px)`; }); svg.getBoundingClientRect(); dots.forEach(d => d.style.transition = ''); }
   hidePerson && hidePerson();
 }
@@ -877,7 +889,7 @@ PAIRS.forEach(p => {
       const d = dotsA[q.i];
       d.setAttribute('cx', q.x.toFixed(1));
       d.setAttribute('cy', q.y.toFixed(1));
-      d.setAttribute('r', (A[q.i] === 'b' ? sw.r + 1.5 : sw.r).toFixed(1));
+      d.setAttribute('r', sw.r.toFixed(2));  // allies stand out by colour; heaps pack dots too closely to enlarge them
     });
   }
   drawA();

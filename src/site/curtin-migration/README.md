@@ -37,9 +37,10 @@ Data sources: the Polis export of 30 October 2026
 for 14 October 2026. Statements are shown verbatim. The opinion map is
 recomputed from the published vote matrix with the same PCA method Polis uses.
 It shows only the main divide, left to right (the first value in each
-`DATA.people` entry). Dots stack on the lowest free spot at their position, so
-height shows only how crowded a spot is; both maps share this layout
-(`swarm()`). The second value, which used to set an "agreed more often"
+`DATA.people` entry), in rounded heaps like the Warringah page's: each dot
+drops near its place on the line and rolls up to three dot widths to the
+lowest free spot, paying for each step sideways, so crowded stretches pile up
+like sand. Both maps share this layout (`swarm()`). The second value, which used to set an "agreed more often"
 height, is no longer drawn: it tracked how often people pressed agree, which
 said little about their views, so each card shows that figure instead.
 
