@@ -22,7 +22,7 @@ The page wears Kate Chaney MP's brand, taken from katechaney.com.au, so her
 office can link to it or embed it as its own: teal `#16A1B7` and navy
 `#012253`, with Barlow Semi Condensed for headings and Inter for text, both
 loaded from Google Fonts. The two groups have their own colours, amber
-`#B45309` and violet `#7C3AED`, so neither carries the MP's colours. All of
+`#B45309` and violet `#8547F0`, so neither carries the MP's colours. All of
 this lives in the `:root` tokens at the top of the style block (with a dark
 mode set below them). The RxC breadcrumb and footer bars keep RxC's own look.
 
