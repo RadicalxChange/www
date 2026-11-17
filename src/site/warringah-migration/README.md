@@ -73,13 +73,37 @@ mean, missing votes left at the mean, and each person's projection scaled up
 by how few statements they voted on). Recomputed groups agree with Polis's
 for 355 of 368 people. The dots are drawn as rounded heaps: taking people from
 left to right, each dot drops near its true place on the line and settles in
-the lowest free spot within three dot widths, paying for every step it moves
-sideways (a spot's cost is its height plus 0.9 times its sideways shift). So
-crowded stretches pile up like sand rather than standing in columns, and no
-dot sits more than three dot widths from its place. Maps under 640px wide use
-smaller dots and let them roll up to four dot widths at 0.7, so phone piles
-are less steep. This was chosen over a
-dot histogram, a swarm and two packed bubbles (17 November 2026).
+the lowest free spot up to three dot widths to its left or 1.25 to its right,
+paying for every step it moves sideways (a spot's cost is its height plus 0.9
+times its sideways shift). So crowded stretches pile up like sand rather than
+standing in columns. Rolling only a little to the right stops early dots
+running into empty space and later ones walling up, against the divider most
+of all. Maps under 640px wide use smaller dots and let them roll up to six dot
+widths to the left at 0.6, so phone piles are less steep. This was chosen over
+a dot histogram, a swarm and two packed bubbles (17 November 2026).
+
+## A closer look inside Group 2
+
+The map's dashed line marks where Group 2's far end begins, and the key under
+the map names its two stretches: "Fewer, but flexible" (98 people) and "Fewer,
+with firm limits" (24). They are a closer look inside Group 2, not new groups:
+the dots keep their group colours, and no dot rolls across the line. On maps
+under 640px wide the names give way to numbered badges, and the key shows the
+numbers.
+
+The far end is found the way the Teals stance analysis looks for stances:
+going along Group 2 from its far end, the cut is placed where the most
+statements flip (at least 65% agreeing on one side and at most 35% on the
+other, at least 10 voters a side, and z of at least 3.3). That gives 24 people
+and seven statements, with at least 21 voters a side; both parts voted on a
+median of 53 statements, and shuffled orders never produced more than one such
+statement. The line sits halfway between the last of the 98 and the first of
+the 24 (`DATA.cut`). Inside Group 1 the same search finds only two statements,
+too few for a closer look. A test for unlikely allies across the divide (the
+ten statements both groups split on at similar rates, paired, with a
+Mantel-Haenszel odds ratio across five strata of people's overall agreement)
+found no pair that held up. The page's notes give every figure, and the
+checker tests each claim in the two descriptions.
 
 Hover-card examples follow the rule used on every Teals results page. Each
 person's card shows up to two of their votes: one where they voted like
