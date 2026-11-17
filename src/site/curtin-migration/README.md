@@ -14,10 +14,17 @@ analytics snippet.
 
 `index.njk` is raw HTML wrapped in `{% raw %}` so Nunjucks passes it through
 untouched; the only Eleventy features used are the front-matter `permalink`
-and the site-wide posthtml transform. The RxC typefaces (Messer Condensed and
-Suisse Intl, subset to Latin) and all chart data are embedded in the file, so
-it has no other dependencies. The only asset it takes from the site is the
-shared favicon (`/images/logos/favicon.png`).
+and the site-wide posthtml transform. All chart data is embedded in the file.
+The only asset it takes from the site is the shared favicon
+(`/images/logos/favicon.png`).
+
+The page wears Kate Chaney MP's brand, taken from katechaney.com.au, so her
+office can link to it or embed it as its own: teal `#16A1B7` and navy
+`#012253`, with Barlow Semi Condensed for headings and Inter for text, both
+loaded from Google Fonts. The two groups have their own colours, amber
+`#B45309` and violet `#8547F0`, so neither carries the MP's colours. All of
+this lives in the `:root` tokens at the top of the style block (with a dark
+mode set below them). The RxC breadcrumb and footer bars keep RxC's own look.
 
 Its own link-preview image is `src/site/assets/curtin-migration-og.png`
 (1200×630, served at `/assets/curtin-migration-og.png` and referenced by
@@ -29,6 +36,13 @@ Data sources: the Polis export of 30 October 2026
 (https://pol.is/report/r9fyrr8m6yfmfbwscfvp2) and the quadratic-vote results
 for 14 October 2026. Statements are shown verbatim. The opinion map is
 recomputed from the published vote matrix with the same PCA method Polis uses.
+It shows only the main divide, left to right (the first value in each
+`DATA.people` entry), in rounded heaps like the Warringah page's: each dot
+drops near its place on the line and rolls up to three dot widths to the
+lowest free spot, paying for each step sideways, so crowded stretches pile up
+like sand. Both maps share this layout (`swarm()`). The second value, which used to set an "agreed more often"
+height, is no longer drawn: it tracked how often people pressed agree, which
+said little about their views, so each card shows that figure instead.
 
 The "Unlikely allies" section highlights the 52 affordability allies: people
 who backed both statement 33 (cost of living) and statement 29 (university
