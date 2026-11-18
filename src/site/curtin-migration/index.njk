@@ -84,28 +84,50 @@ q{quotes:"“" "”"}
 .hero h1 .ln{display:block;white-space:nowrap}
 .hero h1 .box{display:inline-block;background:var(--navy);color:#fff;padding:.02em .18em .06em;margin:.06em 0 .08em -.18em;border-radius:.07em;line-height:1.02}
 .hero .turnout{font-size:.95rem;font-weight:500;margin-top:22px}
-.hero .sub{font-size:1.4rem;line-height:1.45;max-width:30rem;margin-bottom:36px}
+.hero .sub{font-size:1.4rem;line-height:1.45;margin-bottom:36px}
 .actions{display:flex;gap:14px;flex-wrap:wrap}
 .cards{position:relative;display:flex;flex-direction:column;gap:20px;padding-top:max(10px,calc(3.43rem - 56px))}
 .card{position:relative;width:82%;background:#fff;color:var(--navy);border-radius:18px;padding:22px 26px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45)}
 .card q{display:block;font-weight:600;font-size:1.2rem;line-height:1.34}
-.c1{align-self:flex-start;width:calc(100% - 8.85rem + 22px);transform:rotate(-1.5deg)}
-.c2{align-self:flex-end;transform:rotate(1.5deg)}
-.c3{align-self:flex-start;transform:rotate(-1deg)}
-.c4{align-self:flex-end;transform:rotate(2deg)}
-.sticker{position:absolute;top:0;right:-22px;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--navy);color:var(--fizz);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .7rem}
+.sticker{width:8.25rem;height:8.25rem;border-radius:50%;background:var(--navy);color:var(--fizz);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .7rem}
 .sticker b{display:block;font-family:var(--display);font-weight:700;font-size:2.1rem;line-height:1;margin:.1rem 0 .2rem;font-feature-settings:"lnum" 1}
 .sticker span{display:block;font-size:.6rem;font-weight:600;line-height:1.2}
-/* The sticker sits beside the first card and covers no card, at any text size.
-   .c1 stops short of it: the sticker's 8.25rem, plus a .6rem gap, less its 22px overhang.
-   The cards' top padding grows with the text, so the sticker ends above the second card
-   even when the first card is at its shortest (three lines). See the README, "Layout".
-   Below: very large text in a narrow window leaves no room beside the first card, so the
-   sticker sits under the cards, as it does on phones. Never matches at the standard 16px. */
+/* Two quote cards, one per group, with the circle between them (the common format, 18 November 2026): on wide
+   screens it clasps both cards at the seam, on the right; on narrow laptops and phones it sits between them.
+   See the README, "Layout". */
+.hero .card{overflow:hidden}
+.hero .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--gc)}
+.hero .card.c1{--gc:var(--g1)}
+.hero .card.c2{--gc:var(--g2)}
+.hero .card .who{display:flex;align-items:center;gap:.5em;margin:0 0 .55rem;font-size:.82rem;font-weight:700;line-height:1.25;letter-spacing:.01em}
+.hero .card .who i{flex:none;width:.8em;height:.8em;border-radius:50%;background:var(--gc)}
+/* The circle's ring is half Group 1's colour (top, towards card 1) and half Group 2's (bottom, towards card 2).
+   "from -78deg" undoes the sticker's -12deg tilt so the split stays level. */
+.hero .sticker{border:6px solid transparent;background:linear-gradient(var(--navy),var(--navy)) padding-box,conic-gradient(from -78deg,var(--g1) 0 50%,var(--g2) 0 100%) border-box}
+
+/* Wide screens: the circle clasps both cards at the seam, on the right */
+@media (min-width:901px){
+  .hero .cards{gap:30px}
+  .hero .card.c1{align-self:flex-start;width:calc(100% - 6rem);padding:26px 46px 30px 36px}
+  .hero .card.c2{align-self:flex-start;margin-left:1.5rem;width:calc(100% - 7.5rem);padding:26px 46px 30px 36px}
+  .hero .card q{font-size:1.32rem;line-height:1.38}
+  .hero .sticker{position:relative;top:auto;right:auto;align-self:flex-end;margin:calc(-15px - 4.125rem) -14px calc(-15px - 4.125rem) 0}
+}
+/* Short laptop screens: a little smaller so both cards stay on the first screen */
+@media (min-width:901px) and (max-height:53em){
+  .hero .cards{gap:24px}
+  .hero .card.c1,.hero .card.c2{padding:22px 44px 24px 32px}
+  .hero .card q{font-size:1.2rem;line-height:1.36}
+  .hero .sticker{margin:calc(-12px - 4.125rem) -14px calc(-12px - 4.125rem) 0}
+}
+/* Narrow laptops (two columns but a slim card column): full-width cards with the circle between them */
 @media (min-width:901px) and (max-width:56.25em){
-  .cards{padding-top:10px}
-  .c1{width:82%}
-  .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
+  .hero .card.c1,.hero .card.c2{width:auto;align-self:stretch;margin-left:0;padding:22px 26px 24px 30px}
+  .hero .sticker{align-self:center;margin:-16px 0}
+}
+/* Phones: the same, under the hero text */
+@media (max-width:900px){
+  .hero .sticker{align-self:center;margin:-14px 0}
 }
 /* Short windows: keep the headline, lede and buttons on the first screen. See the README, "Layout".
    The space above the hero shrinks first; the headline's size also follows the window's height. */
@@ -113,6 +135,9 @@ q{quotes:"“" "”"}
   .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),88px)}
 }
 @media (min-width:901px) and (max-height:47.5em){ .hero h1{font-size:min(14cqi,8vh,6.4rem);margin-bottom:22px} }
+/* the hero sentence runs the whole column, so on short laptops, and on narrow windows that aren't tall, it steps down
+   a size to keep the buttons on screen */
+@media (min-width:901px) and (max-height:46em),(min-width:901px) and (max-width:70em) and (max-height:48em){ .hero .sub{font-size:1.1rem} }
 /* Where the cards run well past the first screen, the headline starts level with them
    instead of sitting halfway down: very short windows, and narrow ones that are not tall. */
 @media (min-width:901px) and (max-height:43.25em),(min-width:901px) and (max-width:62.5em) and (max-height:53em){
@@ -408,9 +433,8 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   .hero .sub{font-size:1.2rem}
   .hero .turnout{margin-top:16px}
   .cards{gap:16px;padding:6px 4px 10px}
-  .card,.c1,.c2,.c3,.c4{width:auto;align-self:stretch}
+  .card,.c1,.c2{width:auto;align-self:stretch}
   .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
-  .c1{transform:rotate(-2deg)} .c2{transform:rotate(1.5deg)} .c3{transform:rotate(-1deg)} .c4{transform:rotate(2deg)}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:32px}
   .gtop .big{font-size:4.6rem}
@@ -492,16 +516,14 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
     <div class="hero-grid">
       <div class="hero-text">
         <h1><span class="ln">Curtin wants</span><span class="ln"><span class="box">a long-term plan</span></span><span class="ln">for migration</span></h1>
-        <p class="sub">People disagree about how many should come, and how fast. But most want migration planned years ahead, with housing, roads, schools and hospitals keeping pace.</p>
+        <p class="sub">People disagree about how many should come, and how fast. But most want migration planned years ahead, with housing, roads, schools and hospitals keeping pace. A ten-year plan came first when people voted on priorities.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what Curtin said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout">8 to 27 October 2026 · 265 people took part</p>
       </div>
-      <div class="cards" role="list" aria-label="Four statements from the conversation">
-        <div class="card c1" role="listitem"><q>Immigration is fundamentally a good thing. But, for all concerned the rules should be clear. Decisions should be made promptly.</q></div>
-        <div class="card c2" role="listitem"><q>Employers who exploit migrant workers should lose the right to sponsor visas.</q></div>
-        <div class="card c3" role="listitem"><q>Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.</q></div>
-        <div class="card c4" role="listitem"><q>For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.</q></div>
+      <div class="cards" role="list" aria-label="Two statements from the conversation, one from each group">
+        <div class="card c1" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 1 · Migration works</p><q>Without migration the economic burden to provide for an ageing population will fall to fewer people.</q></div>
         <div class="sticker" aria-hidden="true"><div><span>More than</span><b>3 in 4</b><span>in both groups want migration planned 10 to 15 years ahead</span></div></div>
+        <div class="card c2" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 2 · Pace and control</p><q>A temporary visa should not lead to permanent residency.</q></div>
       </div>
     </div>
   </div>

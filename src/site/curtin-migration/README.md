@@ -29,8 +29,9 @@ mode set below them). The RxC breadcrumb and footer bars keep RxC's own look.
 Its own link-preview image is `src/site/assets/curtin-migration-og.png`
 (1200×630, served at `/assets/curtin-migration-og.png` and referenced by
 the `og:image` and `twitter:image` tags). It was rendered from the page's
-own fonts and copy: the hero headline, "265 people took part" and the
-first two hero quotes. If the hero copy changes, regenerate it.
+own fonts and copy: the hero headline, "265 people took part" and two
+statements most people in both groups agreed with (148 and 76). If the
+headline or the turnout changes, regenerate it.
 
 Data sources: the Polis export of 30 October 2026
 (https://pol.is/report/r9fyrr8m6yfmfbwscfvp2) and the quadratic-vote results
@@ -145,29 +146,25 @@ HTML directly; every figure on the page has been checked against the exports.
   default text size is larger gets a proportionally wider page. With a px
   cap, a 20px default squeezed larger text into columns that did not grow,
   and the hero sticker covered the ends of the first quote's lines.
-- In the two-column hero the sticker sits beside the first quote card and
-  covers no card, at any text size. Three values do this:
-  - `.c1{width:calc(100% - 8.85rem + 22px)}`. The card stops short of the
-    sticker. 8.85rem is the sticker's 8.25rem plus a .6rem gap, and 22px is
-    how far the sticker hangs past the column's right edge (`right:-22px`).
-  - `.sticker{top:0}`. The sticker is level with the top of the cards.
-  - `.cards{padding-top:max(10px,calc(3.43rem - 56px))}`. This keeps the
-    sticker's lower edge above the second card. The first quote is about 61
-    ems long and its card never has room for more than about 25 ems a line,
-    so it never sets in fewer than three lines, and the card is at least
-    4.82rem + 44px tall (3 lines × 1.2rem × 1.34, plus 44px of padding). The
-    padding is the sticker's 8.25rem, less that card, less the 20px gap,
-    plus 8px of air. At 16px it is 10px, as it always was.
-
-  If the first quote, the sticker's size or the cards' padding changes, work
-  these out again.
-- Large text in a narrow window leaves no room beside the first card: wider
-  than 900px, but narrower than 56.25em at the reader's text size. The
-  sticker then sits under the cards, as it does on phones. This cannot
-  happen at the standard 16px, where 56.25em is 900px.
-- Between 901px and about 1135px wide at the standard text size, the first
-  card is narrower than it used to be, so its quote runs one or two lines
-  longer.
+- The hero has two quote cards, one per group, each in a resident's own
+  words: Group 1's first ("Group 1 · Migration works", statement 103), then
+  Group 2's ("Group 2 · Pace and control", statement 69). Each card has a
+  dot and a left edge in its group's colour. Every migration results page
+  uses this hero (November 2026).
+- The circle sits between the two cards in the markup. Its ring is half
+  Group 1's colour (top) and half Group 2's (bottom); `from -78deg` in its
+  gradient undoes its tilt, so the split stays level.
+  - Wider than 900px, it clasps both cards at the seam, on the right. The
+    cards stop short of it (`calc(100% - 6rem)` and `calc(100% - 7.5rem)`),
+    and top and bottom margins of `calc(-15px - 4.125rem)` (half its 8.25rem,
+    plus half the 30px gap) centre it on the gap. Windows 53em tall or less
+    use a 24px gap and slightly smaller quotes.
+  - Between 901px and 56.25em at the reader's text size, and on phones, the
+    cards run full width and the circle sits between them, centred.
+- The hero sentence runs the whole width of its column and ends with the
+  priority vote's first choice. Windows 46em tall or less, and windows
+  70em wide or less that are 48em tall or less, set it at 1.1rem, so the
+  buttons stay on the first screen.
 - The hero headline is three set lines, like the Warringah page's: "Curtin
   wants", "a long-term plan" (boxed in navy) and "for migration". Each line is
   `white-space:nowrap`, and the size comes from the hero text column
@@ -184,14 +181,18 @@ HTML directly; every figure on the page has been checked against the exports.
     level with the first card (`align-items:start`): any window under 43.25em
     tall, and a window under 62.5em wide that is under 53em tall.
 
-  Swept at 143 window sizes from 901×600 to 2560×1080 at 16px, the buttons
-  stay on the first screen at every one. The small turnout line under them
-  can fall just below it on the shortest windows. If the headline, lede or
-  buttons change, sweep again.
+  Swept again with the two-card hero (November 2026), at 143 window sizes
+  from 901×600 to 2560×1080 at 16px, and at 1728×966, 1440×790, 1366×650,
+  1536×730, 1280×720, 1180×820 and 1024×700 with 20px text. At every one,
+  the buttons stay on the first screen, no line of text falls under the
+  circle, and the two cards don't overlap. The small turnout line under the
+  buttons can fall just below the first screen on the shortest windows. If
+  the headline, lede or buttons change, sweep again.
 - The closing "Thank you, Curtin" circle is sized in rem like its words
   (15rem, and 10.625rem at 900px and below), so the words stay inside it at
   any text size.
-- At 900px and below there is one column, with the sticker under the cards.
+- At 900px and below there is one column, with the circle between the two
+  cards.
 - Check any hero change at these sizes: 1728×966 with a 20px default text
   size, 1440×790, 1366×650, 1024×700 and a 375px phone. Also 1536×730, a
   1080p screen at 125% scaling, where the headline used to take four lines
