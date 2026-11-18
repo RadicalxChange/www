@@ -186,7 +186,8 @@ same layout as on the other migration results pages.
   Group 1 and statement 277 for Group 2, each written by a different person
   taking part and quoted word for word. Each was agreed with by at least 70%
   of its own group and at most 35% of the other. Each card is labelled with
-  its group's name and edged in its colour.
+  its group's name and edged in its colour. The cards sit straight at every
+  width; only the circle is tilted.
 - The sticker sits between the two cards in the markup, ringed half in each
   group's colour. On wide screens it joins the two cards at the seam, on the
   right; on narrow laptops and phones it sits between them, centred. It never

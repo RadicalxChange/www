@@ -97,9 +97,6 @@ q{quotes:"“" "”"}
 .cards{position:relative;display:flex;flex-direction:column;gap:20px;padding-top:max(10px,calc(3.43rem - 56px))}
 .card{position:relative;width:82%;background:#fff;color:var(--teal-dk);border-radius:12px;padding:22px 26px;box-shadow:0 18px 40px -18px rgba(6,40,46,.45)}
 .card q{display:block;font-weight:600;font-size:1.08rem;line-height:1.4}
-/* the two cards keep their slight tilt */
-.c1{transform:rotate(-1.5deg)}
-.c2{transform:rotate(1.5deg)}
 /* the sticker is the brand's coral with dark teal type (4.6:1); white on coral would be too faint */
 .sticker{position:relative;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--coral);color:var(--teal-dk);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .75rem}
 /* The ring (below) leaves a coral disc 12px narrower than the circle, so the number and the lines are set a little
@@ -108,7 +105,8 @@ q{quotes:"“" "”"}
 .sticker span{display:block;font-size:.58rem;font-weight:700;line-height:1.1}
 
 /* Two quote cards, one per group, with the shared-figure circle joining them (the common format for the
-   migration results pages). The circle sits between the two cards in the markup. */
+   migration results pages). The circle sits between the two cards in the markup. The cards sit straight at every
+   width; only the circle is tilted. */
 /* The hero sentence runs the full width of its column */
 .hero .sub{max-width:none}
 .hero .card{overflow:hidden}
@@ -399,7 +397,6 @@ footer{background:var(--teal-dk);color:#fff;padding:48px 0 56px}
   .hero .sub{font-size:1.1rem}
   .cards{gap:16px;padding:6px 4px 10px}
   .card,.c1,.c2{width:auto;align-self:stretch}
-  .c1{transform:rotate(-2deg)} .c2{transform:rotate(1.5deg)}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:30px}
   .gtop .big{font-size:3.6rem}
