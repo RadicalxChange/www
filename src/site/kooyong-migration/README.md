@@ -27,8 +27,9 @@ modes; the hero and the closing section keep their pale teal in both.
 Its link-preview image is `src/site/assets/kooyong-migration-og.png`
 (1200×630, referenced by the `og:image` and `twitter:image` tags). It was
 rendered from the page's own fonts and copy: the boxed headline, "102 people
-took part", and two of the hero quotes. If the headline, the turnout or those
-quotes change, regenerate it.
+took part", and two statements most people in both groups agreed with (107
+and 36). If the headline, the turnout or those statements change, regenerate
+it.
 
 ## While the results are preliminary
 
@@ -153,9 +154,19 @@ is checked against the export before each push.
 
 ## Layout
 
-The page width is in rem (`.wrap{max-width:77.5rem}`) and the sticker sits
-beside the first quote card, as on the other migration results pages.
+The page width is in rem (`.wrap{max-width:77.5rem}`), as on the other
+migration results pages.
 
+- The hero has two quote cards, one per group (Group 1's first), each
+  labelled "Group 1 · Migration works" or "Group 2 · Fewer, chosen more
+  carefully" and edged in its group's colour. Each is a resident's statement
+  that most of its own group agreed with and far fewer of the other group
+  did. The circle with the headline figure sits between them, its ring half
+  in each group's colour: on wide screens it clasps both cards at the seam,
+  on the right; on narrow laptops and phones it sits between them, centred.
+  It never covers text.
+- The hero sentence runs the full width of its column and ends with what
+  the priority vote put first.
 - The headline is three set lines ("Kooyong wants" / "a bipartisan plan" /
   "for migration"), the middle one boxed in teal. It is sized from its column
   (`min(12.6cqi, 10vh, 5.8rem)`) and never wraps.
