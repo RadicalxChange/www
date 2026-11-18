@@ -63,9 +63,11 @@ quotes change, regenerate it.
 - **Statements where the groups took opposite sides:** one group's majority
   agreed and the other's majority disagreed, with at least 8 voters in each
   group: 22 statements. The hover cards count each person's votes on these.
-- **Group cards:** each shows three of the eight statements that most set the
-  group apart (Polis's representativeness measure), chosen from those about
-  how the visa system should work. The page's notes say so.
+- **Group cards:** each shows three statements most of the group agreed with
+  and far fewer of the other group did (at least 30 points apart, with the
+  groups on opposite sides of 50% agreeing). RadicalxChange chose which three
+  to show, from statements about how the visa system should work. The notes
+  say this in the same words as the other results pages.
 - **Priority vote:** the same rule as the Curtin page. Ballots that used fewer
   than 10 credits are set aside, names are matched ignoring capitals and
   spacing, and the fuller ballot is kept where someone voted twice: 53 voters.
