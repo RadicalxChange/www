@@ -53,10 +53,11 @@ quotes change, regenerate it.
   carefully" (65). 78 people are not in a group: 72 voted on too few statements
   for Polis to place them, and 6 whom Polis placed (2 in its Group 1, 4 in its
   Group 2) never agreed or disagreed with any statement.
-- **Who stays in the groups:** 10 people cast nothing but passes. They count
-  as taking part, but a pass doesn't show where someone stands, so none of
-  them is in a group; Polis placed 6 of them because it reads a pass as halfway
-  between agree and disagree. People who passed on most statements but agreed
+- **Who stays in the groups:** 6 people voted on enough statements for Polis
+  to place them but cast nothing but passes. They count as taking part, but a
+  pass doesn't show where someone stands, so they are in no group (Polis places
+  them because it reads a pass as halfway between agree and disagree). 4 more
+  cast only passes, on 1 to 5 statements, too few for Polis to place them. People who passed on most statements but agreed
   or disagreed with at least one stay in their Polis groups: 6 grouped people
   passed on at least 9 in 10 of the statements they voted on (5 of them in
   Group 2), and their passes lower their group's figures; the notes say so and
