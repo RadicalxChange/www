@@ -1,0 +1,879 @@
+---
+permalink: /kooyong-migration/index.html
+eleventyExcludeFromCollections: true
+---
+{% raw %}
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kooyong on migration: preliminary results">
+<meta property="og:description" content="Preliminary results from the Kooyong community conversation on migration: two groups, where they agree, and the changes people want most.">
+<meta property="og:url" content="https://www.radicalxchange.org/kooyong-migration/">
+<meta property="og:site_name" content="RadicalxChange">
+<meta property="og:image" content="https://www.radicalxchange.org/assets/kooyong-migration-og.png">
+<meta property="og:image:secure_url" content="https://www.radicalxchange.org/assets/kooyong-migration-og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kooyong wants a bipartisan plan for migration. Preliminary results from the Kooyong community conversation on migration: 102 people took part. Beside it, two statements from the conversation, starting with “Migration policy should be planned properly, be bi-partisan and not a political football. I.e. a 10+ year plan.”">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kooyong on migration: preliminary results">
+<meta name="twitter:description" content="Preliminary results from the Kooyong community conversation on migration: two groups, where they agree, and the changes people want most.">
+<meta name="twitter:image" content="https://www.radicalxchange.org/assets/kooyong-migration-og.png">
+<meta name="twitter:image:alt" content="Kooyong wants a bipartisan plan for migration. Preliminary results from the Kooyong community conversation on migration: 102 people took part. Beside it, two statements from the conversation, starting with “Migration policy should be planned properly, be bi-partisan and not a political football. I.e. a 10+ year plan.”">
+<link rel="canonical" href="https://www.radicalxchange.org/kooyong-migration/">
+<link rel="icon" type="image/png" href="/images/logos/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@500;600;700;800&display=swap">
+<title>Kooyong on migration: preliminary results</title>
+<meta name="description" content="Preliminary results from the Kooyong community conversation on migration: two groups, where they agree, and the changes people want most.">
+<style>
+/* Layout: the RxC results template, in the Kooyong brand from moniqueryan.com.au: deep indigo #190d51 (the
+   site's primary) for headings, solid buttons and dark surfaces, its bright teal #00b4ce for the boxed headline
+   line and accents, and its pale teal for the hero; Outfit for headings and Open Sans for text, as on her site.
+   The two group colours are gold and violet, as on every page. Her site's palette is indigo and lavender, the
+   same hue as the violet used on other pages, so here Group 2's violet is warmer (#8a4fd0, about 17 degrees
+   round from her indigo) and never sits on a lavender or indigo fill: both group cards share one neutral grey,
+   and the page uses no lavender at all. No red marks a group or the change most voters opposed. */
+:root{
+  --indigo:#190d51; --teal:#00b4ce; --teal-dk:#318ba3; --teal-ink:#1f6f83; --mist:#ccf0f5; --foam:#eef9fb;
+  --g1:#a97c0c; --g2:#8a4fd0; --gsoft:#f3f5f7;
+  --paper:#ffffff; --ink:#1c1838; --heading:#190d51; --card:#ffffff; --muted:#585670;
+  --line:rgba(28,24,56,.14); --track:#e3e7ea; --tint:#eef9fb; --deep:#190d51; --frame:rgba(28,24,56,.18);
+  --sea:#0f3d48; --agree-bg:#ccf0f5; --agree-ink:#190d51; --agree-trk:rgba(25,13,81,.18);
+  --display:"Outfit",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --text:"Open Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+/* Dark mode keeps the hero in the brand's light teal; elsewhere a dark teal-slate, not the MP's indigo, so the
+   violet group never sits on an indigo ground. */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --g1:#bb8b1a; --g2:#a77be6; --gsoft:#19333b;
+    --paper:#0b1a1f; --ink:#e6f2f4; --heading:#e6f2f4; --card:#112830; --muted:#a5bcc1;
+    --line:rgba(255,255,255,.15); --track:#24393f; --tint:#0e252b; --deep:#08161a; --frame:rgba(255,255,255,.16);
+    --sea:#07171b; --agree-bg:#163f49; --agree-ink:#e6f2f4; --agree-trk:rgba(255,255,255,.22); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --g1:#bb8b1a; --g2:#a77be6; --gsoft:#19333b;
+  --paper:#0b1a1f; --ink:#e6f2f4; --heading:#e6f2f4; --card:#112830; --muted:#a5bcc1;
+  --line:rgba(255,255,255,.15); --track:#24393f; --tint:#0e252b; --deep:#08161a; --frame:rgba(255,255,255,.16);
+    --sea:#07171b; --agree-bg:#163f49; --agree-ink:#e6f2f4; --agree-trk:rgba(255,255,255,.22); color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:var(--text);color:var(--ink);background:var(--paper);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:77.5rem;margin:0 auto;padding:0 40px}
+h1,h2,h3{font-family:var(--display);font-weight:700;margin:0;letter-spacing:-.01em;color:var(--heading)}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;padding:.72rem 1.25rem .74rem;border-radius:6px;font-family:var(--display);font-weight:600;font-size:1.06rem;letter-spacing:0;line-height:1.1;text-decoration:none;border:2px solid var(--indigo);cursor:pointer}
+.btn.solid{background:var(--indigo);color:#fff}
+.btn.line{background:transparent;color:var(--indigo)}
+.btn:hover{transform:translateY(-1px)}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
+.dot.g1{background:var(--g1)} .dot.g2{background:var(--g2)}
+.pill{display:inline-block;font-family:var(--display);font-weight:600;font-size:.92rem;line-height:1;background:var(--indigo);color:#fff;border-radius:4px;padding:.38rem .7rem .4rem}
+q{quotes:"“" "”"}
+
+/* ---------- hero ---------- */
+.hero{background:var(--mist);color:var(--indigo);overflow:hidden}
+.hero h1{color:var(--indigo)}
+.hero :focus-visible{outline-color:var(--indigo)}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:80px 0 92px}
+/* The headline is three set lines, the middle one boxed in the brand's teal. Its longest line, box included,
+   is 7.6em wide in Outfit Bold (measured in Chrome), so it is sized from its column and capped by the window height. */
+.hero-text{container-type:inline-size;min-width:0}
+.hero h1{font-size:min(12.6cqi,10vh,5.8rem);line-height:1.04;letter-spacing:-.02em;margin-bottom:26px}
+.hero h1 .ln{display:block;white-space:nowrap}
+.hero h1 .box{display:inline-block;background:var(--teal);color:var(--indigo);padding:.02em .2em .08em;margin:.1em 0 .12em -.2em;border-radius:.08em}
+.hero .sub{font-size:1.22rem;line-height:1.55;max-width:31rem;margin-bottom:32px;font-weight:600}
+.hero .turnout{font-size:.95rem;font-weight:600;margin-top:22px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.cards{position:relative;display:flex;flex-direction:column;gap:20px;padding-top:max(10px,calc(3.43rem - 56px))}
+.card{position:relative;width:82%;background:#fff;color:var(--indigo);border-radius:12px;padding:22px 26px;box-shadow:0 18px 40px -18px rgba(25,13,81,.42)}
+.card q{display:block;font-weight:600;font-size:1.04rem;line-height:1.45}
+.c1{align-self:flex-start;width:calc(100% - 8.85rem + 22px);transform:rotate(-1.5deg)}
+.c2{align-self:flex-end;transform:rotate(1.5deg)}
+.c3{align-self:flex-start;transform:rotate(-1deg)}
+.c4{align-self:flex-end;transform:rotate(2deg)}
+/* the sticker is the brand's indigo, its figure in the brand's teal (6.9:1) and its words in white */
+.sticker{position:absolute;top:0;right:-22px;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--indigo);color:#fff;display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .8rem}
+.sticker b{display:block;font-family:var(--display);font-weight:800;font-size:1.85rem;line-height:1;margin:.14rem 0 .16rem;color:var(--teal);letter-spacing:-.02em}
+.sticker span{display:block;font-size:.56rem;font-weight:700;line-height:1.22}
+@media (min-width:901px) and (max-width:56.25em){
+  .cards{padding-top:10px}
+  .c1{width:82%}
+  .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
+}
+@media (min-width:901px){
+  .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),80px)}
+}
+/* Short windows, or large text in a window that isn't tall: a smaller headline and lede keep the buttons
+   on the first screen. 46em follows the reader's text size (736px at 16px, 920px at 20px). */
+@media (min-width:901px) and (max-height:46em){
+  .hero h1{font-size:min(12.6cqi,8.6vh,5.8rem);margin-bottom:16px}
+  .hero .sub{font-size:1.02rem;line-height:1.5;margin-bottom:20px}
+  .hero .turnout{margin-top:14px}
+}
+/* very short windows for the text size (under 32em: 512px at the standard text size, 640px at 20px) */
+@media (min-width:901px) and (max-height:32em){
+  .hero h1{font-size:min(12.6cqi,7.6vh,5.8rem);margin-bottom:10px}
+  .hero .sub{font-size:.92rem;line-height:1.45;margin-bottom:14px}
+  .hero .btn{font-size:.98rem}
+}
+@media (min-width:901px) and (max-height:43.25em),(min-width:901px) and (max-width:62.5em) and (max-height:53em){
+  .hero-grid{align-items:start}
+}
+
+/* ---------- sections ---------- */
+section.block{padding:104px 0}
+.head{margin-bottom:46px}
+.head h2{font-size:clamp(2.2rem,3.8vw,3.5rem);line-height:1.05;letter-spacing:-.02em;max-width:22ch;text-wrap:balance}
+.head p{font-size:1.12rem;line-height:1.55;max-width:36rem}
+.head .head-line{margin-top:18px;max-width:42rem}
+.head.side{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px 56px;align-items:end}
+.head.side .head-line{margin-top:0}
+.deep{background:var(--deep);color:#fff}
+.deep h2{color:#fff}
+.tint{background:var(--tint)}
+
+/* ---------- at a glance ---------- */
+.glance{padding:64px 0 0}
+.glance-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.gl{display:flex;flex-direction:column;gap:14px;border-radius:14px;padding:28px 28px 26px;text-decoration:none;color:var(--ink);border:2px solid var(--frame);background:var(--card);transition:transform .15s ease}
+.gl:hover{transform:translateY(-3px)}
+.gl h3{font-size:1.5rem;line-height:1.15;letter-spacing:-.01em;text-wrap:balance}
+.gl p{font-size:1rem;line-height:1.55;flex:1}
+.gl .more{font-weight:600;font-size:.95rem;text-decoration:underline;text-underline-offset:.2em}
+.gl.dark{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+.gl.dark h3{color:var(--teal)}
+.gl.tinted{background:var(--tint)}
+.split{display:flex;height:18px;border-radius:99px;overflow:hidden;gap:2px}
+.split i{display:block;height:100%}
+.split-n{display:flex;justify-content:space-between;font-size:.9rem;font-weight:600;margin-top:-6px}
+.split-n span{display:inline-flex;align-items:center;gap:7px}
+
+/* ---------- group cards: one neutral fill for both, each marked by its colour band and dots ---------- */
+.groups-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+.gcard{border-radius:18px;padding:26px 30px 30px;background:var(--gsoft);border-top:12px solid var(--gc)}
+.gcard.one{--gc:var(--g1)} .gcard.two{--gc:var(--g2)}
+.gtop{display:flex;align-items:flex-end;gap:18px;margin-bottom:20px}
+.gtop .big{font-family:var(--display);font-weight:700;font-size:3.7rem;line-height:.9;letter-spacing:-.03em;color:var(--heading);white-space:nowrap}
+.gtop .big small{font-size:.48em;font-weight:600;letter-spacing:0}
+.gtop .who{font-size:1rem;line-height:1.3;padding-bottom:4px}
+.gtop .who b{display:flex;align-items:center;gap:9px;font-size:1.32rem;font-weight:700;font-family:var(--display);letter-spacing:-.01em;line-height:1.15;color:var(--heading)}
+.gtop .who b .dot{width:14px;height:14px}
+.qbox{background:var(--card);color:var(--ink);border-radius:12px;padding:18px 22px 18px;margin-top:12px}
+.qbox q{display:block;font-weight:600;font-size:1.04rem;line-height:1.45;margin-bottom:12px}
+.qbox.lead q{font-size:1.16rem}
+.qbox .lab{font-size:.88rem;color:var(--muted);margin-bottom:6px}
+.pcts{display:flex;gap:8px 20px;font-size:.95rem;flex-wrap:wrap}
+.pcts span{display:inline-flex;align-items:center;gap:8px}
+.pcts b{font-weight:700}
+.nn{color:var(--muted);font-weight:400;font-size:.88em}
+.small-note{font-size:.95rem;color:var(--muted);margin-top:22px;max-width:46rem}
+.sub-head{margin:84px 0 26px}
+.sub-head h3{font-size:clamp(1.8rem,2.6vw,2.4rem);line-height:1.1;letter-spacing:-.015em}
+
+/* ---------- map: one row along the main divide ---------- */
+.map-card{position:relative;border:2px solid var(--frame);border-radius:18px;padding:22px 26px 18px;background:var(--card)}
+.map-lead{font-weight:600;font-size:1.02rem;margin-bottom:8px;max-width:46rem}
+.map-foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:8px}
+.someone{font:inherit;font-family:var(--display);font-weight:600;font-size:1rem;line-height:1.1;background:var(--indigo);color:#fff;border:0;border-radius:6px;padding:.62rem 1rem .64rem;cursor:pointer}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .someone{background:var(--ink);color:var(--paper)}}
+:root[data-theme="dark"] .someone{background:var(--ink);color:var(--paper)}
+#map{display:block;width:100%;height:auto;touch-action:manipulation;cursor:crosshair;overflow:visible}
+#map .pdot{transition:transform 1.2s cubic-bezier(.2,.75,.2,1),fill .6s ease,opacity .6s ease}
+#map .axis{stroke:var(--ink);stroke-width:2}
+#map .axis-label{fill:var(--ink);font-family:var(--text);font-weight:600}
+#map .grp-name{fill:var(--ink);font-family:var(--text);font-weight:700}
+#map .grp-count{fill:var(--muted);font-family:var(--text)}
+.map-hint{font-size:.95rem;color:var(--muted);margin-top:6px}
+.map-hint .h-touch{display:none}
+@media (hover:none){.map-hint .h-fine{display:none}.map-hint .h-touch{display:inline}}
+.person{position:absolute;z-index:5;width:21rem;background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:14px;padding:16px 18px 14px;box-shadow:0 18px 40px -20px rgba(0,0,0,.5);font-size:.9rem;line-height:1.45;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .15s ease,transform .15s ease}
+.person.on{opacity:1;transform:none}
+.person .pg{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.98rem;margin-bottom:6px}
+.person .pn{color:var(--muted);margin-bottom:10px}
+.person .pn b{color:var(--ink);font-weight:700}
+.person .lean-h{font-weight:600;font-size:.86rem;margin:12px 0 7px}
+.lean{display:flex;height:12px;border-radius:99px;overflow:hidden;background:var(--track);gap:2px}
+.lean i{display:block;height:100%}
+.lean .l1{background:var(--g1)} .lean .l2{background:var(--g2)}
+.lean-n{display:flex;justify-content:space-between;gap:10px;font-size:.84rem;margin-top:6px}
+.lean-n span{display:inline-flex;align-items:center;gap:6px}
+.lean-n b{font-weight:700}
+.person .note{margin-top:10px;font-size:.86rem;line-height:1.45}
+.person .ex{border-top:1px solid var(--line);padding-top:9px;margin-top:10px}
+.person .ex .exl{display:flex;align-items:center;gap:7px;font-size:.84rem;font-weight:600;margin-bottom:4px}
+.person .ex q{display:block}
+
+/* ---------- where they agree: a dark teal ground, not the MP's indigo, so violet never sits on indigo ---------- */
+.sea{background:var(--sea);color:#fff}
+.sea h2{color:#fff}
+.sea .all-list{--g1:#bb8b1a;--g2:#a77be6}
+/* ---------- dumbbells ---------- */
+.dumb{display:block;width:100%;height:auto;margin-top:14px;overflow:visible}
+.dumb .trk{stroke:var(--trk,var(--track))}
+.dumb .rng{stroke:var(--rng,var(--ink))}
+.dumb .tick{fill:var(--tk,var(--muted));font-family:var(--text)}
+.dumb .ring{stroke:var(--ring,var(--card))}
+.vals{display:flex;gap:8px 22px;font-size:.98rem;margin-top:8px;flex-wrap:wrap}
+.vals span{display:inline-flex;align-items:center;gap:8px}
+.vals b{font-weight:700}
+.nn{color:var(--muted);font-weight:400;font-size:.88em}
+/* ---------- pairs ---------- */
+.pair{display:grid;grid-template-columns:1fr 1fr;border-radius:18px;overflow:hidden;margin-bottom:28px;background:var(--card);color:var(--ink)}
+.pair .topic{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:26px 34px 0}
+.pair .topic h3{font-size:1.9rem;line-height:1.05;letter-spacing:-.015em}
+.pair .topic .n{font-size:.88rem;color:var(--muted);white-space:nowrap}
+.half{padding:22px 34px 30px}
+.half.split-half{margin:18px 0}
+.half.agree{background:var(--agree-bg);color:var(--agree-ink);margin:18px 18px 18px 0;border-radius:14px;--trk:var(--agree-trk);--rng:var(--agree-ink);--tk:var(--agree-ink);--ring:var(--agree-bg)}
+.half.agree .nn{color:var(--agree-ink)}
+.half q{display:block;font-weight:600;font-size:1.14rem;line-height:1.38;min-height:4.14em;margin-top:14px}
+.half.agree .pill{background:var(--agree-ink);color:var(--agree-bg)}
+details.all{margin-top:8px;border-top:1px solid rgba(255,255,255,.3);padding-top:18px}
+details.all summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2rem 0}
+.all-list{list-style:none;margin:16px 0 0;padding:0;column-count:2;column-gap:44px}
+.all-list li{break-inside:avoid;padding:12px 0;border-top:1px solid rgba(255,255,255,.18)}
+.all-list q{display:block;font-weight:500;line-height:1.45}
+.all-list .vals{color:#d3e6ea;font-size:.9rem;margin-top:4px}
+.all-list .nn{color:inherit;opacity:.85}
+/* ---------- priorities ---------- */
+.how{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;background:var(--card);border:2px solid var(--frame);border-radius:14px;padding:26px 32px;margin-bottom:40px}
+.costs{display:flex;gap:28px;align-items:flex-end}
+.cost{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:.92rem;text-align:center}
+.cost b{font-weight:700}
+.sq{display:grid;gap:3px}
+.sq i{width:16px;height:16px;border-radius:3px;background:var(--mist);box-shadow:inset 0 0 0 1.5px var(--teal-dk)}
+.sq.s1{grid-template-columns:repeat(1,16px)} .sq.s4{grid-template-columns:repeat(2,16px)} .sq.s9{grid-template-columns:repeat(3,16px)}
+.how p.cap{font-size:1.06rem;line-height:1.5;max-width:36rem}
+.finding{font-family:var(--display);font-weight:700;color:var(--heading);font-size:clamp(1.5rem,2.3vw,2rem);line-height:1.15;margin:0 0 26px;max-width:44rem;letter-spacing:-.01em}
+.prio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pcard{background:var(--card);border-radius:14px;padding:26px 26px 24px;display:flex;flex-direction:column;border:2px solid var(--frame)}
+@supports (grid-template-rows:subgrid){.pcard{display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:0}.pcard .echo{align-self:start}}
+.pcard .rank{font-family:var(--display);font-weight:800;font-size:2.6rem;line-height:1;margin-bottom:10px;color:var(--heading)}
+.pcard .tt{margin-bottom:22px;flex:1}
+.pcard p.t{font-weight:600;font-size:1.06rem;line-height:1.36}
+/* each change leads with its net votes, which set the order; one bar on a shared scale (the top change is full width) */
+.tally{margin:0 0 12px}
+.tally .big{display:flex;align-items:baseline;gap:.45rem;margin:0 0 12px;font-family:var(--display);font-weight:800;font-size:2.9rem;line-height:.95;color:var(--heading);letter-spacing:-.02em}
+.tally .big span{font-family:var(--text);font-size:.92rem;font-weight:600;color:var(--muted);letter-spacing:0}
+.tbar{height:10px;border-radius:5px;background:var(--track);overflow:hidden}
+.tbar i{display:block;height:100%;border-radius:5px;background:var(--teal)}
+.pstats{font-size:.95rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.pstats b{font-weight:700}
+.pcard .pstats{color:var(--muted);font-size:.92rem}
+.echo{border-top:1px solid var(--line);margin-top:18px;padding-top:14px}
+.echo .el{font-size:.85rem;font-weight:600;margin-bottom:6px}
+.echo .en{font-size:.85rem;color:var(--muted);margin-top:6px}
+.echo q{display:block;font-size:.93rem;line-height:1.42;margin-bottom:4px}
+.echo .vals{font-size:.9rem;margin-top:6px}
+.no-card{margin-top:28px;background:var(--indigo);color:#fff;border-radius:18px;padding:34px 38px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.no-card h3{font-size:2.3rem;line-height:1.05;margin:0 0 14px;color:var(--teal);letter-spacing:-.015em}
+.no-card p.t{font-weight:600;font-size:1.2rem;line-height:1.36;margin-bottom:14px}
+.no-card p.s{color:#cfd2e6;font-size:1rem}
+.no-card .tally .big{color:#fff}
+.no-card .tally .big span{color:#cfd2e6}
+details.rest{margin-top:28px;border-top:2px solid var(--frame);padding-top:18px}
+details.rest summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2rem 0}
+.rest-list{list-style:none;margin:16px 0 0;padding:0}
+.rest-list li{display:grid;grid-template-columns:3rem 1fr auto;gap:16px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line)}
+.rest-list .r{font-family:var(--display);font-weight:800;font-size:1.6rem;line-height:1;color:var(--heading)}
+.rest-list .t{font-weight:600}
+.rest-list .s{font-size:.92rem;color:var(--muted);white-space:nowrap;display:flex;align-items:baseline;gap:.6rem}
+.rest-list .rnet{font-family:var(--display);font-size:1.5rem;font-weight:800;color:var(--heading)}
+.rest-list .rs{font-size:.9rem}
+/* ---------- how this worked ---------- */
+.steps{list-style:none;margin:0 0 30px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.step{display:flex;flex-direction:column;gap:10px;border:2px solid var(--frame);border-radius:14px;padding:24px 24px 26px;background:var(--card)}
+.step .fig{font-family:var(--display);font-weight:800;font-size:3rem;line-height:.95;color:var(--heading);letter-spacing:-.02em}
+.step h3{font-family:var(--text);font-weight:600;font-size:1.06rem;letter-spacing:0;line-height:1.3;margin-top:4px;color:var(--ink)}
+.step p{font-size:.96rem;line-height:1.5;color:var(--muted)}
+/* ---------- what happens next: the hero's pale teal, with the indigo sticker ---------- */
+.next{background:var(--mist);color:var(--indigo);padding:104px 0;position:relative;overflow:hidden}
+.next h2{color:var(--indigo);font-size:clamp(2.8rem,5vw,4.6rem);line-height:.98;margin-bottom:24px;letter-spacing:-.025em}
+.next-grid{display:grid;grid-template-columns:minmax(0,38rem) auto;justify-content:start;gap:48px 88px;align-items:center}
+.next p{font-size:1.25rem;line-height:1.5;max-width:32rem;margin-bottom:32px}
+.next :focus-visible{outline-color:var(--indigo)}
+.next .sticker2{justify-self:center;width:15rem;height:15rem;border-radius:50%;background:var(--indigo);color:#fff;display:grid;place-items:center;text-align:center;transform:rotate(-10deg);padding:1.4rem}
+.next .sticker2 b{font-family:var(--display);font-weight:800;font-size:2.4rem;line-height:1;display:block;color:var(--teal);letter-spacing:-.02em;max-width:72%;margin:0 auto}
+@media (max-width:900px){
+  .head.side{grid-template-columns:1fr}
+  .head.side .head-line{margin-top:18px}
+  .pair,.no-card,.next-grid{grid-template-columns:1fr}
+  .how{grid-template-columns:1fr;gap:20px;padding:22px}
+  .costs{gap:20px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .step{padding:20px}
+  .step .fig{font-size:2.5rem}
+  .next{padding:72px 0}
+  .next .sticker2{width:10.625rem;height:10.625rem}
+  .next .sticker2 b{font-size:1.6rem}
+  .half.agree{margin:0 14px 14px}
+  .half.split-half{margin:6px 0 0}
+  .pair .topic{padding:22px 22px 0;flex-wrap:wrap}
+  .pair .topic h3{font-size:1.6rem}
+  .half{padding:18px 22px 24px}
+  .half q{min-height:0}
+  .all-list{column-count:1}
+  .prio-grid{grid-template-columns:1fr}
+  .no-card{padding:28px 22px;gap:22px}
+  .rest-list li{grid-template-columns:2.4rem 1fr}
+  .rest-list .s{grid-column:2;white-space:normal}
+}
+@media (max-width:520px){ .steps{grid-template-columns:1fr} }
+@media (hover:hover) and (pointer:fine){
+  .pair,.pcard,.no-card{transition:opacity .2s ease}
+  #pairs:has(.pair:hover) .pair:not(:hover),
+  #priorities:has(.pcard:hover) .pcard:not(:hover),
+  #priorities:has(.pcard:hover) .no-card,
+  #priorities:has(.no-card:hover) .pcard{opacity:.25}
+}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:reduce){ .pair,.pcard,.no-card{transition:none} }
+
+/* ---------- notes (for the full build): every paragraph after a row's heading stays in the right column ---------- */
+details.fine{border-top:2px solid var(--frame);padding-top:18px}
+details.fine summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2rem 0}
+details.fine .arows{margin-top:14px}
+.arows{border-bottom:1px solid var(--line)}
+.arow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);column-gap:32px;padding:24px 0;border-top:1px solid var(--line)}
+.arow > p{grid-column:2}
+.arow h3{font-family:var(--text);font-weight:600;font-size:1.08rem;letter-spacing:0;line-height:1.35;color:var(--ink)}
+.arow p{font-size:1rem;line-height:1.6;max-width:44rem}
+.arow p + p{margin-top:.6rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--indigo);color:#fff;padding:48px 0 56px}
+.foot{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.foot strong{font-weight:700}
+.foot .ack{color:#cfd2e6;font-size:.95rem}
+
+@media (max-width:900px){
+  .wrap{padding:0 20px}
+  .hero-grid,.head,.head.side,.groups-row,.foot,.glance-grid,.sub-head{grid-template-columns:1fr}
+  .head.side .head-line{margin-top:18px}
+  .sub-head{margin:64px 0 20px}
+  .glance{padding:44px 0 0}
+  .hero-grid{padding:28px 0 64px;gap:28px}
+  .hero h1{font-size:min(12.6cqi,3.9rem)}
+  .hero .sub{font-size:1.08rem}
+  .cards{gap:16px;padding:6px 4px 10px}
+  .card,.c1,.c2,.c3,.c4{width:auto;align-self:stretch}
+  .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
+  .c1{transform:rotate(-2deg)} .c2{transform:rotate(1.5deg)} .c3{transform:rotate(-1deg)} .c4{transform:rotate(2deg)}
+  section.block{padding:72px 0}
+  .head{gap:18px;margin-bottom:30px}
+  .gtop .big{font-size:3rem}
+  .gcard{padding:22px 20px 24px}
+  .map-card{padding:16px 14px 14px;border-radius:14px}
+  .person{position:static;width:auto;opacity:1;transform:none;margin-top:12px;box-shadow:none;display:none}
+  .person.on{display:block}
+  .arow{grid-template-columns:1fr;gap:6px;padding:18px 0}
+  .arow > p{grid-column:auto}
+}
+@media (prefers-reduced-motion:reduce){ #map .pdot,.person,.gl{transition:none} .btn:hover,.gl:hover{transform:none} }
+
+/* ---------- RxC site shell (shared with the other project microsites) ---------- */
+.rxc-shell{--ink:#17203A;--paper:#fff;--common:#EDFF38;--quiet:#5F657E;--hair:#D9DBE3;--voice-b:#E23A6B;
+  font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:15px;line-height:1.3;box-sizing:border-box}
+.rxc-shell *{box-sizing:border-box;font-family:inherit;text-transform:none;letter-spacing:0;font-size:inherit;line-height:inherit}
+.rxc-shell a{color:inherit;text-decoration:none}
+.rxc-shell a:hover{text-decoration:underline;text-underline-offset:.3em}
+.rxc-shell a:focus-visible{outline:3px solid #2B3EFF;outline-offset:3px}
+.rxc-shell .wrap{max-width:78rem;margin:0 auto;padding:.75rem clamp(1.25rem,4vw,4.5rem);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.rxc-shell.top{border-bottom:2px solid var(--ink)}
+.rxc-shell.bottom{border-top:1px solid var(--hair);font-size:14px;color:var(--quiet)}
+.rxc-shell.bottom a{color:var(--ink)}
+.rxc-shell .crumbs{display:flex;align-items:center;gap:.5rem;color:var(--quiet);min-width:0}
+.rxc-shell .crumbs a{font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:.5rem}
+.rxc-shell .crumbs span.here{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rxc-shell .status{display:inline-flex;align-items:center;gap:.4rem;color:var(--quiet)}
+.rxc-shell .status i{width:.5rem;height:.5rem;border-radius:50%;background:var(--voice-b);display:inline-block}
+.rxc-shell .btn{border:2px solid var(--ink);padding:.45rem .8rem;font-weight:600;font-size:14px;line-height:1;color:var(--ink);font-family:inherit;letter-spacing:0}
+.rxc-shell .btn:hover{background:var(--ink);color:var(--paper);text-decoration:none}
+.rxc-shell .right{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.rxc-shell .btn{border-radius:0;background:transparent;display:inline-block}
+.rxc-shell .btn:hover{transform:none}
+</style>
+</head>
+<body>
+<div class="rxc-shell top" role="banner">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="12" height="12"/><rect x="9" y="9" width="12" height="12"/></svg>RadicalxChange</a>
+      <span>/</span>
+      <a href="/projects/">Projects</a>
+      <span>/</span>
+      <span class="here">Kooyong on migration</span>
+    </nav>
+    <div class="right">
+      <span class="status"><i></i><span data-k="status">Preliminary results, data to 5:08am AEDT, 19 November 2026</span></span>
+      <a class="btn" href="mailto:info@radicalxchange.org?subject=Kooyong%20migration%20results">Contact the team</a>
+    </div>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1><span class="ln">Kooyong wants</span><span class="ln"><span class="box">a bipartisan plan</span></span><span class="ln">for migration</span></h1>
+        <p class="sub">People disagree about how many should come, and who should come first. But most in both groups want a bipartisan migration plan that looks at least 10 years ahead.</p>
+        <div class="actions"><a class="btn solid" href="#groups">See what Kooyong said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
+        <p class="turnout" data-k="turnout">Since 9 November 2026 · 102 people have taken part</p>
+      </div>
+      <div class="cards" role="list" aria-label="Four statements from the conversation">
+        <div class="card c1" role="listitem"><q data-k="t:107">Migration policy should be planned properly, be bi-partisan and not a political football. I.e. a 10+ year plan.</q></div>
+        <div class="card c2" role="listitem"><q data-k="t:92">Concerns around economy, infrastructure, etc are valid - but should be addressed as separate policy issues rather than blaming migration</q></div>
+        <div class="card c3" role="listitem"><q data-k="t:69">Migration levels are not in keeping with infrastructure.</q></div>
+        <div class="card c4" role="listitem"><q data-k="t:36">A well managed migration program ensures that there is still investment in skills, training and education of Australians, both new and old.</q></div>
+        <div class="sticker" aria-hidden="true"><div><span>More than</span><b data-k="sticker">4 in 5</b><span>in both groups want a bipartisan migration plan, 10 or more years ahead</span></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="glance" aria-label="At a glance">
+  <div class="wrap glance-grid">
+    <a class="gl" href="#groups">
+      <h3>Two main groups</h3>
+      <div class="split" aria-hidden="true" data-k="split"><i style="width:68.5%;background:var(--g1)"></i><i style="width:31.5%;background:var(--g2)"></i></div>
+      <div class="split-n" aria-hidden="true" data-k="splitn"><span><i class="dot g1"></i>2 in 3</span><span>1 in 3<i class="dot g2"></i></span></div>
+      <p data-k="glance1">Two in three say migration works. One in three want fewer people, chosen more carefully.</p>
+      <span class="more">See the groups</span>
+    </a>
+    <a class="gl dark" href="#agree">
+      <h3>Both groups want a bipartisan plan</h3>
+      <p>Most people in both groups want a migration plan both major parties back, looking at least 10 years ahead.</p>
+      <span class="more">See where they agree</span>
+    </a>
+    <a class="gl tinted" href="#priorities">
+      <h3>First choice: plan homes and services with migration</h3>
+      <p data-k="glance3">At a community session on 9 November, 46 of 52 people backed planning migration together with housing and infrastructure.</p>
+      <span class="more">See the priorities</span>
+    </a>
+  </div>
+</section>
+
+<section class="block" id="groups" aria-labelledby="groups-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="groups-h">Most people fit into one of two groups</h2>
+    </div>
+
+    <div class="groups-row">
+      <div class="gcard one">
+        <div class="gtop"><span class="big" data-k="g1f">2<small> in </small>3</span><span class="who"><b><i class="dot g1"></i>Group 1: Migration works</b><span data-k="g1n">61 people</span></span></div>
+        <div class="qbox lead"><p class="lab">What sets them apart</p><q data-k="t:8">Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.</q>
+          <div class="pcts" data-k="c1:8"><span><i class="dot g1"></i><b>90%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>30%</b> of Group 2</span></div></div>
+        <div class="qbox"><q data-k="t:92">Concerns around economy, infrastructure, etc are valid - but should be addressed as separate policy issues rather than blaming migration</q>
+          <div class="pcts" data-k="c1:92"><span><i class="dot g1"></i><b>98%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>28%</b> of Group 2 <span class="nn">(18 voted)</span></span></div></div>
+        <div class="qbox"><q data-k="t:34">As a lucky country, we have a duty to keep helping people who aren't so lucky, even when it costs us.</q>
+          <div class="pcts" data-k="c1:34"><span><i class="dot g1"></i><b>91%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>19%</b> of Group 2</span></div></div>
+      </div>
+      <div class="gcard two">
+        <div class="gtop"><span class="big" data-k="g2f">1<small> in </small>3</span><span class="who"><b><i class="dot g2"></i>Group 2: Fewer, chosen more carefully</b><span data-k="g2n">28 people</span></span></div>
+        <div class="qbox lead"><p class="lab">What sets them apart</p><q data-k="t:3">For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.</q>
+          <div class="pcts" data-k="c2:3"><span><i class="dot g2"></i><b>74%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>21%</b> of Group 1</span></div></div>
+        <div class="qbox"><q data-k="t:21">When places are limited, people who can work and contribute economically should take priority over family reunion.</q>
+          <div class="pcts" data-k="c2:21"><span><i class="dot g2"></i><b>85%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>19%</b> of Group 1</span></div></div>
+        <div class="qbox"><q data-k="t:52">The migration program needs to ensure the people we accept are suitable and genuinely wanting to embrace our culture and way of life.</q>
+          <div class="pcts" data-k="c2:52"><span><i class="dot g2"></i><b>100%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>37%</b> of Group 1</span></div></div>
+      </div>
+    </div>
+    <p class="small-note" data-k="caveat">The people who joined in aren’t a random sample, so these groups describe who took part, not all of Kooyong. 13 people aren’t in a group: they voted on too few statements, or didn’t agree or disagree with any.</p>
+
+    <div class="sub-head"><h3>Where everyone sits</h3></div>
+    <div class="map-card" id="map-card">
+      <p class="map-lead">Each dot is one person, placed by how they voted. People who voted alike sit close together, so the higher the pile, the more people voted that way.</p>
+      <svg id="map" role="img" aria-label="A map of everyone placed in a group, along the main divide: Group 1 on the left, Group 2 on the right."></svg>
+      <div class="map-foot">
+        <button class="someone" type="button" id="someone">Show me someone</button>
+      </div>
+      <div class="person" id="person" aria-live="polite"></div>
+      <p class="map-hint"><span class="h-fine">Hover over a dot to see how that person voted.</span><span class="h-touch">Tap the map or press “Show me someone” to see how one person voted.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="block sea" id="agree" aria-labelledby="agree-h">
+  <div class="wrap">
+    <div class="head side">
+      <h2 id="agree-h">Even where they disagree, they agree on something</h2>
+      <p class="head-line" data-k="agreelead">At least 7 in 10 people in each group agreed with 21 statements. Here are five of them, each beside a related statement the two groups disagree on.</p>
+    </div>
+    <div id="pairs"></div>
+    <details class="all">
+      <summary data-k="foldsum">See all 21 statements both groups agreed with</summary>
+      <ol class="all-list" id="all"></ol>
+    </details>
+  </div>
+</section>
+
+<section class="block tint" id="priorities" aria-labelledby="prio-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="prio-h">The six changes people want most</h2>
+    </div>
+    <div class="how">
+      <div class="costs" aria-hidden="true">
+        <div class="cost"><div class="sq s1"><i></i></div><p><b>1 vote</b><br>1 credit</p></div>
+        <div class="cost"><div class="sq s4"><i></i><i></i><i></i><i></i></div><p><b>2 votes</b><br>4 credits</p></div>
+        <div class="cost"><div class="sq s9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p><b>3 votes</b><br>9 credits</p></div>
+      </div>
+      <p class="cap" data-k="qvcap">At a community session on 9 November, 52 people used quadratic voting to spread a budget of credits across 13 possible changes, for or against. Each extra vote on the same idea costs more, so the totals show what people care about most.</p>
+    </div>
+    <p class="finding" data-k="finding">Three of the top six match ideas most people in both groups agreed with in the conversation.</p>
+    <div class="prio-grid" id="prio"></div>
+    <div class="no-card">
+      <div><h3>And one clear no</h3><p class="t" data-k="no-t">Prioritise migrants in high-paying jobs, using salary rather than shortage lists to decide who qualifies.</p><p class="s" data-k="no-s">32 people opposed it and 8 backed it.</p></div>
+      <div><div class="tally"><p class="big" data-k="no-net">−49<span>net votes</span></p></div></div>
+    </div>
+    <details class="rest">
+      <summary>See the other six changes</summary>
+      <ol class="rest-list" id="rest"></ol>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="head"><h2 id="about-h">How this worked</h2></div>
+    <ol class="steps">
+      <li class="step"><span class="fig" data-k="st-starters">36</span><h3>Starter statements</h3><p data-k="st-starters-p">The conversation opened with 36 statements for people to agree or disagree with.</p></li>
+      <li class="step"><span class="fig" data-k="st-people">102</span><h3>People took part</h3><p data-k="st-people-p">Since 9 November they have voted agree, disagree or pass, and added statements of their own.</p></li>
+      <li class="step"><span class="fig">2</span><h3>Groups emerged</h3><p>Polis, an open-source tool, grouped people who voted alike. Nobody chose a group. We named them.</p></li>
+      <li class="step"><span class="fig" data-k="st-voters">52</span><h3>Voters set priorities</h3><p data-k="st-voters-p">On 9 November they spread a budget of credits across 13 possible changes, using quadratic voting.</p></li>
+    </ol>
+    <details class="fine">
+      <summary>Notes for checking the numbers</summary>
+      <div class="arows">
+        <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of a group who agreed, out of those in the group who voted on that statement. Later statements had fewer voters, so where fewer than 20 people in a group voted, we show how many.</p></div>
+        <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so people sit close to where the Polis report places them, but not in exactly the same spots. Left to right is the main divide in the votes. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place.</p><p>Each person’s card shows up to two of their votes as examples. For each group they sided with, it shows the statement most of that group agreed with, preferring statements the person agreed with over ones they rejected.</p></div>
+        <div class="arow"><h3>Inside the groups</h3><p data-k="n-inside">We also looked for a clear split inside each group. Neither has one that holds up. In Group 1, the clearest split rests on only four statements, two of them saying the same thing, with fewer than 25 voters on one side. Group 2 is too small to test.</p></div>
+        <div class="arow"><h3>Unlikely allies</h3><p data-k="n-allies">We looked for unlikely allies: people from both groups who tend to back the same statements, even though they disagree on others. We tested 36 pairs of statements that both groups split on at similar rates. None held up.</p></div>
+        <div class="arow"><h3>The group cards</h3><p>Each card shows three statements most of the group agreed with and far fewer of the other group did. RadicalxChange chose which three to show. We chose statements about what each group wants, including what it values. Lines that mainly judge other people count in every figure, but aren’t on the cards.</p></div>
+        <div class="arow"><h3>Who and what we counted</h3><p data-k="n-stmts">169 statements were open for voting: the 36 starter statements and 133 written by people taking part. The moderators held back 14 others, and 2 more were still waiting for review, so no one else voted on them.</p><p data-k="n-people">We count the 102 people who voted on at least one of those 169 statements, the same as Polis’s own count. Between them they cast 9,992 votes.</p><p data-k="n-pass">One person voted on enough statements to be placed in a group, but didn’t agree or disagree with any of them: every vote they cast was a pass. They count as taking part, but we haven’t placed them in a group, because a pass doesn’t show where someone stands. Polis places them anyway, because it reads a pass as halfway between agree and disagree.</p><p data-k="n-own">One other person’s only vote was the agreement Polis records when someone adds a statement. They count as taking part, but voted on too few statements to be placed in a group.</p></div>
+        <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results.</p></div>
+        <div class="arow"><h3>The priority vote</h3><p data-k="n-qv">A separate vote with its own voters. We set aside ballots that used fewer than 10 credits (there was one, and it was empty). Where someone voted more than once, we counted the last ballot they submitted. That leaves 52 voters. Net votes are votes for minus votes against. The matching statements from the conversation are close in meaning, not identical in wording.</p><p data-k="n-chart">The chart shared after the session shows 54 voters. It counts names that differ only in capital letters or spacing as different people, and where one person sent two ballots that used the same credits, it kept the first rather than the last. The top six are the same, in the same order.</p></div>
+        <div class="arow"><h3>The data</h3><p data-k="n-data">From the Polis export of 19 November 2026, 5:08am AEDT. The conversation is still open, so these results are preliminary. Statements appear exactly as people wrote them.</p></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="next" aria-labelledby="next-h">
+  <div class="wrap next-grid">
+    <div>
+      <h2 id="next-h">What happens next</h2>
+      <p>These results are preliminary. Monique Ryan and her team will talk them through with residents in December.</p>
+      <div class="actions"><a class="btn solid" href="#top">Back to the top</a></div>
+    </div>
+    <div class="sticker2" aria-hidden="true"><div><b>Thank you, Kooyong</b></div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>Results prepared by <strong>RadicalxChange Foundation</strong> with <strong>Dr Monique Ryan MP</strong>, Federal Member for Kooyong.</p>
+    <p class="ack">[Acknowledgement of Country: wording to come from Monique Ryan’s office.]</p>
+  </div>
+</footer>
+
+<script type="application/json" id="page-data">{"people":[[0.0,0,156,50,5,35,0,92,"a",-1,""],[0.0289,0,146,55,4,31,1,92,"a",42,"a"],[0.0533,0,156,63,3,34,0,92,"a",-1,""],[0.068,0,156,60,2,33,0,92,"a",-1,""],[0.0994,0,131,50,2,26,0,92,"a",-1,""],[0.1042,0,146,63,1,28,0,92,"a",-1,""],[0.1316,0,157,57,2,25,1,92,"a",31,"a"],[0.1355,0,132,56,0,28,3,92,"a",31,"a"],[0.1436,0,169,63,0,29,1,92,"a",160,"a"],[0.1483,0,156,76,4,33,2,92,"a",3,"a"],[0.1495,0,62,61,1,15,0,34,"a",-1,""],[0.1506,0,116,57,3,20,1,92,"a",40,"a"],[0.1507,0,156,55,0,27,1,92,"a",95,"d"],[0.1545,0,160,56,5,27,1,92,"a",128,"d"],[0.1572,0,156,59,1,26,4,92,"a",31,"a"],[0.1616,0,99,58,0,23,3,92,"a",21,"a"],[0.165,0,117,74,1,24,1,92,"a",40,"a"],[0.1662,0,156,43,0,23,1,92,"a",160,"a"],[0.1681,0,146,61,1,24,1,92,"a",31,"a"],[0.169,0,41,49,5,8,0,55,"a",-1,""],[0.1712,0,140,45,0,24,1,92,"a",27,"d"],[0.1853,0,156,48,1,27,1,92,"a",160,"a"],[0.188,0,88,56,3,15,0,92,"a",-1,""],[0.1886,0,152,64,3,24,2,92,"a",28,"a"],[0.1935,0,156,70,0,29,3,92,"a",28,"a"],[0.2024,0,156,46,1,30,1,92,"a",157,"d"],[0.2055,0,160,78,5,29,6,92,"a",31,"a"],[0.2098,0,149,54,2,26,3,92,"a",21,"a"],[0.224,0,140,52,1,22,0,92,"a",-1,""],[0.2333,0,156,44,0,21,0,92,"a",-1,""],[0.2334,0,148,61,1,28,5,92,"a",136,"a"],[0.2363,0,156,69,1,27,5,92,"a",21,"a"],[0.2518,0,98,47,1,17,2,92,"a",31,"a"],[0.2552,0,123,54,2,19,6,135,"a",161,"a"],[0.2691,0,156,54,1,29,4,92,"a",28,"a"],[0.2775,0,37,73,1,6,2,34,"a",3,"a"],[0.2777,0,95,68,2,14,0,92,"a",-1,""],[0.2873,0,63,76,0,13,3,34,"a",31,"a"],[0.2896,0,38,66,2,6,2,34,"a",21,"a"],[0.2923,0,150,69,1,17,7,92,"a",40,"a"],[0.2924,0,156,65,1,23,8,92,"a",31,"a"],[0.2941,0,16,75,0,3,0,92,"a",-1,""],[0.2973,0,156,53,3,18,4,92,"a",3,"a"],[0.2975,0,18,50,0,2,0,55,"a",-1,""],[0.2975,0,142,57,0,18,3,92,"a",21,"a"],[0.3109,0,38,61,2,3,2,34,"a",3,"a"],[0.315,0,36,47,0,4,0,8,"a",-1,""],[0.3163,0,157,70,2,22,9,92,"a",21,"a"],[0.3219,0,32,53,2,5,1,34,"a",31,"a"],[0.3357,0,63,68,1,8,5,34,"a",21,"a"],[0.3473,0,100,77,0,14,7,92,"a",54,"a"],[0.3488,0,148,61,0,23,8,92,"a",3,"a"],[0.3519,0,146,82,2,18,8,92,"a",31,"a"],[0.3544,0,67,76,0,11,3,34,"a",21,"a"],[0.3667,0,146,95,1,20,12,92,"a",21,"a"],[0.3984,0,18,83,0,1,1,22,"a",44,"a"],[0.403,0,157,52,1,19,4,92,"a",31,"a"],[0.4098,0,156,60,1,17,6,92,"a",21,"a"],[0.4141,0,155,52,2,15,7,92,"a",21,"a"],[0.4182,0,88,59,2,13,7,92,"a",28,"a"],[0.4212,0,39,79,3,4,4,34,"a",3,"a"],[0.4386,1,156,58,1,14,10,92,"a",21,"a"],[0.4447,1,46,74,0,2,2,92,"a",54,"a"],[0.445,1,144,54,1,16,8,92,"a",54,"a"],[0.4686,1,38,71,2,2,6,8,"a",21,"a"],[0.4752,1,60,72,1,5,9,34,"a",21,"a"],[0.478,1,104,76,1,8,15,92,"a",21,"a"],[0.4926,1,37,73,1,3,5,34,"a",31,"a"],[0.5175,1,38,63,2,1,4,22,"a",31,"a"],[0.5304,1,37,81,1,1,5,8,"a",21,"a"],[0.5459,1,36,50,0,0,8,-1,"",21,"a"],[0.5533,1,153,69,1,12,19,135,"a",21,"a"],[0.5935,1,157,58,1,8,17,92,"a",21,"a"],[0.5937,1,156,67,3,13,21,135,"a",21,"a"],[0.6095,1,153,41,2,8,16,34,"a",31,"a"],[0.6168,1,37,57,1,0,7,-1,"",21,"a"],[0.6228,1,36,69,0,0,8,-1,"",21,"a"],[0.6255,1,132,60,1,8,18,135,"a",21,"a"],[0.6262,1,61,72,2,3,11,55,"a",21,"a"],[0.6499,1,101,62,1,1,17,28,"d",21,"a"],[0.6667,1,62,39,0,1,14,136,"d",21,"a"],[0.7249,1,38,50,1,0,11,-1,"",31,"a"],[0.726,1,62,66,0,0,15,-1,"",21,"a"],[0.814,1,68,38,0,4,18,128,"a",21,"a"],[0.8191,1,143,59,0,3,25,135,"a",21,"a"],[0.8947,1,148,66,3,3,30,128,"a",21,"a"],[0.9192,1,156,57,5,1,34,159,"d",21,"a"],[0.9426,1,153,55,4,2,32,153,"a",21,"a"],[1.0,1,156,40,5,3,30,153,"a",21,"a"]],"texts":{"3":"For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.","8":"Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.","21":"When places are limited, people who can work and contribute economically should take priority over family reunion.","22":"Migration is about people, not just workers. Families being able to live together should count as much as economic contribution.","27":"If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.","28":"People who choose to come here should be expected to cover more of the cost of settling in, including learning English.","31":"The culture of my community is changing faster than people can adjust, and it's fair to worry about that.","34":"As a lucky country, we have a duty to keep helping people who aren't so lucky, even when it costs us.","40":"Post-war refugees required to work for 2 years at job nominated by government. Why not re-instigate this now?","42":"Make immigrants work for 2 years at jobs nominated by government, as was done with post-WW2 refugees.","44":"Agree in part but it should be very important to take only those from non war torn nations and who share the same values and beliefs as us.","54":"Immigration has enriched us, but our growing population (in which high migration is a factor) is harming the environment and urban life.","55":"I am concerned that objections to immigration are just an excuse to hide  prejudice against some ethnic, religious or racial groups.","92":"Concerns around economy, infrastructure, etc are valid - but should be addressed as separate policy issues rather than blaming migration","95":"The focus on restricting migration to 'people who share our values and way of life' is often a cover for racist views","128":"we need to reframe \"Australian values\" to  \"'shared societal  values\"' , its inclusive","135":"Migrants are blamed when the economy is in a downturn. Politicians channel people's anxiety about work/housing into scapegoating  migrants.","136":"Migrants that commit crime should lose their visa or citizenship immediately.","153":"Our universities will be in crisis if international student numbers sharply decline","157":"Parents greatly contribute to community cohesion and overall economy. The argument stating parents overload the system is baseless.","159":"Non-citizens should not get a tax free threshold.","160":"We spend too much time talking about refugees, rather than real problems like housing supply and cost of living.","161":"We should be supporting our citizens to grow their own families, rather than growing by immigration"},"nsplit":35}</script>
+<script type="application/json" id="content-data">{"pairs":[{"topic":"A bipartisan long-term plan","split":[3,"For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.",21,74,58,27],"agree":[107,"Migration policy should be planned properly, be bi-partisan and not a political football. I.e. a 10+ year plan.",89,88,45,17]},{"topic":"Training for Australians, new and old","split":[8,"Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.",90,30,58,27],"agree":[36,"A well managed migration program ensures that there is still investment in skills, training and education of Australians, both new and old.",94,88,51,17]},{"topic":"Short-term visas for seasonal work","split":[11,"Temporary visas should stay temporary. People who come on them know the deal, and staying on shouldn't be expected.",30,89,57,27],"agree":[12,"For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.",80,78,54,23]},{"topic":"An open door to skilled migrants","split":[23,"Raising the bar for skilled visas would bring in people who contribute more, even if it means fewer of them overall.",23,84,57,25],"agree":[120,"Australia should keep its door open to skilled migrants and to investors because they bring the skills, capital and energy to economy needs.",75,87,44,15]},{"topic":"Everyone feels safe","split":[95,"The focus on restricting migration to 'people who share our values and way of life' is often a cover for racist views",91,24,47,17],"agree":[32,"A well-managed system means everyone feels safe, including migrants and religious minorities who cop abuse over how migration is discussed.",98,79,54,24]}],"shared":[[41,"Immigration must be managed responsibly to protect social goodwill, mutual trust and community cohesion.",89,100,54,19],[49,"Migrants are critical to our success   We  need to welcome them, support their transition to Australian life not leave them isolated",96,89,51,18],[36,"A well managed migration program ensures that there is still investment in skills, training and education of Australians, both new and old.",94,88,51,17],[107,"Migration policy should be planned properly, be bi-partisan and not a political football. I.e. a 10+ year plan.",89,88,45,17],[104,"I think it's important to know the facts about migration to Australia as the issue tends to be clouded by misinformation.",91,85,45,13],[60,"Since WW2 surges of migrants, Jews, Italians, Greeks, Asians brought culture, knowledge, built businesses, philanthropy, tax & prosperity",98,82,53,17],[61,"Migrants have been a positive & helped make Australia one of the greatest countries on earth. We must be mindful of religious extremism",80,88,51,17],[91,"Migrants are not one generic group. Different migrant categories have varying needs and require appropriate policies and support.",91,80,44,15],[32,"A well-managed system means everyone feels safe, including migrants and religious minorities who cop abuse over how migration is discussed.",98,79,54,24],[12,"For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.",80,78,54,23],[121,"The University model is based on growth in international students.",78,85,41,13],[108,"The system needs to be simple and understandable to all people- reduce the anxiety of the unknown and lining the pockets of private business",77,79,43,14],[103,"Education is essential to creating a tolerant and respectful society.",93,76,43,17],[65,"We are a migrant nation and the most successful multicultural nation on earth.  We should celebrate and treasure this, not run away from it.",98,75,51,16],[120,"Australia should keep its door open to skilled migrants and to investors because they bring the skills, capital and energy to economy needs.",75,87,44,15],[105,"Immigration is often used as a distraction from structural issues that are harder to admit fault on",96,73,46,15],[35,"The government should fund universities properly so they don't have to rely on international students to stay afloat.",73,80,56,25],[84,"Any debate on immigration should not be fragmented from adequacy of infrastructure, productivity, and health and aged care needs.",82,71,44,14],[93,"We need an open discussion from a range of experts about where the sweet spot is both economically and socially for immigration numbers.",71,88,45,16],[16,"Employers with a genuine shortage should be able to sponsor a worker quickly, without paying a migration agent a fortune to get through the process.",77,71,56,24],[56,"I am concerned that many highly educated/skilled immigrants are employed beneath their ability.",77,71,52,17]],"qv":[{"rank":1,"t":"Plan migration together with housing and infrastructure, so new arrivals are matched by homes and services.","y":46,"n":5,"net":136,"e":[9,"I'd trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.",60,88]},{"rank":2,"t":"Ban employers caught exploiting visa workers from sponsoring anyone again.","y":45,"n":2,"net":130},{"rank":3,"t":"Spend more on English classes and settlement support, to help newcomers settle in faster.","y":43,"n":6,"net":127,"e":[27,"If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.",79,23],"en":"The groups split on this one in the conversation."},{"rank":4,"t":"Fund universities properly so they rely less on international student fees.","y":43,"n":5,"net":123,"e":[35,"The government should fund universities properly so they don't have to rely on international students to stay afloat.",73,80]},{"rank":5,"t":"Let sponsored workers change employers without losing their visa.","y":44,"n":4,"net":110,"e":[18,"No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.",84,38],"en":"The groups split on this one in the conversation."},{"rank":6,"t":"Set a ten-year population and migration plan, with a published target range, reported to Parliament every year and independently reviewed.","y":39,"n":9,"net":105,"e":[0,"I'd trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.",66,91]},{"rank":7,"t":"Create a dedicated visa pathway for aged care, disability and other care workers.","y":42,"n":6,"net":101,"e":[24,"Australia needs more than top professionals. We rely on aged care and disability workers from overseas, so there should be a real visa pathway for them even though the pay is low.",93,61]},{"rank":8,"t":"Replace the permanent parent visa with a long-stay family visitor visa, letting parents and grandparents spend extended periods with family here.","y":35,"n":8,"net":75},{"rank":9,"t":"Tell people the rules when they apply, and keep those rules for the life of their visa.","y":32,"n":12,"net":52,"e":[4,"People should be told the rules when they apply, and those rules should hold for the life of their visa. When rules change without warning, the people we need most choose another country.",52,36],"en":"The groups split on this one in the conversation."},{"rank":10,"t":"Remove people with no right to stay more quickly.","y":27,"n":15,"net":39},{"rank":11,"t":"Limit time on temporary visas to a maximum of about eight years.","y":30,"n":14,"net":28},{"rank":12,"t":"Publish a target to reduce the share of the population on temporary visas.","y":24,"n":19,"net":16}],"voters":52}</script>
+<script>
+const NS = 'http://www.w3.org/2000/svg';
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function el(n, a, p) { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+const DATA = JSON.parse(document.getElementById('page-data').textContent);
+const NAME = ['Group 1', 'Group 2'], FULL = ['Group 1: Migration works', 'Group 2: Fewer, chosen more carefully'];
+const AXIS_L = 'Migration works', AXIS_R = 'Fewer, chosen more carefully', AXIS_R_SHORT = 'Fewer, more carefully';
+
+/* ================= map: one row along the main divide ================= */
+const MW = 1000, PL = 24, PR = 24, PT = 12;
+let MH = 300;
+const svg = document.getElementById('map');
+const mapCardEl = document.getElementById('map-card');
+const people = DATA.people.map(([x, g, nv, ar, nc, l1, l2, e1, v1, e2, v2], i) => {
+  const n = l1 + l2, own = g === 0 ? l1 : l2;
+  return { i, g, nv, ar, nc, l1, l2, n, e1, v1, e2, v2, dv: x, share: n ? own / n : null, x: 0, y: 0 };
+});
+const finalFill = p => p.g === 0 ? 'var(--g1)' : 'var(--g2)';
+const defs = el('defs', {}, svg);
+const mk = el('marker', { id: 'arr', viewBox: '0 0 10 10', refX: 8, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+el('path', { d: 'M0,0 L10,5 L0,10 z', fill: 'var(--ink)' }, mk);
+const axisLayer = el('g', {}, svg);
+const labelLayer = el('g', { class: 'glabels' }, svg);
+const dotLayer = el('g', {}, svg);
+const dots = people.map(p => el('circle', { r: 5, cx: 0, cy: 0, class: 'pdot', fill: finalFill(p) }, dotLayer));
+const ring = el('circle', { r: 9, fill: 'none', stroke: 'var(--ink)', 'stroke-width': 3, opacity: 0, 'pointer-events': 'none' }, svg);
+let settled = false;
+// Rounded heaps along the main divide (the layout the other results pages use): each dot drops near its true
+// place on the line and rolls a little to the lowest free spot, up to `reach` dot widths either way, paying
+// `slope` for every step it moves sideways, so crowded stretches pile up like sand, not in columns. Kooyong has
+// no divider inside a group, so dots drop left to right. With fewer than 100 people, the dots are drawn larger
+// (7px, or 3.6px in the phone layout), as on the Southern Highlands page, so the map isn't a thin line.
+function swarm(w) {
+  const k = MW / w, narrow = w < 640 && window.matchMedia('(max-width: 900px)').matches, r = (narrow ? 3.6 : 7) * k, D = 2 * r + Math.max(1, .7 * k);
+  const lo = PL + r, hi = MW - PR - r, reach = narrow ? 4 : 3, slope = narrow ? .7 : .9, placed = [];
+  let top = 0;
+  people.slice().sort((a, b) => a.dv - b.dv || a.i - b.i).forEach(p => {
+    const tx = lo + p.dv * (hi - lo);
+    const local = placed.filter(q => Math.abs(q.x - tx) < (reach + 1.2) * D);
+    let best = null;
+    for (let s = -reach; s <= reach + .001; s += .25) {
+      const x = Math.min(hi, Math.max(lo, tx + s * D));
+      const near = local.filter(q => Math.abs(q.x - x) < D);
+      const cands = [0].concat(near.map(q => q.h + Math.sqrt(Math.max(0, D * D - (q.x - x) ** 2)))).sort((a, b) => a - b);
+      const h = cands.find(c => near.every(q => (q.x - x) ** 2 + (q.h - c) ** 2 >= D * D - .5)) || 0;
+      const score = h + slope * Math.abs(x - tx);
+      if (!best || score < best.score) best = { x, h, score };
+    }
+    placed.push({ i: p.i, x: best.x, h: best.h }); top = Math.max(top, best.h);
+  });
+  const fs = Math.max(17, 12.5 * k), axisH = Math.max(66, fs * 2.6);
+  return { k, r, narrow, lo, hi, top, fs, axisH, placed };
+}
+// a layout in map units, leaving `headroom` above the tallest heap for labels
+function frame(sw, headroom) {
+  const H = Math.ceil(PT + headroom + sw.top + 2 * sw.r + sw.axisH), base = H - sw.axisH;
+  return { H, base, pos: sw.placed.map(q => ({ i: q.i, x: q.x, y: base - sw.r - q.h })) };
+}
+function axis(layer, w, axY, fs, marker) {
+  el('line', { x1: PL, x2: MW - PR - 4, y1: axY, y2: axY, class: 'axis', 'marker-start': `url(#${marker})`, 'marker-end': `url(#${marker})` }, layer);
+  const lab = (txt, attrs) => { const t = el('text', Object.assign({ class: 'axis-label' }, attrs), layer); t.style.fontSize = fs + 'px'; t.textContent = txt; return t; };
+  const lt = lab(AXIS_L, { x: PL, y: axY + fs * 1.6 });
+  const rt = lab(w < 640 ? AXIS_R_SHORT : AXIS_R, { x: MW - PR, y: axY + fs * 1.6, 'text-anchor': 'end' });
+  const room = MW - PL - PR - 40, used = lt.getBBox().width + rt.getBBox().width;  // never let the two labels touch
+  if (used > room) [lt, rt].forEach(t => t.style.fontSize = (fs * room / used).toFixed(1) + 'px');
+}
+function layout() {
+  const w = svg.clientWidth || MW, sw = swarm(w), k = sw.k, r = sw.r, narrow = sw.narrow, lo = sw.lo, hi = sw.hi;
+  // each group's name (and count, on wide screens) over its own heap, both on one line
+  const fsG = (narrow ? 12.5 : 17) * k, fsC = (narrow ? 11 : 14) * k;
+  const at = v => lo + v * (hi - lo);
+  const spans = [0, 1].map(g => { const xs = people.filter(p => p.g === g).map(p => p.dv).sort((a, b) => a - b);
+    const a = at(xs[Math.floor(xs.length * .1)]), b = at(xs[Math.floor(xs.length * .9)]); return { c: (a + b) / 2, hw: Math.max((b - a) / 2, 40 * k) }; });
+  const peak = (x, hw) => Math.max(0, ...sw.placed.filter(q => Math.abs(q.x - x) <= hw).map(q => q.h + 2 * r));
+  const grpH = narrow ? fsG * 1.25 : fsG * 1.25 + fsC * 1.15 + 4 * k;
+  const bandH = Math.max(peak(spans[0].c, spans[0].hw), peak(spans[1].c, spans[1].hw)) + 10 * k;
+  const fr = frame(sw, Math.max(0, bandH + grpH - sw.top - 2 * r)), base = fr.base;
+  MH = fr.H;
+  svg.setAttribute('viewBox', `0 0 ${MW} ${MH}`);
+  fr.pos.forEach(q => { people[q.i].x = q.x; people[q.i].y = q.y; });
+  while (axisLayer.firstChild) axisLayer.removeChild(axisLayer.firstChild);
+  const axY = base + 8;
+  axis(axisLayer, w, axY, sw.fs, 'arr');
+  while (labelLayer.firstChild) labelLayer.removeChild(labelLayer.firstChild);
+  const text = (cls, x, y, size, str, g, anchor = 'middle') => { const t = el('text', { class: cls, x: x.toFixed(1), y: y.toFixed(1), 'text-anchor': anchor }, g); t.style.fontSize = size + 'px'; t.textContent = str; return t; };
+  [0, 1].forEach(gi => {
+    const count = people.filter(p => p.g === gi).length, cx = spans[gi].c;
+    const g = el('g', { class: 'grp' }, labelLayer);
+    el('title', {}, g).textContent = `${FULL[gi]}: ${count} people`;
+    const yName = base - bandH - (narrow ? 0 : fsC * 1.15 + 4 * k);
+    const t = text('grp-name', cx, yName, fsG, narrow ? NAME[gi] : FULL[gi], g);
+    const dr = fsG * .3, gap = 6 * k, wd = t.getComputedTextLength(), total = 2 * dr + gap + wd;
+    const left = Math.min(Math.max(cx - total / 2, PL), MW - PR - total), tx = left + 2 * dr + gap + wd / 2;
+    t.setAttribute('x', tx.toFixed(1));
+    el('circle', { cx: (left + dr).toFixed(1), cy: (yName - fsG * .34).toFixed(1), r: dr.toFixed(1), fill: gi ? 'var(--g2)' : 'var(--g1)' }, g);
+    if (!narrow) text('grp-count', tx, base - bandH, fsC, count + ' people', g);
+  });
+  dots.forEach(d => d.setAttribute('r', r.toFixed(2)));
+  ring.setAttribute('r', (r + 4 * k).toFixed(1));
+  ring.setAttribute('stroke-width', (2 * k).toFixed(1));
+  if (settled) { dots.forEach((d, i) => { d.style.transition = 'none'; d.style.transform = `translate(${people[i].x}px, ${people[i].y}px)`; }); svg.getBoundingClientRect(); dots.forEach(d => d.style.transition = ''); }
+  hidePerson && hidePerson();
+}
+function placeAll(final) {
+  dots.forEach((d, i) => {
+    const p = people[i];
+    const x = final ? p.x : MW / 2 + (Math.sin(i * 12.9898) * 43758.5453 % 1) * 200;
+    const y = final ? p.y : (MH - 66) / 2 + (Math.sin(i * 78.233) * 12345.678 % 1) * 50;
+    d.style.transform = `translate(${x}px, ${y}px)`;
+  });
+  if (final) settled = true;
+}
+var hidePerson = null;
+layout();
+let lastW = svg.clientWidth;
+window.addEventListener('resize', () => { clearTimeout(window.__rz); window.__rz = setTimeout(() => { if (svg.clientWidth !== lastW) { lastW = svg.clientWidth; layout(); } }, 150); });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { lastW = svg.clientWidth; layout(); });
+if (reduce || !('IntersectionObserver' in window)) { placeAll(true); }
+else {
+  dots.forEach(d => { d.style.transition = 'none'; d.style.opacity = .35; d.style.fill = 'var(--muted)'; });
+  placeAll(false);
+  svg.getBoundingClientRect();
+  const io = new IntersectionObserver(es => { if (!es[0].isIntersecting) return; io.disconnect();
+    dots.forEach((d, i) => { d.style.transition = ''; d.style.transitionDelay = ((i * 37 % 100) / 220).toFixed(2) + 's'; });
+    requestAnimationFrame(() => placeAll(true));
+    setTimeout(() => dots.forEach((d, i) => { d.style.transitionDelay = '0s'; d.style.opacity = 1; d.style.fill = finalFill(people[i]); }), 1500);
+  }, { threshold: .35 });
+  io.observe(svg);
+}
+
+// person card
+const card = document.getElementById('person');
+let current = -1;
+const VERB = { a: 'agreed', d: 'disagreed' };
+function example(id, v, side) {
+  if (id < 0) return '';
+  return `<div class="ex"><p class="exl"><i class="dot ${side ? 'g2' : 'g1'}"></i>Like ${NAME[side]}, they ${VERB[v]}:</p><q>${esc(DATA.texts[String(id)])}</q></div>`;
+}
+function showPerson(i) {
+  if (i === current && card.classList.contains('on')) return;
+  current = i; const p = people[i], me = p.g, other = 1 - p.g;
+  const wrote = p.nc > 0 ? `, and wrote <b>${p.nc}</b> of their own` : '';
+  let html = `<p class="pg"><i class="dot ${me ? 'g2' : 'g1'}"></i>${FULL[me]}</p>
+    <p class="pn">Voted on <b>${p.nv}</b> statements, agreeing with <b>${p.ar}%</b>${wrote}.</p>`;
+  if (p.n === 0) {
+    html += `<p class="note">They didn’t vote on any of the ${DATA.nsplit} statements where the groups took opposite sides, so they were placed using their other votes.</p>`;
+  } else {
+    const w1 = (p.l1 / p.n * 100).toFixed(1), w2 = (p.l2 / p.n * 100).toFixed(1);
+    html += `<p class="lean-h">On the ${DATA.nsplit} statements where the groups took opposite sides, they voted on ${p.n}:</p>
+      <div class="lean" aria-hidden="true"><i class="l1" style="width:${w1}%"></i><i class="l2" style="width:${w2}%"></i></div>
+      <div class="lean-n"><span><i class="dot g1"></i>Like Group 1: <b>${p.l1}</b></span><span>Like Group 2: <b>${p.l2}</b><i class="dot g2"></i></span></div>`;
+    let note;
+    if (p.share >= .65) note = `Mostly in line with the rest of ${NAME[me]}.`;
+    else if (p.share >= .5) note = `They sit near the border, voting partly like each group.`;
+    else note = `On these they voted more like ${NAME[other]}, but they were placed in ${NAME[me]} using all of their votes. With only ${p.n} of these statements to go on, they sit right at the border.`;
+    html += `<p class="note">${note}</p>`;
+    const ex = [];
+    const mine = me ? [p.e2, p.v2, 1] : [p.e1, p.v1, 0], theirs = me ? [p.e1, p.v1, 0] : [p.e2, p.v2, 1];
+    if (mine[0] >= 0) ex.push(mine); if (theirs[0] >= 0) ex.push(theirs);
+    html += ex.slice(0, 2).map(([id, v, s]) => example(id, v, s)).join('');
+  }
+  card.innerHTML = html;
+  ring.setAttribute('cx', p.x); ring.setAttribute('cy', p.y); ring.setAttribute('opacity', 1);
+  card.classList.add('on');
+  if (window.matchMedia('(max-width: 900px)').matches) return;
+  const box = svg.getBoundingClientRect(), cb = mapCardEl.getBoundingClientRect();
+  const px = box.left - cb.left + p.x / MW * box.width, py = box.top - cb.top + p.y / MH * box.height;
+  const w = card.offsetWidth, h = card.offsetHeight;
+  const left = px > cb.width / 2 ? px - w - 26 : px + 26;
+  // never above the map card: on this short map a tall card hangs below it instead
+  const top = Math.max(10, Math.min(py - h / 2, cb.height - h - 10));
+  card.style.left = left + 'px'; card.style.top = top + 'px';
+}
+hidePerson = function () { card.classList.remove('on'); ring.setAttribute('opacity', 0); current = -1; };
+function nearest(evt) {
+  const pt = svg.createSVGPoint(); pt.x = evt.clientX; pt.y = evt.clientY;
+  const m = svg.getScreenCTM(); if (!m) return -1;
+  const q = pt.matrixTransform(m.inverse());
+  let best = -1, bd = Infinity;
+  people.forEach((p, i) => { const d = (p.x - q.x) ** 2 + (p.y - q.y) ** 2; if (d < bd) { bd = d; best = i; } });
+  const lim = (MW / (svg.clientWidth || MW)) * 22;
+  return bd <= lim * lim ? best : -1;
+}
+svg.addEventListener('pointermove', e => { if (e.pointerType !== 'mouse') return; const i = nearest(e); if (i < 0) hidePerson(); else showPerson(i); });
+svg.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') hidePerson(); });
+svg.addEventListener('click', e => { const i = nearest(e); if (i >= 0) showPerson(i); });
+const candidates = people.filter(p => p.n >= 3).map(p => p.i);
+document.getElementById('someone').addEventListener('click', () => {
+  let i; do { i = candidates[Math.floor(Math.random() * candidates.length)]; } while (i === current && candidates.length > 1);
+  placeAll(true); dots.forEach((d, j) => { d.style.opacity = 1; d.style.fill = finalFill(people[j]); });
+  showPerson(i);
+});
+
+/* ================= where they agree, and the priority vote (every figure comes from the frozen export and the
+   priority-vote count, through the content-data block that inject_kooyong.py fills) ================= */
+const CONTENT = JSON.parse(document.getElementById('content-data').textContent);
+function dumbbell(a, b, na, nb) {
+  const small = n => n && n < 20 ? `<span class="nn">(${n} voted)</span>` : '';
+  const wrap = document.createElement('div');
+  const W = 600, H = 58, L = 16, R = W - 16, Y = 22, x = v => L + (R - L) * v / 100;
+  const s = el('svg', { viewBox: `0 0 ${W} ${H}`, class: 'dumb', role: 'img', 'aria-label': `Group 1: ${a}% agree. Group 2: ${b}% agree.` });
+  el('line', { x1: L, x2: R, y1: Y, y2: Y, class: 'trk', 'stroke-width': 6, 'stroke-linecap': 'round' }, s);
+  [[0, 'start'], [100, 'end']].forEach(([v, anc]) => { const t = el('text', { x: x(v), y: H - 2, 'font-size': 15, class: 'tick', 'text-anchor': anc }, s); t.textContent = v + '%'; });
+  el('line', { x1: x(Math.min(a, b)), x2: x(Math.max(a, b)), y1: Y, y2: Y, class: 'rng', 'stroke-width': 6 }, s);
+  if (a === b) {
+    const cx = x(a), r = 14;
+    el('path', { d: `M${cx},${Y - r} A${r},${r} 0 0 0 ${cx},${Y + r} Z`, fill: 'var(--g1)' }, s);
+    el('path', { d: `M${cx},${Y - r} A${r},${r} 0 0 1 ${cx},${Y + r} Z`, fill: 'var(--g2)' }, s);
+    el('circle', { cx, cy: Y, r, fill: 'none', class: 'ring', 'stroke-width': 3 }, s);
+  } else {
+    [[b, 'var(--g2)'], [a, 'var(--g1)']].forEach(([v, c]) => el('circle', { cx: x(v), cy: Y, r: 14, fill: c, class: 'ring', 'stroke-width': 3 }, s));
+  }
+  wrap.appendChild(s);
+  const vals = document.createElement('div'); vals.className = 'vals';
+  vals.innerHTML = a === b
+    ? `<span><i class="dot g1"></i><i class="dot g2" style="margin-left:-4px"></i><b>${a}%</b> of both groups agree</span>`
+    : `<span><i class="dot g1"></i>Group 1 <b>${a}%</b>${small(na)}</span><span><i class="dot g2"></i>Group 2 <b>${b}%</b>${small(nb)}</span>`;
+  wrap.appendChild(vals);
+  return wrap;
+}
+/* each statement: [id, text, Group 1 %, Group 2 %, Group 1 voters, Group 2 voters] */
+const pairsRoot = document.getElementById('pairs');
+CONTENT.pairs.forEach(p => {
+  const d = document.createElement('article'); d.className = 'pair';
+  d.innerHTML = `<div class="topic"><h3></h3><span class="n">Statements ${p.split[0]} and ${p.agree[0]}</span></div>
+    <div class="half split-half"><span class="pill">They disagree on</span><q></q></div>
+    <div class="half agree"><span class="pill">But both back</span><q></q></div>`;
+  d.querySelector('h3').textContent = p.topic;
+  const [qs, qa] = d.querySelectorAll('q'); qs.textContent = p.split[1]; qa.textContent = p.agree[1];
+  d.querySelector('.split-half').appendChild(dumbbell(p.split[2], p.split[3], p.split[4], p.split[5]));
+  d.querySelector('.agree').appendChild(dumbbell(p.agree[2], p.agree[3], p.agree[4], p.agree[5]));
+  pairsRoot.appendChild(d);
+});
+/* all statements at least 7 in 10 of both groups agreed with (10+ voters in each), highest shared support first */
+const allRoot = document.getElementById('all');
+CONTENT.shared.forEach(([id, t, a, b, na, nb]) => {
+  const li = document.createElement('li');
+  const sm = n => n < 20 ? ` <span class="nn">(${n} voted)</span>` : '';
+  li.innerHTML = `<q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${a}%</b>${sm(na)}</span><span><i class="dot g2"></i>Group 2 <b>${b}%</b>${sm(nb)}</span><span>Statement ${id}</span></div>`;
+  li.querySelector('q').textContent = t;
+  allRoot.appendChild(li);
+});
+/* priorities: equal net votes would share a place (q.rank comes from the count) */
+const QV = CONTENT.qv, VOTERS = CONTENT.voters;
+const TOPNET = QV.length ? QV[0].net : 1;  // the top change's bar is full width; the others compare with it
+const pg = document.getElementById('prio'), rest = document.getElementById('rest');
+QV.forEach((q, i) => {
+  if (i < 6) {
+    const c = document.createElement('article'); c.className = 'pcard';
+    c.innerHTML = `<span class="rank" aria-hidden="true">${q.rank}</span><div class="tt"><p class="t"></p></div><div class="tally"><p class="big">+${q.net}<span>net votes</span></p><div class="tbar" aria-hidden="true"><i style="width:${(q.net / TOPNET * 100).toFixed(1)}%"></i></div></div><div class="pstats"><span>${q.y} of ${VOTERS} backed it, ${q.n} opposed</span></div>`;
+    c.querySelector('.t').textContent = q.t;
+    const ec = document.createElement('div'); ec.className = 'echo';
+    if (q.e) {
+      ec.innerHTML = `<p class="el">In the conversation, statement ${q.e[0]}</p><q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${q.e[2]}%</b></span><span><i class="dot g2"></i>Group 2 <b>${q.e[3]}%</b></span></div>${q.en ? '<p class="en"></p>' : ''}`;
+      ec.querySelector('q').textContent = q.e[1];
+      if (q.en) ec.querySelector('.en').textContent = q.en;
+    } else {
+      ec.innerHTML = '<p class="en">No statement in the conversation matched this one closely.</p>';
+    }
+    c.appendChild(ec);
+    pg.appendChild(c);
+  } else {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="r">${q.rank}</span><span class="t"></span><span class="s"><b class="rnet">${q.net >= 0 ? '+' : '−'}${Math.abs(q.net)}</b><span class="rs">${q.y} of ${VOTERS} backed it</span></span>`;
+    li.querySelector('.t').textContent = q.t; rest.appendChild(li);
+  }
+});
+</script>
+<div class="rxc-shell bottom" role="contentinfo">
+  <div class="wrap">
+    <span>Part of <a href="/projects/">Projects</a> at RadicalxChange Foundation, a 501(c)(3) nonprofit.</span>
+    <span class="right"><a href="/#newsletter">Newsletter</a><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q66E4MUK6K6KQ">Donate</a><a href="mailto:info@radicalxchange.org">Contact</a></span>
+  </div>
+</div>
+<script src="https://rabbit.radicalxchange.org/script.js" site="SQHLZNME" included-domains="www.radicalxchange.org" defer></script>
+</body>
+</html>
+{% endraw %}
