@@ -45,19 +45,24 @@ quotes change, regenerate it.
   account and 15 accounts whose only votes were on their own removed
   statements.
 - **Groups:** Polis's own groups, without the moderator account: Group 1
-  "Faster, fairer visas" (246 people) and Group 2 "Fewer people, more slowly"
-  (122). 84 people voted on too few statements to be placed.
+  "Faster, fairer visas" (245 people) and Group 2 "Fewer people, more slowly"
+  (120). 87 people aren't in a group: 84 voted on too few statements to be
+  placed, and 3 others never agreed or disagreed with anything (every vote
+  they cast was a pass). Polis places those 3, because it reads a pass as
+  halfway between agree and disagree, but a pass doesn't show where someone
+  stands, so the page leaves them out of the groups (the rule for every
+  results page since 18 November 2026). They still count as taking part.
 - **Percentages:** the share of a group who agreed, out of those in the group
   who voted on the statement (passes count as votes). Where fewer than 20 in a
   group voted, the page shows how many.
 - **Shared statements:** at least 70% agreement in both groups, with at least
-  10 voters in each: 34 statements, all listed in the fold under the pairs.
+  10 voters in each: 38 statements, all listed in the fold under the pairs.
   Each of the five pairs is titled by what both groups want, and its halves
   are labelled "They disagree on" and "But both back", so the card reads as
   one sentence.
 - **Statements where the groups took opposite sides:** one group's majority
   agreed and the other's majority disagreed, with at least 8 voters in each
-  group: 17 statements. The hover cards count each person's votes on these.
+  group: 22 statements. The hover cards count each person's votes on these.
 - **Group cards:** each shows three of the eight statements that most set the
   group apart (Polis's representativeness measure), chosen from those about
   how the visa system should work. The page's notes say so.
@@ -77,8 +82,8 @@ quotes change, regenerate it.
 The map is one row along the main divide: the first principal component of
 the vote matrix, computed the way Polis does (centred on each statement's
 mean, missing votes left at the mean, and each person's projection scaled up
-by how few statements they voted on). Recomputed groups agree with Polis's
-for 355 of 368 people. The dots are drawn as rounded heaps: taking people from
+by how few statements they voted on). Recomputed groups agree with the page's
+for 353 of 365 people. The dots are drawn as rounded heaps: taking people from
 left to right, each dot drops near its true place on the line and settles in
 the lowest free spot up to three dot widths to its left or 1.25 to its right,
 paying for every step it moves sideways (a spot's cost is its height plus 0.9
@@ -95,7 +100,7 @@ The map's labels have two levels, so its colours and names tell one story.
 Across the top, each group's name, colour dot and count sit over its own
 stretch; Group 2's name sits over a bracket spanning the group. Under that
 bracket, a dashed line marks where Group 2's far end begins, and the two parts
-are named either side of it: "Fewer, but flexible" (98 people) and "Fewer,
+are named either side of it: "Fewer, but flexible" (96 people) and "Fewer,
 with firm limits" (24). The key under the map follows the same two levels:
 Group 1's one-line description (ending "There's no clear split inside this
 group"), then Group 2's name and count with its two parts set in beneath it,
@@ -112,8 +117,8 @@ statements flip (at least 65% agreeing on one side and at most 35% on the
 other, at least 10 voters a side, and z of at least 3.3). That gives 24 people
 and seven statements, with at least 21 voters a side; both parts voted on a
 median of 53 statements, and shuffled orders never produced more than one such
-statement. The line sits halfway between the last of the 98 and the first of
-the 24 (`DATA.cut`). Inside Group 1 the same search finds only two statements,
+statement. The line sits halfway between the last of the 96 and the first of
+the 24 (`DATA.cut`). Inside Group 1 the same search finds only one statement,
 too few for a closer look. A test for unlikely allies across the divide (the
 ten statements both groups split on at similar rates, paired, with a
 Mantel-Haenszel odds ratio across five strata of people's overall agreement)
@@ -122,7 +127,7 @@ checker tests each claim in the two descriptions.
 
 Hover-card examples follow the rule used on every Teals results page. Each
 person's card shows up to two of their votes: one where they voted like
-Group 1 and one where they voted like Group 2. The candidates are the 17
+Group 1 and one where they voted like Group 2. The candidates are the 22
 statements where the groups took opposite sides, limited to those the person
 voted on the same way as that group. The card prefers, in order: a statement
 the person agreed with over one they disagreed with; the one that group most
