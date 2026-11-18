@@ -95,17 +95,46 @@ q{quotes:"“" "”"}
 .cards{position:relative;display:flex;flex-direction:column;gap:20px;padding-top:max(10px,calc(3.43rem - 56px))}
 .card{position:relative;width:82%;background:#fff;color:var(--navy);border-radius:18px;padding:22px 26px;box-shadow:0 18px 40px -18px rgba(9,40,54,.5)}
 .card q{display:block;font-weight:600;font-size:1.14rem;line-height:1.36}
-.c1{align-self:flex-start;width:calc(100% - 8.85rem + 22px);transform:rotate(-1.5deg)}
-.c2{align-self:flex-end;transform:rotate(1.5deg)}
-.c3{align-self:flex-start;transform:rotate(-1deg)}
-.c4{align-self:flex-end;transform:rotate(2deg)}
-.sticker{position:absolute;top:0;right:-22px;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .7rem}
+.sticker{position:relative;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .7rem}
 .sticker b{display:block;font-family:var(--display);font-weight:700;font-size:1.9rem;line-height:1;margin:.1rem 0 .2rem}
 .sticker span{display:block;font-size:.6rem;font-weight:600;line-height:1.2}
+/* Hero: two quote cards, one per group, with the circle between them (the results pages' common format,
+   18 November 2026). The circle is relative, not absolute, so it stays above both cards where it overlaps them. */
+.hero .sub{max-width:none}
+
+.hero .card{overflow:hidden}
+.hero .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--gc)}
+.hero .card.c1{--gc:var(--g1)}
+.hero .card.c2{--gc:var(--g2)}
+.hero .card .who{display:flex;align-items:center;gap:.5em;margin:0 0 .55rem;font-size:.82rem;font-weight:700;line-height:1.25;letter-spacing:.01em}
+.hero .card .who i{flex:none;width:.8em;height:.8em;border-radius:50%;background:var(--gc)}
+/* The circle's ring is half Group 1's colour (top, towards card 1) and half Group 2's (bottom, towards card 2).
+   "from -78deg" undoes the sticker's -12deg tilt so the split stays level. */
+.hero .sticker{border:6px solid transparent;background:linear-gradient(var(--navy),var(--navy)) padding-box,conic-gradient(from -78deg,var(--g1) 0 50%,var(--g2) 0 100%) border-box}
+
+/* Wide screens: the circle clasps both cards at the seam, on the right */
+@media (min-width:901px){
+  .hero .cards{gap:30px}
+  .hero .card.c1{align-self:flex-start;width:calc(100% - 6rem);padding:26px 46px 30px 36px}
+  .hero .card.c2{align-self:flex-start;margin-left:1.5rem;width:calc(100% - 7.5rem);padding:26px 46px 30px 36px}
+  .hero .card q{font-size:1.32rem;line-height:1.38}
+  .hero .sticker{position:relative;top:auto;right:auto;align-self:flex-end;margin:calc(-15px - 4.125rem) -14px calc(-15px - 4.125rem) 0}
+}
+/* Short laptop screens: a little smaller so both cards stay on the first screen */
+@media (min-width:901px) and (max-height:53em){
+  .hero .cards{gap:24px}
+  .hero .card.c1,.hero .card.c2{padding:22px 44px 24px 32px}
+  .hero .card q{font-size:1.2rem;line-height:1.36}
+  .hero .sticker{margin:calc(-12px - 4.125rem) -14px calc(-12px - 4.125rem) 0}
+}
+/* Narrow laptops (two columns but a slim card column): full-width cards with the circle between them */
 @media (min-width:901px) and (max-width:56.25em){
-  .cards{padding-top:10px}
-  .c1{width:82%}
-  .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
+  .hero .card.c1,.hero .card.c2{width:auto;align-self:stretch;margin-left:0;padding:22px 26px 24px 30px}
+  .hero .sticker{align-self:center;margin:-16px 0}
+}
+/* Phones: the same, under the hero text */
+@media (max-width:900px){
+  .hero .sticker{align-self:center;margin:-14px 0}
 }
 @media (min-width:901px){
   .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),80px)}
@@ -357,9 +386,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   .hero h1{font-size:min(10.6cqi,3rem)}
   .hero .sub{font-size:1.15rem}
   .cards{gap:16px;padding:6px 4px 10px}
-  .card,.c1,.c2,.c3,.c4{width:auto;align-self:stretch}
-  .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
-  .c1{transform:rotate(-2deg)} .c2{transform:rotate(1.5deg)} .c3{transform:rotate(-1deg)} .c4{transform:rotate(2deg)}
+  .card{width:auto;align-self:stretch}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:30px}
   .gtop .big{font-size:2.9rem}
@@ -439,12 +466,10 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
         <div class="actions"><a class="btn solid" href="#groups">See what Warringah said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout">Since 30 October 2026 · 452 people have taken part</p>
       </div>
-      <div class="cards" role="list" aria-label="Four statements from the conversation">
-        <div class="card c1" role="listitem"><q>Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.</q></div>
-        <div class="card c2" role="listitem"><q>Government should clearly explain both the benefits and challenges of migration, and how those challenges will be managed.</q></div>
-        <div class="card c3" role="listitem"><q>I'd rather the system took longer and got the checks right than rushed decisions.</q></div>
-        <div class="card c4" role="listitem"><q>I'd trust the system more if visa decisions were fast, because people's lives, jobs and families are on hold while they wait.</q></div>
+      <div class="cards" role="list" aria-label="Two statements from the conversation, one from each group">
+        <div class="card c1" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 1 · Faster, fairer visas</p><q>The Government should invest in strong settlement supports to help everyone, regardless of their visa type</q></div>
         <div class="sticker" aria-hidden="true"><div><span>More than</span><b>4 in 5</b><span>in both groups want transport, schools and healthcare planned ahead</span></div></div>
+        <div class="card c2" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 2 · Fewer people, more slowly</p><q>Temporary Student Visa holders should have to leave the country and reapply for permanent migration if they want to return.</q></div>
       </div>
     </div>
   </div>

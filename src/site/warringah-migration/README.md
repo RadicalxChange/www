@@ -20,8 +20,8 @@ neither of them the MP's colours. The page has light and dark modes.
 Its link-preview image is `src/site/assets/warringah-migration-og.png`
 (1200×630, referenced by the `og:image` and `twitter:image` tags). It was
 rendered from the page's own fonts and copy: the boxed headline, "452 people
-took part", and two of the hero quotes. If the headline, the turnout or those
-quotes change, regenerate it.
+took part", and two statements from the conversation (39 and 280). If the
+headline or the turnout change, regenerate it.
 
 ## While the results are preliminary
 
@@ -147,8 +147,22 @@ each push.
 ## Layout
 
 The page is built on the Curtin template, including its rem-based width
-(`.wrap{max-width:77.5rem}`) and the sticker placement beside the first quote
-card (see `src/site/curtin-migration/README.md`, "Layout"). Two things differ:
+(`.wrap{max-width:77.5rem}`) (see `src/site/curtin-migration/README.md`,
+"Layout").
+
+The hero follows the results pages' common format (18 November 2026): two
+quote cards, one per group, Group 1's first. Each is a resident's statement,
+quoted word for word, that at least 70% of its own group agreed with and at
+most 35% of the other did: 310 for Group 1 and 302 for Group 2. Each card is
+labelled with its group's name, with a dot and a left edge in the group's
+colour. The circle sits between the two cards in the markup, with a ring half
+in each group's colour. On wide screens it clasps both cards at the seam, on
+the right; on narrow laptops (901px to 56.25em) and phones it sits between
+them, centred. The hero sentence runs the full width of its column. There is
+no line about the priority vote, because the sentence already says what most
+people want.
+
+Some things differ from the Curtin page:
 
 - The headline is three set lines ("Warringah wants" / "a long-term plan" /
   "for migration"), the middle one boxed in navy like the stepped headlines on
@@ -163,6 +177,8 @@ card (see `src/site/curtin-migration/README.md`, "Layout"). Two things differ:
   where the dots are larger relative to the width.
 
 Check any hero change at 1728×966 with a 20px default text size, 1440×790,
-1366×650, 1536×730, 1024×700 and a 375px phone.
+1366×650, 1536×730, 1280×720, 1180×820, 1024×700 and a 375px phone: the
+buttons stay on the first screen, no line of text falls under the circle, and
+the two cards don't overlap.
 
 This file is excluded from the build via `.eleventyignore`.
