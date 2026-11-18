@@ -40,20 +40,18 @@ It shows only the main divide, left to right (the first value in each
 `DATA.people` entry), in rounded heaps like the Warringah page's: each dot
 drops near its place on the line and rolls up to three dot widths to the
 lowest free spot, paying for each step sideways, so crowded stretches pile up
-like sand. Both maps share this layout (`swarm()`). The main map names each
-group, with its count, on one line above the tallest heap, as the Warringah
-page does; the allies map does not. The second value, which used to set an "agreed more often"
+like sand (`swarm()`). The map names each group, with its count, on one line
+above the tallest heap, as the Warringah page does. The second value, which used to set an "agreed more often"
 height, is no longer drawn: it tracked how often people pressed agree, which
 said little about their views, so each card shows that figure instead.
 
-The "Unlikely allies" section highlights the 52 affordability allies: people
-who backed both statement 33 (cost of living) and statement 29 (university
-housing). `DATA.allies` in the page script holds one character per grouped
-participant, in the same order as `DATA.people`: `b` backed both, `v` voted on
-both but did not back both, `-` did not vote on both. The allies backed both
-statements by definition, so the cards say so once and show only how everyone
-else who voted on each statement answered. Those figures and the numbers in the
-"Affordability allies" note come from the same export.
+Unlikely allies: the page has no allies section. Statements 33 (cost of
+living) and 29 (university housing) have similar support in both groups,
+but they don't pass the test every migration results page uses. That test
+counts a pass as not backing a statement and allows for people who agree
+with most things: the odds ratio is 2.7 and z is 2.2, where at least 4 and
+3.3 are needed. No other pair of Curtin statements passes either. The notes
+say so in one line, as the other pages do.
 
 Hover-card examples: each person's card shows up to two of their votes. The
 last four fields of each `DATA.people` entry hold them: the example where they
@@ -117,11 +115,11 @@ reference build. On this page that means:
   1's parts under a bracket ("Works" and "Works, but slower", agreed with Jack;
   lettered badges A and B where a name won't fit), and the key under the map
   describes them. No dot rolls across the divider; left of it the dots drop
-  from the divider outwards, so they don't wall up against it. The allies map
-  uses the same layout, so everyone sits in the same place on both maps.
+  from the divider outwards, so they don't wall up against it.
 - **Notes**, in order: reading the percentages, reading the map, a closer look
-  inside Group 1, affordability allies, the group cards, who and what we
-  counted, pairing the statements, the priority vote, the data.
+  inside Group 1 (ending with the one line on unlikely allies), the group
+  cards, who and what we counted, pairing the statements, the priority vote,
+  the data.
 
 The groups are the page's own (from the 30 October export); Polis's current
 export assigns two more people to the smaller group, so the figures were
