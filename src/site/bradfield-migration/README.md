@@ -47,27 +47,34 @@ quotes change, regenerate it.
   casting 36,371 votes. Polis's own count (425) also includes 3 accounts whose
   only votes were on their own held-back statements. The starter account never
   voted.
-- **Groups:** Polis's own groups: Group 1 "Migration works" (281 people) and
-  Group 2 "Fewer, chosen more carefully" (69). 72 people voted on too few
-  statements to be placed.
-- **Who stays in the groups:** everyone Polis placed. That includes 12 people
-  who passed on at least 9 in 10 of the statements they voted on (9 of them in
-  Group 2), whose passes lower their group's figures; the notes say so and give
-  an example. One person wrote 26 statements in one sitting and voted only on
-  their own; Polis placed them in Group 1. Eight people's only vote was the
+- **Groups:** Polis's own groups, except that someone whose every vote was a
+  pass is not placed in a group, as on the other migration results pages:
+  Group 1 "Migration works" (279 people) and Group 2 "Fewer, chosen more
+  carefully" (65). 78 people are not in a group: 72 voted on too few statements
+  for Polis to place them, and 6 whom Polis placed (2 in its Group 1, 4 in its
+  Group 2) never agreed or disagreed with any statement.
+- **Who stays in the groups:** 10 people cast nothing but passes. They count
+  as taking part, but a pass doesn't show where someone stands, so none of
+  them is in a group; Polis placed 6 of them because it reads a pass as halfway
+  between agree and disagree. People who passed on most statements but agreed
+  or disagreed with at least one stay in their Polis groups: 6 grouped people
+  passed on at least 9 in 10 of the statements they voted on (5 of them in
+  Group 2), and their passes lower their group's figures; the notes say so and
+  give an example. One person wrote 26 statements in one sitting and voted only
+  on their own; Polis placed them in Group 1. Eight people's only vote was the
   agreement Polis records when someone adds a statement; they count as taking
   part but are not in a group.
 - **Percentages:** the share of a group who agreed, out of those in the group
   who voted on the statement (passes count as votes). Where fewer than 20 in a
   group voted, the page shows how many.
 - **Shared statements:** at least 70% agreement in both groups, with at least
-  10 voters in each: 16 statements, all listed in the fold under the pairs.
+  10 voters in each: 24 statements, all listed in the fold under the pairs.
   Each of the five pairs is titled by what both groups back, and its halves
   are labelled "They disagree on" and "But both back", so the card reads as
   one sentence.
 - **Statements where the groups took opposite sides:** one group's majority
   agreed and the other's majority disagreed, with at least 8 voters in each
-  group: 51 statements. The hover cards count each person's votes on these.
+  group: 59 statements. The hover cards count each person's votes on these.
 - **Group cards:** each shows three statements most of the group agreed with
   and far fewer of the other group did, chosen by RadicalxChange. The page's
   notes say so.
@@ -93,7 +100,7 @@ The map is one row along the main divide: the first principal component of
 the vote matrix, computed the way Polis does (centred on each statement's
 mean, missing votes left at the mean, and each person's projection scaled up
 by how few statements they voted on). Recomputed two-way groups agree with
-Polis's for 317 of 350 people; the people they differ on sit nearest the
+Polis's for 311 of 344 people; the people they differ on sit nearest the
 border, inside Group 1. Near the border the two groups' dots mix, because
 Polis places people using more than this one line.
 
@@ -113,8 +120,8 @@ The map's labels have two levels, so its colours and names tell one story.
 Across the top, each group's name, colour dot and count sit over its own
 stretch; Group 1's name sits over a bracket spanning the group. Under that
 bracket, a dashed line marks where Group 1's part nearest the border begins,
-and the two parts are named either side of it: "Works" (222 people) and
-"Works, but slower" (59). The key under the map follows the same two levels.
+and the two parts are named either side of it: "Works" (218 people) and
+"Works, but slower" (61). The key under the map follows the same two levels.
 They are a closer look inside Group 1, not new groups: the dots keep their
 group colours, and no dot rolls across the line. On maps under 640px wide the
 group names shorten to "Group 1" and "Group 2" and the two parts become
@@ -124,35 +131,35 @@ The part nearest the border is found the way the stance analysis looks for
 stances: going along Group 1 from the border, cuts are tried every 1% from 20%
 to 80% of the group, and the cut is placed where the most statements flip (at
 least 65% agreeing on one side and at most 35% on the other, at least 10
-voters a side, and z of at least 3.3). That gives 59 people and 25 statements;
-the 59 voted on a median of 34 statements and the other 222 on 79, and
-shuffled orders never produced more than three such statements. The line sits
-halfway between the last of the 222 and the first of the 59 (`DATA.cut`).
+voters a side, and z of at least 3.3). That gives 61 people and 25 statements;
+the 61 voted on a median of 34 statements and the other 218 on 80, and
+shuffled orders never produced more than one such statement. The line sits
+halfway between the last of the 218 and the first of the 61 (`DATA.cut`).
 
-Inside Group 2 the same search does find a split, but the people nearest the
-border mostly passed on every statement they saw, and the test counts a pass
-as not agreeing. Without the 9 people in Group 2 who passed on at least 9 in
-10 of their statements, only four statements split the group, too few for a
-closer look. The page's notes give every figure, and the checker tests each
+Inside Group 2 the same search does find a split, but all 5 people in Group 2
+who passed on at least 9 in 10 of their statements sit near the border, and
+the test counts a pass as not agreeing. Without them, only four statements
+split the group, too few for a closer look. The page's notes give every figure, and the checker tests each
 claim in the key's descriptions.
 
-## Unlikely allies on plain talk
+## Unlikely allies
 
 A test for unlikely allies across the divide pairs the statements both groups
 split on at similar rates (30% to 70% agreeing in each, within 15 points), and
 asks whether the same people back both, allowing for people who agree with
 most things (a Mantel-Haenszel odds ratio across five strata of people's
-overall agreement). The strongest links were between three statements that say
-the same thing in different words, so they are not counted. Statements 6
-(politicians saying plainly what size Australia is heading towards) and 26
-(clear information and a real say) pass: an odds ratio of about five. The 87
-people who backed both (62 in Group 1, 25 in Group 2) are highlighted on a
-second copy of the map (`DATA.allies`: `b` backed both, `v` voted on both, `-`
-did not), and compared with everyone else who voted on each statement.
+overall agreement; a pair passes with an odds ratio of at least 4, z of at
+least 3.3, and at least 8 backers in each group). The pairs that pass either
+say the same thing in different words (social cohesion mattering more than
+migration numbers; universities housing their students) or join statements
+most people in both groups already back. None holds up as an alliance, so the
+page has no allies section, and the notes say so in one line.
+
+## Hover cards
 
 Hover-card examples follow the rule used on every Teals results page. Each
 person's card shows up to two of their votes: one where they voted like
-Group 1 and one where they voted like Group 2. The candidates are the 51
+Group 1 and one where they voted like Group 2. The candidates are the 59
 statements where the groups took opposite sides, limited to those the person
 voted on the same way as that group. The card prefers, in order: a statement
 the person agreed with over one they disagreed with; the one that group most
@@ -161,7 +168,7 @@ so small samples count for less); the one more of that group voted on; then
 the lower statement number. Nothing is chosen or removed by hand. The page's
 notes say this in plain words.
 
-`DATA` (the map rows, allies and hover texts, in the `page-data` script tag),
+`DATA` (the map rows and hover texts, in the `page-data` script tag),
 the `SHARED` list and the priority vote (`QV`, `VOTERS` and the clear-no card)
 are generated from the export and the ballot file; everything else is edited in
 the page directly. The scripts and the frozen export live outside the
