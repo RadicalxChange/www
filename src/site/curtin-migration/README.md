@@ -56,6 +56,13 @@ statements by definition, so the cards say so once and show only how everyone
 else who voted on each statement answered. Those figures and the numbers in the
 "Affordability allies" note come from the same export.
 
+The pair falls just short of the allies test every migration results page
+uses. That test counts only the 76 people who agreed or disagreed with both
+statements, and allows for people who agree with most things (measured over
+all their votes, passes included). The odds ratio is 8.5, but z is 3.2,
+where 3.3 is needed. So the page shows it as a possible alliance, not a
+proven one, and says so in the note.
+
 Hover-card examples: each person's card shows up to two of their votes. The
 last four fields of each `DATA.people` entry hold them: the example where they
 voted like Group 1 (statement number, then `a` agreed or `d` disagreed), then
