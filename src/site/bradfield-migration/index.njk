@@ -105,6 +105,9 @@ q{quotes:"“" "”"}
 .sticker{position:absolute;top:0;right:-22px;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--coral);color:var(--teal-dk);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .75rem}
 .sticker b{display:block;font-family:var(--display);font-weight:400;font-size:2.3rem;line-height:1;margin:.12rem 0 .14rem}
 .sticker span{display:block;font-size:.58rem;font-weight:700;line-height:1.2}
+/* the caption's lines get shorter towards the bottom of the circle, so they stay inside it: 6.4rem keeps
+   "in both groups want" on one line and moves "keep" down a line */
+.sticker b + span{max-width:6.4rem;margin:0 auto}
 @media (min-width:901px) and (max-width:56.25em){
   .cards{padding-top:10px}
   .c1{width:82%}
