@@ -1,0 +1,190 @@
+# /bradfield-migration — Bradfield community conversation on migration
+
+Standalone single-page microsite presenting the **preliminary** results of the
+Bradfield community conversation on migration, run by the RadicalxChange
+Foundation with Nicolette Boele MP, Federal Member for Bradfield (online
+conversation open since 2 November 2026; priority vote at a community session
+on 3 November 2026).
+
+Like the other migration results pages, this page shares **nothing** with the
+rest of the site: it does not extend `layouts/_base.njk`, and carries its own
+`<style>`, inline `<script>`, header and footer, framed by the shared RxC
+breadcrumb and footer bars (`.rxc-shell`). `index.njk` is raw HTML wrapped in
+`{% raw %}`; the only Eleventy features used are the front matter and the
+site-wide posthtml transform. Fonts come from Google Fonts: Bebas Neue for
+headings, as on the MP's site, and Montserrat for text (the site's own
+stand-in for its Avenir). The colours follow the MP's site: teal `#125b67`,
+dark teal `#0a353c`, a pale grey-teal `#e1e9ea` and a coral accent `#fc6868`.
+Coral only appears behind dark teal type (white on coral is too faint), and it
+never marks a group or the change most voters opposed. The two groups use gold
+and violet, of equal weight and neither of them the MP's colours. The page has
+light and dark modes.
+
+Its link-preview image is `src/site/assets/bradfield-migration-og.png`
+(1200×630, referenced by the `og:image` and `twitter:image` tags). It was
+rendered from the page's own fonts and copy: the boxed headline, "422 people
+took part", and two of the hero quotes. If the headline, the turnout or those
+quotes change, regenerate it.
+
+## While the results are preliminary
+
+- The page carries `<meta name="robots" content="noindex">` and
+  `eleventyExcludeFromCollections: true`, which keeps it out of the sitemap.
+  Remove both when the results are final.
+- It is not linked from /projects, the home page or anywhere else.
+- The status line reads "Preliminary results, data to 1:37pm AEDT, 18
+  November 2026". Update it with each new export.
+- The credit line, the Acknowledgement of Country (a placeholder for now) and
+  the "What happens next" line wait for the office's confirmation.
+
+## What is counted
+
+- **Statements:** only the 339 statements people could vote on: 36 starter
+  statements and 303 written by people taking part. 214 others were held back
+  by the moderators before anyone else voted on them; they are not counted or
+  shown.
+- **People:** the 422 people who voted on at least one of those statements,
+  casting 36,371 votes. Polis's own count (425) also includes 3 accounts whose
+  only votes were on their own held-back statements. The starter account never
+  voted.
+- **Groups:** Polis's own groups: Group 1 "Migration works" (281 people) and
+  Group 2 "Fewer, chosen more carefully" (69). 72 people voted on too few
+  statements to be placed.
+- **Who stays in the groups:** everyone Polis placed. That includes 12 people
+  who passed on at least 9 in 10 of the statements they voted on (9 of them in
+  Group 2), whose passes lower their group's figures; the notes say so and give
+  an example. One person wrote 26 statements in one sitting and voted only on
+  their own; Polis placed them in Group 1. Eight people's only vote was the
+  agreement Polis records when someone adds a statement; they count as taking
+  part but are not in a group.
+- **Percentages:** the share of a group who agreed, out of those in the group
+  who voted on the statement (passes count as votes). Where fewer than 20 in a
+  group voted, the page shows how many.
+- **Shared statements:** at least 70% agreement in both groups, with at least
+  10 voters in each: 16 statements, all listed in the fold under the pairs.
+  Each of the five pairs is titled by what both groups back, and its halves
+  are labelled "They disagree on" and "But both back", so the card reads as
+  one sentence.
+- **Statements where the groups took opposite sides:** one group's majority
+  agreed and the other's majority disagreed, with at least 8 voters in each
+  group: 51 statements. The hover cards count each person's votes on these.
+- **Group cards:** each shows three statements most of the group agreed with
+  and far fewer of the other group did, chosen by RadicalxChange. The page's
+  notes say so.
+- **Priority vote:** ballots that used fewer than 10 credits are set aside
+  (there were none), names are matched ignoring capitals and spacing, and
+  where someone voted more than once their last ballot counts: 49 voters. The
+  voting site stores no times, but its database records the order ballots
+  arrived in, which shows each person's last ballot; that order was read
+  without copying any names. Net votes are votes for minus votes against. The
+  chart shared after the session shows 51 voters because it matches names
+  exactly and keeps each person's fullest ballot; the top four are the same
+  either way, in the same order. Each of the top six cards leads with its net votes,
+  since they set the order, with one bar on a shared scale (the top change is
+  full width) and the backers and opposers as a small line under it. The
+  clear-no card shows its net alone, and the other six in the fold lead with
+  their nets. The matching conversation statements are close in meaning, not
+  identical in wording; the employer ban has no close match, so its card shows
+  none.
+
+## The map
+
+The map is one row along the main divide: the first principal component of
+the vote matrix, computed the way Polis does (centred on each statement's
+mean, missing votes left at the mean, and each person's projection scaled up
+by how few statements they voted on). Recomputed two-way groups agree with
+Polis's for 317 of 350 people; the people they differ on sit nearest the
+border, inside Group 1. Near the border the two groups' dots mix, because
+Polis places people using more than this one line.
+
+The dots are drawn as rounded heaps: each dot drops near its true place on the
+line and settles in the lowest free spot nearby, paying for every step it
+moves sideways (a spot's cost is its height plus 0.9 times its shift). Left of
+the divider the dots drop from the divider outwards and may roll up to three
+dot widths back towards it but only 1.25 further out; right of it they drop
+left to right with the same reach. So crowded stretches pile up like sand
+rather than standing in columns, and nothing walls up against the divider.
+Maps under 640px wide use smaller dots and let them roll up to six dot widths
+at 0.6, so phone piles are less steep.
+
+## A closer look inside Group 1
+
+The map's labels have two levels, so its colours and names tell one story.
+Across the top, each group's name, colour dot and count sit over its own
+stretch; Group 1's name sits over a bracket spanning the group. Under that
+bracket, a dashed line marks where Group 1's part nearest the border begins,
+and the two parts are named either side of it: "Works" (222 people) and
+"Works, but slower" (59). The key under the map follows the same two levels.
+They are a closer look inside Group 1, not new groups: the dots keep their
+group colours, and no dot rolls across the line. On maps under 640px wide the
+group names shorten to "Group 1" and "Group 2" and the two parts become
+lettered badges (A and B), with the letters in the key.
+
+The part nearest the border is found the way the stance analysis looks for
+stances: going along Group 1 from the border, cuts are tried every 1% from 20%
+to 80% of the group, and the cut is placed where the most statements flip (at
+least 65% agreeing on one side and at most 35% on the other, at least 10
+voters a side, and z of at least 3.3). That gives 59 people and 25 statements;
+the 59 voted on a median of 34 statements and the other 222 on 79, and
+shuffled orders never produced more than three such statements. The line sits
+halfway between the last of the 222 and the first of the 59 (`DATA.cut`).
+
+Inside Group 2 the same search does find a split, but the people nearest the
+border mostly passed on every statement they saw, and the test counts a pass
+as not agreeing. Without the 9 people in Group 2 who passed on at least 9 in
+10 of their statements, only four statements split the group, too few for a
+closer look. The page's notes give every figure, and the checker tests each
+claim in the key's descriptions.
+
+## Unlikely allies on plain talk
+
+A test for unlikely allies across the divide pairs the statements both groups
+split on at similar rates (30% to 70% agreeing in each, within 15 points), and
+asks whether the same people back both, allowing for people who agree with
+most things (a Mantel-Haenszel odds ratio across five strata of people's
+overall agreement). The strongest links were between three statements that say
+the same thing in different words, so they are not counted. Statements 6
+(politicians saying plainly what size Australia is heading towards) and 26
+(clear information and a real say) pass: an odds ratio of about five. The 87
+people who backed both (62 in Group 1, 25 in Group 2) are highlighted on a
+second copy of the map (`DATA.allies`: `b` backed both, `v` voted on both, `-`
+did not), and compared with everyone else who voted on each statement.
+
+Hover-card examples follow the rule used on every Teals results page. Each
+person's card shows up to two of their votes: one where they voted like
+Group 1 and one where they voted like Group 2. The candidates are the 51
+statements where the groups took opposite sides, limited to those the person
+voted on the same way as that group. The card prefers, in order: a statement
+the person agreed with over one they disagreed with; the one that group most
+widely shared (the share of the group on its side, as a 95% Wilson lower bound,
+so small samples count for less); the one more of that group voted on; then
+the lower statement number. Nothing is chosen or removed by hand. The page's
+notes say this in plain words.
+
+`DATA` (the map rows, allies and hover texts, in the `page-data` script tag),
+the `SHARED` list and the priority vote (`QV`, `VOTERS` and the clear-no card)
+are generated from the export and the ballot file; everything else is edited in
+the page directly. The scripts and the frozen export live outside the
+repository. Every figure, quote and hover-card value is checked against the
+export before each push.
+
+## Layout
+
+The page width is in rem (`.wrap{max-width:77.5rem}`) and the sticker sits
+beside the first quote card, as on the other migration results pages.
+
+- The headline is three set lines ("Bradfield wants" / "homes and services
+  planned" / "for migration"), the middle one boxed in teal like the labels on
+  the MP's site. The longest line, box included, is 10.05em wide in Bebas Neue,
+  so the headline is sized from its column (`min(9.8cqi, 11vh, 6.4rem)`) and
+  never wraps.
+- Short windows (under 46em tall, which is 736px at the standard text size
+  and 920px at a 20px default) get a smaller headline (`9.6vh`) and lede, so
+  the buttons stay on the first screen.
+- The map's height follows the highest pile, so it grows on narrow screens,
+  where the dots are larger relative to the width.
+
+Check any hero change at 1728×966 with a 20px default text size, 1440×790,
+1366×650, 1536×730, 1024×700 and a 375px phone.
+
+This file is excluded from the build via `.eleventyignore`.
