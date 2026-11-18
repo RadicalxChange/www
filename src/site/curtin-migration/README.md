@@ -48,10 +48,12 @@ said little about their views, so each card shows that figure instead.
 Unlikely allies: the page has no allies section. Statements 33 (cost of
 living) and 29 (university housing) have similar support in both groups,
 but they don't pass the test every migration results page uses. That test
-counts a pass as not backing a statement and allows for people who agree
-with most things: the odds ratio is 2.7 and z is 2.2, where at least 4 and
-3.3 are needed. No other pair of Curtin statements passes either. The notes
-say so in one line, as the other pages do.
+reads a pass as no signal, so it counts only the 76 people who agreed or
+disagreed with both, and it allows for people who agree with most things.
+The odds ratio is 6.5, but z is 2.7, where 3.3 is needed: with so few
+people, a link that size could be chance. No other pair of Curtin
+statements passes either. The notes say so in one line, as the other pages
+do.
 
 Hover-card examples: each person's card shows up to two of their votes. The
 last four fields of each `DATA.people` entry hold them: the example where they
