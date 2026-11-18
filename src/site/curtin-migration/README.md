@@ -97,9 +97,21 @@ reference build. On this page that means:
   its own statement, which the moderators held back). 233 were placed in a
   group, 32 not. 419 statements were open for voting (36 starters); 118 others
   were held back, and no one else voted on them; 21,315 votes.
-- **Notes**, in order: reading the percentages, reading the map, affordability
-  allies, the group cards, who and what we counted, pairing the statements,
-  the priority vote, the data.
+- **A closer look inside Group 1.** The stance test used on the Warringah
+  page (at a cut along the line, a statement flips when at least 65% agree on
+  one side and at most 35% on the other, with 10+ voters a side and z >= 3.3)
+  finds 13 flips between the 118 people at the far end of Group 1 and the 78
+  nearest Group 2; shuffled orders never give more than 2. Inside Group 2 only
+  one statement flips, no more than chance. The map draws a dashed divider at
+  `DATA.cut` (0.427 on the line, midway between the two parts), names Group
+  1's parts under a bracket ("Works" and "Works, but slower", agreed with Jack;
+  lettered badges A and B where a name won't fit), and the key under the map
+  describes them. No dot rolls across the divider; left of it the dots drop
+  from the divider outwards, so they don't wall up against it. The allies map
+  uses the same layout, so everyone sits in the same place on both maps.
+- **Notes**, in order: reading the percentages, reading the map, a closer look
+  inside Group 1, affordability allies, the group cards, who and what we
+  counted, pairing the statements, the priority vote, the data.
 
 The groups are the page's own (from the 30 October export); Polis's current
 export assigns two more people to the smaller group, so the figures were
