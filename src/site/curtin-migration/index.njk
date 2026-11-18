@@ -521,7 +521,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
     </a>
     <a class="gl tinted" href="#priorities">
       <h3>First choice: a ten-year plan</h3>
-      <p>At a workshop on 14 October, 65 of 73 people backed a ten-year migration plan reported to Parliament.</p>
+      <p>At a workshop on 14 October, 65 of 72 people backed a ten-year migration plan reported to Parliament.</p>
       <span class="more">See the priorities</span>
     </a>
   </div>
@@ -641,13 +641,13 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
         <div class="cost"><div class="sq s4"><i></i><i></i><i></i><i></i></div><p><b>2 votes</b><br>4 credits</p></div>
         <div class="cost"><div class="sq s9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p><b>3 votes</b><br>9 credits</p></div>
       </div>
-      <p class="cap">At a workshop on 14 October, 73 people used quadratic voting to spread a budget of credits across 13 possible changes, for or against. Each extra vote on the same idea costs more, so the totals show what people care about most.</p>
+      <p class="cap">At a workshop on 14 October, 72 people used quadratic voting to spread a budget of credits across 13 possible changes, for or against. Each extra vote on the same idea costs more, so the totals show what people care about most.</p>
     </div>
     <p class="finding">Five of the top six match ideas most people in both groups agreed with in the conversation.</p>
     <div class="prio-grid" id="prio"></div>
     <div class="no-card">
-      <div><h3>And one clear no</h3><p class="t">Prioritise migrants in high-paying jobs, using salary rather than shortage lists to decide who qualifies.</p><p class="s">44 people opposed it and 13 backed it. Most of the opposition was mild, with one or two votes each.</p></div>
-      <div><div class="tally"><p class="big">−75<span>net votes</span></p></div></div>
+      <div><h3>And one clear no</h3><p class="t">Prioritise migrants in high-paying jobs, using salary rather than shortage lists to decide who qualifies.</p><p class="s">43 people opposed it and 13 backed it. Most of the opposition was mild, with one or two votes each.</p></div>
+      <div><div class="tally"><p class="big">−74<span>net votes</span></p></div></div>
     </div>
     <details class="rest">
       <summary>See the other six changes</summary>
@@ -663,7 +663,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <li class="step"><span class="fig">36</span><h3>Starter statements</h3><p>Kate Chaney’s team and RadicalxChange wrote the first statements to open the conversation.</p></li>
       <li class="step"><span class="fig">265</span><h3>People took part</h3><p>From 8 to 27 October they voted agree, disagree or pass, online or at a workshop on 14 October, and added statements of their own.</p></li>
       <li class="step"><span class="fig">2</span><h3>Groups emerged</h3><p>Polis, an open-source tool, grouped people who voted alike. Nobody chose a group. We named them.</p></li>
-      <li class="step"><span class="fig">73</span><h3>Voters set priorities</h3><p>On 14 October they spread a budget of credits across 13 possible changes, using quadratic voting.</p></li>
+      <li class="step"><span class="fig">72</span><h3>Voters set priorities</h3><p>On 14 October they spread a budget of credits across 13 possible changes, using quadratic voting.</p></li>
     </ol>
     <details class="fine">
       <summary>Notes for checking the numbers</summary>
@@ -675,7 +675,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
         <div class="arow"><h3>The group cards</h3><p>Each card shows three statements most of the group agreed with and far fewer of the other group did. RadicalxChange chose which three to show.</p></div>
         <div class="arow"><h3>Who and what we counted</h3><p>419 statements were open for voting: the 36 starter statements and 383 written by people taking part. The moderators held back 118 others, so no one else voted on them.</p><p>We count the 265 people who voted on at least one of those 419 statements. Between them they cast 21,315 votes. Polis’s own count of 266 also includes one account whose only vote was on a statement of its own that the moderators held back.</p></div>
         <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results. People who took part online and at the 14 October workshop gave very similar results.</p></div>
-        <div class="arow"><h3>The priority vote</h3><p>A separate vote with its own voters. We set aside ballots that used fewer than 10 credits and kept the fuller ballot where someone voted twice, leaving 73 voters. Net votes are votes for minus votes against. The matching statements from the conversation are close in meaning, not identical in wording.</p></div>
+        <div class="arow"><h3>The priority vote</h3><p>A separate vote with its own voters. We set aside ballots that used fewer than 10 credits. Where someone voted more than once, we counted the last ballot they submitted. That leaves 72 voters. Net votes are votes for minus votes against. The matching statements from the conversation are close in meaning, not identical in wording.</p></div>
         <div class="arow"><h3>The data</h3><p>From the Polis export of 30 October 2026, after voting closed on 27 October. Statements appear exactly as people wrote them.</p></div>
       </div>
     </details>
@@ -1044,26 +1044,27 @@ SHARED.forEach(([id, t, a, b, na, nb]) => {
 
 /* ================= priorities ================= */
 const QV = [
-  { t: 'Set a ten-year population and migration plan, with a published target range, reported to Parliament every year and independently reviewed.', y: 65, n: 3, net: 186, e: [0, 'I’d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 87, 77, 94, 30] },
-  { t: 'Plan migration together with housing and infrastructure, so new arrivals are matched by homes and services.', y: 58, n: 7, net: 178, e: [9, 'I’d trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.', 71, 75, 106, 28] },
-  { t: 'Ban employers caught exploiting visa workers from sponsoring anyone again.', y: 65, n: 4, net: 177, e: [76, 'Employers who exploit migrant workers should lose the right to sponsor visas.', 95, 82, 63, 17] },
-  { t: 'Create a dedicated visa pathway for aged care, disability and other care workers.', y: 59, n: 6, net: 172, e: [24, 'Australia needs more than top professionals. We rely on aged care and disability workers from overseas, so there should be a real visa pathway for them even though the pay is low.', 92, 47, 113, 30], en: 'The exception: Group 2 was split.' },
-  { t: 'Remove people with no right to stay more quickly.', y: 54, n: 8, net: 161, x: '5 people gave this 7 or more votes, the most intense support for any change.', e: [140, 'People overstaying their visa must leave Australia and should not be allowed to reapply for 3 years.', 57, 85, 53, 13], en: 'Group 1 was more divided on this one.' },
-  { t: 'Fund universities properly so they rely less on international student fees.', y: 55, n: 10, net: 151, e: [35, 'The government should fund universities properly so they don’t have to rely on international students to stay afloat.', 73, 61, 104, 28] },
-  { t: 'Tell people the rules when they apply, and keep those rules for the life of their visa.', y: 57, n: 4, net: 138 },
-  { t: 'Let sponsored workers change employers without losing their visa.', y: 53, n: 10, net: 113 },
-  { t: 'Spend more on English classes and settlement support, to help newcomers settle in faster.', y: 50, n: 11, net: 112 },
+  { t: 'Set a ten-year population and migration plan, with a published target range, reported to Parliament every year and independently reviewed.', y: 65, n: 3, net: 187, e: [0, 'I’d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 87, 77, 94, 30] },
+  { t: 'Ban employers caught exploiting visa workers from sponsoring anyone again.', y: 65, n: 4, net: 179, e: [76, 'Employers who exploit migrant workers should lose the right to sponsor visas.', 95, 82, 63, 17] },
+  { t: 'Plan migration together with housing and infrastructure, so new arrivals are matched by homes and services.', y: 57, n: 7, net: 176, e: [9, 'I’d trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.', 71, 75, 106, 28] },
+  { t: 'Create a dedicated visa pathway for aged care, disability and other care workers.', y: 59, n: 6, net: 169, e: [24, 'Australia needs more than top professionals. We rely on aged care and disability workers from overseas, so there should be a real visa pathway for them even though the pay is low.', 92, 47, 113, 30], en: 'The exception: Group 2 was split.' },
+  { t: 'Remove people with no right to stay more quickly.', y: 52, n: 9, net: 150, x: '4 people gave this 7 or more votes, the most intense support for any change.', e: [140, 'People overstaying their visa must leave Australia and should not be allowed to reapply for 3 years.', 57, 85, 53, 13], en: 'Group 1 was more divided on this one.' },
+  { t: 'Fund universities properly so they rely less on international student fees.', y: 55, n: 10, net: 150, e: [35, 'The government should fund universities properly so they don’t have to rely on international students to stay afloat.', 73, 61, 104, 28] },
+  { t: 'Tell people the rules when they apply, and keep those rules for the life of their visa.', y: 57, n: 3, net: 139 },
+  { t: 'Let sponsored workers change employers without losing their visa.', y: 53, n: 9, net: 118 },
+  { t: 'Spend more on English classes and settlement support, to help newcomers settle in faster.', y: 50, n: 11, net: 113 },
   { t: 'Limit time on temporary visas to a maximum of about eight years.', y: 46, n: 11, net: 78 },
-  { t: 'Replace the permanent parent visa with a long-stay family visitor visa, letting parents and grandparents spend extended periods with family here.', y: 47, n: 14, net: 74 },
-  { t: 'Publish a target to reduce the share of the population on temporary visas.', y: 43, n: 8, net: 71 }
+  { t: 'Publish a target to reduce the share of the population on temporary visas.', y: 44, n: 8, net: 73 },
+  { t: 'Replace the permanent parent visa with a long-stay family visitor visa, letting parents and grandparents spend extended periods with family here.', y: 47, n: 14, net: 70 }
 ];
-const VOTERS = 73;
+const VOTERS = 72;
 const TOPNET = QV[0].net;  // the top change's bar is full width; the others compare with it
+const rankOf = q => 1 + QV.filter(o => o.net > q.net).length;  // equal net votes share a place (joint fifth)
 const pg = document.getElementById('prio'), rest = document.getElementById('rest');
 QV.forEach((q, i) => {
   if (i < 6) {
     const c = document.createElement('article'); c.className = 'pcard';
-    c.innerHTML = `<span class="rank" aria-hidden="true">${i + 1}</span><div class="tt"><p class="t"></p>${q.x ? '<p class="x"></p>' : ''}</div><div class="tally"><p class="big">+${q.net}<span>net votes</span></p><div class="tbar" aria-hidden="true"><i style="width:${(q.net / TOPNET * 100).toFixed(1)}%"></i></div></div><div class="pstats"><span>${q.y} of ${VOTERS} backed it, ${q.n} opposed</span></div>`;
+    c.innerHTML = `<span class="rank" aria-hidden="true">${rankOf(q)}</span><div class="tt"><p class="t"></p>${q.x ? '<p class="x"></p>' : ''}</div><div class="tally"><p class="big">+${q.net}<span>net votes</span></p><div class="tbar" aria-hidden="true"><i style="width:${(q.net / TOPNET * 100).toFixed(1)}%"></i></div></div><div class="pstats"><span>${q.y} of ${VOTERS} backed it, ${q.n} opposed</span></div>`;
     c.querySelector('.t').textContent = q.t; if (q.x) c.querySelector('.x').textContent = q.x;
     if (q.e) {
       const ec = document.createElement('div'); ec.className = 'echo';
@@ -1075,7 +1076,7 @@ QV.forEach((q, i) => {
     pg.appendChild(c);
   } else {
     const li = document.createElement('li');
-    li.innerHTML = `<span class="r">${i + 1}</span><span class="t"></span><span class="s"><b class="rnet">+${q.net}</b><span class="rs">${q.y} of ${VOTERS} backed it</span></span>`;
+    li.innerHTML = `<span class="r">${rankOf(q)}</span><span class="t"></span><span class="s"><b class="rnet">+${q.net}</b><span class="rs">${q.y} of ${VOTERS} backed it</span></span>`;
     li.querySelector('.t').textContent = q.t; rest.appendChild(li);
   }
 });
