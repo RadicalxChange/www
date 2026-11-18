@@ -77,7 +77,7 @@ Every Teals migration page follows one layout, with the Warringah page as the
 reference build. On this page that means:
 
 - **Group order.** Group 1 is the larger group, shown first, in amber, on the
-  map's left ("Migration works", 196); Group 2 is the smaller, in violet, on
+  map's left ("Migration works", 195); Group 2 is the smaller, in violet, on
   the right ("Pace and control", 37). `DATA.people` stores the mirrored line
   position (`1 - x`), the group (0 = Group 1), and the lean counts and
   examples in Group 1, Group 2 order.
@@ -94,14 +94,24 @@ reference build. On this page that means:
   line. The clear-no card shows its net alone.
 - **Counting.** People are those who voted on at least one statement open for
   voting: 265 (Polis counts 266, including one account whose only vote was on
-  its own statement, which the moderators held back). 233 were placed in a
-  group, 32 not. 419 statements were open for voting (36 starters); 118 others
-  were held back, and no one else voted on them; 21,315 votes.
+  its own statement, which the moderators held back). 232 were placed in a
+  group, 33 not: 32 voted on too few statements, and one voted on 36 but
+  passed on every one (see below). 419 statements were open for voting (36
+  starters); 118 others were held back, and no one else voted on them; 21,315
+  votes.
+- **People who only ever passed** aren't placed in a group, on every Teals
+  page: a pass doesn't show where someone stands, though Polis places them
+  by reading a pass as halfway between agree and disagree. On this page that
+  is one person, whom Polis placed in Group 1 near the border, so Group 1 is
+  195, not 196, and their dot is gone from both maps. They still count as
+  taking part.
 - **A closer look inside Group 1.** The stance test used on the Warringah
   page (at a cut along the line, a statement flips when at least 65% agree on
   one side and at most 35% on the other, with 10+ voters a side and z >= 3.3)
-  finds 13 flips between the 118 people at the far end of Group 1 and the 78
-  nearest Group 2; shuffled orders never give more than 2. Inside Group 2 only
+  finds 14 flips between the 118 people at the far end of Group 1 and the 77
+  nearest Group 2; shuffled orders never give more than 2. (With 195 people
+  in Group 1, the test's cuts at every 1% of the group skip 118, but cuts at
+  118 and 119 both give 14 flips, so the divider stays where it was.) Inside Group 2 only
   one statement flips, no more than chance. The map draws a dashed divider at
   `DATA.cut` (0.427 on the line, midway between the two parts), names Group
   1's parts under a bracket ("Works" and "Works, but slower", agreed with Jack;
@@ -119,7 +129,11 @@ recomputed from the export with the page's groups, recovered by matching each
 row's vote count, agree rate, statements written and example votes to a
 participant. That matching reproduces every group figure already on the page,
 and every alternative matching that also does gives the same 18 shared
-statements.
+statements. The closer look orders Group 1 by each dot's place on the line, so
+it also needs each dot's participant: one in the same group with the same
+vote count, agree rate, statements written, lean counts and example votes.
+Dots that match more than one participant in every respect give the same
+closer look whichever way they are matched.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
