@@ -97,21 +97,52 @@ q{quotes:"“" "”"}
 .cards{position:relative;display:flex;flex-direction:column;gap:20px;padding-top:max(10px,calc(3.43rem - 56px))}
 .card{position:relative;width:82%;background:#fff;color:var(--teal-dk);border-radius:12px;padding:22px 26px;box-shadow:0 18px 40px -18px rgba(6,40,46,.45)}
 .card q{display:block;font-weight:600;font-size:1.08rem;line-height:1.4}
-.c1{align-self:flex-start;width:calc(100% - 8.85rem + 22px);transform:rotate(-1.5deg)}
-.c2{align-self:flex-end;transform:rotate(1.5deg)}
-.c3{align-self:flex-start;transform:rotate(-1deg)}
-.c4{align-self:flex-end;transform:rotate(2deg)}
+/* the two cards keep their slight tilt */
+.c1{transform:rotate(-1.5deg)}
+.c2{transform:rotate(1.5deg)}
 /* the sticker is the brand's coral with dark teal type (4.6:1); white on coral would be too faint */
-.sticker{position:absolute;top:0;right:-22px;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--coral);color:var(--teal-dk);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .75rem}
-.sticker b{display:block;font-family:var(--display);font-weight:400;font-size:2.3rem;line-height:1;margin:.12rem 0 .14rem}
-.sticker span{display:block;font-size:.58rem;font-weight:700;line-height:1.2}
-/* the caption's lines get shorter towards the bottom of the circle, so they stay inside it: 6.4rem keeps
-   "in both groups want" on one line and moves "keep" down a line */
-.sticker b + span{max-width:6.4rem;margin:0 auto}
+.sticker{position:relative;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--coral);color:var(--teal-dk);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .75rem}
+/* The ring (below) leaves a coral disc 12px narrower than the circle, so the number and the lines are set a little
+   tighter: every line stays at least 4px inside the disc, at 16px and 20px text */
+.sticker b{display:block;font-family:var(--display);font-weight:400;font-size:2.1rem;line-height:1;margin:.06rem 0 .08rem}
+.sticker span{display:block;font-size:.58rem;font-weight:700;line-height:1.1}
+
+/* Two quote cards, one per group, with the shared-figure circle joining them (the common format for the
+   migration results pages). The circle sits between the two cards in the markup. */
+/* The hero sentence runs the full width of its column */
+.hero .sub{max-width:none}
+.hero .card{overflow:hidden}
+.hero .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--gc)}
+.hero .card.c1{--gc:var(--g1)}
+.hero .card.c2{--gc:var(--g2)}
+.hero .card .who{display:flex;align-items:center;gap:.5em;margin:0 0 .55rem;font-size:.82rem;font-weight:700;line-height:1.25;letter-spacing:.01em}
+.hero .card .who i{flex:none;width:.8em;height:.8em;border-radius:50%;background:var(--gc)}
+/* The circle's ring is half Group 1's colour (top, towards card 1) and half Group 2's (bottom, towards card 2).
+   "from -78deg" undoes the sticker's -12deg tilt so the split stays level. */
+.hero .sticker{border:6px solid transparent;background:linear-gradient(var(--coral),var(--coral)) padding-box,conic-gradient(from -78deg,var(--g1) 0 50%,var(--g2) 0 100%) border-box}
+/* Wide screens: the circle clasps both cards at the seam, on the right */
+@media (min-width:901px){
+  .hero .cards{gap:30px}
+  .hero .card.c1{align-self:flex-start;width:calc(100% - 6rem);padding:26px 46px 30px 36px}
+  .hero .card.c2{align-self:flex-start;margin-left:1.5rem;width:calc(100% - 7.5rem);padding:26px 46px 30px 36px}
+  .hero .card q{font-size:1.32rem;line-height:1.38}
+  .hero .sticker{position:relative;top:auto;right:auto;align-self:flex-end;margin:calc(-15px - 4.125rem) -14px calc(-15px - 4.125rem) 0}
+}
+/* Short laptop screens: a little smaller so both cards stay on the first screen */
+@media (min-width:901px) and (max-height:53em){
+  .hero .cards{gap:24px}
+  .hero .card.c1,.hero .card.c2{padding:22px 44px 24px 32px}
+  .hero .card q{font-size:1.2rem;line-height:1.36}
+  .hero .sticker{margin:calc(-12px - 4.125rem) -14px calc(-12px - 4.125rem) 0}
+}
+/* Narrow laptops (two columns but a slim card column): full-width cards with the circle between them */
 @media (min-width:901px) and (max-width:56.25em){
-  .cards{padding-top:10px}
-  .c1{width:82%}
-  .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
+  .hero .card.c1,.hero .card.c2{width:auto;align-self:stretch;margin-left:0;padding:22px 26px 24px 30px}
+  .hero .sticker{align-self:center;margin:-16px 0}
+}
+/* Phones: the same, under the hero text */
+@media (max-width:900px){
+  .hero .sticker{align-self:center;margin:-14px 0}
 }
 @media (min-width:901px){
   .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),80px)}
@@ -367,9 +398,8 @@ footer{background:var(--teal-dk);color:#fff;padding:48px 0 56px}
   .hero h1{font-size:min(9.8cqi,4.2rem)}
   .hero .sub{font-size:1.1rem}
   .cards{gap:16px;padding:6px 4px 10px}
-  .card,.c1,.c2,.c3,.c4{width:auto;align-self:stretch}
-  .sticker{position:relative;top:auto;right:auto;align-self:center;margin-top:8px}
-  .c1{transform:rotate(-2deg)} .c2{transform:rotate(1.5deg)} .c3{transform:rotate(-1deg)} .c4{transform:rotate(2deg)}
+  .card,.c1,.c2{width:auto;align-self:stretch}
+  .c1{transform:rotate(-2deg)} .c2{transform:rotate(1.5deg)}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:30px}
   .gtop .big{font-size:3.6rem}
@@ -449,12 +479,10 @@ footer{background:var(--teal-dk);color:#fff;padding:48px 0 56px}
         <div class="actions"><a class="btn solid" href="#groups">See what Bradfield said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout">Since 2 November 2026 · 422 people have taken part</p>
       </div>
-      <div class="cards" role="list" aria-label="Four statements from the conversation">
-        <div class="card c1" role="listitem"><q>Housing availability and infrastructure need to keep pace with population size. A comprehensive plan is needed.</q></div>
-        <div class="card c2" role="listitem"><q>Politicians should be upfront about their population policy, explain their reasons and make their case.</q></div>
-        <div class="card c3" role="listitem"><q>Migration is about people, not just workers. Families being able to live together should count as much as economic contribution.</q></div>
-        <div class="card c4" role="listitem"><q>When places are limited, people who can work and contribute economically should take priority over family reunion.</q></div>
+      <div class="cards" role="list" aria-label="Two statements from the conversation, one from each group">
+        <div class="card c1" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 1 · Migration works</p><q>Migration brings cultural benefits, not just economic benefits. Think about all the festivals and foods we have now as a result of migration</q></div>
         <div class="sticker" aria-hidden="true"><div><span>More than</span><b>7 in 10</b><span>in both groups want housing and infrastructure to keep pace with population</span></div></div>
+        <div class="card c2" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 2 · Fewer, chosen more carefully</p><q>Not knowing the numbers of Visa holders means infrastructure is overloaded: fresh water supplies, power generation, public transport etc</q></div>
       </div>
     </div>
   </div>

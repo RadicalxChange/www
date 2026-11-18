@@ -23,8 +23,9 @@ light and dark modes.
 Its link-preview image is `src/site/assets/bradfield-migration-og.png`
 (1200×630, referenced by the `og:image` and `twitter:image` tags). It was
 rendered from the page's own fonts and copy: the boxed headline, "422 people
-took part", and two of the hero quotes. If the headline, the turnout or those
-quotes change, regenerate it.
+took part", and two of the statements both groups agreed with (statements 100
+and 136). If the headline, the turnout or those statements change, regenerate
+it.
 
 ## While the results are preliminary
 
@@ -178,9 +179,22 @@ export before each push.
 
 ## Layout
 
-The page width is in rem (`.wrap{max-width:77.5rem}`) and the sticker sits
-beside the first quote card, as on the other migration results pages.
+The page width is in rem (`.wrap{max-width:77.5rem}`), and the hero has the
+same layout as on the other migration results pages.
 
+- Two quote cards, one from each group, Group 1's first: statement 225 for
+  Group 1 and statement 277 for Group 2, each written by a different person
+  taking part and quoted word for word. Each was agreed with by at least 70%
+  of its own group and at most 35% of the other. Each card is labelled with
+  its group's name and edged in its colour.
+- The sticker sits between the two cards in the markup, ringed half in each
+  group's colour. On wide screens it joins the two cards at the seam, on the
+  right; on narrow laptops and phones it sits between them, centred. It never
+  covers the cards' text.
+- The ring leaves a coral disc 12px narrower than the circle, so the
+  sticker's number is set at 2.1rem and its lines at a 1.1 line height. Every
+  line stays at least 4px inside the disc, at 16px and 20px text.
+- The hero sentence runs the full width of its column.
 - The headline is three set lines ("Bradfield wants" / "homes and services
   planned" / "for migration"), the middle one boxed in teal like the labels on
   the MP's site. The longest line, box included, is 10.05em wide in Bebas Neue,
@@ -193,6 +207,8 @@ beside the first quote card, as on the other migration results pages.
   where the dots are larger relative to the width.
 
 Check any hero change at 1728×966 with a 20px default text size, 1440×790,
-1366×650, 1536×730, 1024×700 and a 375px phone.
+1366×650, 1536×730, 1280×720, 1180×820, 1024×700 and a 375px phone: the
+buttons stay on the first screen, no line of a quote card falls under the
+circle, and the two cards don't overlap.
 
 This file is excluded from the build via `.eleventyignore`.
