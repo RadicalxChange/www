@@ -64,7 +64,8 @@ the circle change, regenerate it.
   results page since 18 November 2026). They still count as taking part.
 - **Percentages:** the share of a group who agreed, out of those in the group
   who voted on the statement (passes count as votes). Where fewer than 20 in a
-  group voted, the page shows how many.
+  group voted, the page shows how many. Halves round up (62.5% shows as 63%),
+  and the 7-in-10 bar is applied before rounding.
 - **Statements all three groups agreed with:** at least 70% agreement in every
   group, with at least 10 voters in each: 8 statements, all listed in the fold
   under the pairs. Many statements added later in the conversation fall under
@@ -88,13 +89,15 @@ the circle change, regenerate it.
   each tagged "Most of them agree" or "Most of them disagree". Group 2 has no
   view that sets it apart from both neighbours, so its card, "Where they
   stand", shows two statements where it sides with Group 1 and two where it
-  sides with Group 3, in two columns, and across them the one statement it
-  backed most clearly more than both, with 20+ voters in every group (25).
+  sides with Group 3, in two columns, and across them one it backed more than
+  both (25): the clearest of the 12 statements, with 10+ voters in every group,
+  where more of Group 2 agreed than of either neighbour.
   RadicalxChange chose the statements, from those about how the visa system
   should work.
 - **Priority vote:** the same rule as the Curtin page. Ballots that used fewer
   than 10 credits are set aside, names are matched ignoring capitals and
-  spacing, and the fuller ballot is kept where someone voted twice: 53 voters.
+  spacing, and where someone voted more than once the last ballot they
+  submitted counts (in all five repeats it is also the fuller one): 53 voters.
   Net votes are votes for minus votes against. The chart shared after the
   session shows 56 voters because it keeps two ballots of 6 and 7 credits and
   matches names exactly; the order of all 13 changes is the same.
@@ -137,8 +140,8 @@ group's far end), and the line-up is split at 13 points, from 20% to 80% of
 the way through. At each point the test counts the statements where at least
 65% of one part agree and at most 35% of the other do, with at least 10
 voters in each part and a two-proportion z of at least 3.3 (two-sided
-p < .001). The split with the most such statements wins. Inside Polis's
-second group that gives 24 people (Group 3) and seven statements, with at
+p < .001). The split with the most such statements wins. Inside the smaller
+group (Polis's group 0) that gives 24 people (Group 3) and seven statements, with at
 least 21 voters in each part; cuts every 1% give the same split. A
 permutation test checks for luck: 1,000 random orders of the same 120 people
 (`random.Random(2026)` shuffling a list sorted by participant id), searched
