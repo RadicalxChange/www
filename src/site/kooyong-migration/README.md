@@ -157,16 +157,20 @@ is checked against the export before each push.
 The page width is in rem (`.wrap{max-width:77.5rem}`), as on the other
 migration results pages.
 
-- The hero has two quote cards, one per group (Group 1's first), each
-  labelled "Group 1 · Migration works" or "Group 2 · Fewer, chosen more
-  carefully" and edged in its group's colour. Each is a resident's statement
-  that most of its own group agreed with and far fewer of the other group
-  did. The circle with the headline figure sits between them, its ring half
-  in each group's colour: on wide screens it clasps both cards at the seam,
-  on the right; on narrow laptops and phones it sits between them, centred.
-  It never covers text.
-- The hero sentence runs the full width of its column and ends with what
-  the priority vote put first.
+- The hero carries the headline, one sentence on the divide and the shared
+  ground (ending with what the priority vote put first), the two buttons and
+  the turnout ("… 102 people have taken part · 89 in a group"). On the right
+  sits one label per group: its size in people, its name and one plain line
+  from its own defining statements, each linking to its group card
+  (`#group-1`, `#group-2`). The circle with the headline figure, its ring
+  half in each group's colour, sits against the labels and links to where
+  the groups agree (`#agree`). It never covers text. There are no quote cards
+  in the hero and no at-a-glance row; residents' words are in the group cards.
+- The groups section opens with the map, then the two group cards, then the
+  caveat. The page then runs: where the groups agree, the six changes people
+  want most, how this worked (with the notes) and what happens next.
+- The group names, the map's short label and the hero labels' lines are set
+  in one place in the generator, so a rename is one change.
 - The headline is three set lines ("Kooyong wants" / "a bipartisan plan" /
   "for migration"), the middle one boxed in teal. It is sized from its column
   (`min(12.6cqi, 10vh, 5.8rem)`) and never wraps.
@@ -175,7 +179,8 @@ migration results pages.
 - The map's height follows the highest pile.
 - A notes row's paragraphs all sit in its right-hand column.
 
-Check any hero change at 1728×966 with a 20px default text size, 1440×790,
-1366×650, 1536×730, 1024×700 and a 375px phone.
+Check any hero change at 1728×966, 1280×720, 1180×820 and 1024×700 with a
+20px default text size, at 1440×790, 1366×650 and 1536×730, and on a 375px
+phone.
 
 This file is excluded from the build via `.eleventyignore`.
