@@ -68,7 +68,8 @@ headline, the turnout, the groups or the circle change, regenerate it.
 - **Percentages:** the share of a group who agreed, out of those in the group
   who voted on the statement (passes count as votes). Where fewer than 20 in a
   group voted, the page shows how many; Group 3 has 15 people, so every Group 3
-  figure shows it.
+  figure shows it. Shown percentages round halves up, and the 7-in-10 bar for
+  shared statements is applied before rounding.
 - **Statements all three groups agreed with:** at least 70% agreement in each
   of the three groups, with at least 10 voters in each: 16 statements, all
   listed in the fold under the pairs. (With Polis's two groups it would be
@@ -101,7 +102,10 @@ headline, the turnout, the groups or the circle change, regenerate it.
   matching conversation statements are the starter statements written on the
   same ideas, and for faster removals a resident's statement about removing
   people whose asylum claims and appeals have failed; close in meaning but not
-  identical in wording. The employer ban has no close match (the statement
+  identical in wording. A card says "The groups split on this one" only when
+  two groups are 30+ points apart, on opposite sides of 50% agreeing, with 10+
+  voters in each; where the lower group had at least as many agreeing as
+  disagreeing, it says that group was divided. The employer ban has no close match (the statement
   about sponsored workers changing employers belongs to a different change),
   so its card says so.
 
@@ -130,12 +134,14 @@ group, at least 15 people a side, and a statement flips when at least 65%
 agree on one side and at most 35% on the other, with at least 10 voters a side
 and z of at least 3.3. Inside the smaller group, the 15 people at the far end
 part ways with the other 32 on five statements (97, 94, 18, 82 and 24), with
-at least 12 voters on each side of every one; shuffling the group's order 200
-times never gave more than two. The split is not down to people who mostly
+at least 12 voters on each side of every one (the rule asks for 10). In 1,000
+random orders of the group's members (a permutation test, seeded so it can be
+rerun), the same search never found more than two such statements, and in 805
+of the orders it found none. The split is not down to people who mostly
 passed: without the three people in the group who passed on at least half
 their votes, three of the five statements still split it. Inside the larger
-group the best cut gives two such statements, which chance also produces, so
-it is not split.
+group the best cut gives two such statements, and random orders found two or
+more in 7 of 1,000, so it is not split.
 
 The test for unlikely allies, applied across the three groups (statements with
 at least 10 voters and 30% to 70% agreeing in each group; only people who
