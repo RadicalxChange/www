@@ -21,16 +21,24 @@ The only asset it takes from the site is the shared favicon
 The page wears Kate Chaney MP's brand, taken from katechaney.com.au, so her
 office can link to it or embed it as its own: teal `#16A1B7` and navy
 `#012253`, with Barlow Semi Condensed for headings and Inter for text, both
-loaded from Google Fonts. The two groups have their own colours, amber
-`#B45309` and violet `#8547F0`, so neither carries the MP's colours. All of
-this lives in the `:root` tokens at the top of the style block (with a dark
-mode set below them). The RxC breadcrumb and footer bars keep RxC's own look.
+loaded from Google Fonts. The three groups have their own colours, so none
+carries the MP's: amber `#B45309` for Group 1, a lighter amber `#E99A2C` for
+Group 2 (the two came out of one Polis group) and violet `#8547F0` for Group 3.
+Dark mode has its own two ambers, `#9C4806` and `#C58719`. Each set was run
+through a palette validator against its map surface: colour-blind separation,
+a distinguishability floor for full colour vision, lightness and chroma. The
+lighter amber is under 3:1 against white and the dark-mode amber under 3:1
+against the dark map, so every group is also named in text wherever its colour
+appears. All of this lives in the `:root` tokens at the top of the style block
+(with a dark mode set below them). The RxC breadcrumb and footer bars keep
+RxC's own look.
 
 Its own link-preview image is `src/site/assets/curtin-migration-og.png`
 (1200×630, served at `/assets/curtin-migration-og.png` and referenced by
 the `og:image` and `twitter:image` tags). It was rendered from the page's
 own fonts and copy: the hero headline, "265 people took part" and two
-statements most people in both groups agreed with (148 and 76). If the
+statements most people in every group agreed with (148 and 76; both are still
+among the statements all three groups agreed with). It names no groups. If the
 headline or the turnout changes, regenerate it.
 
 Data sources: the Polis export of 30 October 2026
@@ -42,8 +50,12 @@ It shows only the main divide, left to right (the first value in each
 drops near its place on the line and rolls up to three dot widths to the
 lowest free spot, paying for each step sideways, so crowded stretches pile up
 like sand. Both maps share this layout (`swarm()`). The main map names each
-group, with its count, on one line above the tallest heap, as the Warringah
-page does; the allies map does not. The second value, which used to set an "agreed more often"
+of the three groups on one line above the tallest heap, as the Warringah page
+does: its name, with "Group 1 · 118 people" under it, nudged apart where two
+would touch, and "Group 1" with "118 people" under it if the names can't fit
+side by side (phones show "Group 1" alone). The map is laid out again once
+the web fonts have loaded, so the labels are measured in the font they are
+drawn in. The allies map has no labels. The second value, which used to set an "agreed more often"
 height, is no longer drawn: it tracked how often people pressed agree, which
 said little about their views, so each card shows that figure instead.
 
@@ -61,20 +73,29 @@ uses. That test counts only the 76 people who agreed or disagreed with both
 statements, and allows for people who agree with most things (measured over
 all their votes, passes included). The odds ratio is 8.5, but z is 3.2,
 where 3.3 is needed. So the page shows it as a possible alliance, not a
-proven one, and says so in the note.
+proven one, and says so in the note. With three groups, statement 33 also no
+longer meets the test's entry rule (30 to 70% agreeing in every group): 72%
+of Group 2 agree with it, one person over the limit. Within Group 2, too few
+people disagreed with statement 33 to tell whether the link holds there (3 of
+the 21 who took a side on both). No other pair meets the entry rule and
+passes. The section stays as a possible alliance, and its note says it falls
+just short of both bars.
 
-Hover-card examples: each person's card shows up to two of their votes. The
-last four fields of each `DATA.people` entry hold them: the example where they
-voted like Group 1 (statement number, then `a` agreed or `d` disagreed), then
-the example where they voted like Group 2 (`-1` and an empty string when there
-is none). The candidates are the 40 statements where the groups took opposite
-sides (one group's majority agreed and the other's disagreed, with at least 8
-voters in each group), limited to those the person voted on the same way as
-that group. The card prefers, in order: a statement the person agreed with
-over one they disagreed with; the one that group most widely shared (the share
-of the group on its side, as a 95% Wilson lower bound, so small samples count
-for less); the one more of that group voted on; then the lower statement
-number. `DATA.texts` holds the wording of every statement the cards use, from
+Hover cards: each `DATA.people` entry is the line position, an unused
+height, the group (0, 1 or 2), the votes cast, the agree rate and the
+statements written, then ten fields for the card: how many of the split
+statements the person voted on; how many times they voted like Group 1,
+Group 2 and Group 3 (a vote can match two groups, so each count is out of the
+same total); and one example for each group they voted like (statement
+number, then `a` agreed or `d` disagreed; `-1` and an empty string when there
+is none). The split statements are the 50 where one group's majority agreed
+and another group's majority disagreed; a group takes a side only when at
+least 8 of its people voted. The card shows the person's own group's example
+first, and a statement picked for two groups once. For each group it prefers,
+in order: a statement the person agreed with over one they disagreed with;
+the one that group most widely shared (the share of the group on its side, as
+a 95% Wilson lower bound, so small samples count for less); the one more of
+that group voted on; then the lower statement number. `DATA.texts` holds the wording of every statement the cards use, from
 the export, with apostrophes set as ’. Until November 2026 the cards showed
 each person's most divisive vote instead (the largest gap between the groups),
 which put the bluntest statements on the most cards.
@@ -84,19 +105,36 @@ which put the bluntest statements on the most cards.
 Every Teals migration page follows one layout, with the Warringah page as the
 reference build. On this page that means:
 
-- **Group order.** Group 1 is the larger group, shown first, in amber, on the
-  map's left ("Migration works", 195); Group 2 is the smaller, in violet, on
-  the right ("Pace and control", 37). `DATA.people` stores the mirrored line
-  position (`1 - x`), the group (0 = Group 1), and the lean counts and
-  examples in Group 1, Group 2 order.
-- **Wording.** "Two main groups", "Both groups want a plan" and "First choice:
-  ..." at a glance; "Most people fit into one of two groups"; natural
-  frequencies (5 in 6, 1 in 6); "What sets them apart"; a caveat that says
-  the groups describe who took part.
-- **Agreement.** Pairs are titled by what both groups back and labelled "They
-  disagree on" and "But both back" (`PAIRS`: id, text, Group 1 %, Group 2 %,
-  Group 1 voters, Group 2 voters). A fold lists all 18 statements at least 70%
-  of each group agreed with, with at least 10 voters in each (`SHARED`).
+- **Three groups** (November 2026). Polis finds two groups. Inside the
+  larger one, people split clearly on several questions (see "Three groups"
+  below), so the page shows three, numbered left to right along the map:
+  Group 1 "Migration works" (118, amber), Group 2 "Works, but slower" (77,
+  lighter amber) and Group 3 "Fewer, chosen more carefully" (37, violet).
+  The names are the ones every migration results page uses for the same
+  positions (November 2026). `DATA.people` stores the mirrored line position
+  (`1 - x`) and the group (0, 1 or 2); the map and hover cards take the names
+  from `GNAME` in the page script.
+- **Section order.** Hero, then the groups section (its heading, the map,
+  the group cards, then the caveat), agreement, unlikely allies, priorities,
+  how this worked, the notes, what happens next. There is no at-a-glance
+  row: the hero carries the groups and what they share, and the priority
+  vote is one click away on the hero's second button.
+- **Wording.** "Most people fit into one of three groups"; natural
+  frequencies on the group cards (1 in 2, 1 in 3, 1 in 6); a caveat that
+  says the groups describe who took part.
+- **Group cards.** One above another. Groups 1 and 3 show "What sets them
+  apart": three statements most of the group agreed with and far fewer of
+  both other groups did. Group 2 sides with one or other of its neighbours on
+  most questions, so its card is "Where they stand": two statements where it
+  sides with Group 1, two where it sides with Group 3, and one it backed more
+  than both, with 20 or more voters in every group. Every statement shows all
+  three groups' shares.
+- **Agreement.** A statement counts as one all three groups agreed with when
+  at least 70% agreed in each group, with at least 10 voters in each. There
+  are 15 (`SHARED`: id, text, the three shares, the three voter counts). The
+  pairs are titled by what all three back and labelled "They disagree on" and
+  "But all three back" (`PAIRS`, the same format). Only pairs whose "But all
+  three back" statement clears the rule are shown, so there are four.
 - **Priorities.** Each card leads with its net votes, with one bar on a shared
   scale (the top change is full width), and backers and opposers in a small
   line. The clear-no card shows its net alone.
@@ -110,38 +148,36 @@ reference build. On this page that means:
 - **People who only ever passed** aren't placed in a group, on every Teals
   page: a pass doesn't show where someone stands, though Polis places them
   by reading a pass as halfway between agree and disagree. On this page that
-  is one person, whom Polis placed in Group 1 near the border, so Group 1 is
-  195, not 196, and their dot is gone from both maps. They still count as
-  taking part.
-- **A closer look inside Group 1.** The stance test used on the Warringah
-  page (at a cut along the line, a statement flips when at least 65% agree on
-  one side and at most 35% on the other, with 10+ voters a side and z >= 3.3)
-  finds 14 flips between the 118 people at the far end of Group 1 and the 77
-  nearest Group 2; shuffled orders never give more than 2. (With 195 people
-  in Group 1, the test's cuts at every 1% of the group skip 118, but cuts at
-  118 and 119 both give 14 flips, so the divider stays where it was.) Inside Group 2 only
-  one statement flips, no more than chance. The map draws a dashed divider at
-  `DATA.cut` (0.427 on the line, midway between the two parts), names Group
-  1's parts under a bracket ("Works" and "Works, but slower", agreed with Jack;
-  lettered badges A and B where a name won't fit), and the key under the map
-  describes them. No dot rolls across the divider; left of it the dots drop
-  from the divider outwards, so they don't wall up against it. The allies map
-  uses the same layout, so everyone sits in the same place on both maps.
-- **Notes**, in order: reading the percentages, reading the map, a closer look
-  inside Group 1, affordability allies, the group cards, who and what we
+  is one person, whom Polis placed in its larger group near the border, so
+  that group is 195, not 196, and their dot is gone from both maps. They
+  still count as taking part.
+- **Three groups.** The stance test used on every migration results page (at a
+  cut along the line, a statement flips when at least 65% agree on one side
+  and at most 35% on the other, with 10+ voters a side and z >= 3.3) finds 14
+  flips between the 118 people at the far end of Polis's larger group and the
+  77 nearest its smaller one; shuffled orders never give more than 2. (With
+  195 people in that group, the test's cuts at every 1% of it skip 118, but
+  cuts at 118 and 119 both give 14 flips, so the boundary stays where it
+  was.) Inside Polis's smaller group only one statement flips, no more than
+  chance.
+  `DATA.cut` (0.427 on the line, midway between Groups 1 and 2) is that
+  boundary. The map no longer draws it: the groups' colours show it. No dot
+  rolls across it, and left of it the dots drop from it outwards, so they
+  don't wall up against it. The allies map uses the same layout, so everyone
+  sits in the same place on both maps.
+- **Notes**, in order: reading the percentages, reading the map, how we found
+  three groups, affordability allies, the group cards, who and what we
   counted, pairing the statements, the priority vote, the data.
 
 The groups are the page's own (from the 30 October export); Polis's current
 export assigns two more people to the smaller group, so the figures were
 recomputed from the export with the page's groups, recovered by matching each
 row's vote count, agree rate, statements written and example votes to a
-participant. That matching reproduces every group figure already on the page,
-and every alternative matching that also does gives the same 18 shared
-statements. The closer look orders Group 1 by each dot's place on the line, so
-it also needs each dot's participant: one in the same group with the same
-vote count, agree rate, statements written, lean counts and example votes.
-Dots that match more than one participant in every respect give the same
-closer look whichever way they are matched.
+participant. Groups 1 and 2 split Polis's larger group by each dot's place on
+the line, so the split also needs each dot's participant: one in the same
+group with the same vote count, agree rate, statements written, lean counts
+and example votes. Dots that match more than one participant in every respect
+give the same three groups whichever way they are matched.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
@@ -153,21 +189,27 @@ HTML directly; every figure on the page has been checked against the exports.
   default text size is larger gets a proportionally wider page. With a px
   cap, a 20px default squeezed larger text into columns that did not grow,
   and the hero sticker covered the ends of the first quote's lines.
-- The hero has two quote cards, one per group, each in a resident's own
-  words: Group 1's first ("Group 1 · Migration works", statement 103), then
-  Group 2's ("Group 2 · Pace and control", statement 69). Each card has a
-  dot and a left edge in its group's colour. Every migration results page
-  uses this hero (November 2026).
-- The circle sits between the two cards in the markup. Its ring is half
-  Group 1's colour (top) and half Group 2's (bottom); `from -78deg` in its
-  gradient undoes its tilt, so the split stays level.
-  - Wider than 900px, it clasps both cards at the seam, on the right. The
-    cards stop short of it (`calc(100% - 6rem)` and `calc(100% - 7.5rem)`),
-    and top and bottom margins of `calc(-15px - 4.125rem)` (half its 8.25rem,
-    plus half the 30px gap) centre it on the gap. Windows 53em tall or less
-    use a 24px gap and slightly smaller quotes.
-  - Between 901px and 56.25em at the reader's text size, and on phones, the
-    cards run full width and the circle sits between them, centred.
+- The hero's right side has one label per group, and the circle (November
+  2026, every migration results page). Each label is a link to its group card
+  (`#group-1` to `#group-3`): a small "Group 1 · 118 people" line, the
+  group's name, and one line from its defining statements, with a left edge
+  in its colour. The descriptions (statements 95, 134 and 103 with 20, and
+  69): "Migrants aren’t the housing problem; keep helping people in need.",
+  "Migration helps, but take longer and get the checks right." and
+  "Temporary visas shouldn’t lead to permanent residency." The labels are
+  white in both modes, so their quieter text uses a fixed grey (`#4B5B73`),
+  not `--muted`, which is pale in dark mode. Each label is wrapped in a
+  `role="listitem"` element, so it stays a link for screen readers.
+- The circle is a link to the agreement section (`#agree`), with the same
+  words for screen readers. It sits against all three labels, on the right
+  (absolutely placed, centred on the labels, which stop `9.5rem` short of the
+  column's edge). Its ring is in bands like the labels: Group 1's colour on
+  top, Group 2's at the sides and Group 3's underneath; `from 12deg` in its
+  gradient undoes its tilt, so the bands stay level. Windows 53em tall or
+  less use slightly smaller labels. On phones the labels run full width and
+  the circle follows them, centred.
+- The turnout line also says how many people are in a group: "265 people
+  took part · 232 in a group".
 - The hero sentence runs the whole width of its column and ends with the
   priority vote's first choice. Windows 46em tall or less, and windows
   70em wide or less that are 48em tall or less, set it at 1.1rem, so the
@@ -184,22 +226,24 @@ HTML directly; every figure on the page has been checked against the exports.
     the space above the hero.
   - The headline's `9vh` limits it on short windows, and under 47.5em tall it
     takes `min(14cqi,8vh,6.4rem)`.
-  - Where the cards run well past the first screen, the headline starts
-    level with the first card (`align-items:start`): any window under 43.25em
-    tall, and a window under 62.5em wide that is under 53em tall.
+  - On very short windows, and narrow ones that are not tall, the headline
+    starts level with the labels (`align-items:start`): any window under
+    43.25em tall, and a window under 62.5em wide that is under 53em tall.
 
-  Swept again with the two-card hero (November 2026), at 143 window sizes
-  from 901×600 to 2560×1080 at 16px, and at 1728×966, 1440×790, 1366×650,
-  1536×730, 1280×720, 1180×820 and 1024×700 with 20px text. At every one,
-  the buttons stay on the first screen, no line of text falls under the
-  circle, and the two cards don't overlap. The small turnout line under the
-  buttons can fall just below the first screen on the shortest windows. If
-  the headline, lede or buttons change, sweep again.
+  Swept again with the group labels (November 2026), at 140 window sizes
+  from 901×600 to 2560×1200 at 16px, and at 13 sizes with 20px text,
+  including 1728×966 (light and dark), 1280×720, 1180×820, 1366×650 and
+  1024×700. At every one, the buttons, all three labels and the circle are
+  on the first screen, no line of text falls under the circle, the circle's
+  own words stay inside it, and no two labels overlap. The small turnout line
+  under the buttons can fall just below the first screen on the shortest
+  windows (9 of the 153). If the headline, lede, buttons or labels change,
+  sweep again.
 - The closing "Thank you, Curtin" circle is sized in rem like its words
   (15rem, and 10.625rem at 900px and below), so the words stay inside it at
   any text size.
-- At 900px and below there is one column, with the circle between the two
-  cards.
+- At 900px and below there is one column, with the circle after the three
+  labels.
 - Check any hero change at these sizes: 1728×966 with a 20px default text
   size, 1440×790, 1366×650, 1024×700 and a 375px phone. Also 1536×730, a
   1080p screen at 125% scaling, where the headline used to take four lines
