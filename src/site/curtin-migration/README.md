@@ -49,37 +49,29 @@ It shows only the main divide, left to right (the first value in each
 `DATA.people` entry), in rounded heaps like the Warringah page's: each dot
 drops near its place on the line and rolls up to three dot widths to the
 lowest free spot, paying for each step sideways, so crowded stretches pile up
-like sand. Both maps share this layout (`swarm()`). The main map names each
-of the three groups on one line above the tallest heap, as the Warringah page
+like sand (`swarm()`). The map names each of the three groups on one line above the tallest heap, as the Warringah page
 does: its name, with "Group 1 · 118 people" under it, nudged apart where two
 would touch, and "Group 1" with "118 people" under it if the names can't fit
 side by side (phones show "Group 1" alone). The map is laid out again once
 the web fonts have loaded, so the labels are measured in the font they are
-drawn in. The allies map has no labels. The second value, which used to set an "agreed more often"
+drawn in. The second value, which used to set an "agreed more often"
 height, is no longer drawn: it tracked how often people pressed agree, which
 said little about their views, so each card shows that figure instead.
 
-The "Unlikely allies" section highlights the 52 affordability allies: people
-who backed both statement 33 (cost of living) and statement 29 (university
-housing). `DATA.allies` in the page script holds one character per grouped
-participant, in the same order as `DATA.people`: `b` backed both, `v` voted on
-both but did not back both, `-` did not vote on both. The allies backed both
-statements by definition, so the cards say so once and show only how everyone
-else who voted on each statement answered. Those figures and the numbers in the
-"Affordability allies" note come from the same export.
-
-The pair falls just short of the allies test every migration results page
-uses. That test counts only the 76 people who agreed or disagreed with both
-statements, and allows for people who agree with most things (measured over
-all their votes, passes included). The odds ratio is 8.5, but z is 3.2,
-where 3.3 is needed. So the page shows it as a possible alliance, not a
-proven one, and says so in the note. With three groups, statement 33 also no
-longer meets the test's entry rule (30 to 70% agreeing in every group): 72%
-of Group 2 agree with it, one person over the limit. Within Group 2, too few
-people disagreed with statement 33 to tell whether the link holds there (3 of
-the 21 who took a side on both). No other pair meets the entry rule and
-passes. The section stays as a possible alliance, and its note says it falls
-just short of both bars.
+No unlikely allies. Until November 2026 the page showed 52 "affordability
+allies" who backed both statement 33 (cost of living) and statement 29
+(university housing). The pair falls just short of the allies test every
+migration results page uses: it counts only the 76 people who agreed or
+disagreed with both statements and allows for people who agree with most
+things, and gives an odds ratio of 8.5 but z of 3.2, where 3.3 is needed.
+With three groups, most of every group backs both statements (62%, 72% and
+64%; 64%, 56% and 58%), so statement 33 also misses the test's entry rule
+(30 to 70% agreeing in every group): 72% of Group 2 agree, one person over.
+That makes the pair common ground that falls short of the 7-in-10 bar for
+"Even where they disagree", rather than an alliance, so the section is left
+off. No other pair meets the entry rule and passes. The notes say so in one
+line, at the end of "How we found three groups", as on the Warringah and
+Bradfield pages.
 
 Hover cards: each `DATA.people` entry is the line position, an unused
 height, the group (0, 1 or 2), the votes cast, the agree rate and the
@@ -115,7 +107,7 @@ reference build. On this page that means:
   (`1 - x`) and the group (0, 1 or 2); the map and hover cards take the names
   from `GNAME` in the page script.
 - **Section order.** Hero, then the groups section (its heading, the map,
-  the group cards, then the caveat), agreement, unlikely allies, priorities,
+  the group cards, then the caveat), agreement, priorities,
   how this worked, the notes, what happens next. There is no at-a-glance
   row: the hero carries the groups and what they share, and the priority
   vote is one click away on the hero's second button.
@@ -149,7 +141,7 @@ reference build. On this page that means:
   page: a pass doesn't show where someone stands, though Polis places them
   by reading a pass as halfway between agree and disagree. On this page that
   is one person, whom Polis placed in its larger group near the border, so
-  that group is 195, not 196, and their dot is gone from both maps. They
+  that group is 195, not 196, and their dot is gone from the map. They
   still count as taking part.
 - **Three groups.** The stance test used on every migration results page (at a
   cut along the line, a statement flips when at least 65% agree on one side
@@ -163,11 +155,11 @@ reference build. On this page that means:
   `DATA.cut` (0.427 on the line, midway between Groups 1 and 2) is that
   boundary. The map no longer draws it: the groups' colours show it. No dot
   rolls across it, and left of it the dots drop from it outwards, so they
-  don't wall up against it. The allies map uses the same layout, so everyone
-  sits in the same place on both maps.
+  don't wall up against it.
 - **Notes**, in order: reading the percentages, reading the map, how we found
-  three groups, affordability allies, the group cards, who and what we
-  counted, pairing the statements, the priority vote, the data.
+  three groups (ending with the line on unlikely allies), the group cards,
+  who and what we counted, pairing the statements, the priority vote, the
+  data.
 
 The groups are the page's own (from the 30 October export); Polis's current
 export assigns two more people to the smaller group, so the figures were
