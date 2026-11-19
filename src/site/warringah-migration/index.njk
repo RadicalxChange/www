@@ -11,7 +11,7 @@ eleventyExcludeFromCollections: true
 <meta name="robots" content="noindex">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Warringah on migration: preliminary results">
-<meta property="og:description" content="Preliminary results from the Warringah community conversation on migration: two groups, where they agree, and the changes people want most.">
+<meta property="og:description" content="Preliminary results from the Warringah community conversation on migration: three groups, where they agree, and the changes people want most.">
 <meta property="og:url" content="https://www.radicalxchange.org/warringah-migration/">
 <meta property="og:site_name" content="RadicalxChange">
 <meta property="og:image" content="https://www.radicalxchange.org/assets/warringah-migration-og.png">
@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
 <meta property="og:image:alt" content="Warringah wants a long-term plan for migration. Preliminary results from the Warringah community conversation on migration: 452 people took part. Beside it, two statements from the conversation, starting with “Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.”">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Warringah on migration: preliminary results">
-<meta name="twitter:description" content="Preliminary results from the Warringah community conversation on migration: two groups, where they agree, and the changes people want most.">
+<meta name="twitter:description" content="Preliminary results from the Warringah community conversation on migration: three groups, where they agree, and the changes people want most.">
 <meta name="twitter:image" content="https://www.radicalxchange.org/assets/warringah-migration-og.png">
 <meta name="twitter:image:alt" content="Warringah wants a long-term plan for migration. Preliminary results from the Warringah community conversation on migration: 452 people took part. Beside it, two statements from the conversation, starting with “Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.”">
 <link rel="canonical" href="https://www.radicalxchange.org/warringah-migration/">
@@ -31,14 +31,17 @@ eleventyExcludeFromCollections: true
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap">
 <title>Warringah on migration: preliminary results</title>
-<meta name="description" content="Preliminary results from the Warringah community conversation on migration: two groups, where they agree, and the changes people want most.">
+<meta name="description" content="Preliminary results from the Warringah community conversation on migration: three groups, where they agree, and the changes people want most.">
 <style>
 /* Layout: the RxC results template, in the Warringah brand: a cyan hero and closing band with navy type,
-   white sections, a navy band for the uncommon ground. Two group colours of equal weight (gold, violet),
-   neither of them the brand's cyan or navy. */
+   white sections, a navy band for the uncommon ground. Three group colours: gold for Group 1, violet for
+   Group 3, and a lighter violet for Group 2, the part of Polis's violet group that split off (the results
+   pages' rule). In dark mode Group 3's violet is deeper, so the two violets stay apart. None of them is the
+   brand's cyan or navy. Checked with the dataviz palette validator in both modes: all checks pass; one colour
+   per mode is under 3:1 against its surface, so every group is also named in text wherever it appears. */
 :root{
   --cyan:#00b4cd; --on-cyan:#13384b; --navy:#13384b;
-  --g1:#a97c0c; --g2:#7562d4; --g1-soft:#f6f0e1; --g2-soft:#efedfb;
+  --g1:#a97c0c; --g2:#a497ef; --g3:#7562d4; --g1-soft:#f6f0e1; --g2-soft:#f5f3fe; --g3-soft:#efedfb;
   --paper:#ffffff; --ink:#212529; --heading:#13384b; --card:#ffffff; --muted:#56606a;
   --line:rgba(19,56,75,.16); --track:#e2e8eb; --tint:#e6f6f9; --deep:#13384b;
   --display:"Poppins","Century Gothic","Avenir Next",system-ui,sans-serif;
@@ -50,13 +53,13 @@ eleventyExcludeFromCollections: true
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --g1:#bb8b1a; --g2:#8d7ce6; --g1-soft:#272212; --g2-soft:#1e1c36;
+    --g1:#bb8b1a; --g2:#8f86e7; --g3:#6250c1; --g1-soft:#272212; --g2-soft:#252340; --g3-soft:#1e1c36;
     --paper:#0e1b22; --ink:#e7eef1; --heading:#e7eef1; --card:#132630; --muted:#a9b8c0;
     --line:rgba(255,255,255,.15); --track:#2a3d47; --tint:#0f2b34; --deep:#0a1820; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --g1:#bb8b1a; --g2:#8d7ce6; --g1-soft:#272212; --g2-soft:#1e1c36;
+  --g1:#bb8b1a; --g2:#8f86e7; --g3:#6250c1; --g1-soft:#272212; --g2-soft:#252340; --g3-soft:#1e1c36;
   --paper:#0e1b22; --ink:#e7eef1; --heading:#e7eef1; --card:#132630; --muted:#a9b8c0;
   --line:rgba(255,255,255,.15); --track:#2a3d47; --tint:#0f2b34; --deep:#0a1820; color-scheme:dark;
 }
@@ -74,7 +77,7 @@ a{color:inherit}
 .btn.line{background:transparent;color:var(--navy)}
 .btn:hover{transform:translateY(-1px)}
 .dot{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
-.dot.g1{background:var(--g1)} .dot.g2{background:var(--g2)}
+.dot.g1{background:var(--g1)} .dot.g2{background:var(--g2)} .dot.g3{background:var(--g3)}
 .pill{display:inline-block;font-weight:600;font-size:.9rem;background:var(--navy);color:#fff;border-radius:99px;padding:.3rem .85rem}
 q{quotes:"“" "”"}
 
@@ -93,48 +96,43 @@ q{quotes:"“" "”"}
 .hero .turnout{font-size:.95rem;font-weight:500;margin-top:22px}
 .actions{display:flex;gap:14px;flex-wrap:wrap}
 .cards{position:relative;display:flex;flex-direction:column;gap:20px;padding-top:max(10px,calc(3.43rem - 56px))}
-.card{position:relative;width:82%;background:#fff;color:var(--navy);border-radius:18px;padding:22px 26px;box-shadow:0 18px 40px -18px rgba(9,40,54,.5)}
-.card q{display:block;font-weight:600;font-size:1.14rem;line-height:1.36}
 .sticker{position:relative;width:8.25rem;height:8.25rem;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .7rem}
 .sticker b{display:block;font-family:var(--display);font-weight:700;font-size:1.9rem;line-height:1;margin:.1rem 0 .2rem}
 .sticker span{display:block;font-size:.6rem;font-weight:600;line-height:1.2}
-/* Hero: two quote cards, one per group, with the circle between them (the results pages' common format,
-   18 November 2026). The circle is relative, not absolute, so it stays above both cards where it overlaps them. */
+/* The labels are white in both modes, so their text uses fixed dark colours (the light-mode navy and muted grey),
+   never --muted, which turns pale in dark mode. */
+/* Hero: one label per group (size, name, one-line description) and the circle for what all three groups agree
+   on. No quote cards, and no at-a-glance row (the results pages' common format, 19 November 2026). Each label links
+   to its group card; the circle links to the agreement section. */
 .hero .sub{max-width:none}
-
-.hero .card{overflow:hidden}
-.hero .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--gc)}
-.hero .card.c1{--gc:var(--g1)}
-.hero .card.c2{--gc:var(--g2)}
-.hero .card .who{display:flex;align-items:center;gap:.5em;margin:0 0 .55rem;font-size:.82rem;font-weight:700;line-height:1.25;letter-spacing:.01em}
-.hero .card .who i{flex:none;width:.8em;height:.8em;border-radius:50%;background:var(--gc)}
-/* The circle's ring is half Group 1's colour (top, towards card 1) and half Group 2's (bottom, towards card 2).
-   "from -78deg" undoes the sticker's -12deg tilt so the split stays level. */
-.hero .sticker{border:6px solid transparent;background:linear-gradient(var(--navy),var(--navy)) padding-box,conic-gradient(from -78deg,var(--g1) 0 50%,var(--g2) 0 100%) border-box}
-
-/* Wide screens: the circle clasps both cards at the seam, on the right */
-@media (min-width:901px){
-  .hero .cards{gap:30px}
-  .hero .card.c1{align-self:flex-start;width:calc(100% - 6rem);padding:26px 46px 30px 36px}
-  .hero .card.c2{align-self:flex-start;margin-left:1.5rem;width:calc(100% - 7.5rem);padding:26px 46px 30px 36px}
-  .hero .card q{font-size:1.32rem;line-height:1.38}
-  .hero .sticker{position:relative;top:auto;right:auto;align-self:flex-end;margin:calc(-15px - 4.125rem) -14px calc(-15px - 4.125rem) 0}
-}
-/* Short laptop screens: a little smaller so both cards stay on the first screen */
+.hero .cards{display:flex;flex-direction:column;justify-content:center;gap:16px;position:relative;padding:0}
+.hero .glabels{display:flex;flex-direction:column;gap:16px}   /* each link sits in its own role="listitem" div, so it keeps its link role */
+.hero .glabel{display:block;position:relative;text-decoration:none;color:#13384b;background:#fff;border-radius:14px;
+  padding:14px 44px 15px 22px;border-left:8px solid var(--gc);box-shadow:0 14px 30px -18px rgba(9,40,54,.55);width:calc(100% - 9.5rem)}
+.hero .glabel small{display:block;font-size:.78rem;font-weight:600;letter-spacing:.02em;color:#56606a;margin-bottom:2px}
+.hero .glabel b{display:block;font-size:1.2rem;line-height:1.2;font-weight:700}
+.hero .glabel em{display:block;font-style:normal;font-size:.92rem;line-height:1.35;color:#56606a;margin-top:3px}
+.hero .glabel .chev{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.15rem;color:#56606a}
+.hero .glabel:hover b,.hero .glabel:focus-visible b{text-decoration:underline;text-underline-offset:3px}
+.hero .glabel:focus-visible,.hero .sticker:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+/* The circle's ring is in bands, like the groups: Group 1's colour on top, Group 2's at the sides and Group 3's
+   underneath. "from 12deg" undoes the sticker's -12deg tilt so the bands stay level. */
+.hero .sticker{position:absolute;right:-6px;top:50%;margin:0;width:10.5rem;height:10.5rem;transform:translateY(-50%) rotate(-12deg);
+  border:7px solid transparent;text-decoration:none;
+  background:linear-gradient(var(--navy),var(--navy)) padding-box,conic-gradient(from 12deg,var(--g1) 0 60deg,var(--g2) 0 120deg,var(--g3) 0 240deg,var(--g2) 0 300deg,var(--g1) 0) border-box}
+.hero .sticker:hover{transform:translateY(-50%) rotate(-12deg) scale(1.03)}
 @media (min-width:901px) and (max-height:53em){
-  .hero .cards{gap:24px}
-  .hero .card.c1,.hero .card.c2{padding:22px 44px 24px 32px}
-  .hero .card q{font-size:1.2rem;line-height:1.36}
-  .hero .sticker{margin:calc(-12px - 4.125rem) -14px calc(-12px - 4.125rem) 0}
+  .hero .cards{gap:12px}
+  .hero .glabels{gap:12px}
+  .hero .glabel{padding:11px 40px 12px 18px}
+  .hero .glabel b{font-size:1.08rem}
+  .hero .glabel em{font-size:.84rem}
+  .hero .glabel small{font-size:.74rem}
 }
-/* Narrow laptops (two columns but a slim card column): full-width cards with the circle between them */
-@media (min-width:901px) and (max-width:56.25em){
-  .hero .card.c1,.hero .card.c2{width:auto;align-self:stretch;margin-left:0;padding:22px 26px 24px 30px}
-  .hero .sticker{align-self:center;margin:-16px 0}
-}
-/* Phones: the same, under the hero text */
 @media (max-width:900px){
-  .hero .sticker{align-self:center;margin:-14px 0}
+  .hero .glabel{width:auto}
+  .hero .sticker{position:relative;top:auto;right:auto;transform:rotate(-12deg);align-self:center;margin-top:6px}
+  .hero .sticker:hover{transform:rotate(-12deg)}
 }
 @media (min-width:901px){
   .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),80px)}
@@ -164,28 +162,26 @@ section.block{padding:104px 0}
 .deep .head p{color:#d3e2e8}
 .tint{background:var(--tint)}
 
-/* ---------- at a glance ---------- */
-.glance{padding:64px 0 0}
-.glance-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.gl{display:flex;flex-direction:column;gap:14px;border-radius:24px;padding:28px 28px 26px;text-decoration:none;color:var(--ink);border:2px solid var(--navy);background:var(--card);transition:transform .15s ease}
-.gl:hover{transform:translateY(-3px)}
-.gl h3{font-size:1.45rem;line-height:1.15}
-.gl p{font-size:1rem;line-height:1.45;flex:1}
-.gl .more{font-weight:600;font-size:.95rem;text-decoration:underline;text-underline-offset:.2em}
-.gl.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
-.gl.dark h3{color:var(--cyan)}
-.gl.tinted{background:var(--tint)}
-.split{display:flex;height:18px;border-radius:99px;overflow:hidden;gap:2px}
-.split i{display:block;height:100%}
-.split-n{display:flex;justify-content:space-between;font-size:.9rem;font-weight:600;margin-top:-6px}
-.split-n span{display:inline-flex;align-items:center;gap:7px}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gl{border-color:var(--line)}}
-:root[data-theme="dark"] .gl{border-color:var(--line)}
-
 /* ---------- group cards ---------- */
-.groups-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+.groups-row{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;margin-top:28px}
 .gcard{border-radius:28px;padding:26px 30px 30px;background:var(--gsoft);border-top:12px solid var(--gc)}
-.gcard.one{--gc:var(--g1);--gsoft:var(--g1-soft)} .gcard.two{--gc:var(--g2);--gsoft:var(--g2-soft)}
+.gcard.one{--gc:var(--g1);--gsoft:var(--g1-soft)} .gcard.two{--gc:var(--g2);--gsoft:var(--g2-soft)} .gcard.three{--gc:var(--g3);--gsoft:var(--g3-soft)}
+/* each card: its size and name, a label, then its statements side by side (as on the other three-group results pages); Group 2's card
+   shows where it sides with each of the other groups, in two columns, and the statement it backed more than both,
+   across them */
+.gcard .stand{font-weight:600;font-size:1.02rem;color:var(--heading);margin:0 0 12px}
+.gcols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.gcols.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gcols .qbox{margin-top:0}
+.gcol{display:flex;flex-direction:column;gap:12px}
+.gcol.wide{grid-column:1/-1}
+.gcol.wide .side{margin-top:8px}
+.gcard .side{display:flex;align-items:center;gap:8px;margin:0;font-weight:600;font-size:.95rem;line-height:1.3;color:var(--heading)}
+.qbox.wide{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:8px 28px;align-items:center}
+.qbox.wide q{margin-bottom:0}
+.qbox .tag{font-size:.82rem;font-weight:600;color:var(--muted);margin:0 0 6px}
+.gcard .pcts{flex-direction:column;gap:4px}
+@media (max-width:900px){ .gcols,.gcols.two,.qbox.wide{grid-template-columns:minmax(0,1fr)} }
 .gtop{display:flex;align-items:flex-end;gap:18px;margin-bottom:20px}
 .gtop .big{font-family:var(--display);font-weight:700;font-size:3.6rem;line-height:.95;color:var(--heading);white-space:nowrap}
 .gtop .big small{font-size:.5em;font-weight:600}
@@ -194,8 +190,6 @@ section.block{padding:104px 0}
 .gtop .who b .dot{width:14px;height:14px}
 .qbox{background:var(--card);color:var(--ink);border-radius:18px;padding:18px 22px 18px;margin-top:12px}
 .qbox q{display:block;font-weight:600;font-size:1.1rem;line-height:1.34;margin-bottom:12px}
-.qbox.lead q{font-size:1.26rem}
-.qbox .lab{font-size:.88rem;color:var(--muted);margin-bottom:6px}
 .pcts{display:flex;gap:8px 20px;font-size:.95rem;flex-wrap:wrap}
 .pcts span{display:inline-flex;align-items:center;gap:8px}
 .pcts b{font-weight:600}
@@ -222,43 +216,23 @@ section.block{padding:104px 0}
 .map-hint .h-touch{display:none}
 @media (hover:none){.map-hint .h-fine{display:none}.map-hint .h-touch{display:inline}}
 /* a closer look inside Group 2: one divider on the map, names over the two stretches, and a key */
-#map .st-div{stroke:var(--ink);opacity:.4;pointer-events:none}
-#map .st-name{fill:var(--ink);font-family:var(--text);font-weight:600}
 #map .st-count{fill:var(--muted);font-family:var(--text)}
-#map .st-badge{fill:var(--ink)}
 #map .grp-name{fill:var(--ink);font-family:var(--text);font-weight:700}
-#map .st-bracket{stroke:var(--ink);opacity:.45}
-#map .st-num{fill:var(--card);font-family:var(--text);font-weight:700;pointer-events:none}
-.st-key{border-top:1px solid var(--line);margin-top:16px;padding-top:16px}
-.st-h{font-weight:600;font-size:1.02rem;line-height:1.4;margin-bottom:4px}
-.st-list{list-style:none;margin:0;padding:0}
-.st-list li{display:grid;grid-template-columns:minmax(0,17.5rem) minmax(0,1fr);gap:4px 28px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem;line-height:1.45}
-.st-list li:last-child{border-bottom:0}
-.st-list li.g2row{border-bottom:0;padding-bottom:2px}
-/* Group 2's two parts sit under its heading, set in from a thin rule */
-.st-list li.part{margin-left:.4rem;padding-left:1.1rem;border-left:2px solid var(--line);grid-template-columns:minmax(0,calc(17.5rem - 1.5rem - 2px)) minmax(0,1fr)}
-.st-list li.part + li.part{border-top:0}
-.st-t .dot{width:11px;height:11px}
-.st-t{display:flex;align-items:center;flex-wrap:wrap;gap:4px 9px;font-weight:600;line-height:1.3}
-.st-b{display:none;flex:none;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--card);font-size:.76rem;font-weight:700;line-height:1}
-.st-c{font-weight:400;color:var(--muted);font-size:.85rem;white-space:nowrap}
-.map-card.compact .st-b{display:inline-grid}
-@media (max-width:700px){ .st-list li,.st-list li.part{grid-template-columns:1fr} }
-.person{position:absolute;z-index:5;width:330px;background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:18px;padding:16px 18px 14px;box-shadow:0 18px 40px -20px rgba(0,0,0,.5);font-size:.92rem;line-height:1.4;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .15s ease,transform .15s ease}
+.person{position:absolute;z-index:5;width:21rem;background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:18px;padding:16px 18px 14px;box-shadow:0 18px 40px -20px rgba(0,0,0,.5);font-size:.92rem;line-height:1.4;pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .15s ease,transform .15s ease}
 .person.on{opacity:1;transform:none}
 .person .pg{display:flex;align-items:center;gap:8px;font-weight:600;font-size:1rem;margin-bottom:6px}
 .person .pn{color:var(--muted);margin-bottom:10px}
 .person .pn b{color:var(--ink);font-weight:600}
 .person .lean-h{font-weight:600;font-size:.88rem;margin:12px 0 7px}
-.lean{display:flex;height:12px;border-radius:99px;overflow:hidden;background:var(--track);gap:2px}
-.lean i{display:block;height:100%}
-.lean .l1{background:var(--g1)} .lean .l2{background:var(--g2)}
-.lean-n{display:flex;justify-content:space-between;gap:10px;font-size:.84rem;margin-top:6px}
-.lean-n span{display:inline-flex;align-items:center;gap:6px}
-.lean-n b{font-weight:600}
+.lean3{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:5px 10px;font-size:.84rem}
+.lean3 .ln{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lean3 .lb{height:9px;border-radius:99px;background:var(--track);overflow:hidden}
+.lean3 .lb i{display:block;height:100%;border-radius:99px}
+.lean3 b{font-weight:600;text-align:right;font-feature-settings:"tnum" 1}
 .person .note{margin-top:10px;font-size:.88rem;line-height:1.4}
 .person .ex{border-top:1px solid var(--line);padding-top:9px;margin-top:10px}
 .person .ex .exl{display:flex;align-items:center;gap:7px;font-size:.84rem;font-weight:600;margin-bottom:4px}
+.person .ex .exl .dot + .dot{margin-left:-3px}
 .person .ex q{display:block}
 
 /* ---------- dumbbells ---------- */
@@ -368,7 +342,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 
 @media (max-width:900px){
   .wrap{padding:0 20px}
-  .hero-grid,.head,.head.side,.groups-row,.pair,.no-card,.foot,.glance-grid,.sub-head,.next-grid{grid-template-columns:1fr}
+  .hero-grid,.head,.head.side,.groups-row,.pair,.no-card,.foot,.sub-head,.next-grid{grid-template-columns:1fr}
   .head.side .head-line{margin-top:18px}
   .sub-head{margin:64px 0 20px}
   .how{grid-template-columns:1fr;gap:20px;padding:22px}
@@ -381,15 +355,13 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   .next{padding:72px 0}
   .next .sticker2{width:10.625rem;height:10.625rem}
   .next .sticker2 b{font-size:1.5rem}
-  .glance{padding:44px 0 0}
   .hero-grid{padding:28px 0 64px;gap:28px}
   .hero h1{font-size:min(10.6cqi,3rem)}
   .hero .sub{font-size:1.15rem}
-  .cards{gap:16px;padding:6px 4px 10px}
-  .card{width:auto;align-self:stretch}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:30px}
   .gtop .big{font-size:2.9rem}
+  .gtop{flex-wrap:wrap;row-gap:6px}   /* a long group name drops under the big number on narrow phones */
   .gcard{padding:22px 20px 24px}
   .map-card{padding:16px 14px 14px;border-radius:22px}
   .person{position:static;width:auto;opacity:1;transform:none;margin-top:12px;box-shadow:none;display:none}
@@ -415,7 +387,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 }
 @media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:reduce){ .pair,.pcard,.no-card{transition:none} }
 @media (max-width:520px){ .steps{grid-template-columns:1fr} }
-@media (prefers-reduced-motion:reduce){ #map .pdot,.person,.gl{transition:none} .btn:hover,.gl:hover{transform:none} }
+@media (prefers-reduced-motion:reduce){ #map .pdot,.person{transition:none} .btn:hover{transform:none} }
 
 /* ---------- RxC site shell (shared with the other project microsites) ---------- */
 .rxc-shell{--ink:#17203A;--paper:#fff;--common:#EDFF38;--quiet:#5F657E;--hair:#D9DBE3;--voice-b:#E23A6B;
@@ -464,87 +436,87 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
         <h1><span class="ln">Warringah wants</span><span class="ln"><span class="box">a long-term plan</span></span><span class="ln">for migration</span></h1>
         <p class="sub">People disagree about how many should come, and how fast. But most want migration planned years ahead, with homes, transport, schools and hospitals ready in time.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what Warringah said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
-        <p class="turnout">Since 30 October 2026 · 452 people have taken part</p>
+        <p class="turnout">Since 30 October 2026 · 452 people have taken part · 365 in a group</p>
       </div>
-      <div class="cards" role="list" aria-label="Two statements from the conversation, one from each group">
-        <div class="card c1" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 1 · Faster, fairer visas</p><q>The Government should invest in strong settlement supports to help everyone, regardless of their visa type</q></div>
-        <div class="sticker" aria-hidden="true"><div><span>More than</span><b>4 in 5</b><span>in both groups want transport, schools and healthcare planned ahead</span></div></div>
-        <div class="card c2" role="listitem"><p class="who"><i aria-hidden="true"></i>Group 2 · Fewer people, more slowly</p><q>Temporary Student Visa holders should have to leave the country and reapply for permanent migration if they want to return.</q></div>
+      <div class="cards">
+        <div class="glabels" role="list" aria-label="The three groups">
+          <div role="listitem"><a class="glabel" href="#group-1" style="--gc:var(--g1)"><small>Group 1 · 245 people</small><b><span data-gname="1">Migration works</span></b><em><span data-gdesc="1">Migration is good for us; make visas faster and fairer.</span></em><span class="chev" aria-hidden="true">↓</span></a></div>
+          <div role="listitem"><a class="glabel" href="#group-2" style="--gc:var(--g2)"><small>Group 2 · 96 people</small><b><span data-gname="2">Fewer, but flexible</span></b><em><span data-gdesc="2">Fewer people, but room for care workers and real shortages.</span></em><span class="chev" aria-hidden="true">↓</span></a></div>
+          <div role="listitem"><a class="glabel" href="#group-3" style="--gc:var(--g3)"><small>Group 3 · 24 people</small><b><span data-gname="3">Fewer, chosen more carefully</span></b><em><span data-gdesc="3">Fewer people; most oppose care-worker visas, quick sponsorship and paths to stay.</span></em><span class="chev" aria-hidden="true">↓</span></a></div>
+        </div>
+        <a class="sticker" href="#agree" aria-label="More than 3 in 4 in all three groups want transport, schools and healthcare planned ahead. See what they agree on."><div aria-hidden="true"><span>More than</span><b>3 in 4</b><span>in all three groups want transport, schools and healthcare planned ahead</span></div></a>
       </div>
     </div>
   </div>
 </header>
 
 <main>
-<section class="glance" aria-label="At a glance">
-  <div class="wrap glance-grid">
-    <a class="gl" href="#groups">
-      <h3>Two main groups</h3>
-      <div class="split" aria-hidden="true"><i style="width:67%;background:var(--g1)"></i><i style="width:33%;background:var(--g2)"></i></div>
-      <div class="split-n" aria-hidden="true"><span><i class="dot g1"></i>2 in 3</span><span>1 in 3<i class="dot g2"></i></span></div>
-      <p>Two in three want faster, fairer visas. One in three want fewer people to come, more slowly.</p>
-      <span class="more">See the groups</span>
-    </a>
-    <a class="gl dark" href="#agree">
-      <h3>Both groups want a plan</h3>
-      <p>Most people in both groups want migration planned years ahead, with homes, transport, schools and hospitals ready in time.</p>
-      <span class="more">See where they agree</span>
-    </a>
-    <a class="gl tinted" href="#priorities">
-      <h3>First choice: plan homes and services with migration</h3>
-      <p>At a community session on 11 November, 46 of 53 people backed planning migration together with housing and infrastructure.</p>
-      <span class="more">See the priorities</span>
-    </a>
-  </div>
-</section>
-
 <section class="block" id="groups" aria-labelledby="groups-h">
   <div class="wrap">
     <div class="head">
-      <h2 id="groups-h">Most people fit into one of two groups</h2>
+      <h2 id="groups-h">Most people fit into one of three groups</h2>
     </div>
-
-    <div class="groups-row">
-      <div class="gcard one">
-        <div class="gtop"><span class="big">2<small> in </small>3</span><span class="who"><b><i class="dot g1"></i>Group 1: Faster, fairer visas</b>245 people</span></div>
-        <div class="qbox lead"><p class="lab">What sets them apart</p><q>I'd trust the system more if visa decisions were fast, because people's lives, jobs and families are on hold while they wait.</q>
-          <div class="pcts"><span><i class="dot g1"></i><b>80%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>28%</b> of Group 2</span></div></div>
-        <div class="qbox"><q>No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.</q>
-          <div class="pcts"><span><i class="dot g1"></i><b>82%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>35%</b> of Group 2</span></div></div>
-        <div class="qbox"><q>I'd trust the system more if two people who apply on the same day weren't left waiting very different times, for reasons no one explains.</q>
-          <div class="pcts"><span><i class="dot g1"></i><b>78%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>37%</b> of Group 2</span></div></div>
-      </div>
-      <div class="gcard two">
-        <div class="gtop"><span class="big">1<small> in </small>3</span><span class="who"><b><i class="dot g2"></i>Group 2: Fewer people, more slowly</b>120 people</span></div>
-        <div class="qbox lead"><p class="lab">What sets them apart</p><q>For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.</q>
-          <div class="pcts"><span><i class="dot g2"></i><b>82%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>16%</b> of Group 1</span></div></div>
-        <div class="qbox"><q>Temporary visas should stay temporary. People who come on them know the deal, and staying on shouldn't be expected.</q>
-          <div class="pcts"><span><i class="dot g2"></i><b>83%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>39%</b> of Group 1</span></div></div>
-        <div class="qbox"><q>I'd rather the system took longer and got the checks right than rushed decisions.</q>
-          <div class="pcts"><span><i class="dot g2"></i><b>80%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>44%</b> of Group 1</span></div></div>
-      </div>
-    </div>
-    <p class="small-note">The people who joined in aren’t a random sample, so these groups describe who took part, not all of Warringah. 87 people aren’t in a group: they voted on too few statements, or didn’t agree or disagree with any.</p>
 
     <div class="sub-head"><h3>Where everyone sits</h3></div>
     <div class="map-card" id="map-card">
       <p class="map-lead">Each dot is one person, placed by how they voted. People who voted alike sit close together, so the higher the pile, the more people voted that way.</p>
-      <svg id="map" viewBox="0 0 1000 300" role="img" aria-labelledby="map-desc"><desc id="map-desc">365 people placed along the main divide in the votes. Group 1, Faster, fairer visas, 245 people, sits to the left in a high pile. Group 2, Fewer people, more slowly, 120 people, spreads out in a low pile to the right. A dashed line inside Group 2 marks where its 24 people furthest along begin.</desc></svg>
+      <svg id="map" viewBox="0 0 1000 300" role="img" aria-labelledby="map-desc"><desc id="map-desc">365 people placed along the main divide in the votes. Group 1, Migration works, 245 people, sits to the left in a high pile. Group 2, Fewer, but flexible, 96 people, spreads out in a low pile in the middle. Group 3, Fewer, chosen more carefully, 24 people, is spread thinly at the far right.</desc></svg>
       <div class="map-foot">
         <button class="someone" type="button" id="someone">Show me someone</button>
       </div>
       <div class="person" id="person" aria-live="polite"></div>
       <p class="map-hint"><span class="h-fine">Hover over a dot to see how that person voted.</span><span class="h-touch">Tap the map or press “Show me someone” to see how one person voted.</span></p>
-      <div class="st-key">
-        <p class="st-h">The two groups, and a closer look inside Group 2</p>
-        <ul class="st-list">
-          <li class="grp"><p class="st-t"><i class="dot g1" aria-hidden="true"></i><span class="st-n">Group 1: Faster, fairer visas</span><span class="st-c">245 people</span></p><p class="st-d">They want visa decisions made faster, rules that don’t change after you’ve applied, and the freedom to leave a bad job without losing your visa. There’s no clear split inside this group.</p></li>
-          <li class="grp g2row"><p class="st-t"><i class="dot g2" aria-hidden="true"></i><span class="st-n">Group 2: Fewer people, more slowly</span><span class="st-c">120 people</span></p></li>
-          <li class="part"><p class="st-t"><span class="st-b" aria-hidden="true">A</span><span class="st-n">Fewer, but flexible</span><span class="st-c">96 people</span></p><p class="st-d">They want fewer people, more slowly, but most would still make room for care workers, genuine shortages and people who’ve built a life here. Most also say migration has made life here better.</p></li>
-          <li class="part"><p class="st-t"><span class="st-b" aria-hidden="true">B</span><span class="st-n">Fewer, with firm limits</span><span class="st-c">24 people</span></p><p class="st-d">They want fewer people too, and most of them also oppose a visa for care workers, quicker sponsorship for genuine shortages, and a path to stay for long-term residents.</p></li>
-        </ul>
+    </div>
+
+    <div class="groups-row">
+      <div class="gcard one" id="group-1">
+        <div class="gtop"><span class="big">2<small> in </small>3</span><span class="who"><b><i class="dot g1"></i><span>Group 1: <span data-gname="1">Migration works</span></span></b>245 people</span></div>
+        <p class="stand">What sets them apart</p>
+        <div class="gcols">
+          <div class="qbox"><q>I'd trust the system more if visa decisions were fast, because people's lives, jobs and families are on hold while they wait.</q>
+            <div class="pcts"><span><i class="dot g1"></i><b>80%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>31%</b> of Group 2</span><span><i class="dot g3"></i><b>18%</b> of Group 3</span></div></div>
+          <div class="qbox"><q>No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.</q>
+            <div class="pcts"><span><i class="dot g1"></i><b>82%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>39%</b> of Group 2</span><span><i class="dot g3"></i><b>21%</b> of Group 3</span></div></div>
+          <div class="qbox"><q>I'd trust the system more if two people who apply on the same day weren't left waiting very different times, for reasons no one explains.</q>
+            <div class="pcts"><span><i class="dot g1"></i><b>78%</b> of Group 1 agree</span><span><i class="dot g2"></i><b>40%</b> of Group 2</span><span><i class="dot g3"></i><b>26%</b> of Group 3</span></div></div>
+        </div>
+      </div>
+      <div class="gcard two" id="group-2">
+        <div class="gtop"><span class="big">1<small> in </small>4</span><span class="who"><b><i class="dot g2"></i><span>Group 2: <span data-gname="2">Fewer, but flexible</span></span></b>96 people</span></div>
+        <p class="stand">Where they stand</p>
+        <div class="gcols two">
+          <div class="gcol"><p class="side"><i class="dot g1"></i><span>Like Group 1 · <span data-gname="1">Migration works</span></span></p>
+            <div class="qbox"><q>Committing to a target population size would lock governments in. It's better to keep migration levels flexible and adjust as needs change.</q>
+              <div class="pcts"><span><i class="dot g2"></i><b>82%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>73%</b> of Group 1</span><span><i class="dot g3"></i><b>29%</b> of Group 3</span></div></div>
+            <div class="qbox"><q>Australia needs more than top professionals. We rely on aged care and disability workers from overseas, so there should be a real visa pathway for them even though the pay is low.</q>
+              <div class="pcts"><span><i class="dot g2"></i><b>69%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>91%</b> of Group 1</span><span><i class="dot g3"></i><b>8%</b> of Group 3</span></div></div>
+          </div>
+          <div class="gcol"><p class="side"><i class="dot g3"></i><span>Like Group 3 · <span data-gname="3">Fewer, chosen more carefully</span></span></p>
+            <div class="qbox"><q>For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.</q>
+              <div class="pcts"><span><i class="dot g2"></i><b>77%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>16%</b> of Group 1</span><span><i class="dot g3"></i><b>100%</b> of Group 3</span></div></div>
+            <div class="qbox"><q>Temporary visas should stay temporary. People who come on them know the deal, and staying on shouldn't be expected.</q>
+              <div class="pcts"><span><i class="dot g2"></i><b>79%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>39%</b> of Group 1</span><span><i class="dot g3"></i><b>100%</b> of Group 3</span></div></div>
+          </div>
+          <div class="gcol wide"><p class="side">More than both other groups</p>
+            <div class="qbox wide"><q>People who support themselves should be welcomed, but where taxpayers fund new arrivals there should be a clear limit.</q>
+              <div class="pcts"><span><i class="dot g2"></i><b>87%</b> of Group 2 agree</span><span><i class="dot g1"></i><b>47%</b> of Group 1</span><span><i class="dot g3"></i><b>67%</b> of Group 3</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="gcard three" id="group-3">
+        <div class="gtop"><span class="big">1<small> in </small>15</span><span class="who"><b><i class="dot g3"></i><span>Group 3: <span data-gname="3">Fewer, chosen more carefully</span></span></b>24 people</span></div>
+        <p class="stand">What sets them apart</p>
+        <div class="gcols">
+          <div class="qbox"><p class="tag">Most of them agree</p><q>Heavy reliance on low-skilled and temporary migration can reduce incentives for businesses to invest in productivity.</q>
+            <div class="pcts"><span><i class="dot g3"></i><b>90%</b> of Group 3 agree</span><span><i class="dot g1"></i><b>42%</b> of Group 1</span><span><i class="dot g2"></i><b>49%</b> of Group 2</span></div></div>
+          <div class="qbox"><p class="tag">Most of them disagree</p><q>Australia needs more than top professionals. We rely on aged care and disability workers from overseas, so there should be a real visa pathway for them even though the pay is low.</q>
+            <div class="pcts"><span><i class="dot g3"></i><b>8%</b> of Group 3 agree</span><span><i class="dot g1"></i><b>91%</b> of Group 1</span><span><i class="dot g2"></i><b>69%</b> of Group 2</span></div></div>
+          <div class="qbox"><p class="tag">Most of them disagree</p><q>Someone who has lived, worked and paid tax here for years, and whose kids grew up here, deserves a real path to stay.</q>
+            <div class="pcts"><span><i class="dot g3"></i><b>26%</b> of Group 3 agree</span><span><i class="dot g1"></i><b>93%</b> of Group 1</span><span><i class="dot g2"></i><b>72%</b> of Group 2</span></div></div>
+        </div>
       </div>
     </div>
+    <p class="small-note">The people who joined in aren’t a random sample, so these groups describe who took part, not all of Warringah. 87 people aren’t in a group: they voted on too few statements, or didn’t agree or disagree with any.</p>
   </div>
 </section>
 
@@ -552,11 +524,11 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   <div class="wrap">
     <div class="head side">
       <h2 id="agree-h">Even where they disagree, they agree on something</h2>
-      <p class="head-line">At least 7 in 10 people in each group agreed with 38 statements. Here are five of them, each beside a related statement the two groups disagree on.</p>
+      <p class="head-line">At least 7 in 10 people in every group agreed with 8 statements. Here are five of them, each beside a related statement the groups disagree on.</p>
     </div>
     <div id="pairs"></div>
     <details class="all">
-      <summary>See all 38 statements both groups agreed with</summary>
+      <summary>See all 8 statements all three groups agreed with</summary>
       <ol class="all-list" id="all"></ol>
     </details>
   </div>
@@ -575,7 +547,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       </div>
       <p class="cap">At a community session on 11 November, 53 people used quadratic voting to spread a budget of credits across 13 possible changes, for or against. Each extra vote on the same idea costs more, so the totals show what people care about most.</p>
     </div>
-    <p class="finding">The top three match ideas most people in both groups agreed with in the conversation.</p>
+    <p class="finding">In the conversation, most people in every group agreed with the top three.</p>
     <div class="prio-grid" id="prio"></div>
     <div class="no-card">
       <div><h3>And one clear no</h3><p class="t">Prioritise migrants in high-paying jobs, using salary rather than shortage lists to decide who qualifies.</p><p class="s">30 people opposed it and 9 backed it. Most of the opposition was mild, with one or two votes each.</p></div>
@@ -594,16 +566,16 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
     <ol class="steps">
       <li class="step"><span class="fig">36</span><h3>Starter statements</h3><p>The conversation opened with 36 statements for people to agree or disagree with.</p></li>
       <li class="step"><span class="fig">452</span><h3>People took part</h3><p>Since 30 October they have voted agree, disagree or pass, and added statements of their own.</p></li>
-      <li class="step"><span class="fig">2</span><h3>Groups emerged</h3><p>Polis, an open-source tool, grouped people who voted alike. Nobody chose a group. We named them.</p></li>
+      <li class="step"><span class="fig">3</span><h3>Groups emerged</h3><p>Polis, an open-source tool, found two groups of people who voted alike. One of them split clearly on several questions, so we show three. Nobody chose a group. We named them.</p></li>
       <li class="step"><span class="fig">53</span><h3>Voters set priorities</h3><p>On 11 November they spread a budget of credits across 13 possible changes, using quadratic voting.</p></li>
     </ol>
     <details class="fine">
       <summary>Notes for checking the numbers</summary>
       <div class="arows">
         <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of a group who agreed, out of those in the group who voted on that statement. Later statements had fewer voters, so where fewer than 20 people in a group voted, we show how many.</p></div>
-        <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so people sit close to where the Polis report places them, but not in exactly the same spots. Left to right is the main divide in the votes. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place.</p><p>Each person’s card shows up to two of their votes as examples. For each group they sided with, it shows the statement most of that group agreed with, preferring statements the person agreed with over ones they rejected.</p></div>
-        <div class="arow"><h3>A closer look inside Group 2</h3><p>Inside Group 2, views change sharply near the far end of the line. The 24 people furthest along differ from the other 96 on seven statements. On each, at least 65% agreed on one side and at most 35% on the other, with at least 21 people voting on each side, and a gap that big would happen by chance less than once in a thousand times.</p><p>A visa for care workers: 8% of the 24 agreed, against 69% of the 96. A real path to stay for long-term residents: 26% against 72%. Quick sponsorship for genuine shortages: 26% against 70%. Migration filling genuine worker shortages: 22% against 66%. Keeping migration levels flexible: 29% against 82%. “The food, festivals and friendships migration has brought…”: 0% against 75%. “A well-managed system means everyone feels safe…”: 17% against 73%.</p><p>When we shuffled the group’s order, no more than one statement ever split it this way, and both parts voted on a median of 53 statements. Inside Group 1 only one statement did, too few for a closer look. We also looked for unlikely allies, people in both groups who back the same statements, and found none that held up.</p></div>
-        <div class="arow"><h3>The group cards</h3><p>Each card shows three statements most of the group agreed with and far fewer of the other group did. RadicalxChange chose which three to show. We chose statements about how the visa system should work.</p></div>
+        <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so people sit close to where the Polis report places them, but not in exactly the same spots. Left to right is the main divide in the votes. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place.</p><p>Each person’s card shows up to three of their votes as examples. For each group they sided with, it shows the statement most of that group agreed with, preferring statements the person agreed with over ones they rejected. A statement that fits two groups is shown once.</p></div>
+        <div class="arow"><h3>How we found three groups</h3><p>Polis grouped people in two steps. First, principal component analysis placed everyone on a map, so people who voted alike sit close together. Then k-means clustering divided the map into groups. It found two.</p><p>This shows the main divide, but it doesn’t look for differences inside each group. So we ran a second test inside each of Polis’s groups. We lined up the group’s members along the map’s left-to-right line (the first principal component), then tried splitting the line-up at 13 points, from 20% to 80% of the way through. At each point we counted the statements the two parts clearly disagreed on. A statement counted when at least 65% of one part agreed and no more than 35% of the other did, with at least 10 people voting in each part. A two-proportion z-test also had to show that a gap that big would happen by chance less than once in a thousand times.</p><p>In Polis’s second group, the split with the most such statements separates the 24 people at the far end (Group 3) from the other 96 (Group 2). They clearly disagreed on seven statements, and at least 21 people in each group voted on each one.</p><p>A visa for care workers: 8% of Group 3 agreed, against 69% of Group 2. A real path to stay for long-term residents: 26% against 72%. Quick sponsorship for genuine shortages: 26% against 70%. Migration filling genuine worker shortages: 22% against 66%. Keeping migration levels flexible: 29% against 82%. “The food, festivals and friendships migration has brought…”: 0% against 75%. “A well-managed system means everyone feels safe…”: 17% against 73%.</p><p>Trying many split points and statements can turn up a few differences by luck. So we also put the group’s members in 1,000 random orders and ran the same search on each (a permutation test). It never found more than two such statements, and in 890 of the 1,000 orders it found none. The real order shows seven. The typical person in each of Groups 2 and 3 voted on 53 statements, so the split isn’t about how much people voted.</p><p>Inside Group 1, the same test found only one such statement. Random orders sometimes find that many too, so we don’t split it. We also looked for unlikely allies, people in different groups who back the same statements, and found none that held up.</p></div>
+        <div class="arow"><h3>The group cards</h3><p>Group 1’s card shows statements most of Group 1 agreed with and far fewer of both other groups did. Only one statement passes that test for Group 3, so its card shows it beside two that most of Group 3 disagreed with and most of both other groups agreed with. Group 2 has no view that sets it apart from both neighbours, so its card shows where it sides with each, and the one statement it backed more than both. RadicalxChange chose the statements, from those about how the visa system should work.</p></div>
         <div class="arow"><h3>Who and what we counted</h3><p>155 statements were open for voting: the 36 starter statements, 46 added by the moderators during the conversation, and 73 written by residents. The moderators removed 331 others before anyone else voted on them.</p><p>We count the 452 people who voted on at least one of those 155 statements. Between them they cast 23,944 votes. Polis’s own count of 468 also includes 16 accounts whose only votes were on statements they wrote themselves.</p><p>3 people voted on enough statements to be placed in a group, but didn’t agree or disagree with any of them: every vote they cast was a pass. They count as taking part, but we haven’t placed them in a group, because a pass doesn’t show where someone stands. Polis places them anyway, because it reads a pass as halfway between agree and disagree.</p></div>
         <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results.</p></div>
         <div class="arow"><h3>The priority vote</h3><p>A separate vote with its own voters. We set aside ballots that used fewer than 10 credits and kept the fuller ballot where someone voted twice, leaving 53 voters. Net votes are votes for minus votes against. The matching statements from the conversation are close in meaning, not identical in wording.</p><p>The chart shared after the session shows 56 voters, because it keeps two ballots that used 6 and 7 credits and counts two names that differ only in capital letters as two people. The order of all 13 changes is the same either way.</p></div>
@@ -631,35 +603,34 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   </div>
 </footer>
 
-<script type="application/json" id="page-data">{"cut":0.7026,"people":[[0.0,0,81,81,1,11,0,8,"a",-1,""],[0.0129,0,53,60,0,6,1,34,"a",8,"d"],[0.0139,0,53,53,0,7,0,8,"a",-1,""],[0.0204,0,39,72,1,6,0,8,"a",-1,""],[0.037,0,139,78,0,20,0,8,"a",-1,""],[0.0409,0,84,51,0,11,0,8,"a",-1,""],[0.0494,0,53,77,0,7,0,8,"a",-1,""],[0.0518,0,123,76,4,19,1,8,"a",232,"d"],[0.0526,0,138,63,3,18,2,8,"a",325,"d"],[0.06,0,103,83,0,17,0,8,"a",-1,""],[0.0601,0,53,81,0,7,0,8,"a",-1,""],[0.0641,0,53,66,0,7,0,8,"a",-1,""],[0.0643,0,123,81,1,16,1,8,"a",260,"a"],[0.0707,0,127,70,0,16,1,8,"a",323,"d"],[0.0723,0,139,78,0,21,0,8,"a",-1,""],[0.0736,0,35,46,0,5,0,8,"a",-1,""],[0.0748,0,53,68,0,7,0,8,"a",-1,""],[0.0819,0,53,43,0,7,0,8,"a",-1,""],[0.0824,0,53,68,0,6,0,8,"a",-1,""],[0.0832,0,53,68,0,7,0,8,"a",-1,""],[0.0883,0,53,51,0,6,0,8,"a",-1,""],[0.0895,0,65,71,0,9,0,8,"a",-1,""],[0.093,0,129,88,0,20,0,8,"a",-1,""],[0.0955,0,53,45,0,6,0,8,"a",-1,""],[0.0959,0,119,76,0,15,1,8,"a",31,"a"],[0.0967,0,42,81,0,5,1,8,"a",27,"d"],[0.1003,0,53,62,0,6,0,8,"a",-1,""],[0.1007,0,73,59,0,9,0,8,"a",-1,""],[0.1013,0,42,64,0,6,0,8,"a",-1,""],[0.1032,0,53,75,0,7,0,8,"a",-1,""],[0.1048,0,142,85,2,17,2,8,"a",260,"a"],[0.1052,0,53,75,0,7,0,8,"a",-1,""],[0.1073,0,53,49,0,7,0,8,"a",-1,""],[0.1078,0,53,75,0,7,0,8,"a",-1,""],[0.1112,0,123,77,1,17,4,8,"a",27,"d"],[0.1128,0,56,68,0,9,0,8,"a",-1,""],[0.1145,0,53,66,0,6,0,8,"a",-1,""],[0.116,0,138,61,0,16,0,8,"a",-1,""],[0.1187,0,123,82,0,18,2,8,"a",31,"a"],[0.119,0,20,35,0,4,0,8,"a",-1,""],[0.1193,0,124,65,2,19,0,8,"a",-1,""],[0.122,0,51,78,0,7,0,8,"a",-1,""],[0.1234,0,53,72,0,6,0,8,"a",-1,""],[0.1237,0,38,71,0,6,0,8,"a",-1,""],[0.1256,0,82,78,0,13,0,8,"a",-1,""],[0.1284,0,53,75,0,6,1,8,"a",27,"d"],[0.1329,0,33,76,0,6,1,34,"a",31,"a"],[0.1358,0,53,66,0,6,0,8,"a",-1,""],[0.137,0,123,81,0,17,1,8,"a",31,"a"],[0.1371,0,53,68,0,7,0,8,"a",-1,""],[0.1378,0,76,71,0,8,1,8,"a",3,"a"],[0.1378,0,142,68,0,15,1,8,"a",3,"a"],[0.139,0,53,79,0,7,0,8,"a",-1,""],[0.1393,0,53,66,0,5,0,8,"a",-1,""],[0.1397,0,53,36,0,6,1,8,"a",52,"d"],[0.1401,0,53,72,0,5,2,8,"a",31,"a"],[0.1405,0,53,53,0,6,1,8,"a",52,"d"],[0.1417,0,53,85,0,7,0,8,"a",-1,""],[0.1421,0,53,77,0,6,0,8,"a",-1,""],[0.1422,0,36,67,0,7,0,34,"a",-1,""],[0.1424,0,53,49,0,5,0,8,"a",-1,""],[0.1455,0,42,55,0,5,0,8,"a",-1,""],[0.1456,0,53,60,0,4,0,8,"a",-1,""],[0.1463,0,43,53,0,5,0,8,"a",-1,""],[0.147,0,59,66,0,7,0,8,"a",-1,""],[0.1481,0,132,79,1,16,2,8,"a",344,"d"],[0.1511,0,53,57,0,7,0,8,"a",-1,""],[0.1525,0,83,81,0,10,0,8,"a",-1,""],[0.1537,0,125,84,0,16,0,257,"a",-1,""],[0.1561,0,77,83,2,11,0,8,"a",-1,""],[0.1588,0,75,72,0,7,0,8,"a",-1,""],[0.1651,0,120,66,0,13,0,8,"a",-1,""],[0.1694,0,53,64,0,6,0,8,"a",-1,""],[0.1698,0,59,83,0,10,1,8,"a",3,"a"],[0.1707,0,53,72,0,5,2,8,"a",31,"a"],[0.1708,0,53,66,0,4,0,8,"a",-1,""],[0.1723,0,53,70,0,7,0,8,"a",-1,""],[0.1749,0,45,76,0,6,1,8,"a",3,"a"],[0.1759,0,47,72,0,6,0,8,"a",-1,""],[0.1761,0,53,87,0,5,1,8,"a",3,"a"],[0.1765,0,140,81,1,15,2,257,"a",31,"a"],[0.1766,0,53,43,0,5,1,8,"a",31,"a"],[0.177,0,29,55,0,5,0,8,"a",-1,""],[0.1771,0,144,63,2,17,0,8,"a",-1,""],[0.1779,0,53,79,0,6,1,8,"a",31,"a"],[0.1783,0,53,79,0,7,0,8,"a",-1,""],[0.1805,0,135,67,1,16,1,8,"a",307,"d"],[0.181,0,123,77,1,16,4,8,"a",31,"a"],[0.1814,0,123,70,0,12,1,8,"a",27,"d"],[0.1816,0,53,60,0,4,2,8,"a",27,"d"],[0.1821,0,53,47,0,3,0,34,"a",-1,""],[0.1841,0,142,70,0,13,0,8,"a",-1,""],[0.1849,0,123,72,0,17,1,8,"a",261,"d"],[0.1853,0,53,60,0,4,1,8,"a",52,"d"],[0.1853,0,82,77,0,9,3,8,"a",31,"a"],[0.1855,0,13,77,0,2,0,375,"a",-1,""],[0.1861,0,53,83,0,7,0,8,"a",-1,""],[0.1866,0,56,89,0,11,1,8,"a",34,"d"],[0.187,0,15,53,0,4,0,8,"a",-1,""],[0.1886,0,142,84,0,16,2,8,"a",260,"a"],[0.189,0,82,68,0,7,0,257,"a",-1,""],[0.1907,0,138,87,0,16,5,8,"a",3,"a"],[0.192,0,45,64,0,4,3,8,"a",3,"a"],[0.1923,0,142,58,0,14,0,8,"a",-1,""],[0.1925,0,45,71,0,8,0,34,"a",-1,""],[0.1956,0,142,79,0,19,1,8,"a",261,"d"],[0.1958,0,21,62,0,3,0,8,"a",-1,""],[0.1985,0,56,75,0,8,2,34,"a",27,"d"],[0.2005,0,53,66,0,6,0,8,"a",-1,""],[0.2009,0,50,78,0,3,1,8,"a",3,"a"],[0.2012,0,43,47,0,3,0,34,"a",-1,""],[0.2013,0,38,58,0,3,0,8,"a",-1,""],[0.2013,0,50,76,0,5,0,34,"a",-1,""],[0.2017,0,53,77,0,5,2,8,"a",31,"a"],[0.2023,0,54,78,0,5,0,8,"a",-1,""],[0.2025,0,142,61,0,14,0,8,"a",-1,""],[0.2026,0,15,87,0,2,0,34,"a",-1,""],[0.2043,0,53,72,0,4,0,8,"a",-1,""],[0.205,0,50,50,0,5,0,8,"a",-1,""],[0.2063,0,104,68,0,8,2,8,"a",31,"a"],[0.2073,0,53,57,0,1,2,8,"a",3,"a"],[0.2091,0,53,57,0,5,2,8,"a",22,"d"],[0.21,0,142,90,0,17,3,8,"a",3,"a"],[0.2114,0,18,67,0,2,0,8,"a",-1,""],[0.2123,0,27,74,0,5,0,8,"a",-1,""],[0.2142,0,37,62,0,2,1,8,"a",27,"d"],[0.2144,0,53,72,0,5,1,8,"a",27,"d"],[0.2154,0,53,89,0,6,1,8,"a",27,"d"],[0.2162,0,53,92,0,6,1,8,"a",3,"a"],[0.2165,0,38,66,2,4,2,8,"a",3,"a"],[0.217,0,22,68,0,3,1,34,"a",52,"d"],[0.2176,0,53,45,0,4,0,8,"a",-1,""],[0.2176,0,83,77,0,8,0,8,"a",-1,""],[0.22,0,53,45,0,6,0,8,"a",-1,""],[0.2209,0,142,68,0,14,4,8,"a",344,"d"],[0.2241,0,16,56,0,3,0,343,"a",-1,""],[0.2266,0,24,67,0,4,0,8,"a",-1,""],[0.227,0,39,74,0,4,0,34,"a",-1,""],[0.2282,0,18,50,0,3,0,8,"a",-1,""],[0.2282,0,53,77,0,5,1,34,"a",52,"d"],[0.2285,0,143,86,1,17,2,8,"a",31,"a"],[0.2305,0,13,69,0,2,0,8,"a",-1,""],[0.2322,0,18,56,0,1,0,27,"a",-1,""],[0.233,0,87,62,0,6,2,257,"a",31,"a"],[0.2365,0,45,62,0,4,2,8,"a",31,"a"],[0.2373,0,53,79,0,5,0,8,"a",-1,""],[0.2385,0,53,66,0,4,1,8,"a",52,"d"],[0.239,0,129,91,2,16,4,8,"a",3,"a"],[0.2392,0,84,88,0,8,4,8,"a",3,"a"],[0.2392,0,53,77,0,6,0,8,"a",-1,""],[0.2393,0,18,72,0,4,0,8,"a",-1,""],[0.241,0,19,68,0,1,0,34,"a",-1,""],[0.2412,0,36,83,0,4,0,257,"a",-1,""],[0.2415,0,139,91,0,17,3,8,"a",22,"d"],[0.2419,0,53,64,0,5,0,8,"a",-1,""],[0.242,0,53,62,0,5,1,8,"a",52,"d"],[0.248,0,43,74,0,4,1,8,"a",31,"a"],[0.2487,0,53,70,0,4,2,8,"a",31,"a"],[0.2509,0,142,39,0,8,1,8,"a",307,"d"],[0.2512,0,25,64,0,6,0,8,"a",-1,""],[0.2524,0,53,58,0,5,0,8,"a",-1,""],[0.254,0,142,82,2,15,4,8,"a",260,"a"],[0.2552,0,39,85,0,2,1,8,"a",3,"a"],[0.2553,0,53,66,0,5,1,8,"a",31,"a"],[0.257,0,142,64,0,7,1,8,"a",3,"a"],[0.2573,0,11,45,0,2,0,34,"a",-1,""],[0.2576,0,53,75,0,3,1,8,"a",3,"a"],[0.2596,0,128,84,2,10,5,8,"a",31,"a"],[0.2597,0,54,80,0,7,0,8,"a",-1,""],[0.2604,0,53,64,0,3,1,8,"a",52,"d"],[0.2616,0,45,60,0,4,0,8,"a",-1,""],[0.2622,0,46,93,2,5,1,8,"a",3,"a"],[0.2629,0,53,81,0,5,1,8,"a",31,"a"],[0.2635,0,31,65,0,3,0,310,"a",-1,""],[0.264,0,13,92,0,1,0,31,"d",-1,""],[0.2666,0,53,83,0,6,1,8,"a",22,"d"],[0.2672,0,53,53,0,4,1,8,"a",34,"d"],[0.2703,0,82,79,0,8,3,8,"a",3,"a"],[0.2708,0,53,91,0,4,0,8,"a",-1,""],[0.2712,0,54,56,0,3,1,34,"a",3,"a"],[0.2723,0,53,34,0,2,0,8,"a",-1,""],[0.2727,0,131,69,1,12,4,8,"a",27,"d"],[0.2731,0,12,92,0,1,0,8,"a",-1,""],[0.2735,0,45,87,0,4,1,8,"a",3,"a"],[0.2739,0,53,57,0,3,0,8,"a",-1,""],[0.2744,0,7,86,0,1,0,8,"a",-1,""],[0.2754,0,122,39,9,11,1,257,"a",34,"d"],[0.2772,0,10,100,0,1,0,34,"a",-1,""],[0.2779,0,142,64,0,13,5,8,"a",34,"d"],[0.2782,0,45,42,0,3,0,8,"a",-1,""],[0.282,0,10,50,0,2,0,8,"a",-1,""],[0.283,0,23,70,0,3,3,8,"a",3,"a"],[0.2867,0,53,87,0,4,1,8,"a",31,"a"],[0.2877,0,53,77,0,3,4,8,"a",3,"a"],[0.2904,0,36,33,0,2,0,34,"a",-1,""],[0.2909,0,25,76,0,2,0,8,"a",-1,""],[0.2942,0,42,50,0,2,0,8,"a",-1,""],[0.2943,0,38,47,0,2,0,8,"a",-1,""],[0.297,0,85,78,0,11,4,8,"a",3,"a"],[0.2983,0,58,76,1,3,3,8,"a",31,"a"],[0.2993,0,13,100,0,2,1,8,"a",3,"a"],[0.3013,0,9,44,0,0,1,-1,"",22,"d"],[0.3042,0,42,64,0,2,2,8,"a",22,"d"],[0.3071,0,142,80,0,12,5,257,"a",27,"d"],[0.3104,0,53,62,0,3,0,8,"a",-1,""],[0.312,0,143,77,1,13,5,257,"a",3,"a"],[0.3126,0,53,72,0,4,2,8,"a",31,"a"],[0.313,0,26,73,0,3,1,8,"a",31,"a"],[0.3135,0,30,87,0,2,1,22,"a",31,"a"],[0.318,0,123,81,3,8,3,8,"a",31,"a"],[0.3183,0,110,74,1,10,3,257,"a",31,"a"],[0.3188,0,53,66,0,4,1,8,"a",27,"d"],[0.3238,0,53,47,0,3,0,34,"a",-1,""],[0.3244,0,53,64,0,3,2,8,"a",31,"a"],[0.3253,0,45,58,0,4,0,34,"a",-1,""],[0.3256,0,53,77,0,2,3,8,"a",3,"a"],[0.3259,0,142,68,0,9,12,8,"a",34,"d"],[0.3271,0,19,42,0,2,1,34,"a",27,"d"],[0.3307,0,42,55,0,4,2,8,"a",22,"d"],[0.3328,0,54,63,0,2,1,34,"a",27,"d"],[0.3329,0,45,58,0,3,2,8,"a",34,"d"],[0.335,0,7,100,0,0,0,-1,"",-1,""],[0.3373,0,53,81,0,4,2,8,"a",3,"a"],[0.3374,0,25,72,0,3,0,257,"a",-1,""],[0.3385,0,37,57,0,2,1,257,"a",31,"a"],[0.3394,0,53,74,0,6,1,8,"a",52,"d"],[0.3438,0,21,43,0,0,0,-1,"",-1,""],[0.3451,0,53,70,0,3,3,34,"a",31,"a"],[0.3452,0,33,58,0,2,1,8,"a",27,"d"],[0.3464,0,53,75,0,3,2,8,"a",27,"d"],[0.3494,0,54,74,0,2,2,8,"a",3,"a"],[0.3515,0,13,46,0,0,0,-1,"",-1,""],[0.353,0,37,89,0,2,3,8,"a",3,"a"],[0.3591,0,53,68,0,3,1,8,"a",3,"a"],[0.3608,0,98,57,0,2,1,338,"a",31,"a"],[0.3625,0,124,51,2,8,1,8,"a",27,"d"],[0.363,0,53,60,0,3,2,8,"a",31,"a"],[0.3718,0,45,53,0,3,3,34,"a",3,"a"],[0.372,0,32,50,0,6,2,8,"a",27,"d"],[0.3776,0,23,65,0,2,2,22,"a",3,"a"],[0.3781,0,85,68,1,4,2,375,"a",34,"d"],[0.3827,0,6,17,0,0,0,-1,"",-1,""],[0.3904,0,25,52,0,3,4,8,"a",31,"a"],[0.4162,0,21,38,0,1,1,31,"d",34,"d"],[0.4529,0,11,18,0,1,0,8,"a",-1,""],[0.364,1,66,80,0,5,1,34,"a",3,"a"],[0.3649,1,142,28,1,7,2,257,"a",31,"a"],[0.3732,1,53,81,0,3,4,8,"a",3,"a"],[0.3797,1,53,68,0,2,1,52,"a",27,"d"],[0.381,1,123,81,0,13,6,8,"a",260,"a"],[0.3866,1,83,82,0,7,5,34,"a",3,"a"],[0.3897,1,53,79,0,2,3,22,"a",31,"a"],[0.3934,1,53,58,0,2,2,8,"a",3,"a"],[0.3935,1,143,66,1,6,8,22,"a",31,"a"],[0.3971,1,53,70,0,2,3,27,"a",31,"a"],[0.3984,1,53,75,0,1,2,8,"a",31,"a"],[0.4017,1,22,68,0,3,1,8,"a",31,"a"],[0.4202,1,42,50,0,4,2,8,"a",34,"d"],[0.4204,1,53,68,0,3,1,8,"a",31,"a"],[0.4211,1,53,74,0,3,4,8,"a",3,"a"],[0.4225,1,82,57,0,2,5,22,"a",3,"a"],[0.4234,1,53,49,0,4,3,8,"a",34,"d"],[0.4245,1,53,40,0,1,4,31,"d",3,"a"],[0.4253,1,82,61,0,8,5,8,"a",3,"a"],[0.4259,1,53,68,0,3,4,22,"a",3,"a"],[0.4269,1,142,62,0,12,9,8,"a",31,"a"],[0.4305,1,42,36,0,2,2,8,"a",34,"d"],[0.4333,1,53,68,0,4,1,8,"a",3,"a"],[0.4352,1,98,64,1,5,9,8,"a",3,"a"],[0.4377,1,78,64,0,4,5,22,"a",34,"d"],[0.4429,1,106,70,1,4,8,34,"a",22,"d"],[0.4438,1,52,71,0,2,5,34,"a",3,"a"],[0.452,1,142,83,0,5,16,8,"a",3,"a"],[0.4568,1,9,44,0,0,1,-1,"",3,"a"],[0.4583,1,52,63,0,4,2,22,"a",27,"d"],[0.461,1,53,75,0,3,3,34,"a",3,"a"],[0.4627,1,18,83,0,1,4,261,"a",3,"a"],[0.4648,1,84,49,0,4,6,8,"a",3,"a"],[0.4676,1,53,72,0,1,5,27,"a",3,"a"],[0.4719,1,53,83,0,1,4,27,"a",3,"a"],[0.4729,1,21,62,0,1,1,8,"a",22,"d"],[0.4736,1,9,56,0,0,2,-1,"",27,"d"],[0.477,1,135,45,0,3,9,257,"a",3,"a"],[0.4803,1,53,75,0,2,5,8,"a",3,"a"],[0.4838,1,142,75,0,4,10,232,"a",3,"a"],[0.4855,1,138,78,8,8,13,257,"a",3,"a"],[0.4886,1,44,61,0,2,3,34,"a",31,"a"],[0.4888,1,42,62,0,3,2,8,"a",31,"a"],[0.4899,1,143,67,1,10,12,257,"a",3,"a"],[0.4936,1,13,69,0,0,3,-1,"",31,"a"],[0.4965,1,9,44,0,0,2,-1,"",34,"d"],[0.503,1,15,73,2,0,2,-1,"",344,"d"],[0.5034,1,68,69,0,4,8,34,"a",3,"a"],[0.5082,1,53,81,0,1,5,8,"a",3,"a"],[0.5086,1,82,62,0,3,8,34,"a",3,"a"],[0.5089,1,53,40,0,0,1,-1,"",3,"a"],[0.5093,1,53,58,0,0,3,-1,"",3,"a"],[0.5137,1,53,79,0,2,4,34,"a",3,"a"],[0.5182,1,53,68,0,2,4,22,"a",3,"a"],[0.5213,1,9,56,0,0,3,-1,"",31,"a"],[0.5237,1,53,74,0,2,5,22,"a",3,"a"],[0.5268,1,19,63,0,1,3,34,"a",31,"a"],[0.529,1,82,70,0,3,7,232,"a",3,"a"],[0.5326,1,76,78,0,4,4,375,"a",3,"a"],[0.534,1,53,57,0,0,4,-1,"",34,"d"],[0.5367,1,53,62,0,3,4,8,"a",3,"a"],[0.5405,1,142,43,0,1,5,338,"a",3,"a"],[0.5413,1,24,71,0,1,5,238,"a",31,"a"],[0.5418,1,53,58,0,0,6,-1,"",31,"a"],[0.5546,1,83,72,0,1,6,27,"a",3,"a"],[0.556,1,9,78,0,0,2,-1,"",3,"a"],[0.5562,1,53,49,0,1,5,31,"d",3,"a"],[0.5635,1,53,74,0,0,6,-1,"",3,"a"],[0.5701,1,53,60,0,0,4,-1,"",3,"a"],[0.5705,1,53,66,0,1,6,31,"d",3,"a"],[0.5719,1,53,66,0,1,5,52,"a",3,"a"],[0.5743,1,153,43,0,2,12,257,"a",31,"a"],[0.5765,1,53,58,0,1,3,34,"a",3,"a"],[0.5771,1,53,43,0,0,6,-1,"",3,"a"],[0.5884,1,12,33,0,0,3,-1,"",3,"a"],[0.5924,1,77,81,0,2,9,27,"a",3,"a"],[0.5928,1,27,48,0,0,4,-1,"",3,"a"],[0.5998,1,33,73,0,0,4,-1,"",3,"a"],[0.6032,1,53,68,0,1,5,52,"a",3,"a"],[0.6039,1,142,68,0,5,17,8,"a",3,"a"],[0.6054,1,53,72,0,1,5,34,"a",3,"a"],[0.6131,1,53,64,0,0,6,-1,"",3,"a"],[0.6132,1,53,42,0,1,4,22,"a",3,"a"],[0.6155,1,44,73,0,1,8,34,"a",3,"a"],[0.6187,1,53,36,0,0,5,-1,"",31,"a"],[0.6303,1,153,65,0,4,16,375,"a",3,"a"],[0.6382,1,53,51,0,1,6,52,"a",3,"a"],[0.6383,1,53,64,0,0,7,-1,"",3,"a"],[0.641,1,53,62,0,0,6,-1,"",3,"a"],[0.67,1,53,53,0,0,6,-1,"",3,"a"],[0.6737,1,142,56,0,0,19,-1,"",3,"a"],[0.6854,1,82,72,0,1,12,34,"a",3,"a"],[0.6862,1,144,67,2,2,20,325,"a",3,"a"],[0.6914,1,53,62,0,1,6,52,"a",3,"a"],[0.6958,1,43,58,0,0,9,-1,"",3,"a"],[0.7003,1,53,62,0,1,6,52,"a",3,"a"],[0.705,1,53,62,0,0,7,-1,"",3,"a"],[0.7126,1,53,60,0,0,7,-1,"",3,"a"],[0.7128,1,53,53,0,0,7,-1,"",3,"a"],[0.7161,1,62,63,1,1,8,31,"d",3,"a"],[0.7178,1,53,60,0,0,6,-1,"",3,"a"],[0.7266,1,53,66,0,0,7,-1,"",3,"a"],[0.7468,1,53,51,0,0,7,-1,"",3,"a"],[0.7475,1,82,60,0,0,11,-1,"",3,"a"],[0.7487,1,45,49,0,0,6,-1,"",3,"a"],[0.7549,1,53,47,0,0,7,-1,"",3,"a"],[0.7615,1,51,43,0,0,9,-1,"",31,"a"],[0.7802,1,53,30,0,0,6,-1,"",3,"a"],[0.7909,1,139,56,0,1,19,323,"a",3,"a"],[0.8089,1,54,50,0,0,6,-1,"",3,"a"],[0.8189,1,53,45,0,0,6,-1,"",3,"a"],[0.831,1,142,44,1,1,20,52,"a",3,"a"],[0.8376,1,53,60,0,0,7,-1,"",3,"a"],[0.8414,1,28,54,0,0,7,-1,"",3,"a"],[0.8674,1,53,34,0,0,6,-1,"",3,"a"],[0.9014,1,54,35,0,0,6,-1,"",3,"a"],[0.909,1,60,40,0,0,8,-1,"",3,"a"],[0.9127,1,143,36,1,0,20,-1,"",3,"a"],[0.984,1,153,34,0,0,22,-1,"",3,"a"],[1.0,1,142,39,0,0,22,-1,"",3,"a"]],"texts":{"3":"For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.","8":"Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.","22":"Migration is about people, not just workers. Families being able to live together should count as much as economic contribution.","27":"If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.","31":"The culture of my community is changing faster than people can adjust, and it's fair to worry about that.","34":"As a lucky country, we have a duty to keep helping people who aren't so lucky, even when it costs us.","52":"Australia’s migration system supported strong social cohesion between newcomers and the wider community.","232":"A fairer and more affordable partner visa system would increase confidence in Australia’s migration system.","238":"Australia’s family law and child support systems should better recognise the circumstances of migrant families.","257":"Family migration can provide childcare and support that helps families participate in the workforce.","260":"Lower migration would reduce some of the pressure on rents and housing demand.","261":"Government should help fund the recognition of migrants’ overseas qualifications so their skills are not wasted.","307":"There should be a watchdog to monitor discrimination & racism against migrants","310":"The Government should invest in strong settlement supports to help everyone, regardless of their visa type","323":"all visas, regardless of category should always be viewed through a DV Prevention and Gender Equality lens in addition to other criteria","325":"The soft diplomacy benefits arising from international students studying in Australia should be widely promoted.","338":"Community sponsorship of refugees should be counted as additional to the government's own humanitarian commitments.","343":"The current path of allowing student visa holders to work and then be sponsored is good for the Australian economy and culture.","344":"familyreunion  visas are just as important as other visas in particular for residents /citizens who have been contributing to our nation","375":"Government should adopt, fund and implement the National Anti-Racism Framework. Introduce a positive duty to prevent racial discrimination"},"nsplit":22}</script>
+<script type="application/json" id="page-data">{"cut":0.7026,"people":[[0.0,0,81,81,1,21,21,8,0,30,"a",30,"a",-1,""],[0.0129,0,53,60,0,19,18,7,1,30,"a",30,"a",8,"d"],[0.0139,0,53,53,0,19,18,6,1,30,"a",30,"a",54,"d"],[0.0204,0,39,72,1,17,17,6,0,30,"a",30,"a",-1,""],[0.037,0,139,78,0,29,28,10,1,30,"a",30,"a",4,"d"],[0.0409,0,84,51,0,22,22,9,0,30,"a",30,"a",-1,""],[0.0494,0,53,77,0,19,19,7,0,30,"a",30,"a",-1,""],[0.0518,0,123,76,4,29,29,10,0,30,"a",30,"a",-1,""],[0.0526,0,138,63,3,30,28,11,1,30,"a",30,"a",2,"d"],[0.06,0,103,83,0,26,26,10,0,30,"a",30,"a",-1,""],[0.0601,0,53,81,0,19,18,6,1,30,"a",30,"a",16,"d"],[0.0641,0,53,66,0,19,18,6,1,30,"a",30,"a",54,"d"],[0.0643,0,123,81,1,27,26,11,0,30,"a",30,"a",-1,""],[0.0707,0,127,70,0,26,26,10,0,30,"a",30,"a",-1,""],[0.0723,0,139,78,0,30,29,9,1,30,"a",30,"a",43,"d"],[0.0736,0,35,46,0,12,12,4,0,32,"a",32,"a",-1,""],[0.0748,0,53,68,0,18,18,7,0,30,"a",30,"a",-1,""],[0.0819,0,53,43,0,15,15,5,0,30,"a",30,"a",-1,""],[0.0824,0,53,68,0,18,18,7,0,30,"a",30,"a",-1,""],[0.0832,0,53,68,0,19,19,7,0,30,"a",30,"a",-1,""],[0.0883,0,53,51,0,16,16,5,0,30,"a",30,"a",-1,""],[0.0895,0,65,71,0,19,18,7,1,30,"a",30,"a",4,"d"],[0.093,0,129,88,0,29,29,10,0,30,"a",30,"a",-1,""],[0.0955,0,53,45,0,17,17,7,0,30,"a",30,"a",-1,""],[0.0959,0,119,76,0,26,25,11,1,30,"a",30,"a",31,"a"],[0.0967,0,42,81,0,17,16,7,1,30,"a",30,"a",27,"d"],[0.1003,0,53,62,0,15,14,6,1,32,"a",32,"a",19,"d"],[0.1007,0,73,59,0,17,17,5,0,30,"a",30,"a",-1,""],[0.1013,0,42,64,0,15,15,5,0,30,"a",30,"a",-1,""],[0.1032,0,53,75,0,19,18,6,1,30,"a",30,"a",54,"d"],[0.1048,0,142,85,2,29,27,12,0,30,"a",30,"a",-1,""],[0.1052,0,53,75,0,19,19,7,0,30,"a",30,"a",-1,""],[0.1073,0,53,49,0,17,16,5,1,30,"a",30,"a",43,"d"],[0.1078,0,53,75,0,19,19,7,0,30,"a",30,"a",-1,""],[0.1112,0,123,77,1,30,28,12,1,30,"a",30,"a",27,"d"],[0.1128,0,56,68,0,16,16,8,0,30,"a",30,"a",-1,""],[0.1145,0,53,66,0,16,16,6,0,30,"a",30,"a",-1,""],[0.116,0,138,61,0,25,25,9,0,30,"a",30,"a",-1,""],[0.1187,0,123,82,0,30,29,11,1,30,"a",30,"a",31,"a"],[0.119,0,20,35,0,7,6,2,1,30,"a",30,"a",15,"d"],[0.1193,0,124,65,2,27,25,9,2,30,"a",30,"a",19,"d"],[0.122,0,51,78,0,14,14,5,0,251,"a",16,"a",-1,""],[0.1234,0,53,72,0,18,18,7,0,30,"a",30,"a",-1,""],[0.1237,0,38,71,0,13,13,3,0,30,"a",30,"a",-1,""],[0.1256,0,82,78,0,25,24,8,1,30,"a",30,"a",233,"d"],[0.1284,0,53,75,0,19,18,8,1,30,"a",30,"a",27,"d"],[0.1329,0,33,76,0,8,7,4,1,10,"a",31,"a",31,"a"],[0.1358,0,53,66,0,15,15,5,0,30,"a",30,"a",-1,""],[0.137,0,123,81,0,27,26,11,1,30,"a",30,"a",31,"a"],[0.1371,0,53,68,0,19,19,7,0,30,"a",30,"a",-1,""],[0.1378,0,76,71,0,19,18,7,1,10,"a",3,"a",3,"a"],[0.1378,0,142,68,0,26,24,10,2,30,"a",3,"a",3,"a"],[0.139,0,53,79,0,19,19,7,0,30,"a",30,"a",-1,""],[0.1393,0,53,66,0,15,15,7,0,30,"a",30,"a",-1,""],[0.1397,0,53,36,0,19,14,5,5,30,"a",30,"a",52,"d"],[0.1401,0,53,72,0,19,16,8,3,30,"a",30,"a",31,"a"],[0.1405,0,53,53,0,14,13,6,1,30,"a",30,"a",52,"d"],[0.1417,0,53,85,0,19,19,7,0,30,"a",30,"a",-1,""],[0.1421,0,53,77,0,18,18,7,0,30,"a",30,"a",-1,""],[0.1422,0,36,67,0,9,9,1,0,54,"a",54,"a",-1,""],[0.1424,0,53,49,0,15,15,7,0,30,"a",30,"a",-1,""],[0.1455,0,42,55,0,14,14,6,0,30,"a",30,"a",-1,""],[0.1456,0,53,60,0,13,13,6,0,30,"a",30,"a",-1,""],[0.1463,0,43,53,0,12,12,7,0,30,"a",30,"a",-1,""],[0.147,0,59,66,0,14,14,7,0,30,"a",30,"a",-1,""],[0.1481,0,132,79,1,27,26,11,0,30,"a",30,"a",-1,""],[0.1511,0,53,57,0,15,14,6,1,30,"a",30,"a",15,"d"],[0.1525,0,83,81,0,23,23,10,0,30,"a",30,"a",-1,""],[0.1537,0,125,84,0,26,26,10,0,30,"a",30,"a",-1,""],[0.1561,0,77,83,2,21,20,8,1,30,"a",30,"a",54,"d"],[0.1588,0,75,72,0,16,16,8,0,30,"a",30,"a",-1,""],[0.1651,0,120,66,0,23,23,7,0,30,"a",30,"a",-1,""],[0.1694,0,53,64,0,17,17,6,0,30,"a",30,"a",-1,""],[0.1698,0,59,83,0,19,18,9,1,30,"a",3,"a",3,"a"],[0.1707,0,53,72,0,15,13,6,2,30,"a",30,"a",31,"a"],[0.1708,0,53,66,0,16,16,7,0,30,"a",30,"a",-1,""],[0.1723,0,53,70,0,19,16,5,3,30,"a",30,"a",19,"d"],[0.1749,0,45,76,0,17,16,8,1,30,"a",3,"a",3,"a"],[0.1759,0,47,72,0,10,10,4,0,32,"a",32,"a",-1,""],[0.1761,0,53,87,0,18,17,8,1,30,"a",3,"a",3,"a"],[0.1765,0,140,81,1,28,25,12,2,30,"a",30,"a",31,"a"],[0.1766,0,53,43,0,17,12,6,5,30,"a",30,"a",31,"a"],[0.177,0,29,55,0,9,9,2,0,32,"a",32,"a",-1,""],[0.1771,0,144,63,2,24,24,7,0,30,"a",30,"a",-1,""],[0.1779,0,53,79,0,19,16,7,3,30,"a",30,"a",31,"a"],[0.1783,0,53,79,0,18,18,7,0,30,"a",30,"a",-1,""],[0.1805,0,135,67,1,28,27,10,1,30,"a",30,"a",4,"d"],[0.181,0,123,77,1,30,26,12,4,30,"a",30,"a",31,"a"],[0.1814,0,123,70,0,24,23,10,1,30,"a",30,"a",27,"d"],[0.1816,0,53,60,0,17,15,8,2,30,"a",30,"a",27,"d"],[0.1821,0,53,47,0,13,12,5,1,30,"a",30,"a",24,"d"],[0.1841,0,142,70,0,25,25,10,0,30,"a",30,"a",-1,""],[0.1849,0,123,72,0,23,22,6,1,30,"a",30,"a",261,"d"],[0.1853,0,53,60,0,14,13,6,1,30,"a",30,"a",52,"d"],[0.1853,0,82,77,0,25,21,13,4,30,"a",30,"a",31,"a"],[0.1855,0,13,77,0,4,4,1,0,18,"a",54,"a",-1,""],[0.1861,0,53,83,0,19,17,7,2,30,"a",30,"a",15,"d"],[0.1866,0,56,89,0,14,13,4,1,30,"a",30,"a",34,"d"],[0.187,0,15,53,0,6,6,0,0,8,"a",-1,"",-1,""],[0.1886,0,142,84,0,29,25,10,3,30,"a",30,"a",52,"d"],[0.189,0,82,68,0,20,20,9,0,30,"a",30,"a",-1,""],[0.1907,0,138,87,0,30,25,11,4,30,"a",3,"a",3,"a"],[0.192,0,45,64,0,19,16,10,3,30,"a",3,"a",3,"a"],[0.1923,0,142,58,0,17,17,7,0,30,"a",30,"a",-1,""],[0.1925,0,45,71,0,11,11,4,0,32,"a",32,"a",-1,""],[0.1956,0,142,79,0,27,26,9,1,30,"a",30,"a",261,"d"],[0.1958,0,21,62,0,4,4,1,0,8,"a",258,"a",-1,""],[0.1985,0,56,75,0,15,12,4,3,16,"a",16,"a",27,"d"],[0.2005,0,53,66,0,15,15,6,0,30,"a",30,"a",-1,""],[0.2009,0,50,78,0,13,12,8,1,30,"a",3,"a",3,"a"],[0.2012,0,43,47,0,9,9,4,0,30,"a",30,"a",-1,""],[0.2013,0,38,58,0,9,9,5,0,30,"a",30,"a",-1,""],[0.2013,0,50,76,0,17,17,7,0,30,"a",30,"a",-1,""],[0.2017,0,53,77,0,19,16,9,3,30,"a",30,"a",31,"a"],[0.2023,0,54,78,0,17,17,7,0,30,"a",30,"a",-1,""],[0.2025,0,142,61,0,22,21,8,1,30,"a",30,"a",4,"d"],[0.2026,0,15,87,0,5,5,3,0,32,"a",32,"a",-1,""],[0.2043,0,53,72,0,15,15,7,0,30,"a",30,"a",-1,""],[0.205,0,50,50,0,13,13,5,0,30,"a",30,"a",-1,""],[0.2063,0,104,68,0,21,19,11,1,30,"a",30,"a",31,"a"],[0.2073,0,53,57,0,14,12,9,2,30,"a",3,"a",3,"a"],[0.2091,0,53,57,0,16,14,7,2,30,"a",30,"a",22,"d"],[0.21,0,142,90,0,30,27,13,2,30,"a",3,"a",3,"a"],[0.2114,0,18,67,0,3,3,0,0,8,"a",-1,"",-1,""],[0.2123,0,27,74,0,6,6,2,0,251,"a",24,"a",-1,""],[0.2142,0,37,62,0,13,12,6,1,30,"a",30,"a",27,"d"],[0.2144,0,53,72,0,18,17,8,1,30,"a",30,"a",27,"d"],[0.2154,0,53,89,0,19,18,8,1,30,"a",30,"a",27,"d"],[0.2162,0,53,92,0,19,18,8,1,30,"a",3,"a",3,"a"],[0.2165,0,38,66,2,15,13,7,2,30,"a",3,"a",3,"a"],[0.217,0,22,68,0,8,7,3,1,30,"a",30,"a",52,"d"],[0.2176,0,53,45,0,14,14,6,0,30,"a",30,"a",-1,""],[0.2176,0,83,77,0,21,21,10,0,30,"a",30,"a",-1,""],[0.22,0,53,45,0,11,11,4,0,30,"a",30,"a",-1,""],[0.2209,0,142,68,0,26,24,10,1,30,"a",30,"a",52,"d"],[0.2241,0,16,56,0,4,4,1,0,16,"a",16,"a",-1,""],[0.2266,0,24,67,0,9,9,3,0,10,"a",10,"a",-1,""],[0.227,0,39,74,0,16,14,5,2,30,"a",30,"a",16,"d"],[0.2282,0,18,50,0,6,6,1,0,30,"a",30,"a",-1,""],[0.2282,0,53,77,0,18,16,7,2,30,"a",30,"a",52,"d"],[0.2285,0,143,86,1,28,24,12,3,30,"a",30,"a",31,"a"],[0.2305,0,13,69,0,4,4,1,0,30,"a",30,"a",-1,""],[0.2322,0,18,56,0,6,6,3,0,32,"a",32,"a",-1,""],[0.233,0,87,62,0,19,16,8,3,30,"a",30,"a",31,"a"],[0.2365,0,45,62,0,18,15,7,3,30,"a",30,"a",31,"a"],[0.2373,0,53,79,0,16,16,7,0,30,"a",30,"a",-1,""],[0.2385,0,53,66,0,15,14,6,1,30,"a",30,"a",52,"d"],[0.239,0,129,91,2,27,23,12,3,30,"a",3,"a",3,"a"],[0.2392,0,84,88,0,26,22,14,3,30,"a",3,"a",3,"a"],[0.2392,0,53,77,0,16,15,7,1,30,"a",30,"a",15,"d"],[0.2393,0,18,72,0,8,8,3,0,30,"a",30,"a",-1,""],[0.241,0,19,68,0,6,6,3,0,24,"a",16,"a",-1,""],[0.2412,0,36,83,0,8,8,3,0,30,"a",30,"a",-1,""],[0.2415,0,139,91,0,28,25,12,2,30,"a",30,"a",22,"d"],[0.2419,0,53,64,0,14,14,6,0,30,"a",30,"a",-1,""],[0.242,0,53,62,0,14,13,5,1,30,"a",30,"a",52,"d"],[0.248,0,43,74,0,14,13,8,1,30,"a",30,"a",31,"a"],[0.2487,0,53,70,0,17,15,9,2,30,"a",30,"a",31,"a"],[0.2509,0,142,39,0,17,17,9,0,30,"a",30,"a",-1,""],[0.2512,0,25,64,0,4,4,0,0,8,"a",-1,"",-1,""],[0.2524,0,53,58,0,15,15,7,0,30,"a",30,"a",-1,""],[0.254,0,142,82,2,26,21,10,4,30,"a",30,"a",230,"a"],[0.2552,0,39,85,0,13,12,8,1,30,"a",3,"a",3,"a"],[0.2553,0,53,66,0,15,14,8,1,30,"a",30,"a",31,"a"],[0.257,0,142,64,0,19,18,10,1,30,"a",3,"a",3,"a"],[0.2573,0,11,45,0,3,3,1,0,32,"a",32,"a",-1,""],[0.2576,0,53,75,0,16,15,8,1,30,"a",3,"a",3,"a"],[0.2596,0,128,84,2,26,21,12,3,30,"a",30,"a",31,"a"],[0.2597,0,54,80,0,12,12,4,0,30,"a",30,"a",-1,""],[0.2604,0,53,64,0,14,13,6,1,30,"a",30,"a",52,"d"],[0.2616,0,45,60,0,10,10,4,0,30,"a",30,"a",-1,""],[0.2622,0,46,93,2,16,15,9,1,30,"a",3,"a",3,"a"],[0.2629,0,53,81,0,16,15,7,1,30,"a",30,"a",31,"a"],[0.2635,0,31,65,0,7,7,2,0,32,"a",32,"a",-1,""],[0.264,0,13,92,0,6,6,3,0,30,"a",30,"a",-1,""],[0.2666,0,53,83,0,19,16,8,3,30,"a",30,"a",22,"d"],[0.2672,0,53,53,0,11,10,3,1,32,"a",32,"a",34,"d"],[0.2703,0,82,79,0,23,20,12,3,30,"a",3,"a",3,"a"],[0.2708,0,53,91,0,16,16,7,0,30,"a",30,"a",-1,""],[0.2712,0,54,56,0,13,12,6,1,30,"a",3,"a",3,"a"],[0.2723,0,53,34,0,7,7,3,0,30,"a",30,"a",-1,""],[0.2727,0,131,69,1,25,21,11,3,30,"a",30,"a",27,"d"],[0.2731,0,12,92,0,4,4,1,0,32,"a",32,"a",-1,""],[0.2735,0,45,87,0,16,15,8,1,30,"a",3,"a",3,"a"],[0.2739,0,53,57,0,12,11,6,1,30,"a",30,"a",19,"d"],[0.2744,0,7,86,0,1,1,0,0,8,"a",-1,"",-1,""],[0.2754,0,122,39,9,23,18,7,5,32,"a",32,"a",34,"d"],[0.2772,0,10,100,0,4,4,3,0,30,"a",30,"a",-1,""],[0.2779,0,142,64,0,27,22,13,2,30,"a",30,"a",34,"d"],[0.2782,0,45,42,0,11,11,5,0,30,"a",30,"a",-1,""],[0.282,0,10,50,0,2,2,0,0,8,"a",-1,"",-1,""],[0.283,0,23,70,0,11,8,5,3,30,"a",3,"a",3,"a"],[0.2867,0,53,87,0,17,16,8,1,30,"a",30,"a",31,"a"],[0.2877,0,53,77,0,19,15,10,4,30,"a",3,"a",3,"a"],[0.2904,0,36,33,0,7,7,3,0,32,"a",32,"a",-1,""],[0.2909,0,25,76,0,8,8,5,0,30,"a",30,"a",-1,""],[0.2942,0,42,50,0,9,9,5,0,30,"a",30,"a",-1,""],[0.2943,0,38,47,0,6,6,3,0,30,"a",30,"a",-1,""],[0.297,0,85,78,0,23,16,9,6,30,"a",3,"a",3,"a"],[0.2983,0,58,76,1,12,11,8,1,30,"a",30,"a",31,"a"],[0.2993,0,13,100,0,6,5,3,1,30,"a",3,"a",3,"a"],[0.3013,0,9,44,0,2,1,2,1,30,"a",30,"a",22,"d"],[0.3042,0,42,64,0,15,13,8,2,30,"a",30,"a",22,"d"],[0.3071,0,142,80,0,24,19,11,3,32,"a",32,"a",30,"d"],[0.3104,0,53,62,0,11,11,5,0,30,"a",30,"a",-1,""],[0.312,0,143,77,1,27,20,14,6,30,"a",3,"a",3,"a"],[0.3126,0,53,72,0,17,14,8,3,30,"a",30,"a",31,"a"],[0.313,0,26,73,0,7,6,3,1,30,"a",30,"a",31,"a"],[0.3135,0,30,87,0,9,8,4,1,30,"a",30,"a",31,"a"],[0.318,0,123,81,3,23,21,12,1,30,"a",30,"a",31,"a"],[0.3183,0,110,74,1,20,17,10,2,30,"a",30,"a",31,"a"],[0.3188,0,53,66,0,16,13,8,3,30,"a",30,"a",27,"d"],[0.3238,0,53,47,0,13,9,5,4,30,"a",30,"a",19,"d"],[0.3244,0,53,64,0,14,12,7,2,30,"a",30,"a",31,"a"],[0.3253,0,45,58,0,13,11,5,2,30,"a",30,"a",15,"d"],[0.3256,0,53,77,0,17,14,9,3,30,"a",3,"a",3,"a"],[0.3259,0,142,68,0,29,21,15,4,30,"a",30,"a",34,"d"],[0.3271,0,19,42,0,3,2,2,1,43,"a",43,"a",27,"d"],[0.3307,0,42,55,0,17,12,7,5,30,"a",30,"a",22,"d"],[0.3328,0,54,63,0,12,11,7,1,30,"a",30,"a",27,"d"],[0.3329,0,45,58,0,13,10,8,3,30,"a",30,"a",34,"d"],[0.335,0,7,100,0,1,1,1,0,30,"a",30,"a",-1,""],[0.3373,0,53,81,0,17,15,9,2,30,"a",3,"a",3,"a"],[0.3374,0,25,72,0,3,3,0,0,257,"a",-1,"",-1,""],[0.3385,0,37,57,0,6,5,3,1,10,"a",31,"a",31,"a"],[0.3394,0,53,74,0,19,16,7,3,30,"a",30,"a",52,"d"],[0.3438,0,21,43,0,2,2,2,0,30,"a",30,"a",-1,""],[0.3451,0,53,70,0,17,12,9,5,30,"a",30,"a",31,"a"],[0.3452,0,33,58,0,8,7,5,1,251,"a",24,"a",27,"d"],[0.3464,0,53,75,0,16,12,7,4,30,"a",30,"a",27,"d"],[0.3494,0,54,74,0,14,12,8,2,30,"a",3,"a",3,"a"],[0.3515,0,13,46,0,2,2,2,0,30,"a",30,"a",-1,""],[0.353,0,37,89,0,14,11,10,3,30,"a",3,"a",3,"a"],[0.3591,0,53,68,0,16,14,8,2,30,"a",3,"a",3,"a"],[0.3608,0,98,57,0,13,11,9,2,30,"a",30,"a",31,"a"],[0.3625,0,124,51,2,19,17,8,2,30,"a",30,"a",27,"d"],[0.363,0,53,60,0,16,11,6,5,30,"a",30,"a",31,"a"],[0.3718,0,45,53,0,13,10,5,3,30,"a",3,"a",3,"a"],[0.372,0,32,50,0,10,6,2,3,8,"a",27,"d",27,"d"],[0.3776,0,23,65,0,7,5,4,2,10,"a",3,"a",3,"a"],[0.3781,0,85,68,1,14,10,7,4,30,"a",30,"a",22,"d"],[0.3827,0,6,17,0,0,0,0,0,-1,"",-1,"",-1,""],[0.3904,0,25,52,0,13,7,7,6,30,"a",30,"a",31,"a"],[0.4162,0,21,38,0,5,3,2,2,54,"a",54,"a",34,"d"],[0.4529,0,11,18,0,1,1,0,0,8,"a",-1,"",-1,""],[0.364,1,66,80,0,15,14,8,1,30,"a",3,"a",3,"a"],[0.3649,1,142,28,1,16,15,8,1,30,"a",30,"a",31,"a"],[0.3732,1,53,81,0,18,13,8,5,30,"a",3,"a",3,"a"],[0.3797,1,53,68,0,13,12,8,1,30,"a",30,"a",27,"d"],[0.381,1,123,81,0,27,21,14,5,30,"a",30,"a",22,"d"],[0.3866,1,83,82,0,23,16,10,6,30,"a",3,"a",3,"a"],[0.3897,1,53,79,0,17,13,9,4,30,"a",30,"a",31,"a"],[0.3934,1,53,58,0,11,9,7,2,30,"a",3,"a",3,"a"],[0.3935,1,143,66,1,19,13,13,3,30,"a",30,"a",31,"a"],[0.3971,1,53,70,0,16,12,9,4,30,"a",30,"a",31,"a"],[0.3984,1,53,75,0,13,11,9,2,30,"a",30,"a",31,"a"],[0.4017,1,22,68,0,8,6,3,2,24,"a",31,"a",31,"a"],[0.4202,1,42,50,0,13,10,6,3,32,"a",32,"a",22,"d"],[0.4204,1,53,68,0,11,9,6,2,30,"a",30,"a",31,"a"],[0.4211,1,53,74,0,19,13,8,6,30,"a",3,"a",3,"a"],[0.4225,1,82,57,0,15,10,12,4,30,"a",3,"a",3,"a"],[0.4234,1,53,49,0,19,11,7,8,30,"a",30,"a",22,"d"],[0.4245,1,53,40,0,14,8,9,6,30,"a",3,"a",3,"a"],[0.4253,1,82,61,0,26,17,10,8,10,"a",3,"a",3,"a"],[0.4259,1,53,68,0,13,8,6,5,32,"a",3,"a",3,"a"],[0.4269,1,142,62,0,29,16,13,9,30,"a",30,"a",31,"a"],[0.4305,1,42,36,0,10,6,6,4,30,"a",30,"a",22,"d"],[0.4333,1,53,68,0,13,10,5,3,32,"a",3,"a",3,"a"],[0.4352,1,98,64,1,25,17,15,7,30,"a",3,"a",3,"a"],[0.4377,1,78,64,0,16,11,7,3,10,"a",10,"a",34,"d"],[0.4429,1,106,70,1,25,15,13,7,30,"a",30,"a",22,"d"],[0.4438,1,52,71,0,19,12,9,7,30,"a",3,"a",3,"a"],[0.452,1,142,83,0,30,18,20,7,30,"a",3,"a",3,"a"],[0.4568,1,9,44,0,1,0,1,1,-1,"",3,"a",3,"a"],[0.4583,1,52,63,0,12,8,7,3,30,"a",30,"a",27,"d"],[0.461,1,53,75,0,13,10,7,3,32,"a",3,"a",3,"a"],[0.4627,1,18,83,0,8,4,6,4,32,"a",3,"a",3,"a"],[0.4648,1,84,49,0,17,11,14,5,30,"a",3,"a",3,"a"],[0.4676,1,53,72,0,15,10,9,5,30,"a",3,"a",3,"a"],[0.4719,1,53,83,0,14,10,8,4,30,"a",3,"a",3,"a"],[0.4729,1,21,62,0,4,2,2,2,8,"a",258,"a",22,"d"],[0.4736,1,9,56,0,3,1,2,2,24,"a",24,"a",27,"d"],[0.477,1,135,45,0,18,11,13,5,30,"a",3,"a",3,"a"],[0.4803,1,53,75,0,18,12,10,6,30,"a",3,"a",3,"a"],[0.4838,1,142,75,0,22,12,18,5,32,"a",3,"a",3,"a"],[0.4855,1,138,78,8,30,18,18,9,30,"a",3,"a",3,"a"],[0.4886,1,44,61,0,12,7,7,5,30,"a",30,"a",31,"a"],[0.4888,1,42,62,0,14,9,6,5,30,"a",30,"a",31,"a"],[0.4899,1,143,67,1,31,16,14,10,32,"a",3,"a",3,"a"],[0.4936,1,13,69,0,5,2,3,3,19,"a",31,"a",31,"a"],[0.4965,1,9,44,0,4,2,3,2,32,"a",32,"a",34,"d"],[0.503,1,15,73,2,5,1,2,2,2,"a",344,"d",19,"d"],[0.5034,1,68,69,0,18,10,9,7,30,"a",3,"a",3,"a"],[0.5082,1,53,81,0,17,11,11,6,30,"a",3,"a",3,"a"],[0.5086,1,82,62,0,16,9,10,5,30,"a",3,"a",3,"a"],[0.5089,1,53,40,0,6,5,5,1,32,"a",3,"a",3,"a"],[0.5093,1,53,58,0,11,6,8,5,30,"a",3,"a",3,"a"],[0.5137,1,53,79,0,17,10,9,7,30,"a",3,"a",3,"a"],[0.5182,1,53,68,0,17,10,8,7,30,"a",3,"a",3,"a"],[0.5213,1,9,56,0,4,1,3,3,30,"a",30,"a",31,"a"],[0.5237,1,53,74,0,19,9,7,10,30,"a",3,"a",3,"a"],[0.5268,1,19,63,0,10,5,5,5,30,"a",30,"a",31,"a"],[0.529,1,82,70,0,16,10,10,5,30,"a",3,"a",3,"a"],[0.5326,1,76,78,0,18,9,10,8,30,"a",3,"a",3,"a"],[0.534,1,53,57,0,14,8,7,6,30,"a",30,"a",22,"d"],[0.5367,1,53,62,0,18,9,10,9,30,"a",3,"a",3,"a"],[0.5405,1,142,43,0,11,6,9,3,30,"a",3,"a",3,"a"],[0.5413,1,24,71,0,6,1,5,3,32,"a",31,"a",31,"a"],[0.5418,1,53,58,0,13,7,10,6,30,"a",30,"a",31,"a"],[0.5546,1,83,72,0,11,5,8,5,10,"a",3,"a",3,"a"],[0.556,1,9,78,0,2,0,2,2,-1,"",3,"a",3,"a"],[0.5562,1,53,49,0,14,6,6,8,24,"a",3,"a",3,"a"],[0.5635,1,53,74,0,16,8,10,8,32,"a",3,"a",3,"a"],[0.5701,1,53,60,0,11,7,9,4,30,"a",3,"a",3,"a"],[0.5705,1,53,66,0,18,9,9,9,30,"a",3,"a",3,"a"],[0.5719,1,53,66,0,13,7,10,6,30,"a",3,"a",3,"a"],[0.5743,1,153,43,0,20,7,14,8,30,"a",30,"a",31,"a"],[0.5765,1,53,58,0,10,4,6,6,10,"a",3,"a",3,"a"],[0.5771,1,53,43,0,9,2,7,7,30,"a",3,"a",3,"a"],[0.5884,1,12,33,0,4,0,3,4,-1,"",3,"a",3,"a"],[0.5924,1,77,81,0,20,11,13,9,32,"a",3,"a",3,"a"],[0.5928,1,27,48,0,3,0,2,3,-1,"",3,"a",3,"a"],[0.5998,1,33,73,0,8,3,6,5,32,"a",3,"a",3,"a"],[0.6032,1,53,68,0,16,8,10,8,30,"a",3,"a",3,"a"],[0.6039,1,142,68,0,29,12,16,12,32,"a",3,"a",3,"a"],[0.6054,1,53,72,0,17,9,11,8,30,"a",3,"a",3,"a"],[0.6131,1,53,64,0,12,5,9,7,30,"a",3,"a",3,"a"],[0.6132,1,53,42,0,11,2,3,9,22,"a",3,"a",3,"a"],[0.6155,1,44,73,0,14,4,8,8,30,"a",3,"a",3,"a"],[0.6187,1,53,36,0,12,4,7,8,30,"a",30,"a",31,"a"],[0.6303,1,153,65,0,26,5,14,14,30,"a",3,"a",3,"a"],[0.6382,1,53,51,0,15,5,7,10,30,"a",3,"a",3,"a"],[0.6383,1,53,64,0,17,7,10,10,32,"a",3,"a",3,"a"],[0.641,1,53,62,0,14,6,11,8,32,"a",3,"a",3,"a"],[0.67,1,53,53,0,14,4,9,10,10,"a",3,"a",3,"a"],[0.6737,1,142,56,0,26,8,16,11,30,"a",3,"a",3,"a"],[0.6854,1,82,72,0,26,11,15,13,30,"a",3,"a",3,"a"],[0.6862,1,144,67,2,29,7,16,16,30,"a",3,"a",3,"a"],[0.6914,1,53,62,0,14,4,7,10,16,"a",3,"a",3,"a"],[0.6958,1,43,58,0,18,5,11,11,30,"a",3,"a",3,"a"],[0.7003,1,53,62,0,18,5,9,13,32,"a",3,"a",3,"a"],[0.705,2,53,62,0,19,6,8,13,32,"a",3,"a",3,"a"],[0.7126,2,53,60,0,18,6,8,12,32,"a",3,"a",3,"a"],[0.7128,2,53,53,0,12,3,7,9,16,"a",3,"a",3,"a"],[0.7161,2,62,63,1,17,2,5,14,15,"a",3,"a",3,"a"],[0.7178,2,53,60,0,17,4,4,13,18,"a",3,"a",3,"a"],[0.7266,2,53,66,0,17,4,8,13,32,"a",3,"a",3,"a"],[0.7468,2,53,51,0,15,2,6,13,10,"a",3,"a",3,"a"],[0.7475,2,82,60,0,21,6,11,13,251,"a",3,"a",3,"a"],[0.7487,2,45,49,0,13,2,6,11,16,"a",3,"a",3,"a"],[0.7549,2,53,47,0,13,1,6,12,24,"a",3,"a",3,"a"],[0.7615,2,51,43,0,21,2,7,18,10,"a",31,"a",31,"a"],[0.7802,2,53,30,0,17,1,4,16,4,"a",3,"a",3,"a"],[0.7909,2,139,56,0,25,5,14,15,251,"a",3,"a",3,"a"],[0.8089,2,54,50,0,16,2,6,14,54,"a",3,"a",3,"a"],[0.8189,2,53,45,0,16,1,6,15,32,"a",3,"a",3,"a"],[0.831,2,142,44,1,26,4,14,16,10,"a",3,"a",3,"a"],[0.8376,2,53,60,0,19,3,6,16,54,"a",3,"a",3,"a"],[0.8414,2,28,54,0,13,1,6,12,10,"a",3,"a",3,"a"],[0.8674,2,53,34,0,16,0,5,16,-1,"",3,"a",3,"a"],[0.9014,2,54,35,0,17,0,5,17,-1,"",3,"a",3,"a"],[0.909,2,60,40,0,18,0,6,18,-1,"",3,"a",3,"a"],[0.9127,2,143,36,1,28,1,14,20,16,"a",3,"a",3,"a"],[0.984,2,153,34,0,31,0,13,24,-1,"",3,"a",3,"a"],[1.0,2,142,39,0,31,0,13,24,-1,"",3,"a",3,"a"]],"texts":{"2":"For me, trust is less about how many people come here and more about whether anyone is clearly in charge of the plan.","3":"For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.","4":"People should be told the rules when they apply, and those rules should hold for the life of their visa. When rules change without warning, the people we need most choose another country.","8":"Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.","10":"Someone who has lived, worked and paid tax here for years, and whose kids grew up here, deserves a real path to stay.","15":"I'd trust the system more if two people who apply on the same day weren't left waiting very different times, for reasons no one explains.","16":"Employers with a genuine shortage should be able to sponsor a worker quickly, without paying a migration agent a fortune to get through the process.","18":"No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.","19":"I'd trust the system more if visa decisions were fast, because people's lives, jobs and families are on hold while they wait.","22":"Migration is about people, not just workers. Families being able to live together should count as much as economic contribution.","24":"Australia needs more than top professionals. We rely on aged care and disability workers from overseas, so there should be a real visa pathway for them even though the pay is low.","27":"If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.","30":"The food, festivals and friendships migration has brought are a big part of what makes life here good. We'd be a duller place without them.","31":"The culture of my community is changing faster than people can adjust, and it's fair to worry about that.","32":"A well-managed system means everyone feels safe, including migrants and religious minorities who cop abuse over how migration is discussed.","34":"As a lucky country, we have a duty to keep helping people who aren't so lucky, even when it costs us.","43":"Conversations and policy around migration centred on civil/administrative discussions rather than criminality and fear-mongering.","52":"Australia’s migration system supported strong social cohesion between newcomers and the wider community.","54":"Migration was used to fill genuine workforce shortages where there were not enough local workers available.","230":"Lower overall migration numbers would make the system feel more manageable and sustainable.","233":"The economic gains from migration should be reinvested in the housing, transport, schools and hospitals needed for a growing population.","251":"Migration helps offset Australia’s declining birth rate and ageing population.","257":"Family migration can provide childcare and support that helps families participate in the workforce.","258":"Migrants should get more help to have their overseas qualifications recognised so they can use their skills in Australia.","261":"Government should help fund the recognition of migrants’ overseas qualifications so their skills are not wasted.","344":"familyreunion  visas are just as important as other visas in particular for residents /citizens who have been contributing to our nation"},"nsplit":31,"names":["Migration works","Fewer, but flexible","Fewer, chosen more carefully"]}</script>
 <script>
 const NS = 'http://www.w3.org/2000/svg';
 const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function el(n, a, p) { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
 function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 const DATA = JSON.parse(document.getElementById('page-data').textContent);
-const NAME = ['Group 1', 'Group 2'], FULL = ['Group 1: Faster, fairer visas', 'Group 2: Fewer people, more slowly'];
+// the groups' names come from the generator (gen.py), in one place
+const NAME = ['Group 1', 'Group 2', 'Group 3'], FULL = DATA.names.map((n, g) => `Group ${g + 1}: ${n}`);
 
 /* ================= map: one row along the main divide ================= */
 const MW = 1000, PL = 24, PR = 24, TOP = 12, AXIS = 66;
 let MH = 300, R = 6;
 const svg = document.getElementById('map');
-// a closer look inside Group 2: the divider sits where Group 2's far end begins (see the notes)
+// Groups 2 and 3 split at the stance test's cut (see the notes); no dot rolls across it, and no line is drawn
 const CUT = DATA.cut;
-const STANCES = ['Fewer, but flexible', 'Fewer, with firm limits'];
-const people = DATA.people.map(([x, g, nv, ar, nc, l1, l2, e1, v1, e2, v2], i) => {
-  const n = l1 + l2, own = g === 0 ? l1 : l2;
-  return { i, g, nv, ar, nc, l1, l2, n, e1, v1, e2, v2, dv: x, share: n ? own / n : null, x: 0, y: 0 };
-});
-const finalFill = p => p.g === 0 ? 'var(--g1)' : 'var(--g2)';
+// each row: position, group, votes, agree %, statements written, candidates voted on, votes like each
+// group, then each group's example statement and the person's vote on it
+const people = DATA.people.map(([x, g, nv, ar, nc, n, l1, l2, l3, e1, v1, e2, v2, e3, v3], i) =>
+  ({ i, g, nv, ar, nc, n, like: [l1, l2, l3], ex: [[e1, v1], [e2, v2], [e3, v3]], dv: x, x: 0, y: 0 }));
+const COUNT = [0, 1, 2].map(g => people.filter(p => p.g === g).length);
+const finalFill = p => `var(--g${p.g + 1})`;
 const defs = el('defs', {}, svg);
 const mk = el('marker', { id: 'arr', viewBox: '0 0 10 10', refX: 8, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
 el('path', { d: 'M0,0 L10,5 L0,10 z', fill: 'var(--ink)' }, mk);
 const axisLayer = el('g', {}, svg);
-const stanceLayer = el('g', { class: 'stances' }, svg);
+const labelLayer = el('g', { class: 'labels' }, svg);
 const dotLayer = el('g', {}, svg);
-const stanceN = [people.filter(p => p.g === 1 && p.dv < CUT).length, people.filter(p => p.g === 1 && p.dv >= CUT).length];
-const mapCardEl = document.getElementById('map-card');
 const dots = people.map(p => el('circle', { r: R, cx: 0, cy: 0, class: 'pdot', fill: finalFill(p) }, dotLayer));
 const ring = el('circle', { r: R + 5, fill: 'none', stroke: 'var(--ink)', 'stroke-width': 3, opacity: 0, 'pointer-events': 'none' }, svg);
 let settled = false;
@@ -672,10 +643,10 @@ function layout() {
   // spot, paying for every step it moves sideways, so crowded stretches pile up like sand, not in columns
   // dots are dropped from left to right, so a dot may roll well to the left, into gaps among the dots
   // already placed, but only a little to the right; otherwise early dots run into empty space and later
-  // ones wall up (against the divider most of all). Narrow maps have fewer dot widths across, so dots
-  // may roll further and pile less steeply there.
+  // ones wall up (against the cut between Groups 2 and 3 most of all). Narrow maps have fewer dot widths
+  // across, so dots may roll further and pile less steeply there.
   const reach = narrow ? 6 : 3, ahead = 1.25, slope = narrow ? .6 : .9;
-  const sx = lo + CUT * (hi - lo), keep = R + 2.5 * k;  // no dot rolls across the divider
+  const sx = lo + CUT * (hi - lo), keep = R + 2.5 * k;  // no dot rolls across the cut
   const placed = [];
   let top = 0;
   people.slice().sort((a, b) => a.dv - b.dv || a.i - b.i).forEach(p => {
@@ -696,24 +667,11 @@ function layout() {
   });
   const fs = Math.max(17, 12.5 * k);
   const axisH = Math.max(AXIS, fs * 2.6);
-  // two levels of labels, so colour and names tell one story: each group's name over its own stretch,
-  // and inside Group 2, under a bracket spanning the group, the names of its two parts either side of
-  // the divider (lettered badges on narrow maps, named in the key)
-  const fsG = (narrow ? 12.5 : 17) * k, fsL = (narrow ? 12 : 16) * k, fsC = (narrow ? 11 : 14) * k, br = 11 * k;
-  const nearDv = people.filter(p => p.g === 1 && p.dv < CUT).map(p => p.dv).sort((a, b) => a - b);
-  const g1Dv = people.filter(p => p.g === 0).map(p => p.dv).sort((a, b) => a - b);
-  const at = v => lo + v * (hi - lo);
-  const g2Left = at(nearDv[Math.floor(nearDv.length * .1)]);   // where most of Group 2 begins
-  const centres = [(g2Left + sx) / 2, (sx + hi) / 2];
-  const halfW = [(sx - g2Left) / 2, (hi - sx) / 2];
-  const g1x = at(g1Dv[Math.floor(g1Dv.length / 2)]), g1w = (at(g1Dv[Math.floor(g1Dv.length * .9)]) - at(g1Dv[Math.floor(g1Dv.length * .1)])) / 2;
-  const peak = (x, hw) => Math.max(0, ...placed.filter(q => Math.abs(q.x - x) <= hw).map(q => q.h + 2 * R));
-  const subPeak = Math.max(peak(centres[0], halfW[0]), peak(centres[1], halfW[1]));
-  const subH = narrow ? 2 * br + 4 * k : fsL * 1.25 + fsC * 1.15 + 6 * k;      // a part's name and count
-  const grpH = narrow ? fsG * 1.25 : fsG * 1.25 + fsC * 1.15 + 4 * k;          // a group's name (and count)
-  const brGap = 7 * k, brTick = 6 * k;
-  const bracketH = subPeak + subH + brGap;                                      // heights above the base line
-  const bandH = Math.max(bracketH + brTick, peak(g1x, g1w) + 8 * k);           // both group names share a line
+  // each group's name (and count, on wide screens) over its own heap, all on one line above the tallest heap, as
+  // on the other three-group results pages; where two names would touch, they are nudged apart
+  const fsG = (narrow ? 12.5 : 17) * k, fsC = (narrow ? 11 : 14) * k;
+  const grpH = narrow ? fsG * 1.25 : fsG * 1.25 + fsC * 1.15 + 4 * k;      // a group's name (and count)
+  const bandH = top + 2 * R + 8 * k;                                       // the names share a line
   const headroom = Math.max(0, bandH + grpH - top - 2 * R);
   MH = Math.ceil(TOP + top + 2 * R + headroom + axisH);
   svg.setAttribute('viewBox', `0 0 ${MW} ${MH}`);
@@ -723,42 +681,41 @@ function layout() {
   const y0 = base + 8;
   el('line', { x1: PL, x2: MW - PR, y1: y0, y2: y0, class: 'axis', 'marker-start': 'url(#arr)', 'marker-end': 'url(#arr)' }, axisLayer);
   const lab = (txt, attrs) => { const t = el('text', Object.assign({ class: 'axis-label' }, attrs), axisLayer); t.style.fontSize = fs + 'px'; t.textContent = txt; return t; };
-  const lt = lab(narrow ? 'Faster, fairer visas' : 'Faster, fairer visas', { x: PL, y: y0 + fs * 1.6 });
-  const rt = lab(narrow ? 'Fewer, more slowly' : 'Fewer people, more slowly', { x: MW - PR, y: y0 + fs * 1.6, 'text-anchor': 'end' });
+  const lt = lab(DATA.names[0], { x: PL, y: y0 + fs * 1.6 });
+  const rt = lab(DATA.names[2], { x: MW - PR, y: y0 + fs * 1.6, 'text-anchor': 'end' });
   const room = MW - PL - PR - 30, used = lt.getBBox().width + rt.getBBox().width;  // never let the two labels touch
   if (used > room) [lt, rt].forEach(t => t.style.fontSize = (fs * room / used).toFixed(1) + 'px');
-  // the labels: group names on one line across the top, then the bracket over Group 2, its two parts'
-  // names, and the divider between them
-  while (stanceLayer.firstChild) stanceLayer.removeChild(stanceLayer.firstChild);
-  if (mapCardEl) mapCardEl.classList.toggle('compact', narrow);
+  // the labels, each in two lines: the group's name with its dot, and "Group k · N people" under it. Each is centred on
+  // its heap (the 10th to 90th percentile of its dots), nudged apart left to right and then back, and kept on the map.
+  // If the names can't fit side by side even when nudged apart, the labels use "Group k" with "N people" under it;
+  // phones show "Group k" only. The page lays the map out again once the web fonts load, since labels are measured.
   const text = (cls, x, y, size, str, g, anchor = 'middle') => { const t = el('text', { class: cls, x: x.toFixed(1), y: y.toFixed(1), 'text-anchor': anchor }, g); t.style.fontSize = size + 'px'; t.textContent = str; return t; };
-  const groupLabel = (gi, cx, name, count) => {
-    const g = el('g', { class: 'grp' }, stanceLayer);
-    el('title', {}, g).textContent = `${name}: ${count} people`;
-    const yName = base - bandH - (narrow ? 0 : fsC * 1.15 + 4 * k);
-    const t = text('grp-name', cx, yName, fsG, narrow ? NAME[gi] : name, g);
-    const r = fsG * .3, wd = t.getComputedTextLength(), shift = (r * 2 + 6 * k) / 2;
-    t.setAttribute('x', (cx + shift).toFixed(1));
-    el('circle', { cx: (cx + shift - wd / 2 - r - 6 * k).toFixed(1), cy: (yName - fsG * .34).toFixed(1), r: r.toFixed(1), fill: gi ? 'var(--g2)' : 'var(--g1)' }, g);
-    if (!narrow) text('st-count', cx + shift, base - bandH, fsC, count + ' people', g);
+  const yName = base - bandH - (narrow ? 0 : fsC * 1.15 + 4 * k), sep = 16 * k;
+  const place = mode => {
+    while (labelLayer.firstChild) labelLayer.removeChild(labelLayer.firstChild);
+    const labels = [0, 1, 2].map(gi => {
+      const xs = placed.filter(q => q.p.g === gi).map(q => q.x).sort((a, b) => a - b);
+      const g = el('g', { class: 'grp' }, labelLayer);
+      el('title', {}, g).textContent = `${FULL[gi]}: ${xs.length} people`;
+      const t = text('grp-name', 0, yName, fsG, mode === 'full' ? DATA.names[gi] : NAME[gi], g, 'start');
+      const c = mode === 'narrow' ? null : text('st-count', 0, base - bandH, fsC, mode === 'full' ? `${NAME[gi]} · ${xs.length} people` : `${xs.length} people`, g, 'start');
+      const dr = fsG * .3, gap = 6 * k, wd = t.getComputedTextLength(), wc = c ? c.getComputedTextLength() : 0;
+      const nb = 2 * dr + gap + wd, total = Math.max(nb, wc), cx = (xs[Math.floor(xs.length * .1)] + xs[Math.floor(xs.length * .9)]) / 2;
+      return { gi, g, t, c, dr, gap, nb, wc, total, left: cx - total / 2 };
+    });
+    for (let j = 1; j < 3; j++) labels[j].left = Math.max(labels[j].left, labels[j - 1].left + labels[j - 1].total + sep);
+    labels[2].left = Math.min(labels[2].left, MW - PR - labels[2].total);
+    for (let j = 1; j >= 0; j--) labels[j].left = Math.min(labels[j].left, labels[j + 1].left - sep - labels[j].total);
+    labels[0].left = Math.max(labels[0].left, PL);
+    labels.forEach(L => {
+      const x0 = L.left + (L.total - L.nb) / 2;
+      L.t.setAttribute('x', (x0 + 2 * L.dr + L.gap).toFixed(1));
+      el('circle', { cx: (x0 + L.dr).toFixed(1), cy: (yName - fsG * .34).toFixed(1), r: L.dr.toFixed(1), fill: `var(--g${L.gi + 1})` }, L.g);
+      if (L.c) L.c.setAttribute('x', (L.left + (L.total - L.wc) / 2).toFixed(1));
+    });
+    return labels.every((L, j) => (j === 0 ? L.left >= PL - .5 : L.left >= labels[j - 1].left + labels[j - 1].total + sep - .5)) && labels[2].left + labels[2].total <= MW - PR + .5;
   };
-  groupLabel(0, g1x, FULL[0], people.filter(p => p.g === 0).length);
-  groupLabel(1, (g2Left + hi) / 2, FULL[1], people.filter(p => p.g === 1).length);
-  const yBr = base - bracketH;
-  el('path', { class: 'st-bracket', d: `M${g2Left.toFixed(1)},${(yBr + brTick).toFixed(1)} V${yBr.toFixed(1)} H${hi.toFixed(1)} V${(yBr + brTick).toFixed(1)}`, fill: 'none', 'stroke-width': (1.4 * k).toFixed(2) }, stanceLayer);
-  el('line', { class: 'st-div', x1: sx.toFixed(1), x2: sx.toFixed(1), y1: yBr.toFixed(1), y2: y0.toFixed(1), 'stroke-width': (1.4 * k).toFixed(2), 'stroke-dasharray': `${(3 * k).toFixed(1)} ${(3.5 * k).toFixed(1)}` }, stanceLayer);
-  const ySub = base - subPeak - 6 * k;
-  centres.forEach((cx, j) => {
-    const g = el('g', { class: 'stance' }, stanceLayer);
-    el('title', {}, g).textContent = `Group 2, ${STANCES[j]}: ${stanceN[j]} people`;
-    if (narrow) {
-      el('circle', { class: 'st-badge', cx: cx.toFixed(1), cy: (ySub - br).toFixed(1), r: br.toFixed(1) }, g);
-      text('st-num', cx, ySub - br + .36 * fsL, fsL, 'AB'[j], g);
-    } else {
-      text('st-count', cx, ySub, fsC, stanceN[j] + ' people', g);
-      text('st-name', cx, ySub - fsC * 1.2, fsL, STANCES[j], g);
-    }
-  });
+  if (narrow) place('narrow'); else if (!place('full')) place('short');
   dots.forEach(d => d.setAttribute('r', R.toFixed(2)));
   ring.setAttribute('r', (R + 4 * k).toFixed(1));
   ring.setAttribute('stroke-width', (2 * k).toFixed(1));
@@ -797,32 +754,32 @@ const card = document.getElementById('person');
 const mapCard = document.getElementById('map-card');
 let current = -1;
 const VERB = { a: 'agreed', d: 'disagreed' };
-function example(id, v, side) {
-  if (id < 0) return '';
-  return `<div class="ex"><p class="exl"><i class="dot ${side ? 'g2' : 'g1'}"></i>Like ${NAME[side]}, they ${VERB[v]}:</p><q>${esc(DATA.texts[String(id)])}</q></div>`;
-}
+const dotFor = g => `<i class="dot g${g + 1}"></i>`;
 function showPerson(i) {
   if (i === current && card.classList.contains('on')) return;
-  current = i; const p = people[i], me = p.g, other = 1 - p.g;
+  current = i; const p = people[i], me = p.g;
   const wrote = p.nc > 0 ? `, and wrote <b>${p.nc}</b> of their own` : '';
-  let html = `<p class="pg"><i class="dot ${me ? 'g2' : 'g1'}"></i>${FULL[me]}</p>
+  let html = `<p class="pg">${dotFor(me)}${FULL[me]}</p>
     <p class="pn">Voted on <b>${p.nv}</b> statements, agreeing with <b>${p.ar}%</b>${wrote}.</p>`;
   if (p.n === 0) {
     html += `<p class="note">They didn’t vote on any of the ${DATA.nsplit} statements where the groups took opposite sides, so they were placed using their other votes.</p>`;
   } else {
-    const w1 = (p.l1 / p.n * 100).toFixed(1), w2 = (p.l2 / p.n * 100).toFixed(1);
-    html += `<p class="lean-h">On the ${DATA.nsplit} statements where the groups took opposite sides, they voted on ${p.n}:</p>
-      <div class="lean" aria-hidden="true"><i class="l1" style="width:${w1}%"></i><i class="l2" style="width:${w2}%"></i></div>
-      <div class="lean-n"><span><i class="dot g1"></i>Like Group 1: <b>${p.l1}</b></span><span>Like Group 2: <b>${p.l2}</b><i class="dot g2"></i></span></div>`;
+    // how often they voted like each group: a vote can match two groups, so each row is out of all their votes on these
+    html += `<p class="lean-h">On the ${DATA.nsplit} statements that split the groups, they voted on ${p.n}:</p>
+      <div class="lean3">` + [0, 1, 2].map(g => `<span class="ln">${dotFor(g)}Like ${NAME[g]}</span><span class="lb" aria-hidden="true"><i style="width:${(p.like[g] / p.n * 100).toFixed(1)}%;background:var(--g${g + 1})"></i></span><b>${p.like[g]}</b>`).join('') + `</div>`;
+    const near = [0, 1, 2].filter(g => g !== me).sort((a, b) => p.like[b] - p.like[a] || a - b)[0];
     let note;
-    if (p.share >= .65) note = `Mostly in line with the rest of ${NAME[me]}.`;
-    else if (p.share >= .5) note = `They sit near the border, voting partly like each group.`;
-    else note = `On these they voted more like ${NAME[other]}, but they were placed in ${NAME[me]} using all of their votes. With only ${p.n} of these statements to go on, they sit right at the border.`;
+    if (p.like[me] / p.n >= .65) note = `Mostly in line with the rest of ${NAME[me]}.`;
+    else if (p.like[near] > p.like[me]) note = `On these they voted more like ${NAME[near]}, but all of their votes place them in ${NAME[me]}.`;
+    else note = `They voted partly like the other groups.`;
     html += `<p class="note">${note}</p>`;
+    // one example for each group they voted like, their own group's first; a statement that fits two groups is shown once
     const ex = [];
-    const mine = me ? [p.e2, p.v2, 1] : [p.e1, p.v1, 0], theirs = me ? [p.e1, p.v1, 0] : [p.e2, p.v2, 1];
-    if (mine[0] >= 0) ex.push(mine); if (theirs[0] >= 0) ex.push(theirs);
-    html += ex.slice(0, 2).map(([id, v, s]) => example(id, v, s)).join('');
+    [me].concat([0, 1, 2].filter(g => g !== me)).forEach(g => {
+      const [id, v] = p.ex[g]; if (id < 0) return;
+      const hit = ex.find(e => e.id === id); if (hit) hit.gs.push(g); else ex.push({ id, v, gs: [g] });
+    });
+    html += ex.map(e => { const gs = e.gs.slice().sort(); return `<div class="ex"><p class="exl">${gs.map(dotFor).join('')}Like ${gs.map(g => NAME[g]).join(' and ')}, they ${VERB[e.v]}:</p><q>${esc(DATA.texts[String(e.id)])}</q></div>`; }).join('');
   }
   card.innerHTML = html;
   ring.setAttribute('cx', p.x); ring.setAttribute('cy', p.y); ring.setAttribute('opacity', 1);
@@ -832,7 +789,9 @@ function showPerson(i) {
   const px = box.left - cb.left + p.x / MW * box.width, py = box.top - cb.top + p.y / MH * box.height;
   const w = card.offsetWidth, h = card.offsetHeight;
   const left = px > cb.width / 2 ? px - w - 26 : px + 26;
-  const top = Math.min(Math.max(py - h / 2, 10), cb.height - h - 10);
+  // centred on the dot, inside the map card where it fits; a card taller than the map stays on screen instead
+  let top = Math.min(Math.max(py - h / 2, 10), cb.height - h - 10);
+  if (h > cb.height - 20) top = Math.max(10 - cb.top, Math.min(py - h / 2, innerHeight - cb.top - h - 10));
   card.style.left = left + 'px'; card.style.top = top + 'px';
 }
 hidePerson = function () { card.classList.remove('on'); ring.setAttribute('opacity', 0); current = -1; };
@@ -855,72 +814,72 @@ document.getElementById('someone').addEventListener('click', () => {
   showPerson(i);
 });
 
-/* ================= dumbbells ================= */
-function dumbbell(a, b, na, nb) {
-  const small = n => n && n < 20 ? `<span class="nn">(${n} voted)</span>` : '';
+/* ================= dumbbells: the three groups' shares on one line ================= */
+function dumbbell(v, n) {
+  const small = k => k && k < 20 ? `<span class="nn">(${k} voted)</span>` : '';
   const wrap = document.createElement('div');
-  const W = 600, H = 58, L = 16, R = W - 16, Y = 22, x = v => L + (R - L) * v / 100;
-  const s = el('svg', { viewBox: `0 0 ${W} ${H}`, class: 'dumb', role: 'img', 'aria-label': `Group 1: ${a}% agree. Group 2: ${b}% agree.` });
+  const W = 600, H = 58, L = 16, R = W - 16, Y = 22, x = q => L + (R - L) * q / 100;
+  const s = el('svg', { viewBox: `0 0 ${W} ${H}`, class: 'dumb', role: 'img', 'aria-label': v.map((q, g) => `Group ${g + 1}: ${q}% agree.`).join(' ') });
   el('line', { x1: L, x2: R, y1: Y, y2: Y, class: 'trk', 'stroke-width': 6, 'stroke-linecap': 'round' }, s);
-  [[0, 'start'], [100, 'end']].forEach(([v, anc]) => { const t = el('text', { x: x(v), y: H - 2, 'font-size': 15, class: 'tick', 'text-anchor': anc }, s); t.textContent = v + '%'; });
-  el('line', { x1: x(Math.min(a, b)), x2: x(Math.max(a, b)), y1: Y, y2: Y, class: 'rng', 'stroke-width': 6 }, s);
-  if (a === b) {
-    const cx = x(a), r = 14;
-    el('path', { d: `M${cx},${Y - r} A${r},${r} 0 0 0 ${cx},${Y + r} Z`, fill: 'var(--g1)' }, s);
-    el('path', { d: `M${cx},${Y - r} A${r},${r} 0 0 1 ${cx},${Y + r} Z`, fill: 'var(--g2)' }, s);
+  [[0, 'start'], [100, 'end']].forEach(([q, anc]) => { const t = el('text', { x: x(q), y: H - 2, 'font-size': 15, class: 'tick', 'text-anchor': anc }, s); t.textContent = q + '%'; });
+  el('line', { x1: x(Math.min(...v)), x2: x(Math.max(...v)), y1: Y, y2: Y, class: 'rng', 'stroke-width': 6 }, s);
+  // one marker per distinct value, lowest first; groups with the same value share a marker, in equal slices
+  [...new Set(v)].sort((a, b) => a - b).forEach(q => {
+    const gs = [0, 1, 2].filter(g => v[g] === q), cx = x(q), r = 14;
+    if (gs.length === 1) { el('circle', { cx, cy: Y, r, fill: `var(--g${gs[0] + 1})`, class: 'ring', 'stroke-width': 3 }, s); return; }
+    gs.forEach((g, j) => {
+      const a0 = -Math.PI / 2 + 2 * Math.PI * j / gs.length, a1 = -Math.PI / 2 + 2 * Math.PI * (j + 1) / gs.length;
+      el('path', { d: `M${cx},${Y} L${(cx + r * Math.cos(a0)).toFixed(2)},${(Y + r * Math.sin(a0)).toFixed(2)} A${r},${r} 0 0 1 ${(cx + r * Math.cos(a1)).toFixed(2)},${(Y + r * Math.sin(a1)).toFixed(2)} Z`, fill: `var(--g${g + 1})` }, s);
+    });
     el('circle', { cx, cy: Y, r, fill: 'none', class: 'ring', 'stroke-width': 3 }, s);
-  } else {
-    [[b, 'var(--g2)'], [a, 'var(--g1)']].forEach(([v, c]) => el('circle', { cx: x(v), cy: Y, r: 14, fill: c, class: 'ring', 'stroke-width': 3 }, s));
-  }
+  });
   wrap.appendChild(s);
   const vals = document.createElement('div'); vals.className = 'vals';
-  vals.innerHTML = a === b
-    ? `<span><i class="dot g1"></i><i class="dot g2" style="margin-left:-4px"></i><b>${a}%</b> of both groups agree</span>`
-    : `<span><i class="dot g1"></i>Group 1 <b>${a}%</b>${small(na)}</span><span><i class="dot g2"></i>Group 2 <b>${b}%</b>${small(nb)}</span>`;
+  vals.innerHTML = v.map((q, g) => `<span><i class="dot g${g + 1}"></i>Group ${g + 1} <b>${q}%</b>${small(n[g])}</span>`).join('');
   wrap.appendChild(vals);
   return wrap;
 }
 
-/* each statement: [id, text, Group 1 %, Group 2 %, Group 1 voters, Group 2 voters] */
+/* each statement: [id, text, Group 1 %, Group 2 %, Group 3 %, Group 1 voters, Group 2 voters, Group 3 voters] */
 const PAIRS = [
-  { topic: 'Plan and build ahead of growth', split: [3, 'For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.', 16, 82, 206, 109], agree: [39, 'Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.', 85, 86, 192, 100] },
-  { topic: 'A clear path to stay, from the start', split: [11, 'Temporary visas should stay temporary. People who come on them know the deal, and staying on shouldn\'t be expected.', 39, 83, 213, 109], agree: [331, 'The pathway to stay permanently and become an Australian citizen should be clear from the start', 89, 86, 57, 28] },
-  { topic: 'Fair, timely decisions', split: [19, 'I\'d trust the system more if visa decisions were fast, because people\'s lives, jobs and families are on hold while they wait.', 80, 28, 207, 103], agree: [335, 'Once policy and legislation is set, the department should process applications in a fair, transparent and timely manner without interference', 98, 81, 59, 26] },
-  { topic: 'Protect visa workers from exploitation', split: [18, 'No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.', 82, 35, 213, 109], agree: [74, 'Temporary migration programs need strong safeguards against worker exploitation and coercion.', 97, 80, 172, 94] },
-  { topic: 'Set numbers by the support we can give', split: [27, 'If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.', 59, 22, 205, 108], agree: [412, 'Our capability to genuinely support arriving migrants needs to be considered when establishing numbers and pathways.', 88, 81, 33, 26] }
+  { topic: 'Plan and build ahead of growth', split: [3, 'For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.', 16, 77, 100, 206, 86, 23], agree: [39, 'Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.', 85, 88, 77, 192, 78, 22] },
+  { topic: 'Short-term visas for seasonal work', split: [11, 'Temporary visas should stay temporary. People who come on them know the deal, and staying on shouldn\'t be expected.', 39, 79, 100, 213, 86, 23], agree: [12, 'For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.', 77, 90, 77, 194, 78, 22] },
+  { topic: 'Plan beyond the election cycle', split: [7, 'Committing to a target population size would lock governments in. It\'s better to keep migration levels flexible and adjust as needs change.', 73, 82, 29, 193, 79, 21], agree: [0, 'I\'d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 76, 77, 82, 196, 82, 22] },
+  { topic: 'Protect visa workers from exploitation', split: [18, 'No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.', 82, 39, 21, 213, 85, 24], agree: [74, 'Temporary migration programs need strong safeguards against worker exploitation and coercion.', 97, 82, 70, 172, 74, 20] },
+  { topic: 'Put the public interest first', split: [16, 'Employers with a genuine shortage should be able to sponsor a worker quickly, without paying a migration agent a fortune to get through the process.', 85, 70, 26, 206, 82, 23], agree: [71, 'Migration policy should serve the broader public interest, not primarily the needs of business.', 89, 74, 96, 170, 74, 23] }
 ];
 const pairsRoot = document.getElementById('pairs');
 PAIRS.forEach(p => {
   const d = document.createElement('article'); d.className = 'pair';
   d.innerHTML = `<div class="topic"><h3></h3><span class="n">Statements ${p.split[0]} and ${p.agree[0]}</span></div>
     <div class="half split-half"><span class="pill">They disagree on</span><q></q></div>
-    <div class="half agree"><span class="pill">But both back</span><q></q></div>`;
+    <div class="half agree"><span class="pill">But all three back</span><q></q></div>`;
   d.querySelector('h3').textContent = p.topic;
   const [qs, qa] = d.querySelectorAll('q'); qs.textContent = p.split[1]; qa.textContent = p.agree[1];
-  d.querySelector('.split-half').appendChild(dumbbell(p.split[2], p.split[3], p.split[4], p.split[5]));
-  d.querySelector('.agree').appendChild(dumbbell(p.agree[2], p.agree[3], p.agree[4], p.agree[5]));
+  d.querySelector('.split-half').appendChild(dumbbell(p.split.slice(2, 5), p.split.slice(5, 8)));
+  d.querySelector('.agree').appendChild(dumbbell(p.agree.slice(2, 5), p.agree.slice(5, 8)));
   pairsRoot.appendChild(d);
 });
 
-/* all statements at least 7 in 10 of both groups agreed with, highest shared support first */
-const SHARED = [[53,"People coming to Australia were expected to respect democratic principles, the rule of law and the rights and freedoms of others.",92,96,183,96],[280,"Government should clearly explain both the benefits and challenges of migration, and how those challenges will be managed.",97,92,70,26],[241,"Serious criminal behaviour should affect a migrant’s right to remain in Australia.",87,97,70,31],[246,"Visa abuse should be dealt with through enforcement, not by changing the rules for people already following them.",87,86,79,37],[331,"The pathway to stay permanently and become an Australian citizen should be clear from the start",89,86,57,28],[39,"Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.",85,86,192,100],[276,"How taxpayers’ money supports migrants should be transparent and seen as fair by those contributing to the system.",89,85,70,26],[320,"We need to measure migration success by quality of life, access to services and social cohesion, not just economic growth.",92,83,59,29],[317,"Australia should apply consistent identity, police and health checks across all migration pathways, with credential checks where relevant.",82,87,62,23],[335,"Once policy and legislation is set, the department should process applications in a fair, transparent and timely manner without interference",98,81,59,26],[412,"Our capability to genuinely support arriving migrants needs to be considered when establishing numbers and pathways.",88,81,33,26],[347,"There should be a link between federal migration policy and state housing and infrastructure plans to accommodate new entrants",81,86,62,29],[400,"The Government should require sponsoring employers to meet minimum training and supervision standards for migrant workers.",81,86,36,21],[78,"I’d trust the migration system more if Australians were given clear, honest information about its economic benefits and costs.",84,80,174,100],[337,"Australia needs stronger coordination between national population policy, state planning systems, and local government responsibilities.",90,80,52,25],[74,"Temporary migration programs need strong safeguards against worker exploitation and coercion.",97,80,172,94],[71,"Migration policy should serve the broader public interest, not primarily the needs of business.",89,79,170,97],[327,"Migration targets should be publicly set by state and federal governments together to achieve a positive, stated outcome.",85,79,60,28],[9,"I'd trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.",78,82,197,100],[291,"Migration should be matched by investment, planning and a genuine commitment to shared prosperity.",85,78,61,27],[12,"For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.",77,87,194,100],[311,"That everyone in Australia has the opportunity for meaningful work and economic dignity and to work to their potential",95,77,63,26],[243,"Migration is part of Australia’s history and has shaped the country we are today.",99,76,78,34],[438,"Our migration system must look at challenging cases fairly and decide promptly. Not languishing for many years in limbo for visa grants",100,76,30,21],[249,"Social cohesion should be a priority when shaping Australia’s migration policy.",76,83,67,35],[0,"I'd trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.",76,78,196,104],[70,"Population growth should not come at the expense of productive farmland and native species.",76,75,190,93],[44,"A fair visa system gives applicants clear, consistent information and explains how decisions are made.",97,75,190,96],[263,"Migration should not be used as a substitute for paying better wages and training local workers.",75,86,68,36],[418,"The Government should make migration planning a standing National Cabinet item, with a published annual progress report.",75,82,36,22],[80,"Migration policy should not be used for political point-scoring.",94,74,175,96],[401,"Those from refugee and migrant backgrounds should feel safe in Australia",100,74,34,23],[250,"Rural and regional communities should have more say in attracting migrants who want to live and work there long term.",85,74,74,34],[245,"Migration levels should be managed through clear and transparent planning, not by deliberately slowing visa decisions.",99,73,76,33],[384,"Key settlement services should be accessible across all of Australia including those in regional and rural areas",91,72,57,25],[240,"All schools should be required to teach a curriculum consistent with Australian laws and civic values.",71,79,66,33],[7,"Committing to a target population size would lock governments in. It's better to keep migration levels flexible and adjust as needs change.",73,71,193,100],[35,"The government should fund universities properly so they don't have to rely on international students to stay afloat.",77,71,203,102]];
+/* all statements at least 7 in 10 of every group agreed with, highest shared support first */
+const SHARED = [[53,"People coming to Australia were expected to respect democratic principles, the rule of law and the rights and freedoms of others.",92,96,95,183,75,21],[12,"For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.",77,90,77,194,78,22],[39,"Australia should plan and invest in transport, schools and healthcare ahead of population growth so communities are ready.",85,88,77,192,78,22],[78,"I’d trust the migration system more if Australians were given clear, honest information about its economic benefits and costs.",84,81,76,174,79,21],[0,"I'd trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.",76,77,82,196,82,22],[71,"Migration policy should serve the broader public interest, not primarily the needs of business.",89,74,96,170,74,23],[70,"Population growth should not come at the expense of productive farmland and native species.",76,71,90,190,72,21],[74,"Temporary migration programs need strong safeguards against worker exploitation and coercion.",97,82,70,172,74,20]];
 const allRoot = document.getElementById('all');
-SHARED.forEach(([id, t, a, b, na, nb]) => {
+SHARED.forEach(([id, t, a, b, c, na, nb, nc]) => {
   const li = document.createElement('li');
   const sm = n => n < 20 ? ` <span class="nn">(${n} voted)</span>` : '';
-  li.innerHTML = `<q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${a}%</b>${sm(na)}</span><span><i class="dot g2"></i>Group 2 <b>${b}%</b>${sm(nb)}</span><span>Statement ${id}</span></div>`;
+  li.innerHTML = `<q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${a}%</b>${sm(na)}</span><span><i class="dot g2"></i>Group 2 <b>${b}%</b>${sm(nb)}</span><span><i class="dot g3"></i>Group 3 <b>${c}%</b>${sm(nc)}</span><span>Statement ${id}</span></div>`;
   li.querySelector('q').textContent = t;
   allRoot.appendChild(li);
 });
 
 /* ================= priorities ================= */
 const QV = [
-  { t: 'Plan migration together with housing and infrastructure, so new arrivals are matched by homes and services.', y: 46, n: 3, net: 148, e: [9, 'I\'d trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.', 78, 82] },
-  { t: 'Set a ten-year population and migration plan, with a published target range, reported to Parliament every year and independently reviewed.', y: 48, n: 3, net: 135, e: [0, 'I\'d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 76, 78] },
-  { t: 'Ban employers caught exploiting visa workers from sponsoring anyone again.', y: 49, n: 1, net: 118, e: [74, 'Temporary migration programs need strong safeguards against worker exploitation and coercion.', 97, 80] },
-  { t: 'Spend more on English classes and settlement support, to help newcomers settle in faster.', y: 41, n: 8, net: 103, e: [27, 'If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.', 59, 22], en: 'The groups split on this one in the conversation.' },
-  { t: 'Fund universities properly so they rely less on international student fees.', y: 36, n: 8, net: 90, e: [35, 'The government should fund universities properly so they don\'t have to rely on international students to stay afloat.', 77, 71] },
-  { t: 'Let sponsored workers change employers without losing their visa.', y: 39, n: 7, net: 85, e: [18, 'No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.', 82, 35], en: 'The groups split on this one in the conversation.' },
+  { t: 'Plan migration together with housing and infrastructure, so new arrivals are matched by homes and services.', y: 46, n: 3, net: 148, e: [9, 'I\'d trust the system more if housing, roads, schools and hospitals kept pace with how many people move into our area.', 78, 90, 55] },
+  { t: 'Set a ten-year population and migration plan, with a published target range, reported to Parliament every year and independently reviewed.', y: 48, n: 3, net: 135, e: [0, 'I\'d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.', 76, 77, 82] },
+  { t: 'Ban employers caught exploiting visa workers from sponsoring anyone again.', y: 49, n: 1, net: 118, e: [74, 'Temporary migration programs need strong safeguards against worker exploitation and coercion.', 97, 82, 70] },
+  { t: 'Spend more on English classes and settlement support, to help newcomers settle in faster.', y: 41, n: 8, net: 103, e: [27, 'If we expect newcomers to learn English, classes and settlement support should be funded for everyone, not just permanent arrivals.', 59, 29, 0], en: 'The groups split on this one in the conversation.' },
+  { t: 'Fund universities properly so they rely less on international student fees.', y: 36, n: 8, net: 90, e: [35, 'The government should fund universities properly so they don\'t have to rely on international students to stay afloat.', 77, 73, 61] },
+  { t: 'Let sponsored workers change employers without losing their visa.', y: 39, n: 7, net: 85, e: [18, 'No one should have to choose between staying in a bad job and losing their visa. Workers need to be able to walk away.', 82, 39, 21], en: 'The groups split on this one in the conversation.' },
   { t: 'Create a dedicated visa pathway for aged care, disability and other care workers.', y: 34, n: 9, net: 80 },
   { t: 'Tell people the rules when they apply, and keep those rules for the life of their visa.', y: 40, n: 5, net: 77 },
   { t: 'Replace the permanent parent visa with a long-stay family visitor visa, letting parents and grandparents spend extended periods with family here.', y: 34, n: 7, net: 58 },
@@ -938,7 +897,7 @@ QV.forEach((q, i) => {
     c.querySelector('.t').textContent = q.t;
     if (q.e) {
       const ec = document.createElement('div'); ec.className = 'echo';
-      ec.innerHTML = `<p class="el">In the conversation, statement ${q.e[0]}</p><q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${q.e[2]}%</b></span><span><i class="dot g2"></i>Group 2 <b>${q.e[3]}%</b></span></div>${q.en ? '<p class="en"></p>' : ''}`;
+      ec.innerHTML = `<p class="el">In the conversation, statement ${q.e[0]}</p><q></q><div class="vals"><span><i class="dot g1"></i>Group 1 <b>${q.e[2]}%</b></span><span><i class="dot g2"></i>Group 2 <b>${q.e[3]}%</b></span><span><i class="dot g3"></i>Group 3 <b>${q.e[4]}%</b></span></div>${q.en ? '<p class="en"></p>' : ''}`;
       ec.querySelector('q').textContent = q.e[1];
       if (q.en) ec.querySelector('.en').textContent = q.en;
       c.appendChild(ec);
