@@ -25,8 +25,9 @@ in text wherever it appears. The page has light and dark modes.
 Its link-preview image is `src/site/assets/warringah-migration-og.png`
 (1200×630, referenced by the `og:image` and `twitter:image` tags). It was
 rendered from the page's own fonts and copy: the boxed headline, "452 people
-took part", and two statements from the conversation (39 and 280). If the
-headline or the turnout change, regenerate it.
+took part", and the hero's three group labels and circle, laid out like the
+other three-group pages' images. If the headline, the turnout, the groups or
+the circle change, regenerate it.
 
 ## While the results are preliminary
 
