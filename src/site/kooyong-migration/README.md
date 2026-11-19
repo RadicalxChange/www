@@ -53,8 +53,8 @@ it.
   never voted.
 - **Groups:** Polis's own groups, except that someone whose every vote was a
   pass is not placed in a group, as on the other migration results pages:
-  Group 1 "Migration works" (61 people) and Group 2 "Fewer, chosen more
-  carefully" (28). 13 people are not in a group: 12 voted on too few
+  Group 1 "Migration works" (61 people) and Group 2 "Fewer, but flexible"
+  (28). 13 people are not in a group: 12 voted on too few
   statements for Polis to place them (one of them only passed, on 2
   statements, and one person's only vote was the agreement Polis records when
   someone adds a statement), and 1 whom Polis placed in its smaller group
