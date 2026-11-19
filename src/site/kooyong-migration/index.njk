@@ -110,12 +110,16 @@ q{quotes:"“" "”"}
    which links to where the groups agree (common format, 19 November 2026). */
 .hero .sub{max-width:none}   /* the hero sentence runs the full width of its column */
 .hero .cards{display:flex;flex-direction:column;justify-content:center;gap:16px;position:relative;padding:0}
-.hero .glabel{display:block;position:relative;text-decoration:none;color:var(--indigo);background:#fff;border-radius:14px;
+/* each label link sits in its own list item (role="listitem" on the link itself would drop its link role for screen
+   readers); the circle is a sibling link after the list, placed against .cards. The labels are white in both modes,
+   so their text uses fixed dark colours rather than --muted, which turns pale in dark mode. */
+.hero .glabels{display:flex;flex-direction:column;gap:16px}
+.hero .glabel{display:block;position:relative;text-decoration:none;color:#190d51;background:#fff;border-radius:14px;
   padding:14px 44px 15px 22px;border-left:8px solid var(--gc);box-shadow:0 14px 30px -18px rgba(9,40,54,.55);width:calc(100% - 9.5rem)}
-.hero .glabel small{display:block;font-size:.78rem;font-weight:600;letter-spacing:.02em;color:var(--muted);margin-bottom:2px}
+.hero .glabel small{display:block;font-size:.78rem;font-weight:600;letter-spacing:.02em;color:#585670;margin-bottom:2px}
 .hero .glabel b{display:block;font-size:1.2rem;line-height:1.2;font-weight:700}
-.hero .glabel em{display:block;font-style:normal;font-size:.92rem;line-height:1.35;color:var(--muted);margin-top:3px}
-.hero .glabel .chev{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.15rem;color:var(--muted)}
+.hero .glabel em{display:block;font-style:normal;font-size:.92rem;line-height:1.35;color:#585670;margin-top:3px}
+.hero .glabel .chev{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.15rem;color:#585670}
 .hero .glabel:hover b,.hero .glabel:focus-visible b{text-decoration:underline;text-underline-offset:3px}
 .hero .glabel:focus-visible,.hero .sticker:focus-visible{outline:3px solid var(--indigo);outline-offset:3px}
 .hero .sticker{position:absolute;right:-6px;top:50%;margin:0;width:10.5rem;height:10.5rem;transform:translateY(-50%) rotate(-12deg);
@@ -123,7 +127,7 @@ q{quotes:"“" "”"}
   background:linear-gradient(var(--indigo),var(--indigo)) padding-box,conic-gradient(from -78deg,var(--g1) 0 50%,var(--g2) 0 100%) border-box}
 .hero .sticker:hover{transform:translateY(-50%) rotate(-12deg) scale(1.03)}
 @media (min-width:901px) and (max-height:53em){
-  .hero .cards{gap:12px}
+  .hero .glabels{gap:12px}
   .hero .glabel{padding:11px 40px 12px 18px}
   .hero .glabel b{font-size:1.08rem}
   .hero .glabel em{font-size:.84rem}
@@ -446,10 +450,12 @@ footer{background:var(--indigo);color:#fff;padding:48px 0 56px}
         <div class="actions"><a class="btn solid" href="#groups">See what Kooyong said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout" data-k="turnout">Since 9 November 2026 · 102 people have taken part · 89 in a group</p>
       </div>
-      <div class="cards" role="list" aria-label="The two groups, and what both agree on">
-        <a class="glabel" href="#group-1" role="listitem" style="--gc:var(--g1)"><small data-k="hl1n">Group 1 · 61 people</small><b data-k="hl1name">Migration works</b><em data-k="hl1desc">Migration keeps us going; tackle problems without blaming it.</em><span class="chev" aria-hidden="true">↓</span></a>
-        <a class="glabel" href="#group-2" role="listitem" style="--gc:var(--g2)"><small data-k="hl2n">Group 2 · 28 people</small><b data-k="hl2name">Fewer, but flexible</b><em data-k="hl2desc">Too many, too quickly; put people who can work first.</em><span class="chev" aria-hidden="true">↓</span></a>
-        <a class="sticker" href="#agree" aria-label="More than 4 in 5 in both groups want a bipartisan migration plan, 10 or more years ahead. See what they agree on."><div><span>More than</span><b data-k="sticker">4 in 5</b><span>in both groups want a bipartisan migration plan, 10 or more years ahead</span></div></a>
+      <div class="cards">
+        <div class="glabels" role="list" aria-label="The two groups">
+          <div role="listitem"><a class="glabel" href="#group-1" style="--gc:var(--g1)"><small data-k="hl1n">Group 1 · 61 people</small><b data-k="hl1name">Migration works</b><em data-k="hl1desc">Migration keeps us going; tackle problems without blaming it.</em><span class="chev" aria-hidden="true">↓</span></a></div>
+          <div role="listitem"><a class="glabel" href="#group-2" style="--gc:var(--g2)"><small data-k="hl2n">Group 2 · 28 people</small><b data-k="hl2name">Fewer, but flexible</b><em data-k="hl2desc">Too many, too quickly; put people who can work first.</em><span class="chev" aria-hidden="true">↓</span></a></div>
+        </div>
+        <a class="sticker" href="#agree" aria-label="More than 4 in 5 in both groups want a bipartisan migration plan, 10 or more years ahead. See what they agree on."><div aria-hidden="true"><span>More than</span><b data-k="sticker">4 in 5</b><span>in both groups want a bipartisan migration plan, 10 or more years ahead</span></div></a>
       </div>
     </div>
   </div>
