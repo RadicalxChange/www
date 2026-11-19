@@ -130,6 +130,10 @@ reference build. On this page that means:
 - **Priorities.** Each card leads with its net votes, with one bar on a shared
   scale (the top change is full width), and backers and opposers in a small
   line. The clear-no card shows its net alone.
+- **Rounding.** Shown percentages round halves up (82.5% shows as 83%),
+  hover cards included; Python's `round()` would round halves to even. The
+  7-in-10 bar is applied before rounding, and "Reading the percentages" says
+  so.
 - **Counting.** People are those who voted on at least one statement open for
   voting: 265 (Polis counts 266, including one account whose only vote was on
   its own statement, which the moderators held back). 232 were placed in a
@@ -147,11 +151,13 @@ reference build. On this page that means:
   cut along the line, a statement flips when at least 65% agree on one side
   and at most 35% on the other, with 10+ voters a side and z >= 3.3) finds 14
   flips between the 118 people at the far end of Polis's larger group and the
-  77 nearest its smaller one; shuffled orders never give more than 2. (With
+  77 nearest its smaller one. In 1,000 random orders of the same people
+  (`random.Random(11)`), the same search never found more than 3, and 616
+  orders found none. (With
   195 people in that group, the test's cuts at every 1% of it skip 118, but
   cuts at 118 and 119 both give 14 flips, so the boundary stays where it
-  was.) Inside Polis's smaller group only one statement flips, no more than
-  chance.
+  was.) Inside Polis's smaller group only one statement flips, too few to
+  split it; 46 of 1,000 random orders of its 37 people find as many.
   `DATA.cut` (0.427 on the line, midway between Groups 1 and 2) is that
   boundary. The map no longer draws it: the groups' colours show it. No dot
   rolls across it, and left of it the dots drop from it outwards, so they
