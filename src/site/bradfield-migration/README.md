@@ -71,13 +71,15 @@ it.
   or disagreed with at least one stay in their Polis groups: 6 grouped people
   passed on at least 9 in 10 of the statements they voted on (5 in Group 3,
   1 in Group 2), and their passes lower their group's figures; the notes say so
-  and give an example. One person wrote 26 statements in one sitting and voted
-  only on their own; they are in Group 2. Eight people's only vote was the
+  and give an example. One person wrote 26 statements (8 of them open for
+  voting) in one sitting and voted only on their own; they are in Group 2. Eight people's only vote was the
   agreement Polis records when someone adds a statement; they count as taking
   part but are not in a group.
 - **Percentages:** the share of a group who agreed, out of those in the group
-  who voted on the statement (passes count as votes). Where fewer than 20 in a
-  group voted, the page shows how many.
+  who voted on the statement (passes count as votes), with halves rounded up
+  (92.5% shows as 93%). Where fewer than 20 in a group voted, the page shows how
+  many, on the priority cards too. The 7-in-10 bar applies before rounding, so a
+  statement shown at 70% can still fall just short.
 - **Shared statements:** at least 70% agreement in all three groups, with at
   least 10 voters in each: 12 statements, all listed in the fold under the
   pairs. Group 2 voted on fewer of the later statements, so many fall below its
@@ -102,8 +104,9 @@ it.
   because the third is clearly the next best (a 42-point gap, against 28 for
   the best statement by anyone else). Group 2's card, "Where they stand", has a
   column for each neighbour it sides with (two statements each, 60%+ in both,
-  the other group 35% or less) and, across both, the one statement it backs
-  more than both other groups on 20+ voters (statement 26). RadicalxChange
+  the other group 35% or less) and, across both, a statement it backs more than
+  both other groups on 20+ voters (statement 26). Each card's size is the
+  nearest simple fraction: 2 in 3, 1 in 6 and 1 in 5. RadicalxChange
   chose them; the page's notes say so.
 - **Priority vote:** ballots that used fewer than 10 credits are set aside
   (there were none), names are matched ignoring capitals and spacing, and
@@ -117,7 +120,10 @@ it.
   since they set the order, with one bar on a shared scale (the top change is
   full width) and the backers and opposers as a small line under it. The
   clear-no card shows its net alone, and the other six in the fold lead with
-  their nets. The matching conversation statements are close in meaning, not
+  their nets. The line above them counts the top six whose matching statement
+most people in every group agreed with (two). A card says "The groups split on
+this one" only where two groups are 30+ points apart, on opposite sides of 50%
+agreeing, with 10+ voters in each. The matching conversation statements are close in meaning, not
   identical in wording; the employer ban has no close match, so its card shows
   none.
 
@@ -156,8 +162,9 @@ every 1% from 20% to 80% of the group, and the cut is placed where the most
 statements flip (at least 65% agreeing on one side and at most 35% on the
 other, at least 10 voters a side, and z of at least 3.3). That gives 61 people
 (Group 2) and 25 statements; Group 2 voted on a median of 34 statements and
-Group 1 on 80, and shuffled orders never produced more than one such
-statement. Before 19 November the page showed this as a closer look inside one
+Group 1 on 80. A permutation test puts the members of Polis's larger group in
+1,000 random orders (fixed seed) and runs the same search on each: no order
+finds more than 2 such statements, and 726 of the 1,000 find none. Before 19 November the page showed this as a closer look inside one
 group, with a dashed line, a bracket and a key; they are gone.
 
 Inside Group 3 the same search does find a split, but all 5 people in Group 3
