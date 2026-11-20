@@ -177,7 +177,7 @@ migration results pages.
   "for migration"), the middle one boxed in teal. It is sized from its column
   (`--h1-fit: 12.6cqi`), capped by the window height, and never wraps.
 - The hero's sizes and spacing follow the standard shared by the migration
-  results pages (20 November 2026): the block at the end of the page's CSS,
+  results pages: the block at the end of the page's CSS,
   unchanged, with the page setting only its headline's column fit (`--h1-fit`
   on `.hero-text`). Text sizes follow the window height, the hero fills the
   first screen with its content centred, and the buttons stay on one row on
