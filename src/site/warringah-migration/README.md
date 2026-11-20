@@ -52,8 +52,8 @@ the circle change, regenerate it.
   account and 15 accounts whose only votes were on their own removed
   statements.
 - **Groups:** three, numbered left to right along the map (the rule for
-  every results page where one of Polis's groups splits clearly, 19 November
-  2026). Polis found two groups, without the moderator account. The larger is
+  every results page where one of Polis's groups splits clearly). Polis
+  found two groups, without the moderator account. The larger is
   Group 1 "Migration works" (245 people). The other splits clearly on
   several questions (see "How we found three groups"), so the page shows it as
   Group 2 "Fewer, but flexible" (96) and Group 3 "Fewer, chosen more carefully"
