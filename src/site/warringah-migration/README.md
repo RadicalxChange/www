@@ -215,24 +215,23 @@ Some things differ from the Curtin page:
 
 - The headline is three set lines ("Warringah wants" / "a long-term plan" /
   "for migration"), the middle one boxed in navy like the stepped headlines on
-  the MP's site. The longest line is 8.76em wide in Poppins Bold, so the
-  headline is sized from its column (`min(10.6cqi, 9vh, 4.6rem)`), and never
-  wraps.
-- Short windows (under 46em tall, which is 736px at the standard text size
-  and 920px at a 20px default) get a smaller headline (`8vh`) and lede, and
-  the hero's labels tighten from 53em down, so all three labels and the
-  circle stay on the first screen at 1280×720 with 20px text. Since Jess's
-  intro was added (20 November 2026), the buttons fit the first screen at
-  1728×966, 1536×730, 1440×790 and 1180×820 with 20px text, but start below
-  it at 1366×650, 1280×720, 1280×650 and 1024×700, and on phones. Checked
-  at 16px and 20px text from 901 to 1728px wide and 650 to 966px tall.
+  the MP's site. The longest line is 8.76em wide in Poppins Bold, so it fills
+  its column at 10.6cqi (`--h1-fit` on `.hero-text`), and never wraps.
+- The hero's sizes and spacing follow the standard shared by every results
+  page (20 November 2026), pasted at the end of the page's CSS: text sizes
+  follow the window height, the hero fills the first screen with its content
+  centred, and the buttons stay on one row on wide layouts and stack at full
+  width on phones. The page sets only `--h1-fit`. With 20px text the buttons
+  end at 787 of 966 (1728×966), 589 of 720 (1280×720), 662 of 820 (1180×820)
+  and 624 of 700 (1024×700), with the turnout line on the first screen too,
+  and the labels and circle stay on the first screen at every laptop size. On
+  phones the labels and circle follow the text.
 - The map's height follows the highest pile, so it grows on narrow screens,
   where the dots are larger relative to the width.
 
 Check any hero change at 1728×966 with a 20px default text size, 1440×790,
 1366×650, 1536×730, 1280×720, 1180×820, 1024×700 and a 375px phone: the
-labels and circle stay on the first screen, the buttons stay where they were
-(see above), no line of text falls under the circle, and the labels don't
-overlap.
+buttons, labels and circle stay on the first screen, no line of text falls
+under the circle, and the labels don't overlap.
 
 This file is excluded from the build via `.eleventyignore`.
