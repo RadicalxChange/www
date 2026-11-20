@@ -108,7 +108,9 @@ q{quotes:"“" "”"}
 .sticker span{display:block;font-size:.56rem;font-weight:700;line-height:1.22}
 /* Hero: one label per group (size, name, one-line description), each linking to its group card, and the circle,
    which links to where the groups agree (common format, 19 November 2026). */
-.hero .sub{max-width:none}   /* the hero sentence runs the full width of its column */
+.hero .sub{max-width:none}   /* the hero's two paragraphs run the full width of their column */
+/* the intro sits above the finding sentence in the same style, with a paragraph's gap between them */
+.hero .sub.intro{margin-bottom:.75em}
 .hero .cards{display:flex;flex-direction:column;justify-content:center;gap:16px;position:relative;padding:0}
 /* each label link sits in its own list item (role="listitem" on the link itself would drop its link role for screen
    readers); the circle is a sibling link after the list, placed against .cards. The labels are white in both modes,
@@ -446,6 +448,7 @@ footer{background:var(--indigo);color:#fff;padding:48px 0 56px}
     <div class="hero-grid">
       <div class="hero-text">
         <h1><span class="ln">Kooyong wants</span><span class="ln"><span class="box">a bipartisan plan</span></span><span class="ln">for migration</span></h1>
+        <p class="sub intro">Multiculturalism is central to Australia’s story, identity and future. As debate over migration levels and settings continues, this process offers a more nuanced, participatory way for communities to give feedback on immigration policy.</p>
         <p class="sub" data-k="herosub">People disagree about how many should come, and who should come first. But most in both groups want a bipartisan migration plan that looks at least 10 years ahead. When people voted on priorities, planning migration with housing and infrastructure came first.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what Kooyong said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout" data-k="turnout">Since 9 November 2026 · 102 people have taken part · 89 in a group</p>

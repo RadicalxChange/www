@@ -157,9 +157,11 @@ is checked against the export before each push.
 The page width is in rem (`.wrap{max-width:77.5rem}`), as on the other
 migration results pages.
 
-- The hero carries the headline, one sentence on the divide and the shared
-  ground (ending with what the priority vote put first), the two buttons and
-  the turnout ("… 102 people have taken part · 89 in a group"). On the right
+- The hero carries the headline, the intro used on every migration results
+  page (in its own paragraph, styled like the sentence after it), one
+  sentence on the divide and the shared ground (ending with what the
+  priority vote put first), the two buttons and the turnout ("… 102 people
+  have taken part · 89 in a group"). On the right
   sits one label per group: its size in people, its name and one plain line
   from its own defining statements, each linking to its group card
   (`#group-1`, `#group-2`). The circle with the headline figure, its ring
@@ -174,8 +176,12 @@ migration results pages.
 - The headline is three set lines ("Kooyong wants" / "a bipartisan plan" /
   "for migration"), the middle one boxed in teal. It is sized from its column
   (`min(12.6cqi, 10vh, 5.8rem)`) and never wraps.
-- Short windows get a smaller headline and lede, so the buttons stay on the
-  first screen.
+- Short windows get a smaller headline and lede. Since the intro was added
+  (20 November 2026), the buttons fit the first screen at 1728×966,
+  1536×730, 1440×790 and 1366×650 at both text sizes, and at 1280×720 and
+  1180×820 with 16px text. They start below it at 1280×720 and 1180×820
+  with 20px text, at 1024px wide and narrower, and on phones. The labels
+  and the circle fit the first screen wherever they did before.
 - The map's height follows the highest pile.
 - A notes row's paragraphs all sit in its right-hand column.
 
