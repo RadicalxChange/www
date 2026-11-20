@@ -184,10 +184,31 @@ HTML directly; every figure on the page has been checked against the exports.
 
 ## Where would you sit? (November 2026)
 
-A collapsed block right under the map lets a reader answer ten statements
-from the conversation and see where they would sit on the map. It all runs in
-the reader's browser: the block makes no network requests and stores nothing
-(no cookies, local storage or analytics events), and the page says so.
+A "Where would you sit?" button in the map card's top row lets a reader
+answer ten statements from the conversation and see where they would sit on
+the map. It all runs in the reader's browser: the block makes no network
+requests and stores nothing (no cookies, local storage or analytics events),
+and the result says so.
+
+- **How it works (November 2026 redesign).** The button, solid like the
+  hero's first button, takes the place of the old "Show me someone" button,
+  which is gone with its code; the touch hint now reads "Tap a dot to see how
+  that person voted." (hovering or tapping a dot still shows that person's
+  card). The button opens a strip between the button row and the map that
+  asks the statements one at a time: a count ("3 of 10"), the statement in
+  quotes, Agree, Disagree and Pass, and Back. The strip keeps the height of
+  the longest statement, so the map stays put, and on opening the page
+  scrolls only as far as it takes to show the strip and the map together
+  (at 1728×966 with 20px text the card grows by 159px and fits). After six
+  agree-or-disagree answers the reader's dot appears on the map with its
+  band, and it moves with each answer after that; a line beside the buttons
+  says where it is. After the last statement the strip shows one line
+  naming the group ("You’d be closest to Group 2: Works, but slower.", or
+  "You’re between …" near a border), the common-ground line, "Start again"
+  and the privacy line. A reader who reaches the end with fewer than six
+  agrees or disagrees is told so and can go back. The dot shows only while
+  the strip is open. On phones the strip sits above the map too, with the
+  three answer buttons sharing the full width.
 
 - **Statements.** Ten, in this order: 0, 8, 3, 134, 69, 34, 14, 22, 20, 12.
   Eight are starter statements, which every migration conversation shares;
@@ -199,14 +220,15 @@ the reader's browser: the block makes no network requests and stores nothing
   the result names the page's main finding in the words of the circle at the
   top: "Like more than 3 in 4 people in every group, you want migration
   planned 10 to 15 years ahead." (More than 3 in 4 agreed with it in each
-  group, with 20 or more voters in each.) A reader who disagreed, passed or
-  skipped it gets no line.
+  group, with 20 or more voters in each.) A reader who disagreed with it or
+  passed gets no line.
 - **Placement.** A straight-line fit of each person's place on the map's
   line (`DATA.people` x) on their answers to the ten: agree +1, pass 0,
   disagree −1, and a statement they didn't vote on takes its average. It is
   fitted on all 232 people in a group, lightly ridged (λ = 1, intercept not
   penalised). A reader's position is the intercept plus each weight times
-  their answer (the average for a statement they skip), kept between 0 and 1.
+  their answer (the average for a statement not answered yet), kept between
+  0 and 1.
   Everything the block needs is in
   `<script type="application/json" id="wwys-data">`: the statements, the
   intercept, weights and averages, the boundaries, the margin, the band, the
@@ -241,11 +263,12 @@ the reader's browser: the block makes no network requests and stores nothing
   dots, so they keep their colours. "You" goes under the dot unless it would
   touch an axis label, and then above it, with a halo in the card colour.
 - **Keyboard and screen readers.** The opening button is a native button with
-  `aria-expanded`. Each statement is a `role="radiogroup"` labelled by its
-  text: one Tab stop, with the arrow keys moving between the three answers.
-  The result is announced with `aria-live` and says in words where the dot
-  is. "Start again" clears the answers and moves focus to the first
-  statement.
+  `aria-expanded`. Each answer moves focus to the next statement, which
+  screen readers read; the answers are native buttons (`aria-pressed` shows
+  an earlier answer after Back), labelled by the statement. Progress ("3 of
+  10") and the dot's place are announced with `aria-live`, and the result,
+  which also says in words where the dot is, takes focus when it appears.
+  "Start again" clears the answers and moves focus to the first statement.
 - **Updating.** If the groups, the map or the export change, refit and rerun
   the leave-one-out test, then update the JSON and the notes' figure
   together.
