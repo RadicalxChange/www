@@ -225,7 +225,8 @@ HTML directly; every figure on the page has been checked against the exports.
   from the rules every migration results page shares, pasted last in the
   stylesheet; the page sets only `--h1-fit`. Text sizes follow the window's
   height (the headline `min(var(--h1-fit),7.9vh,4.2rem)`, the intro and the
-  sentence `clamp(.875rem,2.35vh,1.25rem)`), the hero fills the first screen
+  sentence `clamp(.875rem,2.35vh,1.25rem)`, the turnout line
+  `clamp(.8rem,1.95vh,.95rem)`), the hero fills the first screen
   with its content centred, and windows under 43.25em tall start it level
   with the labels. The buttons stay on one row on wide layouts, stepping down
   in size as the text column narrows (`zoom` inside container queries), and
