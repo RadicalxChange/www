@@ -39,7 +39,7 @@ the circle change, regenerate it.
   2026". Update it with each new export.
 - The credit line and the "What happens next" line wait for the office's
   confirmation. The Acknowledgement of Country in the footer is the office's own
-  wording (20 November 2026, via Jess Scully), word for word in two paragraphs.
+  wording, word for word in two paragraphs.
 
 ## What is counted
 
@@ -62,7 +62,7 @@ the circle change, regenerate it.
   they cast was a pass). Polis places those 3, because it reads a pass as
   halfway between agree and disagree, but a pass doesn't show where someone
   stands, so the page leaves them out of the groups (the rule for every
-  results page since 18 November 2026). They still count as taking part.
+  results page). They still count as taking part.
 - **Percentages:** the share of a group who agreed, out of those in the group
   who voted on the statement (passes count as votes). Where fewer than 20 in a
   group voted, the page shows how many. Halves round up (62.5% shows as 63%),
@@ -122,7 +122,7 @@ standing in columns. Rolling only a little to the right stops early dots
 running into empty space and later ones walling up, against the cut between
 Groups 2 and 3 most of all. Maps under 640px wide use smaller dots and let them roll up to six dot
 widths to the left at 0.6, so phone piles are less steep. This was chosen over
-a dot histogram, a swarm and two packed bubbles (17 November 2026). Each
+a dot histogram, a swarm and two packed bubbles. Each
 group's label sits above the tallest heap in two lines, its name with its
 colour dot and then "Group 1 · 245 people", centred on its own heap (the 10th
 to 90th percentile of its dots) and nudged apart where two would touch. Where
@@ -187,7 +187,7 @@ The page is built on the Curtin template, including its rem-based width
 (`.wrap{max-width:77.5rem}`) (see `src/site/curtin-migration/README.md`,
 "Layout").
 
-The hero follows the results pages' common format (19 November 2026): on the
+The hero follows the results pages' common format: on the
 right, one label per group instead of quote cards, and no at-a-glance row
 below. Each label gives the group's size ("Group 1 · 245 people"), its name and
 one line, under about 10 words, from the group's own defining statements, and
@@ -200,8 +200,8 @@ links to the agreement section (`#agree`). It reads "More than 3 in
 (statement 39: 85%, 88% and 77%, with 20+ voters in every group), and its ring
 is in bands: Group 1's colour on top, Group 2's at the sides and Group 3's
 underneath. The turnout line adds how many people are in a group ("· 365 in a
-group"). Under the headline, Jess Scully's intro for every results page (20
-November 2026) sits in its own paragraph, word for word, styled like the
+group"). Under the headline, the intro shared by every results page sits in
+its own paragraph, word for word, styled like the
 finding sentence below it and one paragraph gap above it. Both run the full
 width of their column. There is no line
 about the priority vote, because the sentence already says what most people
@@ -218,7 +218,7 @@ Some things differ from the Curtin page:
   the MP's site. The longest line is 8.76em wide in Poppins Bold, so it fills
   its column at 10.6cqi (`--h1-fit` on `.hero-text`), and never wraps.
 - The hero's sizes and spacing follow the standard shared by every results
-  page (20 November 2026), pasted at the end of the page's CSS: text sizes
+  page, pasted at the end of the page's CSS: text sizes
   follow the window height, the hero fills the first screen with its content
   centred, and the buttons stay on one row on wide layouts and stack at full
   width on phones. The page sets only `--h1-fit`. With 20px text the buttons
