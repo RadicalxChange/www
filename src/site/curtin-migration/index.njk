@@ -405,6 +405,46 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 @media (max-width:520px){ .steps{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ #map .pdot,.person{transition:none} .btn:hover{transform:none} }
 
+/* ---------- "Where would you sit?": a self-contained block under the map. It reads #wwys-data (statements, means,
+   weights, boundaries, band) and draws the visitor's dot on the map through window.__mapHooks. Nothing is sent or
+   stored. ---------- */
+.wwys{margin-top:22px}
+.wwys-open{display:inline-flex;align-items:center;gap:.55rem;font:inherit;font-weight:600;font-size:1rem;background:var(--ink);color:var(--paper);border:0;border-radius:99px;padding:.7rem 1.25rem;cursor:pointer}
+.wwys-open .chev{display:inline-block;transition:transform .2s ease}
+.wwys-open[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.wwys-panel{margin-top:16px;border:2px solid var(--ink);border-radius:24px;padding:22px 26px 20px;background:var(--card)}
+.wwys-lead{font-size:1rem;line-height:1.5;max-width:46rem;color:var(--muted);margin-bottom:6px}
+.wwys-qs{list-style:none;margin:0;padding:0}
+.wwys-q{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 24px;align-items:center;padding:13px 0;border-top:1px solid var(--line)}
+.wwys-q:first-child{border-top:0}
+.wwys-q q{font-weight:600;font-size:1rem;line-height:1.4}
+.wwys-opts{display:inline-flex;gap:6px;flex-wrap:wrap}
+.wwys-opts label{position:relative}
+.wwys-opts input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.wwys-opts span{display:inline-block;font-size:.9rem;font-weight:600;padding:.4rem .85rem;border-radius:99px;border:2px solid var(--line);color:var(--ink);cursor:pointer}
+.wwys-opts input:checked + span{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.wwys-opts input:focus-visible + span{outline:3px solid var(--ink);outline-offset:2px}
+.wwys-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:16px}
+.wwys .btn{font-size:.98rem;padding:.75rem 1.3rem;border-color:var(--ink)}
+.wwys .btn.solid{background:var(--ink);color:var(--paper)}
+.wwys .btn.line{color:var(--ink)}
+.wwys .btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.wwys-count{font-size:.92rem;color:var(--muted)}
+.wwys-result{margin:0 0 18px;padding:18px 20px;border-radius:18px;background:var(--tint)}
+.wwys-result:empty{display:none}
+.wwys-result:focus{outline:none}
+.wwys-you{font-size:1.15rem;line-height:1.4;font-weight:600;display:flex;gap:10px;align-items:baseline}
+.wwys-you .you-dot{flex:none;width:14px;height:14px;border-radius:50%;background:var(--fizz);box-shadow:0 0 0 2px var(--ink)}
+.wwys-result p + p{margin-top:6px}
+.wwys-result .small{font-size:.95rem;color:var(--muted)}
+.wwys-result .btn{margin-top:8px}
+.wwys-privacy{font-size:.88rem;color:var(--muted);margin-top:14px}
+@media (max-width:700px){ .wwys-q{grid-template-columns:minmax(0,1fr)} .wwys-panel{padding:18px 16px} }
+@media (prefers-reduced-motion:reduce){ .wwys-open .chev{transition:none} }
+#map .wwys-band{fill:var(--fizz);opacity:.32;pointer-events:none}
+#map .wwys-dot{fill:var(--fizz);stroke:var(--ink)}
+#map .wwys-lab{fill:var(--ink);font-family:var(--text);font-weight:700;paint-order:stroke;stroke:var(--card);stroke-linejoin:round}
+
 /* ---------- RxC site shell (shared with the other project microsites) ---------- */
 .rxc-shell{--ink:#17203A;--paper:#fff;--common:#EDFF38;--quiet:#5F657E;--hair:#D9DBE3;--voice-b:#E23A6B;
   font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:15px;line-height:1.3;box-sizing:border-box}
@@ -484,6 +524,16 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <svg id="map" viewBox="0 0 1000 560" role="img" aria-labelledby="map-desc"><desc id="map-desc">A map of 232 people, placed left to right by how they voted. Group 1, Migration works, 118 people, sits on the left, where people agreed that migration is working. Group 2, Works, but slower, 77 people, sits next to it: they see migration working too, but want it slower. Group 3, Fewer, chosen more carefully, 37 people, sits on the right, where people agreed that fewer migrants should arrive more slowly. Where many people sit close together, the dots pile up.</desc></svg>
       <div class="person" id="person" aria-live="polite"></div>
       <p class="map-hint"><span class="h-fine">Hover over a dot to see how that person voted.</span><span class="h-touch">Tap the map or press “Show me someone” to see how one person voted.</span></p>
+    </div>
+    <div class="wwys" id="wwys">
+      <button class="wwys-open" type="button" aria-expanded="false" aria-controls="wwys-panel">Where would you sit? <span class="chev" aria-hidden="true">↓</span></button>
+      <div class="wwys-panel" id="wwys-panel" hidden>
+        <div class="wwys-result" id="wwys-result" aria-live="polite" tabindex="-1"></div>
+        <p class="wwys-lead">Agree or disagree with at least six of these ten statements from the conversation, and we’ll place you on the map. Pass on any you’re not sure about.</p>
+        <ol class="wwys-qs" id="wwys-qs"></ol>
+        <div class="wwys-actions"><button class="btn solid" type="button" id="wwys-go" disabled>See where you’d sit</button><span class="wwys-count" id="wwys-count" aria-live="polite"></span></div>
+        <p class="wwys-privacy">Your answers stay in your browser. Nothing is sent or saved.</p>
+      </div>
     </div>
     <div class="groups-row">
       <div class="gcard one" id="group-1">
@@ -590,6 +640,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
       <div class="arows">
         <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of a group who agreed, out of those in the group who voted on that statement. Later statements had fewer voters, so where fewer than 20 people in a group voted, we show how many. We apply the 7-in-10 bar before rounding, so a statement shown at 70% can still fall just short.</p></div>
         <div class="arow"><h3>Reading the map</h3><p>We rebuilt the map from the published votes using the same method as Polis, so it is close to the Polis report but not identical. Left to right is the main divide. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place. How often each person agreed overall is on their card. Each person’s card shows up to three of their votes as examples, one for each group they voted like. For each, it shows the statement most of that group agreed with (or rejected), judged cautiously when few people voted, preferring statements the person agreed with over ones they rejected. A statement that fits two groups is shown once.</p></div>
+        <div class="arow"><h3>Where would you sit?</h3><p>The tool uses ten statements from the conversation: eight starter statements and two written by people in Curtin. It works out where you’d sit from how the people who took part answered the same statements, and where they sit on the map. We tested it on them, placing each person using only everyone else’s answers. It put 91% of those who agreed or disagreed with at least six of the ten in their own group. Near the border between two groups, it names both.</p></div>
         <div class="arow"><h3>How we found three groups</h3><p>Polis, the tool that grouped people, found two groups. Inside the larger one, people split clearly on several questions, so we show them as two groups. That makes three.</p><p>Group 2’s 77 people sit nearest the border with Group 3, and differ from Group 1’s 118 on 14 statements. On each, at least 65% agreed on one side and at most 35% on the other, with at least 10 people voting on each side, and a gap that big would happen by chance less than once in a thousand times.</p><p>Eight of them had at least 20 people voting on each side. A community’s culture changing faster than people can adjust: 76% of Group 2 agreed, against 11% of Group 1. Temporary visas staying temporary: 90% against 32%. Taking longer to get the checks right: 79% against 25%. Capping permanent migration at what housing can take: 71% against 16%. Keeping the visa appeals process from becoming a pathway to stay: 90% against 34%. English and an understanding of our values for family members: 81% against 29%. Putting people who can work ahead of family reunion when places are limited: 70% against 34%. Not choosing the best if most permanent visas go to people already here: 67% against 29%. Nearly everyone in both groups backs a real path to stay for long-term residents: 97% of each.</p><p>Trying many split points and statements can turn up a few differences by luck. So we also put the members of Polis’s larger group in 1,000 random orders and ran the same search on each (a permutation test). It never found more than three such statements, and in 616 of the 1,000 orders it found none. The real order shows 14. Group 2 voted on a median of 40 statements and Group 1 on 70, enough to place them.</p><p>Inside Group 3, Polis’s smaller group, the same test found only one such statement, too few to split it. Random orders of its members found as many in 46 of the 1,000.</p><p>We also looked for unlikely allies, people in different groups who back the same statements, and found none that held up.</p></div>
         <div class="arow"><h3>The group cards</h3><p>The cards for Groups 1 and 3 show three statements most of the group agreed with and far fewer of both other groups did. Group 2 mostly sides with one or other of the groups beside it, so its card shows two statements where it sides with Group 1, two where it sides with Group 3, and one it backed more than both. RadicalxChange chose which statements to show.</p></div>
         <div class="arow"><h3>Who and what we counted</h3><p>419 statements were open for voting: the 36 starter statements and 383 written by people taking part. The moderators held back 118 others, so no one else voted on them.</p><p>We count the 265 people who voted on at least one of those 419 statements. Between them they cast 21,315 votes. Polis’s own count of 266 also includes one account whose only vote was on a statement of its own that the moderators held back.</p><p>One person voted on enough statements to be placed in a group, but didn’t agree or disagree with any of them: every vote they cast was a pass. They count as taking part, but we haven’t placed them in a group, because a pass doesn’t show where someone stands. Polis places them anyway, because it reads a pass as halfway between agree and disagree.</p></div>
@@ -744,6 +795,8 @@ function layout() {
   ring.setAttribute('stroke-width', (2 * k).toFixed(1));
   if (settled) { dots.forEach((d, i) => { d.style.transition = 'none'; d.style.transform = `translate(${people[i].x}px, ${people[i].y}px)`; }); svg.getBoundingClientRect(); dots.forEach(d => d.style.transition = ''); }
   hidePerson && hidePerson();
+  window.__mapLayout = { lo, hi, axY, k, r, fs };                       // for blocks that draw on the map (Where would you sit?)
+  (window.__mapHooks || []).forEach(f => f(window.__mapLayout));
 }
 function placeAll(final) {
   dots.forEach((d, i) => {
@@ -951,6 +1004,95 @@ QV.forEach((q, i) => {
     li.querySelector('.t').textContent = q.t; rest.appendChild(li);
   }
 });
+</script>
+<script type="application/json" id="wwys-data">{"statements":[{"id":0,"text":"I’d trust migration more if it was planned 10 to 15 years ahead for what the country needs, not around the three-year election cycle.","shared":true},{"id":8,"text":"Migration keeps my workplace and my community going. Cutting it back would cost us more than it would save.","shared":false},{"id":3,"text":"For me, trust comes down to the numbers: too many people have arrived too quickly for our communities to keep up.","shared":false},{"id":134,"text":"Migration has worked well and should be seen as a positive","shared":false},{"id":69,"text":"A temporary visa should not lead to permanent residency.","shared":false},{"id":34,"text":"As a lucky country, we have a duty to keep helping people who aren’t so lucky, even when it costs us.","shared":false},{"id":14,"text":"If most permanent visas go to people already here, we’re not choosing the best people for Australia’s future, just whoever got here first.","shared":false},{"id":22,"text":"Migration is about people, not just workers. Families being able to live together should count as much as economic contribution.","shared":false},{"id":20,"text":"I’d rather the system took longer and got the checks right than rushed decisions.","shared":false},{"id":12,"text":"For seasonal work like seeding and harvest, short-term visas work well: people come, do the hard work, get paid and move on.","shared":true}],"intercept":0.61353,"weights":[-0.00047,-0.08665,0.07454,-0.03448,0.07437,-0.08771,0.05626,-0.05597,0.00921,-0.05145],"means":[0.79675,0.46763,-0.08271,0.67089,-0.1358,0.36691,0.23308,0.34815,0.26613,0.80451],"boundaries":[0.427,0.679],"margin":0.06,"band":0.1152,"min_answers":6,"groups":[{"name":"Migration works","desc":"Migrants aren’t the housing problem; keep helping people in need."},{"name":"Works, but slower","desc":"Migration helps, but take longer and get the checks right."},{"name":"Fewer, chosen more carefully","desc":"Temporary visas shouldn’t lead to permanent residency."}]}</script>
+<script>
+/* ================= Where would you sit? (reads #wwys-data; no requests, no cookies, no storage) ================= */
+(function () {
+  const root = document.getElementById('wwys'), src = document.getElementById('wwys-data');
+  if (!root || !src) return;
+  const D = JSON.parse(src.textContent);
+  const open = root.querySelector('.wwys-open'), panel = document.getElementById('wwys-panel'), list = document.getElementById('wwys-qs');
+  const go = document.getElementById('wwys-go'), count = document.getElementById('wwys-count'), out = document.getElementById('wwys-result');
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const OPTS = [['Agree', 1], ['Disagree', -1], ['Pass', 0]], N = D.statements.length;
+  D.statements.forEach((st, i) => {
+    const li = document.createElement('li');
+    li.className = 'wwys-q'; li.setAttribute('role', 'radiogroup'); li.setAttribute('aria-labelledby', 'wwys-q' + i);
+    li.innerHTML = `<q id="wwys-q${i}"></q><span class="wwys-opts">` + OPTS.map(([t, v]) => `<label><input type="radio" name="wwys${i}" value="${v}"><span>${t}</span></label>`).join('') + '</span>';
+    li.querySelector('q').textContent = st.text;
+    list.appendChild(li);
+  });
+  const answers = () => D.statements.map((st, i) => { const c = list.querySelector(`input[name="wwys${i}"]:checked`); return c ? +c.value : null; });
+  const sides = a => a.filter(v => v === 1 || v === -1).length;
+  function refresh() {
+    const n = sides(answers()), left = D.min_answers - n;
+    go.disabled = left > 0;
+    count.textContent = left > 0 ? `Agreed or disagreed with ${n} of ${N}: ${left} more to go.` : `Agreed or disagreed with ${n} of ${N}.`;
+  }
+  list.addEventListener('change', refresh); refresh();
+  open.addEventListener('click', () => { const on = open.getAttribute('aria-expanded') !== 'true'; open.setAttribute('aria-expanded', String(on)); panel.hidden = !on; });
+  // the placement: a straight-line fit to how the people who took part answered; unanswered statements take the average
+  const place = a => Math.min(1, Math.max(0, a.reduce((x, v, i) => x + D.weights[i] * (v === null ? D.means[i] : v), D.intercept)));
+  const name = g => `Group ${g + 1}: ${D.groups[g].name}`;
+  function verdict(x) {
+    const [t1, t2] = D.boundaries, g = x < t1 ? 0 : (x < t2 ? 1 : 2), d1 = Math.abs(x - t1), d2 = Math.abs(x - t2);
+    return { g, between: Math.min(d1, d2) < D.margin ? (d1 <= d2 ? [0, 1] : [1, 2]) : null };
+  }
+  let placed = null;
+  go.addEventListener('click', () => {
+    const a = answers(); if (sides(a) < D.min_answers) return;
+    placed = place(a); draw();
+    const v = verdict(placed), nShared = D.statements.filter(st => st.shared).length;
+    const shared = D.statements.filter((st, i) => st.shared && a[i] === 1).length;
+    let h = v.between
+      ? `<p class="wwys-you"><i class="you-dot" aria-hidden="true"></i><span>You’re between <b>${name(v.between[0])}</b> and <b>${name(v.between[1])}</b>.</span></p><p>Your answers sit near the border between them.</p>`
+      : `<p class="wwys-you"><i class="you-dot" aria-hidden="true"></i><span>You’d be closest to <b>${name(v.g)}</b>.</span></p><p>${D.groups[v.g].desc}</p>`;
+    const at = D.statements.map((st, i) => st.shared ? i : -1).filter(i => i >= 0);
+    const which = nShared === 2 && at[0] === 0 && at[1] === N - 1 ? 'the first and last statements' : `${nShared} of these statements`;
+    const yours = shared === nShared ? (nShared === 2 ? 'both' : 'all of them') : (shared === 0 ? (nShared === 2 ? 'neither' : 'none of them') : (shared === 1 ? 'one of them' : `${shared} of them`));
+    h += `<p>Most people in all three groups agreed with ${which}. You agreed with ${yours}.</p>`;
+    h += `<p class="small">Your dot is on the line under the map above, ${v.between ? 'near the border' : `in Group ${v.g + 1}’s stretch`}. The shaded band shows how far it could be off.</p>`;
+    h += `<button class="btn line" type="button" id="wwys-again">Start again</button>`;
+    out.innerHTML = h;
+    document.getElementById('wwys-again').addEventListener('click', reset);
+    const mc = document.getElementById('map-card'); if (mc) mc.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'start' });
+  });
+  function reset() {
+    list.querySelectorAll('input').forEach(i => { i.checked = false; });
+    placed = null; draw(); out.innerHTML = ''; refresh();
+    const first = list.querySelector('input'); if (first) first.focus();
+  }
+  // the visitor's dot: on the map's line, with a soft band for the uncertainty; redrawn whenever the map is laid out
+  function draw(L) {
+    L = L || window.__mapLayout;
+    const svg = document.getElementById('map'); if (!L || !svg) return;
+    svg.querySelectorAll('.wwys-pin, .wwys-band').forEach(e => e.remove());
+    if (placed === null) return;
+    const NS = 'http://www.w3.org/2000/svg';
+    const mk = (n, at, p) => { const e = document.createElementNS(NS, n); for (const k in at) e.setAttribute(k, at[k]); p.appendChild(e); return e; };
+    const g = mk('g', { class: 'wwys-pin', 'aria-hidden': 'true' }, svg); g.style.pointerEvents = 'none';
+    const X = v => L.lo + Math.min(1, Math.max(0, v)) * (L.hi - L.lo), cx = X(placed), k = L.k, h = 14 * k;
+    const b0 = X(placed - D.band), b1 = X(placed + D.band);
+    // the band goes behind the axis and the dots, so the dots keep their group colours
+    const band = mk('rect', { class: 'wwys-band', 'aria-hidden': 'true', x: b0.toFixed(1), y: (L.axY - h).toFixed(1), width: (b1 - b0).toFixed(1), height: (2 * h).toFixed(1), rx: h.toFixed(1) }, g);
+    const axisG = (svg.querySelector('line.axis') || {}).parentNode;
+    if (axisG && axisG.parentNode === svg) svg.insertBefore(band, axisG);
+    const r = Math.max(8 * k, 2 * L.r);
+    mk('circle', { class: 'wwys-dot', cx: cx.toFixed(1), cy: L.axY.toFixed(1), r: r.toFixed(1), 'stroke-width': (2.5 * k).toFixed(1) }, g);
+    const t = mk('text', { class: 'wwys-lab', x: cx.toFixed(1), y: (L.axY + r + L.fs * 1.05).toFixed(1), 'text-anchor': 'middle' }, g);
+    t.style.fontSize = L.fs + 'px'; t.style.strokeWidth = (5 * k).toFixed(1) + 'px'; t.textContent = 'You';
+    // keep "You" clear of the axis labels at either end: if they would touch, put it above the dot instead (its halo keeps it readable over the dots)
+    const tb = t.getBBox();
+    for (const lab of svg.querySelectorAll('.axis-label')) {
+      const lb = lab.getBBox();
+      if (tb.x < lb.x + lb.width && lb.x < tb.x + tb.width && tb.y < lb.y + lb.height && lb.y < tb.y + tb.height) {
+        t.setAttribute('y', (L.axY - r - L.fs * .45).toFixed(1)); break;
+      }
+    }
+  }
+  (window.__mapHooks = window.__mapHooks || []).push(draw);
+})();
 </script>
 <div class="rxc-shell bottom" role="contentinfo">
   <div class="wrap">
