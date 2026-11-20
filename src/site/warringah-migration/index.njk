@@ -105,6 +105,7 @@ q{quotes:"“" "”"}
    on. No quote cards, and no at-a-glance row (the results pages' common format, 19 November 2026). Each label links
    to its group card; the circle links to the agreement section. */
 .hero .sub{max-width:none}
+.hero .sub.intro{margin-bottom:.7em}   /* Jess's intro: styled like the finding sentence under it, one paragraph gap apart */
 .hero .cards{display:flex;flex-direction:column;justify-content:center;gap:16px;position:relative;padding:0}
 .hero .glabels{display:flex;flex-direction:column;gap:16px}   /* each link sits in its own role="listitem" div, so it keeps its link role */
 .hero .glabel{display:block;position:relative;text-decoration:none;color:#13384b;background:#fff;border-radius:14px;
@@ -339,6 +340,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 .foot{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 .foot strong{font-weight:600}
 .foot .ack{color:#c8d8df;font-size:.95rem}
+.foot .ack p + p{margin-top:.6rem}
 
 @media (max-width:900px){
   .wrap{padding:0 20px}
@@ -434,6 +436,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
     <div class="hero-grid">
       <div class="hero-text">
         <h1><span class="ln">Warringah wants</span><span class="ln"><span class="box">a long-term plan</span></span><span class="ln">for migration</span></h1>
+        <p class="sub intro">Multiculturalism is central to Australia’s story, identity and future. As debate over migration levels and settings continues, this process offers a more nuanced, participatory way for communities to give feedback on immigration policy.</p>
         <p class="sub">People disagree about how many should come, and how fast. But most want migration planned years ahead, with homes, transport, schools and hospitals ready in time.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what Warringah said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout">Since 30 October 2026 · 452 people have taken part · 365 in a group</p>
@@ -599,7 +602,10 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 <footer>
   <div class="wrap foot">
     <p>Results prepared by <strong>RadicalxChange Foundation</strong> with <strong>Zali Steggall OAM MP</strong>, Federal Member for Warringah.</p>
-    <p class="ack">[Acknowledgement of Country: wording to come from Zali Steggall’s office.]</p>
+    <div class="ack">
+      <p>We acknowledge the Traditional Custodians of the land we know today as Warringah.</p>
+      <p>We pay our deepest respects to Elders past and present and recognise their enduring connection to land, waters, skies, language, and cultures. May we tread lightly and carefully on this precious land.</p>
+    </div>
   </div>
 </footer>
 

@@ -37,8 +37,9 @@ the circle change, regenerate it.
 - It is not linked from /projects, the home page or anywhere else.
 - The status line reads "Preliminary results, data to 6am AEDT, 18 November
   2026". Update it with each new export.
-- The credit line, the Acknowledgement of Country (a placeholder for now) and
-  the "What happens next" line wait for the office's confirmation.
+- The credit line and the "What happens next" line wait for the office's
+  confirmation. The Acknowledgement of Country in the footer is the office's own
+  wording (20 November 2026, via Jess Scully), word for word in two paragraphs.
 
 ## What is counted
 
@@ -199,7 +200,10 @@ links to the agreement section (`#agree`). It reads "More than 3 in
 (statement 39: 85%, 88% and 77%, with 20+ voters in every group), and its ring
 is in bands: Group 1's colour on top, Group 2's at the sides and Group 3's
 underneath. The turnout line adds how many people are in a group ("· 365 in a
-group"). The hero sentence runs the full width of its column. There is no line
+group"). Under the headline, Jess Scully's intro for every results page (20
+November 2026) sits in its own paragraph, word for word, styled like the
+finding sentence below it and one paragraph gap above it. Both run the full
+width of their column. There is no line
 about the priority vote, because the sentence already says what most people
 want.
 
