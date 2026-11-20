@@ -107,7 +107,8 @@ reference build. On this page that means:
   (`1 - x`) and the group (0, 1 or 2); the map and hover cards take the names
   from `GNAME` in the page script.
 - **Section order.** Hero, then the groups section (its heading, the map,
-  the group cards, then the caveat), agreement, priorities,
+  the "Where would you sit?" block, the group cards, then the caveat),
+  agreement, priorities,
   how this worked, the notes, what happens next. There is no at-a-glance
   row: the hero carries the groups and what they share, and the priority
   vote is one click away on the hero's second button.
@@ -162,8 +163,9 @@ reference build. On this page that means:
   boundary. The map no longer draws it: the groups' colours show it. No dot
   rolls across it, and left of it the dots drop from it outwards, so they
   don't wall up against it.
-- **Notes**, in order: reading the percentages, reading the map, how we found
-  three groups (ending with the line on unlikely allies), the group cards,
+- **Notes**, in order: reading the percentages, reading the map, where would
+  you sit?, how we found three groups (ending with the line on unlikely
+  allies), the group cards,
   who and what we counted, pairing the statements, the priority vote, the
   data.
 
@@ -179,6 +181,97 @@ give the same three groups whichever way they are matched.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly; every figure on the page has been checked against the exports.
+
+## Where would you sit? (November 2026)
+
+A "Where would you sit?" button in the map card's top row lets a reader
+answer ten statements from the conversation and see where they would sit on
+the map. It all runs in the reader's browser: the block makes no network
+requests and stores nothing (no cookies, local storage or analytics events),
+and the result says so.
+
+- **How it works (November 2026 redesign).** The button, solid like the
+  hero's first button, takes the place of the old "Show me someone" button,
+  which is gone with its code; the touch hint now reads "Tap a dot to see how
+  that person voted." (hovering or tapping a dot still shows that person's
+  card). The button opens a strip between the button row and the map that
+  asks the statements one at a time: a count ("3 of 10"), the statement in
+  quotes, Agree, Disagree and Pass, and Back. The strip keeps the height of
+  the longest statement, so the map stays put, and on opening the page
+  scrolls only as far as it takes to show the strip and the map together
+  (at 1728×966 with 20px text the card grows by 159px and fits). After six
+  agree-or-disagree answers the reader's dot appears on the map with its
+  band, and it moves with each answer after that; a line beside the buttons
+  says where it is. After the last statement the strip shows one line
+  naming the group ("You’d be closest to Group 2: Works, but slower.", or
+  "You’re between …" near a border), the common-ground line, "Start again"
+  and the privacy line. A reader who reaches the end with fewer than six
+  agrees or disagrees is told so and can go back. The dot shows only while
+  the strip is open. On phones the strip sits above the map too, with the
+  three answer buttons sharing the full width.
+
+- **Statements.** Ten, in this order: 0, 8, 3, 134, 69, 34, 14, 22, 20, 12.
+  Eight are starter statements, which every migration conversation shares;
+  134 and 69 were written by people in Curtin, one on each side of the main
+  divide. Most of every group agreed with 0 and 12 (70% or more in each, with
+  10 or more voters in each), so they come first and last. The texts are
+  word for word from the export, with apostrophes curled.
+- **Common ground in the result.** If the reader agreed with statement 0,
+  the result names the page's main finding in the words of the circle at the
+  top: "Like more than 3 in 4 people in every group, you want migration
+  planned 10 to 15 years ahead." (More than 3 in 4 agreed with it in each
+  group, with 20 or more voters in each.) A reader who disagreed with it or
+  passed gets no line.
+- **Placement.** A straight-line fit of each person's place on the map's
+  line (`DATA.people` x) on their answers to the ten: agree +1, pass 0,
+  disagree −1, and a statement they didn't vote on takes its average. It is
+  fitted on all 232 people in a group, lightly ridged (λ = 1, intercept not
+  penalised). A reader's position is the intercept plus each weight times
+  their answer (the average for a statement not answered yet), kept between
+  0 and 1.
+  Everything the block needs is in
+  `<script type="application/json" id="wwys-data">`: the statements, the
+  intercept, weights and averages, the boundaries, the margin, the band, the
+  minimum number of answers, the group names and descriptions (the same as
+  the hero labels), and the common-ground line with its statement
+  (`common`).
+- **Groups.** The position is read against the boundaries between the
+  groups on the map: 0.427 (`DATA.cut`) and 0.679 (midway between the last
+  Group 2 dot and the first Group 3 dot). Within 0.06 of a boundary the
+  result names both groups.
+- **Minimum.** Six agree-or-disagree answers; passes don't count towards it.
+- **Accuracy.** Tested by leaving each person out in turn, refitting on
+  everyone else and placing them from their own answers. Of the 93 people
+  who agreed or disagreed with at least six of the ten, 85 (91%) landed in
+  their own group: 44 of 46 in Group 1, 17 of 21 in Group 2 and 24 of 26 in
+  Group 3. 24 of the 93 were within 0.06 of a boundary, and for all 24 their
+  own group was one of the two named; of the other 69, 66 got their own
+  group. The notes quote the 91%.
+- **The residents' statements.** They replaced starters 24 and 28. On the 90
+  people who answered at least six of both sets, the starters-only set put 83
+  in their own group and this set 84, but this set names two groups for 22 of
+  them, against 11. Fewer people voted on the residents' statements (71 and
+  63 took a side, against 133 and 103 for the starters), so in the test their
+  answers are often the average.
+- **The band.** The shaded band around the reader's dot is ±0.115 on the
+  line, the 80th percentile of the leave-one-out error.
+- **Drawing.** Each time the map script lays out the map, it calls every
+  function in `window.__mapHooks` with the layout (`window.__mapLayout`: the
+  line's ends and vertical position, the scale, the dot radius and the font
+  size), so
+  the reader's dot follows resizes. The band sits behind the axis and the
+  dots, so they keep their colours. "You" goes under the dot unless it would
+  touch an axis label, and then above it, with a halo in the card colour.
+- **Keyboard and screen readers.** The opening button is a native button with
+  `aria-expanded`. Each answer moves focus to the next statement, which
+  screen readers read; the answers are native buttons (`aria-pressed` shows
+  an earlier answer after Back), labelled by the statement. Progress ("3 of
+  10") and the dot's place are announced with `aria-live`, and the result,
+  which also says in words where the dot is, takes focus when it appears.
+  "Start again" clears the answers and moves focus to the first statement.
+- **Updating.** If the groups, the map or the export change, refit and rerun
+  the leave-one-out test, then update the JSON and the notes' figure
+  together.
 
 ## Layout
 
