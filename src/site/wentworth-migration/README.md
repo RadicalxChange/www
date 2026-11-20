@@ -180,7 +180,7 @@ value is checked against the export before each push.
 The page width is in rem (`.wrap{max-width:77.5rem}`), as on the other
 migration results pages.
 
-- The hero carries the headline, Jess Scully's intro for every migration
+- The hero carries the headline, the shared intro on every migration
   results page (in its own paragraph, styled like the sentence after it), one
   sentence on the divide and the shared ground (ending with what the priority
   vote put first), the two buttons and the turnout ("… 154 people have taken part · 131 in a group"). On the right
