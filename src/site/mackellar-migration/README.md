@@ -68,7 +68,7 @@ headline, the turnout, the groups or the circle change, regenerate it.
   the four shared names (63% agree that migration keeps their community going,
   under the three in four the first name needs, and 29% that too many have
   arrived too quickly, where the second needs most), so it has a fifth name of
-  its own, approved for this page. Each group's one-line description in the
+  its own. Each group's one-line description in the
   hero comes from its own defining statements. 7 people are not in a group:
   they voted on one or two statements, too few for Polis to place them. One of
   them only passed, and one person's only vote was the agreement Polis records
@@ -205,7 +205,7 @@ value is checked against the export before each push.
 The page width is in rem (`.wrap{max-width:77.5rem}`), as on the other
 migration results pages.
 
-- The hero carries the headline, Jess Scully's intro for every migration
+- The hero carries the headline, the intro shared by every migration
   results page (in its own paragraph, styled like the sentence after it), one
   sentence on the divide and the shared ground, the two buttons and the
   turnout ("… 77 people have taken part · 70 in a group"). On the right sits
