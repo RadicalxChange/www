@@ -86,15 +86,16 @@ q{quotes:"“" "”"}
 .hero{background:var(--mist);color:var(--teal-dk);overflow:hidden}
 .hero h1{color:var(--teal)}
 .hero :focus-visible{outline-color:var(--teal-dk)}
-.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:80px 0 92px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
 /* The headline is three set lines, the middle one boxed like the teal labels on the MP's site. Its longest line,
-   box included, is 10.05em wide in Bebas Neue, so it is sized from its column (9.8cqi) and capped by the window height. */
-.hero-text{container-type:inline-size;min-width:0}
-.hero h1{font-size:min(9.8cqi,11vh,6.4rem);line-height:1;margin-bottom:26px}
+   box included, is 10.05em wide in Bebas Neue, so its column fit is 9.8cqi (--h1-fit, used by the hero standard at
+   the end of this style, which also caps it by the window height). */
+.hero-text{container-type:inline-size;min-width:0;--h1-fit:9.8cqi}
+.hero h1{line-height:1}
 .hero h1 .ln{display:block;white-space:nowrap}
 .hero h1 .box{display:inline-block;background:var(--teal);color:#fff;padding:.07em .2em .02em;margin:.08em 0 .1em -.2em;border-radius:.03em}
-.hero .sub{font-size:1.25rem;line-height:1.5;max-width:31rem;margin-bottom:32px;font-weight:500}
-.hero .turnout{font-size:.95rem;font-weight:600;margin-top:22px}
+.hero .sub{font-weight:500}
+.hero .turnout{font-size:.95rem;font-weight:600}
 .actions{display:flex;gap:14px;flex-wrap:wrap}
 .hero .btn.line{color:var(--teal);border-color:var(--teal)}
 /* the sticker is the brand's coral with dark teal type (4.6:1); white on coral would be too faint */
@@ -108,8 +109,6 @@ q{quotes:"“" "”"}
    cards: residents' words are in the group cards. Only the circle is tilted. */
 /* The hero sentence runs the full width of its column */
 .hero .sub{max-width:none}
-/* The intro sits above the finding sentence and is styled like it, a paragraph's gap between them */
-.hero .sub.intro{margin-bottom:.75em}
 .hero .cards{display:flex;flex-direction:column;justify-content:center;position:relative;padding:0}
 .hero .glabels{display:flex;flex-direction:column;gap:16px}
 .hero .glabel{display:block;position:relative;text-decoration:none;color:var(--teal-dk);background:#fff;border-radius:14px;padding:14px 44px 15px 22px;border-left:8px solid var(--gc);box-shadow:0 14px 30px -18px rgba(6,40,46,.55);width:calc(100% - 9.5rem)}
@@ -137,25 +136,6 @@ q{quotes:"“" "”"}
   .hero .glabel{width:auto}
   .hero .sticker{position:relative;top:auto;right:auto;transform:rotate(-12deg);align-self:center;margin-top:6px}
   .hero .sticker:hover{transform:rotate(-12deg)}
-}
-@media (min-width:901px){
-  .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),80px)}
-}
-/* Short windows, or large text in a window that isn't tall: a smaller headline and smaller paragraphs. 46em follows
-   the reader's text size (736px at 16px, 920px at 20px). The README says where the buttons fit since the intro. */
-@media (min-width:901px) and (max-height:46em){
-  .hero h1{font-size:min(9.8cqi,9.2vh,6.4rem);margin-bottom:16px}
-  .hero .sub{font-size:1.04rem;line-height:1.45;margin-bottom:20px}
-  .hero .turnout{margin-top:14px}
-}
-/* very short windows for the text size (under 32em: 512px at the standard text size, 640px at 20px) */
-@media (min-width:901px) and (max-height:32em){
-  .hero h1{font-size:min(9.8cqi,8vh,6.4rem);margin-bottom:12px}
-  .hero .sub{font-size:.98rem;margin-bottom:16px}
-  .hero .btn{font-size:1.25rem}
-}
-@media (min-width:901px) and (max-height:43.25em),(min-width:901px) and (max-width:62.5em) and (max-height:53em){
-  .hero-grid{align-items:start}
 }
 
 /* ---------- sections ---------- */
@@ -370,8 +350,6 @@ footer{background:var(--teal-dk);color:#fff;padding:48px 0 56px}
   .next .sticker2{width:10.625rem;height:10.625rem}
   .next .sticker2 b{font-size:2.1rem}
   .hero-grid{padding:28px 0 64px;gap:28px}
-  .hero h1{font-size:min(9.8cqi,4.2rem)}
-  .hero .sub{font-size:1.1rem}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:30px}
   .gtop .big{font-size:3.6rem}
@@ -423,6 +401,39 @@ footer{background:var(--teal-dk);color:#fff;padding:48px 0 56px}
 .rxc-shell .right{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 .rxc-shell .btn{border-radius:0;background:transparent;display:inline-block}
 .rxc-shell .btn:hover{transform:none}
+
+/* ---------- hero standard, the same on every migration results page: text sizes and spacing follow the window
+   height, the hero fills the first screen with its content centred, and the buttons stay on one row on wide layouts
+   and stack at full width on phones. The page sets only --h1-fit (on .hero-text). Keep this last. ---------- */
+@media (min-width:901px){
+  .hero{display:grid;align-content:center;min-height:calc(100svh - 3.4rem)}
+  .hero>.wrap{width:100%}
+  .hero-grid{padding-top:clamp(16px,calc(100vh - 46rem),72px);padding-bottom:clamp(28px,calc(100vh - 44rem),80px);align-items:center}
+  .hero h1{font-size:min(var(--h1-fit),7.9vh,4.2rem);margin-bottom:clamp(10px,2vh,26px)}
+  .hero .sub{font-size:clamp(.875rem,2.35vh,1.25rem);line-height:1.45;margin-bottom:clamp(12px,2.4vh,28px);max-width:none}
+  .hero .sub.intro{margin-bottom:.55em}
+  .hero .actions{gap:14px}
+  .hero .btn{min-height:clamp(2.5rem,5.4vh,2.9rem);padding-top:0;padding-bottom:0;padding-left:1.35rem;padding-right:1.35rem}
+  .hero .turnout{font-size:.95rem;margin-top:clamp(8px,1.6vh,22px)}
+}
+@media (min-width:901px) and (max-height:43.25em){ .hero-grid{align-items:start} }
+@media (max-width:900px){
+  .hero h1{font-size:min(var(--h1-fit),3.4rem);margin-bottom:18px}
+  .hero .sub{font-size:1.1rem;line-height:1.45;margin-bottom:22px}
+  .hero .sub.intro{margin-bottom:.55em}
+  .hero .btn{min-height:2.8rem;padding-top:0;padding-bottom:0}
+  .hero .turnout{margin-top:16px}
+}
+/* Buttons: one row on wide layouts, shrinking a step as the text column (a container)
+   narrows; on phones, stacked at full width so every page matches and targets stay large. */
+@media (min-width:901px){
+  @container (max-width:34.5rem){ .hero .btn{padding-left:.9rem;padding-right:.9rem} .hero .actions{zoom:.86} }
+  @container (max-width:27.5rem){ .hero .actions{zoom:.76} }
+  @container (max-width:23.5rem){ .hero .actions{zoom:.7} }
+}
+@media (max-width:900px){
+  @container (max-width:30rem){ .hero .actions{flex-direction:column;align-items:stretch} .hero .btn{justify-content:center} }
+}
 </style>
 </head>
 <body>
