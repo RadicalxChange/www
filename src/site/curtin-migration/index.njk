@@ -81,15 +81,13 @@ q{quotes:"“" "”"}
 /* ---------- hero ---------- */
 .hero{background:var(--fizz);color:var(--on-fizz);overflow:hidden}
 .hero :focus-visible{outline-color:var(--navy)}
-.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:88px 0 100px}
-.hero-text{container-type:inline-size}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero-text{container-type:inline-size;--h1-fit:14cqi}
 /* the headline is three set lines, like the Warringah page's, sized to its column so they never rewrap */
-.hero h1{font-size:min(14cqi,9vh,6.4rem);line-height:1.04;margin-bottom:30px}
+.hero h1{line-height:1.04}
 .hero h1 .ln{display:block;white-space:nowrap}
 .hero h1 .box{display:inline-block;background:var(--navy);color:#fff;padding:.02em .18em .06em;margin:.06em 0 .08em -.18em;border-radius:.07em;line-height:1.02}
-.hero .turnout{font-size:.95rem;font-weight:500;margin-top:22px}
-.hero .sub{font-size:1.4rem;line-height:1.45;margin-bottom:36px}
-.hero .sub.intro{margin-bottom:.7em}
+.hero .turnout{font-size:.95rem;font-weight:500}
 .actions{display:flex;gap:14px;flex-wrap:wrap}
 .sticker{width:8.25rem;height:8.25rem;border-radius:50%;background:var(--navy);color:var(--fizz);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);z-index:3;padding:0 .7rem}
 .sticker b{display:block;font-family:var(--display);font-weight:700;font-size:2.1rem;line-height:1;margin:.1rem 0 .2rem;font-feature-settings:"lnum" 1}
@@ -125,20 +123,6 @@ q{quotes:"“" "”"}
   .hero .glabel{width:auto}
   .hero .sticker{position:relative;top:auto;right:auto;transform:rotate(-12deg);align-self:center;margin-top:6px}
   .hero .sticker:hover{transform:rotate(-12deg)}
-}
-/* Short windows: keep the headline, lede and buttons on the first screen. See the README, "Layout".
-   The space above the hero shrinks first; the headline's size also follows the window's height. */
-@media (min-width:901px){
-  .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),88px)}
-}
-@media (min-width:901px) and (max-height:47.5em){ .hero h1{font-size:min(14cqi,8vh,6.4rem);margin-bottom:22px} }
-/* the hero sentence runs the whole column, so on short laptops, and on narrow windows that aren't tall, it steps down
-   a size to keep the buttons on screen */
-@media (min-width:901px) and (max-height:46em),(min-width:901px) and (max-width:70em) and (max-height:48em){ .hero .sub{font-size:1.1rem} }
-/* Where the cards run well past the first screen, the headline starts level with them
-   instead of sitting halfway down: very short windows, and narrow ones that are not tall. */
-@media (min-width:901px) and (max-height:43.25em),(min-width:901px) and (max-width:62.5em) and (max-height:53em){
-  .hero-grid{align-items:start}
 }
 
 /* ---------- sections ---------- */
@@ -370,9 +354,6 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
   .next .sticker2{width:10.625rem;height:10.625rem}
   .next .sticker2 b{font-size:2.6rem}
   .hero-grid{padding:28px 0 64px;gap:28px}
-  .hero h1{font-size:min(14cqi,3.6rem)}
-  .hero .sub{font-size:1.2rem}
-  .hero .turnout{margin-top:16px}
   .hero .cards{gap:16px;padding:6px 4px 10px}
   section.block{padding:72px 0}
   .head{gap:18px;margin-bottom:32px}
@@ -428,6 +409,39 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
 .rxc-shell .right{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 .rxc-shell .btn{border-radius:0;background:transparent;display:inline-block}
 .rxc-shell .btn:hover{transform:none}
+
+/* Shared hero standard, the same on every migration results page (teals/hero-standard.css): text sizes and spacing
+   follow the window height, the hero fills the first screen with its content centred, and the buttons stay on one
+   row on wide layouts and stack at full width on phones. The page sets only --h1-fit (on .hero-text). */
+@media (min-width:901px){
+  .hero{display:grid;align-content:center;min-height:calc(100svh - 3.4rem)}
+  .hero>.wrap{width:100%}
+  .hero-grid{padding-top:clamp(16px,calc(100vh - 46rem),72px);padding-bottom:clamp(28px,calc(100vh - 44rem),80px);align-items:center}
+  .hero h1{font-size:min(var(--h1-fit),7.9vh,4.2rem);margin-bottom:clamp(10px,2vh,26px)}
+  .hero .sub{font-size:clamp(.875rem,2.35vh,1.25rem);line-height:1.45;margin-bottom:clamp(12px,2.4vh,28px);max-width:none}
+  .hero .sub.intro{margin-bottom:.55em}
+  .hero .actions{gap:14px}
+  .hero .btn{min-height:clamp(2.5rem,5.4vh,2.9rem);padding-top:0;padding-bottom:0;padding-left:1.35rem;padding-right:1.35rem}
+  .hero .turnout{font-size:.95rem;margin-top:clamp(8px,1.6vh,22px)}
+}
+@media (min-width:901px) and (max-height:43.25em){ .hero-grid{align-items:start} }
+@media (max-width:900px){
+  .hero h1{font-size:min(var(--h1-fit),3.4rem);margin-bottom:18px}
+  .hero .sub{font-size:1.1rem;line-height:1.45;margin-bottom:22px}
+  .hero .sub.intro{margin-bottom:.55em}
+  .hero .btn{min-height:2.8rem;padding-top:0;padding-bottom:0}
+  .hero .turnout{margin-top:16px}
+}
+/* Buttons: one row on wide layouts, shrinking a step as the text column (a container)
+   narrows; on phones, stacked at full width so every page matches and targets stay large. */
+@media (min-width:901px){
+  @container (max-width:34.5rem){ .hero .btn{padding-left:.9rem;padding-right:.9rem} .hero .actions{zoom:.86} }
+  @container (max-width:27.5rem){ .hero .actions{zoom:.76} }
+  @container (max-width:23.5rem){ .hero .actions{zoom:.7} }
+}
+@media (max-width:900px){
+  @container (max-width:30rem){ .hero .actions{flex-direction:column;align-items:stretch} .hero .btn{justify-content:center} }
+}
 </style>
 </head>
 <body>
