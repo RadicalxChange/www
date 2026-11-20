@@ -135,36 +135,47 @@ q{quotes:"“" "”"}
 @media (min-width:901px){
   .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),80px)}
 }
-/* Short windows, or large text in a window that isn't tall: a smaller headline and sentence keep the buttons on
-   the first screen. The sentence carries the vote line, so it is long; the steps follow the Kooyong page's. Heights in
-   em follow the reader's text size (46em is 736px at 16px and 920px at 20px). See the README. */
+/* Short windows, or large text in a window that isn't tall: less space above the hero, then a smaller headline and
+   smaller paragraphs, keep the buttons on the first screen. The hero has two paragraphs (Jess's intro, then the finding
+   sentence with its vote line), so it is long; the steps follow the Kooyong page's. Heights in em follow the reader's
+   text size (46em is 736px at the standard size and 920px at 20px). See the README. */
+@media (min-width:901px) and (max-height:50em){
+  .hero-grid{padding-top:clamp(20px,calc(100vh - 44rem),36px)}
+}
 @media (min-width:901px) and (max-height:46em){
-  .hero h1{font-size:min(10.6cqi,7.6vh,4.6rem);margin-bottom:14px}
-  .hero .sub{font-size:1.02rem;line-height:1.5;margin-bottom:14px}
+  .hero h1{font-size:min(10.6cqi,7.6vh,4.6rem);margin-bottom:12px}
+  .hero .sub{font-size:1rem;line-height:1.48;margin-bottom:12px}
   .hero .turnout{margin-top:12px}
+}
+@media (min-width:901px) and (max-height:38em){
+  .hero h1{font-size:min(10.6cqi,6.8vh,4.6rem);margin-bottom:10px}
+  .hero .sub{font-size:.95rem;line-height:1.45;margin-bottom:8px}
 }
 /* very short windows for the text size (under 32em: 512px at the standard text size, 640px at 20px) */
 @media (min-width:901px) and (max-height:32em){
-  .hero-grid{padding-top:20px}
-  .hero h1{font-size:min(10.6cqi,6.8vh,4.6rem);margin-bottom:10px}
-  .hero .sub{font-size:.92rem;line-height:1.45;margin-bottom:14px}
+  .hero-grid{padding-top:14px}
+  .hero h1{font-size:min(10.6cqi,6vh,4.6rem);margin-bottom:8px}
+  .hero .sub{font-size:.88rem;line-height:1.42;margin-bottom:8px}
   .hero .btn{font-size:.98rem;padding:.75rem 1.2rem}
 }
 @media (min-width:901px) and (max-height:27em){
-  .hero h1{font-size:min(10.6cqi,6.2vh,4.6rem)}
-  .hero .sub{font-size:.86rem;line-height:1.4;margin-bottom:12px}
+  .hero h1{font-size:min(10.6cqi,5.4vh,4.6rem)}
+  .hero .sub{font-size:.84rem;line-height:1.4;margin-bottom:6px}
 }
-/* narrow, short windows: the sentence and buttons a little smaller again, since the buttons wrap onto two rows */
+/* narrow, short windows: the paragraphs and buttons a little smaller again, since the buttons wrap onto two rows */
 @media (min-width:901px) and (max-width:62.5em) and (max-height:46em){
   .hero .sub{font-size:.95rem;line-height:1.45}
+}
+@media (min-width:901px) and (max-width:62.5em) and (max-height:38em){
+  .hero .sub{font-size:.9rem;line-height:1.42}
 }
 @media (min-width:901px) and (max-width:62.5em) and (max-height:32em){
   .hero .sub{font-size:.84rem;line-height:1.4}
   .hero .btn{font-size:.9rem;padding:.6rem 1rem}
 }
 @media (min-width:901px) and (max-width:62.5em) and (max-height:27em){
-  .hero h1{font-size:min(10.6cqi,5.6vh,4.6rem)}
-  .hero .sub{font-size:.76rem}
+  .hero h1{font-size:min(10.6cqi,5.4vh,4.6rem)}
+  .hero .sub{font-size:.78rem}
 }
 @media (min-width:901px) and (max-height:43.25em),(min-width:901px) and (max-width:62.5em) and (max-height:53em){
   .hero-grid{align-items:start}
@@ -455,7 +466,7 @@ footer{background:var(--navy);color:#fff;padding:48px 0 56px}
     <div class="hero-grid">
       <div class="hero-text">
         <h1><span class="ln">Wentworth wants</span><span class="ln"><span class="box">joined-up planning</span></span><span class="ln">for migration</span></h1>
-        <!-- Jess Scully is drafting two opening lines affirming migrants' contribution, for every page: they go here, before the sentence. -->
+        <p class="sub intro" data-k="intro">Multiculturalism is central to Australia’s story, identity and future. As debate over migration levels and settings continues, this process offers a more nuanced, participatory way for communities to give feedback on immigration policy.</p>
         <p class="sub" data-k="herosub">People here disagree about how many should come and who should be chosen. But all three groups want state and federal planning aligned, and a much more transparent system. When people voted on priorities, planning migration with housing and infrastructure came first.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what Wentworth said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout" data-k="turnout">Since 2 November 2026 · 154 people have taken part · 131 in a group</p>

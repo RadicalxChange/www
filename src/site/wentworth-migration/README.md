@@ -180,9 +180,10 @@ value is checked against the export before each push.
 The page width is in rem (`.wrap{max-width:77.5rem}`), as on the other
 migration results pages.
 
-- The hero carries the headline, one sentence on the divide and the shared
-  ground (ending with what the priority vote put first), the two buttons and
-  the turnout ("… 154 people have taken part · 131 in a group"). On the right
+- The hero carries the headline, Jess Scully's intro for every migration
+  results page (in its own paragraph, styled like the sentence after it), one
+  sentence on the divide and the shared ground (ending with what the priority
+  vote put first), the two buttons and the turnout ("… 154 people have taken part · 131 in a group"). On the right
   sits one label per group: its size in people, its name and one plain line
   from its own defining statements, each linking to its group card
   (`#group-1` to `#group-3`). The circle with the headline figure, its ring in
@@ -194,10 +195,12 @@ migration results pages.
 - The headline is three set lines ("Wentworth wants" / "joined-up planning" /
   "for migration"), the middle one boxed in rose. It is sized from its column
   (`min(10.6cqi, 9vh, 4.6rem)`) and never wraps.
-- The hero sentence is long, so short windows get a smaller headline and
-  sentence in steps (under 46em, 32em and 27em tall, smaller again under
-  62.5em wide), and the buttons stay on the first screen at every size
-  checked.
+- The hero's two paragraphs are long, so short windows get less space above
+  the hero, then a smaller headline and smaller paragraphs, in steps (under
+  50em, 46em, 38em, 32em and 27em tall, smaller again under 62.5em wide). The
+  buttons stay on the first screen at 1728×966, 1280×720, 1180×820 and
+  1024×768 with 20px text and at the usual laptop sizes; on narrow, short
+  windows (1024×700 and smaller) they fall just below it.
 - The map's height follows the highest pile.
 - A notes row's paragraphs all sit in its right-hand column.
 
