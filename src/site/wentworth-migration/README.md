@@ -105,7 +105,10 @@ headline, the turnout, the groups or the circle change, regenerate it.
   identical in wording. A card says "The groups split on this one" only when
   two groups are 30+ points apart, on opposite sides of 50% agreeing, with 10+
   voters in each; where the lower group had at least as many agreeing as
-  disagreeing, it says that group was divided. The employer ban has no close match (the statement
+  disagreeing, it says that group was divided. Where any group has fewer than
+  10 voters on the matching statement, the card makes neither claim and says
+  that few people in that group voted on it (the removals card, where 3 people
+  in Group 2 and 2 in Group 3 voted). The employer ban has no close match (the statement
   about sponsored workers changing employers belongs to a different change),
   so its card says so.
 
