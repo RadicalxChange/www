@@ -193,14 +193,15 @@ migration results pages.
   caveat. The page then runs: where the groups agree, the six changes people
   want most, how this worked (with the notes) and what happens next.
 - The headline is three set lines ("Wentworth wants" / "joined-up planning" /
-  "for migration"), the middle one boxed in rose. It is sized from its column
-  (`min(10.6cqi, 9vh, 4.6rem)`) and never wraps.
-- The hero's two paragraphs are long, so short windows get less space above
-  the hero, then a smaller headline and smaller paragraphs, in steps (under
-  50em, 46em, 38em, 32em and 27em tall, smaller again under 62.5em wide). The
-  buttons stay on the first screen at 1728×966, 1280×720, 1180×820 and
-  1024×768 with 20px text and at the usual laptop sizes; on narrow, short
-  windows (1024×700 and smaller) they fall just below it.
+  "for migration"), the middle one boxed in rose. Its longest line fills the
+  text column at `--h1-fit: 10.6cqi`, and it never wraps.
+- The hero's sizes and spacing follow the shared hero standard used on every
+  migration results page (the block at the end of the stylesheet): text sizes
+  follow the window height, the hero fills the first screen with its content
+  centred, and the buttons stay on one row on wide layouts and stack at full
+  width on phones. The page sets only `--h1-fit`. With 20px text the buttons
+  end on the first screen at 1728×966, 1440×790, 1280×720, 1180×820 and
+  1024×700 (where the turnout line runs just past it); at 901×650 they don't.
 - The map's height follows the highest pile.
 - A notes row's paragraphs all sit in its right-hand column.
 
