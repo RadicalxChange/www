@@ -164,8 +164,9 @@ other, at least 10 voters a side, and z of at least 3.3). That gives 61 people
 (Group 2) and 25 statements; Group 2 voted on a median of 34 statements and
 Group 1 on 80. A permutation test puts the members of Polis's larger group in
 1,000 random orders (fixed seed) and runs the same search on each: no order
-finds more than 2 such statements, and 726 of the 1,000 find none. Before 19 November the page showed this as a closer look inside one
-group, with a dashed line, a bracket and a key; they are gone.
+finds more than 2 such statements, and 726 of the 1,000 find none. Earlier
+versions of the page showed this as a closer look inside one group, with a
+dashed line, a bracket and a key; they are gone.
 
 Inside Group 3 the same search does find a split, but all 5 people in Group 3
 who passed on at least 9 in 10 of their statements sit near the border, and
