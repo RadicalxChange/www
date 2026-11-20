@@ -220,15 +220,19 @@ Some things differ from the Curtin page:
   wraps.
 - Short windows (under 46em tall, which is 736px at the standard text size
   and 920px at a 20px default) get a smaller headline (`8vh`) and lede, and
-  the hero's labels tighten from 53em down, so the buttons, all three labels
-  and the circle stay on the first screen at 1280×720 with 20px text. Checked at 16px and 20px text from 901 to 1728px wide and 650 to
-  966px tall.
+  the hero's labels tighten from 53em down, so all three labels and the
+  circle stay on the first screen at 1280×720 with 20px text. Since Jess's
+  intro was added (20 November 2026), the buttons fit the first screen at
+  1728×966, 1536×730, 1440×790 and 1180×820 with 20px text, but start below
+  it at 1366×650, 1280×720, 1280×650 and 1024×700, and on phones. Checked
+  at 16px and 20px text from 901 to 1728px wide and 650 to 966px tall.
 - The map's height follows the highest pile, so it grows on narrow screens,
   where the dots are larger relative to the width.
 
 Check any hero change at 1728×966 with a 20px default text size, 1440×790,
 1366×650, 1536×730, 1280×720, 1180×820, 1024×700 and a 375px phone: the
-buttons stay on the first screen, no line of text falls under the circle, and
-the labels don't overlap.
+labels and circle stay on the first screen, the buttons stay where they were
+(see above), no line of text falls under the circle, and the labels don't
+overlap.
 
 This file is excluded from the build via `.eleventyignore`.
