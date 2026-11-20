@@ -175,13 +175,20 @@ migration results pages.
   in one place in the generator, so a rename is one change.
 - The headline is three set lines ("Kooyong wants" / "a bipartisan plan" /
   "for migration"), the middle one boxed in teal. It is sized from its column
-  (`min(12.6cqi, 10vh, 5.8rem)`) and never wraps.
-- Short windows get a smaller headline and lede. Since the intro was added
-  (20 November 2026), the buttons fit the first screen at 1728×966,
-  1536×730, 1440×790 and 1366×650 at both text sizes, and at 1280×720 and
-  1180×820 with 16px text. They start below it at 1280×720 and 1180×820
-  with 20px text, at 1024px wide and narrower, and on phones. The labels
-  and the circle fit the first screen wherever they did before.
+  (`--h1-fit: 12.6cqi`), capped by the window height, and never wraps.
+- The hero's sizes and spacing follow the standard shared by the migration
+  results pages (20 November 2026): the block at the end of the page's CSS,
+  unchanged, with the page setting only its headline's column fit (`--h1-fit`
+  on `.hero-text`). Text sizes follow the window height, the hero fills the
+  first screen with its content centred, and the buttons stay on one row on
+  wide layouts, stepping down in size as the text column narrows. On phones
+  they stack at full width.
+- Checked in browser windows from 901 to 1728px wide and 650 to 966px tall,
+  at 16px and 20px text: the buttons fit the first screen at 23 of 26 sizes.
+  They start just below it at 1024×700 and 960×700 with 20px text, and at
+  901×650 with 20px text, where they also wrap onto two rows and the second
+  label ends below the first screen, as it did before the standard. The
+  labels and the circle fit everywhere else.
 - The map's height follows the highest pile.
 - A notes row's paragraphs all sit in its right-hand column.
 
