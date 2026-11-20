@@ -208,18 +208,25 @@ HTML directly; every figure on the page has been checked against the exports.
   the circle follows them, centred.
 - The turnout line also says how many people are in a group: "265 people
   took part · 232 in a group".
+- Under the headline, an intro in its own paragraph, styled like the finding
+  sentence that follows it (`class="sub intro"`: the same size at every window
+  size, with `.7em` below it): "Multiculturalism is central to Australia’s
+  story, identity and future. As debate over migration levels and settings
+  continues, this process offers a more nuanced, participatory way for
+  communities to give feedback on immigration policy."
 - The hero sentence runs the whole width of its column and ends with the
   priority vote's first choice. Windows 46em tall or less, and windows
-  70em wide or less that are 48em tall or less, set it at 1.1rem, so the
-  buttons stay on the first screen.
+  70em wide or less that are 48em tall or less, set it (and the intro) at
+  1.1rem, which kept the buttons on the first screen before the intro.
 - The hero headline is three set lines, like the Warringah page's: "Curtin
   wants", "a long-term plan" (boxed in navy) and "for migration". Each line is
   `white-space:nowrap`, and the size comes from the hero text column
   (`container-type:inline-size`): `min(14cqi,9vh,6.4rem)`. The widest line,
   the boxed one, is about 6.7 times the size, so it always fits the column
   and the lines never rewrap. Phones use `min(14cqi,3.6rem)`.
-- Short windows keep the headline, lede and buttons on the first screen. The
-  rules are inside `min-width:901px`:
+- Short windows keep the headline and lede on the first screen (and kept the
+  buttons there too, until the intro: see the sweep below). The rules are
+  inside `min-width:901px`:
   - `.hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),88px)}` shrinks
     the space above the hero.
   - The headline's `9vh` limits it on short windows, and under 47.5em tall it
@@ -228,15 +235,16 @@ HTML directly; every figure on the page has been checked against the exports.
     starts level with the labels (`align-items:start`): any window under
     43.25em tall, and a window under 62.5em wide that is under 53em tall.
 
-  Swept again with the group labels (November 2026), at 140 window sizes
-  from 901×600 to 2560×1200 at 16px, and at 13 sizes with 20px text,
-  including 1728×966 (light and dark), 1280×720, 1180×820, 1366×650 and
-  1024×700. At every one, the buttons, all three labels and the circle are
-  on the first screen, no line of text falls under the circle, the circle's
-  own words stay inside it, and no two labels overlap. The small turnout line
-  under the buttons can fall just below the first screen on the shortest
-  windows (9 of the 153). If the headline, lede, buttons or labels change,
-  sweep again.
+  Swept again with the intro (November 2026), at the same 140 window sizes
+  from 901×600 to 2560×1200 at 16px and 13 sizes with 20px text, including
+  1728×966 (light and dark), 1280×720, 1180×820, 1366×650 and 1024×700. At
+  every one, all three labels and the circle are on the first screen, no
+  line of text falls under the circle, the circle's own words stay inside
+  it, and no two labels overlap. The intro pushes the buttons below the
+  first screen at 51 of the 140 sizes at 16px and at 9 of the 13 with 20px
+  text, 1728×966 among them (with the group labels alone, at none), and the
+  turnout line under them at 83 of the 153 (9 before). If the headline,
+  lede, buttons or labels change, sweep again.
 - The closing "Thank you, Curtin" circle is sized in rem like its words
   (15rem, and 10.625rem at 900px and below), so the words stay inside it at
   any text size.
