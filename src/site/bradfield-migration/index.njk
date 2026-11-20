@@ -108,6 +108,8 @@ q{quotes:"“" "”"}
    cards: residents' words are in the group cards. Only the circle is tilted. */
 /* The hero sentence runs the full width of its column */
 .hero .sub{max-width:none}
+/* The intro sits above the finding sentence and is styled like it, a paragraph's gap between them */
+.hero .sub.intro{margin-bottom:.75em}
 .hero .cards{display:flex;flex-direction:column;justify-content:center;position:relative;padding:0}
 .hero .glabels{display:flex;flex-direction:column;gap:16px}
 .hero .glabel{display:block;position:relative;text-decoration:none;color:var(--teal-dk);background:#fff;border-radius:14px;padding:14px 44px 15px 22px;border-left:8px solid var(--gc);box-shadow:0 14px 30px -18px rgba(6,40,46,.55);width:calc(100% - 9.5rem)}
@@ -139,8 +141,8 @@ q{quotes:"“" "”"}
 @media (min-width:901px){
   .hero-grid{padding-top:clamp(28px,calc(100vh - 41.5rem),80px)}
 }
-/* Short windows, or large text in a window that isn't tall: a smaller headline and lede keep the buttons
-   on the first screen. 46em follows the reader's text size (736px at 16px, 920px at 20px). See the README. */
+/* Short windows, or large text in a window that isn't tall: a smaller headline and smaller paragraphs. 46em follows
+   the reader's text size (736px at 16px, 920px at 20px). The README says where the buttons fit since the intro. */
 @media (min-width:901px) and (max-height:46em){
   .hero h1{font-size:min(9.8cqi,9.2vh,6.4rem);margin-bottom:16px}
   .hero .sub{font-size:1.04rem;line-height:1.45;margin-bottom:20px}
@@ -445,6 +447,7 @@ footer{background:var(--teal-dk);color:#fff;padding:48px 0 56px}
     <div class="hero-grid">
       <div class="hero-text">
         <h1><span class="ln">Bradfield wants</span><span class="ln"><span class="box">homes and services planned</span></span><span class="ln">for migration</span></h1>
+        <p class="sub intro">Multiculturalism is central to Australia’s story, identity and future. As debate over migration levels and settings continues, this process offers a more nuanced, participatory way for communities to give feedback on immigration policy.</p>
         <p class="sub">People disagree about how many should come, and who should come first. But most want migration planned with homes, roads, schools and hospitals, so services keep pace.</p>
         <div class="actions"><a class="btn solid" href="#groups">See what Bradfield said</a><a class="btn line" href="#priorities">The changes people want most</a></div>
         <p class="turnout">Since 2 November 2026 · 422 people have taken part · 344 in a group</p>

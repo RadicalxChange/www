@@ -234,8 +234,13 @@ same layout as on the other migration results pages.
   labels, centred. It never covers the labels' text.
 - The circle's number is set at 2.1rem and its lines at a 1.1 line height, so
   every line stays well inside the coral disc at 16px and 20px text.
-- With 20px text the labels fit the first screen at 1728×966, 1280×720,
-  1180×820 and 1024×700.
+- With 20px text the labels and the circle fit the first screen at 1728×966,
+  1280×720, 1180×820 and 1024×700.
+- Under the headline, an intro in its own paragraph, styled like the finding
+  sentence that follows it: "Multiculturalism is central to Australia’s story,
+  identity and future. As debate over migration levels and settings continues,
+  this process offers a more nuanced, participatory way for communities to
+  give feedback on immigration policy."
 - The hero sentence runs the full width of its column.
 - The headline is three set lines ("Bradfield wants" / "homes and services
   planned" / "for migration"), the middle one boxed in teal like the labels on
@@ -243,15 +248,20 @@ same layout as on the other migration results pages.
   so the headline is sized from its column (`min(9.8cqi, 11vh, 6.4rem)`) and
   never wraps.
 - Short windows (under 46em tall, which is 736px at the standard text size
-  and 920px at a 20px default) get a smaller headline (`9.6vh`) and lede, so
-  the buttons stay on the first screen.
+  and 920px at a 20px default) get a smaller headline (`9.2vh`) and smaller
+  paragraphs. Since the intro was added (20 November 2026), both buttons fit
+  the first screen at 1728×966, 1536×730, 1440×790, 1366×650 and 1180×820
+  with 20px text, and on a 375px phone. At 1280×720 the first button fits and
+  the second runs 14px past the first screen; at 1024×700 the first button
+  runs 22px past it.
 - The map's height follows the highest pile, so it grows on narrow screens,
   where the dots are larger relative to the width.
 
 Check any hero change at 1728×966 with a 20px default text size, 1440×790,
 1366×650, 1536×730, 1280×720, 1180×820, 1024×700 and a 375px phone: the
-buttons and labels stay on the first screen, no line of a label falls under
-the circle, and the labels don't overlap.
+labels and the circle stay on the first screen, the buttons stay where they
+are (see above), no line of a label falls under the circle, and the labels
+don't overlap.
 
 The page runs: hero, groups (the map, then the cards, then the caveat),
 agreement (its fold shows each statement's three shares on one track),
