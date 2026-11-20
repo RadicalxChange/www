@@ -193,9 +193,14 @@ the reader's browser: the block makes no network requests and stores nothing
   Eight are starter statements, which every migration conversation shares;
   134 and 69 were written by people in Curtin, one on each side of the main
   divide. Most of every group agreed with 0 and 12 (70% or more in each, with
-  10 or more voters in each), so they come first and last, and the result
-  says whether the reader agreed with them too. The texts are word for word
-  from the export, with apostrophes curled.
+  10 or more voters in each), so they come first and last. The texts are
+  word for word from the export, with apostrophes curled.
+- **Common ground in the result.** If the reader agreed with statement 0,
+  the result names the page's main finding in the words of the circle at the
+  top: "Like more than 3 in 4 people in every group, you want migration
+  planned 10 to 15 years ahead." (More than 3 in 4 agreed with it in each
+  group, with 20 or more voters in each.) A reader who disagreed, passed or
+  skipped it gets no line.
 - **Placement.** A straight-line fit of each person's place on the map's
   line (`DATA.people` x) on their answers to the ten: agree +1, pass 0,
   disagree −1, and a statement they didn't vote on takes its average. It is
@@ -205,8 +210,9 @@ the reader's browser: the block makes no network requests and stores nothing
   Everything the block needs is in
   `<script type="application/json" id="wwys-data">`: the statements, the
   intercept, weights and averages, the boundaries, the margin, the band, the
-  minimum number of answers, and the group names and descriptions (the same
-  as the hero labels).
+  minimum number of answers, the group names and descriptions (the same as
+  the hero labels), and the common-ground line with its statement
+  (`common`).
 - **Groups.** The position is read against the boundaries between the
   groups on the map: 0.427 (`DATA.cut`) and 0.679 (midway between the last
   Group 2 dot and the first Group 3 dot). Within 0.06 of a boundary the
