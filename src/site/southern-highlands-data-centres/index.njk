@@ -267,6 +267,12 @@ details.rest summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2
 .gl.dark{background:#000;color:#fff;border-color:#000}
 .gl.dark h3{color:var(--fizz)}
 .gl.tinted{background:var(--tint)}
+#groups .lead-row + .sub-head{margin-top:12px}
+#groups .map-card + .groups-row{margin-top:44px}
+.gl .v-m{flex:0 0 auto}
+.gl .vm{gap:6px}
+.gl .vm i{width:15px;height:15px;background:currentColor;opacity:.2}
+.gl .vm i.y{background:currentColor;opacity:1}
 .split84{display:flex;height:18px;border-radius:99px;overflow:hidden}
 .split84 i{display:block;height:100%}
 .split84-n{display:flex;justify-content:space-between;font-size:.9rem;font-weight:600;margin-top:-6px}
@@ -297,7 +303,7 @@ details.rest summary{cursor:pointer;font-weight:600;font-size:1.05rem;padding:.2
 .sq{display:grid;gap:3px}
 .sq i{width:16px;height:16px;border-radius:3px;background:var(--fizz);box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.6)}
 .sq.s1{grid-template-columns:repeat(1,16px)} .sq.s4{grid-template-columns:repeat(2,16px)} .sq.s9{grid-template-columns:repeat(3,16px)}
-.how p.cap{font-size:1.1rem;line-height:1.45;max-width:36rem}
+.how p.cap{font-size:1.1rem;line-height:1.45;max-width:52rem}
 
 /* ---------- how this worked ---------- */
 .steps{list-style:none;margin:0 0 30px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
@@ -463,6 +469,8 @@ figure{margin:0}
 .photos img{display:block;width:100%;height:clamp(240px,31vw,430px);object-fit:cover;border-radius:24px;background:var(--track)}
 .photos.three{grid-template-columns:repeat(3,minmax(0,1fr));margin:0 0 44px}
 .photos.three img{height:clamp(180px,17vw,250px);border-radius:20px}
+.photos.two{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 44px}
+.photos.two img{height:clamp(200px,22vw,320px);border-radius:20px}
 figcaption{font-size:.88rem;color:var(--muted);margin-top:10px;line-height:1.4}
 .gtop .big{font-size:5.6rem;white-space:nowrap}
 .gtop .big small{font-family:var(--text);font-weight:600;font-size:.3em;margin:0 .14em;vertical-align:.9em}
@@ -585,14 +593,18 @@ details.terms{margin-top:36px}
 .prin-seventh{margin:0;padding:22px 26px;border:2px solid var(--ink);border-radius:24px;font-size:1.04rem;line-height:1.45;max-width:none}
 .prin-seventh b{font-weight:600}
 .prin-note{grid-column:span 2;margin:0;font-size:1rem;line-height:1.5;max-width:none;color:var(--muted);text-wrap:pretty}
-.prin-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0 56px;align-items:end;margin-bottom:36px}
-.prin-top .eyebrow{grid-column:1/-1}
-.prin-top .head{margin-bottom:0}
-.prin-top .bargain-h{max-width:none!important}
-.prin-top .deal-lead{margin:0;max-width:40rem}
+.lead-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0 56px;align-items:center;margin-bottom:36px}
+.lead-row .eyebrow{grid-column:1/-1}
+.lead-row .head{margin-bottom:0}
+.lead-row .bargain-h{max-width:none!important}
+.lead-row .deal-lead{margin:0;max-width:40rem}
+.deal-lead p + p{margin-top:14px}
+.who-row{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:44px;align-items:center;margin:0 0 40px}
+.who{font-size:1.18rem;line-height:1.55;margin:0;text-wrap:pretty}
+.who b{font-weight:600}
+.who-row figure{margin:0}
+.who-row img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:20px;background:var(--track)}
 .prin-foot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:center;margin-top:22px}
-.recruit{margin:0}
-.recruit b{font-weight:600}
 .deal{border-radius:24px;padding:26px 26px 22px;display:flex;flex-direction:column;gap:14px;background:var(--card);border:2px solid var(--ink)}
 .deal.d2{background:#000;color:#fff;border-color:#000}
 .deal.d3{background:var(--tint)}
@@ -605,7 +617,7 @@ details.terms{margin-top:36px}
 .indep{margin:0 0 44px;padding:30px 34px 32px;border-radius:24px;background:var(--fizz);color:#000}
 .indep .big{font-weight:600;font-size:1.36rem;line-height:1.38;max-width:62rem;margin:0 0 22px;text-wrap:balance}
 .indep p{font-size:1rem;line-height:1.5}
-.indep-more{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:12px 44px}
+.indep-more{columns:2;column-gap:44px}
 .indep-more p + p{margin-top:12px}
 /* what happens next */
 .next{padding:110px 0}
@@ -626,16 +638,18 @@ details.terms{margin-top:36px}
 .next .reps-cap{font-size:.95rem;line-height:1.45;margin:14px 0 0;max-width:52rem}
 #open-h{max-width:none}
 .next :focus-visible{outline-color:#000}
-@media (max-width:1100px){ .steps{grid-template-columns:repeat(3,minmax(0,1fr))} .prin-top{align-items:start} }
+@media (max-width:1100px){ .steps{grid-template-columns:repeat(3,minmax(0,1fr))} }
 @media (max-width:900px){
   .card,.c1,.c2,.c3,.c4{width:auto}
-  .photos,.photos.three,.deal-grid,.indep-more,.prin-top,.prin-foot,.asks,.reps{grid-template-columns:1fr}
-  .prin-top{margin-bottom:28px}
-  .prin-top .deal-lead{margin-top:20px}
+  .photos,.photos.three,.deal-grid,.lead-row,.who-row,.prin-foot,.asks,.reps{grid-template-columns:1fr}
+  .indep-more{columns:1}
+  .who-row{gap:20px}
+  .lead-row{margin-bottom:28px}
+  .lead-row .deal-lead{margin-top:20px}
   .prin-note{grid-column:auto}
   .photos{margin-bottom:36px}
   .photos img{height:clamp(200px,58vw,340px)}
-  .photos.three{grid-template-columns:1fr 1fr}
+  .photos.three,.photos.two{grid-template-columns:1fr 1fr}
   .photos.three figure:first-child{grid-column:1/-1}
   .photos.three img{height:clamp(150px,34vw,260px)}
   .photos.three figure:first-child img{height:clamp(200px,56vw,340px)}
@@ -688,7 +702,7 @@ details.terms{margin-top:36px}
       <div>
         <h1><span class="nw">What Southern Highlands</span> <span class="nw">residents said about</span> <span class="nw">data centres</span></h1>
         <p class="sub">After years of fighting proposals it never asked for, most recently a gas-powered data centre near Moss Vale, the Southern Highlands got on the front foot. Most residents who took part are sceptical of a data centre here, and many don’t want one at all. But together they set out <b>the terms</b> any proposal would have to meet before they would consider&nbsp;it.</p>
-        <div class="actions"><a class="btn solid" href="#groups">See what residents said</a><a class="btn line" href="#next">What happens next</a></div>
+        <div class="actions"><a class="btn solid" href="#voices">See what residents said</a><a class="btn line" href="#next">What happens next</a></div>
         <p class="turnout"><span>September and October 2026 ·</span> <span><b>157 people</b> took part</span></p>
       </div>
       <div class="cards-col">
@@ -713,69 +727,126 @@ details.terms{margin-top:36px}
       <figure><img src="/assets/southern-highlands/forum-tables.jpg" width="1200" height="800" alt="Residents talk around a table at the forum while a facilitator stands to speak." loading="lazy"><figcaption>Residents at the forum.</figcaption></figure>
     </div>
     <div class="glance-grid">
-      <a class="gl" href="#groups">
-        <h3>Two groups, far apart</h3>
-        <div class="split84" aria-hidden="true"><i class="two" style="width:87.5%"></i><i class="one" style="width:12.5%"></i></div><div class="split84-n" aria-hidden="true"><span><i class="dot g2"></i>91</span><span>13<i class="dot g1"></i></span></div>
-        <p>Of the 104 people grouped by their votes, 91 are more concerned about a data centre here and 13 are more open to one.</p>
-        <span class="more">See where people stand</span>
-      </a>
-      <a class="gl dark" href="#agree">
-        <h3>Yet they agree on the terms</h3>
-        <p>In all, 28 statements won at least 70% support in both groups. They include recycled cooling water, the full plan up front and noise limits set independently.</p>
-        <span class="more">See where they agree</span>
+      <a class="gl" href="#voices">
+        <h3>Protect air, water, quiet and nature</h3>
+        <p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i></span><span class="v-c"><b>8 of 10</b> small groups</span></p>
+        <p>The top theme in the small groups. It shaped what the community’s model says must be protected.</p>
+        <span class="more">Read what they said</span>
       </a>
       <a class="gl tinted" href="#priorities">
         <h3>Clean power and water first</h3>
-        <p>Clean power topped the priority vote. Water recycling had the widest backing, from 37 of 38 voters.</p>
+        <p>Clean power topped the priority vote. Water recycling had the widest backing, from 37 of 38 voters. Most voters backed every condition.</p>
         <span class="more">See the priorities</span>
+      </a>
+      <a class="gl dark" href="#groups">
+        <h3>Mostly sceptical, with terms in common</h3>
+        <div class="split84" aria-hidden="true"><i class="two" style="width:87.5%"></i><i class="one" style="width:12.5%"></i></div><div class="split84-n" aria-hidden="true"><span><i class="dot g2"></i>91</span><span>13<i class="dot g1"></i></span></div>
+        <p>Of the 104 people grouped by their votes, 91 are more concerned about a data centre here. Yet 28 statements won at least 70% support in both groups.</p>
+        <span class="more">See where people stand</span>
       </a>
     </div>
   </div>
 </section>
 
-<section class="block" id="principles" aria-labelledby="principles-h">
+<section class="block tint" id="why" aria-labelledby="why-h">
   <div class="wrap">
-    <div class="prin-top">
-      <p class="eyebrow">The community’s seven principles</p>
+    <div class="lead-row">
+      <p class="eyebrow">Why we did this</p>
       <div class="head">
-        <h2 id="principles-h" class="bargain-h">A better model starts with a community that can name its priorities, terms and shared vision.</h2>
+        <h2 id="why-h">Communities are usually asked too&nbsp;late</h2>
       </div>
-      <p class="deal-lead">At the forum, residents presented seven principles to their representatives. For many residents, the first question is where: they don’t want a large data centre in the Sydney water basin, which covers most of the Highlands. Any proposal would also have to meet these principles, and meeting them would not guarantee a yes.</p>
+      <div class="deal-lead">
+        <p>Big projects, from data centres to renewable energy zones, usually reach a community after the key choices are made. Polls and planning processes ask people to react, and too often they work best for people who are well off or well educated. They rarely offer independent evidence, or time to say what matters, what must be protected and what a project would have to give back.</p>
+        <p>This pilot asked those questions first and set out to hear a wider range of voices. It did not ask residents to endorse a data centre. An informed no is as valid as a conditional yes.</p>
+      </div>
     </div>
-    <div class="deal-grid">
-      <div class="deal d1"><h3>A real say</h3><dl class="prin"><dt>Community leadership</dt><dd>Support community decision-making about priorities and use of funds.</dd><dt>Transparent and accountable</dt><dd>Share the full picture from the start, including what kind of computing is planned, with ongoing independent checks backed by enforceable rules.</dd></dl></div>
-      <div class="deal d2"><h3>Protections</h3><dl class="prin"><dt>Clean and green</dt><dd>Run the data centre on clean energy and protect our local environment.</dd><dt>Smart water</dt><dd>Water recycling and cooling tech that does not compete for town water or compromise water quality.</dd></dl></div>
-      <div class="deal d3"><h3>Lasting value</h3><dl class="prin"><dt>Fair share</dt><dd>An ongoing share of benefits, including a permanent endowment for future generations.</dd><dt>Circular and local economy</dt><dd>High quality, long-term local jobs including Aboriginal-identified roles, and bring compute, water, power and heat into local industry.</dd></dl></div>
+  </div>
+</section>
+
+<section class="block" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="head"><h2 id="how-h">How this worked</h2></div>
+    <div class="who-row">
+      <p class="who"><b>Who took part.</b> Delegates were invited, not chosen at random. We sought a broad cross-section of the community, especially voices often missing from consultation: First Nations people, young people and people with lived experience of disadvantage. We also sought people close to the issue, from environmental advocates, including people opposed to data centres, to business owners and the local IT sector. We reached them through community connectors, not-for-profits, business chambers and environmental groups. It was not designed to be a demographically representative sample. Sessions ran at lunchtime and in the evening so working parents could join.</p>
+      <figure><img src="/assets/southern-highlands/forum-method.jpg" width="1200" height="800" alt="Jess Scully of RadicalxChange presents the method and results to the forum." loading="lazy"><figcaption>Jess Scully of RadicalxChange presents the method and results.</figcaption></figure>
     </div>
-    <div class="prin-foot">
-      <p class="prin-seventh"><b>Respect diversity.</b> Accept that some community members may still oppose or question the project.</p>
-      <p class="prin-note">An informed no is as valid as a conditional yes. This work is independent of the data centre’s proponent and does not assume that any development should proceed. It should not be cited by any proponent, consultant or party to proceedings as evidence of community support for, or consent to, a particular development.</p>
+    <ol class="steps">
+      <li class="step"><span class="fig">48</span><h3>Delegates</h3><p>Invited locals from across the Highlands, chosen for the range of views they bring.</p></li>
+      <li class="step"><span class="fig">5</span><h3>Sessions</h3><p>Four online in September and one in person on 20 October. Delegates heard independent evidence first.</p></li>
+      <li class="step"><span class="fig">10</span><h3>Small groups</h3><p>Nine online and one in person. Residents talked through what matters here and what to ask for.</p></li>
+      <li class="step"><span class="fig">38</span><h3>Set priorities</h3><p>38 of the 48 delegates each had 99 credits to spend on 13 possible conditions, using quadratic voting.</p></li>
+      <li class="step"><span class="fig">157</span><h3>In the open conversation</h3><p>Open to anyone. People voted agree, disagree or pass on statements, and wrote 146 of their own.</p></li>
+      <li class="step"><span class="fig">160+</span><h3>At the forum</h3><p>On 25 October in Mittagong, residents heard and discussed the model and the results with their local, state and federal representatives. Anyone could come.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="voices" aria-labelledby="voices-h">
+  <div class="wrap">
+    <div class="lead-row">
+      <p class="eyebrow">The small groups</p>
+      <div class="head">
+        <h2 id="voices-h">In their own words</h2>
+      </div>
+      <p class="deal-lead">In ten small groups, nine online and one in person, residents talked about the challenges and joys of regional life, what matters here and what to ask for. Protecting air, water, quiet and nature came up most, in 8 of 10 groups. It shaped what the community’s model says must be protected. Seven themes came up in at least half of the groups.</p>
     </div>
+    <div class="voices">
+      <article class="voice feature" data-n="8"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i></span><span class="v-c"><b>8 of 10</b> small groups</span></p><h3>Protect air, water, quiet and nature</h3><div class="v-qs"><q>We have platypus in the Wingecarribee River that are already struggling and endangered.</q><q>We love the Southern Highlands because it’s so green, and it’s such a nice natural kind of space.</q><q>Remember that noise is cumulative, emissions are cumulative.</q></div></article>
+      <article class="voice" data-n="7"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i></span><span class="v-c"><b>7 of 10</b> small groups</span></p><h3>A community-controlled fund, independent of council</h3><div class="v-qs"><q>Some sort of a community trust arrangement, where some funding goes in on a continuous basis from the revenue stream of the developer.</q><q>It needs to be managed by a third party so that we as a community can vote.</q></div></article>
+      <article class="voice" data-n="7"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i></span><span class="v-c"><b>7 of 10</b> small groups</span></p><h3>Clear information and a real voice</h3><div class="v-qs"><q>Where does it actually go to? Who listens?</q><q>Having multiple opportunities to be able to participate, as opposed to: you have to make a choice on this day and that’s it.</q></div></article>
+      <article class="voice" data-n="6"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>6 of 10</b> small groups</span></p><h3>The real decisions sit with the state, not council</h3><div class="v-qs"><q>They’re state significant developments, and the decisions are made in Macquarie Street.</q><q>I just don’t think council has the time to do it or the expertise.</q></div></article>
+      <article class="voice" data-n="5"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>5 of 10</b> small groups</span></p><h3>Renewable energy as a baseline</h3><div class="v-qs"><q>If it’s not renewable, there’s no opportunity there. That’s baseline.</q><q>I feel like it needs to be 100% renewable energy, not just credits.</q></div></article>
+      <article class="voice" data-n="5"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>5 of 10</b> small groups</span></p><h3>Get on the front foot and set our own terms</h3><div class="v-qs"><q>We’re open for business still, and we’re open for investment, and we’re just looking for the right people to fill these boxes that we’re ticking.</q></div></article>
+      <article class="voice" data-n="5"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>5 of 10</b> small groups</span></p><h3>Strong local skills, but stretched volunteers</h3><div class="v-qs"><q>We have local people ready to deliver the work, not just watch it.</q><q>We’re all exhausted here.</q></div></article>
+    </div>
+    <p class="voices-also">Four more themes each came up in four groups: an ongoing share instead of a one-off payment, funding for the Southern Highlands Innovation Precinct master plan, food security, and an ongoing role for First Nations people in governance.</p>
+  </div>
+</section>
+
+<section class="block tint" id="priorities" aria-labelledby="prio-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">The priority vote, using quadratic voting</p>
+      <h2 id="prio-h">The guardrails and requirements residents prioritised</h2>
+    </div>
+    <div class="how">
+      <div class="costs" aria-hidden="true">
+        <div class="cost"><div class="sq s1"><i></i></div><p><b>1 vote</b><br>1 credit</p></div>
+        <div class="cost"><div class="sq s4"><i></i><i></i><i></i><i></i></div><p><b>2 votes</b><br>4 credits</p></div>
+        <div class="cost"><div class="sq s9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p><b>3 votes</b><br>9 credits</p></div>
+      </div>
+      <p class="cap">The project team drafted 13 possible conditions for any proposal, drawing on research from around the world and local interviews. In the first online sessions, 38 of the 48 delegates each had 99 credits to spend for or against them. This is quadratic voting: each extra vote on the same condition costs more, so the totals show what people care about most. The vote ranked conditions. It did not ask whether a data centre should go ahead.</p>
+    </div>
+    <p class="finding" id="ranking">Clean power came first. Water recycling, an ongoing share and independent checks followed.</p>
+    <p class="qv-cap">Bars show net votes: votes for, minus votes against. Most voters backed every condition.</p>
+    <ol class="qv" id="qv" aria-label="All 13 conditions, ranked by net votes">
+      <li data-q="clean"><span class="r">1</span><p class="t">Run the data centre on clean, renewable energy.</p><div class="qv-bar" aria-hidden="true"><i style="width:100.0%"></i></div><p class="qv-n"><b>+128</b><span class="vh"> net votes</span></p><p class="qv-b"><b>34</b> of 38 backed it</p></li>
+      <li data-q="water"><span class="r">2</span><p class="t">Use cooling systems that recycle their own water, instead of taking water the town needs.</p><div class="qv-bar" aria-hidden="true"><i style="width:80.5%"></i></div><p class="qv-n"><b>+103</b><span class="vh"> net votes</span></p><p class="qv-b"><b>37</b> of 38 backed it</p></li>
+      <li data-q="ongoing"><span class="r">3</span><p class="t">Make sure any benefit is ongoing, not a single payment — and give the community a real, binding say in how it's spent.</p><div class="qv-bar" aria-hidden="true"><i style="width:79.7%"></i></div><p class="qv-n"><b>+102</b><span class="vh"> net votes</span></p><p class="qv-b"><b>36</b> of 38 backed it</p></li>
+      <li data-q="checks"><span class="r">4</span><p class="t">Have an independent group check and publish how much pollution and noise the site produces, and what it does to people's health.</p><div class="qv-bar" aria-hidden="true"><i style="width:74.2%"></i></div><p class="qv-n"><b>+95</b><span class="vh"> net votes</span></p><p class="qv-b"><b>36</b> of 38 backed it</p></li>
+      <li data-q="jobs"><span class="r">5</span><p class="t">Create long-term local jobs and training — not just short-term work during construction.</p><div class="qv-bar" aria-hidden="true"><i style="width:66.4%"></i></div><p class="qv-n"><b>+85</b><span class="vh"> net votes</span></p><p class="qv-b"><b>32</b> of 38 backed it</p></li>
+      <li data-q="compute"><span class="r">6</span><p class="t">Share some of the data centre's computing power with schools, researchers and businesses — to grow a tech and research hub with local jobs and training that come with it.</p><div class="qv-bar" aria-hidden="true"><i style="width:62.5%"></i></div><p class="qv-n"><b>+80</b><span class="vh"> net votes</span></p><p class="qv-b"><b>33</b> of 38 backed it, 1 opposed</p></li>
+      <li data-q="heat"><span class="r">7</span><p class="t">Reuse the data centre's waste heat for local benefit — for example, to heat greenhouses for local farms.</p><div class="qv-bar" aria-hidden="true"><i style="width:61.7%"></i></div><p class="qv-n"><b>+79</b><span class="vh"> net votes</span></p><p class="qv-b"><b>34</b> of 38 backed it, 1 opposed</p></li>
+      <li data-q="nature"><span class="r">8</span><p class="t">Protect local plants and animals — including species already at risk of dying out — and the places they live.</p><div class="qv-bar" aria-hidden="true"><i style="width:60.2%"></i></div><p class="qv-n"><b>+77</b><span class="vh"> net votes</span></p><p class="qv-b"><b>35</b> of 38 backed it</p></li>
+      <li data-q="rules"><span class="r">9</span><p class="t">Set rules for how the data centre looks and where it's built, to protect the Highlands' rural character.</p><div class="qv-bar" aria-hidden="true"><i style="width:54.7%"></i></div><p class="qv-n"><b>+70</b><span class="vh"> net votes</span></p><p class="qv-b"><b>32</b> of 38 backed it, 1 opposed</p></li>
+      <li data-q="sixweeks"><span class="r">=10</span><p class="t">Demand at least six weeks to respond to any proposal — time to get organised, understand it, and put in a real submission.</p><div class="qv-bar" aria-hidden="true"><i style="width:53.1%"></i></div><p class="qv-n"><b>+68</b><span class="vh"> net votes</span></p><p class="qv-b"><b>35</b> of 38 backed it, 1 opposed</p></li>
+      <li data-q="tourism"><span class="r">=10</span><p class="t">Don't let this damage the tourism and farming we already have — protect the industries that are already here.</p><div class="qv-bar" aria-hidden="true"><i style="width:53.1%"></i></div><p class="qv-n"><b>+68</b><span class="vh"> net votes</span></p><p class="qv-b"><b>34</b> of 38 backed it, 1 opposed</p></li>
+      <li data-q="infra"><span class="r">12</span><p class="t">Instead of deciding case by case, put benefit money straight into fixing rundown local infrastructure and restoring nature.</p><div class="qv-bar" aria-hidden="true"><i style="width:43.8%"></i></div><p class="qv-n"><b>+56</b><span class="vh"> net votes</span></p><p class="qv-b"><b>29</b> of 38 backed it, 2 opposed</p></li>
+      <li data-q="custodians"><span class="r">13</span><p class="t">Give Traditional Custodians a real, paid role in decisions about this project — not just a token consultation.</p><div class="qv-bar" aria-hidden="true"><i style="width:43.0%"></i></div><p class="qv-n"><b>+55</b><span class="vh"> net votes</span></p><p class="qv-b"><b>27</b> of 38 backed it, 3 opposed</p></li>
+    </ol>
   </div>
 </section>
 
 <section class="block" id="groups" aria-labelledby="groups-h">
   <div class="wrap">
-    <div class="head">
-      <h2 id="groups-h">Two groups, far&nbsp;apart on the risks</h2>
-    </div>
-    <div class="groups-row">
-      <div class="gcard two">
-        <div class="gtop"><span class="big">7<small> in </small>8</span><span class="who"><b>More concerned</b>91 people</span></div>
-        <div class="qbox lead" data-s="43" data-g="2"><p class="lab">What sets them apart most</p><q>We need an immediate moratorium on new data centre approvals until the rules catch up with the speed and scale of development.</q><div class="pcts"><span><i class="dot g2"></i><b>82%</b> of this group agree</span><span><i class="dot g1"></i><b>1 of 8</b> in the more open group</span></div></div>
-        <div class="qbox" data-s="13" data-g="2"><q>Approving a data centre here risks damage to local land and ecosystems that can't be undone.</q><div class="pcts"><span><i class="dot g2"></i><b>82%</b> of this group agree</span><span><i class="dot g1"></i><b>1 of 6</b> in the more open group</span></div></div>
-        <div class="qbox" data-s="16" data-g="2"><q>A large gas-fired power plant built just to run this data centre would lock in new climate and air pollution the Highlands didn't ask for and won't get much benefit from hosting.</q><div class="pcts"><span><i class="dot g2"></i><b>95%</b> of this group agree</span><span><i class="dot g1"></i><b>3 of 7</b> in the more open group</span></div></div>
+    <div class="lead-row">
+      <p class="eyebrow">The open conversation</p>
+      <div class="head">
+        <h2 id="groups-h">Mostly sceptical, but in different&nbsp;ways</h2>
       </div>
-      <div class="gcard one">
-        <div class="gtop"><span class="big">1<small> in </small>8</span><span class="who"><b>More open</b>13 people</span></div>
-        <div class="qbox lead" data-s="35" data-g="1"><p class="lab">What sets them apart most</p><q>With the right design and conditions in place, a data centre can be built here without lasting harm to the environment.</q><div class="pcts"><span><i class="dot g1"></i><b>6 of 6</b> in this group agree</span><span><i class="dot g2"></i><b>19%</b> of the more concerned group</span></div></div>
-        <div class="qbox" data-s="37" data-g="1"><q>Good design, screening and siting could let a data centre fit into the landscape rather than dominate it.</q><div class="pcts"><span><i class="dot g1"></i><b>8 of 8</b> in this group agree</span><span><i class="dot g2"></i><b>53%</b> of the more concerned group</span></div></div>
-        <div class="qbox" data-s="75" data-g="1"><q>I’d agree to a data centre if it could ensure that there would be no damage to existing waterways</q><div class="pcts"><span><i class="dot g1"></i><b>4 of 5</b> in this group agree</span><span><i class="dot g2"></i><b>23%</b> of the more concerned group</span></div></div>
-      </div>
+      <p class="deal-lead">Anyone could join the open conversation. 157 people voted on statements, and wrote 146 of their own. Their votes sorted most of them into two groups: 7 in 8 are more concerned about a data centre here, and 1 in 8 are more open to one. These are not a yes and a no. The map and its three stances show the differences within the groups, and the pairs further down show what both groups agree on.</p>
     </div>
-    <p class="small-note">People chose to take part, so these groups and the stances below describe who joined the conversation, not the whole Highlands. 53 people voted on too few statements to be placed in a group.</p>
-
-    <div class="sub-head"><h3>Mostly sceptical, but in different ways</h3></div>
+    <div class="sub-head"><h3>Where each person sits</h3></div>
     <div class="map-card" id="map-card">
       <p class="map-lead">Each dot is one person, placed by how they voted. People further to the right agreed with more of the concerns about a data centre.</p>
       <svg id="map" viewBox="0 0 1000 300" role="img" aria-labelledby="map-desc"><desc id="map-desc">104 people placed along the main divide in the votes. The more open group, 13 people, sits to the left. The more concerned group, 91 people, sits to the right in a much higher pile. Dashed lines split the line into three stances, described below the map.</desc></svg>
@@ -794,6 +865,21 @@ details.terms{margin-top:36px}
         <p class="st-end">All three back the same terms if a data centre does go ahead.</p>
       </div>
     </div>
+    <div class="groups-row">
+      <div class="gcard two">
+        <div class="gtop"><span class="big">7<small> in </small>8</span><span class="who"><b>More concerned</b>91 people</span></div>
+        <div class="qbox lead" data-s="43" data-g="2"><p class="lab">What sets them apart most</p><q>We need an immediate moratorium on new data centre approvals until the rules catch up with the speed and scale of development.</q><div class="pcts"><span><i class="dot g2"></i><b>82%</b> of this group agree</span><span><i class="dot g1"></i><b>1 of 8</b> in the more open group</span></div></div>
+        <div class="qbox" data-s="13" data-g="2"><q>Approving a data centre here risks damage to local land and ecosystems that can't be undone.</q><div class="pcts"><span><i class="dot g2"></i><b>82%</b> of this group agree</span><span><i class="dot g1"></i><b>1 of 6</b> in the more open group</span></div></div>
+        <div class="qbox" data-s="16" data-g="2"><q>A large gas-fired power plant built just to run this data centre would lock in new climate and air pollution the Highlands didn't ask for and won't get much benefit from hosting.</q><div class="pcts"><span><i class="dot g2"></i><b>95%</b> of this group agree</span><span><i class="dot g1"></i><b>3 of 7</b> in the more open group</span></div></div>
+      </div>
+      <div class="gcard one">
+        <div class="gtop"><span class="big">1<small> in </small>8</span><span class="who"><b>More open</b>13 people</span></div>
+        <div class="qbox lead" data-s="35" data-g="1"><p class="lab">What sets them apart most</p><q>With the right design and conditions in place, a data centre can be built here without lasting harm to the environment.</q><div class="pcts"><span><i class="dot g1"></i><b>6 of 6</b> in this group agree</span><span><i class="dot g2"></i><b>19%</b> of the more concerned group</span></div></div>
+        <div class="qbox" data-s="37" data-g="1"><q>Good design, screening and siting could let a data centre fit into the landscape rather than dominate it.</q><div class="pcts"><span><i class="dot g1"></i><b>8 of 8</b> in this group agree</span><span><i class="dot g2"></i><b>53%</b> of the more concerned group</span></div></div>
+        <div class="qbox" data-s="75" data-g="1"><q>I’d agree to a data centre if it could ensure that there would be no damage to existing waterways</q><div class="pcts"><span><i class="dot g1"></i><b>4 of 5</b> in this group agree</span><span><i class="dot g2"></i><b>23%</b> of the more concerned group</span></div></div>
+      </div>
+    </div>
+    <p class="small-note">People chose to take part, so these groups and the stances on the map describe who joined the conversation, not the whole Highlands. 53 people voted on too few statements to be placed in a group.</p>
   </div>
 </section>
 
@@ -844,104 +930,24 @@ details.terms{margin-top:36px}
   </div>
 </section>
 
-<section class="block tint" id="priorities" aria-labelledby="prio-h">
+<section class="block" id="principles" aria-labelledby="principles-h">
   <div class="wrap">
-    <div class="head">
-      <p class="eyebrow">The priority vote, using quadratic voting</p>
-      <h2 id="prio-h">The conditions people want most</h2>
-    </div>
-    <div class="how">
-      <div class="costs" aria-hidden="true">
-        <div class="cost"><div class="sq s1"><i></i></div><p><b>1 vote</b><br>1 credit</p></div>
-        <div class="cost"><div class="sq s4"><i></i><i></i><i></i><i></i></div><p><b>2 votes</b><br>4 credits</p></div>
-        <div class="cost"><div class="sq s9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p><b>3 votes</b><br>9 credits</p></div>
+    <div class="lead-row">
+      <p class="eyebrow">The community’s seven principles</p>
+      <div class="head">
+        <h2 id="principles-h" class="bargain-h">A better model starts with a community that can name its priorities, terms and shared vision.</h2>
       </div>
-      <p class="cap">In the first online sessions, 38 invited participants each had 99 credits to spend on 13 possible conditions, voting for or against. This is quadratic voting: each extra vote on the same condition costs more, so the totals show what people care about most. The vote ranked conditions. It did not ask whether a data centre should go ahead.</p>
+      <p class="deal-lead">At the forum on 25 October, residents presented seven principles to their representatives, drawn from what they said and voted on. For many residents, the first question is where: they don’t want a large data centre in the Sydney water basin, which covers most of the Highlands. Any proposal would also have to meet these principles, and meeting them would not guarantee a yes.</p>
     </div>
-    <p class="finding" id="ranking">Clean power came first. Water recycling, an ongoing share and independent checks followed.</p>
-    <p class="qv-cap">Bars show net votes: votes for, minus votes against. Most voters backed every condition.</p>
-    <ol class="qv" id="qv" aria-label="All 13 conditions, ranked by net votes">
-      <li data-q="clean"><span class="r">1</span><p class="t">Run the data centre on clean, renewable energy.</p><div class="qv-bar" aria-hidden="true"><i style="width:100.0%"></i></div><p class="qv-n"><b>+128</b><span class="vh"> net votes</span></p><p class="qv-b"><b>34</b> of 38 backed it</p></li>
-      <li data-q="water"><span class="r">2</span><p class="t">Use cooling systems that recycle their own water, instead of taking water the town needs.</p><div class="qv-bar" aria-hidden="true"><i style="width:80.5%"></i></div><p class="qv-n"><b>+103</b><span class="vh"> net votes</span></p><p class="qv-b"><b>37</b> of 38 backed it</p></li>
-      <li data-q="ongoing"><span class="r">3</span><p class="t">Make sure any benefit is ongoing, not a single payment — and give the community a real, binding say in how it's spent.</p><div class="qv-bar" aria-hidden="true"><i style="width:79.7%"></i></div><p class="qv-n"><b>+102</b><span class="vh"> net votes</span></p><p class="qv-b"><b>36</b> of 38 backed it</p></li>
-      <li data-q="checks"><span class="r">4</span><p class="t">Have an independent group check and publish how much pollution and noise the site produces, and what it does to people's health.</p><div class="qv-bar" aria-hidden="true"><i style="width:74.2%"></i></div><p class="qv-n"><b>+95</b><span class="vh"> net votes</span></p><p class="qv-b"><b>36</b> of 38 backed it</p></li>
-      <li data-q="jobs"><span class="r">5</span><p class="t">Create long-term local jobs and training — not just short-term work during construction.</p><div class="qv-bar" aria-hidden="true"><i style="width:66.4%"></i></div><p class="qv-n"><b>+85</b><span class="vh"> net votes</span></p><p class="qv-b"><b>32</b> of 38 backed it</p></li>
-      <li data-q="compute"><span class="r">6</span><p class="t">Share some of the data centre's computing power with schools, researchers and businesses — to grow a tech and research hub with local jobs and training that come with it.</p><div class="qv-bar" aria-hidden="true"><i style="width:62.5%"></i></div><p class="qv-n"><b>+80</b><span class="vh"> net votes</span></p><p class="qv-b"><b>33</b> of 38 backed it, 1 opposed</p></li>
-      <li data-q="heat"><span class="r">7</span><p class="t">Reuse the data centre's waste heat for local benefit — for example, to heat greenhouses for local farms.</p><div class="qv-bar" aria-hidden="true"><i style="width:61.7%"></i></div><p class="qv-n"><b>+79</b><span class="vh"> net votes</span></p><p class="qv-b"><b>34</b> of 38 backed it, 1 opposed</p></li>
-      <li data-q="nature"><span class="r">8</span><p class="t">Protect local plants and animals — including species already at risk of dying out — and the places they live.</p><div class="qv-bar" aria-hidden="true"><i style="width:60.2%"></i></div><p class="qv-n"><b>+77</b><span class="vh"> net votes</span></p><p class="qv-b"><b>35</b> of 38 backed it</p></li>
-      <li data-q="rules"><span class="r">9</span><p class="t">Set rules for how the data centre looks and where it's built, to protect the Highlands' rural character.</p><div class="qv-bar" aria-hidden="true"><i style="width:54.7%"></i></div><p class="qv-n"><b>+70</b><span class="vh"> net votes</span></p><p class="qv-b"><b>32</b> of 38 backed it, 1 opposed</p></li>
-      <li data-q="sixweeks"><span class="r">=10</span><p class="t">Demand at least six weeks to respond to any proposal — time to get organised, understand it, and put in a real submission.</p><div class="qv-bar" aria-hidden="true"><i style="width:53.1%"></i></div><p class="qv-n"><b>+68</b><span class="vh"> net votes</span></p><p class="qv-b"><b>35</b> of 38 backed it, 1 opposed</p></li>
-      <li data-q="tourism"><span class="r">=10</span><p class="t">Don't let this damage the tourism and farming we already have — protect the industries that are already here.</p><div class="qv-bar" aria-hidden="true"><i style="width:53.1%"></i></div><p class="qv-n"><b>+68</b><span class="vh"> net votes</span></p><p class="qv-b"><b>34</b> of 38 backed it, 1 opposed</p></li>
-      <li data-q="infra"><span class="r">12</span><p class="t">Instead of deciding case by case, put benefit money straight into fixing rundown local infrastructure and restoring nature.</p><div class="qv-bar" aria-hidden="true"><i style="width:43.8%"></i></div><p class="qv-n"><b>+56</b><span class="vh"> net votes</span></p><p class="qv-b"><b>29</b> of 38 backed it, 2 opposed</p></li>
-      <li data-q="custodians"><span class="r">13</span><p class="t">Give Traditional Custodians a real, paid role in decisions about this project — not just a token consultation.</p><div class="qv-bar" aria-hidden="true"><i style="width:43.0%"></i></div><p class="qv-n"><b>+55</b><span class="vh"> net votes</span></p><p class="qv-b"><b>27</b> of 38 backed it, 3 opposed</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="block" id="voices" aria-labelledby="voices-h">
-  <div class="wrap">
-    <div class="head">
-      <h2 id="voices-h">In their own words</h2>
-      <p class="head-line">In ten small groups, residents talked through what matters here and what to ask for. Seven themes came up in at least half of the groups. Protecting air, water, quiet and nature came up most.</p>
+    <div class="deal-grid">
+      <div class="deal d1"><h3>A real say</h3><dl class="prin"><dt>Community leadership</dt><dd>Support community decision-making about priorities and use of funds.</dd><dt>Transparent and accountable</dt><dd>Share the full picture from the start, including what kind of computing is planned, with ongoing independent checks backed by enforceable rules.</dd></dl></div>
+      <div class="deal d2"><h3>Protections</h3><dl class="prin"><dt>Clean and green</dt><dd>Run the data centre on clean energy and protect our local environment.</dd><dt>Smart water</dt><dd>Water recycling and cooling tech that does not compete for town water or compromise water quality.</dd></dl></div>
+      <div class="deal d3"><h3>Lasting value</h3><dl class="prin"><dt>Fair share</dt><dd>An ongoing share of benefits, including a permanent endowment for future generations.</dd><dt>Circular and local economy</dt><dd>High quality, long-term local jobs including Aboriginal-identified roles, and bring compute, water, power and heat into local industry.</dd></dl></div>
     </div>
-    <div class="voices">
-      <article class="voice feature" data-n="8"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i></span><span class="v-c"><b>8 of 10</b> small groups</span></p><h3>Protect air, water, quiet and nature</h3><div class="v-qs"><q>We have platypus in the Wingecarribee River that are already struggling and endangered.</q><q>We love the Southern Highlands because it’s so green, and it’s such a nice natural kind of space.</q><q>Remember that noise is cumulative, emissions are cumulative.</q></div></article>
-      <article class="voice" data-n="7"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i></span><span class="v-c"><b>7 of 10</b> small groups</span></p><h3>A community-controlled fund, independent of council</h3><div class="v-qs"><q>Some sort of a community trust arrangement, where some funding goes in on a continuous basis from the revenue stream of the developer.</q><q>It needs to be managed by a third party so that we as a community can vote.</q></div></article>
-      <article class="voice" data-n="7"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i></span><span class="v-c"><b>7 of 10</b> small groups</span></p><h3>Clear information and a real voice</h3><div class="v-qs"><q>Where does it actually go to? Who listens?</q><q>Having multiple opportunities to be able to participate, as opposed to: you have to make a choice on this day and that’s it.</q></div></article>
-      <article class="voice" data-n="6"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>6 of 10</b> small groups</span></p><h3>The real decisions sit with the state, not council</h3><div class="v-qs"><q>They’re state significant developments, and the decisions are made in Macquarie Street.</q><q>I just don’t think council has the time to do it or the expertise.</q></div></article>
-      <article class="voice" data-n="5"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>5 of 10</b> small groups</span></p><h3>Renewable energy as a baseline</h3><div class="v-qs"><q>If it’s not renewable, there’s no opportunity there. That’s baseline.</q><q>I feel like it needs to be 100% renewable energy, not just credits.</q></div></article>
-      <article class="voice" data-n="5"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>5 of 10</b> small groups</span></p><h3>Get on the front foot and set our own terms</h3><div class="v-qs"><q>We’re open for business still, and we’re open for investment, and we’re just looking for the right people to fill these boxes that we’re ticking.</q></div></article>
-      <article class="voice" data-n="5"><p class="v-m"><span class="vm" aria-hidden="true"><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i></i><i></i><i></i><i></i><i></i></span><span class="v-c"><b>5 of 10</b> small groups</span></p><h3>Strong local skills, but stretched volunteers</h3><div class="v-qs"><q>We have local people ready to deliver the work, not just watch it.</q><q>We’re all exhausted here.</q></div></article>
+    <div class="prin-foot">
+      <p class="prin-seventh"><b>Respect diversity.</b> Accept that some community members may still oppose or question the project.</p>
+      <p class="prin-note">This is a non-statutory pilot, and the findings are intended to inform public discussion and policy development. This work is independent of the data centre’s proponent and does not assume that any development should proceed. It should not be cited by any proponent, consultant or party to proceedings as evidence of community support for, or consent to, a particular development.</p>
     </div>
-    <p class="voices-also">Four more themes each came up in four groups: an ongoing share instead of a one-off payment, funding for the Southern Highlands Innovation Precinct master plan, food security, and an ongoing role for First Nations people in governance.</p>
-  </div>
-</section>
-
-<section class="block" id="about" aria-labelledby="about-h" style="border-top:2px solid var(--ink)">
-  <div class="wrap">
-    <div class="head"><h2 id="about-h">How this worked</h2></div>
-    <ol class="steps">
-      <li class="step"><span class="fig">4</span><h3>Online sessions</h3><p>Two in the week of 14 September, then two follow-ups on 23 and 24 September. Participants heard independent evidence first.</p></li>
-      <li class="step"><span class="fig">1</span><h3>In-person session</h3><p>On 20 October, residents met at a community centre to talk about the challenges and joys of regional life, and how benefits should be governed.</p></li>
-      <li class="step"><span class="fig">10</span><h3>Small groups</h3><p>Nine online and one in person. Residents talked through what matters here and what to ask for.</p></li>
-      <li class="step"><span class="fig">38</span><h3>Set priorities</h3><p>Session participants each had 99 credits to spend on 13 possible conditions, using quadratic voting.</p></li>
-      <li class="step"><span class="fig">157</span><h3>In the open conversation</h3><p>People across the Highlands voted agree, disagree or pass on statements, and wrote 146 of their own.</p></li>
-      <li class="step"><span class="fig">160+</span><h3>At the forum</h3><p>On 25 October in Mittagong, residents went through the results with their local, state and federal representatives.</p></li>
-    </ol>
-    <div class="indep">
-      <p class="big">The process is independent: whoever funds it, no funder controls the questions or the outcome. Residents may reach a conditional yes on better terms or a well-reasoned no.</p>
-      <div class="indep-more">
-        <p class="recruit"><b>Who took part.</b> Session participants were invited, not chosen at random. We sought a broad cross-section of the community, especially voices often missing from consultation: First Nations people, young people and people with lived experience of disadvantage. It was not designed to be a demographically representative sample. Sessions ran at lunchtime and in the evening so working parents could join, and the open conversation was open to anyone.</p>
-        <div>
-          <p>This pilot ran alongside community opposition to the proposed gas plant, and was not part of any negotiation over that proposal. The project is independently funded by philanthropic organisations.</p>
-          <p>It brings together four partners. Highlands Homegrown Economy is the community-led initiative, convened with WinZero, the local climate group. The community set the priorities, and independent specialists supported the work: RadicalxChange led the deliberative process, BWD Strategic led the independent technical, environmental and economic assessment, and Regen Labs and Highlands Homegrown Economy led local engagement and economic pathways.</p>
-        </div>
-      </div>
-    </div>
-    <div class="photos three">
-      <figure><img src="/assets/southern-highlands/forum-method.jpg" width="1200" height="800" alt="Jess Scully of RadicalxChange presents the method and results to the forum." loading="lazy"><figcaption>Jess Scully of RadicalxChange presents the method and results.</figcaption></figure>
-      <figure><img src="/assets/southern-highlands/forum-the-what.jpg" width="1200" height="800" alt="Phil Freeman of Regen Labs speaks beside a slide showing the Community Investment Fund and four pathways." loading="lazy"><figcaption>Phil Freeman of Regen Labs presents the draft model.</figcaption></figure>
-      <figure><img src="/assets/southern-highlands/forum-team.jpg" width="1200" height="800" alt="The project team holds up a poster of the draft model." loading="lazy"><figcaption>The project team with the draft model.</figcaption></figure>
-    </div>
-    <details class="fine">
-      <summary>Notes for checking the numbers</summary>
-      <div class="arows">
-        <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of people who agreed, out of everyone who voted on that statement, whether they agreed, disagreed or passed. The more open group is small, so where fewer than 20 people in a group voted, we show how many. On the group cards, we show the count instead of a percentage.</p></div>
-        <div class="arow"><h3>Who we counted</h3><p>As in the forum materials, we set aside two accounts: the one that loaded the 40 starter statements, and one that passed on every statement it saw. That leaves 157 people and 4,823 votes. 179 statements received votes: 33 starter statements, and 146 written by 79 participants.</p></div>
-        <div class="arow"><h3>Who took part</h3><p>Session participants were invited to reflect a range of views: environmental and conservation advocates, including people opposed to data centres; parents and young people; older residents; business owners and the local IT sector; First Nations community members; and community organisations, advocates for marginalised residents and people with lived experience of disadvantage. The Polis conversation was open to anyone. The same person may have taken part in more than one activity, so the numbers for each can overlap.</p></div>
-        <div class="arow"><h3>The groups and the map</h3><p>Polis, an open-source tool, placed the 104 people who voted on at least seven statements into two groups by how they voted. Nobody chose a group; we named them. The map places each of them along the main divide in the votes. We rebuilt it from the published votes with the same method Polis uses, so it is close to the Polis report but not identical. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place.</p></div>
-        <div class="arow"><h3>The three stances</h3><p>We split the line in two places. Each split sits in a gap between dots, where agreement with one statement changes most. The first is statement 1, on whether meeting the planning rules should be enough: 5 of 7 people to the left of the line agreed, and 0 of 29 to the right. The second is statement 70, on keeping a large data centre out of the Sydney water basin: 1 of 15 people to the left of the line agreed, and 16 of 18 to the right. Each description sums up how the people in that stance voted. Each person saw only some statements, so a description fits most of the people who voted, not everyone.</p></div>
-        <div class="arow"><h3>Behind each stance</h3><p>Four statements say no to a data centre outright (83, 84, 98 and 129). In the first stance, 10 people voted on at least one of them, and none agreed. In the middle stance, 10 of 18 agreed with at least one, and pass was the most common vote. In the last stance, 23 of 24 agreed with at least one. Moving right, people also agreed more often with the 17 statements that the more concerned group backed and the more open group did not: 15% of votes in the first stance, 62% in the middle and 87% in the last. In every stance, most people backed at least three in four of the shared terms they voted on.</p></div>
-        <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results.</p></div>
-        <div class="arow"><h3>The priority vote</h3><p>38 ballots from session participants, each with 99 credits. We set aside one empty ballot. Net votes are votes for minus votes against.</p></div>
-        <div class="arow"><h3>The quotes</h3><p>Quotes come from the nine online small groups on 23 and 24 September, transcribed automatically. We removed repeated words and fillers, used Australian spelling, corrected one place name and left out names.</p></div>
-        <div class="arow"><h3>The themes</h3><p>The project team read the transcripts of all ten small groups, sorted what people said into themes, and counted how many groups raised each one. We show the seven themes raised in at least half of the groups.</p></div>
-        <div class="arow"><h3>The shared statements</h3><p>To compare the groups on a statement, we needed votes from at least 5 people in the more open group and 20 in the more concerned group. 81 statements had that many, and 28 of them won at least 70% support in both groups.</p></div>
-        <div class="arow"><h3>The data</h3><p>From the Polis export of 9 November 2026, after the conversation closed, and the priority vote results. Statements appear as people wrote them, apart from three typos we corrected (in statements 37, 69 and 75).</p></div>
-        <div class="arow"><h3>The principles</h3><p>Residents presented the seven principles at the forum on 25 October. The wording here follows the Southern Highlands Model as the project now publishes it.</p></div>
-      </div>
-    </details>
-    <div class="links"><a class="btn solid" href="https://pol.is/report/r4utekxcdbdadnswzmipc">Full Polis report</a><a class="btn line" href="#ranking">Priority vote results</a><a class="btn line" href="/assets/southern-highlands/priority-vote-ballots.csv" download>Priority vote ballots (CSV)</a></div>
   </div>
 </section>
 
@@ -951,7 +957,7 @@ details.terms{margin-top:36px}
       <div>
         <h2 id="next-h">What happens next</h2>
         <p class="np">The project team is writing a final report, and a blueprint so other communities can run the same process. At the forum, the community presented its seven principles to federal MP Carol Berry, state MPs Wendy Tuckerman and Judy Hannan, and Mayor Erin Foley. They gave in-principle support, and agreed to arrange meetings with the relevant state and federal ministers.</p>
-        <p class="np">Residents are calling for community to be the fourth pillar of the national data centre standards now being developed, alongside energy, water and land.</p>
+        <p class="np">Residents are calling for community to be the fourth pillar of the national data centre standards now being developed, alongside energy, water and land. Next, we will push for processes like this in national standards and state planning, and support local leaders elsewhere to run their own.</p>
         <p class="np">Many residents also want a pause first: 70% backed an immediate moratorium on new data centre approvals until the rules catch up. Highlands Homegrown Economy, the community partner, supports a moratorium so communities have time to run a process like this one.</p>
         <p class="np"><b>Bringing community terms like these to the table with governments and developers is the next step in giving community voice real power.</b></p>
       </div>
@@ -973,6 +979,42 @@ details.terms{margin-top:36px}
     <p class="reps-cap">Local, state and federal representatives at the forum. From left: Wingecarribee Shire Mayor Erin Foley; Wendy Tuckerman MP, State Member for Goulburn; and Carol Berry MP, Federal Member for Whitlam. Judy Hannan MP, State Member for Wollondilly, also took part.</p>
   </div>
 </section>
+
+<section class="block" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="head"><h2 id="about-h">About this pilot</h2></div>
+    <div class="indep">
+      <p class="big">The process is independent: whoever funds it, no funder controls the questions or the outcome. Residents may reach a conditional yes on better terms or a well-reasoned no.</p>
+      <div class="indep-more">
+        <p>This pilot ran alongside community opposition to the proposed gas plant, and was not part of any negotiation over that proposal. The project is independently funded by philanthropic organisations.</p>
+        <p>It brings together four partners. Highlands Homegrown Economy is the community-led initiative, convened with WinZero, the local climate group. The community set the priorities, and independent specialists supported the work: RadicalxChange led the deliberative process, BWD Strategic led the independent technical, environmental and economic assessment, and Regen Labs and Highlands Homegrown Economy led local engagement and economic pathways.</p>
+      </div>
+    </div>
+    <div class="photos two">
+      <figure><img src="/assets/southern-highlands/forum-the-what.jpg" width="1200" height="800" alt="Phil Freeman of Regen Labs speaks beside a slide showing the Community Investment Fund and four pathways." loading="lazy"><figcaption>Phil Freeman of Regen Labs presents the draft model.</figcaption></figure>
+      <figure><img src="/assets/southern-highlands/forum-team.jpg" width="1200" height="800" alt="The project team holds up a poster of the draft model." loading="lazy"><figcaption>The project team with the draft model.</figcaption></figure>
+    </div>
+    <details class="fine">
+      <summary>Notes for checking the numbers</summary>
+      <div class="arows">
+        <div class="arow"><h3>Reading the percentages</h3><p>Each figure is the share of people who agreed, out of everyone who voted on that statement, whether they agreed, disagreed or passed. The more open group is small, so where fewer than 20 people in a group voted, we show how many. On the group cards, we show the count instead of a percentage.</p></div>
+        <div class="arow"><h3>Who we counted</h3><p>As in the forum materials, we set aside two accounts: the one that loaded the 40 starter statements, and one that passed on every statement it saw. That leaves 157 people and 4,823 votes. 179 statements received votes: 33 starter statements, and 146 written by 79 participants.</p></div>
+        <div class="arow"><h3>Who took part</h3><p>Delegates were invited to reflect a range of views: environmental and conservation advocates, including people opposed to data centres; parents and young people; older residents; business owners and the local IT sector; First Nations community members; and community organisations, advocates for marginalised residents and people with lived experience of disadvantage. The Polis conversation was open to anyone. The same person may have taken part in more than one activity, so the numbers for each can overlap.</p></div>
+        <div class="arow"><h3>The groups and the map</h3><p>Polis, an open-source tool, placed the 104 people who voted on at least seven statements into two groups by how they voted. Nobody chose a group; we named them. The map places each of them along the main divide in the votes. We rebuilt it from the published votes with the same method Polis uses, so it is close to the Polis report but not identical. Where many people sit close together, their dots pile up, so a dot can sit a little to one side of its exact place.</p></div>
+        <div class="arow"><h3>The three stances</h3><p>We split the line in two places. Each split sits in a gap between dots, where agreement with one statement changes most. The first is statement 1, on whether meeting the planning rules should be enough: 5 of 7 people to the left of the line agreed, and 0 of 29 to the right. The second is statement 70, on keeping a large data centre out of the Sydney water basin: 1 of 15 people to the left of the line agreed, and 16 of 18 to the right. Each description sums up how the people in that stance voted. Each person saw only some statements, so a description fits most of the people who voted, not everyone.</p></div>
+        <div class="arow"><h3>Behind each stance</h3><p>Four statements say no to a data centre outright (83, 84, 98 and 129). In the first stance, 10 people voted on at least one of them, and none agreed. In the middle stance, 10 of 18 agreed with at least one, and pass was the most common vote. In the last stance, 23 of 24 agreed with at least one. Moving right, people also agreed more often with the 17 statements that the more concerned group backed and the more open group did not: 15% of votes in the first stance, 62% in the middle and 87% in the last. In every stance, most people backed at least three in four of the shared terms they voted on.</p></div>
+        <div class="arow"><h3>Pairing the statements</h3><p>RadicalxChange chose which statements to pair. Every number comes straight from the results.</p></div>
+        <div class="arow"><h3>The priority vote</h3><p>38 ballots from delegates, each with 99 credits. We set aside one empty ballot. Net votes are votes for minus votes against.</p></div>
+        <div class="arow"><h3>The quotes</h3><p>Quotes come from the nine online small groups on 23 and 24 September, transcribed automatically. We removed repeated words and fillers, used Australian spelling, corrected one place name and left out names.</p></div>
+        <div class="arow"><h3>The themes</h3><p>The project team read the transcripts of all ten small groups, sorted what people said into themes, and counted how many groups raised each one. We show the seven themes raised in at least half of the groups.</p></div>
+        <div class="arow"><h3>The shared statements</h3><p>To compare the groups on a statement, we needed votes from at least 5 people in the more open group and 20 in the more concerned group. 81 statements had that many, and 28 of them won at least 70% support in both groups.</p></div>
+        <div class="arow"><h3>The data</h3><p>From the Polis export of 9 November 2026, after the conversation closed, and the priority vote results. Statements appear as people wrote them, apart from three typos we corrected (in statements 37, 69 and 75).</p></div>
+        <div class="arow"><h3>The principles</h3><p>Residents presented the seven principles at the forum on 25 October. The wording here follows the Southern Highlands Model as the project now publishes it.</p></div>
+      </div>
+    </details>
+    <div class="links"><a class="btn solid" href="https://pol.is/report/r4utekxcdbdadnswzmipc">Full Polis report</a><a class="btn line" href="#ranking">Priority vote results</a><a class="btn line" href="/assets/southern-highlands/priority-vote-ballots.csv" download>Priority vote ballots (CSV)</a></div>
+  </div>
+</section>
 </main>
 
 <footer>
@@ -982,7 +1024,7 @@ details.terms{margin-top:36px}
   </div>
 </footer>
 
-<script type="application/json" id="pairs-data">[{"topic": "Show the full plan up front", "split": {"id": 1, "t": "If a data centre meets all government planning requirements, that should be sufficient for it to proceed.", "a": 83, "b": 0, "na": 6, "nb": 30}, "agree": {"id": 56, "t": "We need to see the full built out masterplan for a data centre development, not piecemeal approvals that fill out the block over time.", "a": 88, "b": 98, "na": 8, "nb": 40}}, {"topic": "Protect the town water supply", "split": {"id": 22, "t": "Southern Highlands water is already under pressure, and a data centre would make that worse.", "a": 11, "b": 82, "na": 9, "nb": 33}, "agree": {"id": 23, "t": "A data centre should have to use water recycling and cooling technology that doesn't compete with the town water supply.", "a": 91, "b": 92, "na": 11, "nb": 38}}, {"topic": "Assess environmental impacts before approval", "split": {"id": 13, "t": "Approving a data centre here risks damage to local land and ecosystems that can't be undone.", "a": 17, "b": 82, "na": 6, "nb": 45}, "agree": {"id": 15, "t": "I'd only accept a data centre here if independent environmental assessment happened before any approval, not after.", "a": 71, "b": 86, "na": 7, "nb": 36}}, {"topic": "Set noise limits independently", "split": {"id": 27, "t": "Constant low-level noise from cooling systems, day and night, would be a real quality-of-life cost for nearby residents.", "a": 38, "b": 97, "na": 8, "nb": 38}, "agree": {"id": 39, "t": "Noise limits and buffer distances should be set independently with meaningful input from affected residents, not negotiated privately between council and the developer.", "a": 89, "b": 86, "na": 9, "nb": 35}}, {"topic": "Strengthen the host community", "split": {"id": 71, "t": "If a data centre is anything worse than neutral in terms of its impact on the community in which it exists, it should not be built", "a": 12, "b": 94, "na": 8, "nb": 31}, "agree": {"id": 80, "t": "A good development should strengthen the community hosting it, not simply minimise the impact it has on that community.", "a": 90, "b": 96, "na": 10, "nb": 25}}]</script>
+<script type="application/json" id="pairs-data">[{"topic": "Show the full plan up front", "split": {"id": 1, "t": "If a data centre meets all government planning requirements, that should be sufficient for it to proceed.", "a": 83, "b": 0, "na": 6, "nb": 30}, "agree": {"id": 56, "t": "We need to see the full built out masterplan for a data centre development, not piecemeal approvals that fill out the block over time.", "a": 88, "b": 98, "na": 8, "nb": 40}}, {"topic": "Protect the town water supply", "split": {"id": 22, "t": "Southern Highlands water is already under pressure, and a data centre would make that worse.", "a": 11, "b": 82, "na": 9, "nb": 33}, "agree": {"id": 23, "t": "A data centre should have to use water recycling and cooling technology that doesn't compete with the town water supply.", "a": 91, "b": 92, "na": 11, "nb": 38}}, {"topic": "Assess environmental impacts before approval", "split": {"id": 13, "t": "Approving a data centre here risks damage to local land and ecosystems that can't be undone.", "a": 17, "b": 82, "na": 6, "nb": 45}, "agree": {"id": 15, "t": "I'd only accept a data centre here if independent environmental assessment happened before any approval, not after.", "a": 71, "b": 86, "na": 7, "nb": 36}}, {"topic": "Set noise limits independently", "split": {"id": 27, "t": "Constant low-level noise from cooling systems, day and night, would be a real quality-of-life cost for nearby residents.", "a": 38, "b": 97, "na": 8, "nb": 38}, "agree": {"id": 39, "t": "Noise limits and buffer distances should be set independently with meaningful input from affected residents, not negotiated privately between council and the developer.", "a": 89, "b": 86, "na": 9, "nb": 35}}, {"topic": "Strengthen the host community", "split": {"id": 71, "t": "If a data centre is anything worse than neutral in terms of its impact on the community in which it exists, it should not be built", "a": 13, "b": 94, "na": 8, "nb": 31}, "agree": {"id": 80, "t": "A good development should strengthen the community hosting it, not simply minimise the impact it has on that community.", "a": 90, "b": 96, "na": 10, "nb": 25}}]</script>
 <script type="application/json" id="map-data">{"people":[[0.683,0,1,33,85,0,1,6,35,"a",1,"d",3,3,3,13,"a",1],[0.342,0,0,35,57,2,2,0,35,"a",-1,"",5,0,3,35,"a",1],[0.703,0,1,169,70,14,2,12,35,"a",1,"d",6,10,17,13,"a",1],[0.807,0,1,35,60,0,1,6,9,"a",1,"d",7,3,3,22,"a",1],[0.802,0,1,35,74,0,0,7,-1,"",1,"d",8,3,3,22,"a",1],[0.481,0,1,36,53,1,0,3,-1,"",1,"d",9,2,3,13,"a",1],[0.445,0,1,36,69,0,2,4,13,"d",1,"d",10,1,3,1,"d",1],[0.607,0,1,8,75,0,0,0,-1,"",-1,"",11,0,0,-1,"",0],[0.738,0,1,37,59,1,0,7,-1,"",1,"d",12,4,4,22,"a",1],[0.885,0,1,37,70,0,0,6,-1,"",1,"d",13,4,4,22,"a",1],[0.861,0,1,37,84,0,1,7,35,"a",1,"d",14,4,4,22,"a",1],[0.792,0,1,38,76,1,0,7,-1,"",1,"d",15,3,4,22,"a",1],[0.4,0,0,143,61,5,4,6,1,"a",92,"a",17,6,17,35,"a",1],[0.133,0,0,38,63,0,5,1,1,"a",43,"a",19,1,4,35,"a",1],[0.779,0,1,58,81,6,0,7,-1,"",1,"d",20,4,6,22,"a",1],[0.748,0,1,52,77,9,1,8,35,"a",1,"d",22,5,5,22,"a",1],[0.803,0,1,18,89,0,0,4,-1,"",43,"a",23,2,2,43,"a",1],[0.432,0,1,13,85,1,2,0,13,"d",-1,"",26,0,2,-1,"",0],[0.858,0,1,56,73,1,0,8,-1,"",1,"d",27,5,6,22,"a",1],[0.504,0,1,62,56,2,0,3,-1,"",118,"a",28,3,9,43,"a",1],[0.049,0,0,39,59,1,6,0,2,"a",-1,"",29,0,6,36,"a",1],[0.337,0,1,19,53,0,0,1,-1,"",13,"a",31,1,2,-1,"",0],[0.633,0,1,175,66,2,0,9,-1,"",118,"a",32,8,17,13,"a",1],[0.615,0,1,56,82,2,2,4,59,"d",70,"a",33,4,7,43,"a",1],[0.781,0,1,57,88,1,2,6,54,"d",83,"a",34,6,8,83,"a",1],[0.927,0,1,82,89,1,0,11,-1,"",1,"d",35,9,9,129,"a",1],[0.746,0,1,18,94,1,0,4,-1,"",70,"a",36,3,3,70,"a",1],[0.664,0,1,30,77,1,1,4,59,"d",43,"a",37,4,5,13,"a",1],[0.797,0,1,75,51,0,2,7,75,"a",1,"d",38,5,9,70,"a",1],[0.708,0,1,31,84,1,1,4,75,"a",71,"a",39,4,5,13,"a",1],[0.639,0,1,93,74,3,1,11,70,"d",1,"d",40,7,10,13,"a",1],[0.282,0,0,43,67,0,3,2,35,"a",22,"a",41,2,7,35,"a",1],[0.373,0,1,23,70,5,1,1,54,"d",1,"d",42,0,2,78,"a",1],[0.761,0,1,23,78,1,0,3,-1,"",43,"a",43,3,3,43,"a",1],[0.765,0,1,30,77,2,0,3,-1,"",71,"a",44,3,3,43,"a",1],[0.556,0,1,74,65,0,2,5,2,"a",1,"d",45,3,9,43,"a",1],[0.565,0,1,60,72,0,3,7,70,"d",71,"a",46,5,9,13,"a",1],[0.561,0,1,17,59,0,0,2,-1,"",13,"a",47,2,4,13,"a",1],[0.936,0,1,76,87,0,0,14,-1,"",1,"d",50,9,9,70,"a",1],[0.902,0,1,32,31,1,0,6,-1,"",70,"a",53,4,4,70,"a",1],[0.693,0,1,17,41,0,0,2,-1,"",83,"a",54,1,1,-1,"",0],[0.683,0,1,10,70,1,0,2,-1,"",71,"a",55,2,2,71,"a",1],[0.255,0,0,36,78,0,5,2,84,"d",73,"a",57,1,6,36,"a",1],[0.745,0,1,79,66,0,2,10,2,"a",70,"a",58,10,11,70,"a",1],[0.884,0,1,40,78,2,0,8,-1,"",70,"a",59,8,9,70,"a",1],[0.149,0,0,52,65,1,8,1,2,"a",54,"a",60,1,9,37,"a",1],[0.024,0,0,120,56,1,16,3,1,"a",94,"a",61,2,16,35,"a",1],[0.928,0,1,45,96,1,0,8,-1,"",70,"a",62,8,8,70,"a",1],[0.634,0,1,11,91,1,0,0,-1,"",-1,"",63,0,1,-1,"",0],[0.926,0,1,44,73,1,0,10,-1,"",70,"a",64,8,8,70,"a",1],[0.649,0,1,120,69,1,2,12,75,"a",1,"d",65,9,16,43,"a",1],[0.92,0,1,161,81,0,2,17,75,"a",118,"a",66,16,17,70,"a",1],[0.452,0,1,52,69,2,2,6,73,"d",71,"a",67,6,11,43,"a",1],[0.776,0,1,158,68,6,3,16,84,"d",1,"d",68,12,17,70,"a",1],[0.579,0,1,29,59,2,0,2,-1,"",71,"a",69,2,5,71,"a",1],[0.38,0,1,15,73,3,4,0,84,"d",-1,"",70,0,3,78,"a",1],[0.08,0,0,72,67,1,10,0,70,"d",-1,"",71,0,11,35,"a",1],[0.285,0,0,41,71,2,7,3,84,"d",71,"a",72,3,8,37,"a",1],[0.451,0,1,25,68,1,1,1,83,"d",71,"a",73,1,4,71,"a",1],[0.548,0,1,32,72,4,1,4,83,"d",71,"a",74,3,7,71,"a",1],[0.764,0,1,28,89,1,1,5,75,"a",71,"a",75,5,7,83,"a",1],[0.905,0,1,43,95,2,0,9,-1,"",70,"a",76,9,9,70,"a",1],[0.771,0,1,88,76,3,3,9,118,"d",70,"a",77,8,12,70,"a",1],[0.849,0,1,14,93,0,0,4,-1,"",71,"a",79,3,3,94,"a",0],[0.255,0,0,8,50,0,2,0,1,"a",-1,"",80,0,1,1,"a",1],[0.765,0,1,24,92,1,0,3,-1,"",92,"a",81,3,3,93,"a",0],[0.722,0,1,28,64,2,0,3,-1,"",92,"a",82,3,4,15,"a",1],[0.817,0,1,27,70,1,0,7,-1,"",70,"a",83,7,7,70,"a",1],[0.771,0,1,31,68,1,0,5,-1,"",118,"a",86,5,5,133,"a",0],[0.937,0,1,126,87,1,1,19,9,"a",1,"d",88,16,16,70,"a",1],[0.672,0,1,13,100,1,1,1,2,"a",93,"a",92,1,1,93,"a",0],[0.021,0,0,87,38,0,13,1,1,"a",9,"d",93,0,12,37,"a",1],[0.698,0,1,11,82,1,0,0,-1,"",-1,"",96,0,0,-1,"",0],[0.724,0,1,13,77,2,0,1,-1,"",93,"a",98,1,1,93,"a",0],[0.443,0,1,22,50,0,0,1,-1,"",93,"a",99,1,2,93,"a",0],[0.852,0,1,133,60,0,0,15,-1,"",1,"d",100,12,17,83,"a",1],[0.717,0,1,11,100,0,0,1,-1,"",93,"a",101,1,1,93,"a",0],[0.648,0,1,27,78,1,1,6,2,"a",118,"a",102,6,6,43,"a",1],[0.677,0,1,18,78,0,0,3,-1,"",1,"d",103,2,2,1,"d",1],[0.763,0,1,11,100,1,0,1,-1,"",118,"a",105,1,1,129,"a",1],[0.74,0,1,26,85,1,0,2,-1,"",2,"d",111,1,1,133,"a",0],[0.685,0,1,54,69,1,0,8,-1,"",118,"a",119,8,8,13,"a",1],[0.627,0,1,18,72,2,0,2,-1,"",92,"a",123,2,3,133,"a",0],[0.595,0,1,12,67,0,1,1,59,"d",133,"a",125,1,2,133,"a",0],[0.671,0,1,19,79,0,0,5,-1,"",92,"a",127,5,5,13,"a",1],[0.837,0,1,52,88,0,0,5,-1,"",118,"a",128,5,7,83,"a",1],[0.046,0,0,78,50,0,10,1,118,"d",93,"a",130,1,13,36,"a",1],[0.766,0,1,12,100,1,0,2,-1,"",118,"a",132,2,2,84,"a",1],[0.493,0,1,8,88,0,0,1,-1,"",92,"a",133,1,1,92,"a",0],[0.698,0,1,13,62,3,0,3,-1,"",83,"a",134,3,3,92,"a",0],[0.596,0,1,15,87,0,0,3,-1,"",93,"a",135,3,3,94,"a",0],[0.545,0,1,23,74,1,0,4,-1,"",1,"d",136,3,6,71,"a",1],[0.647,0,1,22,45,0,0,2,-1,"",93,"a",138,2,2,93,"a",0],[0.74,0,1,35,66,1,0,5,-1,"",118,"a",139,5,6,133,"a",0],[0.761,0,1,27,78,1,0,5,-1,"",2,"d",146,4,5,13,"a",1],[0.476,0,1,23,52,0,0,3,-1,"",43,"a",147,1,1,43,"a",1],[0.605,0,1,19,58,0,0,1,-1,"",96,"a",149,1,1,96,"a",0],[0.803,0,1,23,83,0,0,4,-1,"",70,"a",150,4,4,70,"a",1],[0.773,0,1,37,81,0,0,2,-1,"",1,"d",151,1,1,129,"a",1],[0.805,0,1,7,100,1,0,1,-1,"",83,"a",152,1,1,83,"a",1],[0.665,0,1,7,71,0,0,1,-1,"",38,"a",153,1,1,38,"a",0],[0.911,0,1,172,78,0,0,17,-1,"",1,"d",156,14,17,70,"a",1],[0.811,0,1,8,100,0,0,4,-1,"",118,"a",157,4,4,84,"a",1],[0.726,0,1,34,91,0,0,3,-1,"",43,"a",158,3,4,13,"a",1]],"texts":{"35":"With the right design and conditions in place, a data centre can be built here without lasting harm to the environment.","1":"If a data centre meets all government planning requirements, that should be sufficient for it to proceed.","9":"Local councils should be responsible for deciding how community benefit funding is spent.","13":"Approving a data centre here risks damage to local land and ecosystems that can't be undone.","92":"Why are we rushing into a technology that might lead to huge job losses and social unrest without knowing more about the consequences?","43":"We need an immediate moratorium on new data centre approvals until the rules catch up with the speed and scale of development.","118":"The State Government is turning into a bulldozer. The used to listen to communities, what has happened?","2":"The economic benefits of data centres to NSW and Australia can justify some negative impacts on the local community.","59":"The AI bubble is popping currently. These data centres are going to be build and remain uninhabited. They will be an eyesore.","70":"A large data centre should not be in the Sydney water basin.","54":"We need to know what is being stored and processed in the data centre. Military, Government or Financial tenants are a safety risk ✈️ 🔥","83":"That they don’t build them here. Our water is precious. Particularly our ground water.","75":"I’d agree to a data centre if it could ensure that there would be no damage to existing waterways","71":"If a data centre is anything worse than neutral in terms of its impact on the community in which it exists, it should not be built","22":"Southern Highlands water is already under pressure, and a data centre would make that worse.","84":"Internet created data-centres; cloud computing expands it; AI creates a construction race. We are living things; We must slow down. Say No.","73":"Water shouldn't even be a consideration for cooling these centres as it is a resource we already struggle with all the time.","94":"Data centres are inherently extractive - 24/7 noise, light and vibration pollution is extremely concerning & shouldn’t be near residences","93":"We cannot afford to invest in technology that creates significant environmental impacts that can further green house gases and harm our kids","133":"Where does a Data Centre and Gas Plant get the water needed from??? We are the driest continent on earth, our water is PRECIOUS!!!","96":"It seems so many negative impacts and even when done well the reality isn't great for humans or the environment.","38":"A large data centre building would visually harm the small village and rural character that makes the Highlands what it is, and this matters to me.","36":"Community should be offered the opportunity to co-invest in new renewable energy brought to power any data centre energy needs.","129":"The Southern Highlands is not the place for a data centre it will ruin the highlands","78":"Data centre investment should create local jobs, skills and opportunities that remain in the community for generations.","37":"Good design, screening and siting could let a data centre fit into the landscape rather than dominate it.","15":"I'd only accept a data centre here if independent environmental assessment happened before any approval, not after."},"nsplit":22,"cuts":[0.416,0.732],"stances":[{"n":1,"name":"Open, if it’s done well"},{"n":2,"name":"Worried, not settled"},{"n":3,"name":"Not here"}]}</script>
 <script>
 const NS = 'http://www.w3.org/2000/svg';
