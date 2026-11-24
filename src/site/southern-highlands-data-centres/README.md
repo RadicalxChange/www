@@ -72,7 +72,7 @@ button goes to the small groups, the second to "What happens next".
   so, says the sample was not designed to be demographically representative,
   and names whom it sought out, in words that match the partner's page. Keep
   this wording the same everywhere. The 48 delegates is the partner's
-  figure; 38 of them voted in the priority vote.
+  figure; 37 of them voted in the priority vote.
 - The page has no section addressed to developers and no funding ask. The
   next-step line names developers alongside governments ("Bringing community
   terms like these to the table with governments and developers is the next
@@ -169,7 +169,7 @@ button goes to the small groups, the second to "What happens next".
   headline, the head count and two of the hero quotes, so regenerate it if
   any of those change.
 - Priority vote ballots: `src/site/assets/southern-highlands/priority-vote-ballots.csv`,
-  the 38 counted ballots with voter names removed and the order scrambled.
+  the 37 counted ballots with voter names removed and the order scrambled.
   Never publish the raw QV export: it carries voter names.
 
 ## Data and counting rules
@@ -366,17 +366,24 @@ button goes to the small groups, the second to "What happens next".
   and 15 ("Nature"), 27 and 39, 71 and 80. Each
   "split" differs by at least 40 points between the groups; each "agree" has
   at least 70% in both. Statement 13 is also on the more concerned group's card.
-- Priority vote (quadratic voting): 39 ballots exported, one empty ballot set
-  aside, leaving 38. Net votes are votes for minus votes against; ranks tie
-  where nets tie (=10th).
+- Priority vote (quadratic voting): 39 ballots exported. One empty ballot is
+  set aside, and where two ballots carry the same name only the later one
+  counts, as on the other results pages. That leaves 37. The session used a
+  public voting link, so its records can't show who cast which ballot. Two
+  ballots share a stand-in name; the later is row 21 of the export's Voters
+  sheet, because the export keeps same-name rows in the order they were
+  saved, and the project's earlier blog totals are exactly the totals
+  without it. The forum materials counted both (38 ballots), so their totals
+  are slightly higher. Net votes are votes for minus votes against; ranks
+  tie where nets tie (=2nd and =10th), the better-backed condition first.
 - The section ("The guardrails and requirements residents prioritised") is
   one ranked list of all
   13 conditions: one bar per condition, scaled to the top net vote, with the
-  net votes and how many of the 38 ballots backed or opposed it. Two lines
+  net votes and how many of the 37 ballots backed or opposed it. Two lines
   are checked. The finding is "Clean power came first. Water recycling, an
-  ongoing share and independent checks followed." (ranks 1 to 4, none
-  tied). The caption ends "Most voters backed every condition" (the fewest
-  backers is 27 of 38).
+  ongoing share and independent checks followed." (ranks 1, =2, =2 and 4).
+  The caption ends "Most voters backed every condition" (the fewest backers
+  is 27 of 37).
 
   An earlier version led with six cards for the top six, each with its
   closest statement from the conversation. They went when the full ranking
