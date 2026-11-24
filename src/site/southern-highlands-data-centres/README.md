@@ -25,9 +25,9 @@ pairs scripts, with a short block of additions.
 It tells the story in this order: why the pilot asked residents first; how
 it worked (who took part, then six step cards); what the small groups said,
 in residents' own words; the priority vote (one ranked list of all 13
-conditions); the open conversation (the map with three stances along the
-line, then the two groups, then where they agree on the terms anyway: the count
-of shared statements, five uncommon-ground pairs and all 28 in a fold); the
+conditions); the open conversation (the map with the three groups along the
+line, then a card for each group, then where they agree on the terms anyway: the
+count of shared statements, four uncommon-ground pairs and all 22 in a fold); the
 community's seven principles, as residents presented them at the forum;
 what happens next; and, at the bottom, the independence and partner
 credits, photos and notes. The principles follow the evidence, so a reader
@@ -47,7 +47,7 @@ finding. The last says what meeting the terms gets a proposal, residents'
 consideration, and stops short of their support, which would contradict the
 line that the work is not evidence of support or consent. The lede names no
 terms: the principles section gives them in the community's own words. If a
-list ever returns, back every item with a statement most of both groups
+list ever returns, back every item with a statement most of all three groups
 agreed with or a top-seven priority-vote condition. One participation figure
 ("September and October 2026 · 157 people took part", as on the
 link-preview image) sits in a smaller line under the buttons. The first
@@ -89,13 +89,14 @@ button goes to the small groups, the second to "What happens next".
   others and sits where the data puts it. Don't pick out one item's best
   figure to lift a theme ("came eighth, but…"), and don't add an exception
   to a checking rule for one item.
-- Groups are named, not numbered ("More concerned", "More open"), and the
-  larger group comes first wherever the two appear together: the summary
-  bar, the group cards, both legends, the pairs and the folded list. The map
-  still runs from more open (left) to more concerned (right). The pairs are
-  titled by what both groups want ("Show the full plan up front", "Protect
-  the town water supply", "Assess environmental impacts before approval",
-  "Set noise limits independently", "Strengthen the host community").
+- Groups are named, not numbered ("Not here", "Worried, not settled", "Open,
+  if it's done well"), and appear in map order wherever they appear together:
+  the hero labels, the summary bar, the cards, the legend, the pairs and the
+  folded list. The map runs from more concerned (left) to more open (right),
+  so the hero, the map and the cards read in one order. The pairs are titled
+  by what all three groups want ("Show the full plan up front", "Protect the
+  town water supply", "Assess environmental impacts before approval",
+  "Strengthen the host community").
 - Where the page and the project's media release of 26 October 2026 differ
   on a fact, the page follows the release: more than 160 residents at the
   forum, the proposal "near Moss Vale", the four representatives and their
@@ -133,10 +134,12 @@ button goes to the small groups, the second to "What happens next".
   a taller window read at a larger text size.
 - The hero buttons have slightly less side padding than the Curtin sheet's,
   so the two sit side by side in a 1440px window at a 20px text size.
-- The sticker sits beside the first quote card and covers no card. The card
-  stops short of it, and the column's top padding is worked out from the
-  sticker's height, so the sticker ends above the second card at any text
-  size.
+- The hero's right column holds one label per group (its count, name and a
+  one-line description, linking to its card) and the circle, which sits
+  against the labels and covers no text. On phones the circle follows the
+  labels. A caption under them gives the count: "104 people in three groups,
+  from the open conversation". The turnout line under the buttons keeps one
+  figure.
 - Check any hero change at these sizes: 1728×966 with a 20px default text
   size, 1440×790 (at 16px and at 20px), 1536×730, 1366×650, 1024×700 and a
   375px phone. Headless Chrome takes `--blink-settings=defaultFontSize=20`,
@@ -166,8 +169,9 @@ button goes to the small groups, the second to "What happens next".
   media folder).
 - Link-preview image: `src/site/assets/southern-highlands-data-centres-og.png`
   (1200×630), rendered from the page's own fonts and copy. It shows the
-  headline, the head count and two of the hero quotes, so regenerate it if
-  any of those change.
+  headline, the head count, a forum photo and two quotes from the small
+  groups that the hero no longer carries. Regenerate it if the headline or
+  the head count change.
 - Priority vote ballots: `src/site/assets/southern-highlands/priority-vote-ballots.csv`,
   the 37 counted ballots with voter names removed and the order scrambled.
   Never publish the raw QV export: it carries voter names.
@@ -184,58 +188,101 @@ button goes to the small groups, the second to "What happens next".
   reproduces exactly.
 - Percentages are agrees out of everyone who voted on the statement (agree,
   disagree or pass), over all 157 people, grouped or not. Shown shares round
-  halves up, as on the other results pages: statement 71's more open share,
-  1 of 8, shows as 13%. Python's `round()` sends halves to even, so don't use
+  halves up, as on the other results pages: statement 71's share in Open, if
+  it's done well, 1 of 8, shows as 13%. Python's `round()` sends halves to even, so don't use
   it for shown figures.
-- Groups are Polis's own: 104 people placed, "More concerned" (91, Polis
-  group 1) and "More open" (13, Polis group 0), exactly 7 in 8 and 1 in 8.
-  The page names them rather than numbering them, and puts the larger group
-  first. Group figures exclude the two accounts above. Where fewer than 20
-  people in a group voted, the page shows how many: as "(n voted)" after the
-  percentage, or, on the two group cards, as a count in place of the
-  percentage ("6 of 6 in this group agree"), because "100%" overstates six
-  votes.
+- Groups. Polis placed 104 people in two groups, "more concerned" (91, Polis
+  group 1) and "more open" (13, Polis group 0). The page shows three. "Open,
+  if it's done well" is Polis's more open group. Polis's more concerned group
+  is split where agreement with statement 70 (no large data centre in the
+  Sydney water basin) changes most along the line, into "Worried, not
+  settled" (47) and "Not here" (44). No one sits on that line: in the map's
+  units (0 at the most concerned end), Not here runs to 0.262, Worried, not
+  settled starts at 0.274, and the line is at 0.268. Group figures exclude the
+  two accounts above. Where fewer than 20 people in a group voted, the page
+  shows how many: as "(n voted)" after the percentage, or, on the group
+  cards, as a count in place of the percentage ("6 of 6 in this group
+  agree"), because "100%" overstates six votes.
+- Why three, and how firm the line is (also in the page notes, "How we found
+  three groups"). The split test the other results pages use (cuts every 1%
+  from 20% to 80% of the group; a flip is 65% or more on one side and 35% or
+  less on the other, with 10 or more voters a side and z of 3.3 or more;
+  1,000 shuffles for chance) finds only one flip inside the 91, statement
+  70. By that rule this is not a clear split, and the notes say the line is
+  softer than the one Polis drew. The page draws it because the two
+  questions that divide the 91, an outright no and the water basin, are the
+  core of the matter: an outright no, 10 of 19 in Worried, not settled
+  against 23 of 24 in Not here; statement 70, 1 of 10 against 16 of 18. A
+  test on those two questions alone (2,000 shuffles, 8 or more voters a side)
+  gives p of about 0.0015 and 0.001, but statement 70 was noticed in the data
+  first, so treat that as descriptive.
 - The map comes before the group cards, as on the other results pages: it
-  shows how the people sit along the line before the cards say what sets the
-  two groups apart.
+  shows how big each group is and where it sits before the cards say what
+  sets each apart.
 - The map has one job: to show who took part. It places all 104 grouped
   people, one dot each, along Polis's main divide, rebuilt from the vote
   matrix of the grouped people: PCA with missing votes set to the statement
   mean, scaled by sqrt(statements / votes cast), then a robust rescale so two
   outliers don't squash the rest. It is close to the Polis report's map but
-  not identical. Dots pile up in rounded heaps where people sit close
-  together, as on the Warringah and Curtin pages: each drops near its place
-  and rolls up to three dot widths to the lowest free spot, never across a
-  stance's dividing line. There is no vertical scale. Dots glide into place when the map scrolls into view
-  (reduced motion shows them in place).
-- The map card leads with the stances. The lead reads "Each dot is one
-  person, placed by how they voted. People further to the right agreed with
-  more of the concerns about a data centre." (The concerns are the 17
-  statements the more concerned group backed and the more open group didn't.) The three stance names head
-  the chart. The group-colour
-  legend, "Show me someone" and the hover hint sit under the chart, and the
-  stance key follows. Every dot is drawn at full strength: the paler border
-  shading was dropped in the editing pass, because the stances carry the
-  story.
-- Dashed lines split the map into three stances, named in plain language so
-  the map says what each position means. They are a closer look inside the
-  two Polis groups, not a rival count: the dots keep their group colours, the
-  first stance is the more open group plus three of the more concerned, and
-  the other two split the rest of the more concerned group in half. The page calls them stances, never groups.
+  not identical. It runs from more concerned (left) to more open (right).
+  Dots pile up in rounded heaps where people sit close together, as on the
+  Warringah and Curtin pages: each drops near its place and rolls a little to
+  the lowest free spot. No dot rolls across the line between Not here and
+  the other groups, and on each side the dots drop from that line outwards,
+  as on the Curtin page, so none wall up against it. There is no vertical
+  scale. Dots glide into place when the map scrolls into view (reduced motion
+  shows them in place).
+- Each group is drawn in its colour: Not here #D6286A, Worried, not settled
+  #EE8DB0 (a lighter shade of the same hue, since both come from Polis's
+  more concerned group) and Open, if it's done well #6F45F0. Each name sits
+  over the middle of its heap (between its 10th and 90th percentile dots),
+  nudged apart where two would touch, with its count under it on wide
+  screens; on phones a name may take two lines and the counts are left to
+  the cards. There are no dividing lines and no key. Open's heap overlaps
+  Worried's a little, because Polis grouped people on all their votes, not
+  their place on the line: three people in Worried, not settled sit among
+  Open's dots. Pointing at a name with a mouse fades everyone else.
+- The map card's lead reads "Each dot is one person, placed by how they
+  voted. People further to the left agreed with more of the concerns about a
+  data centre." (The concerns are the 17 statements the more concerned group
+  backed and the more open group didn't.) "Show me someone" and the hover
+  hint sit under the chart.
+- The group cards are stacked, in map order. Each starts with the group's
+  count, name and a description that says where it stands on the two core
+  questions:
 
-  | Stance | People | What it says |
+  | Group | People | Description |
   |---|---|---|
-  | Open, if it's done well | 16 | Good design and the right conditions can avoid lasting harm; they want real local benefits in return |
-  | Worried, not settled | 44 | Expect harm to the land; want approvals paused until the rules catch up; split on whether to say no to a data centre here |
-  | Not here | 44 | Don't want a data centre here; about half would still talk about a smaller one |
+  | Not here | 44 | They don't want a data centre here, and say no large one should go in the Sydney water basin. About half would still talk about a smaller one. |
+  | Worried, not settled | 47 | They expect harm to the land and want approvals paused until the rules catch up. They are split on saying no outright, and most didn't take a side on the water basin. |
+  | Open, if it's done well | 13 | They believe good design and the right conditions can avoid lasting harm, and they want real local benefits in return. None of them agreed with saying no outright. |
 
-  The key closes with "All three back the same terms if a data centre does go
-  ahead", which hands over to the next section.
-
-  The key says what each stance thinks in plain words, and leaves the counts
-  to the page notes ("Behind each stance"). An earlier wording put the
-  evidence in the key ("about half who voted on one agreed, and many
-  passed"), and it read as jargon.
+  The hero labels carry a one-line version of each.
+- Every claim in a description is checked against how that group voted
+  (agree out of everyone in it who voted). Each claim has a floor on how many
+  voted as well as a range for the share: at least three in four of five or
+  more voters for Open, if it's done well, and at least 60% of ten or more for
+  the other two. "About half" and "split" need 40% to 60%. Not here: an
+  outright no 23 of 24, statement 70 16 of 18, a smaller one (67) 9 of 17.
+  Worried, not settled: harm to the land (13) 13 of 19, a pause (43) 11 of 17,
+  an outright no 10 of 19, and 7 of 10 passed on statement 70. Open, if it's
+  done well: no lasting harm (35) 6 of 6, local benefits (21) 6 of 6, and no
+  one in the group agreed with an outright-no statement (9 voted on one).
+  Four statements say no outright (83, 84, 98 and 129); statement 70 is about
+  where, so it is not one of them.
+- The cards at each end show "What sets them apart": three statements most
+  of the group agreed with, ranked by how far its share runs ahead of the
+  nearer other group. The middle card shows "Where they stand": the two
+  statements where Worried, not settled sides most with Not here (most of
+  both agreed, under half of Open) and the two where it sides most with Open,
+  ranked the same way. A fifth box would show a statement it backs more than
+  both neighbours, on 20 or more voters; none qualifies. A group needs 10 or
+  more voters on a statement (5 for Open, if it's done well), a tie goes to
+  the statement more of the group agreed with, and statements the pairs show
+  are skipped, so nothing appears twice. The picks: Not here 70, 83 and 57
+  (57 ties 59 exactly and has more agreeing); Worried, not settled 92 and 74
+  like Not here, 4 and 17 like Open; Open, if it's done well 35, 75 and 37.
+  Every card shows all three groups' figures.
 - Plain language is a rule for the whole page. Keep voting terms such as "passed" and "voted on" out of
   the page's own sentences (they belong in the folded notes), prefer two
   short sentences to one long one, use everyday words ("asking the
@@ -250,110 +297,69 @@ button goes to the small groups, the second to "What happens next".
   held only 9 of the 33 sceptical-group people who had agreed with an
   outright no. Don't split the line further without checking how many voters
   stand behind each claim.
-- How the lines were drawn (also in the page notes, "The three stances"): each
-  sits in a gap between dots where agreement with one statement changes most.
-  The two statements are 1 (planning rules enough: 5 of 7 agreed left of the
-  line, 0 of 29 right) and 70 (not in the Sydney water basin: 1 of 15, then
-  16 of 18). Each split gives Fisher's exact p < 0.001, but the statements
-  and cuts were chosen after looking at the data, so treat that as
-  descriptive.
-- Every sentence in the key is checked against how that stretch voted (agree
-  out of everyone there who voted). Each claim has a floor on how many voted
-  as well as a range for the share: at least three in four of five or more
-  voters for the 16-person first stance, and at least 60% of ten or more for
-  the other two. "About half would still talk about a smaller one" needs 40%
-  to 60% (statement 67: 9 of 17).
-
-  Four statements say no outright (83, 84, 98 and 129; statement 70 is about
-  where, so it is not one of them). Of the people who voted on at least one
-  of them: none of 10 in the first stance agreed with any; 10 of 18 in the
-  middle stance agreed with at least one, and pass was their most common
-  vote; 23 of 24 in "Not here" agreed with at least one. These counts are in
-  the page notes under "Behind each stance". "Split on whether to say no"
-  needs 40% to 60% of the middle stance to have agreed with at least one.
-
-  Agreement with the 17 statements the more concerned group backed and the more open group didn't rises
-  15%, 62%, 87% from left to right, and in every stretch most people backed
-  at least three in four of the shared terms they voted on (15 of 15, 32 of
-  39 and 37 of 42). If the wording changes, re-check these claims rather than
-  just re-running the numbers.
-- Dots within a dot's width of a dividing line are nudged a few pixels so none
-  sits on it. On wide screens each stance's name sits over its stretch, with
-  how many people are in it. Names are set in up to two lines (three if need
-  be), stepping down from 14.5px to 12px before giving up. Narrower screens
-  number the stretches 1 to 3, and the key adds the numbers and counts.
-  Pointing at a stance with a mouse, on the map or in the key, fades everyone
-  else.
 - The hint under the map names the gesture that works on the device in hand:
   "Hover over a dot" with a mouse, and "Tap the map or press 'Show me someone'" on
   touch screens, where the dots are about 7px wide and a tap picks the
   nearest person.
-- The hover card leads with the person's stance, then "Why they sit here":
+- The hover card leads with the person's group, then "Why they sit here":
   - how many of the 17 concerns they agreed with, out of those they voted on,
     with a small meter (this tracks position closely: correlation 0.81);
-  - one of their votes that fits the stance. It says "Like most people here"
-    only when most of that stance who voted on the statement voted the same
-    way. Otherwise it quotes the most widely shared concern they rejected
-    (stance 1) or backed (stances 2 and 3). The fallback never quotes a "not
-    here" or "say no" statement (70, 83, 84) for stance 2, because that
-    would contradict the stance. Statement 98 ("Tech bros should take their
-    data centres and bugger off.") counts as evidence but is never quoted on
-    a card. Six people have no vote that fits either rule, so their card
-    shows no quote.
+  - "Like most of their group, they agreed:" and the statement highest on
+    their group's list, the ranking behind the group cards (pairs included),
+    that they agreed with. Five people, all in Worried, not settled, agreed
+    with none of them, so their card shows no quote. A group's list holds
+    only statements most of that group agreed with, on enough voters, so no
+    card quotes a view its group didn't back, and nothing is left out by
+    hand. Statement 98 has too few voters in two groups to be on any list.
 
-  The two-group balance follows. Its quote shows only for people near the
-  border (under 65% like their own group on the split statements), where it
-  shows what they shared with the other group. On phones the card title
-  carries the stance number.
-- `#map-data` rows use the Curtin page's `DATA.people` format. The first field
-  holds the divide position, the second is unused (0), and the Polis
-  participant id is added at the end. The page ignores the id; it lets every
-  dot be checked against the export. Five fields follow the id for the hover
-  card:
-  1. concerns agreed;
-  2. concerns voted on;
-  3. the quoted statement (or -1);
-  4. their vote on it ("a" or "d");
-  5. 1 if most of their stance voted the same way.
-
-  `#map-data` also carries `cuts` (the two dividing points) and `stances`
-  (number and name).
-- Framing without spin. The groups are Polis's and are reported as found.
-  The section heading is "Mostly sceptical, but in different ways", and its
-  lead says the two groups are not a yes and a no: what separates them is
-  harm, water, the rules and pace. The map's own heading is "Where each
-  person sits". The page deliberately does not say "it
-  just comes down to conditions", or that the scepticism is "about how and
-  where, not whether". Of the 91 in the more concerned group, 44 are "Not
-  here" and 44 are "Worried, not settled"; the checker requires each to be
-  45% to 55%. The linked Polis report shows the four outright-no statements
-  at 52% to 77% of that group, so a reader can check.
-
-- Two lines elsewhere on the page follow from the stances. First, the caveat
-  under the group cards now covers them: "these groups and the stances on the
-  map describe who joined the conversation, not the whole Highlands". Second,
+  The earlier two-group balance bar is gone, because the page names Polis's
+  two groups only in the notes.
+- `#map-data` rows use the Curtin page's `DATA.people` format: the place on
+  the line (0 at the most concerned end, 1 at the most open), an unused 0, the
+  group (0 Not here, 1 Worried, not settled, 2 Open, if it's done well),
+  votes, agree %, statements written, the Polis participant id (the page
+  ignores it; it lets every dot be checked against the export), concerns
+  agreed, concerns voted on, the quoted statement (or -1), "a" and 1 when
+  there is one. `#map-data` also carries `cut` (the line between Not here
+  and Worried, not settled, in the same units), `groups` (the names in map
+  order) and `texts` (the quoted statements as the page shows them).
+- Framing without spin. The groups are reported as found, and the notes say
+  which line Polis drew and which the page drew. The section heading is
+  "Mostly sceptical, but in different ways", and its lead says most are
+  sceptical in two different ways, the third group (1 in 8) is open to a data
+  centre if it's done well, and these are not a yes and a no. The page
+  deliberately does not say "it just comes down to conditions", or that the
+  scepticism is "about how and where, not whether". The linked Polis report
+  shows the four outright-no statements at 52% to 77% of the more concerned
+  group, so a reader can check.
+- Two lines elsewhere on the page follow from the groups. First, the caveat
+  under the group cards: "People chose to take part, so these groups describe
+  who joined the conversation, not the whole Highlands." Second,
   the principles section's lead-in says "For many residents, the
   first question is where: they don't want a large data centre in the Sydney
   water basin, which covers most of the Highlands". About half of those who
   voted on statement 70 agreed (17 of 33). The "most of the Highlands" clause
   rests on the project's blog: around 95% of the region sits in the Warragamba Dam
   catchment.
-- The 22 "statements that split the groups" are those where each group's net
-  vote points the opposite way and the two differ by at least 0.5 (at least 3
-  decided votes in the more open group and 5 in the more concerned group). Eight people voted like their
-  own group on fewer than 65% of those. The map no longer shades them; their
-  hover card says they sit near the border.
-- The shared statements are the 28 that at least 70% of both groups agreed
-  with. Two groups can only be compared on a statement with at least 5
-  voters in the more open group and 20 in the more concerned group, and 81 of the 179 statements had that many,
-  so 28 is about one in three of them (the page notes say so). The count
-  opens the pairs section in large type ("28 statements won at least 70%
-  support in both groups. Here are five of them, each beside a big question
-  that splits the groups."), the five pairs are its examples, and one fold
-  after the pairs lists all 28, strongest first. The count is also in the
-  second "at a glance" card. Every pair's agreed statement must be one of
-  the 28; the checker tests that. Shares are worked out in whole numbers, so
-  a share exactly on the line counts (statement 81: 14 of 20 in the more concerned group).
+- The 17 concerns are the statements where Polis's two groups' net votes
+  point opposite ways and differ by at least 0.5 (at least 3 decided votes in
+  the more open group and 5 in the more concerned group), on the more
+  concerned side. Agreement with them rises from right to left: 15% of votes
+  in Open, if it's done well, 61% in Worried, not settled and 87% in Not here.
+- The shared statements are the 22 that at least 70% of each of the three
+  groups agreed with. A statement can be compared only with at least 5
+  voters in Open, if it's done well and 10 in each of the other two; 75 of
+  the 179 statements had that many. In every group, most people backed at
+  least three in four of the shared statements they voted on. The count
+  opens the pairs section in large type ("22 statements won at least 70%
+  support in all three groups. Here are four of them, each beside a big
+  question that splits the groups."), the four pairs are its examples, and
+  one fold after the pairs lists all 22, strongest first (by the lowest of
+  the three groups' shares, then the average). The count is also in the
+  summary card. With two groups the same rule found 28; six drop with three
+  (33, 39, 61, 81, 111 and 123), each under 70% or under 10 voters in one of
+  the two sceptical groups. Shares are worked out in whole numbers, so a
+  share exactly on the line counts.
   Statements are shown as people wrote them, apart from three plain
   typos corrected on the page and named in its notes: 37 ("could allow let",
   one of the team's own starter statements), 69 ("imperitive") and 75
@@ -363,9 +369,12 @@ button goes to the small groups, the second to "What happens next".
   share any other view more than chance would allow (best p = 0.22). Other
   cross-cutting statements have too few overlapping yes/no votes to test.
 - Uncommon-ground pairs (RxC's choice): statements 1 and 56, 22 and 23, 13
-  and 15 ("Nature"), 27 and 39, 71 and 80. Each
-  "split" differs by at least 40 points between the groups; each "agree" has
-  at least 70% in both. Statement 13 is also on the more concerned group's card.
+  and 15 ("Nature"), 71 and 80. A pair shows only if all three groups back
+  its agreed statement, so 27 and 39 ("Set noise limits independently") went
+  when the page moved to three groups: 9 of 13 in Worried, not settled backed
+  39 (69%). Each split shows a gap of at least 40 points between two groups.
+  The dumbbells show all three groups, with one dot split into slices where
+  shares tie, as on the Curtin page.
 - Priority vote (quadratic voting): 39 ballots exported. One empty ballot is
   set aside, and where two ballots carry the same name only the later one
   counts, as on the other results pages. That leaves 37. The session used a
@@ -392,13 +401,9 @@ button goes to the small groups, the second to "What happens next".
 - Quotes come from the nine online small groups (the Session 2 breakouts of
   23 and 24 September), from automated transcripts, lightly tidied: repeated
   words and fillers removed, Australian spelling, and one place name the
-  transcript got wrong (the Wingecarribee River). The hero cards carry no
-  date tags (removed in the editing pass as noise). One caption under the
-  stack says who is speaking: "Residents, in the September discussion
-  groups". The page notes say where the quotes come from. No quote carries a
-  name, and none may: the project team asked for that. Hero quotes should be
-  constructive, not divisive or antagonistic; the checker matches each
-  against the transcript.
+  transcript got wrong (the Wingecarribee River). The page notes say where
+  the quotes come from. No quote carries a name, and none may: the project
+  team asked for that.
 - The quotes section ("In their own words") follows the project team's
   synthesis of the ten small groups, which sorts quotes from the ten small groups into themes and counts how many
   groups raised each. The ten are the nine online breakouts and one
@@ -425,15 +430,14 @@ button goes to the small groups, the second to "What happens next".
   session's quotes be checked with participants before publication, so none
   is used. To add or change a quote, keep the speaker's words in order and
   cut only fillers and repeats.
-- The hero sticker is statement 8: 92% "agreed the community should have a
-  say in whether and how data centres proceed" (45 of 49; the statement reads
-  "a meaningful say in whether and under what conditions major data centres
-  proceed"). It holds both halves of the process's position, whether and on
-  what terms, in residents' own vote. It replaced statement 46 ("any deal
-  struck now should still look fair…", 96%), because "any deal" reads as
-  dealmaking. `/projects` uses the same figure. The
-  sticker's text is set in four short lines at .66rem so they stay inside
-  the circle.
+- The hero circle is statement 8: more than 3 in 4 in all three groups
+  agreed the community should have "a meaningful say in whether and under
+  what conditions major data centres proceed" (20 of 22 in Not here, 16 of
+  16 in Worried, not settled, 8 of 10 in Open, if it's done well). It holds
+  both halves of the process's position, whether and on what terms, in
+  residents' own vote. Its ring shows the groups' colours: Not here on top,
+  Worried, not settled at the sides, Open, if it's done well underneath.
+  `/projects` gives the statement's overall figure, 92% (45 of 49).
 - The seven principles appear word for word as Highlands Homegrown Economy
   publishes the Southern Highlands Model (the "Why" graphic on its project
   page, read 16 November 2026), with each description's first letter
