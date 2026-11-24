@@ -22,16 +22,17 @@ and the site-wide posthtml transform. It reuses the Curtin page's stylesheet,
 typefaces (Messer Condensed and Suisse Intl, subset to Latin), opinion-map and
 pairs scripts, with a short block of additions.
 
-It tells the story in this order: why the pilot asked residents first; how
-it worked (who took part, then six step cards); what the small groups said,
-in residents' own words; the priority vote (one ranked list of all 13
+It tells the story in this order: the community's seven principles, right
+under the hero, each with where it came up in the small groups, the priority
+vote and the open conversation; why the pilot asked residents first and how it
+worked (who took part, then one list of who did what); what the small groups
+said, in residents' own words; the priority vote (one ranked list of all 13
 conditions); the open conversation (the map with the three groups along the
-line, then a card for each group, then where they agree on the terms anyway: the
-count of shared statements, four uncommon-ground pairs and all 22 in a fold); the
-community's seven principles, as residents presented them at the forum;
-what happens next; and, at the bottom, the independence and partner
-credits, photos and notes. The principles follow the evidence, so a reader
-sees how residents got to them before reading them.
+line, a card for each group, then what all three share: the count of shared
+statements, two uncommon-ground pairs and all 22 in a fold); what happens
+next; and, at the bottom, the independence and partner credits and the notes.
+The principles come first, so a reader knows the terms from the start; the
+sections after them are the evidence, in the order it was gathered.
 
 The headline is "What Southern Highlands residents said about data centres".
 An earlier headline spoke of setting the terms, which could be read as the
@@ -58,12 +59,19 @@ button goes to the small groups, the second to "What happens next".
 - Consent. The page must not read as consent, or as the language of a deal.
   "Why we did this" says the pilot did not ask residents to endorse a data
   centre, and that an informed no is as valid as a conditional yes. The
-  principles' lead-in says any proposal would also have to meet them, and
-  that meeting them would not guarantee a yes. The note under the principles
+  principles row's lead says residents turned the shared terms into seven
+  principles, and that meeting them would not guarantee a yes. The note under
+  the principles
   carries the partner's own lines: the pilot is non-statutory and meant to
   inform public discussion and policy development, and it "should not be
   cited by any proponent, consultant or party to proceedings as evidence of
   community support for, or consent to, a particular development".
+- Calm design. One strong element per section: its heading, and at most one
+  focal point. Yellow is a highlight, not a background, except in the hero.
+  Regular weight for anything people read (quotes, list items), bold only for
+  short names. Fewer boxes and shadows: space and thin rules group things
+  instead. Labels in quiet grey text, not pills. Every section opens the same
+  way: the heading, then its text underneath.
 - Words the page avoids in its own sentences: "accept" (it read as the
   community giving in; residents' quotes keep their own words),
   "counter-offer" (it implies a negotiation the pilot was not part of),
@@ -145,22 +153,24 @@ button goes to the small groups, the second to "What happens next".
   375px phone. Headless Chrome takes `--blink-settings=defaultFontSize=20`,
   but its window will not go narrower than about 500px, so check the phone
   in a browser's device emulation.
-- Wide sections use their full width. Headings sit beside their leads
-  ("Why we did this", the small groups, the open conversation and the
-  principles), centred against them at every width. "Who took part" sits
-  beside a photo, the seventh principle shares a row with the note, the
-  independence box runs its two paragraphs over two columns under its bold
-  line, and "What happens next" puts the asks beside the text. Each stacks to
-  one column at 900px and under. After a wording change, check these at
+- Every section opens with its heading and its text underneath, at a reading
+  width of about 46rem. "How it worked" puts who took part and the list of who
+  did what on the left, and the two presenters' photos on the right. "What
+  happens next" puts the asks beside the text, centred against it. Each stacks
+  to one column at 900px and under. After a wording change, check these at
   1728×966 with 20px text and at 1024px, for a column left half empty.
-- The three summary cards follow the story: the small groups, the vote, the
-  open conversation. The first carries the ten-dot count the theme cards
-  use, drawn in the text colour so it shows in dark mode.
-- The page is long on a phone: about 35 screens of 812px. The opening and
-  the leads added about three to the earlier order. The hero's second button
+- The principles row under the hero has three cards, one per heading of the
+  model. The cards share rows, so each kind of evidence lines up across them,
+  and stack to one column under 62em (in em, so a larger default text size
+  stacks them sooner). Respect diversity runs under them as a slim bar, and
+  the not-consent note under that, in quiet type.
+- How it worked is one list: the 48 invited delegates, with the 10 small
+  groups and the 37 who voted indented inside their sessions; the 157 in the
+  open conversation alongside; the 160+ at the forum where both came
+  together; and a line saying the numbers overlap. Every fact in it is the
+  page's own (the earlier step cards said the same things).
+- The page is about 30 screens of 812px on a phone. The hero's second button
   jumps to "What happens next", near the end.
-- On phones (560px and under) each "How this worked" step is a compact row:
-  the number in a 4rem column beside the heading and text.
 
 ## Assets
 
@@ -281,7 +291,7 @@ button goes to the small groups, the second to "What happens next".
   the statement more of the group agreed with, and statements the pairs show
   are skipped, so nothing appears twice. The picks: Not here 70, 83 and 57
   (57 ties 59 exactly and has more agreeing); Worried, not settled 92 and 74
-  like Not here, 4 and 17 like Open; Open, if it's done well 35, 75 and 37.
+  like Not here, 4 and 17 like Open; Open, if it's done well 1, 35 and 75.
   Every card shows all three groups' figures.
 - Plain language is a rule for the whole page. Keep voting terms such as "passed" and "voted on" out of
   the page's own sentences (they belong in the folded notes), prefer two
@@ -351,12 +361,12 @@ button goes to the small groups, the second to "What happens next".
   voters in Open, if it's done well and 10 in each of the other two; 75 of
   the 179 statements had that many. In every group, most people backed at
   least three in four of the shared statements they voted on. The count
-  opens the pairs section in large type ("22 statements won at least 70%
-  support in all three groups. Here are four of them, each beside a big
-  question that splits the groups."), the four pairs are its examples, and
+  opens "What all three share" in large type ("22 statements won at least 70%
+  support in all three groups. Here are two of them, each beside a big
+  question that splits the groups."), the two pairs are its examples, and
   one fold after the pairs lists all 22, strongest first (by the lowest of
-  the three groups' shares, then the average). The count is also in the
-  summary card. With two groups the same rule found 28; six drop with three
+  the three groups' shares, then the average). With two groups the same rule
+  found 28; six drop with three
   (33, 39, 61, 81, 111 and 123), each under 70% or under 10 voters in one of
   the two sceptical groups. Shares are worked out in whole numbers, so a
   share exactly on the line counts.
@@ -369,10 +379,14 @@ button goes to the small groups, the second to "What happens next".
   share any other view more than chance would allow (best p = 0.22). Other
   cross-cutting statements have too few overlapping yes/no votes to test.
 - Uncommon-ground pairs (RxC's choice): statements 1 and 56, 22 and 23, 13
-  and 15 ("Nature"), 71 and 80. A pair shows only if all three groups back
-  its agreed statement, so 27 and 39 ("Set noise limits independently") went
-  when the page moved to three groups: 9 of 13 in Worried, not settled backed
-  39 (69%). Each split shows a gap of at least 40 points between two groups.
+  and 15 ("Nature"), 27 and 39, 71 and 80. A pair can show only if all three
+  groups back its agreed statement, which rules out 27 and 39 (9 of 13 in
+  Worried, not settled backed 39, 69%). The page shows the two whose agreed
+  statement has the highest share in its least supportive group: 71 and 80
+  (90%) and 22 and 23 (88%). 1 and 56 (87.5%) and 13 and 15 (71%) are left
+  out, and their statements stay in the fold. The pairs sit inside the open
+  conversation, under "What all three share". Each split shows a gap of at
+  least 40 points between two groups.
   The dumbbells show all three groups, with one dot split into slices where
   shares tie, as on the Curtin page.
 - Priority vote (quadratic voting): 39 ballots exported. One empty ballot is
@@ -409,7 +423,7 @@ button goes to the small groups, the second to "What happens next".
   groups raised each. The ten are the nine online breakouts and one
   in-person session on 20 October. The page shows every theme raised in at
   least half of the groups, most common first, each with a ten-dot count and
-  two quotes (three for the first):
+  one quote (three for the top theme):
 
   | Theme on the page | Groups |
   |---|---|
@@ -446,7 +460,20 @@ button goes to the small groups, the second to "What happens next".
   to match. The forum slides in the photos show earlier names ("Clean
   Power"); the 26 October media release used earlier wording and called the
   fifth principle "Shared Value". The model's dollar benchmark is
-  deliberately left out.
+  deliberately left out. The principles sit in the row under the hero; the
+  tags on the small-group themes, the vote rows and the pairs use the same
+  three heading names, placing each item under the heading it plainly asks
+  for (two themes fit none and have no tag).
+- The line under the vote: "In the open conversation, most people in every
+  group agreed with five of the top six." The notes name the statements
+  matched to the top six (20, 23, 33, 39, 12 and 4) and the exception, shared
+  computing power, which 11 of 26 in Not here backed.
+- What happens next names the representatives once, in the photo caption; its
+  first paragraph says the community presented its principles to them,
+  "pictured below". The closing line leads into the asks, and "Thank you,
+  Southern Highlands." closes the text. The data links sit once, at the end
+  of "About this pilot"; the footer credits the photos, and the independence
+  box names the partners and their roles.
 
 The page supports light and dark mode. To update copy or figures, edit the
 HTML directly. Every figure on the page has been checked against the
